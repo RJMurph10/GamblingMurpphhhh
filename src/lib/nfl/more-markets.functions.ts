@@ -2,7 +2,14 @@ import { createServerFn } from "@tanstack/react-start";
 import { cached, clearCached } from "@/lib/shared/espn-core.server";
 import { z } from "zod";
 import { nameMatch } from "@/lib/shared/best-lines";
-import type { LineGame, LineIndexRow, MarketsFile, PartialsFile } from "@/lib/nfl/more-markets";
+import {
+  espnBooks,
+  type EspnOddsItem,
+  type LineGame,
+  type LineIndexRow,
+  type MarketsFile,
+  type PartialsFile,
+} from "@/lib/nfl/more-markets";
 
 const RAW = "https://raw.githubusercontent.com/RJMurph10/gamblingnfl/props-site";
 
@@ -48,18 +55,56 @@ export const getNflPartials = createServerFn({ method: "GET" }).handler(async ()
 });
 
 /**
- * One game's saved lines (every book's full-game, half, quarter, team-total and special markets; the last
- * pull before kickoff and the first), matched by team names and kickoff; null when none were saved.
+ * A finished game's opening and closing full-game lines from ESPN's odds feed (every book ESPN kept: in
+ * 2026 that's DraftKings), for games played before the per-game saves started (November 14, 2026).
+ */
+async function espnLineGame(
+  eventId: string,
+  home: string,
+  away: string,
+  when: string,
+): Promise<LineGame | null> {
+  const j = await json<{ items?: EspnOddsItem[] }>(
+    `https://sports.core.api.espn.com/v2/sports/football/leagues/nfl/events/${eventId}/competitions/${eventId}/odds?limit=50`,
+  );
+  const items = j?.items ?? [];
+  const booksAt = (snap: "open" | "close") => espnBooks(items, snap);
+  const close = booksAt("close");
+  if (!close.length) return null;
+  return {
+    home,
+    away,
+    commence: when,
+    at: "",
+    full: null,
+    books: close,
+    mk: [],
+    open: { at: "", books: booksAt("open"), mk: [] },
+    source: "espn",
+  };
+}
+
+/**
+ * One game's lines: the per-game saves (every book's full-game, half, quarter, team-total and special
+ * markets; the last pull before kickoff and the first), matched by team names and kickoff; for a started
+ * game with no save (played before November 14, 2026), ESPN's opening and closing full-game lines.
  */
 export const getNflLineGame = createServerFn({ method: "GET" })
   .inputValidator((data) =>
-    z.object({ home: z.string(), away: z.string(), when: z.string() }).parse(data),
+    z
+      .object({
+        home: z.string(),
+        away: z.string(),
+        when: z.string(),
+        eventId: z.string().optional(),
+      })
+      .parse(data),
   )
   .handler(async ({ data }) => {
-    const index = await cached(
+    const index = await cachedFile<LineIndexRow[]>(
       "nfl-lines-index",
-      () => json<LineIndexRow[]>(`${RAW}/markets/nfl/index.json`),
-      10 * 60_000,
+      `${RAW}/markets/nfl/index.json`,
+      5 * 60_000,
     );
     const t = Date.parse(data.when);
     // the closest names among games within 6 hours (New York Jets / Giants share two of three words)
@@ -73,12 +118,21 @@ export const getNflLineGame = createServerFn({ method: "GET" })
         best = score;
       }
     }
-    if (!row) return null;
-    // a game that has started keeps its lines; an upcoming one refreshes with each pull
-    const ttl = Date.parse(row.commence) < Date.now() ? 60 * 60_000 : 10 * 60_000;
+    if (row) {
+      // a game that has started keeps its lines; an upcoming one refreshes with each pull
+      const ttl = Date.parse(row.commence) < Date.now() ? 60 * 60_000 : 10 * 60_000;
+      const saved = await cachedFile<LineGame>(
+        `nfl-lines-${row.f}`,
+        `${RAW}/markets/nfl/games/${row.f}`,
+        ttl,
+      );
+      if (saved) return saved;
+    }
+    const id = data.eventId?.replace(/^espn-/, "");
+    if (!id || !(t < Date.now())) return null;
     return cached(
-      `nfl-lines-${row.f}`,
-      () => json<LineGame>(`${RAW}/markets/nfl/games/${row.f}`),
-      ttl,
+      `nfl-lines-espn-${id}`,
+      () => espnLineGame(id, data.home, data.away, data.when),
+      6 * 60 * 60_000,
     );
   });

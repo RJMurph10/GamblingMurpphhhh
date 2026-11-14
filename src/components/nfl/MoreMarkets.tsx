@@ -278,14 +278,17 @@ export function AllLines({
   when,
   status,
   quarters,
+  eventId,
 }: {
   home: Team;
   away: Team;
   when: string;
   status: "scheduled" | "live" | "final";
   quarters?: { home: number[]; away: number[] };
+  /** ESPN's game id: games played before the per-game saves fall back to ESPN's own lines. */
+  eventId?: string;
 }) {
-  const q = useNflLineGame(fullName(home), fullName(away), when);
+  const q = useNflLineGame(fullName(home), fullName(away), when, eventId);
   const partials = useNflPartials();
   const [tab, setTab] = useState("1h");
   const game = q.data;
@@ -394,7 +397,7 @@ export function AllLines({
             {q.isLoading
               ? "Loading…"
               : game
-                ? `${started ? "Last lines before kickoff · " : ""}best of ${bookCount} books`
+                ? `${started ? "Last lines before kickoff · " : ""}${bookCount === 1 ? "1 book" : `best of ${bookCount} books`}`
                 : ""}
           </span>
         }
@@ -417,6 +420,13 @@ export function AllLines({
             </p>
           ) : null}
           <LinesBoard rows={inPeriod("game")} ctx={ctx} />
+          {game.source === "espn" ? (
+            <p className="px-4 pb-3 font-mono text-[10px] text-faint">
+              Closing lines from ESPN ({bookCount === 1 ? "DraftKings" : `${bookCount} books`}),
+              with where they opened. Every book&apos;s halves, quarters, team totals and specials
+              are saved for games from November 14, 2026.
+            </p>
+          ) : null}
           <div
             className="flex gap-1 overflow-x-auto border-b border-t border-line/10 px-3 pt-3"
             role="tablist"

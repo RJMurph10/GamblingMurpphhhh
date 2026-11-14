@@ -1446,6 +1446,7 @@ export function GameDetail({ gameId }: { gameId: string }) {
                   when={game.kickoffIso ?? game.kickoff}
                   status={game.status === "final" ? "final" : "live"}
                   quarters={game.quarters}
+                  eventId={game.id}
                 />
               ) : (
               <Panel>

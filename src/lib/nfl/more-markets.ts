@@ -50,6 +50,8 @@ export interface LineGame {
   books: FullBookLine[];
   mk: MarketRow[];
   open: { at: string; books: FullBookLine[]; mk: MarketRow[] };
+  /** "espn": a game played before the per-game saves, with ESPN's full-game lines only. */
+  source?: "espn";
 }
 
 export interface LineIndexRow {
@@ -305,3 +307,68 @@ export function findMarketsGame(
 export const fmtOdds = (o: number) => (o > 0 ? `+${o}` : `${o}`);
 export const fmtLine = (x: number | null, signed = false) =>
   x == null ? "" : signed && x > 0 ? `+${x}` : `${x}`;
+
+/** ESPN book names → the bookmaker keys the site uses (bookName / isMajorBook). */
+export const ESPN_BOOKS: Record<string, string> = {
+  DraftKings: "draftkings",
+  "DraftKings (old)": "draftkings",
+  FanDuel: "fanduel",
+  BetMGM: "betmgm",
+  MGM: "betmgm",
+  "ESPN BET": "espnbet",
+  "ESPN Bet": "espnbet",
+  "theScore Bet": "espnbet",
+  "Caesars Sportsbook": "caesars",
+  "Caesars Sportsbook (New Jersey)": "caesars",
+  Bet365: "bet365",
+  bet365: "bet365",
+  Fanatics: "fanatics",
+  "Hard Rock Bet": "hardrockbet",
+};
+
+type EspnPrice = { american?: string } | undefined;
+const am = (x: EspnPrice): number | null => {
+  const v = String(x?.american ?? "").replace("+", "");
+  if (v === "EVEN") return 100;
+  const n = Number(v);
+  return v && Number.isFinite(n) ? n : null;
+};
+
+type EspnTotals = { total?: EspnPrice; over?: EspnPrice; under?: EspnPrice };
+type EspnBlock = { pointSpread?: EspnPrice; spread?: EspnPrice; moneyLine?: EspnPrice };
+/** One book in ESPN's odds feed (the open / close / current blocks as ESPN sends them). */
+export interface EspnOddsItem {
+  provider?: { name?: string };
+  homeTeamOdds?: { open?: EspnBlock; close?: EspnBlock; current?: EspnBlock };
+  awayTeamOdds?: { open?: EspnBlock; close?: EspnBlock; current?: EspnBlock };
+  open?: EspnTotals;
+  close?: EspnTotals;
+  current?: EspnTotals;
+}
+
+/** Each big book's full-game lines at ESPN's open or close ("current" when ESPN kept no close). */
+export function espnBooks(items: EspnOddsItem[], snap: "open" | "close"): FullBookLine[] {
+  return items.flatMap((it) => {
+    const name = it.provider?.name ?? "";
+    const key = ESPN_BOOKS[name];
+    if (!key || /live/i.test(name)) return [];
+    const h = it.homeTeamOdds?.[snap] ?? (snap === "close" ? it.homeTeamOdds?.current : undefined);
+    const a = it.awayTeamOdds?.[snap] ?? (snap === "close" ? it.awayTeamOdds?.current : undefined);
+    const t = it[snap] ?? (snap === "close" ? it.current : undefined);
+    const line = am(h?.pointSpread);
+    const tot = am(t?.total);
+    const spread: FullBookLine["spread"] =
+      line != null && (am(h?.spread) != null || am(a?.spread) != null)
+        ? [line, am(h?.spread), am(a?.spread)]
+        : null;
+    const total: FullBookLine["total"] =
+      tot != null && tot > 0 && (am(t?.over) != null || am(t?.under) != null)
+        ? [tot, am(t?.over), am(t?.under)]
+        : null;
+    const ml: FullBookLine["ml"] =
+      am(h?.moneyLine) != null || am(a?.moneyLine) != null
+        ? [am(h?.moneyLine), am(a?.moneyLine)]
+        : null;
+    return spread || total || ml ? [{ key, spread, total, ml }] : [];
+  });
+}

@@ -24,10 +24,10 @@ export const useNflPartials = () =>
   });
 
 /** One game's saved lines for the "All lines" view. */
-export const useNflLineGame = (home: string, away: string, when: string) =>
+export const useNflLineGame = (home: string, away: string, when: string, eventId?: string) =>
   useQuery({
-    queryKey: ["nfl-line-game", home, away, when],
-    queryFn: () => getNflLineGame({ data: { home, away, when } }),
+    queryKey: ["nfl-line-game", home, away, when, eventId],
+    queryFn: () => getNflLineGame({ data: { home, away, when, eventId } }),
     enabled: Boolean(home && away && when),
     // nothing saved yet: look again in a minute instead of keeping "none"
     staleTime: (q) => (q.state.data ? 10 * 60_000 : 60_000),
