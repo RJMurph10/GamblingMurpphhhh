@@ -38,13 +38,16 @@ export function PllLogo({ team, className = "size-6" }: { team?: PllTeam; classN
 export function PllSeasonPicker({
   season,
   onChange,
+  seasons = PLL_SEASONS,
 }: {
   season: number;
   onChange: (s: number) => void;
+  /** The seasons to offer (a club's page shows only those it played). */
+  seasons?: number[];
 }) {
   return (
     <div className="flex flex-wrap gap-1" role="tablist" aria-label="Season">
-      {PLL_SEASONS.map((s) => (
+      {seasons.map((s) => (
         <button
           key={s}
           type="button"
