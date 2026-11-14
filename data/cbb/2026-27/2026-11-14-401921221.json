@@ -7,18 +7,18 @@
   "id": "2261",
   "abbr": "HAMP",
   "name": "Hampton Pirates",
-  "score": 0
+  "score": 56
  },
  "home": {
   "id": "2426",
   "abbr": "NAVY",
   "name": "Navy Midshipmen",
-  "score": 0
+  "score": 58
  },
  "neutral": false,
  "venue": "Alumni Hall (Navy)",
  "seasonType": 2,
- "state": "pre",
+ "state": "post",
  "lines": {
   "open": {
    "at": "2026-11-14T03:32:18.870Z",
@@ -718,5 +718,9 @@
    ]
   }
  },
- "props": {}
+ "props": {},
+ "final": {
+  "away": 56,
+  "home": 58
+ }
 }

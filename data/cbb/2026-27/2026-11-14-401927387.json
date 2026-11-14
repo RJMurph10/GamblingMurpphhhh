@@ -7,18 +7,18 @@
   "id": "2460",
   "abbr": "UNI",
   "name": "Northern Iowa Panthers",
-  "score": 0
+  "score": 42
  },
  "home": {
   "id": "2473",
   "abbr": "OAK",
   "name": "Oakland Golden Grizzlies",
-  "score": 0
+  "score": 46
  },
  "neutral": false,
  "venue": "OU Credit Union O'rena",
  "seasonType": 2,
- "state": "pre",
+ "state": "in",
  "lines": {
   "open": {
    "at": "2026-11-14T03:07:32.138Z",

@@ -7,18 +7,18 @@
   "id": "253",
   "abbr": "SUU",
   "name": "Southern Utah Thunderbirds",
-  "score": 0
+  "score": 51
  },
  "home": {
   "id": "154",
   "abbr": "WAKE",
   "name": "Wake Forest Demon Deacons",
-  "score": 0
+  "score": 89
  },
  "neutral": false,
  "venue": "LJVM Coliseum",
  "seasonType": 2,
- "state": "pre",
+ "state": "in",
  "lines": {
   "open": {
    "at": "2026-11-13T23:38:17.369Z",

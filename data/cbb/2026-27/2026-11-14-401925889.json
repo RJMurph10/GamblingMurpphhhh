@@ -7,18 +7,18 @@
   "id": "2571",
   "abbr": "SDST",
   "name": "South Dakota State Jackrabbits",
-  "score": 0
+  "score": 71
  },
  "home": {
   "id": "2458",
   "abbr": "UNCO",
   "name": "Northern Colorado Bears",
-  "score": 0
+  "score": 46
  },
  "neutral": true,
  "venue": "The Monument",
  "seasonType": 2,
- "state": "pre",
+ "state": "post",
  "lines": {
   "open": {
    "at": "2026-11-13T23:38:17.369Z",
@@ -933,5 +933,9 @@
    ]
   }
  },
- "props": {}
+ "props": {},
+ "final": {
+  "away": 71,
+  "home": 46
+ }
 }

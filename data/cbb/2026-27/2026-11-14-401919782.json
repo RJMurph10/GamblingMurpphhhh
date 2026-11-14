@@ -7,18 +7,18 @@
   "id": "2363",
   "abbr": "MAN",
   "name": "Manhattan Jaspers",
-  "score": 0
+  "score": 3
  },
  "home": {
   "id": "2330",
   "abbr": "LEM",
   "name": "Le Moyne Dolphins",
-  "score": 0
+  "score": 7
  },
  "neutral": false,
  "venue": "Ted Grant Court",
  "seasonType": 2,
- "state": "pre",
+ "state": "in",
  "lines": {
   "open": {
    "at": "2026-11-14T06:26:52.591Z",

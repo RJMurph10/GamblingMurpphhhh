@@ -7,18 +7,18 @@
   "id": "2344",
   "abbr": "LONG",
   "name": "Longwood Lancers",
-  "score": 0
+  "score": 74
  },
  "home": {
   "id": "295",
   "abbr": "ODU",
   "name": "Old Dominion Monarchs",
-  "score": 0
+  "score": 76
  },
  "neutral": false,
  "venue": "Chartway Arena",
  "seasonType": 2,
- "state": "pre",
+ "state": "in",
  "lines": {
   "open": {
    "at": "2026-11-14T03:32:18.870Z",

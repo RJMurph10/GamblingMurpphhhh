@@ -7,18 +7,18 @@
   "id": "322",
   "abbr": "LAF",
   "name": "Lafayette Leopards",
-  "score": 0
+  "score": 58
  },
  "home": {
   "id": "179",
   "abbr": "SBU",
   "name": "St. Bonaventure Bonnies",
-  "score": 0
+  "score": 81
  },
  "neutral": false,
  "venue": "Reilly Center",
  "seasonType": 2,
- "state": "pre",
+ "state": "post",
  "lines": {
   "open": {
    "at": "2026-11-14T06:26:52.591Z",
@@ -867,5 +867,9 @@
    ]
   }
  },
- "props": {}
+ "props": {},
+ "final": {
+  "away": 58,
+  "home": 81
+ }
 }

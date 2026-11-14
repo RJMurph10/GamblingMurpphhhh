@@ -7,18 +7,18 @@
   "id": "2655",
   "abbr": "TULN",
   "name": "Tulane Green Wave",
-  "score": 0
+  "score": 6
  },
  "home": {
   "id": "242",
   "abbr": "RICE",
   "name": "Rice Owls",
-  "score": 0
+  "score": 17
  },
  "neutral": false,
  "venue": "First Community Stadium",
  "seasonType": 2,
- "state": "pre",
+ "state": "in",
  "lines": {
   "open": {
    "at": "2026-11-08T20:31:48.043Z",

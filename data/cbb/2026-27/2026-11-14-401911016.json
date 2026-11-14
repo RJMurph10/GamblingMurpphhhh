@@ -7,18 +7,18 @@
   "id": "2117",
   "abbr": "CMU",
   "name": "Central Michigan Chippewas",
-  "score": 0
+  "score": 68
  },
  "home": {
   "id": "94",
   "abbr": "NKU",
   "name": "Northern Kentucky Norse",
-  "score": 0
+  "score": 57
  },
  "neutral": false,
  "venue": "Truist Arena",
  "seasonType": 2,
- "state": "pre",
+ "state": "post",
  "lines": {
   "open": {
    "at": "2026-11-13T23:38:17.369Z",
@@ -933,5 +933,9 @@
    ]
   }
  },
- "props": {}
+ "props": {},
+ "final": {
+  "away": 68,
+  "home": 57
+ }
 }

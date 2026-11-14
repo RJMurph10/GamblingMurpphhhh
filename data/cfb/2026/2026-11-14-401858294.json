@@ -7,18 +7,18 @@
   "id": "103",
   "abbr": "BC",
   "name": "Boston College Eagles",
-  "score": 0
+  "score": 7
  },
  "home": {
   "id": "87",
   "abbr": "ND",
   "name": "Notre Dame Fighting Irish",
-  "score": 0
+  "score": 38
  },
  "neutral": false,
  "venue": "Notre Dame Stadium",
  "seasonType": 2,
- "state": "pre",
+ "state": "in",
  "lines": {
   "open": {
    "at": "2026-11-08T15:19:15.044Z",

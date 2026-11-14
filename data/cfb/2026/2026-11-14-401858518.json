@@ -7,18 +7,18 @@
   "id": "30",
   "abbr": "USC",
   "name": "USC Trojans",
-  "score": 0
+  "score": 13
  },
  "home": {
   "id": "84",
   "abbr": "IU",
   "name": "Indiana Hoosiers",
-  "score": 0
+  "score": 20
  },
  "neutral": false,
  "venue": "Memorial Stadium (Bloomington, IN)",
  "seasonType": 2,
- "state": "pre",
+ "state": "in",
  "lines": {
   "open": {
    "at": "2026-11-07T20:56:35.209Z",

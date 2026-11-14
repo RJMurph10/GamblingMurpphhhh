@@ -7,18 +7,18 @@
   "id": "2649",
   "abbr": "TOL",
   "name": "Toledo Rockets",
-  "score": 0
+  "score": 85
  },
  "home": {
   "id": "2174",
   "abbr": "DETM",
   "name": "Detroit Mercy Titans",
-  "score": 0
+  "score": 72
  },
  "neutral": false,
  "venue": "Calihan Hall",
  "seasonType": 2,
- "state": "pre",
+ "state": "post",
  "lines": {
   "open": {
    "at": "2026-11-13T23:38:17.369Z",
@@ -933,5 +933,9 @@
    ]
   }
  },
- "props": {}
+ "props": {},
+ "final": {
+  "away": 85,
+  "home": 72
+ }
 }

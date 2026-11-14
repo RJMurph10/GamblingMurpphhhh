@@ -7,18 +7,18 @@
   "id": "130",
   "abbr": "MICH",
   "name": "Michigan Wolverines",
-  "score": 0
+  "score": 7
  },
  "home": {
   "id": "2483",
   "abbr": "ORE",
   "name": "Oregon Ducks",
-  "score": 0
+  "score": 21
  },
  "neutral": false,
  "venue": "Autzen Stadium",
  "seasonType": 2,
- "state": "pre",
+ "state": "in",
  "lines": {
   "open": {
    "at": "2026-11-08T07:27:09.725Z",
