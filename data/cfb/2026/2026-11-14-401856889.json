@@ -7,13 +7,13 @@
   "id": "333",
   "abbr": "ALA",
   "name": "Alabama Crimson Tide",
-  "score": 7
+  "score": 21
  },
  "home": {
   "id": "238",
   "abbr": "VAN",
   "name": "Vanderbilt Commodores",
-  "score": 3
+  "score": 6
  },
  "neutral": false,
  "venue": "FirstBank Stadium",

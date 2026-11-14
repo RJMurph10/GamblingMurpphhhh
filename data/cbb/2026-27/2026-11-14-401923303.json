@@ -7,18 +7,18 @@
   "id": "2182",
   "abbr": "DREX",
   "name": "Drexel Dragons",
-  "score": 44
+  "score": 66
  },
  "home": {
   "id": "311",
   "abbr": "ME",
   "name": "Maine Black Bears",
-  "score": 38
+  "score": 64
  },
  "neutral": false,
  "venue": "Skip Chappelle Court in Memorial Gymnasium",
  "seasonType": 2,
- "state": "in",
+ "state": "post",
  "lines": {
   "open": {
    "at": "2026-11-14T03:07:32.138Z",
@@ -395,5 +395,9 @@
    ]
   }
  },
- "props": {}
+ "props": {},
+ "final": {
+  "away": 66,
+  "home": 64
+ }
 }

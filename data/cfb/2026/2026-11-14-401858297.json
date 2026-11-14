@@ -7,13 +7,13 @@
   "id": "59",
   "abbr": "GT",
   "name": "Georgia Tech Yellow Jackets",
-  "score": 13
+  "score": 20
  },
  "home": {
   "id": "228",
   "abbr": "CLEM",
   "name": "Clemson Tigers",
-  "score": 3
+  "score": 6
  },
  "neutral": false,
  "venue": "Memorial Stadium (Clemson, SC)",

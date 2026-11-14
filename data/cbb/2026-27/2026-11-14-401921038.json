@@ -7,18 +7,18 @@
   "id": "2296",
   "abbr": "JKST",
   "name": "Jackson State Tigers",
-  "score": 0
+  "score": 18
  },
  "home": {
   "id": "2737",
   "abbr": "WIN",
   "name": "Winthrop Eagles",
-  "score": 0
+  "score": 19
  },
  "neutral": false,
  "venue": "Winthrop Coliseum",
  "seasonType": 2,
- "state": "pre",
+ "state": "in",
  "lines": {
   "open": {
    "at": "2026-11-14T06:26:52.591Z",

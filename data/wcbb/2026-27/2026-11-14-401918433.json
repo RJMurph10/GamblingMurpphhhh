@@ -7,18 +7,18 @@
   "id": "2627",
   "abbr": "TAR",
   "name": "Tarleton State Texans",
-  "score": 21
+  "score": 35
  },
  "home": {
   "id": "251",
   "abbr": "TEX",
   "name": "Texas Longhorns",
-  "score": 55
+  "score": 91
  },
  "neutral": false,
  "venue": "Moody Center",
  "seasonType": 2,
- "state": "in",
+ "state": "post",
  "lines": {
   "open": {
    "at": "2026-11-14T14:14:03.056Z",
@@ -396,5 +396,9 @@
    ]
   }
  },
- "props": {}
+ "props": {},
+ "final": {
+  "away": 35,
+  "home": 91
+ }
 }
