@@ -7,18 +7,18 @@
   "id": "5",
   "abbr": "UAB",
   "name": "UAB Blazers",
-  "score": 0
+  "score": 10
  },
  "home": {
   "id": "218",
   "abbr": "TEM",
   "name": "Temple Owls",
-  "score": 0
+  "score": 10
  },
  "neutral": false,
  "venue": "Lincoln Financial Field",
  "seasonType": 2,
- "state": "pre",
+ "state": "in",
  "lines": {
   "open": {
    "at": "2026-11-08T20:31:48.043Z",

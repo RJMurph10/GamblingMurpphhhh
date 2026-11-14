@@ -2,23 +2,23 @@
  "id": "401920074",
  "league": "cbb",
  "date": "2026-11-14T18:00Z",
- "name": "BRAD VS GMU",
+ "name": "GMU VS BRAD",
  "away": {
-  "id": "71",
-  "abbr": "BRAD",
-  "name": "Bradley Braves",
-  "score": 0
- },
- "home": {
   "id": "2244",
   "abbr": "GMU",
   "name": "George Mason Patriots",
-  "score": 0
+  "score": 33
+ },
+ "home": {
+  "id": "71",
+  "abbr": "BRAD",
+  "name": "Bradley Braves",
+  "score": 29
  },
  "neutral": true,
  "venue": "McArthur Center",
  "seasonType": 2,
- "state": "pre",
+ "state": "in",
  "lines": {
   "open": {
    "at": "2026-11-13T23:38:17.369Z",

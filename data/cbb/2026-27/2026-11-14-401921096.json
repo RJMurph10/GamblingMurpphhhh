@@ -7,18 +7,18 @@
   "id": "242",
   "abbr": "RICE",
   "name": "Rice Owls",
-  "score": 0
+  "score": 16
  },
  "home": {
   "id": "2617",
   "abbr": "SFA",
   "name": "Stephen F. Austin Lumberjacks",
-  "score": 0
+  "score": 11
  },
  "neutral": false,
  "venue": "William R. Johnson Coliseum",
  "seasonType": 2,
- "state": "pre",
+ "state": "in",
  "lines": {
   "open": {
    "at": "2026-11-14T06:26:52.591Z",

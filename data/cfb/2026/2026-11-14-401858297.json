@@ -7,18 +7,18 @@
   "id": "59",
   "abbr": "GT",
   "name": "Georgia Tech Yellow Jackets",
-  "score": 0
+  "score": 13
  },
  "home": {
   "id": "228",
   "abbr": "CLEM",
   "name": "Clemson Tigers",
-  "score": 0
+  "score": 3
  },
  "neutral": false,
  "venue": "Memorial Stadium (Clemson, SC)",
  "seasonType": 2,
- "state": "pre",
+ "state": "in",
  "lines": {
   "open": {
    "at": "2026-11-08T20:31:48.043Z",

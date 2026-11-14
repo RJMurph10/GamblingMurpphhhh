@@ -7,18 +7,18 @@
   "id": "193",
   "abbr": "M-OH",
   "name": "Miami (OH) RedHawks",
-  "score": 0
+  "score": 9
  },
  "home": {
   "id": "339",
   "abbr": "EVAN",
   "name": "Evansville Purple Aces",
-  "score": 0
+  "score": 6
  },
  "neutral": false,
  "venue": "Ford Center",
  "seasonType": 2,
- "state": "pre",
+ "state": "in",
  "lines": {
   "open": {
    "at": "2026-11-13T23:38:17.369Z",

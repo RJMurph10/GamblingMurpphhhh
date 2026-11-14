@@ -7,18 +7,18 @@
   "id": "150",
   "abbr": "DUKE",
   "name": "Duke Blue Devils",
-  "score": 0
+  "score": 10
  },
  "home": {
   "id": "2390",
   "abbr": "MIA",
   "name": "Miami Hurricanes",
-  "score": 0
+  "score": 16
  },
  "neutral": false,
  "venue": "Hard Rock Stadium",
  "seasonType": 2,
- "state": "pre",
+ "state": "in",
  "lines": {
   "open": {
    "at": "2026-11-08T07:27:09.725Z",

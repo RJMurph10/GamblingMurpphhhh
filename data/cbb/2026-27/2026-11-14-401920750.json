@@ -7,18 +7,18 @@
   "id": "276",
   "abbr": "MRSH",
   "name": "Marshall Thundering Herd",
-  "score": 0
+  "score": 36
  },
  "home": {
   "id": "2754",
   "abbr": "YSU",
   "name": "Youngstown State Penguins",
-  "score": 0
+  "score": 28
  },
  "neutral": false,
  "venue": "Zidian Family Arena at Beeghly Center",
  "seasonType": 2,
- "state": "pre",
+ "state": "in",
  "lines": {
   "open": {
    "at": "2026-11-14T03:07:32.138Z",

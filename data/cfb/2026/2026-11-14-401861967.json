@@ -7,18 +7,18 @@
   "id": "256",
   "abbr": "JMU",
   "name": "James Madison Dukes",
-  "score": 0
+  "score": 13
  },
  "home": {
   "id": "41",
   "abbr": "CONN",
   "name": "UConn Huskies",
-  "score": 0
+  "score": 20
  },
  "neutral": false,
  "venue": "Pratt & Whitney Stadium",
  "seasonType": 2,
- "state": "pre",
+ "state": "in",
  "lines": {
   "open": {
    "at": "2026-11-08T20:31:48.043Z",

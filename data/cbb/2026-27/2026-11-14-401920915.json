@@ -7,18 +7,18 @@
   "id": "2459",
   "abbr": "NIU",
   "name": "Northern Illinois Huskies",
-  "score": 0
+  "score": 8
  },
  "home": {
   "id": "91",
   "abbr": "BELL",
   "name": "Bellarmine Knights",
-  "score": 0
+  "score": 7
  },
  "neutral": false,
  "venue": "Knights Hall",
  "seasonType": 2,
- "state": "pre",
+ "state": "in",
  "lines": {
   "open": {
    "at": "2026-11-14T06:26:52.591Z",

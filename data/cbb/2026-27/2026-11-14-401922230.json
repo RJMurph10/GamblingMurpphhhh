@@ -7,18 +7,18 @@
   "id": "2747",
   "abbr": "WOF",
   "name": "Wofford Terriers",
-  "score": 0
+  "score": 7
  },
  "home": {
   "id": "2511",
   "abbr": "QUC",
   "name": "Queens University Royals",
-  "score": 0
+  "score": 5
  },
  "neutral": false,
  "venue": "Curry Arena",
  "seasonType": 2,
- "state": "pre",
+ "state": "in",
  "lines": {
   "open": {
    "at": "2026-11-14T03:32:18.870Z",

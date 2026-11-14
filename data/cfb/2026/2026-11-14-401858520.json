@@ -7,18 +7,18 @@
   "id": "275",
   "abbr": "WIS",
   "name": "Wisconsin Badgers",
-  "score": 0
+  "score": 10
  },
  "home": {
   "id": "120",
   "abbr": "MD",
   "name": "Maryland Terrapins",
-  "score": 0
+  "score": 14
  },
  "neutral": false,
  "venue": "SECU Stadium",
  "seasonType": 2,
- "state": "pre",
+ "state": "in",
  "lines": {
   "open": {
    "at": "2026-11-08T20:31:48.043Z",

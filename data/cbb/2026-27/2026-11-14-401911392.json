@@ -7,18 +7,18 @@
   "id": "2241",
   "abbr": "GWEB",
   "name": "Gardner-Webb Runnin' Bulldogs",
-  "score": 0
+  "score": 6
  },
  "home": {
   "id": "2579",
   "abbr": "SC",
   "name": "South Carolina Gamecocks",
-  "score": 0
+  "score": 10
  },
  "neutral": false,
  "venue": "Colonial Life Arena",
  "seasonType": 2,
- "state": "pre",
+ "state": "in",
  "lines": {
   "open": {
    "at": "2026-11-14T06:26:52.591Z",

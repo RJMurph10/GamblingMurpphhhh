@@ -7,18 +7,18 @@
   "id": "284",
   "abbr": "STO",
   "name": "Stonehill Skyhawks",
-  "score": 0
+  "score": 5
  },
  "home": {
   "id": "2641",
   "abbr": "TTU",
   "name": "Texas Tech Red Raiders",
-  "score": 0
+  "score": 8
  },
  "neutral": false,
  "venue": "United Supermarkets Arena",
  "seasonType": 2,
- "state": "pre",
+ "state": "in",
  "lines": {
   "open": {
    "at": "2026-11-14T03:32:18.870Z",

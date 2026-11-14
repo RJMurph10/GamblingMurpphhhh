@@ -7,18 +7,18 @@
   "id": "2655",
   "abbr": "TULN",
   "name": "Tulane Green Wave",
-  "score": 0
+  "score": 63
  },
  "home": {
   "id": "2006",
   "abbr": "AKR",
   "name": "Akron Zips",
-  "score": 0
+  "score": 65
  },
  "neutral": false,
  "venue": "James A. Rhodes Arena",
  "seasonType": 2,
- "state": "pre",
+ "state": "post",
  "lines": {
   "open": {
    "at": "2026-11-13T23:38:17.369Z",
@@ -935,5 +935,9 @@
    ]
   }
  },
- "props": {}
+ "props": {},
+ "final": {
+  "away": 63,
+  "home": 65
+ }
 }

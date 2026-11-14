@@ -7,18 +7,18 @@
   "id": "135",
   "abbr": "MINN",
   "name": "Minnesota Golden Gophers",
-  "score": 0
+  "score": 8
  },
  "home": {
   "id": "2306",
   "abbr": "KSU",
   "name": "Kansas State Wildcats",
-  "score": 0
+  "score": 8
  },
  "neutral": true,
  "venue": "Sanford Pentagon",
  "seasonType": 2,
- "state": "pre",
+ "state": "in",
  "lines": {
   "open": {
    "at": "2026-11-14T14:14:03.056Z",

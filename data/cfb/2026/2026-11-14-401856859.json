@@ -7,18 +7,18 @@
   "id": "2132",
   "abbr": "CIN",
   "name": "Cincinnati Bearcats",
-  "score": 0
+  "score": 13
  },
  "home": {
   "id": "66",
   "abbr": "ISU",
   "name": "Iowa State Cyclones",
-  "score": 0
+  "score": 31
  },
  "neutral": false,
  "venue": "Jack Trice Stadium",
  "seasonType": 2,
- "state": "pre",
+ "state": "in",
  "lines": {
   "open": {
    "at": "2026-11-08T15:19:15.044Z",

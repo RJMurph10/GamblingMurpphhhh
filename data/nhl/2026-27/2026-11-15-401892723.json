@@ -1,0 +1,751 @@
+{
+ "id": "401892723",
+ "league": "nhl",
+ "date": "2026-11-16T01:00Z",
+ "name": "CGY @ ANA",
+ "away": {
+  "id": "3",
+  "abbr": "CGY",
+  "name": "Calgary Flames",
+  "score": 0
+ },
+ "home": {
+  "id": "25",
+  "abbr": "ANA",
+  "name": "Anaheim Ducks",
+  "score": 0
+ },
+ "neutral": false,
+ "venue": "Honda Center",
+ "seasonType": 2,
+ "state": "pre",
+ "lines": {
+  "open": {
+   "at": "2026-11-14T19:14:20.173Z",
+   "scoreboard": [
+    {
+     "provider": {
+      "id": "100",
+      "name": "DraftKings",
+      "priority": 1
+     },
+     "details": "ANA -155",
+     "overUnder": 6.5,
+     "spread": -1.5,
+     "awayTeamOdds": {
+      "favorite": false,
+      "underdog": true,
+      "team": {
+       "id": "3",
+       "uid": "s:70~l:90~t:3",
+       "abbreviation": "CGY",
+       "name": "Flames",
+       "displayName": "Calgary Flames",
+       "logo": "https://a.espncdn.com/i/teamlogos/nhl/500/scoreboard/cgy.png"
+      },
+      "favoriteAtOpen": false
+     },
+     "homeTeamOdds": {
+      "favorite": true,
+      "underdog": false,
+      "team": {
+       "id": "25",
+       "uid": "s:70~l:90~t:25",
+       "abbreviation": "ANA",
+       "name": "Ducks",
+       "displayName": "Anaheim Ducks",
+       "logo": "https://a.espncdn.com/i/teamlogos/nhl/500/scoreboard/ana.png"
+      },
+      "favoriteAtOpen": true
+     },
+     "moneyline": {
+      "displayName": "Moneyline",
+      "shortDisplayName": "ML",
+      "home": {
+       "close": {
+        "odds": "-155",
+        "link": {
+         "language": "en-US",
+         "rel": [
+          "home",
+          "desktop",
+          "bets",
+          "draftkings"
+         ],
+         "href": "https://sportsbook.draftkings.com/gateway?s=__s__&wpcid=__wpcid__&wpsrc=413&wpcn=ESPN&wpscn=Widget&wpcrn=BetSlipDeepLink&wpscid=__wpscid__&wpcrid=xx&preurl=https%3A%2F%2Fsportsbook.draftkings.com%2Fevent%2F34992061%3Foutcomes%3D0ML87172469_1",
+         "text": "Home Bet",
+         "shortText": "Home Bet",
+         "isExternal": true,
+         "isPremium": false,
+         "tracking": {
+          "campaign": "betting-integrations",
+          "tags": {
+           "league": "nhl",
+           "sport": "hockey",
+           "gameId": 401892723,
+           "betSide": "home",
+           "betType": "straight"
+          }
+         }
+        }
+       },
+       "open": {
+        "odds": "-155"
+       }
+      },
+      "away": {
+       "close": {
+        "odds": "+130",
+        "link": {
+         "language": "en-US",
+         "rel": [
+          "away",
+          "desktop",
+          "bets",
+          "draftkings"
+         ],
+         "href": "https://sportsbook.draftkings.com/gateway?s=__s__&wpcid=__wpcid__&wpsrc=413&wpcn=ESPN&wpscn=Widget&wpcrn=BetSlipDeepLink&wpscid=__wpscid__&wpcrid=xx&preurl=https%3A%2F%2Fsportsbook.draftkings.com%2Fevent%2F34992061%3Foutcomes%3D0ML87172469_3",
+         "text": "Away Bet",
+         "shortText": "Away Bet",
+         "isExternal": true,
+         "isPremium": false,
+         "tracking": {
+          "campaign": "betting-integrations",
+          "tags": {
+           "league": "nhl",
+           "sport": "hockey",
+           "gameId": 401892723,
+           "betSide": "away",
+           "betType": "straight"
+          }
+         }
+        }
+       },
+       "open": {
+        "odds": "+130"
+       }
+      }
+     },
+     "pointSpread": {
+      "displayName": "Spread",
+      "shortDisplayName": "Spread",
+      "home": {
+       "close": {
+        "line": "-1.5",
+        "odds": "+145",
+        "link": {
+         "language": "en-US",
+         "rel": [
+          "homeSpread",
+          "desktop",
+          "bets"
+         ],
+         "href": "https://sportsbook.draftkings.com/gateway?s=__s__&wpcid=__wpcid__&wpsrc=413&wpcn=ESPN&wpscn=Widget&wpcrn=BetSlipDeepLink&wpscid=__wpscid__&wpcrid=xx&preurl=https%3A%2F%2Fsportsbook.draftkings.com%2Fevent%2F34992061%3Foutcomes%3D0HC87172469N150_1",
+         "text": "Home Point Spread",
+         "shortText": "Home Point Spread",
+         "isExternal": true,
+         "isPremium": false,
+         "tracking": {
+          "campaign": "betting-integrations",
+          "tags": {
+           "league": "nhl",
+           "sport": "hockey",
+           "gameId": 401892723,
+           "betSide": "none",
+           "betType": "straight",
+           "betDetails": "Spread:ANA-1.5"
+          }
+         }
+        }
+       },
+       "open": {
+        "line": "-1.5",
+        "odds": "+145"
+       }
+      },
+      "away": {
+       "close": {
+        "line": "+1.5",
+        "odds": "-175",
+        "link": {
+         "language": "en-US",
+         "rel": [
+          "awaySpread",
+          "desktop",
+          "bets"
+         ],
+         "href": "https://sportsbook.draftkings.com/gateway?s=__s__&wpcid=__wpcid__&wpsrc=413&wpcn=ESPN&wpscn=Widget&wpcrn=BetSlipDeepLink&wpscid=__wpscid__&wpcrid=xx&preurl=https%3A%2F%2Fsportsbook.draftkings.com%2Fevent%2F34992061%3Foutcomes%3D0HC87172469P150_3",
+         "text": "Away Point Spread",
+         "shortText": "Away Point Spread",
+         "isExternal": true,
+         "isPremium": false,
+         "tracking": {
+          "campaign": "betting-integrations",
+          "tags": {
+           "league": "nhl",
+           "sport": "hockey",
+           "gameId": 401892723,
+           "betSide": "none",
+           "betType": "straight",
+           "betDetails": "Spread:CGY+1.5"
+          }
+         }
+        }
+       },
+       "open": {
+        "line": "+1.5",
+        "odds": "-175"
+       }
+      }
+     },
+     "total": {
+      "displayName": "Total",
+      "shortDisplayName": "Total",
+      "over": {
+       "close": {
+        "line": "o6.5",
+        "odds": "-135",
+        "link": {
+         "language": "en-US",
+         "rel": [
+          "over",
+          "desktop",
+          "bets"
+         ],
+         "href": "https://sportsbook.draftkings.com/gateway?s=__s__&wpcid=__wpcid__&wpsrc=413&wpcn=ESPN&wpscn=Widget&wpcrn=BetSlipDeepLink&wpscid=__wpscid__&wpcrid=xx&preurl=https%3A%2F%2Fsportsbook.draftkings.com%2Fevent%2F34992061%3Foutcomes%3D0OU87172469O650_1",
+         "text": "Over Odds",
+         "shortText": "Over Odds",
+         "isExternal": true,
+         "isPremium": false,
+         "tracking": {
+          "campaign": "betting-integrations",
+          "tags": {
+           "league": "nhl",
+           "sport": "hockey",
+           "gameId": 401892723,
+           "betSide": "over",
+           "betType": "straight",
+           "betDetails": "Over:6.5"
+          }
+         }
+        }
+       },
+       "open": {
+        "line": "o6.5",
+        "odds": "-135"
+       }
+      },
+      "under": {
+       "close": {
+        "line": "u6.5",
+        "odds": "+114",
+        "link": {
+         "language": "en-US",
+         "rel": [
+          "under",
+          "desktop",
+          "bets"
+         ],
+         "href": "https://sportsbook.draftkings.com/gateway?s=__s__&wpcid=__wpcid__&wpsrc=413&wpcn=ESPN&wpscn=Widget&wpcrn=BetSlipDeepLink&wpscid=__wpscid__&wpcrid=xx&preurl=https%3A%2F%2Fsportsbook.draftkings.com%2Fevent%2F34992061%3Foutcomes%3D0OU87172469U650_3",
+         "text": "Under Odds",
+         "shortText": "Under Odds",
+         "isExternal": true,
+         "isPremium": false,
+         "tracking": {
+          "campaign": "betting-integrations",
+          "tags": {
+           "league": "nhl",
+           "sport": "hockey",
+           "gameId": 401892723,
+           "betSide": "under",
+           "betType": "straight",
+           "betDetails": "Under:6.5"
+          }
+         }
+        }
+       },
+       "open": {
+        "line": "u6.5",
+        "odds": "+114"
+       }
+      }
+     },
+     "link": {
+      "language": "en-US",
+      "rel": [
+       "game",
+       "desktop",
+       "bets"
+      ],
+      "href": "https://sportsbook.draftkings.com/gateway?s=__s__&wpcid=__wpcid__&wpsrc=413&wpcn=ESPN&wpscn=Widget&wpcrn=BetSlipDeepLink&wpscid=__wpscid__&wpcrid=xx&preurl=https%3A%2F%2Fsportsbook.draftkings.com%2Fevent%2F34992061",
+      "text": "See More Odds",
+      "shortText": "Game",
+      "isExternal": true,
+      "isPremium": false,
+      "tracking": {
+       "campaign": "betting-integrations",
+       "tags": {
+        "league": "nhl",
+        "sport": "hockey",
+        "gameId": 401892723,
+        "betSide": "none",
+        "betType": "straight"
+       }
+      }
+     },
+     "header": {
+      "logo": {
+       "dark": "https://a.espncdn.com/i/espnbet/dark/espn-bet-square-off.svg",
+       "light": "https://a.espncdn.com/i/espnbet/espn-bet-square-off.svg",
+       "exclusivesLogoDark": "https://a.espncdn.com/i/espnbet/espn-bet-square-mint.svg",
+       "exclusivesLogoLight": "https://a.espncdn.com/i/espnbet/espn-bet-square-mint.svg"
+      },
+      "text": "Game Odds"
+     },
+     "footer": {
+      "disclaimer": "GAMBLING PROBLEM? CALL 1-800-GAMBLER or 1-800-MY-RESET, (800) 327-5050 or visit gamblinghelplinema.org (MA). Call 877-8-HOPENY/text HOPENY (467369) (NY). Call 888-789-7777/visit ccpg.org (CT), or visit www.mdgamblinghelp.org (MD), 1-800-981-0023 (PR). 21+ and present in most states. (18+ DC/KY/NH/PR/WY). Void in ONT. Eligibility restrictions apply. Terms: draftkings.com/sportsbook. On behalf of Boot Hill Casino (KS). Pass-thru of per wager tax may apply in IL."
+     }
+    }
+   ],
+   "books": [
+    {
+     "provider": {
+      "id": "100",
+      "name": "DraftKings",
+      "priority": 1
+     },
+     "details": "ANA -155",
+     "overUnder": 6.5,
+     "spread": -1.5,
+     "overOdds": -135,
+     "underOdds": 114,
+     "awayTeamOdds": {
+      "favorite": false,
+      "underdog": true,
+      "moneyLine": 130,
+      "spreadOdds": -175,
+      "open": {
+       "favorite": false,
+       "pointSpread": {
+        "alternateDisplayValue": "+1.5",
+        "american": "+1.5"
+       },
+       "spread": {
+        "value": 1.57,
+        "displayValue": "4/7",
+        "alternateDisplayValue": "-175",
+        "decimal": 1.57,
+        "fraction": "4/7",
+        "american": "-175"
+       },
+       "moneyLine": {
+        "value": 2.3,
+        "displayValue": "13/10",
+        "alternateDisplayValue": "+130",
+        "decimal": 2.3,
+        "fraction": "13/10",
+        "american": "+130"
+       }
+      },
+      "current": {
+       "pointSpread": {
+        "alternateDisplayValue": "+1.5",
+        "american": "+1.5"
+       },
+       "spread": {
+        "value": 1.57,
+        "displayValue": "4/7",
+        "alternateDisplayValue": "-175",
+        "decimal": 1.57,
+        "fraction": "4/7",
+        "american": "-175"
+       },
+       "moneyLine": {
+        "value": 2.3,
+        "displayValue": "13/10",
+        "alternateDisplayValue": "+130",
+        "decimal": 2.3,
+        "fraction": "13/10",
+        "american": "+130"
+       }
+      },
+      "team": {
+       "id": "3"
+      }
+     },
+     "homeTeamOdds": {
+      "favorite": true,
+      "underdog": false,
+      "moneyLine": -155,
+      "spreadOdds": 145,
+      "open": {
+       "favorite": true,
+       "pointSpread": {
+        "alternateDisplayValue": "-1.5",
+        "american": "-1.5"
+       },
+       "spread": {
+        "value": 2.45,
+        "displayValue": "29/20",
+        "alternateDisplayValue": "+145",
+        "decimal": 2.45,
+        "fraction": "29/20",
+        "american": "+145"
+       },
+       "moneyLine": {
+        "value": 1.64,
+        "displayValue": "20/31",
+        "alternateDisplayValue": "-155",
+        "decimal": 1.64,
+        "fraction": "20/31",
+        "american": "-155"
+       }
+      },
+      "current": {
+       "pointSpread": {
+        "alternateDisplayValue": "-1.5",
+        "american": "-1.5"
+       },
+       "spread": {
+        "value": 2.45,
+        "displayValue": "29/20",
+        "alternateDisplayValue": "+145",
+        "decimal": 2.45,
+        "fraction": "29/20",
+        "american": "+145"
+       },
+       "moneyLine": {
+        "value": 1.64,
+        "displayValue": "20/31",
+        "alternateDisplayValue": "-155",
+        "decimal": 1.64,
+        "fraction": "20/31",
+        "american": "-155"
+       }
+      },
+      "team": {
+       "id": "25"
+      }
+     },
+     "moneylineWinner": false,
+     "spreadWinner": false,
+     "open": {
+      "over": {
+       "value": 1.74,
+       "displayValue": "20/27",
+       "alternateDisplayValue": "-135",
+       "decimal": 1.74,
+       "fraction": "20/27",
+       "american": "-135"
+      },
+      "under": {
+       "value": 2.14,
+       "displayValue": "57/50",
+       "alternateDisplayValue": "+114",
+       "decimal": 2.14,
+       "fraction": "57/50",
+       "american": "+114"
+      },
+      "total": {
+       "alternateDisplayValue": "6.5",
+       "american": "6.5"
+      }
+     },
+     "current": {
+      "over": {
+       "value": 1.74,
+       "displayValue": "20/27",
+       "alternateDisplayValue": "-135",
+       "decimal": 1.74,
+       "fraction": "20/27",
+       "american": "-135"
+      },
+      "under": {
+       "value": 2.14,
+       "displayValue": "57/50",
+       "alternateDisplayValue": "+114",
+       "decimal": 2.14,
+       "fraction": "57/50",
+       "american": "+114"
+      },
+      "total": {
+       "alternateDisplayValue": "6.5",
+       "american": "6.5"
+      }
+     }
+    }
+   ]
+  }
+ },
+ "props": {
+  "open": {
+   "at": "2026-11-14T19:14:20.173Z",
+   "provider": 100,
+   "count": 1,
+   "rows": [
+  {"a":null,"t":"Will There Be Overtime?","ti":"153","cur":[null,300,null]}
+ ],
+   "sample": [
+    {
+     "competition": {
+      "id": "401892723"
+     },
+     "provider": {
+      "id": "100"
+     },
+     "type": {
+      "id": "153",
+      "name": "Will There Be Overtime?"
+     },
+     "odds": {
+      "american": {
+       "value": "+300",
+       "open": "+300"
+      },
+      "decimal": {
+       "value": "4.00",
+       "open": "4.00"
+      },
+      "fraction": {
+       "value": "3/1",
+       "open": "3/1"
+      },
+      "total": {}
+     },
+     "lastUpdated": "2026-11-14T19:30Z",
+     "current": {},
+     "open": {}
+    }
+   ]
+  },
+  "latest": {
+   "at": "2026-11-14T19:14:20.173Z",
+   "count": 1,
+   "rows": [
+  {"a":null,"t":"Will There Be Overtime?","ti":"153","cur":[null,300,null]}
+ ]
+  }
+ },
+ "names": {
+  "3797": [
+   "Mikael Backlund",
+   "CGY"
+  ],
+  "4968": [
+   "Alex Killorn",
+   "ANA"
+  ],
+  "5831": [
+   "Mikael Granlund",
+   "ANA"
+  ],
+  "2562606": [
+   "Jonathan Huberdeau",
+   "CGY"
+  ],
+  "2562636": [
+   "Ryan Strome",
+   "CGY"
+  ],
+  "3025608": [
+   "Nick Jensen",
+   "ANA"
+  ],
+  "3149612": [
+   "Joel Hanley",
+   "CGY"
+  ],
+  "3149839": [
+   "Jake Middleton",
+   "CGY"
+  ],
+  "3151137": [
+   "Ville Husso",
+   "ANA"
+  ],
+  "3527554": [
+   "Frank Vatrano",
+   "ANA"
+  ],
+  "3648015": [
+   "A.J. Greer",
+   "ANA"
+  ],
+  "3942905": [
+   "Troy Terry",
+   "ANA"
+  ],
+  "4233668": [
+   "Ryan Poehling",
+   "ANA"
+  ],
+  "4233685": [
+   "Morgan Frost",
+   "CGY"
+  ],
+  "4312877": [
+   "Zach Whitecloud",
+   "CGY"
+  ],
+  "4319911": [
+   "Devin Cooley",
+   "CGY"
+  ],
+  "4319916": [
+   "Ian Mitchell",
+   "ANA"
+  ],
+  "4352750": [
+   "Joel Farabee",
+   "CGY"
+  ],
+  "4378686": [
+   "Kevin Bahl",
+   "CGY"
+  ],
+  "4392769": [
+   "Brayden Pachal",
+   "CGY"
+  ],
+  "4392883": [
+   "Martin Pospisil",
+   "CGY"
+  ],
+  "4565262": [
+   "Jackson LaCombe",
+   "ANA"
+  ],
+  "4565270": [
+   "Drew Helleson",
+   "ANA"
+  ],
+  "4587843": [
+   "Yegor Sharangovich",
+   "CGY"
+  ],
+  "4587952": [
+   "Dustin Wolf",
+   "CGY"
+  ],
+  "4588165": [
+   "Lukas Dostal",
+   "ANA"
+  ],
+  "4697441": [
+   "Sam Colangelo",
+   "ANA"
+  ],
+  "4697453": [
+   "Yan Kuznetsov",
+   "CGY"
+  ],
+  "4755684": [
+   "Judd Caulfield",
+   "ANA"
+  ],
+  "4755696": [
+   "Nikita Nesterenko",
+   "ANA"
+  ],
+  "4874730": [
+   "Matt Coronato",
+   "CGY"
+  ],
+  "4874733": [
+   "Brennan Othmann",
+   "CGY"
+  ],
+  "4874893": [
+   "William Stromgren",
+   "CGY"
+  ],
+  "4895214": [
+   "Jeff Malott",
+   "ANA"
+  ],
+  "4915344": [
+   "Simon Nemec",
+   "CGY"
+  ],
+  "4996085": [
+   "Tim Washe",
+   "ANA"
+  ],
+  "5073306": [
+   "Adam Klapka",
+   "CGY"
+  ],
+  "5080145": [
+   "Cutter Gauthier",
+   "ANA"
+  ],
+  "5080154": [
+   "Pavel Mintyukov",
+   "ANA"
+  ],
+  "5080210": [
+   "Noah Warren",
+   "ANA"
+  ],
+  "5080220": [
+   "Tristan Luneau",
+   "ANA"
+  ],
+  "5103702": [
+   "Tyson Hinds",
+   "ANA"
+  ],
+  "5149153": [
+   "Leo Carlsson",
+   "ANA"
+  ],
+  "5149191": [
+   "Samuel Honzek",
+   "CGY"
+  ],
+  "5173614": [
+   "Travis Mitchell",
+   "ANA"
+  ],
+  "5188523": [
+   "Ian Moore",
+   "ANA"
+  ],
+  "5188608": [
+   "Jonathan Castagna",
+   "CGY"
+  ],
+  "5188613": [
+   "Aydar Suniev",
+   "CGY"
+  ],
+  "5212753": [
+   "Maxim Tsyplakov",
+   "CGY"
+  ],
+  "5216858": [
+   "Beckett Sennecke",
+   "ANA"
+  ],
+  "5216878": [
+   "Zayne Parekh",
+   "CGY"
+  ],
+  "5216897": [
+   "Matvei Gridin",
+   "CGY"
+  ],
+  "5291946": [
+   "Roger McQueen",
+   "ANA"
+  ],
+  "5361658": [
+   "Nikita Klepov",
+   "ANA"
+  ],
+  "5452947": [
+   "Elijah Neuenschwander",
+   "ANA"
+  ]
+ }
+}

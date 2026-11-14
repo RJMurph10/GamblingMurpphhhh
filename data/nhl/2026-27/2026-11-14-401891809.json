@@ -13,12 +13,12 @@
   "id": "7",
   "abbr": "CAR",
   "name": "Carolina Hurricanes",
-  "score": 0
+  "score": 3
  },
  "neutral": true,
  "venue": "Veikkaus Arena",
  "seasonType": 2,
- "state": "pre",
+ "state": "in",
  "lines": {
   "open": {
    "at": "2026-11-13T17:49:04.100Z",
