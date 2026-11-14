@@ -44,15 +44,33 @@ type EspnEvent = {
 
 const isAllStar = (t?: EspnTeam) => /^(east|west|team\b|all-?star)/i.test(t?.displayName ?? "");
 
-const toTeam = (t: EspnTeam): PllTeam => ({
-  id: String(t.id),
-  abbr: t.abbreviation ?? "",
-  name: t.displayName ?? t.name ?? "",
-  short: t.name ?? t.shortDisplayName ?? t.displayName ?? "",
-  location: t.location ?? "",
-  color: t.color ? `#${t.color}` : undefined,
-  logo: t.logos?.[0]?.href ?? t.logo,
-});
+/**
+ * Chrome (2019-2023; the franchise became the Denver Outlaws, ESPN id 122896, in 2024). ESPN keeps Chrome's
+ * id 127635 but its logo now shows the Outlaws' art, so Chrome uses its own logo (from the PLL's site,
+ * stored in public/logos).
+ */
+const CHROME: PllTeam = {
+  id: "127635",
+  abbr: "CHR",
+  name: "Chrome Lacrosse Club",
+  short: "Chrome",
+  location: "",
+  color: "#8ad8dc",
+  logo: "/logos/pll-chrome.png",
+};
+
+const toTeam = (t: EspnTeam): PllTeam =>
+  String(t.id) === CHROME.id
+    ? CHROME
+    : {
+        id: String(t.id),
+        abbr: t.abbreviation ?? "",
+        name: t.displayName ?? t.name ?? "",
+        short: t.name ?? t.shortDisplayName ?? t.displayName ?? "",
+        location: t.location ?? "",
+        color: t.color ? `#${t.color}` : undefined,
+        logo: t.logos?.[0]?.href ?? t.logo,
+      };
 
 async function load(year: number): Promise<PllSeason> {
   const [sb, tl] = await Promise.all([
@@ -107,14 +125,7 @@ async function load(year: number): Promise<PllSeason> {
 
 /** Clubs from 2019-2021 that ESPN no longer lists, and the All-Star teams of those years. */
 const OLD_TEAMS: PllTeam[] = [
-  {
-    id: "127635",
-    abbr: "CHR",
-    name: "Chrome Lacrosse Club",
-    short: "Chrome",
-    location: "",
-    logo: "https://a.espncdn.com/i/teamlogos/pll/500/127635.png",
-  },
+  CHROME,
   { id: "as-baptiste", abbr: "BAP", name: "Team Baptiste", short: "Team Baptiste", location: "" },
   { id: "as-rambo", abbr: "RAM", name: "Team Rambo", short: "Team Rambo", location: "" },
   { id: "as-adversaries", abbr: "ADV", name: "Adversaries", short: "Adversaries", location: "" },
