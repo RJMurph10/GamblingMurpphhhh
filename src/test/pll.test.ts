@@ -52,8 +52,8 @@ describe("PLL 2019-2021 history (Wikipedia)", () => {
     expect(season(2021)).toHaveLength(43);
   });
   it("matches the published standings", () => {
-    expect(wins(2019)).toMatchObject({ "127634": 7, "127638": 6, chrome: 2 }); // Chaos 7-3, Whipsnakes 6-4
-    expect(wins(2021)).toMatchObject({ "127637": 6, "127632": 6, chrome: 2 }); // Waterdogs, Atlas 6-3
+    expect(wins(2019)).toMatchObject({ "127634": 7, "127638": 6, "127635": 2 }); // Chaos 7-3, Whipsnakes 6-4
+    expect(wins(2021)).toMatchObject({ "127637": 6, "127632": 6, "127635": 2 }); // Waterdogs, Atlas 6-3
   });
   it("has the champions", () => {
     const last = (y: number) =>

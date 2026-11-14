@@ -107,7 +107,14 @@ async function load(year: number): Promise<PllSeason> {
 
 /** Clubs from 2019-2021 that ESPN no longer lists, and the All-Star teams of those years. */
 const OLD_TEAMS: PllTeam[] = [
-  { id: "chrome", abbr: "CHR", name: "Chrome Lacrosse Club", short: "Chrome", location: "" },
+  {
+    id: "127635",
+    abbr: "CHR",
+    name: "Chrome Lacrosse Club",
+    short: "Chrome",
+    location: "",
+    logo: "https://a.espncdn.com/i/teamlogos/pll/500/127635.png",
+  },
   { id: "as-baptiste", abbr: "BAP", name: "Team Baptiste", short: "Team Baptiste", location: "" },
   { id: "as-rambo", abbr: "RAM", name: "Team Rambo", short: "Team Rambo", location: "" },
   { id: "as-adversaries", abbr: "ADV", name: "Adversaries", short: "Adversaries", location: "" },
