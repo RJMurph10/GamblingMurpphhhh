@@ -1,10 +1,12 @@
-const B = "https://site.api.espn.com/apis/site/v2/sports/lacrosse/pll";
-const t = (await (await fetch(`${B}/teams/127635`)).json()).team;
-console.log("TEAM", JSON.stringify({ n: t.displayName, loc: t.location, logos: t.logos }));
-const c = await (await fetch("https://sports.core.api.espn.com/v2/sports/lacrosse/leagues/pll/seasons/2021/teams/127635")).text();
-console.log("CORE2021", c.slice(0, 1500));
-for (const v of ["500-dark", "scoreboard", "500/scoreboard"]) {
-  const u = `https://a.espncdn.com/i/teamlogos/pll/${v}/127635.png`; const r = await fetch(u); console.log("CDN", u, r.status, (await r.arrayBuffer()).byteLength);
+import { writeFileSync } from "node:fs";
+const out = {};
+const q = async (u) => { try { const r = await fetch(u); return r.ok ? await r.text() : `ERR ${r.status}`; } catch (e) { return `ERR ${e}`; } };
+const cdx = await q("https://web.archive.org/cdx/search/cdx?url=premierlacrosseleague.com/wp-content/uploads/*&filter=original:.*[Cc]hrome.*&filter=mimetype:image/.*&collapse=urlkey&limit=200");
+console.log("CDX", cdx.slice(0, 6000));
+const urls = [...new Set(cdx.split("\n").map((l) => l.split(" ")).filter((p) => p[2]).map((p) => [p[1], p[2]]).filter(([, u]) => /logo/i.test(u)).map(([ts, u]) => `https://web.archive.org/web/${ts}im_/${u}`))].slice(0, 12);
+for (const u of urls) {
+  const r = await fetch(u); const b = Buffer.from(await r.arrayBuffer());
+  console.log("IMG", u, r.status, r.headers.get("content-type"), b.length);
+  if (r.ok) out[u] = { type: r.headers.get("content-type"), b64: b.toString("base64") };
 }
-const w = await (await fetch("https://en.wikipedia.org/w/api.php?action=query&titles=Chrome_Lacrosse_Club&prop=pageimages|images&piprop=original&format=json&formatversion=2&redirects=1", { headers: { "User-Agent": "GamblingNFL research (github.com/RJMurph10/gamblingnfl)" } })).json();
-console.log("WIKI", JSON.stringify(w.query?.pages?.[0]).slice(0, 800));
+writeFileSync("pll_sample.json", JSON.stringify(out));
