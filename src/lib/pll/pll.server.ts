@@ -113,7 +113,8 @@ const OLD_TEAMS: PllTeam[] = [
     name: "Chrome Lacrosse Club",
     short: "Chrome",
     location: "",
-    logo: "https://a.espncdn.com/i/teamlogos/pll/500/127635.png",
+    // ESPN's logo for this id is now the Denver Outlaws' (Chrome's franchise moved there in 2024), and no
+    // source we can use keeps Chrome's own logo, so Chrome shows its CHR badge
   },
   { id: "as-baptiste", abbr: "BAP", name: "Team Baptiste", short: "Team Baptiste", location: "" },
   { id: "as-rambo", abbr: "RAM", name: "Team Rambo", short: "Team Rambo", location: "" },
