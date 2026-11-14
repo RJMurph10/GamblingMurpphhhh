@@ -13,7 +13,7 @@ def clean(s):
     return re.sub(r"\s+", " ", s).strip()
 strip_rs = lambda c: re.sub(r'^\s*(rowspan|colspan)="?\d+"?\s*\|', '', c)
 IDS = {"Archers": "127631", "Atlas": "127632", "Chaos": "127634", "Redwoods": "127636", "Waterdogs": "127637",
-       "Whipsnakes": "127638", "Cannons": "122997", "Chrome": "chrome"}
+       "Whipsnakes": "127638", "Cannons": "122997", "Chrome": "127635"}
 ALLSTAR = {"Team Baptiste": "as-baptiste", "Team Rambo": "as-rambo", "Adversaries": "as-adversaries", "Defenders": "as-defenders"}
 games = []
 for t, w in d.items():
