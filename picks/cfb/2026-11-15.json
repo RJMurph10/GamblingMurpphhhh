@@ -1,6 +1,6 @@
 {
  "day": "2026-11-15",
- "updated": "2026-11-14T18:15:41.772Z",
+ "updated": "2026-11-14T22:32:31.230Z",
  "picks": [
   {
    "id": "401856887-spread-bounce",
@@ -15,9 +15,9 @@
    "best": true,
    "tag": "bounce",
    "firstSeen": "2026-11-14T10:37:59.193Z",
-   "lastSeen": "2026-11-14T18:15:41.772Z",
+   "lastSeen": "2026-11-14T22:32:31.230Z",
    "latest": -2.5,
-   "latestAt": "2026-11-14T18:15:41.772Z"
+   "latestAt": "2026-11-14T22:32:31.230Z"
   },
   {
    "id": "401856887-total-weather",
@@ -34,9 +34,9 @@
    "tag": "weather",
    "note": "10 mph · gusts 16 · rain 0.08 in",
    "firstSeen": "2026-11-14T10:37:59.193Z",
-   "lastSeen": "2026-11-14T18:15:41.772Z",
+   "lastSeen": "2026-11-14T22:32:31.230Z",
    "latest": 48.5,
-   "latestAt": "2026-11-14T18:15:41.772Z"
+   "latestAt": "2026-11-14T22:32:31.230Z"
   }
  ]
 }
