@@ -38,6 +38,9 @@ export interface PllGame {
   season: number;
   home: PllSide;
   away: PllSide;
+  /** Where it was played (2019-2021 tour years, from Wikipedia). */
+  venue?: string;
+  city?: string;
 }
 
 export interface PllSeason {
@@ -126,7 +129,7 @@ export interface PllPulse {
   homeWinPct: number | null;
   avgMargin: number | null;
   oneGoalPct: number | null;
-  /** Average goals (both teams) by quarter. */
+  /** Average goals (both teams) by quarter (empty when the games have no quarter scores). */
   byQuarter: number[];
 }
 
@@ -137,9 +140,14 @@ export function pulse(games: PllGame[]): PllPulse {
   );
   const n = done.length;
   const sum = (f: (g: PllGame) => number) => done.reduce((s, g) => s + f(g), 0);
-  const byQuarter = [0, 1, 2, 3].map((q) =>
-    n ? sum((g) => (g.home.quarters[q] ?? 0) + (g.away.quarters[q] ?? 0)) / n : 0,
-  );
+  const withQ = done.filter((g) => g.home.quarters.length >= 4);
+  const byQuarter = withQ.length
+    ? [0, 1, 2, 3].map(
+        (q) =>
+          withQ.reduce((s, g) => s + (g.home.quarters[q] ?? 0) + (g.away.quarters[q] ?? 0), 0) /
+          withQ.length,
+      )
+    : [];
   return {
     games: n,
     goalsPerGame: n ? sum((g) => g.home.score! + g.away.score!) / n : null,

@@ -43,7 +43,7 @@ export function PllSeasonPicker({
   onChange: (s: number) => void;
 }) {
   return (
-    <div className="flex gap-1" role="tablist" aria-label="Season">
+    <div className="flex flex-wrap gap-1" role="tablist" aria-label="Season">
       {PLL_SEASONS.map((s) => (
         <button
           key={s}
@@ -141,6 +141,25 @@ export function PllGamesTable({
         </tbody>
       </table>
     </div>
+  );
+}
+
+/** Credit for the 2019-2021 results (Wikipedia, CC BY-SA 4.0); nothing for ESPN seasons. */
+export function PllSourceNote({ season }: { season: number }) {
+  if (season > 2021) return null;
+  return (
+    <p className="font-mono text-[10px] text-faint">
+      {season} results from Wikipedia&apos;s{" "}
+      <a
+        className="underline hover:text-mute"
+        href={`https://en.wikipedia.org/wiki/${season}_Premier_Lacrosse_League_season`}
+        target="_blank"
+        rel="noreferrer"
+      >
+        {season} Premier Lacrosse League season
+      </a>{" "}
+      (CC BY-SA 4.0): final scores, overtime and venues; no scores by quarter. ESPN covers 2022 on.
+    </p>
   );
 }
 

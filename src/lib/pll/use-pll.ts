@@ -6,8 +6,8 @@ export function currentPllSeason(now = new Date()): number {
   return now.getUTCMonth() >= 1 ? now.getUTCFullYear() : now.getUTCFullYear() - 1;
 }
 
-/** Seasons ESPN has PLL games for. */
-export const PLL_SEASONS = Array.from({ length: currentPllSeason() - 2023 }, (_, i) => 2024 + i);
+/** Every PLL season: 2019-2021 from Wikipedia, 2022 on from ESPN. */
+export const PLL_SEASONS = Array.from({ length: currentPllSeason() - 2018 }, (_, i) => 2019 + i);
 
 export const usePllSeason = (season: number) =>
   useQuery({

@@ -1,7 +1,13 @@
 import { useMemo, useState } from "react";
 import { createFileRoute, Link } from "@tanstack/react-router";
 import { PageTitle, Panel, PanelHeader, StatCard } from "@/components/shared/booth";
-import { PllGamesTable, PllLinesNote, PllLogo, PllSeasonPicker } from "@/components/pll/PllBits";
+import {
+  PllGamesTable,
+  PllLinesNote,
+  PllLogo,
+  PllSeasonPicker,
+  PllSourceNote,
+} from "@/components/pll/PllBits";
 import { pulse, standings } from "@/lib/pll/pll";
 import { currentPllSeason, usePllSeason } from "@/lib/pll/use-pll";
 
@@ -62,7 +68,11 @@ function PllDashboard() {
         <StatCard
           label="One-goal games"
           value={pct(p.oneGoalPct)}
-          note={`Q1–Q4 goals: ${p.byQuarter.map((x) => x.toFixed(1)).join(" / ")}`}
+          note={
+            p.byQuarter.length
+              ? `Q1–Q4 goals: ${p.byQuarter.map((x) => x.toFixed(1)).join(" / ")}`
+              : undefined
+          }
         />
       </div>
 
@@ -157,7 +167,10 @@ function PllDashboard() {
             />
           </Panel>
           <Panel>
-            <PllLinesNote />
+            <div className="space-y-2">
+              <PllLinesNote />
+              <PllSourceNote season={season} />
+            </div>
           </Panel>
         </div>
       </div>

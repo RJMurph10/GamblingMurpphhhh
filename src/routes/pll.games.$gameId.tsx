@@ -1,32 +1,39 @@
 import { useMemo } from "react";
+import { useQueries } from "@tanstack/react-query";
 import { createFileRoute, Link } from "@tanstack/react-router";
 import { Panel, PanelHeader } from "@/components/shared/booth";
-import { PllLinesNote, PllLogo } from "@/components/pll/PllBits";
+import { PllLinesNote, PllLogo, PllSourceNote } from "@/components/pll/PllBits";
 import { PHASE_LABEL, pllDate, teamOf, type PllGame } from "@/lib/pll/pll";
-import { currentPllSeason, PLL_SEASONS, usePllSeason } from "@/lib/pll/use-pll";
+import { getPllSeason } from "@/lib/pll/pll.functions";
+import { PLL_SEASONS } from "@/lib/pll/use-pll";
 
 export const Route = createFileRoute("/pll/games/$gameId")({
   head: () => ({ meta: [{ title: "Game — GamblingPLL" }] }),
   component: PllGamePage,
 });
 
-/** Finds the game in this season, else earlier ones. */
+/** Finds the game: 2019-2021 ids carry their season ("wiki-2019-…"); ESPN ids are looked up newest first. */
 function useGame(id: string) {
-  const now = currentPllSeason();
-  const a = usePllSeason(now);
-  const b = usePllSeason(now - 1);
-  const c = usePllSeason(now - 2);
+  const wiki = /^wiki-(\d{4})-/.exec(id);
+  const seasons = wiki ? [Number(wiki[1])] : [...PLL_SEASONS].filter((s) => s >= 2022).reverse();
+  const qs = useQueries({
+    queries: seasons.map((season) => ({
+      queryKey: ["pll-season", season],
+      queryFn: () => getPllSeason({ data: { season } }),
+      staleTime: 5 * 60_000,
+    })),
+  });
   return useMemo(() => {
-    for (const q of [a, b, c]) {
+    for (const q of qs) {
       const g = q.data?.games.find((x) => x.id === id);
       if (g) return { game: g, season: q.data, loading: false };
     }
     return {
       game: undefined as PllGame | undefined,
       season: undefined,
-      loading: a.isLoading || b.isLoading || c.isLoading,
+      loading: qs.some((q) => q.isLoading),
     };
-  }, [a, b, c, id]);
+  }, [qs, id]);
 }
 
 function PllGamePage() {
@@ -36,7 +43,7 @@ function PllGamePage() {
     return (
       <Panel>
         <p className="py-8 text-center font-mono text-xs text-mute">
-          {loading ? "Loading game…" : `Game not found in ${PLL_SEASONS.slice(-3).join(", ")}.`}
+          {loading ? "Loading game…" : "Game not found."}
         </p>
       </Panel>
     );
@@ -88,7 +95,7 @@ function PllGamePage() {
         </div>
       </Panel>
 
-      {started ? (
+      {started && game.home.quarters.length ? (
         <Panel padded={false}>
           <PanelHeader title="Goals by quarter" />
           <div className="overflow-x-auto">
@@ -134,8 +141,9 @@ function PllGamePage() {
 
       <Panel padded={false}>
         <PanelHeader title="Lines" />
-        <div className="px-4 py-3">
+        <div className="space-y-2 px-4 py-3">
           <PllLinesNote />
+          <PllSourceNote season={game.season} />
         </div>
       </Panel>
     </div>
@@ -159,6 +167,14 @@ function Center({ game }: { game: PllGame }) {
       <span className="font-mono text-[11px] text-mute" suppressHydrationWarning>
         {game.status === "live" ? game.detail : pllDate(game.date, game.status === "scheduled")}
       </span>
+      {game.venue || game.city ? (
+        <span
+          className="mt-0.5 max-w-[12rem] truncate font-mono text-[10px] text-faint"
+          title={[game.venue, game.city].filter(Boolean).join(", ")}
+        >
+          {game.city || game.venue}
+        </span>
+      ) : null}
     </div>
   );
 }
