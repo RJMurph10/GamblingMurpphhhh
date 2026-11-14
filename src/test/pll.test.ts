@@ -80,3 +80,22 @@ describe("pllTeamSeasons", () => {
     expect(pllTeamSeasons("127631")[0]).toBe(2019); // Archers
   });
 });
+
+import { withEraLogos } from "@/lib/pll/pll.server";
+
+describe("withEraLogos", () => {
+  const team = (id: string) => ({
+    id,
+    abbr: "",
+    name: "",
+    short: "",
+    location: "",
+    logo: `espn/${id}`,
+  });
+  const season = (y: number) => ({ season: y, teams: [team("127631"), team("122896")], games: [] });
+  it("uses the original club logos through 2023 and ESPN's after", () => {
+    expect(withEraLogos(season(2023)).teams[0].logo).toBe("/logos/pll-archers-original.png");
+    expect(withEraLogos(season(2023)).teams[1].logo).toBe("espn/122896");
+    expect(withEraLogos(season(2024)).teams[0].logo).toBe("espn/127631");
+  });
+});

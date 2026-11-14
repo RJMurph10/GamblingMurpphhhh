@@ -179,11 +179,35 @@ async function loadHistory(year: number): Promise<PllSeason> {
 }
 
 /** One PLL year's games and teams. Refreshed every minute while a game is on, else every 30 minutes. */
+/**
+ * The clubs' original "Lacrosse Club" logos, used through 2023; the league moved to city names and new
+ * logos in 2024 (ESPN only has the new ones). From the PLL's site, stored in public/logos.
+ */
+const ORIGINAL_LOGOS: Record<string, string> = {
+  "127631": "/logos/pll-archers-original.png",
+  "127632": "/logos/pll-atlas-original.png",
+  "127634": "/logos/pll-chaos-original.png",
+  "127636": "/logos/pll-redwoods-original.png",
+  "127637": "/logos/pll-waterdogs-original.png",
+  "127638": "/logos/pll-whipsnakes-original.png",
+  "122997": "/logos/pll-cannons-original.png",
+};
+
+/** A season's clubs with the logos they used that year. */
+export function withEraLogos(s: PllSeason): PllSeason {
+  if (s.season > 2023) return s;
+  return {
+    ...s,
+    teams: s.teams.map((t) => (ORIGINAL_LOGOS[t.id] ? { ...t, logo: ORIGINAL_LOGOS[t.id] } : t)),
+  };
+}
+
 export async function fetchPllSeason(year: number): Promise<PllSeason> {
   const key = `pll-season-${year}`;
-  if (year <= 2021) return cached(key, () => loadHistory(year), 24 * 60 * 60_000);
+  if (year <= 2021)
+    return withEraLogos(await cached(key, () => loadHistory(year), 24 * 60 * 60_000));
   const s = await cached(key, () => load(year), 30 * 60_000);
   if (s.games.some((g) => g.status === "live"))
-    return cached(`${key}-live`, () => load(year), 60_000);
-  return s;
+    return withEraLogos(await cached(`${key}-live`, () => load(year), 60_000));
+  return withEraLogos(s);
 }
