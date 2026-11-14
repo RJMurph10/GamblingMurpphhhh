@@ -146,3 +146,20 @@ describe("NFL all lines", () => {
     expect(marketResult(["game", "ou", "all", "touchdowns", {}], 4.5, home, away, true)).toBeNull();
   });
 });
+
+import espnItems from "./fixtures/espn-odds-wsh-nyg.json";
+import { espnBooks, type EspnOddsItem } from "@/lib/nfl/more-markets";
+
+describe("NFL all lines: finished games before the per-game saves (ESPN's lines)", () => {
+  it("reads DraftKings' closing and opening full-game lines from ESPN's odds feed", () => {
+    const close = espnBooks(espnItems as EspnOddsItem[], "close");
+    expect(close).toHaveLength(1);
+    expect(close[0].key).toBe("draftkings");
+    expect(close[0].spread?.[0]).toBe(-1.5); // NYG -1.5 at home
+    expect(close[0].ml?.[0]).toBeLessThan(0);
+    expect(close[0].total?.[1]).toBe(-112);
+    expect(espnBooks(espnItems as EspnOddsItem[], "open")[0].spread?.[0]).toBe(-1.5);
+    const rows = fullGameRows(close);
+    expect(rows.map((r) => r[1])).toEqual(["sp", "ml", "ou"]);
+  });
+});
