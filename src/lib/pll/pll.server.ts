@@ -1,0 +1,114 @@
+/**
+ * PLL schedule and scores from ESPN's lacrosse scoreboard. A whole year comes back in one request
+ * (`dates=2026`; date ranges are refused). Teams from ESPN's team list, minus the All-Star teams.
+ */
+import { cached } from "@/lib/shared/espn-core.server";
+import { tagPhases, type PllGame, type PllSeason, type PllTeam } from "./pll";
+
+const BASE = "https://site.api.espn.com/apis/site/v2/sports/lacrosse/pll";
+
+async function get<T>(url: string): Promise<T | null> {
+  try {
+    const res = await fetch(url, { signal: AbortSignal.timeout(12_000) });
+    return res.ok ? ((await res.json()) as T) : null;
+  } catch {
+    return null;
+  }
+}
+
+type EspnTeam = {
+  id: string;
+  abbreviation?: string;
+  displayName?: string;
+  shortDisplayName?: string;
+  name?: string;
+  location?: string;
+  color?: string;
+  logos?: { href?: string }[];
+  logo?: string;
+};
+type EspnCompetitor = {
+  homeAway?: string;
+  score?: string;
+  team?: EspnTeam;
+  linescores?: { value?: number }[];
+  records?: { summary?: string }[];
+};
+type EspnEvent = {
+  id: string;
+  date: string;
+  status?: { type?: { state?: string; completed?: boolean; shortDetail?: string } };
+  competitions?: { competitors?: EspnCompetitor[] }[];
+};
+
+const isAllStar = (t?: EspnTeam) => /^(east|west|team\b|all-?star)/i.test(t?.displayName ?? "");
+
+const toTeam = (t: EspnTeam): PllTeam => ({
+  id: String(t.id),
+  abbr: t.abbreviation ?? "",
+  name: t.displayName ?? t.name ?? "",
+  short: t.name ?? t.shortDisplayName ?? t.displayName ?? "",
+  location: t.location ?? "",
+  color: t.color ? `#${t.color}` : undefined,
+  logo: t.logos?.[0]?.href ?? t.logo,
+});
+
+async function load(year: number): Promise<PllSeason> {
+  const [sb, tl] = await Promise.all([
+    get<{ events?: EspnEvent[] }>(`${BASE}/scoreboard?dates=${year}&limit=1000`),
+    get<{ sports?: { leagues?: { teams?: { team: EspnTeam }[] }[] }[] }>(`${BASE}/teams`),
+  ]);
+  const teams = new Map<string, PllTeam>();
+  const allStar = new Set<string>();
+  for (const { team } of tl?.sports?.[0]?.leagues?.[0]?.teams ?? []) {
+    if (isAllStar(team)) allStar.add(String(team.id));
+    else teams.set(String(team.id), toTeam(team));
+  }
+  const raw: Omit<PllGame, "phase">[] = [];
+  for (const e of sb?.events ?? []) {
+    const cs = e.competitions?.[0]?.competitors ?? [];
+    const h = cs.find((c) => c.homeAway === "home");
+    const a = cs.find((c) => c.homeAway === "away");
+    if (!h?.team || !a?.team) continue;
+    for (const c of [h, a]) {
+      const id = String(c.team!.id);
+      if (isAllStar(c.team)) allStar.add(id);
+      else if (!teams.has(id)) teams.set(id, toTeam(c.team!));
+    }
+    const state = e.status?.type?.state;
+    const status = e.status?.type?.completed ? "final" : state === "in" ? "live" : "scheduled";
+    const side = (c: EspnCompetitor) => ({
+      teamId: String(c.team!.id),
+      score: status === "scheduled" || c.score == null || c.score === "" ? null : Number(c.score),
+      quarters: (c.linescores ?? []).map((l) => Number(l.value ?? 0)),
+      record: c.records?.[0]?.summary,
+    });
+    raw.push({
+      id: String(e.id),
+      date: e.date,
+      status,
+      detail: e.status?.type?.shortDetail ?? "",
+      season: year,
+      home: side(h),
+      away: side(a),
+    });
+  }
+  // only clubs that played this year (the team list keeps defunct and future clubs)
+  const played = new Set(raw.flatMap((g) => [g.home.teamId, g.away.teamId]));
+  return {
+    season: year,
+    teams: [...teams.values()]
+      .filter((t) => played.has(t.id))
+      .sort((x, y) => x.name.localeCompare(y.name)),
+    games: tagPhases(raw, allStar),
+  };
+}
+
+/** One PLL year's games and teams. Refreshed every minute while a game is on, else every 30 minutes. */
+export async function fetchPllSeason(year: number): Promise<PllSeason> {
+  const key = `pll-season-${year}`;
+  const s = await cached(key, () => load(year), 30 * 60_000);
+  if (s.games.some((g) => g.status === "live"))
+    return cached(`${key}-live`, () => load(year), 60_000);
+  return s;
+}
