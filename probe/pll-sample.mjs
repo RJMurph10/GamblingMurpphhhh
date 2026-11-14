@@ -1,16 +1,16 @@
 import { writeFileSync } from "node:fs";
-const B = "https://site.api.espn.com/apis/site/v2/sports/lacrosse/pll";
 const out = {};
-for (const y of [2022, 2023, 2024]) {
-  const sb = await (await fetch(`${B}/scoreboard?dates=${y}&limit=1000`)).json();
-  const seen = {};
-  for (const e of sb.events ?? []) for (const c of e.competitions?.[0]?.competitors ?? []) seen[c.team.id] = `${c.team.displayName}|${c.team.abbreviation}|${c.team.logo}`;
-  console.log("YEAR", y, JSON.stringify(seen));
+const cdx = await (await fetch("https://web.archive.org/cdx/search/cdx?url=premierlacrosseleague.com/wp-content/uploads/*&filter=original:.*(square|LogoBlock|[Pp]rimary|team_logo|Team_Logo).*&filter=mimetype:image/png&collapse=urlkey&limit=500")).text();
+const rows = cdx.split("\n").map((l) => l.split(" ")).filter((p) => p[2] && !/-\d+x\d+\.png$/i.test(p[2]));
+console.log("CDX\n" + rows.map((p) => `${p[1]} ${p[2]}`).join("\n"));
+const teams = ["archers", "atlas", "chaos", "redwoods", "whipsnakes", "waterdogs", "cannons"];
+for (const t of teams) {
+  for (const f of [`2020/02/500x500_PLL_Teams_square_${t}-1.png`, `2020/02/500x500_PLL_Teams_square_${t}.png`]) {
+    const u = `https://premierlacrosseleague.com/wp-content/uploads/${f}`;
+    const r = await fetch(u); const b = Buffer.from(await r.arrayBuffer());
+    console.log("IMG", t, u, r.status, r.headers.get("content-type"), b.length);
+    if (r.ok && /image/.test(r.headers.get("content-type") ?? "")) { out[u] = { b64: b.toString("base64") }; break; }
+  }
 }
-for (const u of ["https://a.espncdn.com/i/teamlogos/pll/500/127633.png", "https://web.archive.org/web/2021im_/https://premierlacrosseleague.com/wp-content/uploads/2020/11/cannons_logo.png"]) {
-  const r = await fetch(u); const b = Buffer.from(await r.arrayBuffer()); console.log("IMG", u, r.status, b.length);
-  if (r.ok) out[u] = { b64: b.toString("base64") };
-}
-const cdx = await (await fetch("https://web.archive.org/cdx/search/cdx?url=premierlacrosseleague.com/wp-content/uploads/*&filter=original:.*([Cc]annons|[Cc]hrome).*([Ll]ogo|square|primary).*&filter=mimetype:image/png&collapse=urlkey&limit=200")).text();
-console.log("CDX", cdx.split("\n").map((l) => l.split(" ").slice(1, 3).join(" ")).join("\n"));
+const r = await fetch("https://a.espncdn.com/i/teamlogos/pll/500/127633.png"); out.espn127633 = { b64: Buffer.from(await r.arrayBuffer()).toString("base64") };
 writeFileSync("pll_sample.json", JSON.stringify(out));
