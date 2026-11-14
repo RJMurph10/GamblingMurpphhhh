@@ -1,15 +1,16 @@
 import { writeFileSync } from "node:fs";
+const B = "https://site.api.espn.com/apis/site/v2/sports/lacrosse/pll";
 const out = {};
-const q = async (u) => { try { const r = await fetch(u); return r.ok ? await r.text() : `ERR ${r.status}`; } catch (e) { return `ERR ${e}`; } };
-const urls = [
-  "https://premierlacrosseleague.com/wp-content/uploads/2020/02/500x500_PLL_Teams_square_chrome-1.png",
-  "https://web.archive.org/web/20210711090413im_/https://premierlacrosseleague.com/wp-content/uploads/2020/02/500x500_PLL_Teams_square_chrome-1.png",
-  "https://web.archive.org/web/20220702154436im_/https://premierlacrosseleague.com/wp-content/uploads/2021/01/chromeLogoBlock@2x.png",
-  "https://web.archive.org/web/20230920224625im_/https://premierlacrosseleague.com/wp-content/uploads/2019/05/chrome-gray.png",
-];
-for (const u of urls) {
-  const r = await fetch(u); const b = Buffer.from(await r.arrayBuffer());
-  console.log("IMG", u, r.status, r.headers.get("content-type"), b.length);
-  if (r.ok) out[u] = { type: r.headers.get("content-type"), b64: b.toString("base64") };
+for (const y of [2022, 2023, 2024]) {
+  const sb = await (await fetch(`${B}/scoreboard?dates=${y}&limit=1000`)).json();
+  const seen = {};
+  for (const e of sb.events ?? []) for (const c of e.competitions?.[0]?.competitors ?? []) seen[c.team.id] = `${c.team.displayName}|${c.team.abbreviation}|${c.team.logo}`;
+  console.log("YEAR", y, JSON.stringify(seen));
 }
+for (const u of ["https://a.espncdn.com/i/teamlogos/pll/500/127633.png", "https://web.archive.org/web/2021im_/https://premierlacrosseleague.com/wp-content/uploads/2020/11/cannons_logo.png"]) {
+  const r = await fetch(u); const b = Buffer.from(await r.arrayBuffer()); console.log("IMG", u, r.status, b.length);
+  if (r.ok) out[u] = { b64: b.toString("base64") };
+}
+const cdx = await (await fetch("https://web.archive.org/cdx/search/cdx?url=premierlacrosseleague.com/wp-content/uploads/*&filter=original:.*([Cc]annons|[Cc]hrome).*([Ll]ogo|square|primary).*&filter=mimetype:image/png&collapse=urlkey&limit=200")).text();
+console.log("CDX", cdx.split("\n").map((l) => l.split(" ").slice(1, 3).join(" ")).join("\n"));
 writeFileSync("pll_sample.json", JSON.stringify(out));
