@@ -68,3 +68,15 @@ describe("PLL 2019-2021 history (Wikipedia)", () => {
     expect(winner(last(2021))).toBe("127634"); // Chaos
   });
 });
+
+import { pllTeamSeasons } from "@/lib/pll/use-pll";
+
+describe("pllTeamSeasons", () => {
+  it("offers only the seasons a club played", () => {
+    expect(pllTeamSeasons("127635")).toEqual([2019, 2020, 2021, 2022, 2023]); // Chrome
+    expect(pllTeamSeasons("127637")[0]).toBe(2020); // Waterdogs
+    expect(pllTeamSeasons("122997")[0]).toBe(2021); // Cannons
+    expect(pllTeamSeasons("122896")[0]).toBe(2024); // Outlaws
+    expect(pllTeamSeasons("127631")[0]).toBe(2019); // Archers
+  });
+});

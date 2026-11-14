@@ -3,7 +3,7 @@ import { createFileRoute } from "@tanstack/react-router";
 import { PageTitle, Panel, PanelHeader, StatCard } from "@/components/shared/booth";
 import { PllGamesTable, PllLogo, PllSeasonPicker } from "@/components/pll/PllBits";
 import { standings, teamOf } from "@/lib/pll/pll";
-import { currentPllSeason, usePllSeason } from "@/lib/pll/use-pll";
+import { currentPllSeason, pllTeamSeasons, usePllSeason } from "@/lib/pll/use-pll";
 
 export const Route = createFileRoute("/pll/teams/$teamId")({
   head: () => ({ meta: [{ title: "Team — GamblingPLL" }] }),
@@ -12,7 +12,13 @@ export const Route = createFileRoute("/pll/teams/$teamId")({
 
 function PllTeamPage() {
   const { teamId } = Route.useParams();
-  const [season, setSeason] = useState(currentPllSeason());
+  const seasons = useMemo(() => pllTeamSeasons(teamId), [teamId]);
+  // open on the club's latest season (Chrome's is 2023)
+  const [season, setSeason] = useState(() =>
+    seasons.includes(currentPllSeason())
+      ? currentPllSeason()
+      : (seasons.at(-1) ?? currentPllSeason()),
+  );
   const q = usePllSeason(season);
   const team = teamOf(q.data, teamId);
   const row = useMemo(
@@ -36,7 +42,7 @@ function PllTeamPage() {
       <PageTitle
         eyebrow="Premier Lacrosse League"
         title={team?.name ?? (q.isLoading ? "Loading…" : "Team")}
-        aside={<PllSeasonPicker season={season} onChange={setSeason} />}
+        aside={<PllSeasonPicker season={season} onChange={setSeason} seasons={seasons} />}
       />
       {team ? (
         <div className="mb-6 flex items-center gap-4">
