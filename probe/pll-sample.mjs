@@ -9,7 +9,8 @@ for (const y of [2019, 2020, 2021, 2022, 2023, 2024, 2025]) {
   let box = null;
   if (fin) {
     const s = await j(`${B}/summary?event=${fin.id}`);
-    box = { players: (s.boxscore?.players ?? []).length, teams: (s.boxscore?.teams ?? []).map((t) => (t.statistics ?? []).length), keys: Object.keys(s) };
+    if (y === 2023) out.summary2023 = s;
+    box = { players: (s.boxscore?.players ?? []).length, athletes: (s.boxscore?.players ?? []).map((t) => (t.statistics ?? []).map((st) => [st.name, (st.labels ?? []).join("/"), (st.athletes ?? []).length])), teams: (s.boxscore?.teams ?? []).map((t) => (t.statistics ?? []).length), keys: Object.keys(s) };
   }
   out.years[y] = { status: sb.status ?? 200, events: ev.length, final: ev.filter((e) => e.status?.type?.completed).length, first: ev[0]?.date, last: ev[ev.length - 1]?.date, sample: ev[0]?.name, box };
   if (y === 2019) out.sb2019 = sb;
