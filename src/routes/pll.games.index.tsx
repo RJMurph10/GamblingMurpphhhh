@@ -1,7 +1,7 @@
 import { useMemo, useState } from "react";
 import { createFileRoute } from "@tanstack/react-router";
 import { PageTitle, Panel, PanelHeader } from "@/components/shared/booth";
-import { PllGamesTable, PllSeasonPicker } from "@/components/pll/PllBits";
+import { PllGamesTable, PllSeasonPicker, PllSourceNote } from "@/components/pll/PllBits";
 import { PHASE_LABEL, type PllPhase } from "@/lib/pll/pll";
 import { currentPllSeason, usePllSeason } from "@/lib/pll/use-pll";
 
@@ -40,6 +40,7 @@ function PllGamesPage() {
             <PllGamesTable games={games} season={q.data} empty="" />
           </Panel>
         ))}
+        <PllSourceNote season={season} />
         {!groups.length ? (
           <Panel>
             <p className="py-8 text-center font-mono text-xs text-mute">

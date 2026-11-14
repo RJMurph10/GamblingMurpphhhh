@@ -3,7 +3,8 @@
  * (`dates=2026`; date ranges are refused). Teams from ESPN's team list, minus the All-Star teams.
  */
 import { cached } from "@/lib/shared/espn-core.server";
-import { tagPhases, type PllGame, type PllSeason, type PllTeam } from "./pll";
+import history from "@/data/pll-2019-2021.json";
+import { tagPhases, type PllGame, type PllPhase, type PllSeason, type PllTeam } from "./pll";
 
 const BASE = "https://site.api.espn.com/apis/site/v2/sports/lacrosse/pll";
 
@@ -104,9 +105,58 @@ async function load(year: number): Promise<PllSeason> {
   };
 }
 
+/** Clubs from 2019-2021 that ESPN no longer lists, and the All-Star teams of those years. */
+const OLD_TEAMS: PllTeam[] = [
+  { id: "chrome", abbr: "CHR", name: "Chrome Lacrosse Club", short: "Chrome", location: "" },
+  { id: "as-baptiste", abbr: "BAP", name: "Team Baptiste", short: "Team Baptiste", location: "" },
+  { id: "as-rambo", abbr: "RAM", name: "Team Rambo", short: "Team Rambo", location: "" },
+  { id: "as-adversaries", abbr: "ADV", name: "Adversaries", short: "Adversaries", location: "" },
+  { id: "as-defenders", abbr: "DEF", name: "Defenders", short: "Defenders", location: "" },
+];
+
+/**
+ * 2019-2021 (before ESPN's PLL coverage): final scores, overtime, venue and city from Wikipedia's season
+ * pages (src/data/pll-2019-2021.json, CC BY-SA 4.0); no quarter scores. Clubs take ESPN's current names
+ * and logos (the same franchises), plus Chrome and the All-Star teams.
+ */
+async function loadHistory(year: number): Promise<PllSeason> {
+  const tl = await get<{ sports?: { leagues?: { teams?: { team: EspnTeam }[] }[] }[] }>(
+    `${BASE}/teams`,
+  );
+  const known = new Map<string, PllTeam>(OLD_TEAMS.map((t) => [t.id, t]));
+  for (const { team } of tl?.sports?.[0]?.leagues?.[0]?.teams ?? [])
+    known.set(String(team.id), toTeam(team));
+  type Row = (typeof history.games)[number];
+  const rows = history.games.filter((g: Row) => g.season === year);
+  const games: PllGame[] = rows.map((g: Row) => ({
+    id: g.id,
+    date: g.date,
+    status: "final",
+    detail: g.ot ? "Final/OT" : "Final",
+    phase: g.phase as PllPhase,
+    season: year,
+    home: { teamId: g.home, score: g.homeScore, quarters: [] },
+    away: { teamId: g.away, score: g.awayScore, quarters: [] },
+    ...(g.venue ? { venue: g.venue } : {}),
+    ...(g.city ? { city: g.city } : {}),
+  }));
+  const ids = new Set(games.flatMap((g) => [g.home.teamId, g.away.teamId]));
+  const teams = [...ids]
+    .map((id) => known.get(id) ?? { id, abbr: id, name: id, short: id, location: "" })
+    .filter((t) => !t.id.startsWith("as-"))
+    .sort((a, b) => a.name.localeCompare(b.name));
+  // All-Star teams stay out of the team list but need names on their game
+  return {
+    season: year,
+    teams: [...teams, ...OLD_TEAMS.filter((t) => t.id.startsWith("as-") && ids.has(t.id))],
+    games,
+  };
+}
+
 /** One PLL year's games and teams. Refreshed every minute while a game is on, else every 30 minutes. */
 export async function fetchPllSeason(year: number): Promise<PllSeason> {
   const key = `pll-season-${year}`;
+  if (year <= 2021) return cached(key, () => loadHistory(year), 24 * 60 * 60_000);
   const s = await cached(key, () => load(year), 30 * 60_000);
   if (s.games.some((g) => g.status === "live"))
     return cached(`${key}-live`, () => load(year), 60_000);

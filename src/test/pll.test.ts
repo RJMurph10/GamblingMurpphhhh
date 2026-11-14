@@ -34,3 +34,37 @@ describe("PLL from ESPN", () => {
     expect(p.goalsPerGame).toBeGreaterThan(15);
   });
 });
+
+import history from "@/data/pll-2019-2021.json";
+
+describe("PLL 2019-2021 history (Wikipedia)", () => {
+  const season = (y: number) => history.games.filter((g) => g.season === y);
+  const wins = (y: number) => {
+    const w: Record<string, number> = {};
+    for (const g of season(y).filter((g) => g.phase === "regular"))
+      w[g.homeScore > g.awayScore ? g.home : g.away] =
+        (w[g.homeScore > g.awayScore ? g.home : g.away] ?? 0) + 1;
+    return w;
+  };
+  it("has every season's games", () => {
+    expect(season(2019)).toHaveLength(37);
+    expect(season(2020)).toHaveLength(20);
+    expect(season(2021)).toHaveLength(43);
+  });
+  it("matches the published standings", () => {
+    expect(wins(2019)).toMatchObject({ "127634": 7, "127638": 6, chrome: 2 }); // Chaos 7-3, Whipsnakes 6-4
+    expect(wins(2021)).toMatchObject({ "127637": 6, "127632": 6, chrome: 2 }); // Waterdogs, Atlas 6-3
+  });
+  it("has the champions", () => {
+    const last = (y: number) =>
+      season(y)
+        .sort((a, b) => a.date.localeCompare(b.date))
+        .at(-1)!;
+    const winner = (g: (typeof history.games)[number]) =>
+      g.homeScore > g.awayScore ? g.home : g.away;
+    expect(winner(last(2019))).toBe("127638"); // Whipsnakes
+    expect(last(2019).ot).toBe(true);
+    expect(winner(last(2020))).toBe("127638"); // Whipsnakes
+    expect(winner(last(2021))).toBe("127634"); // Chaos
+  });
+});
