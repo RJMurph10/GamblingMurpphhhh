@@ -1,24 +1,9 @@
 import { writeFileSync } from "node:fs";
-const B = "https://site.api.espn.com/apis/site/v2/sports/lacrosse/pll";
-const j = async (u) => { const r = await fetch(u); return r.ok ? r.json() : { status: r.status }; };
-const out = { years: {} };
-for (const y of [2019, 2020, 2021, 2022, 2023, 2024, 2025]) {
-  const sb = await j(`${B}/scoreboard?dates=${y}&limit=1000`);
-  const ev = sb.events ?? [];
-  const fin = ev.find((e) => e.status?.type?.completed);
-  let box = null;
-  if (fin) {
-    const s = await j(`${B}/summary?event=${fin.id}`);
-    if (y === 2023) out.summary2023 = s;
-    box = { players: (s.boxscore?.players ?? []).length, athletes: (s.boxscore?.players ?? []).map((t) => (t.statistics ?? []).map((st) => [st.name, (st.labels ?? []).join("/"), (st.athletes ?? []).length])), teams: (s.boxscore?.teams ?? []).map((t) => (t.statistics ?? []).length), keys: Object.keys(s) };
-  }
-  out.years[y] = { status: sb.status ?? 200, events: ev.length, final: ev.filter((e) => e.status?.type?.completed).length, first: ev[0]?.date, last: ev[ev.length - 1]?.date, sample: ev[0]?.name, box };
-  if (y === 2019) out.sb2019 = sb;
+const out = {};
+for (const t of ["2019_Premier_Lacrosse_League_season", "2020_Premier_Lacrosse_League_season", "2021_Premier_Lacrosse_League_season", "2022_Premier_Lacrosse_League_season"]) {
+  const r = await fetch(`https://en.wikipedia.org/w/api.php?action=parse&page=${t}&prop=wikitext&format=json&formatversion=2&redirects=1`, { headers: { "User-Agent": "GamblingNFL research (github.com/RJMurph10/gamblingnfl)" } });
+  const j = await r.json();
+  out[t] = j.parse?.wikitext ?? JSON.stringify(j).slice(0, 300);
+  console.log(t, r.status, (out[t] ?? "").length);
 }
-// rosters / athletes
-out.roster = await j(`${B}/teams/127637/roster`);
-out.athletes = await j(`https://sports.core.api.espn.com/v2/sports/lacrosse/leagues/pll/athletes?limit=5`);
-console.log(JSON.stringify(out.years, null, 1));
-console.log("roster", JSON.stringify(out.roster).slice(0, 300));
-console.log("athletes", JSON.stringify(out.athletes).slice(0, 300));
 writeFileSync("pll_sample.json", JSON.stringify(out));
