@@ -72,6 +72,13 @@ const toTeam = (t: EspnTeam): PllTeam =>
         logo: t.logos?.[0]?.href ?? t.logo,
       };
 
+/**
+ * ESPN ids for the same club under an older entry: the 2021-2023 Cannons (127633, listed only as "CAN",
+ * no logo) are today's Boston Cannons (122997), so the club is one team across every season.
+ */
+const SAME_CLUB: Record<string, string> = { "127633": "122997" };
+const clubId = (t: EspnTeam) => SAME_CLUB[String(t.id)] ?? String(t.id);
+
 async function load(year: number): Promise<PllSeason> {
   const [sb, tl] = await Promise.all([
     get<{ events?: EspnEvent[] }>(`${BASE}/scoreboard?dates=${year}&limit=1000`),
@@ -90,14 +97,14 @@ async function load(year: number): Promise<PllSeason> {
     const a = cs.find((c) => c.homeAway === "away");
     if (!h?.team || !a?.team) continue;
     for (const c of [h, a]) {
-      const id = String(c.team!.id);
+      const id = clubId(c.team!);
       if (isAllStar(c.team)) allStar.add(id);
-      else if (!teams.has(id)) teams.set(id, toTeam(c.team!));
+      else if (!teams.has(id)) teams.set(id, { ...toTeam(c.team!), id });
     }
     const state = e.status?.type?.state;
     const status = e.status?.type?.completed ? "final" : state === "in" ? "live" : "scheduled";
     const side = (c: EspnCompetitor) => ({
-      teamId: String(c.team!.id),
+      teamId: clubId(c.team!),
       score: status === "scheduled" || c.score == null || c.score === "" ? null : Number(c.score),
       quarters: (c.linescores ?? []).map((l) => Number(l.value ?? 0)),
       record: c.records?.[0]?.summary,
