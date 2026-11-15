@@ -12,7 +12,14 @@ import {
   type PllLinesFile,
 } from "@/lib/pll/lines";
 
-import { PHASE_LABEL, pllDate, teamOf, type PllGame, type PllSeason } from "@/lib/pll/pll";
+import {
+  PHASE_LABEL,
+  pllDate,
+  teamOf,
+  type PllGame,
+  type PllSeason,
+  type PllTeam,
+} from "@/lib/pll/pll";
 import { getPllSeason } from "@/lib/pll/pll.functions";
 import { PLL_SEASONS, usePllLines } from "@/lib/pll/use-pll";
 
@@ -68,42 +75,7 @@ function PllGamePage() {
     game.status === "final" && (me ?? 0) > (them ?? 0);
   return (
     <div className="space-y-6">
-      <Panel>
-        <div className="text-center font-mono text-[10px] uppercase tracking-wider text-faint">
-          {PHASE_LABEL[game.phase]} · {game.season}
-        </div>
-        <div className="mt-3 grid grid-cols-[1fr_auto_1fr] items-center gap-3">
-          {[
-            [away, game.away, game.home, "away"] as const,
-            [home, game.home, game.away, "home"] as const,
-          ].map(([t, me, them, at], i) => {
-            const block = (
-              <Link
-                key={at}
-                to="/pll/teams/$teamId"
-                params={{ teamId: me.teamId }}
-                className={`flex items-center gap-3 ${i === 1 ? "flex-row-reverse text-right" : ""}`}
-              >
-                <PllLogo team={t} className="size-12 sm:size-16" />
-                <div>
-                  <div className="font-disp text-base font-semibold uppercase tracking-tight sm:text-xl">
-                    {t?.short}
-                  </div>
-                  <div className="font-mono text-[10px] text-faint">{me.record ?? ""}</div>
-                </div>
-                {started ? (
-                  <span
-                    className={`mx-2 font-mono text-3xl font-bold tabular-nums sm:text-5xl ${won(me.score, them.score) ? "text-acc" : ""}`}
-                  >
-                    {me.score ?? ""}
-                  </span>
-                ) : null}
-              </Link>
-            );
-            return i === 0 ? [block, <Center key="c" game={game} />] : block;
-          })}
-        </div>
-      </Panel>
+      <ScoreBox game={game} season={season} lines={linesQ.data} />
 
       {started && game.home.quarters.length ? (
         <Panel padded={false}>
@@ -154,32 +126,121 @@ function PllGamePage() {
   );
 }
 
-function Center({ game }: { game: PllGame }) {
-  return (
-    <div className="flex flex-col items-center text-center">
-      <span
-        className={`font-disp text-lg font-bold tracking-wider ${game.status === "live" ? "text-acc" : "text-mute"}`}
-      >
-        {game.status === "final"
-          ? game.home.quarters.length > 4
-            ? "FINAL/OT"
-            : "FINAL"
-          : game.status === "live"
-            ? "LIVE"
-            : "VS"}
+/**
+ * The score box, laid out like the NFL game page: each club's logo with its name and record, the score
+ * beside it (winner highlighted), the status in the middle (FINAL / FINAL/OT with date and place, a live
+ * clock, or VS and the start time), and the line underneath (spread, moneyline, total).
+ */
+function ScoreBox({
+  game,
+  season,
+  lines,
+}: {
+  game: PllGame;
+  season?: PllSeason;
+  lines?: PllLinesFile | null;
+}) {
+  const away = teamOf(season, game.away.teamId);
+  const home = teamOf(season, game.home.teamId);
+  const started = game.status !== "scheduled";
+  const isFinal = game.status === "final";
+  const isOT = game.home.quarters.length > 4 || /OT/i.test(game.detail);
+  const awayWon = isFinal && (game.away.score ?? 0) > (game.home.score ?? 0);
+  const homeWon = isFinal && (game.home.score ?? 0) > (game.away.score ?? 0);
+  const lg = linesFor(game, season, lines);
+  const line = lg?.latest;
+  const res = line ? lineResult(game, line) : null;
+  const club = (t: PllTeam | undefined, side: PllGame["home"]) => (
+    <Link
+      to="/pll/teams/$teamId"
+      params={{ teamId: side.teamId }}
+      className="group flex flex-col items-center gap-1 text-center"
+    >
+      <PllLogo team={t} className="size-10 transition-transform group-hover:scale-105 sm:size-14" />
+      <span className="font-disp text-xs font-semibold uppercase tracking-tight sm:text-sm">
+        {t?.short}
       </span>
-      <span className="font-mono text-[11px] text-mute" suppressHydrationWarning>
-        {game.status === "live" ? game.detail : pllDate(game.date, game.status === "scheduled")}
-      </span>
-      {game.venue || game.city ? (
-        <span
-          className="mt-0.5 max-w-[12rem] truncate font-mono text-[10px] text-faint"
-          title={[game.venue, game.city].filter(Boolean).join(", ")}
-        >
-          {game.city || game.venue}
-        </span>
+      {side.record ? (
+        <span className="font-mono text-xs text-mute group-hover:text-acc">{side.record}</span>
       ) : null}
-    </div>
+    </Link>
+  );
+  const score = (n: number | null, won: boolean) => (
+    <span
+      className={`font-mono text-3xl font-bold tabular-nums sm:text-5xl ${won ? "text-acc" : ""}`}
+    >
+      {started ? (n ?? "") : ""}
+    </span>
+  );
+  // the favorite and its spread, as the NFL page shows it ("WAT -1.5")
+  const favSpread =
+    line?.spread == null
+      ? null
+      : line.spread <= 0
+        ? `${home?.abbr || home?.short || "Home"} ${spreadText(line.spread)}`
+        : `${away?.abbr || away?.short || "Away"} ${spreadText(-line.spread)}`;
+  const coverClass =
+    res?.cover == null || res.cover === "push"
+      ? ""
+      : (res.cover === "home") === line!.spread! <= 0
+        ? "text-win"
+        : "text-loss";
+  const ouClass = res?.ou === "over" ? "text-win" : res?.ou === "under" ? "text-loss" : "";
+  return (
+    <Panel className="p-4 sm:p-6">
+      <div className="mb-3 text-center font-mono text-[10px] uppercase tracking-wider text-faint">
+        {PHASE_LABEL[game.phase]} · {game.season}
+      </div>
+      <div className="mx-auto flex max-w-2xl items-center justify-between">
+        <div className="flex items-center gap-3 sm:gap-6">
+          {club(away, game.away)}
+          {score(game.away.score, awayWon)}
+        </div>
+        <div className="flex flex-col items-center justify-center px-2 text-center">
+          {game.status === "live" ? (
+            <span className="flex items-center gap-1.5 font-mono text-xs font-semibold tracking-wider text-win sm:text-sm">
+              <span className="size-2 animate-pulse rounded-full bg-win" />
+              {game.detail || "Live"}
+            </span>
+          ) : (
+            <span
+              className={`font-disp font-bold tracking-wider ${isFinal ? "text-lg text-acc sm:text-xl" : "text-base text-mute sm:text-lg"}`}
+            >
+              {isFinal ? (isOT ? "FINAL/OT" : "FINAL") : "VS"}
+            </span>
+          )}
+          <span className="font-mono text-[11px] text-mute" suppressHydrationWarning>
+            {pllDate(game.date, !isFinal)}
+          </span>
+          {game.venue || game.city ? (
+            <span
+              className="mt-0.5 max-w-[12rem] truncate font-mono text-[10px] text-faint"
+              title={[game.venue, game.city].filter(Boolean).join(", ")}
+            >
+              {game.city || game.venue}
+            </span>
+          ) : null}
+        </div>
+        <div className="flex items-center gap-3 sm:gap-6">
+          {score(game.home.score, homeWon)}
+          {club(home, game.home)}
+        </div>
+      </div>
+      <div className="mt-4 flex flex-wrap items-center justify-center gap-x-3 gap-y-1 border-t border-line/10 pt-3 font-mono text-[11px] text-mute">
+        <span>Spread:</span>
+        <span className={`font-semibold tabular-nums ${coverClass}`}>{favSpread ?? "—"}</span>
+        <span>·</span>
+        <span>ML:</span>
+        <span className="font-semibold tabular-nums">
+          {line?.mlAway != null || line?.mlHome != null
+            ? `${away?.abbr || away?.short} ${americanText(line?.mlAway)} / ${home?.abbr || home?.short} ${americanText(line?.mlHome)}`
+            : "—"}
+        </span>
+        <span>·</span>
+        <span>O/U:</span>
+        <span className={`font-semibold tabular-nums ${ouClass}`}>{line?.total ?? "—"}</span>
+      </div>
+    </Panel>
   );
 }
 
