@@ -1,8 +1,9 @@
-import { useMemo } from "react";
+import { useMemo, useState } from "react";
 import { useQueries } from "@tanstack/react-query";
 import { createFileRoute, Link } from "@tanstack/react-router";
 import { Panel, PanelHeader } from "@/components/shared/booth";
 import { PllLinesNote, PllLogo, PllSourceNote } from "@/components/pll/PllBits";
+import { PllGameRosters } from "@/components/pll/PllGameRosters";
 import {
   americanText,
   lineResult,
@@ -56,6 +57,7 @@ function PllGamePage() {
   const { gameId } = Route.useParams();
   const { game, season, loading } = useGame(gameId);
   const linesQ = usePllLines();
+  const [tab, setTab] = useState<"game" | "rosters">("game");
   if (!game)
     return (
       <Panel>
@@ -77,7 +79,28 @@ function PllGamePage() {
     <div className="space-y-6">
       <ScoreBox game={game} season={season} lines={linesQ.data} />
 
-      {started && game.home.quarters.length ? (
+      <nav className="grid grid-cols-2 border-b border-line/15" aria-label="Game tabs">
+        {(
+          [
+            ["game", "Game"],
+            ["rosters", "Rosters"],
+          ] as const
+        ).map(([v, label]) => (
+          <button
+            key={v}
+            type="button"
+            onClick={() => setTab(v)}
+            aria-pressed={tab === v}
+            className={`border-b-2 px-3 py-3 font-disp text-sm font-semibold uppercase tracking-wider transition-colors ${tab === v ? "border-acc text-foreground" : "border-transparent text-mute hover:text-foreground"}`}
+          >
+            {label}
+          </button>
+        ))}
+      </nav>
+
+      {tab === "rosters" ? <PllGameRosters game={game} season={season} /> : null}
+
+      {tab === "game" && started && game.home.quarters.length ? (
         <Panel padded={false}>
           <PanelHeader title="Goals by quarter" />
           <div className="overflow-x-auto">
@@ -121,7 +144,7 @@ function PllGamePage() {
         </Panel>
       ) : null}
 
-      <GameLines game={game} season={season} lines={linesQ.data} />
+      {tab === "game" ? <GameLines game={game} season={season} lines={linesQ.data} /> : null}
     </div>
   );
 }
