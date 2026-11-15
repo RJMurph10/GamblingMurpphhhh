@@ -1,5 +1,5 @@
 import { describe, expect, it } from "vitest";
-import { pllLeaders, pllRoster } from "@/lib/pll/players";
+import { pllLeaders, pllRoster, posAbbr, shotAbbr } from "@/lib/pll/players";
 
 const top = (season: number, stat: string) =>
   pllLeaders(season).find((g) => g.stat === stat)?.rows[0];
@@ -47,5 +47,36 @@ describe("PLL players from Wikipedia", () => {
     ])
       expect(pllRoster(id)?.players.length).toBeGreaterThan(20);
     expect(pllRoster("127635")).toBeUndefined(); // Chrome
+  });
+});
+
+describe("roster formatting", () => {
+  it("abbreviates positions", () => {
+    expect(
+      ["Attack", "Midfield", "Faceoff", "Face-off", "Defense", "Goalie", "LSM", "SSDM"].map(
+        posAbbr,
+      ),
+    ).toEqual(["A", "M", "FO", "FO", "D", "G", "LSM", "SSDM"]);
+    expect(posAbbr("Defense/SSDM")).toBe("D/SSDM");
+  });
+  it("shows one shooting hand", () => {
+    expect(["Right", "Left", "R/L", "L/R", "R", undefined].map(shotAbbr)).toEqual([
+      "R",
+      "L",
+      "R",
+      "L",
+      "R",
+      "",
+    ]);
+  });
+  it("turns Wikipedia's markers into clean names and statuses", () => {
+    const all = Object.values(["127631", "127632", "122997", "127634"]).flatMap(
+      (id) => pllRoster(id)!.players,
+    );
+    expect(all.every((p) => !/[*^{|]|px/.test(p.name))).toBe(true);
+    expect(all.find((p) => p.name === "Gannon Matthews")?.status).toEqual(["PUP"]);
+    expect(all.find((p) => p.name === "Grant Ament")?.status).toEqual(["Injured"]);
+    expect(all.find((p) => p.name === "Kieran McArdle")).toBeUndefined(); // Waterdogs, checked below
+    expect(pllRoster("127637")!.players.find((p) => p.name === "Kieran McArdle")?.shot).toBe("L/R");
   });
 });

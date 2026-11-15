@@ -1,9 +1,18 @@
-import { useMemo } from "react";
+import { useMemo, useState } from "react";
 import { Panel, PanelHeader } from "@/components/shared/booth";
 import { PllLogo } from "@/components/pll/PllBits";
 import type { PllSeason } from "@/lib/pll/pll";
 import { teamOf } from "@/lib/pll/pll";
-import { pllLeaders, pllLeadersPage, pllRoster, posRank } from "@/lib/pll/players";
+import {
+  collegeLogo,
+  pllLeaders,
+  pllLeadersPage,
+  pllRoster,
+  posAbbr,
+  posRank,
+  shotAbbr,
+  type PllRosterPlayer,
+} from "@/lib/pll/players";
 
 const wiki = (page: string) => `https://en.wikipedia.org/wiki/${page}`;
 
@@ -72,6 +81,28 @@ export function PllLeaders({
   );
 }
 
+/** A player's college as its logo (name on hover), or a short text tag when ESPN has no logo. */
+function College({ p }: { p: PllRosterPlayer }) {
+  const [failed, setFailed] = useState(false);
+  if (!p.college) return null;
+  if (!p.collegeId || failed)
+    return (
+      <span className="font-mono text-[10px] uppercase text-mute" title={p.college}>
+        {p.college}
+      </span>
+    );
+  return (
+    <img
+      src={collegeLogo(p.collegeId)}
+      alt={p.college}
+      title={p.college}
+      className="size-6 object-contain"
+      loading="lazy"
+      onError={() => setFailed(true)}
+    />
+  );
+}
+
 /** A club's latest roster from Wikipedia, shown for that season and later. */
 export function PllRosterPanel({ teamId, season }: { teamId: string; season: number }) {
   const roster = pllRoster(teamId);
@@ -99,7 +130,7 @@ export function PllRosterPanel({ teamId, season }: { teamId: string; season: num
         aside={<span className="label-mono">{roster.season ?? ""} season roster</span>}
       />
       <div className="overflow-x-auto">
-        <table className="w-full min-w-[560px] text-sm">
+        <table className="w-full min-w-[480px] text-sm">
           <thead>
             <tr className="text-left font-mono text-[10px] uppercase tracking-wider text-faint">
               <th className="px-4 py-2 font-normal">#</th>
@@ -114,18 +145,37 @@ export function PllRosterPanel({ teamId, season }: { teamId: string; season: num
             {players.map((p) => (
               <tr key={`${p.num}-${p.name}`} className="hover:bg-line/5">
                 <td className="px-4 py-1.5 font-mono tabular-nums text-mute">{p.num}</td>
-                <td className="px-2 py-1.5 font-semibold">
-                  {p.name}
+                <td className="px-2 py-1.5">
+                  <span className="font-semibold">{p.name}</span>
                   {p.captain ? (
-                    <span className="ml-1 font-mono text-[10px] text-acc">C</span>
+                    <span className="ml-1 font-mono text-[10px] text-acc" title="Captain">
+                      C
+                    </span>
                   ) : null}
+                  {p.rookie ? (
+                    <span className="ml-1 font-mono text-[10px] text-mute" title="Rookie">
+                      R
+                    </span>
+                  ) : null}
+                  {(p.status ?? []).map((st) => (
+                    <span
+                      key={st}
+                      className="ml-1.5 rounded border border-loss/40 px-1 font-mono text-[9px] uppercase text-loss"
+                    >
+                      {st}
+                    </span>
+                  ))}
                 </td>
-                <td className="px-2 py-1.5 text-mute">{p.pos}</td>
-                <td className="px-2 py-1.5 text-mute">{p.shot ?? ""}</td>
+                <td className="px-2 py-1.5 font-mono text-xs text-mute" title={p.pos}>
+                  {posAbbr(p.pos)}
+                </td>
+                <td className="px-2 py-1.5 font-mono text-xs text-mute">{shotAbbr(p.shot)}</td>
                 <td className="px-2 py-1.5 font-mono text-[11px] text-mute">
                   {[p.height, p.weight].filter(Boolean).join(" · ")}
                 </td>
-                <td className="px-4 py-1.5 text-mute">{p.college ?? ""}</td>
+                <td className="px-4 py-1">
+                  <College p={p} />
+                </td>
               </tr>
             ))}
           </tbody>
@@ -133,7 +183,7 @@ export function PllRosterPanel({ teamId, season }: { teamId: string; season: num
       </div>
       <WikiCredit
         page={roster.page}
-        what={`Roster as listed on the team's Wikipedia page (${roster.season ?? "latest"}); not week-by-week, reserves not marked`}
+        what={`Roster, injuries and PUP/holdout/travel lists as last listed on the team's Wikipedia page (${roster.season ?? "latest"} season); not week-by-week`}
       />
     </Panel>
   );
