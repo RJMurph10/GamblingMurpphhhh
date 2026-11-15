@@ -5,6 +5,7 @@ import { PllLogo, PllSeasonPicker } from "@/components/pll/PllBits";
 import { PllDashGames } from "@/components/pll/PllDashGames";
 import { PllDraftClass, PllTeamTrends } from "@/components/pll/PllHistory";
 import { PllLeaders, PllRosterPanel } from "@/components/pll/PllPlayers";
+import { PllTeamPlayerStats } from "@/components/pll/PllPlayerLink";
 import { pllCoaches } from "@/lib/pll/players";
 import { standings, teamOf } from "@/lib/pll/pll";
 import { currentPllSeason, pllTeamSeasons, usePllLines, usePllSeason } from "@/lib/pll/use-pll";
@@ -107,11 +108,14 @@ function PllTeamPage() {
           />
         </div>
       ) : tab === "roster" ? (
-        <div className="mt-4 grid gap-6 lg:grid-cols-[1.4fr_1fr]">
-          <PllRosterPanel teamId={teamId} season={season} />
-          <div className="space-y-6">
-            <PllLeaders season={season} data={q.data} teamId={teamId} />
-            <PllDraftClass teamId={teamId} season={season} />
+        <div className="mt-4 space-y-6">
+          <PllTeamPlayerStats teamId={teamId} season={season} data={q.data} />
+          <div className="grid gap-6 lg:grid-cols-[1.4fr_1fr]">
+            <PllRosterPanel teamId={teamId} season={season} />
+            <div className="space-y-6">
+              <PllLeaders season={season} data={q.data} teamId={teamId} />
+              <PllDraftClass teamId={teamId} season={season} />
+            </div>
           </div>
         </div>
       ) : (

@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { Panel, PanelHeader } from "@/components/shared/booth";
 import { PllLogo } from "@/components/pll/PllBits";
+import { PllPlayerName } from "@/components/pll/PllPlayerLink";
 import { collegeLogoFor } from "@/lib/pll/colleges";
 import { gameRoster, type PllRosterLine } from "@/lib/pll/game-rosters";
 import { pllDate, teamOf, type PllGame, type PllSeason } from "@/lib/pll/pll";
@@ -70,7 +71,9 @@ function Side({ game, season, teamId }: { game: PllGame; season?: PllSeason; tea
             {players.map((p: PllRosterLine) => (
               <tr key={`${p.num}-${p.name}`} className="hover:bg-line/5">
                 <td className="px-4 py-1.5 font-mono tabular-nums text-mute">{p.num ?? ""}</td>
-                <td className="px-2 py-1.5 font-semibold">{p.name}</td>
+                <td className="px-2 py-1.5 font-semibold">
+                  <PllPlayerName name={p.name} />
+                </td>
                 <td className="px-2 py-1.5 font-mono text-xs text-mute">{posAbbr(p.pos)}</td>
                 <td className="px-4 py-1">
                   <CollegeMark college={p.college} />

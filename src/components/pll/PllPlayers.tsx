@@ -1,6 +1,7 @@
 import { useMemo, useState } from "react";
 import { Panel, PanelHeader } from "@/components/shared/booth";
 import { PllLogo } from "@/components/pll/PllBits";
+import { PllPlayerName } from "@/components/pll/PllPlayerLink";
 import type { PllSeason } from "@/lib/pll/pll";
 import { teamOf } from "@/lib/pll/pll";
 import {
@@ -181,7 +182,7 @@ export function PllRosterPanel({ teamId, season }: { teamId: string; season: num
               <tr key={`${p.num}-${p.name}`} className="hover:bg-line/5">
                 <td className="px-4 py-1.5 font-mono tabular-nums text-mute">{p.num}</td>
                 <td className="px-2 py-1.5">
-                  <span className="font-semibold">{p.name}</span>
+                  <PllPlayerName name={p.name} className="font-semibold" />
                   {p.captain ? (
                     <span className="ml-1 font-mono text-[10px] text-acc" title="Captain">
                       C
