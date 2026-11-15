@@ -8,9 +8,14 @@ const ends = { 2019: "2019-10-15", 2020: "2020-09-15", 2021: "2021-10-15", 2022:
 const out = {};
 for (const p of pages) {
   for (const [y, d] of Object.entries(ends)) {
-    await sleep(1200);
+    await sleep(3000);
     try {
-      const j = await (await fetch(`https://en.wikipedia.org/w/api.php?action=query&titles=${p}&prop=revisions&rvprop=ids|timestamp|content&rvslots=main&rvlimit=1&rvdir=older&rvstart=${d}T00:00:00Z&format=json&formatversion=2&redirects=1`, UA)).json();
+      let j;
+      for (let a = 0; a < 6; a++) {
+        const r = await fetch(`https://en.wikipedia.org/w/api.php?action=query&titles=${p}&prop=revisions&rvprop=ids|timestamp|content&rvslots=main&rvlimit=1&rvdir=older&rvstart=${d}T00:00:00Z&format=json&formatversion=2&redirects=1`, UA);
+        const txt = await r.text();
+        try { j = JSON.parse(txt); break; } catch { console.log("WAIT", p, y, a); await sleep(20000 * (a + 1)); }
+      }
       const pg = j.query?.pages?.[0]; const rev = pg?.revisions?.[0];
       const w = rev?.slots?.main?.content ?? "";
       const i = w.search(/\n==+\s*(Current )?[Rr]oster\s*==+/);
