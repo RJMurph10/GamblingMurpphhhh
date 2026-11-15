@@ -14,7 +14,12 @@ export type PllRosterPlayer = {
   weight?: string;
   college?: string;
   hometown?: string;
+  /** ESPN team id of the college, for its logo (absent for colleges ESPN doesn't list). */
+  collegeId?: string;
   captain?: boolean;
+  rookie?: boolean;
+  /** Lists the player is on per Wikipedia: "Injured", "PUP", "Holdout", "Unavailable to Travel"... */
+  status?: string[];
 };
 export type PllRoster = { season: number | null; page: string; players: PllRosterPlayer[] };
 export type PllLeader = {
@@ -34,6 +39,32 @@ const leaders = data.leaders as Record<string, { page: string; rows: PllLeader[]
 export function pllRoster(teamId: string): PllRoster | undefined {
   return rosters[teamId];
 }
+
+/** Short position: A, M, FO, D, G, LSM, SSDM ("Defense/SSDM" -> "D/SSDM"). */
+export function posAbbr(pos: string): string {
+  const one = (p: string) => {
+    const k = p
+      .trim()
+      .toLowerCase()
+      .replace(/[^a-z]/g, "");
+    if (k.startsWith("attack")) return "A";
+    if (k.startsWith("mid")) return "M";
+    if (k.startsWith("faceoff")) return "FO";
+    if (k.startsWith("defen")) return "D";
+    if (k.startsWith("goal")) return "G";
+    return p.trim().toUpperCase();
+  };
+  return pos.split("/").map(one).join("/");
+}
+
+/** Shooting hand as one letter: the first listed ("R/L" -> "R", "Left" -> "L"). */
+export const shotAbbr = (shot?: string) => {
+  const c = shot?.trim()[0]?.toUpperCase();
+  return c === "L" || c === "R" ? c : "";
+};
+
+/** A college's logo on ESPN's CDN. */
+export const collegeLogo = (id: string) => `https://a.espncdn.com/i/teamlogos/ncaa/500/${id}.png`;
 
 /** Sort key for positions, the way rosters are read: attack to goalie. */
 const POS_ORDER = ["Attack", "Midfield", "Face-off", "Faceoff", "SSDM", "LSM", "Defense", "Goalie"];

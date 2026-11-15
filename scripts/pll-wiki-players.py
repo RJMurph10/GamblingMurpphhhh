@@ -52,10 +52,36 @@ def team_id(s):
         if k in s.lower(): return v
     return None
 
+# ESPN team ids for players' colleges (logos at a.espncdn.com/i/teamlogos/ncaa/500/<id>.png); colleges
+# ESPN doesn't list (Adelphi, Hobart, LIU Post, Wesleyan, York) show as text
+COLLEGE_ESPN = {
+    "Albany": "399", "Army": "349", "Bellarmine": "91", "Brown": "225", "Bryant": "2803", "Colgate": "2142",
+    "Cornell": "172", "Delaware": "48", "Denver": "2172", "Detroit Mercy": "2174", "Drexel": "2182", "Duke": "150",
+    "Florida": "57", "Georgetown": "46", "Harvard": "108", "High Point": "2272", "Ithaca": "175", "Jacksonville": "294",
+    "Johns Hopkins": "118", "Lafayette": "322", "Lehigh": "2329", "Loyola": "2352", "Marist": "2368", "Marquette": "269",
+    "Maryland": "120", "Mercyhurst": "2385", "Michigan": "130", "North Carolina": "153", "Notre Dame": "87",
+    "Ohio State": "194", "Penn": "219", "Penn State": "213", "Princeton": "163", "Providence": "2507", "Richmond": "257",
+    "Rutgers": "164", "Saint Joseph's": "2603", "Salisbury": "2532", "St. Bonaventure": "179", "St. John's": "2599",
+    "Syracuse": "183", "Towson": "119", "Tufts": "112", "UMass": "113", "Utah": "254", "Vermont": "261",
+    "Villanova": "222", "Virginia": "258", "Wingate": "351", "Yale": "43",
+}
+
+def roster_marks(sec):
+    """The page's legend: which symbol (*, **, ^) means which list (PUP, holdout, ...)."""
+    marks = {}
+    for m in re.finditer(r"(?:<nowiki>)?(\*\*|\*|\^)(?:</nowiki>)?\s*[Ii]ndicates (?:a )?player is on (?:the )?(.+?)(?: [Ll]ist)?\s*(?:<ref|\n|$)", sec):
+        label = m.group(2).strip()
+        label = {"physically unable to perform": "PUP"}.get(label.lower(), label[0].upper() + label[1:])
+        marks[m.group(1)] = label
+    return marks
+
 rosters = {}
 for tid, page in PAGES.items():
     w = d[page]; sec = section(w, "Roster")
     hm = re.search(r"'''(\d{4})\s[^']*'''", sec)
+    marks = roster_marks(sec)
+    # injury icons: [[File:Injury icon 2.svg|12px|Out]] -> {INJ:Out}
+    sec = re.sub(r"\[\[File:Injury icon[^\]]*?\|([^\]|]*)\]\]", r" {INJ:\1}", sec)
     for cap, head, rows in tables(sec):
         if "Name" not in head: continue
         col = {h: i for i, h in enumerate(head)}
@@ -63,10 +89,22 @@ for tid, page in PAGES.items():
         for r in rows:
             if len(r) < len(head) - 1 or not r[col["Name"]]: continue
             name = r[col["Name"]]; cap_ = "(C)" in name
-            p = dict(num=r[col["#"]].strip(), name=name.replace("(C)", "").strip(), pos=r[col["Position"]].strip())
+            status = []
+            inj = re.search(r"\{INJ:([^}]*)\}", name)
+            if inj: status.append("Injured" if inj.group(1).strip().lower() == "out" else inj.group(1).strip())
+            for sym in ("**", "^", "*"):  # longest first
+                if sym in name and sym in marks:
+                    status.append(marks[sym]); name = name.replace(sym, "")
+            rookie = "(R)" in name
+            name = re.sub(r"\{INJ:[^}]*\}|\(C\)|\(R\)|[*^]", "", name)
+            name = re.sub(r"\s+", " ", name).strip()
+            p = dict(num=r[col["#"]].strip(), name=name, pos=r[col["Position"]].strip())
+            if status: p["status"] = status
+            if rookie: p["rookie"] = True
             for k, h in (("shot", "Shot"), ("height", "Height"), ("weight", "Weight"), ("college", "College"), ("hometown", "Hometown")):
                 if h in col and col[h] < len(r) and r[col[h]]: p[k] = r[col[h]]
             if cap_: p["captain"] = True
+            if p.get("college") in COLLEGE_ESPN: p["collegeId"] = COLLEGE_ESPN[p["college"]]
             players.append(p)
         rosters[tid] = dict(season=int(hm.group(1)) if hm else None, page=page, players=players)
         break
