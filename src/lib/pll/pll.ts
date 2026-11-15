@@ -56,26 +56,49 @@ export const PHASE_LABEL: Record<PllPhase, string> = {
   playoffs: "Playoffs",
 };
 
-/** Regular-season games per team (8 teams × 10 games = 40 games). */
-export const PLL_REGULAR_GAMES = 40;
+/**
+ * Where the regular season ends among a summer's club games (in date order): after the last game at which
+ * every club had played the same number of games. The playoffs never even out again (six of eight clubs
+ * make it and the top seeds get byes), and a season still in progress is all regular season. This handles
+ * 10-game seasons (2022-2025: 40 games) and 12-game ones (2026: 48).
+ */
+export function regularSeasonLength(club: Omit<PllGame, "phase">[]): number {
+  const played = new Map<string, number>();
+  let end = club.length;
+  let lastEven = 0;
+  club.forEach((g, i) => {
+    for (const id of [g.home.teamId, g.away.teamId]) played.set(id, (played.get(id) ?? 0) + 1);
+    const counts = [...played.values()];
+    if (counts.length >= 6 && counts.every((n) => n === counts[0])) lastEven = i + 1;
+  });
+  // with no point where clubs were even, or a season still under way, call it all regular season
+  if (lastEven >= club.length / 2) end = lastEven;
+  return end;
+}
 
 /**
  * Tags each game's phase from its date and teams (ESPN calls every PLL game "regular season"):
- * February–April = Championship Series; All-Star teams (East, West, Team …) = All-Star; of the summer club
- * games, the first 40 by date = regular season and the rest = playoffs.
+ * February–April = Championship Series; All-Star teams (East, West, Team …) = All-Star; summer club
+ * games = regular season up to regularSeasonLength, then playoffs.
  */
 export function tagPhases(games: Omit<PllGame, "phase">[], allStarIds: Set<string>): PllGame[] {
-  const out: PllGame[] = [];
-  let summer = 0;
-  for (const g of [...games].sort((a, b) => a.date.localeCompare(b.date))) {
-    const month = new Date(g.date).getUTCMonth() + 1;
-    let phase: PllPhase;
-    if (allStarIds.has(g.home.teamId) || allStarIds.has(g.away.teamId)) phase = "allstar";
-    else if (month <= 4) phase = "champ";
-    else phase = summer++ < PLL_REGULAR_GAMES ? "regular" : "playoffs";
-    out.push({ ...g, phase });
-  }
-  return out;
+  const sorted = [...games].sort((a, b) => a.date.localeCompare(b.date));
+  const isAllStar = (g: Omit<PllGame, "phase">) =>
+    allStarIds.has(g.home.teamId) || allStarIds.has(g.away.teamId);
+  const month = (g: Omit<PllGame, "phase">) => new Date(g.date).getUTCMonth() + 1;
+  const club = sorted.filter((g) => !isAllStar(g) && month(g) > 4);
+  const regular = regularSeasonLength(club);
+  const playoffIds = new Set(club.slice(regular).map((g) => g.id));
+  return sorted.map((g) => ({
+    ...g,
+    phase: isAllStar(g)
+      ? "allstar"
+      : month(g) <= 4
+        ? "champ"
+        : playoffIds.has(g.id)
+          ? "playoffs"
+          : "regular",
+  }));
 }
 
 export interface PllStanding {
@@ -121,6 +144,44 @@ export function standings(season: PllSeason): PllStanding[] {
   return [...rows.values()]
     .filter((r) => r.w + r.l > 0)
     .sort((a, b) => b.w - a.w || b.gf - b.ga - (a.gf - a.ga) || b.gf - a.gf);
+}
+
+/** The league split into conferences in 2024 (with the move to home cities). */
+export const PLL_CONFERENCES_FROM = 2024;
+export type PllConference = "East" | "West";
+const EAST = new Set(["127632", "122997", "127637", "127638"]); // Atlas, Cannons, Waterdogs, Whipsnakes
+const WEST = new Set(["127631", "127634", "122896", "127636"]); // Archers, Chaos, Outlaws, Redwoods
+
+/** A club's conference that season (none before 2024). */
+export function conferenceOf(teamId: string, season: number): PllConference | undefined {
+  if (season < PLL_CONFERENCES_FROM) return undefined;
+  return EAST.has(teamId) ? "East" : WEST.has(teamId) ? "West" : undefined;
+}
+
+/** Regular-season records in games against conference opponents. */
+export function conferenceRecords(season: PllSeason): Map<string, { w: number; l: number }> {
+  const out = new Map<string, { w: number; l: number }>();
+  for (const g of season.games) {
+    if (
+      g.phase !== "regular" ||
+      g.status !== "final" ||
+      g.home.score == null ||
+      g.away.score == null
+    )
+      continue;
+    const ch = conferenceOf(g.home.teamId, season.season);
+    if (!ch || ch !== conferenceOf(g.away.teamId, season.season)) continue;
+    for (const [me, them] of [
+      [g.home, g.away],
+      [g.away, g.home],
+    ] as const) {
+      const r = out.get(me.teamId) ?? { w: 0, l: 0 };
+      if ((me.score ?? 0) > (them.score ?? 0)) r.w += 1;
+      else r.l += 1;
+      out.set(me.teamId, r);
+    }
+  }
+  return out;
 }
 
 export interface PllPulse {

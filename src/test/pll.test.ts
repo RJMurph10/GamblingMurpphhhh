@@ -18,19 +18,20 @@ describe("PLL from ESPN", () => {
     expect(s.teams).toHaveLength(8);
     expect(s.teams.some((t) => /east|west|team /i.test(t.name))).toBe(false);
     const by = (p: string) => s.games.filter((g) => g.phase === p).length;
-    expect(by("regular")).toBe(40);
+    expect(by("regular")).toBe(48); // 2026: 12 games a team
     expect(by("champ")).toBe(8); // February / March Championship Series
-    expect(by("playoffs") + by("allstar")).toBe(63 - 40 - 8);
+    expect(by("playoffs")).toBe(5);
+    expect(by("allstar")).toBe(2);
     const table = standings(s);
     expect(table).toHaveLength(8);
-    expect(table.reduce((n, r) => n + r.w, 0)).toBe(40);
+    expect(table.reduce((n, r) => n + r.w, 0)).toBe(48);
     // the final: Waterdogs 14, Outlaws 4 on Sep 20
     const final = s.games[s.games.length - 1];
     expect(final.phase).toBe("playoffs");
     expect(final.home.score).toBe(14);
     expect(final.home.quarters).toEqual([7, 3, 1, 3]);
     const p = pulse(s.games.filter((g) => g.phase === "regular"));
-    expect(p.games).toBe(40);
+    expect(p.games).toBe(48);
     expect(p.goalsPerGame).toBeGreaterThan(15);
   });
 });
@@ -109,5 +110,32 @@ describe("withEraLogos", () => {
         .logo;
     expect(whip(2025)).toBe("/logos/pll-whipsnakes-2024.png");
     expect(whip(2026)).toBe("espn/127638");
+  });
+});
+
+import { conferenceOf, conferenceRecords } from "@/lib/pll/pll";
+
+describe("PLL conferences", () => {
+  it("East and West from 2024 only", () => {
+    expect(conferenceOf("127632", 2024)).toBe("East"); // Atlas
+    expect(conferenceOf("127634", 2026)).toBe("West"); // Chaos
+    expect(conferenceOf("127632", 2023)).toBeUndefined();
+  });
+  it("counts conference games in 2026", async () => {
+    vi.stubGlobal(
+      "fetch",
+      vi.fn(async (url: string) => ({
+        ok: true,
+        json: async () => (String(url).includes("/teams") ? fixture.teams : fixture.scoreboard),
+      })),
+    );
+    const s = await fetchPllSeason(2026);
+    const r = conferenceRecords(s);
+    expect(r.size).toBe(8);
+    // every conference game has one winner and one loser
+    const all = [...r.values()];
+    expect(all.reduce((n, x) => n + x.w, 0)).toBe(all.reduce((n, x) => n + x.l, 0));
+    // in-conference opponents twice: 3 opponents x 2 = 6 games each
+    for (const x of all) expect(x.w + x.l).toBe(6);
   });
 });
