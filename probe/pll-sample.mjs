@@ -7,7 +7,7 @@ const grab = async (k, u) => {
     if (r.ok && /image/.test(r.headers.get("content-type") ?? "")) out[k] = { u, b64: b.toString("base64") };
   } catch (e) { console.log("IMG", k, u, "ERR", e.message); }
 };
-const t = await (await fetch("https://www.thesportsdb.com/api/v1/json/3/lookupteam.php?id=146833")).json();
+const t = await (await fetch("https://www.thesportsdb.com/api/v1/json/123/lookupteam.php?id=146833")).json();
 const team = t.teams?.[0] ?? {};
 console.log("TSDB", JSON.stringify({ badge: team.strBadge, logo: team.strLogo, colours: [team.strColour1, team.strColour2, team.strColour3] }));
 if (team.strBadge) await grab("tsdb-badge", team.strBadge);
