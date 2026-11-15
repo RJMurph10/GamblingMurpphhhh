@@ -7,18 +7,18 @@
   "id": "399",
   "abbr": "UALB",
   "name": "UAlbany Great Danes",
-  "score": 54
+  "score": 62
  },
  "home": {
   "id": "107",
   "abbr": "HC",
   "name": "Holy Cross Crusaders",
-  "score": 47
+  "score": 60
  },
  "neutral": false,
  "venue": "Hart Center Arena",
  "seasonType": 2,
- "state": "in",
+ "state": "post",
  "lines": {
   "open": {
    "at": "2026-11-15T11:04:29.925Z",
@@ -933,5 +933,9 @@
    ]
   }
  },
- "props": {}
+ "props": {},
+ "final": {
+  "away": 62,
+  "home": 60
+ }
 }

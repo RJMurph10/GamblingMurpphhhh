@@ -7,18 +7,18 @@
   "id": "2569",
   "abbr": "SCST",
   "name": "South Carolina State Bulldogs",
-  "score": 45
+  "score": 66
  },
  "home": {
   "id": "232",
   "abbr": "COFC",
   "name": "Charleston Cougars",
-  "score": 68
+  "score": 90
  },
  "neutral": false,
  "venue": "TD Arena",
  "seasonType": 2,
- "state": "in",
+ "state": "post",
  "lines": {
   "open": {
    "at": "2026-11-15T02:45:11.429Z",
@@ -851,5 +851,9 @@
    ]
   }
  },
- "props": {}
+ "props": {},
+ "final": {
+  "away": 66,
+  "home": 90
+ }
 }

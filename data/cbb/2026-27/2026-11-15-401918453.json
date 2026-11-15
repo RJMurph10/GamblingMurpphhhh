@@ -7,18 +7,18 @@
   "id": "2729",
   "abbr": "W&M",
   "name": "William & Mary Tribe",
-  "score": 63
+  "score": 79
  },
  "home": {
   "id": "130",
   "abbr": "MICH",
   "name": "Michigan Wolverines",
-  "score": 83
+  "score": 123
  },
  "neutral": false,
  "venue": "Crisler Center",
  "seasonType": 2,
- "state": "in",
+ "state": "post",
  "lines": {
   "open": {
    "at": "2026-11-15T02:45:11.429Z",
@@ -933,5 +933,9 @@
    ]
   }
  },
- "props": {}
+ "props": {},
+ "final": {
+  "away": 79,
+  "home": 123
+ }
 }

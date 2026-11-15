@@ -7,13 +7,13 @@
   "id": "12",
   "abbr": "KC",
   "name": "Kansas City Chiefs",
-  "score": 28
+  "score": 35
  },
  "home": {
   "id": "1",
   "abbr": "ATL",
   "name": "Atlanta Falcons",
-  "score": 3
+  "score": 13
  },
  "neutral": false,
  "venue": "Mercedes-Benz Stadium",

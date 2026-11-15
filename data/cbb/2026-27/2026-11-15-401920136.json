@@ -7,18 +7,18 @@
   "id": "2934",
   "abbr": "CSUB",
   "name": "Cal State Bakersfield Roadrunners",
-  "score": 60
+  "score": 73
  },
  "home": {
   "id": "2449",
   "abbr": "NDSU",
   "name": "North Dakota State Bison",
-  "score": 55
+  "score": 69
  },
  "neutral": false,
  "venue": "Scheels Center",
  "seasonType": 2,
- "state": "in",
+ "state": "post",
  "lines": {
   "open": {
    "at": "2026-11-15T11:04:29.925Z",
@@ -933,5 +933,9 @@
    ]
   }
  },
- "props": {}
+ "props": {},
+ "final": {
+  "away": 73,
+  "home": 69
+ }
 }

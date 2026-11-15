@@ -7,13 +7,13 @@
   "id": "30",
   "abbr": "JAX",
   "name": "Jacksonville Jaguars",
-  "score": 23
+  "score": 33
  },
  "home": {
   "id": "10",
   "abbr": "TEN",
   "name": "Tennessee Titans",
-  "score": 16
+  "score": 23
  },
  "neutral": false,
  "venue": "Nissan Stadium",

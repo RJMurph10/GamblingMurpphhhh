@@ -7,13 +7,13 @@
   "id": "34",
   "abbr": "HOU",
   "name": "Houston Texans",
-  "score": 17
+  "score": 24
  },
  "home": {
   "id": "5",
   "abbr": "CLE",
   "name": "Cleveland Browns",
-  "score": 20
+  "score": 27
  },
  "neutral": false,
  "venue": "Huntington Bank Field",
