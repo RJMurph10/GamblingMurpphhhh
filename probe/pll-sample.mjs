@@ -4,7 +4,7 @@ const sleep = (ms) => new Promise((r) => setTimeout(r, ms));
 const pages = ["Utah_Archers", "Atlas_Lacrosse_Club", "Boston_Cannons", "Cannons_Lacrosse_Club", "Carolina_Chaos", "Chrome_Lacrosse_Club",
   "Denver_Outlaws", "Redwoods_Lacrosse_Club", "Philadelphia_Waterdogs", "Maryland_Whipsnakes"];
 // end of each season (2020's Championship Series ended in August)
-const ends = { 2019: "2019-10-15", 2020: "2020-09-15", 2021: "2021-10-15", 2022: "2022-10-15", 2023: "2023-10-15", 2024: "2024-10-15", 2025: "2025-10-15" };
+const ends = { "2020b": "2020-12-31", "2020c": "2020-07-31", "2022b": "2022-12-31", "2023b": "2023-04-01", "2024a": "2024-07-15", "2024b": "2024-12-31", "2025a": "2025-03-15" };
 const out = {};
 for (const p of pages) {
   for (const [y, d] of Object.entries(ends)) {
