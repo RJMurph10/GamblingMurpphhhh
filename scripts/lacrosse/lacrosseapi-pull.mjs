@@ -155,6 +155,7 @@ async function main() {
   const oddsEvents = await all("/v1/odds/events");
   const venues = new Set();
   const teamEvents = new Map(); // team id -> league weekends (event ids) it played in
+  const teamSeasonIds = new Map(); // team id -> season ids
 
   for (const comp of comps) {
     const seasons = await all(`/v1/seasons?competition=${encodeURIComponent(idOf(comp))}`);
@@ -164,8 +165,8 @@ async function main() {
     );
     for (const s of seasons) {
       const sid = idOf(s);
-      await get(`/v1/seasons/${sid}/player-stats`);
-      await get(`/v1/seasons/${sid}/team-stats`);
+      await all(`/v1/seasons/${sid}/player-stats`);
+      await all(`/v1/seasons/${sid}/team-stats`);
       await get(`/v1/seasons/${sid}/standings/latest`);
       await get(`/v1/seasons/${sid}/standings/history`);
       const fixtures = await all(`/v1/fixtures?season=${encodeURIComponent(sid)}`);
@@ -175,11 +176,14 @@ async function main() {
         const full = await get(`/v1/fixtures/${fid}`);
         const v = full?.data?.venue_id ?? full?.data?.venue?.id;
         if (v) venues.add(v);
+        for (const t of sideTeams(fx))
+          teamSeasonIds.set(t, new Set([...(teamSeasonIds.get(t) ?? []), sid]));
         const ev = fx.event_id ?? full?.data?.event_id;
         if (ev)
           for (const t of sideTeams(fx))
             teamEvents.set(t, new Set([...(teamEvents.get(t) ?? []), ev]));
-        await get(`/v1/fixtures/${fid}/plays`);
+        await all(`/v1/fixtures/${fid}/plays`);
+        await get(`/v1/fixtures/${fid}/live`);
         await get(`/v1/fixtures/${fid}/odds`);
         const matches = await get(`/v1/fixtures/${fid}/matches`);
         const ms = Array.isArray(matches?.data)
@@ -193,8 +197,8 @@ async function main() {
           await get(`/v1/matches/${mid}`);
           await get(`/v1/matches/${mid}/participants`);
           await get(`/v1/matches/${mid}/games`);
-          await get(`/v1/matches/${mid}/events`);
-          await get(`/v1/matches/${mid}/observations`);
+          await all(`/v1/matches/${mid}/events`);
+          await all(`/v1/matches/${mid}/observations`);
           await get(`/v1/matches/${mid}/player-stats`);
           await get(`/v1/matches/${mid}/team-stats`);
         }
@@ -208,6 +212,17 @@ async function main() {
     await get(`/v1/teams/${t}`);
     await get(`/v1/teams/${t}/fixtures`);
     for (const e of evs) await get(`/v1/teams/${t}/roster?event_id=${encodeURIComponent(e)}`);
+    // the plain event_id roster comes back empty: try it with the season too, and the season alone
+    const sids = [...(teamSeasonIds.get(t) ?? [])];
+    for (const sid of sids) {
+      const bySeason = await get(`/v1/teams/${t}/roster?season=${encodeURIComponent(sid)}`);
+      const first = [...evs][0];
+      if (first)
+        await get(
+          `/v1/teams/${t}/roster?season=${encodeURIComponent(sid)}&event_id=${encodeURIComponent(first)}`,
+        );
+      if (bySeason?.data?.length) console.log(`  season roster has players for team ${t}`);
+    }
   }
   // league events (weekends): details, teams, standings
   for (const e of ids(events)) {
@@ -235,7 +250,7 @@ async function main() {
       ...(d.markets ?? []).map(idOf),
       ...(d.prices ?? []).map((p) => p.market_id),
     ]);
-    for (const m of markets) if (m) await get(`/v1/odds/markets/${m}/prices`);
+    for (const m of markets) if (m) await all(`/v1/odds/markets/${m}/prices`);
   }
   await usage();
   console.log(`done: ${calls} calls this run`);
