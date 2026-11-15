@@ -105,7 +105,7 @@ function PllDashboard() {
                       >
                         <span className="w-4 font-mono text-[10px] text-faint">{i + 1}</span>
                         <PllLogo team={r.team} className="size-5" />
-                        <span className="font-semibold">{r.team.name}</span>
+                        <span className="font-semibold">{r.team.short}</span>
                       </Link>
                     </td>
                     <td className="px-2 py-2 text-right font-mono tabular-nums">
