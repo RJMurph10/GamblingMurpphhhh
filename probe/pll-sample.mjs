@@ -1,10 +1,12 @@
 import { writeFileSync } from "node:fs";
+const UA = { headers: { "User-Agent": "GamblingNFL research (github.com/RJMurph10/gamblingnfl)" } };
 const out = {};
-for (const q of ["adelphi", "york college", "york pennsylvania", "hobart", "wesleyan"]) {
-  const r = await fetch(`https://site.web.api.espn.com/apis/common/v3/search?query=${encodeURIComponent(q)}&type=team&limit=20`);
-  const j = r.ok ? await r.json() : {};
-  const items = (j.items ?? []).map((i) => `${i.id}|${i.displayName}|${i.league ?? i.defaultLeagueSlug ?? ""}|${i.logo?.[0]?.href ?? i.image?.default ?? ""}`);
-  console.log("SEARCH", q, r.status, JSON.stringify(items).slice(0, 1500));
+for (const t of ["Adelphi_Panthers", "York_Spartans", "York_College_of_Pennsylvania"]) {
+  await new Promise((r) => setTimeout(r, 1500));
+  const j = await (await fetch(`https://en.wikipedia.org/w/api.php?action=query&titles=${t}&prop=pageimages|images&piprop=original&imlimit=40&format=json&formatversion=2&redirects=1`, UA)).json();
+  const pg = j.query?.pages?.[0];
+  console.log("PAGE", t, pg?.title, pg?.original?.source, JSON.stringify((pg?.images ?? []).map((i) => i.title).filter((x) => /logo|wordmark|athletic|spartan|panther/i.test(x))));
+  const src = pg?.original?.source;
+  if (src) { const r = await fetch(src, UA); const b = Buffer.from(await r.arrayBuffer()); console.log("IMG", t, r.status, r.headers.get("content-type"), b.length); if (r.ok) out[t] = { u: src, b64: b.toString("base64") }; }
 }
-for (const id of ["174", "336", "2341"]) { const r = await fetch(`https://a.espncdn.com/i/teamlogos/ncaa/500/${id}.png`); console.log("LOGO", id, r.status, (await r.arrayBuffer()).byteLength); }
 writeFileSync("pll_sample.json", JSON.stringify(out));
