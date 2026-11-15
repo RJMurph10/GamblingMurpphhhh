@@ -1,6 +1,6 @@
 name: Lacrosse API pull (PLL stats, rosters, play-by-play, odds)
 
-# Saves everything Lacrosse API (lacrosseapi.com) has for the PLL to the lacrosse-api branch
+# Saves everything Lacrosse API (lacrosseapi.com) has for the PLL and WLL to the lacrosse-api branch
 # (raw JSON, one file per request). Files already saved are skipped, so reruns only fetch what's new.
 # Needs the repository secret LACROSSE_API_KEY (from lacrosseapi.com; the 14-day trial works). Without it
 # the job does nothing.
@@ -10,7 +10,7 @@ on:
     inputs:
       competitions:
         description: "Competitions to pull (pll, wll or pll,wll)"
-        default: "pll"
+        default: "pll,wll"
       dry:
         description: "Dry run (list what would be fetched)"
         type: boolean
@@ -52,7 +52,7 @@ jobs:
           fi
           dry=""; if [ "${{ inputs.dry }}" = "true" ]; then dry="--dry"; fi
           node app/scripts/lacrosse/lacrosseapi-pull.mjs --out store/data --reserve 300 \
-            --competitions "${{ inputs.competitions || 'pll' }}" $dry
+            --competitions "${{ inputs.competitions || 'pll,wll' }}" $dry
           cd store
           git config user.name "line-history-bot"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"

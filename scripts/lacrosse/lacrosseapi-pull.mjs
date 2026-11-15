@@ -11,7 +11,7 @@
  * twice. Stops when the plan's remaining calls fall under --reserve (GET /v1/usage).
  *
  *   LACROSSE_API_KEY=lax_live_... node scripts/lacrosse/lacrosseapi-pull.mjs --out store --reserve 500
- *   ... --competitions pll,wll   (default: pll)   --dry (list what would be fetched, no data calls)
+ *   ... --competitions pll,wll   (default: both)   --dry (list what would be fetched, no data calls)
  */
 import { mkdir, readFile, writeFile, access } from "node:fs/promises";
 import { dirname, join } from "node:path";
@@ -23,12 +23,12 @@ const opt = (n, d) => {
 };
 const OUT = opt("out", "store");
 const RESERVE = Number(opt("reserve", "500"));
-const WANT = opt("competitions", "pll").toLowerCase().split(",");
+const WANT = opt("competitions", "pll,wll").toLowerCase().split(",");
 const DRY = args.includes("--dry");
 const KEY = process.env.LACROSSE_API_KEY;
 const BASE = "https://lacrosseapi.com";
 // plan limit is 120 requests a minute on the trial; stay under it
-const GAP_MS = 600;
+const GAP_MS = Number(process.env.LAX_GAP_MS ?? 600);
 
 if (!KEY) {
   console.log("LACROSSE_API_KEY not set; nothing to do.");
@@ -114,12 +114,13 @@ const idOf = (x) => x?.id ?? x?.fixture_id ?? x?.match_id;
 async function usage() {
   const u = await get("/v1/usage", { save: false });
   const d = u?.data ?? u ?? {};
-  // find a "remaining" figure wherever the plan reports it
-  const flat = JSON.stringify(d);
-  const m = flat.match(/"(?:rest_)?(?:calls_)?remaining"\s*:\s*(\d+)/);
-  if (m) remaining = Number(m[1]);
-  console.log("usage:", flat.slice(0, 400));
+  if (Number.isFinite(d.rest_calls_limit) && Number.isFinite(d.rest_calls_used))
+    remaining = d.rest_calls_limit - d.rest_calls_used;
+  console.log("usage:", JSON.stringify(d).slice(0, 400));
 }
+
+const ids = (list) => [...new Set(list.map(idOf).filter(Boolean))];
+const sideTeams = (fx) => (fx.sides ?? []).map((s) => s.team?.id).filter(Boolean);
 
 async function main() {
   await mkdir(OUT, { recursive: true });
@@ -141,26 +142,36 @@ async function main() {
     comps.map((c) => `${idOf(c)} ${c.name}`).join(" | ") || "none matched",
   );
 
-  // reference data
+  // league-wide reference data
   await all("/v1/teams");
   await all("/v1/transactions");
+  const players = await all("/v1/players");
+  const events = await all("/v1/events");
+  const oddsEvents = await all("/v1/odds/events");
+  const venues = new Set();
+  const teamSeasons = new Map(); // team id -> season ids it played in
 
   for (const comp of comps) {
     const seasons = await all(`/v1/seasons?competition=${encodeURIComponent(idOf(comp))}`);
     console.log(
       `${comp.name}: ${seasons.length} seasons:`,
-      seasons.map((s) => s.year ?? s.name ?? idOf(s)).join(", "),
+      seasons.map((s) => s.name ?? s.year ?? idOf(s)).join(", "),
     );
     for (const s of seasons) {
       const sid = idOf(s);
       await get(`/v1/seasons/${sid}/player-stats`);
       await get(`/v1/seasons/${sid}/team-stats`);
       await get(`/v1/seasons/${sid}/standings/latest`);
+      await get(`/v1/seasons/${sid}/standings/history`);
       const fixtures = await all(`/v1/fixtures?season=${encodeURIComponent(sid)}`);
-      console.log(`  season ${s.year ?? sid}: ${fixtures.length} fixtures`);
+      console.log(`  season ${s.name ?? sid}: ${fixtures.length} fixtures`);
       for (const fx of fixtures) {
         const fid = idOf(fx);
-        await get(`/v1/fixtures/${fid}`);
+        const full = await get(`/v1/fixtures/${fid}`);
+        const v = full?.data?.venue_id ?? full?.data?.venue?.id;
+        if (v) venues.add(v);
+        for (const t of sideTeams(fx))
+          teamSeasons.set(t, new Set([...(teamSeasons.get(t) ?? []), sid]));
         await get(`/v1/fixtures/${fid}/plays`);
         await get(`/v1/fixtures/${fid}/odds`);
         const matches = await get(`/v1/fixtures/${fid}/matches`);
@@ -172,25 +183,49 @@ async function main() {
         for (const m of ms) {
           const mid = idOf(m);
           if (!mid) continue;
+          await get(`/v1/matches/${mid}`);
           await get(`/v1/matches/${mid}/participants`);
           await get(`/v1/matches/${mid}/games`);
+          await get(`/v1/matches/${mid}/events`);
+          await get(`/v1/matches/${mid}/observations`);
           await get(`/v1/matches/${mid}/player-stats`);
           await get(`/v1/matches/${mid}/team-stats`);
         }
       }
-      // rosters as of this season, for every team that played in it
-      const teamIds = new Set();
-      for (const fx of fixtures)
-        for (const t of [
-          fx.home_team_id,
-          fx.away_team_id,
-          fx.home?.id,
-          fx.away?.id,
-          ...(fx.teams ?? []).map(idOf),
-        ])
-          if (t) teamIds.add(t);
-      for (const t of teamIds) await get(`/v1/teams/${t}/roster?season=${encodeURIComponent(sid)}`);
     }
+  }
+
+  // teams: identity, schedule and the roster for each season they played
+  for (const [t, seasons] of teamSeasons) {
+    await get(`/v1/teams/${t}`);
+    await get(`/v1/teams/${t}/fixtures`);
+    await get(`/v1/teams/${t}/roster`);
+    for (const sid of seasons) await get(`/v1/teams/${t}/roster?season=${encodeURIComponent(sid)}`);
+  }
+  // league events (weekends): details, teams, standings
+  for (const e of ids(events)) {
+    const ev = await get(`/v1/events/${e}`);
+    const v = ev?.data?.venue_id ?? ev?.data?.venue?.id;
+    if (v) venues.add(v);
+    await get(`/v1/events/${e}/teams`);
+    await get(`/v1/events/${e}/standings/latest`);
+    await get(`/v1/events/${e}/standings/history`);
+  }
+  for (const v of venues) await get(`/v1/venues/${v}`);
+  // players: bio and movement history
+  console.log(`players: ${players.length}`);
+  for (const p of ids(players)) {
+    await get(`/v1/players/${p}`);
+    await get(`/v1/players/${p}/transactions`);
+  }
+  // odds: every provider event, its markets and each market's price history
+  console.log(`odds events: ${oddsEvents.length}`);
+  for (const e of ids(oddsEvents)) {
+    const ev = await get(`/v1/odds/events/${e}`);
+    const d = ev?.data ?? {};
+    const markets = d.markets ?? d.odds?.markets ?? [];
+    for (const m of ids(Array.isArray(markets) ? markets : []))
+      await get(`/v1/odds/markets/${m}/prices`);
   }
   await usage();
   console.log(`done: ${calls} calls this run`);
