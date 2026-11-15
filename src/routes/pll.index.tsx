@@ -1,14 +1,9 @@
 import { useMemo, useState } from "react";
 import { createFileRoute, Link } from "@tanstack/react-router";
 import { PageTitle, Panel, PanelHeader, StatCard } from "@/components/shared/booth";
-import {
-  PllGamesTable,
-  PllLinesNote,
-  PllLogo,
-  PllSeasonPicker,
-  PllSourceNote,
-} from "@/components/pll/PllBits";
+import { PllLinesNote, PllLogo, PllSeasonPicker, PllSourceNote } from "@/components/pll/PllBits";
 import { PllChampionships, PllTotals } from "@/components/pll/PllHistory";
+import { PllDashGames } from "@/components/pll/PllDashGames";
 import { PllAwards, PllLeaders } from "@/components/pll/PllPlayers";
 import { linesSummary } from "@/lib/pll/lines";
 import {
@@ -201,38 +196,40 @@ function PllDashboard() {
       <div className="grid gap-6 lg:grid-cols-12">
         <section className="min-w-0 space-y-6 lg:col-span-8">
           {live.length ? (
-            <Panel padded={false}>
-              <PanelHeader title="Live" aside={<span className="label-mono text-acc">now</span>} />
-              <PllGamesTable games={live} season={s} lines={lines} withLines empty="" />
-            </Panel>
-          ) : null}
-          {upcoming.length ? (
-            <Panel padded={false}>
-              <PanelHeader title="Upcoming games" />
-              <PllGamesTable games={upcoming} season={s} lines={lines} withLines empty="" />
-            </Panel>
-          ) : null}
-          <Panel padded={false}>
-            <PanelHeader
-              title="Recent results"
-              aside={
-                <Link to="/pll/games" className="font-mono text-[11px] text-acc">
-                  All games →
-                </Link>
-              }
-            />
-            <PllGamesTable
-              games={recent}
+            <PllDashGames
+              title="Live"
+              games={live}
               season={s}
               lines={lines}
-              withLines
-              empty={q.isLoading ? "Loading games from ESPN…" : "No games yet."}
+              emptyText=""
+              aside={<span className="label-mono text-acc">now</span>}
             />
-            <div className="space-y-1 border-t border-line/5 px-4 py-2">
-              <PllLinesNote hasLines={hasLines} />
-              <PllSourceNote season={season} />
-            </div>
-          </Panel>
+          ) : null}
+          {upcoming.length ? (
+            <PllDashGames
+              title="Upcoming games"
+              games={upcoming}
+              season={s}
+              lines={lines}
+              emptyText=""
+            />
+          ) : null}
+          <PllDashGames
+            title="Recent games"
+            games={recent}
+            season={s}
+            lines={lines}
+            emptyText={q.isLoading ? "Loading games from ESPN…" : "No games yet."}
+            aside={
+              <Link to="/pll/games" className="font-mono text-[11px] text-acc">
+                View all →
+              </Link>
+            }
+          />
+          <div className="space-y-1 px-1">
+            <PllLinesNote hasLines={hasLines} />
+            <PllSourceNote season={season} />
+          </div>
           <PllTotals games={s?.games ?? []} />
         </section>
 
