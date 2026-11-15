@@ -1,6 +1,6 @@
 {
  "day": "2026-11-15",
- "updated": "2026-11-15T12:18:32.455Z",
+ "updated": "2026-11-15T19:59:02.465Z",
  "picks": [
   {
    "id": "401924858-total",
@@ -16,7 +16,12 @@
    "firstSeen": "2026-11-15T12:18:32.455Z",
    "latest": 134.5,
    "latestAt": "2026-11-15T12:18:32.455Z",
-   "alerted": false
+   "alerted": false,
+   "score": [
+    67,
+    72
+   ],
+   "close": 135.5
   },
   {
    "id": "401912210-total",
@@ -95,7 +100,7 @@
    "best": true,
    "firstSeen": "2026-11-15T12:18:32.455Z",
    "latest": 143.5,
-   "latestAt": "2026-11-15T12:18:32.455Z",
+   "latestAt": "2026-11-15T19:59:02.465Z",
    "alerted": false
   },
   {
@@ -111,7 +116,7 @@
    "best": true,
    "firstSeen": "2026-11-15T02:10:44.574Z",
    "latest": 139.5,
-   "latestAt": "2026-11-15T12:18:32.455Z",
+   "latestAt": "2026-11-15T19:59:02.465Z",
    "alerted": false
   }
  ]
