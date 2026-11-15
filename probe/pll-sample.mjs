@@ -1,22 +1,21 @@
 import { writeFileSync } from "node:fs";
+const B = "https://site.api.espn.com/apis/site/v2/sports/lacrosse/pll";
 const out = {};
-const UA = { headers: { "User-Agent": "GamblingNFL research (github.com/RJMurph10/gamblingnfl)" } };
-const grab = async (k, u) => {
-  try { const r = await fetch(u, UA); const b = Buffer.from(await r.arrayBuffer());
-    console.log("IMG", k, u, r.status, r.headers.get("content-type"), b.length);
-    if (r.ok && /image/.test(r.headers.get("content-type") ?? "")) out[k] = { u, b64: b.toString("base64") };
-  } catch (e) { console.log("IMG", k, u, "ERR", e.message); }
-};
-const t = await (await fetch("https://www.thesportsdb.com/api/v1/json/123/lookupteam.php?id=146833")).json();
-const team = t.teams?.[0] ?? {};
-console.log("TSDB", JSON.stringify({ badge: team.strBadge, logo: team.strLogo, colours: [team.strColour1, team.strColour2, team.strColour3] }));
-if (team.strBadge) await grab("tsdb-badge", team.strBadge);
-if (team.strLogo) await grab("tsdb-logo", team.strLogo);
-const w = await (await fetch("https://en.wikipedia.org/w/api.php?action=query&titles=Maryland_Whipsnakes&prop=pageimages|revisions&rvprop=content&rvslots=main&rvsection=0&piprop=original&format=json&formatversion=2", UA)).json();
-const pg = w.query?.pages?.[0];
-console.log("WIKI", pg?.original?.source, (pg?.revisions?.[0]?.slots?.main?.content ?? "").match(/logo\s*=.*|image\s*=.*/g));
-if (pg?.original?.source) await grab("wiki", pg.original.source);
-// history of the Wikipedia infobox logo file
-const fi = await (await fetch("https://en.wikipedia.org/w/api.php?action=query&titles=File:Maryland_Whipsnakes_logo.png|File:Maryland_Whipsnakes.png|File:Maryland_Whipsnakes_logo.svg&prop=imageinfo&iiprop=url|timestamp|comment&iilimit=10&format=json&formatversion=2", UA)).json();
-console.log("FILES", JSON.stringify(fi.query?.pages?.map((p) => [p.title, p.missing, p.imageinfo?.map((i) => [i.timestamp, i.url, i.comment])])));
+for (const y of [2022, 2025, 2026]) {
+  const sb = await (await fetch(`${B}/scoreboard?dates=${y}&limit=1000`)).json();
+  const done = (sb.events ?? []).filter((e) => e.status?.type?.completed);
+  for (const e of [done[3], done.at(-2)].filter(Boolean)) {
+    const r = await fetch(`${B}/summary?event=${e.id}`); const s = await r.json();
+    out[e.id] = s;
+    const bp = s.boxscore?.players ?? [];
+    console.log("SUM", y, e.id, e.name, r.status, "keys", Object.keys(s).join(","));
+    console.log("  box.players", bp.length, bp.map((t) => `${t.team?.abbreviation}: ${(t.statistics ?? []).map((g) => `${g.name ?? g.type}[${(g.athletes ?? []).length}] labels=${(g.labels ?? []).join("/")}`).join(" | ")}`).join(" || "));
+    console.log("  rosters", JSON.stringify(s.rosters ?? null).slice(0, 300));
+    const a = bp[0]?.statistics?.[0]?.athletes?.[0]; console.log("  firstAthlete", JSON.stringify(a ?? null).slice(0, 500));
+    for (const p of ["leaders", "gameInfo", "plays", "keyEvents"]) if (s[p]) console.log("  ", p, JSON.stringify(s[p]).slice(0, 300));
+  }
+}
+const ro = await fetch(`https://sports.core.api.espn.com/v2/sports/lacrosse/leagues/pll/seasons/2025/teams/127631/athletes?limit=100`);
+console.log("CORE athletes", ro.status, (await ro.text()).slice(0, 400));
+const tr = await fetch(`${B}/teams/127631/roster`); console.log("SITE roster", tr.status, (await tr.text()).slice(0, 400));
 writeFileSync("pll_sample.json", JSON.stringify(out));
