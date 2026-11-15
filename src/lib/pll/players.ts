@@ -14,8 +14,8 @@ export type PllRosterPlayer = {
   weight?: string;
   college?: string;
   hometown?: string;
-  /** ESPN team id of the college, for its logo (absent for colleges ESPN doesn't list). */
-  collegeId?: string;
+  /** The college's logo: ESPN's, or a public-domain mark stored in public/logos/colleges. */
+  collegeLogo?: string;
   captain?: boolean;
   rookie?: boolean;
   /** Lists the player is on per Wikipedia: "Injured", "PUP", "Holdout", "Unavailable to Travel"... */
@@ -62,9 +62,6 @@ export const shotAbbr = (shot?: string) => {
   const c = shot?.trim()[0]?.toUpperCase();
   return c === "L" || c === "R" ? c : "";
 };
-
-/** A college's logo on ESPN's CDN. */
-export const collegeLogo = (id: string) => `https://a.espncdn.com/i/teamlogos/ncaa/500/${id}.png`;
 
 /** Sort key for positions, the way rosters are read: attack to goalie. */
 const POS_ORDER = ["Attack", "Midfield", "Face-off", "Faceoff", "SSDM", "LSM", "Defense", "Goalie"];

@@ -52,8 +52,8 @@ def team_id(s):
         if k in s.lower(): return v
     return None
 
-# ESPN team ids for players' colleges (logos at a.espncdn.com/i/teamlogos/ncaa/500/<id>.png); colleges
-# ESPN doesn't list (Adelphi, Hobart, LIU Post, Wesleyan, York) show as text
+# ESPN team ids for players' colleges (logos at a.espncdn.com/i/teamlogos/ncaa/500/<id>.png). LIU Post merged
+# into LIU in 2019, so it takes LIU's logo; Wesleyan is Wesleyan (CT).
 COLLEGE_ESPN = {
     "Albany": "399", "Army": "349", "Bellarmine": "91", "Brown": "225", "Bryant": "2803", "Colgate": "2142",
     "Cornell": "172", "Delaware": "48", "Denver": "2172", "Detroit Mercy": "2174", "Drexel": "2182", "Duke": "150",
@@ -64,7 +64,10 @@ COLLEGE_ESPN = {
     "Rutgers": "164", "Saint Joseph's": "2603", "Salisbury": "2532", "St. Bonaventure": "179", "St. John's": "2599",
     "Syracuse": "183", "Towson": "119", "Tufts": "112", "UMass": "113", "Utah": "254", "Vermont": "261",
     "Villanova": "222", "Virginia": "258", "Wingate": "351", "Yale": "43",
+    "Hobart": "174", "Wesleyan": "336", "LIU Post": "2341",
 }
+# Colleges ESPN doesn't list: public-domain marks from Wikimedia Commons, stored in public/logos/colleges
+COLLEGE_LOCAL = {"Adelphi": "/logos/colleges/adelphi.png", "York": "/logos/colleges/york.png"}
 
 def roster_marks(sec):
     """The page's legend: which symbol (*, **, ^) means which list (PUP, holdout, ...)."""
@@ -104,7 +107,9 @@ for tid, page in PAGES.items():
             for k, h in (("shot", "Shot"), ("height", "Height"), ("weight", "Weight"), ("college", "College"), ("hometown", "Hometown")):
                 if h in col and col[h] < len(r) and r[col[h]]: p[k] = r[col[h]]
             if cap_: p["captain"] = True
-            if p.get("college") in COLLEGE_ESPN: p["collegeId"] = COLLEGE_ESPN[p["college"]]
+            c = p.get("college")
+            if c in COLLEGE_ESPN: p["collegeLogo"] = f"https://a.espncdn.com/i/teamlogos/ncaa/500/{COLLEGE_ESPN[c]}.png"
+            elif c in COLLEGE_LOCAL: p["collegeLogo"] = COLLEGE_LOCAL[c]
             players.append(p)
         rosters[tid] = dict(season=int(hm.group(1)) if hm else None, page=page, players=players)
         break
