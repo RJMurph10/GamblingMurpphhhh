@@ -2,6 +2,7 @@ import { useMemo, useState } from "react";
 import { createFileRoute } from "@tanstack/react-router";
 import { PageTitle, Panel, PanelHeader, StatCard } from "@/components/shared/booth";
 import { PllGamesTable, PllLogo, PllSeasonPicker } from "@/components/pll/PllBits";
+import { PllLeaders, PllRosterPanel } from "@/components/pll/PllPlayers";
 import { standings, teamOf } from "@/lib/pll/pll";
 import { currentPllSeason, pllTeamSeasons, usePllSeason } from "@/lib/pll/use-pll";
 
@@ -71,6 +72,10 @@ function PllTeamPage() {
           empty={q.isLoading ? "Loading…" : "No games this season."}
         />
       </Panel>
+      <div className="mt-6 grid gap-6 lg:grid-cols-[1.4fr_1fr]">
+        <PllRosterPanel teamId={teamId} season={season} />
+        <PllLeaders season={season} data={q.data} teamId={teamId} />
+      </div>
     </>
   );
 }
