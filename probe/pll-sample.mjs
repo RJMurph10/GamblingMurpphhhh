@@ -1,14 +1,14 @@
 import { writeFileSync } from "node:fs";
-const KEY = process.env.SPORTSGAMEODDS_API_KEY;
-const get = async (path) => { const r = await fetch(`https://api.sportsgameodds.com/v2${path}`, { headers: { "X-Api-Key": KEY } }); return [r.status, await r.json().catch(() => ({}))]; };
+// free endpoints only (sports list and events cost 0 credits); no odds calls
 const out = {};
-const [s1, leagues] = await get("/leagues/");
-const lax = (leagues.data ?? []).filter((l) => /lacrosse|LAX|PLL|NLL/i.test(JSON.stringify(l)));
-console.log("LEAGUES", s1, (leagues.data ?? []).length, JSON.stringify(lax).slice(0, 1500));
-for (const l of lax.filter((x) => /PLL|premier/i.test(JSON.stringify(x)))) {
-  const [s2, ev] = await get(`/events/?leagueID=${l.leagueID}&limit=2&finalized=true`);
-  const e = ev.data?.[0];
-  console.log("EVENTS", l.leagueID, s2, (ev.data ?? []).length, e ? JSON.stringify({ teams: e.teams && Object.keys(e.teams), players: e.players && Object.keys(e.players).length, results: e.results && Object.keys(e.results), statsSample: e.results && JSON.stringify(e.results).slice(0, 800), odds: e.odds && Object.keys(e.odds).length }) : JSON.stringify(ev).slice(0, 400));
-  out[l.leagueID] = ev;
+for (const [name, key] of [["free", process.env.ODDS_API_KEY], ["paid", process.env.ODDS_API_KEY_PAID]]) {
+  if (!key) { console.log("KEY", name, "not set"); continue; }
+  const r = await fetch(`https://api.the-odds-api.com/v4/sports/?all=true&apiKey=${key}`);
+  const sports = r.ok ? await r.json() : [];
+  console.log("KEY", name, r.status, "remaining", r.headers.get("x-requests-remaining"), "used", r.headers.get("x-requests-used"));
+  console.log("LAX", name, JSON.stringify(sports.filter((s) => /lacrosse/.test(s.key))));
+  const e = await fetch(`https://api.the-odds-api.com/v4/sports/lacrosse_pll/events?apiKey=${key}`);
+  const ev = e.ok ? await e.json() : await e.text();
+  console.log("EVENTS", name, e.status, JSON.stringify(ev).slice(0, 600));
 }
 writeFileSync("pll_sample.json", JSON.stringify(out));
