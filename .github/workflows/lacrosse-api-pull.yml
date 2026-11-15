@@ -1,0 +1,62 @@
+name: Lacrosse API pull (PLL stats, rosters, play-by-play, odds)
+
+# Saves everything Lacrosse API (lacrosseapi.com) has for the PLL to the lacrosse-api branch
+# (raw JSON, one file per request). Files already saved are skipped, so reruns only fetch what's new.
+# Needs the repository secret LACROSSE_API_KEY (from lacrosseapi.com; the 14-day trial works). Without it
+# the job does nothing.
+
+on:
+  workflow_dispatch:
+    inputs:
+      competitions:
+        description: "Competitions to pull (pll, wll or pll,wll)"
+        default: "pll"
+      dry:
+        description: "Dry run (list what would be fetched)"
+        type: boolean
+        default: false
+  push:
+    branches: [main]
+    paths: [scripts/lacrosse/lacrosseapi-pull.mjs]
+
+permissions:
+  contents: write
+
+concurrency:
+  group: lacrosse-api
+  cancel-in-progress: false
+
+jobs:
+  pull:
+    runs-on: ubuntu-latest
+    timeout-minutes: 180
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          path: app
+          sparse-checkout: scripts/lacrosse
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+      - name: Pull
+        env:
+          LACROSSE_API_KEY: ${{ secrets.LACROSSE_API_KEY }}
+        run: |
+          set -e
+          if [ -z "$LACROSSE_API_KEY" ]; then echo "LACROSSE_API_KEY secret not set; skipping."; exit 0; fi
+          url="https://x-access-token:${{ secrets.GITHUB_TOKEN }}@github.com/${{ github.repository }}.git"
+          if git ls-remote --exit-code --heads "$url" lacrosse-api >/dev/null; then
+            git clone -q --depth 1 --branch lacrosse-api "$url" store
+          else
+            mkdir store && git -C store init -q -b lacrosse-api && git -C store remote add origin "$url"
+          fi
+          dry=""; if [ "${{ inputs.dry }}" = "true" ]; then dry="--dry"; fi
+          node app/scripts/lacrosse/lacrosseapi-pull.mjs --out store/data --reserve 300 \
+            --competitions "${{ inputs.competitions || 'pll' }}" $dry
+          cd store
+          git config user.name "line-history-bot"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add -A
+          if git diff --cached --quiet; then echo "nothing new"; exit 0; fi
+          git commit -q -m "Lacrosse API pull $(date -u +%F)"
+          git push -q origin lacrosse-api
