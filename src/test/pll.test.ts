@@ -99,7 +99,7 @@ describe("withEraLogos", () => {
     expect(withEraLogos(season(2024)).teams[0].logo).toBe("espn/127631");
   });
   it("drops the city before 2024", () => {
-    expect(withEraLogos(season(2023)).teams[0].name).toBe("Archers Lacrosse Club");
+    expect(withEraLogos(season(2023)).teams[0].name).toBe("Archers");
     expect(withEraLogos(season(2023)).teams[0].location).toBe("");
     expect(withEraLogos(season(2024)).teams[0].name).toBe("Utah Archers");
   });

@@ -52,7 +52,7 @@ const isAllStar = (t?: EspnTeam) => /^(east|west|team\b|all-?star)/i.test(t?.dis
 const CHROME: PllTeam = {
   id: "127635",
   abbr: "CHR",
-  name: "Chrome Lacrosse Club",
+  name: "Chrome",
   short: "Chrome",
   location: "",
   color: "#8ad8dc",
@@ -200,7 +200,7 @@ const ERA_LOGOS: Record<string, [from: number, to: number, logo: string][]> = {
 
 /**
  * A season's clubs as they were that year: the logo they used, and before 2024 (when the league gave
- * clubs cities or states) no place name: "Archers Lacrosse Club", not "Utah Archers".
+ * clubs cities or states) just the club name: "Archers", not "Utah Archers".
  */
 export function withEraLogos(s: PllSeason): PllSeason {
   const y = s.season;
@@ -212,7 +212,7 @@ export function withEraLogos(s: PllSeason): PllSeason {
       return {
         ...t,
         ...(logo ? { logo } : {}),
-        ...(club ? { name: `${t.short} Lacrosse Club`, location: "" } : {}),
+        ...(club ? { name: t.short, location: "" } : {}),
       };
     }),
   };
