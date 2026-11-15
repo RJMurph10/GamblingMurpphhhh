@@ -4,7 +4,6 @@ import { PllLogo } from "@/components/pll/PllBits";
 import type { PllSeason } from "@/lib/pll/pll";
 import { teamOf } from "@/lib/pll/pll";
 import {
-  collegeLogo,
   pllLeaders,
   pllLeadersPage,
   pllRoster,
@@ -81,11 +80,11 @@ export function PllLeaders({
   );
 }
 
-/** A player's college as its logo (name on hover), or a short text tag when ESPN has no logo. */
+/** A player's college as its logo (name on hover); its name if the logo fails to load. */
 function College({ p }: { p: PllRosterPlayer }) {
   const [failed, setFailed] = useState(false);
   if (!p.college) return null;
-  if (!p.collegeId || failed)
+  if (!p.collegeLogo || failed)
     return (
       <span className="font-mono text-[10px] uppercase text-mute" title={p.college}>
         {p.college}
@@ -93,7 +92,7 @@ function College({ p }: { p: PllRosterPlayer }) {
     );
   return (
     <img
-      src={collegeLogo(p.collegeId)}
+      src={p.collegeLogo}
       alt={p.college}
       title={p.college}
       className="size-6 object-contain"

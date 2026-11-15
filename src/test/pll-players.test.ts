@@ -80,3 +80,14 @@ describe("roster formatting", () => {
     expect(pllRoster("127637")!.players.find((p) => p.name === "Kieran McArdle")?.shot).toBe("L/R");
   });
 });
+
+describe("college logos", () => {
+  it("has a logo for every rostered player's college", () => {
+    const ids = ["127631", "127632", "122997", "127634", "122896", "127636", "127637", "127638"];
+    const missing = ids
+      .flatMap((id) => pllRoster(id)!.players)
+      .filter((p) => p.college && !p.collegeLogo)
+      .map((p) => p.college);
+    expect(missing).toEqual([]);
+  });
+});
