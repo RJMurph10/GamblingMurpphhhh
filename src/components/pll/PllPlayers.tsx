@@ -82,7 +82,16 @@ export function PllRosterPanel({ teamId, season }: { teamId: string; season: num
       ),
     [roster],
   );
-  if (!roster || !players.length || (roster.season != null && season < roster.season)) return null;
+  if (!roster || !players.length || (roster.season != null && season < roster.season))
+    return (
+      <Panel>
+        <p className="font-mono text-xs text-mute">
+          {roster?.season
+            ? `No ${season} roster. Wikipedia lists this club's ${roster.season} roster; pick ${roster.season} or later to see it.`
+            : "No roster listed for this club."}
+        </p>
+      </Panel>
+    );
   return (
     <Panel padded={false}>
       <PanelHeader
