@@ -1,0 +1,23 @@
+{
+ "day": "2026-11-19",
+ "updated": "2026-11-15T16:26:29.217Z",
+ "picks": [
+  {
+   "id": "401862830-total-open-total",
+   "game": "RICE @ TEM",
+   "tip": "2026-11-20T00:30Z",
+   "market": "total",
+   "pick": "Over 47.5",
+   "line": 47.5,
+   "open": 47.5,
+   "model": 47.7,
+   "edge": 0.2,
+   "best": true,
+   "tag": "open-total",
+   "firstSeen": "2026-11-15T16:26:29.217Z",
+   "lastSeen": "2026-11-15T16:26:29.217Z",
+   "latest": 47.5,
+   "latestAt": "2026-11-15T16:26:29.217Z"
+  }
+ ]
+}
