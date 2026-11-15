@@ -16,6 +16,7 @@ jobs:
         env:
           SPORTSGAMEODDS_API_KEY: ${{ secrets.SPORTSGAMEODDS_API_KEY }}
           ODDS_API_KEY: ${{ secrets.ODDS_API_KEY }}
+          LACROSSE_API_KEY: ${{ secrets.LACROSSE_API_KEY }}
           ODDS_API_KEY_PAID: ${{ secrets.ODDS_API_KEY_PAID }}
       - run: |
           url="https://x-access-token:${{ secrets.GITHUB_TOKEN }}@github.com/${{ github.repository }}.git"
