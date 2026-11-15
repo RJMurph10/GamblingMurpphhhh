@@ -1,6 +1,6 @@
 {
  "day": "2026-11-21",
- "updated": "2026-11-15T16:26:29.217Z",
+ "updated": "2026-11-15T22:56:35.955Z",
  "picks": [
   {
    "id": "401856865-total-late",
@@ -16,8 +16,8 @@
    "tag": "late",
    "firstSeen": "2026-11-15T16:26:29.217Z",
    "lastSeen": "2026-11-15T16:26:29.217Z",
-   "latest": 50.5,
-   "latestAt": "2026-11-15T16:26:29.217Z"
+   "latest": 52.5,
+   "latestAt": "2026-11-15T22:56:35.955Z"
   },
   {
    "id": "401856865-total-open-total",
@@ -32,9 +32,9 @@
    "best": true,
    "tag": "open-total",
    "firstSeen": "2026-11-15T16:26:29.217Z",
-   "lastSeen": "2026-11-15T16:26:29.217Z",
-   "latest": 50.5,
-   "latestAt": "2026-11-15T16:26:29.217Z"
+   "lastSeen": "2026-11-15T22:56:35.955Z",
+   "latest": 52.5,
+   "latestAt": "2026-11-15T22:56:35.955Z"
   },
   {
    "id": "401856865-total-weather",
@@ -51,8 +51,8 @@
    "note": "10 mph · gusts 22 · rain 0.04 in",
    "firstSeen": "2026-11-15T16:26:29.217Z",
    "lastSeen": "2026-11-15T16:26:29.217Z",
-   "latest": 50.5,
-   "latestAt": "2026-11-15T16:26:29.217Z"
+   "latest": 52.5,
+   "latestAt": "2026-11-15T22:56:35.955Z"
   },
   {
    "id": "401856866-total-late",
@@ -68,8 +68,8 @@
    "tag": "late",
    "firstSeen": "2026-11-15T06:45:32.981Z",
    "lastSeen": "2026-11-15T16:26:29.217Z",
-   "latest": 49.5,
-   "latestAt": "2026-11-15T16:26:29.217Z"
+   "latest": 48.5,
+   "latestAt": "2026-11-15T22:56:35.955Z"
   },
   {
    "id": "401856866-total-weather",
@@ -86,8 +86,8 @@
    "note": "10 mph · gusts 20 · rain 0.05 in",
    "firstSeen": "2026-11-15T06:45:32.981Z",
    "lastSeen": "2026-11-15T16:26:29.217Z",
-   "latest": 49.5,
-   "latestAt": "2026-11-15T16:26:29.217Z"
+   "latest": 48.5,
+   "latestAt": "2026-11-15T22:56:35.955Z"
   },
   {
    "id": "401856868-total-late",
@@ -103,8 +103,8 @@
    "tag": "late",
    "firstSeen": "2026-11-15T16:26:29.217Z",
    "lastSeen": "2026-11-15T16:26:29.217Z",
-   "latest": 71.5,
-   "latestAt": "2026-11-15T16:26:29.217Z"
+   "latest": 70.5,
+   "latestAt": "2026-11-15T22:56:35.955Z"
   },
   {
    "id": "401856868-total-open-total",
@@ -119,9 +119,9 @@
    "best": true,
    "tag": "open-total",
    "firstSeen": "2026-11-15T16:26:29.217Z",
-   "lastSeen": "2026-11-15T16:26:29.217Z",
-   "latest": 71.5,
-   "latestAt": "2026-11-15T16:26:29.217Z"
+   "lastSeen": "2026-11-15T22:56:35.955Z",
+   "latest": 70.5,
+   "latestAt": "2026-11-15T22:56:35.955Z"
   },
   {
    "id": "401856868-total-under60",
@@ -136,9 +136,9 @@
    "best": false,
    "tag": "under60",
    "firstSeen": "2026-11-15T16:26:29.217Z",
-   "lastSeen": "2026-11-15T16:26:29.217Z",
-   "latest": 71.5,
-   "latestAt": "2026-11-15T16:26:29.217Z"
+   "lastSeen": "2026-11-15T22:56:35.955Z",
+   "latest": 70.5,
+   "latestAt": "2026-11-15T22:56:35.955Z"
   },
   {
    "id": "401856868-total-under65",
@@ -153,9 +153,9 @@
    "best": false,
    "tag": "under65",
    "firstSeen": "2026-11-15T16:26:29.217Z",
-   "lastSeen": "2026-11-15T16:26:29.217Z",
-   "latest": 71.5,
-   "latestAt": "2026-11-15T16:26:29.217Z"
+   "lastSeen": "2026-11-15T22:56:35.955Z",
+   "latest": 70.5,
+   "latestAt": "2026-11-15T22:56:35.955Z"
   },
   {
    "id": "401856871-total-late",
@@ -171,8 +171,8 @@
    "tag": "late",
    "firstSeen": "2026-11-14T10:37:59.193Z",
    "lastSeen": "2026-11-15T16:26:29.217Z",
-   "latest": 58.5,
-   "latestAt": "2026-11-15T16:26:29.217Z"
+   "latest": 57.5,
+   "latestAt": "2026-11-15T22:56:35.955Z"
   },
   {
    "id": "401856872-total-late",
@@ -189,7 +189,7 @@
    "firstSeen": "2026-11-14T10:37:59.193Z",
    "lastSeen": "2026-11-15T16:26:29.217Z",
    "latest": 45.5,
-   "latestAt": "2026-11-15T16:26:29.217Z"
+   "latestAt": "2026-11-15T22:56:35.955Z"
   },
   {
    "id": "401856872-total-open-total",
@@ -204,9 +204,9 @@
    "best": true,
    "tag": "open-total",
    "firstSeen": "2026-11-14T10:37:59.193Z",
-   "lastSeen": "2026-11-15T16:26:29.217Z",
+   "lastSeen": "2026-11-15T22:56:35.955Z",
    "latest": 45.5,
-   "latestAt": "2026-11-15T16:26:29.217Z"
+   "latestAt": "2026-11-15T22:56:35.955Z"
   },
   {
    "id": "401858302-total-late",
@@ -221,9 +221,9 @@
    "best": false,
    "tag": "late",
    "firstSeen": "2026-11-14T10:37:59.193Z",
-   "lastSeen": "2026-11-15T16:26:29.217Z",
+   "lastSeen": "2026-11-15T22:56:35.955Z",
    "latest": 60.5,
-   "latestAt": "2026-11-15T16:26:29.217Z"
+   "latestAt": "2026-11-15T22:56:35.955Z"
   },
   {
    "id": "401858302-total-under60",
@@ -238,9 +238,45 @@
    "best": false,
    "tag": "under60",
    "firstSeen": "2026-11-14T10:37:59.193Z",
-   "lastSeen": "2026-11-15T16:26:29.217Z",
+   "lastSeen": "2026-11-15T22:56:35.955Z",
    "latest": 60.5,
-   "latestAt": "2026-11-15T16:26:29.217Z"
+   "latestAt": "2026-11-15T22:56:35.955Z"
+  },
+  {
+   "id": "401858302-total-weather",
+   "game": "VT @ MIA",
+   "tip": "2026-11-21T05:00Z",
+   "market": "total",
+   "pick": "Under 60.5",
+   "line": 60.5,
+   "rule": 56.5,
+   "open": 56.5,
+   "model": null,
+   "edge": null,
+   "best": false,
+   "tag": "weather",
+   "note": "9 mph · gusts 21 · rain 0.02 in",
+   "firstSeen": "2026-11-15T22:56:35.955Z",
+   "lastSeen": "2026-11-15T22:56:35.955Z",
+   "latest": 60.5,
+   "latestAt": "2026-11-15T22:56:35.955Z"
+  },
+  {
+   "id": "401858306-total-late",
+   "game": "PITT @ LOU",
+   "tip": "2026-11-21T05:00Z",
+   "market": "total",
+   "pick": "Under 51.5",
+   "line": 51.5,
+   "open": 51.5,
+   "model": null,
+   "edge": null,
+   "best": false,
+   "tag": "late",
+   "firstSeen": "2026-11-15T22:56:35.955Z",
+   "lastSeen": "2026-11-15T22:56:35.955Z",
+   "latest": 51.5,
+   "latestAt": "2026-11-15T22:56:35.955Z"
   },
   {
    "id": "401858310-total-late",
@@ -256,8 +292,8 @@
    "tag": "late",
    "firstSeen": "2026-11-15T06:45:32.981Z",
    "lastSeen": "2026-11-15T16:26:29.217Z",
-   "latest": 56.5,
-   "latestAt": "2026-11-15T16:26:29.217Z"
+   "latest": 57.5,
+   "latestAt": "2026-11-15T22:56:35.955Z"
   },
   {
    "id": "401858528-spread-tz3",
@@ -272,9 +308,9 @@
    "best": false,
    "tag": "tz3",
    "firstSeen": "2026-11-15T06:45:32.981Z",
-   "lastSeen": "2026-11-15T16:26:29.217Z",
-   "latest": 7,
-   "latestAt": "2026-11-15T16:26:29.217Z"
+   "lastSeen": "2026-11-15T22:56:35.955Z",
+   "latest": 5.5,
+   "latestAt": "2026-11-15T22:56:35.955Z"
   },
   {
    "id": "401858528-total-late",
@@ -291,7 +327,7 @@
    "firstSeen": "2026-11-15T06:45:32.981Z",
    "lastSeen": "2026-11-15T06:45:32.981Z",
    "latest": 39.5,
-   "latestAt": "2026-11-15T16:26:29.217Z"
+   "latestAt": "2026-11-15T22:56:35.955Z"
   },
   {
    "id": "401858531-total-late",
@@ -307,8 +343,8 @@
    "tag": "late",
    "firstSeen": "2026-11-14T10:37:59.193Z",
    "lastSeen": "2026-11-15T06:45:32.981Z",
-   "latest": 44.5,
-   "latestAt": "2026-11-15T16:26:29.217Z"
+   "latest": 43.5,
+   "latestAt": "2026-11-15T22:56:35.955Z"
   },
   {
    "id": "401858531-total-weather",
@@ -325,9 +361,9 @@
    "tag": "weather",
    "note": "15 mph · gusts 28 · rain 0.09 in",
    "firstSeen": "2026-11-15T06:45:32.981Z",
-   "lastSeen": "2026-11-15T16:26:29.217Z",
-   "latest": 44.5,
-   "latestAt": "2026-11-15T16:26:29.217Z"
+   "lastSeen": "2026-11-15T22:56:35.955Z",
+   "latest": 43.5,
+   "latestAt": "2026-11-15T22:56:35.955Z"
   },
   {
    "id": "401858535-spread-eastlate",
@@ -344,7 +380,7 @@
    "firstSeen": "2026-11-15T06:45:32.981Z",
    "lastSeen": "2026-11-15T06:45:32.981Z",
    "latest": 7.5,
-   "latestAt": "2026-11-15T16:26:29.217Z"
+   "latestAt": "2026-11-15T22:56:35.955Z"
   },
   {
    "id": "401858535-spread-tz3",
@@ -359,9 +395,9 @@
    "best": false,
    "tag": "tz3",
    "firstSeen": "2026-11-15T06:45:32.981Z",
-   "lastSeen": "2026-11-15T16:26:29.217Z",
+   "lastSeen": "2026-11-15T22:56:35.955Z",
    "latest": 7.5,
-   "latestAt": "2026-11-15T16:26:29.217Z"
+   "latestAt": "2026-11-15T22:56:35.955Z"
   },
   {
    "id": "401858535-total-late",
@@ -378,7 +414,24 @@
    "firstSeen": "2026-11-15T06:45:32.981Z",
    "lastSeen": "2026-11-15T06:45:32.981Z",
    "latest": 43.5,
-   "latestAt": "2026-11-15T16:26:29.217Z"
+   "latestAt": "2026-11-15T22:56:35.955Z"
+  },
+  {
+   "id": "401862835-total-late",
+   "game": "UNT @ TULN",
+   "tip": "2026-11-21T05:00Z",
+   "market": "total",
+   "pick": "Under 57.5",
+   "line": 57.5,
+   "open": 60.5,
+   "model": null,
+   "edge": null,
+   "best": false,
+   "tag": "late",
+   "firstSeen": "2026-11-15T22:56:35.955Z",
+   "lastSeen": "2026-11-15T22:56:35.955Z",
+   "latest": 57.5,
+   "latestAt": "2026-11-15T22:56:35.955Z"
   },
   {
    "id": "401862836-total-late",
@@ -394,8 +447,26 @@
    "tag": "late",
    "firstSeen": "2026-11-15T16:26:29.217Z",
    "lastSeen": "2026-11-15T16:26:29.217Z",
-   "latest": 53.5,
-   "latestAt": "2026-11-15T16:26:29.217Z"
+   "latest": 52.5,
+   "latestAt": "2026-11-15T22:56:35.955Z"
+  },
+  {
+   "id": "401856752-total-open-total",
+   "game": "TA&M @ OU",
+   "tip": "2026-11-21T17:00Z",
+   "market": "total",
+   "pick": "Under 39.5",
+   "line": 39.5,
+   "rule": 51.5,
+   "open": 51.5,
+   "model": 51.3,
+   "edge": 0.2,
+   "best": true,
+   "tag": "open-total",
+   "firstSeen": "2026-11-15T22:56:35.955Z",
+   "lastSeen": "2026-11-15T22:56:35.955Z",
+   "latest": 39.5,
+   "latestAt": "2026-11-15T22:56:35.955Z"
   },
   {
    "id": "401856867-total-open-total",
@@ -411,9 +482,9 @@
    "best": true,
    "tag": "open-total",
    "firstSeen": "2026-11-15T16:26:29.217Z",
-   "lastSeen": "2026-11-15T16:26:29.217Z",
+   "lastSeen": "2026-11-15T22:56:35.955Z",
    "latest": 60.5,
-   "latestAt": "2026-11-15T16:26:29.217Z"
+   "latestAt": "2026-11-15T22:56:35.955Z"
   },
   {
    "id": "401856867-total-under60",
@@ -428,9 +499,9 @@
    "best": false,
    "tag": "under60",
    "firstSeen": "2026-11-15T16:26:29.217Z",
-   "lastSeen": "2026-11-15T16:26:29.217Z",
+   "lastSeen": "2026-11-15T22:56:35.955Z",
    "latest": 60.5,
-   "latestAt": "2026-11-15T16:26:29.217Z"
+   "latestAt": "2026-11-15T22:56:35.955Z"
   },
   {
    "id": "401858530-total-weather",
@@ -446,9 +517,9 @@
    "tag": "weather",
    "note": "15 mph · gusts 28 · rain 0.03 in",
    "firstSeen": "2026-11-15T16:26:29.217Z",
-   "lastSeen": "2026-11-15T16:26:29.217Z",
+   "lastSeen": "2026-11-15T22:56:35.955Z",
    "latest": 43.5,
-   "latestAt": "2026-11-15T16:26:29.217Z"
+   "latestAt": "2026-11-15T22:56:35.955Z"
   },
   {
    "id": "401862831-total-open-total",
@@ -463,9 +534,9 @@
    "best": true,
    "tag": "open-total",
    "firstSeen": "2026-11-15T16:26:29.217Z",
-   "lastSeen": "2026-11-15T16:26:29.217Z",
-   "latest": 42.5,
-   "latestAt": "2026-11-15T16:26:29.217Z"
+   "lastSeen": "2026-11-15T22:56:35.955Z",
+   "latest": 44.5,
+   "latestAt": "2026-11-15T22:56:35.955Z"
   },
   {
    "id": "401862834-total-open-total",
@@ -480,9 +551,9 @@
    "best": true,
    "tag": "open-total",
    "firstSeen": "2026-11-15T16:26:29.217Z",
-   "lastSeen": "2026-11-15T16:26:29.217Z",
-   "latest": 64.5,
-   "latestAt": "2026-11-15T16:26:29.217Z"
+   "lastSeen": "2026-11-15T22:56:35.955Z",
+   "latest": 65.5,
+   "latestAt": "2026-11-15T22:56:35.955Z"
   },
   {
    "id": "401862834-total-under60",
@@ -497,9 +568,26 @@
    "best": false,
    "tag": "under60",
    "firstSeen": "2026-11-15T16:26:29.217Z",
-   "lastSeen": "2026-11-15T16:26:29.217Z",
-   "latest": 64.5,
-   "latestAt": "2026-11-15T16:26:29.217Z"
+   "lastSeen": "2026-11-15T22:56:35.955Z",
+   "latest": 65.5,
+   "latestAt": "2026-11-15T22:56:35.955Z"
+  },
+  {
+   "id": "401862834-total-under65",
+   "game": "MEM @ NAVY",
+   "tip": "2026-11-21T17:00Z",
+   "market": "total",
+   "pick": "Under 65.5",
+   "line": 65.5,
+   "open": 64.5,
+   "model": null,
+   "edge": null,
+   "best": false,
+   "tag": "under65",
+   "firstSeen": "2026-11-15T22:56:35.955Z",
+   "lastSeen": "2026-11-15T22:56:35.955Z",
+   "latest": 65.5,
+   "latestAt": "2026-11-15T22:56:35.955Z"
   },
   {
    "id": "401858527-total-weather",
@@ -515,9 +603,9 @@
    "tag": "weather",
    "note": "16 mph · gusts 25",
    "firstSeen": "2026-11-15T16:26:29.217Z",
-   "lastSeen": "2026-11-15T16:26:29.217Z",
+   "lastSeen": "2026-11-15T22:56:35.955Z",
    "latest": 43.5,
-   "latestAt": "2026-11-15T16:26:29.217Z"
+   "latestAt": "2026-11-15T22:56:35.955Z"
   },
   {
    "id": "401862833-total-open-total",
@@ -532,9 +620,9 @@
    "best": true,
    "tag": "open-total",
    "firstSeen": "2026-11-15T16:26:29.217Z",
-   "lastSeen": "2026-11-15T16:26:29.217Z",
-   "latest": 69.5,
-   "latestAt": "2026-11-15T16:26:29.217Z"
+   "lastSeen": "2026-11-15T22:56:35.955Z",
+   "latest": 65.5,
+   "latestAt": "2026-11-15T22:56:35.955Z"
   },
   {
    "id": "401862833-total-under60",
@@ -549,9 +637,9 @@
    "best": false,
    "tag": "under60",
    "firstSeen": "2026-11-15T16:26:29.217Z",
-   "lastSeen": "2026-11-15T16:26:29.217Z",
-   "latest": 69.5,
-   "latestAt": "2026-11-15T16:26:29.217Z"
+   "lastSeen": "2026-11-15T22:56:35.955Z",
+   "latest": 65.5,
+   "latestAt": "2026-11-15T22:56:35.955Z"
   },
   {
    "id": "401862833-total-under65",
@@ -566,9 +654,46 @@
    "best": false,
    "tag": "under65",
    "firstSeen": "2026-11-15T16:26:29.217Z",
-   "lastSeen": "2026-11-15T16:26:29.217Z",
-   "latest": 69.5,
-   "latestAt": "2026-11-15T16:26:29.217Z"
+   "lastSeen": "2026-11-15T22:56:35.955Z",
+   "latest": 65.5,
+   "latestAt": "2026-11-15T22:56:35.955Z"
+  },
+  {
+   "id": "401862833-total-weather",
+   "game": "USF @ FAU",
+   "tip": "2026-11-21T19:30Z",
+   "market": "total",
+   "pick": "Under 65.5",
+   "line": 65.5,
+   "rule": 69.5,
+   "open": 69.5,
+   "model": null,
+   "edge": null,
+   "best": false,
+   "tag": "weather",
+   "note": "14 mph · gusts 22 · rain 0.04 in",
+   "firstSeen": "2026-11-15T22:56:35.955Z",
+   "lastSeen": "2026-11-15T22:56:35.955Z",
+   "latest": 65.5,
+   "latestAt": "2026-11-15T22:56:35.955Z"
+  },
+  {
+   "id": "401871078-total-open-total",
+   "game": "FIU @ KENN",
+   "tip": "2026-11-21T20:00Z",
+   "market": "total",
+   "pick": "Over 44.5",
+   "line": 44.5,
+   "rule": 42.5,
+   "open": 42.5,
+   "model": 42.7,
+   "edge": 0.2,
+   "best": true,
+   "tag": "open-total",
+   "firstSeen": "2026-11-15T22:56:35.955Z",
+   "lastSeen": "2026-11-15T22:56:35.955Z",
+   "latest": 44.5,
+   "latestAt": "2026-11-15T22:56:35.955Z"
   },
   {
    "id": "401856754-total-open-total",
@@ -584,9 +709,9 @@
    "best": true,
    "tag": "open-total",
    "firstSeen": "2026-11-15T06:45:32.981Z",
-   "lastSeen": "2026-11-15T16:26:29.217Z",
-   "latest": 46.5,
-   "latestAt": "2026-11-15T16:26:29.217Z"
+   "lastSeen": "2026-11-15T22:56:35.955Z",
+   "latest": 45.5,
+   "latestAt": "2026-11-15T22:56:35.955Z"
   },
   {
    "id": "401858532-spread-bounce",
@@ -601,9 +726,9 @@
    "best": true,
    "tag": "bounce",
    "firstSeen": "2026-11-15T16:26:29.217Z",
-   "lastSeen": "2026-11-15T16:26:29.217Z",
-   "latest": -20.5,
-   "latestAt": "2026-11-15T16:26:29.217Z"
+   "lastSeen": "2026-11-15T22:56:35.955Z",
+   "latest": -24.5,
+   "latestAt": "2026-11-15T22:56:35.955Z"
   },
   {
    "id": "401858532-total-open-total",
@@ -618,9 +743,9 @@
    "best": true,
    "tag": "open-total",
    "firstSeen": "2026-11-15T16:26:29.217Z",
-   "lastSeen": "2026-11-15T16:26:29.217Z",
-   "latest": 49.5,
-   "latestAt": "2026-11-15T16:26:29.217Z"
+   "lastSeen": "2026-11-15T22:56:35.955Z",
+   "latest": 50.5,
+   "latestAt": "2026-11-15T22:56:35.955Z"
   },
   {
    "id": "401858534-spread-travel",
@@ -635,9 +760,9 @@
    "best": true,
    "tag": "travel",
    "firstSeen": "2026-11-15T16:26:29.217Z",
-   "lastSeen": "2026-11-15T16:26:29.217Z",
+   "lastSeen": "2026-11-15T22:56:35.955Z",
    "latest": -16.5,
-   "latestAt": "2026-11-15T16:26:29.217Z"
+   "latestAt": "2026-11-15T22:56:35.955Z"
   },
   {
    "id": "401858534-spread-tz3",
@@ -652,9 +777,9 @@
    "best": false,
    "tag": "tz3",
    "firstSeen": "2026-11-15T16:26:29.217Z",
-   "lastSeen": "2026-11-15T16:26:29.217Z",
+   "lastSeen": "2026-11-15T22:56:35.955Z",
    "latest": -16.5,
-   "latestAt": "2026-11-15T16:26:29.217Z"
+   "latestAt": "2026-11-15T22:56:35.955Z"
   },
   {
    "id": "401856753-spread-rivalry",
@@ -669,9 +794,9 @@
    "best": true,
    "tag": "rivalry",
    "firstSeen": "2026-11-15T16:26:29.217Z",
-   "lastSeen": "2026-11-15T16:26:29.217Z",
+   "lastSeen": "2026-11-15T22:56:35.955Z",
    "latest": 16.5,
-   "latestAt": "2026-11-15T16:26:29.217Z"
+   "latestAt": "2026-11-15T22:56:35.955Z"
   },
   {
    "id": "401858307-spread-bounce",
@@ -686,9 +811,9 @@
    "best": true,
    "tag": "bounce",
    "firstSeen": "2026-11-15T06:45:32.981Z",
-   "lastSeen": "2026-11-15T16:26:29.217Z",
-   "latest": -17.5,
-   "latestAt": "2026-11-15T16:26:29.217Z"
+   "lastSeen": "2026-11-15T22:56:35.955Z",
+   "latest": -21,
+   "latestAt": "2026-11-15T22:56:35.955Z"
   },
   {
    "id": "401858308-spread-rivalry",
@@ -703,9 +828,77 @@
    "best": true,
    "tag": "rivalry",
    "firstSeen": "2026-11-15T16:26:29.217Z",
-   "lastSeen": "2026-11-15T16:26:29.217Z",
-   "latest": 1.5,
-   "latestAt": "2026-11-15T16:26:29.217Z"
+   "lastSeen": "2026-11-15T22:56:35.955Z",
+   "latest": 2.5,
+   "latestAt": "2026-11-15T22:56:35.955Z"
+  },
+  {
+   "id": "401860918-spread-bounce",
+   "game": "CSU @ FRES",
+   "tip": "2026-11-22T00:30Z",
+   "market": "spread",
+   "pick": "CSU +21",
+   "line": -21,
+   "open": -19.5,
+   "model": -20.7,
+   "edge": 0.3,
+   "best": true,
+   "tag": "bounce",
+   "firstSeen": "2026-11-15T22:56:35.955Z",
+   "lastSeen": "2026-11-15T22:56:35.955Z",
+   "latest": -21,
+   "latestAt": "2026-11-15T22:56:35.955Z"
+  },
+  {
+   "id": "401860918-total-under60",
+   "game": "CSU @ FRES",
+   "tip": "2026-11-22T00:30Z",
+   "market": "total",
+   "pick": "Under 63.5",
+   "line": 63.5,
+   "open": 61.5,
+   "model": null,
+   "edge": null,
+   "best": false,
+   "tag": "under60",
+   "firstSeen": "2026-11-15T22:56:35.955Z",
+   "lastSeen": "2026-11-15T22:56:35.955Z",
+   "latest": 63.5,
+   "latestAt": "2026-11-15T22:56:35.955Z"
+  },
+  {
+   "id": "401860925-total-open-total",
+   "game": "SDSU @ BOIS",
+   "tip": "2026-11-22T02:30Z",
+   "market": "total",
+   "pick": "Under 62.5",
+   "line": 62.5,
+   "open": 62.5,
+   "model": 62.3,
+   "edge": 0.2,
+   "best": true,
+   "tag": "open-total",
+   "firstSeen": "2026-11-15T22:56:35.955Z",
+   "lastSeen": "2026-11-15T22:56:35.955Z",
+   "latest": 62.5,
+   "latestAt": "2026-11-15T22:56:35.955Z"
+  },
+  {
+   "id": "401860925-total-under60",
+   "game": "SDSU @ BOIS",
+   "tip": "2026-11-22T02:30Z",
+   "market": "total",
+   "pick": "Under 62.5",
+   "line": 62.5,
+   "open": 62.5,
+   "model": null,
+   "edge": null,
+   "best": false,
+   "tag": "under60",
+   "firstSeen": "2026-11-15T22:56:35.955Z",
+   "lastSeen": "2026-11-15T22:56:35.955Z",
+   "latest": 62.5,
+   "latestAt": "2026-11-15T22:56:35.955Z"
   },
   {
    "id": "401856870-total-late",
@@ -720,9 +913,9 @@
    "best": false,
    "tag": "late",
    "firstSeen": "2026-11-15T16:26:29.217Z",
-   "lastSeen": "2026-11-15T16:26:29.217Z",
-   "latest": 62.5,
-   "latestAt": "2026-11-15T16:26:29.217Z"
+   "lastSeen": "2026-11-15T22:56:35.955Z",
+   "latest": 61.5,
+   "latestAt": "2026-11-15T22:56:35.955Z"
   },
   {
    "id": "401856870-total-open-total",
@@ -737,9 +930,9 @@
    "best": true,
    "tag": "open-total",
    "firstSeen": "2026-11-15T16:26:29.217Z",
-   "lastSeen": "2026-11-15T16:26:29.217Z",
-   "latest": 62.5,
-   "latestAt": "2026-11-15T16:26:29.217Z"
+   "lastSeen": "2026-11-15T22:56:35.955Z",
+   "latest": 61.5,
+   "latestAt": "2026-11-15T22:56:35.955Z"
   },
   {
    "id": "401856870-total-under60",
@@ -754,9 +947,60 @@
    "best": false,
    "tag": "under60",
    "firstSeen": "2026-11-15T16:26:29.217Z",
-   "lastSeen": "2026-11-15T16:26:29.217Z",
-   "latest": 62.5,
-   "latestAt": "2026-11-15T16:26:29.217Z"
+   "lastSeen": "2026-11-15T22:56:35.955Z",
+   "latest": 61.5,
+   "latestAt": "2026-11-15T22:56:35.955Z"
+  },
+  {
+   "id": "401860919-total-late",
+   "game": "USU @ ORST",
+   "tip": "2026-11-22T03:30Z",
+   "market": "total",
+   "pick": "Under 51.5",
+   "line": 51.5,
+   "open": 49.5,
+   "model": null,
+   "edge": null,
+   "best": false,
+   "tag": "late",
+   "firstSeen": "2026-11-15T22:56:35.955Z",
+   "lastSeen": "2026-11-15T22:56:35.955Z",
+   "latest": 51.5,
+   "latestAt": "2026-11-15T22:56:35.955Z"
+  },
+  {
+   "id": "401864541-spread-travel",
+   "game": "HAW @ NEV",
+   "tip": "2026-11-22T03:30Z",
+   "market": "spread",
+   "pick": "NEV -4",
+   "line": -4,
+   "open": -2.5,
+   "model": -7.2,
+   "edge": 3.2,
+   "best": true,
+   "tag": "travel",
+   "firstSeen": "2026-11-15T22:56:35.955Z",
+   "lastSeen": "2026-11-15T22:56:35.955Z",
+   "latest": -4,
+   "latestAt": "2026-11-15T22:56:35.955Z"
+  },
+  {
+   "id": "401864541-total-late",
+   "game": "HAW @ NEV",
+   "tip": "2026-11-22T03:30Z",
+   "market": "total",
+   "pick": "Under 41.5",
+   "line": 41.5,
+   "open": 42.5,
+   "model": null,
+   "edge": null,
+   "best": false,
+   "tag": "late",
+   "firstSeen": "2026-11-15T22:56:35.955Z",
+   "lastSeen": "2026-11-15T22:56:35.955Z",
+   "latest": 41.5,
+   "latestAt": "2026-11-15T22:56:35.955Z"
   }
  ]
 }
