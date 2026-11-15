@@ -1,12 +1,14 @@
 import { writeFileSync } from "node:fs";
-const UA = { headers: { "User-Agent": "GamblingNFL research (github.com/RJMurph10/gamblingnfl)" } };
+const KEY = process.env.SPORTSGAMEODDS_API_KEY;
+const get = async (path) => { const r = await fetch(`https://api.sportsgameodds.com/v2${path}`, { headers: { "X-Api-Key": KEY } }); return [r.status, await r.json().catch(() => ({}))]; };
 const out = {};
-for (const t of ["Premier_Lacrosse_League", "List_of_Premier_Lacrosse_League_awards"]) {
-  await new Promise((r) => setTimeout(r, 3000));
-  for (let a = 0; a < 5; a++) {
-    const txt = await (await fetch(`https://en.wikipedia.org/w/api.php?action=parse&page=${t}&prop=wikitext&format=json&formatversion=2&redirects=1`, UA)).text();
-    try { out[t] = JSON.parse(txt).parse?.wikitext ?? ""; break; } catch { await new Promise((r) => setTimeout(r, 20000)); }
-  }
-  console.log("PAGE", t, (out[t] ?? "").length);
+const [s1, leagues] = await get("/leagues/");
+const lax = (leagues.data ?? []).filter((l) => /lacrosse|LAX|PLL|NLL/i.test(JSON.stringify(l)));
+console.log("LEAGUES", s1, (leagues.data ?? []).length, JSON.stringify(lax).slice(0, 1500));
+for (const l of lax.filter((x) => /PLL|premier/i.test(JSON.stringify(x)))) {
+  const [s2, ev] = await get(`/events/?leagueID=${l.leagueID}&limit=2&finalized=true`);
+  const e = ev.data?.[0];
+  console.log("EVENTS", l.leagueID, s2, (ev.data ?? []).length, e ? JSON.stringify({ teams: e.teams && Object.keys(e.teams), players: e.players && Object.keys(e.players).length, results: e.results && Object.keys(e.results), statsSample: e.results && JSON.stringify(e.results).slice(0, 800), odds: e.odds && Object.keys(e.odds).length }) : JSON.stringify(ev).slice(0, 400));
+  out[l.leagueID] = ev;
 }
 writeFileSync("pll_sample.json", JSON.stringify(out));
