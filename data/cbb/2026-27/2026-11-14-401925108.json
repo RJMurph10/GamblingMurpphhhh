@@ -7,18 +7,18 @@
   "id": "292",
   "abbr": "RGV",
   "name": "UT Rio Grande Valley Vaqueros",
-  "score": 0
+  "score": 72
  },
  "home": {
   "id": "250",
   "abbr": "UTA",
   "name": "UT Arlington Mavericks",
-  "score": 0
+  "score": 82
  },
  "neutral": false,
  "venue": "College Park Center",
  "seasonType": 2,
- "state": "pre",
+ "state": "in",
  "lines": {
   "open": {
    "at": "2026-11-14T06:26:52.591Z",

@@ -7,18 +7,18 @@
   "id": "2439",
   "abbr": "UNLV",
   "name": "UNLV Rebels",
-  "score": 0
+  "score": 7
  },
  "home": {
   "id": "167",
   "abbr": "UNM",
   "name": "New Mexico Lobos",
-  "score": 0
+  "score": 14
  },
  "neutral": false,
  "venue": "University Stadium (NM)",
  "seasonType": 2,
- "state": "pre",
+ "state": "in",
  "lines": {
   "open": {
    "at": "2026-11-08T20:31:48.043Z",

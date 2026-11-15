@@ -7,18 +7,18 @@
   "id": "2348",
   "abbr": "LT",
   "name": "Louisiana Tech Bulldogs",
-  "score": 0
+  "score": 57
  },
  "home": {
   "id": "2447",
   "abbr": "NICH",
   "name": "Nicholls Colonels",
-  "score": 0
+  "score": 65
  },
  "neutral": false,
  "venue": "David R. Stopher Gymnasium",
  "seasonType": 2,
- "state": "pre",
+ "state": "in",
  "lines": {
   "open": {
    "at": "2026-11-14T03:07:32.138Z",

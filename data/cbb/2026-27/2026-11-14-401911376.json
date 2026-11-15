@@ -7,18 +7,18 @@
   "id": "2698",
   "abbr": "WGA",
   "name": "West Georgia Wolves",
-  "score": 0
+  "score": 68
  },
  "home": {
   "id": "2127",
   "abbr": "CHSO",
   "name": "Charleston Southern Buccaneers",
-  "score": 0
+  "score": 92
  },
  "neutral": false,
  "venue": "Buccaneer Fieldhouse",
  "seasonType": 2,
- "state": "pre",
+ "state": "post",
  "lines": {
   "open": {
    "at": "2026-11-14T03:32:18.870Z",
@@ -766,5 +766,9 @@
    ]
   }
  },
- "props": {}
+ "props": {},
+ "final": {
+  "away": 68,
+  "home": 92
+ }
 }

@@ -7,18 +7,18 @@
   "id": "2226",
   "abbr": "FAU",
   "name": "Florida Atlantic Owls",
-  "score": 0
+  "score": 14
  },
  "home": {
   "id": "202",
   "abbr": "TLSA",
   "name": "Tulsa Golden Hurricane",
-  "score": 0
+  "score": 28
  },
  "neutral": false,
  "venue": "H. A. Chapman Stadium",
  "seasonType": 2,
- "state": "pre",
+ "state": "in",
  "lines": {
   "open": {
    "at": "2026-11-08T20:31:48.043Z",

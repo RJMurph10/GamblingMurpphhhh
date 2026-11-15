@@ -7,18 +7,18 @@
   "id": "6",
   "abbr": "DAL",
   "name": "Dallas Mavericks",
-  "score": 0
+  "score": 100
  },
  "home": {
   "id": "5",
   "abbr": "CLE",
   "name": "Cleveland Cavaliers",
-  "score": 0
+  "score": 116
  },
  "neutral": false,
  "venue": "Rocket Arena",
  "seasonType": 2,
- "state": "pre",
+ "state": "in",
  "lines": {
   "open": {
    "at": "2026-11-14T06:26:52.591Z",

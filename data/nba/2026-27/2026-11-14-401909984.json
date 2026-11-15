@@ -7,18 +7,18 @@
   "id": "4",
   "abbr": "CHI",
   "name": "Chicago Bulls",
-  "score": 0
+  "score": 80
  },
  "home": {
   "id": "16",
   "abbr": "MIN",
   "name": "Minnesota Timberwolves",
-  "score": 0
+  "score": 72
  },
  "neutral": false,
  "venue": "Target Center",
  "seasonType": 2,
- "state": "pre",
+ "state": "in",
  "lines": {
   "open": {
    "at": "2026-11-14T06:26:52.591Z",

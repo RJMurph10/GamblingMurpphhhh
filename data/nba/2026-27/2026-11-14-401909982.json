@@ -7,18 +7,18 @@
   "id": "8",
   "abbr": "DET",
   "name": "Detroit Pistons",
-  "score": 0
+  "score": 74
  },
  "home": {
   "id": "14",
   "abbr": "MIA",
   "name": "Miami Heat",
-  "score": 0
+  "score": 77
  },
  "neutral": false,
  "venue": "Kaseya Center",
  "seasonType": 2,
- "state": "pre",
+ "state": "in",
  "lines": {
   "open": {
    "at": "2026-11-14T06:26:52.591Z",

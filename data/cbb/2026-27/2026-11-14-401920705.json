@@ -7,18 +7,18 @@
   "id": "288",
   "abbr": "LIP",
   "name": "Lipscomb Bisons",
-  "score": 0
+  "score": 75
  },
  "home": {
   "id": "2717",
   "abbr": "WCU",
   "name": "Western Carolina Catamounts",
-  "score": 0
+  "score": 68
  },
  "neutral": false,
  "venue": "Ramsey Center",
  "seasonType": 2,
- "state": "pre",
+ "state": "post",
  "lines": {
   "open": {
    "at": "2026-11-14T03:32:18.870Z",
@@ -718,5 +718,9 @@
    ]
   }
  },
- "props": {}
+ "props": {},
+ "final": {
+  "away": 75,
+  "home": 68
+ }
 }

@@ -7,18 +7,18 @@
   "id": "11",
   "abbr": "NJ",
   "name": "New Jersey Devils",
-  "score": 0
+  "score": 7
  },
  "home": {
   "id": "23",
   "abbr": "WSH",
   "name": "Washington Capitals",
-  "score": 0
+  "score": 4
  },
  "neutral": false,
  "venue": "Capital One Arena",
  "seasonType": 2,
- "state": "pre",
+ "state": "in",
  "lines": {
   "open": {
    "at": "2026-11-13T17:49:04.100Z",

@@ -7,18 +7,18 @@
   "id": "17",
   "abbr": "COL",
   "name": "Colorado Avalanche",
-  "score": 0
+  "score": 3
  },
  "home": {
   "id": "10",
   "abbr": "MTL",
   "name": "Montreal Canadiens",
-  "score": 0
+  "score": 1
  },
  "neutral": false,
  "venue": "Bell Centre",
  "seasonType": 2,
- "state": "pre",
+ "state": "in",
  "lines": {
   "open": {
    "at": "2026-11-13T21:38:28.633Z",

@@ -7,18 +7,18 @@
   "id": "302",
   "abbr": "UCD",
   "name": "UC Davis Aggies",
-  "score": 0
+  "score": 59
  },
  "home": {
   "id": "16",
   "abbr": "SAC",
   "name": "Sacramento State Hornets",
-  "score": 0
+  "score": 46
  },
  "neutral": false,
  "venue": "Hornet Pavilion",
  "seasonType": 2,
- "state": "pre",
+ "state": "in",
  "lines": {
   "open": {
    "at": "2026-11-14T03:07:32.138Z",

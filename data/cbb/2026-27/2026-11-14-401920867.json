@@ -7,18 +7,18 @@
   "id": "2885",
   "abbr": "NJIT",
   "name": "NJIT Highlanders",
-  "score": 0
+  "score": 60
  },
  "home": {
   "id": "2217",
   "abbr": "FAIR",
   "name": "Fairfield Stags",
-  "score": 0
+  "score": 63
  },
  "neutral": false,
  "venue": "Leo D. Mahoney Arena",
  "seasonType": 2,
- "state": "pre",
+ "state": "post",
  "lines": {
   "open": {
    "at": "2026-11-14T03:32:18.870Z",
@@ -766,5 +766,9 @@
    ]
   }
  },
- "props": {}
+ "props": {},
+ "final": {
+  "away": 60,
+  "home": 63
+ }
 }

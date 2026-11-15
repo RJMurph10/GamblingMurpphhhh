@@ -7,18 +7,18 @@
   "id": "85",
   "abbr": "IUIN",
   "name": "IU Indianapolis Jaguars",
-  "score": 0
+  "score": 75
  },
  "home": {
   "id": "2413",
   "abbr": "MORE",
   "name": "Morehead State Eagles",
-  "score": 0
+  "score": 79
  },
  "neutral": false,
  "venue": "Ellis T. Johnson Arena",
  "seasonType": 2,
- "state": "pre",
+ "state": "post",
  "lines": {
   "open": {
    "at": "2026-11-14T03:07:32.138Z",
@@ -933,5 +933,9 @@
    ]
   }
  },
- "props": {}
+ "props": {},
+ "final": {
+  "away": 75,
+  "home": 79
+ }
 }

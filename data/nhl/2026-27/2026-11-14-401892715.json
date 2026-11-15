@@ -7,18 +7,18 @@
   "id": "15",
   "abbr": "PHI",
   "name": "Philadelphia Flyers",
-  "score": 0
+  "score": 4
  },
  "home": {
   "id": "29",
   "abbr": "CBJ",
   "name": "Columbus Blue Jackets",
-  "score": 0
+  "score": 3
  },
  "neutral": false,
  "venue": "Nationwide Arena",
  "seasonType": 2,
- "state": "pre",
+ "state": "post",
  "lines": {
   "open": {
    "at": "2026-11-13T17:49:04.100Z",
@@ -2437,5 +2437,9 @@
    "Porter Martone",
    "PHI"
   ]
+ },
+ "final": {
+  "away": 4,
+  "home": 3
  }
 }

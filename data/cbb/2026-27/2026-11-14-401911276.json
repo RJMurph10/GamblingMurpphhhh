@@ -7,18 +7,18 @@
   "id": "2066",
   "abbr": "BING",
   "name": "Binghamton Bearcats",
-  "score": 0
+  "score": 58
  },
  "home": {
   "id": "2184",
   "abbr": "DUQ",
   "name": "Duquesne Dukes",
-  "score": 0
+  "score": 71
  },
  "neutral": false,
  "venue": "UPMC Cooper Fieldhouse",
  "seasonType": 2,
- "state": "pre",
+ "state": "post",
  "lines": {
   "open": {
    "at": "2026-11-14T06:26:52.591Z",
@@ -933,5 +933,9 @@
    ]
   }
  },
- "props": {}
+ "props": {},
+ "final": {
+  "away": 58,
+  "home": 71
+ }
 }

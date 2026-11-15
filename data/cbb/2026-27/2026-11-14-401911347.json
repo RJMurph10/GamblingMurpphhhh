@@ -7,18 +7,18 @@
   "id": "2433",
   "abbr": "ULM",
   "name": "UL Monroe Warhawks",
-  "score": 0
+  "score": 47
  },
  "home": {
   "id": "2253",
   "abbr": "GCU",
   "name": "Grand Canyon Lopes",
-  "score": 0
+  "score": 80
  },
  "neutral": false,
  "venue": "Global Credit Union Arena",
  "seasonType": 2,
- "state": "pre",
+ "state": "in",
  "lines": {
   "open": {
    "at": "2026-11-13T23:38:17.369Z",

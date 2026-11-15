@@ -7,18 +7,18 @@
   "id": "2502",
   "abbr": "PRST",
   "name": "Portland State Vikings",
-  "score": 0
+  "score": 84
  },
  "home": {
   "id": "2539",
   "abbr": "SF",
   "name": "San Francisco Dons",
-  "score": 0
+  "score": 68
  },
  "neutral": false,
  "venue": "The Sobrato Center",
  "seasonType": 2,
- "state": "pre",
+ "state": "post",
  "lines": {
   "open": {
    "at": "2026-11-14T03:07:32.138Z",
@@ -851,5 +851,9 @@
    ]
   }
  },
- "props": {}
+ "props": {},
+ "final": {
+  "away": 84,
+  "home": 68
+ }
 }

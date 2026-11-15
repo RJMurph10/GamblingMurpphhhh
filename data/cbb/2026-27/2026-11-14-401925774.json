@@ -7,18 +7,18 @@
   "id": "47",
   "abbr": "HOW",
   "name": "Howard Bison",
-  "score": 0
+  "score": 64
  },
  "home": {
   "id": "2166",
   "abbr": "DAV",
   "name": "Davidson Wildcats",
-  "score": 0
+  "score": 58
  },
  "neutral": false,
  "venue": "John M. Belk Arena",
  "seasonType": 2,
- "state": "pre",
+ "state": "post",
  "lines": {
   "open": {
    "at": "2026-11-14T06:26:52.591Z",
@@ -801,5 +801,9 @@
    ]
   }
  },
- "props": {}
+ "props": {},
+ "final": {
+  "away": 64,
+  "home": 58
+ }
 }

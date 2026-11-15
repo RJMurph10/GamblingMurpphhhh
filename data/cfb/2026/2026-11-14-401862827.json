@@ -13,12 +13,12 @@
   "id": "2636",
   "abbr": "UTSA",
   "name": "UTSA Roadrunners",
-  "score": 0
+  "score": 7
  },
  "neutral": false,
  "venue": "Alamodome",
  "seasonType": 2,
- "state": "pre",
+ "state": "in",
  "lines": {
   "open": {
    "at": "2026-11-08T20:31:48.043Z",

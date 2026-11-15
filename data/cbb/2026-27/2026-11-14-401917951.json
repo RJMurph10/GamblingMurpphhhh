@@ -7,18 +7,18 @@
   "id": "2046",
   "abbr": "APSU",
   "name": "Austin Peay Governors",
-  "score": 0
+  "score": 60
  },
  "home": {
   "id": "2724",
   "abbr": "WICH",
   "name": "Wichita State Shockers",
-  "score": 0
+  "score": 76
  },
  "neutral": false,
  "venue": "Charles Koch Arena",
  "seasonType": 2,
- "state": "pre",
+ "state": "post",
  "lines": {
   "open": {
    "at": "2026-11-13T23:38:17.369Z",
@@ -933,5 +933,9 @@
    ]
   }
  },
- "props": {}
+ "props": {},
+ "final": {
+  "away": 60,
+  "home": 76
+ }
 }
