@@ -1,6 +1,10 @@
 import { describe, expect, it } from "vitest";
+import history from "@/data/pll-2019-2021.json";
 import {
   pllAwards,
+  pllChampionships,
+  pllCoaches,
+  pllDraft,
   pllLeaders,
   pllRoster,
   pllRosterSeasons,
@@ -121,5 +125,48 @@ describe("past rosters and awards", () => {
     expect(mvp(2023)).toMatchObject({ player: "Tom Schreiber", team: "127631" });
     expect(mvp(2025)).toMatchObject({ player: "Connor Shellenberger", team: "127632" });
     expect(mvp(2026)).toMatchObject({ player: "CJ Kirst", team: "127637" });
+  });
+});
+
+describe("league history", () => {
+  const champs = pllChampionships();
+  it("has every final, matching the game scores on the site", () => {
+    expect(champs.map((c) => c.season)).toEqual([2026, 2025, 2024, 2023, 2022, 2021, 2020, 2019]);
+    for (const y of [2019, 2020, 2021]) {
+      const last = history.games
+        .filter((g) => g.season === y)
+        .sort((a, b) => a.date.localeCompare(b.date))
+        .at(-1)!;
+      const c = champs.find((x) => x.season === y)!;
+      const winner = last.homeScore > last.awayScore ? last.home : last.away;
+      expect(c.champion).toBe(winner);
+      expect(c.score).toEqual([
+        Math.max(last.homeScore, last.awayScore),
+        Math.min(last.homeScore, last.awayScore),
+      ]);
+      expect(c.ot).toBe(last.ot);
+    }
+    expect(champs[0]).toMatchObject({ champion: "127637", score: [14, 4], runnerUp: "122896" }); // ESPN's 2026 final
+    expect(champs.find((c) => c.season === 2025)).toMatchObject({
+      champion: "127632",
+      score: [14, 13],
+      mvp: "Jeff Teat",
+    });
+  });
+  it("has each club's coaches by season", () => {
+    expect(pllCoaches("127635", 2019)).toEqual(["Dom Starsia"]); // Chrome
+    expect(pllCoaches("127635", 2022)).toEqual(["Tim Soudan"]);
+    expect(pllCoaches("127637", 2023)).toEqual(["Andy Copelan"]);
+    expect(pllCoaches("127637", 2024)).toEqual(["Bill Tierney"]);
+    expect(pllCoaches("127634", 2025)).toEqual(["Roy Colsey"]);
+  });
+  it("has college draft classes, not entry or expansion drafts", () => {
+    expect(pllDraft("127637", 2025)[0]).toMatchObject({
+      round: "1",
+      pick: "1",
+      player: "CJ Kirst",
+    });
+    expect(pllDraft("127637", 2020).some((p) => p.player === "Zach Currier")).toBe(false); // 2020 entry draft
+    expect(pllDraft("127631", 2019)[0]).toMatchObject({ pick: "1", player: "Pat Spencer" });
   });
 });

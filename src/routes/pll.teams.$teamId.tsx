@@ -2,7 +2,9 @@ import { useMemo, useState } from "react";
 import { createFileRoute } from "@tanstack/react-router";
 import { PageTitle, Panel, PanelHeader, StatCard } from "@/components/shared/booth";
 import { PllGamesTable, PllLogo, PllSeasonPicker } from "@/components/pll/PllBits";
+import { PllDraftClass, PllTeamTrends } from "@/components/pll/PllHistory";
 import { PllLeaders, PllRosterPanel } from "@/components/pll/PllPlayers";
+import { pllCoaches } from "@/lib/pll/players";
 import { standings, teamOf } from "@/lib/pll/pll";
 import { currentPllSeason, pllTeamSeasons, usePllSeason } from "@/lib/pll/use-pll";
 
@@ -38,7 +40,8 @@ function PllTeamPage() {
     [q.data, teamId],
   );
   const n = row ? row.w + row.l : 0;
-  const [tab, setTab] = useState<"schedule" | "roster">("schedule");
+  const [tab, setTab] = useState<"schedule" | "roster" | "trends">("schedule");
+  const coaches = pllCoaches(teamId, season);
   return (
     <>
       <PageTitle
@@ -49,7 +52,10 @@ function PllTeamPage() {
       {team ? (
         <div className="mb-6 flex items-center gap-4">
           <PllLogo team={team} className="size-16" />
-          <div className="font-mono text-xs text-mute">{team.location}</div>
+          <div className="space-y-0.5 font-mono text-xs text-mute">
+            {team.location ? <div>{team.location}</div> : null}
+            {coaches.length ? <div>Head coach: {coaches.join(", ")}</div> : null}
+          </div>
         </div>
       ) : null}
       <div className="grid grid-cols-2 gap-3 lg:grid-cols-4">
@@ -66,7 +72,7 @@ function PllTeamPage() {
         />
       </div>
       <div
-        className="mt-6 grid grid-cols-2 gap-1 rounded-lg border border-line/10 p-1"
+        className="mt-6 grid grid-cols-3 gap-1 rounded-lg border border-line/10 p-1"
         role="tablist"
         aria-label="Team view"
       >
@@ -74,6 +80,7 @@ function PllTeamPage() {
           [
             ["schedule", "Schedule"],
             ["roster", "Roster"],
+            ["trends", "Trends"],
           ] as const
         ).map(([v, label]) => (
           <button
@@ -100,10 +107,17 @@ function PllTeamPage() {
             empty={q.isLoading ? "Loading…" : "No games this season."}
           />
         </Panel>
-      ) : (
+      ) : tab === "roster" ? (
         <div className="mt-4 grid gap-6 lg:grid-cols-[1.4fr_1fr]">
           <PllRosterPanel teamId={teamId} season={season} />
-          <PllLeaders season={season} data={q.data} teamId={teamId} />
+          <div className="space-y-6">
+            <PllLeaders season={season} data={q.data} teamId={teamId} />
+            <PllDraftClass teamId={teamId} season={season} />
+          </div>
+        </div>
+      ) : (
+        <div className="mt-4">
+          <PllTeamTrends games={q.data?.games ?? []} teamId={teamId} />
         </div>
       )}
     </>
