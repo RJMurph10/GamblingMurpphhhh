@@ -1,4 +1,7 @@
-"""Usage: python3 scripts/pll-wiki-players.py <wikitext json.gz> src/data/pll-players.json
+"""Usage: python3 scripts/pll-wiki-players.py scripts/pll-wiki/pages.json.gz src/data/pll-players.json \
+          scripts/pll-wiki/roster-history-season-ends.json.gz scripts/pll-wiki/roster-history-extra.json.gz
+The inputs are Wikipedia API snapshots: current team and season pages' wikitext, and team pages' roster
+sections as they stood at past dates (prop=revisions&rvstart=<date>&rvdir=older), keyed "<page>|<season>".
 PLL team rosters and season statistical leaders from Wikipedia (CC BY-SA 4.0). Wikipedia's leader tables
 cite the PLL's stats site; rosters cite the PLL's player pages."""
 import gzip, json, re, sys
@@ -78,19 +81,27 @@ def roster_marks(sec):
         marks[m.group(1)] = label
     return marks
 
-rosters = {}
-for tid, page in PAGES.items():
-    w = d[page]; sec = section(w, "Roster")
-    hm = re.search(r"'''(\d{4})\s[^']*'''", sec)
+# misspellings on Wikipedia's pages
+NAME_FIX = {"Blaze Riordan": "Blaze Riorden"}
+
+COLS = {"#": ("#", "No.", "No", "Number"), "Name": ("Name", "Player"), "Position": ("Position", "Pos.", "Pos")}
+
+def parse_roster(sec):
+    """A roster section's season (from its title row) and players."""
+    # the season from the table's title row ('''2025 Utah Archers''') or caption (|+2021 Chrome Lacrosse Club)
+    hm = re.search(r"'''(\d{4})\s[^']*'''", sec) or re.search(r"\n\|\+\s*(?:style=[^|\n]*\|)?\s*(\d{4})\b", sec)
     marks = roster_marks(sec)
     # injury icons: [[File:Injury icon 2.svg|12px|Out]] -> {INJ:Out}
     sec = re.sub(r"\[\[File:Injury icon[^\]]*?\|([^\]|]*)\]\]", r" {INJ:\1}", sec)
     for cap, head, rows in tables(sec):
-        if "Name" not in head: continue
         col = {h: i for i, h in enumerate(head)}
+        for k, names in COLS.items():
+            for n in names:
+                if n in col and k not in col: col[k] = col[n]
+        if "Name" not in col or "Position" not in col: continue
         players = []
         for r in rows:
-            if len(r) < len(head) - 1 or not r[col["Name"]]: continue
+            if len(r) < len(head) - 1 or col["Name"] >= len(r) or not r[col["Name"]]: continue
             name = r[col["Name"]]; cap_ = "(C)" in name
             status = []
             inj = re.search(r"\{INJ:([^}]*)\}", name)
@@ -101,7 +112,9 @@ for tid, page in PAGES.items():
             rookie = "(R)" in name
             name = re.sub(r"\{INJ:[^}]*\}|\(C\)|\(R\)|[*^]", "", name)
             name = re.sub(r"\s+", " ", name).strip()
-            p = dict(num=r[col["#"]].strip(), name=name, pos=r[col["Position"]].strip())
+            name = NAME_FIX.get(name, name)
+            p = dict(num=r[col["#"]].strip() if "#" in col and col["#"] < len(r) else "", name=name,
+                     pos=r[col["Position"]].strip() if col["Position"] < len(r) else "")
             if status: p["status"] = status
             if rookie: p["rookie"] = True
             for k, h in (("shot", "Shot"), ("height", "Height"), ("weight", "Weight"), ("college", "College"), ("hometown", "Hometown")):
@@ -111,8 +124,43 @@ for tid, page in PAGES.items():
             if c in COLLEGE_ESPN: p["collegeLogo"] = f"https://a.espncdn.com/i/teamlogos/ncaa/500/{COLLEGE_ESPN[c]}.png"
             elif c in COLLEGE_LOCAL: p["collegeLogo"] = COLLEGE_LOCAL[c]
             players.append(p)
-        rosters[tid] = dict(season=int(hm.group(1)) if hm else None, page=page, players=players)
-        break
+        if players: return (int(hm.group(1)) if hm else None), players
+    return None, []
+
+# rosters[teamId][season] = {page, revid?, players}
+rosters = {}
+for tid, page in PAGES.items():
+    season, players = parse_roster(section(d[page], "Roster"))
+    if players and season: rosters.setdefault(tid, {})[str(season)] = dict(page=page, players=players)
+
+# past seasons: each team page as it stood at the end of a season (Wikipedia page history)
+HIST_PAGES = {  # page -> (team id, seasons the page describes that PLL club)
+    "Utah_Archers": ("127631", 2019, 2099), "Atlas_Lacrosse_Club": ("127632", 2019, 2099),
+    "Cannons_Lacrosse_Club": ("122997", 2021, 2099), "Boston_Cannons": ("122997", 2021, 2099),
+    "Carolina_Chaos": ("127634", 2019, 2099),
+    # Chrome's page became the Denver Outlaws' in 2024
+    "Chrome_Lacrosse_Club": ("127635", 2019, 2023), "Denver_Outlaws": ("122896", 2024, 2099),
+    "Redwoods_Lacrosse_Club": ("127636", 2019, 2099), "Philadelphia_Waterdogs": ("127637", 2020, 2099),
+    "Maryland_Whipsnakes": ("127638", 2019, 2099),
+}
+# snapshots are keyed "<page>|<year>" (end of that season) or "<page>|<year><x>" (extra dates, kept only when
+# the roster's own title names its season)
+for path in sys.argv[3:]:
+    hist = json.load(gzip.open(path))
+    for key, h in sorted(hist.items()):
+        page, label = key.split("|")
+        tid, first, last = HIST_PAGES[page]
+        if not h.get("roster"): continue
+        season, players = parse_roster(h["roster"])
+        if not players: continue
+        if label.isdigit():
+            # the roster the page had for that season (or untitled and edited that year)
+            y = int(label)
+            if (season or int(h["ts"][:4])) != y: continue
+        elif season: y = season
+        else: continue
+        if not first <= y <= last or str(y) in rosters.get(tid, {}): continue
+        rosters.setdefault(tid, {})[str(y)] = dict(page=page, revid=h["revid"], players=players)
 
 leaders = {}
 for y in range(2019, 2027):
@@ -136,7 +184,59 @@ for y in range(2019, 2027):
                     out.append(dict(stat=cap, player=r[0], value=r[2], team=team_id(r[1]), rank=i + 1))
     leaders[y] = dict(page=page, rows=out)
 
-json.dump({"source": "Wikipedia (CC BY-SA 4.0): PLL team pages and season pages", "rosters": rosters, "leaders": leaders},
-          open(sys.argv[2], "w"), indent=0, ensure_ascii=False)
-for t, r in rosters.items(): print("roster", t, r["season"], len(r["players"]), r["players"][:1])
+def award_name(s):
+    s = clean(s)
+    s = re.sub(r"\s*-\s*Awarded to.*$", "", s)
+    return s.strip()
+
+awards = {}
+for y in range(2019, 2027):
+    w = d.get(f"{y}_Premier_Lacrosse_League_season", "")
+    out = []
+    # a table of winners: Award | Recipient | Team | Position
+    for m in re.finditer(r"\n==+\s*(?:Awards|Award winners)\s*==+", w):
+        sec = w[m.end():]
+        sec = sec[: (re.search(r"\n==[^=]", sec) or re.search(r"$", sec)).start()]
+        for cap, head, rows in tables(sec):
+            if head[:2] != ["Award", "Recipient"]: continue
+            for r in rows:
+                if len(r) >= 3 and r[0] and r[1]:
+                    out.append(dict(award=award_name(r[0]), player=r[1].strip(), team=team_id(r[2]), pos=r[3].strip() if len(r) > 3 else ""))
+        if out: break
+    # finalists, winner in bold: ===== Award ===== then "* '''Name''' <small>(Team)</small>"
+    if not out:
+        for m in re.finditer(r"\n=====\s*([^=\n]+?)\s*=====\n((?:\*[^\n]*\n?)+)", w):
+            for line in m.group(2).split("\n"):
+                if "'''" not in line: continue
+                bold = re.search(r"'''(.+?)'''", line)
+                tm = re.search(r"<small>\((.+?)\)</small>", line)
+                out.append(dict(award=award_name(m.group(1)), player=clean(bold.group(1)), team=team_id(clean(tm.group(1))) if tm else None, pos=""))
+                break
+    # the infobox's MVPs: the only awards on some pages (2022), and the championship game MVP everywhere
+    for key, label in (("MVP", "Jim Brown Most Valuable Player"), ("finals_MVP", "Championship Game MVP")):
+        im = re.search(r"\|\s*" + key + r"\s*=\s*([^\n]+)", w)
+        if not im or not clean(im.group(1)): continue
+        val = clean(im.group(1)); tm = re.search(r"\(([^)]+)\)\s*$", val)
+        name = re.sub(r"\s*\([^)]*\)\s*$", "", val).strip()
+        if name and not any(r["award"] == label or (key == "MVP" and "Most Valuable" in r["award"]) for r in out):
+            out.append(dict(award=label, player=name, team=team_id(tm.group(1)) if tm else None, pos=""))
+    for r in out: r["player"] = NAME_FIX.get(r["player"], r["player"])
+    if out: awards[y] = dict(page=f"{y}_Premier_Lacrosse_League_season", rows=out)
+
+# awards listed without a team: the team whose roster had the player that season (else the closest season)
+def team_of(player, y):
+    for yy in sorted({int(k) for r in rosters.values() for k in r}, key=lambda k: abs(k - y)):
+        for tid, by in rosters.items():
+            if any(p["name"] == player for p in by.get(str(yy), {}).get("players", [])): return tid
+    for l in leaders.get(y, {}).get("rows", []):
+        if l["player"] == player: return l["team"]
+    return None
+for y, a in awards.items():
+    for r in a["rows"]:
+        if not r["team"]: r["team"] = team_of(r["player"], y)
+
+json.dump({"source": "Wikipedia (CC BY-SA 4.0): PLL team pages and season pages", "rosters": rosters, "leaders": leaders, "awards": awards},
+          open(sys.argv[2], "w"), separators=(",", ":"), ensure_ascii=False)
+for t, r in rosters.items(): print("roster", t, {y: len(v["players"]) for y, v in sorted(r.items())})
 for y, l in leaders.items(): print("leaders", y, len(l["rows"]), sorted({x["stat"] for x in l["rows"]})[:14], l["rows"][:1])
+for y, a in awards.items(): print("awards", y, len(a["rows"]), [(r["award"][:28], r["player"], r["team"]) for r in a["rows"][:3]])

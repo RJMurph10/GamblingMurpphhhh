@@ -4,9 +4,11 @@ import { PllLogo } from "@/components/pll/PllBits";
 import type { PllSeason } from "@/lib/pll/pll";
 import { teamOf } from "@/lib/pll/pll";
 import {
+  pllAwards,
   pllLeaders,
   pllLeadersPage,
   pllRoster,
+  pllRosterSeasons,
   posAbbr,
   posRank,
   shotAbbr,
@@ -15,15 +17,43 @@ import {
 
 const wiki = (page: string) => `https://en.wikipedia.org/wiki/${page}`;
 
-function WikiCredit({ page, what }: { page: string; what: string }) {
+function WikiCredit({ page, what, revid }: { page: string; what: string; revid?: number }) {
+  const href = revid ? `https://en.wikipedia.org/w/index.php?oldid=${revid}` : wiki(page);
   return (
     <p className="px-4 py-2 font-mono text-[10px] text-faint">
       {what} from{" "}
-      <a className="underline hover:text-mute" href={wiki(page)} target="_blank" rel="noreferrer">
+      <a className="underline hover:text-mute" href={href} target="_blank" rel="noreferrer">
         Wikipedia
       </a>{" "}
       (CC BY-SA 4.0).
     </p>
+  );
+}
+
+/** A season's end-of-year awards: MVP, position awards, rookie, coach, championship game MVP. */
+export function PllAwards({ season, data }: { season: number; data?: PllSeason }) {
+  const a = pllAwards(season);
+  if (!a?.rows.length) return null;
+  return (
+    <Panel padded={false}>
+      <PanelHeader title="Awards" aside={<span className="label-mono">{season}</span>} />
+      <div className="divide-y divide-line/5">
+        {a.rows.map((r) => {
+          const t = r.team ? teamOf(data, r.team) : undefined;
+          return (
+            <div key={r.award} className="flex items-center gap-2 px-4 py-1.5 text-sm">
+              <span className="w-[45%] shrink-0 truncate text-[12px] text-mute" title={r.award}>
+                {r.award}
+              </span>
+              {t ? <PllLogo team={t} className="size-4" /> : null}
+              <span className="min-w-0 flex-1 truncate font-semibold">{r.player}</span>
+              {t ? <span className="font-mono text-[11px] text-mute">{t.short}</span> : null}
+            </div>
+          );
+        })}
+      </div>
+      <WikiCredit page={a.page} what="Awards" />
+    </Panel>
   );
 }
 
@@ -104,7 +134,7 @@ function College({ p }: { p: PllRosterPlayer }) {
 
 /** A club's latest roster from Wikipedia, shown for that season and later. */
 export function PllRosterPanel({ teamId, season }: { teamId: string; season: number }) {
-  const roster = pllRoster(teamId);
+  const roster = pllRoster(teamId, season);
   const players = useMemo(
     () =>
       [...(roster?.players ?? [])].sort(
@@ -112,21 +142,27 @@ export function PllRosterPanel({ teamId, season }: { teamId: string; season: num
       ),
     [roster],
   );
-  if (!roster || !players.length || (roster.season != null && season < roster.season))
+  if (!roster || !players.length) {
+    const have = pllRosterSeasons(teamId);
     return (
       <Panel>
         <p className="font-mono text-xs text-mute">
-          {roster?.season
-            ? `No ${season} roster. Wikipedia lists this club's ${roster.season} roster; pick ${roster.season} or later to see it.`
+          {have.length
+            ? `Wikipedia has no ${season} roster for this club. Rosters: ${have.join(", ")}.`
             : "No roster listed for this club."}
         </p>
       </Panel>
     );
+  }
   return (
     <Panel padded={false}>
       <PanelHeader
         title="Roster"
-        aside={<span className="label-mono">{roster.season ?? ""} season roster</span>}
+        aside={
+          <span className="label-mono">
+            {roster.season < season ? `latest listed: ${roster.season}` : `${roster.season} roster`}
+          </span>
+        }
       />
       <div className="overflow-x-auto">
         <table className="w-full min-w-[480px] text-sm">
@@ -182,7 +218,8 @@ export function PllRosterPanel({ teamId, season }: { teamId: string; season: num
       </div>
       <WikiCredit
         page={roster.page}
-        what={`Roster, injuries and PUP/holdout/travel lists as last listed on the team's Wikipedia page (${roster.season ?? "latest"} season); not week-by-week`}
+        revid={roster.revid}
+        what={`${roster.season} roster, injuries and PUP/holdout/travel lists as ${roster.revid ? "the team's Wikipedia page listed them at the end of that season" : "last listed on the team's Wikipedia page"}; not week-by-week`}
       />
     </Panel>
   );

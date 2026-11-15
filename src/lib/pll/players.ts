@@ -21,7 +21,13 @@ export type PllRosterPlayer = {
   /** Lists the player is on per Wikipedia: "Injured", "PUP", "Holdout", "Unavailable to Travel"... */
   status?: string[];
 };
-export type PllRoster = { season: number | null; page: string; players: PllRosterPlayer[] };
+export type PllRoster = {
+  season: number;
+  page: string;
+  /** The Wikipedia revision it came from (a past season's page as it stood then). */
+  revid?: number;
+  players: PllRosterPlayer[];
+};
 export type PllLeader = {
   stat: string;
   player: string;
@@ -32,12 +38,26 @@ export type PllLeader = {
 };
 export type PllLeaderGroup = { stat: string; rows: PllLeader[] };
 
-const rosters = data.rosters as Record<string, PllRoster>;
+const rosters = data.rosters as Record<string, Record<string, Omit<PllRoster, "season">>>;
 const leaders = data.leaders as Record<string, { page: string; rows: PllLeader[] }>;
 
-/** A club's latest roster on Wikipedia, if it has one. */
-export function pllRoster(teamId: string): PllRoster | undefined {
-  return rosters[teamId];
+/** The seasons Wikipedia has a roster for, oldest first. */
+export const pllRosterSeasons = (teamId: string): number[] =>
+  Object.keys(rosters[teamId] ?? {})
+    .map(Number)
+    .sort((a, b) => a - b);
+
+/**
+ * A club's roster for a season; with no season (or one past the latest Wikipedia has), its latest
+ * roster, labelled with the season it is from.
+ */
+export function pllRoster(teamId: string, season?: number): PllRoster | undefined {
+  const years = pllRosterSeasons(teamId);
+  if (!years.length) return undefined;
+  const latest = years[years.length - 1];
+  const y = season == null || season > latest ? latest : season;
+  const r = rosters[teamId]?.[String(y)];
+  return r ? { season: y, ...r } : undefined;
 }
 
 /** Short position: A, M, FO, D, G, LSM, SSDM ("Defense/SSDM" -> "D/SSDM"). */
@@ -83,3 +103,10 @@ export function pllLeaders(season: number, teamId?: string): PllLeaderGroup[] {
 }
 
 export const pllLeadersPage = (season: number) => leaders[String(season)]?.page;
+
+export type PllAward = { award: string; player: string; team: string | null; pos: string };
+const awards =
+  (data as { awards?: Record<string, { page: string; rows: PllAward[] }> }).awards ?? {};
+
+/** A season's end-of-year awards (MVP first), from its Wikipedia season page. */
+export const pllAwards = (season: number) => awards[String(season)];

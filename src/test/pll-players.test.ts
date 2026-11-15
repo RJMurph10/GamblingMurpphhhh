@@ -1,5 +1,12 @@
 import { describe, expect, it } from "vitest";
-import { pllLeaders, pllRoster, posAbbr, shotAbbr } from "@/lib/pll/players";
+import {
+  pllAwards,
+  pllLeaders,
+  pllRoster,
+  pllRosterSeasons,
+  posAbbr,
+  shotAbbr,
+} from "@/lib/pll/players";
 
 const top = (season: number, stat: string) =>
   pllLeaders(season).find((g) => g.stat === stat)?.rows[0];
@@ -46,7 +53,7 @@ describe("PLL players from Wikipedia", () => {
       "127638",
     ])
       expect(pllRoster(id)?.players.length).toBeGreaterThan(20);
-    expect(pllRoster("127635")).toBeUndefined(); // Chrome
+    expect(pllRoster("127635")?.season).toBe(2023); // Chrome's last season
   });
 });
 
@@ -89,5 +96,30 @@ describe("college logos", () => {
       .filter((p) => p.college && !p.collegeLogo)
       .map((p) => p.college);
     expect(missing).toEqual([]);
+  });
+});
+
+describe("past rosters and awards", () => {
+  it("has rosters back to each club's first season", () => {
+    expect(pllRosterSeasons("127638")[0]).toBe(2019); // Whipsnakes
+    expect(pllRosterSeasons("127637")[0]).toBe(2020); // Waterdogs joined in 2020
+    expect(pllRosterSeasons("122997")[0]).toBe(2021); // Cannons joined in 2021
+    expect(pllRosterSeasons("127635").at(-1)).toBe(2023); // Chrome ended in 2023
+  });
+  it("gives the season asked for, and the latest for a newer season", () => {
+    expect(pllRoster("127638", 2019)?.season).toBe(2019);
+    expect(pllRoster("127638", 2019)?.players.some((p) => p.name === "Matt Rambo")).toBe(true);
+    const latest = pllRosterSeasons("127634").at(-1)!;
+    expect(pllRoster("127634", latest + 1)?.season).toBe(latest);
+  });
+  it("has each season's MVP, checked against the league's announcements", () => {
+    const mvp = (y: number) =>
+      pllAwards(y)?.rows.find((r) => r.award.includes("Most Valuable Player"));
+    expect(mvp(2019)).toMatchObject({ player: "Matt Rambo", team: "127638" });
+    expect(mvp(2021)).toMatchObject({ player: "Blaze Riorden", team: "127634" });
+    expect(mvp(2022)).toMatchObject({ player: "Trevor Baptiste", team: "127632" });
+    expect(mvp(2023)).toMatchObject({ player: "Tom Schreiber", team: "127631" });
+    expect(mvp(2025)).toMatchObject({ player: "Connor Shellenberger", team: "127632" });
+    expect(mvp(2026)).toMatchObject({ player: "CJ Kirst", team: "127637" });
   });
 });

@@ -8,7 +8,7 @@ import {
   PllSeasonPicker,
   PllSourceNote,
 } from "@/components/pll/PllBits";
-import { PllLeaders } from "@/components/pll/PllPlayers";
+import { PllAwards, PllLeaders } from "@/components/pll/PllPlayers";
 import { pulse, standings } from "@/lib/pll/pll";
 import { currentPllSeason, usePllSeason } from "@/lib/pll/use-pll";
 
@@ -146,6 +146,7 @@ function PllDashboard() {
             </div>
           </Panel>
           <PllLeaders season={season} data={s} />
+          <PllAwards season={season} data={s} />
         </div>
 
         <div className="space-y-6">
