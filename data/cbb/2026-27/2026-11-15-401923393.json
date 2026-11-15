@@ -7,18 +7,18 @@
   "id": "2711",
   "abbr": "WMU",
   "name": "Western Michigan Broncos",
-  "score": 0
+  "score": 57
  },
  "home": {
   "id": "88",
   "abbr": "USI",
   "name": "Southern Indiana Screaming Eagles",
-  "score": 0
+  "score": 45
  },
  "neutral": false,
  "venue": "Liberty Arena (IN)",
  "seasonType": 2,
- "state": "pre",
+ "state": "in",
  "lines": {
   "open": {
    "at": "2026-11-15T02:45:11.429Z",

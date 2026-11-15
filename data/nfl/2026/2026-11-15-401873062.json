@@ -7,13 +7,13 @@
   "id": "26",
   "abbr": "SEA",
   "name": "Seattle Seahawks",
-  "score": 0
+  "score": 14
  },
  "home": {
   "id": "13",
   "abbr": "LV",
   "name": "Las Vegas Raiders",
-  "score": 0
+  "score": 10
  },
  "neutral": false,
  "venue": "Allegiant Stadium",

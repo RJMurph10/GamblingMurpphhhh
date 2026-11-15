@@ -7,18 +7,18 @@
   "id": "2348",
   "abbr": "LT",
   "name": "Louisiana Tech Lady Techsters",
-  "score": 20
+  "score": 53
  },
  "home": {
   "id": "145",
   "abbr": "MISS",
   "name": "Ole Miss Rebels",
-  "score": 42
+  "score": 69
  },
  "neutral": false,
  "venue": "The Sandy and John Black Pavilion at Ole Miss",
  "seasonType": 2,
- "state": "in",
+ "state": "post",
  "lines": {
   "open": {
    "at": "2026-11-15T17:47:38.554Z",
@@ -933,5 +933,9 @@
    ]
   }
  },
- "props": {}
+ "props": {},
+ "final": {
+  "away": 53,
+  "home": 69
+ }
 }

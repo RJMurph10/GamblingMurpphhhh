@@ -7,18 +7,18 @@
   "id": "14",
   "abbr": "LAR",
   "name": "Los Angeles Rams",
-  "score": 0
+  "score": 24
  },
  "home": {
   "id": "22",
   "abbr": "ARI",
   "name": "Arizona Cardinals",
-  "score": 0
+  "score": 6
  },
  "neutral": false,
  "venue": "State Farm Stadium",
  "seasonType": 2,
- "state": "pre",
+ "state": "in",
  "lines": {
   "open": {
    "at": "2026-11-08T23:06:31.297Z",

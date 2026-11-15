@@ -7,18 +7,18 @@
   "id": "325",
   "abbr": "CLE",
   "name": "Cleveland State Vikings",
-  "score": 39
+  "score": 74
  },
  "home": {
   "id": "2010",
   "abbr": "AAMU",
   "name": "Alabama A&M Bulldogs",
-  "score": 40
+  "score": 73
  },
  "neutral": false,
  "venue": "Event Center",
  "seasonType": 2,
- "state": "in",
+ "state": "post",
  "lines": {
   "open": {
    "at": "2026-11-15T11:04:29.925Z",
@@ -933,5 +933,9 @@
    ]
   }
  },
- "props": {}
+ "props": {},
+ "final": {
+  "away": 74,
+  "home": 73
+ }
 }

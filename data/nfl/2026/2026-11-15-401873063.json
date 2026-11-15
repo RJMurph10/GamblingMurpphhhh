@@ -7,18 +7,18 @@
   "id": "25",
   "abbr": "SF",
   "name": "San Francisco 49ers",
-  "score": 0
+  "score": 17
  },
  "home": {
   "id": "6",
   "abbr": "DAL",
   "name": "Dallas Cowboys",
-  "score": 0
+  "score": 16
  },
  "neutral": false,
  "venue": "AT&T Stadium",
  "seasonType": 2,
- "state": "pre",
+ "state": "in",
  "lines": {
   "open": {
    "at": "2026-11-08T23:06:31.297Z",

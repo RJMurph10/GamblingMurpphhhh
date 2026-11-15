@@ -7,18 +7,18 @@
   "id": "13",
   "abbr": "LAL",
   "name": "Los Angeles Lakers",
-  "score": 0
+  "score": 93
  },
  "home": {
   "id": "21",
   "abbr": "PHX",
   "name": "Phoenix Suns",
-  "score": 0
+  "score": 69
  },
  "neutral": false,
  "venue": "Mortgage Matchup Center",
  "seasonType": 2,
- "state": "pre",
+ "state": "in",
  "lines": {
   "open": {
    "at": "2026-11-15T11:04:29.925Z",

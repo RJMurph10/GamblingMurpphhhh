@@ -7,18 +7,18 @@
   "id": "41",
   "abbr": "CONN",
   "name": "UConn Huskies",
-  "score": 0
+  "score": 9
  },
  "home": {
   "id": "97",
   "abbr": "LOU",
   "name": "Louisville Cardinals",
-  "score": 0
+  "score": 16
  },
  "neutral": false,
  "venue": "KFC Yum! Center",
  "seasonType": 2,
- "state": "pre",
+ "state": "in",
  "lines": {
   "open": {
    "at": "2026-11-15T17:47:38.554Z",

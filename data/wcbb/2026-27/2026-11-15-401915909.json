@@ -7,18 +7,18 @@
   "id": "276",
   "abbr": "MRSH",
   "name": "Marshall Thundering Herd",
-  "score": 19
+  "score": 51
  },
  "home": {
   "id": "150",
   "abbr": "DUKE",
   "name": "Duke Blue Devils",
-  "score": 41
+  "score": 88
  },
  "neutral": false,
  "venue": "Cameron Indoor Stadium",
  "seasonType": 2,
- "state": "in",
+ "state": "post",
  "lines": {
   "open": {
    "at": "2026-11-15T17:47:38.554Z",
@@ -769,5 +769,9 @@
    ]
   }
  },
- "props": {}
+ "props": {},
+ "final": {
+  "away": 51,
+  "home": 88
+ }
 }

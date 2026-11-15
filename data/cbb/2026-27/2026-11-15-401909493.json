@@ -7,18 +7,18 @@
   "id": "156",
   "abbr": "CREI",
   "name": "Creighton Bluejays",
-  "score": 42
+  "score": 70
  },
  "home": {
   "id": "2294",
   "abbr": "IOWA",
   "name": "Iowa Hawkeyes",
-  "score": 30
+  "score": 69
  },
  "neutral": true,
  "venue": "Casey's Center",
  "seasonType": 2,
- "state": "in",
+ "state": "post",
  "lines": {
   "open": {
    "at": "2026-11-14T20:06:10.126Z",
@@ -933,5 +933,9 @@
    ]
   }
  },
- "props": {}
+ "props": {},
+ "final": {
+  "away": 70,
+  "home": 69
+ }
 }
