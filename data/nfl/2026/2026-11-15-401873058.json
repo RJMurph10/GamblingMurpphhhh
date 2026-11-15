@@ -7,18 +7,18 @@
   "id": "12",
   "abbr": "KC",
   "name": "Kansas City Chiefs",
-  "score": 0
+  "score": 28
  },
  "home": {
   "id": "1",
   "abbr": "ATL",
   "name": "Atlanta Falcons",
-  "score": 0
+  "score": 3
  },
  "neutral": false,
  "venue": "Mercedes-Benz Stadium",
  "seasonType": 2,
- "state": "pre",
+ "state": "in",
  "lines": {
   "open": {
    "at": "2026-11-08T23:06:31.297Z",

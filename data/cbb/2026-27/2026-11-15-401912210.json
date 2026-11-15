@@ -7,18 +7,18 @@
   "id": "108",
   "abbr": "HARV",
   "name": "Harvard Crimson",
-  "score": 0
+  "score": 64
  },
  "home": {
   "id": "44",
   "abbr": "AMER",
   "name": "American University Eagles",
-  "score": 0
+  "score": 70
  },
  "neutral": false,
  "venue": "Bender Arena",
  "seasonType": 2,
- "state": "pre",
+ "state": "post",
  "lines": {
   "open": {
    "at": "2026-11-15T11:04:29.925Z",
@@ -933,5 +933,9 @@
    ]
   }
  },
- "props": {}
+ "props": {},
+ "final": {
+  "away": 64,
+  "home": 70
+ }
 }

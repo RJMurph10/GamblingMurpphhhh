@@ -7,18 +7,18 @@
   "id": "2142",
   "abbr": "COLG",
   "name": "Colgate Raiders",
-  "score": 0
+  "score": 58
  },
  "home": {
   "id": "48",
   "abbr": "DEL",
   "name": "Delaware Blue Hens",
-  "score": 0
+  "score": 64
  },
  "neutral": false,
  "venue": "Bob Carpenter Center",
  "seasonType": 2,
- "state": "pre",
+ "state": "post",
  "lines": {
   "open": {
    "at": "2026-11-15T02:45:11.429Z",
@@ -933,5 +933,9 @@
    ]
   }
  },
- "props": {}
+ "props": {},
+ "final": {
+  "away": 58,
+  "home": 64
+ }
 }

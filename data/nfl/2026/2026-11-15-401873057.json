@@ -7,18 +7,18 @@
   "id": "30",
   "abbr": "JAX",
   "name": "Jacksonville Jaguars",
-  "score": 0
+  "score": 23
  },
  "home": {
   "id": "10",
   "abbr": "TEN",
   "name": "Tennessee Titans",
-  "score": 0
+  "score": 16
  },
  "neutral": false,
  "venue": "Nissan Stadium",
  "seasonType": 2,
- "state": "pre",
+ "state": "in",
  "lines": {
   "open": {
    "at": "2026-11-08T23:06:31.297Z",

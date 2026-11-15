@@ -7,18 +7,18 @@
   "id": "2450",
   "abbr": "NORF",
   "name": "Norfolk State Spartans",
-  "score": 0
+  "score": 53
  },
  "home": {
   "id": "2247",
   "abbr": "GAST",
   "name": "Georgia State Panthers",
-  "score": 0
+  "score": 78
  },
  "neutral": false,
  "venue": "GSU Convocation Center",
  "seasonType": 2,
- "state": "pre",
+ "state": "post",
  "lines": {
   "open": {
    "at": "2026-11-15T02:45:11.429Z",
@@ -851,5 +851,9 @@
    ]
   }
  },
- "props": {}
+ "props": {},
+ "final": {
+  "away": 53,
+  "home": 78
+ }
 }

@@ -7,18 +7,18 @@
   "id": "2870",
   "abbr": "PFW",
   "name": "Purdue Fort Wayne Mastodons",
-  "score": 0
+  "score": 42
  },
  "home": {
   "id": "2197",
   "abbr": "EIU",
   "name": "Eastern Illinois Panthers",
-  "score": 0
+  "score": 23
  },
  "neutral": false,
  "venue": "Groniger Arena",
  "seasonType": 2,
- "state": "pre",
+ "state": "in",
  "lines": {
   "open": {
    "at": "2026-11-15T02:45:11.429Z",

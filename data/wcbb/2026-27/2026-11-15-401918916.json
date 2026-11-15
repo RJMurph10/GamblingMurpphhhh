@@ -7,18 +7,18 @@
   "id": "171",
   "abbr": "COLU",
   "name": "Columbia Lions",
-  "score": 0
+  "score": 58
  },
  "home": {
   "id": "120",
   "abbr": "MD",
   "name": "Maryland Terrapins",
-  "score": 0
+  "score": 85
  },
  "neutral": false,
  "venue": "XFINITY Center",
  "seasonType": 2,
- "state": "pre",
+ "state": "post",
  "lines": {
   "open": {
    "at": "2026-11-15T17:47:38.554Z",
@@ -933,5 +933,9 @@
    ]
   }
  },
- "props": {}
+ "props": {},
+ "final": {
+  "away": 58,
+  "home": 85
+ }
 }

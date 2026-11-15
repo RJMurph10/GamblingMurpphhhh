@@ -7,18 +7,18 @@
   "id": "34",
   "abbr": "HOU",
   "name": "Houston Texans",
-  "score": 0
+  "score": 17
  },
  "home": {
   "id": "5",
   "abbr": "CLE",
   "name": "Cleveland Browns",
-  "score": 0
+  "score": 20
  },
  "neutral": false,
  "venue": "Huntington Bank Field",
  "seasonType": 2,
- "state": "pre",
+ "state": "in",
  "lines": {
   "open": {
    "at": "2026-11-08T23:06:31.297Z",

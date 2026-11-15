@@ -7,18 +7,18 @@
   "id": "68",
   "abbr": "BOIS",
   "name": "Boise State Broncos",
-  "score": 0
+  "score": 75
  },
  "home": {
   "id": "158",
   "abbr": "NEB",
   "name": "Nebraska Cornhuskers",
-  "score": 0
+  "score": 102
  },
  "neutral": true,
  "venue": "Sanford Pentagon",
  "seasonType": 2,
- "state": "pre",
+ "state": "post",
  "lines": {
   "open": {
    "at": "2026-11-14T20:06:10.126Z",
@@ -933,5 +933,9 @@
    ]
   }
  },
- "props": {}
+ "props": {},
+ "final": {
+  "away": 75,
+  "home": 102
+ }
 }

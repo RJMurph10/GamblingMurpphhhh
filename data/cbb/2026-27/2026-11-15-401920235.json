@@ -7,18 +7,18 @@
   "id": "159",
   "abbr": "DART",
   "name": "Dartmouth Big Green",
-  "score": 0
+  "score": 75
  },
  "home": {
   "id": "104",
   "abbr": "BU",
   "name": "Boston University Terriers",
-  "score": 0
+  "score": 90
  },
  "neutral": false,
  "venue": "Case Gym",
  "seasonType": 2,
- "state": "pre",
+ "state": "post",
  "lines": {
   "open": {
    "at": "2026-11-15T02:45:11.429Z",
@@ -933,5 +933,9 @@
    ]
   }
  },
- "props": {}
+ "props": {},
+ "final": {
+  "away": 75,
+  "home": 90
+ }
 }
