@@ -1,7 +1,39 @@
 {
  "day": "2026-11-15",
- "updated": "2026-11-15T02:10:44.574Z",
+ "updated": "2026-11-15T12:18:32.455Z",
  "picks": [
+  {
+   "id": "401924858-total",
+   "game": "QUIN @ CCSU",
+   "tip": "2026-11-15T17:00Z",
+   "market": "total",
+   "pick": "Over 133.5",
+   "line": 133.5,
+   "open": 133.5,
+   "model": 144.5,
+   "edge": 11,
+   "best": true,
+   "firstSeen": "2026-11-15T12:18:32.455Z",
+   "latest": 134.5,
+   "latestAt": "2026-11-15T12:18:32.455Z",
+   "alerted": false
+  },
+  {
+   "id": "401912210-total",
+   "game": "HARV @ AMER",
+   "tip": "2026-11-15T18:00Z",
+   "market": "total",
+   "pick": "Over 131.5",
+   "line": 131.5,
+   "open": 131.5,
+   "model": 141.5,
+   "edge": 10,
+   "best": true,
+   "firstSeen": "2026-11-15T12:18:32.455Z",
+   "latest": 132.5,
+   "latestAt": "2026-11-15T12:18:32.455Z",
+   "alerted": false
+  },
   {
    "id": "401909554-total",
    "game": "UNH @ BC",
@@ -14,8 +46,8 @@
    "edge": 7.1,
    "best": true,
    "firstSeen": "2026-11-15T02:10:44.574Z",
-   "latest": 133.5,
-   "latestAt": "2026-11-15T02:10:44.574Z",
+   "latest": 131.5,
+   "latestAt": "2026-11-15T12:18:32.455Z",
    "alerted": false
   },
   {
@@ -31,7 +63,39 @@
    "best": true,
    "firstSeen": "2026-11-15T02:10:44.574Z",
    "latest": 166.5,
-   "latestAt": "2026-11-15T02:10:44.574Z",
+   "latestAt": "2026-11-15T12:18:32.455Z",
+   "alerted": false
+  },
+  {
+   "id": "401925926-total",
+   "game": "SCST @ COFC",
+   "tip": "2026-11-15T19:00Z",
+   "market": "total",
+   "pick": "Under 160.5",
+   "line": 160.5,
+   "open": 160.5,
+   "model": 153.6,
+   "edge": 6.9,
+   "best": true,
+   "firstSeen": "2026-11-15T12:18:32.455Z",
+   "latest": 161.5,
+   "latestAt": "2026-11-15T12:18:32.455Z",
+   "alerted": false
+  },
+  {
+   "id": "401928789-total",
+   "game": "NMSU @ SDSU",
+   "tip": "2026-11-15T21:00Z",
+   "market": "total",
+   "pick": "Over 143.5",
+   "line": 143.5,
+   "open": 143.5,
+   "model": 150,
+   "edge": 6.5,
+   "best": true,
+   "firstSeen": "2026-11-15T12:18:32.455Z",
+   "latest": 143.5,
+   "latestAt": "2026-11-15T12:18:32.455Z",
    "alerted": false
   },
   {
@@ -46,8 +110,8 @@
    "edge": 9.4,
    "best": true,
    "firstSeen": "2026-11-15T02:10:44.574Z",
-   "latest": 141.5,
-   "latestAt": "2026-11-15T02:10:44.574Z",
+   "latest": 139.5,
+   "latestAt": "2026-11-15T12:18:32.455Z",
    "alerted": false
   }
  ]

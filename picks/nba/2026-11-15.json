@@ -1,6 +1,6 @@
 {
  "day": "2026-11-15",
- "updated": "2026-11-15T02:10:43.492Z",
+ "updated": "2026-11-15T12:18:31.692Z",
  "picks": [
   {
    "id": "401909985-spread",
@@ -15,7 +15,23 @@
    "best": false,
    "firstSeen": "2026-11-15T02:10:43.492Z",
    "latest": -6.5,
-   "latestAt": "2026-11-15T02:10:43.492Z",
+   "latestAt": "2026-11-15T12:18:31.692Z",
+   "alerted": false
+  },
+  {
+   "id": "401909987-spread",
+   "game": "CHA @ LAC",
+   "tip": "2026-11-15T21:30Z",
+   "market": "spread",
+   "pick": "LAC -1.5",
+   "line": -1.5,
+   "open": -2.5,
+   "model": 4.6,
+   "edge": 3.1,
+   "best": true,
+   "firstSeen": "2026-11-15T12:18:31.692Z",
+   "latest": -1.5,
+   "latestAt": "2026-11-15T12:18:31.692Z",
    "alerted": false
   },
   {
@@ -31,7 +47,7 @@
    "best": true,
    "firstSeen": "2026-11-15T02:10:43.492Z",
    "latest": 17.5,
-   "latestAt": "2026-11-15T02:10:43.492Z",
+   "latestAt": "2026-11-15T12:18:31.692Z",
    "alerted": false
   },
   {
@@ -46,8 +62,40 @@
    "edge": 5.6,
    "best": false,
    "firstSeen": "2026-11-15T02:10:43.492Z",
-   "latest": 224.5,
-   "latestAt": "2026-11-15T02:10:43.492Z",
+   "latest": 222.5,
+   "latestAt": "2026-11-15T12:18:31.692Z",
+   "alerted": false
+  },
+  {
+   "id": "401909989-spread",
+   "game": "DAL @ BOS",
+   "tip": "2026-11-15T23:00Z",
+   "market": "spread",
+   "pick": "DAL +13.5",
+   "line": -13.5,
+   "open": -12.5,
+   "model": 11.2,
+   "edge": 2.3,
+   "best": false,
+   "firstSeen": "2026-11-15T12:18:31.692Z",
+   "latest": -13.5,
+   "latestAt": "2026-11-15T12:18:31.692Z",
+   "alerted": false
+  },
+  {
+   "id": "401909989-total",
+   "game": "DAL @ BOS",
+   "tip": "2026-11-15T23:00Z",
+   "market": "total",
+   "pick": "Over 216.5",
+   "line": 216.5,
+   "open": 216.5,
+   "model": 221.6,
+   "edge": 5.1,
+   "best": false,
+   "firstSeen": "2026-11-15T12:18:31.692Z",
+   "latest": 218.5,
+   "latestAt": "2026-11-15T12:18:31.692Z",
    "alerted": false
   },
   {
@@ -63,7 +111,7 @@
    "best": true,
    "firstSeen": "2026-11-15T02:10:43.492Z",
    "latest": 4.5,
-   "latestAt": "2026-11-15T02:10:43.492Z",
+   "latestAt": "2026-11-15T12:18:31.692Z",
    "alerted": false
   },
   {
@@ -79,7 +127,7 @@
    "best": false,
    "firstSeen": "2026-11-15T02:10:43.492Z",
    "latest": 8.5,
-   "latestAt": "2026-11-15T02:10:43.492Z",
+   "latestAt": "2026-11-15T12:18:31.692Z",
    "alerted": false
   },
   {
@@ -95,7 +143,23 @@
    "best": false,
    "firstSeen": "2026-11-15T02:10:43.492Z",
    "latest": 222.5,
-   "latestAt": "2026-11-15T02:10:43.492Z",
+   "latestAt": "2026-11-15T12:18:31.692Z",
+   "alerted": false
+  },
+  {
+   "id": "401909993-spread",
+   "game": "OKC @ SAC",
+   "tip": "2026-11-16T02:00Z",
+   "market": "spread",
+   "pick": "OKC -10.5",
+   "line": 10.5,
+   "open": 10.5,
+   "model": -13.6,
+   "edge": 3.1,
+   "best": true,
+   "firstSeen": "2026-11-15T12:18:31.692Z",
+   "latest": 10.5,
+   "latestAt": "2026-11-15T12:18:31.692Z",
    "alerted": false
   }
  ]
