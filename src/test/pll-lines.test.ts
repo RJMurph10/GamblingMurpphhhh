@@ -98,3 +98,38 @@ describe("Lacrosse API lines on the real 2026 season", () => {
     expect(lineResult(final, fl.latest)).toMatchObject({ cover: "home", favWon: true });
   });
 });
+
+import { createElement } from "react";
+import { render } from "@testing-library/react";
+import { PllDashGames } from "@/components/pll/PllDashGames";
+import {
+  createMemoryHistory,
+  createRootRoute,
+  createRouter,
+  RouterProvider,
+} from "@tanstack/react-router";
+
+describe("PLL dashboard games, NFL layout", () => {
+  it("shows the final with the favorite's spread in green (covered)", async () => {
+    const s = await season2026();
+    const final = s.games[s.games.length - 1];
+    const ui = createElement(PllDashGames, {
+      title: "Recent games",
+      games: [final],
+      season: s,
+      lines: savedLines as unknown as PllLinesFile,
+      emptyText: "",
+    });
+    const router = createRouter({
+      routeTree: createRootRoute({ component: () => ui }),
+      history: createMemoryHistory({ initialEntries: ["/"] }),
+    });
+    const { container, findByText } = render(createElement(RouterProvider, { router }));
+    await findByText("-1.5");
+    const cells = container.querySelectorAll("tbody td");
+    expect(cells).toHaveLength(5);
+    expect(cells[3].className).toContain("text-win");
+    expect(cells[2].textContent).toContain("14");
+    expect(cells[2].textContent).toContain("4");
+  });
+});
