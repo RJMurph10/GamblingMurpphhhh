@@ -1,0 +1,3317 @@
+{
+"source": "Wikipedia (CC BY-SA 4.0): PLL team pages and season pages",
+"rosters": {
+"127631": {
+"season": 2026,
+"page": "Utah_Archers",
+"players": [
+{
+"num": "1",
+"name": "Aidan O'Neil",
+"pos": "Attack",
+"shot": "Left",
+"height": "6 ft 0 in",
+"weight": "200 lbs",
+"college": "Richmond",
+"hometown": "Centerville, Massachusetts"
+},
+{
+"num": "2",
+"name": "CK Giancola",
+"pos": "Midfield",
+"shot": "Right",
+"height": "6 ft 1 in",
+"weight": "190 lbs",
+"college": "Wesleyan",
+"hometown": "Fort Myers, Florida"
+},
+{
+"num": "4",
+"name": "Leo Johnson",
+"pos": "Attack",
+"shot": "R/L",
+"height": "5 ft 9 in",
+"weight": "175 lbs",
+"college": "Maryland",
+"hometown": "Greenwich, Connecticut"
+},
+{
+"num": "5",
+"name": "Connor Fields",
+"pos": "Attack",
+"shot": "Left",
+"height": "5 ft 11 in",
+"weight": "180 lbs",
+"college": "Albany",
+"hometown": "East Amherst, New York"
+},
+{
+"num": "6",
+"name": "Ryan Stines",
+"pos": "Attack",
+"shot": "Right",
+"height": "5 ft 11 in",
+"weight": "190 lbs",
+"college": "Utah",
+"hometown": "Cary, North Carolina"
+},
+{
+"num": "7",
+"name": "Mac O'Keefe",
+"pos": "Attack",
+"shot": "Left",
+"height": "6 ft 0 in",
+"weight": "190 lbs",
+"college": "Penn State",
+"hometown": "Syosset, New York"
+},
+{
+"num": "9",
+"name": "Sam King",
+"pos": "Attack",
+"shot": "R/L",
+"height": "5 ft 9 in",
+"weight": "174 lbs",
+"college": "Harvard",
+"hometown": "Baltimore, Maryland"
+},
+{
+"num": "11",
+"name": "Matt Moore 12px|Out",
+"pos": "Attack",
+"shot": "Right",
+"height": "6 ft 2 in",
+"weight": "195 lbs",
+"college": "Virginia",
+"hometown": "Garnet Valley, Pennsylvania"
+},
+{
+"num": "13",
+"name": "Ryan Ambler",
+"pos": "Midfield",
+"shot": "Left",
+"height": "6 ft 2 in",
+"weight": "200 lbs",
+"college": "Princeton",
+"hometown": "Abington Township, Pennsylvania"
+},
+{
+"num": "16",
+"name": "Grant Ament 12px|Out",
+"pos": "Midfield",
+"shot": "R/L",
+"height": "5 ft 9 in",
+"weight": "170 lbs",
+"college": "Penn State",
+"hometown": "Doylestown, Pennsylvania"
+},
+{
+"num": "17",
+"name": "Mitchell Dunham",
+"pos": "Defense",
+"shot": "Left",
+"height": "6 ft 2 in",
+"weight": "205 lbs",
+"college": "Richmond",
+"hometown": "Hamilton, Ontario"
+},
+{
+"num": "18",
+"name": "Nick Washuta",
+"pos": "Goalie",
+"shot": "Left",
+"height": "6 ft 3 in",
+"weight": "215 lbs",
+"college": "Vermont",
+"hometown": "Orono, Minnesota"
+},
+{
+"num": "20",
+"name": "Cam Wyers",
+"pos": "Defense",
+"shot": "Left",
+"height": "6 ft 5 in",
+"weight": "220 lbs",
+"college": "Loyola",
+"hometown": "Ottawa, Ontario"
+},
+{
+"num": "21",
+"name": "Colin Sharkey",
+"pos": "SSDM",
+"shot": "Right",
+"height": "6 ft 1 in",
+"weight": "205 lbs",
+"college": "Maryland",
+"hometown": "Yonkers, New York"
+},
+{
+"num": "22",
+"name": "Bryce Ford",
+"pos": "Midfield",
+"shot": "R/L",
+"height": "5 ft 8in",
+"weight": "190 lbs",
+"college": "Maryland",
+"hometown": "South Salem, New York"
+},
+{
+"num": "23",
+"name": "Aidan Maguire",
+"pos": "SSDM",
+"shot": "Left",
+"height": "6 ft 2 in",
+"weight": "210 lbs",
+"college": "Duke",
+"hometown": "Hingham, Massachusetts"
+},
+{
+"num": "24",
+"name": "Gannon Matthews**",
+"pos": "Attack",
+"shot": "R/L",
+"height": "6 ft 0 in",
+"weight": "185 lbs",
+"college": "Ohio State",
+"hometown": "Eagle, Idaho"
+},
+{
+"num": "26",
+"name": "Tom Schreiber",
+"pos": "Midfield",
+"shot": "R/L",
+"height": "5 ft 11in",
+"weight": "195 lbs",
+"college": "Princeton",
+"hometown": "East Meadow, New York",
+"captain": true
+},
+{
+"num": "27",
+"name": "Warren Jeffrey",
+"pos": "Defense",
+"shot": "Left",
+"height": "6 ft 3in",
+"weight": "225 lbs",
+"college": "Vermont",
+"hometown": "Mimico, Ontario"
+},
+{
+"num": "31",
+"name": "Connor Maher",
+"pos": "SSDM",
+"shot": "Left",
+"height": "6 ft 1in",
+"weight": "187 lbs",
+"college": "North Carolina",
+"hometown": "Timonium, Maryland"
+},
+{
+"num": "40",
+"name": "Tommy Stull",
+"pos": "LSM",
+"shot": "Right",
+"height": "5 ft 9 in",
+"weight": "175 lbs",
+"college": "Richmond",
+"hometown": "Niantic, Connecticut"
+},
+{
+"num": "44",
+"name": "Tre Leclaire",
+"pos": "Midfield",
+"shot": "Right",
+"height": "6 ft 2in",
+"weight": "205 lbs",
+"college": "Ohio State",
+"hometown": "Surrey, British Columbia"
+},
+{
+"num": "45",
+"name": "Brett Dobson",
+"pos": "Goalie",
+"shot": "Right",
+"height": "6 ft 2in",
+"weight": "200 lbs",
+"college": "St. Bonaventure",
+"hometown": "Oshawa, Ontario"
+},
+{
+"num": "46",
+"name": "Brendan Lavelle",
+"pos": "Defense",
+"shot": "Right",
+"height": "6 ft 0in",
+"weight": "210 lbs",
+"college": "Penn",
+"hometown": "Rye, New York"
+},
+{
+"num": "54",
+"name": "Piper Bond",
+"pos": "SSDM",
+"shot": "Right",
+"height": "6 ft 2in",
+"weight": "200 lbs",
+"college": "Penn",
+"hometown": "Baltimore, Maryland"
+},
+{
+"num": "77",
+"name": "Mason Woodward",
+"pos": "LSM",
+"shot": "Left",
+"height": "6 ft 2in",
+"weight": "210 lbs",
+"college": "Marquette",
+"hometown": "Towson, Maryland"
+},
+{
+"num": "89",
+"name": "Beau Pederson",
+"pos": "SSDM",
+"shot": "Right",
+"height": "6 ft 4in",
+"weight": "210 lbs",
+"college": "Michigan",
+"hometown": "Park City, Utah"
+},
+{
+"num": "99",
+"name": "Mike Sisselberger",
+"pos": "Faceoff",
+"shot": "Right",
+"height": "5 ft 9in",
+"weight": "200 lbs",
+"college": "Lehigh",
+"hometown": "Center Valley, Pennsylvania"
+},
+{
+"num": "",
+"name": "Nikko DiPonio",
+"pos": "Defense",
+"shot": "Left",
+"height": "5 ft 11 in",
+"weight": "190 lbs",
+"college": "Utah",
+"hometown": "Bloomfield Hills, Michigan"
+}
+]
+},
+"127632": {
+"season": 2026,
+"page": "Atlas_Lacrosse_Club",
+"players": [
+{
+"num": "1",
+"name": "Connor Shellenberger",
+"pos": "Attack",
+"shot": "Right",
+"height": "6 ft 1 in",
+"weight": "195 lbs",
+"college": "Virginia",
+"hometown": "Charlottesville, Virginia"
+},
+{
+"num": "2",
+"name": "Matt Traynor",
+"pos": "Midfield",
+"shot": "R/L",
+"height": "6 ft 2 in",
+"weight": "193 lbs",
+"college": "Penn State",
+"hometown": "Downingtown, Pennsylvania"
+},
+{
+"num": "3",
+"name": "Vinny Butrico",
+"pos": "Attack",
+"shot": "Left",
+"height": "5 ft 9 in",
+"weight": "170 lbs",
+"college": "Wingate",
+"hometown": "Levittown, New York"
+},
+{
+"num": "5",
+"name": "Tyler Carpenter",
+"pos": "LSM",
+"shot": "Left",
+"height": "5 ft 10 in",
+"weight": "180 lbs",
+"college": "Duke",
+"hometown": "Durham, North Carolina"
+},
+{
+"num": "7",
+"name": "Jeff Teat 12px|Out",
+"pos": "Attack",
+"shot": "Left",
+"height": "5 ft 10 in",
+"weight": "180 lbs",
+"college": "Cornell",
+"hometown": "Brampton, Ontario",
+"captain": true
+},
+{
+"num": "8",
+"name": "Levi Anderson",
+"pos": "Midfield",
+"shot": "Left",
+"height": "6 ft 4 in",
+"weight": "220 lbs",
+"college": "Saint Joseph's",
+"hometown": "Calgary, Alberta"
+},
+{
+"num": "9",
+"name": "Trevor Baptiste",
+"pos": "Faceoff",
+"shot": "Right",
+"height": "5 ft 10 in",
+"weight": "225 lbs",
+"college": "Denver",
+"hometown": "Denville, New Jersey",
+"captain": true
+},
+{
+"num": "10",
+"name": "Xander Dickson",
+"pos": "Attack",
+"shot": "Right",
+"height": "6 ft 1 in",
+"weight": "170 lbs",
+"college": "Virginia",
+"hometown": "Greenwich, Connecticut"
+},
+{
+"num": "13",
+"name": "Hunter Drouin",
+"pos": "Attack",
+"shot": "Left",
+"height": "5 ft 10 in",
+"weight": "180 lbs",
+"college": "Colgate",
+"hometown": "Derry, New Hampshire"
+},
+{
+"num": "14",
+"name": "Jake Stevens",
+"pos": "Midfield",
+"shot": "Right",
+"height": "5 ft 9 in",
+"weight": "193 lbs",
+"college": "Syracuse",
+"hometown": "Puslinch, Ontario"
+},
+{
+"num": "20",
+"name": "Michael Grace 12px|Out",
+"pos": "LSM",
+"shot": "Left",
+"height": "6 ft 5 in",
+"weight": "220 lbs",
+"college": "Syracuse",
+"hometown": "Hamilton, Ontario"
+},
+{
+"num": "21",
+"name": "Luke Rhoa",
+"pos": "Midfield",
+"shot": "R/L",
+"height": "6 ft 0 in",
+"weight": "180 lbs",
+"college": "Syracuse",
+"hometown": "Potomac, Maryland"
+},
+{
+"num": "22",
+"name": "Michael Rexrode",
+"pos": "Defense",
+"shot": "Right",
+"height": "6 ft 1 in",
+"weight": "215 lbs",
+"college": "Rutgers",
+"hometown": "Leesburg, Virginia"
+},
+{
+"num": "25",
+"name": "Eli Gobrecht",
+"pos": "Defense/SSDM",
+"shot": "Right",
+"height": "6 ft 0 in",
+"weight": "200 lbs",
+"college": "Ithaca",
+"hometown": "Ithaca, New York"
+},
+{
+"num": "26",
+"name": "Bryan Costabile",
+"pos": "Midfield",
+"shot": "R/L",
+"height": "6 ft 2 in",
+"weight": "230 lbs",
+"college": "Notre Dame",
+"hometown": "Sykesville, Maryland"
+},
+{
+"num": "27",
+"name": "Hugh Kelleher",
+"pos": "Midfield",
+"shot": "R/L",
+"height": "6 ft 3 in",
+"weight": "220 lbs",
+"college": "Cornell",
+"hometown": "Wantagh, New York"
+},
+{
+"num": "28",
+"name": "Liam Kammar",
+"pos": "SSDM",
+"shot": "Right",
+"height": "6 ft 0 in",
+"weight": "205 lbs",
+"college": "Drexel",
+"hometown": "Timonium, Maryland"
+},
+{
+"num": "41",
+"name": "Jon Robbins",
+"pos": "LSM",
+"shot": "Left",
+"height": "5 ft 9 in",
+"weight": "190 lbs",
+"college": "Bellarmine",
+"hometown": "Plano, Texas"
+},
+{
+"num": "43",
+"name": "Brett Makar",
+"pos": "Defense",
+"shot": "Right",
+"height": "6 ft 1 in",
+"weight": "200 lbs",
+"college": "Maryland",
+"hometown": "Yorktown Heights, New York"
+},
+{
+"num": "44",
+"name": "Liam Entenmann",
+"pos": "Goalie",
+"shot": "Right",
+"height": "6 ft 3 in",
+"weight": "203 lbs",
+"college": "Notre Dame",
+"hometown": "Point Lookout, New York"
+},
+{
+"num": "48",
+"name": "Max Krevsky",
+"pos": "SSDM",
+"shot": "Left",
+"height": "6 ft 2 in",
+"weight": "200 lbs",
+"college": "Yale",
+"hometown": "Harrisburg, Pennsylvania"
+},
+{
+"num": "77",
+"name": "Carson Billig",
+"pos": "SSDM",
+"shot": "Left",
+"height": "6 ft 0 in",
+"weight": "190 lbs",
+"college": "Michigan",
+"hometown": "Brighton, Michigan"
+},
+{
+"num": "81",
+"name": "Nathan Laliberte",
+"pos": "Faceoff",
+"shot": "Right",
+"height": "5 ft 10 in",
+"weight": "215 lbs",
+"college": "Bryant",
+"hometown": "Auburn, New Hampshire"
+},
+{
+"num": "88",
+"name": "Will Mark",
+"pos": "Goalie",
+"shot": "Right",
+"height": "6 ft 4 in",
+"weight": "200 lbs",
+"college": "Syracuse",
+"hometown": "Danville, California"
+},
+{
+"num": "91",
+"name": "Danny Logan",
+"pos": "SSDM",
+"shot": "Right",
+"height": "5 ft 11 in",
+"weight": "205 lbs",
+"college": "Denver",
+"hometown": "Upper Arlington, Ohio",
+"captain": true
+},
+{
+"num": "98",
+"name": "Reid Bowering",
+"pos": "Attack",
+"shot": "Left",
+"height": "6 ft 0 in",
+"weight": "205 lbs",
+"college": "Drexel",
+"hometown": "Coquitlam, British Columbia"
+}
+]
+},
+"122997": {
+"season": 2026,
+"page": "Boston_Cannons",
+"players": [
+{
+"num": "1",
+"name": "Marcus Holman",
+"pos": "Attack",
+"shot": "Right",
+"height": "5 ft 10 in",
+"weight": "180 lbs",
+"college": "North Carolina",
+"hometown": "Baltimore, Maryland",
+"captain": true
+},
+{
+"num": "2",
+"name": "Tye Kurtz",
+"pos": "Attack",
+"shot": "Right",
+"height": "6 ft 0 in",
+"weight": "200 lbs",
+"college": "Delaware",
+"hometown": "Puslinch, Ontario"
+},
+{
+"num": "5",
+"name": "Colin Kirst",
+"pos": "Goalie",
+"shot": "Right",
+"height": "6 ft 2 in",
+"weight": "211 lbs",
+"college": "Rutgers",
+"hometown": "Bernardsville, New Jersey",
+"captain": true
+},
+{
+"num": "6",
+"name": "Hunter Smith",
+"pos": "Defense",
+"shot": "Right",
+"height": "6 ft 2 in",
+"weight": "220 lbs",
+"college": "Richmond",
+"hometown": "Rochester, New York"
+},
+{
+"num": "7",
+"name": "Will Donovan",
+"pos": "LSM",
+"shot": "Left",
+"height": "6 ft 0 in",
+"weight": "190 lbs",
+"college": "Notre Dame",
+"hometown": "Greenwich, Connecticut"
+},
+{
+"num": "8",
+"name": "Mikey Weisshaar",
+"pos": "Midfield",
+"shot": "Right",
+"height": "5 ft 9 in",
+"weight": "170 lbs",
+"college": "Towson",
+"hometown": "Arnold, Maryland"
+},
+{
+"num": "9",
+"name": "Michael Lampert",
+"pos": "Attack",
+"shot": "R/L",
+"height": "5 ft 6 in",
+"weight": "170 lbs",
+"college": "Denver",
+"hometown": "Wayland, Massachusetts"
+},
+{
+"num": "11",
+"name": "Marquez White 12px|ACL Tear",
+"pos": "SSDM",
+"shot": "Right",
+"height": "6 ft 0 in",
+"weight": "185 lbs",
+"college": "Princeton",
+"hometown": "Poway, California"
+},
+{
+"num": "13",
+"name": "Jack Regnery",
+"pos": "Attack",
+"shot": "Right",
+"height": "6 ft 0 in",
+"weight": "190 lbs",
+"college": "Tufts",
+"hometown": "Palm Beach Gardens, Florida"
+},
+{
+"num": "14",
+"name": "Zach Goodrich",
+"pos": "SSDM",
+"shot": "Right",
+"height": "6 ft 2 in",
+"weight": "185 lbs",
+"college": "Towson",
+"hometown": "Stevensville, Maryland",
+"captain": true
+},
+{
+"num": "20",
+"name": "Matt Campbell",
+"pos": "Midfield",
+"shot": "R/L",
+"height": "6 ft 2 in",
+"weight": "210 lbs",
+"college": "Villanova",
+"hometown": "Madison, New Jersey"
+},
+{
+"num": "21",
+"name": "Mic Kelly",
+"pos": "Midfield",
+"shot": "Right",
+"height": "6 ft 2 in",
+"weight": "210 lbs",
+"college": "Denver",
+"hometown": "Towson, Maryland"
+},
+{
+"num": "22",
+"name": "** Ryan Drenner",
+"pos": "Midfield",
+"shot": "R/L",
+"height": "6 ft 0 in",
+"weight": "190 lbs",
+"college": "Towson",
+"hometown": "Finksburg, Maryland"
+},
+{
+"num": "23",
+"name": "Logan Ip",
+"pos": "Midfield",
+"shot": "R",
+"height": "5 ft 10 in",
+"weight": "170 lbs",
+"college": "Harvard",
+"hometown": "Newport Coast, California"
+},
+{
+"num": "24",
+"name": "Ben Ramsey",
+"pos": "SSDM",
+"shot": "Right",
+"height": "6 ft 0 in",
+"weight": "200 lbs",
+"college": "Notre Dame",
+"hometown": "Palo Alto, California"
+},
+{
+"num": "26",
+"name": "Andrew McMeekin",
+"pos": "Faceoff",
+"shot": "Right",
+"height": "6 ft 1 in",
+"weight": "225 lbs",
+"college": "Princeton",
+"hometown": "Newtown Square, Pennsylvania"
+},
+{
+"num": "29",
+"name": "Remington Reynolds",
+"pos": "Defense",
+"shot": "Left",
+"height": "6 ft 0 in",
+"weight": "180 lbs",
+"college": "Loyola",
+"hometown": "Baltimore, Maryland"
+},
+{
+"num": "30",
+"name": "Brian Kelly",
+"pos": "Attack",
+"shot": "R/L",
+"height": "6 ft 0 in",
+"weight": "180 lbs",
+"college": "St. John's",
+"hometown": "Red Hook, New York"
+},
+{
+"num": "34",
+"name": "Connor Kirst",
+"pos": "Midfield",
+"shot": "R/L",
+"height": "6 ft 3 in",
+"weight": "208 lbs",
+"college": "Rutgers",
+"hometown": "Bernardsville, New Jersey"
+},
+{
+"num": "35",
+"name": "Ethan Rall",
+"pos": "LSM",
+"shot": "Right",
+"height": "5 ft 9 in",
+"weight": "186 lbs",
+"college": "Rutgers",
+"hometown": "Islip, New York"
+},
+{
+"num": "40",
+"name": "Jack Kielty",
+"pos": "Defense",
+"shot": "Right",
+"height": "6 ft 2 in",
+"weight": "210 lbs",
+"college": "Notre Dame",
+"hometown": "Morristown, New Jersey",
+"captain": true
+},
+{
+"num": "41",
+"name": "* Bryce Young",
+"pos": "Defense",
+"shot": "Left",
+"height": "6 ft 2 in",
+"weight": "205 lbs",
+"college": "Maryland",
+"hometown": "Egg Harbor Township, New Jersey"
+},
+{
+"num": "43",
+"name": "Jeff Trainor",
+"pos": "SSDM",
+"shot": "R/L",
+"height": "6 ft 0 in",
+"weight": "195 lbs",
+"college": "UMass",
+"hometown": "Billerica, Massachusetts"
+},
+{
+"num": "45",
+"name": "Graydon Hogg",
+"pos": "Midfield",
+"shot": "Left",
+"height": "5 ft 9 in",
+"weight": "180 lbs",
+"college": "Albany",
+"hometown": "Oshawa, Ontario"
+},
+{
+"num": "81",
+"name": "Owen Grant",
+"pos": "LSM",
+"shot": "Left",
+"height": "6 ft 3 in",
+"weight": "230 lbs",
+"college": "Delaware",
+"hometown": "Newmarket, Ontario"
+},
+{
+"num": "88",
+"name": "JC Higginbotham",
+"pos": "Goalie",
+"shot": "Right",
+"height": "6 ft 0 in",
+"weight": "200 lbs",
+"college": "Bellarmine",
+"hometown": "Plano, Texas"
+},
+{
+"num": "91",
+"name": "Coulter Mackesy",
+"pos": "Attack",
+"shot": "Left",
+"height": "5 ft 10 in",
+"weight": "185 lbs",
+"college": "Princeton",
+"hometown": "Bronxville, New York"
+}
+]
+},
+"127634": {
+"season": 2025,
+"page": "Carolina_Chaos",
+"players": [
+{
+"num": "0",
+"name": "Blaze Riorden",
+"pos": "Goalie",
+"shot": "Left",
+"height": "6 ft 0 in",
+"weight": "230 lbs",
+"college": "Albany",
+"hometown": "Fairport, New York",
+"captain": true
+},
+{
+"num": "2",
+"name": "Leif Hagerup",
+"pos": "SSDM",
+"shot": "Right",
+"height": "6 ft 1 in",
+"weight": "175 lbs",
+"college": "North Carolina",
+"hometown": "Washington, DC"
+},
+{
+"num": "3",
+"name": "Chris Aslanian 12px|Out",
+"pos": "Midfield",
+"shot": "R/L",
+"height": "6 ft 3 in",
+"weight": "205 lbs",
+"college": "Hobart",
+"hometown": "Westfield, New Jersey"
+},
+{
+"num": "5",
+"name": "Henry Bard",
+"pos": "Defense",
+"shot": "Right",
+"height": "6 ft 3 in",
+"weight": "215 lbs",
+"college": "Duke",
+"hometown": "Wynnewood, Pennsylvania"
+},
+{
+"num": "7",
+"name": "Eric Spanos",
+"pos": "Attack",
+"shot": "Right",
+"height": "6 ft 3 in",
+"weight": "215 lbs",
+"college": "Maryland",
+"hometown": "Pottstown, Pennsylvania"
+},
+{
+"num": "9",
+"name": "Ray Dearth",
+"pos": "SSDM",
+"shot": "Right",
+"height": "6 ft 2 in",
+"weight": "205 lbs",
+"college": "Harvard",
+"hometown": "Ridgefield, Connecticut"
+},
+{
+"num": "10",
+"name": "Troy Reh",
+"pos": "LSM",
+"shot": "Right",
+"height": "5 ft 11 in",
+"weight": "185 lbs",
+"college": "Albany",
+"hometown": "Rocky Point, New York"
+},
+{
+"num": "11",
+"name": "Chad Palumbo",
+"pos": "Midfield",
+"shot": "Left",
+"height": "6 ft 2 in",
+"weight": "205 lbs",
+"college": "Princeton",
+"hometown": "Newton, Massachusetts"
+},
+{
+"num": "14",
+"name": "Austin Kaut",
+"pos": "Goalie",
+"shot": "Left",
+"height": "6 ft 1 in",
+"weight": "225 lbs",
+"college": "Penn State",
+"hometown": "Morton, Pennsylvania"
+},
+{
+"num": "15",
+"name": "Ross Scott",
+"pos": "Attack",
+"shot": "Right",
+"height": "5 ft 9 in",
+"weight": "175 lbs",
+"college": "Rutgers",
+"hometown": "West Linn, Oregon"
+},
+{
+"num": "16",
+"name": "Mark Glicini",
+"pos": "LSM",
+"shot": "Right",
+"height": "6 ft 1 in",
+"weight": "200 lbs",
+"college": "Yale",
+"hometown": "Mahwah, New Jersey",
+"captain": true
+},
+{
+"num": "18",
+"name": "Scott Smith",
+"pos": "Defense",
+"shot": "Right",
+"height": "6 ft 1 in",
+"weight": "210 lbs",
+"college": "Johns Hopkins",
+"hometown": "Berwyn, Pennsylvania"
+},
+{
+"num": "19",
+"name": "Jackson Eicher",
+"pos": "Attack",
+"shot": "Right",
+"height": "6 ft 4 in",
+"weight": "220 lbs",
+"college": "Army",
+"hometown": "Warrenton, Virginia"
+},
+{
+"num": "21",
+"name": "Liam Byrnes",
+"pos": "Defense",
+"shot": "Right",
+"height": "6 ft 3 in",
+"weight": "215 lbs",
+"college": "Marquette",
+"hometown": "West Islip, New York"
+},
+{
+"num": "23",
+"name": "Ty English",
+"pos": "Midfield",
+"shot": "Left",
+"height": "5 ft 11 in",
+"weight": "185 lbs",
+"college": "North Carolina",
+"hometown": "Burlington, Ontario"
+},
+{
+"num": "26",
+"name": "Teddy Malone",
+"pos": "Attack",
+"shot": "R/L",
+"height": "6 ft 0 in",
+"weight": "160 lbs",
+"college": "Harvard",
+"hometown": "Wilmington, Delaware"
+},
+{
+"num": "27",
+"name": "Shane Knobloch",
+"pos": "Midfield",
+"shot": "R/L",
+"height": "5 ft 9 in",
+"weight": "200 lbs",
+"college": "Rutgers",
+"hometown": "Moorestown, New Jersey"
+},
+{
+"num": "30",
+"name": "Justin Inacio",
+"pos": "Faceoff",
+"shot": "Right",
+"height": "5 ft 10 in",
+"weight": "188 lbs",
+"college": "Ohio State",
+"hometown": "Oakville, Ontario"
+},
+{
+"num": "32",
+"name": "Peter Detwiler",
+"pos": "SSDM",
+"shot": "Right",
+"height": "6 ft 0 in",
+"weight": "200 lbs",
+"college": "Marquette",
+"hometown": "Devon, Pennsylvania"
+},
+{
+"num": "38",
+"name": "Greg Langermeier",
+"pos": "SSDM",
+"shot": "Right",
+"height": "6 ft 0 in",
+"weight": "195 lbs",
+"college": "Ohio State",
+"hometown": "Westlake, Ohio"
+},
+{
+"num": "41",
+"name": "Charlie Bertrand 12px|Out",
+"pos": "Midfield",
+"shot": "Left",
+"height": "6 ft 3 in",
+"weight": "215 lbs",
+"college": "Virginia",
+"hometown": "Baldwinsville, New York"
+},
+{
+"num": "45",
+"name": "Richard Checo",
+"pos": "LSM",
+"shot": "Right",
+"height": "5 ft 9 in",
+"weight": "185 lbs",
+"college": "Lehigh",
+"hometown": "Oakton, Virginia"
+},
+{
+"num": "50",
+"name": "Christian Scarpello",
+"pos": "SSDM",
+"shot": "Left",
+"height": "5 ft 11 in",
+"weight": "200 lbs",
+"college": "Rutgers",
+"hometown": "Madison, New Jersey"
+},
+{
+"num": "51",
+"name": "JJ Sillstrop",
+"pos": "Midfield",
+"shot": "Left",
+"height": "5 ft 10 in",
+"weight": "190 lbs",
+"college": "Denver",
+"hometown": "Encinitas, California"
+},
+{
+"num": "73",
+"name": "Nick Rowlett",
+"pos": "Faceoff",
+"shot": "Right",
+"height": "6 ft 0 in",
+"weight": "180 lbs",
+"college": "Michigan",
+"hometown": "Burke, Virginia"
+},
+{
+"num": "77",
+"name": "Owen Hiltz",
+"pos": "Attack",
+"shot": "Left",
+"height": "5 ft 8 in",
+"weight": "186 lbs",
+"college": "Syracuse",
+"hometown": "Peterborough, Ontario"
+},
+{
+"num": "88",
+"name": "Jarrod Neumann",
+"pos": "Defense",
+"shot": "Right",
+"height": "6 ft 4 in",
+"weight": "230 lbs",
+"college": "Providence",
+"hometown": "Northampton, Massachusetts",
+"captain": true
+},
+{
+"num": "99",
+"name": "Jack Rowlett12px|Out",
+"pos": "Defense",
+"shot": "Right",
+"height": "6 ft 1 in",
+"weight": "195 lbs",
+"college": "North Carolina",
+"hometown": "Burke, Virginia"
+}
+]
+},
+"122896": {
+"season": 2025,
+"page": "Denver_Outlaws",
+"players": [
+{
+"num": "0",
+"name": "Graham Bundy Jr.",
+"pos": "Midfield",
+"shot": "Right",
+"height": "6 ft 1 in",
+"weight": "200 lbs",
+"college": "Georgetown",
+"hometown": "St. Louis, Missouri"
+},
+{
+"num": "1",
+"name": "JT Giles-Harris",
+"pos": "Defense",
+"shot": "Right",
+"height": "5 ft 10 in",
+"weight": "205 lbs",
+"college": "Duke",
+"hometown": "Nyack, New York"
+},
+{
+"num": "3",
+"name": "Jonathan Donville",
+"pos": "Midfield",
+"shot": "Right",
+"height": "6 ft 0 in",
+"weight": "205 lbs",
+"college": "Maryland",
+"hometown": "Oakville, Ontario"
+},
+{
+"num": "4",
+"name": "Evan Plunkett",
+"pos": "Midfield",
+"shot": "R/L",
+"height": "5 ft 10 in",
+"weight": "185 lbs",
+"college": "Army",
+"hometown": "Roswell, Georgia"
+},
+{
+"num": "8",
+"name": "Nick Grill",
+"pos": "LSM",
+"shot": "Right",
+"height": "5 ft 8 in",
+"weight": "190 lbs",
+"college": "Maryland",
+"hometown": "Bridgewater, New Jersey"
+},
+{
+"num": "10",
+"name": "Jared Bernhardt",
+"pos": "Attack",
+"shot": "R/L",
+"height": "6 ft 1 in",
+"weight": "195 lbs",
+"college": "Maryland",
+"hometown": "Longwood, Florida"
+},
+{
+"num": "11",
+"name": "Dalton Young",
+"pos": "Midfield",
+"shot": "Right",
+"height": "6 ft 0 in",
+"weight": "205 lbs",
+"college": "Richmond",
+"hometown": "Chantilly, Virginia"
+},
+{
+"num": "12",
+"name": "Logan Wisnauskas",
+"pos": "Attack",
+"shot": "Left",
+"height": "6 ft 3 in",
+"weight": "210 lbs",
+"college": "Maryland",
+"hometown": "Sykesville, Maryland"
+},
+{
+"num": "13",
+"name": "Zach Geddes",
+"pos": "SSDM",
+"shot": "Right",
+"height": "6 ft 1 in",
+"weight": "190 lbs",
+"college": "Georgetown",
+"hometown": "Winchester, Massachusetts"
+},
+{
+"num": "16",
+"name": "Kevin Parnham",
+"pos": "Defense",
+"shot": "Left",
+"height": "6 ft 2 in",
+"weight": "205 lbs",
+"college": "Penn State",
+"hometown": "Tewksbury, New Jersey"
+},
+{
+"num": "21",
+"name": "Justin Anderson",
+"pos": "Midfield",
+"shot": "R/L",
+"height": "6 ft 0 in",
+"weight": "190 lbs",
+"college": "North Carolina",
+"hometown": "Las Vegas, Nevada",
+"captain": true
+},
+{
+"num": "24",
+"name": "Owen McElroy",
+"pos": "Goalie",
+"shot": "Right",
+"height": "6 ft 1 in",
+"weight": "190 lbs",
+"college": "Georgetown",
+"hometown": "Ridgewood, New Jersey"
+},
+{
+"num": "30",
+"name": "Logan McNaney",
+"pos": "Goalie",
+"shot": "Left",
+"height": "5 ft 10 in",
+"weight": "185 lbs",
+"college": "Maryland",
+"hometown": "Corning, New York"
+},
+{
+"num": "31",
+"name": "Jake Taylor",
+"pos": "Attack",
+"shot": "Right",
+"height": "6 ft 0 in",
+"weight": "215 lbs",
+"college": "Notre Dame",
+"hometown": "Denver, Colorado"
+},
+{
+"num": "34",
+"name": "Ryan Terefenko",
+"pos": "SSDM",
+"shot": "Right",
+"height": "6 ft 0 in",
+"weight": "190 lbs",
+"college": "Ohio State",
+"hometown": "Sinking Spring, Pennsylvania",
+"captain": true
+},
+{
+"num": "37",
+"name": "Michael Manley",
+"pos": "Defense",
+"shot": "Right",
+"height": "6 ft 2 in",
+"weight": "220 lbs",
+"college": "Duke",
+"hometown": "Penn Yan, New York",
+"captain": true
+},
+{
+"num": "39",
+"name": "Alexander Smith",
+"pos": "SSDM",
+"shot": "Right",
+"height": "6 ft 2 in",
+"weight": "195 lbs",
+"college": "Maryland",
+"hometown": "Bethesda, Maryland"
+},
+{
+"num": "42",
+"name": "Brennan O'Neill",
+"pos": "Attack",
+"shot": "Left",
+"height": "6 ft 3 in",
+"weight": "240 lbs",
+"college": "Duke",
+"hometown": "Bay Shore, New York"
+},
+{
+"num": "44",
+"name": "Jack Gray",
+"pos": "SSDM",
+"shot": "Right",
+"height": "6 ft 1 in",
+"weight": "200 lbs",
+"college": "Duke",
+"hometown": "San Rafael, California"
+},
+{
+"num": "48",
+"name": "John Dunphey",
+"pos": "Midfield",
+"shot": "Left",
+"height": "6 ft 0 in",
+"weight": "185 lbs",
+"college": "Princeton",
+"hometown": "Ridgewood, New Jersey"
+},
+{
+"num": "51",
+"name": "Pat Kavanagh",
+"pos": "Attack",
+"shot": "Right",
+"height": "5 ft 10 in",
+"weight": "175 lbs",
+"college": "Notre Dame",
+"hometown": "Rockville Centre, New York"
+},
+{
+"num": "52",
+"name": "Luke Wierman",
+"pos": "Faceoff",
+"shot": "Right",
+"height": "6 ft 2 in",
+"weight": "211 lbs",
+"college": "Maryland",
+"hometown": "West Chester, Pennsylvania"
+},
+{
+"num": "57",
+"name": "Greg Weyl",
+"pos": "LSM",
+"shot": "Left",
+"height": "6 ft 2 in",
+"weight": "210 lbs",
+"college": "Mercyhurst",
+"hometown": "Pittsford, New York"
+},
+{
+"num": "77",
+"name": "Ben Randall",
+"pos": "Defense",
+"shot": "Right",
+"height": "6 ft 3 in",
+"weight": "215 lbs",
+"college": "Ohio State",
+"hometown": "Mason, Ohio"
+},
+{
+"num": "88",
+"name": "Jake Piseno",
+"pos": "LSM",
+"shot": "Right",
+"height": "5 ft 8 in",
+"weight": "190 lbs",
+"college": "Albany",
+"hometown": "Liverpool, New York"
+},
+{
+"num": "",
+"name": "Nolan Byrne",
+"pos": "Midfield",
+"shot": "Left",
+"height": "6 ft 3 in",
+"weight": "190 lbs",
+"college": "Lafayette",
+"hometown": "Greely, Ontario"
+}
+]
+},
+"127636": {
+"season": 2025,
+"page": "Redwoods_Lacrosse_Club",
+"players": [
+{
+"num": "2",
+"name": "Andrew McAdorey",
+"pos": "Midfield",
+"shot": "R/L",
+"height": "5 ft 8 in",
+"weight": "190 lbs",
+"college": "Duke",
+"hometown": "Manorville, New York"
+},
+{
+"num": "3",
+"name": "Carter Rice",
+"pos": "SSDM",
+"shot": "Left",
+"height": "5 ft 11 in",
+"weight": "191 lbs",
+"college": "Syracuse",
+"hometown": "Milton, Massachusetts"
+},
+{
+"num": "4",
+"name": "Dylan Molloy",
+"pos": "Attack",
+"shot": "Right",
+"height": "6 ft 0 in",
+"weight": "215 lbs",
+"college": "Brown",
+"hometown": "Setauket, New York"
+},
+{
+"num": "6",
+"name": "TD Ierlan",
+"pos": "Faceoff",
+"shot": "Right",
+"height": "5 ft 9 in",
+"weight": "190 lbs",
+"college": "Denver",
+"hometown": "Victor, New York",
+"captain": true
+},
+{
+"num": "7",
+"name": "Michael Leo",
+"pos": "Midfield",
+"shot": "Left",
+"height": "5 ft 10 in",
+"weight": "190 lbs",
+"college": "Syracuse",
+"hometown": "Seaford, New York"
+},
+{
+"num": "9",
+"name": "Cullen Brown",
+"pos": "Defense",
+"shot": "Right",
+"height": "6 ft 4 in",
+"weight": "190 lbs",
+"college": "Ohio State",
+"hometown": "Silver Spring, Maryland"
+},
+{
+"num": "12",
+"name": "Brian Tevlin",
+"pos": "SSDM",
+"shot": "Right",
+"height": "5 ft 11 in",
+"weight": "190 lbs",
+"college": "Notre Dame",
+"hometown": "Livingston, New Jersey",
+"captain": true
+},
+{
+"num": "13",
+"name": "Marcus Wertheim",
+"pos": "Midfield",
+"shot": "Right",
+"height": "6 ft 0 in",
+"weight": "190 lbs",
+"college": "Brown",
+"hometown": "St. James, New York"
+},
+{
+"num": "14",
+"name": "Wes Berg",
+"pos": "Attack",
+"shot": "Right",
+"height": "6 ft 2 in",
+"weight": "205 lbs",
+"college": "Denver",
+"hometown": "Coquitlam, British Columbia"
+},
+{
+"num": "15",
+"name": "Sam English",
+"pos": "Midfield",
+"shot": "Right",
+"height": "5 ft 11 in",
+"weight": "169 lbs",
+"college": "Syracuse",
+"hometown": "Burlington, Ontario"
+},
+{
+"num": "17",
+"name": "Finn Thomson",
+"pos": "Attack",
+"shot": "Right",
+"height": "6 ft 2 in",
+"weight": "170 lbs",
+"college": "Syracuse",
+"hometown": "Toronto, Ontario"
+},
+{
+"num": "20",
+"name": "Chris Conlin",
+"pos": "Defense",
+"shot": "Left",
+"height": "6 ft 2 in",
+"weight": "210 lbs",
+"college": "Notre Dame",
+"hometown": "Chatham, New Jersey"
+},
+{
+"num": "23",
+"name": "Chris Merle",
+"pos": "SSDM",
+"shot": "Right",
+"height": "6 ft 1 in",
+"weight": "200 lbs",
+"college": "Virginia",
+"hometown": "Westhampton Beach, New York",
+"captain": true
+},
+{
+"num": "24",
+"name": "Dante Bowen",
+"pos": "SSDM",
+"shot": "Right",
+"height": "6 ft 1 in",
+"weight": "205 lbs",
+"college": "Syracuse",
+"hometown": "Brampton, Ontario"
+},
+{
+"num": "26",
+"name": "Ryan Croddick",
+"pos": "Goalie",
+"shot": "Right",
+"height": "6 ft 3 in",
+"weight": "185 lbs",
+"college": "Princeton",
+"hometown": "Rumson, New Jersey"
+},
+{
+"num": "28",
+"name": "Jared Conners",
+"pos": "LSM",
+"shot": "Right",
+"height": "6 ft 5 in",
+"weight": "215 lbs",
+"college": "Virginia",
+"hometown": "Pittsford, New York"
+},
+{
+"num": "31",
+"name": "Chris Fake",
+"pos": "Defense",
+"shot": "Right",
+"height": "6 ft 1 in",
+"weight": "220 lbs",
+"college": "Yale",
+"hometown": "Allentown, New Jersey"
+},
+{
+"num": "34",
+"name": "Josh Balcarcel",
+"pos": "Midfield",
+"shot": "Left",
+"height": "5 ft 7 in",
+"weight": "175 lbs",
+"college": "Marist",
+"hometown": "Milford, Pennsylvania"
+},
+{
+"num": "37",
+"name": "Dillon Ward",
+"pos": "Goalie",
+"shot": "Right",
+"height": "6 ft 5 in",
+"weight": "220 lbs",
+"college": "Bellarmine",
+"hometown": "Orangeville, Ontario"
+},
+{
+"num": "39",
+"name": "Cole Kastner",
+"pos": "Defense",
+"shot": "Right",
+"height": "6 ft 7 in",
+"weight": "215 lbs",
+"college": "Virginia",
+"hometown": "Palo Alto, California"
+},
+{
+"num": "40",
+"name": "Arden Cohen",
+"pos": "LSM",
+"shot": "Left",
+"height": "6 ft 2 in",
+"weight": "220 lbs",
+"college": "Notre Dame",
+"hometown": "New York, New York"
+},
+{
+"num": "50",
+"name": "Ryder Garnsey",
+"pos": "Attack",
+"shot": "Left",
+"height": "5 ft 9 in",
+"weight": "180 lbs",
+"college": "Notre Dame",
+"hometown": "Wolfeboro, New Hampshire",
+"captain": true
+},
+{
+"num": "70",
+"name": "BJ Farrare",
+"pos": "SSDM/LSM",
+"shot": "Left",
+"height": "5 ft 8 in",
+"weight": "175 lbs",
+"college": "Penn",
+"hometown": "Owings Mills, Maryland"
+},
+{
+"num": "81",
+"name": "Kyle Hartzell",
+"pos": "LSM",
+"shot": "Right",
+"height": "6 ft 1 in",
+"weight": "195 lbs",
+"college": "Salisbury",
+"hometown": "Dundalk, Maryland"
+},
+{
+"num": "88",
+"name": "Aidan Danenza",
+"pos": "Midfield",
+"shot": "Right",
+"height": "6 ft 3 in",
+"weight": "220 lbs",
+"college": "Duke",
+"hometown": "Muttontown, New York"
+},
+{
+"num": "96",
+"name": "Chris Kavanagh",
+"pos": "Attack",
+"shot": "Right",
+"height": "5 ft 10 in",
+"weight": "180 lbs",
+"college": "Notre Dame",
+"hometown": "Rockville Centre, New York"
+}
+]
+},
+"127637": {
+"season": 2026,
+"page": "Philadelphia_Waterdogs",
+"players": [
+{
+"num": "1",
+"name": "Matt DeLuca",
+"pos": "Goalie",
+"shot": "Right",
+"height": "6 ft 6 in",
+"weight": "215 lbs",
+"college": "Delaware",
+"hometown": "Farmingdale, New York"
+},
+{
+"num": "2",
+"name": "Casey Wilson",
+"pos": "Midfield",
+"shot": "Right",
+"height": "6 ft 1 in",
+"weight": "205 lbs",
+"college": "Denver",
+"hometown": "Victoria, British Columbia"
+},
+{
+"num": "3",
+"name": "Jack Hannah",
+"pos": "Midfield",
+"shot": "Right",
+"height": "6 ft 1 in",
+"weight": "205 lbs",
+"college": "Denver",
+"hometown": "Milford, Ohio"
+},
+{
+"num": "4",
+"name": "Ben Wayer",
+"pos": "LSM",
+"shot": "Right",
+"height": "6 ft 3 in",
+"weight": "215 lbs",
+"college": "Virginia",
+"hometown": "Alexandria, Virginia"
+},
+{
+"num": "5",
+"name": "Jimmy Freehill",
+"pos": "Defense",
+"shot": "Right",
+"height": "6 ft 0 in",
+"weight": "190 lbs",
+"college": "Denver",
+"hometown": "Newton, Massachusetts"
+},
+{
+"num": "6",
+"name": "Kieran McArdle",
+"pos": "Attack",
+"shot": "L/R",
+"height": "6 ft 2 in",
+"weight": "185 lbs",
+"college": "St. John's",
+"hometown": "Ronkonkoma, New York",
+"captain": true
+},
+{
+"num": "7",
+"name": "Kyle Lewis",
+"pos": "Midfield",
+"shot": "Right",
+"height": "5 ft 11 in",
+"weight": "200 lbs",
+"college": "Adelphi",
+"hometown": "Franklin Square, New York"
+},
+{
+"num": "8",
+"name": "Dylan Hess**",
+"pos": "SSDM",
+"shot": "Right",
+"height": "6 ft 0 in",
+"weight": "215 lbs",
+"college": "Florida",
+"hometown": "Ponte Vedra Beach, Florida"
+},
+{
+"num": "10",
+"name": "Josh Yago",
+"pos": "Midfield",
+"shot": "Right",
+"height": "6 ft 3 in",
+"weight": "210 lbs",
+"college": "Notre Dame",
+"hometown": "Denver, Colorado"
+},
+{
+"num": "11",
+"name": "Marcus Hudgins",
+"pos": "Defense",
+"shot": "Right",
+"height": "6 ft 1 in",
+"weight": "215 lbs",
+"college": "Ohio State",
+"hometown": "Syracuse, New York"
+},
+{
+"num": "15",
+"name": "CJ Kirst",
+"pos": "Attack",
+"shot": "Left",
+"height": "6 ft 2 in",
+"weight": "210 lbs",
+"college": "Cornell",
+"hometown": "Bernardsville, New Jersey"
+},
+{
+"num": "16",
+"name": "Matt Collison",
+"pos": "Midfield",
+"shot": "Left",
+"height": "6 ft 4 in",
+"weight": "225 lbs",
+"college": "Johns Hopkins",
+"hometown": "Scarborough, Ontario"
+},
+{
+"num": "18",
+"name": "Silas Richmond",
+"pos": "Attack",
+"shot": "Right",
+"height": "6 ft 4 in",
+"weight": "220 lbs",
+"college": "Albany",
+"hometown": "Delta, British Columbia"
+},
+{
+"num": "22",
+"name": "Michael Sowers",
+"pos": "Attack",
+"shot": "R/L",
+"height": "5 ft 9 in",
+"weight": "180 lbs",
+"college": "Duke",
+"hometown": "Upper Dublin"
+},
+{
+"num": "23",
+"name": "Charlie Hayes",
+"pos": "SSDM",
+"shot": "Right",
+"height": "5 ft 11 in",
+"weight": "187 lbs",
+"college": "Detroit Mercy",
+"hometown": "Shelby Township, Michigan"
+},
+{
+"num": "24",
+"name": "Nakeie Montgomery",
+"pos": "SSDM",
+"shot": "Right",
+"height": "5 ft 11 in",
+"weight": "200 lbs",
+"college": "Duke",
+"hometown": "Dallas, Texas"
+},
+{
+"num": "29",
+"name": "Kenny Brower",
+"pos": "Defense",
+"shot": "Left",
+"height": "6 ft 2 in",
+"weight": "215 lbs",
+"college": "Duke",
+"hometown": "Massapequa, New York"
+},
+{
+"num": "32",
+"name": "Brendan Staub",
+"pos": "LSM",
+"shot": "Right",
+"height": "6 ft 1 in",
+"weight": "205 lbs",
+"college": "Cornell",
+"hometown": "Garden City, New York"
+},
+{
+"num": "33",
+"name": "Matt Whitcher",
+"pos": "SSDM",
+"shot": "Right",
+"height": "6 ft 3 in",
+"weight": "200 lbs",
+"college": "York",
+"hometown": "Huntington, New York"
+},
+{
+"num": "40",
+"name": "Connor Kelly",
+"pos": "Midfield",
+"shot": "R/L",
+"height": "6 ft 0 in",
+"weight": "200 lbs",
+"college": "Maryland",
+"hometown": "Easton, Connecticut"
+},
+{
+"num": "41",
+"name": "Connor Farrell",
+"pos": "Faceoff",
+"shot": "Right",
+"height": "6 ft 2 in",
+"weight": "240 lbs",
+"college": "LIU Post",
+"hometown": "Holtsville, New York"
+},
+{
+"num": "42",
+"name": "Tim Troutner",
+"pos": "Goalie",
+"shot": "Left",
+"height": "6 ft 1 in",
+"weight": "205 lbs",
+"college": "High Point",
+"hometown": "Annapolis, Maryland"
+},
+{
+"num": "51",
+"name": "Dox Aitken",
+"pos": "Midfield",
+"shot": "Right",
+"height": "6 ft 2 in",
+"weight": "215 lbs",
+"college": "Virginia",
+"hometown": "Villanova, Pennsylvania"
+},
+{
+"num": "73",
+"name": "Alec Stathakis",
+"pos": "Faceoff",
+"shot": "Right",
+"height": "5 ft 11 in",
+"weight": "220 lbs",
+"college": "Denver",
+"hometown": "Northville, Michigan"
+},
+{
+"num": "77",
+"name": "Zach Currier",
+"pos": "Midfield",
+"shot": "Left",
+"height": "6 ft 0 in",
+"weight": "180 lbs",
+"college": "Princeton",
+"hometown": "Peterborough, Ontario"
+},
+{
+"num": "97",
+"name": "Gavin Adler",
+"pos": "Defense",
+"shot": "Left",
+"height": "5 ft 8 in",
+"weight": "190 lbs",
+"college": "Cornell",
+"hometown": "Hewlett, New York"
+},
+{
+"num": "99",
+"name": "Sean Byrne",
+"pos": "Goalie",
+"shot": "Right",
+"height": "6 ft 3 in",
+"weight": "200 lbs",
+"college": "Army",
+"hometown": "Acworth, Georgia"
+}
+]
+},
+"127638": {
+"season": 2025,
+"page": "Maryland_Whipsnakes",
+"players": [
+{
+"num": "3",
+"name": "Rob Pannell",
+"pos": "Attack",
+"shot": "R/L",
+"height": "5 ft 10 in",
+"weight": "195 lbs",
+"college": "Cornell",
+"hometown": "Smithtown, New York"
+},
+{
+"num": "4",
+"name": "James Shipley",
+"pos": "SSDM",
+"shot": "R/L",
+"height": "5 ft 10 in",
+"weight": "190 lbs",
+"college": "Penn",
+"hometown": "Weddington, North Carolina"
+},
+{
+"num": "5",
+"name": "Petey LaSalla",
+"pos": "Faceoff",
+"shot": "Right",
+"height": "5 ft 7 in",
+"weight": "185 lbs",
+"college": "Virginia",
+"hometown": "Miller Place, New York"
+},
+{
+"num": "6",
+"name": "Truitt Sunderland",
+"pos": "Midfield",
+"shot": "Right",
+"height": "5 ft 10 in",
+"weight": "165 lbs",
+"college": "Virginia",
+"hometown": "Baltimore, Maryland"
+},
+{
+"num": "7",
+"name": "TJ Malone",
+"pos": "Attack",
+"shot": "Left",
+"height": "5 ft 11 in",
+"weight": "185 lbs",
+"college": "Penn State",
+"hometown": "West Chester, Pennsylvania"
+},
+{
+"num": "8",
+"name": "Eric Kolar",
+"pos": "SSDM",
+"shot": "Right",
+"height": "5 ft 11 in",
+"weight": "200 lbs",
+"college": "Maryland",
+"hometown": "Mount Airy, Maryland"
+},
+{
+"num": "10",
+"name": "Colin Heacock",
+"pos": "Midfield",
+"shot": "R/L",
+"height": "6 ft 3 in",
+"weight": "220 lbs",
+"college": "Maryland",
+"hometown": "Catonsville, Maryland"
+},
+{
+"num": "11",
+"name": "Jack McDonald",
+"pos": "LSM",
+"shot": "Right",
+"height": "6 ft 5 in",
+"weight": "210 lbs",
+"college": "Maryland",
+"hometown": "Rockville Centre, New York"
+},
+{
+"num": "12",
+"name": "Aidan Carroll",
+"pos": "Midfield",
+"shot": "R/L",
+"height": "6 ft 0 in",
+"weight": "190 lbs",
+"college": "Georgetown",
+"hometown": "Milton, Massachusetts"
+},
+{
+"num": "13",
+"name": "Nathan Kapp",
+"pos": "Faceoff",
+"shot": "Right",
+"height": "5 ft 11 in",
+"weight": "205 lbs",
+"college": "Jacksonville",
+"hometown": "Middleton, Wisconsin"
+},
+{
+"num": "14",
+"name": "Tim Muller",
+"pos": "Defense",
+"shot": "Right",
+"height": "6 ft 2 in",
+"weight": "215 lbs",
+"college": "Maryland",
+"hometown": "Garden City, New York"
+},
+{
+"num": "15",
+"name": "Joe Juengerkes",
+"pos": "SSDM",
+"shot": "Right",
+"height": "6 ft 0 in",
+"weight": "190 lbs",
+"college": "Rutgers",
+"hometown": "Islip, New York"
+},
+{
+"num": "19",
+"name": "Emmet Carroll",
+"pos": "Goalie",
+"shot": "Right",
+"height": "6 ft 3 in",
+"weight": "205 lbs",
+"college": "Penn",
+"hometown": "Rye, New York"
+},
+{
+"num": "21",
+"name": "Matt Knote",
+"pos": "Goalie",
+"shot": "Right",
+"height": "5 ft 10 in",
+"weight": "220 lbs",
+"college": "UMass",
+"hometown": "Speonk, New York"
+},
+{
+"num": "22",
+"name": "Joey Spallina",
+"pos": "Attack",
+"shot": "Right",
+"height": "5 ft 11 in",
+"weight": "192 lbs",
+"college": "Syracuse",
+"hometown": "Mount Sinai, New York"
+},
+{
+"num": "23",
+"name": "Richie Connell",
+"pos": "Attack",
+"shot": "Left",
+"height": "6 ft 5 in",
+"weight": "220 lbs",
+"college": "Denver",
+"hometown": "Evergreen, Colorado"
+},
+{
+"num": "25",
+"name": "Matthew Paolatto",
+"pos": "Faceoff",
+"shot": "Right",
+"height": "5 ft 11 in",
+"weight": "185 lbs",
+"college": "Rutgers",
+"hometown": "Sherborn, Massachusetts"
+},
+{
+"num": "27",
+"name": "Brad Smith",
+"pos": "Midfield",
+"shot": "R/L",
+"height": "6 ft 3 in",
+"weight": "205 lbs",
+"college": "Duke",
+"hometown": "Mountain Lakes, New Jersey"
+},
+{
+"num": "33",
+"name": "Matthew Dunn",
+"pos": "Defense",
+"shot": "Right",
+"height": "6 ft 3 in",
+"weight": "224 lbs",
+"college": "Maryland",
+"hometown": "Baltimore, Maryland"
+},
+{
+"num": "34",
+"name": "Payton Rezanka",
+"pos": "SSDM",
+"shot": "Left",
+"height": "5 ft 11 in",
+"weight": "205 lbs",
+"college": "Loyola",
+"hometown": "San Diego, California"
+},
+{
+"num": "35",
+"name": "Billy Dwan III",
+"pos": "Defense",
+"shot": "Left",
+"height": "6 ft 4 in",
+"weight": "225 lbs",
+"college": "Syracuse",
+"hometown": "Lutherville, Maryland"
+},
+{
+"num": "36",
+"name": "Ajax Zappitello",
+"pos": "Defense",
+"shot": "Right",
+"height": "6 ft 1 in",
+"weight": "190 lbs",
+"college": "Maryland",
+"hometown": "Portland, Oregon"
+},
+{
+"num": "39",
+"name": "Colin Squires",
+"pos": "LSM",
+"shot": "Right",
+"height": "6 ft 2 in",
+"weight": "190 lbs",
+"college": "Denver",
+"hometown": "West Linn, Oregon"
+},
+{
+"num": "41",
+"name": "Matt Brandau",
+"pos": "Midfield",
+"shot": "R/L",
+"height": "5 ft 11 in",
+"weight": "190 lbs",
+"college": "Yale",
+"hometown": "Timonium, Maryland"
+},
+{
+"num": "43",
+"name": "Jack Posey",
+"pos": "Defense",
+"shot": "Right",
+"height": "6 ft 1 in",
+"weight": "210 lbs",
+"college": "Penn State",
+"hometown": "South Riding, Virginia"
+},
+{
+"num": "51",
+"name": "Adam Poitras",
+"pos": "Midfield",
+"shot": "Left",
+"height": "6 ft 2 in",
+"weight": "180 lbs",
+"college": "Loyola",
+"hometown": "Whitby, Ontario"
+},
+{
+"num": "85",
+"name": "Christian Mazur",
+"pos": "SSDM",
+"shot": "Right",
+"height": "6 ft 1 in",
+"weight": "205 lbs",
+"college": "Army",
+"hometown": "Westfield, New Jersey"
+},
+{
+"num": "91",
+"name": "Joe Nardella",
+"pos": "Faceoff",
+"shot": "Right",
+"height": "5 ft 10 in",
+"weight": "200 lbs",
+"college": "Rutgers",
+"hometown": "Cazenovia, New York"
+},
+{
+"num": "",
+"name": "Michael Boehm",
+"pos": "Attack",
+"shot": "Right",
+"height": "5 ft 10 in",
+"weight": "170 lbs",
+"college": "Michigan",
+"hometown": "Rocky River, Ohio"
+},
+{
+"num": "",
+"name": "Blake Eiland",
+"pos": "SSDM",
+"shot": "Right",
+"height": "6 ft 0 in",
+"weight": "200 lbs",
+"college": "Ohio State",
+"hometown": "Delaware, Ohio"
+},
+{
+"num": "",
+"name": "Shun Ito*",
+"pos": "Goalie",
+"shot": "Right"
+}
+]
+}
+},
+"leaders": {
+"2019": {
+"page": "2019_Premier_Lacrosse_League_season",
+"rows": [
+{
+"stat": "Points",
+"player": "Matt Rambo",
+"value": "42",
+"team": "127638",
+"rank": 1
+},
+{
+"stat": "Points",
+"player": "Tom Schreiber",
+"value": "37",
+"team": "127631",
+"rank": 2
+},
+{
+"stat": "Points",
+"player": "Justin Guterding",
+"value": "35",
+"team": "127635",
+"rank": 3
+},
+{
+"stat": "Points",
+"player": "Connor Fields",
+"value": "33",
+"team": "127634",
+"rank": 4
+},
+{
+"stat": "Points",
+"player": "Jules Heningburg",
+"value": "33",
+"team": "127636",
+"rank": 5
+},
+{
+"stat": "Goals",
+"player": "Marcus Holman",
+"value": "23",
+"team": "127631",
+"rank": 1
+},
+{
+"stat": "Goals",
+"player": "Will Manny",
+"value": "22",
+"team": "127631",
+"rank": 2
+},
+{
+"stat": "Goals",
+"player": "Connor Fields",
+"value": "22",
+"team": "127634",
+"rank": 3
+},
+{
+"stat": "Goals",
+"player": "Jules Heningburg",
+"value": "21",
+"team": "127636",
+"rank": 4
+},
+{
+"stat": "Goals",
+"player": "Ryan Brown",
+"value": "21",
+"team": "127632",
+"rank": 5
+},
+{
+"stat": "Assists",
+"player": "Matt Rambo",
+"value": "23",
+"team": "127638",
+"rank": 1
+},
+{
+"stat": "Assists",
+"player": "Tom Schreiber",
+"value": "18",
+"team": "127631",
+"rank": 2
+},
+{
+"stat": "Assists",
+"player": "Jordan Wolf",
+"value": "16",
+"team": "127635",
+"rank": 3
+},
+{
+"stat": "Assists",
+"player": "Justin Guterding",
+"value": "14",
+"team": "127635",
+"rank": 4
+},
+{
+"stat": "Assists",
+"player": "Kieran McArdle",
+"value": "13",
+"team": "127632",
+"rank": 5
+},
+{
+"stat": "Save Percentage",
+"player": "Drew Adams",
+"value": "65.3%",
+"team": "127631",
+"rank": 1
+},
+{
+"stat": "Save Percentage",
+"player": "Brett Queener",
+"value": "56.5%",
+"team": "127635",
+"rank": 2
+},
+{
+"stat": "Save Percentage",
+"player": "Blaze Riorden",
+"value": "55.8%",
+"team": "127634",
+"rank": 3
+},
+{
+"stat": "Save Percentage",
+"player": "Kyle Bernlohr",
+"value": "55.0%",
+"team": "127638",
+"rank": 4
+},
+{
+"stat": "Save Percentage",
+"player": "Jack Concannon",
+"value": "53.5%",
+"team": "127632",
+"rank": 5
+}
+]
+},
+"2021": {
+"page": "2021_Premier_Lacrosse_League_season",
+"rows": [
+{
+"stat": "Points",
+"player": "Grant Ament",
+"value": "35",
+"team": "127631",
+"rank": 1
+},
+{
+"stat": "Points",
+"player": "Jeff Teat",
+"value": "35",
+"team": "127632",
+"rank": 2
+},
+{
+"stat": "Points",
+"player": "Lyle Thompson",
+"value": "32",
+"team": "122997",
+"rank": 3
+},
+{
+"stat": "Points",
+"player": "Myles Jones",
+"value": "32",
+"team": "127636",
+"rank": 4
+},
+{
+"stat": "Points",
+"player": "Josh Byrne",
+"value": "29",
+"team": "127634",
+"rank": 5
+},
+{
+"stat": "Points",
+"player": "Rob Pannell",
+"value": "29",
+"team": "127636",
+"rank": 6
+},
+{
+"stat": "Points",
+"player": "Bryan Costabile",
+"value": "28",
+"team": "127632",
+"rank": 7
+},
+{
+"stat": "Points",
+"player": "Tom Schreiber",
+"value": "27",
+"team": "127631",
+"rank": 8
+},
+{
+"stat": "Points",
+"player": "Paul Rabil",
+"value": "26",
+"team": "122997",
+"rank": 9
+},
+{
+"stat": "Points",
+"player": "Will Manny",
+"value": "26",
+"team": "127631",
+"rank": 10
+},
+{
+"stat": "Goals",
+"player": "Lyle Thompson",
+"value": "22",
+"team": "122997",
+"rank": 1
+},
+{
+"stat": "Goals",
+"player": "Zed Williams",
+"value": "22",
+"team": "127638",
+"rank": 2
+},
+{
+"stat": "Goals",
+"player": "Ryan Brown",
+"value": "20",
+"team": "127637",
+"rank": 3
+},
+{
+"stat": "Goals",
+"player": "Will Manny",
+"value": "19",
+"team": "127631",
+"rank": 4
+},
+{
+"stat": "Goals",
+"player": "Ryan Drenner",
+"value": "18",
+"team": "122997",
+"rank": 5
+},
+{
+"stat": "Goals",
+"player": "Jay Carlson",
+"value": "18",
+"team": "127638",
+"rank": 6
+},
+{
+"stat": "Goals",
+"player": "Josh Byrne",
+"value": "17",
+"team": "127634",
+"rank": 7
+},
+{
+"stat": "Goals",
+"player": "Jeff Teat",
+"value": "16",
+"team": "127632",
+"rank": 8
+},
+{
+"stat": "Goals",
+"player": "Paul Rabil",
+"value": "16",
+"team": "122997",
+"rank": 9
+},
+{
+"stat": "Goals",
+"player": "Marcus Holman",
+"value": "16",
+"team": "127631",
+"rank": 10
+},
+{
+"stat": "Assists",
+"player": "Grant Ament",
+"value": "22",
+"team": "127631",
+"rank": 1
+},
+{
+"stat": "Assists",
+"player": "Myles Jones",
+"value": "17",
+"team": "127636",
+"rank": 2
+},
+{
+"stat": "Assists",
+"player": "Jeff Teat",
+"value": "16",
+"team": "127632",
+"rank": 3
+},
+{
+"stat": "Assists",
+"player": "Rob Pannell",
+"value": "16",
+"team": "127636",
+"rank": 4
+},
+{
+"stat": "Assists",
+"player": "Tom Schreiber",
+"value": "13",
+"team": "127631",
+"rank": 5
+},
+{
+"stat": "Assists",
+"player": "Dhane Smith",
+"value": "13",
+"team": "127634",
+"rank": 6
+},
+{
+"stat": "Assists",
+"player": "Kieran McArdle",
+"value": "12",
+"team": "127637",
+"rank": 7
+},
+{
+"stat": "Assists",
+"player": "Josh Byrne",
+"value": "12",
+"team": "127634",
+"rank": 8
+},
+{
+"stat": "Assists",
+"player": "Zach Currier",
+"value": "11",
+"team": "127637",
+"rank": 9
+},
+{
+"stat": "Assists",
+"player": "Stephen Rehfuss",
+"value": "11",
+"team": "122997",
+"rank": 10
+},
+{
+"stat": "Save Percentage",
+"player": "Adam Ghitelman",
+"value": "95",
+"team": "127637",
+"rank": 1
+},
+{
+"stat": "Save Percentage",
+"player": "Blaze Riorden",
+"value": "149",
+"team": "127634",
+"rank": 2
+},
+{
+"stat": "Save Percentage",
+"player": "Tim Troutner",
+"value": "125",
+"team": "127636",
+"rank": 3
+},
+{
+"stat": "Save Percentage",
+"player": "Drew Adams",
+"value": "35",
+"team": "127631",
+"rank": 4
+},
+{
+"stat": "Save Percentage",
+"player": "John Galloway",
+"value": "118",
+"team": "127635",
+"rank": 5
+},
+{
+"stat": "Save Percentage",
+"player": "Nick Marrocco",
+"value": "137",
+"team": "122997",
+"rank": 6
+},
+{
+"stat": "Save Percentage",
+"player": "Dillon Ward",
+"value": "95",
+"team": "127637",
+"rank": 7
+},
+{
+"stat": "Save Percentage",
+"player": "Jack Concannon",
+"value": "57",
+"team": "127632",
+"rank": 8
+},
+{
+"stat": "Save Percentage",
+"player": "J.D. Colarusso",
+"value": "45",
+"team": "127632",
+"rank": 9
+},
+{
+"stat": "Save Percentage",
+"player": "Kyle Bernlohr",
+"value": "95",
+"team": "127638",
+"rank": 10
+}
+]
+},
+"2022": {
+"page": "2022_Premier_Lacrosse_League_season",
+"rows": [
+{
+"stat": "Points",
+"player": "Lyle Thompson",
+"value": "44",
+"team": "122997",
+"rank": 1
+},
+{
+"stat": "Points",
+"player": "Kieran McArdle",
+"value": "42",
+"team": "127637",
+"rank": 2
+},
+{
+"stat": "Points",
+"player": "Rob Pannell",
+"value": "38",
+"team": "127636",
+"rank": 3
+},
+{
+"stat": "Points",
+"player": "Jeff Teat",
+"value": "38",
+"team": "127632",
+"rank": 4
+},
+{
+"stat": "Points",
+"player": "Brandan Nichtern",
+"value": "38",
+"team": "127635",
+"rank": 5
+},
+{
+"stat": "Points",
+"player": "Tom Schreiber",
+"value": "35",
+"team": "127631",
+"rank": 6
+},
+{
+"stat": "Points",
+"player": "Logan Wisnauskas",
+"value": "35",
+"team": "127635",
+"rank": 7
+},
+{
+"stat": "Points",
+"player": "Chris Gray",
+"value": "34",
+"team": "127632",
+"rank": 8
+},
+{
+"stat": "Points",
+"player": "Will Manny",
+"value": "33",
+"team": "127631",
+"rank": 9
+},
+{
+"stat": "Points",
+"player": "Michael Sowers",
+"value": "32",
+"team": "127637",
+"rank": 10
+},
+{
+"stat": "Goals",
+"player": "Lyle Thompson",
+"value": "26",
+"team": "122997",
+"rank": 1
+},
+{
+"stat": "Goals",
+"player": "Logan Wisnauskas",
+"value": "24",
+"team": "127635",
+"rank": 2
+},
+{
+"stat": "Goals",
+"player": "Jeff Teat",
+"value": "22",
+"team": "127632",
+"rank": 3
+},
+{
+"stat": "Goals",
+"player": "Michael Sowers",
+"value": "21",
+"team": "127637",
+"rank": 4
+},
+{
+"stat": "Goals",
+"player": "Matt Rambo",
+"value": "21",
+"team": "127638",
+"rank": 5
+},
+{
+"stat": "Goals",
+"player": "Kieran McArdle",
+"value": "19",
+"team": "127637",
+"rank": 6
+},
+{
+"stat": "Goals",
+"player": "Ryder Garnsey",
+"value": "19",
+"team": "127636",
+"rank": 7
+},
+{
+"stat": "Goals",
+"player": "Eric Law",
+"value": "18",
+"team": "127632",
+"rank": 8
+},
+{
+"stat": "Goals",
+"player": "Charlie Bertrand",
+"value": "18",
+"team": "127636",
+"rank": 9
+},
+{
+"stat": "Goals",
+"player": "Tom Schreiber",
+"value": "17",
+"team": "127631",
+"rank": 10
+},
+{
+"stat": "Assists",
+"player": "Kieran McArdle",
+"value": "23",
+"team": "127637",
+"rank": 1
+},
+{
+"stat": "Assists",
+"player": "Rob Pannell",
+"value": "22",
+"team": "127636",
+"rank": 2
+},
+{
+"stat": "Assists",
+"player": "Brandon Nichtern",
+"value": "22",
+"team": "127635",
+"rank": 3
+},
+{
+"stat": "Assists",
+"player": "Lyle Thompson",
+"value": "18",
+"team": "122997",
+"rank": 4
+},
+{
+"stat": "Assists",
+"player": "Will Manny",
+"value": "17",
+"team": "127631",
+"rank": 5
+},
+{
+"stat": "Assists",
+"player": "Dhane Smith",
+"value": "17",
+"team": "127634",
+"rank": 6
+},
+{
+"stat": "Assists",
+"player": "Jeff Teat",
+"value": "16",
+"team": "127632",
+"rank": 7
+},
+{
+"stat": "Assists",
+"player": "Chris Gray",
+"value": "16",
+"team": "127632",
+"rank": 8
+},
+{
+"stat": "Assists",
+"player": "Tom Schreiber",
+"value": "14",
+"team": "127631",
+"rank": 9
+},
+{
+"stat": "Assists",
+"player": "Logan Wisnauskas",
+"value": "11",
+"team": "127635",
+"rank": 10
+},
+{
+"stat": "Save Percentage",
+"player": "Blaze Riorden",
+"value": "137",
+"team": "127634",
+"rank": 1
+},
+{
+"stat": "Save Percentage",
+"player": "Jack Concannon",
+"value": "125",
+"team": "127632",
+"rank": 2
+},
+{
+"stat": "Save Percentage",
+"player": "Kyle Bernlohr",
+"value": "125",
+"team": "127638",
+"rank": 3
+},
+{
+"stat": "Save Percentage",
+"player": "Nick Marrocco",
+"value": "123",
+"team": "127631",
+"rank": 4
+},
+{
+"stat": "Save Percentage",
+"player": "Sean Sconone",
+"value": "113",
+"team": "127635",
+"rank": 5
+},
+{
+"stat": "Save Percentage",
+"player": "Adam Ghitleman",
+"value": "89",
+"team": "127631",
+"rank": 6
+},
+{
+"stat": "Save Percentage",
+"player": "Dillon Ward",
+"value": "73",
+"team": "127637",
+"rank": 7
+},
+{
+"stat": "Save Percentage",
+"player": "Jack Kelly",
+"value": "71",
+"team": "127636",
+"rank": 8
+},
+{
+"stat": "Save Percentage",
+"player": "Matt DeLuca",
+"value": "46",
+"team": "127637",
+"rank": 9
+},
+{
+"stat": "Save Percentage",
+"player": "Tim Troutner",
+"value": "20",
+"team": "127636",
+"rank": 10
+}
+]
+},
+"2023": {
+"page": "2023_Premier_Lacrosse_League_season",
+"rows": [
+{
+"stat": "Points",
+"player": "Marcus Holman",
+"value": "44",
+"team": "122997",
+"rank": 1
+},
+{
+"stat": "One-point goals",
+"player": "Marcus Holman",
+"value": "29",
+"team": "122997",
+"rank": 1
+},
+{
+"stat": "Two-point goals",
+"player": "Connor Kelly",
+"value": "5",
+"team": "127637",
+"rank": 1
+},
+{
+"stat": "Scoring Points",
+"player": "Marcus Holman",
+"value": "31",
+"team": "122997",
+"rank": 1
+},
+{
+"stat": "Assists",
+"player": "Dhane Smith",
+"value": "25",
+"team": "127631",
+"rank": 1
+},
+{
+"stat": "Shots",
+"player": "Connor Fields",
+"value": "94",
+"team": "127631",
+"rank": 1
+},
+{
+"stat": "Shot Percentage",
+"player": "Eric Law",
+"value": "51.2%",
+"team": "127632",
+"rank": 1
+},
+{
+"stat": "Faceoff Percentage",
+"player": "Trevor Baptiste",
+"value": "77.4%",
+"team": "127632",
+"rank": 1
+},
+{
+"stat": "Save Percentage",
+"player": "Dillon Ward",
+"value": "61.2%",
+"team": "127637",
+"rank": 1
+},
+{
+"stat": "Caused Turnovers",
+"player": "Ethan Rall",
+"value": "20",
+"team": "122997",
+"rank": 1
+}
+]
+},
+"2024": {
+"page": "2024_Premier_Lacrosse_League_season",
+"rows": [
+{
+"stat": "Points",
+"player": "Jeff Teat",
+"value": "64",
+"team": "127632",
+"rank": 1,
+"note": "PLL single-season record"
+},
+{
+"stat": "One-point goals",
+"player": "Jeff Teat",
+"value": "28",
+"team": "127632",
+"rank": 1
+},
+{
+"stat": "Two-point goals",
+"player": "Romar Dennis",
+"value": "7",
+"team": "127636",
+"rank": 1,
+"note": "ties the PLL single-season record"
+},
+{
+"stat": "Scoring Points",
+"player": "Jeff Teat",
+"value": "28",
+"team": "127632",
+"rank": 1
+},
+{
+"stat": "Assists",
+"player": "Jeff Teat",
+"value": "36",
+"team": "127632",
+"rank": 1,
+"note": "PLL single-season record"
+},
+{
+"stat": "Shots",
+"player": "Brennan O'Neill",
+"value": "82",
+"team": "122896",
+"rank": 1
+},
+{
+"stat": "Shot Percentage",
+"player": "Tre Leclaire",
+"value": "50%",
+"team": "127631",
+"rank": 1
+},
+{
+"stat": "Faceoff Percentage",
+"player": "Joseph Nardella",
+"value": "67.5%",
+"team": "127638",
+"rank": 1
+},
+{
+"stat": "Save Percentage",
+"player": "Blaze Riorden",
+"value": "59.4%",
+"team": "127634",
+"rank": 1
+},
+{
+"stat": "Caused Turnovers",
+"player": "Garrett Epple",
+"value": "20",
+"team": "122997",
+"rank": 1,
+"note": "ties the PLL single-season record"
+}
+]
+},
+"2025": {
+"page": "2025_Premier_Lacrosse_League_season",
+"rows": [
+{
+"stat": "Points",
+"player": "Connor Shellenberger",
+"value": "46",
+"team": "127632",
+"rank": 1
+},
+{
+"stat": "One-point goals",
+"player": "Dylan Molloy",
+"value": "26",
+"team": "127636",
+"rank": 1
+},
+{
+"stat": "Two-point goals",
+"player": "Marcus Holman",
+"value": "5",
+"team": "122997",
+"rank": 1
+},
+{
+"stat": "Scoring Points",
+"player": "Dylan Molloy",
+"value": "27",
+"team": "127636",
+"rank": 1
+},
+{
+"stat": "Assists",
+"player": "Asher Nolting",
+"value": "26",
+"team": "122997",
+"rank": 1
+},
+{
+"stat": "Shots",
+"player": "Pat Kavanagh",
+"value": "90",
+"team": "122896",
+"rank": 1
+},
+{
+"stat": "Shot Percentage",
+"player": "Reid Bowering",
+"value": "50%",
+"team": "127632",
+"rank": 1
+},
+{
+"stat": "Touches",
+"player": "Pat Kavanagh",
+"value": "454",
+"team": "122896",
+"rank": 1
+},
+{
+"stat": "Faceoff Percentage",
+"player": "Justin Inacio",
+"value": "60.9%",
+"team": "127634",
+"rank": 1
+},
+{
+"stat": "Save Percentage",
+"player": "Austin Kaut",
+"value": "62.5%",
+"team": "127634",
+"rank": 1
+},
+{
+"stat": "Caused Turnovers",
+"player": "Ajax Zappitello",
+"value": "17",
+"team": "127638",
+"rank": 1
+},
+{
+"stat": "Groundballs",
+"player": "Trevor Baptiste",
+"value": "87",
+"team": "127632",
+"rank": 1
+}
+]
+},
+"2026": {
+"page": "2026_Premier_Lacrosse_League_season",
+"rows": [
+{
+"stat": "Points",
+"player": "Michael Sowers",
+"value": "51",
+"team": "127637",
+"rank": 1
+},
+{
+"stat": "One-point goals",
+"player": "CJ Kirst",
+"value": "34",
+"team": "127637",
+"rank": 1
+},
+{
+"stat": "Two-point goals",
+"player": "Bryan Costabile",
+"value": "7",
+"team": "127632",
+"rank": 1
+},
+{
+"stat": "Scoring Points",
+"player": "CJ Kirst",
+"value": "34",
+"team": "127637",
+"rank": 1
+},
+{
+"stat": "Assists",
+"player": "Michael Sowers",
+"value": "22",
+"team": "127637",
+"rank": 1
+},
+{
+"stat": "Shots",
+"player": "Dylan Molloy",
+"value": "87",
+"team": "127636",
+"rank": 1
+},
+{
+"stat": "Shot Percentage",
+"player": "Finn Thomson",
+"value": "63.6%",
+"team": "127636",
+"rank": 1
+},
+{
+"stat": "Touches",
+"player": "Coulter Mackesy",
+"value": "478",
+"team": "122997",
+"rank": 1
+},
+{
+"stat": "Faceoff Percentage",
+"player": "Andrew McMeekin",
+"value": "62.5%",
+"team": "122997",
+"rank": 1
+},
+{
+"stat": "Save Percentage",
+"player": "Will Mark",
+"value": "70%",
+"team": "127632",
+"rank": 1
+},
+{
+"stat": "Caused Turnovers",
+"player": "Brett Makar",
+"value": "24",
+"team": "127632",
+"rank": 1
+},
+{
+"stat": "Groundballs",
+"player": "T. D. Ierlan",
+"value": "111",
+"team": "127636",
+"rank": 1
+}
+]
+}
+}
+}
