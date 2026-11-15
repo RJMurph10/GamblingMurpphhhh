@@ -103,6 +103,10 @@ async function load(year: number): Promise<PllSeason> {
     }
     const state = e.status?.type?.state;
     const status = e.status?.type?.completed ? "final" : state === "in" ? "live" : "scheduled";
+    // ESPN never recorded some games (five February 2024 Championship Series games still read
+    // "Scheduled" with no score): one still "scheduled" two days after its start didn't get a result,
+    // so it's left out rather than shown as upcoming
+    if (status === "scheduled" && Date.parse(e.date) < Date.now() - STALE_MS) continue;
     const side = (c: EspnCompetitor) => ({
       teamId: clubId(c.team!),
       score: status === "scheduled" || c.score == null || c.score === "" ? null : Number(c.score),
@@ -177,6 +181,9 @@ async function loadHistory(year: number): Promise<PllSeason> {
     games,
   };
 }
+
+/** How long after its start a game ESPN still calls "scheduled" counts as never recorded. */
+export const STALE_MS = 2 * 24 * 3_600_000;
 
 /** One PLL year's games and teams. Refreshed every minute while a game is on, else every 30 minutes. */
 /**

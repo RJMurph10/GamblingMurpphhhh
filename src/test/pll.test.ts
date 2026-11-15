@@ -139,3 +139,29 @@ describe("PLL conferences", () => {
     for (const x of all) expect(x.w + x.l).toBe(6);
   });
 });
+
+describe("games ESPN never recorded", () => {
+  it("leaves out a game still 'scheduled' days after its start", async () => {
+    const past = structuredClone(fixture.scoreboard) as typeof fixture.scoreboard;
+    const e = structuredClone(past.events[0]);
+    e.id = "stale1";
+    e.date = "2024-02-14T22:30Z";
+    (e.status as { type: Record<string, unknown> }).type = {
+      name: "STATUS_SCHEDULED",
+      state: "pre",
+      completed: false,
+      shortDetail: "2/14 - 5:30 PM EST",
+    };
+    past.events.push(e);
+    vi.stubGlobal(
+      "fetch",
+      vi.fn(async (url: string) => ({
+        ok: true,
+        json: async () => (String(url).includes("/teams") ? fixture.teams : past),
+      })),
+    );
+    const s = await fetchPllSeason(2099);
+    expect(s.games.some((g) => g.id === "stale1")).toBe(false);
+    expect(s.games.filter((g) => g.status === "scheduled")).toEqual([]);
+  });
+});
