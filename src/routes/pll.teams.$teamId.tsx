@@ -1,12 +1,13 @@
 import { useMemo, useState } from "react";
 import { createFileRoute } from "@tanstack/react-router";
-import { PageTitle, Panel, PanelHeader, StatCard } from "@/components/shared/booth";
-import { PllGamesTable, PllLogo, PllSeasonPicker } from "@/components/pll/PllBits";
+import { PageTitle, StatCard } from "@/components/shared/booth";
+import { PllLogo, PllSeasonPicker } from "@/components/pll/PllBits";
+import { PllDashGames } from "@/components/pll/PllDashGames";
 import { PllDraftClass, PllTeamTrends } from "@/components/pll/PllHistory";
 import { PllLeaders, PllRosterPanel } from "@/components/pll/PllPlayers";
 import { pllCoaches } from "@/lib/pll/players";
 import { standings, teamOf } from "@/lib/pll/pll";
-import { currentPllSeason, pllTeamSeasons, usePllSeason } from "@/lib/pll/use-pll";
+import { currentPllSeason, pllTeamSeasons, usePllLines, usePllSeason } from "@/lib/pll/use-pll";
 
 export const Route = createFileRoute("/pll/teams/$teamId")({
   head: () => ({ meta: [{ title: "Team — GamblingPLL" }] }),
@@ -23,6 +24,7 @@ function PllTeamPage() {
       : (seasons.at(-1) ?? currentPllSeason()),
   );
   const q = usePllSeason(season);
+  const linesQ = usePllLines();
   const team = teamOf(q.data, teamId);
   const row = useMemo(
     () => (q.data ? standings(q.data).find((r) => r.team.id === teamId) : undefined),
@@ -94,17 +96,16 @@ function PllTeamPage() {
         ))}
       </div>
       {tab === "schedule" ? (
-        <Panel padded={false} className="mt-4">
-          <PanelHeader
+        <div className="mt-4">
+          <PllDashGames
             title="Schedule"
-            aside={<span className="label-mono">{games.length} games</span>}
-          />
-          <PllGamesTable
             games={games}
             season={q.data}
-            empty={q.isLoading ? "Loading…" : "No games this season."}
+            lines={linesQ.data}
+            emptyText={q.isLoading ? "Loading…" : "No games this season."}
+            aside={<span className="label-mono">{games.length} games</span>}
           />
-        </Panel>
+        </div>
       ) : tab === "roster" ? (
         <div className="mt-4 grid gap-6 lg:grid-cols-[1.4fr_1fr]">
           <PllRosterPanel teamId={teamId} season={season} />
