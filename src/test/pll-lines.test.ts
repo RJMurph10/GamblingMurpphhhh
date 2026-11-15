@@ -77,3 +77,24 @@ describe("PLL lines", () => {
     expect(linesFor(s.games[20], s, file)).toBeUndefined();
   });
 });
+
+import savedLines from "./fixtures/pll-lines-2026.json";
+
+describe("Lacrosse API lines on the real 2026 season", () => {
+  it("every saved game lines up with an ESPN game, with the favorite laying the points", async () => {
+    const s = await season2026();
+    const file = savedLines as unknown as PllLinesFile;
+    const matched = s.games.filter((g) => linesFor(g, s, file));
+    expect(matched.length).toBe(Object.keys(file.games).length);
+    for (const g of matched) {
+      const l = linesFor(g, s, file)!.latest;
+      if (l.spread != null && l.mlHome != null && l.mlAway != null && l.mlHome !== l.mlAway)
+        expect(l.spread < 0).toBe(l.mlHome < l.mlAway);
+    }
+    // the final: Waterdogs (home) favored over the Outlaws, won 14-4
+    const final = s.games[s.games.length - 1];
+    const fl = linesFor(final, s, file)!;
+    expect(fl.latest.spread).toBe(-1.5);
+    expect(lineResult(final, fl.latest)).toMatchObject({ cover: "home", favWon: true });
+  });
+});

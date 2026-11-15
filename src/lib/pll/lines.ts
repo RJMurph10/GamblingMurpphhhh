@@ -35,7 +35,10 @@ export interface PllLinesFile {
 
 const norm = (s: string) => s.toLowerCase().replace(/[^a-z]/g, "");
 
-/** A game's lines: the Odds API game with the same two clubs starting within 12 hours of it. */
+/**
+ * A game's lines: the saved game with the same two clubs whose start is closest to it, within 36 hours
+ * (feeds sometimes list a weekend's games on the wrong day of the weekend).
+ */
 export function linesFor(
   game: PllGame,
   season: PllSeason | undefined,
@@ -47,21 +50,36 @@ export function linesFor(
   const a = short(game.away.teamId);
   if (!h || !a) return undefined;
   const t = new Date(game.date).getTime();
+  let best: { g: PllLinesGame; flip: boolean; gap: number } | undefined;
   for (const g of Object.values(file.games)) {
-    if (Math.abs(new Date(g.commence).getTime() - t) > 12 * 3_600_000) continue;
-    if (norm(g.home).endsWith(norm(h)) && norm(g.away).endsWith(norm(a))) return g;
-    // listed the other way round: swap the home numbers
-    if (norm(g.home).endsWith(norm(a)) && norm(g.away).endsWith(norm(h))) {
-      const flip = (l: PllLine): PllLine => ({
-        ...l,
-        spread: l.spread == null ? null : -l.spread,
-        mlHome: l.mlAway,
-        mlAway: l.mlHome,
-      });
-      return { ...g, home: g.away, away: g.home, open: flip(g.open), latest: flip(g.latest) };
-    }
+    const gap = Math.abs(new Date(g.commence).getTime() - t);
+    if (gap > 36 * 3_600_000 || (best && gap >= best.gap)) continue;
+    if (norm(g.home).endsWith(norm(h)) && norm(g.away).endsWith(norm(a)))
+      best = { g, flip: false, gap };
+    else if (norm(g.home).endsWith(norm(a)) && norm(g.away).endsWith(norm(h)))
+      best = { g, flip: true, gap };
   }
-  return undefined;
+  if (!best) return undefined;
+  if (!best.flip) return best.g;
+  // listed the other way round: swap the home numbers
+  const g = best.g;
+  const flip = (l: PllLine): PllLine => ({
+    ...l,
+    spread: l.spread == null ? null : -l.spread,
+    mlHome: l.mlAway,
+    mlAway: l.mlHome,
+  });
+  const books = Object.fromEntries(
+    Object.entries(g.books).map(([k, b]) => [
+      k,
+      {
+        ...b,
+        spread: b.spread ? [-b.spread[0], b.spread[2], b.spread[1]] : null,
+        ml: b.ml ? [b.ml[1], b.ml[0]] : null,
+      },
+    ]),
+  );
+  return { ...g, home: g.away, away: g.home, open: flip(g.open), latest: flip(g.latest), books };
 }
 
 export const americanText = (p: number | null | undefined) =>
