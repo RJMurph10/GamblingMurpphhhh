@@ -1,5 +1,5 @@
 import { useQuery } from "@tanstack/react-query";
-import { getPllSeason } from "./pll.functions";
+import { getPllLines, getPllSeason } from "./pll.functions";
 
 /** The PLL year shown by default: this year once its games start (February), else last year. */
 export function currentPllSeason(now = new Date()): number {
@@ -34,3 +34,12 @@ export function pllTeamSeasons(teamId: string): number[] {
   const [from, to] = CLUB_YEARS[teamId] ?? [2019];
   return PLL_SEASONS.filter((s) => s >= from && (to == null || s <= to));
 }
+
+/** Saved PLL game lines (null until the first lines are posted and saved). */
+export const usePllLines = () =>
+  useQuery({
+    queryKey: ["pll-lines"],
+    queryFn: () => getPllLines(),
+    staleTime: 10 * 60_000,
+    retry: 1,
+  });

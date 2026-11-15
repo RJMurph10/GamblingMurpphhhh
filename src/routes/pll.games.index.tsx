@@ -3,7 +3,7 @@ import { createFileRoute } from "@tanstack/react-router";
 import { PageTitle, Panel, PanelHeader } from "@/components/shared/booth";
 import { PllGamesTable, PllSeasonPicker, PllSourceNote } from "@/components/pll/PllBits";
 import { PHASE_LABEL, type PllPhase } from "@/lib/pll/pll";
-import { currentPllSeason, usePllSeason } from "@/lib/pll/use-pll";
+import { currentPllSeason, usePllLines, usePllSeason } from "@/lib/pll/use-pll";
 
 export const Route = createFileRoute("/pll/games/")({
   head: () => ({ meta: [{ title: "Games — GamblingPLL" }] }),
@@ -15,6 +15,7 @@ const ORDER: PllPhase[] = ["playoffs", "allstar", "regular", "champ"];
 function PllGamesPage() {
   const [season, setSeason] = useState(currentPllSeason());
   const q = usePllSeason(season);
+  const linesQ = usePllLines();
   const groups = useMemo(
     () =>
       ORDER.map((phase) => ({
@@ -37,7 +38,7 @@ function PllGamesPage() {
               title={PHASE_LABEL[phase]}
               aside={<span className="label-mono">{games.length} games</span>}
             />
-            <PllGamesTable games={games} season={q.data} empty="" />
+            <PllGamesTable games={games} season={q.data} lines={linesQ.data} withLines empty="" />
           </Panel>
         ))}
         <PllSourceNote season={season} />
