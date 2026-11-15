@@ -7,18 +7,18 @@
   "id": "304",
   "abbr": "IDST",
   "name": "Idaho State Bengals",
-  "score": 67
+  "score": 70
  },
  "home": {
   "id": "2547",
   "abbr": "SEA",
   "name": "Seattle U Redhawks",
-  "score": 74
+  "score": 77
  },
  "neutral": false,
  "venue": "Redhawk Center",
  "seasonType": 2,
- "state": "in",
+ "state": "post",
  "lines": {
   "open": {
    "at": "2026-11-14T03:07:32.138Z",
@@ -933,5 +933,9 @@
    ]
   }
  },
- "props": {}
+ "props": {},
+ "final": {
+  "away": 70,
+  "home": 77
+ }
 }

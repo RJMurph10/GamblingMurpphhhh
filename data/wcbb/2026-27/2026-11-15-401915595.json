@@ -395,13 +395,14 @@
    ]
   },
   "close": {
-   "at": "2026-11-15T22:55:11.258Z",
+   "at": "2026-11-15T23:10:59.563Z",
    "scoreboard": [
     {
      "provider": {
       "id": "100",
       "name": "DraftKings",
-      "priority": 1
+      "priority": 1,
+      "displayName": "DraftKings"
      },
      "details": "SYR -33.5",
      "overUnder": 132.5,
