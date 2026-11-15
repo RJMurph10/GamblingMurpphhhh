@@ -230,9 +230,12 @@ async function main() {
   for (const e of ids(oddsEvents)) {
     const ev = await get(`/v1/odds/events/${e}`);
     const d = ev?.data ?? {};
-    const markets = d.markets ?? d.odds?.markets ?? [];
-    for (const m of ids(Array.isArray(markets) ? markets : []))
-      await get(`/v1/odds/markets/${m}/prices`);
+    // markets are named on each price (prices[].market_id); their history has the pre-game prices
+    const markets = new Set([
+      ...(d.markets ?? []).map(idOf),
+      ...(d.prices ?? []).map((p) => p.market_id),
+    ]);
+    for (const m of markets) if (m) await get(`/v1/odds/markets/${m}/prices`);
   }
   await usage();
   console.log(`done: ${calls} calls this run`);

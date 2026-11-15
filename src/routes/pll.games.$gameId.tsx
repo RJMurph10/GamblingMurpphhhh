@@ -199,6 +199,8 @@ const BOOK_NAMES: Record<string, string> = {
   betonlineag: "BetOnline",
   mybookieag: "MyBookie",
   lowvig: "LowVig",
+  pll_reference: "PLL reference (no-vig)",
+  polymarket: "Polymarket",
 };
 
 /** The game's lines: consensus opener and latest (spread, moneyline, total), result, and every book. */

@@ -126,20 +126,28 @@ function PllDashboard() {
                 unit={pct(ls.favorites) === null ? undefined : "%"}
                 note={loading ?? `${rec(ls.favorites)} on the moneyline`}
               />
-              <StatCard
-                label="Overs"
-                value={fmt(pct(ls.overs))}
-                unit={pct(ls.overs) === null ? undefined : "%"}
-                note={
-                  loading ??
-                  note(
-                    `${rec(ls.overs)} O/U`,
-                    ls.avgLine !== null &&
-                      p.goalsPerGame !== null &&
-                      `games avg ${p.goalsPerGame.toFixed(1)} vs line ${ls.avgLine.toFixed(1)}`,
-                  )
-                }
-              />
+              {ls.overs.w + ls.overs.l ? (
+                <StatCard
+                  label="Overs"
+                  value={fmt(pct(ls.overs))}
+                  unit={pct(ls.overs) === null ? undefined : "%"}
+                  note={
+                    loading ??
+                    note(
+                      `${rec(ls.overs)} O/U`,
+                      ls.avgLine !== null &&
+                        p.goalsPerGame !== null &&
+                        `games avg ${p.goalsPerGame.toFixed(1)} vs line ${ls.avgLine.toFixed(1)}`,
+                    )
+                  }
+                />
+              ) : (
+                <StatCard
+                  label="Points per game"
+                  value={fmt(p.goalsPerGame)}
+                  note={loading ?? note("both teams", "no totals in the saved lines")}
+                />
+              )}
               <StatCard
                 label="Home covers"
                 value={fmt(pct(ls.homeCovers))}
