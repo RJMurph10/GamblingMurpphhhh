@@ -81,8 +81,13 @@ async function get(path, { save = true } = {}) {
       await sleep(wait);
       continue;
     }
-    if (r.status === 404) return null;
-    if (!r.ok) throw new Error(`${r.status} ${path}: ${(await r.text()).slice(0, 300)}`);
+    if (r.status === 401 || r.status === 403)
+      throw new Error(`${r.status} ${path}: ${(await r.text()).slice(0, 300)}`);
+    if (!r.ok) {
+      // one bad request shouldn't lose the rest of the run: note it and move on
+      console.log(`  skipped ${r.status} ${path}: ${(await r.text()).slice(0, 200)}`);
+      return null;
+    }
     const body = await r.json();
     if (save) {
       await mkdir(dirname(f), { recursive: true });
@@ -149,7 +154,7 @@ async function main() {
   const events = await all("/v1/events");
   const oddsEvents = await all("/v1/odds/events");
   const venues = new Set();
-  const teamSeasons = new Map(); // team id -> season ids it played in
+  const teamEvents = new Map(); // team id -> league weekends (event ids) it played in
 
   for (const comp of comps) {
     const seasons = await all(`/v1/seasons?competition=${encodeURIComponent(idOf(comp))}`);
@@ -170,8 +175,10 @@ async function main() {
         const full = await get(`/v1/fixtures/${fid}`);
         const v = full?.data?.venue_id ?? full?.data?.venue?.id;
         if (v) venues.add(v);
-        for (const t of sideTeams(fx))
-          teamSeasons.set(t, new Set([...(teamSeasons.get(t) ?? []), sid]));
+        const ev = fx.event_id ?? full?.data?.event_id;
+        if (ev)
+          for (const t of sideTeams(fx))
+            teamEvents.set(t, new Set([...(teamEvents.get(t) ?? []), ev]));
         await get(`/v1/fixtures/${fid}/plays`);
         await get(`/v1/fixtures/${fid}/odds`);
         const matches = await get(`/v1/fixtures/${fid}/matches`);
@@ -195,12 +202,12 @@ async function main() {
     }
   }
 
-  // teams: identity, schedule and the roster for each season they played
-  for (const [t, seasons] of teamSeasons) {
+  // teams: identity and schedule, and the roster for every league weekend (event) they played: the
+  // PLL's rosters change week to week
+  for (const [t, evs] of teamEvents) {
     await get(`/v1/teams/${t}`);
     await get(`/v1/teams/${t}/fixtures`);
-    await get(`/v1/teams/${t}/roster`);
-    for (const sid of seasons) await get(`/v1/teams/${t}/roster?season=${encodeURIComponent(sid)}`);
+    for (const e of evs) await get(`/v1/teams/${t}/roster?event_id=${encodeURIComponent(e)}`);
   }
   // league events (weekends): details, teams, standings
   for (const e of ids(events)) {
