@@ -7,13 +7,13 @@
   "id": "8",
   "abbr": "DET",
   "name": "Detroit Pistons",
-  "score": 74
+  "score": 80
  },
  "home": {
   "id": "14",
   "abbr": "MIA",
   "name": "Miami Heat",
-  "score": 77
+  "score": 94
  },
  "neutral": false,
  "venue": "Kaseya Center",

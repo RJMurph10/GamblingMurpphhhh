@@ -7,7 +7,7 @@
   "id": "2378",
   "abbr": "UMBC",
   "name": "UMBC Retrievers",
-  "score": 41
+  "score": 42
  },
  "home": {
   "id": "119",
@@ -18,7 +18,7 @@
  "neutral": false,
  "venue": "SECU Arena",
  "seasonType": 2,
- "state": "in",
+ "state": "post",
  "lines": {
   "open": {
    "at": "2026-11-14T03:44:50.497Z",
@@ -801,5 +801,9 @@
    ]
   }
  },
- "props": {}
+ "props": {},
+ "final": {
+  "away": 42,
+  "home": 68
+ }
 }
