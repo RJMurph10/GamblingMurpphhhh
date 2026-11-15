@@ -7,18 +7,18 @@
   "id": "166",
   "abbr": "NMSU",
   "name": "New Mexico State Aggies",
-  "score": 41
+  "score": 61
  },
  "home": {
   "id": "21",
   "abbr": "SDSU",
   "name": "San Diego State Aztecs",
-  "score": 52
+  "score": 73
  },
  "neutral": true,
  "venue": "Frontwave Arena",
  "seasonType": 2,
- "state": "in",
+ "state": "post",
  "lines": {
   "open": {
    "at": "2026-11-15T02:45:11.429Z",
@@ -852,5 +852,9 @@
    ]
   }
  },
- "props": {}
+ "props": {},
+ "final": {
+  "away": 61,
+  "home": 73
+ }
 }

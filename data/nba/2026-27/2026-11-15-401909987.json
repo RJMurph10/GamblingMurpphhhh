@@ -7,13 +7,13 @@
   "id": "30",
   "abbr": "CHA",
   "name": "Charlotte Hornets",
-  "score": 70
+  "score": 85
  },
  "home": {
   "id": "12",
   "abbr": "LAC",
   "name": "LA Clippers",
-  "score": 57
+  "score": 86
  },
  "neutral": false,
  "venue": "Intuit Dome",

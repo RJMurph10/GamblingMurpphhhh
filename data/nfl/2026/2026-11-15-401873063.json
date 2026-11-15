@@ -7,13 +7,13 @@
   "id": "25",
   "abbr": "SF",
   "name": "San Francisco 49ers",
-  "score": 17
+  "score": 31
  },
  "home": {
   "id": "6",
   "abbr": "DAL",
   "name": "Dallas Cowboys",
-  "score": 16
+  "score": 19
  },
  "neutral": false,
  "venue": "AT&T Stadium",

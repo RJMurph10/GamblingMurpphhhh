@@ -7,13 +7,13 @@
   "id": "13",
   "abbr": "LAL",
   "name": "Los Angeles Lakers",
-  "score": 108
+  "score": 122
  },
  "home": {
   "id": "21",
   "abbr": "PHX",
   "name": "Phoenix Suns",
-  "score": 92
+  "score": 114
  },
  "neutral": false,
  "venue": "Mortgage Matchup Center",

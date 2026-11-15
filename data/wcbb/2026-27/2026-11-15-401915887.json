@@ -7,13 +7,13 @@
   "id": "56",
   "abbr": "STET",
   "name": "Stetson Hatters",
-  "score": 9
+  "score": 19
  },
  "home": {
   "id": "228",
   "abbr": "CLEM",
   "name": "Clemson Tigers",
-  "score": 52
+  "score": 69
  },
  "neutral": false,
  "venue": "Littlejohn Coliseum",
