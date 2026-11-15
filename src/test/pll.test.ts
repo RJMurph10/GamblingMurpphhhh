@@ -87,9 +87,9 @@ describe("withEraLogos", () => {
   const team = (id: string) => ({
     id,
     abbr: "",
-    name: "",
-    short: "",
-    location: "",
+    name: id === "127631" ? "Utah Archers" : "Denver Outlaws",
+    short: id === "127631" ? "Archers" : "Outlaws",
+    location: id === "127631" ? "Utah" : "Denver",
     logo: `espn/${id}`,
   });
   const season = (y: number) => ({ season: y, teams: [team("127631"), team("122896")], games: [] });
@@ -97,5 +97,17 @@ describe("withEraLogos", () => {
     expect(withEraLogos(season(2023)).teams[0].logo).toBe("/logos/pll-archers-original.png");
     expect(withEraLogos(season(2023)).teams[1].logo).toBe("espn/122896");
     expect(withEraLogos(season(2024)).teams[0].logo).toBe("espn/127631");
+  });
+  it("drops the city before 2024", () => {
+    expect(withEraLogos(season(2023)).teams[0].name).toBe("Archers Lacrosse Club");
+    expect(withEraLogos(season(2023)).teams[0].location).toBe("");
+    expect(withEraLogos(season(2024)).teams[0].name).toBe("Utah Archers");
+  });
+  it("uses the Whipsnakes' gold-trim logo in 2024-2025", () => {
+    const whip = (y: number) =>
+      withEraLogos({ season: y, teams: [{ ...team("127638"), id: "127638" }], games: [] }).teams[0]
+        .logo;
+    expect(whip(2025)).toBe("/logos/pll-whipsnakes-2024.png");
+    expect(whip(2026)).toBe("espn/127638");
   });
 });

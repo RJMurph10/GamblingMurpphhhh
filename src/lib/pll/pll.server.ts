@@ -180,25 +180,41 @@ async function loadHistory(year: number): Promise<PllSeason> {
 
 /** One PLL year's games and teams. Refreshed every minute while a game is on, else every 30 minutes. */
 /**
- * The clubs' original "Lacrosse Club" logos, used through 2023; the league moved to city names and new
- * logos in 2024 (ESPN only has the new ones). From the PLL's site, stored in public/logos.
+ * Logos by era. The clubs used their original "Lacrosse Club" logos through 2023; the league moved to
+ * city/state names and new logos in 2024 (ESPN only has the current ones). The Whipsnakes' 2024-2025
+ * logo had gold trim; ESPN's current one has teal. From the PLL's site and TheSportsDB, stored in
+ * public/logos.
  */
-const ORIGINAL_LOGOS: Record<string, string> = {
-  "127631": "/logos/pll-archers-original.png",
-  "127632": "/logos/pll-atlas-original.png",
-  "127634": "/logos/pll-chaos-original.png",
-  "127636": "/logos/pll-redwoods-original.png",
-  "127637": "/logos/pll-waterdogs-original.png",
-  "127638": "/logos/pll-whipsnakes-original.png",
-  "122997": "/logos/pll-cannons-original.png",
+const ERA_LOGOS: Record<string, [from: number, to: number, logo: string][]> = {
+  "127631": [[2019, 2023, "/logos/pll-archers-original.png"]],
+  "127632": [[2019, 2023, "/logos/pll-atlas-original.png"]],
+  "127634": [[2019, 2023, "/logos/pll-chaos-original.png"]],
+  "127636": [[2019, 2023, "/logos/pll-redwoods-original.png"]],
+  "127637": [[2019, 2023, "/logos/pll-waterdogs-original.png"]],
+  "127638": [
+    [2019, 2023, "/logos/pll-whipsnakes-original.png"],
+    [2024, 2025, "/logos/pll-whipsnakes-2024.png"],
+  ],
+  "122997": [[2019, 2023, "/logos/pll-cannons-original.png"]],
 };
 
-/** A season's clubs with the logos they used that year. */
+/**
+ * A season's clubs as they were that year: the logo they used, and before 2024 (when the league gave
+ * clubs cities or states) no place name: "Archers Lacrosse Club", not "Utah Archers".
+ */
 export function withEraLogos(s: PllSeason): PllSeason {
-  if (s.season > 2023) return s;
+  const y = s.season;
   return {
     ...s,
-    teams: s.teams.map((t) => (ORIGINAL_LOGOS[t.id] ? { ...t, logo: ORIGINAL_LOGOS[t.id] } : t)),
+    teams: s.teams.map((t) => {
+      const logo = ERA_LOGOS[t.id]?.find(([from, to]) => y >= from && y <= to)?.[2];
+      const club = y <= 2023 && !t.id.startsWith("as-") && t.location;
+      return {
+        ...t,
+        ...(logo ? { logo } : {}),
+        ...(club ? { name: `${t.short} Lacrosse Club`, location: "" } : {}),
+      };
+    }),
   };
 }
 
