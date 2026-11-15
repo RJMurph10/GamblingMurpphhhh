@@ -1,6 +1,8 @@
 name: Extra game lines (Odds API + SportsGameOdds)
 
 # Lines for games ESPN shows none for, saved as snapshots to props-site/extra-lines/<source>/<league>/
+#   - PLL from The Odds API (moneyline, spread, total; only while games are posted), also folded into
+#     props-site/lines/pll.json for the PLL pages
 # and merged into the season files by the hourly line saver (scripts/cbb/build-season.mjs):
 #   - women's college basketball from The Odds API (2 credits a pull; keeps what the NFL prop prices
 #     still need this month, so a pull is skipped when credits are short). Books post most women's lines
@@ -52,6 +54,9 @@ jobs:
           # women's: every run except the morning one (manual runs too)
           if [ "$cron" != "10 15 * * *" ]; then
             node app/scripts/line-history/odds-api-games.mjs --sport basketball_wncaab --out pull/oddsapi/wcbb || echo "Odds API pull failed"
+            # PLL (and its winter Championship Series): free while it's off-season (nothing on the board),
+            # 3 credits a pull when games are posted
+            node app/scripts/line-history/odds-api-games.mjs --sport lacrosse_pll --markets h2h,spreads,totals --out pull/oddsapi/pll || echo "Odds API PLL pull failed"
           fi
           # men's from SportsGameOdds once a day (to stay inside the free plan's monthly events): the morning run,
           # a manual run, or any later run when there's no snapshot from today yet (GitHub sometimes drops a run)
@@ -70,6 +75,9 @@ jobs:
             mkdir -p site-repo/extra-lines && cp -r pull/* site-repo/extra-lines/
             # line shopping: merge today's every-book snapshots into the site's latest files
             mkdir -p site-repo/best-lines
+            # PLL: fold the snapshots into the site's lines file (opener + latest consensus, every book)
+            pll=$(ls pull/oddsapi/pll/*.json 2>/dev/null || true)
+            if [ -n "$pll" ]; then node app/scripts/lacrosse/merge-pll-lines.mjs site-repo/lines/pll.json $pll; fi
             for lg in cbb nba; do
               snaps=$(ls pull/sgo/$lg/*.json 2>/dev/null || true)
               if [ -n "$snaps" ]; then node app/scripts/line-history/merge-best-lines.mjs site-repo/best-lines/$lg.json $snaps; fi

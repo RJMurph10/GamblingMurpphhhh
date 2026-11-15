@@ -3,9 +3,18 @@ import { useQueries } from "@tanstack/react-query";
 import { createFileRoute, Link } from "@tanstack/react-router";
 import { Panel, PanelHeader } from "@/components/shared/booth";
 import { PllLinesNote, PllLogo, PllSourceNote } from "@/components/pll/PllBits";
-import { PHASE_LABEL, pllDate, teamOf, type PllGame } from "@/lib/pll/pll";
+import {
+  americanText,
+  lineResult,
+  linesFor,
+  spreadText,
+  type PllLine,
+  type PllLinesFile,
+} from "@/lib/pll/lines";
+
+import { PHASE_LABEL, pllDate, teamOf, type PllGame, type PllSeason } from "@/lib/pll/pll";
 import { getPllSeason } from "@/lib/pll/pll.functions";
-import { PLL_SEASONS } from "@/lib/pll/use-pll";
+import { PLL_SEASONS, usePllLines } from "@/lib/pll/use-pll";
 
 export const Route = createFileRoute("/pll/games/$gameId")({
   head: () => ({ meta: [{ title: "Game — GamblingPLL" }] }),
@@ -39,6 +48,7 @@ function useGame(id: string) {
 function PllGamePage() {
   const { gameId } = Route.useParams();
   const { game, season, loading } = useGame(gameId);
+  const linesQ = usePllLines();
   if (!game)
     return (
       <Panel>
@@ -139,13 +149,7 @@ function PllGamePage() {
         </Panel>
       ) : null}
 
-      <Panel padded={false}>
-        <PanelHeader title="Lines" />
-        <div className="space-y-2 px-4 py-3">
-          <PllLinesNote />
-          <PllSourceNote season={game.season} />
-        </div>
-      </Panel>
+      <GameLines game={game} season={season} lines={linesQ.data} />
     </div>
   );
 }
@@ -176,5 +180,120 @@ function Center({ game }: { game: PllGame }) {
         </span>
       ) : null}
     </div>
+  );
+}
+
+const BOOK_NAMES: Record<string, string> = {
+  draftkings: "DraftKings",
+  fanduel: "FanDuel",
+  betmgm: "BetMGM",
+  williamhill_us: "Caesars",
+  caesars: "Caesars",
+  espnbet: "theScore Bet",
+  fanatics: "Fanatics",
+  hardrockbet: "Hard Rock",
+  bet365: "bet365",
+  betrivers: "BetRivers",
+  ballybet: "Bally Bet",
+  bovada: "Bovada",
+  betonlineag: "BetOnline",
+  mybookieag: "MyBookie",
+  lowvig: "LowVig",
+};
+
+/** The game's lines: consensus opener and latest (spread, moneyline, total), result, and every book. */
+function GameLines({
+  game,
+  season,
+  lines,
+}: {
+  game: PllGame;
+  season?: PllSeason;
+  lines?: PllLinesFile | null;
+}) {
+  const lg = linesFor(game, season, lines);
+  const home = teamOf(season, game.home.teamId)?.short ?? "Home";
+  const away = teamOf(season, game.away.teamId)?.short ?? "Away";
+  const res = lg ? lineResult(game, lg.latest) : null;
+  const row = (label: string, l: PllLine) => (
+    <tr key={label}>
+      <td className="px-4 py-1.5 text-mute">{label}</td>
+      <td className="px-2 py-1.5 text-right">
+        {home} {spreadText(l.spread)}
+      </td>
+      <td className="px-2 py-1.5 text-right">
+        {americanText(l.mlAway)} / {americanText(l.mlHome)}
+      </td>
+      <td className="px-4 py-1.5 text-right">{l.total ?? "—"}</td>
+    </tr>
+  );
+  const books = lg ? Object.entries(lg.books) : [];
+  return (
+    <Panel padded={false}>
+      <PanelHeader title="Lines" />
+      {lg ? (
+        <>
+          <table className="w-full font-mono text-xs tabular-nums">
+            <thead>
+              <tr className="text-left text-[10px] uppercase tracking-wider text-faint">
+                <th className="px-4 py-2 font-normal" />
+                <th className="px-2 py-2 text-right font-normal">Spread</th>
+                <th className="px-2 py-2 text-right font-normal">
+                  ML {away} / {home}
+                </th>
+                <th className="px-4 py-2 text-right font-normal">Total</th>
+              </tr>
+            </thead>
+            <tbody className="divide-y divide-line/5">
+              {row("Open", lg.open)}
+              {row(game.status === "final" ? "Close" : "Latest", lg.latest)}
+            </tbody>
+          </table>
+          {res ? (
+            <p className="px-4 py-2 font-mono text-[11px] text-mute">
+              {res.cover === "push"
+                ? "Spread pushed"
+                : `${res.cover === "home" ? home : away} covered`}
+              {res.ou ? ` · ${res.ou === "push" ? "total pushed" : `went ${res.ou}`}` : ""}
+              {res.favWon == null ? "" : ` · favorite ${res.favWon ? "won" : "lost"}`}
+            </p>
+          ) : null}
+          {books.length ? (
+            <div className="overflow-x-auto border-t border-line/5">
+              <table className="w-full min-w-[420px] font-mono text-xs tabular-nums">
+                <thead>
+                  <tr className="text-left text-[10px] uppercase tracking-wider text-faint">
+                    <th className="px-4 py-2 font-normal">Book</th>
+                    <th className="px-2 py-2 text-right font-normal">{home} spread</th>
+                    <th className="px-2 py-2 text-right font-normal">ML</th>
+                    <th className="px-4 py-2 text-right font-normal">Total</th>
+                  </tr>
+                </thead>
+                <tbody className="divide-y divide-line/5">
+                  {books.map(([k, b]) => (
+                    <tr key={k}>
+                      <td className="px-4 py-1.5 font-sans text-mute">{BOOK_NAMES[k] ?? k}</td>
+                      <td className="px-2 py-1.5 text-right">
+                        {b.spread
+                          ? `${spreadText(b.spread[0])} (${americanText(b.spread[1])})`
+                          : "—"}
+                      </td>
+                      <td className="px-2 py-1.5 text-right">
+                        {b.ml ? `${americanText(b.ml[1])} / ${americanText(b.ml[0])}` : "—"}
+                      </td>
+                      <td className="px-4 py-1.5 text-right">{b.total ? b.total[0] : "—"}</td>
+                    </tr>
+                  ))}
+                </tbody>
+              </table>
+            </div>
+          ) : null}
+        </>
+      ) : null}
+      <div className="space-y-2 px-4 py-3">
+        <PllLinesNote hasLines={Boolean(lg)} />
+        <PllSourceNote season={game.season} />
+      </div>
+    </Panel>
   );
 }

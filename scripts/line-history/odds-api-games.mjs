@@ -48,12 +48,21 @@ async function main() {
   const before = Number(probe.headers.get("x-requests-remaining"));
   const sports = probe.ok ? await probe.json() : [];
   const listed = sports.find((s) => s.key === SPORT);
-  console.log(`${SPORT}: ${listed ? (listed.active ? "active" : "listed, not active") : "not listed"}; ${before} credits left`);
+  console.log(
+    `${SPORT}: ${listed ? (listed.active ? "active" : "listed, not active") : "not listed"}; ${before} credits left`,
+  );
+  // an off-season sport has nothing on the board: don't spend credits asking
+  if (listed && !listed.active) return;
   if (Number.isFinite(before) && before - MARKETS.split(",").length < KEEP) {
     console.log(`only ${before} credits left (keeping ${KEEP} for the NFL prop prices); skipping`);
     return;
   }
-  const q = new URLSearchParams({ apiKey: KEY, regions: "us", markets: MARKETS, oddsFormat: "american" });
+  const q = new URLSearchParams({
+    apiKey: KEY,
+    regions: "us",
+    markets: MARKETS,
+    oddsFormat: "american",
+  });
   const res = await fetch(`https://api.the-odds-api.com/v4/sports/${SPORT}/odds?${q}`);
   const left = Number(res.headers.get("x-requests-remaining"));
   if (!res.ok) throw new Error(`${res.status}: ${(await res.text()).slice(0, 200)}`);
@@ -77,7 +86,9 @@ async function main() {
         key: b.key,
         spread: hs ? [hs.point, hs.price, as?.price ?? null] : null,
         total: ov ? [ov.point, ov.price, un?.price ?? null] : null,
-        ml: h2h.length ? [side(h2h, g.home_team)?.price ?? null, side(h2h, g.away_team)?.price ?? null] : null,
+        ml: h2h.length
+          ? [side(h2h, g.home_team)?.price ?? null, side(h2h, g.away_team)?.price ?? null]
+          : null,
       };
     }),
   }));
@@ -85,9 +96,17 @@ async function main() {
   await mkdir(OUT, { recursive: true });
   await writeFile(
     join(OUT, `${at.slice(0, 13)}.json`),
-    JSON.stringify({ at, sport: SPORT, creditsBefore: before, creditsLeft: Number.isFinite(left) ? left : null, games }),
+    JSON.stringify({
+      at,
+      sport: SPORT,
+      creditsBefore: before,
+      creditsLeft: Number.isFinite(left) ? left : null,
+      games,
+    }),
   );
-  console.log(`${games.length} games, ${games.filter((g) => g.books.length).length} with lines; ${left} credits left`);
+  console.log(
+    `${games.length} games, ${games.filter((g) => g.books.length).length} with lines; ${left} credits left`,
+  );
 }
 
 main().catch((e) => {
