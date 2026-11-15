@@ -33,11 +33,12 @@ function PllTeamPage() {
   const games = useMemo(
     () =>
       [...(q.data?.games ?? [])]
-        .filter((g) => g.home.teamId === teamId || g.away.teamId === teamId)
-        .reverse(),
+        // in date order, like a schedule
+        .filter((g) => g.home.teamId === teamId || g.away.teamId === teamId),
     [q.data, teamId],
   );
   const n = row ? row.w + row.l : 0;
+  const [tab, setTab] = useState<"schedule" | "roster">("schedule");
   return (
     <>
       <PageTitle
@@ -64,18 +65,47 @@ function PllTeamPage() {
           value={row ? `${row.home[0]}-${row.home[1]} / ${row.away[0]}-${row.away[1]}` : "—"}
         />
       </div>
-      <Panel padded={false} className="mt-6">
-        <PanelHeader title="Games" aside={<span className="label-mono">{games.length}</span>} />
-        <PllGamesTable
-          games={games}
-          season={q.data}
-          empty={q.isLoading ? "Loading…" : "No games this season."}
-        />
-      </Panel>
-      <div className="mt-6 grid gap-6 lg:grid-cols-[1.4fr_1fr]">
-        <PllRosterPanel teamId={teamId} season={season} />
-        <PllLeaders season={season} data={q.data} teamId={teamId} />
+      <div
+        className="mt-6 grid grid-cols-2 gap-1 rounded-lg border border-line/10 p-1"
+        role="tablist"
+        aria-label="Team view"
+      >
+        {(
+          [
+            ["schedule", "Schedule"],
+            ["roster", "Roster"],
+          ] as const
+        ).map(([v, label]) => (
+          <button
+            key={v}
+            type="button"
+            role="tab"
+            aria-selected={tab === v}
+            onClick={() => setTab(v)}
+            className={`rounded-md px-2 py-2.5 font-disp text-xs font-semibold uppercase tracking-wider transition-colors sm:text-sm ${tab === v ? "bg-acc text-black" : "text-mute hover:bg-line/5 hover:text-foreground"}`}
+          >
+            {label}
+          </button>
+        ))}
       </div>
+      {tab === "schedule" ? (
+        <Panel padded={false} className="mt-4">
+          <PanelHeader
+            title="Schedule"
+            aside={<span className="label-mono">{games.length} games</span>}
+          />
+          <PllGamesTable
+            games={games}
+            season={q.data}
+            empty={q.isLoading ? "Loading…" : "No games this season."}
+          />
+        </Panel>
+      ) : (
+        <div className="mt-4 grid gap-6 lg:grid-cols-[1.4fr_1fr]">
+          <PllRosterPanel teamId={teamId} season={season} />
+          <PllLeaders season={season} data={q.data} teamId={teamId} />
+        </div>
+      )}
     </>
   );
 }
