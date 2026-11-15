@@ -386,14 +386,19 @@ export function PageTitle({
   eyebrow,
   title,
   aside,
+  leading,
 }: {
   eyebrow: string;
   title: string;
   aside?: ReactNode;
+  /** Shown left of the eyebrow and title (a team logo). */
+  leading?: ReactNode;
 }) {
   return (
     <div className="mb-4 flex flex-wrap items-end justify-between gap-3">
-      <div>
+      <div className={leading ? "flex items-center gap-3" : undefined}>
+        {leading}
+        <div>
         {eyebrow ? (
           <p suppressHydrationWarning className="font-mono text-[11px] uppercase tracking-[0.2em] text-faint">
             {eyebrow}
@@ -404,6 +409,7 @@ export function PageTitle({
             {title}
           </h1>
         ) : null}
+        </div>
       </div>
       {aside}
     </div>

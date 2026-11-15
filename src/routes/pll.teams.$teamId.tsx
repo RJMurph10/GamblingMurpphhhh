@@ -48,14 +48,12 @@ function PllTeamPage() {
         eyebrow="Premier Lacrosse League"
         title={team?.name ?? (q.isLoading ? "Loading…" : "Team")}
         aside={<PllSeasonPicker season={season} onChange={setSeason} seasons={seasons} />}
+        leading={team ? <PllLogo team={team} className="size-12 shrink-0 sm:size-14" /> : undefined}
       />
-      {team ? (
-        <div className="mb-6 flex items-center gap-4">
-          <PllLogo team={team} className="size-16" />
-          <div className="space-y-0.5 font-mono text-xs text-mute">
-            {team.location ? <div>{team.location}</div> : null}
-            {coaches.length ? <div>Head coach: {coaches.join(", ")}</div> : null}
-          </div>
+      {team && (team.location || coaches.length) ? (
+        <div className="mb-6 space-y-0.5 font-mono text-xs text-mute">
+          {team.location ? <div>{team.location}</div> : null}
+          {coaches.length ? <div>Head coach: {coaches.join(", ")}</div> : null}
         </div>
       ) : null}
       <div className="grid grid-cols-2 gap-3 lg:grid-cols-4">
