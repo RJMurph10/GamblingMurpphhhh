@@ -110,3 +110,54 @@ const awards =
 
 /** A season's end-of-year awards (MVP first), from its Wikipedia season page. */
 export const pllAwards = (season: number) => awards[String(season)];
+
+type Extra = {
+  coaches?: Record<string, Record<string, string[]>>;
+  drafts?: Record<string, Record<string, PllDraftPick[]>>;
+  champions?: PllChampionship[];
+};
+const extra = data as unknown as Extra;
+
+export type PllDraftPick = {
+  round: string;
+  pick: string;
+  player: string;
+  pos: string;
+  college: string;
+};
+export type PllChampionship = {
+  season: number;
+  champion: string | null;
+  runnerUp: string | null;
+  score: [number, number];
+  ot: boolean;
+  /** Best regular-season record. */
+  regularSeasonLeader: string | null;
+  /** Championship game MVP. */
+  mvp: string | null;
+};
+
+/** A club's head coach(es) that season, from its Wikipedia page's coaching history. */
+export const pllCoaches = (teamId: string, season: number): string[] =>
+  extra.coaches?.[teamId]?.[String(season)] ?? [];
+
+/** A club's college draft picks that year. */
+export const pllDraft = (teamId: string, season: number): PllDraftPick[] =>
+  extra.drafts?.[teamId]?.[String(season)] ?? [];
+
+/** Every championship game, newest first. */
+export const pllChampionships = (): PllChampionship[] =>
+  [...(extra.champions ?? [])].sort((a, b) => b.season - a.season);
+
+/** Clubs by id, for seasons whose team list isn't loaded (names don't change across eras). */
+export const PLL_CLUB_SHORT: Record<string, string> = {
+  "127631": "Archers",
+  "127632": "Atlas",
+  "122997": "Cannons",
+  "127634": "Chaos",
+  "127635": "Chrome",
+  "122896": "Outlaws",
+  "127636": "Redwoods",
+  "127637": "Waterdogs",
+  "127638": "Whipsnakes",
+};

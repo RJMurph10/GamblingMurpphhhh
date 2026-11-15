@@ -223,6 +223,95 @@ for y in range(2019, 2027):
     for r in out: r["player"] = NAME_FIX.get(r["player"], r["player"])
     if out: awards[y] = dict(page=f"{y}_Premier_Lacrosse_League_season", rows=out)
 
+# ---- head coaches: each team page's coaches table ("# | Name | Term | record...") -> coach per season
+TEAM_SEASONS = {  # team id -> (first, last) PLL seasons
+    "127631": (2019, 2099), "127632": (2019, 2099), "122997": (2021, 2099), "127634": (2019, 2099),
+    "127635": (2019, 2023), "122896": (2024, 2099), "127636": (2019, 2099), "127637": (2020, 2099), "127638": (2019, 2099),
+}
+LAST_SEASON = 2026
+
+def coach_rows(w):
+    m = re.search(r"\n(==+)\s*(?:All-time |Current )?[Hh]ead [Cc]oaches\s*\1", w)
+    if not m: return []
+    sec = w[m.end():]
+    sec = sec[: (re.search(r"\n==[^=]", sec) or re.search(r"$", sec)).start()]
+    out = []
+    for cap, head, rows in tables(sec):
+        ni = next((head.index(h) for h in ("Name", "Coach") if h in head), None)
+        ti = next((head.index(h) for h in ("Term", "Seasons") if h in head), None)
+        if ni is None or ti is None: continue
+        for r in rows:
+            if len(r) <= ti or not r[ni]: continue
+            yrs = [int(x) for x in re.findall(r"\b(20\d\d)\b", r[ti])]
+            if not yrs: continue
+            open_ = bool(re.search(r"[–-]\s*$", r[ti])) or bool(re.search(r"present|current", r[ti], re.I))
+            out.append(dict(name=re.sub(r"\s+", " ", r[ni]).strip(), first=yrs[0], last=LAST_SEASON if open_ else yrs[-1]))
+    return out
+
+coaches = {}
+# Chrome's page became the Denver Outlaws' (same franchise), so Chrome's coaches come from that page
+for tid, page in list(PAGES.items()) + [("127635", "Denver_Outlaws")]:
+    first, last = TEAM_SEASONS[tid]
+    for c in coach_rows(d[page]):
+        for y in range(max(c["first"], first), min(c["last"], last) + 1):
+            coaches.setdefault(tid, {}).setdefault(str(y), [])
+            if c["name"] not in coaches[tid][str(y)]: coaches[tid][str(y)].append(c["name"])
+
+# ---- draft history: "College Draft" tables per year on each team page
+def draft_rows(w):
+    m = re.search(r"\n(==+)\s*(?:All[- ]time [Dd]raft [Ss]elections|Draft history|Draft picks)\s*\1", w)
+    if not m: return {}
+    sec = w[m.end():]
+    # the section runs to the next level-2 heading that isn't one of its draft years
+    for h in re.finditer(r"\n==([^=].*?)==\s*\n", sec):
+        if "Draft" not in h.group(1): sec = sec[: h.start()]; break
+    out = {}
+    pos = 0
+    for tm in re.finditer(r"\n\{\|.*?\n\|\}", sec, re.S):
+        before = sec[pos: tm.start()]; pos = tm.end()
+        # heading-like lines only (bold, a link or a == heading naming a draft year), not prose or
+        # references that mention a draft
+        # (inside the draft section a bare bold year, '''[[2019 ...|2019]]''', is a draft year too)
+        heads = [h for h in re.findall(r"\n((?:'''|\[\[|=)[^\n]*\d{4}[^\n]*)", before) if len(h) < 140 and "<ref" not in h]
+        y = kind = None
+        if heads:
+            h = heads[-1]
+            if re.search(r"Acquisition|Pool|Supplemental|Trade", h): continue
+            # the year shown, not the link target's: [[2024 ...|'''2025 College Draft''']] is 2025
+            shown = re.sub(r"\[\[[^\]|]*\|([^\]]*)\]\]", r"\1", h)
+            yrs = re.findall(r"\d{4}", shown) or re.findall(r"\d{4}", h)
+            y = yrs[-1]
+            kind = "Entry" if "Entry" in h else "Expansion" if "Expansion" in h else "College"
+        if kind and kind != "College": continue
+        for cap, head, rows in tables(tm.group(0)):
+            if head and head[0] == "Draft":  # one table, the year in the first cell of each year's rows
+                cur = None
+                for r in rows:
+                    if len(r) == len(head):
+                        ym = re.search(r"(\d{4})", r[0]); cur = (ym.group(1), "(E)" in r[0] or "Entry" in r[0]) if ym else None
+                        r = r[1:]
+                    if not cur or cur[1] or len(r) < 5: continue
+                    out.setdefault(cur[0], []).append(dict(round=r[0], pick=r[1], player=r[2], pos=r[3], college=r[4]))
+                continue
+            if y is None: continue
+            col = {h: i for i, h in enumerate(head)}
+            pi = col.get("Player"); ci = col.get("College"); po = col.get("Pos.", col.get("Position"))
+            ri = col.get("Rnd.", col.get("Round")); ki = col.get("Pick #", col.get("Pick"))
+            if pi is None: continue
+            for r in rows:
+                if len(r) <= pi or not r[pi]: continue
+                g = lambda i: r[i].strip() if i is not None and i < len(r) else ""
+                if ri is not None and not g(ri).isdigit(): continue  # "Undrafted" signings
+                out.setdefault(y, []).append(dict(round=g(ri), pick=g(ki), player=re.sub(r"\s*\*?Note\*.*$", "", g(pi)).strip(),
+                                                  pos=g(po), college=g(ci)))
+    return out
+
+drafts = {}
+for tid, page in list(PAGES.items()) + [("127635", "Denver_Outlaws")]:
+    first, last = TEAM_SEASONS[tid]
+    for y, rows in draft_rows(d[page]).items():
+        if first <= int(y) <= last: drafts.setdefault(tid, {})[y] = rows
+
 # awards listed without a team: the team whose roster had the player that season (else the closest season)
 def team_of(player, y):
     for yy in sorted({int(k) for r in rosters.values() for k in r}, key=lambda k: abs(k - y)):
@@ -235,8 +324,32 @@ for y, a in awards.items():
     for r in a["rows"]:
         if not r["team"]: r["team"] = team_of(r["player"], y)
 
-json.dump({"source": "Wikipedia (CC BY-SA 4.0): PLL team pages and season pages", "rosters": rosters, "leaders": leaders, "awards": awards},
+# ---- championship games: the league page's Seasons table (season | champion | score | runner-up | leader)
+champions = []
+lw = d.get("Premier_Lacrosse_League", "")
+sm = re.search(r"\n==\s*Seasons\s*==", lw)
+if sm:
+    sec = lw[sm.end():]
+    sec = sec[: (re.search(r"\n==[^=]", sec) or re.search(r"$", sec)).start()]
+    for tm in re.finditer(r"\n\{\|.*?\n\|\}", sec, re.S):
+        for r in tm.group(0).split("\n|-")[1:]:
+            cells = [clean(re.sub(r'^\s*(?:scope|style)="[^"]*"[^|]*\|', "", c)) for c in r.split("\n|")[1:]]
+            cells = [c for c in cells if c != ""]
+            if len(cells) < 4 or not re.fullmatch(r"\d{4}", cells[0]): continue
+            y = int(cells[0])
+            ot = "(OT)" in cells[2]
+            sc = re.match(r"(\d+)\s*[–-]\s*(\d+)", cells[2])
+            if not sc: continue
+            mvp = next((a["player"] for a in awards.get(y, {}).get("rows", []) if a["award"] == "Championship Game MVP"), None)
+            champions.append(dict(season=y, champion=team_id(cells[1]), score=[int(sc.group(1)), int(sc.group(2))], ot=ot,
+                                  runnerUp=team_id(cells[3]), regularSeasonLeader=team_id(cells[4]) if len(cells) > 4 else None,
+                                  mvp=mvp))
+
+json.dump({"source": "Wikipedia (CC BY-SA 4.0): PLL team pages and season pages", "rosters": rosters, "leaders": leaders, "awards": awards, "coaches": coaches, "drafts": drafts, "champions": champions},
           open(sys.argv[2], "w"), separators=(",", ":"), ensure_ascii=False)
 for t, r in rosters.items(): print("roster", t, {y: len(v["players"]) for y, v in sorted(r.items())})
 for y, l in leaders.items(): print("leaders", y, len(l["rows"]), sorted({x["stat"] for x in l["rows"]})[:14], l["rows"][:1])
 for y, a in awards.items(): print("awards", y, len(a["rows"]), [(r["award"][:28], r["player"], r["team"]) for r in a["rows"][:3]])
+for t, c in coaches.items(): print("coaches", t, c)
+for t, dr in drafts.items(): print("drafts", t, {y: len(v) for y, v in sorted(dr.items())}, list(dr.values())[0][:1])
+for c in champions: print("champ", c)

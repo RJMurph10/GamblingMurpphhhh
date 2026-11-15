@@ -8,6 +8,7 @@ import {
   PllSeasonPicker,
   PllSourceNote,
 } from "@/components/pll/PllBits";
+import { PllChampionships, PllTotals } from "@/components/pll/PllHistory";
 import { PllAwards, PllLeaders } from "@/components/pll/PllPlayers";
 import { pulse, standings } from "@/lib/pll/pll";
 import { currentPllSeason, usePllSeason } from "@/lib/pll/use-pll";
@@ -147,6 +148,7 @@ function PllDashboard() {
           </Panel>
           <PllLeaders season={season} data={s} />
           <PllAwards season={season} data={s} />
+          <PllChampionships season={season} />
         </div>
 
         <div className="space-y-6">
@@ -156,6 +158,7 @@ function PllDashboard() {
               <PllGamesTable games={upcoming} season={s} empty="" />
             </Panel>
           ) : null}
+          <PllTotals games={s?.games ?? []} />
           <Panel padded={false}>
             <PanelHeader
               title="Recent results"
