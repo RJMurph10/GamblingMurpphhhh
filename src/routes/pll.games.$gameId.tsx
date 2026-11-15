@@ -157,9 +157,6 @@ function ScoreBox({
       className="group flex flex-col items-center gap-1 text-center"
     >
       <PllLogo team={t} className="size-10 transition-transform group-hover:scale-105 sm:size-14" />
-      <span className="font-disp text-xs font-semibold uppercase tracking-tight sm:text-sm">
-        {t?.short}
-      </span>
       {side.record ? (
         <span className="font-mono text-xs text-mute group-hover:text-acc">{side.record}</span>
       ) : null}
@@ -172,13 +169,10 @@ function ScoreBox({
       {started ? (n ?? "") : ""}
     </span>
   );
-  // the favorite and its spread, as the NFL page shows it ("WAT -1.5")
-  const favSpread =
-    line?.spread == null
-      ? null
-      : line.spread <= 0
-        ? `${home?.abbr || home?.short || "Home"} ${spreadText(line.spread)}`
-        : `${away?.abbr || away?.short || "Away"} ${spreadText(-line.spread)}`;
+  // the favorite and its spread, as the NFL page shows it: its logo and the number
+  const fav = line?.spread == null ? undefined : line.spread <= 0 ? home : away;
+  const favNumber =
+    line?.spread == null ? null : spreadText(line.spread <= 0 ? line.spread : -line.spread);
   const coverClass =
     res?.cover == null || res.cover === "push"
       ? ""
@@ -228,13 +222,30 @@ function ScoreBox({
       </div>
       <div className="mt-4 flex flex-wrap items-center justify-center gap-x-3 gap-y-1 border-t border-line/10 pt-3 font-mono text-[11px] text-mute">
         <span>Spread:</span>
-        <span className={`font-semibold tabular-nums ${coverClass}`}>{favSpread ?? "—"}</span>
+        <span className={`inline-flex items-center gap-1 font-semibold tabular-nums ${coverClass}`}>
+          {favNumber ? (
+            <>
+              <PllLogo team={fav} className="size-4" />
+              {favNumber}
+            </>
+          ) : (
+            "—"
+          )}
+        </span>
         <span>·</span>
         <span>ML:</span>
-        <span className="font-semibold tabular-nums">
-          {line?.mlAway != null || line?.mlHome != null
-            ? `${away?.abbr || away?.short} ${americanText(line?.mlAway)} / ${home?.abbr || home?.short} ${americanText(line?.mlHome)}`
-            : "—"}
+        <span className="inline-flex items-center gap-1 font-semibold tabular-nums">
+          {line?.mlAway != null || line?.mlHome != null ? (
+            <>
+              <PllLogo team={away} className="size-4" />
+              {americanText(line?.mlAway)}
+              <span className="text-faint">/</span>
+              <PllLogo team={home} className="size-4" />
+              {americanText(line?.mlHome)}
+            </>
+          ) : (
+            "—"
+          )}
         </span>
         <span>·</span>
         <span>O/U:</span>
