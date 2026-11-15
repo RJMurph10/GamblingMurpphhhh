@@ -1,0 +1,58 @@
+{
+ "day": "2026-11-17",
+ "updated": "2026-11-15T06:45:32.981Z",
+ "picks": [
+  {
+   "id": "401866465-spread-bounce",
+   "game": "EMU @ WMU",
+   "tip": "2026-11-17T23:00Z",
+   "market": "spread",
+   "pick": "EMU +14.5",
+   "line": -14.5,
+   "open": -14.5,
+   "model": -14.3,
+   "edge": 0.2,
+   "best": true,
+   "tag": "bounce",
+   "firstSeen": "2026-11-15T06:45:32.981Z",
+   "lastSeen": "2026-11-15T06:45:32.981Z",
+   "latest": -14.5,
+   "latestAt": "2026-11-15T06:45:32.981Z"
+  },
+  {
+   "id": "401866465-total-wmu-calm",
+   "game": "EMU @ WMU",
+   "tip": "2026-11-17T23:00Z",
+   "market": "total",
+   "pick": "Over 47.5",
+   "line": 47.5,
+   "open": 47.5,
+   "model": null,
+   "edge": null,
+   "best": false,
+   "tag": "wmu-calm",
+   "note": "5 mph · gusts 10",
+   "firstSeen": "2026-11-15T06:45:32.981Z",
+   "lastSeen": "2026-11-15T06:45:32.981Z",
+   "latest": 47.5,
+   "latestAt": "2026-11-15T06:45:32.981Z"
+  },
+  {
+   "id": "401866466-total-open-total",
+   "game": "M-OH @ KENT",
+   "tip": "2026-11-18T00:00Z",
+   "market": "total",
+   "pick": "Over 45.5",
+   "line": 45.5,
+   "open": 45.5,
+   "model": 45.8,
+   "edge": 0.3,
+   "best": true,
+   "tag": "open-total",
+   "firstSeen": "2026-11-15T06:45:32.981Z",
+   "lastSeen": "2026-11-15T06:45:32.981Z",
+   "latest": 45.5,
+   "latestAt": "2026-11-15T06:45:32.981Z"
+  }
+ ]
+}

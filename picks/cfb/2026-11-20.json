@@ -1,0 +1,23 @@
+{
+ "day": "2026-11-20",
+ "updated": "2026-11-15T06:45:32.981Z",
+ "picks": [
+  {
+   "id": "401858529-spread-tz3",
+   "game": "ORE @ MSU",
+   "tip": "2026-11-21T01:00Z",
+   "market": "spread",
+   "pick": "MSU +13.5",
+   "line": 13.5,
+   "open": 12.5,
+   "model": null,
+   "edge": null,
+   "best": false,
+   "tag": "tz3",
+   "firstSeen": "2026-11-15T06:45:32.981Z",
+   "lastSeen": "2026-11-15T06:45:32.981Z",
+   "latest": 13.5,
+   "latestAt": "2026-11-15T06:45:32.981Z"
+  }
+ ]
+}

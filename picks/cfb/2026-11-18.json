@@ -1,0 +1,23 @@
+{
+ "day": "2026-11-18",
+ "updated": "2026-11-15T06:45:32.981Z",
+ "picks": [
+  {
+   "id": "401866467-spread-bounce",
+   "game": "AKR @ MASS",
+   "tip": "2026-11-19T00:00Z",
+   "market": "spread",
+   "pick": "AKR +2.5",
+   "line": -2.5,
+   "open": -3.5,
+   "model": -2.1,
+   "edge": 0.4,
+   "best": true,
+   "tag": "bounce",
+   "firstSeen": "2026-11-15T06:45:32.981Z",
+   "lastSeen": "2026-11-15T06:45:32.981Z",
+   "latest": -2.5,
+   "latestAt": "2026-11-15T06:45:32.981Z"
+  }
+ ]
+}

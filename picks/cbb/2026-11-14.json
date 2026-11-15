@@ -79,7 +79,12 @@
    "firstSeen": "2026-11-14T02:43:00.514Z",
    "latest": 158.5,
    "latestAt": "2026-11-14T19:30:28.914Z",
-   "alerted": false
+   "alerted": false,
+   "score": [
+    74,
+    79
+   ],
+   "close": 158.5
   }
  ]
 }
