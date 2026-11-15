@@ -1,0 +1,54 @@
+{
+ "day": "2026-11-15",
+ "updated": "2026-11-15T02:10:44.574Z",
+ "picks": [
+  {
+   "id": "401909554-total",
+   "game": "UNH @ BC",
+   "tip": "2026-11-15T18:30Z",
+   "market": "total",
+   "pick": "Over 134",
+   "line": 134,
+   "open": 134,
+   "model": 141.1,
+   "edge": 7.1,
+   "best": true,
+   "firstSeen": "2026-11-15T02:10:44.574Z",
+   "latest": 133.5,
+   "latestAt": "2026-11-15T02:10:44.574Z",
+   "alerted": false
+  },
+  {
+   "id": "401918453-total",
+   "game": "W&M @ MICH",
+   "tip": "2026-11-15T19:00Z",
+   "market": "total",
+   "pick": "Under 168",
+   "line": 168,
+   "open": 168,
+   "model": 160.1,
+   "edge": 7.9,
+   "best": true,
+   "firstSeen": "2026-11-15T02:10:44.574Z",
+   "latest": 166.5,
+   "latestAt": "2026-11-15T02:10:44.574Z",
+   "alerted": false
+  },
+  {
+   "id": "401923393-total",
+   "game": "WMU @ USI",
+   "tip": "2026-11-15T21:30Z",
+   "market": "total",
+   "pick": "Over 141.5",
+   "line": 141.5,
+   "open": 141.5,
+   "model": 150.9,
+   "edge": 9.4,
+   "best": true,
+   "firstSeen": "2026-11-15T02:10:44.574Z",
+   "latest": 141.5,
+   "latestAt": "2026-11-15T02:10:44.574Z",
+   "alerted": false
+  }
+ ]
+}
