@@ -234,7 +234,7 @@ function ScoreBox({
               className="mt-0.5 max-w-[12rem] truncate font-mono text-[10px] text-faint"
               title={[game.venue, game.city].filter(Boolean).join(", ")}
             >
-              {game.week ? `Week ${game.week} · ` : ""}
+              {game.weekLabel ? `${game.weekLabel} · ` : ""}
               {game.city || game.venue}
             </span>
           ) : null}

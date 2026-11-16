@@ -48,7 +48,7 @@ function PllDashRow({
       : res.ou === "under"
         ? LOSS
         : PUSH;
-  const where = [game.week ? `Wk ${game.week}` : "", game.city || game.venue]
+  const where = [game.weekLabel?.replace("Week ", "Wk ") ?? "", game.city || game.venue]
     .filter(Boolean)
     .join(" · ");
   return (

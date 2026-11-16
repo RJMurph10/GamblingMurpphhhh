@@ -218,7 +218,7 @@ export function withEraLogos(s: PllSeason): PllSeason {
     // the week and host city from the owner-entered schedule (2026 on)
     games: s.games.map((g) => {
       const w = pllWeekOf(g.id);
-      return w && !g.city ? { ...g, city: w.city, week: w.week } : g;
+      return w && !g.city ? { ...g, city: w.city, week: w.week, weekLabel: w.label } : g;
     }),
     teams: s.teams.map((t) => {
       const logo = ERA_LOGOS[t.id]?.find(([from, to]) => y >= from && y <= to)?.[2];

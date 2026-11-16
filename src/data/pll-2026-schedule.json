@@ -1,5 +1,5 @@
 {
- "source": "PLL 2026 regular-season schedule (weeks, host cities, dates, results) as entered by the site owner from the PLL site, Nov 16 2026. Every result matches ESPN.",
+ "source": "PLL 2026 schedule (weeks, host cities, dates, results; regular season and playoffs) as entered by the site owner from the PLL site, Nov 16 2026. Every result matches ESPN.",
  "weeks": [
   {
    "week": 1,
@@ -43,7 +43,8 @@
      "homeScore": 10,
      "ot": false
     }
-   ]
+   ],
+   "round": "Regular season"
   },
   {
    "week": 2,
@@ -87,7 +88,8 @@
      "homeScore": 19,
      "ot": false
     }
-   ]
+   ],
+   "round": "Regular season"
   },
   {
    "week": 3,
@@ -131,7 +133,8 @@
      "homeScore": 8,
      "ot": false
     }
-   ]
+   ],
+   "round": "Regular season"
   },
   {
    "week": 4,
@@ -175,7 +178,8 @@
      "homeScore": 17,
      "ot": false
     }
-   ]
+   ],
+   "round": "Regular season"
   },
   {
    "week": 5,
@@ -210,7 +214,8 @@
      "homeScore": 16,
      "ot": false
     }
-   ]
+   ],
+   "round": "Regular season"
   },
   {
    "week": 6,
@@ -254,7 +259,8 @@
      "homeScore": 14,
      "ot": true
     }
-   ]
+   ],
+   "round": "Regular season"
   },
   {
    "week": 7,
@@ -271,7 +277,8 @@
      "homeScore": 9,
      "ot": false
     }
-   ]
+   ],
+   "round": "All-Star"
   },
   {
    "week": 8,
@@ -315,7 +322,8 @@
      "homeScore": 10,
      "ot": false
     }
-   ]
+   ],
+   "round": "Regular season"
   },
   {
    "week": 9,
@@ -359,7 +367,8 @@
      "homeScore": 15,
      "ot": false
     }
-   ]
+   ],
+   "round": "Regular season"
   },
   {
    "week": 10,
@@ -412,7 +421,8 @@
      "homeScore": 8,
      "ot": false
     }
-   ]
+   ],
+   "round": "Regular season"
   },
   {
    "week": 11,
@@ -465,7 +475,8 @@
      "homeScore": 21,
      "ot": false
     }
-   ]
+   ],
+   "round": "Regular season"
   },
   {
    "week": 12,
@@ -509,7 +520,8 @@
      "homeScore": 12,
      "ot": false
     }
-   ]
+   ],
+   "round": "Regular season"
   },
   {
    "week": 13,
@@ -542,6 +554,79 @@
      "home": "Redwoods",
      "awayScore": 11,
      "homeScore": 18,
+     "ot": false
+    }
+   ],
+   "round": "Regular season"
+  },
+  {
+   "week": 14,
+   "round": "Quarterfinals",
+   "dates": "Aug 29",
+   "city": "Minneapolis, MN",
+   "allStar": false,
+   "games": [
+    {
+     "espnId": "401911798",
+     "date": "2026-08-29",
+     "away": "Outlaws",
+     "home": "Redwoods",
+     "awayScore": 15,
+     "homeScore": 14,
+     "ot": false
+    },
+    {
+     "espnId": "401911797",
+     "date": "2026-08-29",
+     "away": "Whipsnakes",
+     "home": "Cannons",
+     "awayScore": 7,
+     "homeScore": 9,
+     "ot": false
+    }
+   ]
+  },
+  {
+   "week": 15,
+   "round": "Semifinals",
+   "dates": "Sept 7",
+   "city": "Salt Lake City, UT",
+   "allStar": false,
+   "games": [
+    {
+     "espnId": "401916260",
+     "date": "2026-09-07",
+     "away": "Outlaws",
+     "home": "Archers",
+     "awayScore": 11,
+     "homeScore": 5,
+     "ot": false
+    },
+    {
+     "espnId": "401916273",
+     "date": "2026-09-07",
+     "away": "Cannons",
+     "home": "Waterdogs",
+     "awayScore": 10,
+     "homeScore": 13,
+     "ot": false
+    }
+   ]
+  },
+  {
+   "week": 16,
+   "round": "Championship",
+   "dates": "Sept 20",
+   "city": "New Jersey",
+   "allStar": false,
+   "games": [
+    {
+     "espnId": "401919201",
+     "date": "2026-09-20",
+     "away": "Outlaws",
+     "home": "Waterdogs",
+     "awayScore": 4,
+     "homeScore": 14,
      "ot": false
     }
    ]

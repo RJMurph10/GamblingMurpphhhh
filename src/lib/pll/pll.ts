@@ -43,6 +43,8 @@ export interface PllGame {
   city?: string;
   /** The PLL's week number (2026 on, from the owner's schedule). */
   week?: number;
+  /** "Week 3", or the playoff round ("Semifinals"). */
+  weekLabel?: string;
 }
 
 export interface PllSeason {
