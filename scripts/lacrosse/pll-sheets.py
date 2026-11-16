@@ -20,8 +20,10 @@ from pathlib import Path
 import openpyxl
 
 SECTIONS = ("Offensive", "Defensive", "Faceoff", "Goalie")
+# jersey numbers the PLL's box score leaves off (the owner supplied these)
+NUM_FIX = {"Blaze Riorden": "0", "Graham Bundy": "0"}
 # the most any player has had in a game: a cut that goes past these isn't a real stat line
-MAX = dict(Sh=30, GB=30, TO=12, TCH=150, CT=10, SA=45)
+MAX = dict(Sh=30, GB=30, TO=12, TCH=150, CT=10, SA=45, A=10, FOT=60)
 
 
 def plausibility(o, d, pos=None):
@@ -76,7 +78,7 @@ def offensive(s):
         head, pct = pre[:cut], pre[cut:]
         if not re.fullmatch(r"(?:0|[1-9]\d?|100)(?:\.\d)?", pct): continue
         for P, g1, g2, A, Sh in splits(head, [2, 2, 1, 2, 2]):
-            if P != g1 + 2 * g2 + A or g1 + g2 > Sh or Sh > MAX["Sh"] or not pct_ok(pct, g1 + g2, Sh):
+            if P != g1 + 2 * g2 + A or A > MAX["A"] or g1 + g2 > Sh or Sh > MAX["Sh"] or not pct_ok(pct, g1 + g2, Sh):
                 continue
             for GB, TO, TCH, PAS in splits(post, [2, 2, 3, 3]):
                 # touches don't count ground balls (a faceoff man can have 5 GB and 3 touches)
@@ -106,7 +108,7 @@ def faceoff(s):
     for cut in range(1, len(rest)):
         if not rest[:cut].isdigit(): continue
         t, pct = int(rest[:cut]), rest[cut:]
-        if t < w or not re.fullmatch(r"(?:0|[1-9]\d?|100)(?:\.\d)?", pct) or not pct_ok(pct, w, t): continue
+        if t < w or t > MAX["FOT"] or not re.fullmatch(r"(?:0|[1-9]\d?|100)(?:\.\d)?", pct) or not pct_ok(pct, w, t): continue
         for P, A, GB, Sh, TCH in splits(m.group(4), [2, 2, 2, 2, 3]):
             if GB > MAX["GB"] or Sh > MAX["Sh"] or TCH > MAX["TCH"]: continue
             out.append(dict(FOW=w, FOT=t, P=P, A=A, GB=GB, Sh=Sh, TCH=TCH))
@@ -149,6 +151,9 @@ def read_sheet(path):
         nxt = vals[i + 1] if i + 1 < len(vals) else None
         if isinstance(nxt, str) and "·" in nxt:
             pos, num = [x.strip() for x in nxt.split("·")]
+            i += 1
+        elif isinstance(nxt, str) and re.fullmatch(r"[A-Z]{1,4}", nxt.strip()):
+            pos = nxt.strip()  # position with no jersey number listed (e.g. "G")
             i += 1
         line = vals[i + 1]
         rows.append(dict(section=sec, name=name, pos=pos, num=num, line=line))
@@ -220,10 +225,12 @@ def main():
         date = f"{season}-{int(m.group(1)):02d}-{int(m.group(2)):02d}"
         opp = m.group(3).strip().title()
         players, problems = parse_game(f)
+        if not players:
+            print("EMPTY SHEET, skipped:", f.name); continue
         for pr in problems: pr["game"] = f.name
         all_problems += problems
         data["games"].append(dict(team=team, season=season, date=date, opponent=opp, file=f.name, players=[
-            dict(name=p["name"], pos=p["pos"], num=p["num"], **({"stats": p["stats"]} if "stats" in p else {}))
+            dict(name=p["name"], pos=p["pos"], num=p["num"] or NUM_FIX.get(p["name"]), **({"stats": p["stats"]} if "stats" in p else {}))
             for p in players.values()]))
     data["games"].sort(key=lambda g: (g["team"], g["date"]))
     out.write_text(json.dumps(data, indent=0, ensure_ascii=False))
