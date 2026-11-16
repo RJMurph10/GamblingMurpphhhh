@@ -5,6 +5,7 @@
 import { useMemo, useState } from "react";
 import { Link } from "@tanstack/react-router";
 import { ClosedPropLines } from "@/components/shared/GamePropsTab";
+import { HalftimeLines, LivePropsViews } from "@/components/shared/HalftimeLines";
 import {
   PageTitle,
   Panel,
@@ -216,32 +217,47 @@ export function NbaGameDetailView({ gameId }: { gameId: string }) {
       ) : null}
 
       {activeTab === "props" ? (
-        <div className="mt-6 space-y-4">
-          {started ? (
-            <ClosedPropLines
-              league="nba"
-              game={{
-                id: game.id,
-                date: game.date,
-                away: game.away.team.abbr,
-                home: game.home.team.abbr,
-              }}
-              final={game.status === "final"}
-              fallback={
-                <p className="glass p-4 text-center font-mono text-[11px] text-mute">
-                  This game&apos;s closing prop lines and results aren&apos;t saved yet. Lines are
-                  added within a few hours of tip-off and results after the game.
-                </p>
-              }
-            />
-          ) : null}
-          <Link
-            to="/nba/props"
-            search={{ game: game.id }}
-            className="glass block p-4 text-center font-mono text-[11px] uppercase tracking-wider text-acc hover:glow"
-          >
-            Player prop projections for this game →
-          </Link>
+        <div className="mt-6">
+          <LivePropsViews
+            live={game.status === "live"}
+            pregame={
+              <div className="mt-6 space-y-4">
+                {started ? (
+                  <ClosedPropLines
+                    league="nba"
+                    game={{
+                      id: game.id,
+                      date: game.date,
+                      away: game.away.team.abbr,
+                      home: game.home.team.abbr,
+                    }}
+                    final={game.status === "final"}
+                    fallback={
+                      <p className="glass p-4 text-center font-mono text-[11px] text-mute">
+                        This game&apos;s closing prop lines and results aren&apos;t saved yet. Lines
+                        are added within a few hours of tip-off and results after the game.
+                      </p>
+                    }
+                  />
+                ) : null}
+                <Link
+                  to="/nba/props"
+                  search={{ game: game.id }}
+                  className="glass block p-4 text-center font-mono text-[11px] uppercase tracking-wider text-acc hover:glow"
+                >
+                  Player prop projections for this game →
+                </Link>
+              </div>
+            }
+            halftime={
+              <HalftimeLines
+                league="nba"
+                id={game.id}
+                home={game.home.team.abbr}
+                away={game.away.team.abbr}
+              />
+            }
+          />
         </div>
       ) : null}
 

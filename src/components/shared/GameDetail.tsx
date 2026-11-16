@@ -29,6 +29,7 @@ import { useCfbPriorSeason, useCfbSchedule } from "@/lib/cfb/use-cfb";
 import { getGameWeather, getLiveGame, getTeamSeasonAverages } from "@/lib/shared/espn.functions";
 import { showGameStatistics } from "@/lib/shared/game-visibility";
 import { GamePropsTab } from "@/components/shared/GamePropsTab";
+import { HalftimeLines, LivePropsViews } from "@/components/shared/HalftimeLines";
 import { AllLines } from "@/components/nfl/MoreMarkets";
 import { ProbabilityGraph } from "@/components/shared/ProbabilityGraph";
 
@@ -1500,7 +1501,18 @@ export function GameDetail({ gameId }: { gameId: string }) {
                     {/* Live / Finished games Props tab */}
           {activeGameTab === "props" ? (
             <section className="mt-6">
-              <GamePropsTab game={game} away={away} home={home} />
+              <LivePropsViews
+                live={game.status === "live" && !isCollegeId(game.id)}
+                pregame={<GamePropsTab game={game} away={away} home={home} />}
+                halftime={
+                  <HalftimeLines
+                    league="nfl"
+                    id={game.id.replace(/^\D+-/, "")}
+                    home={home.abbr}
+                    away={away.abbr}
+                  />
+                }
+              />
             </section>
           ) : null}
             </>
