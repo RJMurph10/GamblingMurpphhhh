@@ -38,9 +38,11 @@ export interface PllGame {
   season: number;
   home: PllSide;
   away: PllSide;
-  /** Where it was played (2019-2021 tour years, from Wikipedia). */
+  /** Where it was played (2019-2021 tour years, from Wikipedia; 2026 on, from the owner's schedule). */
   venue?: string;
   city?: string;
+  /** The PLL's week number (2026 on, from the owner's schedule). */
+  week?: number;
 }
 
 export interface PllSeason {

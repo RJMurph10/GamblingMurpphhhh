@@ -1,0 +1,550 @@
+{
+ "source": "PLL 2026 regular-season schedule (weeks, host cities, dates, results) as entered by the site owner from the PLL site, Nov 16 2026. Every result matches ESPN.",
+ "weeks": [
+  {
+   "week": 1,
+   "dates": "May 8 - May 9",
+   "city": "Salt Lake City, UT",
+   "allStar": false,
+   "games": [
+    {
+     "espnId": "401867243",
+     "date": "2026-05-08",
+     "away": "Redwoods",
+     "home": "Archers",
+     "awayScore": 9,
+     "homeScore": 5,
+     "ot": false
+    },
+    {
+     "espnId": "401867216",
+     "date": "2026-05-08",
+     "away": "Atlas",
+     "home": "Chaos",
+     "awayScore": 16,
+     "homeScore": 12,
+     "ot": false
+    },
+    {
+     "espnId": "401867233",
+     "date": "2026-05-09",
+     "away": "Waterdogs",
+     "home": "Whipsnakes",
+     "awayScore": 16,
+     "homeScore": 14,
+     "ot": false
+    },
+    {
+     "espnId": "401867246",
+     "date": "2026-05-09",
+     "away": "Outlaws",
+     "home": "Archers",
+     "awayScore": 7,
+     "homeScore": 10,
+     "ot": false
+    }
+   ]
+  },
+  {
+   "week": 2,
+   "dates": "May 15 - May 16",
+   "city": "Rhode Island",
+   "allStar": false,
+   "games": [
+    {
+     "espnId": "401867223",
+     "date": "2026-05-15",
+     "away": "Chaos",
+     "home": "Cannons",
+     "awayScore": 14,
+     "homeScore": 10,
+     "ot": false
+    },
+    {
+     "espnId": "401867244",
+     "date": "2026-05-15",
+     "away": "Atlas",
+     "home": "Whipsnakes",
+     "awayScore": 6,
+     "homeScore": 12,
+     "ot": false
+    },
+    {
+     "espnId": "401867217",
+     "date": "2026-05-16",
+     "away": "Redwoods",
+     "home": "Outlaws",
+     "awayScore": 9,
+     "homeScore": 10,
+     "ot": false
+    },
+    {
+     "espnId": "401867234",
+     "date": "2026-05-16",
+     "away": "Waterdogs",
+     "home": "Cannons",
+     "awayScore": 5,
+     "homeScore": 19,
+     "ot": false
+    }
+   ]
+  },
+  {
+   "week": 3,
+   "dates": "May 29 - May 30",
+   "city": "Baltimore, MD",
+   "allStar": false,
+   "games": [
+    {
+     "espnId": "401867248",
+     "date": "2026-05-29",
+     "away": "Cannons",
+     "home": "Whipsnakes",
+     "awayScore": 10,
+     "homeScore": 17,
+     "ot": false
+    },
+    {
+     "espnId": "401867245",
+     "date": "2026-05-30",
+     "away": "Atlas",
+     "home": "Outlaws",
+     "awayScore": 9,
+     "homeScore": 16,
+     "ot": false
+    },
+    {
+     "espnId": "401867235",
+     "date": "2026-05-30",
+     "away": "Archers",
+     "home": "Whipsnakes",
+     "awayScore": 5,
+     "homeScore": 8,
+     "ot": false
+    },
+    {
+     "espnId": "401867250",
+     "date": "2026-05-30",
+     "away": "Chaos",
+     "home": "Waterdogs",
+     "awayScore": 10,
+     "homeScore": 8,
+     "ot": false
+    }
+   ]
+  },
+  {
+   "week": 4,
+   "dates": "Jun 5 - Jun 6",
+   "city": "Charlotte, NC",
+   "allStar": false,
+   "games": [
+    {
+     "espnId": "401867247",
+     "date": "2026-06-05",
+     "away": "Archers",
+     "home": "Chaos",
+     "awayScore": 15,
+     "homeScore": 7,
+     "ot": false
+    },
+    {
+     "espnId": "401867252",
+     "date": "2026-06-05",
+     "away": "Redwoods",
+     "home": "Atlas",
+     "awayScore": 12,
+     "homeScore": 11,
+     "ot": false
+    },
+    {
+     "espnId": "401867254",
+     "date": "2026-06-06",
+     "away": "Outlaws",
+     "home": "Chaos",
+     "awayScore": 11,
+     "homeScore": 12,
+     "ot": false
+    },
+    {
+     "espnId": "401867218",
+     "date": "2026-06-06",
+     "away": "Cannons",
+     "home": "Waterdogs",
+     "awayScore": 10,
+     "homeScore": 17,
+     "ot": false
+    }
+   ]
+  },
+  {
+   "week": 5,
+   "dates": "Jun 19 - Jun 20",
+   "city": "Long Island",
+   "allStar": false,
+   "games": [
+    {
+     "espnId": "401867226",
+     "date": "2026-06-19",
+     "away": "Cannons",
+     "home": "Atlas",
+     "awayScore": 11,
+     "homeScore": 12,
+     "ot": false
+    },
+    {
+     "espnId": "401867227",
+     "date": "2026-06-19",
+     "away": "Archers",
+     "home": "Redwoods",
+     "awayScore": 14,
+     "homeScore": 16,
+     "ot": false
+    },
+    {
+     "espnId": "401867228",
+     "date": "2026-06-20",
+     "away": "Whipsnakes",
+     "home": "Atlas",
+     "awayScore": 14,
+     "homeScore": 16,
+     "ot": false
+    }
+   ]
+  },
+  {
+   "week": 6,
+   "dates": "Jun 27 - Jun 28",
+   "city": "San Diego, CA",
+   "allStar": false,
+   "games": [
+    {
+     "espnId": "401867229",
+     "date": "2026-06-27",
+     "away": "Whipsnakes",
+     "home": "Outlaws",
+     "awayScore": 7,
+     "homeScore": 13,
+     "ot": false
+    },
+    {
+     "espnId": "401867219",
+     "date": "2026-06-27",
+     "away": "Cannons",
+     "home": "Redwoods",
+     "awayScore": 15,
+     "homeScore": 12,
+     "ot": false
+    },
+    {
+     "espnId": "401867236",
+     "date": "2026-06-28",
+     "away": "Waterdogs",
+     "home": "Archers",
+     "awayScore": 11,
+     "homeScore": 10,
+     "ot": false
+    },
+    {
+     "espnId": "401867256",
+     "date": "2026-06-28",
+     "away": "Chaos",
+     "home": "Redwoods",
+     "awayScore": 13,
+     "homeScore": 14,
+     "ot": true
+    }
+   ]
+  },
+  {
+   "week": 7,
+   "dates": "Jul 5",
+   "city": "Annapolis, MD",
+   "allStar": true,
+   "games": [
+    {
+     "espnId": "401882090",
+     "date": "2026-07-05",
+     "away": "WEST",
+     "home": "EAST",
+     "awayScore": 12,
+     "homeScore": 9,
+     "ot": false
+    }
+   ]
+  },
+  {
+   "week": 8,
+   "dates": "Jul 10 - Jul 11",
+   "city": "Chicago, IL",
+   "allStar": false,
+   "games": [
+    {
+     "espnId": "401867230",
+     "date": "2026-07-10",
+     "away": "Waterdogs",
+     "home": "Redwoods",
+     "awayScore": 15,
+     "homeScore": 13,
+     "ot": false
+    },
+    {
+     "espnId": "401867237",
+     "date": "2026-07-10",
+     "away": "Archers",
+     "home": "Atlas",
+     "awayScore": 16,
+     "homeScore": 5,
+     "ot": false
+    },
+    {
+     "espnId": "401867220",
+     "date": "2026-07-11",
+     "away": "Outlaws",
+     "home": "Cannons",
+     "awayScore": 13,
+     "homeScore": 15,
+     "ot": false
+    },
+    {
+     "espnId": "401867249",
+     "date": "2026-07-11",
+     "away": "Whipsnakes",
+     "home": "Chaos",
+     "awayScore": 17,
+     "homeScore": 10,
+     "ot": false
+    }
+   ]
+  },
+  {
+   "week": 9,
+   "dates": "Jul 17 - Jul 19",
+   "city": "Fairfield, CT",
+   "allStar": false,
+   "games": [
+    {
+     "espnId": "401867251",
+     "date": "2026-07-17",
+     "away": "Redwoods",
+     "home": "Whipsnakes",
+     "awayScore": 7,
+     "homeScore": 20,
+     "ot": false
+    },
+    {
+     "espnId": "401867253",
+     "date": "2026-07-18",
+     "away": "Chaos",
+     "home": "Outlaws",
+     "awayScore": 8,
+     "homeScore": 10,
+     "ot": false
+    },
+    {
+     "espnId": "401867231",
+     "date": "2026-07-18",
+     "away": "Archers",
+     "home": "Waterdogs",
+     "awayScore": 18,
+     "homeScore": 8,
+     "ot": false
+    },
+    {
+     "espnId": "401867238",
+     "date": "2026-07-19",
+     "away": "Atlas",
+     "home": "Cannons",
+     "awayScore": 13,
+     "homeScore": 15,
+     "ot": false
+    }
+   ]
+  },
+  {
+   "week": 10,
+   "dates": "Jul 24 - Jul 25",
+   "city": "Denver, CO",
+   "allStar": false,
+   "games": [
+    {
+     "espnId": "401867232",
+     "date": "2026-07-24",
+     "away": "Archers",
+     "home": "Outlaws",
+     "awayScore": 16,
+     "homeScore": 11,
+     "ot": false
+    },
+    {
+     "espnId": "401867273",
+     "date": "2026-07-24",
+     "away": "Waterdogs",
+     "home": "Atlas",
+     "awayScore": 11,
+     "homeScore": 10,
+     "ot": false
+    },
+    {
+     "espnId": "401867274",
+     "date": "2026-07-25",
+     "away": "Cannons",
+     "home": "Chaos",
+     "awayScore": 12,
+     "homeScore": 13,
+     "ot": true
+    },
+    {
+     "espnId": "401867257",
+     "date": "2026-07-25",
+     "away": "Whipsnakes",
+     "home": "Archers",
+     "awayScore": 8,
+     "homeScore": 13,
+     "ot": false
+    },
+    {
+     "espnId": "401867259",
+     "date": "2026-07-25",
+     "away": "Waterdogs",
+     "home": "Outlaws",
+     "awayScore": 18,
+     "homeScore": 8,
+     "ot": false
+    }
+   ]
+  },
+  {
+   "week": 11,
+   "dates": "Jul 31 - Aug 2",
+   "city": "Columbus, OH",
+   "allStar": false,
+   "games": [
+    {
+     "espnId": "401867239",
+     "date": "2026-07-31",
+     "away": "Redwoods",
+     "home": "Chaos",
+     "awayScore": 10,
+     "homeScore": 12,
+     "ot": false
+    },
+    {
+     "espnId": "401867255",
+     "date": "2026-07-31",
+     "away": "Cannons",
+     "home": "Archers",
+     "awayScore": 11,
+     "homeScore": 7,
+     "ot": false
+    },
+    {
+     "espnId": "401867221",
+     "date": "2026-08-01",
+     "away": "Outlaws",
+     "home": "Whipsnakes",
+     "awayScore": 14,
+     "homeScore": 13,
+     "ot": false
+    },
+    {
+     "espnId": "401867258",
+     "date": "2026-08-01",
+     "away": "Chaos",
+     "home": "Waterdogs",
+     "awayScore": 6,
+     "homeScore": 13,
+     "ot": false
+    },
+    {
+     "espnId": "401867275",
+     "date": "2026-08-02",
+     "away": "Atlas",
+     "home": "Redwoods",
+     "awayScore": 13,
+     "homeScore": 21,
+     "ot": false
+    }
+   ]
+  },
+  {
+   "week": 12,
+   "dates": "Aug 7 - Aug 8",
+   "city": "Boston, MA",
+   "allStar": false,
+   "games": [
+    {
+     "espnId": "401867222",
+     "date": "2026-08-07",
+     "away": "Whipsnakes",
+     "home": "Cannons",
+     "awayScore": 12,
+     "homeScore": 14,
+     "ot": true
+    },
+    {
+     "espnId": "401867224",
+     "date": "2026-08-07",
+     "away": "Chaos",
+     "home": "Archers",
+     "awayScore": 12,
+     "homeScore": 13,
+     "ot": false
+    },
+    {
+     "espnId": "401867225",
+     "date": "2026-08-08",
+     "away": "Outlaws",
+     "home": "Atlas",
+     "awayScore": 14,
+     "homeScore": 9,
+     "ot": false
+    },
+    {
+     "espnId": "401867260",
+     "date": "2026-08-08",
+     "away": "Redwoods",
+     "home": "Cannons",
+     "awayScore": 9,
+     "homeScore": 12,
+     "ot": false
+    }
+   ]
+  },
+  {
+   "week": 13,
+   "dates": "Aug 15 - Aug 16",
+   "city": "Philadelphia, PA",
+   "allStar": false,
+   "games": [
+    {
+     "espnId": "401867240",
+     "date": "2026-08-15",
+     "away": "Atlas",
+     "home": "Waterdogs",
+     "awayScore": 10,
+     "homeScore": 18,
+     "ot": false
+    },
+    {
+     "espnId": "401867241",
+     "date": "2026-08-16",
+     "away": "Whipsnakes",
+     "home": "Waterdogs",
+     "awayScore": 9,
+     "homeScore": 11,
+     "ot": false
+    },
+    {
+     "espnId": "401867242",
+     "date": "2026-08-16",
+     "away": "Outlaws",
+     "home": "Redwoods",
+     "awayScore": 11,
+     "homeScore": 18,
+     "ot": false
+    }
+   ]
+  }
+ ]
+}
