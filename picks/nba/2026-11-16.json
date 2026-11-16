@@ -1,6 +1,6 @@
 {
  "day": "2026-11-16",
- "updated": "2026-11-16T02:25:11.200Z",
+ "updated": "2026-11-16T13:11:06.382Z",
  "picks": [
   {
    "id": "401909994-spread",
@@ -14,8 +14,8 @@
    "edge": 3,
    "best": true,
    "firstSeen": "2026-11-16T02:25:11.200Z",
-   "latest": -9.5,
-   "latestAt": "2026-11-16T02:25:11.200Z",
+   "latest": -8.5,
+   "latestAt": "2026-11-16T13:11:06.382Z",
    "alerted": false
   },
   {
@@ -30,8 +30,88 @@
    "edge": 5.5,
    "best": false,
    "firstSeen": "2026-11-16T02:25:11.200Z",
-   "latest": 211.5,
-   "latestAt": "2026-11-16T02:25:11.200Z",
+   "latest": 212.5,
+   "latestAt": "2026-11-16T13:11:06.382Z",
+   "alerted": false
+  },
+  {
+   "id": "401909995-spread",
+   "game": "CHI @ CLE",
+   "tip": "2026-11-17T00:00Z",
+   "market": "spread",
+   "pick": "CLE -9.5",
+   "line": -9.5,
+   "open": -10.5,
+   "model": 10.6,
+   "edge": 1.1,
+   "best": false,
+   "firstSeen": "2026-11-16T13:11:06.382Z",
+   "latest": -9.5,
+   "latestAt": "2026-11-16T13:11:06.382Z",
+   "alerted": false
+  },
+  {
+   "id": "401909996-spread",
+   "game": "MEM @ WSH",
+   "tip": "2026-11-17T00:00Z",
+   "market": "spread",
+   "pick": "MEM -3.5",
+   "line": 3.5,
+   "open": 6.5,
+   "model": -5.8,
+   "edge": 2.3,
+   "best": false,
+   "firstSeen": "2026-11-16T13:11:06.382Z",
+   "latest": 3.5,
+   "latestAt": "2026-11-16T13:11:06.382Z",
+   "alerted": false
+  },
+  {
+   "id": "401909996-total",
+   "game": "MEM @ WSH",
+   "tip": "2026-11-17T00:00Z",
+   "market": "total",
+   "pick": "Over 230.5",
+   "line": 230.5,
+   "open": 230.5,
+   "model": 239.2,
+   "edge": 8.7,
+   "best": true,
+   "firstSeen": "2026-11-16T13:11:06.382Z",
+   "latest": 230.5,
+   "latestAt": "2026-11-16T13:11:06.382Z",
+   "alerted": false
+  },
+  {
+   "id": "401909998-spread",
+   "game": "HOU @ MIA",
+   "tip": "2026-11-17T00:30Z",
+   "market": "spread",
+   "pick": "HOU -2.5",
+   "line": 2.5,
+   "open": 2.5,
+   "model": -4.4,
+   "edge": 1.9,
+   "best": false,
+   "firstSeen": "2026-11-16T13:11:06.382Z",
+   "latest": 2.5,
+   "latestAt": "2026-11-16T13:11:06.382Z",
+   "alerted": false
+  },
+  {
+   "id": "401909998-total",
+   "game": "HOU @ MIA",
+   "tip": "2026-11-17T00:30Z",
+   "market": "total",
+   "pick": "Over 228.5",
+   "line": 228.5,
+   "open": 228.5,
+   "model": 234.3,
+   "edge": 5.8,
+   "best": false,
+   "firstSeen": "2026-11-16T13:11:06.382Z",
+   "latest": 229.5,
+   "latestAt": "2026-11-16T13:11:06.382Z",
    "alerted": false
   },
   {
@@ -47,7 +127,7 @@
    "best": false,
    "firstSeen": "2026-11-16T02:25:11.200Z",
    "latest": -2.5,
-   "latestAt": "2026-11-16T02:25:11.200Z",
+   "latestAt": "2026-11-16T13:11:06.382Z",
    "alerted": false
   },
   {
@@ -62,8 +142,8 @@
    "edge": 4.9,
    "best": true,
    "firstSeen": "2026-11-16T02:25:11.200Z",
-   "latest": 2.5,
-   "latestAt": "2026-11-16T02:25:11.200Z",
+   "latest": 3.5,
+   "latestAt": "2026-11-16T13:11:06.382Z",
    "alerted": false
   },
   {
@@ -78,8 +158,24 @@
    "edge": 7.7,
    "best": false,
    "firstSeen": "2026-11-16T02:25:11.200Z",
-   "latest": 226.5,
-   "latestAt": "2026-11-16T02:25:11.200Z",
+   "latest": 225.5,
+   "latestAt": "2026-11-16T13:11:06.382Z",
+   "alerted": false
+  },
+  {
+   "id": "401910001-spread",
+   "game": "PHX @ DEN",
+   "tip": "2026-11-17T02:00Z",
+   "market": "spread",
+   "pick": "PHX +10.5",
+   "line": -10.5,
+   "open": -10.5,
+   "model": 6,
+   "edge": 4.5,
+   "best": true,
+   "firstSeen": "2026-11-16T13:11:06.382Z",
+   "latest": -10.5,
+   "latestAt": "2026-11-16T13:11:06.382Z",
    "alerted": false
   }
  ]
