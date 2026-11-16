@@ -477,5 +477,747 @@
    ]
   }
  },
- "props": {}
+ "props": {
+  "open": {
+   "at": "2026-11-16T09:27:38.711Z",
+   "provider": 100,
+   "count": 12,
+   "rows": [
+  {"a":null,"t":"1st Half Total","ti":"72","op":[23.5,null,null],"cur":[23.5,null,null]},
+  {"a":null,"t":"1st Half Total","ti":"72","op":[23.5,null,null],"cur":[23.5,null,null]},
+  {"a":null,"tm":"19","t":"1st Half Moneyline","ti":"73"},
+  {"a":null,"tm":"30","t":"1st Half Moneyline","ti":"73"},
+  {"a":null,"tm":"19","t":"1st Half Spread","ti":"74","op":[3.5,null,null],"cur":[3.5,null,null]},
+  {"a":null,"tm":"30","t":"1st Half Spread","ti":"74","op":[-3.5,null,null],"cur":[-3.5,null,null]},
+  {"a":null,"t":"1st Quarter Total","ti":"75","op":[9.5,null,null],"cur":[9.5,null,null]},
+  {"a":null,"t":"1st Quarter Total","ti":"75","op":[9.5,null,null],"cur":[9.5,null,null]},
+  {"a":null,"tm":"19","t":"1st Quarter Moneyline","ti":"76"},
+  {"a":null,"tm":"30","t":"1st Quarter Moneyline","ti":"76"},
+  {"a":null,"tm":"19","t":"1st Quarter Spread","ti":"77","op":[0.5,null,null],"cur":[0.5,null,null]},
+  {"a":null,"tm":"30","t":"1st Quarter Spread","ti":"77","op":[-0.5,null,null],"cur":[-0.5,null,null]}
+ ],
+   "sample": [
+    {
+     "competition": {
+      "id": "401873069"
+     },
+     "provider": {
+      "id": "100"
+     },
+     "type": {
+      "id": "72",
+      "name": "1st Half Total"
+     },
+     "lastUpdated": "2026-11-16T07:00Z",
+     "current": {
+      "target": {
+       "value": 23.5,
+       "displayValue": "23.5"
+      }
+     },
+     "open": {
+      "target": {
+       "value": 23.5,
+       "displayValue": "23.5"
+      }
+     }
+    },
+    {
+     "competition": {
+      "id": "401873069"
+     },
+     "provider": {
+      "id": "100"
+     },
+     "type": {
+      "id": "72",
+      "name": "1st Half Total"
+     },
+     "lastUpdated": "2026-11-16T07:00Z",
+     "current": {
+      "target": {
+       "value": 23.5,
+       "displayValue": "23.5"
+      }
+     },
+     "open": {
+      "target": {
+       "value": 23.5,
+       "displayValue": "23.5"
+      }
+     }
+    }
+   ]
+  }
+ },
+ "names": {
+  "16837": [
+   "Shelby Harris",
+   "NYG"
+  ],
+  "2531358": [
+   "Chris Manhertz",
+   "NYG"
+  ],
+  "2574891": [
+   "Roy Robertson-Harris",
+   "NYG"
+  ],
+  "2576336": [
+   "Ameer Abdullah",
+   "JAX"
+  ],
+  "2969939": [
+   "Jameis Winston",
+   "NYG"
+  ],
+  "2970716": [
+   "Eric Murray",
+   "JAX"
+  ],
+  "2971275": [
+   "Arik Armstead",
+   "JAX"
+  ],
+  "2975417": [
+   "Patrick Ricard",
+   "NYG"
+  ],
+  "2977670": [
+   "DJ Reader",
+   "NYG"
+  ],
+  "2979591": [
+   "Austin Johnson",
+   "JAX"
+  ],
+  "3042476": [
+   "Dawuane Smoot",
+   "NYG"
+  ],
+  "3045207": [
+   "Jourdan Lewis",
+   "JAX"
+  ],
+  "3049339": [
+   "Aaron Stinnie",
+   "NYG"
+  ],
+  "3050073": [
+   "Foyesade Oluokun",
+   "JAX"
+  ],
+  "3059989": [
+   "Nick Mullens",
+   "JAX"
+  ],
+  "3115303": [
+   "Jermaine Eluemunor",
+   "NYG"
+  ],
+  "3115383": [
+   "Davon Godchaux",
+   "JAX"
+  ],
+  "3115480": [
+   "Logan Cooke",
+   "JAX"
+  ],
+  "3123075": [
+   "Braxton Berrios",
+   "NYG"
+  ],
+  "3124587": [
+   "Jahlani Tavai",
+   "JAX"
+  ],
+  "3129307": [
+   "Sam Mustipher",
+   "JAX"
+  ],
+  "3134316": [
+   "Matt Dickerson",
+   "JAX"
+  ],
+  "3863820": [
+   "Patrick Mekari",
+   "JAX"
+  ],
+  "3915239": [
+   "Josh Hines-Allen",
+   "JAX"
+  ],
+  "3915520": [
+   "DaVon Hamilton",
+   "JAX"
+  ],
+  "3916414": [
+   "Geron Christian",
+   "JAX"
+  ],
+  "3916433": [
+   "Jakobi Meyers",
+   "JAX"
+  ],
+  "3919512": [
+   "Jessie Bates III",
+   "JAX"
+  ],
+  "3928931": [
+   "Ross Matiscik",
+   "JAX"
+  ],
+  "3929936": [
+   "Jon Runyan",
+   "NYG"
+  ],
+  "3929950": [
+   "Tremaine Edmunds",
+   "NYG"
+  ],
+  "3932901": [
+   "Elijah Campbell",
+   "NYG"
+  ],
+  "4035631": [
+   "Brian Burns",
+   "NYG"
+  ],
+  "4035791": [
+   "Cole Van Lanen",
+   "JAX"
+  ],
+  "4036132": [
+   "Chauncey Golston",
+   "NYG"
+  ],
+  "4039243": [
+   "Josh Sills",
+   "NYG"
+  ],
+  "4040615": [
+   "Malik Harrison",
+   "NYG"
+  ],
+  "4040655": [
+   "Darnell Mooney",
+   "NYG"
+  ],
+  "4040761": [
+   "Devin Singletary",
+   "NYG"
+  ],
+  "4047655": [
+   "Jaylon Jones",
+   "JAX"
+  ],
+  "4048231": [
+   "Ezra Cleveland",
+   "JAX"
+  ],
+  "4240548": [
+   "Kendrick Green",
+   "NYG"
+  ],
+  "4240610": [
+   "Ventrell Miller",
+   "JAX"
+  ],
+  "4240706": [
+   "Jason Pinnock",
+   "NYG"
+  ],
+  "4240771": [
+   "John Michael Schmitz Jr.",
+   "NYG"
+  ],
+  "4242149": [
+   "Montaric Brown",
+   "JAX"
+  ],
+  "4242391": [
+   "Robert Hainsey",
+   "JAX"
+  ],
+  "4242547": [
+   "Paulson Adebo",
+   "NYG"
+  ],
+  "4242554": [
+   "Walker Little",
+   "JAX"
+  ],
+  "4243322": [
+   "Jake Haener",
+   "NYG"
+  ],
+  "4243389": [
+   "Calvin Austin III",
+   "NYG"
+  ],
+  "4244049": [
+   "Quintin Morris",
+   "JAX"
+  ],
+  "4244856": [
+   "Austin Trammell",
+   "JAX"
+  ],
+  "4245131": [
+   "Tim Jones",
+   "JAX"
+  ],
+  "4257188": [
+   "Charlie Jones",
+   "NYG"
+  ],
+  "4258237": [
+   "Raheem Layne",
+   "NYG"
+  ],
+  "4259566": [
+   "Andrew Thomas",
+   "NYG"
+  ],
+  "4260224": [
+   "Jordan Stout",
+   "NYG"
+  ],
+  "4334300": [
+   "Dennis Gardeck",
+   "JAX"
+  ],
+  "4360310": [
+   "Trevor Lawrence",
+   "JAX"
+  ],
+  "4360502": [
+   "Kaevon Merriweather",
+   "JAX"
+  ],
+  "4360516": [
+   "Tyrone Tracy Jr.",
+   "NYG"
+  ],
+  "4360964": [
+   "Daniel Faalele",
+   "JAX"
+  ],
+  "4361050": [
+   "Isaiah Likely",
+   "NYG"
+  ],
+  "4361266": [
+   "Greg Newsome II",
+   "NYG"
+  ],
+  "4361834": [
+   "Jarrick Bernard-Converse",
+   "NYG"
+  ],
+  "4362234": [
+   "Zaire Barnes",
+   "NYG"
+  ],
+  "4362492": [
+   "Ar'Darius Washington",
+   "NYG"
+  ],
+  "4362603": [
+   "Brenden Bates",
+   "JAX"
+  ],
+  "4362619": [
+   "Chris Rodriguez Jr.",
+   "JAX"
+  ],
+  "4368350": [
+   "Rico Payton",
+   "NYG"
+  ],
+  "4371961": [
+   "Micah McFadden",
+   "NYG"
+  ],
+  "4373809": [
+   "Jevon Holland",
+   "NYG"
+  ],
+  "4374032": [
+   "Jaden Robinson",
+   "NYG"
+  ],
+  "4381558": [
+   "Jordan Davis",
+   "JAX"
+  ],
+  "4424106": [
+   "Gunner Olszewski",
+   "NYG"
+  ],
+  "4426326": [
+   "Kayvon Thibodeaux",
+   "NYG"
+  ],
+  "4426349": [
+   "Travon Walker",
+   "JAX"
+  ],
+  "4426448": [
+   "Jarrian Jones",
+   "JAX"
+  ],
+  "4426489": [
+   "Bryan Hudson",
+   "NYG"
+  ],
+  "4426542": [
+   "Darius Alexander",
+   "NYG"
+  ],
+  "4426646": [
+   "Jared Bartlett",
+   "JAX"
+  ],
+  "4426981": [
+   "Eli Cox",
+   "JAX"
+  ],
+  "4427207": [
+   "Trace Ford",
+   "NYG"
+  ],
+  "4427479": [
+   "Jamal Hill",
+   "JAX"
+  ],
+  "4427636": [
+   "Nic Jones",
+   "NYG"
+  ],
+  "4428328": [
+   "Deonte Banks",
+   "NYG"
+  ],
+  "4429111": [
+   "BJ Ojulari",
+   "JAX"
+  ],
+  "4429148": [
+   "Theo Johnson",
+   "NYG"
+  ],
+  "4429168": [
+   "Antonio Johnson",
+   "JAX"
+  ],
+  "4429281": [
+   "Korie Black",
+   "NYG"
+  ],
+  "4429891": [
+   "DJ James",
+   "NYG"
+  ],
+  "4430261": [
+   "Tyler Nubin",
+   "NYG"
+  ],
+  "4430271": [
+   "Ruke Orhorhoro",
+   "JAX"
+  ],
+  "4430481": [
+   "Jonah Monheim",
+   "JAX"
+  ],
+  "4430539": [
+   "Brenton Strange",
+   "JAX"
+  ],
+  "4431162": [
+   "T.J. Bollers",
+   "JAX"
+  ],
+  "4431321": [
+   "Dru Phillips",
+   "NYG"
+  ],
+  "4431463": [
+   "Wyatt Milum",
+   "JAX"
+  ],
+  "4431562": [
+   "Phil Mafah",
+   "NYG"
+  ],
+  "4432440": [
+   "Jabbar Muhammad",
+   "JAX"
+  ],
+  "4432620": [
+   "Parker Washington",
+   "JAX"
+  ],
+  "4432773": [
+   "Brian Thomas Jr.",
+   "JAX"
+  ],
+  "4433970": [
+   "J.J. McCarthy",
+   "NYG"
+  ],
+  "4565297": [
+   "Dontae Fleming",
+   "NYG"
+  ],
+  "4570296": [
+   "Dalen Cambre",
+   "NYG"
+  ],
+  "4570561": [
+   "Eric Gray",
+   "NYG"
+  ],
+  "4572704": [
+   "Branson Combs",
+   "JAX"
+  ],
+  "4573319": [
+   "Danny Striggow",
+   "JAX"
+  ],
+  "4575862": [
+   "Trebor Pena",
+   "JAX"
+  ],
+  "4576129": [
+   "Jalen McLeod",
+   "JAX"
+  ],
+  "4577494": [
+   "Alijah Huzzie",
+   "JAX"
+  ],
+  "4590292": [
+   "Thomas Fidone II",
+   "NYG"
+  ],
+  "4595348": [
+   "Malik Nabers",
+   "NYG"
+  ],
+  "4608929": [
+   "Emmanuel Pregnon",
+   "JAX"
+  ],
+  "4612298": [
+   "Albert Regis",
+   "JAX"
+  ],
+  "4682648": [
+   "Malachi Fields",
+   "NYG"
+  ],
+  "4683347": [
+   "Caleb Ransaw",
+   "JAX"
+  ],
+  "4684542": [
+   "Garrett DiGiorgio",
+   "JAX"
+  ],
+  "4684970": [
+   "Jimto Obidegwu",
+   "JAX"
+  ],
+  "4685415": [
+   "Travis Hunter",
+   "JAX"
+  ],
+  "4686248": [
+   "Nate Boerkircher",
+   "JAX"
+  ],
+  "4686361": [
+   "Cam Little",
+   "JAX"
+  ],
+  "4686362": [
+   "Marcus Mbow",
+   "NYG"
+  ],
+  "4687706": [
+   "Josh Gesky",
+   "NYG"
+  ],
+  "4689088": [
+   "Kilian Zierer",
+   "JAX"
+  ],
+  "4689114": [
+   "Jaxson Dart",
+   "NYG"
+  ],
+  "4689988": [
+   "Jason Brownlee",
+   "NYG"
+  ],
+  "4691043": [
+   "Nikko Reed",
+   "NYG"
+  ],
+  "4691889": [
+   "Greg Desrosiers Jr.",
+   "NYG"
+  ],
+  "4692525": [
+   "Anton Harrison",
+   "JAX"
+  ],
+  "4692590": [
+   "Jalin Hyatt",
+   "NYG"
+  ],
+  "4695086": [
+   "Chandler Martin",
+   "NYG"
+  ],
+  "4696981": [
+   "Cam Skattebo",
+   "NYG"
+  ],
+  "4700676": [
+   "C.J. Ravenell",
+   "NYG"
+  ],
+  "4713118": [
+   "J'Mari Taylor",
+   "JAX"
+  ],
+  "4725996": [
+   "Abdul Carter",
+   "NYG"
+  ],
+  "4832922": [
+   "Wesley Williams",
+   "JAX"
+  ],
+  "4836472": [
+   "Bryan Thomas Jr.",
+   "JAX"
+  ],
+  "4870914": [
+   "Francis Mauigoa",
+   "NYG"
+  ],
+  "4875266": [
+   "B.J. Green II",
+   "JAX"
+  ],
+  "4875981": [
+   "Geno VanDeMark",
+   "NYG"
+  ],
+  "4876380": [
+   "Jack Kelly",
+   "NYG"
+  ],
+  "4877475": [
+   "Cam'Ron Silmon-Craig",
+   "JAX"
+  ],
+  "4879194": [
+   "Josh Cameron",
+   "JAX"
+  ],
+  "4880675": [
+   "Rayuan Lane III",
+   "JAX"
+  ],
+  "4880861": [
+   "Parker Hughes",
+   "JAX"
+  ],
+  "4882093": [
+   "Bhayshul Tuten",
+   "JAX"
+  ],
+  "4883114": [
+   "Ben Mann",
+   "NYG"
+  ],
+  "4889929": [
+   "Quinn Ewers",
+   "JAX"
+  ],
+  "4911851": [
+   "LeQuint Allen Jr.",
+   "JAX"
+  ],
+  "4912185": [
+   "Jalen Huskey",
+   "JAX"
+  ],
+  "4917427": [
+   "Tanner Koziol",
+   "JAX"
+  ],
+  "4921249": [
+   "Colton Hood",
+   "NYG"
+  ],
+  "4950400": [
+   "Arvell Reese",
+   "NYG"
+  ],
+  "5082353": [
+   "J.C. Davis",
+   "NYG"
+  ],
+  "5082424": [
+   "Dominic Zvada",
+   "NYG"
+  ],
+  "5083287": [
+   "Devon Marshall",
+   "JAX"
+  ],
+  "5085024": [
+   "CJ Williams",
+   "JAX"
+  ],
+  "5121433": [
+   "Zach Durfee",
+   "JAX"
+  ],
+  "5144942": [
+   "CJ Okoye",
+   "NYG"
+  ],
+  "5151880": [
+   "Thaddeus Dixon",
+   "NYG"
+  ],
+  "5152117": [
+   "Michael Wortham",
+   "JAX"
+  ],
+  "5159928": [
+   "Bobby Jamison-Travis",
+   "NYG"
+  ],
+  "5344428": [
+   "Ryan Schernecke",
+   "NYG"
+  ],
+  "5360470": [
+   "Jarrod Gray",
+   "NYG"
+  ],
+  "5393270": [
+   "Grant Finley",
+   "NYG"
+  ]
+ }
 }

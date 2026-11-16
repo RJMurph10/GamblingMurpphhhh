@@ -477,5 +477,703 @@
    ]
   }
  },
- "props": {}
+ "props": {
+  "open": {
+   "at": "2026-11-16T09:27:38.711Z",
+   "provider": 100,
+   "count": 12,
+   "rows": [
+  {"a":null,"t":"1st Half Total","ti":"72","op":[27.5,null,null],"cur":[27.5,null,null]},
+  {"a":null,"t":"1st Half Total","ti":"72","op":[27.5,null,null],"cur":[27.5,null,null]},
+  {"a":null,"tm":"6","t":"1st Half Moneyline","ti":"73"},
+  {"a":null,"tm":"10","t":"1st Half Moneyline","ti":"73"},
+  {"a":null,"tm":"6","t":"1st Half Spread","ti":"74","op":[-4.5,null,null],"cur":[-4.5,null,null]},
+  {"a":null,"tm":"10","t":"1st Half Spread","ti":"74","op":[4.5,null,null],"cur":[4.5,null,null]},
+  {"a":null,"t":"1st Quarter Total","ti":"75","op":[10.5,null,null],"cur":[10.5,null,null]},
+  {"a":null,"t":"1st Quarter Total","ti":"75","op":[10.5,null,null],"cur":[10.5,null,null]},
+  {"a":null,"tm":"6","t":"1st Quarter Moneyline","ti":"76"},
+  {"a":null,"tm":"10","t":"1st Quarter Moneyline","ti":"76"},
+  {"a":null,"tm":"6","t":"1st Quarter Spread","ti":"77","op":[-2.5,null,null],"cur":[-2.5,null,null]},
+  {"a":null,"tm":"10","t":"1st Quarter Spread","ti":"77","op":[2.5,null,null],"cur":[2.5,null,null]}
+ ],
+   "sample": [
+    {
+     "competition": {
+      "id": "401873073"
+     },
+     "provider": {
+      "id": "100"
+     },
+     "type": {
+      "id": "72",
+      "name": "1st Half Total"
+     },
+     "lastUpdated": "2026-11-16T06:59Z",
+     "current": {
+      "target": {
+       "value": 27.5,
+       "displayValue": "27.5"
+      }
+     },
+     "open": {
+      "target": {
+       "value": 27.5,
+       "displayValue": "27.5"
+      }
+     }
+    },
+    {
+     "competition": {
+      "id": "401873073"
+     },
+     "provider": {
+      "id": "100"
+     },
+     "type": {
+      "id": "72",
+      "name": "1st Half Total"
+     },
+     "lastUpdated": "2026-11-16T06:59Z",
+     "current": {
+      "target": {
+       "value": 27.5,
+       "displayValue": "27.5"
+      }
+     },
+     "open": {
+      "target": {
+       "value": 27.5,
+       "displayValue": "27.5"
+      }
+     }
+    }
+   ]
+  }
+ },
+ "names": {
+  "12701": [
+   "Thomas Morstead",
+   "TEN"
+  ],
+  "13848": [
+   "Morgan Cox",
+   "TEN"
+  ],
+  "13976": [
+   "Von Miller",
+   "DAL"
+  ],
+  "14950": [
+   "Bryan Anger",
+   "DAL"
+  ],
+  "2577417": [
+   "Dak Prescott",
+   "DAL"
+  ],
+  "2980097": [
+   "Jonathan Bullard",
+   "DAL"
+  ],
+  "2982313": [
+   "Tanoh Kpassagnon",
+   "TEN"
+  ],
+  "3039707": [
+   "Mitchell Trubisky",
+   "TEN"
+  ],
+  "3052357": [
+   "Trent Sieg",
+   "DAL"
+  ],
+  "3117258": [
+   "Solomon Thomas",
+   "TEN"
+  ],
+  "3120464": [
+   "John Franklin-Myers",
+   "TEN"
+  ],
+  "3121414": [
+   "Jalyn Holmes",
+   "TEN"
+  ],
+  "3121415": [
+   "Malik Hooker",
+   "DAL"
+  ],
+  "3122752": [
+   "Kenny Clark",
+   "DAL"
+  ],
+  "3124084": [
+   "Joey Slye",
+   "TEN"
+  ],
+  "3138764": [
+   "Jacob Martin",
+   "TEN"
+  ],
+  "3676833": [
+   "KaVontae Turpin",
+   "DAL"
+  ],
+  "3915398": [
+   "Tommy Townsend",
+   "TEN"
+  ],
+  "3915437": [
+   "Isaiah Oliver",
+   "TEN"
+  ],
+  "3915834": [
+   "Terence Steele",
+   "DAL"
+  ],
+  "3916148": [
+   "Tony Pollard",
+   "TEN"
+  ],
+  "3916566": [
+   "K.J. Osborn",
+   "TEN"
+  ],
+  "3920591": [
+   "Nick Leverett",
+   "DAL"
+  ],
+  "3925357": [
+   "Calvin Ridley",
+   "TEN"
+  ],
+  "3926229": [
+   "Cody Barton",
+   "TEN"
+  ],
+  "3929850": [
+   "P.J. Locke",
+   "DAL"
+  ],
+  "3953687": [
+   "Brandon Aubrey",
+   "DAL"
+  ],
+  "4034946": [
+   "Kyle Trask",
+   "DAL"
+  ],
+  "4035663": [
+   "Terrell Burgess",
+   "TEN"
+  ],
+  "4038544": [
+   "Austin Schlottmann",
+   "TEN"
+  ],
+  "4039160": [
+   "Kylen Granson",
+   "TEN"
+  ],
+  "4039170": [
+   "Elijah Garcia",
+   "DAL"
+  ],
+  "4040982": [
+   "Quinnen Williams",
+   "DAL"
+  ],
+  "4043089": [
+   "Jalen Thompson",
+   "DAL"
+  ],
+  "4044138": [
+   "Matt Hennessy",
+   "DAL"
+  ],
+  "4044448": [
+   "Curtis Robinson",
+   "DAL"
+  ],
+  "4045701": [
+   "Timmy Horne",
+   "TEN"
+  ],
+  "4046523": [
+   "Rashan Gary",
+   "DAL"
+  ],
+  "4240532": [
+   "Tony Adams",
+   "TEN"
+  ],
+  "4240603": [
+   "Malik Davis",
+   "DAL"
+  ],
+  "4240608": [
+   "James Houston",
+   "DAL"
+  ],
+  "4240858": [
+   "Hendon Hooker",
+   "TEN"
+  ],
+  "4240920": [
+   "Dan Moore Jr.",
+   "TEN"
+  ],
+  "4241389": [
+   "CeeDee Lamb",
+   "DAL"
+  ],
+  "4241921": [
+   "Markquese Bell",
+   "DAL"
+  ],
+  "4242355": [
+   "Jake Ferguson",
+   "DAL"
+  ],
+  "4242442": [
+   "Princeton Fant",
+   "DAL"
+  ],
+  "4248911": [
+   "DaRon Bland",
+   "DAL"
+  ],
+  "4258181": [
+   "James Hudson III",
+   "TEN"
+  ],
+  "4259546": [
+   "Ameer Speed",
+   "DAL"
+  ],
+  "4360307": [
+   "Derion Kendrick",
+   "DAL"
+  ],
+  "4360318": [
+   "Mario Goodrich III",
+   "TEN"
+  ],
+  "4360590": [
+   "Juanyeh Thomas",
+   "DAL"
+  ],
+  "4360967": [
+   "Brevyn Spann-Ford",
+   "DAL"
+  ],
+  "4360978": [
+   "David Martin-Robinson",
+   "TEN"
+  ],
+  "4361094": [
+   "Dominique Hampton",
+   "TEN"
+  ],
+  "4361516": [
+   "Daniel Bellinger",
+   "TEN"
+  ],
+  "4361579": [
+   "Javonte Williams",
+   "DAL"
+  ],
+  "4361988": [
+   "James Mitchell",
+   "DAL"
+  ],
+  "4362088": [
+   "DeMarvion Overshown",
+   "DAL"
+  ],
+  "4362570": [
+   "Joel Wilson",
+   "TEN"
+  ],
+  "4363547": [
+   "Marcellus Johnson",
+   "DAL"
+  ],
+  "4367202": [
+   "Atonio Mafi",
+   "TEN"
+  ],
+  "4367210": [
+   "Otito Ogbonnia",
+   "DAL"
+  ],
+  "4367330": [
+   "Tyrek Funderburk",
+   "DAL"
+  ],
+  "4367567": [
+   "Julius Chestnut",
+   "TEN"
+  ],
+  "4367828": [
+   "Truman Jones",
+   "TEN"
+  ],
+  "4369835": [
+   "Alontae Taylor",
+   "TEN"
+  ],
+  "4371940": [
+   "Milo Eifler",
+   "TEN"
+  ],
+  "4372096": [
+   "Luke Schoonmaker",
+   "DAL"
+  ],
+  "4372519": [
+   "Jashaun Corbin",
+   "DAL"
+  ],
+  "4373320": [
+   "Erick Hallett II",
+   "TEN"
+  ],
+  "4373956": [
+   "Jonah Laulu",
+   "TEN"
+  ],
+  "4383396": [
+   "Hunter Luepke",
+   "DAL"
+  ],
+  "4384549": [
+   "Cobie Durant",
+   "DAL"
+  ],
+  "4426354": [
+   "George Pickens",
+   "DAL"
+  ],
+  "4426485": [
+   "Jonathan Mingo",
+   "DAL"
+  ],
+  "4426506": [
+   "Joey Porter Jr.",
+   "DAL"
+  ],
+  "4426663": [
+   "Cooper Beebe",
+   "DAL"
+  ],
+  "4426875": [
+   "Sam Howell",
+   "DAL"
+  ],
+  "4426987": [
+   "Brandon Crenshaw-Dickson",
+   "TEN"
+  ],
+  "4427816": [
+   "Marist Liufau",
+   "DAL"
+  ],
+  "4428557": [
+   "Tyjae Spears",
+   "TEN"
+  ],
+  "4428914": [
+   "Dee Winters",
+   "DAL"
+  ],
+  "4428990": [
+   "Broderick Jones",
+   "DAL"
+  ],
+  "4429058": [
+   "Jaylen Harrell",
+   "TEN"
+  ],
+  "4429100": [
+   "Peter Skoronski",
+   "TEN"
+  ],
+  "4429121": [
+   "Kalel Mullings",
+   "TEN"
+  ],
+  "4429142": [
+   "Nazir Stackhouse",
+   "TEN"
+  ],
+  "4429202": [
+   "Israel Abanikanda",
+   "DAL"
+  ],
+  "4429249": [
+   "Justin Barron",
+   "DAL"
+  ],
+  "4429607": [
+   "Cor'Dale Flott",
+   "TEN"
+  ],
+  "4429676": [
+   "Tyler Goodson",
+   "DAL"
+  ],
+  "4429834": [
+   "Cedric Gray",
+   "TEN"
+  ],
+  "4431252": [
+   "Garrett Dellinger",
+   "TEN"
+  ],
+  "4431268": [
+   "Chimere Dike",
+   "TEN"
+  ],
+  "4431353": [
+   "Xavier Restrepo",
+   "TEN"
+  ],
+  "4431437": [
+   "JC Latham",
+   "TEN"
+  ],
+  "4431547": [
+   "Kelvin Gilliam Jr.",
+   "DAL"
+  ],
+  "4431613": [
+   "James Williams Sr.",
+   "TEN"
+  ],
+  "4567403": [
+   "Mohamoud Diabate",
+   "TEN"
+  ],
+  "4567962": [
+   "Jermaine Johnson II",
+   "TEN"
+  ],
+  "4568652": [
+   "Tyler Smith",
+   "DAL"
+  ],
+  "4568699": [
+   "Rasheed Miller",
+   "TEN"
+  ],
+  "4569587": [
+   "Wan'Dale Robinson",
+   "TEN"
+  ],
+  "4570469": [
+   "Marcus Harris",
+   "TEN"
+  ],
+  "4570577": [
+   "Wanya Morris",
+   "DAL"
+  ],
+  "4573318": [
+   "Dorian Mausi",
+   "TEN"
+  ],
+  "4574551": [
+   "Isaiah Land",
+   "DAL"
+  ],
+  "4585317": [
+   "Kendell Brooks",
+   "TEN"
+  ],
+  "4594749": [
+   "Michael Trigg",
+   "DAL"
+  ],
+  "4595352": [
+   "Alijah Clark",
+   "DAL"
+  ],
+  "4596542": [
+   "Pat Coogan",
+   "TEN"
+  ],
+  "4599739": [
+   "Kendre Miller",
+   "DAL"
+  ],
+  "4609048": [
+   "Tyler Guyton",
+   "DAL"
+  ],
+  "4612272": [
+   "Jakob Robinson",
+   "TEN"
+  ],
+  "4683455": [
+   "Jalen McMurray",
+   "TEN"
+  ],
+  "4683848": [
+   "Donovan Ezeiruaku",
+   "DAL"
+  ],
+  "4685110": [
+   "Anthony Smith",
+   "DAL"
+  ],
+  "4685120": [
+   "T.J. Bass",
+   "DAL"
+  ],
+  "4685145": [
+   "Jaylon Jones",
+   "TEN"
+  ],
+  "4685263": [
+   "Tyler Booker",
+   "DAL"
+  ],
+  "4685266": [
+   "Jaishawn Barham",
+   "DAL"
+  ],
+  "4685400": [
+   "Shemar James",
+   "DAL"
+  ],
+  "4685409": [
+   "Jordan Hudson",
+   "DAL"
+  ],
+  "4685554": [
+   "Drew Shelton",
+   "DAL"
+  ],
+  "4685555": [
+   "Nicholas Singleton",
+   "TEN"
+  ],
+  "4685617": [
+   "Kevin Winston Jr.",
+   "TEN"
+  ],
+  "4686728": [
+   "Gunnar Helm",
+   "TEN"
+  ],
+  "4688380": [
+   "Cam Ward",
+   "TEN"
+  ],
+  "4689333": [
+   "Tyrus Wheat",
+   "DAL"
+  ],
+  "4689364": [
+   "Tommy Dunn Jr.",
+   "DAL"
+  ],
+  "4695280": [
+   "Micah Robinson",
+   "TEN"
+  ],
+  "4696203": [
+   "Ajani Cornelius",
+   "DAL"
+  ],
+  "4702577": [
+   "Devin Moore",
+   "DAL"
+  ],
+  "4710000": [
+   "Fernando Carmona",
+   "TEN"
+  ],
+  "4710067": [
+   "Malachi Lawrence",
+   "DAL"
+  ],
+  "4710661": [
+   "Chandler Zavala",
+   "TEN"
+  ],
+  "4808759": [
+   "Camden Brown",
+   "DAL"
+  ],
+  "4870706": [
+   "Caleb Downs",
+   "DAL"
+  ],
+  "4870707": [
+   "Keldric Faulk",
+   "TEN"
+  ],
+  "4870805": [
+   "Anthony Hill Jr.",
+   "TEN"
+  ],
+  "4870960": [
+   "LT Overton",
+   "DAL"
+  ],
+  "4871023": [
+   "Carnell Tate",
+   "TEN"
+  ],
+  "4876057": [
+   "Oluwafemi Oladejo",
+   "TEN"
+  ],
+  "4876319": [
+   "Jackson Slater",
+   "TEN"
+  ],
+  "4877034": [
+   "Jaren Kanak",
+   "TEN"
+  ],
+  "4879480": [
+   "Drew Moss",
+   "TEN"
+  ],
+  "4883647": [
+   "Elic Ayomanor",
+   "TEN"
+  ],
+  "4917635": [
+   "Joshua Williams",
+   "TEN"
+  ],
+  "5066095": [
+   "Adedayo Odeleye",
+   "DAL"
+  ],
+  "5081785": [
+   "Jackie Marshall",
+   "TEN"
+  ],
+  "5083754": [
+   "Ryan Flournoy",
+   "DAL"
+  ],
+  "5095865": [
+   "Shavon Revel Jr.",
+   "DAL"
+  ],
+  "5103197": [
+   "Tyren Montgomery",
+   "TEN"
+  ],
+  "5278710": [
+   "Laki Tasi",
+   "TEN"
+  ]
+ }
 }

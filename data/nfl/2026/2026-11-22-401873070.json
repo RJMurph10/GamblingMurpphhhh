@@ -193,5 +193,671 @@
    ]
   }
  },
- "props": {}
+ "props": {
+  "open": {
+   "at": "2026-11-16T09:27:38.711Z",
+   "provider": 100,
+   "count": 12,
+   "rows": [
+  {"a":null,"t":"1st Half Total","ti":"72","op":[24.5,null,null],"cur":[23.5,null,null]},
+  {"a":null,"t":"1st Half Total","ti":"72","op":[24.5,null,null],"cur":[23.5,null,null]},
+  {"a":null,"tm":"2","t":"1st Half Moneyline","ti":"73"},
+  {"a":null,"tm":"15","t":"1st Half Moneyline","ti":"73"},
+  {"a":null,"tm":"2","t":"1st Half Spread","ti":"74","op":[-9.5,null,null],"cur":[-9.5,null,null]},
+  {"a":null,"tm":"15","t":"1st Half Spread","ti":"74","op":[9.5,null,null],"cur":[9.5,null,null]},
+  {"a":null,"t":"1st Quarter Total","ti":"75","op":[9.5,null,null],"cur":[9.5,null,null]},
+  {"a":null,"t":"1st Quarter Total","ti":"75","op":[9.5,null,null],"cur":[9.5,null,null]},
+  {"a":null,"tm":"2","t":"1st Quarter Moneyline","ti":"76"},
+  {"a":null,"tm":"15","t":"1st Quarter Moneyline","ti":"76"},
+  {"a":null,"tm":"2","t":"1st Quarter Spread","ti":"77","op":[-3.5,null,null],"cur":[-3.5,null,null]},
+  {"a":null,"tm":"15","t":"1st Quarter Spread","ti":"77","op":[3.5,null,null],"cur":[3.5,null,null]}
+ ],
+   "sample": [
+    {
+     "competition": {
+      "id": "401873070"
+     },
+     "provider": {
+      "id": "100"
+     },
+     "type": {
+      "id": "72",
+      "name": "1st Half Total"
+     },
+     "lastUpdated": "2026-11-16T08:19Z",
+     "current": {
+      "target": {
+       "value": 23.5,
+       "displayValue": "23.5"
+      }
+     },
+     "open": {
+      "target": {
+       "value": 24.5,
+       "displayValue": "24.5"
+      }
+     }
+    },
+    {
+     "competition": {
+      "id": "401873070"
+     },
+     "provider": {
+      "id": "100"
+     },
+     "type": {
+      "id": "72",
+      "name": "1st Half Total"
+     },
+     "lastUpdated": "2026-11-16T08:19Z",
+     "current": {
+      "target": {
+       "value": 23.5,
+       "displayValue": "23.5"
+      }
+     },
+     "open": {
+      "target": {
+       "value": 24.5,
+       "displayValue": "24.5"
+      }
+     }
+    }
+   ]
+  }
+ },
+ "names": {
+  "2976549": [
+   "Reid Ferguson",
+   "BUF"
+  ],
+  "2977680": [
+   "Bradley Pinion",
+   "MIA"
+  ],
+  "2978313": [
+   "Shaq Thompson",
+   "BUF"
+  ],
+  "3042717": [
+   "Tre'Davious White",
+   "BUF"
+  ],
+  "3043234": [
+   "Zane Gonzalez",
+   "MIA"
+  ],
+  "3051324": [
+   "Dion Dawkins",
+   "BUF"
+  ],
+  "3056608": [
+   "Austin Corbett",
+   "BUF"
+  ],
+  "3057956": [
+   "Zach Sieler",
+   "MIA"
+  ],
+  "3115293": [
+   "Kyle Allen",
+   "BUF"
+  ],
+  "3116733": [
+   "Bradley Chubb",
+   "BUF"
+  ],
+  "3122168": [
+   "Trent Sherfield",
+   "BUF"
+  ],
+  "3127294": [
+   "Greg Gaines",
+   "BUF"
+  ],
+  "3859006": [
+   "Ronnie Harrison Jr.",
+   "MIA"
+  ],
+  "3915411": [
+   "Ty Johnson",
+   "BUF"
+  ],
+  "3915416": [
+   "DJ Moore",
+   "BUF"
+  ],
+  "3915487": [
+   "Mike Danna",
+   "BUF"
+  ],
+  "3917232": [
+   "Tyler Bass",
+   "BUF"
+  ],
+  "3918298": [
+   "Josh Allen",
+   "BUF"
+  ],
+  "3930086": [
+   "Dawson Knox",
+   "BUF"
+  ],
+  "3932335": [
+   "Zayne Anderson",
+   "MIA"
+  ],
+  "4030899": [
+   "Spencer Brown",
+   "BUF"
+  ],
+  "4033234": [
+   "Michael Hoecht",
+   "BUF"
+  ],
+  "4033748": [
+   "Connor McGovern",
+   "BUF"
+  ],
+  "4034729": [
+   "Tucker Addington",
+   "MIA"
+  ],
+  "4035448": [
+   "Lloyd Cushenberry III",
+   "BUF"
+  ],
+  "4036060": [
+   "Damar Hamlin",
+   "BUF"
+  ],
+  "4036134": [
+   "Amani Hooker",
+   "BUF"
+  ],
+  "4036660": [
+   "Darrell Baker Jr.",
+   "MIA"
+  ],
+  "4037235": [
+   "Greg Dortch",
+   "BUF"
+  ],
+  "4039034": [
+   "Shane Buechele",
+   "BUF"
+  ],
+  "4039303": [
+   "Ed Oliver",
+   "BUF"
+  ],
+  "4040537": [
+   "Aaron Brewer",
+   "MIA"
+  ],
+  "4043130": [
+   "Jordyn Brooks",
+   "MIA"
+  ],
+  "4044133": [
+   "Sam Franklin Jr.",
+   "BUF"
+  ],
+  "4046528": [
+   "Josh Uche",
+   "MIA"
+  ],
+  "4240575": [
+   "Geno Stone",
+   "BUF"
+  ],
+  "4241468": [
+   "Phidarian Mathis",
+   "BUF"
+  ],
+  "4241476": [
+   "Tyrell Shavers",
+   "BUF"
+  ],
+  "4241802": [
+   "Jalen Reagor",
+   "MIA"
+  ],
+  "4242433": [
+   "Joshua Palmer",
+   "BUF"
+  ],
+  "4242512": [
+   "Malik Willis",
+   "MIA"
+  ],
+  "4248425": [
+   "Carlos Washington Jr.",
+   "MIA"
+  ],
+  "4249417": [
+   "Jalen Tolbert",
+   "MIA"
+  ],
+  "4259166": [
+   "Terrel Bernard",
+   "BUF"
+  ],
+  "4259547": [
+   "Malik Herring",
+   "MIA"
+  ],
+  "4259804": [
+   "Willie Gay Jr.",
+   "MIA"
+  ],
+  "4271632": [
+   "Austin Jackson",
+   "MIA"
+  ],
+  "4291489": [
+   "Kader Kohou",
+   "BUF"
+  ],
+  "4360413": [
+   "Shaka Heyward",
+   "MIA"
+  ],
+  "4360469": [
+   "Amari Gainer",
+   "MIA"
+  ],
+  "4360488": [
+   "JuJu Brents",
+   "MIA"
+  ],
+  "4360746": [
+   "Ethan Bonner",
+   "MIA"
+  ],
+  "4361438": [
+   "Cole Turner",
+   "MIA"
+  ],
+  "4362064": [
+   "Andrew Meyer",
+   "MIA"
+  ],
+  "4362135": [
+   "Christian Haynes",
+   "MIA"
+  ],
+  "4362506": [
+   "Greg Rousseau",
+   "BUF"
+  ],
+  "4366349": [
+   "Joe Andreessen",
+   "BUF"
+  ],
+  "4367203": [
+   "Alec Anderson",
+   "BUF"
+  ],
+  "4367209": [
+   "Greg Dulcich",
+   "MIA"
+  ],
+  "4368056": [
+   "Liam Anderson",
+   "MIA"
+  ],
+  "4368828": [
+   "Tylan Grable",
+   "BUF"
+  ],
+  "4372463": [
+   "Jamree Kromah",
+   "MIA"
+  ],
+  "4373474": [
+   "Jarrett Kingston",
+   "MIA"
+  ],
+  "4373678": [
+   "Khalil Shakir",
+   "BUF"
+  ],
+  "4379399": [
+   "James Cook III",
+   "BUF"
+  ],
+  "4379778": [
+   "Christian Benford",
+   "BUF"
+  ],
+  "4385690": [
+   "Dalton Kincaid",
+   "BUF"
+  ],
+  "4401823": [
+   "Dee Alford",
+   "BUF"
+  ],
+  "4426446": [
+   "Caedan Wallace",
+   "MIA"
+  ],
+  "4426498": [
+   "Nick Broeker",
+   "BUF"
+  ],
+  "4426883": [
+   "DeWayne Carter",
+   "BUF"
+  ],
+  "4427843": [
+   "Chase Lundt",
+   "BUF"
+  ],
+  "4428548": [
+   "Javon Solomon",
+   "BUF"
+  ],
+  "4428696": [
+   "O'Cyrus Torrence",
+   "BUF"
+  ],
+  "4429036": [
+   "Major Burns",
+   "MIA"
+  ],
+  "4429053": [
+   "AJ Henning",
+   "MIA"
+  ],
+  "4429160": [
+   "De'Von Achane",
+   "MIA"
+  ],
+  "4429435": [
+   "Brady Cook",
+   "MIA"
+  ],
+  "4429501": [
+   "Ray Davis",
+   "BUF"
+  ],
+  "4429576": [
+   "James Ester",
+   "MIA"
+  ],
+  "4429805": [
+   "Frank Gore Jr.",
+   "BUF"
+  ],
+  "4430270": [
+   "Ja'Mori Maclin",
+   "BUF"
+  ],
+  "4430681": [
+   "Jared Wayne",
+   "MIA"
+  ],
+  "4431586": [
+   "Chop Robinson",
+   "MIA"
+  ],
+  "4431664": [
+   "Dante Trader Jr.",
+   "MIA"
+  ],
+  "4432215": [
+   "Stephen Gosnell",
+   "BUF"
+  ],
+  "4432715": [
+   "Landon Jackson",
+   "BUF"
+  ],
+  "4432730": [
+   "Jason Marshall Jr.",
+   "MIA"
+  ],
+  "4433971": [
+   "Kyle McCord",
+   "MIA"
+  ],
+  "4433974": [
+   "Rodney McGraw",
+   "MIA"
+  ],
+  "4566094": [
+   "Jacob Rodriguez",
+   "MIA"
+  ],
+  "4567225": [
+   "Jaylin Simpson",
+   "MIA"
+  ],
+  "4567493": [
+   "Patrick Paul",
+   "MIA"
+  ],
+  "4568624": [
+   "Dorian Williams",
+   "BUF"
+  ],
+  "4568703": [
+   "Dorian Strong",
+   "BUF"
+  ],
+  "4569016": [
+   "Eric Watts",
+   "MIA"
+  ],
+  "4569448": [
+   "Jordan Jefferson",
+   "MIA"
+  ],
+  "4569603": [
+   "Malik Washington",
+   "MIA"
+  ],
+  "4573699": [
+   "Jackson Hawes",
+   "BUF"
+  ],
+  "4577066": [
+   "Keonta Jenkins",
+   "BUF"
+  ],
+  "4594321": [
+   "Kaleb Elarms-Orr",
+   "BUF"
+  ],
+  "4596480": [
+   "Jordan Hancock",
+   "BUF"
+  ],
+  "4606712": [
+   "Ar'maj Reed-Adams",
+   "BUF"
+  ],
+  "4608679": [
+   "Will Sheppard",
+   "MIA"
+  ],
+  "4635008": [
+   "Keon Coleman",
+   "BUF"
+  ],
+  "4676004": [
+   "Cole Bishop",
+   "BUF"
+  ],
+  "4682745": [
+   "Jaylen Wright",
+   "MIA"
+  ],
+  "4682749": [
+   "Kani Walker",
+   "BUF"
+  ],
+  "4682758": [
+   "Tommy Doman Jr.",
+   "BUF"
+  ],
+  "4683101": [
+   "Max Llewellyn",
+   "MIA"
+  ],
+  "4683153": [
+   "Skyler Bell",
+   "BUF"
+  ],
+  "4683276": [
+   "Zeek Biggers",
+   "MIA"
+  ],
+  "4684527": [
+   "T.J. Sanders",
+   "BUF"
+  ],
+  "4685116": [
+   "DJ Herman",
+   "MIA"
+  ],
+  "4685246": [
+   "Kaytron Allen",
+   "MIA"
+  ],
+  "4685307": [
+   "Kevin Coleman Jr.",
+   "MIA"
+  ],
+  "4685347": [
+   "Zane Durant",
+   "BUF"
+  ],
+  "4685637": [
+   "Jackson Woodard",
+   "MIA"
+  ],
+  "4685784": [
+   "Tre Watson",
+   "MIA"
+  ],
+  "4688552": [
+   "Keleki Latu",
+   "BUF"
+  ],
+  "4688931": [
+   "Maxwell Hairston",
+   "BUF"
+  ],
+  "4698109": [
+   "Rene Konga",
+   "MIA"
+  ],
+  "4711533": [
+   "Ollie Gordon II",
+   "MIA"
+  ],
+  "4712462": [
+   "Keith Cooper Jr.",
+   "MIA"
+  ],
+  "4714379": [
+   "Seydou Traore",
+   "MIA"
+  ],
+  "4819257": [
+   "Jonah Savaiinaea",
+   "MIA"
+  ],
+  "4831989": [
+   "Deone Walker",
+   "BUF"
+  ],
+  "4832035": [
+   "Davison Igbinosun",
+   "BUF"
+  ],
+  "4837188": [
+   "Jordan Phillips",
+   "MIA"
+  ],
+  "4869533": [
+   "Jude Bowry",
+   "BUF"
+  ],
+  "4869579": [
+   "Chris Johnson",
+   "MIA"
+  ],
+  "4869645": [
+   "Caleb Douglas",
+   "MIA"
+  ],
+  "4869961": [
+   "Chris Bell",
+   "MIA"
+  ],
+  "4870886": [
+   "TJ Parker",
+   "BUF"
+  ],
+  "4870976": [
+   "Kadyn Proctor",
+   "MIA"
+  ],
+  "4872841": [
+   "Julius Wood",
+   "MIA"
+  ],
+  "4875079": [
+   "Marcellas Dial Jr.",
+   "MIA"
+  ],
+  "4875767": [
+   "Brock Lampe",
+   "BUF"
+  ],
+  "4879212": [
+   "Trey Moore",
+   "MIA"
+  ],
+  "4880236": [
+   "Will Kacmarek",
+   "MIA"
+  ],
+  "4880273": [
+   "Kyle Louis",
+   "MIA"
+  ],
+  "4880346": [
+   "Michael Taaffe",
+   "MIA"
+  ],
+  "4894654": [
+   "Kenneth Grant",
+   "MIA"
+  ],
+  "4912052": [
+   "Justin Joly",
+   "MIA"
+  ],
+  "5076951": [
+   "Jalon Kilgore",
+   "BUF"
+  ],
+  "5081977": [
+   "DJ Campbell",
+   "MIA"
+  ],
+  "5144457": [
+   "Chukwuebuka Godrick",
+   "MIA"
+  ],
+  "5209587": [
+   "Travis Clayton",
+   "BUF"
+  ]
+ }
 }

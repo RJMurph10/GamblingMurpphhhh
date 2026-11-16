@@ -477,5 +477,707 @@
    ]
   }
  },
- "props": {}
+ "props": {
+  "open": {
+   "at": "2026-11-16T09:27:38.711Z",
+   "provider": 100,
+   "count": 12,
+   "rows": [
+  {"a":null,"t":"1st Half Total","ti":"72","op":[23.5,null,null],"cur":[23.5,null,null]},
+  {"a":null,"t":"1st Half Total","ti":"72","op":[23.5,null,null],"cur":[23.5,null,null]},
+  {"a":null,"tm":"8","t":"1st Half Moneyline","ti":"73"},
+  {"a":null,"tm":"27","t":"1st Half Moneyline","ti":"73"},
+  {"a":null,"tm":"8","t":"1st Half Spread","ti":"74","op":[-3.5,null,null],"cur":[-3.5,null,null]},
+  {"a":null,"tm":"27","t":"1st Half Spread","ti":"74","op":[3.5,null,null],"cur":[3.5,null,null]},
+  {"a":null,"t":"1st Quarter Total","ti":"75","op":[9.5,null,null],"cur":[9.5,null,null]},
+  {"a":null,"t":"1st Quarter Total","ti":"75","op":[9.5,null,null],"cur":[9.5,null,null]},
+  {"a":null,"tm":"8","t":"1st Quarter Moneyline","ti":"76"},
+  {"a":null,"tm":"27","t":"1st Quarter Moneyline","ti":"76"},
+  {"a":null,"tm":"8","t":"1st Quarter Spread","ti":"77","op":[-0.5,null,null],"cur":[-0.5,null,null]},
+  {"a":null,"tm":"27","t":"1st Quarter Spread","ti":"77","op":[0.5,null,null],"cur":[0.5,null,null]}
+ ],
+   "sample": [
+    {
+     "competition": {
+      "id": "401873072"
+     },
+     "provider": {
+      "id": "100"
+     },
+     "type": {
+      "id": "72",
+      "name": "1st Half Total"
+     },
+     "lastUpdated": "2026-11-16T06:59Z",
+     "current": {
+      "target": {
+       "value": 23.5,
+       "displayValue": "23.5"
+      }
+     },
+     "open": {
+      "target": {
+       "value": 23.5,
+       "displayValue": "23.5"
+      }
+     }
+    },
+    {
+     "competition": {
+      "id": "401873072"
+     },
+     "provider": {
+      "id": "100"
+     },
+     "type": {
+      "id": "72",
+      "name": "1st Half Total"
+     },
+     "lastUpdated": "2026-11-16T06:59Z",
+     "current": {
+      "target": {
+       "value": 23.5,
+       "displayValue": "23.5"
+      }
+     },
+     "open": {
+      "target": {
+       "value": 23.5,
+       "displayValue": "23.5"
+      }
+     }
+    }
+   ]
+  }
+ },
+ "names": {
+  "2575164": [
+   "Miles Killebrew",
+   "TB"
+  ],
+  "2575453": [
+   "Rakeem Nunez-Roches",
+   "TB"
+  ],
+  "2577619": [
+   "Riley Dixon",
+   "TB"
+  ],
+  "2580216": [
+   "DeAndre Carter",
+   "DET"
+  ],
+  "2979482": [
+   "Dan Feeney",
+   "TB"
+  ],
+  "3043107": [
+   "Alex Anzalone",
+   "TB"
+  ],
+  "3044720": [
+   "Joshua Dobbs",
+   "DET"
+  ],
+  "3045463": [
+   "Chuck Clark",
+   "DET"
+  ],
+  "3046779": [
+   "Jared Goff",
+   "DET"
+  ],
+  "3051942": [
+   "Al-Quadin Muhammad",
+   "TB"
+  ],
+  "3052587": [
+   "Baker Mayfield",
+   "TB"
+  ],
+  "3054857": [
+   "A'Shawn Robinson",
+   "TB"
+  ],
+  "3116136": [
+   "Justin Jackson",
+   "DET"
+  ],
+  "3116165": [
+   "Chris Godwin Jr.",
+   "TB"
+  ],
+  "3120590": [
+   "Easton Stick",
+   "TB"
+  ],
+  "3123938": [
+   "Avonte Maddox",
+   "DET"
+  ],
+  "3126997": [
+   "Tom Kennedy",
+   "DET"
+  ],
+  "3134362": [
+   "Vita Vea",
+   "TB"
+  ],
+  "3139387": [
+   "D.J. Reed",
+   "DET"
+  ],
+  "3150744": [
+   "Chase McLaughlin",
+   "TB"
+  ],
+  "3894856": [
+   "Anthony Nelson",
+   "TB"
+  ],
+  "3909013": [
+   "Christian Rozeboom",
+   "TB"
+  ],
+  "3910229": [
+   "Rock Ya-Sin",
+   "DET"
+  ],
+  "3915486": [
+   "Tyler Conklin",
+   "DET"
+  ],
+  "3915777": [
+   "Justin Skule",
+   "TB"
+  ],
+  "3915802": [
+   "Lucky Jackson",
+   "DET"
+  ],
+  "3916370": [
+   "Jack Fox",
+   "DET"
+  ],
+  "4027919": [
+   "Khalil Dorsey",
+   "DET"
+  ],
+  "4034779": [
+   "Ko Kieft",
+   "TB"
+  ],
+  "4034790": [
+   "Antoine Winfield Jr.",
+   "TB"
+  ],
+  "4034861": [
+   "Ben Stille",
+   "DET"
+  ],
+  "4035270": [
+   "Devin Cochran",
+   "DET"
+  ],
+  "4035434": [
+   "Devin White",
+   "DET"
+  ],
+  "4036507": [
+   "Joe Bachie",
+   "DET"
+  ],
+  "4038432": [
+   "Amen Ogbongbemiga",
+   "DET"
+  ],
+  "4038849": [
+   "DJ Wonnum",
+   "DET"
+  ],
+  "4039010": [
+   "Myles Bryant",
+   "DET"
+  ],
+  "4039020": [
+   "Levi Onwuzurike",
+   "DET"
+  ],
+  "4046551": [
+   "Ben Bredeson",
+   "TB"
+  ],
+  "4240269": [
+   "Payton Turner",
+   "DET"
+  ],
+  "4240401": [
+   "Ifeatu Melifonwu",
+   "TB"
+  ],
+  "4240589": [
+   "Tristan Wirfs",
+   "TB"
+  ],
+  "4241217": [
+   "Larry Borom",
+   "DET"
+  ],
+  "4241411": [
+   "Malcolm Rodriguez",
+   "DET"
+  ],
+  "4242392": [
+   "Brock Wright",
+   "DET"
+  ],
+  "4242521": [
+   "K.J. Britt",
+   "DET"
+  ],
+  "4243331": [
+   "Cade Otton",
+   "TB"
+  ],
+  "4245144": [
+   "Tay Martin",
+   "DET"
+  ],
+  "4248533": [
+   "Josh Hayes",
+   "TB"
+  ],
+  "4248545": [
+   "Cody Mauch",
+   "TB"
+  ],
+  "4250392": [
+   "Zyon McCollum",
+   "TB"
+  ],
+  "4260409": [
+   "Derrick Barnes",
+   "DET"
+  ],
+  "4360383": [
+   "Kerby Joseph",
+   "DET"
+  ],
+  "4361425": [
+   "Juice Scruggs",
+   "DET"
+  ],
+  "4361529": [
+   "Isiah Pacheco",
+   "DET"
+  ],
+  "4361662": [
+   "Alim McNeill",
+   "DET"
+  ],
+  "4361727": [
+   "Evan Deckers",
+   "TB"
+  ],
+  "4361788": [
+   "Cade Mays",
+   "DET"
+  ],
+  "4361861": [
+   "Tyler Lacy",
+   "DET"
+  ],
+  "4361939": [
+   "Andre Cisco",
+   "DET"
+  ],
+  "4362066": [
+   "Elijah Klein",
+   "DET"
+  ],
+  "4362636": [
+   "Damone Clark",
+   "DET"
+  ],
+  "4371733": [
+   "Kenny Gainwell",
+   "TB"
+  ],
+  "4371973": [
+   "Roger McCreary",
+   "DET"
+  ],
+  "4372099": [
+   "Aidan Hutchinson",
+   "DET"
+  ],
+  "4372459": [
+   "Christian Izien",
+   "DET"
+  ],
+  "4372505": [
+   "Payne Durham",
+   "TB"
+  ],
+  "4373825": [
+   "Penei Sewell",
+   "DET"
+  ],
+  "4374302": [
+   "Amon-Ra St. Brown",
+   "DET"
+  ],
+  "4380507": [
+   "Luke Goedeke",
+   "TB"
+  ],
+  "4383429": [
+   "Jacob Saylors",
+   "DET"
+  ],
+  "4426388": [
+   "Jameson Williams",
+   "DET"
+  ],
+  "4427140": [
+   "Trevor Keegan",
+   "TB"
+  ],
+  "4427673": [
+   "Calijah Kancey",
+   "TB"
+  ],
+  "4427677": [
+   "Mohamed Kamara",
+   "TB"
+  ],
+  "4427864": [
+   "Christian Mahogany",
+   "DET"
+  ],
+  "4428522": [
+   "Tykee Smith",
+   "TB"
+  ],
+  "4428941": [
+   "Javin Wright",
+   "TB"
+  ],
+  "4429007": [
+   "DeMonte Capehart",
+   "TB"
+  ],
+  "4429035": [
+   "Tate Ratledge",
+   "DET"
+  ],
+  "4429187": [
+   "Seth McLaughlin",
+   "DET"
+  ],
+  "4429251": [
+   "Graham Barton",
+   "TB"
+  ],
+  "4429511": [
+   "SirVocea Dennis",
+   "TB"
+  ],
+  "4429795": [
+   "Jahmyr Gibbs",
+   "DET"
+  ],
+  "4429847": [
+   "Garrett Greene",
+   "TB"
+  ],
+  "4430027": [
+   "Sam LaPorta",
+   "DET"
+  ],
+  "4430121": [
+   "Aidan Keanaaina",
+   "DET"
+  ],
+  "4430478": [
+   "Elijah Simmons",
+   "TB"
+  ],
+  "4430834": [
+   "Jalen McMillan",
+   "TB"
+  ],
+  "4430871": [
+   "Sean Tucker",
+   "TB"
+  ],
+  "4431184": [
+   "Jayson Jones",
+   "TB"
+  ],
+  "4431615": [
+   "Tyleik Williams",
+   "DET"
+  ],
+  "4432545": [
+   "Jabari Small",
+   "DET"
+  ],
+  "4565445": [
+   "Aamaris Brown",
+   "DET"
+  ],
+  "4566092": [
+   "Ennis Rakestraw Jr.",
+   "DET"
+  ],
+  "4566165": [
+   "JJ Roberts",
+   "TB"
+  ],
+  "4567219": [
+   "Owen Pappoe",
+   "DET"
+  ],
+  "4567750": [
+   "Emeka Egbuka",
+   "TB"
+  ],
+  "4567896": [
+   "Paul Rubelt",
+   "TB"
+  ],
+  "4568024": [
+   "Josh Williams",
+   "TB"
+  ],
+  "4569202": [
+   "Ben Scott",
+   "TB"
+  ],
+  "4569323": [
+   "Thomas Harper",
+   "DET"
+  ],
+  "4569465": [
+   "Jack Campbell",
+   "DET"
+  ],
+  "4569615": [
+   "Thomas Gordon",
+   "DET"
+  ],
+  "4571755": [
+   "Hogan Hatten",
+   "DET"
+  ],
+  "4586333": [
+   "Mekhi Wingo",
+   "DET"
+  ],
+  "4594329": [
+   "Henry Lutovsky",
+   "TB"
+  ],
+  "4594338": [
+   "Brandon Johnson",
+   "TB"
+  ],
+  "4596439": [
+   "Dominic Lovett",
+   "DET"
+  ],
+  "4596448": [
+   "Bucky Irving",
+   "TB"
+  ],
+  "4596472": [
+   "Jalon Daniels",
+   "TB"
+  ],
+  "4596545": [
+   "CJ Dippre",
+   "TB"
+  ],
+  "4597679": [
+   "Luke Altmyer",
+   "DET"
+  ],
+  "4602648": [
+   "Kevin Knowles",
+   "TB"
+  ],
+  "4602788": [
+   "Jackson Meeks",
+   "DET"
+  ],
+  "4608810": [
+   "Tez Johnson",
+   "TB"
+  ],
+  "4608890": [
+   "Miles Frazier",
+   "DET"
+  ],
+  "4611506": [
+   "Ben Bartch",
+   "DET"
+  ],
+  "4683096": [
+   "Caden Fordham",
+   "TB"
+  ],
+  "4685441": [
+   "Kendrick Law",
+   "DET"
+  ],
+  "4685442": [
+   "Anthony Lucas",
+   "DET"
+  ],
+  "4685461": [
+   "Derrick Moore",
+   "DET"
+  ],
+  "4685549": [
+   "Billy Schrauth",
+   "TB"
+  ],
+  "4686334": [
+   "Yaya Diaby",
+   "TB"
+  ],
+  "4686884": [
+   "Luke Haggard",
+   "TB"
+  ],
+  "4689936": [
+   "Jake Bates",
+   "DET"
+  ],
+  "4690787": [
+   "Benjamin Chukwuma",
+   "TB"
+  ],
+  "4690795": [
+   "Elijah Roberts",
+   "TB"
+  ],
+  "4692025": [
+   "Brian Branch",
+   "DET"
+  ],
+  "4693332": [
+   "Mason Miller",
+   "DET"
+  ],
+  "4710422": [
+   "Ahmed Hassanein",
+   "DET"
+  ],
+  "4713277": [
+   "Eric Rivers Jr.",
+   "TB"
+  ],
+  "4816107": [
+   "Benjamin Morrison",
+   "TB"
+  ],
+  "4870617": [
+   "Rueben Bain Jr.",
+   "TB"
+  ],
+  "4870998": [
+   "Josiah Trotter",
+   "TB"
+  ],
+  "4875613": [
+   "Dean Patterson",
+   "TB"
+  ],
+  "4880219": [
+   "Silas Walters",
+   "TB"
+  ],
+  "4890373": [
+   "Bauer Sharp",
+   "TB"
+  ],
+  "4890885": [
+   "Ayden Garnes",
+   "TB"
+  ],
+  "4892218": [
+   "Eric O'Neill",
+   "DET"
+  ],
+  "4896353": [
+   "Jimmy Rolder",
+   "DET"
+  ],
+  "4912274": [
+   "Sione Vaki",
+   "DET"
+  ],
+  "4912847": [
+   "Jacob Parrish",
+   "TB"
+  ],
+  "5081056": [
+   "Jeffrey M'ba",
+   "DET"
+  ],
+  "5081450": [
+   "Blake Miller",
+   "DET"
+  ],
+  "5085355": [
+   "David Walker",
+   "TB"
+  ],
+  "5089453": [
+   "Miles Kitselman",
+   "DET"
+  ],
+  "5093004": [
+   "Keith Abney II",
+   "DET"
+  ],
+  "5093694": [
+   "Keionte Scott",
+   "TB"
+  ],
+  "5097554": [
+   "Kameron Johnson",
+   "TB"
+  ],
+  "5103940": [
+   "Skyler Gill-Howard",
+   "DET"
+  ],
+  "5123663": [
+   "Isaac TeSlaa",
+   "DET"
+  ],
+  "5143915": [
+   "Nick Whiteside",
+   "DET"
+  ],
+  "5144894": [
+   "Trevor Nowaske",
+   "DET"
+  ],
+  "5209589": [
+   "Giovanni Manu",
+   "DET"
+  ],
+  "5220680": [
+   "Ted Hurst III",
+   "TB"
+  ],
+  "5225091": [
+   "Yasir Holmes",
+   "TB"
+  ]
+ }
 }

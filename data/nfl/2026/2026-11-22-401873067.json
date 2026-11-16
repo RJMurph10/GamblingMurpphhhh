@@ -193,5 +193,739 @@
    ]
   }
  },
- "props": {}
+ "props": {
+  "open": {
+   "at": "2026-11-16T09:27:38.711Z",
+   "provider": 100,
+   "count": 12,
+   "rows": [
+  {"a":null,"t":"1st Half Total","ti":"72","op":[20.5,null,null],"cur":[20.5,null,null]},
+  {"a":null,"t":"1st Half Total","ti":"72","op":[20.5,null,null],"cur":[20.5,null,null]},
+  {"a":null,"tm":"12","t":"1st Half Moneyline","ti":"73"},
+  {"a":null,"tm":"22","t":"1st Half Moneyline","ti":"73"},
+  {"a":null,"tm":"12","t":"1st Half Spread","ti":"74","op":[-7.5,null,null],"cur":[-9.5,null,null]},
+  {"a":null,"tm":"22","t":"1st Half Spread","ti":"74","op":[7.5,null,null],"cur":[9.5,null,null]},
+  {"a":null,"t":"1st Quarter Total","ti":"75","op":[7.5,null,null],"cur":[7.5,null,null]},
+  {"a":null,"t":"1st Quarter Total","ti":"75","op":[7.5,null,null],"cur":[7.5,null,null]},
+  {"a":null,"tm":"12","t":"1st Quarter Moneyline","ti":"76"},
+  {"a":null,"tm":"22","t":"1st Quarter Moneyline","ti":"76"},
+  {"a":null,"tm":"12","t":"1st Quarter Spread","ti":"77","op":[-3.5,null,null],"cur":[-3.5,null,null]},
+  {"a":null,"tm":"22","t":"1st Quarter Spread","ti":"77","op":[3.5,null,null],"cur":[3.5,null,null]}
+ ],
+   "sample": [
+    {
+     "competition": {
+      "id": "401873067"
+     },
+     "provider": {
+      "id": "100"
+     },
+     "type": {
+      "id": "72",
+      "name": "1st Half Total"
+     },
+     "lastUpdated": "2026-11-16T06:59Z",
+     "current": {
+      "target": {
+       "value": 20.5,
+       "displayValue": "20.5"
+      }
+     },
+     "open": {
+      "target": {
+       "value": 20.5,
+       "displayValue": "20.5"
+      }
+     }
+    },
+    {
+     "competition": {
+      "id": "401873067"
+     },
+     "provider": {
+      "id": "100"
+     },
+     "type": {
+      "id": "72",
+      "name": "1st Half Total"
+     },
+     "lastUpdated": "2026-11-16T06:59Z",
+     "current": {
+      "target": {
+       "value": 20.5,
+       "displayValue": "20.5"
+      }
+     },
+     "open": {
+      "target": {
+       "value": 20.5,
+       "displayValue": "20.5"
+      }
+     }
+    }
+   ]
+  }
+ },
+ "names": {
+  "11394": [
+   "Josh Johnson",
+   "ARI"
+  ],
+  "15683": [
+   "Justin Tucker",
+   "KC"
+  ],
+  "15847": [
+   "Travis Kelce",
+   "KC"
+  ],
+  "16665": [
+   "James Winchester",
+   "KC"
+  ],
+  "17304": [
+   "Casey Kreiter",
+   "ARI"
+  ],
+  "2579604": [
+   "Phillip Dorsett II",
+   "ARI"
+  ],
+  "2977740": [
+   "Emmanuel Ogbah",
+   "KC"
+  ],
+  "2978247": [
+   "Isaac Seumalo",
+   "ARI"
+  ],
+  "3044859": [
+   "Chris Jones",
+   "KC"
+  ],
+  "3045147": [
+   "James Conner",
+   "ARI"
+  ],
+  "3045523": [
+   "Kendrick Bourne",
+   "ARI"
+  ],
+  "3051775": [
+   "Andrew Billings",
+   "ARI"
+  ],
+  "3055899": [
+   "Harrison Butker",
+   "KC"
+  ],
+  "3059722": [
+   "Zay Jones",
+   "ARI"
+  ],
+  "3059839": [
+   "Elijah Wilkinson",
+   "ARI"
+  ],
+  "3116449": [
+   "L.J. Collier",
+   "ARI"
+  ],
+  "3118892": [
+   "Justin Watson",
+   "KC"
+  ],
+  "3127287": [
+   "Budda Baker",
+   "ARI"
+  ],
+  "3129310": [
+   "Drue Tranquill",
+   "KC"
+  ],
+  "3139477": [
+   "Patrick Mahomes",
+   "KC"
+  ],
+  "3693166": [
+   "Josh Sweat",
+   "ARI"
+  ],
+  "3886633": [
+   "Hjalte Froholdt",
+   "ARI"
+  ],
+  "3916204": [
+   "James Proche II",
+   "ARI"
+  ],
+  "3918331": [
+   "Andrew Wingard",
+   "ARI"
+  ],
+  "4035433": [
+   "Kristian Fulton",
+   "KC"
+  ],
+  "4036959": [
+   "Cole Christiansen",
+   "KC"
+  ],
+  "4038524": [
+   "Gardner Minshew II",
+   "ARI"
+  ],
+  "4039050": [
+   "Devin Duvernay",
+   "ARI"
+  ],
+  "4039413": [
+   "Alohi Gilman",
+   "KC"
+  ],
+  "4040432": [
+   "L'Jarius Sneed",
+   "KC"
+  ],
+  "4040805": [
+   "Roy Lopez",
+   "ARI"
+  ],
+  "4040983": [
+   "Mack Wilson Sr.",
+   "ARI"
+  ],
+  "4043039": [
+   "Mike Caliendo",
+   "KC"
+  ],
+  "4043041": [
+   "Jaylon Moore",
+   "KC"
+  ],
+  "4044144": [
+   "Kenny Yeboah",
+   "ARI"
+  ],
+  "4045180": [
+   "Blake Gillikin",
+   "ARI"
+  ],
+  "4239944": [
+   "Hunter Long",
+   "ARI"
+  ],
+  "4240472": [
+   "Noah Gray",
+   "KC"
+  ],
+  "4240619": [
+   "Zachary Carter",
+   "ARI"
+  ],
+  "4240824": [
+   "Joey Blount",
+   "ARI"
+  ],
+  "4241385": [
+   "Creed Humphrey",
+   "KC"
+  ],
+  "4241482": [
+   "Jedrick Wills Jr.",
+   "ARI"
+  ],
+  "4241987": [
+   "Baron Browning",
+   "ARI"
+  ],
+  "4242229": [
+   "Austin Deculus",
+   "ARI"
+  ],
+  "4242459": [
+   "Trey Smith",
+   "KC"
+  ],
+  "4244606": [
+   "Zaven Collins",
+   "ARI"
+  ],
+  "4249739": [
+   "Jack Gibbens",
+   "ARI"
+  ],
+  "4249766": [
+   "Jack Cochrane",
+   "KC"
+  ],
+  "4250935": [
+   "Demontrey Jacobs",
+   "ARI"
+  ],
+  "4256074": [
+   "Khyiris Tonga",
+   "KC"
+  ],
+  "4360739": [
+   "Simi Fehoko",
+   "ARI"
+  ],
+  "4360761": [
+   "Michael Wilson",
+   "ARI"
+  ],
+  "4361272": [
+   "Eku Leota",
+   "ARI"
+  ],
+  "4361307": [
+   "Trey McBride",
+   "ARI"
+  ],
+  "4361332": [
+   "Shedrick Jackson",
+   "ARI"
+  ],
+  "4361340": [
+   "Tyreke Smith",
+   "KC"
+  ],
+  "4361496": [
+   "Matt Araiza",
+   "KC"
+  ],
+  "4361964": [
+   "Chamarri Conner",
+   "KC"
+  ],
+  "4362225": [
+   "Dante Stills",
+   "ARI"
+  ],
+  "4362759": [
+   "Nick Bolton",
+   "KC"
+  ],
+  "4362887": [
+   "Justin Fields",
+   "KC"
+  ],
+  "4362921": [
+   "Tyquan Thornton",
+   "KC"
+  ],
+  "4363408": [
+   "Starling Thomas V",
+   "ARI"
+  ],
+  "4363538": [
+   "Chad Ryland",
+   "ARI"
+  ],
+  "4366910": [
+   "Shawn Bowman",
+   "ARI"
+  ],
+  "4367199": [
+   "Jon Gaines II",
+   "ARI"
+  ],
+  "4367645": [
+   "Hunter Nourzad",
+   "KC"
+  ],
+  "4370876": [
+   "Matt Waletzko",
+   "KC"
+  ],
+  "4372019": [
+   "Jerome Ford",
+   "ARI"
+  ],
+  "4372070": [
+   "Ben VanSumeren",
+   "KC"
+  ],
+  "4373280": [
+   "Joshua Ezeudu",
+   "KC"
+  ],
+  "4373626": [
+   "Tyler Allgeier",
+   "ARI"
+  ],
+  "4374045": [
+   "Teagan Quitoriano",
+   "ARI"
+  ],
+  "4379412": [
+   "Jamaree Salyer",
+   "ARI"
+  ],
+  "4426659": [
+   "George Karlaftis",
+   "KC"
+  ],
+  "4426844": [
+   "Elijah Higgins",
+   "ARI"
+  ],
+  "4426923": [
+   "Kei'Trel Clark",
+   "ARI"
+  ],
+  "4427401": [
+   "Jared Harrison-Hunte",
+   "ARI"
+  ],
+  "4427728": [
+   "Bam Knight",
+   "ARI"
+  ],
+  "4427985": [
+   "Bub Means",
+   "KC"
+  ],
+  "4428331": [
+   "Rashee Rice",
+   "KC"
+  ],
+  "4428383": [
+   "Chris Roland-Wallace",
+   "KC"
+  ],
+  "4428458": [
+   "Valentin Senn",
+   "ARI"
+  ],
+  "4428633": [
+   "Dadrion Taylor-Demerson",
+   "ARI"
+  ],
+  "4428811": [
+   "Xavier Weaver",
+   "ARI"
+  ],
+  "4428991": [
+   "Paris Johnson Jr.",
+   "ARI"
+  ],
+  "4428996": [
+   "Jordan Burch",
+   "ARI"
+  ],
+  "4429071": [
+   "Cody Simon",
+   "ARI"
+  ],
+  "4429275": [
+   "Trey Benson",
+   "ARI"
+  ],
+  "4429782": [
+   "Josh Fryar",
+   "ARI"
+  ],
+  "4430723": [
+   "Jared Wiley",
+   "KC"
+  ],
+  "4430821": [
+   "Kitan Crawford",
+   "ARI"
+  ],
+  "4430841": [
+   "Carson Beck",
+   "ARI"
+  ],
+  "4431142": [
+   "Jimmy Holiday",
+   "KC"
+  ],
+  "4431196": [
+   "Jake Briningstool",
+   "KC"
+  ],
+  "4431214": [
+   "Hayden Conner",
+   "ARI"
+  ],
+  "4431424": [
+   "Bradyn Swinson",
+   "ARI"
+  ],
+  "4431433": [
+   "Kalen King",
+   "ARI"
+  ],
+  "4431534": [
+   "Ethan Downs",
+   "KC"
+  ],
+  "4431561": [
+   "Bryson Eason",
+   "KC"
+  ],
+  "4431595": [
+   "Kingsley Suamataia",
+   "KC"
+  ],
+  "4432668": [
+   "Denzel Burke",
+   "ARI"
+  ],
+  "4566190": [
+   "Kahlil Benson",
+   "KC"
+  ],
+  "4567048": [
+   "Kenneth Walker III",
+   "KC"
+  ],
+  "4567410": [
+   "Kingsley Eguakun",
+   "ARI"
+  ],
+  "4567747": [
+   "Garrett Nussmeier",
+   "KC"
+  ],
+  "4567826": [
+   "Cooper McDonald",
+   "KC"
+  ],
+  "4568506": [
+   "Garrett Williams",
+   "ARI"
+  ],
+  "4569480": [
+   "Darius Robinson",
+   "ARI"
+  ],
+  "4569609": [
+   "Evan Hull",
+   "ARI"
+  ],
+  "4569659": [
+   "Josh Simmons",
+   "KC"
+  ],
+  "4571627": [
+   "Ethan Driskell",
+   "KC"
+  ],
+  "4573152": [
+   "Marcus Harris",
+   "KC"
+  ],
+  "4591008": [
+   "Omarr Norman-Lott",
+   "KC"
+  ],
+  "4596602": [
+   "Brashard Smith",
+   "KC"
+  ],
+  "4602389": [
+   "Jeffrey Bassa",
+   "KC"
+  ],
+  "4602984": [
+   "Diego Pounds",
+   "KC"
+  ],
+  "4605841": [
+   "Nate Carter",
+   "KC"
+  ],
+  "4610705": [
+   "Nohl Williams",
+   "KC"
+  ],
+  "4612387": [
+   "Felix Anudike-Uzomah",
+   "KC"
+  ],
+  "4613029": [
+   "Riley Wilson",
+   "ARI"
+  ],
+  "4682626": [
+   "Pete Nygra",
+   "KC"
+  ],
+  "4683062": [
+   "Xavier Worthy",
+   "KC"
+  ],
+  "4683506": [
+   "Albert Reese IV",
+   "ARI"
+  ],
+  "4684432": [
+   "Ashton Gillotte",
+   "KC"
+  ],
+  "4685232": [
+   "Jaden Hicks",
+   "KC"
+  ],
+  "4685408": [
+   "Will Johnson",
+   "ARI"
+  ],
+  "4685489": [
+   "Jaydn Ott",
+   "KC"
+  ],
+  "4685491": [
+   "Xavier Nwankpa",
+   "KC"
+  ],
+  "4685503": [
+   "Walter Nolen III",
+   "ARI"
+  ],
+  "4685582": [
+   "Damonic Williams",
+   "ARI"
+  ],
+  "4686338": [
+   "Josh Minkins",
+   "ARI"
+  ],
+  "4688813": [
+   "Josh Downs",
+   "KC"
+  ],
+  "4689674": [
+   "Art Green",
+   "ARI"
+  ],
+  "4692835": [
+   "Jalen Brooks",
+   "ARI"
+  ],
+  "4696700": [
+   "Tip Reiman",
+   "ARI"
+  ],
+  "4698113": [
+   "Max Melton",
+   "ARI"
+  ],
+  "4699354": [
+   "Harrison Wallace III",
+   "ARI"
+  ],
+  "4702908": [
+   "Omari Evans",
+   "KC"
+  ],
+  "4705926": [
+   "Michael Heldman",
+   "KC"
+  ],
+  "4708490": [
+   "John Michael Gyllenborg",
+   "KC"
+  ],
+  "4709695": [
+   "Karson Sharar",
+   "ARI"
+  ],
+  "4709718": [
+   "Jayden Williams",
+   "ARI"
+  ],
+  "4710706": [
+   "Jadon Canady",
+   "KC"
+  ],
+  "4832955": [
+   "Emmett Johnson",
+   "KC"
+  ],
+  "4869132": [
+   "Reggie Virgil",
+   "ARI"
+  ],
+  "4870596": [
+   "Chase Bisontis",
+   "ARI"
+  ],
+  "4870808": [
+   "Jeremiyah Love",
+   "ARI"
+  ],
+  "4871063": [
+   "Peter Woods",
+   "KC"
+  ],
+  "4880124": [
+   "Mansoor Delane",
+   "KC"
+  ],
+  "4880312": [
+   "D'Arco Perkins-McAllister",
+   "KC"
+  ],
+  "4885466": [
+   "Jeff Caldwell",
+   "KC"
+  ],
+  "4900789": [
+   "Cameron Robertson",
+   "ARI"
+  ],
+  "4912218": [
+   "Cyrus Allen",
+   "KC"
+  ],
+  "4912338": [
+   "Aiden Fisher",
+   "KC"
+  ],
+  "5081093": [
+   "DeShon Singleton",
+   "KC"
+  ],
+  "5081927": [
+   "R Mason Thomas",
+   "KC"
+  ],
+  "5082630": [
+   "Jalen Royals",
+   "KC"
+  ],
+  "5084514": [
+   "Kaleb Proctor",
+   "ARI"
+  ],
+  "5084939": [
+   "Isaiah Adams",
+   "ARI"
+  ],
+  "5093923": [
+   "Andrew Armstrong",
+   "KC"
+  ],
+  "5099542": [
+   "Wydett Williams Jr.",
+   "ARI"
+  ],
+  "5151948": [
+   "Joey Aguilar",
+   "ARI"
+  ],
+  "5155179": [
+   "Jacob De Jesus",
+   "KC"
+  ],
+  "5278708": [
+   "Melvin Smith Jr.",
+   "KC"
+  ]
+ }
 }

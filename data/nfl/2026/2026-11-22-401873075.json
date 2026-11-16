@@ -356,5 +356,695 @@
    ]
   }
  },
- "props": {}
+ "props": {
+  "open": {
+   "at": "2026-11-16T09:27:38.711Z",
+   "provider": 100,
+   "count": 12,
+   "rows": [
+  {"a":null,"t":"1st Half Total","ti":"72","op":[20.5,null,null],"cur":[20.5,null,null]},
+  {"a":null,"t":"1st Half Total","ti":"72","op":[20.5,null,null],"cur":[20.5,null,null]},
+  {"a":null,"tm":"7","t":"1st Half Moneyline","ti":"73"},
+  {"a":null,"tm":"13","t":"1st Half Moneyline","ti":"73"},
+  {"a":null,"tm":"7","t":"1st Half Spread","ti":"74","op":[-5.5,null,null],"cur":[-5.5,null,null]},
+  {"a":null,"tm":"13","t":"1st Half Spread","ti":"74","op":[5.5,null,null],"cur":[5.5,null,null]},
+  {"a":null,"t":"1st Quarter Total","ti":"75","op":[7.5,null,null],"cur":[7.5,null,null]},
+  {"a":null,"t":"1st Quarter Total","ti":"75","op":[7.5,null,null],"cur":[7.5,null,null]},
+  {"a":null,"tm":"7","t":"1st Quarter Moneyline","ti":"76"},
+  {"a":null,"tm":"13","t":"1st Quarter Moneyline","ti":"76"},
+  {"a":null,"tm":"7","t":"1st Quarter Spread","ti":"77","op":[-2.5,null,null],"cur":[-2.5,null,null]},
+  {"a":null,"tm":"13","t":"1st Quarter Spread","ti":"77","op":[2.5,null,null],"cur":[2.5,null,null]}
+ ],
+   "sample": [
+    {
+     "competition": {
+      "id": "401873075"
+     },
+     "provider": {
+      "id": "100"
+     },
+     "type": {
+      "id": "72",
+      "name": "1st Half Total"
+     },
+     "lastUpdated": "2026-11-16T07:00Z",
+     "current": {
+      "target": {
+       "value": 20.5,
+       "displayValue": "20.5"
+      }
+     },
+     "open": {
+      "target": {
+       "value": 20.5,
+       "displayValue": "20.5"
+      }
+     }
+    },
+    {
+     "competition": {
+      "id": "401873075"
+     },
+     "provider": {
+      "id": "100"
+     },
+     "type": {
+      "id": "72",
+      "name": "1st Half Total"
+     },
+     "lastUpdated": "2026-11-16T07:00Z",
+     "current": {
+      "target": {
+       "value": 20.5,
+       "displayValue": "20.5"
+      }
+     },
+     "open": {
+      "target": {
+       "value": 20.5,
+       "displayValue": "20.5"
+      }
+     }
+    }
+   ]
+  }
+ },
+ "names": {
+  "2612151": [
+   "Alex Singleton",
+   "DEN"
+  ],
+  "2972342": [
+   "Adam Butler",
+   "LV"
+  ],
+  "2985659": [
+   "Wil Lutz",
+   "DEN"
+  ],
+  "3045172": [
+   "Folorunso Fatukasi",
+   "LV"
+  ],
+  "3051876": [
+   "Evan Engram",
+   "DEN"
+  ],
+  "3052885": [
+   "Mike McGlinchey",
+   "DEN"
+  ],
+  "3121003": [
+   "Taron Johnson",
+   "LV"
+  ],
+  "3121541": [
+   "Michael Deiter",
+   "DEN"
+  ],
+  "3128429": [
+   "Courtland Sutton",
+   "DEN"
+  ],
+  "3134312": [
+   "Kolton Miller",
+   "LV"
+  ],
+  "3138744": [
+   "Chris Myarick",
+   "LV"
+  ],
+  "3139166": [
+   "Mitchell Fraboni",
+   "DEN"
+  ],
+  "3686689": [
+   "AJ Cole",
+   "LV"
+  ],
+  "3892775": [
+   "Jarrett Stidham",
+   "DEN"
+  ],
+  "3894915": [
+   "D.J. Jones",
+   "DEN"
+  ],
+  "3911853": [
+   "Adam Trautman",
+   "DEN"
+  ],
+  "3915147": [
+   "Calvin Throckmorton",
+   "DEN"
+  ],
+  "3915282": [
+   "Zach Allen",
+   "DEN"
+  ],
+  "3916655": [
+   "Maxx Crosby",
+   "LV"
+  ],
+  "3919548": [
+   "Justin Strnad",
+   "DEN"
+  ],
+  "3921936": [
+   "Matt Peart",
+   "DEN"
+  ],
+  "3929914": [
+   "Adam Prentice",
+   "DEN"
+  ],
+  "4034530": [
+   "Chris Williams",
+   "LV"
+  ],
+  "4034704": [
+   "Michael Bandy",
+   "DEN"
+  ],
+  "4035662": [
+   "Garett Bolles",
+   "DEN"
+  ],
+  "4037559": [
+   "Devon Key",
+   "DEN"
+  ],
+  "4037650": [
+   "Ben Powers",
+   "DEN"
+  ],
+  "4039007": [
+   "Taylor Rapp",
+   "DEN"
+  ],
+  "4039018": [
+   "Luke Wattenberg",
+   "DEN"
+  ],
+  "4039057": [
+   "Lil'Jordan Humphrey",
+   "DEN"
+  ],
+  "4039059": [
+   "Brandon Jones",
+   "DEN"
+  ],
+  "4039064": [
+   "Malcolm Roach",
+   "DEN"
+  ],
+  "4040608": [
+   "Jonathon Cooper",
+   "DEN"
+  ],
+  "4043169": [
+   "Jeremy Chinn",
+   "LV"
+  ],
+  "4045305": [
+   "Ian Thomas",
+   "LV"
+  ],
+  "4066109": [
+   "Eyioma Uwazurike",
+   "DEN"
+  ],
+  "4239719": [
+   "Malcolm Koonce",
+   "LV"
+  ],
+  "4240551": [
+   "Alex Palczewski",
+   "DEN"
+  ],
+  "4241820": [
+   "Sam Ehlinger",
+   "DEN"
+  ],
+  "4241961": [
+   "Connor Heyward",
+   "LV"
+  ],
+  "4241983": [
+   "Cody White",
+   "LV"
+  ],
+  "4241985": [
+   "J.K. Dobbins",
+   "DEN"
+  ],
+  "4242358": [
+   "Matt Henningsen",
+   "DEN"
+  ],
+  "4242503": [
+   "Alex Forsyth",
+   "DEN"
+  ],
+  "4243545": [
+   "Alex Ward",
+   "LV"
+  ],
+  "4243916": [
+   "Patrick Johnson",
+   "LV"
+  ],
+  "4249087": [
+   "Matt Gay",
+   "LV"
+  ],
+  "4249616": [
+   "Owen Wright",
+   "LV"
+  ],
+  "4250393": [
+   "Tristin McCollum",
+   "LV"
+  ],
+  "4257240": [
+   "Tycen Anderson",
+   "DEN"
+  ],
+  "4258194": [
+   "Kwity Paye",
+   "LV"
+  ],
+  "4259561": [
+   "Eric Stokes",
+   "LV"
+  ],
+  "4259632": [
+   "Isaiah Pola-Mao",
+   "LV"
+  ],
+  "4260394": [
+   "Aidan O'Connell",
+   "LV"
+  ],
+  "4260703": [
+   "Segun Olubi",
+   "LV"
+  ],
+  "4261090": [
+   "Jordan Jackson",
+   "DEN"
+  ],
+  "4360231": [
+   "Lucas Krull",
+   "DEN"
+  ],
+  "4360259": [
+   "Nik Bonitto",
+   "DEN"
+  ],
+  "4360475": [
+   "Chigozie Anusiem",
+   "LV"
+  ],
+  "4360499": [
+   "Tyler Linderbaum",
+   "LV"
+  ],
+  "4360749": [
+   "Thomas Booker IV",
+   "LV"
+  ],
+  "4360853": [
+   "Talanoa Hufanga",
+   "DEN"
+  ],
+  "4361691": [
+   "Frank Crum",
+   "DEN"
+  ],
+  "4362452": [
+   "Jaret Patterson",
+   "DEN"
+  ],
+  "4362524": [
+   "Jordan Miller",
+   "DEN"
+  ],
+  "4362748": [
+   "Tyler Badie",
+   "DEN"
+  ],
+  "4362999": [
+   "Spencer Burford",
+   "LV"
+  ],
+  "4366963": [
+   "Dylan Laube",
+   "LV"
+  ],
+  "4368033": [
+   "Nick Gargiulo",
+   "DEN"
+  ],
+  "4372012": [
+   "Pat Surtain II",
+   "DEN"
+  ],
+  "4372016": [
+   "Jaylen Waddle",
+   "DEN"
+  ],
+  "4372085": [
+   "Cameron McGrone",
+   "LV"
+  ],
+  "4372378": [
+   "Anthony Goodlow",
+   "LV"
+  ],
+  "4373471": [
+   "Brennan Jackson",
+   "LV"
+  ],
+  "4374187": [
+   "Deven Thompkins",
+   "LV"
+  ],
+  "4379409": [
+   "Azeez Ojulari",
+   "LV"
+  ],
+  "4379416": [
+   "Quay Walker",
+   "LV"
+  ],
+  "4382401": [
+   "Riley Moss",
+   "DEN"
+  ],
+  "4382466": [
+   "Jalen Nailor",
+   "LV"
+  ],
+  "4383440": [
+   "Nate Adkins",
+   "DEN"
+  ],
+  "4391845": [
+   "Cody Schrader",
+   "DEN"
+  ],
+  "4401805": [
+   "Dareke Young",
+   "LV"
+  ],
+  "4426338": [
+   "Bo Nix",
+   "DEN"
+  ],
+  "4426340": [
+   "Nakobe Dean",
+   "LV"
+  ],
+  "4426393": [
+   "Will Putnam",
+   "LV"
+  ],
+  "4427408": [
+   "Jahfari Harvey",
+   "DEN"
+  ],
+  "4428241": [
+   "Levelle Bailey",
+   "DEN"
+  ],
+  "4428503": [
+   "JL Skinner",
+   "DEN"
+  ],
+  "4428718": [
+   "Tre Tucker",
+   "LV"
+  ],
+  "4429086": [
+   "Michael Mayer",
+   "LV"
+  ],
+  "4429109": [
+   "Tonka Hemingway",
+   "LV"
+  ],
+  "4429193": [
+   "Kris Abrams-Draine",
+   "DEN"
+  ],
+  "4429560": [
+   "Tommy Eichenberg",
+   "LV"
+  ],
+  "4430330": [
+   "Darien Porter",
+   "LV"
+  ],
+  "4430896": [
+   "JJ Pegues",
+   "LV"
+  ],
+  "4430925": [
+   "Jahdae Barron",
+   "DEN"
+  ],
+  "4430973": [
+   "Johnny Walker",
+   "DEN"
+  ],
+  "4431280": [
+   "Troy Franklin",
+   "DEN"
+  ],
+  "4431414": [
+   "Tim Keenan III",
+   "LV"
+  ],
+  "4431623": [
+   "Trey Zuhn III",
+   "LV"
+  ],
+  "4432208": [
+   "Caleb Lohner",
+   "DEN"
+  ],
+  "4432665": [
+   "Brock Bowers",
+   "LV"
+  ],
+  "4432775": [
+   "Dont'e Thornton Jr.",
+   "LV"
+  ],
+  "4433889": [
+   "Caleb Rogers",
+   "LV"
+  ],
+  "4565769": [
+   "Sean Fresch",
+   "DEN"
+  ],
+  "4567462": [
+   "Ja'Quan McMillian",
+   "DEN"
+  ],
+  "4568490": [
+   "RJ Harvey",
+   "DEN"
+  ],
+  "4589212": [
+   "Jeremy Crawshaw",
+   "DEN"
+  ],
+  "4600981": [
+   "Pat Bryant",
+   "DEN"
+  ],
+  "4603186": [
+   "Jack Bech",
+   "LV"
+  ],
+  "4603189": [
+   "Sai'vion Jones",
+   "DEN"
+  ],
+  "4606683": [
+   "DJ Glaze",
+   "LV"
+  ],
+  "4608138": [
+   "Quinn Meinerz",
+   "DEN"
+  ],
+  "4612077": [
+   "Bryce Cabeldue",
+   "LV"
+  ],
+  "4682488": [
+   "Dalton Johnson",
+   "LV"
+  ],
+  "4683535": [
+   "Tyler Onyedim",
+   "DEN"
+  ],
+  "4685126": [
+   "Cody Lindenberg",
+   "LV"
+  ],
+  "4685305": [
+   "Brandon Cleveland",
+   "LV"
+  ],
+  "4685424": [
+   "Dane Key",
+   "DEN"
+  ],
+  "4685978": [
+   "Darrell Luter Jr.",
+   "LV"
+  ],
+  "4686337": [
+   "Greedy Vance",
+   "LV"
+  ],
+  "4686442": [
+   "Tyler Miller",
+   "DEN"
+  ],
+  "4686472": [
+   "Marvin Mims Jr.",
+   "DEN"
+  ],
+  "4686658": [
+   "Mike Washington Jr.",
+   "LV"
+  ],
+  "4687592": [
+   "Jonah Elliss",
+   "DEN"
+  ],
+  "4688538": [
+   "Justin Pickett",
+   "LV"
+  ],
+  "4688835": [
+   "Roman Hemby",
+   "LV"
+  ],
+  "4692048": [
+   "Que Robinson",
+   "DEN"
+  ],
+  "4693208": [
+   "Patrick Gurd",
+   "LV"
+  ],
+  "4693373": [
+   "Jordan Turner",
+   "DEN"
+  ],
+  "4694505": [
+   "Charles Grant",
+   "LV"
+  ],
+  "4697757": [
+   "Treydan Stukes",
+   "LV"
+  ],
+  "4702555": [
+   "Jonah Coleman",
+   "DEN"
+  ],
+  "4837248": [
+   "Fernando Mendoza",
+   "LV"
+  ],
+  "4868598": [
+   "Kage Casey",
+   "DEN"
+  ],
+  "4875295": [
+   "Jackson Powers-Johnson",
+   "LV"
+  ],
+  "4875336": [
+   "Karene Reid",
+   "DEN"
+  ],
+  "4880014": [
+   "Miles Scott",
+   "DEN"
+  ],
+  "4890973": [
+   "Ashton Jeanty",
+   "LV"
+  ],
+  "4911904": [
+   "Keyron Crawford",
+   "LV"
+  ],
+  "4912190": [
+   "Red Murdock",
+   "DEN"
+  ],
+  "4917354": [
+   "Hezekiah Masses",
+   "LV"
+  ],
+  "5082398": [
+   "Brent Austin",
+   "DEN"
+  ],
+  "5085625": [
+   "Gavin Ortega",
+   "DEN"
+  ],
+  "5144941": [
+   "David Ebuka Agoha",
+   "DEN"
+  ],
+  "5150247": [
+   "Malik Benson",
+   "LV"
+  ],
+  "5153665": [
+   "Cian Slone",
+   "LV"
+  ],
+  "5155825": [
+   "Carter Runyon",
+   "LV"
+  ],
+  "5157289": [
+   "Jermod McCoy",
+   "LV"
+  ],
+  "5158921": [
+   "Kansei Matsuzawa",
+   "LV"
+  ],
+  "5159802": [
+   "Dallen Bentley",
+   "DEN"
+  ],
+  "5216101": [
+   "Dondrea Tillman",
+   "DEN"
+  ],
+  "5225419": [
+   "Kolbe Katsis",
+   "DEN"
+  ],
+  "5348412": [
+   "Niklas Henning",
+   "LV"
+  ]
+ }
 }
