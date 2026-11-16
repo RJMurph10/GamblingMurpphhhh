@@ -395,12 +395,12 @@
    ]
   },
   "close": {
-   "at": "2026-11-16T22:13:01.047Z",
+   "at": "2026-11-16T23:51:23.180Z",
    "scoreboard": [
     {
      "provider": {
       "id": "100",
-      "name": "Draft Kings",
+      "name": "DraftKings",
       "priority": 1
      },
      "details": "MINN -33.5",
@@ -637,7 +637,7 @@
     {
      "provider": {
       "id": "100",
-      "name": "Draft Kings",
+      "name": "DraftKings",
       "priority": 1
      },
      "details": "MINN -33.5",

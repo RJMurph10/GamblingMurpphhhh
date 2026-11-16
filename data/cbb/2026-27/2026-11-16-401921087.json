@@ -7,18 +7,18 @@
   "id": "314",
   "abbr": "IONA",
   "name": "Iona Gaels",
-  "score": 0
+  "score": 27
  },
  "home": {
   "id": "2378",
   "abbr": "UMBC",
   "name": "UMBC Retrievers",
-  "score": 0
+  "score": 30
  },
  "neutral": false,
  "venue": "Chesapeake Employers Insurance Arena",
  "seasonType": 2,
- "state": "pre",
+ "state": "in",
  "lines": {
   "open": {
    "at": "2026-11-15T22:55:11.258Z",

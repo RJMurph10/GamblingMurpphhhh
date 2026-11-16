@@ -7,18 +7,18 @@
   "id": "2016",
   "abbr": "ALCN",
   "name": "Alcorn State Braves",
-  "score": 0
+  "score": 25
  },
  "home": {
   "id": "120",
   "abbr": "MD",
   "name": "Maryland Terrapins",
-  "score": 0
+  "score": 46
  },
  "neutral": false,
  "venue": "XFINITY Center",
  "seasonType": 2,
- "state": "pre",
+ "state": "in",
  "lines": {
   "open": {
    "at": "2026-11-15T22:55:11.258Z",

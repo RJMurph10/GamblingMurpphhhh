@@ -264,6 +264,24 @@
      }
     }
    ]
+  },
+  "latest": {
+   "at": "2026-11-16T23:51:23.180Z",
+   "count": 12,
+   "rows": [
+  {"a":null,"t":"1st Half Total","ti":"72","op":[20.5,null,null],"cur":[20.5,null,null]},
+  {"a":null,"t":"1st Half Total","ti":"72","op":[20.5,null,null],"cur":[20.5,null,null]},
+  {"a":null,"tm":"20","t":"1st Half Moneyline","ti":"73"},
+  {"a":null,"tm":"24","t":"1st Half Moneyline","ti":"73"},
+  {"a":null,"tm":"20","t":"1st Half Spread","ti":"74","op":[1.5,null,null],"cur":[2.5,null,null]},
+  {"a":null,"tm":"24","t":"1st Half Spread","ti":"74","op":[-1.5,null,null],"cur":[-2.5,null,null]},
+  {"a":null,"t":"1st Quarter Total","ti":"75","op":[7.5,null,null],"cur":[7.5,null,null]},
+  {"a":null,"t":"1st Quarter Total","ti":"75","op":[7.5,null,null],"cur":[7.5,null,null]},
+  {"a":null,"tm":"20","t":"1st Quarter Moneyline","ti":"76"},
+  {"a":null,"tm":"24","t":"1st Quarter Moneyline","ti":"76"},
+  {"a":null,"tm":"20","t":"1st Quarter Spread","ti":"77","op":[0.5,null,null],"cur":[0.5,null,null]},
+  {"a":null,"tm":"24","t":"1st Quarter Spread","ti":"77","op":[-0.5,null,null],"cur":[-0.5,null,null]}
+ ]
   }
  },
  "names": {
