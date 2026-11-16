@@ -18,7 +18,7 @@ describe("PLL player stats from the Cannons sheets", () => {
     expect(n("Chaos")).toBe(12);
     expect(n("Outlaws")).toBe(15);
     expect(n("Whipsnakes")).toBe(13);
-    expect(n("Atlas")).toBe(11);
+    expect(n("Atlas")).toBe(12);
   });
   it("every stat line obeys P = 1G + 2*2G + A", () => {
     for (const g of data.games)
