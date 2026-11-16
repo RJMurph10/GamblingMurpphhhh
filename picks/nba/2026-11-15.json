@@ -163,7 +163,12 @@
    "firstSeen": "2026-11-15T02:10:43.492Z",
    "latest": 8.5,
    "latestAt": "2026-11-15T19:59:01.877Z",
-   "alerted": false
+   "alerted": false,
+   "score": [
+    147,
+    119
+   ],
+   "close": 8.5
   },
   {
    "id": "401909991-total",
@@ -179,7 +184,12 @@
    "firstSeen": "2026-11-15T02:10:43.492Z",
    "latest": 223.5,
    "latestAt": "2026-11-15T19:59:01.877Z",
-   "alerted": false
+   "alerted": false,
+   "score": [
+    147,
+    119
+   ],
+   "close": 224.5
   },
   {
    "id": "401909992-spread",
@@ -195,7 +205,12 @@
    "firstSeen": "2026-11-15T19:59:01.877Z",
    "latest": 8.5,
    "latestAt": "2026-11-15T19:59:01.877Z",
-   "alerted": false
+   "alerted": false,
+   "score": [
+    113,
+    106
+   ],
+   "close": 8.5
   },
   {
    "id": "401909993-spread",
@@ -211,7 +226,12 @@
    "firstSeen": "2026-11-15T12:18:31.692Z",
    "latest": 10.5,
    "latestAt": "2026-11-15T19:59:01.877Z",
-   "alerted": false
+   "alerted": false,
+   "score": [
+    125,
+    103
+   ],
+   "close": 12.5
   }
  ]
 }
