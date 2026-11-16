@@ -20,6 +20,7 @@ describe("PLL player stats from the Cannons sheets", () => {
     expect(n("Whipsnakes")).toBe(13);
     expect(n("Atlas")).toBe(12);
     expect(n("Waterdogs")).toBe(14);
+    expect(n("Archers")).toBe(13);
   });
   it("every stat line obeys P = 1G + 2*2G + A", () => {
     for (const g of data.games)
@@ -29,7 +30,7 @@ describe("PLL player stats from the Cannons sheets", () => {
       }
   });
   it("builds players with slugs and kinds", () => {
-    expect(pllPlayers().size).toBe(201);
+    expect(pllPlayers().size).toBe(225);
     const h = pllPlayer(playerSlug("Marcus Holman"));
     expect(h?.games.length).toBeGreaterThan(0);
     expect(playerKind(pllPlayer(playerSlug("Colin Kirst"))!)).toBe("goalie");
@@ -40,6 +41,7 @@ describe("PLL player stats from the Cannons sheets", () => {
     expect(pllTeamPlayers("127638", 2026).length).toBe(30);
     expect(pllTeamPlayers("127632", 2026).length).toBe(32);
     expect(pllTeamPlayers("127637", 2026).length).toBe(33);
+    expect(pllTeamPlayers("127631", 2026).length).toBe(24);
   });
   it("totals add up across games", () => {
     const h = pllPlayer(playerSlug("Marcus Holman"))!;
@@ -58,5 +60,23 @@ describe("players traded mid-season", () => {
     expect(p.num).toBe("11");
     const dates = p.games.map((g) => g.date);
     expect(new Set(dates).size).toBe(dates.length);
+  });
+});
+
+describe("the full 2026 season", () => {
+  type Line = { stats?: Record<string, number | null> };
+  const goals = (ps: Line[]) => ps.reduce((n, p) => n + (p.stats ? p.stats.P! - p.stats.A! : 0), 0);
+  const against = (ps: Line[]) => ps.reduce((n, p) => n + (p.stats?.SA ?? 0), 0);
+  const games = data.games.filter((g) => g.season === 2026);
+  it("has both clubs' sheets for every game, and they agree on the score", () => {
+    for (const g of games) {
+      const other = games.find(
+        (o) => o.team === g.opponent && o.opponent === g.team && o.date === g.date,
+      );
+      expect(other, `${g.date} ${g.team} vs ${g.opponent}`).toBeDefined();
+      expect(goals(g.players as unknown as Line[])).toBe(
+        against(other!.players as unknown as Line[]),
+      );
+    }
   });
 });
