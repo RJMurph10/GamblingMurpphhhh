@@ -225,6 +225,8 @@ def main():
         date = f"{season}-{int(m.group(1)):02d}-{int(m.group(2)):02d}"
         opp = m.group(3).strip().title()
         players, problems = parse_game(f)
+        if not players:
+            print("EMPTY SHEET, skipped:", f.name); continue
         for pr in problems: pr["game"] = f.name
         all_problems += problems
         data["games"].append(dict(team=team, season=season, date=date, opponent=opp, file=f.name, players=[
