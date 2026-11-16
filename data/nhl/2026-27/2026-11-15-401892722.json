@@ -7,13 +7,13 @@
   "id": "26",
   "abbr": "FLA",
   "name": "Florida Panthers",
-  "score": 0
+  "score": 1
  },
  "home": {
   "id": "9",
   "abbr": "DAL",
   "name": "Dallas Stars",
-  "score": 0
+  "score": 1
  },
  "neutral": false,
  "venue": "American Airlines Center",

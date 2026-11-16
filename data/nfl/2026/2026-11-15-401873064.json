@@ -7,13 +7,13 @@
   "id": "23",
   "abbr": "PIT",
   "name": "Pittsburgh Steelers",
-  "score": 0
+  "score": 3
  },
  "home": {
   "id": "4",
   "abbr": "CIN",
   "name": "Cincinnati Bengals",
-  "score": 3
+  "score": 17
  },
  "neutral": false,
  "venue": "Paycor Stadium",

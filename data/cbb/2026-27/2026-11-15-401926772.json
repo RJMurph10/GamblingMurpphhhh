@@ -7,18 +7,18 @@
   "id": "2029",
   "abbr": "UAPB",
   "name": "Arkansas-Pine Bluff Golden Lions",
-  "score": 37
+  "score": 46
  },
  "home": {
   "id": "30",
   "abbr": "USC",
   "name": "USC Trojans",
-  "score": 112
+  "score": 122
  },
  "neutral": false,
  "venue": "Galen Center",
  "seasonType": 2,
- "state": "in",
+ "state": "post",
  "lines": {
   "open": {
    "at": "2026-11-15T02:45:11.429Z",
@@ -769,5 +769,9 @@
    ]
   }
  },
- "props": {}
+ "props": {},
+ "final": {
+  "away": 46,
+  "home": 122
+ }
 }

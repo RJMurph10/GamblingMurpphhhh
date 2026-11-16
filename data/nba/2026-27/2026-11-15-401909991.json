@@ -7,18 +7,18 @@
   "id": "10",
   "abbr": "HOU",
   "name": "Houston Rockets",
-  "score": 111
+  "score": 147
  },
  "home": {
   "id": "27",
   "abbr": "WSH",
   "name": "Washington Wizards",
-  "score": 81
+  "score": 119
  },
  "neutral": false,
  "venue": "Capital One Arena",
  "seasonType": 2,
- "state": "in",
+ "state": "post",
  "lines": {
   "open": {
    "at": "2026-11-15T02:45:11.429Z",
@@ -5020,5 +5020,9 @@
    "Tre Johnson",
    "WSH"
   ]
+ },
+ "final": {
+  "away": 147,
+  "home": 119
  }
 }
