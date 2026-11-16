@@ -1,0 +1,71 @@
+name: Halftime lines history (one-time, paid Odds API month)
+
+# NFL halftime game lines 2023-2025 (spreads and totals; US books) from The Odds API's historical
+# snapshots: 570 snapshot times worked out from nflverse play-by-play so each catches 1-3 games at
+# halftime (scripts/line-history/halftime/). 20 credits a snapshot, ~11,400 in all. Saved raw to the
+# halftime-history branch (data/<sport>/<time>.json); snapshots already saved are skipped.
+# Run "test" first: one snapshot (20 credits) that prints whether games in progress carry live lines.
+# If they don't, the snapshots are pregame only and the full pull isn't worth it.
+# Needs the repository secret ODDS_API_KEY_PAID.
+
+on:
+  workflow_dispatch:
+    inputs:
+      mode:
+        description: "test = one snapshot; full = every snapshot not yet saved"
+        type: choice
+        options: [test, full]
+        default: test
+      markets:
+        description: "Markets (each adds 10 credits a snapshot)"
+        required: false
+        default: "spreads,totals"
+      dry:
+        description: "Dry run (credit estimate only)"
+        type: boolean
+        default: false
+
+permissions:
+  contents: write
+
+concurrency:
+  group: halftime-history
+  cancel-in-progress: false
+
+jobs:
+  pull:
+    runs-on: ubuntu-latest
+    timeout-minutes: 300
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          path: app
+          sparse-checkout: scripts/line-history
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+      - name: Pull
+        env:
+          ODDS_API_KEY: ${{ secrets.ODDS_API_KEY_PAID }}
+        run: |
+          set -e
+          if [ -z "$ODDS_API_KEY" ] && [ "${{ inputs.dry }}" != "true" ]; then echo "ODDS_API_KEY_PAID secret not set; skipping."; exit 0; fi
+          url="https://x-access-token:${{ secrets.GITHUB_TOKEN }}@github.com/${{ github.repository }}.git"
+          if git ls-remote --exit-code --heads "$url" halftime-history >/dev/null; then
+            git clone -q --depth 1 --branch halftime-history "$url" store
+          else
+            mkdir store && git -C store init -q -b halftime-history && git -C store remote add origin "$url"
+          fi
+          extra=""
+          if [ "${{ inputs.mode }}" = "test" ]; then extra="--test 1"; fi
+          if [ "${{ inputs.dry }}" = "true" ]; then extra="$extra --dry"; fi
+          node app/scripts/line-history/odds-api-halftime.mjs \
+            --list app/scripts/line-history/halftime/nfl-halftime-snapshots-2023-2025.json \
+            --sport americanfootball_nfl --markets "${{ inputs.markets }}" --out store/data --reserve 300 $extra
+          cd store
+          git config user.name "line-history-bot"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add -A
+          if git diff --cached --quiet; then echo "nothing new"; exit 0; fi
+          git commit -q -m "Halftime lines history $(date -u +%Y-%m-%d)"
+          git push -q origin halftime-history

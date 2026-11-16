@@ -9,6 +9,11 @@ name: Lacrosse odds history (one-time, paid Odds API month)
 on:
   workflow_dispatch:
     inputs:
+      sports:
+        description: "Which history: PLL (month 1), college (month 2), or both"
+        type: choice
+        options: [pll, college, both]
+        default: pll
       dry:
         description: "Dry run (plan and credit estimate only, no Odds API calls)"
         type: boolean
@@ -46,13 +51,18 @@ jobs:
           fi
           dry=""; if [ "${{ inputs.dry }}" = "true" ]; then dry="--dry"; fi
           run() { node app/scripts/lacrosse/odds-history.mjs --sport "$1" --from "$2" --to "$3" --out store/data --reserve 300 $dry; }
-          run lacrosse_pll 2024-05-15 2024-09-30
-          run lacrosse_pll 2025-05-15 2025-09-30
-          run lacrosse_pll 2026-05-15 2026-09-30
-          run lacrosse_ncaa 2023-05-01 2023-06-01
-          run lacrosse_ncaa 2024-02-01 2024-06-01
-          run lacrosse_ncaa 2025-02-01 2025-06-01
-          run lacrosse_ncaa 2026-02-01 2026-06-01
+          S="${{ inputs.sports }}"
+          if [ "$S" != "college" ]; then
+            run lacrosse_pll 2024-05-15 2024-09-30
+            run lacrosse_pll 2025-05-15 2025-09-30
+            run lacrosse_pll 2026-05-15 2026-09-30
+          fi
+          if [ "$S" != "pll" ]; then
+            run lacrosse_ncaa 2023-05-01 2023-06-01
+            run lacrosse_ncaa 2024-02-01 2024-06-01
+            run lacrosse_ncaa 2025-02-01 2025-06-01
+            run lacrosse_ncaa 2026-02-01 2026-06-01
+          fi
           cd store
           git config user.name "line-history-bot"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
