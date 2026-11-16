@@ -20,6 +20,8 @@ from pathlib import Path
 import openpyxl
 
 SECTIONS = ("Offensive", "Defensive", "Faceoff", "Goalie")
+# jersey numbers the PLL's box score leaves off (the owner supplied these)
+NUM_FIX = {"Blaze Riorden": "0"}
 # the most any player has had in a game: a cut that goes past these isn't a real stat line
 MAX = dict(Sh=30, GB=30, TO=12, TCH=150, CT=10, SA=45, A=10, FOT=60)
 
@@ -226,7 +228,7 @@ def main():
         for pr in problems: pr["game"] = f.name
         all_problems += problems
         data["games"].append(dict(team=team, season=season, date=date, opponent=opp, file=f.name, players=[
-            dict(name=p["name"], pos=p["pos"], num=p["num"], **({"stats": p["stats"]} if "stats" in p else {}))
+            dict(name=p["name"], pos=p["pos"], num=p["num"] or NUM_FIX.get(p["name"]), **({"stats": p["stats"]} if "stats" in p else {}))
             for p in players.values()]))
     data["games"].sort(key=lambda g: (g["team"], g["date"]))
     out.write_text(json.dumps(data, indent=0, ensure_ascii=False))
