@@ -8608,7 +8608,7 @@
 {
 "name": "Graham Bundy",
 "pos": "M",
-"num": null,
+"num": "0",
 "stats": {
 "P": 1,
 "G1": 1,
@@ -9062,7 +9062,7 @@
 {
 "name": "Graham Bundy",
 "pos": "M",
-"num": null,
+"num": "0",
 "stats": {
 "P": 0,
 "G1": 0,
@@ -9312,7 +9312,7 @@
 {
 "name": "Graham Bundy",
 "pos": "M",
-"num": null,
+"num": "0",
 "stats": {
 "P": 3,
 "G1": 0,
@@ -9636,7 +9636,7 @@
 {
 "name": "Graham Bundy",
 "pos": "M",
-"num": null,
+"num": "0",
 "stats": {
 "P": 2,
 "G1": 2,
@@ -10050,7 +10050,7 @@
 {
 "name": "Graham Bundy",
 "pos": "M",
-"num": null,
+"num": "0",
 "stats": {
 "P": 0,
 "G1": 0,
@@ -10336,7 +10336,7 @@
 {
 "name": "Graham Bundy",
 "pos": "M",
-"num": null,
+"num": "0",
 "stats": {
 "P": 1,
 "G1": 0,
@@ -10504,6 +10504,312 @@
 "SvPct": 44.0,
 "CSv": 5,
 "GA": 14
+}
+}
+]
+},
+{
+"team": "Outlaws",
+"season": 2026,
+"date": "2026-07-18",
+"opponent": "Chaos",
+"file": "7_18 vs Chaos.xlsx",
+"players": [
+{
+"name": "Pat Kavanagh",
+"pos": "A",
+"num": "51",
+"stats": {
+"P": 4,
+"G1": 2,
+"G2": 0,
+"A": 2,
+"Sh": 6,
+"GB": 1,
+"TO": 1,
+"PAS": 44,
+"TCH": 51,
+"CT": null,
+"Pen": null
+}
+},
+{
+"name": "Logan Wisnauskas",
+"pos": "A",
+"num": "12",
+"stats": {
+"P": 3,
+"G1": 3,
+"G2": 0,
+"A": 0,
+"Sh": 6,
+"GB": 1,
+"TO": 1,
+"PAS": 20,
+"TCH": 27,
+"CT": null,
+"Pen": null
+}
+},
+{
+"name": "Jared Bernhardt",
+"pos": "A",
+"num": "10",
+"stats": {
+"P": 2,
+"G1": 2,
+"G2": 0,
+"A": 0,
+"Sh": 3,
+"GB": 2,
+"TO": 1,
+"PAS": 28,
+"TCH": 32,
+"CT": null,
+"Pen": null
+}
+},
+{
+"name": "Justin Anderson",
+"pos": "M",
+"num": "21",
+"stats": {
+"P": 2,
+"G1": 2,
+"G2": 0,
+"A": 0,
+"Sh": 3,
+"GB": 0,
+"TO": 0,
+"PAS": 11,
+"TCH": 14,
+"CT": null,
+"Pen": null
+}
+},
+{
+"name": "Evan Plunkett",
+"pos": "M",
+"num": "4",
+"stats": {
+"P": 2,
+"G1": 1,
+"G2": 0,
+"A": 1,
+"Sh": 2,
+"GB": 1,
+"TO": 1,
+"PAS": 13,
+"TCH": 16,
+"CT": 0,
+"Pen": 0
+}
+},
+{
+"name": "Brennan O'Neill",
+"pos": "A",
+"num": "42",
+"stats": {
+"P": 1,
+"G1": 0,
+"G2": 0,
+"A": 1,
+"Sh": 9,
+"GB": 0,
+"TO": 4,
+"PAS": 20,
+"TCH": 33,
+"CT": null,
+"Pen": null
+}
+},
+{
+"name": "Dalton Young",
+"pos": "M",
+"num": "11",
+"stats": {
+"P": 1,
+"G1": 0,
+"G2": 0,
+"A": 1,
+"Sh": 3,
+"GB": 1,
+"TO": 2,
+"PAS": 15,
+"TCH": 20,
+"CT": 0,
+"Pen": 0
+}
+},
+{
+"name": "Ryan Terefenko",
+"pos": "SSDM",
+"num": "34",
+"stats": {
+"P": 0,
+"G1": 0,
+"G2": 0,
+"A": 0,
+"Sh": 1,
+"GB": 3,
+"TO": 0,
+"PAS": 9,
+"TCH": 10,
+"CT": 0,
+"Pen": 1
+}
+},
+{
+"name": "Zach Geddes",
+"pos": "SSDM",
+"num": "13",
+"stats": {
+"P": 0,
+"G1": 0,
+"G2": 0,
+"A": 0,
+"Sh": 2,
+"GB": 0,
+"TO": 0,
+"PAS": 6,
+"TCH": 8,
+"CT": 1,
+"Pen": 0
+}
+},
+{
+"name": "Jake Piseno",
+"pos": "LSM",
+"num": "88",
+"stats": {
+"P": 0,
+"G1": 0,
+"G2": 0,
+"A": 0,
+"Sh": 1,
+"GB": 5,
+"TO": 1,
+"PAS": 9,
+"TCH": 11,
+"CT": 1,
+"Pen": 0
+}
+},
+{
+"name": "Graham Bundy",
+"pos": "M",
+"num": "0",
+"stats": {
+"P": 0,
+"G1": 0,
+"G2": 0,
+"A": 0,
+"Sh": 2,
+"GB": 0,
+"TO": 0,
+"PAS": 18,
+"TCH": 20,
+"CT": null,
+"Pen": null
+}
+},
+{
+"name": "Luke Wierman",
+"pos": "FO",
+"num": "52",
+"stats": {
+"P": 0,
+"G1": 0,
+"G2": 0,
+"A": 0,
+"Sh": 1,
+"GB": 5,
+"TO": 1,
+"PAS": 3,
+"TCH": 5,
+"CT": 0,
+"Pen": 0,
+"FOW": 13,
+"FOT": 21
+}
+},
+{
+"name": "Logan McNaney",
+"pos": "G",
+"num": "30",
+"stats": {
+"P": 0,
+"G1": 0,
+"G2": 0,
+"A": 0,
+"Sh": 1,
+"GB": 0,
+"TO": 0,
+"PAS": 22,
+"TCH": 23,
+"CT": 1,
+"Pen": 0,
+"SA": 8,
+"Sv": 14,
+"SvPct": 63.6,
+"CSv": 13,
+"GA": 8
+}
+},
+{
+"name": "Ben Randall",
+"pos": "D",
+"num": "77",
+"stats": {
+"P": 0,
+"G1": 0,
+"G2": 0,
+"A": 0,
+"Sh": 0,
+"GB": 3,
+"TO": null,
+"PAS": null,
+"TCH": 8,
+"CT": 3,
+"Pen": 0
+}
+},
+{
+"name": "Michael Manley",
+"pos": "D",
+"num": "37",
+"stats": {
+"P": 0,
+"G1": 0,
+"G2": 0,
+"A": 0,
+"Sh": 0,
+"GB": 1,
+"TO": null,
+"PAS": null,
+"TCH": 8,
+"CT": 0,
+"Pen": 1
+}
+},
+{
+"name": "Jack Gray",
+"pos": "SSDM",
+"num": "44",
+"stats": {
+"P": 0,
+"G1": 0,
+"G2": 0,
+"A": 0,
+"Sh": 0,
+"GB": 0,
+"TO": null,
+"PAS": null,
+"TCH": 3,
+"CT": null,
+"Pen": null,
+"FOW": 0,
+"FOT": 1
 }
 }
 ]
@@ -10682,7 +10988,7 @@
 {
 "name": "Graham Bundy",
 "pos": "M",
-"num": null,
+"num": "0",
 "stats": {
 "P": 1,
 "G1": 0,
@@ -10860,7 +11166,7 @@
 {
 "name": "Graham Bundy",
 "pos": "M",
-"num": null,
+"num": "0",
 "stats": {
 "P": 3,
 "G1": 1,
@@ -11389,7 +11695,7 @@
 {
 "name": "Graham Bundy",
 "pos": "M",
-"num": null,
+"num": "0",
 "stats": {
 "P": 0,
 "G1": 0,
@@ -11608,7 +11914,7 @@
 {
 "name": "Graham Bundy",
 "pos": "M",
-"num": null,
+"num": "0",
 "stats": {
 "P": 3,
 "G1": 1,
@@ -11968,7 +12274,7 @@
 {
 "name": "Graham Bundy",
 "pos": "M",
-"num": null,
+"num": "0",
 "stats": {
 "P": 2,
 "G1": 0,
@@ -12299,7 +12605,7 @@
 {
 "name": "Graham Bundy",
 "pos": "M",
-"num": null,
+"num": "0",
 "stats": {
 "P": 3,
 "G1": 0,
@@ -12693,7 +12999,7 @@
 {
 "name": "Graham Bundy",
 "pos": "M",
-"num": null,
+"num": "0",
 "stats": {
 "P": 0,
 "G1": 0,
@@ -13021,7 +13327,7 @@
 {
 "name": "Graham Bundy",
 "pos": "M",
-"num": null,
+"num": "0",
 "stats": {
 "P": 0,
 "G1": 0,
