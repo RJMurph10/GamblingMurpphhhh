@@ -42,7 +42,7 @@ function Bio({ p }: { p: PllPlayer }) {
   const logo = collegeLogoFor(college);
   const bits = [
     p.num ? `#${p.num}` : null,
-    p.bio.position_name ?? posAbbr(p.pos),
+    posAbbr(p.pos),
     p.bio.experience
       ? `${p.bio.experience}${["th", "st", "nd", "rd"][p.bio.experience] ?? "th"} PLL season`
       : null,

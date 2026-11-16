@@ -1,11 +1,13 @@
 import data from "@/data/pll-game-rosters.json";
 import type { PllGame, PllSeason } from "./pll";
+import { sheetGameRoster } from "./player-stats";
 
 /**
  * PLL game-day rosters (2026), from the Lacrosse API's player box scores: everyone with a box-score line
  * dressed that week (scripts/lacrosse/laxapi-rosters.mjs). The feed's box scores from early August on
  * list only a few players, so for those a club's last complete game-day roster stands in, labelled with
- * the game it's from.
+ * the game it's from. Where the site owner entered a club's PLL box-score sheet for the game, that
+ * sheet's list is used instead of the feed.
  */
 export interface PllRosterLine {
   name: string;
@@ -33,6 +35,8 @@ const DAY = 24 * 3_600_000;
 export function gameRoster(game: PllGame, season: PllSeason | undefined, teamId: string) {
   const club = season?.teams.find((t) => t.id === teamId)?.short;
   if (!club) return undefined;
+  const sheet = sheetGameRoster(teamId, game.date);
+  if (sheet) return { players: sheet, exact: true } satisfies PllGameRoster;
   const t = new Date(game.date).getTime();
   const near = games
     .filter((g) => g.clubs.includes(club) && Math.abs(new Date(g.date).getTime() - t) <= 1.5 * DAY)
