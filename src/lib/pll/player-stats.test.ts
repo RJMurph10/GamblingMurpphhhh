@@ -10,8 +10,11 @@ import {
 } from "./player-stats";
 
 describe("PLL player stats from the Cannons sheets", () => {
-  it("has all 14 Cannons games", () => {
-    expect(data.games.filter((g) => g.season === 2026).length).toBe(14);
+  it("has every entered game", () => {
+    const n = (team: string) =>
+      data.games.filter((g) => g.team === team && g.season === 2026).length;
+    expect(n("Cannons")).toBe(14);
+    expect(n("Redwoods")).toBe(13);
   });
   it("every stat line obeys P = 1G + 2*2G + A", () => {
     for (const g of data.games)
@@ -21,11 +24,12 @@ describe("PLL player stats from the Cannons sheets", () => {
       }
   });
   it("builds players with slugs and kinds", () => {
-    expect(pllPlayers().size).toBe(26);
+    expect(pllPlayers().size).toBe(55);
     const h = pllPlayer(playerSlug("Marcus Holman"));
     expect(h?.games.length).toBeGreaterThan(0);
     expect(playerKind(pllPlayer(playerSlug("Colin Kirst"))!)).toBe("goalie");
     expect(pllTeamPlayers("122997", 2026).length).toBe(26);
+    expect(pllTeamPlayers("127636", 2026).length).toBe(29);
   });
   it("totals add up across games", () => {
     const h = pllPlayer(playerSlug("Marcus Holman"))!;

@@ -1,5 +1,13 @@
 import { afterEach, describe, expect, it, vi } from "vitest";
+import type { ReactNode } from "react";
 import { render, screen } from "@testing-library/react";
+
+vi.mock("@tanstack/react-router", () => ({
+  Link: ({ children, className }: { children: ReactNode; className?: string }) => (
+    <a className={className}>{children}</a>
+  ),
+}));
+
 import fixture from "./fixtures/pll-2026.json";
 import { fetchPllSeason } from "@/lib/pll/pll.server";
 import { gameRoster } from "@/lib/pll/game-rosters";

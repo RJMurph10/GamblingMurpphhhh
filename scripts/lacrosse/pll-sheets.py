@@ -80,7 +80,7 @@ def offensive(s):
                 continue
             for GB, TO, TCH, PAS in splits(post, [2, 2, 3, 3]):
                 # touches don't count ground balls (a faceoff man can have 5 GB and 3 touches)
-                if PAS > TCH or TO > TCH or GB > MAX["GB"] or TO > MAX["TO"] or TCH > MAX["TCH"]: continue
+                if PAS > TCH or A > PAS or TO > TCH or GB > MAX["GB"] or TO > MAX["TO"] or TCH > MAX["TCH"]: continue
                 out.append(dict(P=P, G1=g1, G2=g2, A=A, Sh=Sh, GB=GB, TO=TO, TCH=TCH, PAS=PAS))
     return out
 
