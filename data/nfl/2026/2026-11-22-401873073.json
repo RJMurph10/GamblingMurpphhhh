@@ -479,16 +479,21 @@
  },
  "props": {
   "open": {
-   "at": "2026-11-16T09:27:38.711Z",
+   "at": "2026-11-16T11:33:46.766Z",
    "provider": 100,
-   "count": 12,
+   "count": 17,
    "rows": [
+  {"a":"3916148","t":"Anytime Touchdown Scorer","ti":"31"},
+  {"a":"4241389","t":"Anytime Touchdown Scorer","ti":"31"},
+  {"a":"4361579","t":"Anytime Touchdown Scorer","ti":"31"},
+  {"a":"4426354","t":"Anytime Touchdown Scorer","ti":"31"},
+  {"a":"4688380","t":"Anytime Touchdown Scorer","ti":"31"},
   {"a":null,"t":"1st Half Total","ti":"72","op":[27.5,null,null],"cur":[27.5,null,null]},
   {"a":null,"t":"1st Half Total","ti":"72","op":[27.5,null,null],"cur":[27.5,null,null]},
   {"a":null,"tm":"6","t":"1st Half Moneyline","ti":"73"},
   {"a":null,"tm":"10","t":"1st Half Moneyline","ti":"73"},
-  {"a":null,"tm":"6","t":"1st Half Spread","ti":"74","op":[-4.5,null,null],"cur":[-4.5,null,null]},
-  {"a":null,"tm":"10","t":"1st Half Spread","ti":"74","op":[4.5,null,null],"cur":[4.5,null,null]},
+  {"a":null,"tm":"6","t":"1st Half Spread","ti":"74","op":[-4.5,null,null],"cur":[-5.5,null,null]},
+  {"a":null,"tm":"10","t":"1st Half Spread","ti":"74","op":[4.5,null,null],"cur":[5.5,null,null]},
   {"a":null,"t":"1st Quarter Total","ti":"75","op":[10.5,null,null],"cur":[10.5,null,null]},
   {"a":null,"t":"1st Quarter Total","ti":"75","op":[10.5,null,null],"cur":[10.5,null,null]},
   {"a":null,"tm":"6","t":"1st Quarter Moneyline","ti":"76"},
@@ -501,53 +506,62 @@
      "competition": {
       "id": "401873073"
      },
+     "athlete": {
+      "id": "3916148"
+     },
      "provider": {
       "id": "100"
      },
      "type": {
-      "id": "72",
-      "name": "1st Half Total"
+      "id": "31",
+      "name": "Anytime Touchdown Scorer"
      },
-     "lastUpdated": "2026-11-16T06:59Z",
-     "current": {
-      "target": {
-       "value": 27.5,
-       "displayValue": "27.5"
-      }
-     },
-     "open": {
-      "target": {
-       "value": 27.5,
-       "displayValue": "27.5"
-      }
-     }
+     "lastUpdated": "2026-11-16T02:26Z",
+     "current": {},
+     "open": {}
     },
     {
      "competition": {
       "id": "401873073"
      },
+     "athlete": {
+      "id": "4241389"
+     },
      "provider": {
       "id": "100"
      },
      "type": {
-      "id": "72",
-      "name": "1st Half Total"
+      "id": "31",
+      "name": "Anytime Touchdown Scorer"
      },
-     "lastUpdated": "2026-11-16T06:59Z",
-     "current": {
-      "target": {
-       "value": 27.5,
-       "displayValue": "27.5"
-      }
-     },
-     "open": {
-      "target": {
-       "value": 27.5,
-       "displayValue": "27.5"
-      }
-     }
+     "lastUpdated": "2026-11-16T13:34Z",
+     "current": {},
+     "open": {}
     }
    ]
+  },
+  "latest": {
+   "at": "2026-11-16T11:33:46.766Z",
+   "count": 17,
+   "rows": [
+  {"a":"3916148","t":"Anytime Touchdown Scorer","ti":"31"},
+  {"a":"4241389","t":"Anytime Touchdown Scorer","ti":"31"},
+  {"a":"4361579","t":"Anytime Touchdown Scorer","ti":"31"},
+  {"a":"4426354","t":"Anytime Touchdown Scorer","ti":"31"},
+  {"a":"4688380","t":"Anytime Touchdown Scorer","ti":"31"},
+  {"a":null,"t":"1st Half Total","ti":"72","op":[27.5,null,null],"cur":[27.5,null,null]},
+  {"a":null,"t":"1st Half Total","ti":"72","op":[27.5,null,null],"cur":[27.5,null,null]},
+  {"a":null,"tm":"6","t":"1st Half Moneyline","ti":"73"},
+  {"a":null,"tm":"10","t":"1st Half Moneyline","ti":"73"},
+  {"a":null,"tm":"6","t":"1st Half Spread","ti":"74","op":[-4.5,null,null],"cur":[-5.5,null,null]},
+  {"a":null,"tm":"10","t":"1st Half Spread","ti":"74","op":[4.5,null,null],"cur":[5.5,null,null]},
+  {"a":null,"t":"1st Quarter Total","ti":"75","op":[10.5,null,null],"cur":[10.5,null,null]},
+  {"a":null,"t":"1st Quarter Total","ti":"75","op":[10.5,null,null],"cur":[10.5,null,null]},
+  {"a":null,"tm":"6","t":"1st Quarter Moneyline","ti":"76"},
+  {"a":null,"tm":"10","t":"1st Quarter Moneyline","ti":"76"},
+  {"a":null,"tm":"6","t":"1st Quarter Spread","ti":"77","op":[-2.5,null,null],"cur":[-2.5,null,null]},
+  {"a":null,"tm":"10","t":"1st Quarter Spread","ti":"77","op":[2.5,null,null],"cur":[2.5,null,null]}
+ ]
   }
  },
  "names": {

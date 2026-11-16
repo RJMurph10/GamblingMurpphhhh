@@ -195,10 +195,16 @@
  },
  "props": {
   "open": {
-   "at": "2026-11-16T09:27:38.711Z",
+   "at": "2026-11-16T11:33:46.766Z",
    "provider": 100,
-   "count": 12,
+   "count": 18,
    "rows": [
+  {"a":"15847","t":"Anytime Touchdown Scorer","ti":"31"},
+  {"a":"3139477","t":"Anytime Touchdown Scorer","ti":"31"},
+  {"a":"4361307","t":"Anytime Touchdown Scorer","ti":"31"},
+  {"a":"4373626","t":"Anytime Touchdown Scorer","ti":"31"},
+  {"a":"4428331","t":"Anytime Touchdown Scorer","ti":"31"},
+  {"a":"4683062","t":"Anytime Touchdown Scorer","ti":"31"},
   {"a":null,"t":"1st Half Total","ti":"72","op":[20.5,null,null],"cur":[20.5,null,null]},
   {"a":null,"t":"1st Half Total","ti":"72","op":[20.5,null,null],"cur":[20.5,null,null]},
   {"a":null,"tm":"12","t":"1st Half Moneyline","ti":"73"},
@@ -217,53 +223,63 @@
      "competition": {
       "id": "401873067"
      },
+     "athlete": {
+      "id": "15847"
+     },
      "provider": {
       "id": "100"
      },
      "type": {
-      "id": "72",
-      "name": "1st Half Total"
+      "id": "31",
+      "name": "Anytime Touchdown Scorer"
      },
-     "lastUpdated": "2026-11-16T06:59Z",
-     "current": {
-      "target": {
-       "value": 20.5,
-       "displayValue": "20.5"
-      }
-     },
-     "open": {
-      "target": {
-       "value": 20.5,
-       "displayValue": "20.5"
-      }
-     }
+     "lastUpdated": "2026-11-16T14:25Z",
+     "current": {},
+     "open": {}
     },
     {
      "competition": {
       "id": "401873067"
      },
+     "athlete": {
+      "id": "3139477"
+     },
      "provider": {
       "id": "100"
      },
      "type": {
-      "id": "72",
-      "name": "1st Half Total"
+      "id": "31",
+      "name": "Anytime Touchdown Scorer"
      },
-     "lastUpdated": "2026-11-16T06:59Z",
-     "current": {
-      "target": {
-       "value": 20.5,
-       "displayValue": "20.5"
-      }
-     },
-     "open": {
-      "target": {
-       "value": 20.5,
-       "displayValue": "20.5"
-      }
-     }
+     "lastUpdated": "2026-11-16T14:25Z",
+     "current": {},
+     "open": {}
     }
    ]
+  },
+  "latest": {
+   "at": "2026-11-16T11:33:46.766Z",
+   "count": 18,
+   "rows": [
+  {"a":"15847","t":"Anytime Touchdown Scorer","ti":"31"},
+  {"a":"3139477","t":"Anytime Touchdown Scorer","ti":"31"},
+  {"a":"4361307","t":"Anytime Touchdown Scorer","ti":"31"},
+  {"a":"4373626","t":"Anytime Touchdown Scorer","ti":"31"},
+  {"a":"4428331","t":"Anytime Touchdown Scorer","ti":"31"},
+  {"a":"4683062","t":"Anytime Touchdown Scorer","ti":"31"},
+  {"a":null,"t":"1st Half Total","ti":"72","op":[20.5,null,null],"cur":[20.5,null,null]},
+  {"a":null,"t":"1st Half Total","ti":"72","op":[20.5,null,null],"cur":[20.5,null,null]},
+  {"a":null,"tm":"12","t":"1st Half Moneyline","ti":"73"},
+  {"a":null,"tm":"22","t":"1st Half Moneyline","ti":"73"},
+  {"a":null,"tm":"12","t":"1st Half Spread","ti":"74","op":[-7.5,null,null],"cur":[-9.5,null,null]},
+  {"a":null,"tm":"22","t":"1st Half Spread","ti":"74","op":[7.5,null,null],"cur":[9.5,null,null]},
+  {"a":null,"t":"1st Quarter Total","ti":"75","op":[7.5,null,null],"cur":[7.5,null,null]},
+  {"a":null,"t":"1st Quarter Total","ti":"75","op":[7.5,null,null],"cur":[7.5,null,null]},
+  {"a":null,"tm":"12","t":"1st Quarter Moneyline","ti":"76"},
+  {"a":null,"tm":"22","t":"1st Quarter Moneyline","ti":"76"},
+  {"a":null,"tm":"12","t":"1st Quarter Spread","ti":"77","op":[-3.5,null,null],"cur":[-3.5,null,null]},
+  {"a":null,"tm":"22","t":"1st Quarter Spread","ti":"77","op":[3.5,null,null],"cur":[3.5,null,null]}
+ ]
   }
  },
  "names": {
