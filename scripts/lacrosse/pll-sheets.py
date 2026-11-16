@@ -21,7 +21,7 @@ import openpyxl
 
 SECTIONS = ("Offensive", "Defensive", "Faceoff", "Goalie")
 # the most any player has had in a game: a cut that goes past these isn't a real stat line
-MAX = dict(Sh=30, GB=30, TO=12, TCH=150, CT=10, SA=45)
+MAX = dict(Sh=30, GB=30, TO=12, TCH=150, CT=10, SA=45, A=10, FOT=60)
 
 
 def plausibility(o, d, pos=None):
@@ -76,7 +76,7 @@ def offensive(s):
         head, pct = pre[:cut], pre[cut:]
         if not re.fullmatch(r"(?:0|[1-9]\d?|100)(?:\.\d)?", pct): continue
         for P, g1, g2, A, Sh in splits(head, [2, 2, 1, 2, 2]):
-            if P != g1 + 2 * g2 + A or g1 + g2 > Sh or Sh > MAX["Sh"] or not pct_ok(pct, g1 + g2, Sh):
+            if P != g1 + 2 * g2 + A or A > MAX["A"] or g1 + g2 > Sh or Sh > MAX["Sh"] or not pct_ok(pct, g1 + g2, Sh):
                 continue
             for GB, TO, TCH, PAS in splits(post, [2, 2, 3, 3]):
                 # touches don't count ground balls (a faceoff man can have 5 GB and 3 touches)
@@ -106,7 +106,7 @@ def faceoff(s):
     for cut in range(1, len(rest)):
         if not rest[:cut].isdigit(): continue
         t, pct = int(rest[:cut]), rest[cut:]
-        if t < w or not re.fullmatch(r"(?:0|[1-9]\d?|100)(?:\.\d)?", pct) or not pct_ok(pct, w, t): continue
+        if t < w or t > MAX["FOT"] or not re.fullmatch(r"(?:0|[1-9]\d?|100)(?:\.\d)?", pct) or not pct_ok(pct, w, t): continue
         for P, A, GB, Sh, TCH in splits(m.group(4), [2, 2, 2, 2, 3]):
             if GB > MAX["GB"] or Sh > MAX["Sh"] or TCH > MAX["TCH"]: continue
             out.append(dict(FOW=w, FOT=t, P=P, A=A, GB=GB, Sh=Sh, TCH=TCH))
@@ -149,6 +149,9 @@ def read_sheet(path):
         nxt = vals[i + 1] if i + 1 < len(vals) else None
         if isinstance(nxt, str) and "·" in nxt:
             pos, num = [x.strip() for x in nxt.split("·")]
+            i += 1
+        elif isinstance(nxt, str) and re.fullmatch(r"[A-Z]{1,4}", nxt.strip()):
+            pos = nxt.strip()  # position with no jersey number listed (e.g. "G")
             i += 1
         line = vals[i + 1]
         rows.append(dict(section=sec, name=name, pos=pos, num=num, line=line))
