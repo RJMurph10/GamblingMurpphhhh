@@ -477,5 +477,676 @@
    ]
   }
  },
- "props": {}
+ "props": {
+  "open": {
+   "at": "2026-11-16T22:13:01.047Z",
+   "provider": 100,
+   "count": 15,
+   "rows": [
+  {"a":"4038815","t":"Anytime Touchdown Scorer","ti":"31"},
+  {"a":"4047650","t":"Anytime Touchdown Scorer","ti":"31"},
+  {"a":"4569987","t":"Anytime Touchdown Scorer","ti":"31"},
+  {"a":null,"t":"1st Half Total","ti":"72","op":[19.5,null,null],"cur":[19.5,null,null]},
+  {"a":null,"t":"1st Half Total","ti":"72","op":[19.5,null,null],"cur":[19.5,null,null]},
+  {"a":null,"tm":"21","t":"1st Half Moneyline","ti":"73"},
+  {"a":null,"tm":"23","t":"1st Half Moneyline","ti":"73"},
+  {"a":null,"tm":"21","t":"1st Half Spread","ti":"74","op":[2.5,null,null],"cur":[2.5,null,null]},
+  {"a":null,"tm":"23","t":"1st Half Spread","ti":"74","op":[-2.5,null,null],"cur":[-2.5,null,null]},
+  {"a":null,"t":"1st Quarter Total","ti":"75","op":[7.5,null,null],"cur":[7.5,null,null]},
+  {"a":null,"t":"1st Quarter Total","ti":"75","op":[7.5,null,null],"cur":[7.5,null,null]},
+  {"a":null,"tm":"21","t":"1st Quarter Moneyline","ti":"76"},
+  {"a":null,"tm":"23","t":"1st Quarter Moneyline","ti":"76"},
+  {"a":null,"tm":"21","t":"1st Quarter Spread","ti":"77","op":[0.5,null,null],"cur":[0.5,null,null]},
+  {"a":null,"tm":"23","t":"1st Quarter Spread","ti":"77","op":[-0.5,null,null],"cur":[-0.5,null,null]}
+ ],
+   "sample": [
+    {
+     "competition": {
+      "id": "401873076"
+     },
+     "athlete": {
+      "id": "4038815"
+     },
+     "provider": {
+      "id": "100"
+     },
+     "type": {
+      "id": "31",
+      "name": "Anytime Touchdown Scorer"
+     },
+     "lastUpdated": "2026-11-16T15:12Z",
+     "current": {},
+     "open": {}
+    },
+    {
+     "competition": {
+      "id": "401873076"
+     },
+     "athlete": {
+      "id": "4047650"
+     },
+     "provider": {
+      "id": "100"
+     },
+     "type": {
+      "id": "31",
+      "name": "Anytime Touchdown Scorer"
+     },
+     "lastUpdated": "2026-11-16T15:12Z",
+     "current": {},
+     "open": {}
+    }
+   ]
+  }
+ },
+ "names": {
+  "8439": [
+   "Aaron Rodgers",
+   "PIT"
+  ],
+  "13977": [
+   "Cameron Heyward",
+   "PIT"
+  ],
+  "15835": [
+   "Zach Ertz",
+   "PHI"
+  ],
+  "17372": [
+   "Chris Boswell",
+   "PIT"
+  ],
+  "2971027": [
+   "Jonathan Jones",
+   "PHI"
+  ],
+  "2975674": [
+   "Robert Tonyan",
+   "PIT"
+  ],
+  "2978524": [
+   "Christian Kuntz",
+   "PIT"
+  ],
+  "2987743": [
+   "Elandon Roberts",
+   "PIT"
+  ],
+  "3045282": [
+   "T.J. Watt",
+   "PIT"
+  ],
+  "3045373": [
+   "Jalen Ramsey",
+   "PIT"
+  ],
+  "3047495": [
+   "Sebastian Joseph-Day",
+   "PIT"
+  ],
+  "3050478": [
+   "Jake Elliott",
+   "PHI"
+  ],
+  "3051397": [
+   "Cameron Johnston",
+   "PIT"
+  ],
+  "3051738": [
+   "Marquez Valdes-Scantling",
+   "PIT"
+  ],
+  "3052096": [
+   "Johnny Mundt",
+   "PHI"
+  ],
+  "3116407": [
+   "Mason Rudolph",
+   "PIT"
+  ],
+  "3116689": [
+   "Cole Holcomb",
+   "PIT"
+  ],
+  "3121023": [
+   "Dallas Goedert",
+   "PHI"
+  ],
+  "3139368": [
+   "Marcus Epps",
+   "PHI"
+  ],
+  "3873935": [
+   "Jamel Dean",
+   "PIT"
+  ],
+  "3916409": [
+   "Jonathan Greenard",
+   "PHI"
+  ],
+  "3917657": [
+   "Zack Baun",
+   "PHI"
+  ],
+  "3926231": [
+   "Britain Covey",
+   "PHI"
+  ],
+  "3929630": [
+   "Saquon Barkley",
+   "PHI"
+  ],
+  "3929846": [
+   "DeShon Elliott",
+   "PIT"
+  ],
+  "3932668": [
+   "Jack Driscoll",
+   "PIT"
+  ],
+  "3932886": [
+   "Sean Murphy-Bunting",
+   "PIT"
+  ],
+  "4035198": [
+   "Brandon Johnson",
+   "PIT"
+  ],
+  "4035239": [
+   "Braden Mann",
+   "PHI"
+  ],
+  "4035253": [
+   "Ryan McCollum",
+   "PIT"
+  ],
+  "4035624": [
+   "Landon Dickerson",
+   "PHI"
+  ],
+  "4035656": [
+   "Ben Skowronek",
+   "PIT"
+  ],
+  "4035687": [
+   "Michael Pittman Jr.",
+   "PIT"
+  ],
+  "4037333": [
+   "Alex Highsmith",
+   "PIT"
+  ],
+  "4037457": [
+   "Travis Homer",
+   "PIT"
+  ],
+  "4038815": [
+   "Rico Dowdle",
+   "PIT"
+  ],
+  "4040715": [
+   "Jalen Hurts",
+   "PHI"
+  ],
+  "4047650": [
+   "DK Metcalf",
+   "PIT"
+  ],
+  "4218312": [
+   "Kenny Moore II",
+   "PHI"
+  ],
+  "4240015": [
+   "John Ojukwu",
+   "PHI"
+  ],
+  "4240456": [
+   "Michael Carter II",
+   "PHI"
+  ],
+  "4240577": [
+   "Brandon Smith",
+   "PIT"
+  ],
+  "4240585": [
+   "AJ Epenesa",
+   "PHI"
+  ],
+  "4240759": [
+   "Esezi Otomewo",
+   "PIT"
+  ],
+  "4241087": [
+   "Brock Hoffman",
+   "PIT"
+  ],
+  "4241374": [
+   "Grant Calcaterra",
+   "PHI"
+  ],
+  "4241478": [
+   "DeVonta Smith",
+   "PHI"
+  ],
+  "4241555": [
+   "Elijah Mitchell",
+   "PHI"
+  ],
+  "4242207": [
+   "Patrick Queen",
+   "PIT"
+  ],
+  "4242540": [
+   "Isaiah Hodgins",
+   "PIT"
+  ],
+  "4245185": [
+   "Riq Woolen",
+   "PHI"
+  ],
+  "4248899": [
+   "Marte Mapu",
+   "PIT"
+  ],
+  "4250510": [
+   "Andre' Sam",
+   "PHI"
+  ],
+  "4257580": [
+   "Christian Braswell",
+   "PHI"
+  ],
+  "4257591": [
+   "Arnold Ebiketie",
+   "PHI"
+  ],
+  "4259590": [
+   "Tariq Castro-Fields",
+   "PHI"
+  ],
+  "4334215": [
+   "Jordan Mailata",
+   "PHI"
+  ],
+  "4360238": [
+   "Dameon Pierce",
+   "PHI"
+  ],
+  "4360308": [
+   "KJ Henry",
+   "PIT"
+  ],
+  "4360698": [
+   "Joe Milton",
+   "PHI"
+  ],
+  "4361411": [
+   "Pat Freiermuth",
+   "PIT"
+  ],
+  "4361652": [
+   "Payton Wilson",
+   "PIT"
+  ],
+  "4362116": [
+   "Moro Ojomo",
+   "PHI"
+  ],
+  "4362186": [
+   "Erik Ezukanma",
+   "PHI"
+  ],
+  "4362805": [
+   "Tyler Steen",
+   "PHI"
+  ],
+  "4362858": [
+   "Darius Rush",
+   "PIT"
+  ],
+  "4363034": [
+   "Asante Samuel Jr.",
+   "PIT"
+  ],
+  "4368304": [
+   "Mason McCormick",
+   "PIT"
+  ],
+  "4372051": [
+   "Chance Campbell",
+   "PHI"
+  ],
+  "4372056": [
+   "Spencer Anderson",
+   "PIT"
+  ],
+  "4372098": [
+   "Julius Welschof",
+   "PIT"
+  ],
+  "4372414": [
+   "Elijah Moore",
+   "PHI"
+  ],
+  "4373830": [
+   "Steven Jones",
+   "PIT"
+  ],
+  "4426331": [
+   "Nolan Smith Jr.",
+   "PHI"
+  ],
+  "4426368": [
+   "Doug Nester",
+   "PIT"
+  ],
+  "4426694": [
+   "Keeanu Benton",
+   "PIT"
+  ],
+  "4426882": [
+   "Sebastian Castro",
+   "PIT"
+  ],
+  "4427170": [
+   "Troy Fautanu",
+   "PIT"
+  ],
+  "4427278": [
+   "Xavier Gipson",
+   "PHI"
+  ],
+  "4428119": [
+   "Lew Nichols",
+   "PIT"
+  ],
+  "4428850": [
+   "Dontayvion Wicks",
+   "PHI"
+  ],
+  "4428909": [
+   "Jacoby Windmon",
+   "PIT"
+  ],
+  "4428992": [
+   "Kelee Ringo",
+   "PHI"
+  ],
+  "4429013": [
+   "Tank Bigsby",
+   "PHI"
+  ],
+  "4429164": [
+   "Nick Herbig",
+   "PIT"
+  ],
+  "4429490": [
+   "Carson Bruener",
+   "PIT"
+  ],
+  "4429731": [
+   "Gabe Hall",
+   "PHI"
+  ],
+  "4429743": [
+   "Daequan Hardy",
+   "PIT"
+  ],
+  "4429775": [
+   "Zach Frazier",
+   "PIT"
+  ],
+  "4429955": [
+   "Will Howard",
+   "PIT"
+  ],
+  "4430802": [
+   "Darnell Washington",
+   "PIT"
+  ],
+  "4430814": [
+   "Jake Majors",
+   "PHI"
+  ],
+  "4430947": [
+   "Yahya Black",
+   "PIT"
+  ],
+  "4431258": [
+   "Gennings Dunker",
+   "PIT"
+  ],
+  "4431492": [
+   "Roman Wilson",
+   "PIT"
+  ],
+  "4431533": [
+   "Gabriel Rubio",
+   "PIT"
+  ],
+  "4431545": [
+   "Will Shipley",
+   "PHI"
+  ],
+  "4431573": [
+   "Smael Mondon Jr.",
+   "PHI"
+  ],
+  "4431574": [
+   "Eli Stowers",
+   "PHI"
+  ],
+  "4431590": [
+   "Jack Sawyer",
+   "PIT"
+  ],
+  "4432738": [
+   "Micah Morris",
+   "PHI"
+  ],
+  "4432777": [
+   "Jeremiah Trotter Jr.",
+   "PHI"
+  ],
+  "4566198": [
+   "Lake McRee",
+   "PIT"
+  ],
+  "4567123": [
+   "Byron Young",
+   "PHI"
+  ],
+  "4567134": [
+   "Evan Neal",
+   "PHI"
+  ],
+  "4567535": [
+   "Anfernee Orji",
+   "PHI"
+  ],
+  "4567802": [
+   "Drew Kendall",
+   "PHI"
+  ],
+  "4567979": [
+   "Brandin Echols",
+   "PIT"
+  ],
+  "4569474": [
+   "Logan Lee",
+   "PIT"
+  ],
+  "4569586": [
+   "Ty Robinson",
+   "PHI"
+  ],
+  "4569987": [
+   "Jaylen Warren",
+   "PIT"
+  ],
+  "4570044": [
+   "Jaquan Brisker",
+   "PIT"
+  ],
+  "4570898": [
+   "Dylan Cook",
+   "PIT"
+  ],
+  "4571162": [
+   "Jalyx Hunt",
+   "PHI"
+  ],
+  "4573443": [
+   "Kyler Baugh",
+   "PIT"
+  ],
+  "4582836": [
+   "Willie Lampkin",
+   "PHI"
+  ],
+  "4602197": [
+   "Andrew Mukuba",
+   "PHI"
+  ],
+  "4608004": [
+   "Donte Kent",
+   "PIT"
+  ],
+  "4682618": [
+   "Cooper DeJean",
+   "PHI"
+  ],
+  "4682980": [
+   "Derrick Harmon",
+   "PIT"
+  ],
+  "4685201": [
+   "Tanner McKee",
+   "PHI"
+  ],
+  "4685261": [
+   "Germie Bernard",
+   "PIT"
+  ],
+  "4685287": [
+   "Jihaad Campbell",
+   "PHI"
+  ],
+  "4685327": [
+   "Daylen Everette",
+   "PIT"
+  ],
+  "4685759": [
+   "Jalen Carter",
+   "PHI"
+  ],
+  "4686104": [
+   "Johnny Wilson",
+   "PHI"
+  ],
+  "4686273": [
+   "Quinyon Mitchell",
+   "PHI"
+  ],
+  "4686566": [
+   "Rocco Underwood",
+   "PHI"
+  ],
+  "4689651": [
+   "Mac McWilliams",
+   "PHI"
+  ],
+  "4691903": [
+   "Mason Reiger",
+   "PHI"
+  ],
+  "4692628": [
+   "Doneiko Slaughter",
+   "PIT"
+  ],
+  "4693345": [
+   "Cole Wisniewski",
+   "PHI"
+  ],
+  "4693370": [
+   "Riley Nowakowski",
+   "PIT"
+  ],
+  "4694237": [
+   "Max Hurleman",
+   "PIT"
+  ],
+  "4714771": [
+   "Drew Allar",
+   "PIT"
+  ],
+  "4715355": [
+   "Darius Cooper",
+   "PHI"
+  ],
+  "4820584": [
+   "Robert Spears-Jennings",
+   "PIT"
+  ],
+  "4870795": [
+   "Makai Lemon",
+   "PHI"
+  ],
+  "4872850": [
+   "Zion Wilson",
+   "PHI"
+  ],
+  "4878896": [
+   "Tucker Large",
+   "PHI"
+  ],
+  "4879250": [
+   "Cole Payton",
+   "PHI"
+  ],
+  "4883090": [
+   "Kiran Amegadjie",
+   "PHI"
+  ],
+  "4917486": [
+   "Car'lin Vigers",
+   "PIT"
+  ],
+  "5081338": [
+   "Kaden Wetjen",
+   "PIT"
+  ],
+  "5081508": [
+   "Eli Heidenreich",
+   "PIT"
+  ],
+  "5084849": [
+   "Kevin Jobity Jr.",
+   "PIT"
+  ],
+  "5150136": [
+   "Max Iheanachor",
+   "PIT"
+  ],
+  "5165139": [
+   "Keyshawn James-Newby",
+   "PHI"
+  ],
+  "5192448": [
+   "Cole Burgess",
+   "PIT"
+  ],
+  "5219831": [
+   "Markel Bell",
+   "PHI"
+  ],
+  "5344965": [
+   "Joshua Weru",
+   "PHI"
+  ],
+  "5344966": [
+   "Uar Bernard",
+   "PHI"
+  ]
+ }
 }
