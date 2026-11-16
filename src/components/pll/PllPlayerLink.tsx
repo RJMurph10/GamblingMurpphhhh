@@ -44,7 +44,9 @@ export function PllTeamPlayerStats({
         aside={
           <span className="inline-flex items-center gap-1.5">
             <PllLogo team={teamOf(data, teamId)} className="size-4" />
-            <span className="label-mono">{season} · from game box scores</span>
+            <span className="label-mono">
+              {season} · from game box scores · — = not in PLL&apos;s stats
+            </span>
           </span>
         }
       />

@@ -309,7 +309,9 @@ function PllPlayerPage() {
         <p className="px-4 py-2 font-mono text-[10px] text-faint">
           From the PLL&apos;s game box scores, entered by the site owner and checked against every
           game&apos;s final score. G includes 2-point goals (2PG); points count a 2-point goal as 2.
-          TO and CT show — where the box score lists the player only in the other section.
+          — means missing, not zero: the PLL&apos;s defensive stats leave out attackmen (so no
+          caused turnovers for them) and its offensive stats leave out some defenders (so no
+          turnovers).
         </p>
       </Panel>
     </>
