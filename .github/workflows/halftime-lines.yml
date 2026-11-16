@@ -2,8 +2,9 @@ name: Halftime lines (NFL, NBA)
 
 # Every book's live lines at halftime of each NFL and NBA game: moneyline, spread, total, 2nd-half lines and
 # player props (SportsGameOdds free plan), plus ESPN's halftime box score with every player's 1st-half
-# stats. One file per game on props-site: halftime/<league>/<season>/<date>-<away>-at-<home>.json
-# (scripts/live/halftime.mjs). The data for testing in-game angles; nothing on the site reads it yet.
+# stats. One file per game on props-site: halftime/<league>/<espnId>.json (scripts/live/halftime.mjs).
+# The NFL and NBA game pages show it in the Props tab's "Halftime live" view while the game is on, and
+# it's the data for testing in-game angles.
 # Cost: one SportsGameOdds event per game (~16 NFL a week, ~7 NBA a night), from the same 2,500-a-month
 # allowance as the other pulls; the job stops when fewer than 30 are left.
 # Each run polls ESPN's scoreboard once a minute and exits once no game is before or at halftime within

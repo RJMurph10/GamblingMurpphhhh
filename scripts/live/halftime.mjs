@@ -3,8 +3,8 @@
  * Halftime lines for NFL and NBA games: every book's live moneyline, spread, total, 2nd-half lines and
  * player props at halftime, plus ESPN's halftime box score (score, team stats, every player's 1st-half
  * stats). The data to test in-game angles against (e.g. trailing teams' running backs), saved one file per
- * game to the props-site branch:
- *   halftime/<league>/<season>/<YYYY-MM-DD>-<away>-at-<home>.json
+ * game to the props-site branch, by ESPN event id (the game pages read it during the game):
+ *   halftime/<league>/<espnId>.json
  *   { league, espnId, at, kickoff, home, away, espn: { status, score, linescores, teams, players },
  *     sgo: { eventID, status, players, odds: [...] } }
  * (odds: one row per SportsGameOdds oddID with the main books' current prices, plus the consensus
@@ -100,14 +100,7 @@ async function scoreboard(league) {
   });
 }
 
-const fileOf = (g) =>
-  join(
-    SITE,
-    "halftime",
-    g.league.toLowerCase(),
-    String(g.season),
-    `${g.date.slice(0, 10)}-${slug(g.away)}-at-${slug(g.home)}.json`,
-  );
+const fileOf = (g) => join(SITE, "halftime", g.league.toLowerCase(), `${g.id}.json`);
 
 /** ESPN's halftime box score: score, line scores, team stats, every player's 1st-half stats. */
 async function espnBox(g) {

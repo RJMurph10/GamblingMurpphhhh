@@ -7,6 +7,7 @@ import {
   fetchUpcomingProps,
 } from "./prop-history.server";
 import { fetchLiveProps } from "./live-props.server";
+import { fetchHalftime } from "./halftime.server";
 
 /** One day of historical player props (main lines, prices, results) for a league. */
 export const getPropHistory = createServerFn({ method: "GET" })
@@ -63,3 +64,10 @@ export const getPregameProps = createServerFn({ method: "GET" })
       .parse(data),
   )
   .handler(async ({ data }) => fetchPregameProps(data.league, data.id));
+
+/** A live NFL / NBA game's halftime lines and 1st-half numbers (null until captured at the break). */
+export const getHalftimeLines = createServerFn({ method: "GET" })
+  .inputValidator((data) =>
+    z.object({ league: z.enum(["nfl", "nba"]), id: z.string().regex(/^\d+$/).max(20) }).parse(data),
+  )
+  .handler(async ({ data }) => fetchHalftime(data.league, data.id));
