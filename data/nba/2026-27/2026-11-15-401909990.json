@@ -7,13 +7,13 @@
   "id": "18",
   "abbr": "NY",
   "name": "New York Knicks",
-  "score": 13
+  "score": 111
  },
  "home": {
   "id": "28",
   "abbr": "TOR",
   "name": "Toronto Raptors",
-  "score": 13
+  "score": 108
  },
  "neutral": false,
  "venue": "Scotiabank Arena",

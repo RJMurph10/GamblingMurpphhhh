@@ -7,18 +7,18 @@
   "id": "163",
   "abbr": "PRIN",
   "name": "Princeton Tigers",
-  "score": 7
+  "score": 34
  },
  "home": {
   "id": "26",
   "abbr": "UCLA",
   "name": "UCLA Bruins",
-  "score": 14
+  "score": 55
  },
  "neutral": false,
  "venue": "Pauley Pavilion",
  "seasonType": 2,
- "state": "in",
+ "state": "post",
  "lines": {
   "open": {
    "at": "2026-11-15T17:47:38.554Z",
@@ -934,5 +934,9 @@
    ]
   }
  },
- "props": {}
+ "props": {},
+ "final": {
+  "away": 34,
+  "home": 55
+ }
 }

@@ -395,13 +395,14 @@
    ]
   },
   "close": {
-   "at": "2026-11-15T23:30:27.531Z",
+   "at": "2026-11-16T01:55:29.908Z",
    "scoreboard": [
     {
      "provider": {
       "id": "100",
       "name": "DraftKings",
-      "priority": 1
+      "priority": 1,
+      "displayName": "DraftKings"
      },
      "details": "SJSU -13.5",
      "overUnder": 150.5,

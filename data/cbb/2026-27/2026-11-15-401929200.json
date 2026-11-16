@@ -7,18 +7,18 @@
   "id": "326",
   "abbr": "TXST",
   "name": "Texas State Bobcats",
-  "score": 0
+  "score": 44
  },
  "home": {
   "id": "2636",
   "abbr": "UTSA",
   "name": "UTSA Roadrunners",
-  "score": 0
+  "score": 39
  },
  "neutral": false,
  "venue": "UTSA Convocation Center",
  "seasonType": 2,
- "state": "pre",
+ "state": "in",
  "lines": {
   "open": {
    "at": "2026-11-15T02:45:11.429Z",

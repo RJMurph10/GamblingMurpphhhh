@@ -7,18 +7,18 @@
   "id": "13",
   "abbr": "CP",
   "name": "Cal Poly Mustangs",
-  "score": 14
+  "score": 52
  },
  "home": {
   "id": "147",
   "abbr": "MTST",
   "name": "Montana State Bobcats",
-  "score": 11
+  "score": 77
  },
  "neutral": false,
  "venue": "Worthington Arena",
  "seasonType": 2,
- "state": "in",
+ "state": "post",
  "lines": {
   "open": {
    "at": "2026-11-15T11:04:29.925Z",
@@ -934,5 +934,9 @@
    ]
   }
  },
- "props": {}
+ "props": {},
+ "final": {
+  "away": 52,
+  "home": 77
+ }
 }
