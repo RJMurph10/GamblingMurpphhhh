@@ -142,6 +142,7 @@ export function pllPlayers(): Map<string, PllPlayer> {
     const w = pllRoster(pl.teamId, season)?.players.find((x) => x.name === pl.name);
     if (w)
       Object.assign(pl.bio, {
+        college: w.college ?? pl.bio.college,
         height: w.height,
         weight: w.weight,
         shot: w.shot,
@@ -230,3 +231,24 @@ export const playerKind = (p: PllPlayer) =>
     : p.games.some((g) => (g.stats.FOT ?? 0) > 0)
       ? "faceoff"
       : "field";
+
+/**
+ * A club's game-day roster straight from the owner's PLL box-score sheets: everyone listed for that
+ * game, with the sheet's position and number. Undefined when no sheet was entered for the game.
+ */
+export function sheetGameRoster(teamId: string, date: string) {
+  const t = new Date(date).getTime();
+  const g = saved.games.find(
+    (x) =>
+      (PLL_CLUB_IDS[x.team] ?? x.team) === teamId &&
+      Math.abs(new Date(`${x.date}T12:00:00Z`).getTime() - t) <= 1.5 * 86_400_000,
+  );
+  if (!g) return undefined;
+  const players = pllPlayers();
+  return g.players.map((p) => ({
+    name: p.name,
+    num: p.num ? Number(p.num) : null,
+    pos: p.pos ?? players.get(playerSlug(p.name))?.pos ?? "",
+    college: players.get(playerSlug(p.name))?.bio.college ?? null,
+  }));
+}
