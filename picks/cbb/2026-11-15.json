@@ -1,6 +1,6 @@
 {
  "day": "2026-11-15",
- "updated": "2026-11-15T19:59:02.465Z",
+ "updated": "2026-11-16T02:25:12.376Z",
  "picks": [
   {
    "id": "401924858-total",
@@ -121,7 +121,12 @@
    "firstSeen": "2026-11-15T12:18:32.455Z",
    "latest": 143.5,
    "latestAt": "2026-11-15T19:59:02.465Z",
-   "alerted": false
+   "alerted": false,
+   "score": [
+    61,
+    73
+   ],
+   "close": 143.5
   },
   {
    "id": "401923393-total",
@@ -137,7 +142,12 @@
    "firstSeen": "2026-11-15T02:10:44.574Z",
    "latest": 139.5,
    "latestAt": "2026-11-15T19:59:02.465Z",
-   "alerted": false
+   "alerted": false,
+   "score": [
+    80,
+    59
+   ],
+   "close": 140.5
   }
  ]
 }
