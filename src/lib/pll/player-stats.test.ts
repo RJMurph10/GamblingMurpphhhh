@@ -17,6 +17,8 @@ describe("PLL player stats from the Cannons sheets", () => {
     expect(n("Redwoods")).toBe(13);
     expect(n("Chaos")).toBe(12);
     expect(n("Outlaws")).toBe(15);
+    expect(n("Whipsnakes")).toBe(13);
+    expect(n("Atlas")).toBe(12);
   });
   it("every stat line obeys P = 1G + 2*2G + A", () => {
     for (const g of data.games)
@@ -26,7 +28,7 @@ describe("PLL player stats from the Cannons sheets", () => {
       }
   });
   it("builds players with slugs and kinds", () => {
-    expect(pllPlayers().size).toBe(111);
+    expect(pllPlayers().size).toBe(169);
     const h = pllPlayer(playerSlug("Marcus Holman"));
     expect(h?.games.length).toBeGreaterThan(0);
     expect(playerKind(pllPlayer(playerSlug("Colin Kirst"))!)).toBe("goalie");
@@ -34,11 +36,25 @@ describe("PLL player stats from the Cannons sheets", () => {
     expect(pllTeamPlayers("127636", 2026).length).toBe(29);
     expect(pllTeamPlayers("127634", 2026).length).toBe(30);
     expect(pllTeamPlayers("122896", 2026).length).toBe(26);
+    expect(pllTeamPlayers("127638", 2026).length).toBe(30);
+    expect(pllTeamPlayers("127632", 2026).length).toBe(32);
   });
   it("totals add up across games", () => {
     const h = pllPlayer(playerSlug("Marcus Holman"))!;
     const t = totalsOf(h.games);
     expect(t.gp).toBe(h.games.length);
     expect(t.P).toBe(h.games.reduce((n, g) => n + g.stats.P, 0));
+  });
+});
+
+describe("players traded mid-season", () => {
+  it("Matt Rambo: one Whipsnakes game, then Atlas as A #11", () => {
+    const p = pllPlayer(playerSlug("Matt Rambo"))!;
+    expect(new Set(p.games.map((g) => g.team))).toEqual(new Set(["Whipsnakes", "Atlas"]));
+    expect(p.team).toBe("Atlas");
+    expect(p.pos).toBe("A");
+    expect(p.num).toBe("11");
+    const dates = p.games.map((g) => g.date);
+    expect(new Set(dates).size).toBe(dates.length);
   });
 });
