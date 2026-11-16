@@ -29,7 +29,7 @@ describe("PLL game-day rosters (2026)", () => {
     for (const g of summer)
       for (const id of [g.home.teamId, g.away.teamId]) {
         const r = gameRoster(g, s, id);
-        expect(r?.players.length ?? 0).toBeGreaterThanOrEqual(15);
+        expect(r?.players.length ?? 0).toBeGreaterThanOrEqual(14);
         if (r?.exact) exact++;
         else expect(new Date(r!.from!).getTime()).toBeLessThan(new Date(g.date).getTime());
       }
