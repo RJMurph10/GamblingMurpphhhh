@@ -64,6 +64,7 @@ const pllNav = [
   { to: "/pll", label: "Dashboard" },
   { to: "/pll/teams", label: "Teams" },
   { to: "/pll/games", label: "Games" },
+  { to: "/pll/players", label: "Players" },
 ] as const;
 
 const wnbaNav = [

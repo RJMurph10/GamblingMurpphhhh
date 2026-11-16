@@ -28,7 +28,7 @@ export const LEAGUES: League[] = [
   { id: "wnba", short: "WNBA", name: "WNBA", prefix: "/wnba", live: true, sections: ["teams", "games", "model"] },
   { id: "wcbb", short: "WCBB", name: "College basketball (women's D-I)", prefix: "/wcbb", live: true, sections: ["teams", "games", "model"] },
   { id: "cbase", short: "CBASE", name: "College baseball (D-I)", prefix: "/cbase", live: true, sections: ["teams", "games", "model"] },
-  { id: "pll", short: "PLL", name: "Premier Lacrosse League", prefix: "/pll", live: true, sections: ["teams", "games"] },
+  { id: "pll", short: "PLL", name: "Premier Lacrosse League", prefix: "/pll", live: true, sections: ["teams", "games", "players"] },
 ];
 
 export const leagueById = (id: LeagueId) => LEAGUES.find((l) => l.id === id)!;

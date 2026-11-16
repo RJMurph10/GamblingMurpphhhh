@@ -78,6 +78,8 @@ import { Route as NhlTeamsIndexRouteImport } from './routes/nhl.teams.index'
 import { Route as NhlTeamsTeamIdRouteImport } from './routes/nhl.teams.$teamId'
 import { Route as PllGamesIndexRouteImport } from './routes/pll.games.index'
 import { Route as PllGamesGameIdRouteImport } from './routes/pll.games.$gameId'
+import { Route as PllPlayersIndexRouteImport } from './routes/pll.players.index'
+import { Route as PllPlayersPlayerIdRouteImport } from './routes/pll.players.$playerId'
 import { Route as PllTeamsIndexRouteImport } from './routes/pll.teams.index'
 import { Route as PllTeamsTeamIdRouteImport } from './routes/pll.teams.$teamId'
 import { Route as WcbbGamesIndexRouteImport } from './routes/wcbb.games.index'
@@ -434,6 +436,16 @@ const PllGamesGameIdRoute = PllGamesGameIdRouteImport.update({
   path: '/pll/games/$gameId',
   getParentRoute: () => rootRouteImport,
 } as any)
+const PllPlayersIndexRoute = PllPlayersIndexRouteImport.update({
+  id: '/pll/players/',
+  path: '/pll/players/',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const PllPlayersPlayerIdRoute = PllPlayersPlayerIdRouteImport.update({
+  id: '/pll/players/$playerId',
+  path: '/pll/players/$playerId',
+  getParentRoute: () => rootRouteImport,
+} as any)
 const PllTeamsIndexRoute = PllTeamsIndexRouteImport.update({
   id: '/pll/teams/',
   path: '/pll/teams/',
@@ -539,6 +551,7 @@ export interface FileRoutesByFullPath {
   '/nhl/players/$playerId': typeof NhlPlayersPlayerIdRoute
   '/nhl/teams/$teamId': typeof NhlTeamsTeamIdRoute
   '/pll/games/$gameId': typeof PllGamesGameIdRoute
+  '/pll/players/$playerId': typeof PllPlayersPlayerIdRoute
   '/pll/teams/$teamId': typeof PllTeamsTeamIdRoute
   '/wcbb/games/$gameId': typeof WcbbGamesGameIdRoute
   '/wcbb/teams/$teamId': typeof WcbbTeamsTeamIdRoute
@@ -560,6 +573,7 @@ export interface FileRoutesByFullPath {
   '/nhl/players/': typeof NhlPlayersIndexRoute
   '/nhl/teams/': typeof NhlTeamsIndexRoute
   '/pll/games/': typeof PllGamesIndexRoute
+  '/pll/players/': typeof PllPlayersIndexRoute
   '/pll/teams/': typeof PllTeamsIndexRoute
   '/wcbb/games/': typeof WcbbGamesIndexRoute
   '/wcbb/teams/': typeof WcbbTeamsIndexRoute
@@ -620,6 +634,7 @@ export interface FileRoutesByTo {
   '/nhl/players/$playerId': typeof NhlPlayersPlayerIdRoute
   '/nhl/teams/$teamId': typeof NhlTeamsTeamIdRoute
   '/pll/games/$gameId': typeof PllGamesGameIdRoute
+  '/pll/players/$playerId': typeof PllPlayersPlayerIdRoute
   '/pll/teams/$teamId': typeof PllTeamsTeamIdRoute
   '/wcbb/games/$gameId': typeof WcbbGamesGameIdRoute
   '/wcbb/teams/$teamId': typeof WcbbTeamsTeamIdRoute
@@ -641,6 +656,7 @@ export interface FileRoutesByTo {
   '/nhl/players': typeof NhlPlayersIndexRoute
   '/nhl/teams': typeof NhlTeamsIndexRoute
   '/pll/games': typeof PllGamesIndexRoute
+  '/pll/players': typeof PllPlayersIndexRoute
   '/pll/teams': typeof PllTeamsIndexRoute
   '/wcbb/games': typeof WcbbGamesIndexRoute
   '/wcbb/teams': typeof WcbbTeamsIndexRoute
@@ -702,6 +718,7 @@ export interface FileRoutesById {
   '/nhl/players/$playerId': typeof NhlPlayersPlayerIdRoute
   '/nhl/teams/$teamId': typeof NhlTeamsTeamIdRoute
   '/pll/games/$gameId': typeof PllGamesGameIdRoute
+  '/pll/players/$playerId': typeof PllPlayersPlayerIdRoute
   '/pll/teams/$teamId': typeof PllTeamsTeamIdRoute
   '/wcbb/games/$gameId': typeof WcbbGamesGameIdRoute
   '/wcbb/teams/$teamId': typeof WcbbTeamsTeamIdRoute
@@ -723,6 +740,7 @@ export interface FileRoutesById {
   '/nhl/players/': typeof NhlPlayersIndexRoute
   '/nhl/teams/': typeof NhlTeamsIndexRoute
   '/pll/games/': typeof PllGamesIndexRoute
+  '/pll/players/': typeof PllPlayersIndexRoute
   '/pll/teams/': typeof PllTeamsIndexRoute
   '/wcbb/games/': typeof WcbbGamesIndexRoute
   '/wcbb/teams/': typeof WcbbTeamsIndexRoute
@@ -785,6 +803,7 @@ export interface FileRouteTypes {
     | '/nhl/players/$playerId'
     | '/nhl/teams/$teamId'
     | '/pll/games/$gameId'
+    | '/pll/players/$playerId'
     | '/pll/teams/$teamId'
     | '/wcbb/games/$gameId'
     | '/wcbb/teams/$teamId'
@@ -806,6 +825,7 @@ export interface FileRouteTypes {
     | '/nhl/players/'
     | '/nhl/teams/'
     | '/pll/games/'
+    | '/pll/players/'
     | '/pll/teams/'
     | '/wcbb/games/'
     | '/wcbb/teams/'
@@ -866,6 +886,7 @@ export interface FileRouteTypes {
     | '/nhl/players/$playerId'
     | '/nhl/teams/$teamId'
     | '/pll/games/$gameId'
+    | '/pll/players/$playerId'
     | '/pll/teams/$teamId'
     | '/wcbb/games/$gameId'
     | '/wcbb/teams/$teamId'
@@ -887,6 +908,7 @@ export interface FileRouteTypes {
     | '/nhl/players'
     | '/nhl/teams'
     | '/pll/games'
+    | '/pll/players'
     | '/pll/teams'
     | '/wcbb/games'
     | '/wcbb/teams'
@@ -947,6 +969,7 @@ export interface FileRouteTypes {
     | '/nhl/players/$playerId'
     | '/nhl/teams/$teamId'
     | '/pll/games/$gameId'
+    | '/pll/players/$playerId'
     | '/pll/teams/$teamId'
     | '/wcbb/games/$gameId'
     | '/wcbb/teams/$teamId'
@@ -968,6 +991,7 @@ export interface FileRouteTypes {
     | '/nhl/players/'
     | '/nhl/teams/'
     | '/pll/games/'
+    | '/pll/players/'
     | '/pll/teams/'
     | '/wcbb/games/'
     | '/wcbb/teams/'
@@ -1029,6 +1053,7 @@ export interface RootRouteChildren {
   NhlPlayersPlayerIdRoute: typeof NhlPlayersPlayerIdRoute
   NhlTeamsTeamIdRoute: typeof NhlTeamsTeamIdRoute
   PllGamesGameIdRoute: typeof PllGamesGameIdRoute
+  PllPlayersPlayerIdRoute: typeof PllPlayersPlayerIdRoute
   PllTeamsTeamIdRoute: typeof PllTeamsTeamIdRoute
   WcbbGamesGameIdRoute: typeof WcbbGamesGameIdRoute
   WcbbTeamsTeamIdRoute: typeof WcbbTeamsTeamIdRoute
@@ -1050,6 +1075,7 @@ export interface RootRouteChildren {
   NhlPlayersIndexRoute: typeof NhlPlayersIndexRoute
   NhlTeamsIndexRoute: typeof NhlTeamsIndexRoute
   PllGamesIndexRoute: typeof PllGamesIndexRoute
+  PllPlayersIndexRoute: typeof PllPlayersIndexRoute
   PllTeamsIndexRoute: typeof PllTeamsIndexRoute
   WcbbGamesIndexRoute: typeof WcbbGamesIndexRoute
   WcbbTeamsIndexRoute: typeof WcbbTeamsIndexRoute
@@ -1542,6 +1568,20 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof PllGamesGameIdRouteImport
       parentRoute: typeof rootRouteImport
     }
+    '/pll/players/': {
+      id: '/pll/players/'
+      path: '/pll/players'
+      fullPath: '/pll/players/'
+      preLoaderRoute: typeof PllPlayersIndexRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/pll/players/$playerId': {
+      id: '/pll/players/$playerId'
+      path: '/pll/players/$playerId'
+      fullPath: '/pll/players/$playerId'
+      preLoaderRoute: typeof PllPlayersPlayerIdRouteImport
+      parentRoute: typeof rootRouteImport
+    }
     '/pll/teams/': {
       id: '/pll/teams/'
       path: '/pll/teams'
@@ -1669,6 +1709,7 @@ const rootRouteChildren: RootRouteChildren = {
   NhlPlayersPlayerIdRoute: NhlPlayersPlayerIdRoute,
   NhlTeamsTeamIdRoute: NhlTeamsTeamIdRoute,
   PllGamesGameIdRoute: PllGamesGameIdRoute,
+  PllPlayersPlayerIdRoute: PllPlayersPlayerIdRoute,
   PllTeamsTeamIdRoute: PllTeamsTeamIdRoute,
   WcbbGamesGameIdRoute: WcbbGamesGameIdRoute,
   WcbbTeamsTeamIdRoute: WcbbTeamsTeamIdRoute,
@@ -1690,6 +1731,7 @@ const rootRouteChildren: RootRouteChildren = {
   NhlPlayersIndexRoute: NhlPlayersIndexRoute,
   NhlTeamsIndexRoute: NhlTeamsIndexRoute,
   PllGamesIndexRoute: PllGamesIndexRoute,
+  PllPlayersIndexRoute: PllPlayersIndexRoute,
   PllTeamsIndexRoute: PllTeamsIndexRoute,
   WcbbGamesIndexRoute: WcbbGamesIndexRoute,
   WcbbTeamsIndexRoute: WcbbTeamsIndexRoute,
