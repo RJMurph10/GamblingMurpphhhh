@@ -7,13 +7,13 @@
   "id": "1",
   "abbr": "ATL",
   "name": "Atlanta Hawks",
-  "score": 87
+  "score": 97
  },
  "home": {
   "id": "15",
   "abbr": "MIL",
   "name": "Milwaukee Bucks",
-  "score": 80
+  "score": 92
  },
  "neutral": false,
  "venue": "Fiserv Forum",

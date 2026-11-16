@@ -7,13 +7,13 @@
   "id": "25",
   "abbr": "OKC",
   "name": "Oklahoma City Thunder",
-  "score": 40
+  "score": 59
  },
  "home": {
   "id": "23",
   "abbr": "SAC",
   "name": "Sacramento Kings",
-  "score": 39
+  "score": 50
  },
  "neutral": false,
  "venue": "Golden 1 Center",
