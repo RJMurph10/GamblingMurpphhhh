@@ -7,18 +7,18 @@
   "id": "2502",
   "abbr": "PRST",
   "name": "Portland State Vikings",
-  "score": 0
+  "score": 61
  },
  "home": {
   "id": "2608",
   "abbr": "SMC",
   "name": "Saint Mary's Gaels",
-  "score": 0
+  "score": 74
  },
  "neutral": false,
  "venue": "University Credit Union Pavilion",
  "seasonType": 2,
- "state": "pre",
+ "state": "in",
  "lines": {
   "open": {
    "at": "2026-11-15T22:55:11.258Z",

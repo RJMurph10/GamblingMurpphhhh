@@ -7,18 +7,18 @@
   "id": "2640",
   "abbr": "TXSO",
   "name": "Texas Southern Tigers",
-  "score": 0
+  "score": 64
  },
  "home": {
   "id": "28",
   "abbr": "UCSD",
   "name": "UC San Diego Tritons",
-  "score": 0
+  "score": 74
  },
  "neutral": false,
  "venue": "LionTree Arena",
  "seasonType": 2,
- "state": "pre",
+ "state": "in",
  "lines": {
   "open": {
    "at": "2026-11-15T22:55:11.258Z",

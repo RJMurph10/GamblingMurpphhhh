@@ -7,18 +7,18 @@
   "id": "2837",
   "abbr": "ETAM",
   "name": "East Texas A&M Lions",
-  "score": 0
+  "score": 71
  },
  "home": {
   "id": "204",
   "abbr": "ORST",
   "name": "Oregon State Beavers",
-  "score": 0
+  "score": 109
  },
  "neutral": false,
  "venue": "Gill Coliseum",
  "seasonType": 2,
- "state": "pre",
+ "state": "post",
  "lines": {
   "open": {
    "at": "2026-11-15T22:55:11.258Z",
@@ -851,5 +851,9 @@
    ]
   }
  },
- "props": {}
+ "props": {},
+ "final": {
+  "away": 71,
+  "home": 109
+ }
 }

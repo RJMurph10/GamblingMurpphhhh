@@ -7,7 +7,7 @@
   "id": "22",
   "abbr": "VAN",
   "name": "Vancouver Canucks",
-  "score": 0
+  "score": 1
  },
  "home": {
   "id": "129764",
@@ -18,7 +18,7 @@
  "neutral": false,
  "venue": "Delta Center",
  "seasonType": 2,
- "state": "pre",
+ "state": "in",
  "lines": {
   "open": {
    "at": "2026-11-15T17:47:38.554Z",
