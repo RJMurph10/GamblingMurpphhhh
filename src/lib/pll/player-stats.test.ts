@@ -31,13 +31,14 @@ describe("PLL player stats from the Cannons sheets", () => {
       }
   });
   it("builds players with slugs and kinds", () => {
-    expect(pllPlayers().size).toBe(237);
+    expect(pllPlayers().size).toBe(245);
     const h = pllPlayer(playerSlug("Marcus Holman"));
     expect(h?.games.length).toBeGreaterThan(0);
     expect(playerKind(pllPlayer(playerSlug("Colin Kirst"))!)).toBe("goalie");
     expect(pllTeamPlayers("122997", 2026).length).toBe(26);
     expect(pllTeamPlayers("122997", 2025).length).toBe(22);
     expect(pllTeamPlayers("127636", 2025).length).toBe(24);
+    expect(pllTeamPlayers("127634", 2025).length).toBe(28);
     expect(pllTeamPlayers("127636", 2026).length).toBe(29);
     expect(pllTeamPlayers("127634", 2026).length).toBe(30);
     expect(pllTeamPlayers("122896", 2026).length).toBe(26);
