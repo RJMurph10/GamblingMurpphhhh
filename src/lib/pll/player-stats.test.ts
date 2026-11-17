@@ -29,6 +29,7 @@ describe("PLL player stats from the Cannons sheets", () => {
     expect(data.games.filter((g) => g.team === "Whipsnakes" && g.season === 2024).length).toBe(13);
     expect(data.games.filter((g) => g.team === "Atlas" && g.season === 2024).length).toBe(11);
     expect(data.games.filter((g) => g.team === "Archers" && g.season === 2024).length).toBe(12);
+    expect(data.games.filter((g) => g.team === "Waterdogs" && g.season === 2024).length).toBe(10);
     expect(data.games.filter((g) => g.team === "Waterdogs" && g.season === 2025).length).toBe(12);
     expect(data.games.filter((g) => g.team === "Archers" && g.season === 2025).length).toBe(10);
   });
@@ -40,7 +41,7 @@ describe("PLL player stats from the Cannons sheets", () => {
       }
   });
   it("builds players with slugs and kinds", () => {
-    expect(pllPlayers().size).toBe(315);
+    expect(pllPlayers().size).toBe(319);
     const h = pllPlayer(playerSlug("Marcus Holman"));
     expect(h?.games.length).toBeGreaterThan(0);
     expect(playerKind(pllPlayer(playerSlug("Colin Kirst"))!)).toBe("goalie");
@@ -53,6 +54,7 @@ describe("PLL player stats from the Cannons sheets", () => {
     expect(pllTeamPlayers("127638", 2024).length).toBe(27);
     expect(pllTeamPlayers("127632", 2024).length).toBe(23);
     expect(pllTeamPlayers("127631", 2024).length).toBe(23);
+    expect(pllTeamPlayers("127637", 2024).length).toBe(26);
     expect(pllTeamPlayers("127636", 2025).length).toBe(24);
     expect(pllTeamPlayers("127634", 2025).length).toBe(28);
     expect(pllTeamPlayers("122896", 2025).length).toBe(24);
@@ -85,6 +87,34 @@ describe("players traded mid-season", () => {
     expect(p.num).toBe("11");
     const dates = p.games.map((g) => g.date);
     expect(new Set(dates).size).toBe(dates.length);
+  });
+  it("Ryan Conrad (2024): Waterdogs through 8/3, then Whipsnakes from 8/9, M #23", () => {
+    const g24 = pllPlayer(playerSlug("Ryan Conrad"))!.games.filter((g) => g.season === 2024);
+    expect(g24.filter((g) => g.team === "Waterdogs")).toHaveLength(7);
+    expect(g24.filter((g) => g.team === "Whipsnakes")).toHaveLength(4);
+    const last = (t: string) =>
+      g24
+        .filter((g) => g.team === t)
+        .map((g) => g.date)
+        .sort()
+        .pop()!;
+    const first = (t: string) =>
+      g24
+        .filter((g) => g.team === t)
+        .map((g) => g.date)
+        .sort()[0];
+    expect(last("Waterdogs") < first("Whipsnakes")).toBe(true);
+  });
+});
+
+describe("the full 2024 season", () => {
+  it("has both clubs' sheets for every game", () => {
+    const g24 = data.games.filter((g) => g.season === 2024);
+    expect(g24).toHaveLength(90);
+    for (const g of g24)
+      expect(
+        g24.some((o) => o.team === g.opponent && o.opponent === g.team && o.date === g.date),
+      ).toBe(true);
   });
 });
 
