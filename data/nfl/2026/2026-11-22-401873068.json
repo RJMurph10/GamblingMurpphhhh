@@ -550,11 +550,11 @@
    ]
   },
   "latest": {
-   "at": "2026-11-17T04:34:25.830Z",
+   "at": "2026-11-17T10:31:57.659Z",
    "count": 12,
    "rows": [
-  {"a":null,"t":"1st Half Total","ti":"72","op":[22.5,null,null],"cur":[22.5,null,null]},
-  {"a":null,"t":"1st Half Total","ti":"72","op":[22.5,null,null],"cur":[22.5,null,null]},
+  {"a":null,"t":"1st Half Total","ti":"72","op":[22.5,null,null],"cur":[21.5,null,null]},
+  {"a":null,"t":"1st Half Total","ti":"72","op":[22.5,null,null],"cur":[21.5,null,null]},
   {"a":null,"tm":"29","t":"1st Half Moneyline","ti":"73"},
   {"a":null,"tm":"33","t":"1st Half Moneyline","ti":"73"},
   {"a":null,"tm":"29","t":"1st Half Spread","ti":"74","op":[-0.5,null,null],"cur":[-0.5,null,null]},

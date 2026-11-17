@@ -18,7 +18,7 @@
  "neutral": false,
  "venue": "Delta Center",
  "seasonType": 2,
- "state": "in",
+ "state": "post",
  "lines": {
   "open": {
    "at": "2026-11-15T17:47:38.554Z",
@@ -923,6 +923,243 @@
        "decimal": 1.98,
        "fraction": "50/51",
        "american": "-102"
+      },
+      "total": {
+       "alternateDisplayValue": "6.5",
+       "american": "6.5"
+      }
+     }
+    }
+   ]
+  },
+  "final": {
+   "at": "2026-11-17T10:31:57.659Z",
+   "books": [
+    {
+     "provider": {
+      "id": "100",
+      "name": "DraftKings",
+      "priority": 1
+     },
+     "details": "UTAH -340",
+     "overUnder": 6.5,
+     "spread": -1.5,
+     "overOdds": -115,
+     "underOdds": -105,
+     "awayTeamOdds": {
+      "favorite": false,
+      "underdog": true,
+      "moneyLine": 270,
+      "spreadOdds": 110,
+      "open": {
+       "favorite": false,
+       "pointSpread": {
+        "alternateDisplayValue": "+1.5",
+        "american": "+1.5"
+       },
+       "spread": {
+        "value": 2.2,
+        "displayValue": "6/5",
+        "alternateDisplayValue": "+120",
+        "decimal": 2.2,
+        "fraction": "6/5",
+        "american": "+120"
+       },
+       "moneyLine": {
+        "value": 3.85,
+        "displayValue": "57/20",
+        "alternateDisplayValue": "+285",
+        "decimal": 3.85,
+        "fraction": "57/20",
+        "american": "+285"
+       }
+      },
+      "close": {
+       "pointSpread": {
+        "alternateDisplayValue": "+1.5",
+        "american": "+1.5"
+       },
+       "spread": {
+        "value": 2.1,
+        "displayValue": "11/10",
+        "alternateDisplayValue": "+110",
+        "decimal": 2.1,
+        "fraction": "11/10",
+        "american": "+110"
+       },
+       "moneyLine": {
+        "value": 3.7,
+        "displayValue": "27/10",
+        "alternateDisplayValue": "+270",
+        "decimal": 3.7,
+        "fraction": "27/10",
+        "american": "+270"
+       }
+      },
+      "current": {
+       "pointSpread": {
+        "alternateDisplayValue": "+1.5",
+        "american": "+1.5"
+       },
+       "spread": {
+        "value": 2.1,
+        "displayValue": "11/10",
+        "alternateDisplayValue": "+110",
+        "decimal": 2.1,
+        "fraction": "11/10",
+        "american": "+110"
+       },
+       "moneyLine": {
+        "value": 3.7,
+        "displayValue": "27/10",
+        "alternateDisplayValue": "+270",
+        "decimal": 3.7,
+        "fraction": "27/10",
+        "american": "+270"
+       }
+      },
+      "team": {
+       "id": "22"
+      }
+     },
+     "homeTeamOdds": {
+      "favorite": true,
+      "underdog": false,
+      "moneyLine": -340,
+      "spreadOdds": -130,
+      "open": {
+       "favorite": true,
+       "pointSpread": {
+        "alternateDisplayValue": "-1.5",
+        "american": "-1.5"
+       },
+       "spread": {
+        "value": 1.7,
+        "displayValue": "50/71",
+        "alternateDisplayValue": "-142",
+        "decimal": 1.7,
+        "fraction": "50/71",
+        "american": "-142"
+       },
+       "moneyLine": {
+        "value": 1.27,
+        "displayValue": "5/18",
+        "alternateDisplayValue": "-360",
+        "decimal": 1.27,
+        "fraction": "5/18",
+        "american": "-360"
+       }
+      },
+      "close": {
+       "pointSpread": {
+        "alternateDisplayValue": "-1.5",
+        "american": "-1.5"
+       },
+       "spread": {
+        "value": 1.76,
+        "displayValue": "10/13",
+        "alternateDisplayValue": "-130",
+        "decimal": 1.76,
+        "fraction": "10/13",
+        "american": "-130"
+       },
+       "moneyLine": {
+        "value": 1.29,
+        "displayValue": "5/17",
+        "alternateDisplayValue": "-340",
+        "decimal": 1.29,
+        "fraction": "5/17",
+        "american": "-340"
+       }
+      },
+      "current": {
+       "pointSpread": {
+        "alternateDisplayValue": "-1.5",
+        "american": "-1.5"
+       },
+       "spread": {
+        "value": 1.76,
+        "displayValue": "10/13",
+        "alternateDisplayValue": "-130",
+        "decimal": 1.76,
+        "fraction": "10/13",
+        "american": "-130"
+       },
+       "moneyLine": {
+        "value": 1.29,
+        "displayValue": "5/17",
+        "alternateDisplayValue": "-340",
+        "decimal": 1.29,
+        "fraction": "5/17",
+        "american": "-340"
+       }
+      },
+      "team": {
+       "id": "129764"
+      }
+     },
+     "moneylineWinner": false,
+     "spreadWinner": false,
+     "open": {
+      "over": {
+       "value": 1.95,
+       "displayValue": "20/21",
+       "alternateDisplayValue": "-105",
+       "decimal": 1.95,
+       "fraction": "20/21",
+       "american": "-105"
+      },
+      "under": {
+       "value": 1.86,
+       "displayValue": "20/23",
+       "alternateDisplayValue": "-115",
+       "decimal": 1.86,
+       "fraction": "20/23",
+       "american": "-115"
+      },
+      "total": {
+       "alternateDisplayValue": "6.5",
+       "american": "6.5"
+      }
+     },
+     "close": {
+      "over": {
+       "value": 1.86,
+       "displayValue": "20/23",
+       "alternateDisplayValue": "-115",
+       "decimal": 1.86,
+       "fraction": "20/23",
+       "american": "-115"
+      },
+      "under": {
+       "value": 1.95,
+       "displayValue": "20/21",
+       "alternateDisplayValue": "-105",
+       "decimal": 1.95,
+       "fraction": "20/21",
+       "american": "-105"
+      },
+      "total": {
+       "alternateDisplayValue": "6.5",
+       "american": "6.5"
+      }
+     },
+     "current": {
+      "over": {
+       "value": 1.86,
+       "displayValue": "20/23",
+       "alternateDisplayValue": "-115",
+       "decimal": 1.86,
+       "fraction": "20/23",
+       "american": "-115"
+      },
+      "under": {
+       "value": 1.95,
+       "displayValue": "20/21",
+       "alternateDisplayValue": "-105",
+       "decimal": 1.95,
+       "fraction": "20/21",
+       "american": "-105"
       },
       "total": {
        "alternateDisplayValue": "6.5",
@@ -2887,5 +3124,9 @@
    "Brandon Buhr",
    "VAN"
   ]
+ },
+ "final": {
+  "away": 3,
+  "home": 2
  }
 }
