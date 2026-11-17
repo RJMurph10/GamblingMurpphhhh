@@ -48,7 +48,9 @@ function PllDashRow({
       : res.ou === "under"
         ? LOSS
         : PUSH;
-  const where = game.city || game.venue;
+  const where = [game.weekLabel?.replace("Week ", "Wk ") ?? "", game.city || game.venue]
+    .filter(Boolean)
+    .join(" · ");
   return (
     <tr className="hover:bg-line/5">
       <td className="whitespace-nowrap px-4 py-2.5 font-mono text-mute" suppressHydrationWarning>
