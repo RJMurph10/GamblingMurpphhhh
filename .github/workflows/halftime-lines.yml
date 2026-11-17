@@ -15,7 +15,11 @@ on:
   schedule:
     - cron: "45 13 * * 0" # Sunday morning: NFL international games
     - cron: "15 17 * * *" # midday: NFL Sunday 1pm and 4pm games, NBA afternoon games, holiday games
-    - cron: "45 23 * * *" # evening: NBA nights, NFL Sunday / Monday / Thursday night games
+    - cron: "10 23 * * *" # evening: NBA nights, NFL Sunday / Monday / Thursday night games
+    # Backup for the evening run: GitHub often starts scheduled runs an hour or more late (Nov 16 the
+    # evening run started 61 minutes late, 18 minutes before the first NBA halftime). If the evening run
+    # is going, this one queues behind it (concurrency group) and exits at once because the files exist.
+    - cron: "40 0 * * *"
   workflow_dispatch:
     inputs:
       leagues:
