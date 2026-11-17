@@ -7,6 +7,7 @@
 import { CURRENT_SEASON } from "@/lib/shared/espn-core.server";
 import { QB_STARTS, type QbStartRow } from "@/data/nfl/qb-starts";
 import type { HistoryGame, UpcomingStarters } from "./model-history";
+import { QB_OVERRIDES } from "@/data/nfl/qb-overrides";
 
 const GAMES_CSV = "https://raw.githubusercontent.com/nflverse/nfldata/master/data/games.csv";
 const PLAYER_WEEK_CSV = (season: number) =>
@@ -193,6 +194,12 @@ export function parseGamesCsv(
       awayQbName: str(f[idx.awayQbName]),
     };
     if (awayScore === null || homeScore === null) {
+      // the owner's hand-set starters win over nflverse's projection
+      for (const o of QB_OVERRIDES) {
+        if (o.espnId !== Number(f[idx.espn])) continue;
+        if (o.side === "home") Object.assign(qbs, { homeQb: o.qbId, homeQbName: o.qbName });
+        else Object.assign(qbs, { awayQb: o.qbId, awayQbName: o.qbName });
+      }
       if (season === last && (qbs.homeQb || qbs.awayQb))
         upcoming.push({ espnId: Number(f[idx.espn]), week, ...qbs });
       continue;
