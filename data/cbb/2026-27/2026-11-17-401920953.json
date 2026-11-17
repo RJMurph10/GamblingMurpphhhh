@@ -7,18 +7,18 @@
   "id": "2335",
   "abbr": "LIB",
   "name": "Liberty Flames",
-  "score": 0
+  "score": 11
  },
  "home": {
   "id": "79",
   "abbr": "SIU",
   "name": "Southern Illinois Salukis",
-  "score": 0
+  "score": 5
  },
  "neutral": true,
  "venue": "Curry Arena",
  "seasonType": 2,
- "state": "pre",
+ "state": "in",
  "lines": {
   "open": {
    "at": "2026-11-17T04:34:25.830Z",
