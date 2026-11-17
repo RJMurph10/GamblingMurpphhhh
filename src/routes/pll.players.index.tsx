@@ -1,7 +1,7 @@
 import { useMemo, useState } from "react";
 import { createFileRoute, Link } from "@tanstack/react-router";
 import { PageTitle, Panel } from "@/components/shared/booth";
-import { PllLogo } from "@/components/pll/PllBits";
+import { PllLogo, PllSeasonPicker } from "@/components/pll/PllBits";
 import { teamOf } from "@/lib/pll/pll";
 import { posAbbr } from "@/lib/pll/players";
 import { pllPlayers, totalsOf, type PllTotals } from "@/lib/pll/player-stats";
@@ -32,7 +32,12 @@ const fmt = (k: SortKey, t: PllTotals) => {
 };
 
 function PllPlayersPage() {
-  const season = 2026;
+  const seasons = useMemo(
+    () =>
+      [...new Set([...pllPlayers().values()].flatMap((p) => p.games.map((g) => g.season)))].sort(),
+    [],
+  );
+  const [season, setSeason] = useState(seasons[seasons.length - 1] ?? 2026);
   const q = usePllSeason(season);
   const [sort, setSort] = useState<SortKey>("P");
   const rows = useMemo(
@@ -43,12 +48,16 @@ function PllPlayersPage() {
         .sort(
           (a, b) => ((b.t[sort] as number) ?? -1) - ((a.t[sort] as number) ?? -1) || b.t.P - a.t.P,
         ),
-    [sort],
+    [sort, season],
   );
   const teams = [...new Set(rows.map((r) => r.p.teamId))];
   return (
     <>
-      <PageTitle eyebrow={`Premier Lacrosse League · ${season}`} title="Players" />
+      <PageTitle
+        eyebrow={`Premier Lacrosse League · ${season}`}
+        title="Players"
+        aside={<PllSeasonPicker season={season} onChange={setSeason} seasons={seasons} />}
+      />
       <p className="mb-4 font-mono text-[11px] text-mute">
         Game-by-game stats entered from the PLL&apos;s box scores so far:{" "}
         {teams.map((id) => teamOf(q.data, id)?.short ?? id).join(", ") || "none yet"}. Tap a column

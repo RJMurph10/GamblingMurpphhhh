@@ -21,6 +21,7 @@ describe("PLL player stats from the Cannons sheets", () => {
     expect(n("Atlas")).toBe(12);
     expect(n("Waterdogs")).toBe(14);
     expect(n("Archers")).toBe(13);
+    expect(data.games.filter((g) => g.team === "Cannons" && g.season === 2025).length).toBe(10);
   });
   it("every stat line obeys P = 1G + 2*2G + A", () => {
     for (const g of data.games)
@@ -30,11 +31,12 @@ describe("PLL player stats from the Cannons sheets", () => {
       }
   });
   it("builds players with slugs and kinds", () => {
-    expect(pllPlayers().size).toBe(225);
+    expect(pllPlayers().size).toBe(231);
     const h = pllPlayer(playerSlug("Marcus Holman"));
     expect(h?.games.length).toBeGreaterThan(0);
     expect(playerKind(pllPlayer(playerSlug("Colin Kirst"))!)).toBe("goalie");
     expect(pllTeamPlayers("122997", 2026).length).toBe(26);
+    expect(pllTeamPlayers("122997", 2025).length).toBe(22);
     expect(pllTeamPlayers("127636", 2026).length).toBe(29);
     expect(pllTeamPlayers("127634", 2026).length).toBe(30);
     expect(pllTeamPlayers("122896", 2026).length).toBe(26);
@@ -77,6 +79,33 @@ describe("the full 2026 season", () => {
       expect(goals(g.players as unknown as Line[])).toBe(
         against(other!.players as unknown as Line[]),
       );
+    }
+  });
+});
+
+describe("2025 sheets", () => {
+  type Line = { stats?: Record<string, number | null> };
+  const goals = (ps: Line[]) => ps.reduce((n, p) => n + (p.stats ? p.stats.P! - p.stats.A! : 0), 0);
+  const against = (ps: Line[]) => ps.reduce((n, p) => n + (p.stats?.SA ?? 0), 0);
+  it("match ESPN's final scores", async () => {
+    const espn = (await import("@/test/fixtures/pll-2025-espn.json")).default as unknown as {
+      date: string;
+      sides: [string, string, string, string][];
+    }[];
+    const games = data.games.filter((g) => g.season === 2025);
+    expect(games.length).toBeGreaterThan(0);
+    for (const g of games) {
+      const day = Date.parse(g.date);
+      const e = espn.find(
+        (x) =>
+          Math.abs(Date.parse(x.date.slice(0, 10)) - day) <= 86_400_000 &&
+          x.sides.some((s) => s[1] === g.team) &&
+          x.sides.some((s) => s[1] === g.opponent),
+      );
+      expect(e, `${g.date} ${g.team} vs ${g.opponent}`).toBeDefined();
+      const score = (t: string) => Number(e!.sides.find((s) => s[1] === t)![3]);
+      expect(goals(g.players as unknown as Line[])).toBe(score(g.team));
+      expect(against(g.players as unknown as Line[])).toBe(score(g.opponent));
     }
   });
 });
