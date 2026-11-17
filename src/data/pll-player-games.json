@@ -3,6 +3,3972 @@
 "games": [
 {
 "team": "Archers",
+"season": 2024,
+"date": "2024-06-01",
+"opponent": "Waterdogs",
+"file": "6_1 vs Waterdogs.xlsx",
+"players": [
+{
+"name": "Grant Ament",
+"pos": "M",
+"num": "16",
+"stats": {
+"P": 4,
+"G1": 3,
+"G2": 0,
+"A": 1,
+"Sh": 5,
+"GB": 0,
+"TO": 1,
+"PAS": 16,
+"TCH": 22,
+"CT": null,
+"Pen": null
+}
+},
+{
+"name": "Tom Schreiber",
+"pos": "M",
+"num": "26",
+"stats": {
+"P": 4,
+"G1": 0,
+"G2": 1,
+"A": 2,
+"Sh": 2,
+"GB": 0,
+"TO": 1,
+"PAS": 34,
+"TCH": 37,
+"CT": null,
+"Pen": null
+}
+},
+{
+"name": "Connor Fields",
+"pos": "A",
+"num": "5",
+"stats": {
+"P": 3,
+"G1": 3,
+"G2": 0,
+"A": 0,
+"Sh": 7,
+"GB": 1,
+"TO": 3,
+"PAS": 20,
+"TCH": 30,
+"CT": null,
+"Pen": null
+}
+},
+{
+"name": "Mac O'Keefe",
+"pos": "A",
+"num": "7",
+"stats": {
+"P": 2,
+"G1": 2,
+"G2": 0,
+"A": 0,
+"Sh": 8,
+"GB": 2,
+"TO": 4,
+"PAS": 17,
+"TCH": 29,
+"CT": null,
+"Pen": null
+}
+},
+{
+"name": "Tre Leclaire",
+"pos": "M",
+"num": "44",
+"stats": {
+"P": 1,
+"G1": 1,
+"G2": 0,
+"A": 0,
+"Sh": 2,
+"GB": 0,
+"TO": 1,
+"PAS": 11,
+"TCH": 14,
+"CT": null,
+"Pen": null
+}
+},
+{
+"name": "Mike Sisselberger",
+"pos": "FO",
+"num": "99",
+"stats": {
+"P": 1,
+"G1": 1,
+"G2": 0,
+"A": 0,
+"Sh": 1,
+"GB": 19,
+"TO": 3,
+"PAS": 14,
+"TCH": 18,
+"CT": 0,
+"Pen": 0,
+"FOW": 23,
+"FOT": 25
+}
+},
+{
+"name": "Ryan Ambler",
+"pos": "M",
+"num": "13",
+"stats": {
+"P": 1,
+"G1": 0,
+"G2": 0,
+"A": 1,
+"Sh": 2,
+"GB": 1,
+"TO": 2,
+"PAS": 12,
+"TCH": 16,
+"CT": 0,
+"Pen": 0
+}
+},
+{
+"name": "Matt Moore",
+"pos": "A",
+"num": "11",
+"stats": {
+"P": 0,
+"G1": 0,
+"G2": 0,
+"A": 0,
+"Sh": 3,
+"GB": 2,
+"TO": 2,
+"PAS": 33,
+"TCH": 38,
+"CT": null,
+"Pen": null
+}
+},
+{
+"name": "Ryan Aughavin",
+"pos": "M",
+"num": "42",
+"stats": {
+"P": 0,
+"G1": 0,
+"G2": 0,
+"A": 0,
+"Sh": 2,
+"GB": 0,
+"TO": 0,
+"PAS": 7,
+"TCH": 9,
+"CT": null,
+"Pen": null
+}
+},
+{
+"name": "Connor Maher",
+"pos": "SSDM",
+"num": "31",
+"stats": {
+"P": 0,
+"G1": 0,
+"G2": 0,
+"A": 0,
+"Sh": 1,
+"GB": 3,
+"TO": 0,
+"PAS": 8,
+"TCH": 9,
+"CT": 1,
+"Pen": 0
+}
+},
+{
+"name": "Piper Bond",
+"pos": "SSDM",
+"num": "54",
+"stats": {
+"P": 0,
+"G1": 0,
+"G2": 0,
+"A": 0,
+"Sh": 2,
+"GB": 4,
+"TO": 2,
+"PAS": 11,
+"TCH": 15,
+"CT": 0,
+"Pen": 2
+}
+},
+{
+"name": "Cam Wyers",
+"pos": "D",
+"num": "20",
+"stats": {
+"P": 0,
+"G1": 0,
+"G2": 0,
+"A": 0,
+"Sh": 0,
+"GB": 2,
+"TO": null,
+"PAS": null,
+"TCH": 5,
+"CT": 2,
+"Pen": 2
+}
+},
+{
+"name": "Jon Robbins",
+"pos": "LSM",
+"num": "41",
+"stats": {
+"P": 0,
+"G1": 0,
+"G2": 0,
+"A": 0,
+"Sh": 0,
+"GB": 1,
+"TO": null,
+"PAS": null,
+"TCH": 5,
+"CT": 1,
+"Pen": 0
+}
+},
+{
+"name": "Jack DiBenedetto",
+"pos": "D",
+"num": "6",
+"stats": {
+"P": 0,
+"G1": 0,
+"G2": 0,
+"A": 0,
+"Sh": 0,
+"GB": 3,
+"TO": null,
+"PAS": null,
+"TCH": 3,
+"CT": 0,
+"Pen": 0
+}
+},
+{
+"name": "Warren Jeffrey",
+"pos": "D",
+"num": "27",
+"stats": {
+"P": 0,
+"G1": 0,
+"G2": 0,
+"A": 0,
+"Sh": 0,
+"GB": 1,
+"TO": null,
+"PAS": null,
+"TCH": 1,
+"CT": 0,
+"Pen": 0
+}
+},
+{
+"name": "Brett Dobson",
+"pos": "G",
+"num": "45",
+"stats": {
+"P": 0,
+"G1": 0,
+"G2": 0,
+"A": 0,
+"Sh": 0,
+"GB": 1,
+"TO": null,
+"PAS": null,
+"TCH": 11,
+"CT": 0,
+"Pen": 0,
+"SA": 11,
+"Sv": 23,
+"SvPct": 67.6,
+"CSv": 6,
+"GA": 11
+}
+},
+{
+"name": "Beau Pederson",
+"pos": "SSDM",
+"num": "89",
+"stats": {
+"P": 0,
+"G1": 0,
+"G2": 0,
+"A": 0,
+"Sh": 0,
+"GB": 0,
+"TO": null,
+"PAS": null,
+"TCH": 5,
+"CT": null,
+"Pen": null,
+"FOW": 0,
+"FOT": 1
+}
+}
+]
+},
+{
+"team": "Archers",
+"season": 2024,
+"date": "2024-06-07",
+"opponent": "Outlaws",
+"file": "6_7 vs Outlaws.xlsx",
+"players": [
+{
+"name": "Tre Leclaire",
+"pos": "M",
+"num": "44",
+"stats": {
+"P": 5,
+"G1": 5,
+"G2": 0,
+"A": 0,
+"Sh": 5,
+"GB": 1,
+"TO": 1,
+"PAS": 7,
+"TCH": 13,
+"CT": 0,
+"Pen": 0
+}
+},
+{
+"name": "Connor Fields",
+"pos": "A",
+"num": "5",
+"stats": {
+"P": 5,
+"G1": 4,
+"G2": 0,
+"A": 1,
+"Sh": 9,
+"GB": 3,
+"TO": 4,
+"PAS": 18,
+"TCH": 31,
+"CT": null,
+"Pen": null
+}
+},
+{
+"name": "Mac O'Keefe",
+"pos": "A",
+"num": "7",
+"stats": {
+"P": 5,
+"G1": 3,
+"G2": 1,
+"A": 0,
+"Sh": 8,
+"GB": 1,
+"TO": 1,
+"PAS": 16,
+"TCH": 25,
+"CT": null,
+"Pen": null
+}
+},
+{
+"name": "Grant Ament",
+"pos": "M",
+"num": "16",
+"stats": {
+"P": 3,
+"G1": 2,
+"G2": 0,
+"A": 1,
+"Sh": 5,
+"GB": 0,
+"TO": 2,
+"PAS": 15,
+"TCH": 22,
+"CT": null,
+"Pen": null
+}
+},
+{
+"name": "Tom Schreiber",
+"pos": "M",
+"num": "26",
+"stats": {
+"P": 2,
+"G1": 0,
+"G2": 0,
+"A": 2,
+"Sh": 4,
+"GB": 1,
+"TO": 0,
+"PAS": 21,
+"TCH": 25,
+"CT": 0,
+"Pen": 0
+}
+},
+{
+"name": "Ryan Aughavin",
+"pos": "M",
+"num": "42",
+"stats": {
+"P": 2,
+"G1": 0,
+"G2": 0,
+"A": 2,
+"Sh": 2,
+"GB": 1,
+"TO": 0,
+"PAS": 8,
+"TCH": 10,
+"CT": 0,
+"Pen": 0
+}
+},
+{
+"name": "Piper Bond",
+"pos": "SSDM",
+"num": "54",
+"stats": {
+"P": 1,
+"G1": 1,
+"G2": 0,
+"A": 0,
+"Sh": 3,
+"GB": 4,
+"TO": 1,
+"PAS": 13,
+"TCH": 17,
+"CT": 2,
+"Pen": 0
+}
+},
+{
+"name": "Ryan Ambler",
+"pos": "M",
+"num": "13",
+"stats": {
+"P": 1,
+"G1": 0,
+"G2": 0,
+"A": 1,
+"Sh": 2,
+"GB": 1,
+"TO": 0,
+"PAS": 12,
+"TCH": 14,
+"CT": 0,
+"Pen": 0
+}
+},
+{
+"name": "Matt Moore",
+"pos": "A",
+"num": "11",
+"stats": {
+"P": 1,
+"G1": 0,
+"G2": 0,
+"A": 1,
+"Sh": 5,
+"GB": 0,
+"TO": 0,
+"PAS": 16,
+"TCH": 21,
+"CT": null,
+"Pen": null
+}
+},
+{
+"name": "Brett Dobson",
+"pos": "G",
+"num": "45",
+"stats": {
+"P": 1,
+"G1": 0,
+"G2": 0,
+"A": 1,
+"Sh": 0,
+"GB": 0,
+"TO": 0,
+"PAS": 15,
+"TCH": 15,
+"CT": null,
+"Pen": null,
+"SA": 18,
+"Sv": 13,
+"SvPct": 43.3,
+"CSv": 7,
+"GA": 17
+}
+},
+{
+"name": "Connor Maher",
+"pos": "SSDM",
+"num": "31",
+"stats": {
+"P": 0,
+"G1": 0,
+"G2": 0,
+"A": 0,
+"Sh": 1,
+"GB": 1,
+"TO": 0,
+"PAS": 3,
+"TCH": 4,
+"CT": 1,
+"Pen": 0
+}
+},
+{
+"name": "Mason Woodward",
+"pos": "D",
+"num": "77",
+"stats": {
+"P": 0,
+"G1": 0,
+"G2": 0,
+"A": 0,
+"Sh": 1,
+"GB": 4,
+"TO": 0,
+"PAS": 8,
+"TCH": 9,
+"CT": 1,
+"Pen": 0
+}
+},
+{
+"name": "Colby Barsz",
+"pos": "D",
+"num": "24",
+"stats": {
+"P": 0,
+"G1": 0,
+"G2": 0,
+"A": 0,
+"Sh": 0,
+"GB": 3,
+"TO": null,
+"PAS": null,
+"TCH": 3,
+"CT": 1,
+"Pen": 0
+}
+},
+{
+"name": "Jon Robbins",
+"pos": "LSM",
+"num": "41",
+"stats": {
+"P": 0,
+"G1": 0,
+"G2": 0,
+"A": 0,
+"Sh": 0,
+"GB": 1,
+"TO": null,
+"PAS": null,
+"TCH": 4,
+"CT": 1,
+"Pen": 0
+}
+},
+{
+"name": "Mike Sisselberger",
+"pos": "FO",
+"num": "99",
+"stats": {
+"P": 0,
+"G1": 0,
+"G2": 0,
+"A": 0,
+"Sh": 0,
+"GB": 7,
+"TO": null,
+"PAS": null,
+"TCH": 8,
+"CT": 0,
+"Pen": 0,
+"FOW": 14,
+"FOT": 35
+}
+},
+{
+"name": "Warren Jeffrey",
+"pos": "D",
+"num": "27",
+"stats": {
+"P": 0,
+"G1": 0,
+"G2": 0,
+"A": 0,
+"Sh": 0,
+"GB": 4,
+"TO": null,
+"PAS": null,
+"TCH": 5,
+"CT": 0,
+"Pen": 0
+}
+},
+{
+"name": "Cam Wyers",
+"pos": "D",
+"num": "20",
+"stats": {
+"P": 0,
+"G1": 0,
+"G2": 0,
+"A": 0,
+"Sh": 0,
+"GB": 2,
+"TO": null,
+"PAS": null,
+"TCH": 4,
+"CT": 0,
+"Pen": 1
+}
+},
+{
+"name": "Beau Pederson",
+"pos": "SSDM",
+"num": "89",
+"stats": {
+"P": 0,
+"G1": 0,
+"G2": 0,
+"A": 0,
+"Sh": 0,
+"GB": 2,
+"TO": null,
+"PAS": null,
+"TCH": 6,
+"CT": 0,
+"Pen": 0,
+"FOW": 0,
+"FOT": 2
+}
+}
+]
+},
+{
+"team": "Archers",
+"season": 2024,
+"date": "2024-06-15",
+"opponent": "Chaos",
+"file": "6_15 vs Chaos.xlsx",
+"players": [
+{
+"name": "Tom Schreiber",
+"pos": "M",
+"num": "26",
+"stats": {
+"P": 4,
+"G1": 2,
+"G2": 0,
+"A": 2,
+"Sh": 6,
+"GB": 0,
+"TO": 1,
+"PAS": 25,
+"TCH": 32,
+"CT": null,
+"Pen": null
+}
+},
+{
+"name": "Ryan Ambler",
+"pos": "M",
+"num": "13",
+"stats": {
+"P": 3,
+"G1": 2,
+"G2": 0,
+"A": 1,
+"Sh": 5,
+"GB": 0,
+"TO": 2,
+"PAS": 7,
+"TCH": 14,
+"CT": null,
+"Pen": null
+}
+},
+{
+"name": "Mac O'Keefe",
+"pos": "A",
+"num": "7",
+"stats": {
+"P": 3,
+"G1": 2,
+"G2": 0,
+"A": 1,
+"Sh": 9,
+"GB": 0,
+"TO": 2,
+"PAS": 14,
+"TCH": 25,
+"CT": null,
+"Pen": null
+}
+},
+{
+"name": "Grant Ament",
+"pos": "M",
+"num": "16",
+"stats": {
+"P": 2,
+"G1": 2,
+"G2": 0,
+"A": 0,
+"Sh": 6,
+"GB": 1,
+"TO": 1,
+"PAS": 23,
+"TCH": 30,
+"CT": 0,
+"Pen": 0
+}
+},
+{
+"name": "Connor Fields",
+"pos": "A",
+"num": "5",
+"stats": {
+"P": 2,
+"G1": 1,
+"G2": 0,
+"A": 1,
+"Sh": 6,
+"GB": 0,
+"TO": 1,
+"PAS": 19,
+"TCH": 26,
+"CT": null,
+"Pen": null
+}
+},
+{
+"name": "Tre Leclaire",
+"pos": "M",
+"num": "44",
+"stats": {
+"P": 0,
+"G1": 0,
+"G2": 0,
+"A": 0,
+"Sh": 3,
+"GB": 0,
+"TO": 0,
+"PAS": 12,
+"TCH": 15,
+"CT": null,
+"Pen": null
+}
+},
+{
+"name": "Matt Moore",
+"pos": "A",
+"num": "11",
+"stats": {
+"P": 0,
+"G1": 0,
+"G2": 0,
+"A": 0,
+"Sh": 3,
+"GB": 0,
+"TO": 1,
+"PAS": 23,
+"TCH": 27,
+"CT": null,
+"Pen": null
+}
+},
+{
+"name": "Cam Wyers",
+"pos": "D",
+"num": "20",
+"stats": {
+"P": 0,
+"G1": 0,
+"G2": 0,
+"A": 0,
+"Sh": 1,
+"GB": 2,
+"TO": 0,
+"PAS": 4,
+"TCH": 5,
+"CT": 1,
+"Pen": 0
+}
+},
+{
+"name": "Mason Woodward",
+"pos": "D",
+"num": "77",
+"stats": {
+"P": 0,
+"G1": 0,
+"G2": 0,
+"A": 0,
+"Sh": 1,
+"GB": 2,
+"TO": 0,
+"PAS": 9,
+"TCH": 10,
+"CT": 0,
+"Pen": 0
+}
+},
+{
+"name": "Jon Robbins",
+"pos": "LSM",
+"num": "41",
+"stats": {
+"P": 0,
+"G1": 0,
+"G2": 0,
+"A": 0,
+"Sh": 0,
+"GB": 2,
+"TO": null,
+"PAS": null,
+"TCH": 3,
+"CT": 1,
+"Pen": 0
+}
+},
+{
+"name": "Connor Maher",
+"pos": "SSDM",
+"num": "31",
+"stats": {
+"P": 0,
+"G1": 0,
+"G2": 0,
+"A": 0,
+"Sh": 0,
+"GB": 2,
+"TO": null,
+"PAS": null,
+"TCH": 6,
+"CT": 1,
+"Pen": 1
+}
+},
+{
+"name": "Warren Jeffrey",
+"pos": "D",
+"num": "27",
+"stats": {
+"P": 0,
+"G1": 0,
+"G2": 0,
+"A": 0,
+"Sh": 0,
+"GB": 0,
+"TO": null,
+"PAS": null,
+"TCH": 7,
+"CT": 1,
+"Pen": 0
+}
+},
+{
+"name": "Mike Sisselberger",
+"pos": "FO",
+"num": "99",
+"stats": {
+"P": 0,
+"G1": 0,
+"G2": 0,
+"A": 0,
+"Sh": 0,
+"GB": 5,
+"TO": null,
+"PAS": null,
+"TCH": 6,
+"CT": 0,
+"Pen": 0,
+"FOW": 8,
+"FOT": 19
+}
+},
+{
+"name": "Brett Dobson",
+"pos": "G",
+"num": "45",
+"stats": {
+"P": 0,
+"G1": 0,
+"G2": 0,
+"A": 0,
+"Sh": 0,
+"GB": 3,
+"TO": null,
+"PAS": null,
+"TCH": 18,
+"CT": 0,
+"Pen": 0,
+"SA": 7,
+"Sv": 18,
+"SvPct": 72.0,
+"CSv": 6,
+"GA": 7
+}
+},
+{
+"name": "Piper Bond",
+"pos": "SSDM",
+"num": "54",
+"stats": {
+"P": 0,
+"G1": 0,
+"G2": 0,
+"A": 0,
+"Sh": 0,
+"GB": 3,
+"TO": null,
+"PAS": null,
+"TCH": 11,
+"CT": 0,
+"Pen": 2
+}
+},
+{
+"name": "Troy Hettinger",
+"pos": null,
+"num": null,
+"stats": {
+"P": 0,
+"G1": 0,
+"G2": 0,
+"A": 0,
+"Sh": 0,
+"GB": 1,
+"TO": null,
+"PAS": null,
+"TCH": 2,
+"CT": 0,
+"Pen": 0
+}
+},
+{
+"name": "Beau Pederson",
+"pos": "SSDM",
+"num": "89",
+"stats": {
+"P": 0,
+"G1": 0,
+"G2": 0,
+"A": 0,
+"Sh": 0,
+"GB": 0,
+"TO": null,
+"PAS": null,
+"TCH": 3,
+"CT": null,
+"Pen": null,
+"FOW": 0,
+"FOT": 1
+}
+}
+]
+},
+{
+"team": "Archers",
+"season": 2024,
+"date": "2024-06-28",
+"opponent": "Cannons",
+"file": "6_28 vs Cannons.xlsx",
+"players": [
+{
+"name": "Grant Ament",
+"pos": "M",
+"num": "16",
+"stats": {
+"P": 4,
+"G1": 1,
+"G2": 0,
+"A": 3,
+"Sh": 1,
+"GB": 1,
+"TO": 0,
+"PAS": 34,
+"TCH": 35,
+"CT": 0,
+"Pen": 1
+}
+},
+{
+"name": "Connor Fields",
+"pos": "A",
+"num": "5",
+"stats": {
+"P": 3,
+"G1": 3,
+"G2": 0,
+"A": 0,
+"Sh": 8,
+"GB": 1,
+"TO": 2,
+"PAS": 19,
+"TCH": 29,
+"CT": null,
+"Pen": null
+}
+},
+{
+"name": "Ryan Ambler",
+"pos": "M",
+"num": "13",
+"stats": {
+"P": 2,
+"G1": 2,
+"G2": 0,
+"A": 0,
+"Sh": 3,
+"GB": 1,
+"TO": 3,
+"PAS": 9,
+"TCH": 15,
+"CT": 0,
+"Pen": 0
+}
+},
+{
+"name": "Tom Schreiber",
+"pos": "M",
+"num": "26",
+"stats": {
+"P": 2,
+"G1": 1,
+"G2": 0,
+"A": 1,
+"Sh": 5,
+"GB": 0,
+"TO": 2,
+"PAS": 23,
+"TCH": 30,
+"CT": 1,
+"Pen": 0
+}
+},
+{
+"name": "Mac O'Keefe",
+"pos": "A",
+"num": "7",
+"stats": {
+"P": 1,
+"G1": 1,
+"G2": 0,
+"A": 0,
+"Sh": 6,
+"GB": 0,
+"TO": 0,
+"PAS": 19,
+"TCH": 25,
+"CT": null,
+"Pen": null
+}
+},
+{
+"name": "Tre Leclaire",
+"pos": "M",
+"num": "44",
+"stats": {
+"P": 1,
+"G1": 1,
+"G2": 0,
+"A": 0,
+"Sh": 2,
+"GB": 2,
+"TO": 1,
+"PAS": 17,
+"TCH": 20,
+"CT": 0,
+"Pen": 0
+}
+},
+{
+"name": "Matt Moore",
+"pos": "A",
+"num": "11",
+"stats": {
+"P": 0,
+"G1": 0,
+"G2": 0,
+"A": 0,
+"Sh": 2,
+"GB": 2,
+"TO": 3,
+"PAS": 9,
+"TCH": 14,
+"CT": null,
+"Pen": null
+}
+},
+{
+"name": "Mike Sisselberger",
+"pos": "FO",
+"num": "99",
+"stats": {
+"P": 0,
+"G1": 0,
+"G2": 0,
+"A": 0,
+"Sh": 1,
+"GB": 7,
+"TO": 2,
+"PAS": 3,
+"TCH": 6,
+"CT": 0,
+"Pen": 0,
+"FOW": 13,
+"FOT": 19
+}
+},
+{
+"name": "Piper Bond",
+"pos": "SSDM",
+"num": "54",
+"stats": {
+"P": 0,
+"G1": 0,
+"G2": 0,
+"A": 0,
+"Sh": 1,
+"GB": 2,
+"TO": 1,
+"PAS": 11,
+"TCH": 13,
+"CT": 0,
+"Pen": 0,
+"FOW": 0,
+"FOT": 1
+}
+},
+{
+"name": "Mason Woodward",
+"pos": "D",
+"num": "77",
+"stats": {
+"P": 0,
+"G1": 0,
+"G2": 0,
+"A": 0,
+"Sh": 1,
+"GB": 4,
+"TO": 0,
+"PAS": 12,
+"TCH": 13,
+"CT": 1,
+"Pen": 0
+}
+},
+{
+"name": "Graeme Hossack",
+"pos": "D",
+"num": "81",
+"stats": {
+"P": 0,
+"G1": 0,
+"G2": 0,
+"A": 0,
+"Sh": 0,
+"GB": 2,
+"TO": null,
+"PAS": null,
+"TCH": 4,
+"CT": 3,
+"Pen": 1
+}
+},
+{
+"name": "Warren Jeffrey",
+"pos": "D",
+"num": "27",
+"stats": {
+"P": 0,
+"G1": 0,
+"G2": 0,
+"A": 0,
+"Sh": 0,
+"GB": 3,
+"TO": null,
+"PAS": null,
+"TCH": 7,
+"CT": 2,
+"Pen": 0
+}
+},
+{
+"name": "Brett Dobson",
+"pos": "G",
+"num": "45",
+"stats": {
+"P": 0,
+"G1": 0,
+"G2": 0,
+"A": 0,
+"Sh": 0,
+"GB": 5,
+"TO": null,
+"PAS": null,
+"TCH": 12,
+"CT": 1,
+"Pen": 0,
+"SA": 14,
+"Sv": 8,
+"SvPct": 47.1,
+"CSv": 1,
+"GA": 9
+}
+},
+{
+"name": "Connor Maher",
+"pos": "SSDM",
+"num": "31",
+"stats": {
+"P": 0,
+"G1": 0,
+"G2": 0,
+"A": 0,
+"Sh": 0,
+"GB": 1,
+"TO": null,
+"PAS": null,
+"TCH": 8,
+"CT": 1,
+"Pen": 0,
+"FOW": 0,
+"FOT": 1
+}
+},
+{
+"name": "Jon Robbins",
+"pos": "LSM",
+"num": "41",
+"stats": {
+"P": 0,
+"G1": 0,
+"G2": 0,
+"A": 0,
+"Sh": 0,
+"GB": 2,
+"TO": null,
+"PAS": null,
+"TCH": 1,
+"CT": 0,
+"Pen": 0
+}
+},
+{
+"name": "Cam Wyers",
+"pos": "D",
+"num": "20",
+"stats": {
+"P": 0,
+"G1": 0,
+"G2": 0,
+"A": 0,
+"Sh": 0,
+"GB": 2,
+"TO": null,
+"PAS": null,
+"TCH": 3,
+"CT": 0,
+"Pen": 0
+}
+},
+{
+"name": "Beau Pederson",
+"pos": "SSDM",
+"num": "89",
+"stats": {
+"P": 0,
+"G1": 0,
+"G2": 0,
+"A": 0,
+"Sh": 0,
+"GB": 0,
+"TO": null,
+"PAS": null,
+"TCH": 5,
+"CT": null,
+"Pen": null,
+"FOW": 0,
+"FOT": 1
+}
+}
+]
+},
+{
+"team": "Archers",
+"season": 2024,
+"date": "2024-07-06",
+"opponent": "Whipsnakes",
+"file": "7_6 vs Whipsnakes.xlsx",
+"players": [
+{
+"name": "Mac O'Keefe",
+"pos": "A",
+"num": "7",
+"stats": {
+"P": 4,
+"G1": 4,
+"G2": 0,
+"A": 0,
+"Sh": 9,
+"GB": 5,
+"TO": 2,
+"PAS": 18,
+"TCH": 29,
+"CT": null,
+"Pen": null
+}
+},
+{
+"name": "Tre Leclaire",
+"pos": "M",
+"num": "44",
+"stats": {
+"P": 4,
+"G1": 2,
+"G2": 1,
+"A": 0,
+"Sh": 4,
+"GB": 1,
+"TO": 0,
+"PAS": 7,
+"TCH": 11,
+"CT": 0,
+"Pen": 0
+}
+},
+{
+"name": "Connor Fields",
+"pos": "A",
+"num": "5",
+"stats": {
+"P": 3,
+"G1": 3,
+"G2": 0,
+"A": 0,
+"Sh": 7,
+"GB": 0,
+"TO": 2,
+"PAS": 20,
+"TCH": 29,
+"CT": null,
+"Pen": null
+}
+},
+{
+"name": "Grant Ament",
+"pos": "M",
+"num": "16",
+"stats": {
+"P": 3,
+"G1": 1,
+"G2": 0,
+"A": 2,
+"Sh": 4,
+"GB": 0,
+"TO": 2,
+"PAS": 15,
+"TCH": 21,
+"CT": null,
+"Pen": null
+}
+},
+{
+"name": "Matt Moore",
+"pos": "A",
+"num": "11",
+"stats": {
+"P": 2,
+"G1": 2,
+"G2": 0,
+"A": 0,
+"Sh": 6,
+"GB": 2,
+"TO": 1,
+"PAS": 18,
+"TCH": 25,
+"CT": null,
+"Pen": null
+}
+},
+{
+"name": "Piper Bond",
+"pos": "SSDM",
+"num": "54",
+"stats": {
+"P": 1,
+"G1": 1,
+"G2": 0,
+"A": 0,
+"Sh": 1,
+"GB": 2,
+"TO": 0,
+"PAS": 13,
+"TCH": 14,
+"CT": 0,
+"Pen": 0
+}
+},
+{
+"name": "Dyson Williams",
+"pos": "M",
+"num": "51",
+"stats": {
+"P": 1,
+"G1": 1,
+"G2": 0,
+"A": 0,
+"Sh": 2,
+"GB": 0,
+"TO": 1,
+"PAS": 3,
+"TCH": 6,
+"CT": null,
+"Pen": null
+}
+},
+{
+"name": "Tom Schreiber",
+"pos": "M",
+"num": "26",
+"stats": {
+"P": 1,
+"G1": 0,
+"G2": 0,
+"A": 1,
+"Sh": 5,
+"GB": 0,
+"TO": 2,
+"PAS": 15,
+"TCH": 22,
+"CT": null,
+"Pen": null
+}
+},
+{
+"name": "Ryan Ambler",
+"pos": "M",
+"num": "13",
+"stats": {
+"P": 0,
+"G1": 0,
+"G2": 0,
+"A": 0,
+"Sh": 2,
+"GB": 0,
+"TO": 2,
+"PAS": 8,
+"TCH": 12,
+"CT": null,
+"Pen": null
+}
+},
+{
+"name": "Brett Dobson",
+"pos": "G",
+"num": "45",
+"stats": {
+"P": 0,
+"G1": 0,
+"G2": 0,
+"A": 0,
+"Sh": 1,
+"GB": 3,
+"TO": 0,
+"PAS": 13,
+"TCH": 14,
+"CT": 0,
+"Pen": 0,
+"SA": 11,
+"Sv": 15,
+"SvPct": 57.7,
+"CSv": 3,
+"GA": 11
+}
+},
+{
+"name": "Mike Sisselberger",
+"pos": "FO",
+"num": "99",
+"stats": {
+"P": 0,
+"G1": 0,
+"G2": 0,
+"A": 0,
+"Sh": 0,
+"GB": 5,
+"TO": null,
+"PAS": null,
+"TCH": 4,
+"CT": 1,
+"Pen": 0,
+"FOW": 11,
+"FOT": 28
+}
+},
+{
+"name": "Graeme Hossack",
+"pos": "D",
+"num": "81",
+"stats": {
+"P": 0,
+"G1": 0,
+"G2": 0,
+"A": 0,
+"Sh": 0,
+"GB": 3,
+"TO": null,
+"PAS": null,
+"TCH": 5,
+"CT": 1,
+"Pen": 0
+}
+},
+{
+"name": "Warren Jeffrey",
+"pos": "D",
+"num": "27",
+"stats": {
+"P": 0,
+"G1": 0,
+"G2": 0,
+"A": 0,
+"Sh": 0,
+"GB": 1,
+"TO": null,
+"PAS": null,
+"TCH": 5,
+"CT": 1,
+"Pen": 0
+}
+},
+{
+"name": "Connor Maher",
+"pos": "SSDM",
+"num": "31",
+"stats": {
+"P": 0,
+"G1": 0,
+"G2": 0,
+"A": 0,
+"Sh": 0,
+"GB": 1,
+"TO": null,
+"PAS": null,
+"TCH": 4,
+"CT": 1,
+"Pen": 0,
+"FOW": 0,
+"FOT": 2
+}
+},
+{
+"name": "Mason Woodward",
+"pos": "D",
+"num": "77",
+"stats": {
+"P": 0,
+"G1": 0,
+"G2": 0,
+"A": 0,
+"Sh": 0,
+"GB": 1,
+"TO": null,
+"PAS": null,
+"TCH": 11,
+"CT": 1,
+"Pen": 1
+}
+},
+{
+"name": "Beau Pederson",
+"pos": "SSDM",
+"num": "89",
+"stats": {
+"P": 0,
+"G1": 0,
+"G2": 0,
+"A": 0,
+"Sh": 0,
+"GB": 1,
+"TO": null,
+"PAS": null,
+"TCH": 10,
+"CT": 1,
+"Pen": 0
+}
+},
+{
+"name": "Jon Robbins",
+"pos": "LSM",
+"num": "41",
+"stats": {
+"P": 0,
+"G1": 0,
+"G2": 0,
+"A": 0,
+"Sh": 0,
+"GB": 3,
+"TO": null,
+"PAS": null,
+"TCH": 6,
+"CT": 0,
+"Pen": 0
+}
+},
+{
+"name": "Cam Wyers",
+"pos": "D",
+"num": "20",
+"stats": {
+"P": 0,
+"G1": 0,
+"G2": 0,
+"A": 0,
+"Sh": 0,
+"GB": 3,
+"TO": null,
+"PAS": null,
+"TCH": 4,
+"CT": 0,
+"Pen": 0
+}
+}
+]
+},
+{
+"team": "Archers",
+"season": 2024,
+"date": "2024-07-20",
+"opponent": "Redwoods",
+"file": "7_20 vs Redwoods.xlsx",
+"players": [
+{
+"name": "Matt Moore",
+"pos": "A",
+"num": "11",
+"stats": {
+"P": 6,
+"G1": 2,
+"G2": 1,
+"A": 2,
+"Sh": 9,
+"GB": 3,
+"TO": 1,
+"PAS": 20,
+"TCH": 30,
+"CT": null,
+"Pen": null
+}
+},
+{
+"name": "Tom Schreiber",
+"pos": "M",
+"num": "26",
+"stats": {
+"P": 5,
+"G1": 2,
+"G2": 0,
+"A": 3,
+"Sh": 9,
+"GB": 2,
+"TO": 1,
+"PAS": 21,
+"TCH": 31,
+"CT": 0,
+"Pen": 0
+}
+},
+{
+"name": "Connor Fields",
+"pos": "A",
+"num": "5",
+"stats": {
+"P": 3,
+"G1": 3,
+"G2": 0,
+"A": 0,
+"Sh": 7,
+"GB": 1,
+"TO": 2,
+"PAS": 20,
+"TCH": 29,
+"CT": null,
+"Pen": null
+}
+},
+{
+"name": "Ryan Ambler",
+"pos": "M",
+"num": "13",
+"stats": {
+"P": 2,
+"G1": 2,
+"G2": 0,
+"A": 0,
+"Sh": 4,
+"GB": 0,
+"TO": 0,
+"PAS": 14,
+"TCH": 18,
+"CT": null,
+"Pen": null
+}
+},
+{
+"name": "Grant Ament",
+"pos": "M",
+"num": "16",
+"stats": {
+"P": 2,
+"G1": 2,
+"G2": 0,
+"A": 0,
+"Sh": 6,
+"GB": 1,
+"TO": 3,
+"PAS": 27,
+"TCH": 36,
+"CT": 0,
+"Pen": 0
+}
+},
+{
+"name": "Tre Leclaire",
+"pos": "M",
+"num": "44",
+"stats": {
+"P": 1,
+"G1": 1,
+"G2": 0,
+"A": 0,
+"Sh": 3,
+"GB": 0,
+"TO": 1,
+"PAS": 8,
+"TCH": 12,
+"CT": null,
+"Pen": null
+}
+},
+{
+"name": "Mason Woodward",
+"pos": "D",
+"num": "77",
+"stats": {
+"P": 1,
+"G1": 1,
+"G2": 0,
+"A": 0,
+"Sh": 2,
+"GB": 3,
+"TO": 0,
+"PAS": 11,
+"TCH": 13,
+"CT": 2,
+"Pen": 0
+}
+},
+{
+"name": "Mac O'Keefe",
+"pos": "A",
+"num": "7",
+"stats": {
+"P": 1,
+"G1": 0,
+"G2": 0,
+"A": 1,
+"Sh": 6,
+"GB": 1,
+"TO": 1,
+"PAS": 13,
+"TCH": 20,
+"CT": null,
+"Pen": null
+}
+},
+{
+"name": "Beau Pederson",
+"pos": "SSDM",
+"num": "89",
+"stats": {
+"P": 1,
+"G1": 0,
+"G2": 0,
+"A": 1,
+"Sh": 0,
+"GB": 2,
+"TO": 0,
+"PAS": 10,
+"TCH": 10,
+"CT": 0,
+"Pen": 0
+}
+},
+{
+"name": "Ryan Aughavin",
+"pos": "M",
+"num": "42",
+"stats": {
+"P": 0,
+"G1": 0,
+"G2": 0,
+"A": 0,
+"Sh": 4,
+"GB": 1,
+"TO": 1,
+"PAS": 6,
+"TCH": 11,
+"CT": 0,
+"Pen": 0
+}
+},
+{
+"name": "Mike Sisselberger",
+"pos": "FO",
+"num": "99",
+"stats": {
+"P": 0,
+"G1": 0,
+"G2": 0,
+"A": 0,
+"Sh": 1,
+"GB": 8,
+"TO": 1,
+"PAS": 3,
+"TCH": 5,
+"CT": 0,
+"Pen": 0,
+"FOW": 17,
+"FOT": 25
+}
+},
+{
+"name": "Graeme Hossack",
+"pos": "D",
+"num": "81",
+"stats": {
+"P": 0,
+"G1": 0,
+"G2": 0,
+"A": 0,
+"Sh": 0,
+"GB": 3,
+"TO": null,
+"PAS": null,
+"TCH": 7,
+"CT": 1,
+"Pen": 0
+}
+},
+{
+"name": "Warren Jeffrey",
+"pos": "D",
+"num": "27",
+"stats": {
+"P": 0,
+"G1": 0,
+"G2": 0,
+"A": 0,
+"Sh": 0,
+"GB": 2,
+"TO": null,
+"PAS": null,
+"TCH": 7,
+"CT": 0,
+"Pen": 0
+}
+},
+{
+"name": "Brett Dobson",
+"pos": "G",
+"num": "45",
+"stats": {
+"P": 0,
+"G1": 0,
+"G2": 0,
+"A": 0,
+"Sh": 0,
+"GB": 2,
+"TO": null,
+"PAS": null,
+"TCH": 16,
+"CT": 0,
+"Pen": 0,
+"SA": 8,
+"Sv": 10,
+"SvPct": 55.6,
+"CSv": 6,
+"GA": 8
+}
+},
+{
+"name": "Jon Robbins",
+"pos": "LSM",
+"num": "41",
+"stats": {
+"P": 0,
+"G1": 0,
+"G2": 0,
+"A": 0,
+"Sh": 0,
+"GB": 2,
+"TO": null,
+"PAS": null,
+"TCH": 2,
+"CT": 0,
+"Pen": 0
+}
+},
+{
+"name": "Piper Bond",
+"pos": "SSDM",
+"num": "54",
+"stats": {
+"P": 0,
+"G1": 0,
+"G2": 0,
+"A": 0,
+"Sh": 0,
+"GB": 2,
+"TO": null,
+"PAS": null,
+"TCH": 15,
+"CT": 0,
+"Pen": 0,
+"FOW": 0,
+"FOT": 1
+}
+},
+{
+"name": "Cam Wyers",
+"pos": "D",
+"num": "20",
+"stats": {
+"P": 0,
+"G1": 0,
+"G2": 0,
+"A": 0,
+"Sh": 0,
+"GB": 1,
+"TO": null,
+"PAS": null,
+"TCH": 1,
+"CT": 0,
+"Pen": 1
+}
+}
+]
+},
+{
+"team": "Archers",
+"season": 2024,
+"date": "2024-08-04",
+"opponent": "Chaos",
+"file": "8_4 vs Chaos.xlsx",
+"players": [
+{
+"name": "Tom Schreiber",
+"pos": "M",
+"num": "26",
+"stats": {
+"P": 5,
+"G1": 3,
+"G2": 0,
+"A": 2,
+"Sh": 11,
+"GB": 1,
+"TO": 2,
+"PAS": 22,
+"TCH": 35,
+"CT": 1,
+"Pen": 0
+}
+},
+{
+"name": "Connor Fields",
+"pos": "A",
+"num": "5",
+"stats": {
+"P": 5,
+"G1": 3,
+"G2": 0,
+"A": 2,
+"Sh": 8,
+"GB": 1,
+"TO": 1,
+"PAS": 21,
+"TCH": 30,
+"CT": null,
+"Pen": null
+}
+},
+{
+"name": "Mac O'Keefe",
+"pos": "A",
+"num": "7",
+"stats": {
+"P": 3,
+"G1": 3,
+"G2": 0,
+"A": 0,
+"Sh": 12,
+"GB": 1,
+"TO": 3,
+"PAS": 14,
+"TCH": 29,
+"CT": null,
+"Pen": null
+}
+},
+{
+"name": "Tre Leclaire",
+"pos": "M",
+"num": "44",
+"stats": {
+"P": 3,
+"G1": 3,
+"G2": 0,
+"A": 0,
+"Sh": 6,
+"GB": 1,
+"TO": 0,
+"PAS": 27,
+"TCH": 33,
+"CT": 0,
+"Pen": 1
+}
+},
+{
+"name": "Grant Ament",
+"pos": "M",
+"num": "16",
+"stats": {
+"P": 2,
+"G1": 1,
+"G2": 0,
+"A": 1,
+"Sh": 5,
+"GB": 0,
+"TO": 2,
+"PAS": 20,
+"TCH": 27,
+"CT": null,
+"Pen": null
+}
+},
+{
+"name": "Mason Woodward",
+"pos": "D",
+"num": "77",
+"stats": {
+"P": 1,
+"G1": 1,
+"G2": 0,
+"A": 0,
+"Sh": 1,
+"GB": 1,
+"TO": 0,
+"PAS": 5,
+"TCH": 6,
+"CT": 0,
+"Pen": 0
+}
+},
+{
+"name": "Matt Moore",
+"pos": "A",
+"num": "11",
+"stats": {
+"P": 1,
+"G1": 0,
+"G2": 0,
+"A": 1,
+"Sh": 1,
+"GB": 0,
+"TO": 1,
+"PAS": 8,
+"TCH": 10,
+"CT": null,
+"Pen": null
+}
+},
+{
+"name": "Cam Wyers",
+"pos": "D",
+"num": "20",
+"stats": {
+"P": 1,
+"G1": 0,
+"G2": 0,
+"A": 1,
+"Sh": 0,
+"GB": 0,
+"TO": 0,
+"PAS": 3,
+"TCH": 3,
+"CT": 1,
+"Pen": 0
+}
+},
+{
+"name": "Ryan Ambler",
+"pos": "M",
+"num": "13",
+"stats": {
+"P": 0,
+"G1": 0,
+"G2": 0,
+"A": 0,
+"Sh": 3,
+"GB": 1,
+"TO": 0,
+"PAS": 12,
+"TCH": 15,
+"CT": 0,
+"Pen": 0
+}
+},
+{
+"name": "Jon Robbins",
+"pos": "LSM",
+"num": "41",
+"stats": {
+"P": 0,
+"G1": 0,
+"G2": 0,
+"A": 0,
+"Sh": 2,
+"GB": 4,
+"TO": 0,
+"PAS": 3,
+"TCH": 5,
+"CT": 1,
+"Pen": 0
+}
+},
+{
+"name": "Mike Sisselberger",
+"pos": "FO",
+"num": "99",
+"stats": {
+"P": 0,
+"G1": 0,
+"G2": 0,
+"A": 0,
+"Sh": 2,
+"GB": 14,
+"TO": 3,
+"PAS": 9,
+"TCH": 14,
+"CT": 0,
+"Pen": 0,
+"FOW": 23,
+"FOT": 32
+}
+},
+{
+"name": "Beau Pederson",
+"pos": "SSDM",
+"num": "89",
+"stats": {
+"P": 0,
+"G1": 0,
+"G2": 0,
+"A": 0,
+"Sh": 1,
+"GB": 1,
+"TO": 0,
+"PAS": 4,
+"TCH": 5,
+"CT": 1,
+"Pen": 0
+}
+},
+{
+"name": "Dyson Williams",
+"pos": "M",
+"num": "51",
+"stats": {
+"P": 0,
+"G1": 0,
+"G2": 0,
+"A": 0,
+"Sh": 1,
+"GB": 0,
+"TO": 0,
+"PAS": 4,
+"TCH": 5,
+"CT": null,
+"Pen": null
+}
+},
+{
+"name": "Graeme Hossack",
+"pos": "D",
+"num": "81",
+"stats": {
+"P": 0,
+"G1": 0,
+"G2": 0,
+"A": 0,
+"Sh": 0,
+"GB": 5,
+"TO": null,
+"PAS": null,
+"TCH": 8,
+"CT": 0,
+"Pen": 0
+}
+},
+{
+"name": "Piper Bond",
+"pos": "SSDM",
+"num": "54",
+"stats": {
+"P": 0,
+"G1": 0,
+"G2": 0,
+"A": 0,
+"Sh": 0,
+"GB": 2,
+"TO": null,
+"PAS": null,
+"TCH": 11,
+"CT": 0,
+"Pen": 0
+}
+},
+{
+"name": "Brett Dobson",
+"pos": "G",
+"num": "45",
+"stats": {
+"P": 0,
+"G1": 0,
+"G2": 0,
+"A": 0,
+"Sh": 0,
+"GB": 1,
+"TO": null,
+"PAS": null,
+"TCH": 10,
+"CT": 0,
+"Pen": 0,
+"SA": 15,
+"Sv": 14,
+"SvPct": 48.3,
+"CSv": 4,
+"GA": 15
+}
+},
+{
+"name": "Connor Maher",
+"pos": "SSDM",
+"num": "31",
+"stats": {
+"P": 0,
+"G1": 0,
+"G2": 0,
+"A": 0,
+"Sh": 0,
+"GB": 1,
+"TO": null,
+"PAS": null,
+"TCH": 5,
+"CT": 0,
+"Pen": 0,
+"FOW": 0,
+"FOT": 1
+}
+}
+]
+},
+{
+"team": "Archers",
+"season": 2024,
+"date": "2024-08-10",
+"opponent": "Atlas",
+"file": "8_10 vs Atlas.xlsx",
+"players": [
+{
+"name": "Mac O'Keefe",
+"pos": "A",
+"num": "7",
+"stats": {
+"P": 2,
+"G1": 2,
+"G2": 0,
+"A": 0,
+"Sh": 5,
+"GB": 2,
+"TO": 2,
+"PAS": 14,
+"TCH": 21,
+"CT": null,
+"Pen": null
+}
+},
+{
+"name": "Tre Leclaire",
+"pos": "M",
+"num": "44",
+"stats": {
+"P": 2,
+"G1": 2,
+"G2": 0,
+"A": 0,
+"Sh": 4,
+"GB": 2,
+"TO": 2,
+"PAS": 7,
+"TCH": 13,
+"CT": 0,
+"Pen": 1
+}
+},
+{
+"name": "Tom Schreiber",
+"pos": "M",
+"num": "26",
+"stats": {
+"P": 2,
+"G1": 1,
+"G2": 0,
+"A": 1,
+"Sh": 5,
+"GB": 4,
+"TO": 5,
+"PAS": 22,
+"TCH": 32,
+"CT": 0,
+"Pen": 0
+}
+},
+{
+"name": "Ryan Aughavin",
+"pos": "M",
+"num": "42",
+"stats": {
+"P": 2,
+"G1": 0,
+"G2": 1,
+"A": 0,
+"Sh": 2,
+"GB": 0,
+"TO": 3,
+"PAS": 7,
+"TCH": 12,
+"CT": null,
+"Pen": null
+}
+},
+{
+"name": "Mason Woodward",
+"pos": "D",
+"num": "77",
+"stats": {
+"P": 2,
+"G1": 0,
+"G2": 1,
+"A": 0,
+"Sh": 1,
+"GB": 0,
+"TO": 0,
+"PAS": 5,
+"TCH": 6,
+"CT": null,
+"Pen": null
+}
+},
+{
+"name": "Grant Ament",
+"pos": "M",
+"num": "16",
+"stats": {
+"P": 1,
+"G1": 1,
+"G2": 0,
+"A": 0,
+"Sh": 3,
+"GB": 1,
+"TO": 2,
+"PAS": 16,
+"TCH": 21,
+"CT": 0,
+"Pen": 0
+}
+},
+{
+"name": "Dyson Williams",
+"pos": "M",
+"num": "51",
+"stats": {
+"P": 1,
+"G1": 1,
+"G2": 0,
+"A": 0,
+"Sh": 1,
+"GB": 0,
+"TO": 0,
+"PAS": 1,
+"TCH": 2,
+"CT": null,
+"Pen": null
+}
+},
+{
+"name": "Ryan Ambler",
+"pos": "M",
+"num": "13",
+"stats": {
+"P": 1,
+"G1": 0,
+"G2": 0,
+"A": 1,
+"Sh": 1,
+"GB": 0,
+"TO": 3,
+"PAS": 8,
+"TCH": 12,
+"CT": null,
+"Pen": null
+}
+},
+{
+"name": "Connor Fields",
+"pos": "A",
+"num": "5",
+"stats": {
+"P": 1,
+"G1": 0,
+"G2": 0,
+"A": 1,
+"Sh": 5,
+"GB": 2,
+"TO": 3,
+"PAS": 11,
+"TCH": 19,
+"CT": null,
+"Pen": null
+}
+},
+{
+"name": "Graeme Hossack",
+"pos": "D",
+"num": "81",
+"stats": {
+"P": 0,
+"G1": 0,
+"G2": 0,
+"A": 0,
+"Sh": 1,
+"GB": 5,
+"TO": 0,
+"PAS": 8,
+"TCH": 9,
+"CT": 0,
+"Pen": 0
+}
+},
+{
+"name": "Connor Maher",
+"pos": "SSDM",
+"num": "31",
+"stats": {
+"P": 0,
+"G1": 0,
+"G2": 0,
+"A": 0,
+"Sh": 1,
+"GB": 0,
+"TO": 0,
+"PAS": 9,
+"TCH": 10,
+"CT": null,
+"Pen": null,
+"FOW": 0,
+"FOT": 1
+}
+},
+{
+"name": "Cam Wyers",
+"pos": "D",
+"num": "20",
+"stats": {
+"P": 0,
+"G1": 0,
+"G2": 0,
+"A": 0,
+"Sh": 2,
+"GB": 3,
+"TO": 1,
+"PAS": 5,
+"TCH": 8,
+"CT": 1,
+"Pen": 0
+}
+},
+{
+"name": "Beau Pederson",
+"pos": "SSDM",
+"num": "89",
+"stats": {
+"P": 0,
+"G1": 0,
+"G2": 0,
+"A": 0,
+"Sh": 1,
+"GB": 0,
+"TO": 0,
+"PAS": 7,
+"TCH": 8,
+"CT": null,
+"Pen": null
+}
+},
+{
+"name": "Jon Robbins",
+"pos": "LSM",
+"num": "41",
+"stats": {
+"P": 0,
+"G1": 0,
+"G2": 0,
+"A": 0,
+"Sh": 0,
+"GB": 2,
+"TO": null,
+"PAS": null,
+"TCH": 4,
+"CT": 2,
+"Pen": 0
+}
+},
+{
+"name": "Mike Sisselberger",
+"pos": "FO",
+"num": "99",
+"stats": {
+"P": 0,
+"G1": 0,
+"G2": 0,
+"A": 0,
+"Sh": 0,
+"GB": 8,
+"TO": null,
+"PAS": null,
+"TCH": 6,
+"CT": 0,
+"Pen": 0,
+"FOW": 12,
+"FOT": 26
+}
+},
+{
+"name": "Brett Dobson",
+"pos": "G",
+"num": "45",
+"stats": {
+"P": 0,
+"G1": 0,
+"G2": 0,
+"A": 0,
+"Sh": 0,
+"GB": 5,
+"TO": null,
+"PAS": null,
+"TCH": 21,
+"CT": 0,
+"Pen": 0,
+"SA": 15,
+"Sv": 16,
+"SvPct": 53.3,
+"CSv": 6,
+"GA": 14
+}
+},
+{
+"name": "Piper Bond",
+"pos": "SSDM",
+"num": "54",
+"stats": {
+"P": 0,
+"G1": 0,
+"G2": 0,
+"A": 0,
+"Sh": 0,
+"GB": 2,
+"TO": null,
+"PAS": null,
+"TCH": 8,
+"CT": 0,
+"Pen": 0
+}
+}
+]
+},
+{
+"team": "Archers",
+"season": 2024,
+"date": "2024-08-16",
+"opponent": "Redwoods",
+"file": "8_16 vs Redwoods.xlsx",
+"players": [
+{
+"name": "Grant Ament",
+"pos": "M",
+"num": "16",
+"stats": {
+"P": 5,
+"G1": 2,
+"G2": 0,
+"A": 3,
+"Sh": 5,
+"GB": 3,
+"TO": 2,
+"PAS": 30,
+"TCH": 37,
+"CT": 0,
+"Pen": 0
+}
+},
+{
+"name": "Jack VanOverbeke",
+"pos": "M",
+"num": "8",
+"stats": {
+"P": 3,
+"G1": 2,
+"G2": 0,
+"A": 1,
+"Sh": 6,
+"GB": 1,
+"TO": 0,
+"PAS": 19,
+"TCH": 25,
+"CT": 0,
+"Pen": 0
+}
+},
+{
+"name": "Ryan Ambler",
+"pos": "M",
+"num": "13",
+"stats": {
+"P": 2,
+"G1": 2,
+"G2": 0,
+"A": 0,
+"Sh": 4,
+"GB": 1,
+"TO": 2,
+"PAS": 18,
+"TCH": 24,
+"CT": 0,
+"Pen": 0
+}
+},
+{
+"name": "Connor Fields",
+"pos": "A",
+"num": "5",
+"stats": {
+"P": 2,
+"G1": 2,
+"G2": 0,
+"A": 0,
+"Sh": 5,
+"GB": 2,
+"TO": 2,
+"PAS": 21,
+"TCH": 28,
+"CT": null,
+"Pen": null
+}
+},
+{
+"name": "Mac O'Keefe",
+"pos": "A",
+"num": "7",
+"stats": {
+"P": 2,
+"G1": 2,
+"G2": 0,
+"A": 0,
+"Sh": 8,
+"GB": 1,
+"TO": 0,
+"PAS": 16,
+"TCH": 24,
+"CT": null,
+"Pen": null
+}
+},
+{
+"name": "Tom Schreiber",
+"pos": "M",
+"num": "26",
+"stats": {
+"P": 2,
+"G1": 1,
+"G2": 0,
+"A": 1,
+"Sh": 3,
+"GB": 1,
+"TO": 1,
+"PAS": 9,
+"TCH": 13,
+"CT": 0,
+"Pen": 0
+}
+},
+{
+"name": "Tre Leclaire",
+"pos": "M",
+"num": "44",
+"stats": {
+"P": 1,
+"G1": 1,
+"G2": 0,
+"A": 0,
+"Sh": 5,
+"GB": 0,
+"TO": 2,
+"PAS": 13,
+"TCH": 20,
+"CT": null,
+"Pen": null
+}
+},
+{
+"name": "Dyson Williams",
+"pos": "M",
+"num": "51",
+"stats": {
+"P": 1,
+"G1": 1,
+"G2": 0,
+"A": 0,
+"Sh": 5,
+"GB": 0,
+"TO": 0,
+"PAS": 2,
+"TCH": 7,
+"CT": null,
+"Pen": null
+}
+},
+{
+"name": "Mike Sisselberger",
+"pos": "FO",
+"num": "99",
+"stats": {
+"P": 0,
+"G1": 0,
+"G2": 0,
+"A": 0,
+"Sh": 1,
+"GB": 15,
+"TO": 3,
+"PAS": 10,
+"TCH": 14,
+"CT": 0,
+"Pen": 1,
+"FOW": 17,
+"FOT": 25
+}
+},
+{
+"name": "Cam Wyers",
+"pos": "D",
+"num": "20",
+"stats": {
+"P": 0,
+"G1": 0,
+"G2": 0,
+"A": 0,
+"Sh": 1,
+"GB": 1,
+"TO": 0,
+"PAS": 1,
+"TCH": 2,
+"CT": 1,
+"Pen": 0
+}
+},
+{
+"name": "Mason Woodward",
+"pos": "D",
+"num": "77",
+"stats": {
+"P": 0,
+"G1": 0,
+"G2": 0,
+"A": 0,
+"Sh": 1,
+"GB": 2,
+"TO": 0,
+"PAS": 11,
+"TCH": 12,
+"CT": 3,
+"Pen": 0
+}
+},
+{
+"name": "Brett Dobson",
+"pos": "G",
+"num": "45",
+"stats": {
+"P": 0,
+"G1": 0,
+"G2": 0,
+"A": 0,
+"Sh": 0,
+"GB": 3,
+"TO": null,
+"PAS": null,
+"TCH": 12,
+"CT": 1,
+"Pen": 0,
+"SA": 12,
+"Sv": 12,
+"SvPct": 54.5,
+"CSv": 3,
+"GA": 10
+}
+},
+{
+"name": "Warren Jeffrey",
+"pos": "D",
+"num": "27",
+"stats": {
+"P": 0,
+"G1": 0,
+"G2": 0,
+"A": 0,
+"Sh": 0,
+"GB": 1,
+"TO": null,
+"PAS": null,
+"TCH": 3,
+"CT": 1,
+"Pen": 0
+}
+},
+{
+"name": "Beau Pederson",
+"pos": "SSDM",
+"num": "89",
+"stats": {
+"P": 0,
+"G1": 0,
+"G2": 0,
+"A": 0,
+"Sh": 0,
+"GB": 1,
+"TO": null,
+"PAS": null,
+"TCH": 6,
+"CT": 1,
+"Pen": 0,
+"FOW": 0,
+"FOT": 2
+}
+},
+{
+"name": "Graeme Hossack",
+"pos": "D",
+"num": "81",
+"stats": {
+"P": 0,
+"G1": 0,
+"G2": 0,
+"A": 0,
+"Sh": 0,
+"GB": 0,
+"TO": null,
+"PAS": null,
+"TCH": 5,
+"CT": 1,
+"Pen": 0
+}
+},
+{
+"name": "Jon Robbins",
+"pos": "LSM",
+"num": "41",
+"stats": {
+"P": 0,
+"G1": 0,
+"G2": 0,
+"A": 0,
+"Sh": 0,
+"GB": 1,
+"TO": null,
+"PAS": null,
+"TCH": 3,
+"CT": 0,
+"Pen": 0
+}
+},
+{
+"name": "Connor Maher",
+"pos": "SSDM",
+"num": "31",
+"stats": {
+"P": 0,
+"G1": 0,
+"G2": 0,
+"A": 0,
+"Sh": 0,
+"GB": 1,
+"TO": null,
+"PAS": null,
+"TCH": 7,
+"CT": 0,
+"Pen": 0
+}
+}
+]
+},
+{
+"team": "Archers",
+"season": 2024,
+"date": "2024-08-17",
+"opponent": "Outlaws",
+"file": "8_17 vs Outlaws.xlsx",
+"players": [
+{
+"name": "Connor Fields",
+"pos": "A",
+"num": "5",
+"stats": {
+"P": 5,
+"G1": 3,
+"G2": 0,
+"A": 2,
+"Sh": 9,
+"GB": 1,
+"TO": 0,
+"PAS": 19,
+"TCH": 28,
+"CT": null,
+"Pen": null
+}
+},
+{
+"name": "Tre Leclaire",
+"pos": "M",
+"num": "44",
+"stats": {
+"P": 5,
+"G1": 3,
+"G2": 1,
+"A": 0,
+"Sh": 8,
+"GB": 1,
+"TO": 0,
+"PAS": 10,
+"TCH": 18,
+"CT": 0,
+"Pen": 1
+}
+},
+{
+"name": "Jack VanOverbeke",
+"pos": "M",
+"num": "8",
+"stats": {
+"P": 3,
+"G1": 2,
+"G2": 0,
+"A": 1,
+"Sh": 3,
+"GB": 2,
+"TO": 1,
+"PAS": 17,
+"TCH": 21,
+"CT": 0,
+"Pen": 0
+}
+},
+{
+"name": "Grant Ament",
+"pos": "M",
+"num": "16",
+"stats": {
+"P": 2,
+"G1": 0,
+"G2": 0,
+"A": 2,
+"Sh": 5,
+"GB": 2,
+"TO": 3,
+"PAS": 26,
+"TCH": 34,
+"CT": 0,
+"Pen": 0
+}
+},
+{
+"name": "Mason Woodward",
+"pos": "D",
+"num": "77",
+"stats": {
+"P": 1,
+"G1": 1,
+"G2": 0,
+"A": 0,
+"Sh": 1,
+"GB": 2,
+"TO": 0,
+"PAS": 10,
+"TCH": 11,
+"CT": 0,
+"Pen": 0
+}
+},
+{
+"name": "Beau Pederson",
+"pos": "SSDM",
+"num": "89",
+"stats": {
+"P": 1,
+"G1": 1,
+"G2": 0,
+"A": 0,
+"Sh": 1,
+"GB": 1,
+"TO": 0,
+"PAS": 3,
+"TCH": 4,
+"CT": 1,
+"Pen": 0,
+"FOW": 1,
+"FOT": 3
+}
+},
+{
+"name": "Dyson Williams",
+"pos": "M",
+"num": "51",
+"stats": {
+"P": 1,
+"G1": 1,
+"G2": 0,
+"A": 0,
+"Sh": 2,
+"GB": 1,
+"TO": 2,
+"PAS": 3,
+"TCH": 7,
+"CT": 0,
+"Pen": 0
+}
+},
+{
+"name": "Ryan Ambler",
+"pos": "M",
+"num": "13",
+"stats": {
+"P": 1,
+"G1": 0,
+"G2": 0,
+"A": 1,
+"Sh": 3,
+"GB": 0,
+"TO": 2,
+"PAS": 11,
+"TCH": 16,
+"CT": null,
+"Pen": null
+}
+},
+{
+"name": "Mac O'Keefe",
+"pos": "A",
+"num": "7",
+"stats": {
+"P": 1,
+"G1": 0,
+"G2": 0,
+"A": 1,
+"Sh": 4,
+"GB": 0,
+"TO": 1,
+"PAS": 19,
+"TCH": 24,
+"CT": null,
+"Pen": null
+}
+},
+{
+"name": "Graeme Hossack",
+"pos": "D",
+"num": "81",
+"stats": {
+"P": 0,
+"G1": 0,
+"G2": 0,
+"A": 0,
+"Sh": 1,
+"GB": 2,
+"TO": 0,
+"PAS": 4,
+"TCH": 5,
+"CT": 0,
+"Pen": 1
+}
+},
+{
+"name": "Brett Dobson",
+"pos": "G",
+"num": "45",
+"stats": {
+"P": 0,
+"G1": 0,
+"G2": 0,
+"A": 0,
+"Sh": 1,
+"GB": 1,
+"TO": 1,
+"PAS": 17,
+"TCH": 19,
+"CT": 1,
+"Pen": 0,
+"SA": 9,
+"Sv": 18,
+"SvPct": 69.2,
+"CSv": 4,
+"GA": 8
+}
+},
+{
+"name": "Ryan Aughavin",
+"pos": "M",
+"num": "42",
+"stats": {
+"P": 0,
+"G1": 0,
+"G2": 0,
+"A": 0,
+"Sh": 2,
+"GB": 0,
+"TO": 0,
+"PAS": 10,
+"TCH": 12,
+"CT": null,
+"Pen": null
+}
+},
+{
+"name": "Mike Sisselberger",
+"pos": "FO",
+"num": "99",
+"stats": {
+"P": 0,
+"G1": 0,
+"G2": 0,
+"A": 0,
+"Sh": 2,
+"GB": 6,
+"TO": 2,
+"PAS": 1,
+"TCH": 5,
+"CT": 0,
+"Pen": 0,
+"FOW": 11,
+"FOT": 21
+}
+},
+{
+"name": "Warren Jeffrey",
+"pos": "D",
+"num": "27",
+"stats": {
+"P": 0,
+"G1": 0,
+"G2": 0,
+"A": 0,
+"Sh": 0,
+"GB": 3,
+"TO": null,
+"PAS": null,
+"TCH": 5,
+"CT": 2,
+"Pen": 0
+}
+},
+{
+"name": "Piper Bond",
+"pos": "SSDM",
+"num": "54",
+"stats": {
+"P": 0,
+"G1": 0,
+"G2": 0,
+"A": 0,
+"Sh": 0,
+"GB": 2,
+"TO": null,
+"PAS": null,
+"TCH": 13,
+"CT": 1,
+"Pen": 1
+}
+},
+{
+"name": "Cam Wyers",
+"pos": "D",
+"num": "20",
+"stats": {
+"P": 0,
+"G1": 0,
+"G2": 0,
+"A": 0,
+"Sh": 0,
+"GB": 4,
+"TO": null,
+"PAS": null,
+"TCH": 4,
+"CT": 0,
+"Pen": 0
+}
+},
+{
+"name": "Colby Barsz",
+"pos": "D",
+"num": "24",
+"stats": {
+"P": 0,
+"G1": 0,
+"G2": 0,
+"A": 0,
+"Sh": 0,
+"GB": 2,
+"TO": null,
+"PAS": null,
+"TCH": 3,
+"CT": 0,
+"Pen": 0
+}
+},
+{
+"name": "Connor Maher",
+"pos": "SSDM",
+"num": "31",
+"stats": {
+"P": 0,
+"G1": 0,
+"G2": 0,
+"A": 0,
+"Sh": 0,
+"GB": 1,
+"TO": null,
+"PAS": null,
+"TCH": 6,
+"CT": 0,
+"Pen": 0
+}
+}
+]
+},
+{
+"team": "Archers",
+"season": 2024,
+"date": "2024-09-07",
+"opponent": "Chaos",
+"file": "9_7 vs Chaos.xlsx",
+"players": [
+{
+"name": "Mac O'Keefe",
+"pos": "A",
+"num": "7",
+"stats": {
+"P": 3,
+"G1": 2,
+"G2": 0,
+"A": 1,
+"Sh": 6,
+"GB": 1,
+"TO": 2,
+"PAS": 22,
+"TCH": 30,
+"CT": null,
+"Pen": null
+}
+},
+{
+"name": "Grant Ament",
+"pos": "M",
+"num": "16",
+"stats": {
+"P": 3,
+"G1": 1,
+"G2": 0,
+"A": 2,
+"Sh": 1,
+"GB": 0,
+"TO": 2,
+"PAS": 36,
+"TCH": 39,
+"CT": null,
+"Pen": null
+}
+},
+{
+"name": "Dyson Williams",
+"pos": "M",
+"num": "51",
+"stats": {
+"P": 2,
+"G1": 2,
+"G2": 0,
+"A": 0,
+"Sh": 3,
+"GB": 1,
+"TO": 0,
+"PAS": 2,
+"TCH": 5,
+"CT": 0,
+"Pen": 0
+}
+},
+{
+"name": "Tre Leclaire",
+"pos": "M",
+"num": "44",
+"stats": {
+"P": 2,
+"G1": 1,
+"G2": 0,
+"A": 1,
+"Sh": 4,
+"GB": 2,
+"TO": 1,
+"PAS": 25,
+"TCH": 30,
+"CT": 0,
+"Pen": 0
+}
+},
+{
+"name": "Matt Moore",
+"pos": "A",
+"num": "11",
+"stats": {
+"P": 2,
+"G1": 1,
+"G2": 0,
+"A": 1,
+"Sh": 7,
+"GB": 0,
+"TO": 1,
+"PAS": 18,
+"TCH": 26,
+"CT": null,
+"Pen": null
+}
+},
+{
+"name": "Graeme Hossack",
+"pos": "D",
+"num": "81",
+"stats": {
+"P": 2,
+"G1": 0,
+"G2": 1,
+"A": 0,
+"Sh": 1,
+"GB": 1,
+"TO": 0,
+"PAS": 6,
+"TCH": 7,
+"CT": 1,
+"Pen": 0
+}
+},
+{
+"name": "Ryan Ambler",
+"pos": "M",
+"num": "13",
+"stats": {
+"P": 1,
+"G1": 1,
+"G2": 0,
+"A": 0,
+"Sh": 1,
+"GB": 2,
+"TO": 1,
+"PAS": 11,
+"TCH": 13,
+"CT": 0,
+"Pen": 0
+}
+},
+{
+"name": "Jon Robbins",
+"pos": "LSM",
+"num": "41",
+"stats": {
+"P": 1,
+"G1": 0,
+"G2": 0,
+"A": 1,
+"Sh": 0,
+"GB": 1,
+"TO": 0,
+"PAS": 2,
+"TCH": 2,
+"CT": 0,
+"Pen": 1
+}
+},
+{
+"name": "Connor Fields",
+"pos": "A",
+"num": "5",
+"stats": {
+"P": 0,
+"G1": 0,
+"G2": 0,
+"A": 0,
+"Sh": 6,
+"GB": 1,
+"TO": 0,
+"PAS": 20,
+"TCH": 26,
+"CT": null,
+"Pen": null
+}
+},
+{
+"name": "Mason Woodward",
+"pos": "D",
+"num": "77",
+"stats": {
+"P": 0,
+"G1": 0,
+"G2": 0,
+"A": 0,
+"Sh": 2,
+"GB": 4,
+"TO": 0,
+"PAS": 10,
+"TCH": 12,
+"CT": 3,
+"Pen": 0
+}
+},
+{
+"name": "Colby Barsz",
+"pos": "D",
+"num": "24",
+"stats": {
+"P": 0,
+"G1": 0,
+"G2": 0,
+"A": 0,
+"Sh": 1,
+"GB": 0,
+"TO": 1,
+"PAS": 1,
+"TCH": 3,
+"CT": null,
+"Pen": null
+}
+},
+{
+"name": "Jack VanOverbeke",
+"pos": "M",
+"num": "8",
+"stats": {
+"P": 0,
+"G1": 0,
+"G2": 0,
+"A": 0,
+"Sh": 3,
+"GB": 0,
+"TO": 2,
+"PAS": 5,
+"TCH": 10,
+"CT": null,
+"Pen": null
+}
+},
+{
+"name": "Brett Dobson",
+"pos": "G",
+"num": "45",
+"stats": {
+"P": 0,
+"G1": 0,
+"G2": 0,
+"A": 0,
+"Sh": 0,
+"GB": 3,
+"TO": null,
+"PAS": null,
+"TCH": 19,
+"CT": 1,
+"Pen": 0,
+"SA": 1,
+"Sv": 18,
+"SvPct": 94.7,
+"CSv": 8,
+"GA": 1
+}
+},
+{
+"name": "Mike Sisselberger",
+"pos": "FO",
+"num": "99",
+"stats": {
+"P": 0,
+"G1": 0,
+"G2": 0,
+"A": 0,
+"Sh": 0,
+"GB": 2,
+"TO": null,
+"PAS": null,
+"TCH": 3,
+"CT": 0,
+"Pen": 0,
+"FOW": 6,
+"FOT": 13
+}
+},
+{
+"name": "Connor Maher",
+"pos": "SSDM",
+"num": "31",
+"stats": {
+"P": 0,
+"G1": 0,
+"G2": 0,
+"A": 0,
+"Sh": 0,
+"GB": 1,
+"TO": null,
+"PAS": null,
+"TCH": 7,
+"CT": 0,
+"Pen": 0
+}
+},
+{
+"name": "Piper Bond",
+"pos": "SSDM",
+"num": "54",
+"stats": {
+"P": 0,
+"G1": 0,
+"G2": 0,
+"A": 0,
+"Sh": 0,
+"GB": 1,
+"TO": null,
+"PAS": null,
+"TCH": 11,
+"CT": 0,
+"Pen": 1
+}
+},
+{
+"name": "Beau Pederson",
+"pos": "SSDM",
+"num": "89",
+"stats": {
+"P": 0,
+"G1": 0,
+"G2": 0,
+"A": 0,
+"Sh": 0,
+"GB": 1,
+"TO": null,
+"PAS": null,
+"TCH": 6,
+"CT": 0,
+"Pen": 1,
+"FOW": 0,
+"FOT": 1
+}
+}
+]
+},
+{
+"team": "Archers",
+"season": 2024,
+"date": "2024-09-15",
+"opponent": "Whipsnakes",
+"file": "9_15 vs Whipsnakes.xlsx",
+"players": [
+{
+"name": "Mac O'Keefe",
+"pos": "A",
+"num": "7",
+"stats": {
+"P": 3,
+"G1": 3,
+"G2": 0,
+"A": 0,
+"Sh": 11,
+"GB": 0,
+"TO": 1,
+"PAS": 12,
+"TCH": 24,
+"CT": null,
+"Pen": null
+}
+},
+{
+"name": "Matt Moore",
+"pos": "A",
+"num": "11",
+"stats": {
+"P": 3,
+"G1": 2,
+"G2": 0,
+"A": 1,
+"Sh": 4,
+"GB": 0,
+"TO": 1,
+"PAS": 22,
+"TCH": 27,
+"CT": null,
+"Pen": null
+}
+},
+{
+"name": "Tre Leclaire",
+"pos": "M",
+"num": "44",
+"stats": {
+"P": 2,
+"G1": 2,
+"G2": 0,
+"A": 0,
+"Sh": 3,
+"GB": 0,
+"TO": 1,
+"PAS": 12,
+"TCH": 16,
+"CT": null,
+"Pen": null
+}
+},
+{
+"name": "Connor Fields",
+"pos": "A",
+"num": "5",
+"stats": {
+"P": 2,
+"G1": 1,
+"G2": 0,
+"A": 1,
+"Sh": 2,
+"GB": 3,
+"TO": 3,
+"PAS": 24,
+"TCH": 29,
+"CT": null,
+"Pen": null
+}
+},
+{
+"name": "Grant Ament",
+"pos": "M",
+"num": "16",
+"stats": {
+"P": 2,
+"G1": 1,
+"G2": 0,
+"A": 1,
+"Sh": 3,
+"GB": 0,
+"TO": 4,
+"PAS": 26,
+"TCH": 33,
+"CT": null,
+"Pen": null
+}
+},
+{
+"name": "Mason Woodward",
+"pos": "D",
+"num": "77",
+"stats": {
+"P": 2,
+"G1": 0,
+"G2": 1,
+"A": 0,
+"Sh": 2,
+"GB": 3,
+"TO": 0,
+"PAS": 9,
+"TCH": 11,
+"CT": 1,
+"Pen": 0
+}
+},
+{
+"name": "Dyson Williams",
+"pos": "M",
+"num": "51",
+"stats": {
+"P": 1,
+"G1": 1,
+"G2": 0,
+"A": 0,
+"Sh": 1,
+"GB": 0,
+"TO": 0,
+"PAS": 2,
+"TCH": 3,
+"CT": null,
+"Pen": null
+}
+},
+{
+"name": "Ryan Ambler",
+"pos": "M",
+"num": "13",
+"stats": {
+"P": 1,
+"G1": 0,
+"G2": 0,
+"A": 1,
+"Sh": 2,
+"GB": 1,
+"TO": 1,
+"PAS": 10,
+"TCH": 13,
+"CT": 1,
+"Pen": 1
+}
+},
+{
+"name": "Cam Wyers",
+"pos": "D",
+"num": "20",
+"stats": {
+"P": 0,
+"G1": 0,
+"G2": 0,
+"A": 0,
+"Sh": 1,
+"GB": 0,
+"TO": 0,
+"PAS": 0,
+"TCH": 1,
+"CT": 1,
+"Pen": 0
+}
+},
+{
+"name": "Jack VanOverbeke",
+"pos": "M",
+"num": "8",
+"stats": {
+"P": 0,
+"G1": 0,
+"G2": 0,
+"A": 0,
+"Sh": 3,
+"GB": 0,
+"TO": 1,
+"PAS": 8,
+"TCH": 12,
+"CT": null,
+"Pen": null
+}
+},
+{
+"name": "Beau Pederson",
+"pos": "SSDM",
+"num": "89",
+"stats": {
+"P": 0,
+"G1": 0,
+"G2": 0,
+"A": 0,
+"Sh": 0,
+"GB": 4,
+"TO": null,
+"PAS": null,
+"TCH": 11,
+"CT": 1,
+"Pen": 0
+}
+},
+{
+"name": "Graeme Hossack",
+"pos": "D",
+"num": "81",
+"stats": {
+"P": 0,
+"G1": 0,
+"G2": 0,
+"A": 0,
+"Sh": 0,
+"GB": 3,
+"TO": null,
+"PAS": null,
+"TCH": 7,
+"CT": 1,
+"Pen": 0
+}
+},
+{
+"name": "Mike Sisselberger",
+"pos": "FO",
+"num": "99",
+"stats": {
+"P": 0,
+"G1": 0,
+"G2": 0,
+"A": 0,
+"Sh": 0,
+"GB": 3,
+"TO": null,
+"PAS": null,
+"TCH": 2,
+"CT": 1,
+"Pen": 0,
+"FOW": 7,
+"FOT": 21
+}
+},
+{
+"name": "Jon Robbins",
+"pos": "LSM",
+"num": "41",
+"stats": {
+"P": 0,
+"G1": 0,
+"G2": 0,
+"A": 0,
+"Sh": 0,
+"GB": 1,
+"TO": null,
+"PAS": null,
+"TCH": 2,
+"CT": 1,
+"Pen": 0
+}
+},
+{
+"name": "Piper Bond",
+"pos": "SSDM",
+"num": "54",
+"stats": {
+"P": 0,
+"G1": 0,
+"G2": 0,
+"A": 0,
+"Sh": 0,
+"GB": 1,
+"TO": null,
+"PAS": null,
+"TCH": 16,
+"CT": 1,
+"Pen": 0,
+"FOW": 0,
+"FOT": 1
+}
+},
+{
+"name": "Brett Dobson",
+"pos": "G",
+"num": "45",
+"stats": {
+"P": 0,
+"G1": 0,
+"G2": 0,
+"A": 0,
+"Sh": 0,
+"GB": 3,
+"TO": null,
+"PAS": null,
+"TCH": 16,
+"CT": 0,
+"Pen": 0,
+"SA": 8,
+"Sv": 20,
+"SvPct": 71.4,
+"CSv": 6,
+"GA": 8
+}
+},
+{
+"name": "Warren Jeffrey",
+"pos": "D",
+"num": "27",
+"stats": {
+"P": 0,
+"G1": 0,
+"G2": 0,
+"A": 0,
+"Sh": 0,
+"GB": 2,
+"TO": null,
+"PAS": null,
+"TCH": 2,
+"CT": 0,
+"Pen": 0
+}
+},
+{
+"name": "Connor Maher",
+"pos": "SSDM",
+"num": "31",
+"stats": {
+"P": 0,
+"G1": 0,
+"G2": 0,
+"A": 0,
+"Sh": 0,
+"GB": 2,
+"TO": null,
+"PAS": null,
+"TCH": 5,
+"CT": 0,
+"Pen": 0,
+"FOW": 0,
+"FOT": 1
+}
+}
+]
+},
+{
+"team": "Archers",
 "season": 2025,
 "date": "2025-05-31",
 "opponent": "Whipsnakes",
@@ -7520,6 +11486,3691 @@
 "SvPct": 65.4,
 "CSv": 8,
 "GA": 9
+}
+}
+]
+},
+{
+"team": "Atlas",
+"season": 2024,
+"date": "2024-06-01",
+"opponent": "Cannons",
+"file": "6_1 vs Cannons.xlsx",
+"players": [
+{
+"name": "Jeff Teat",
+"pos": "A",
+"num": "7",
+"stats": {
+"P": 11,
+"G1": 4,
+"G2": 0,
+"A": 7,
+"Sh": 12,
+"GB": 2,
+"TO": 3,
+"PAS": 49,
+"TCH": 64,
+"CT": null,
+"Pen": null
+}
+},
+{
+"name": "Connor Shellenberger",
+"pos": "A",
+"num": "1",
+"stats": {
+"P": 8,
+"G1": 3,
+"G2": 0,
+"A": 5,
+"Sh": 4,
+"GB": 3,
+"TO": 0,
+"PAS": 40,
+"TCH": 44,
+"CT": null,
+"Pen": null
+}
+},
+{
+"name": "Xander Dickson",
+"pos": "A",
+"num": "10",
+"stats": {
+"P": 4,
+"G1": 3,
+"G2": 0,
+"A": 1,
+"Sh": 7,
+"GB": 1,
+"TO": 2,
+"PAS": 9,
+"TCH": 18,
+"CT": null,
+"Pen": null
+}
+},
+{
+"name": "Reid Bowering",
+"pos": "M",
+"num": "98",
+"stats": {
+"P": 3,
+"G1": 2,
+"G2": 0,
+"A": 1,
+"Sh": 6,
+"GB": 5,
+"TO": 2,
+"PAS": 7,
+"TCH": 15,
+"CT": 0,
+"Pen": 0
+}
+},
+{
+"name": "Dox Aitken",
+"pos": "M",
+"num": "6",
+"stats": {
+"P": 2,
+"G1": 2,
+"G2": 0,
+"A": 0,
+"Sh": 4,
+"GB": 4,
+"TO": 1,
+"PAS": 30,
+"TCH": 35,
+"CT": 0,
+"Pen": 0
+}
+},
+{
+"name": "Koby Smith",
+"pos": "LSM",
+"num": "0",
+"stats": {
+"P": 2,
+"G1": 0,
+"G2": 1,
+"A": 0,
+"Sh": 2,
+"GB": 1,
+"TO": 0,
+"PAS": 3,
+"TCH": 5,
+"CT": 0,
+"Pen": 0
+}
+},
+{
+"name": "Bryan Costabile",
+"pos": "M",
+"num": "26",
+"stats": {
+"P": 1,
+"G1": 1,
+"G2": 0,
+"A": 0,
+"Sh": 6,
+"GB": 0,
+"TO": 1,
+"PAS": 30,
+"TCH": 37,
+"CT": null,
+"Pen": null
+}
+},
+{
+"name": "Chet Comizio",
+"pos": "SSDM",
+"num": "57",
+"stats": {
+"P": 1,
+"G1": 1,
+"G2": 0,
+"A": 0,
+"Sh": 1,
+"GB": 0,
+"TO": 0,
+"PAS": 9,
+"TCH": 10,
+"CT": null,
+"Pen": null,
+"FOW": 0,
+"FOT": 1
+}
+},
+{
+"name": "Ronan Jacoby",
+"pos": "M",
+"num": "88",
+"stats": {
+"P": 1,
+"G1": 1,
+"G2": 0,
+"A": 0,
+"Sh": 4,
+"GB": 2,
+"TO": 0,
+"PAS": 20,
+"TCH": 24,
+"CT": 0,
+"Pen": 0
+}
+},
+{
+"name": "Myles Jones",
+"pos": "M",
+"num": "8",
+"stats": {
+"P": 0,
+"G1": 0,
+"G2": 0,
+"A": 0,
+"Sh": 5,
+"GB": 1,
+"TO": 2,
+"PAS": 18,
+"TCH": 25,
+"CT": 0,
+"Pen": 0
+}
+},
+{
+"name": "Danny Logan",
+"pos": "SSDM",
+"num": "91",
+"stats": {
+"P": 0,
+"G1": 0,
+"G2": 0,
+"A": 0,
+"Sh": 1,
+"GB": 1,
+"TO": 0,
+"PAS": 8,
+"TCH": 9,
+"CT": 0,
+"Pen": 0,
+"FOW": 0,
+"FOT": 5
+}
+},
+{
+"name": "Michael Rexrode",
+"pos": "D",
+"num": "22",
+"stats": {
+"P": 0,
+"G1": 0,
+"G2": 0,
+"A": 0,
+"Sh": 0,
+"GB": 0,
+"TO": null,
+"PAS": null,
+"TCH": 2,
+"CT": 1,
+"Pen": 1
+}
+},
+{
+"name": "Gavin Adler",
+"pos": "D",
+"num": "77",
+"stats": {
+"P": 0,
+"G1": 0,
+"G2": 0,
+"A": 0,
+"Sh": 0,
+"GB": 0,
+"TO": null,
+"PAS": null,
+"TCH": 5,
+"CT": 1,
+"Pen": 0
+}
+},
+{
+"name": "Trevor Baptiste",
+"pos": "FO",
+"num": "9",
+"stats": {
+"P": 0,
+"G1": 0,
+"G2": 0,
+"A": 0,
+"Sh": 0,
+"GB": 20,
+"TO": null,
+"PAS": null,
+"TCH": 20,
+"CT": 0,
+"Pen": 0,
+"FOW": 25,
+"FOT": 27
+}
+},
+{
+"name": "Tim Troutner",
+"pos": "G",
+"num": "42",
+"stats": {
+"P": 0,
+"G1": 0,
+"G2": 0,
+"A": 0,
+"Sh": 0,
+"GB": 3,
+"TO": null,
+"PAS": null,
+"TCH": 14,
+"CT": 0,
+"Pen": 0,
+"SA": 12,
+"Sv": 13,
+"SvPct": 54.2,
+"CSv": 8,
+"GA": 11
+}
+},
+{
+"name": "Tyler Carpenter",
+"pos": "LSM",
+"num": "5",
+"stats": {
+"P": 0,
+"G1": 0,
+"G2": 0,
+"A": 0,
+"Sh": 0,
+"GB": 1,
+"TO": null,
+"PAS": null,
+"TCH": 6,
+"CT": 0,
+"Pen": 0
+}
+}
+]
+},
+{
+"team": "Atlas",
+"season": 2024,
+"date": "2024-06-02",
+"opponent": "Whipsnakes",
+"file": "6_2 vs Whipsnakes.xlsx",
+"players": [
+{
+"name": "Jeff Teat",
+"pos": "A",
+"num": "7",
+"stats": {
+"P": 7,
+"G1": 3,
+"G2": 0,
+"A": 4,
+"Sh": 4,
+"GB": 0,
+"TO": 3,
+"PAS": 40,
+"TCH": 47,
+"CT": null,
+"Pen": null
+}
+},
+{
+"name": "Xander Dickson",
+"pos": "A",
+"num": "10",
+"stats": {
+"P": 4,
+"G1": 3,
+"G2": 0,
+"A": 1,
+"Sh": 5,
+"GB": 3,
+"TO": 0,
+"PAS": 25,
+"TCH": 30,
+"CT": null,
+"Pen": null
+}
+},
+{
+"name": "Dylan Molloy",
+"pos": "M",
+"num": "4",
+"stats": {
+"P": 4,
+"G1": 2,
+"G2": 0,
+"A": 2,
+"Sh": 5,
+"GB": 2,
+"TO": 1,
+"PAS": 28,
+"TCH": 34,
+"CT": 0,
+"Pen": 0
+}
+},
+{
+"name": "Dox Aitken",
+"pos": "M",
+"num": "6",
+"stats": {
+"P": 3,
+"G1": 3,
+"G2": 0,
+"A": 0,
+"Sh": 6,
+"GB": 2,
+"TO": 3,
+"PAS": 17,
+"TCH": 26,
+"CT": 0,
+"Pen": 0
+}
+},
+{
+"name": "Myles Jones",
+"pos": "M",
+"num": "8",
+"stats": {
+"P": 3,
+"G1": 1,
+"G2": 0,
+"A": 2,
+"Sh": 3,
+"GB": 0,
+"TO": 0,
+"PAS": 15,
+"TCH": 18,
+"CT": null,
+"Pen": null
+}
+},
+{
+"name": "Koby Smith",
+"pos": "LSM",
+"num": "0",
+"stats": {
+"P": 2,
+"G1": 0,
+"G2": 1,
+"A": 0,
+"Sh": 2,
+"GB": 0,
+"TO": 0,
+"PAS": 3,
+"TCH": 5,
+"CT": null,
+"Pen": null
+}
+},
+{
+"name": "Trevor Baptiste",
+"pos": "FO",
+"num": "9",
+"stats": {
+"P": 1,
+"G1": 1,
+"G2": 0,
+"A": 0,
+"Sh": 1,
+"GB": 11,
+"TO": 0,
+"PAS": 11,
+"TCH": 12,
+"CT": 0,
+"Pen": 0,
+"FOW": 20,
+"FOT": 27
+}
+},
+{
+"name": "Ronan Jacoby",
+"pos": "M",
+"num": "88",
+"stats": {
+"P": 1,
+"G1": 1,
+"G2": 0,
+"A": 0,
+"Sh": 3,
+"GB": 1,
+"TO": 0,
+"PAS": 11,
+"TCH": 14,
+"CT": 0,
+"Pen": 0
+}
+},
+{
+"name": "Tyler Carpenter",
+"pos": "LSM",
+"num": "5",
+"stats": {
+"P": 1,
+"G1": 1,
+"G2": 0,
+"A": 0,
+"Sh": 1,
+"GB": 6,
+"TO": 0,
+"PAS": 8,
+"TCH": 9,
+"CT": 1,
+"Pen": 0
+}
+},
+{
+"name": "Bryan Costabile",
+"pos": "M",
+"num": "26",
+"stats": {
+"P": 0,
+"G1": 0,
+"G2": 0,
+"A": 0,
+"Sh": 4,
+"GB": 0,
+"TO": 0,
+"PAS": 9,
+"TCH": 13,
+"CT": null,
+"Pen": null
+}
+},
+{
+"name": "Chet Comizio",
+"pos": "SSDM",
+"num": "57",
+"stats": {
+"P": 0,
+"G1": 0,
+"G2": 0,
+"A": 0,
+"Sh": 1,
+"GB": 2,
+"TO": 0,
+"PAS": 8,
+"TCH": 9,
+"CT": 0,
+"Pen": 0
+}
+},
+{
+"name": "Gavin Adler",
+"pos": "D",
+"num": "77",
+"stats": {
+"P": 0,
+"G1": 0,
+"G2": 0,
+"A": 0,
+"Sh": 0,
+"GB": 2,
+"TO": null,
+"PAS": null,
+"TCH": 7,
+"CT": 2,
+"Pen": 0
+}
+},
+{
+"name": "Tim Troutner",
+"pos": "G",
+"num": "42",
+"stats": {
+"P": 0,
+"G1": 0,
+"G2": 0,
+"A": 0,
+"Sh": 0,
+"GB": 2,
+"TO": null,
+"PAS": null,
+"TCH": 18,
+"CT": 0,
+"Pen": 0,
+"SA": 13,
+"Sv": 14,
+"SvPct": 58.3,
+"CSv": 6,
+"GA": 10
+}
+},
+{
+"name": "Reid Bowering",
+"pos": "M",
+"num": "98",
+"stats": {
+"P": 0,
+"G1": 0,
+"G2": 0,
+"A": 0,
+"Sh": 0,
+"GB": 1,
+"TO": null,
+"PAS": null,
+"TCH": 3,
+"CT": 0,
+"Pen": 0
+}
+},
+{
+"name": "Payton Rezanka",
+"pos": "SSDM",
+"num": "34",
+"stats": {
+"P": 0,
+"G1": 0,
+"G2": 0,
+"A": 0,
+"Sh": 0,
+"GB": 1,
+"TO": null,
+"PAS": null,
+"TCH": 9,
+"CT": 0,
+"Pen": 1
+}
+},
+{
+"name": "Michael Rexrode",
+"pos": "D",
+"num": "22",
+"stats": {
+"P": 0,
+"G1": 0,
+"G2": 0,
+"A": 0,
+"Sh": 0,
+"GB": 0,
+"TO": null,
+"PAS": null,
+"TCH": 5,
+"CT": null,
+"Pen": null,
+"FOW": 0,
+"FOT": 1
+}
+},
+{
+"name": "Danny Logan",
+"pos": "SSDM",
+"num": "91",
+"stats": {
+"P": 0,
+"G1": 0,
+"G2": 0,
+"A": 0,
+"Sh": 0,
+"GB": 0,
+"TO": null,
+"PAS": null,
+"TCH": 3,
+"CT": null,
+"Pen": null,
+"FOW": 0,
+"FOT": 2
+}
+}
+]
+},
+{
+"team": "Atlas",
+"season": 2024,
+"date": "2024-06-08",
+"opponent": "Chaos",
+"file": "6_8 vs Chaos.xlsx",
+"players": [
+{
+"name": "Xander Dickson",
+"pos": "A",
+"num": "10",
+"stats": {
+"P": 4,
+"G1": 4,
+"G2": 0,
+"A": 0,
+"Sh": 6,
+"GB": 2,
+"TO": 0,
+"PAS": 23,
+"TCH": 29,
+"CT": null,
+"Pen": null
+}
+},
+{
+"name": "Jeff Teat",
+"pos": "A",
+"num": "7",
+"stats": {
+"P": 4,
+"G1": 1,
+"G2": 0,
+"A": 3,
+"Sh": 9,
+"GB": 3,
+"TO": 4,
+"PAS": 35,
+"TCH": 48,
+"CT": null,
+"Pen": null
+}
+},
+{
+"name": "Connor Shellenberger",
+"pos": "A",
+"num": "1",
+"stats": {
+"P": 3,
+"G1": 2,
+"G2": 0,
+"A": 1,
+"Sh": 5,
+"GB": 4,
+"TO": 0,
+"PAS": 32,
+"TCH": 37,
+"CT": null,
+"Pen": null
+}
+},
+{
+"name": "Myles Jones",
+"pos": "M",
+"num": "8",
+"stats": {
+"P": 3,
+"G1": 1,
+"G2": 1,
+"A": 0,
+"Sh": 6,
+"GB": 4,
+"TO": 2,
+"PAS": 23,
+"TCH": 31,
+"CT": 0,
+"Pen": 0
+}
+},
+{
+"name": "Dox Aitken",
+"pos": "M",
+"num": "6",
+"stats": {
+"P": 2,
+"G1": 2,
+"G2": 0,
+"A": 0,
+"Sh": 8,
+"GB": 1,
+"TO": 1,
+"PAS": 23,
+"TCH": 32,
+"CT": 0,
+"Pen": 1
+}
+},
+{
+"name": "Tyler Carpenter",
+"pos": "LSM",
+"num": "5",
+"stats": {
+"P": 2,
+"G1": 0,
+"G2": 1,
+"A": 0,
+"Sh": 2,
+"GB": 9,
+"TO": 0,
+"PAS": 10,
+"TCH": 12,
+"CT": 2,
+"Pen": 0
+}
+},
+{
+"name": "Dylan Molloy",
+"pos": "M",
+"num": "4",
+"stats": {
+"P": 1,
+"G1": 1,
+"G2": 0,
+"A": 0,
+"Sh": 3,
+"GB": 0,
+"TO": 0,
+"PAS": 0,
+"TCH": 3,
+"CT": null,
+"Pen": null
+}
+},
+{
+"name": "Trevor Baptiste",
+"pos": "FO",
+"num": "9",
+"stats": {
+"P": 1,
+"G1": 0,
+"G2": 0,
+"A": 1,
+"Sh": 2,
+"GB": 12,
+"TO": 1,
+"PAS": 12,
+"TCH": 15,
+"CT": 0,
+"Pen": 0,
+"FOW": 20,
+"FOT": 23
+}
+},
+{
+"name": "Ronan Jacoby",
+"pos": "M",
+"num": "88",
+"stats": {
+"P": 1,
+"G1": 0,
+"G2": 0,
+"A": 1,
+"Sh": 3,
+"GB": 0,
+"TO": 0,
+"PAS": 12,
+"TCH": 15,
+"CT": null,
+"Pen": null
+}
+},
+{
+"name": "Tim Troutner",
+"pos": "G",
+"num": "42",
+"stats": {
+"P": 0,
+"G1": 0,
+"G2": 0,
+"A": 0,
+"Sh": 1,
+"GB": 3,
+"TO": 0,
+"PAS": 15,
+"TCH": 16,
+"CT": 2,
+"Pen": 0,
+"SA": 12,
+"Sv": 8,
+"SvPct": 44.4,
+"CSv": 1,
+"GA": 10
+}
+},
+{
+"name": "Reid Bowering",
+"pos": "M",
+"num": "98",
+"stats": {
+"P": 0,
+"G1": 0,
+"G2": 0,
+"A": 0,
+"Sh": 2,
+"GB": 1,
+"TO": 1,
+"PAS": 3,
+"TCH": 6,
+"CT": 0,
+"Pen": 1
+}
+},
+{
+"name": "Brett Makar",
+"pos": "D",
+"num": "43",
+"stats": {
+"P": 0,
+"G1": 0,
+"G2": 0,
+"A": 0,
+"Sh": 1,
+"GB": 1,
+"TO": 0,
+"PAS": 7,
+"TCH": 8,
+"CT": 0,
+"Pen": 1
+}
+},
+{
+"name": "Chet Comizio",
+"pos": "SSDM",
+"num": "57",
+"stats": {
+"P": 0,
+"G1": 0,
+"G2": 0,
+"A": 0,
+"Sh": 1,
+"GB": 3,
+"TO": 1,
+"PAS": 10,
+"TCH": 12,
+"CT": 0,
+"Pen": 0
+}
+},
+{
+"name": "Gavin Adler",
+"pos": "D",
+"num": "77",
+"stats": {
+"P": 0,
+"G1": 0,
+"G2": 0,
+"A": 0,
+"Sh": 0,
+"GB": 2,
+"TO": null,
+"PAS": null,
+"TCH": 7,
+"CT": 3,
+"Pen": 0
+}
+},
+{
+"name": "Danny Logan",
+"pos": "SSDM",
+"num": "91",
+"stats": {
+"P": 0,
+"G1": 0,
+"G2": 0,
+"A": 0,
+"Sh": 0,
+"GB": 1,
+"TO": null,
+"PAS": null,
+"TCH": 8,
+"CT": 1,
+"Pen": 3,
+"FOW": 0,
+"FOT": 4
+}
+},
+{
+"name": "Michael Rexrode",
+"pos": "D",
+"num": "22",
+"stats": {
+"P": 0,
+"G1": 0,
+"G2": 0,
+"A": 0,
+"Sh": 0,
+"GB": 0,
+"TO": null,
+"PAS": null,
+"TCH": 1,
+"CT": 1,
+"Pen": 0
+}
+},
+{
+"name": "Payton Rezanka",
+"pos": "SSDM",
+"num": "34",
+"stats": {
+"P": 0,
+"G1": 0,
+"G2": 0,
+"A": 0,
+"Sh": 0,
+"GB": 0,
+"TO": null,
+"PAS": null,
+"TCH": 2,
+"CT": 1,
+"Pen": 1
+}
+},
+{
+"name": "Koby Smith",
+"pos": "LSM",
+"num": "0",
+"stats": {
+"P": 0,
+"G1": 0,
+"G2": 0,
+"A": 0,
+"Sh": 0,
+"GB": 1,
+"TO": null,
+"PAS": null,
+"TCH": 6,
+"CT": 0,
+"Pen": 1
+}
+}
+]
+},
+{
+"team": "Atlas",
+"season": 2024,
+"date": "2024-06-16",
+"opponent": "Redwoods",
+"file": "6_16 vs Redwoods.xlsx",
+"players": [
+{
+"name": "Jeff Teat",
+"pos": "A",
+"num": "7",
+"stats": {
+"P": 8,
+"G1": 4,
+"G2": 0,
+"A": 4,
+"Sh": 7,
+"GB": 2,
+"TO": 3,
+"PAS": 22,
+"TCH": 32,
+"CT": null,
+"Pen": null
+}
+},
+{
+"name": "Connor Shellenberger",
+"pos": "A",
+"num": "1",
+"stats": {
+"P": 7,
+"G1": 4,
+"G2": 0,
+"A": 3,
+"Sh": 6,
+"GB": 2,
+"TO": 2,
+"PAS": 27,
+"TCH": 35,
+"CT": null,
+"Pen": null
+}
+},
+{
+"name": "Myles Jones",
+"pos": "M",
+"num": "8",
+"stats": {
+"P": 5,
+"G1": 1,
+"G2": 1,
+"A": 2,
+"Sh": 3,
+"GB": 1,
+"TO": 2,
+"PAS": 6,
+"TCH": 11,
+"CT": 0,
+"Pen": 0
+}
+},
+{
+"name": "Xander Dickson",
+"pos": "A",
+"num": "10",
+"stats": {
+"P": 3,
+"G1": 3,
+"G2": 0,
+"A": 0,
+"Sh": 6,
+"GB": 1,
+"TO": 0,
+"PAS": 7,
+"TCH": 13,
+"CT": null,
+"Pen": null
+}
+},
+{
+"name": "Dox Aitken",
+"pos": "M",
+"num": "6",
+"stats": {
+"P": 2,
+"G1": 2,
+"G2": 0,
+"A": 0,
+"Sh": 7,
+"GB": 0,
+"TO": 0,
+"PAS": 12,
+"TCH": 19,
+"CT": null,
+"Pen": null
+}
+},
+{
+"name": "Bryan Costabile",
+"pos": "M",
+"num": "26",
+"stats": {
+"P": 2,
+"G1": 0,
+"G2": 0,
+"A": 2,
+"Sh": 5,
+"GB": 1,
+"TO": 0,
+"PAS": 13,
+"TCH": 18,
+"CT": 1,
+"Pen": 0
+}
+},
+{
+"name": "Dylan Molloy",
+"pos": "M",
+"num": "4",
+"stats": {
+"P": 1,
+"G1": 1,
+"G2": 0,
+"A": 0,
+"Sh": 2,
+"GB": 0,
+"TO": 1,
+"PAS": 2,
+"TCH": 5,
+"CT": null,
+"Pen": null
+}
+},
+{
+"name": "Danny Logan",
+"pos": "SSDM",
+"num": "91",
+"stats": {
+"P": 1,
+"G1": 1,
+"G2": 0,
+"A": 0,
+"Sh": 2,
+"GB": 1,
+"TO": 0,
+"PAS": 8,
+"TCH": 10,
+"CT": 0,
+"Pen": 1,
+"FOW": 0,
+"FOT": 6
+}
+},
+{
+"name": "Payton Rezanka",
+"pos": "SSDM",
+"num": "34",
+"stats": {
+"P": 1,
+"G1": 1,
+"G2": 0,
+"A": 0,
+"Sh": 2,
+"GB": 2,
+"TO": 0,
+"PAS": 3,
+"TCH": 5,
+"CT": 1,
+"Pen": 0,
+"FOW": 0,
+"FOT": 1
+}
+},
+{
+"name": "Chet Comizio",
+"pos": "SSDM",
+"num": "57",
+"stats": {
+"P": 1,
+"G1": 1,
+"G2": 0,
+"A": 0,
+"Sh": 1,
+"GB": 1,
+"TO": 1,
+"PAS": 9,
+"TCH": 11,
+"CT": 0,
+"Pen": 0,
+"FOW": 0,
+"FOT": 1
+}
+},
+{
+"name": "Brett Makar",
+"pos": "D",
+"num": "43",
+"stats": {
+"P": 1,
+"G1": 0,
+"G2": 0,
+"A": 1,
+"Sh": 0,
+"GB": 1,
+"TO": 1,
+"PAS": 11,
+"TCH": 12,
+"CT": 0,
+"Pen": 0
+}
+},
+{
+"name": "Ronan Jacoby",
+"pos": "M",
+"num": "88",
+"stats": {
+"P": 1,
+"G1": 0,
+"G2": 0,
+"A": 1,
+"Sh": 2,
+"GB": 1,
+"TO": 0,
+"PAS": 7,
+"TCH": 9,
+"CT": 1,
+"Pen": 0
+}
+},
+{
+"name": "Trevor Baptiste",
+"pos": "FO",
+"num": "9",
+"stats": {
+"P": 0,
+"G1": 0,
+"G2": 0,
+"A": 0,
+"Sh": 1,
+"GB": 6,
+"TO": 0,
+"PAS": 9,
+"TCH": 10,
+"CT": 0,
+"Pen": 1,
+"FOW": 12,
+"FOT": 29
+}
+},
+{
+"name": "Koby Smith",
+"pos": "LSM",
+"num": "0",
+"stats": {
+"P": 0,
+"G1": 0,
+"G2": 0,
+"A": 0,
+"Sh": 1,
+"GB": 2,
+"TO": 0,
+"PAS": 6,
+"TCH": 7,
+"CT": 1,
+"Pen": 1
+}
+},
+{
+"name": "Michael Rexrode",
+"pos": "D",
+"num": "22",
+"stats": {
+"P": 0,
+"G1": 0,
+"G2": 0,
+"A": 0,
+"Sh": 0,
+"GB": 2,
+"TO": null,
+"PAS": null,
+"TCH": 8,
+"CT": 3,
+"Pen": 0
+}
+},
+{
+"name": "Tyler Carpenter",
+"pos": "LSM",
+"num": "5",
+"stats": {
+"P": 0,
+"G1": 0,
+"G2": 0,
+"A": 0,
+"Sh": 0,
+"GB": 5,
+"TO": null,
+"PAS": null,
+"TCH": 7,
+"CT": 1,
+"Pen": 0
+}
+},
+{
+"name": "Tim Troutner",
+"pos": "G",
+"num": "42",
+"stats": {
+"P": 0,
+"G1": 0,
+"G2": 0,
+"A": 0,
+"Sh": 0,
+"GB": 4,
+"TO": null,
+"PAS": null,
+"TCH": 27,
+"CT": 1,
+"Pen": 0,
+"SA": 15,
+"Sv": 16,
+"SvPct": 53.3,
+"CSv": 6,
+"GA": 14
+}
+},
+{
+"name": "Gavin Adler",
+"pos": "D",
+"num": "77",
+"stats": {
+"P": 0,
+"G1": 0,
+"G2": 0,
+"A": 0,
+"Sh": 0,
+"GB": 1,
+"TO": null,
+"PAS": null,
+"TCH": 5,
+"CT": 1,
+"Pen": 0
+}
+}
+]
+},
+{
+"team": "Atlas",
+"season": 2024,
+"date": "2024-06-28",
+"opponent": "Whipsnakes",
+"file": "6_28 vs Whipsnakes.xlsx",
+"players": [
+{
+"name": "Jeff Teat",
+"pos": "A",
+"num": "7",
+"stats": {
+"P": 5,
+"G1": 2,
+"G2": 0,
+"A": 3,
+"Sh": 6,
+"GB": 2,
+"TO": 0,
+"PAS": 28,
+"TCH": 34,
+"CT": null,
+"Pen": null
+}
+},
+{
+"name": "Xander Dickson",
+"pos": "A",
+"num": "10",
+"stats": {
+"P": 4,
+"G1": 2,
+"G2": 0,
+"A": 2,
+"Sh": 8,
+"GB": 1,
+"TO": 1,
+"PAS": 10,
+"TCH": 19,
+"CT": null,
+"Pen": null
+}
+},
+{
+"name": "Bryan Costabile",
+"pos": "M",
+"num": "26",
+"stats": {
+"P": 3,
+"G1": 3,
+"G2": 0,
+"A": 0,
+"Sh": 7,
+"GB": 1,
+"TO": 1,
+"PAS": 12,
+"TCH": 20,
+"CT": 0,
+"Pen": 0
+}
+},
+{
+"name": "Jake Stevens",
+"pos": "M",
+"num": "14",
+"stats": {
+"P": 2,
+"G1": 2,
+"G2": 0,
+"A": 0,
+"Sh": 5,
+"GB": 1,
+"TO": 0,
+"PAS": 4,
+"TCH": 9,
+"CT": 0,
+"Pen": 0
+}
+},
+{
+"name": "Connor Shellenberger",
+"pos": "A",
+"num": "1",
+"stats": {
+"P": 2,
+"G1": 1,
+"G2": 0,
+"A": 1,
+"Sh": 3,
+"GB": 3,
+"TO": 2,
+"PAS": 29,
+"TCH": 34,
+"CT": null,
+"Pen": null
+}
+},
+{
+"name": "Myles Jones",
+"pos": "M",
+"num": "8",
+"stats": {
+"P": 1,
+"G1": 1,
+"G2": 0,
+"A": 0,
+"Sh": 3,
+"GB": 1,
+"TO": 0,
+"PAS": 11,
+"TCH": 14,
+"CT": 0,
+"Pen": 0
+}
+},
+{
+"name": "Tyler Carpenter",
+"pos": "LSM",
+"num": "5",
+"stats": {
+"P": 1,
+"G1": 1,
+"G2": 0,
+"A": 0,
+"Sh": 2,
+"GB": 3,
+"TO": 0,
+"PAS": 10,
+"TCH": 12,
+"CT": 1,
+"Pen": 0
+}
+},
+{
+"name": "Trevor Baptiste",
+"pos": "FO",
+"num": "9",
+"stats": {
+"P": 0,
+"G1": 0,
+"G2": 0,
+"A": 0,
+"Sh": 1,
+"GB": 6,
+"TO": 1,
+"PAS": 5,
+"TCH": 7,
+"CT": 0,
+"Pen": 3,
+"FOW": 14,
+"FOT": 29
+}
+},
+{
+"name": "Tim Troutner",
+"pos": "G",
+"num": "42",
+"stats": {
+"P": 0,
+"G1": 0,
+"G2": 0,
+"A": 0,
+"Sh": 1,
+"GB": 1,
+"TO": 1,
+"PAS": 9,
+"TCH": 11,
+"CT": 0,
+"Pen": 0,
+"SA": 14,
+"Sv": 10,
+"SvPct": 41.7,
+"CSv": 3,
+"GA": 14
+}
+},
+{
+"name": "Michael Rexrode",
+"pos": "D",
+"num": "22",
+"stats": {
+"P": 0,
+"G1": 0,
+"G2": 0,
+"A": 0,
+"Sh": 1,
+"GB": 2,
+"TO": 0,
+"PAS": 8,
+"TCH": 9,
+"CT": 2,
+"Pen": 0
+}
+},
+{
+"name": "Dox Aitken",
+"pos": "M",
+"num": "6",
+"stats": {
+"P": 0,
+"G1": 0,
+"G2": 0,
+"A": 0,
+"Sh": 3,
+"GB": 3,
+"TO": 2,
+"PAS": 14,
+"TCH": 19,
+"CT": 0,
+"Pen": 0
+}
+},
+{
+"name": "Danny Logan",
+"pos": "SSDM",
+"num": "91",
+"stats": {
+"P": 0,
+"G1": 0,
+"G2": 0,
+"A": 0,
+"Sh": 3,
+"GB": 1,
+"TO": 0,
+"PAS": 7,
+"TCH": 10,
+"CT": 1,
+"Pen": 0,
+"FOW": 0,
+"FOT": 3
+}
+},
+{
+"name": "Payton Cormier",
+"pos": "A",
+"num": "24",
+"stats": {
+"P": 0,
+"G1": 0,
+"G2": 0,
+"A": 0,
+"Sh": 2,
+"GB": 1,
+"TO": 1,
+"PAS": 5,
+"TCH": 8,
+"CT": null,
+"Pen": null
+}
+},
+{
+"name": "Gavin Adler",
+"pos": "D",
+"num": "77",
+"stats": {
+"P": 0,
+"G1": 0,
+"G2": 0,
+"A": 0,
+"Sh": 0,
+"GB": 2,
+"TO": null,
+"PAS": null,
+"TCH": 7,
+"CT": 2,
+"Pen": 0
+}
+},
+{
+"name": "Koby Smith",
+"pos": "LSM",
+"num": "0",
+"stats": {
+"P": 0,
+"G1": 0,
+"G2": 0,
+"A": 0,
+"Sh": 0,
+"GB": 4,
+"TO": null,
+"PAS": null,
+"TCH": 6,
+"CT": 1,
+"Pen": 0
+}
+},
+{
+"name": "Chet Comizio",
+"pos": "SSDM",
+"num": "57",
+"stats": {
+"P": 0,
+"G1": 0,
+"G2": 0,
+"A": 0,
+"Sh": 0,
+"GB": 1,
+"TO": null,
+"PAS": null,
+"TCH": 4,
+"CT": 1,
+"Pen": 0
+}
+},
+{
+"name": "Brett Makar",
+"pos": "D",
+"num": "43",
+"stats": {
+"P": 0,
+"G1": 0,
+"G2": 0,
+"A": 0,
+"Sh": 0,
+"GB": 1,
+"TO": null,
+"PAS": null,
+"TCH": 7,
+"CT": 0,
+"Pen": 0
+}
+},
+{
+"name": "Liam Entenmann",
+"pos": "G",
+"num": "44",
+"stats": {
+"P": 0,
+"G1": 0,
+"G2": 0,
+"A": 0,
+"Sh": 0,
+"GB": 0,
+"TO": null,
+"PAS": null,
+"TCH": 0,
+"CT": null,
+"Pen": null,
+"SA": 2,
+"Sv": 4,
+"SvPct": 66.7,
+"CSv": 1,
+"GA": 2
+}
+}
+]
+},
+{
+"team": "Atlas",
+"season": 2024,
+"date": "2024-07-05",
+"opponent": "Outlaws",
+"file": "7_5 vs Outlaws.xlsx",
+"players": [
+{
+"name": "Jeff Teat",
+"pos": "A",
+"num": "7",
+"stats": {
+"P": 9,
+"G1": 6,
+"G2": 0,
+"A": 3,
+"Sh": 9,
+"GB": 5,
+"TO": 0,
+"PAS": 32,
+"TCH": 41,
+"CT": null,
+"Pen": null
+}
+},
+{
+"name": "Bryan Costabile",
+"pos": "M",
+"num": "26",
+"stats": {
+"P": 4,
+"G1": 1,
+"G2": 0,
+"A": 3,
+"Sh": 7,
+"GB": 2,
+"TO": 2,
+"PAS": 22,
+"TCH": 31,
+"CT": 0,
+"Pen": 0
+}
+},
+{
+"name": "Xander Dickson",
+"pos": "A",
+"num": "10",
+"stats": {
+"P": 3,
+"G1": 3,
+"G2": 0,
+"A": 0,
+"Sh": 5,
+"GB": 1,
+"TO": 3,
+"PAS": 4,
+"TCH": 12,
+"CT": null,
+"Pen": null
+}
+},
+{
+"name": "Connor Shellenberger",
+"pos": "A",
+"num": "1",
+"stats": {
+"P": 3,
+"G1": 2,
+"G2": 0,
+"A": 1,
+"Sh": 5,
+"GB": 0,
+"TO": 2,
+"PAS": 29,
+"TCH": 36,
+"CT": null,
+"Pen": null
+}
+},
+{
+"name": "Trevor Baptiste",
+"pos": "FO",
+"num": "9",
+"stats": {
+"P": 2,
+"G1": 2,
+"G2": 0,
+"A": 0,
+"Sh": 2,
+"GB": 4,
+"TO": 0,
+"PAS": 4,
+"TCH": 6,
+"CT": 0,
+"Pen": 0,
+"FOW": 9,
+"FOT": 22
+}
+},
+{
+"name": "Dox Aitken",
+"pos": "M",
+"num": "6",
+"stats": {
+"P": 2,
+"G1": 1,
+"G2": 0,
+"A": 1,
+"Sh": 3,
+"GB": 1,
+"TO": 2,
+"PAS": 23,
+"TCH": 28,
+"CT": 0,
+"Pen": 1,
+"FOW": 0,
+"FOT": 1
+}
+},
+{
+"name": "Payton Rezanka",
+"pos": "SSDM",
+"num": "34",
+"stats": {
+"P": 1,
+"G1": 1,
+"G2": 0,
+"A": 0,
+"Sh": 2,
+"GB": 0,
+"TO": 0,
+"PAS": 2,
+"TCH": 4,
+"CT": null,
+"Pen": null
+}
+},
+{
+"name": "Jake Stevens",
+"pos": "M",
+"num": "14",
+"stats": {
+"P": 1,
+"G1": 1,
+"G2": 0,
+"A": 0,
+"Sh": 3,
+"GB": 0,
+"TO": 0,
+"PAS": 10,
+"TCH": 13,
+"CT": null,
+"Pen": null
+}
+},
+{
+"name": "Koby Smith",
+"pos": "LSM",
+"num": "0",
+"stats": {
+"P": 1,
+"G1": 0,
+"G2": 0,
+"A": 1,
+"Sh": 0,
+"GB": 1,
+"TO": 0,
+"PAS": 3,
+"TCH": 3,
+"CT": 0,
+"Pen": 0
+}
+},
+{
+"name": "Brett Makar",
+"pos": "D",
+"num": "43",
+"stats": {
+"P": 1,
+"G1": 0,
+"G2": 0,
+"A": 1,
+"Sh": 1,
+"GB": 3,
+"TO": 1,
+"PAS": 12,
+"TCH": 14,
+"CT": 1,
+"Pen": 0
+}
+},
+{
+"name": "Ronan Jacoby",
+"pos": "M",
+"num": "88",
+"stats": {
+"P": 1,
+"G1": 0,
+"G2": 0,
+"A": 1,
+"Sh": 1,
+"GB": 0,
+"TO": 1,
+"PAS": 18,
+"TCH": 20,
+"CT": null,
+"Pen": null
+}
+},
+{
+"name": "Myles Jones",
+"pos": "M",
+"num": "8",
+"stats": {
+"P": 0,
+"G1": 0,
+"G2": 0,
+"A": 0,
+"Sh": 3,
+"GB": 1,
+"TO": 3,
+"PAS": 14,
+"TCH": 20,
+"CT": 0,
+"Pen": 0
+}
+},
+{
+"name": "Tyler Carpenter",
+"pos": "LSM",
+"num": "5",
+"stats": {
+"P": 0,
+"G1": 0,
+"G2": 0,
+"A": 0,
+"Sh": 1,
+"GB": 6,
+"TO": 1,
+"PAS": 6,
+"TCH": 8,
+"CT": 0,
+"Pen": 0
+}
+},
+{
+"name": "Liam Entenmann",
+"pos": "G",
+"num": "44",
+"stats": {
+"P": 0,
+"G1": 0,
+"G2": 0,
+"A": 0,
+"Sh": 0,
+"GB": 3,
+"TO": null,
+"PAS": null,
+"TCH": 20,
+"CT": 1,
+"Pen": 0,
+"SA": 4,
+"Sv": 14,
+"SvPct": 77.8,
+"CSv": 6,
+"GA": 4
+}
+},
+{
+"name": "Michael Rexrode",
+"pos": "D",
+"num": "22",
+"stats": {
+"P": 0,
+"G1": 0,
+"G2": 0,
+"A": 0,
+"Sh": 0,
+"GB": 2,
+"TO": null,
+"PAS": null,
+"TCH": 6,
+"CT": 1,
+"Pen": 0
+}
+},
+{
+"name": "Gavin Adler",
+"pos": "D",
+"num": "77",
+"stats": {
+"P": 0,
+"G1": 0,
+"G2": 0,
+"A": 0,
+"Sh": 0,
+"GB": 2,
+"TO": null,
+"PAS": null,
+"TCH": 5,
+"CT": 0,
+"Pen": 0
+}
+},
+{
+"name": "Danny Logan",
+"pos": "SSDM",
+"num": "91",
+"stats": {
+"P": 0,
+"G1": 0,
+"G2": 0,
+"A": 0,
+"Sh": 0,
+"GB": 0,
+"TO": null,
+"PAS": null,
+"TCH": 6,
+"CT": null,
+"Pen": null,
+"FOW": 1,
+"FOT": 2
+}
+}
+]
+},
+{
+"team": "Atlas",
+"season": 2024,
+"date": "2024-07-20",
+"opponent": "Cannons",
+"file": "7_20 vs Cannons.xlsx",
+"players": [
+{
+"name": "Bryan Costabile",
+"pos": "M",
+"num": "26",
+"stats": {
+"P": 4,
+"G1": 2,
+"G2": 0,
+"A": 2,
+"Sh": 4,
+"GB": 1,
+"TO": 3,
+"PAS": 25,
+"TCH": 32,
+"CT": 0,
+"Pen": 1
+}
+},
+{
+"name": "Myles Jones",
+"pos": "M",
+"num": "8",
+"stats": {
+"P": 3,
+"G1": 2,
+"G2": 0,
+"A": 1,
+"Sh": 4,
+"GB": 1,
+"TO": 1,
+"PAS": 11,
+"TCH": 16,
+"CT": 0,
+"Pen": 0
+}
+},
+{
+"name": "Jake Stevens",
+"pos": "M",
+"num": "14",
+"stats": {
+"P": 2,
+"G1": 2,
+"G2": 0,
+"A": 0,
+"Sh": 2,
+"GB": 0,
+"TO": 3,
+"PAS": 8,
+"TCH": 13,
+"CT": null,
+"Pen": null
+}
+},
+{
+"name": "Logan McGovern",
+"pos": "M",
+"num": "11",
+"stats": {
+"P": 2,
+"G1": 2,
+"G2": 0,
+"A": 0,
+"Sh": 5,
+"GB": 1,
+"TO": 0,
+"PAS": 18,
+"TCH": 23,
+"CT": 0,
+"Pen": 1
+}
+},
+{
+"name": "Jeff Teat",
+"pos": "A",
+"num": "7",
+"stats": {
+"P": 2,
+"G1": 0,
+"G2": 0,
+"A": 2,
+"Sh": 8,
+"GB": 4,
+"TO": 5,
+"PAS": 18,
+"TCH": 31,
+"CT": null,
+"Pen": null
+}
+},
+{
+"name": "Dox Aitken",
+"pos": "M",
+"num": "6",
+"stats": {
+"P": 1,
+"G1": 1,
+"G2": 0,
+"A": 0,
+"Sh": 6,
+"GB": 1,
+"TO": 0,
+"PAS": 17,
+"TCH": 23,
+"CT": 0,
+"Pen": 0
+}
+},
+{
+"name": "Danny Logan",
+"pos": "SSDM",
+"num": "91",
+"stats": {
+"P": 1,
+"G1": 1,
+"G2": 0,
+"A": 0,
+"Sh": 1,
+"GB": 0,
+"TO": 0,
+"PAS": 8,
+"TCH": 9,
+"CT": 1,
+"Pen": 0,
+"FOW": 0,
+"FOT": 1
+}
+},
+{
+"name": "Xander Dickson",
+"pos": "A",
+"num": "10",
+"stats": {
+"P": 1,
+"G1": 1,
+"G2": 0,
+"A": 0,
+"Sh": 3,
+"GB": 1,
+"TO": 1,
+"PAS": 7,
+"TCH": 11,
+"CT": null,
+"Pen": null
+}
+},
+{
+"name": "Chet Comizio",
+"pos": "SSDM",
+"num": "57",
+"stats": {
+"P": 1,
+"G1": 1,
+"G2": 0,
+"A": 0,
+"Sh": 1,
+"GB": 1,
+"TO": 0,
+"PAS": 5,
+"TCH": 6,
+"CT": 1,
+"Pen": 0
+}
+},
+{
+"name": "Trevor Baptiste",
+"pos": "FO",
+"num": "9",
+"stats": {
+"P": 0,
+"G1": 0,
+"G2": 0,
+"A": 0,
+"Sh": 2,
+"GB": 18,
+"TO": 0,
+"PAS": 19,
+"TCH": 21,
+"CT": 0,
+"Pen": 0,
+"FOW": 22,
+"FOT": 29
+}
+},
+{
+"name": "Koby Smith",
+"pos": "LSM",
+"num": "0",
+"stats": {
+"P": 0,
+"G1": 0,
+"G2": 0,
+"A": 0,
+"Sh": 2,
+"GB": 1,
+"TO": 0,
+"PAS": 0,
+"TCH": 2,
+"CT": 1,
+"Pen": 0
+}
+},
+{
+"name": "Connor Shellenberger",
+"pos": "A",
+"num": "1",
+"stats": {
+"P": 0,
+"G1": 0,
+"G2": 0,
+"A": 0,
+"Sh": 2,
+"GB": 0,
+"TO": 0,
+"PAS": 25,
+"TCH": 27,
+"CT": null,
+"Pen": null
+}
+},
+{
+"name": "Michael Rexrode",
+"pos": "D",
+"num": "22",
+"stats": {
+"P": 0,
+"G1": 0,
+"G2": 0,
+"A": 0,
+"Sh": 0,
+"GB": 2,
+"TO": null,
+"PAS": null,
+"TCH": 5,
+"CT": 2,
+"Pen": 0
+}
+},
+{
+"name": "Gavin Adler",
+"pos": "D",
+"num": "77",
+"stats": {
+"P": 0,
+"G1": 0,
+"G2": 0,
+"A": 0,
+"Sh": 0,
+"GB": 1,
+"TO": null,
+"PAS": null,
+"TCH": 8,
+"CT": 2,
+"Pen": 0
+}
+},
+{
+"name": "Brett Makar",
+"pos": "D",
+"num": "43",
+"stats": {
+"P": 0,
+"G1": 0,
+"G2": 0,
+"A": 0,
+"Sh": 0,
+"GB": 2,
+"TO": null,
+"PAS": null,
+"TCH": 6,
+"CT": 1,
+"Pen": 0
+}
+},
+{
+"name": "Liam Entenmann",
+"pos": "G",
+"num": "44",
+"stats": {
+"P": 0,
+"G1": 0,
+"G2": 0,
+"A": 0,
+"Sh": 0,
+"GB": 6,
+"TO": null,
+"PAS": null,
+"TCH": 18,
+"CT": 0,
+"Pen": 0,
+"SA": 17,
+"Sv": 9,
+"SvPct": 39.1,
+"CSv": 6,
+"GA": 14
+}
+},
+{
+"name": "Tyler Carpenter",
+"pos": "LSM",
+"num": "5",
+"stats": {
+"P": 0,
+"G1": 0,
+"G2": 0,
+"A": 0,
+"Sh": 0,
+"GB": 4,
+"TO": null,
+"PAS": null,
+"TCH": 7,
+"CT": 0,
+"Pen": 0
+}
+},
+{
+"name": "Payton Rezanka",
+"pos": "SSDM",
+"num": "34",
+"stats": {
+"P": 0,
+"G1": 0,
+"G2": 0,
+"A": 0,
+"Sh": 0,
+"GB": 1,
+"TO": null,
+"PAS": null,
+"TCH": 2,
+"CT": 0,
+"Pen": 0
+}
+}
+]
+},
+{
+"team": "Atlas",
+"season": 2024,
+"date": "2024-07-28",
+"opponent": "Waterdogs",
+"file": "7_28 vs Waterdogs.xlsx",
+"players": [
+{
+"name": "Jeff Teat",
+"pos": "A",
+"num": "7",
+"stats": {
+"P": 5,
+"G1": 3,
+"G2": 0,
+"A": 2,
+"Sh": 7,
+"GB": 4,
+"TO": 3,
+"PAS": 27,
+"TCH": 37,
+"CT": null,
+"Pen": null
+}
+},
+{
+"name": "Trevor Baptiste",
+"pos": "FO",
+"num": "9",
+"stats": {
+"P": 2,
+"G1": 2,
+"G2": 0,
+"A": 0,
+"Sh": 2,
+"GB": 11,
+"TO": 1,
+"PAS": 11,
+"TCH": 14,
+"CT": 0,
+"Pen": 0,
+"FOW": 16,
+"FOT": 23
+}
+},
+{
+"name": "Connor Shellenberger",
+"pos": "A",
+"num": "1",
+"stats": {
+"P": 2,
+"G1": 2,
+"G2": 0,
+"A": 0,
+"Sh": 6,
+"GB": 3,
+"TO": 2,
+"PAS": 23,
+"TCH": 31,
+"CT": null,
+"Pen": null
+}
+},
+{
+"name": "Bryan Costabile",
+"pos": "M",
+"num": "26",
+"stats": {
+"P": 2,
+"G1": 1,
+"G2": 0,
+"A": 1,
+"Sh": 4,
+"GB": 3,
+"TO": 0,
+"PAS": 20,
+"TCH": 24,
+"CT": 0,
+"Pen": 0
+}
+},
+{
+"name": "Myles Jones",
+"pos": "M",
+"num": "8",
+"stats": {
+"P": 1,
+"G1": 1,
+"G2": 0,
+"A": 0,
+"Sh": 3,
+"GB": 1,
+"TO": 3,
+"PAS": 6,
+"TCH": 12,
+"CT": 0,
+"Pen": 1
+}
+},
+{
+"name": "Xander Dickson",
+"pos": "A",
+"num": "10",
+"stats": {
+"P": 1,
+"G1": 1,
+"G2": 0,
+"A": 0,
+"Sh": 5,
+"GB": 0,
+"TO": 2,
+"PAS": 11,
+"TCH": 18,
+"CT": null,
+"Pen": null
+}
+},
+{
+"name": "Jake Stevens",
+"pos": "M",
+"num": "14",
+"stats": {
+"P": 1,
+"G1": 1,
+"G2": 0,
+"A": 0,
+"Sh": 7,
+"GB": 0,
+"TO": 0,
+"PAS": 8,
+"TCH": 15,
+"CT": null,
+"Pen": null
+}
+},
+{
+"name": "Logan McGovern",
+"pos": "M",
+"num": "11",
+"stats": {
+"P": 1,
+"G1": 1,
+"G2": 0,
+"A": 0,
+"Sh": 3,
+"GB": 2,
+"TO": 1,
+"PAS": 11,
+"TCH": 15,
+"CT": 0,
+"Pen": 0
+}
+},
+{
+"name": "Koby Smith",
+"pos": "LSM",
+"num": "0",
+"stats": {
+"P": 1,
+"G1": 0,
+"G2": 0,
+"A": 1,
+"Sh": 2,
+"GB": 2,
+"TO": 0,
+"PAS": 3,
+"TCH": 5,
+"CT": 1,
+"Pen": 0
+}
+},
+{
+"name": "Dox Aitken",
+"pos": "M",
+"num": "6",
+"stats": {
+"P": 0,
+"G1": 0,
+"G2": 0,
+"A": 0,
+"Sh": 4,
+"GB": 1,
+"TO": 1,
+"PAS": 19,
+"TCH": 24,
+"CT": 0,
+"Pen": 0
+}
+},
+{
+"name": "Chet Comizio",
+"pos": "SSDM",
+"num": "57",
+"stats": {
+"P": 0,
+"G1": 0,
+"G2": 0,
+"A": 0,
+"Sh": 1,
+"GB": 2,
+"TO": 1,
+"PAS": 7,
+"TCH": 9,
+"CT": 2,
+"Pen": 1
+}
+},
+{
+"name": "Tyler Carpenter",
+"pos": "LSM",
+"num": "5",
+"stats": {
+"P": 0,
+"G1": 0,
+"G2": 0,
+"A": 0,
+"Sh": 1,
+"GB": 3,
+"TO": 0,
+"PAS": 6,
+"TCH": 7,
+"CT": 1,
+"Pen": 0
+}
+},
+{
+"name": "Brett Makar",
+"pos": "D",
+"num": "43",
+"stats": {
+"P": 0,
+"G1": 0,
+"G2": 0,
+"A": 0,
+"Sh": 0,
+"GB": 3,
+"TO": null,
+"PAS": null,
+"TCH": 9,
+"CT": 2,
+"Pen": 0
+}
+},
+{
+"name": "Payton Rezanka",
+"pos": "SSDM",
+"num": "34",
+"stats": {
+"P": 0,
+"G1": 0,
+"G2": 0,
+"A": 0,
+"Sh": 0,
+"GB": 0,
+"TO": null,
+"PAS": null,
+"TCH": 2,
+"CT": 2,
+"Pen": 0
+}
+},
+{
+"name": "Gavin Adler",
+"pos": "D",
+"num": "77",
+"stats": {
+"P": 0,
+"G1": 0,
+"G2": 0,
+"A": 0,
+"Sh": 0,
+"GB": 1,
+"TO": null,
+"PAS": null,
+"TCH": 2,
+"CT": 1,
+"Pen": 1
+}
+},
+{
+"name": "Michael Rexrode",
+"pos": "D",
+"num": "22",
+"stats": {
+"P": 0,
+"G1": 0,
+"G2": 0,
+"A": 0,
+"Sh": 0,
+"GB": 0,
+"TO": null,
+"PAS": null,
+"TCH": 1,
+"CT": 1,
+"Pen": 1
+}
+},
+{
+"name": "Liam Entenmann",
+"pos": "G",
+"num": "44",
+"stats": {
+"P": 0,
+"G1": 0,
+"G2": 0,
+"A": 0,
+"Sh": 0,
+"GB": 5,
+"TO": null,
+"PAS": null,
+"TCH": 14,
+"CT": 0,
+"Pen": 0,
+"SA": 11,
+"Sv": 17,
+"SvPct": 68.0,
+"CSv": 6,
+"GA": 8
+}
+},
+{
+"name": "Danny Logan",
+"pos": "SSDM",
+"num": "91",
+"stats": {
+"P": 0,
+"G1": 0,
+"G2": 0,
+"A": 0,
+"Sh": 0,
+"GB": 1,
+"TO": null,
+"PAS": null,
+"TCH": 5,
+"CT": 0,
+"Pen": 0,
+"FOW": 0,
+"FOT": 1
+}
+}
+]
+},
+{
+"team": "Atlas",
+"season": 2024,
+"date": "2024-08-10",
+"opponent": "Archers",
+"file": "8_10 vs Archers.xlsx",
+"players": [
+{
+"name": "Jeff Teat",
+"pos": "A",
+"num": "7",
+"stats": {
+"P": 7,
+"G1": 2,
+"G2": 0,
+"A": 5,
+"Sh": 8,
+"GB": 0,
+"TO": 1,
+"PAS": 28,
+"TCH": 37,
+"CT": null,
+"Pen": null
+}
+},
+{
+"name": "Dox Aitken",
+"pos": "M",
+"num": "6",
+"stats": {
+"P": 3,
+"G1": 3,
+"G2": 0,
+"A": 0,
+"Sh": 5,
+"GB": 3,
+"TO": 2,
+"PAS": 20,
+"TCH": 27,
+"CT": 0,
+"Pen": 0
+}
+},
+{
+"name": "Xander Dickson",
+"pos": "A",
+"num": "10",
+"stats": {
+"P": 3,
+"G1": 3,
+"G2": 0,
+"A": 0,
+"Sh": 8,
+"GB": 2,
+"TO": 0,
+"PAS": 9,
+"TCH": 17,
+"CT": null,
+"Pen": null
+}
+},
+{
+"name": "Tyler Carpenter",
+"pos": "LSM",
+"num": "5",
+"stats": {
+"P": 3,
+"G1": 0,
+"G2": 1,
+"A": 1,
+"Sh": 1,
+"GB": 2,
+"TO": 1,
+"PAS": 8,
+"TCH": 10,
+"CT": 0,
+"Pen": 0
+}
+},
+{
+"name": "Jake Stevens",
+"pos": "M",
+"num": "14",
+"stats": {
+"P": 2,
+"G1": 2,
+"G2": 0,
+"A": 0,
+"Sh": 3,
+"GB": 1,
+"TO": 0,
+"PAS": 9,
+"TCH": 12,
+"CT": 0,
+"Pen": 0
+}
+},
+{
+"name": "Myles Jones",
+"pos": "M",
+"num": "8",
+"stats": {
+"P": 1,
+"G1": 1,
+"G2": 0,
+"A": 0,
+"Sh": 4,
+"GB": 1,
+"TO": 0,
+"PAS": 6,
+"TCH": 10,
+"CT": 0,
+"Pen": 0
+}
+},
+{
+"name": "Bryan Costabile",
+"pos": "M",
+"num": "26",
+"stats": {
+"P": 1,
+"G1": 1,
+"G2": 0,
+"A": 0,
+"Sh": 5,
+"GB": 2,
+"TO": 2,
+"PAS": 20,
+"TCH": 27,
+"CT": 0,
+"Pen": 0
+}
+},
+{
+"name": "Connor Shellenberger",
+"pos": "A",
+"num": "1",
+"stats": {
+"P": 1,
+"G1": 1,
+"G2": 0,
+"A": 0,
+"Sh": 4,
+"GB": 3,
+"TO": 0,
+"PAS": 24,
+"TCH": 28,
+"CT": null,
+"Pen": null
+}
+},
+{
+"name": "Trevor Baptiste",
+"pos": "FO",
+"num": "9",
+"stats": {
+"P": 0,
+"G1": 0,
+"G2": 0,
+"A": 0,
+"Sh": 2,
+"GB": 7,
+"TO": 1,
+"PAS": 6,
+"TCH": 9,
+"CT": 0,
+"Pen": 1,
+"FOW": 14,
+"FOT": 25
+}
+},
+{
+"name": "Danny Logan",
+"pos": "SSDM",
+"num": "91",
+"stats": {
+"P": 0,
+"G1": 0,
+"G2": 0,
+"A": 0,
+"Sh": 1,
+"GB": 3,
+"TO": 0,
+"PAS": 8,
+"TCH": 9,
+"CT": 0,
+"Pen": 0,
+"FOW": 1,
+"FOT": 2
+}
+},
+{
+"name": "Koby Smith",
+"pos": "LSM",
+"num": "0",
+"stats": {
+"P": 0,
+"G1": 0,
+"G2": 0,
+"A": 0,
+"Sh": 1,
+"GB": 0,
+"TO": 0,
+"PAS": 4,
+"TCH": 5,
+"CT": null,
+"Pen": null
+}
+},
+{
+"name": "Payton Rezanka",
+"pos": "SSDM",
+"num": "34",
+"stats": {
+"P": 0,
+"G1": 0,
+"G2": 0,
+"A": 0,
+"Sh": 1,
+"GB": 1,
+"TO": 0,
+"PAS": 6,
+"TCH": 7,
+"CT": 0,
+"Pen": 0
+}
+},
+{
+"name": "Ronan Jacoby",
+"pos": "M",
+"num": "88",
+"stats": {
+"P": 0,
+"G1": 0,
+"G2": 0,
+"A": 0,
+"Sh": 3,
+"GB": 0,
+"TO": 0,
+"PAS": 15,
+"TCH": 18,
+"CT": null,
+"Pen": null
+}
+},
+{
+"name": "Gavin Adler",
+"pos": "D",
+"num": "77",
+"stats": {
+"P": 0,
+"G1": 0,
+"G2": 0,
+"A": 0,
+"Sh": 0,
+"GB": 4,
+"TO": null,
+"PAS": null,
+"TCH": 8,
+"CT": 4,
+"Pen": 0
+}
+},
+{
+"name": "Chet Comizio",
+"pos": "SSDM",
+"num": "57",
+"stats": {
+"P": 0,
+"G1": 0,
+"G2": 0,
+"A": 0,
+"Sh": 0,
+"GB": 1,
+"TO": null,
+"PAS": null,
+"TCH": 9,
+"CT": 2,
+"Pen": 0
+}
+},
+{
+"name": "Brett Makar",
+"pos": "D",
+"num": "43",
+"stats": {
+"P": 0,
+"G1": 0,
+"G2": 0,
+"A": 0,
+"Sh": 0,
+"GB": 4,
+"TO": null,
+"PAS": null,
+"TCH": 7,
+"CT": 1,
+"Pen": 0
+}
+},
+{
+"name": "Michael Rexrode",
+"pos": "D",
+"num": "22",
+"stats": {
+"P": 0,
+"G1": 0,
+"G2": 0,
+"A": 0,
+"Sh": 0,
+"GB": 0,
+"TO": null,
+"PAS": null,
+"TCH": 4,
+"CT": 1,
+"Pen": 0
+}
+},
+{
+"name": "Liam Entenmann",
+"pos": "G",
+"num": "44",
+"stats": {
+"P": 0,
+"G1": 0,
+"G2": 0,
+"A": 0,
+"Sh": 0,
+"GB": 1,
+"TO": null,
+"PAS": null,
+"TCH": 19,
+"CT": 0,
+"Pen": 0,
+"SA": 11,
+"Sv": 13,
+"SvPct": 59.1,
+"CSv": 6,
+"GA": 9
+}
+}
+]
+},
+{
+"team": "Atlas",
+"season": 2024,
+"date": "2024-08-17",
+"opponent": "Waterdogs",
+"file": "8_17 vs Waterdogs.xlsx",
+"players": [
+{
+"name": "Payton Cormier",
+"pos": "A",
+"num": "24",
+"stats": {
+"P": 6,
+"G1": 5,
+"G2": 0,
+"A": 1,
+"Sh": 9,
+"GB": 1,
+"TO": 0,
+"PAS": 10,
+"TCH": 19,
+"CT": null,
+"Pen": null
+}
+},
+{
+"name": "Jeff Teat",
+"pos": "A",
+"num": "7",
+"stats": {
+"P": 6,
+"G1": 3,
+"G2": 0,
+"A": 3,
+"Sh": 9,
+"GB": 4,
+"TO": 2,
+"PAS": 31,
+"TCH": 42,
+"CT": null,
+"Pen": null
+}
+},
+{
+"name": "Xander Dickson",
+"pos": "A",
+"num": "10",
+"stats": {
+"P": 3,
+"G1": 1,
+"G2": 0,
+"A": 2,
+"Sh": 5,
+"GB": 2,
+"TO": 2,
+"PAS": 20,
+"TCH": 27,
+"CT": null,
+"Pen": null
+}
+},
+{
+"name": "Bryan Costabile",
+"pos": "M",
+"num": "26",
+"stats": {
+"P": 2,
+"G1": 2,
+"G2": 0,
+"A": 0,
+"Sh": 5,
+"GB": 2,
+"TO": 2,
+"PAS": 19,
+"TCH": 26,
+"CT": 1,
+"Pen": 0
+}
+},
+{
+"name": "Jake Stevens",
+"pos": "M",
+"num": "14",
+"stats": {
+"P": 2,
+"G1": 0,
+"G2": 0,
+"A": 2,
+"Sh": 5,
+"GB": 3,
+"TO": 3,
+"PAS": 12,
+"TCH": 20,
+"CT": 0,
+"Pen": 0
+}
+},
+{
+"name": "Dox Aitken",
+"pos": "M",
+"num": "6",
+"stats": {
+"P": 1,
+"G1": 1,
+"G2": 0,
+"A": 0,
+"Sh": 3,
+"GB": 0,
+"TO": 1,
+"PAS": 12,
+"TCH": 16,
+"CT": null,
+"Pen": null
+}
+},
+{
+"name": "Myles Jones",
+"pos": "M",
+"num": "8",
+"stats": {
+"P": 1,
+"G1": 0,
+"G2": 0,
+"A": 1,
+"Sh": 2,
+"GB": 2,
+"TO": 4,
+"PAS": 11,
+"TCH": 17,
+"CT": 0,
+"Pen": 0
+}
+},
+{
+"name": "Koby Smith",
+"pos": "LSM",
+"num": "0",
+"stats": {
+"P": 0,
+"G1": 0,
+"G2": 0,
+"A": 0,
+"Sh": 1,
+"GB": 1,
+"TO": 0,
+"PAS": 6,
+"TCH": 7,
+"CT": 1,
+"Pen": 0
+}
+},
+{
+"name": "Chet Comizio",
+"pos": "SSDM",
+"num": "57",
+"stats": {
+"P": 0,
+"G1": 0,
+"G2": 0,
+"A": 0,
+"Sh": 1,
+"GB": 1,
+"TO": 1,
+"PAS": 9,
+"TCH": 11,
+"CT": 0,
+"Pen": 0
+}
+},
+{
+"name": "Logan McGovern",
+"pos": "M",
+"num": "11",
+"stats": {
+"P": 0,
+"G1": 0,
+"G2": 0,
+"A": 0,
+"Sh": 3,
+"GB": 1,
+"TO": 2,
+"PAS": 16,
+"TCH": 21,
+"CT": 0,
+"Pen": 0
+}
+},
+{
+"name": "Gavin Adler",
+"pos": "D",
+"num": "77",
+"stats": {
+"P": 0,
+"G1": 0,
+"G2": 0,
+"A": 0,
+"Sh": 0,
+"GB": 1,
+"TO": null,
+"PAS": null,
+"TCH": 6,
+"CT": 3,
+"Pen": 0
+}
+},
+{
+"name": "Brett Makar",
+"pos": "D",
+"num": "43",
+"stats": {
+"P": 0,
+"G1": 0,
+"G2": 0,
+"A": 0,
+"Sh": 0,
+"GB": 5,
+"TO": null,
+"PAS": null,
+"TCH": 8,
+"CT": 1,
+"Pen": 1
+}
+},
+{
+"name": "Liam Entenmann",
+"pos": "G",
+"num": "44",
+"stats": {
+"P": 0,
+"G1": 0,
+"G2": 0,
+"A": 0,
+"Sh": 0,
+"GB": 4,
+"TO": null,
+"PAS": null,
+"TCH": 16,
+"CT": 1,
+"Pen": 0,
+"SA": 13,
+"Sv": 14,
+"SvPct": 51.9,
+"CSv": 7,
+"GA": 13
+}
+},
+{
+"name": "Trevor Baptiste",
+"pos": "FO",
+"num": "9",
+"stats": {
+"P": 0,
+"G1": 0,
+"G2": 0,
+"A": 0,
+"Sh": 0,
+"GB": 14,
+"TO": null,
+"PAS": null,
+"TCH": 19,
+"CT": 0,
+"Pen": 0,
+"FOW": 22,
+"FOT": 29
+}
+},
+{
+"name": "Tyler Carpenter",
+"pos": "LSM",
+"num": "5",
+"stats": {
+"P": 0,
+"G1": 0,
+"G2": 0,
+"A": 0,
+"Sh": 0,
+"GB": 2,
+"TO": null,
+"PAS": null,
+"TCH": 5,
+"CT": 0,
+"Pen": 0
+}
+},
+{
+"name": "Michael Rexrode",
+"pos": "D",
+"num": "22",
+"stats": {
+"P": 0,
+"G1": 0,
+"G2": 0,
+"A": 0,
+"Sh": 0,
+"GB": 1,
+"TO": null,
+"PAS": null,
+"TCH": 4,
+"CT": 0,
+"Pen": 0
+}
+},
+{
+"name": "Danny Logan",
+"pos": "SSDM",
+"num": "91",
+"stats": {
+"P": 0,
+"G1": 0,
+"G2": 0,
+"A": 0,
+"Sh": 0,
+"GB": 1,
+"TO": null,
+"PAS": null,
+"TCH": 4,
+"CT": 0,
+"Pen": 0
+}
+}
+]
+},
+{
+"team": "Atlas",
+"season": 2024,
+"date": "2024-09-07",
+"opponent": "Whipsnakes",
+"file": "9_7 vs Whipsnakes.xlsx",
+"players": [
+{
+"name": "Trevor Baptiste",
+"pos": "FO",
+"num": "9",
+"stats": {
+"P": 3,
+"G1": 1,
+"G2": 1,
+"A": 0,
+"Sh": 2,
+"GB": 9,
+"TO": 1,
+"PAS": 6,
+"TCH": 9,
+"CT": 1,
+"Pen": 0,
+"FOW": 11,
+"FOT": 23
+}
+},
+{
+"name": "Bryan Costabile",
+"pos": "M",
+"num": "26",
+"stats": {
+"P": 3,
+"G1": 1,
+"G2": 1,
+"A": 0,
+"Sh": 6,
+"GB": 1,
+"TO": 2,
+"PAS": 21,
+"TCH": 29,
+"CT": 0,
+"Pen": 0
+}
+},
+{
+"name": "Jeff Teat",
+"pos": "A",
+"num": "7",
+"stats": {
+"P": 2,
+"G1": 2,
+"G2": 0,
+"A": 0,
+"Sh": 8,
+"GB": 1,
+"TO": 3,
+"PAS": 27,
+"TCH": 38,
+"CT": null,
+"Pen": null
+}
+},
+{
+"name": "Dox Aitken",
+"pos": "M",
+"num": "6",
+"stats": {
+"P": 2,
+"G1": 1,
+"G2": 0,
+"A": 1,
+"Sh": 8,
+"GB": 1,
+"TO": 1,
+"PAS": 32,
+"TCH": 41,
+"CT": 0,
+"Pen": 0
+}
+},
+{
+"name": "Connor Shellenberger",
+"pos": "A",
+"num": "1",
+"stats": {
+"P": 2,
+"G1": 1,
+"G2": 0,
+"A": 1,
+"Sh": 9,
+"GB": 2,
+"TO": 1,
+"PAS": 29,
+"TCH": 39,
+"CT": null,
+"Pen": null
+}
+},
+{
+"name": "Myles Jones",
+"pos": "M",
+"num": "8",
+"stats": {
+"P": 1,
+"G1": 1,
+"G2": 0,
+"A": 0,
+"Sh": 3,
+"GB": 0,
+"TO": 0,
+"PAS": 9,
+"TCH": 12,
+"CT": null,
+"Pen": null
+}
+},
+{
+"name": "Danny Logan",
+"pos": "SSDM",
+"num": "91",
+"stats": {
+"P": 1,
+"G1": 0,
+"G2": 0,
+"A": 1,
+"Sh": 0,
+"GB": 0,
+"TO": 0,
+"PAS": 10,
+"TCH": 10,
+"CT": null,
+"Pen": null,
+"FOW": 1,
+"FOT": 2
+}
+},
+{
+"name": "Gavin Adler",
+"pos": "D",
+"num": "77",
+"stats": {
+"P": 1,
+"G1": 0,
+"G2": 0,
+"A": 1,
+"Sh": 0,
+"GB": 1,
+"TO": 0,
+"PAS": 10,
+"TCH": 10,
+"CT": 0,
+"Pen": 0
+}
+},
+{
+"name": "Koby Smith",
+"pos": "LSM",
+"num": "0",
+"stats": {
+"P": 0,
+"G1": 0,
+"G2": 0,
+"A": 0,
+"Sh": 1,
+"GB": 3,
+"TO": 1,
+"PAS": 4,
+"TCH": 6,
+"CT": 0,
+"Pen": 0
+}
+},
+{
+"name": "Xander Dickson",
+"pos": "A",
+"num": "10",
+"stats": {
+"P": 0,
+"G1": 0,
+"G2": 0,
+"A": 0,
+"Sh": 4,
+"GB": 2,
+"TO": 1,
+"PAS": 9,
+"TCH": 14,
+"CT": null,
+"Pen": null
+}
+},
+{
+"name": "Chet Comizio",
+"pos": "SSDM",
+"num": "57",
+"stats": {
+"P": 0,
+"G1": 0,
+"G2": 0,
+"A": 0,
+"Sh": 2,
+"GB": 2,
+"TO": 0,
+"PAS": 3,
+"TCH": 5,
+"CT": 0,
+"Pen": 1
+}
+},
+{
+"name": "Jake Stevens",
+"pos": "M",
+"num": "14",
+"stats": {
+"P": 0,
+"G1": 0,
+"G2": 0,
+"A": 0,
+"Sh": 2,
+"GB": 1,
+"TO": 1,
+"PAS": 8,
+"TCH": 11,
+"CT": 0,
+"Pen": 0
+}
+},
+{
+"name": "Payton Cormier",
+"pos": "A",
+"num": "24",
+"stats": {
+"P": 0,
+"G1": 0,
+"G2": 0,
+"A": 0,
+"Sh": 3,
+"GB": 0,
+"TO": 1,
+"PAS": 12,
+"TCH": 16,
+"CT": null,
+"Pen": null
+}
+},
+{
+"name": "Brett Makar",
+"pos": "D",
+"num": "43",
+"stats": {
+"P": 0,
+"G1": 0,
+"G2": 0,
+"A": 0,
+"Sh": 0,
+"GB": 3,
+"TO": null,
+"PAS": null,
+"TCH": 9,
+"CT": 4,
+"Pen": 0
+}
+},
+{
+"name": "Michael Rexrode",
+"pos": "D",
+"num": "22",
+"stats": {
+"P": 0,
+"G1": 0,
+"G2": 0,
+"A": 0,
+"Sh": 0,
+"GB": 3,
+"TO": null,
+"PAS": null,
+"TCH": 7,
+"CT": 2,
+"Pen": 0
+}
+},
+{
+"name": "Tyler Carpenter",
+"pos": "LSM",
+"num": "5",
+"stats": {
+"P": 0,
+"G1": 0,
+"G2": 0,
+"A": 0,
+"Sh": 0,
+"GB": 1,
+"TO": null,
+"PAS": null,
+"TCH": 6,
+"CT": 1,
+"Pen": 0
+}
+},
+{
+"name": "Liam Entenmann",
+"pos": "G",
+"num": "44",
+"stats": {
+"P": 0,
+"G1": 0,
+"G2": 0,
+"A": 0,
+"Sh": 0,
+"GB": 4,
+"TO": null,
+"PAS": null,
+"TCH": 23,
+"CT": 0,
+"Pen": 0,
+"SA": 12,
+"Sv": 9,
+"SvPct": 42.9,
+"CSv": 3,
+"GA": 12
+}
+},
+{
+"name": "Payton Rezanka",
+"pos": "SSDM",
+"num": "34",
+"stats": {
+"P": 0,
+"G1": 0,
+"G2": 0,
+"A": 0,
+"Sh": 0,
+"GB": 1,
+"TO": null,
+"PAS": null,
+"TCH": 4,
+"CT": 0,
+"Pen": 0
 }
 }
 ]
@@ -62615,6 +70266,3384 @@
 },
 {
 "team": "Waterdogs",
+"season": 2024,
+"date": "2024-06-01",
+"opponent": "Archers",
+"file": "6_1 vs Archers.xlsx",
+"players": [
+{
+"name": "Connor Kelly",
+"pos": "M",
+"num": "40",
+"stats": {
+"P": 3,
+"G1": 3,
+"G2": 0,
+"A": 0,
+"Sh": 11,
+"GB": 0,
+"TO": 0,
+"PAS": 17,
+"TCH": 28,
+"CT": null,
+"Pen": null
+}
+},
+{
+"name": "Michael Sowers",
+"pos": "A",
+"num": "22",
+"stats": {
+"P": 3,
+"G1": 1,
+"G2": 0,
+"A": 2,
+"Sh": 10,
+"GB": 1,
+"TO": 0,
+"PAS": 39,
+"TCH": 49,
+"CT": null,
+"Pen": null
+}
+},
+{
+"name": "Matt Whitcher",
+"pos": "SSDM",
+"num": "33",
+"stats": {
+"P": 2,
+"G1": 2,
+"G2": 0,
+"A": 0,
+"Sh": 2,
+"GB": 1,
+"TO": 1,
+"PAS": 7,
+"TCH": 10,
+"CT": 2,
+"Pen": 0
+}
+},
+{
+"name": "Kieran McArdle",
+"pos": "A",
+"num": "6",
+"stats": {
+"P": 2,
+"G1": 1,
+"G2": 0,
+"A": 1,
+"Sh": 9,
+"GB": 2,
+"TO": 2,
+"PAS": 32,
+"TCH": 43,
+"CT": null,
+"Pen": null
+}
+},
+{
+"name": "Ethan Walker",
+"pos": "A",
+"num": "57",
+"stats": {
+"P": 2,
+"G1": 1,
+"G2": 0,
+"A": 1,
+"Sh": 4,
+"GB": 1,
+"TO": 0,
+"PAS": 28,
+"TCH": 32,
+"CT": null,
+"Pen": null
+}
+},
+{
+"name": "Matt Brandau",
+"pos": "A",
+"num": "36",
+"stats": {
+"P": 2,
+"G1": 1,
+"G2": 0,
+"A": 1,
+"Sh": 3,
+"GB": 1,
+"TO": 1,
+"PAS": 6,
+"TCH": 10,
+"CT": null,
+"Pen": null
+}
+},
+{
+"name": "Ryan Conrad",
+"pos": "M",
+"num": "23",
+"stats": {
+"P": 1,
+"G1": 1,
+"G2": 0,
+"A": 0,
+"Sh": 5,
+"GB": 1,
+"TO": 1,
+"PAS": 11,
+"TCH": 17,
+"CT": 0,
+"Pen": 1
+}
+},
+{
+"name": "Jake Carraway",
+"pos": "M",
+"num": "19",
+"stats": {
+"P": 1,
+"G1": 1,
+"G2": 0,
+"A": 0,
+"Sh": 3,
+"GB": 1,
+"TO": 0,
+"PAS": 20,
+"TCH": 23,
+"CT": 0,
+"Pen": 0
+}
+},
+{
+"name": "Zach Currier",
+"pos": "M",
+"num": "77",
+"stats": {
+"P": 1,
+"G1": 0,
+"G2": 0,
+"A": 1,
+"Sh": 1,
+"GB": 1,
+"TO": 0,
+"PAS": 8,
+"TCH": 9,
+"CT": 2,
+"Pen": 0,
+"FOW": 2,
+"FOT": 24
+}
+},
+{
+"name": "Jake Richard",
+"pos": "SSDM",
+"num": "10",
+"stats": {
+"P": 0,
+"G1": 0,
+"G2": 0,
+"A": 0,
+"Sh": 1,
+"GB": 1,
+"TO": 0,
+"PAS": 4,
+"TCH": 5,
+"CT": 0,
+"Pen": 1,
+"FOW": 0,
+"FOT": 1
+}
+},
+{
+"name": "Liam Byrnes",
+"pos": "D",
+"num": "21",
+"stats": {
+"P": 0,
+"G1": 0,
+"G2": 0,
+"A": 0,
+"Sh": 1,
+"GB": 2,
+"TO": 0,
+"PAS": 7,
+"TCH": 8,
+"CT": 1,
+"Pen": 0
+}
+},
+{
+"name": "Thomas McConvey",
+"pos": "M",
+"num": "12",
+"stats": {
+"P": 0,
+"G1": 0,
+"G2": 0,
+"A": 0,
+"Sh": 1,
+"GB": 0,
+"TO": 0,
+"PAS": 6,
+"TCH": 7,
+"CT": 1,
+"Pen": 0
+}
+},
+{
+"name": "Eli Gobrecht",
+"pos": "D",
+"num": "25",
+"stats": {
+"P": 0,
+"G1": 0,
+"G2": 0,
+"A": 0,
+"Sh": 0,
+"GB": 2,
+"TO": null,
+"PAS": null,
+"TCH": 5,
+"CT": 2,
+"Pen": 1
+}
+},
+{
+"name": "Chris Sabia",
+"pos": "LSM",
+"num": "16",
+"stats": {
+"P": 0,
+"G1": 0,
+"G2": 0,
+"A": 0,
+"Sh": 0,
+"GB": 1,
+"TO": null,
+"PAS": null,
+"TCH": 4,
+"CT": 2,
+"Pen": 0
+}
+},
+{
+"name": "Ben Randall",
+"pos": "D",
+"num": "44",
+"stats": {
+"P": 0,
+"G1": 0,
+"G2": 0,
+"A": 0,
+"Sh": 0,
+"GB": 3,
+"TO": null,
+"PAS": null,
+"TCH": 12,
+"CT": 1,
+"Pen": 0
+}
+},
+{
+"name": "Christian Scarpello",
+"pos": "SSDM",
+"num": "50",
+"stats": {
+"P": 0,
+"G1": 0,
+"G2": 0,
+"A": 0,
+"Sh": 0,
+"GB": 3,
+"TO": null,
+"PAS": null,
+"TCH": 10,
+"CT": 1,
+"Pen": 0,
+"FOW": 0,
+"FOT": 1
+}
+},
+{
+"name": "Ryland Rees",
+"pos": "LSM",
+"num": "17",
+"stats": {
+"P": 0,
+"G1": 0,
+"G2": 0,
+"A": 0,
+"Sh": 0,
+"GB": 2,
+"TO": null,
+"PAS": null,
+"TCH": 5,
+"CT": 0,
+"Pen": 0
+}
+},
+{
+"name": "Dillon Ward",
+"pos": "G",
+"num": "37",
+"stats": {
+"P": 0,
+"G1": 0,
+"G2": 0,
+"A": 0,
+"Sh": 0,
+"GB": 2,
+"TO": null,
+"PAS": null,
+"TCH": 18,
+"CT": 0,
+"Pen": 0,
+"SA": 12,
+"Sv": 8,
+"SvPct": 42.1,
+"CSv": 3,
+"GA": 11
+}
+},
+{
+"name": "Matt DeLuca",
+"pos": "G",
+"num": "1",
+"stats": {
+"P": 0,
+"G1": 0,
+"G2": 0,
+"A": 0,
+"Sh": 0,
+"GB": 0,
+"TO": null,
+"PAS": null,
+"TCH": 0,
+"CT": null,
+"Pen": null,
+"SA": 0,
+"Sv": 1,
+"SvPct": 100.0,
+"CSv": 1,
+"GA": 0
+}
+}
+]
+},
+{
+"team": "Waterdogs",
+"season": 2024,
+"date": "2024-06-15",
+"opponent": "Cannons",
+"file": "6_15 vs Cannons.xlsx",
+"players": [
+{
+"name": "Michael Sowers",
+"pos": "A",
+"num": "22",
+"stats": {
+"P": 8,
+"G1": 3,
+"G2": 0,
+"A": 5,
+"Sh": 4,
+"GB": 0,
+"TO": 2,
+"PAS": 46,
+"TCH": 52,
+"CT": null,
+"Pen": null
+}
+},
+{
+"name": "Kieran McArdle",
+"pos": "A",
+"num": "6",
+"stats": {
+"P": 6,
+"G1": 4,
+"G2": 0,
+"A": 2,
+"Sh": 9,
+"GB": 0,
+"TO": 1,
+"PAS": 31,
+"TCH": 41,
+"CT": null,
+"Pen": null
+}
+},
+{
+"name": "Ryan Conrad",
+"pos": "M",
+"num": "23",
+"stats": {
+"P": 2,
+"G1": 2,
+"G2": 0,
+"A": 0,
+"Sh": 8,
+"GB": 1,
+"TO": 1,
+"PAS": 9,
+"TCH": 18,
+"CT": 0,
+"Pen": 0
+}
+},
+{
+"name": "Connor Kelly",
+"pos": "M",
+"num": "40",
+"stats": {
+"P": 1,
+"G1": 1,
+"G2": 0,
+"A": 0,
+"Sh": 8,
+"GB": 0,
+"TO": 3,
+"PAS": 25,
+"TCH": 36,
+"CT": null,
+"Pen": null
+}
+},
+{
+"name": "Zach Currier",
+"pos": "M",
+"num": "77",
+"stats": {
+"P": 1,
+"G1": 1,
+"G2": 0,
+"A": 0,
+"Sh": 2,
+"GB": 4,
+"TO": 2,
+"PAS": 14,
+"TCH": 18,
+"CT": 2,
+"Pen": 0,
+"FOW": 6,
+"FOT": 20
+}
+},
+{
+"name": "Jake Carraway",
+"pos": "M",
+"num": "19",
+"stats": {
+"P": 0,
+"G1": 0,
+"G2": 0,
+"A": 0,
+"Sh": 1,
+"GB": 1,
+"TO": 1,
+"PAS": 10,
+"TCH": 12,
+"CT": 0,
+"Pen": 0
+}
+},
+{
+"name": "Ethan Walker",
+"pos": "A",
+"num": "57",
+"stats": {
+"P": 0,
+"G1": 0,
+"G2": 0,
+"A": 0,
+"Sh": 4,
+"GB": 1,
+"TO": 1,
+"PAS": 31,
+"TCH": 36,
+"CT": null,
+"Pen": null
+}
+},
+{
+"name": "Thomas McConvey",
+"pos": "M",
+"num": "12",
+"stats": {
+"P": 0,
+"G1": 0,
+"G2": 0,
+"A": 0,
+"Sh": 2,
+"GB": 0,
+"TO": 0,
+"PAS": 7,
+"TCH": 9,
+"CT": null,
+"Pen": null
+}
+},
+{
+"name": "Matt Brandau",
+"pos": "A",
+"num": "36",
+"stats": {
+"P": 0,
+"G1": 0,
+"G2": 0,
+"A": 0,
+"Sh": 2,
+"GB": 0,
+"TO": 0,
+"PAS": 7,
+"TCH": 9,
+"CT": null,
+"Pen": null
+}
+},
+{
+"name": "Ben Randall",
+"pos": "D",
+"num": "44",
+"stats": {
+"P": 0,
+"G1": 0,
+"G2": 0,
+"A": 0,
+"Sh": 0,
+"GB": 1,
+"TO": null,
+"PAS": null,
+"TCH": 9,
+"CT": 2,
+"Pen": 1
+}
+},
+{
+"name": "Liam Byrnes",
+"pos": "D",
+"num": "21",
+"stats": {
+"P": 0,
+"G1": 0,
+"G2": 0,
+"A": 0,
+"Sh": 0,
+"GB": 0,
+"TO": null,
+"PAS": null,
+"TCH": 8,
+"CT": 2,
+"Pen": 0
+}
+},
+{
+"name": "Marcus Hudgins",
+"pos": "D",
+"num": "11",
+"stats": {
+"P": 0,
+"G1": 0,
+"G2": 0,
+"A": 0,
+"Sh": 0,
+"GB": 3,
+"TO": null,
+"PAS": null,
+"TCH": 7,
+"CT": 1,
+"Pen": 0
+}
+},
+{
+"name": "Jake Richard",
+"pos": "SSDM",
+"num": "10",
+"stats": {
+"P": 0,
+"G1": 0,
+"G2": 0,
+"A": 0,
+"Sh": 0,
+"GB": 2,
+"TO": null,
+"PAS": null,
+"TCH": 4,
+"CT": 1,
+"Pen": 1,
+"FOW": 0,
+"FOT": 3
+}
+},
+{
+"name": "Ryland Rees",
+"pos": "LSM",
+"num": "17",
+"stats": {
+"P": 0,
+"G1": 0,
+"G2": 0,
+"A": 0,
+"Sh": 0,
+"GB": 2,
+"TO": null,
+"PAS": null,
+"TCH": 4,
+"CT": 1,
+"Pen": 0
+}
+},
+{
+"name": "Christian Scarpello",
+"pos": "SSDM",
+"num": "50",
+"stats": {
+"P": 0,
+"G1": 0,
+"G2": 0,
+"A": 0,
+"Sh": 0,
+"GB": 2,
+"TO": null,
+"PAS": null,
+"TCH": 7,
+"CT": 1,
+"Pen": 0,
+"FOW": 0,
+"FOT": 1
+}
+},
+{
+"name": "Dillon Ward",
+"pos": "G",
+"num": "37",
+"stats": {
+"P": 0,
+"G1": 0,
+"G2": 0,
+"A": 0,
+"Sh": 0,
+"GB": 4,
+"TO": null,
+"PAS": null,
+"TCH": 14,
+"CT": 0,
+"Pen": 0,
+"SA": 12,
+"Sv": 13,
+"SvPct": 56.5,
+"CSv": 2,
+"GA": 10
+}
+}
+]
+},
+{
+"team": "Waterdogs",
+"season": 2024,
+"date": "2024-06-16",
+"opponent": "Whipsnakes",
+"file": "6_16 vs Whipsnakes.xlsx",
+"players": [
+{
+"name": "Zach Currier",
+"pos": "M",
+"num": "77",
+"stats": {
+"P": 5,
+"G1": 3,
+"G2": 0,
+"A": 2,
+"Sh": 4,
+"GB": 1,
+"TO": 1,
+"PAS": 14,
+"TCH": 19,
+"CT": 0,
+"Pen": 0,
+"FOW": 0,
+"FOT": 1
+}
+},
+{
+"name": "Michael Sowers",
+"pos": "A",
+"num": "22",
+"stats": {
+"P": 3,
+"G1": 3,
+"G2": 0,
+"A": 0,
+"Sh": 10,
+"GB": 0,
+"TO": 0,
+"PAS": 34,
+"TCH": 44,
+"CT": null,
+"Pen": null
+}
+},
+{
+"name": "Kieran McArdle",
+"pos": "A",
+"num": "6",
+"stats": {
+"P": 3,
+"G1": 2,
+"G2": 0,
+"A": 1,
+"Sh": 8,
+"GB": 1,
+"TO": 1,
+"PAS": 27,
+"TCH": 36,
+"CT": null,
+"Pen": null
+}
+},
+{
+"name": "Jake Carraway",
+"pos": "M",
+"num": "19",
+"stats": {
+"P": 2,
+"G1": 2,
+"G2": 0,
+"A": 0,
+"Sh": 5,
+"GB": 2,
+"TO": 0,
+"PAS": 11,
+"TCH": 16,
+"CT": 0,
+"Pen": 0
+}
+},
+{
+"name": "Ryan Conrad",
+"pos": "M",
+"num": "23",
+"stats": {
+"P": 2,
+"G1": 1,
+"G2": 0,
+"A": 1,
+"Sh": 5,
+"GB": 2,
+"TO": 0,
+"PAS": 20,
+"TCH": 25,
+"CT": 0,
+"Pen": 0,
+"FOW": 0,
+"FOT": 1
+}
+},
+{
+"name": "Ethan Walker",
+"pos": "A",
+"num": "57",
+"stats": {
+"P": 2,
+"G1": 1,
+"G2": 0,
+"A": 1,
+"Sh": 3,
+"GB": 1,
+"TO": 2,
+"PAS": 22,
+"TCH": 27,
+"CT": null,
+"Pen": null
+}
+},
+{
+"name": "Connor Kelly",
+"pos": "M",
+"num": "40",
+"stats": {
+"P": 1,
+"G1": 1,
+"G2": 0,
+"A": 0,
+"Sh": 4,
+"GB": 0,
+"TO": 2,
+"PAS": 8,
+"TCH": 14,
+"CT": null,
+"Pen": null
+}
+},
+{
+"name": "Matt Brandau",
+"pos": "A",
+"num": "36",
+"stats": {
+"P": 1,
+"G1": 1,
+"G2": 0,
+"A": 0,
+"Sh": 3,
+"GB": 2,
+"TO": 2,
+"PAS": 9,
+"TCH": 14,
+"CT": null,
+"Pen": null
+}
+},
+{
+"name": "Ben Randall",
+"pos": "D",
+"num": "44",
+"stats": {
+"P": 1,
+"G1": 0,
+"G2": 0,
+"A": 1,
+"Sh": 0,
+"GB": 1,
+"TO": 0,
+"PAS": 14,
+"TCH": 14,
+"CT": 1,
+"Pen": 0
+}
+},
+{
+"name": "Liam Byrnes",
+"pos": "D",
+"num": "21",
+"stats": {
+"P": 0,
+"G1": 0,
+"G2": 0,
+"A": 0,
+"Sh": 1,
+"GB": 0,
+"TO": 1,
+"PAS": 10,
+"TCH": 12,
+"CT": 2,
+"Pen": 0
+}
+},
+{
+"name": "Matt Whitcher",
+"pos": "SSDM",
+"num": "33",
+"stats": {
+"P": 0,
+"G1": 0,
+"G2": 0,
+"A": 0,
+"Sh": 2,
+"GB": 0,
+"TO": 0,
+"PAS": 1,
+"TCH": 3,
+"CT": 1,
+"Pen": 0,
+"FOW": 0,
+"FOT": 14
+}
+},
+{
+"name": "Marcus Hudgins",
+"pos": "D",
+"num": "11",
+"stats": {
+"P": 0,
+"G1": 0,
+"G2": 0,
+"A": 0,
+"Sh": 0,
+"GB": 3,
+"TO": null,
+"PAS": null,
+"TCH": 7,
+"CT": 4,
+"Pen": 0
+}
+},
+{
+"name": "Charlie Hayes",
+"pos": "SSDM",
+"num": "23",
+"stats": {
+"P": 0,
+"G1": 0,
+"G2": 0,
+"A": 0,
+"Sh": 0,
+"GB": 4,
+"TO": null,
+"PAS": null,
+"TCH": 8,
+"CT": 2,
+"Pen": 0,
+"FOW": 0,
+"FOT": 2
+}
+},
+{
+"name": "Dillon Ward",
+"pos": "G",
+"num": "37",
+"stats": {
+"P": 0,
+"G1": 0,
+"G2": 0,
+"A": 0,
+"Sh": 0,
+"GB": 3,
+"TO": null,
+"PAS": null,
+"TCH": 18,
+"CT": 0,
+"Pen": 0,
+"SA": 15,
+"Sv": 17,
+"SvPct": 56.7,
+"CSv": 7,
+"GA": 13
+}
+},
+{
+"name": "Christian Scarpello",
+"pos": "SSDM",
+"num": "50",
+"stats": {
+"P": 0,
+"G1": 0,
+"G2": 0,
+"A": 0,
+"Sh": 0,
+"GB": 2,
+"TO": null,
+"PAS": null,
+"TCH": 8,
+"CT": 0,
+"Pen": 0,
+"FOW": 0,
+"FOT": 5
+}
+},
+{
+"name": "Jake Richard",
+"pos": "SSDM",
+"num": "10",
+"stats": {
+"P": 0,
+"G1": 0,
+"G2": 0,
+"A": 0,
+"Sh": 0,
+"GB": 1,
+"TO": null,
+"PAS": null,
+"TCH": 8,
+"CT": 0,
+"Pen": 0,
+"FOW": 0,
+"FOT": 8
+}
+},
+{
+"name": "Ryland Rees",
+"pos": "LSM",
+"num": "17",
+"stats": {
+"P": 0,
+"G1": 0,
+"G2": 0,
+"A": 0,
+"Sh": 0,
+"GB": 1,
+"TO": null,
+"PAS": null,
+"TCH": 1,
+"CT": 0,
+"Pen": 0
+}
+}
+]
+},
+{
+"team": "Waterdogs",
+"season": 2024,
+"date": "2024-06-29",
+"opponent": "Chaos",
+"file": "6_29 vs Chaos.xlsx",
+"players": [
+{
+"name": "Kieran McArdle",
+"pos": "A",
+"num": "6",
+"stats": {
+"P": 5,
+"G1": 2,
+"G2": 0,
+"A": 3,
+"Sh": 7,
+"GB": 3,
+"TO": 2,
+"PAS": 24,
+"TCH": 33,
+"CT": null,
+"Pen": null
+}
+},
+{
+"name": "Jack Hannah",
+"pos": "M",
+"num": "3",
+"stats": {
+"P": 3,
+"G1": 2,
+"G2": 0,
+"A": 1,
+"Sh": 8,
+"GB": 3,
+"TO": 0,
+"PAS": 15,
+"TCH": 23,
+"CT": 0,
+"Pen": 0
+}
+},
+{
+"name": "Connor Kelly",
+"pos": "M",
+"num": "40",
+"stats": {
+"P": 2,
+"G1": 2,
+"G2": 0,
+"A": 0,
+"Sh": 3,
+"GB": 0,
+"TO": 0,
+"PAS": 20,
+"TCH": 23,
+"CT": null,
+"Pen": null
+}
+},
+{
+"name": "Michael Sowers",
+"pos": "A",
+"num": "22",
+"stats": {
+"P": 2,
+"G1": 0,
+"G2": 0,
+"A": 2,
+"Sh": 2,
+"GB": 0,
+"TO": 3,
+"PAS": 29,
+"TCH": 34,
+"CT": null,
+"Pen": null
+}
+},
+{
+"name": "Ryland Rees",
+"pos": "LSM",
+"num": "17",
+"stats": {
+"P": 2,
+"G1": 0,
+"G2": 1,
+"A": 0,
+"Sh": 2,
+"GB": 3,
+"TO": 1,
+"PAS": 3,
+"TCH": 6,
+"CT": 0,
+"Pen": 0
+}
+},
+{
+"name": "Ryan Conrad",
+"pos": "M",
+"num": "23",
+"stats": {
+"P": 1,
+"G1": 1,
+"G2": 0,
+"A": 0,
+"Sh": 5,
+"GB": 2,
+"TO": 3,
+"PAS": 19,
+"TCH": 27,
+"CT": 0,
+"Pen": 0
+}
+},
+{
+"name": "Jake Carraway",
+"pos": "M",
+"num": "19",
+"stats": {
+"P": 1,
+"G1": 1,
+"G2": 0,
+"A": 0,
+"Sh": 4,
+"GB": 0,
+"TO": 0,
+"PAS": 17,
+"TCH": 21,
+"CT": null,
+"Pen": null
+}
+},
+{
+"name": "Jake Richard",
+"pos": "SSDM",
+"num": "10",
+"stats": {
+"P": 1,
+"G1": 0,
+"G2": 0,
+"A": 1,
+"Sh": 0,
+"GB": 1,
+"TO": 0,
+"PAS": 7,
+"TCH": 7,
+"CT": 0,
+"Pen": 1
+}
+},
+{
+"name": "Zach Currier",
+"pos": "M",
+"num": "77",
+"stats": {
+"P": 0,
+"G1": 0,
+"G2": 0,
+"A": 0,
+"Sh": 2,
+"GB": 1,
+"TO": 1,
+"PAS": 13,
+"TCH": 16,
+"CT": 0,
+"Pen": 0,
+"FOW": 0,
+"FOT": 1
+}
+},
+{
+"name": "Ben Randall",
+"pos": "D",
+"num": "44",
+"stats": {
+"P": 0,
+"G1": 0,
+"G2": 0,
+"A": 0,
+"Sh": 1,
+"GB": 2,
+"TO": 1,
+"PAS": 10,
+"TCH": 12,
+"CT": 3,
+"Pen": 1
+}
+},
+{
+"name": "Matt Whitcher",
+"pos": "SSDM",
+"num": "33",
+"stats": {
+"P": 0,
+"G1": 0,
+"G2": 0,
+"A": 0,
+"Sh": 1,
+"GB": 4,
+"TO": 1,
+"PAS": 5,
+"TCH": 7,
+"CT": 1,
+"Pen": 0
+}
+},
+{
+"name": "Christian Scarpello",
+"pos": "SSDM",
+"num": "50",
+"stats": {
+"P": 0,
+"G1": 0,
+"G2": 0,
+"A": 0,
+"Sh": 1,
+"GB": 1,
+"TO": 0,
+"PAS": 4,
+"TCH": 5,
+"CT": 0,
+"Pen": 0
+}
+},
+{
+"name": "Ethan Walker",
+"pos": "A",
+"num": "57",
+"stats": {
+"P": 0,
+"G1": 0,
+"G2": 0,
+"A": 0,
+"Sh": 3,
+"GB": 2,
+"TO": 0,
+"PAS": 24,
+"TCH": 27,
+"CT": null,
+"Pen": null
+}
+},
+{
+"name": "Alec Stathakis",
+"pos": "FO",
+"num": "73",
+"stats": {
+"P": 0,
+"G1": 0,
+"G2": 0,
+"A": 0,
+"Sh": 1,
+"GB": 3,
+"TO": 0,
+"PAS": 2,
+"TCH": 3,
+"CT": 0,
+"Pen": 0,
+"FOW": 8,
+"FOT": 18
+}
+},
+{
+"name": "Eli Gobrecht",
+"pos": "D",
+"num": "25",
+"stats": {
+"P": 0,
+"G1": 0,
+"G2": 0,
+"A": 0,
+"Sh": 0,
+"GB": 2,
+"TO": null,
+"PAS": null,
+"TCH": 2,
+"CT": 2,
+"Pen": 0
+}
+},
+{
+"name": "Liam Byrnes",
+"pos": "D",
+"num": "21",
+"stats": {
+"P": 0,
+"G1": 0,
+"G2": 0,
+"A": 0,
+"Sh": 0,
+"GB": 2,
+"TO": null,
+"PAS": null,
+"TCH": 5,
+"CT": 1,
+"Pen": 0
+}
+},
+{
+"name": "Dillon Ward",
+"pos": "G",
+"num": "37",
+"stats": {
+"P": 0,
+"G1": 0,
+"G2": 0,
+"A": 0,
+"Sh": 0,
+"GB": 6,
+"TO": null,
+"PAS": null,
+"TCH": 13,
+"CT": 0,
+"Pen": 0,
+"SA": 6,
+"Sv": 12,
+"SvPct": 66.7,
+"CSv": 3,
+"GA": 6
+}
+},
+{
+"name": "Marcus Hudgins",
+"pos": "D",
+"num": "11",
+"stats": {
+"P": 0,
+"G1": 0,
+"G2": 0,
+"A": 0,
+"Sh": 0,
+"GB": 1,
+"TO": null,
+"PAS": null,
+"TCH": 7,
+"CT": 0,
+"Pen": 0
+}
+}
+]
+},
+{
+"team": "Waterdogs",
+"season": 2024,
+"date": "2024-07-06",
+"opponent": "Cannons",
+"file": "7_6 vs Cannons.xlsx",
+"players": [
+{
+"name": "Kieran McArdle",
+"pos": "A",
+"num": "6",
+"stats": {
+"P": 5,
+"G1": 4,
+"G2": 0,
+"A": 1,
+"Sh": 9,
+"GB": 3,
+"TO": 3,
+"PAS": 28,
+"TCH": 40,
+"CT": null,
+"Pen": null
+}
+},
+{
+"name": "Michael Sowers",
+"pos": "A",
+"num": "22",
+"stats": {
+"P": 5,
+"G1": 3,
+"G2": 0,
+"A": 2,
+"Sh": 9,
+"GB": 1,
+"TO": 0,
+"PAS": 21,
+"TCH": 30,
+"CT": null,
+"Pen": null
+}
+},
+{
+"name": "Jack Hannah",
+"pos": "M",
+"num": "3",
+"stats": {
+"P": 2,
+"G1": 2,
+"G2": 0,
+"A": 0,
+"Sh": 9,
+"GB": 0,
+"TO": 1,
+"PAS": 11,
+"TCH": 21,
+"CT": 1,
+"Pen": 0
+}
+},
+{
+"name": "Connor Kelly",
+"pos": "M",
+"num": "40",
+"stats": {
+"P": 2,
+"G1": 1,
+"G2": 0,
+"A": 1,
+"Sh": 4,
+"GB": 0,
+"TO": 0,
+"PAS": 20,
+"TCH": 24,
+"CT": null,
+"Pen": null
+}
+},
+{
+"name": "Ryan Conrad",
+"pos": "M",
+"num": "23",
+"stats": {
+"P": 0,
+"G1": 0,
+"G2": 0,
+"A": 0,
+"Sh": 5,
+"GB": 0,
+"TO": 1,
+"PAS": 10,
+"TCH": 16,
+"CT": null,
+"Pen": null
+}
+},
+{
+"name": "Zach Currier",
+"pos": "M",
+"num": "77",
+"stats": {
+"P": 0,
+"G1": 0,
+"G2": 0,
+"A": 0,
+"Sh": 3,
+"GB": 4,
+"TO": 2,
+"PAS": 22,
+"TCH": 27,
+"CT": 0,
+"Pen": 0
+}
+},
+{
+"name": "Ethan Walker",
+"pos": "A",
+"num": "57",
+"stats": {
+"P": 0,
+"G1": 0,
+"G2": 0,
+"A": 0,
+"Sh": 1,
+"GB": 1,
+"TO": 0,
+"PAS": 32,
+"TCH": 33,
+"CT": null,
+"Pen": null
+}
+},
+{
+"name": "Matt Brandau",
+"pos": "A",
+"num": "36",
+"stats": {
+"P": 0,
+"G1": 0,
+"G2": 0,
+"A": 0,
+"Sh": 4,
+"GB": 0,
+"TO": 0,
+"PAS": 14,
+"TCH": 18,
+"CT": null,
+"Pen": null
+}
+},
+{
+"name": "Ben Randall",
+"pos": "D",
+"num": "44",
+"stats": {
+"P": 0,
+"G1": 0,
+"G2": 0,
+"A": 0,
+"Sh": 0,
+"GB": 0,
+"TO": null,
+"PAS": null,
+"TCH": 4,
+"CT": 2,
+"Pen": 0
+}
+},
+{
+"name": "Marcus Hudgins",
+"pos": "D",
+"num": "11",
+"stats": {
+"P": 0,
+"G1": 0,
+"G2": 0,
+"A": 0,
+"Sh": 0,
+"GB": 0,
+"TO": null,
+"PAS": null,
+"TCH": 6,
+"CT": 2,
+"Pen": 0
+}
+},
+{
+"name": "Matt Whitcher",
+"pos": "SSDM",
+"num": "33",
+"stats": {
+"P": 0,
+"G1": 0,
+"G2": 0,
+"A": 0,
+"Sh": 0,
+"GB": 2,
+"TO": null,
+"PAS": null,
+"TCH": 7,
+"CT": 1,
+"Pen": 0
+}
+},
+{
+"name": "Ryland Rees",
+"pos": "LSM",
+"num": "17",
+"stats": {
+"P": 0,
+"G1": 0,
+"G2": 0,
+"A": 0,
+"Sh": 0,
+"GB": 0,
+"TO": null,
+"PAS": null,
+"TCH": 3,
+"CT": 1,
+"Pen": 0
+}
+},
+{
+"name": "Alec Stathakis",
+"pos": "FO",
+"num": "73",
+"stats": {
+"P": 0,
+"G1": 0,
+"G2": 0,
+"A": 0,
+"Sh": 0,
+"GB": 8,
+"TO": null,
+"PAS": null,
+"TCH": 8,
+"CT": 0,
+"Pen": 0,
+"FOW": 13,
+"FOT": 24
+}
+},
+{
+"name": "Dillon Ward",
+"pos": "G",
+"num": "37",
+"stats": {
+"P": 0,
+"G1": 0,
+"G2": 0,
+"A": 0,
+"Sh": 0,
+"GB": 3,
+"TO": null,
+"PAS": null,
+"TCH": 11,
+"CT": 0,
+"Pen": 0,
+"SA": 12,
+"Sv": 13,
+"SvPct": 54.2,
+"CSv": 3,
+"GA": 11
+}
+},
+{
+"name": "Liam Byrnes",
+"pos": "D",
+"num": "21",
+"stats": {
+"P": 0,
+"G1": 0,
+"G2": 0,
+"A": 0,
+"Sh": 0,
+"GB": 1,
+"TO": null,
+"PAS": null,
+"TCH": 6,
+"CT": 0,
+"Pen": 0
+}
+},
+{
+"name": "Christian Scarpello",
+"pos": "SSDM",
+"num": "50",
+"stats": {
+"P": 0,
+"G1": 0,
+"G2": 0,
+"A": 0,
+"Sh": 0,
+"GB": 1,
+"TO": null,
+"PAS": null,
+"TCH": 4,
+"CT": 0,
+"Pen": 0
+}
+},
+{
+"name": "Jake Richard",
+"pos": "SSDM",
+"num": "10",
+"stats": {
+"P": 0,
+"G1": 0,
+"G2": 0,
+"A": 0,
+"Sh": 0,
+"GB": 0,
+"TO": null,
+"PAS": null,
+"TCH": 7,
+"CT": null,
+"Pen": null,
+"FOW": 0,
+"FOT": 2
+}
+},
+{
+"name": "Matt DeLuca",
+"pos": "G",
+"num": "1",
+"stats": {
+"P": 0,
+"G1": 0,
+"G2": 0,
+"A": 0,
+"Sh": 0,
+"GB": 0,
+"TO": null,
+"PAS": null,
+"TCH": 0,
+"CT": null,
+"Pen": null,
+"SA": 2,
+"Sv": 0,
+"SvPct": 0.0,
+"CSv": 0,
+"GA": null
+}
+}
+]
+},
+{
+"team": "Waterdogs",
+"season": 2024,
+"date": "2024-07-19",
+"opponent": "Outlaws",
+"file": "7_19 vs Outlaws.xlsx",
+"players": [
+{
+"name": "Michael Sowers",
+"pos": "A",
+"num": "22",
+"stats": {
+"P": 5,
+"G1": 2,
+"G2": 0,
+"A": 3,
+"Sh": 8,
+"GB": 2,
+"TO": 3,
+"PAS": 23,
+"TCH": 34,
+"CT": null,
+"Pen": null
+}
+},
+{
+"name": "Connor Kelly",
+"pos": "M",
+"num": "40",
+"stats": {
+"P": 5,
+"G1": 2,
+"G2": 1,
+"A": 1,
+"Sh": 11,
+"GB": 1,
+"TO": 0,
+"PAS": 13,
+"TCH": 24,
+"CT": 0,
+"Pen": 0
+}
+},
+{
+"name": "Zach Currier",
+"pos": "M",
+"num": "77",
+"stats": {
+"P": 3,
+"G1": 1,
+"G2": 1,
+"A": 0,
+"Sh": 2,
+"GB": 4,
+"TO": 1,
+"PAS": 22,
+"TCH": 25,
+"CT": 0,
+"Pen": 0
+}
+},
+{
+"name": "Kieran McArdle",
+"pos": "A",
+"num": "6",
+"stats": {
+"P": 2,
+"G1": 2,
+"G2": 0,
+"A": 0,
+"Sh": 7,
+"GB": 1,
+"TO": 2,
+"PAS": 18,
+"TCH": 27,
+"CT": null,
+"Pen": null
+}
+},
+{
+"name": "Mikie Schlosser",
+"pos": "M",
+"num": "59",
+"stats": {
+"P": 1,
+"G1": 1,
+"G2": 0,
+"A": 0,
+"Sh": 1,
+"GB": 0,
+"TO": 0,
+"PAS": 11,
+"TCH": 12,
+"CT": null,
+"Pen": null
+}
+},
+{
+"name": "Matt Brandau",
+"pos": "A",
+"num": "36",
+"stats": {
+"P": 1,
+"G1": 1,
+"G2": 0,
+"A": 0,
+"Sh": 6,
+"GB": 4,
+"TO": 0,
+"PAS": 10,
+"TCH": 16,
+"CT": null,
+"Pen": null
+}
+},
+{
+"name": "Ethan Walker",
+"pos": "A",
+"num": "57",
+"stats": {
+"P": 1,
+"G1": 0,
+"G2": 0,
+"A": 1,
+"Sh": 1,
+"GB": 1,
+"TO": 0,
+"PAS": 14,
+"TCH": 15,
+"CT": null,
+"Pen": null
+}
+},
+{
+"name": "Matt Whitcher",
+"pos": "SSDM",
+"num": "33",
+"stats": {
+"P": 0,
+"G1": 0,
+"G2": 0,
+"A": 0,
+"Sh": 1,
+"GB": 2,
+"TO": 1,
+"PAS": 8,
+"TCH": 10,
+"CT": 0,
+"Pen": 1
+}
+},
+{
+"name": "Jack Hannah",
+"pos": "M",
+"num": "3",
+"stats": {
+"P": 0,
+"G1": 0,
+"G2": 0,
+"A": 0,
+"Sh": 8,
+"GB": 4,
+"TO": 1,
+"PAS": 17,
+"TCH": 26,
+"CT": 0,
+"Pen": 1
+}
+},
+{
+"name": "Dillon Ward",
+"pos": "G",
+"num": "37",
+"stats": {
+"P": 0,
+"G1": 0,
+"G2": 0,
+"A": 0,
+"Sh": 0,
+"GB": 2,
+"TO": null,
+"PAS": null,
+"TCH": 15,
+"CT": 1,
+"Pen": 0,
+"SA": 15,
+"Sv": 10,
+"SvPct": 45.5,
+"CSv": 3,
+"GA": 12
+}
+},
+{
+"name": "Christian Scarpello",
+"pos": "SSDM",
+"num": "50",
+"stats": {
+"P": 0,
+"G1": 0,
+"G2": 0,
+"A": 0,
+"Sh": 0,
+"GB": 0,
+"TO": null,
+"PAS": null,
+"TCH": 8,
+"CT": 1,
+"Pen": 0
+}
+},
+{
+"name": "Alec Stathakis",
+"pos": "FO",
+"num": "73",
+"stats": {
+"P": 0,
+"G1": 0,
+"G2": 0,
+"A": 0,
+"Sh": 0,
+"GB": 4,
+"TO": null,
+"PAS": null,
+"TCH": 3,
+"CT": 0,
+"Pen": 0,
+"FOW": 15,
+"FOT": 27
+}
+},
+{
+"name": "Eli Gobrecht",
+"pos": "D",
+"num": "25",
+"stats": {
+"P": 0,
+"G1": 0,
+"G2": 0,
+"A": 0,
+"Sh": 0,
+"GB": 3,
+"TO": null,
+"PAS": null,
+"TCH": 6,
+"CT": 0,
+"Pen": 0
+}
+},
+{
+"name": "Ryland Rees",
+"pos": "LSM",
+"num": "17",
+"stats": {
+"P": 0,
+"G1": 0,
+"G2": 0,
+"A": 0,
+"Sh": 0,
+"GB": 3,
+"TO": null,
+"PAS": null,
+"TCH": 4,
+"CT": 0,
+"Pen": 0
+}
+},
+{
+"name": "Ben Randall",
+"pos": "D",
+"num": "44",
+"stats": {
+"P": 0,
+"G1": 0,
+"G2": 0,
+"A": 0,
+"Sh": 0,
+"GB": 3,
+"TO": null,
+"PAS": null,
+"TCH": 6,
+"CT": 0,
+"Pen": 0
+}
+},
+{
+"name": "Marcus Hudgins",
+"pos": "D",
+"num": "11",
+"stats": {
+"P": 0,
+"G1": 0,
+"G2": 0,
+"A": 0,
+"Sh": 0,
+"GB": 2,
+"TO": null,
+"PAS": null,
+"TCH": 5,
+"CT": 0,
+"Pen": 0
+}
+}
+]
+},
+{
+"team": "Waterdogs",
+"season": 2024,
+"date": "2024-07-28",
+"opponent": "Atlas",
+"file": "7_28 vs Atlas.xlsx",
+"players": [
+{
+"name": "Ryland Rees",
+"pos": "LSM",
+"num": "17",
+"stats": {
+"P": 4,
+"G1": 0,
+"G2": 2,
+"A": 0,
+"Sh": 2,
+"GB": 5,
+"TO": 1,
+"PAS": 4,
+"TCH": 7,
+"CT": 0,
+"Pen": 0,
+"FOW": 0,
+"FOT": 1
+}
+},
+{
+"name": "Jack Hannah",
+"pos": "M",
+"num": "3",
+"stats": {
+"P": 3,
+"G1": 1,
+"G2": 0,
+"A": 2,
+"Sh": 5,
+"GB": 0,
+"TO": 4,
+"PAS": 17,
+"TCH": 26,
+"CT": null,
+"Pen": null
+}
+},
+{
+"name": "Ethan Walker",
+"pos": "A",
+"num": "57",
+"stats": {
+"P": 2,
+"G1": 1,
+"G2": 0,
+"A": 1,
+"Sh": 4,
+"GB": 1,
+"TO": 1,
+"PAS": 21,
+"TCH": 26,
+"CT": null,
+"Pen": null
+}
+},
+{
+"name": "Jake Carraway",
+"pos": "M",
+"num": "19",
+"stats": {
+"P": 2,
+"G1": 0,
+"G2": 1,
+"A": 0,
+"Sh": 2,
+"GB": 1,
+"TO": 0,
+"PAS": 7,
+"TCH": 9,
+"CT": 0,
+"Pen": 0
+}
+},
+{
+"name": "Kieran McArdle",
+"pos": "A",
+"num": "6",
+"stats": {
+"P": 1,
+"G1": 1,
+"G2": 0,
+"A": 0,
+"Sh": 7,
+"GB": 0,
+"TO": 3,
+"PAS": 14,
+"TCH": 24,
+"CT": null,
+"Pen": null
+}
+},
+{
+"name": "Charlie Hayes",
+"pos": "SSDM",
+"num": "23",
+"stats": {
+"P": 1,
+"G1": 1,
+"G2": 0,
+"A": 0,
+"Sh": 2,
+"GB": 3,
+"TO": 0,
+"PAS": 4,
+"TCH": 6,
+"CT": 0,
+"Pen": 0
+}
+},
+{
+"name": "Michael Sowers",
+"pos": "A",
+"num": "22",
+"stats": {
+"P": 1,
+"G1": 1,
+"G2": 0,
+"A": 0,
+"Sh": 4,
+"GB": 1,
+"TO": 3,
+"PAS": 21,
+"TCH": 28,
+"CT": null,
+"Pen": null
+}
+},
+{
+"name": "Zach Currier",
+"pos": "M",
+"num": "77",
+"stats": {
+"P": 1,
+"G1": 0,
+"G2": 0,
+"A": 1,
+"Sh": 1,
+"GB": 6,
+"TO": 2,
+"PAS": 17,
+"TCH": 20,
+"CT": 3,
+"Pen": 0
+}
+},
+{
+"name": "Jake Richard",
+"pos": "SSDM",
+"num": "10",
+"stats": {
+"P": 0,
+"G1": 0,
+"G2": 0,
+"A": 0,
+"Sh": 2,
+"GB": 1,
+"TO": 1,
+"PAS": 4,
+"TCH": 7,
+"CT": 1,
+"Pen": 0
+}
+},
+{
+"name": "Connor Kelly",
+"pos": "M",
+"num": "40",
+"stats": {
+"P": 0,
+"G1": 0,
+"G2": 0,
+"A": 0,
+"Sh": 7,
+"GB": 1,
+"TO": 0,
+"PAS": 11,
+"TCH": 18,
+"CT": 0,
+"Pen": 0
+}
+},
+{
+"name": "Ryan Conrad",
+"pos": "M",
+"num": "23",
+"stats": {
+"P": 0,
+"G1": 0,
+"G2": 0,
+"A": 0,
+"Sh": 4,
+"GB": 1,
+"TO": 1,
+"PAS": 9,
+"TCH": 14,
+"CT": 0,
+"Pen": 0
+}
+},
+{
+"name": "Chris Sabia",
+"pos": "LSM",
+"num": "16",
+"stats": {
+"P": 0,
+"G1": 0,
+"G2": 0,
+"A": 0,
+"Sh": 1,
+"GB": 2,
+"TO": 0,
+"PAS": 3,
+"TCH": 4,
+"CT": 1,
+"Pen": 0
+}
+},
+{
+"name": "Ben Randall",
+"pos": "D",
+"num": "44",
+"stats": {
+"P": 0,
+"G1": 0,
+"G2": 0,
+"A": 0,
+"Sh": 1,
+"GB": 4,
+"TO": 1,
+"PAS": 12,
+"TCH": 14,
+"CT": 4,
+"Pen": 0
+}
+},
+{
+"name": "Matt Whitcher",
+"pos": "SSDM",
+"num": "33",
+"stats": {
+"P": 0,
+"G1": 0,
+"G2": 0,
+"A": 0,
+"Sh": 3,
+"GB": 0,
+"TO": 1,
+"PAS": 4,
+"TCH": 8,
+"CT": null,
+"Pen": null,
+"FOW": 0,
+"FOT": 4
+}
+},
+{
+"name": "Alec Stathakis",
+"pos": "FO",
+"num": "73",
+"stats": {
+"P": 0,
+"G1": 0,
+"G2": 0,
+"A": 0,
+"Sh": 2,
+"GB": 3,
+"TO": 0,
+"PAS": 1,
+"TCH": 3,
+"CT": 0,
+"Pen": 0,
+"FOW": 8,
+"FOT": 19
+}
+},
+{
+"name": "Eli Gobrecht",
+"pos": "D",
+"num": "25",
+"stats": {
+"P": 0,
+"G1": 0,
+"G2": 0,
+"A": 0,
+"Sh": 0,
+"GB": 2,
+"TO": null,
+"PAS": null,
+"TCH": 4,
+"CT": 1,
+"Pen": 0
+}
+},
+{
+"name": "Matt DeLuca",
+"pos": "G",
+"num": "1",
+"stats": {
+"P": 0,
+"G1": 0,
+"G2": 0,
+"A": 0,
+"Sh": 0,
+"GB": 4,
+"TO": null,
+"PAS": null,
+"TCH": 18,
+"CT": 0,
+"Pen": 0,
+"SA": 7,
+"Sv": 17,
+"SvPct": 70.8,
+"CSv": 4,
+"GA": 7
+}
+},
+{
+"name": "Marcus Hudgins",
+"pos": "D",
+"num": "11",
+"stats": {
+"P": 0,
+"G1": 0,
+"G2": 0,
+"A": 0,
+"Sh": 0,
+"GB": 4,
+"TO": null,
+"PAS": null,
+"TCH": 6,
+"CT": 0,
+"Pen": 0
+}
+},
+{
+"name": "Dillon Ward",
+"pos": "G",
+"num": "37",
+"stats": {
+"P": 0,
+"G1": 0,
+"G2": 0,
+"A": 0,
+"Sh": 0,
+"GB": 1,
+"TO": null,
+"PAS": null,
+"TCH": 2,
+"CT": 0,
+"Pen": 0,
+"SA": 5,
+"Sv": 0,
+"SvPct": 0.0,
+"CSv": 0,
+"GA": null
+}
+}
+]
+},
+{
+"team": "Waterdogs",
+"season": 2024,
+"date": "2024-08-03",
+"opponent": "Whipsnakes",
+"file": "8_3 vs Whipsnakes.xlsx",
+"players": [
+{
+"name": "Zach Currier",
+"pos": "M",
+"num": "77",
+"stats": {
+"P": 2,
+"G1": 2,
+"G2": 0,
+"A": 0,
+"Sh": 3,
+"GB": 3,
+"TO": 0,
+"PAS": 14,
+"TCH": 17,
+"CT": 1,
+"Pen": 0
+}
+},
+{
+"name": "Michael Sowers",
+"pos": "A",
+"num": "22",
+"stats": {
+"P": 2,
+"G1": 2,
+"G2": 0,
+"A": 0,
+"Sh": 6,
+"GB": 1,
+"TO": 1,
+"PAS": 20,
+"TCH": 27,
+"CT": null,
+"Pen": null
+}
+},
+{
+"name": "Kieran McArdle",
+"pos": "A",
+"num": "6",
+"stats": {
+"P": 2,
+"G1": 0,
+"G2": 0,
+"A": 2,
+"Sh": 7,
+"GB": 2,
+"TO": 1,
+"PAS": 15,
+"TCH": 23,
+"CT": null,
+"Pen": null
+}
+},
+{
+"name": "Christian Scarpello",
+"pos": "SSDM",
+"num": "50",
+"stats": {
+"P": 1,
+"G1": 1,
+"G2": 0,
+"A": 0,
+"Sh": 1,
+"GB": 1,
+"TO": 0,
+"PAS": 5,
+"TCH": 6,
+"CT": 0,
+"Pen": 0
+}
+},
+{
+"name": "Jake Carraway",
+"pos": "M",
+"num": "19",
+"stats": {
+"P": 1,
+"G1": 1,
+"G2": 0,
+"A": 0,
+"Sh": 5,
+"GB": 0,
+"TO": 0,
+"PAS": 11,
+"TCH": 16,
+"CT": null,
+"Pen": null
+}
+},
+{
+"name": "Jake Richard",
+"pos": "SSDM",
+"num": "10",
+"stats": {
+"P": 1,
+"G1": 0,
+"G2": 0,
+"A": 1,
+"Sh": 0,
+"GB": 0,
+"TO": 0,
+"PAS": 7,
+"TCH": 7,
+"CT": null,
+"Pen": null
+}
+},
+{
+"name": "Ethan Walker",
+"pos": "A",
+"num": "57",
+"stats": {
+"P": 1,
+"G1": 0,
+"G2": 0,
+"A": 1,
+"Sh": 2,
+"GB": 0,
+"TO": 0,
+"PAS": 21,
+"TCH": 23,
+"CT": null,
+"Pen": null
+}
+},
+{
+"name": "Connor Kelly",
+"pos": "M",
+"num": "40",
+"stats": {
+"P": 0,
+"G1": 0,
+"G2": 0,
+"A": 0,
+"Sh": 7,
+"GB": 3,
+"TO": 0,
+"PAS": 11,
+"TCH": 18,
+"CT": 0,
+"Pen": 0
+}
+},
+{
+"name": "Ryan Conrad",
+"pos": "M",
+"num": "23",
+"stats": {
+"P": 0,
+"G1": 0,
+"G2": 0,
+"A": 0,
+"Sh": 5,
+"GB": 0,
+"TO": 1,
+"PAS": 8,
+"TCH": 14,
+"CT": null,
+"Pen": null
+}
+},
+{
+"name": "Chris Sabia",
+"pos": "LSM",
+"num": "16",
+"stats": {
+"P": 0,
+"G1": 0,
+"G2": 0,
+"A": 0,
+"Sh": 1,
+"GB": 3,
+"TO": 0,
+"PAS": 7,
+"TCH": 8,
+"CT": 1,
+"Pen": 0
+}
+},
+{
+"name": "Ryland Rees",
+"pos": "LSM",
+"num": "17",
+"stats": {
+"P": 0,
+"G1": 0,
+"G2": 0,
+"A": 0,
+"Sh": 1,
+"GB": 4,
+"TO": 0,
+"PAS": 4,
+"TCH": 5,
+"CT": 0,
+"Pen": 0
+}
+},
+{
+"name": "Matt Whitcher",
+"pos": "SSDM",
+"num": "33",
+"stats": {
+"P": 0,
+"G1": 0,
+"G2": 0,
+"A": 0,
+"Sh": 2,
+"GB": 1,
+"TO": 0,
+"PAS": 7,
+"TCH": 9,
+"CT": 0,
+"Pen": 0
+}
+},
+{
+"name": "Jack Hannah",
+"pos": "M",
+"num": "3",
+"stats": {
+"P": 0,
+"G1": 0,
+"G2": 0,
+"A": 0,
+"Sh": 6,
+"GB": 1,
+"TO": 1,
+"PAS": 7,
+"TCH": 14,
+"CT": 0,
+"Pen": 0
+}
+},
+{
+"name": "Eli Gobrecht",
+"pos": "D",
+"num": "25",
+"stats": {
+"P": 0,
+"G1": 0,
+"G2": 0,
+"A": 0,
+"Sh": 0,
+"GB": 1,
+"TO": null,
+"PAS": null,
+"TCH": 9,
+"CT": 3,
+"Pen": 0
+}
+},
+{
+"name": "Ben Randall",
+"pos": "D",
+"num": "44",
+"stats": {
+"P": 0,
+"G1": 0,
+"G2": 0,
+"A": 0,
+"Sh": 0,
+"GB": 4,
+"TO": null,
+"PAS": null,
+"TCH": 10,
+"CT": 2,
+"Pen": 0
+}
+},
+{
+"name": "AJ Mercurio",
+"pos": "D",
+"num": "13",
+"stats": {
+"P": 0,
+"G1": 0,
+"G2": 0,
+"A": 0,
+"Sh": 0,
+"GB": 0,
+"TO": null,
+"PAS": null,
+"TCH": 2,
+"CT": 1,
+"Pen": 0
+}
+},
+{
+"name": "Matt DeLuca",
+"pos": "G",
+"num": "1",
+"stats": {
+"P": 0,
+"G1": 0,
+"G2": 0,
+"A": 0,
+"Sh": 0,
+"GB": 1,
+"TO": null,
+"PAS": null,
+"TCH": 16,
+"CT": 0,
+"Pen": 0,
+"SA": 12,
+"Sv": 12,
+"SvPct": 50.0,
+"CSv": 5,
+"GA": 12
+}
+},
+{
+"name": "Alec Stathakis",
+"pos": "FO",
+"num": "73",
+"stats": {
+"P": 0,
+"G1": 0,
+"G2": 0,
+"A": 0,
+"Sh": 0,
+"GB": 1,
+"TO": null,
+"PAS": null,
+"TCH": 0,
+"CT": 0,
+"Pen": 0,
+"FOW": 8,
+"FOT": 22
+}
+}
+]
+},
+{
+"team": "Waterdogs",
+"season": 2024,
+"date": "2024-08-09",
+"opponent": "Redwoods",
+"file": "8_9 vs Redwoods.xlsx",
+"players": [
+{
+"name": "Michael Sowers",
+"pos": "A",
+"num": "22",
+"stats": {
+"P": 5,
+"G1": 1,
+"G2": 0,
+"A": 4,
+"Sh": 6,
+"GB": 1,
+"TO": 3,
+"PAS": 20,
+"TCH": 29,
+"CT": null,
+"Pen": null
+}
+},
+{
+"name": "Kieran McArdle",
+"pos": "A",
+"num": "6",
+"stats": {
+"P": 4,
+"G1": 3,
+"G2": 0,
+"A": 1,
+"Sh": 9,
+"GB": 0,
+"TO": 5,
+"PAS": 29,
+"TCH": 43,
+"CT": null,
+"Pen": null
+}
+},
+{
+"name": "Zach Currier",
+"pos": "M",
+"num": "77",
+"stats": {
+"P": 4,
+"G1": 2,
+"G2": 0,
+"A": 2,
+"Sh": 5,
+"GB": 5,
+"TO": 0,
+"PAS": 25,
+"TCH": 30,
+"CT": 2,
+"Pen": 0
+}
+},
+{
+"name": "Matt Brandau",
+"pos": "A",
+"num": "36",
+"stats": {
+"P": 2,
+"G1": 1,
+"G2": 0,
+"A": 1,
+"Sh": 2,
+"GB": 0,
+"TO": 0,
+"PAS": 7,
+"TCH": 9,
+"CT": null,
+"Pen": null
+}
+},
+{
+"name": "Michael Boehm",
+"pos": "A",
+"num": "91",
+"stats": {
+"P": 2,
+"G1": 0,
+"G2": 0,
+"A": 2,
+"Sh": 4,
+"GB": 3,
+"TO": 2,
+"PAS": 22,
+"TCH": 28,
+"CT": null,
+"Pen": null
+}
+},
+{
+"name": "Ryland Rees",
+"pos": "LSM",
+"num": "17",
+"stats": {
+"P": 2,
+"G1": 0,
+"G2": 1,
+"A": 0,
+"Sh": 1,
+"GB": 2,
+"TO": 1,
+"PAS": 1,
+"TCH": 3,
+"CT": 0,
+"Pen": 0
+}
+},
+{
+"name": "Mikie Schlosser",
+"pos": "M",
+"num": "59",
+"stats": {
+"P": 1,
+"G1": 1,
+"G2": 0,
+"A": 0,
+"Sh": 1,
+"GB": 0,
+"TO": 2,
+"PAS": 12,
+"TCH": 15,
+"CT": null,
+"Pen": null
+}
+},
+{
+"name": "Ethan Walker",
+"pos": "A",
+"num": "57",
+"stats": {
+"P": 1,
+"G1": 1,
+"G2": 0,
+"A": 0,
+"Sh": 3,
+"GB": 0,
+"TO": 3,
+"PAS": 13,
+"TCH": 19,
+"CT": null,
+"Pen": null
+}
+},
+{
+"name": "Jack Hannah",
+"pos": "M",
+"num": "3",
+"stats": {
+"P": 1,
+"G1": 1,
+"G2": 0,
+"A": 0,
+"Sh": 4,
+"GB": 1,
+"TO": 5,
+"PAS": 19,
+"TCH": 28,
+"CT": 0,
+"Pen": 0
+}
+},
+{
+"name": "Dillon Ward",
+"pos": "G",
+"num": "37",
+"stats": {
+"P": 0,
+"G1": 0,
+"G2": 0,
+"A": 0,
+"Sh": 1,
+"GB": 0,
+"TO": 0,
+"PAS": 10,
+"TCH": 11,
+"CT": 2,
+"Pen": 0,
+"SA": 9,
+"Sv": 8,
+"SvPct": 50.0,
+"CSv": 2,
+"GA": 8
+}
+},
+{
+"name": "Alec Stathakis",
+"pos": "FO",
+"num": "73",
+"stats": {
+"P": 0,
+"G1": 0,
+"G2": 0,
+"A": 0,
+"Sh": 1,
+"GB": 5,
+"TO": 0,
+"PAS": 4,
+"TCH": 5,
+"CT": 0,
+"Pen": 0,
+"FOW": 14,
+"FOT": 27
+}
+},
+{
+"name": "Jake Richard",
+"pos": "SSDM",
+"num": "10",
+"stats": {
+"P": 0,
+"G1": 0,
+"G2": 0,
+"A": 0,
+"Sh": 0,
+"GB": 2,
+"TO": null,
+"PAS": null,
+"TCH": 7,
+"CT": 1,
+"Pen": 0
+}
+},
+{
+"name": "Eli Gobrecht",
+"pos": "D",
+"num": "25",
+"stats": {
+"P": 0,
+"G1": 0,
+"G2": 0,
+"A": 0,
+"Sh": 0,
+"GB": 4,
+"TO": null,
+"PAS": null,
+"TCH": 12,
+"CT": 0,
+"Pen": 0
+}
+},
+{
+"name": "Ben Randall",
+"pos": "D",
+"num": "44",
+"stats": {
+"P": 0,
+"G1": 0,
+"G2": 0,
+"A": 0,
+"Sh": 0,
+"GB": 3,
+"TO": null,
+"PAS": null,
+"TCH": 8,
+"CT": 0,
+"Pen": 0
+}
+},
+{
+"name": "Christian Scarpello",
+"pos": "SSDM",
+"num": "50",
+"stats": {
+"P": 0,
+"G1": 0,
+"G2": 0,
+"A": 0,
+"Sh": 0,
+"GB": 2,
+"TO": null,
+"PAS": null,
+"TCH": 11,
+"CT": 0,
+"Pen": 0
+}
+},
+{
+"name": "Chris Sabia",
+"pos": "LSM",
+"num": "16",
+"stats": {
+"P": 0,
+"G1": 0,
+"G2": 0,
+"A": 0,
+"Sh": 0,
+"GB": 1,
+"TO": null,
+"PAS": null,
+"TCH": 1,
+"CT": 0,
+"Pen": 1
+}
+},
+{
+"name": "Matt DeLuca",
+"pos": "G",
+"num": "1",
+"stats": {
+"P": 0,
+"G1": 0,
+"G2": 0,
+"A": 0,
+"Sh": 0,
+"GB": 1,
+"TO": null,
+"PAS": null,
+"TCH": 4,
+"CT": 0,
+"Pen": 0,
+"SA": 4,
+"Sv": 1,
+"SvPct": 20.0,
+"CSv": 0,
+"GA": 4
+}
+},
+{
+"name": "Charlie Hayes",
+"pos": "SSDM",
+"num": "23",
+"stats": {
+"P": 0,
+"G1": 0,
+"G2": 0,
+"A": 0,
+"Sh": 0,
+"GB": 1,
+"TO": null,
+"PAS": null,
+"TCH": 7,
+"CT": 0,
+"Pen": 0
+}
+}
+]
+},
+{
+"team": "Waterdogs",
+"season": 2024,
+"date": "2024-08-17",
+"opponent": "Atlas",
+"file": "8_17 vs Atlas.xlsx",
+"players": [
+{
+"name": "Kieran McArdle",
+"pos": "A",
+"num": "6",
+"stats": {
+"P": 4,
+"G1": 3,
+"G2": 0,
+"A": 1,
+"Sh": 6,
+"GB": 0,
+"TO": 2,
+"PAS": 15,
+"TCH": 23,
+"CT": null,
+"Pen": null
+}
+},
+{
+"name": "Jake Carraway",
+"pos": "M",
+"num": "19",
+"stats": {
+"P": 4,
+"G1": 2,
+"G2": 0,
+"A": 2,
+"Sh": 8,
+"GB": 0,
+"TO": 3,
+"PAS": 13,
+"TCH": 24,
+"CT": null,
+"Pen": null
+}
+},
+{
+"name": "Jack Hannah",
+"pos": "M",
+"num": "3",
+"stats": {
+"P": 3,
+"G1": 3,
+"G2": 0,
+"A": 0,
+"Sh": 6,
+"GB": 2,
+"TO": 3,
+"PAS": 9,
+"TCH": 18,
+"CT": 0,
+"Pen": 0
+}
+},
+{
+"name": "Michael Sowers",
+"pos": "A",
+"num": "22",
+"stats": {
+"P": 3,
+"G1": 2,
+"G2": 0,
+"A": 1,
+"Sh": 3,
+"GB": 1,
+"TO": 2,
+"PAS": 12,
+"TCH": 17,
+"CT": null,
+"Pen": null
+}
+},
+{
+"name": "Zach Currier",
+"pos": "M",
+"num": "77",
+"stats": {
+"P": 2,
+"G1": 1,
+"G2": 0,
+"A": 1,
+"Sh": 2,
+"GB": 5,
+"TO": 0,
+"PAS": 16,
+"TCH": 18,
+"CT": 3,
+"Pen": 1
+}
+},
+{
+"name": "Ben Randall",
+"pos": "D",
+"num": "44",
+"stats": {
+"P": 1,
+"G1": 1,
+"G2": 0,
+"A": 0,
+"Sh": 1,
+"GB": 6,
+"TO": 0,
+"PAS": 10,
+"TCH": 11,
+"CT": 2,
+"Pen": 0
+}
+},
+{
+"name": "Ethan Walker",
+"pos": "A",
+"num": "57",
+"stats": {
+"P": 1,
+"G1": 1,
+"G2": 0,
+"A": 0,
+"Sh": 4,
+"GB": 3,
+"TO": 2,
+"PAS": 18,
+"TCH": 24,
+"CT": null,
+"Pen": null
+}
+},
+{
+"name": "Connor Kelly",
+"pos": "M",
+"num": "40",
+"stats": {
+"P": 1,
+"G1": 0,
+"G2": 0,
+"A": 1,
+"Sh": 1,
+"GB": 1,
+"TO": 1,
+"PAS": 16,
+"TCH": 18,
+"CT": 0,
+"Pen": 0
+}
+},
+{
+"name": "Chris Sabia",
+"pos": "LSM",
+"num": "16",
+"stats": {
+"P": 0,
+"G1": 0,
+"G2": 0,
+"A": 0,
+"Sh": 1,
+"GB": 4,
+"TO": 1,
+"PAS": 5,
+"TCH": 7,
+"CT": 1,
+"Pen": 1
+}
+},
+{
+"name": "Eli Gobrecht",
+"pos": "D",
+"num": "25",
+"stats": {
+"P": 0,
+"G1": 0,
+"G2": 0,
+"A": 0,
+"Sh": 2,
+"GB": 6,
+"TO": 1,
+"PAS": 11,
+"TCH": 14,
+"CT": 0,
+"Pen": 0
+}
+},
+{
+"name": "Mikie Schlosser",
+"pos": "M",
+"num": "59",
+"stats": {
+"P": 0,
+"G1": 0,
+"G2": 0,
+"A": 0,
+"Sh": 2,
+"GB": 0,
+"TO": 0,
+"PAS": 11,
+"TCH": 13,
+"CT": null,
+"Pen": null
+}
+},
+{
+"name": "Charlie Hayes",
+"pos": "SSDM",
+"num": "23",
+"stats": {
+"P": 0,
+"G1": 0,
+"G2": 0,
+"A": 0,
+"Sh": 2,
+"GB": 3,
+"TO": 0,
+"PAS": 6,
+"TCH": 8,
+"CT": 0,
+"Pen": 0,
+"FOW": 0,
+"FOT": 2
+}
+},
+{
+"name": "Christian Scarpello",
+"pos": "SSDM",
+"num": "50",
+"stats": {
+"P": 0,
+"G1": 0,
+"G2": 0,
+"A": 0,
+"Sh": 1,
+"GB": 0,
+"TO": 1,
+"PAS": 5,
+"TCH": 7,
+"CT": 1,
+"Pen": 0,
+"FOW": 0,
+"FOT": 1
+}
+},
+{
+"name": "Ryland Rees",
+"pos": "LSM",
+"num": "17",
+"stats": {
+"P": 0,
+"G1": 0,
+"G2": 0,
+"A": 0,
+"Sh": 0,
+"GB": 3,
+"TO": null,
+"PAS": null,
+"TCH": 5,
+"CT": 1,
+"Pen": 0
+}
+},
+{
+"name": "Alec Stathakis",
+"pos": "FO",
+"num": "73",
+"stats": {
+"P": 0,
+"G1": 0,
+"G2": 0,
+"A": 0,
+"Sh": 0,
+"GB": 2,
+"TO": null,
+"PAS": null,
+"TCH": 4,
+"CT": 0,
+"Pen": 0,
+"FOW": 7,
+"FOT": 26
+}
+},
+{
+"name": "Matt DeLuca",
+"pos": "G",
+"num": "1",
+"stats": {
+"P": 0,
+"G1": 0,
+"G2": 0,
+"A": 0,
+"Sh": 0,
+"GB": 1,
+"TO": null,
+"PAS": null,
+"TCH": 12,
+"CT": 0,
+"Pen": 0,
+"SA": 12,
+"Sv": 16,
+"SvPct": 57.1,
+"CSv": 4,
+"GA": 12
+}
+},
+{
+"name": "Matt Whitcher",
+"pos": "SSDM",
+"num": "33",
+"stats": {
+"P": 0,
+"G1": 0,
+"G2": 0,
+"A": 0,
+"Sh": 0,
+"GB": 1,
+"TO": null,
+"PAS": null,
+"TCH": 3,
+"CT": 0,
+"Pen": 0
+}
+}
+]
+},
+{
+"team": "Waterdogs",
 "season": 2025,
 "date": "2025-06-06",
 "opponent": "Whipsnakes",
@@ -71181,6 +82210,4330 @@
 },
 {
 "team": "Whipsnakes",
+"season": 2024,
+"date": "2024-06-02",
+"opponent": "Atlas",
+"file": "6_2 vs Atlas.xlsx",
+"players": [
+{
+"name": "TJ Malone",
+"pos": "A",
+"num": "7",
+"stats": {
+"P": 6,
+"G1": 3,
+"G2": 0,
+"A": 3,
+"Sh": 6,
+"GB": 1,
+"TO": 1,
+"PAS": 18,
+"TCH": 25,
+"CT": null,
+"Pen": null
+}
+},
+{
+"name": "Mike Chanenchuk",
+"pos": "M",
+"num": "1",
+"stats": {
+"P": 5,
+"G1": 1,
+"G2": 2,
+"A": 0,
+"Sh": 10,
+"GB": 0,
+"TO": 1,
+"PAS": 14,
+"TCH": 25,
+"CT": null,
+"Pen": null
+}
+},
+{
+"name": "Zed Williams",
+"pos": "A",
+"num": "36",
+"stats": {
+"P": 2,
+"G1": 2,
+"G2": 0,
+"A": 0,
+"Sh": 6,
+"GB": 1,
+"TO": 1,
+"PAS": 12,
+"TCH": 19,
+"CT": null,
+"Pen": null
+}
+},
+{
+"name": "Matt Rambo",
+"pos": "A",
+"num": "9",
+"stats": {
+"P": 2,
+"G1": 0,
+"G2": 0,
+"A": 2,
+"Sh": 3,
+"GB": 0,
+"TO": 2,
+"PAS": 11,
+"TCH": 16,
+"CT": null,
+"Pen": null
+}
+},
+{
+"name": "Jackson Morrill",
+"pos": "A",
+"num": "3",
+"stats": {
+"P": 2,
+"G1": 0,
+"G2": 0,
+"A": 2,
+"Sh": 1,
+"GB": 1,
+"TO": 0,
+"PAS": 9,
+"TCH": 10,
+"CT": null,
+"Pen": null
+}
+},
+{
+"name": "Garrett Leadmon",
+"pos": "M",
+"num": "40",
+"stats": {
+"P": 2,
+"G1": 0,
+"G2": 1,
+"A": 0,
+"Sh": 6,
+"GB": 0,
+"TO": 1,
+"PAS": 11,
+"TCH": 18,
+"CT": null,
+"Pen": null
+}
+},
+{
+"name": "Roman Puglise",
+"pos": "SSDM",
+"num": "8",
+"stats": {
+"P": 1,
+"G1": 1,
+"G2": 0,
+"A": 0,
+"Sh": 1,
+"GB": 1,
+"TO": 1,
+"PAS": 6,
+"TCH": 8,
+"CT": 0,
+"Pen": 0
+}
+},
+{
+"name": "Colin Heacock",
+"pos": "M",
+"num": "10",
+"stats": {
+"P": 0,
+"G1": 0,
+"G2": 0,
+"A": 0,
+"Sh": 1,
+"GB": 1,
+"TO": 1,
+"PAS": 14,
+"TCH": 16,
+"CT": 0,
+"Pen": 0
+}
+},
+{
+"name": "Colin Squires",
+"pos": "LSM",
+"num": "39",
+"stats": {
+"P": 0,
+"G1": 0,
+"G2": 0,
+"A": 0,
+"Sh": 2,
+"GB": 2,
+"TO": 0,
+"PAS": 3,
+"TCH": 5,
+"CT": 0,
+"Pen": 0
+}
+},
+{
+"name": "Keegan Khan",
+"pos": "M",
+"num": "76",
+"stats": {
+"P": 0,
+"G1": 0,
+"G2": 0,
+"A": 0,
+"Sh": 2,
+"GB": 1,
+"TO": 0,
+"PAS": 14,
+"TCH": 16,
+"CT": 0,
+"Pen": 0
+}
+},
+{
+"name": "Brendan Krebs",
+"pos": "G",
+"num": "0",
+"stats": {
+"P": 0,
+"G1": 0,
+"G2": 0,
+"A": 0,
+"Sh": 0,
+"GB": 2,
+"TO": null,
+"PAS": null,
+"TCH": 14,
+"CT": 2,
+"Pen": 0,
+"SA": 11,
+"Sv": 9,
+"SvPct": 47.4,
+"CSv": 3,
+"GA": 10
+}
+},
+{
+"name": "Tim Muller",
+"pos": "D",
+"num": "14",
+"stats": {
+"P": 0,
+"G1": 0,
+"G2": 0,
+"A": 0,
+"Sh": 0,
+"GB": 5,
+"TO": null,
+"PAS": null,
+"TCH": 10,
+"CT": 1,
+"Pen": 0
+}
+},
+{
+"name": "Ajax Zappitello",
+"pos": "D",
+"num": "5",
+"stats": {
+"P": 0,
+"G1": 0,
+"G2": 0,
+"A": 0,
+"Sh": 0,
+"GB": 3,
+"TO": null,
+"PAS": null,
+"TCH": 6,
+"CT": 1,
+"Pen": 0
+}
+},
+{
+"name": "Petey LaSalla",
+"pos": "FO",
+"num": "22",
+"stats": {
+"P": 0,
+"G1": 0,
+"G2": 0,
+"A": 0,
+"Sh": 0,
+"GB": 3,
+"TO": null,
+"PAS": null,
+"TCH": 4,
+"CT": 0,
+"Pen": 0,
+"FOW": 10,
+"FOT": 28
+}
+},
+{
+"name": "Stephen Zupicich",
+"pos": "LSM",
+"num": "77",
+"stats": {
+"P": 0,
+"G1": 0,
+"G2": 0,
+"A": 0,
+"Sh": 0,
+"GB": 1,
+"TO": null,
+"PAS": null,
+"TCH": 2,
+"CT": 0,
+"Pen": 0
+}
+},
+{
+"name": "Jake Bernhardt",
+"pos": "SSDM",
+"num": "83",
+"stats": {
+"P": 0,
+"G1": 0,
+"G2": 0,
+"A": 0,
+"Sh": 0,
+"GB": 0,
+"TO": null,
+"PAS": null,
+"TCH": 5,
+"CT": null,
+"Pen": null,
+"FOW": 0,
+"FOT": 2
+}
+},
+{
+"name": "Kyle Bernlohr",
+"pos": "G",
+"num": "35",
+"stats": {
+"P": 0,
+"G1": 0,
+"G2": 0,
+"A": 0,
+"Sh": 0,
+"GB": 0,
+"TO": null,
+"PAS": null,
+"TCH": 0,
+"CT": null,
+"Pen": null,
+"SA": 6,
+"Sv": 0,
+"SvPct": 0.0,
+"CSv": 0,
+"GA": null
+}
+}
+]
+},
+{
+"team": "Whipsnakes",
+"season": 2024,
+"date": "2024-06-08",
+"opponent": "Cannons",
+"file": "6_8 vs Cannons.xlsx",
+"players": [
+{
+"name": "Matt Rambo",
+"pos": "A",
+"num": "9",
+"stats": {
+"P": 3,
+"G1": 2,
+"G2": 0,
+"A": 1,
+"Sh": 4,
+"GB": 0,
+"TO": 6,
+"PAS": 21,
+"TCH": 31,
+"CT": null,
+"Pen": null
+}
+},
+{
+"name": "Zed Williams",
+"pos": "A",
+"num": "36",
+"stats": {
+"P": 2,
+"G1": 2,
+"G2": 0,
+"A": 0,
+"Sh": 6,
+"GB": 1,
+"TO": 1,
+"PAS": 7,
+"TCH": 14,
+"CT": null,
+"Pen": null
+}
+},
+{
+"name": "TJ Malone",
+"pos": "A",
+"num": "7",
+"stats": {
+"P": 2,
+"G1": 2,
+"G2": 0,
+"A": 0,
+"Sh": 8,
+"GB": 0,
+"TO": 1,
+"PAS": 22,
+"TCH": 31,
+"CT": null,
+"Pen": null
+}
+},
+{
+"name": "Jackson Morrill",
+"pos": "A",
+"num": "3",
+"stats": {
+"P": 2,
+"G1": 1,
+"G2": 0,
+"A": 1,
+"Sh": 1,
+"GB": 2,
+"TO": 1,
+"PAS": 5,
+"TCH": 7,
+"CT": null,
+"Pen": null
+}
+},
+{
+"name": "Colin Heacock",
+"pos": "M",
+"num": "10",
+"stats": {
+"P": 1,
+"G1": 1,
+"G2": 0,
+"A": 0,
+"Sh": 3,
+"GB": 0,
+"TO": 0,
+"PAS": 10,
+"TCH": 13,
+"CT": null,
+"Pen": null
+}
+},
+{
+"name": "Keegan Khan",
+"pos": "M",
+"num": "76",
+"stats": {
+"P": 1,
+"G1": 1,
+"G2": 0,
+"A": 0,
+"Sh": 3,
+"GB": 1,
+"TO": 0,
+"PAS": 13,
+"TCH": 16,
+"CT": 1,
+"Pen": 0
+}
+},
+{
+"name": "Stephen Zupicich",
+"pos": "LSM",
+"num": "77",
+"stats": {
+"P": 1,
+"G1": 0,
+"G2": 0,
+"A": 1,
+"Sh": 0,
+"GB": 0,
+"TO": 0,
+"PAS": 2,
+"TCH": 2,
+"CT": null,
+"Pen": null
+}
+},
+{
+"name": "Joseph Nardella",
+"pos": "FO",
+"num": "91",
+"stats": {
+"P": 0,
+"G1": 0,
+"G2": 0,
+"A": 0,
+"Sh": 2,
+"GB": 13,
+"TO": 2,
+"PAS": 11,
+"TCH": 15,
+"CT": 0,
+"Pen": 0,
+"FOW": 14,
+"FOT": 23
+}
+},
+{
+"name": "Mike Chanenchuk",
+"pos": "M",
+"num": "1",
+"stats": {
+"P": 0,
+"G1": 0,
+"G2": 0,
+"A": 0,
+"Sh": 3,
+"GB": 1,
+"TO": 0,
+"PAS": 21,
+"TCH": 24,
+"CT": 1,
+"Pen": 0
+}
+},
+{
+"name": "Wheaton Jackoboice",
+"pos": "SSDM",
+"num": "55",
+"stats": {
+"P": 0,
+"G1": 0,
+"G2": 0,
+"A": 0,
+"Sh": 2,
+"GB": 0,
+"TO": 0,
+"PAS": 5,
+"TCH": 7,
+"CT": null,
+"Pen": null
+}
+},
+{
+"name": "Garrett Leadmon",
+"pos": "M",
+"num": "40",
+"stats": {
+"P": 0,
+"G1": 0,
+"G2": 0,
+"A": 0,
+"Sh": 4,
+"GB": 0,
+"TO": 3,
+"PAS": 17,
+"TCH": 24,
+"CT": null,
+"Pen": null
+}
+},
+{
+"name": "Colin Squires",
+"pos": "LSM",
+"num": "39",
+"stats": {
+"P": 0,
+"G1": 0,
+"G2": 0,
+"A": 0,
+"Sh": 0,
+"GB": 2,
+"TO": null,
+"PAS": null,
+"TCH": 2,
+"CT": 3,
+"Pen": 0
+}
+},
+{
+"name": "Matthew Dunn",
+"pos": "D",
+"num": "33",
+"stats": {
+"P": 0,
+"G1": 0,
+"G2": 0,
+"A": 0,
+"Sh": 0,
+"GB": 0,
+"TO": null,
+"PAS": null,
+"TCH": 4,
+"CT": 3,
+"Pen": 0
+}
+},
+{
+"name": "Tim Muller",
+"pos": "D",
+"num": "14",
+"stats": {
+"P": 0,
+"G1": 0,
+"G2": 0,
+"A": 0,
+"Sh": 0,
+"GB": 2,
+"TO": null,
+"PAS": null,
+"TCH": 6,
+"CT": 1,
+"Pen": 0
+}
+},
+{
+"name": "Brendan Krebs",
+"pos": "G",
+"num": "0",
+"stats": {
+"P": 0,
+"G1": 0,
+"G2": 0,
+"A": 0,
+"Sh": 0,
+"GB": 7,
+"TO": null,
+"PAS": null,
+"TCH": 19,
+"CT": 0,
+"Pen": 0,
+"SA": 13,
+"Sv": 14,
+"SvPct": 53.8,
+"CSv": 2,
+"GA": 12
+}
+},
+{
+"name": "Ajax Zappitello",
+"pos": "D",
+"num": "5",
+"stats": {
+"P": 0,
+"G1": 0,
+"G2": 0,
+"A": 0,
+"Sh": 0,
+"GB": 2,
+"TO": null,
+"PAS": null,
+"TCH": 5,
+"CT": 0,
+"Pen": 0
+}
+},
+{
+"name": "Jake Bernhardt",
+"pos": "SSDM",
+"num": "83",
+"stats": {
+"P": 0,
+"G1": 0,
+"G2": 0,
+"A": 0,
+"Sh": 0,
+"GB": 0,
+"TO": null,
+"PAS": null,
+"TCH": 5,
+"CT": null,
+"Pen": null,
+"FOW": 0,
+"FOT": 2
+}
+}
+]
+},
+{
+"team": "Whipsnakes",
+"season": 2024,
+"date": "2024-06-16",
+"opponent": "Waterdogs",
+"file": "6_16 vs Waterdogs.xlsx",
+"players": [
+{
+"name": "Jackson Morrill",
+"pos": "A",
+"num": "3",
+"stats": {
+"P": 3,
+"G1": 1,
+"G2": 0,
+"A": 2,
+"Sh": 4,
+"GB": 0,
+"TO": 3,
+"PAS": 15,
+"TCH": 22,
+"CT": null,
+"Pen": null
+}
+},
+{
+"name": "Mike Chanenchuk",
+"pos": "M",
+"num": "1",
+"stats": {
+"P": 3,
+"G1": 0,
+"G2": 1,
+"A": 1,
+"Sh": 2,
+"GB": 0,
+"TO": 2,
+"PAS": 15,
+"TCH": 19,
+"CT": null,
+"Pen": null
+}
+},
+{
+"name": "Zed Williams",
+"pos": "A",
+"num": "36",
+"stats": {
+"P": 3,
+"G1": 0,
+"G2": 1,
+"A": 1,
+"Sh": 9,
+"GB": 1,
+"TO": 1,
+"PAS": 9,
+"TCH": 19,
+"CT": null,
+"Pen": null
+}
+},
+{
+"name": "Matthew Dunn",
+"pos": "D",
+"num": "33",
+"stats": {
+"P": 2,
+"G1": 2,
+"G2": 0,
+"A": 0,
+"Sh": 2,
+"GB": 2,
+"TO": 0,
+"PAS": 3,
+"TCH": 5,
+"CT": 3,
+"Pen": 0
+}
+},
+{
+"name": "Colin Heacock",
+"pos": "M",
+"num": "10",
+"stats": {
+"P": 2,
+"G1": 2,
+"G2": 0,
+"A": 0,
+"Sh": 6,
+"GB": 0,
+"TO": 2,
+"PAS": 7,
+"TCH": 15,
+"CT": null,
+"Pen": null
+}
+},
+{
+"name": "TJ Malone",
+"pos": "A",
+"num": "7",
+"stats": {
+"P": 2,
+"G1": 2,
+"G2": 0,
+"A": 0,
+"Sh": 6,
+"GB": 3,
+"TO": 3,
+"PAS": 26,
+"TCH": 35,
+"CT": null,
+"Pen": null
+}
+},
+{
+"name": "Matt Rambo",
+"pos": "A",
+"num": "9",
+"stats": {
+"P": 2,
+"G1": 1,
+"G2": 0,
+"A": 1,
+"Sh": 4,
+"GB": 0,
+"TO": 0,
+"PAS": 18,
+"TCH": 22,
+"CT": null,
+"Pen": null
+}
+},
+{
+"name": "Kevin Winkoff",
+"pos": "M",
+"num": "48",
+"stats": {
+"P": 2,
+"G1": 1,
+"G2": 0,
+"A": 1,
+"Sh": 4,
+"GB": 1,
+"TO": 1,
+"PAS": 12,
+"TCH": 17,
+"CT": 0,
+"Pen": 0
+}
+},
+{
+"name": "Colin Squires",
+"pos": "LSM",
+"num": "39",
+"stats": {
+"P": 1,
+"G1": 1,
+"G2": 0,
+"A": 0,
+"Sh": 1,
+"GB": 5,
+"TO": 0,
+"PAS": 4,
+"TCH": 5,
+"CT": 0,
+"Pen": 0
+}
+},
+{
+"name": "Jack Koras",
+"pos": "M",
+"num": "15",
+"stats": {
+"P": 1,
+"G1": 1,
+"G2": 0,
+"A": 0,
+"Sh": 5,
+"GB": 1,
+"TO": 0,
+"PAS": 12,
+"TCH": 17,
+"CT": 0,
+"Pen": 1
+}
+},
+{
+"name": "Roman Puglise",
+"pos": "SSDM",
+"num": "8",
+"stats": {
+"P": 1,
+"G1": 0,
+"G2": 0,
+"A": 1,
+"Sh": 0,
+"GB": 0,
+"TO": 1,
+"PAS": 8,
+"TCH": 9,
+"CT": null,
+"Pen": null
+}
+},
+{
+"name": "Garrett Leadmon",
+"pos": "M",
+"num": "40",
+"stats": {
+"P": 0,
+"G1": 0,
+"G2": 0,
+"A": 0,
+"Sh": 3,
+"GB": 1,
+"TO": 1,
+"PAS": 10,
+"TCH": 14,
+"CT": 0,
+"Pen": 0
+}
+},
+{
+"name": "Ajax Zappitello",
+"pos": "D",
+"num": "5",
+"stats": {
+"P": 0,
+"G1": 0,
+"G2": 0,
+"A": 0,
+"Sh": 0,
+"GB": 1,
+"TO": null,
+"PAS": null,
+"TCH": 6,
+"CT": 3,
+"Pen": 0
+}
+},
+{
+"name": "Joseph Nardella",
+"pos": "FO",
+"num": "91",
+"stats": {
+"P": 0,
+"G1": 0,
+"G2": 0,
+"A": 0,
+"Sh": 0,
+"GB": 28,
+"TO": null,
+"PAS": null,
+"TCH": 27,
+"CT": 0,
+"Pen": 0,
+"FOW": 31,
+"FOT": 31
+}
+},
+{
+"name": "Brendan Krebs",
+"pos": "G",
+"num": "0",
+"stats": {
+"P": 0,
+"G1": 0,
+"G2": 0,
+"A": 0,
+"Sh": 0,
+"GB": 4,
+"TO": null,
+"PAS": null,
+"TCH": 9,
+"CT": 0,
+"Pen": 0,
+"SA": 14,
+"Sv": 13,
+"SvPct": 48.1,
+"CSv": 4,
+"GA": 14
+}
+},
+{
+"name": "Tim Muller",
+"pos": "D",
+"num": "14",
+"stats": {
+"P": 0,
+"G1": 0,
+"G2": 0,
+"A": 0,
+"Sh": 0,
+"GB": 3,
+"TO": null,
+"PAS": null,
+"TCH": 7,
+"CT": 0,
+"Pen": 0
+}
+},
+{
+"name": "Jake Bernhardt",
+"pos": "SSDM",
+"num": "83",
+"stats": {
+"P": 0,
+"G1": 0,
+"G2": 0,
+"A": 0,
+"Sh": 0,
+"GB": 1,
+"TO": null,
+"PAS": null,
+"TCH": 7,
+"CT": 0,
+"Pen": 0
+}
+}
+]
+},
+{
+"team": "Whipsnakes",
+"season": 2024,
+"date": "2024-06-28",
+"opponent": "Atlas",
+"file": "6_28 vs Atlas.xlsx",
+"players": [
+{
+"name": "TJ Malone",
+"pos": "A",
+"num": "7",
+"stats": {
+"P": 3,
+"G1": 3,
+"G2": 0,
+"A": 0,
+"Sh": 7,
+"GB": 2,
+"TO": 2,
+"PAS": 14,
+"TCH": 23,
+"CT": null,
+"Pen": null
+}
+},
+{
+"name": "Levi Anderson",
+"pos": "M",
+"num": "24",
+"stats": {
+"P": 3,
+"G1": 2,
+"G2": 0,
+"A": 1,
+"Sh": 5,
+"GB": 1,
+"TO": 2,
+"PAS": 13,
+"TCH": 20,
+"CT": 0,
+"Pen": 0
+}
+},
+{
+"name": "Zed Williams",
+"pos": "A",
+"num": "36",
+"stats": {
+"P": 2,
+"G1": 2,
+"G2": 0,
+"A": 0,
+"Sh": 4,
+"GB": 0,
+"TO": 0,
+"PAS": 17,
+"TCH": 21,
+"CT": null,
+"Pen": null
+}
+},
+{
+"name": "Adam Poitras",
+"pos": "M",
+"num": "51",
+"stats": {
+"P": 2,
+"G1": 2,
+"G2": 0,
+"A": 0,
+"Sh": 5,
+"GB": 2,
+"TO": 3,
+"PAS": 11,
+"TCH": 19,
+"CT": 0,
+"Pen": 0
+}
+},
+{
+"name": "Jack Koras",
+"pos": "M",
+"num": "15",
+"stats": {
+"P": 2,
+"G1": 2,
+"G2": 0,
+"A": 0,
+"Sh": 4,
+"GB": 2,
+"TO": 1,
+"PAS": 7,
+"TCH": 12,
+"CT": 1,
+"Pen": 0
+}
+},
+{
+"name": "Matt Rambo",
+"pos": "A",
+"num": "9",
+"stats": {
+"P": 2,
+"G1": 1,
+"G2": 0,
+"A": 1,
+"Sh": 5,
+"GB": 1,
+"TO": 4,
+"PAS": 17,
+"TCH": 26,
+"CT": null,
+"Pen": null
+}
+},
+{
+"name": "Kevin Winkoff",
+"pos": "M",
+"num": "48",
+"stats": {
+"P": 2,
+"G1": 0,
+"G2": 0,
+"A": 2,
+"Sh": 4,
+"GB": 1,
+"TO": 1,
+"PAS": 13,
+"TCH": 18,
+"CT": 1,
+"Pen": 0
+}
+},
+{
+"name": "Joseph Nardella",
+"pos": "FO",
+"num": "91",
+"stats": {
+"P": 1,
+"G1": 1,
+"G2": 0,
+"A": 0,
+"Sh": 2,
+"GB": 5,
+"TO": 1,
+"PAS": 8,
+"TCH": 11,
+"CT": 0,
+"Pen": 0,
+"FOW": 18,
+"FOT": 32
+}
+},
+{
+"name": "Mike Chanenchuk",
+"pos": "M",
+"num": "1",
+"stats": {
+"P": 1,
+"G1": 1,
+"G2": 0,
+"A": 0,
+"Sh": 6,
+"GB": 2,
+"TO": 3,
+"PAS": 24,
+"TCH": 33,
+"CT": 0,
+"Pen": 0
+}
+},
+{
+"name": "Colin Heacock",
+"pos": "M",
+"num": "10",
+"stats": {
+"P": 1,
+"G1": 1,
+"G2": 0,
+"A": 0,
+"Sh": 1,
+"GB": 2,
+"TO": 0,
+"PAS": 16,
+"TCH": 17,
+"CT": 0,
+"Pen": 2
+}
+},
+{
+"name": "Roman Puglise",
+"pos": "SSDM",
+"num": "8",
+"stats": {
+"P": 1,
+"G1": 1,
+"G2": 0,
+"A": 0,
+"Sh": 3,
+"GB": 3,
+"TO": 0,
+"PAS": 9,
+"TCH": 12,
+"CT": 0,
+"Pen": 0
+}
+},
+{
+"name": "Jake Bernhardt",
+"pos": "SSDM",
+"num": "83",
+"stats": {
+"P": 0,
+"G1": 0,
+"G2": 0,
+"A": 0,
+"Sh": 1,
+"GB": 2,
+"TO": 0,
+"PAS": 7,
+"TCH": 8,
+"CT": 0,
+"Pen": 0
+}
+},
+{
+"name": "Matthew Dunn",
+"pos": "D",
+"num": "33",
+"stats": {
+"P": 0,
+"G1": 0,
+"G2": 0,
+"A": 0,
+"Sh": 1,
+"GB": 2,
+"TO": 0,
+"PAS": 5,
+"TCH": 6,
+"CT": 0,
+"Pen": 0
+}
+},
+{
+"name": "Stephen Zupicich",
+"pos": "LSM",
+"num": "77",
+"stats": {
+"P": 0,
+"G1": 0,
+"G2": 0,
+"A": 0,
+"Sh": 1,
+"GB": 1,
+"TO": 1,
+"PAS": 1,
+"TCH": 3,
+"CT": 0,
+"Pen": 0
+}
+},
+{
+"name": "Ajax Zappitello",
+"pos": "D",
+"num": "5",
+"stats": {
+"P": 0,
+"G1": 0,
+"G2": 0,
+"A": 0,
+"Sh": 0,
+"GB": 5,
+"TO": null,
+"PAS": null,
+"TCH": 10,
+"CT": 2,
+"Pen": 0
+}
+},
+{
+"name": "Tim Muller",
+"pos": "D",
+"num": "14",
+"stats": {
+"P": 0,
+"G1": 0,
+"G2": 0,
+"A": 0,
+"Sh": 0,
+"GB": 2,
+"TO": null,
+"PAS": null,
+"TCH": 6,
+"CT": 1,
+"Pen": 0
+}
+},
+{
+"name": "Colin Squires",
+"pos": "LSM",
+"num": "39",
+"stats": {
+"P": 0,
+"G1": 0,
+"G2": 0,
+"A": 0,
+"Sh": 0,
+"GB": 4,
+"TO": null,
+"PAS": null,
+"TCH": 6,
+"CT": 0,
+"Pen": 0
+}
+},
+{
+"name": "Brendan Krebs",
+"pos": "G",
+"num": "0",
+"stats": {
+"P": 0,
+"G1": 0,
+"G2": 0,
+"A": 0,
+"Sh": 0,
+"GB": 3,
+"TO": null,
+"PAS": null,
+"TCH": 18,
+"CT": 0,
+"Pen": 0,
+"SA": 12,
+"Sv": 14,
+"SvPct": 53.8,
+"CSv": 5,
+"GA": 12
+}
+}
+]
+},
+{
+"team": "Whipsnakes",
+"season": 2024,
+"date": "2024-07-06",
+"opponent": "Archers",
+"file": "7_6 vs Archers.xlsx",
+"players": [
+{
+"name": "Zed Williams",
+"pos": "A",
+"num": "36",
+"stats": {
+"P": 5,
+"G1": 4,
+"G2": 0,
+"A": 1,
+"Sh": 13,
+"GB": 1,
+"TO": 1,
+"PAS": 15,
+"TCH": 29,
+"CT": null,
+"Pen": null
+}
+},
+{
+"name": "TJ Malone",
+"pos": "A",
+"num": "7",
+"stats": {
+"P": 4,
+"G1": 2,
+"G2": 0,
+"A": 2,
+"Sh": 8,
+"GB": 2,
+"TO": 2,
+"PAS": 25,
+"TCH": 35,
+"CT": null,
+"Pen": null
+}
+},
+{
+"name": "Levi Anderson",
+"pos": "M",
+"num": "24",
+"stats": {
+"P": 3,
+"G1": 1,
+"G2": 0,
+"A": 2,
+"Sh": 6,
+"GB": 1,
+"TO": 0,
+"PAS": 22,
+"TCH": 28,
+"CT": 0,
+"Pen": 0
+}
+},
+{
+"name": "Matt Rambo",
+"pos": "A",
+"num": "9",
+"stats": {
+"P": 2,
+"G1": 2,
+"G2": 0,
+"A": 0,
+"Sh": 6,
+"GB": 1,
+"TO": 2,
+"PAS": 22,
+"TCH": 30,
+"CT": null,
+"Pen": null
+}
+},
+{
+"name": "Adam Poitras",
+"pos": "M",
+"num": "51",
+"stats": {
+"P": 2,
+"G1": 1,
+"G2": 0,
+"A": 1,
+"Sh": 4,
+"GB": 1,
+"TO": 2,
+"PAS": 12,
+"TCH": 18,
+"CT": 1,
+"Pen": 0
+}
+},
+{
+"name": "Jake Bernhardt",
+"pos": "SSDM",
+"num": "83",
+"stats": {
+"P": 1,
+"G1": 1,
+"G2": 0,
+"A": 0,
+"Sh": 1,
+"GB": 0,
+"TO": 0,
+"PAS": 4,
+"TCH": 5,
+"CT": 1,
+"Pen": 0,
+"FOW": 0,
+"FOT": 1
+}
+},
+{
+"name": "Matthew Dunn",
+"pos": "D",
+"num": "33",
+"stats": {
+"P": 1,
+"G1": 0,
+"G2": 0,
+"A": 1,
+"Sh": 0,
+"GB": 0,
+"TO": 0,
+"PAS": 5,
+"TCH": 5,
+"CT": 1,
+"Pen": 0
+}
+},
+{
+"name": "Mike Chanenchuk",
+"pos": "M",
+"num": "1",
+"stats": {
+"P": 1,
+"G1": 0,
+"G2": 0,
+"A": 1,
+"Sh": 4,
+"GB": 2,
+"TO": 1,
+"PAS": 25,
+"TCH": 30,
+"CT": 0,
+"Pen": 0
+}
+},
+{
+"name": "Kevin Winkoff",
+"pos": "M",
+"num": "48",
+"stats": {
+"P": 0,
+"G1": 0,
+"G2": 0,
+"A": 0,
+"Sh": 3,
+"GB": 0,
+"TO": 3,
+"PAS": 3,
+"TCH": 9,
+"CT": null,
+"Pen": null
+}
+},
+{
+"name": "Jack Koras",
+"pos": "M",
+"num": "15",
+"stats": {
+"P": 0,
+"G1": 0,
+"G2": 0,
+"A": 0,
+"Sh": 1,
+"GB": 6,
+"TO": 0,
+"PAS": 12,
+"TCH": 13,
+"CT": 1,
+"Pen": 0
+}
+},
+{
+"name": "Ajax Zappitello",
+"pos": "D",
+"num": "5",
+"stats": {
+"P": 0,
+"G1": 0,
+"G2": 0,
+"A": 0,
+"Sh": 0,
+"GB": 2,
+"TO": null,
+"PAS": null,
+"TCH": 10,
+"CT": 1,
+"Pen": 0
+}
+},
+{
+"name": "Joseph Nardella",
+"pos": "FO",
+"num": "91",
+"stats": {
+"P": 0,
+"G1": 0,
+"G2": 0,
+"A": 0,
+"Sh": 0,
+"GB": 10,
+"TO": null,
+"PAS": null,
+"TCH": 13,
+"CT": 0,
+"Pen": 0,
+"FOW": 18,
+"FOT": 29
+}
+},
+{
+"name": "Colin Squires",
+"pos": "LSM",
+"num": "39",
+"stats": {
+"P": 0,
+"G1": 0,
+"G2": 0,
+"A": 0,
+"Sh": 0,
+"GB": 4,
+"TO": null,
+"PAS": null,
+"TCH": 2,
+"CT": 0,
+"Pen": 0
+}
+},
+{
+"name": "Roman Puglise",
+"pos": "SSDM",
+"num": "8",
+"stats": {
+"P": 0,
+"G1": 0,
+"G2": 0,
+"A": 0,
+"Sh": 0,
+"GB": 3,
+"TO": null,
+"PAS": null,
+"TCH": 9,
+"CT": 0,
+"Pen": 0
+}
+},
+{
+"name": "Tim Muller",
+"pos": "D",
+"num": "14",
+"stats": {
+"P": 0,
+"G1": 0,
+"G2": 0,
+"A": 0,
+"Sh": 0,
+"GB": 2,
+"TO": null,
+"PAS": null,
+"TCH": 8,
+"CT": 0,
+"Pen": 0
+}
+},
+{
+"name": "Brendan Krebs",
+"pos": "G",
+"num": "0",
+"stats": {
+"P": 0,
+"G1": 0,
+"G2": 0,
+"A": 0,
+"Sh": 0,
+"GB": 2,
+"TO": null,
+"PAS": null,
+"TCH": 9,
+"CT": 0,
+"Pen": 0,
+"SA": 14,
+"Sv": 9,
+"SvPct": 40.9,
+"CSv": 3,
+"GA": 13
+}
+},
+{
+"name": "Kyle Bernlohr",
+"pos": "G",
+"num": "35",
+"stats": {
+"P": 0,
+"G1": 0,
+"G2": 0,
+"A": 0,
+"Sh": 0,
+"GB": 1,
+"TO": null,
+"PAS": null,
+"TCH": 4,
+"CT": 0,
+"Pen": 0,
+"SA": 2,
+"Sv": 1,
+"SvPct": 33.3,
+"CSv": 1,
+"GA": 2
+}
+},
+{
+"name": "Colin Heacock",
+"pos": "M",
+"num": "10",
+"stats": {
+"P": 0,
+"G1": 0,
+"G2": 0,
+"A": 0,
+"Sh": 0,
+"GB": 1,
+"TO": null,
+"PAS": null,
+"TCH": 10,
+"CT": 0,
+"Pen": 0
+}
+}
+]
+},
+{
+"team": "Whipsnakes",
+"season": 2024,
+"date": "2024-07-19",
+"opponent": "Chaos",
+"file": "7_19 vs Chaos.xlsx",
+"players": [
+{
+"name": "Zed Williams",
+"pos": "A",
+"num": "36",
+"stats": {
+"P": 3,
+"G1": 3,
+"G2": 0,
+"A": 0,
+"Sh": 5,
+"GB": 0,
+"TO": 3,
+"PAS": 16,
+"TCH": 24,
+"CT": null,
+"Pen": null
+}
+},
+{
+"name": "Levi Anderson",
+"pos": "M",
+"num": "24",
+"stats": {
+"P": 2,
+"G1": 2,
+"G2": 0,
+"A": 0,
+"Sh": 6,
+"GB": 1,
+"TO": 1,
+"PAS": 12,
+"TCH": 19,
+"CT": 0,
+"Pen": 0
+}
+},
+{
+"name": "Roman Puglise",
+"pos": "SSDM",
+"num": "8",
+"stats": {
+"P": 1,
+"G1": 1,
+"G2": 0,
+"A": 0,
+"Sh": 1,
+"GB": 1,
+"TO": 1,
+"PAS": 9,
+"TCH": 11,
+"CT": 0,
+"Pen": 0
+}
+},
+{
+"name": "Wheaton Jackoboice",
+"pos": "SSDM",
+"num": "55",
+"stats": {
+"P": 1,
+"G1": 1,
+"G2": 0,
+"A": 0,
+"Sh": 2,
+"GB": 1,
+"TO": 0,
+"PAS": 2,
+"TCH": 4,
+"CT": 0,
+"Pen": 0
+}
+},
+{
+"name": "Tucker Dordevic",
+"pos": "M",
+"num": "2",
+"stats": {
+"P": 1,
+"G1": 1,
+"G2": 0,
+"A": 0,
+"Sh": 9,
+"GB": 2,
+"TO": 0,
+"PAS": 16,
+"TCH": 25,
+"CT": 0,
+"Pen": 0
+}
+},
+{
+"name": "TJ Malone",
+"pos": "A",
+"num": "7",
+"stats": {
+"P": 1,
+"G1": 1,
+"G2": 0,
+"A": 0,
+"Sh": 6,
+"GB": 2,
+"TO": 0,
+"PAS": 33,
+"TCH": 39,
+"CT": null,
+"Pen": null
+}
+},
+{
+"name": "Jake Bernhardt",
+"pos": "SSDM",
+"num": "83",
+"stats": {
+"P": 1,
+"G1": 0,
+"G2": 0,
+"A": 1,
+"Sh": 2,
+"GB": 1,
+"TO": 0,
+"PAS": 6,
+"TCH": 8,
+"CT": 0,
+"Pen": 1,
+"FOW": 0,
+"FOT": 1
+}
+},
+{
+"name": "Adam Poitras",
+"pos": "M",
+"num": "51",
+"stats": {
+"P": 1,
+"G1": 0,
+"G2": 0,
+"A": 1,
+"Sh": 2,
+"GB": 3,
+"TO": 0,
+"PAS": 12,
+"TCH": 14,
+"CT": 0,
+"Pen": 0
+}
+},
+{
+"name": "Mike Chanenchuk",
+"pos": "M",
+"num": "1",
+"stats": {
+"P": 0,
+"G1": 0,
+"G2": 0,
+"A": 0,
+"Sh": 5,
+"GB": 0,
+"TO": 0,
+"PAS": 15,
+"TCH": 20,
+"CT": null,
+"Pen": null
+}
+},
+{
+"name": "Colin Heacock",
+"pos": "M",
+"num": "10",
+"stats": {
+"P": 0,
+"G1": 0,
+"G2": 0,
+"A": 0,
+"Sh": 1,
+"GB": 0,
+"TO": 0,
+"PAS": 6,
+"TCH": 7,
+"CT": null,
+"Pen": null
+}
+},
+{
+"name": "Colin Squires",
+"pos": "LSM",
+"num": "39",
+"stats": {
+"P": 0,
+"G1": 0,
+"G2": 0,
+"A": 0,
+"Sh": 1,
+"GB": 3,
+"TO": 0,
+"PAS": 5,
+"TCH": 6,
+"CT": 0,
+"Pen": 1
+}
+},
+{
+"name": "Keegan Khan",
+"pos": "M",
+"num": "76",
+"stats": {
+"P": 0,
+"G1": 0,
+"G2": 0,
+"A": 0,
+"Sh": 3,
+"GB": 1,
+"TO": 0,
+"PAS": 9,
+"TCH": 12,
+"CT": 0,
+"Pen": 0
+}
+},
+{
+"name": "Ajax Zappitello",
+"pos": "D",
+"num": "5",
+"stats": {
+"P": 0,
+"G1": 0,
+"G2": 0,
+"A": 0,
+"Sh": 2,
+"GB": 6,
+"TO": 2,
+"PAS": 12,
+"TCH": 16,
+"CT": 1,
+"Pen": 0
+}
+},
+{
+"name": "Tim Muller",
+"pos": "D",
+"num": "14",
+"stats": {
+"P": 0,
+"G1": 0,
+"G2": 0,
+"A": 0,
+"Sh": 0,
+"GB": 3,
+"TO": null,
+"PAS": null,
+"TCH": 6,
+"CT": 2,
+"Pen": 0
+}
+},
+{
+"name": "Alex Mazzone",
+"pos": "LSM",
+"num": "6",
+"stats": {
+"P": 0,
+"G1": 0,
+"G2": 0,
+"A": 0,
+"Sh": 0,
+"GB": 3,
+"TO": null,
+"PAS": null,
+"TCH": 4,
+"CT": 2,
+"Pen": 0
+}
+},
+{
+"name": "Brendan Krebs",
+"pos": "G",
+"num": "0",
+"stats": {
+"P": 0,
+"G1": 0,
+"G2": 0,
+"A": 0,
+"Sh": 0,
+"GB": 4,
+"TO": null,
+"PAS": null,
+"TCH": 14,
+"CT": 1,
+"Pen": 0,
+"SA": 10,
+"Sv": 13,
+"SvPct": 56.5,
+"CSv": 7,
+"GA": 10
+}
+},
+{
+"name": "Matthew Dunn",
+"pos": "D",
+"num": "33",
+"stats": {
+"P": 0,
+"G1": 0,
+"G2": 0,
+"A": 0,
+"Sh": 0,
+"GB": 3,
+"TO": null,
+"PAS": null,
+"TCH": 9,
+"CT": 1,
+"Pen": 0
+}
+},
+{
+"name": "Joseph Nardella",
+"pos": "FO",
+"num": "91",
+"stats": {
+"P": 0,
+"G1": 0,
+"G2": 0,
+"A": 0,
+"Sh": 0,
+"GB": 6,
+"TO": null,
+"PAS": null,
+"TCH": 10,
+"CT": 0,
+"Pen": 0,
+"FOW": 16,
+"FOT": 22
+}
+}
+]
+},
+{
+"team": "Whipsnakes",
+"season": 2024,
+"date": "2024-07-28",
+"opponent": "Redwoods",
+"file": "7_28 vs Redwoods.xlsx",
+"players": [
+{
+"name": "Tucker Dordevic",
+"pos": "M",
+"num": "2",
+"stats": {
+"P": 7,
+"G1": 1,
+"G2": 3,
+"A": 0,
+"Sh": 9,
+"GB": 2,
+"TO": 3,
+"PAS": 20,
+"TCH": 32,
+"CT": 0,
+"Pen": 0
+}
+},
+{
+"name": "Zed Williams",
+"pos": "A",
+"num": "36",
+"stats": {
+"P": 4,
+"G1": 3,
+"G2": 0,
+"A": 1,
+"Sh": 9,
+"GB": 3,
+"TO": 2,
+"PAS": 10,
+"TCH": 21,
+"CT": null,
+"Pen": null
+}
+},
+{
+"name": "TJ Malone",
+"pos": "A",
+"num": "7",
+"stats": {
+"P": 4,
+"G1": 1,
+"G2": 0,
+"A": 3,
+"Sh": 9,
+"GB": 5,
+"TO": 1,
+"PAS": 32,
+"TCH": 42,
+"CT": null,
+"Pen": null
+}
+},
+{
+"name": "Joseph Nardella",
+"pos": "FO",
+"num": "91",
+"stats": {
+"P": 2,
+"G1": 2,
+"G2": 0,
+"A": 0,
+"Sh": 2,
+"GB": 4,
+"TO": 0,
+"PAS": 3,
+"TCH": 5,
+"CT": 0,
+"Pen": 0,
+"FOW": 15,
+"FOT": 30
+}
+},
+{
+"name": "Matt Rambo",
+"pos": "A",
+"num": "9",
+"stats": {
+"P": 2,
+"G1": 1,
+"G2": 0,
+"A": 1,
+"Sh": 5,
+"GB": 0,
+"TO": 1,
+"PAS": 20,
+"TCH": 26,
+"CT": null,
+"Pen": null
+}
+},
+{
+"name": "Levi Anderson",
+"pos": "M",
+"num": "24",
+"stats": {
+"P": 2,
+"G1": 1,
+"G2": 0,
+"A": 1,
+"Sh": 3,
+"GB": 0,
+"TO": 2,
+"PAS": 14,
+"TCH": 19,
+"CT": null,
+"Pen": null
+}
+},
+{
+"name": "Adam Poitras",
+"pos": "M",
+"num": "51",
+"stats": {
+"P": 2,
+"G1": 1,
+"G2": 0,
+"A": 1,
+"Sh": 5,
+"GB": 2,
+"TO": 2,
+"PAS": 24,
+"TCH": 31,
+"CT": 0,
+"Pen": 0
+}
+},
+{
+"name": "Ajax Zappitello",
+"pos": "D",
+"num": "5",
+"stats": {
+"P": 1,
+"G1": 1,
+"G2": 0,
+"A": 0,
+"Sh": 1,
+"GB": 0,
+"TO": 1,
+"PAS": 7,
+"TCH": 9,
+"CT": 1,
+"Pen": 0
+}
+},
+{
+"name": "Jack Koras",
+"pos": "M",
+"num": "15",
+"stats": {
+"P": 1,
+"G1": 1,
+"G2": 0,
+"A": 0,
+"Sh": 2,
+"GB": 3,
+"TO": 0,
+"PAS": 7,
+"TCH": 9,
+"CT": 0,
+"Pen": 0
+}
+},
+{
+"name": "Jake Bernhardt",
+"pos": "SSDM",
+"num": "83",
+"stats": {
+"P": 0,
+"G1": 0,
+"G2": 0,
+"A": 0,
+"Sh": 1,
+"GB": 1,
+"TO": 1,
+"PAS": 5,
+"TCH": 7,
+"CT": 0,
+"Pen": 0
+}
+},
+{
+"name": "Mike Chanenchuk",
+"pos": "M",
+"num": "1",
+"stats": {
+"P": 0,
+"G1": 0,
+"G2": 0,
+"A": 0,
+"Sh": 6,
+"GB": 0,
+"TO": 1,
+"PAS": 18,
+"TCH": 25,
+"CT": 1,
+"Pen": 0
+}
+},
+{
+"name": "Roman Puglise",
+"pos": "SSDM",
+"num": "8",
+"stats": {
+"P": 0,
+"G1": 0,
+"G2": 0,
+"A": 0,
+"Sh": 1,
+"GB": 2,
+"TO": 1,
+"PAS": 9,
+"TCH": 11,
+"CT": 1,
+"Pen": 2
+}
+},
+{
+"name": "Wheaton Jackoboice",
+"pos": "SSDM",
+"num": "55",
+"stats": {
+"P": 0,
+"G1": 0,
+"G2": 0,
+"A": 0,
+"Sh": 1,
+"GB": 1,
+"TO": 0,
+"PAS": 7,
+"TCH": 8,
+"CT": 1,
+"Pen": 0
+}
+},
+{
+"name": "Colin Squires",
+"pos": "LSM",
+"num": "39",
+"stats": {
+"P": 0,
+"G1": 0,
+"G2": 0,
+"A": 0,
+"Sh": 0,
+"GB": 5,
+"TO": null,
+"PAS": null,
+"TCH": 5,
+"CT": 1,
+"Pen": 0
+}
+},
+{
+"name": "Matthew Dunn",
+"pos": "D",
+"num": "33",
+"stats": {
+"P": 0,
+"G1": 0,
+"G2": 0,
+"A": 0,
+"Sh": 0,
+"GB": 3,
+"TO": null,
+"PAS": null,
+"TCH": 11,
+"CT": 1,
+"Pen": 0
+}
+},
+{
+"name": "Tim Muller",
+"pos": "D",
+"num": "14",
+"stats": {
+"P": 0,
+"G1": 0,
+"G2": 0,
+"A": 0,
+"Sh": 0,
+"GB": 2,
+"TO": null,
+"PAS": null,
+"TCH": 8,
+"CT": 1,
+"Pen": 0
+}
+},
+{
+"name": "Alex Mazzone",
+"pos": "LSM",
+"num": "6",
+"stats": {
+"P": 0,
+"G1": 0,
+"G2": 0,
+"A": 0,
+"Sh": 0,
+"GB": 3,
+"TO": null,
+"PAS": null,
+"TCH": 6,
+"CT": 0,
+"Pen": 0
+}
+},
+{
+"name": "Brendan Krebs",
+"pos": "G",
+"num": "0",
+"stats": {
+"P": 0,
+"G1": 0,
+"G2": 0,
+"A": 0,
+"Sh": 0,
+"GB": 0,
+"TO": null,
+"PAS": null,
+"TCH": 0,
+"CT": null,
+"Pen": null,
+"SA": 13,
+"Sv": 12,
+"SvPct": 52.2,
+"CSv": 4,
+"GA": 11
+}
+}
+]
+},
+{
+"team": "Whipsnakes",
+"season": 2024,
+"date": "2024-08-03",
+"opponent": "Waterdogs",
+"file": "8_3 vs Waterdogs.xlsx",
+"players": [
+{
+"name": "TJ Malone",
+"pos": "A",
+"num": "7",
+"stats": {
+"P": 4,
+"G1": 0,
+"G2": 0,
+"A": 4,
+"Sh": 5,
+"GB": 0,
+"TO": 3,
+"PAS": 26,
+"TCH": 34,
+"CT": null,
+"Pen": null
+}
+},
+{
+"name": "Zed Williams",
+"pos": "A",
+"num": "36",
+"stats": {
+"P": 3,
+"G1": 3,
+"G2": 0,
+"A": 0,
+"Sh": 8,
+"GB": 4,
+"TO": 1,
+"PAS": 13,
+"TCH": 22,
+"CT": null,
+"Pen": null
+}
+},
+{
+"name": "Colin Heacock",
+"pos": "M",
+"num": "10",
+"stats": {
+"P": 3,
+"G1": 3,
+"G2": 0,
+"A": 0,
+"Sh": 5,
+"GB": 2,
+"TO": 0,
+"PAS": 9,
+"TCH": 14,
+"CT": 0,
+"Pen": 0
+}
+},
+{
+"name": "Matt Rambo",
+"pos": "A",
+"num": "9",
+"stats": {
+"P": 2,
+"G1": 2,
+"G2": 0,
+"A": 0,
+"Sh": 8,
+"GB": 1,
+"TO": 1,
+"PAS": 15,
+"TCH": 24,
+"CT": null,
+"Pen": null
+}
+},
+{
+"name": "Mike Chanenchuk",
+"pos": "M",
+"num": "1",
+"stats": {
+"P": 1,
+"G1": 1,
+"G2": 0,
+"A": 0,
+"Sh": 3,
+"GB": 4,
+"TO": 3,
+"PAS": 16,
+"TCH": 22,
+"CT": 0,
+"Pen": 0
+}
+},
+{
+"name": "Tucker Dordevic",
+"pos": "M",
+"num": "2",
+"stats": {
+"P": 1,
+"G1": 1,
+"G2": 0,
+"A": 0,
+"Sh": 4,
+"GB": 0,
+"TO": 0,
+"PAS": 13,
+"TCH": 17,
+"CT": null,
+"Pen": null
+}
+},
+{
+"name": "Levi Anderson",
+"pos": "M",
+"num": "24",
+"stats": {
+"P": 1,
+"G1": 1,
+"G2": 0,
+"A": 0,
+"Sh": 2,
+"GB": 2,
+"TO": 1,
+"PAS": 16,
+"TCH": 19,
+"CT": 0,
+"Pen": 0
+}
+},
+{
+"name": "Adam Poitras",
+"pos": "M",
+"num": "51",
+"stats": {
+"P": 1,
+"G1": 1,
+"G2": 0,
+"A": 0,
+"Sh": 3,
+"GB": 2,
+"TO": 1,
+"PAS": 13,
+"TCH": 17,
+"CT": 0,
+"Pen": 0
+}
+},
+{
+"name": "Matthew Dunn",
+"pos": "D",
+"num": "33",
+"stats": {
+"P": 0,
+"G1": 0,
+"G2": 0,
+"A": 0,
+"Sh": 1,
+"GB": 0,
+"TO": 0,
+"PAS": 4,
+"TCH": 5,
+"CT": 1,
+"Pen": 0
+}
+},
+{
+"name": "Wheaton Jackoboice",
+"pos": "SSDM",
+"num": "55",
+"stats": {
+"P": 0,
+"G1": 0,
+"G2": 0,
+"A": 0,
+"Sh": 1,
+"GB": 1,
+"TO": 0,
+"PAS": 5,
+"TCH": 6,
+"CT": 0,
+"Pen": 0
+}
+},
+{
+"name": "Alex Mazzone",
+"pos": "LSM",
+"num": "6",
+"stats": {
+"P": 0,
+"G1": 0,
+"G2": 0,
+"A": 0,
+"Sh": 1,
+"GB": 3,
+"TO": 0,
+"PAS": 5,
+"TCH": 6,
+"CT": 0,
+"Pen": 0
+}
+},
+{
+"name": "Joseph Nardella",
+"pos": "FO",
+"num": "91",
+"stats": {
+"P": 0,
+"G1": 0,
+"G2": 0,
+"A": 0,
+"Sh": 0,
+"GB": 7,
+"TO": null,
+"PAS": null,
+"TCH": 9,
+"CT": 0,
+"Pen": 0,
+"FOW": 14,
+"FOT": 21
+}
+},
+{
+"name": "Colin Squires",
+"pos": "LSM",
+"num": "39",
+"stats": {
+"P": 0,
+"G1": 0,
+"G2": 0,
+"A": 0,
+"Sh": 0,
+"GB": 6,
+"TO": null,
+"PAS": null,
+"TCH": 8,
+"CT": 0,
+"Pen": 0
+}
+},
+{
+"name": "Brendan Krebs",
+"pos": "G",
+"num": "0",
+"stats": {
+"P": 0,
+"G1": 0,
+"G2": 0,
+"A": 0,
+"Sh": 0,
+"GB": 3,
+"TO": null,
+"PAS": null,
+"TCH": 22,
+"CT": 0,
+"Pen": 0,
+"SA": 6,
+"Sv": 20,
+"SvPct": 76.9,
+"CSv": 8,
+"GA": 6
+}
+},
+{
+"name": "Tim Muller",
+"pos": "D",
+"num": "14",
+"stats": {
+"P": 0,
+"G1": 0,
+"G2": 0,
+"A": 0,
+"Sh": 0,
+"GB": 2,
+"TO": null,
+"PAS": null,
+"TCH": 11,
+"CT": 0,
+"Pen": 0
+}
+},
+{
+"name": "Jake Bernhardt",
+"pos": "SSDM",
+"num": "83",
+"stats": {
+"P": 0,
+"G1": 0,
+"G2": 0,
+"A": 0,
+"Sh": 0,
+"GB": 0,
+"TO": null,
+"PAS": null,
+"TCH": 4,
+"CT": null,
+"Pen": null,
+"FOW": 0,
+"FOT": 1
+}
+}
+]
+},
+{
+"team": "Whipsnakes",
+"season": 2024,
+"date": "2024-08-04",
+"opponent": "Cannons",
+"file": "8_4 vs Cannons.xlsx",
+"players": [
+{
+"name": "Zed Williams",
+"pos": "A",
+"num": "36",
+"stats": {
+"P": 5,
+"G1": 5,
+"G2": 0,
+"A": 0,
+"Sh": 10,
+"GB": 0,
+"TO": 2,
+"PAS": 9,
+"TCH": 21,
+"CT": null,
+"Pen": null
+}
+},
+{
+"name": "TJ Malone",
+"pos": "A",
+"num": "7",
+"stats": {
+"P": 5,
+"G1": 1,
+"G2": 0,
+"A": 4,
+"Sh": 10,
+"GB": 2,
+"TO": 2,
+"PAS": 18,
+"TCH": 30,
+"CT": null,
+"Pen": null
+}
+},
+{
+"name": "Adam Poitras",
+"pos": "M",
+"num": "51",
+"stats": {
+"P": 3,
+"G1": 3,
+"G2": 0,
+"A": 0,
+"Sh": 5,
+"GB": 3,
+"TO": 2,
+"PAS": 15,
+"TCH": 22,
+"CT": 1,
+"Pen": 0
+}
+},
+{
+"name": "Matt Rambo",
+"pos": "A",
+"num": "9",
+"stats": {
+"P": 2,
+"G1": 2,
+"G2": 0,
+"A": 0,
+"Sh": 4,
+"GB": 2,
+"TO": 0,
+"PAS": 18,
+"TCH": 22,
+"CT": null,
+"Pen": null
+}
+},
+{
+"name": "Roman Puglise",
+"pos": "SSDM",
+"num": "8",
+"stats": {
+"P": 2,
+"G1": 0,
+"G2": 1,
+"A": 0,
+"Sh": 1,
+"GB": 1,
+"TO": 1,
+"PAS": 10,
+"TCH": 12,
+"CT": 1,
+"Pen": 0,
+"FOW": 0,
+"FOT": 1
+}
+},
+{
+"name": "Mike Chanenchuk",
+"pos": "M",
+"num": "1",
+"stats": {
+"P": 1,
+"G1": 1,
+"G2": 0,
+"A": 0,
+"Sh": 4,
+"GB": 2,
+"TO": 1,
+"PAS": 21,
+"TCH": 26,
+"CT": 0,
+"Pen": 0
+}
+},
+{
+"name": "Colin Heacock",
+"pos": "M",
+"num": "10",
+"stats": {
+"P": 1,
+"G1": 1,
+"G2": 0,
+"A": 0,
+"Sh": 4,
+"GB": 0,
+"TO": 0,
+"PAS": 13,
+"TCH": 17,
+"CT": null,
+"Pen": null
+}
+},
+{
+"name": "Tucker Dordevic",
+"pos": "M",
+"num": "2",
+"stats": {
+"P": 1,
+"G1": 1,
+"G2": 0,
+"A": 0,
+"Sh": 3,
+"GB": 0,
+"TO": 1,
+"PAS": 2,
+"TCH": 6,
+"CT": null,
+"Pen": null
+}
+},
+{
+"name": "Matthew Dunn",
+"pos": "D",
+"num": "33",
+"stats": {
+"P": 1,
+"G1": 0,
+"G2": 0,
+"A": 1,
+"Sh": 0,
+"GB": 2,
+"TO": 0,
+"PAS": 8,
+"TCH": 8,
+"CT": 1,
+"Pen": 0
+}
+},
+{
+"name": "Ajax Zappitello",
+"pos": "D",
+"num": "5",
+"stats": {
+"P": 1,
+"G1": 0,
+"G2": 0,
+"A": 1,
+"Sh": 0,
+"GB": 1,
+"TO": 0,
+"PAS": 12,
+"TCH": 12,
+"CT": 2,
+"Pen": 0
+}
+},
+{
+"name": "Jack Koras",
+"pos": "M",
+"num": "15",
+"stats": {
+"P": 1,
+"G1": 0,
+"G2": 0,
+"A": 1,
+"Sh": 3,
+"GB": 3,
+"TO": 0,
+"PAS": 12,
+"TCH": 15,
+"CT": 1,
+"Pen": 0
+}
+},
+{
+"name": "Levi Anderson",
+"pos": "M",
+"num": "24",
+"stats": {
+"P": 0,
+"G1": 0,
+"G2": 0,
+"A": 0,
+"Sh": 2,
+"GB": 0,
+"TO": 1,
+"PAS": 10,
+"TCH": 13,
+"CT": null,
+"Pen": null
+}
+},
+{
+"name": "Brendan Krebs",
+"pos": "G",
+"num": "0",
+"stats": {
+"P": 0,
+"G1": 0,
+"G2": 0,
+"A": 0,
+"Sh": 0,
+"GB": 3,
+"TO": null,
+"PAS": null,
+"TCH": 17,
+"CT": 1,
+"Pen": 0,
+"SA": 14,
+"Sv": 9,
+"SvPct": 40.9,
+"CSv": 4,
+"GA": 13
+}
+},
+{
+"name": "Joseph Nardella",
+"pos": "FO",
+"num": "91",
+"stats": {
+"P": 0,
+"G1": 0,
+"G2": 0,
+"A": 0,
+"Sh": 0,
+"GB": 14,
+"TO": null,
+"PAS": null,
+"TCH": 16,
+"CT": 0,
+"Pen": 0,
+"FOW": 21,
+"FOT": 29
+}
+},
+{
+"name": "Colin Squires",
+"pos": "LSM",
+"num": "39",
+"stats": {
+"P": 0,
+"G1": 0,
+"G2": 0,
+"A": 0,
+"Sh": 0,
+"GB": 4,
+"TO": null,
+"PAS": null,
+"TCH": 8,
+"CT": 0,
+"Pen": 0
+}
+},
+{
+"name": "Wheaton Jackoboice",
+"pos": "SSDM",
+"num": "55",
+"stats": {
+"P": 0,
+"G1": 0,
+"G2": 0,
+"A": 0,
+"Sh": 0,
+"GB": 2,
+"TO": null,
+"PAS": null,
+"TCH": 7,
+"CT": 0,
+"Pen": 0
+}
+},
+{
+"name": "Alex Mazzone",
+"pos": "LSM",
+"num": "6",
+"stats": {
+"P": 0,
+"G1": 0,
+"G2": 0,
+"A": 0,
+"Sh": 0,
+"GB": 2,
+"TO": null,
+"PAS": null,
+"TCH": 2,
+"CT": 0,
+"Pen": 0
+}
+},
+{
+"name": "Tim Muller",
+"pos": "D",
+"num": "14",
+"stats": {
+"P": 0,
+"G1": 0,
+"G2": 0,
+"A": 0,
+"Sh": 0,
+"GB": 1,
+"TO": null,
+"PAS": null,
+"TCH": 6,
+"CT": 0,
+"Pen": 0
+}
+}
+]
+},
+{
+"team": "Whipsnakes",
+"season": 2024,
+"date": "2024-08-09",
+"opponent": "Outlaws",
+"file": "8_9 vs Outlaws.xlsx",
+"players": [
+{
+"name": "TJ Malone",
+"pos": "A",
+"num": "7",
+"stats": {
+"P": 6,
+"G1": 4,
+"G2": 0,
+"A": 2,
+"Sh": 9,
+"GB": 2,
+"TO": 2,
+"PAS": 21,
+"TCH": 32,
+"CT": null,
+"Pen": null
+}
+},
+{
+"name": "Ryan Conrad",
+"pos": "M",
+"num": "23",
+"stats": {
+"P": 4,
+"G1": 3,
+"G2": 0,
+"A": 1,
+"Sh": 6,
+"GB": 4,
+"TO": 3,
+"PAS": 15,
+"TCH": 24,
+"CT": 0,
+"Pen": 0
+}
+},
+{
+"name": "Joseph Nardella",
+"pos": "FO",
+"num": "91",
+"stats": {
+"P": 2,
+"G1": 2,
+"G2": 0,
+"A": 0,
+"Sh": 2,
+"GB": 6,
+"TO": 1,
+"PAS": 8,
+"TCH": 11,
+"CT": 0,
+"Pen": 0,
+"FOW": 17,
+"FOT": 26
+}
+},
+{
+"name": "Zed Williams",
+"pos": "A",
+"num": "36",
+"stats": {
+"P": 2,
+"G1": 2,
+"G2": 0,
+"A": 0,
+"Sh": 8,
+"GB": 3,
+"TO": 0,
+"PAS": 10,
+"TCH": 18,
+"CT": null,
+"Pen": null
+}
+},
+{
+"name": "Levi Anderson",
+"pos": "M",
+"num": "24",
+"stats": {
+"P": 2,
+"G1": 2,
+"G2": 0,
+"A": 0,
+"Sh": 3,
+"GB": 1,
+"TO": 1,
+"PAS": 7,
+"TCH": 11,
+"CT": 1,
+"Pen": 0
+}
+},
+{
+"name": "Adam Poitras",
+"pos": "M",
+"num": "51",
+"stats": {
+"P": 2,
+"G1": 2,
+"G2": 0,
+"A": 0,
+"Sh": 3,
+"GB": 5,
+"TO": 2,
+"PAS": 13,
+"TCH": 18,
+"CT": 0,
+"Pen": 0
+}
+},
+{
+"name": "Matt Rambo",
+"pos": "A",
+"num": "9",
+"stats": {
+"P": 1,
+"G1": 1,
+"G2": 0,
+"A": 0,
+"Sh": 2,
+"GB": 3,
+"TO": 1,
+"PAS": 12,
+"TCH": 15,
+"CT": null,
+"Pen": null
+}
+},
+{
+"name": "Mike Chanenchuk",
+"pos": "M",
+"num": "1",
+"stats": {
+"P": 1,
+"G1": 0,
+"G2": 0,
+"A": 1,
+"Sh": 3,
+"GB": 0,
+"TO": 0,
+"PAS": 17,
+"TCH": 20,
+"CT": null,
+"Pen": null
+}
+},
+{
+"name": "Colin Heacock",
+"pos": "M",
+"num": "10",
+"stats": {
+"P": 1,
+"G1": 0,
+"G2": 0,
+"A": 1,
+"Sh": 2,
+"GB": 1,
+"TO": 2,
+"PAS": 3,
+"TCH": 7,
+"CT": 0,
+"Pen": 0
+}
+},
+{
+"name": "Colin Squires",
+"pos": "LSM",
+"num": "39",
+"stats": {
+"P": 1,
+"G1": 0,
+"G2": 0,
+"A": 1,
+"Sh": 0,
+"GB": 4,
+"TO": 0,
+"PAS": 8,
+"TCH": 8,
+"CT": 1,
+"Pen": 0
+}
+},
+{
+"name": "Matthew Dunn",
+"pos": "D",
+"num": "33",
+"stats": {
+"P": 0,
+"G1": 0,
+"G2": 0,
+"A": 0,
+"Sh": 1,
+"GB": 1,
+"TO": 0,
+"PAS": 6,
+"TCH": 7,
+"CT": 0,
+"Pen": 0
+}
+},
+{
+"name": "Ajax Zappitello",
+"pos": "D",
+"num": "5",
+"stats": {
+"P": 0,
+"G1": 0,
+"G2": 0,
+"A": 0,
+"Sh": 0,
+"GB": 2,
+"TO": null,
+"PAS": null,
+"TCH": 6,
+"CT": 2,
+"Pen": 1
+}
+},
+{
+"name": "Alex Mazzone",
+"pos": "LSM",
+"num": "6",
+"stats": {
+"P": 0,
+"G1": 0,
+"G2": 0,
+"A": 0,
+"Sh": 0,
+"GB": 2,
+"TO": null,
+"PAS": null,
+"TCH": 1,
+"CT": 1,
+"Pen": 0
+}
+},
+{
+"name": "Jack Koras",
+"pos": "M",
+"num": "15",
+"stats": {
+"P": 0,
+"G1": 0,
+"G2": 0,
+"A": 0,
+"Sh": 0,
+"GB": 2,
+"TO": null,
+"PAS": null,
+"TCH": 12,
+"CT": 1,
+"Pen": 0
+}
+},
+{
+"name": "Brendan Krebs",
+"pos": "G",
+"num": "0",
+"stats": {
+"P": 0,
+"G1": 0,
+"G2": 0,
+"A": 0,
+"Sh": 0,
+"GB": 2,
+"TO": null,
+"PAS": null,
+"TCH": 17,
+"CT": 0,
+"Pen": 0,
+"SA": 9,
+"Sv": 11,
+"SvPct": 55.0,
+"CSv": 5,
+"GA": 9
+}
+},
+{
+"name": "Jake Bernhardt",
+"pos": "SSDM",
+"num": "83",
+"stats": {
+"P": 0,
+"G1": 0,
+"G2": 0,
+"A": 0,
+"Sh": 0,
+"GB": 1,
+"TO": null,
+"PAS": null,
+"TCH": 6,
+"CT": 0,
+"Pen": 0,
+"FOW": 1,
+"FOT": 3
+}
+},
+{
+"name": "Tim Muller",
+"pos": "D",
+"num": "14",
+"stats": {
+"P": 0,
+"G1": 0,
+"G2": 0,
+"A": 0,
+"Sh": 0,
+"GB": 1,
+"TO": null,
+"PAS": null,
+"TCH": 8,
+"CT": 0,
+"Pen": 0
+}
+},
+{
+"name": "Roman Puglise",
+"pos": "SSDM",
+"num": "8",
+"stats": {
+"P": 0,
+"G1": 0,
+"G2": 0,
+"A": 0,
+"Sh": 0,
+"GB": 1,
+"TO": null,
+"PAS": null,
+"TCH": 9,
+"CT": 0,
+"Pen": 0
+}
+}
+]
+},
+{
+"team": "Whipsnakes",
+"season": 2024,
+"date": "2024-09-02",
+"opponent": "Outlaws",
+"file": "9_2 vs Outlaws.xlsx",
+"players": [
+{
+"name": "TJ Malone",
+"pos": "A",
+"num": "7",
+"stats": {
+"P": 5,
+"G1": 2,
+"G2": 0,
+"A": 3,
+"Sh": 6,
+"GB": 4,
+"TO": 4,
+"PAS": 24,
+"TCH": 34,
+"CT": null,
+"Pen": null
+}
+},
+{
+"name": "Mike Chanenchuk",
+"pos": "M",
+"num": "1",
+"stats": {
+"P": 2,
+"G1": 2,
+"G2": 0,
+"A": 0,
+"Sh": 5,
+"GB": 2,
+"TO": 1,
+"PAS": 15,
+"TCH": 21,
+"CT": 0,
+"Pen": 0
+}
+},
+{
+"name": "Ryan Conrad",
+"pos": "M",
+"num": "23",
+"stats": {
+"P": 2,
+"G1": 1,
+"G2": 0,
+"A": 1,
+"Sh": 7,
+"GB": 0,
+"TO": 3,
+"PAS": 19,
+"TCH": 29,
+"CT": null,
+"Pen": null
+}
+},
+{
+"name": "Adam Poitras",
+"pos": "M",
+"num": "51",
+"stats": {
+"P": 2,
+"G1": 1,
+"G2": 0,
+"A": 1,
+"Sh": 5,
+"GB": 2,
+"TO": 1,
+"PAS": 14,
+"TCH": 20,
+"CT": 0,
+"Pen": 0
+}
+},
+{
+"name": "Jake Bernhardt",
+"pos": "SSDM",
+"num": "83",
+"stats": {
+"P": 2,
+"G1": 0,
+"G2": 1,
+"A": 0,
+"Sh": 1,
+"GB": 0,
+"TO": 0,
+"PAS": 4,
+"TCH": 5,
+"CT": 1,
+"Pen": 0,
+"FOW": 0,
+"FOT": 1
+}
+},
+{
+"name": "Zed Williams",
+"pos": "A",
+"num": "36",
+"stats": {
+"P": 1,
+"G1": 1,
+"G2": 0,
+"A": 0,
+"Sh": 6,
+"GB": 1,
+"TO": 2,
+"PAS": 13,
+"TCH": 21,
+"CT": null,
+"Pen": null
+}
+},
+{
+"name": "Colin Heacock",
+"pos": "M",
+"num": "10",
+"stats": {
+"P": 1,
+"G1": 1,
+"G2": 0,
+"A": 0,
+"Sh": 2,
+"GB": 0,
+"TO": 0,
+"PAS": 9,
+"TCH": 11,
+"CT": null,
+"Pen": null
+}
+},
+{
+"name": "Ajax Zappitello",
+"pos": "D",
+"num": "5",
+"stats": {
+"P": 1,
+"G1": 1,
+"G2": 0,
+"A": 0,
+"Sh": 2,
+"GB": 3,
+"TO": 0,
+"PAS": 4,
+"TCH": 6,
+"CT": 1,
+"Pen": 0
+}
+},
+{
+"name": "Brendan Krebs",
+"pos": "G",
+"num": "0",
+"stats": {
+"P": 1,
+"G1": 0,
+"G2": 0,
+"A": 1,
+"Sh": 0,
+"GB": 2,
+"TO": 0,
+"PAS": 18,
+"TCH": 18,
+"CT": 0,
+"Pen": 0,
+"SA": 10,
+"Sv": 11,
+"SvPct": 55.0,
+"CSv": 7,
+"GA": 9
+}
+},
+{
+"name": "Matt Rambo",
+"pos": "A",
+"num": "9",
+"stats": {
+"P": 0,
+"G1": 0,
+"G2": 0,
+"A": 0,
+"Sh": 2,
+"GB": 3,
+"TO": 1,
+"PAS": 18,
+"TCH": 21,
+"CT": null,
+"Pen": null
+}
+},
+{
+"name": "Matthew Dunn",
+"pos": "D",
+"num": "33",
+"stats": {
+"P": 0,
+"G1": 0,
+"G2": 0,
+"A": 0,
+"Sh": 1,
+"GB": 2,
+"TO": 0,
+"PAS": 12,
+"TCH": 13,
+"CT": 2,
+"Pen": 0
+}
+},
+{
+"name": "Colin Squires",
+"pos": "LSM",
+"num": "39",
+"stats": {
+"P": 0,
+"G1": 0,
+"G2": 0,
+"A": 0,
+"Sh": 1,
+"GB": 2,
+"TO": 0,
+"PAS": 3,
+"TCH": 4,
+"CT": 0,
+"Pen": 0
+}
+},
+{
+"name": "Roman Puglise",
+"pos": "SSDM",
+"num": "8",
+"stats": {
+"P": 0,
+"G1": 0,
+"G2": 0,
+"A": 0,
+"Sh": 1,
+"GB": 1,
+"TO": 0,
+"PAS": 7,
+"TCH": 8,
+"CT": 0,
+"Pen": 1
+}
+},
+{
+"name": "Levi Anderson",
+"pos": "M",
+"num": "24",
+"stats": {
+"P": 0,
+"G1": 0,
+"G2": 0,
+"A": 0,
+"Sh": 2,
+"GB": 0,
+"TO": 1,
+"PAS": 7,
+"TCH": 10,
+"CT": 1,
+"Pen": 0
+}
+},
+{
+"name": "Tim Muller",
+"pos": "D",
+"num": "14",
+"stats": {
+"P": 0,
+"G1": 0,
+"G2": 0,
+"A": 0,
+"Sh": 0,
+"GB": 0,
+"TO": null,
+"PAS": null,
+"TCH": 10,
+"CT": 2,
+"Pen": 0
+}
+},
+{
+"name": "Joseph Nardella",
+"pos": "FO",
+"num": "91",
+"stats": {
+"P": 0,
+"G1": 0,
+"G2": 0,
+"A": 0,
+"Sh": 0,
+"GB": 5,
+"TO": null,
+"PAS": null,
+"TCH": 5,
+"CT": 1,
+"Pen": 0,
+"FOW": 12,
+"FOT": 22
+}
+},
+{
+"name": "Jack Koras",
+"pos": "M",
+"num": "15",
+"stats": {
+"P": 0,
+"G1": 0,
+"G2": 0,
+"A": 0,
+"Sh": 0,
+"GB": 4,
+"TO": null,
+"PAS": null,
+"TCH": 9,
+"CT": 1,
+"Pen": 1
+}
+},
+{
+"name": "Alex Mazzone",
+"pos": "LSM",
+"num": "6",
+"stats": {
+"P": 0,
+"G1": 0,
+"G2": 0,
+"A": 0,
+"Sh": 0,
+"GB": 1,
+"TO": null,
+"PAS": null,
+"TCH": 3,
+"CT": 0,
+"Pen": 0
+}
+}
+]
+},
+{
+"team": "Whipsnakes",
+"season": 2024,
+"date": "2024-09-07",
+"opponent": "Atlas",
+"file": "9_7 vs Atlas.xlsx",
+"players": [
+{
+"name": "TJ Malone",
+"pos": "A",
+"num": "7",
+"stats": {
+"P": 4,
+"G1": 3,
+"G2": 0,
+"A": 1,
+"Sh": 5,
+"GB": 4,
+"TO": 4,
+"PAS": 11,
+"TCH": 20,
+"CT": null,
+"Pen": null
+}
+},
+{
+"name": "Colin Heacock",
+"pos": "M",
+"num": "10",
+"stats": {
+"P": 3,
+"G1": 3,
+"G2": 0,
+"A": 0,
+"Sh": 4,
+"GB": 0,
+"TO": 1,
+"PAS": 10,
+"TCH": 15,
+"CT": null,
+"Pen": null
+}
+},
+{
+"name": "Levi Anderson",
+"pos": "M",
+"num": "24",
+"stats": {
+"P": 3,
+"G1": 3,
+"G2": 0,
+"A": 0,
+"Sh": 7,
+"GB": 0,
+"TO": 1,
+"PAS": 3,
+"TCH": 11,
+"CT": null,
+"Pen": null
+}
+},
+{
+"name": "Matt Rambo",
+"pos": "A",
+"num": "9",
+"stats": {
+"P": 2,
+"G1": 2,
+"G2": 0,
+"A": 0,
+"Sh": 9,
+"GB": 0,
+"TO": 0,
+"PAS": 4,
+"TCH": 13,
+"CT": null,
+"Pen": null
+}
+},
+{
+"name": "Ryan Conrad",
+"pos": "M",
+"num": "23",
+"stats": {
+"P": 2,
+"G1": 1,
+"G2": 0,
+"A": 1,
+"Sh": 4,
+"GB": 3,
+"TO": 2,
+"PAS": 18,
+"TCH": 24,
+"CT": 0,
+"Pen": 0
+}
+},
+{
+"name": "Jake Bernhardt",
+"pos": "SSDM",
+"num": "83",
+"stats": {
+"P": 0,
+"G1": 0,
+"G2": 0,
+"A": 0,
+"Sh": 2,
+"GB": 1,
+"TO": 0,
+"PAS": 6,
+"TCH": 8,
+"CT": 1,
+"Pen": 0,
+"FOW": 1,
+"FOT": 1
+}
+},
+{
+"name": "Joseph Nardella",
+"pos": "FO",
+"num": "91",
+"stats": {
+"P": 0,
+"G1": 0,
+"G2": 0,
+"A": 0,
+"Sh": 1,
+"GB": 5,
+"TO": 1,
+"PAS": 5,
+"TCH": 7,
+"CT": 0,
+"Pen": 0,
+"FOW": 11,
+"FOT": 24
+}
+},
+{
+"name": "Matthew Dunn",
+"pos": "D",
+"num": "33",
+"stats": {
+"P": 0,
+"G1": 0,
+"G2": 0,
+"A": 0,
+"Sh": 1,
+"GB": 0,
+"TO": 1,
+"PAS": 14,
+"TCH": 16,
+"CT": null,
+"Pen": null
+}
+},
+{
+"name": "Mike Chanenchuk",
+"pos": "M",
+"num": "1",
+"stats": {
+"P": 0,
+"G1": 0,
+"G2": 0,
+"A": 0,
+"Sh": 3,
+"GB": 0,
+"TO": 2,
+"PAS": 16,
+"TCH": 21,
+"CT": null,
+"Pen": null
+}
+},
+{
+"name": "Zed Williams",
+"pos": "A",
+"num": "36",
+"stats": {
+"P": 0,
+"G1": 0,
+"G2": 0,
+"A": 0,
+"Sh": 4,
+"GB": 2,
+"TO": 2,
+"PAS": 7,
+"TCH": 13,
+"CT": null,
+"Pen": null
+}
+},
+{
+"name": "Adam Poitras",
+"pos": "M",
+"num": "51",
+"stats": {
+"P": 0,
+"G1": 0,
+"G2": 0,
+"A": 0,
+"Sh": 6,
+"GB": 3,
+"TO": 1,
+"PAS": 19,
+"TCH": 26,
+"CT": 0,
+"Pen": 0
+}
+},
+{
+"name": "Ajax Zappitello",
+"pos": "D",
+"num": "5",
+"stats": {
+"P": 0,
+"G1": 0,
+"G2": 0,
+"A": 0,
+"Sh": 0,
+"GB": 3,
+"TO": null,
+"PAS": null,
+"TCH": 9,
+"CT": 2,
+"Pen": 0
+}
+},
+{
+"name": "Brendan Krebs",
+"pos": "G",
+"num": "0",
+"stats": {
+"P": 0,
+"G1": 0,
+"G2": 0,
+"A": 0,
+"Sh": 0,
+"GB": 6,
+"TO": null,
+"PAS": null,
+"TCH": 26,
+"CT": 0,
+"Pen": 0,
+"SA": 11,
+"Sv": 17,
+"SvPct": 65.4,
+"CSv": 5,
+"GA": 9
+}
+},
+{
+"name": "Colin Squires",
+"pos": "LSM",
+"num": "39",
+"stats": {
+"P": 0,
+"G1": 0,
+"G2": 0,
+"A": 0,
+"Sh": 0,
+"GB": 5,
+"TO": null,
+"PAS": null,
+"TCH": 7,
+"CT": 0,
+"Pen": 0
+}
+},
+{
+"name": "Roman Puglise",
+"pos": "SSDM",
+"num": "8",
+"stats": {
+"P": 0,
+"G1": 0,
+"G2": 0,
+"A": 0,
+"Sh": 0,
+"GB": 1,
+"TO": null,
+"PAS": null,
+"TCH": 7,
+"CT": 0,
+"Pen": 0
+}
+},
+{
+"name": "Wheaton Jackoboice",
+"pos": "SSDM",
+"num": "55",
+"stats": {
+"P": 0,
+"G1": 0,
+"G2": 0,
+"A": 0,
+"Sh": 0,
+"GB": 1,
+"TO": null,
+"PAS": null,
+"TCH": 2,
+"CT": 0,
+"Pen": 1
+}
+}
+]
+},
+{
+"team": "Whipsnakes",
+"season": 2024,
+"date": "2024-09-15",
+"opponent": "Archers",
+"file": "9_15 vs Archers.xlsx",
+"players": [
+{
+"name": "TJ Malone",
+"pos": "A",
+"num": "7",
+"stats": {
+"P": 4,
+"G1": 0,
+"G2": 0,
+"A": 4,
+"Sh": 10,
+"GB": 0,
+"TO": 2,
+"PAS": 17,
+"TCH": 29,
+"CT": null,
+"Pen": null
+}
+},
+{
+"name": "Ryan Conrad",
+"pos": "M",
+"num": "23",
+"stats": {
+"P": 3,
+"G1": 3,
+"G2": 0,
+"A": 0,
+"Sh": 6,
+"GB": 0,
+"TO": 2,
+"PAS": 15,
+"TCH": 23,
+"CT": null,
+"Pen": null
+}
+},
+{
+"name": "Adam Poitras",
+"pos": "M",
+"num": "51",
+"stats": {
+"P": 2,
+"G1": 2,
+"G2": 0,
+"A": 0,
+"Sh": 5,
+"GB": 3,
+"TO": 0,
+"PAS": 15,
+"TCH": 20,
+"CT": 0,
+"Pen": 0
+}
+},
+{
+"name": "Matt Rambo",
+"pos": "A",
+"num": "9",
+"stats": {
+"P": 1,
+"G1": 1,
+"G2": 0,
+"A": 0,
+"Sh": 8,
+"GB": 3,
+"TO": 1,
+"PAS": 11,
+"TCH": 20,
+"CT": null,
+"Pen": null
+}
+},
+{
+"name": "Mike Chanenchuk",
+"pos": "M",
+"num": "1",
+"stats": {
+"P": 1,
+"G1": 1,
+"G2": 0,
+"A": 0,
+"Sh": 4,
+"GB": 0,
+"TO": 0,
+"PAS": 13,
+"TCH": 17,
+"CT": null,
+"Pen": null
+}
+},
+{
+"name": "Zed Williams",
+"pos": "A",
+"num": "36",
+"stats": {
+"P": 1,
+"G1": 1,
+"G2": 0,
+"A": 0,
+"Sh": 10,
+"GB": 1,
+"TO": 2,
+"PAS": 10,
+"TCH": 22,
+"CT": null,
+"Pen": null
+}
+},
+{
+"name": "Joseph Nardella",
+"pos": "FO",
+"num": "91",
+"stats": {
+"P": 1,
+"G1": 0,
+"G2": 0,
+"A": 1,
+"Sh": 2,
+"GB": 9,
+"TO": 1,
+"PAS": 8,
+"TCH": 11,
+"CT": 0,
+"Pen": 1,
+"FOW": 14,
+"FOT": 22
+}
+},
+{
+"name": "Jake Bernhardt",
+"pos": "SSDM",
+"num": "83",
+"stats": {
+"P": 0,
+"G1": 0,
+"G2": 0,
+"A": 0,
+"Sh": 1,
+"GB": 1,
+"TO": 0,
+"PAS": 9,
+"TCH": 10,
+"CT": 1,
+"Pen": 0,
+"FOW": 1,
+"FOT": 1
+}
+},
+{
+"name": "Matthew Dunn",
+"pos": "D",
+"num": "33",
+"stats": {
+"P": 0,
+"G1": 0,
+"G2": 0,
+"A": 0,
+"Sh": 1,
+"GB": 1,
+"TO": 0,
+"PAS": 8,
+"TCH": 9,
+"CT": 2,
+"Pen": 0
+}
+},
+{
+"name": "Colin Heacock",
+"pos": "M",
+"num": "10",
+"stats": {
+"P": 0,
+"G1": 0,
+"G2": 0,
+"A": 0,
+"Sh": 2,
+"GB": 1,
+"TO": 1,
+"PAS": 5,
+"TCH": 8,
+"CT": 0,
+"Pen": 0
+}
+},
+{
+"name": "Brendan Krebs",
+"pos": "G",
+"num": "0",
+"stats": {
+"P": 0,
+"G1": 0,
+"G2": 0,
+"A": 0,
+"Sh": 1,
+"GB": 2,
+"TO": 2,
+"PAS": 15,
+"TCH": 18,
+"CT": 0,
+"Pen": 0,
+"SA": 12,
+"Sv": 12,
+"SvPct": 52.2,
+"CSv": 6,
+"GA": 11
+}
+},
+{
+"name": "Levi Anderson",
+"pos": "M",
+"num": "24",
+"stats": {
+"P": 0,
+"G1": 0,
+"G2": 0,
+"A": 0,
+"Sh": 3,
+"GB": 0,
+"TO": 0,
+"PAS": 6,
+"TCH": 9,
+"CT": null,
+"Pen": null
+}
+},
+{
+"name": "Ajax Zappitello",
+"pos": "D",
+"num": "5",
+"stats": {
+"P": 0,
+"G1": 0,
+"G2": 0,
+"A": 0,
+"Sh": 0,
+"GB": 6,
+"TO": null,
+"PAS": null,
+"TCH": 13,
+"CT": 1,
+"Pen": 0
+}
+},
+{
+"name": "Tim Muller",
+"pos": "D",
+"num": "14",
+"stats": {
+"P": 0,
+"G1": 0,
+"G2": 0,
+"A": 0,
+"Sh": 0,
+"GB": 3,
+"TO": null,
+"PAS": null,
+"TCH": 7,
+"CT": 1,
+"Pen": 0
+}
+},
+{
+"name": "Roman Puglise",
+"pos": "SSDM",
+"num": "8",
+"stats": {
+"P": 0,
+"G1": 0,
+"G2": 0,
+"A": 0,
+"Sh": 0,
+"GB": 1,
+"TO": null,
+"PAS": null,
+"TCH": 7,
+"CT": 1,
+"Pen": 0
+}
+},
+{
+"name": "Alex Mazzone",
+"pos": "LSM",
+"num": "6",
+"stats": {
+"P": 0,
+"G1": 0,
+"G2": 0,
+"A": 0,
+"Sh": 0,
+"GB": 1,
+"TO": null,
+"PAS": null,
+"TCH": 3,
+"CT": 1,
+"Pen": 0
+}
+},
+{
+"name": "Colin Squires",
+"pos": "LSM",
+"num": "39",
+"stats": {
+"P": 0,
+"G1": 0,
+"G2": 0,
+"A": 0,
+"Sh": 0,
+"GB": 4,
+"TO": null,
+"PAS": null,
+"TCH": 3,
+"CT": 0,
+"Pen": 0
+}
+},
+{
+"name": "Wheaton Jackoboice",
+"pos": "SSDM",
+"num": "55",
+"stats": {
+"P": 0,
+"G1": 0,
+"G2": 0,
+"A": 0,
+"Sh": 0,
+"GB": 1,
+"TO": null,
+"PAS": null,
+"TCH": 9,
+"CT": 0,
+"Pen": 0
+}
+}
+]
+},
+{
+"team": "Whipsnakes",
 "season": 2025,
 "date": "2025-05-31",
 "opponent": "Archers",
@@ -79447,6 +94800,12 @@
 "jersey_number": 23,
 "position_name": "Defensive Midfield"
 },
+"Chris Sabia": {
+"college": "Penn State",
+"experience": 8,
+"jersey_number": 16,
+"position_name": "Long Stick Midfield"
+},
 "Christian Fournier": {
 "college": "Army",
 "experience": 1,
@@ -79464,6 +94823,12 @@
 "experience": 6,
 "jersey_number": 50,
 "position_name": "Defensive Midfield"
+},
+"Colby Barsz": {
+"college": "Towson",
+"experience": 3,
+"jersey_number": 24,
+"position_name": "Defense"
 },
 "Cole Kastner": {
 "college": "Virginia",
@@ -79669,6 +95034,12 @@
 "jersey_number": 35,
 "position_name": "Long Stick Midfield"
 },
+"Ethan Walker": {
+"college": "Denver",
+"experience": 6,
+"jersey_number": 57,
+"position_name": "Attack"
+},
 "Evan Plunkett": {
 "college": "Army",
 "experience": 1,
@@ -79698,6 +95069,12 @@
 "experience": 10,
 "jersey_number": 52,
 "position_name": "Defense"
+},
+"Garrett Leadmon": {
+"college": "Duke",
+"experience": 4,
+"jersey_number": 40,
+"position_name": "Midfield"
 },
 "Gavin Adler": {
 "college": "Cornell",
@@ -79831,6 +95208,12 @@
 "jersey_number": 40,
 "position_name": "Defense"
 },
+"Jack Koras": {
+"college": "Maryland",
+"experience": 3,
+"jersey_number": 15,
+"position_name": "Midfield"
+},
 "Jack McDonald": {
 "college": "Maryland",
 "experience": 2,
@@ -79885,11 +95268,23 @@
 "jersey_number": 19,
 "position_name": "Attack"
 },
+"Jackson Morrill": {
+"college": "Yale",
+"experience": 6,
+"jersey_number": 4,
+"position_name": "Attack"
+},
 "Jake Bernhardt": {
 "college": "Maryland",
 "experience": 14,
 "jersey_number": 83,
 "position_name": "Defensive Midfield"
+},
+"Jake Carraway": {
+"college": "Georgetown",
+"experience": 6,
+"jersey_number": 19,
+"position_name": "Midfield"
 },
 "Jake Naso": {
 "college": "Duke",
@@ -79908,6 +95303,12 @@
 "experience": 9,
 "jersey_number": 12,
 "position_name": "Defense"
+},
+"Jake Richard": {
+"college": "Marquette",
+"experience": 8,
+"jersey_number": 10,
+"position_name": "Defensive Midfield"
 },
 "Jake Stevens": {
 "college": "Syracuse",
@@ -80053,6 +95454,12 @@
 "jersey_number": 30,
 "position_name": "Faceoff"
 },
+"Keegan Khan": {
+"college": "Maryland",
+"experience": 5,
+"jersey_number": 39,
+"position_name": "Midfield"
+},
 "Kenny Brower": {
 "college": "Duke",
 "experience": 3,
@@ -80064,6 +95471,12 @@
 "experience": 2,
 "jersey_number": 16,
 "position_name": "Defense"
+},
+"Kevin Winkoff": {
+"college": "Penn State",
+"experience": 3,
+"jersey_number": 48,
+"position_name": "Midfield"
 },
 "Kieran McArdle": {
 "college": "St. John's",
@@ -80082,6 +95495,12 @@
 "experience": 2,
 "jersey_number": 24,
 "position_name": "Defensive Midfield"
+},
+"Kyle Bernlohr": {
+"college": "Maryland",
+"experience": 11,
+"jersey_number": 35,
+"position_name": "Goalie"
 },
 "Kyle Hartzell": {
 "college": "Salisbury",
@@ -80147,6 +95566,12 @@
 "college": "Harvard",
 "experience": 1,
 "jersey_number": 23,
+"position_name": "Midfield"
+},
+"Logan McGovern": {
+"college": "North Carolina",
+"experience": 3,
+"jersey_number": 11,
 "position_name": "Midfield"
 },
 "Logan McNaney": {
@@ -80335,6 +95760,12 @@
 "jersey_number": 22,
 "position_name": "Attack"
 },
+"Mike Chanenchuk": {
+"college": "Maryland",
+"experience": 13,
+"jersey_number": 1,
+"position_name": "Midfield"
+},
 "Mike Messenger": {
 "college": "Limestone",
 "experience": 10,
@@ -80467,6 +95898,12 @@
 "jersey_number": 48,
 "position_name": "Defensive Midfield"
 },
+"Payton Cormier": {
+"college": "Virginia",
+"experience": 3,
+"jersey_number": 24,
+"position_name": "Attack"
+},
 "Payton Rezanka": {
 "college": "Loyola (MD)",
 "experience": 4,
@@ -80551,6 +95988,12 @@
 "jersey_number": 33,
 "position_name": "Defensive Midfield"
 },
+"Ronan Jacoby": {
+"college": "Rutgers",
+"experience": 3,
+"jersey_number": 8,
+"position_name": "Midfield"
+},
 "Ross Scott": {
 "college": "Rutgers",
 "experience": 3,
@@ -80561,6 +96004,18 @@
 "college": "Princeton",
 "experience": 10,
 "jersey_number": 13,
+"position_name": "Midfield"
+},
+"Ryan Aughavin": {
+"college": "Brown",
+"experience": 5,
+"jersey_number": 42,
+"position_name": "Midfield"
+},
+"Ryan Conrad": {
+"college": "Virginia",
+"experience": 7,
+"jersey_number": 23,
 "position_name": "Midfield"
 },
 "Ryan Croddick": {
@@ -80677,6 +96132,12 @@
 "jersey_number": 18,
 "position_name": "Attack"
 },
+"Stephen Zupicich": {
+"college": "Villanova",
+"experience": 3,
+"jersey_number": 77,
+"position_name": "Long Stick Midfield"
+},
 "TD Ierlan": {
 "college": "Yale",
 "experience": 6,
@@ -80743,6 +96204,12 @@
 "jersey_number": 9,
 "position_name": "Faceoff"
 },
+"Troy Hettinger": {
+"college": "Jacksonville",
+"experience": 4,
+"jersey_number": 9,
+"position_name": "Long Stick Midfield"
+},
 "Troy Reh": {
 "college": "Albany (NY)",
 "experience": 9,
@@ -80753,6 +96220,12 @@
 "college": "Virginia",
 "experience": 1,
 "jersey_number": 6,
+"position_name": "Midfield"
+},
+"Tucker Dordevic": {
+"college": "Georgetown",
+"experience": 4,
+"jersey_number": 2,
 "position_name": "Midfield"
 },
 "Ty English": {
@@ -80790,6 +96263,12 @@
 "experience": 12,
 "jersey_number": 14,
 "position_name": "Attack"
+},
+"Wheaton Jackoboice": {
+"college": "Notre Dame",
+"experience": 5,
+"jersey_number": 55,
+"position_name": "Defensive Midfield"
 },
 "Will Bowen": {
 "college": "Georgetown",
