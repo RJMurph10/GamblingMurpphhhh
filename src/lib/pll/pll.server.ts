@@ -215,7 +215,7 @@ export function withEraLogos(s: PllSeason): PllSeason {
   const y = s.season;
   return {
     ...s,
-    // the week and host city from the owner-entered schedule (2026 on)
+    // the week and host city from the owner-entered schedule (2025 on)
     games: s.games.map((g) => {
       const w = pllWeekOf(g.id);
       return w && !g.city ? { ...g, city: w.city, week: w.week, weekLabel: w.label } : g;

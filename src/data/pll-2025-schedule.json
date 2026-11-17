@@ -1,0 +1,473 @@
+{
+ "source": "PLL 2025 regular-season schedule (weeks, host cities, dates, results) as entered by the site owner from the PLL site, Nov 17 2026. Every result matches ESPN. Left out: the Friday Jul 4 All-Star listing (0-0 on the PLL site, no matching ESPN game).",
+ "weeks": [
+  {
+   "week": 1,
+   "round": "Regular season",
+   "dates": "May 30 - May 31",
+   "city": "Albany, NY",
+   "allStar": false,
+   "games": [
+    {
+     "espnId": "401756776",
+     "date": "2025-05-30",
+     "away": "Chaos",
+     "home": "Atlas",
+     "awayScore": 8,
+     "homeScore": 10,
+     "ot": false
+    },
+    {
+     "espnId": "401756493",
+     "date": "2025-05-30",
+     "away": "Redwoods",
+     "home": "Outlaws",
+     "awayScore": 15,
+     "homeScore": 12,
+     "ot": false
+    },
+    {
+     "espnId": "401756756",
+     "date": "2025-05-31",
+     "away": "Whipsnakes",
+     "home": "Archers",
+     "awayScore": 7,
+     "homeScore": 8,
+     "ot": false
+    },
+    {
+     "espnId": "401756494",
+     "date": "2025-05-31",
+     "away": "Cannons",
+     "home": "Atlas",
+     "awayScore": 16,
+     "homeScore": 12,
+     "ot": false
+    }
+   ]
+  },
+  {
+   "week": 2,
+   "round": "Regular season",
+   "dates": "Jun 6 - Jun 7",
+   "city": "Charlotte, NC",
+   "allStar": false,
+   "games": [
+    {
+     "espnId": "401756777",
+     "date": "2025-06-06",
+     "away": "Outlaws",
+     "home": "Chaos",
+     "awayScore": 9,
+     "homeScore": 12,
+     "ot": false
+    },
+    {
+     "espnId": "401756495",
+     "date": "2025-06-06",
+     "away": "Waterdogs",
+     "home": "Whipsnakes",
+     "awayScore": 16,
+     "homeScore": 12,
+     "ot": false
+    },
+    {
+     "espnId": "401756758",
+     "date": "2025-06-07",
+     "away": "Archers",
+     "home": "Cannons",
+     "awayScore": 8,
+     "homeScore": 9,
+     "ot": false
+    },
+    {
+     "espnId": "401756759",
+     "date": "2025-06-07",
+     "away": "Redwoods",
+     "home": "Chaos",
+     "awayScore": 16,
+     "homeScore": 10,
+     "ot": false
+    }
+   ]
+  },
+  {
+   "week": 3,
+   "round": "Regular season",
+   "dates": "Jun 13 - Jun 14",
+   "city": "Philadelphia, PA",
+   "allStar": false,
+   "games": [
+    {
+     "espnId": "401756764",
+     "date": "2025-06-13",
+     "away": "Cannons",
+     "home": "Waterdogs",
+     "awayScore": 11,
+     "homeScore": 14,
+     "ot": false
+    },
+    {
+     "espnId": "401756762",
+     "date": "2025-06-13",
+     "away": "Redwoods",
+     "home": "Archers",
+     "awayScore": 11,
+     "homeScore": 12,
+     "ot": false
+    },
+    {
+     "espnId": "401756778",
+     "date": "2025-06-14",
+     "away": "Atlas",
+     "home": "Whipsnakes",
+     "awayScore": 12,
+     "homeScore": 16,
+     "ot": false
+    },
+    {
+     "espnId": "401756760",
+     "date": "2025-06-14",
+     "away": "Outlaws",
+     "home": "Waterdogs",
+     "awayScore": 9,
+     "homeScore": 7,
+     "ot": false
+    }
+   ]
+  },
+  {
+   "week": 4,
+   "round": "Regular season",
+   "dates": "Jun 21 - Jun 22",
+   "city": "Baltimore, MD",
+   "allStar": false,
+   "games": [
+    {
+     "espnId": "401756779",
+     "date": "2025-06-21",
+     "away": "Atlas",
+     "home": "Waterdogs",
+     "awayScore": 17,
+     "homeScore": 9,
+     "ot": false
+    },
+    {
+     "espnId": "401756757",
+     "date": "2025-06-21",
+     "away": "Cannons",
+     "home": "Whipsnakes",
+     "awayScore": 13,
+     "homeScore": 12,
+     "ot": false
+    },
+    {
+     "espnId": "401756780",
+     "date": "2025-06-22",
+     "away": "Archers",
+     "home": "Outlaws",
+     "awayScore": 10,
+     "homeScore": 13,
+     "ot": false
+    },
+    {
+     "espnId": "401756761",
+     "date": "2025-06-22",
+     "away": "Chaos",
+     "home": "Whipsnakes",
+     "awayScore": 6,
+     "homeScore": 20,
+     "ot": false
+    }
+   ]
+  },
+  {
+   "week": 5,
+   "round": "Regular season",
+   "dates": "Jun 27 - Jun 28",
+   "city": "San Diego, CA",
+   "allStar": false,
+   "games": [
+    {
+     "espnId": "401756768",
+     "date": "2025-06-27",
+     "away": "Outlaws",
+     "home": "Redwoods",
+     "awayScore": 18,
+     "homeScore": 12,
+     "ot": false
+    },
+    {
+     "espnId": "401756763",
+     "date": "2025-06-27",
+     "away": "Archers",
+     "home": "Atlas",
+     "awayScore": 8,
+     "homeScore": 10,
+     "ot": false
+    },
+    {
+     "espnId": "401756767",
+     "date": "2025-06-28",
+     "away": "Waterdogs",
+     "home": "Redwoods",
+     "awayScore": 12,
+     "homeScore": 9,
+     "ot": false
+    },
+    {
+     "espnId": "401756772",
+     "date": "2025-06-28",
+     "away": "Cannons",
+     "home": "Chaos",
+     "awayScore": 12,
+     "homeScore": 14,
+     "ot": false
+    }
+   ]
+  },
+  {
+   "week": 6,
+   "round": "All-Star",
+   "dates": "Jul 4 - Jul 5",
+   "city": "Kansas City, MO",
+   "allStar": true,
+   "games": [
+    {
+     "espnId": "401774035",
+     "date": "2025-07-05",
+     "away": "East",
+     "home": "West",
+     "awayScore": 13,
+     "homeScore": 15,
+     "ot": false
+    }
+   ]
+  },
+  {
+   "week": 7,
+   "round": "Regular season",
+   "dates": "Jul 11 - Jul 12",
+   "city": "Chicago, IL",
+   "allStar": false,
+   "games": [
+    {
+     "espnId": "401756766",
+     "date": "2025-07-11",
+     "away": "Atlas",
+     "home": "Cannons",
+     "awayScore": 17,
+     "homeScore": 11,
+     "ot": false
+    },
+    {
+     "espnId": "401756774",
+     "date": "2025-07-11",
+     "away": "Archers",
+     "home": "Waterdogs",
+     "awayScore": 11,
+     "homeScore": 16,
+     "ot": false
+    },
+    {
+     "espnId": "401756797",
+     "date": "2025-07-12",
+     "away": "Chaos",
+     "home": "Redwoods",
+     "awayScore": 12,
+     "homeScore": 10,
+     "ot": false
+    },
+    {
+     "espnId": "401756765",
+     "date": "2025-07-12",
+     "away": "Outlaws",
+     "home": "Whipsnakes",
+     "awayScore": 13,
+     "homeScore": 6,
+     "ot": false
+    }
+   ]
+  },
+  {
+   "week": 8,
+   "round": "Regular season",
+   "dates": "Jul 18 - Jul 19",
+   "city": "Fairfield, CT",
+   "allStar": false,
+   "games": [
+    {
+     "espnId": "401756799",
+     "date": "2025-07-18",
+     "away": "Atlas",
+     "home": "Redwoods",
+     "awayScore": 16,
+     "homeScore": 12,
+     "ot": false
+    },
+    {
+     "espnId": "401756801",
+     "date": "2025-07-18",
+     "away": "Archers",
+     "home": "Chaos",
+     "awayScore": 12,
+     "homeScore": 11,
+     "ot": false
+    },
+    {
+     "espnId": "401756781",
+     "date": "2025-07-19",
+     "away": "Cannons",
+     "home": "Outlaws",
+     "awayScore": 17,
+     "homeScore": 18,
+     "ot": false
+    },
+    {
+     "espnId": "401756770",
+     "date": "2025-07-19",
+     "away": "Whipsnakes",
+     "home": "Waterdogs",
+     "awayScore": 10,
+     "homeScore": 7,
+     "ot": false
+    }
+   ]
+  },
+  {
+   "week": 9,
+   "round": "Regular season",
+   "dates": "Jul 25 - Jul 26",
+   "city": "Salt Lake City, UT",
+   "allStar": false,
+   "games": [
+    {
+     "espnId": "401756802",
+     "date": "2025-07-25",
+     "away": "Redwoods",
+     "home": "Archers",
+     "awayScore": 9,
+     "homeScore": 8,
+     "ot": false
+    },
+    {
+     "espnId": "401756773",
+     "date": "2025-07-25",
+     "away": "Whipsnakes",
+     "home": "Atlas",
+     "awayScore": 8,
+     "homeScore": 11,
+     "ot": false
+    },
+    {
+     "espnId": "401756796",
+     "date": "2025-07-26",
+     "away": "Waterdogs",
+     "home": "Chaos",
+     "awayScore": 14,
+     "homeScore": 15,
+     "ot": true
+    },
+    {
+     "espnId": "401756798",
+     "date": "2025-07-26",
+     "away": "Outlaws",
+     "home": "Archers",
+     "awayScore": 15,
+     "homeScore": 10,
+     "ot": false
+    }
+   ]
+  },
+  {
+   "week": 10,
+   "round": "Regular season",
+   "dates": "Aug 1 - Aug 2",
+   "city": "Denver, CO",
+   "allStar": false,
+   "games": [
+    {
+     "espnId": "401756800",
+     "date": "2025-08-01",
+     "away": "Chaos",
+     "home": "Outlaws",
+     "awayScore": 12,
+     "homeScore": 11,
+     "ot": false
+    },
+    {
+     "espnId": "401756803",
+     "date": "2025-08-01",
+     "away": "Waterdogs",
+     "home": "Cannons",
+     "awayScore": 10,
+     "homeScore": 13,
+     "ot": false
+    },
+    {
+     "espnId": "401756771",
+     "date": "2025-08-02",
+     "away": "Atlas",
+     "home": "Outlaws",
+     "awayScore": 12,
+     "homeScore": 13,
+     "ot": true
+    },
+    {
+     "espnId": "401756769",
+     "date": "2025-08-02",
+     "away": "Whipsnakes",
+     "home": "Redwoods",
+     "awayScore": 13,
+     "homeScore": 14,
+     "ot": false
+    }
+   ]
+  },
+  {
+   "week": 11,
+   "round": "Regular season",
+   "dates": "Aug 8 - Aug 9",
+   "city": "Boston, MA",
+   "allStar": false,
+   "games": [
+    {
+     "espnId": "401756804",
+     "date": "2025-08-08",
+     "away": "Redwoods",
+     "home": "Cannons",
+     "awayScore": 18,
+     "homeScore": 17,
+     "ot": false
+    },
+    {
+     "espnId": "401756805",
+     "date": "2025-08-08",
+     "away": "Chaos",
+     "home": "Archers",
+     "awayScore": 10,
+     "homeScore": 11,
+     "ot": false
+    },
+    {
+     "espnId": "401756775",
+     "date": "2025-08-09",
+     "away": "Waterdogs",
+     "home": "Atlas",
+     "awayScore": 19,
+     "homeScore": 20,
+     "ot": false
+    },
+    {
+     "espnId": "401756782",
+     "date": "2025-08-09",
+     "away": "Whipsnakes",
+     "home": "Cannons",
+     "awayScore": 15,
+     "homeScore": 8,
+     "ot": false
+    }
+   ]
+  }
+ ]
+}

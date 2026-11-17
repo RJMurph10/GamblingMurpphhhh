@@ -1,8 +1,9 @@
 /**
  * Where and in which week each PLL game was played, from the schedules the site owner enters from the
- * PLL site (src/data/pll-<season>-schedule.json; 2026 regular season and playoffs). The PLL plays each week's
+ * PLL site (src/data/pll-<season>-schedule.json; 2025 regular season, 2026 regular season and playoffs). The PLL plays each week's
  * games at one host city ("Week 3 · Baltimore, MD").
  */
+import s2025 from "@/data/pll-2025-schedule.json";
 import s2026 from "@/data/pll-2026-schedule.json";
 
 export interface PllWeek {
@@ -26,14 +27,15 @@ const toWeek = (w: (typeof s2026.weeks)[number]): PllWeek => ({
   city: w.city,
   allStar: w.allStar,
 });
-for (const w of s2026.weeks) {
-  const info = toWeek(w);
-  for (const g of w.games) if (g.espnId) BY_ID.set(g.espnId, info);
-}
+const SEASONS: Record<number, (typeof s2026.weeks)[number][]> = { 2025: s2025.weeks, 2026: s2026.weeks };
+for (const weeks of Object.values(SEASONS))
+  for (const w of weeks) {
+    const info = toWeek(w);
+    for (const g of w.games) if (g.espnId) BY_ID.set(g.espnId, info);
+  }
 
 /** The week and host city of a game, by ESPN event id (undefined when not entered). */
 export const pllWeekOf = (espnId: string): PllWeek | undefined => BY_ID.get(espnId);
 
 /** Every entered week of a season, in order. */
-export const pllWeeks = (season: number): PllWeek[] =>
-  season === 2026 ? s2026.weeks.map(toWeek) : [];
+export const pllWeeks = (season: number): PllWeek[] => (SEASONS[season] ?? []).map(toWeek);
