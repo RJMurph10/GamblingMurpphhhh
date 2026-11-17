@@ -45,7 +45,11 @@ function PllGamesPage() {
         {!groups.length ? (
           <Panel>
             <p className="py-8 text-center font-mono text-xs text-mute">
-              {q.isLoading ? "Loading games…" : "No games for this season."}
+              {q.isLoading
+                ? "Loading games…"
+                : q.isError
+                  ? "Couldn't reach ESPN for this season's games. Try again in a minute."
+                  : "No games for this season."}
             </p>
           </Panel>
         ) : null}

@@ -4,19 +4,33 @@
  */
 import { pllTvOf, pllWeekOf } from "./schedule";
 import { cached } from "@/lib/shared/espn-core.server";
+import { PLL_CLUB_SHORT } from "./players";
 import history from "@/data/pll-2019-2021.json";
 import { tagPhases, type PllGame, type PllPhase, type PllSeason, type PllTeam } from "./pll";
 
 const BASE = "https://site.api.espn.com/apis/site/v2/sports/lacrosse/pll";
 
+/**
+ * One ESPN feed as JSON, or null when ESPN doesn't answer. Sends the same User-Agent as the site's other
+ * ESPN calls (a request without one can be refused) and tries twice before giving up.
+ */
 async function get<T>(url: string): Promise<T | null> {
-  try {
-    const res = await fetch(url, { signal: AbortSignal.timeout(12_000) });
-    return res.ok ? ((await res.json()) as T) : null;
-  } catch {
-    return null;
+  for (let attempt = 0; attempt < 2; attempt++) {
+    try {
+      const res = await fetch(url, {
+        headers: { "User-Agent": "GamblingNFL/1.0", Accept: "application/json" },
+        signal: AbortSignal.timeout(12_000),
+      });
+      if (res.ok) return (await res.json()) as T;
+    } catch {
+      // timed out or refused: try once more
+    }
   }
+  return null;
 }
+
+/** Thrown when ESPN didn't answer, so the failure isn't cached as an empty season. */
+class EspnUnavailable extends Error {}
 
 type EspnTeam = {
   id: string;
@@ -85,6 +99,7 @@ async function load(year: number): Promise<PllSeason> {
     get<{ events?: EspnEvent[] }>(`${BASE}/scoreboard?dates=${year}&limit=1000`),
     get<{ sports?: { leagues?: { teams?: { team: EspnTeam }[] }[] }[] }>(`${BASE}/teams`),
   ]);
+  if (!sb) throw new EspnUnavailable(`ESPN PLL scoreboard ${year} unavailable`);
   const teams = new Map<string, PllTeam>();
   const allStar = new Set<string>();
   for (const { team } of tl?.sports?.[0]?.leagues?.[0]?.teams ?? []) {
@@ -149,11 +164,22 @@ const OLD_TEAMS: PllTeam[] = [
  * pages (src/data/pll-2019-2021.json, CC BY-SA 4.0); no quarter scores. Clubs take ESPN's current names
  * and logos (the same franchises), plus Chrome and the All-Star teams.
  */
-async function loadHistory(year: number): Promise<PllSeason> {
+async function loadHistory(year: number, allowStatic = false): Promise<PllSeason> {
   const tl = await get<{ sports?: { leagues?: { teams?: { team: EspnTeam }[] }[] }[] }>(
     `${BASE}/teams`,
   );
+  if (!tl && !allowStatic) throw new EspnUnavailable("ESPN PLL team list unavailable");
   const known = new Map<string, PllTeam>(OLD_TEAMS.map((t) => [t.id, t]));
+  // without ESPN's list, the clubs' names (no logos): never show a club as its ESPN id
+  for (const [id, short] of Object.entries(PLL_CLUB_SHORT))
+    if (!known.has(id))
+      known.set(id, {
+        id,
+        abbr: short.slice(0, 3).toUpperCase(),
+        name: short,
+        short,
+        location: "",
+      });
   for (const { team } of tl?.sports?.[0]?.leagues?.[0]?.teams ?? [])
     known.set(String(team.id), toTeam(team));
   type Row = (typeof history.games)[number];
@@ -234,12 +260,28 @@ export function withEraLogos(s: PllSeason): PllSeason {
   };
 }
 
-export async function fetchPllSeason(year: number): Promise<PllSeason> {
+/** The last season ESPN actually answered for, by year: served when ESPN fails afterwards. */
+const lastGood = new Map<number, PllSeason>();
+
+async function fetchRaw(year: number): Promise<PllSeason> {
   const key = `pll-season-${year}`;
-  if (year <= 2021)
-    return withEraLogos(await cached(key, () => loadHistory(year), 24 * 60 * 60_000));
+  if (year <= 2021) return cached(key, () => loadHistory(year), 24 * 60 * 60_000);
   const s = await cached(key, () => load(year), 30 * 60_000);
-  if (s.games.some((g) => g.status === "live"))
-    return withEraLogos(await cached(`${key}-live`, () => load(year), 60_000));
-  return withEraLogos(s);
+  return s.games.some((g) => g.status === "live")
+    ? cached(`${key}-live`, () => load(year), 60_000)
+    : s;
+}
+
+export async function fetchPllSeason(year: number): Promise<PllSeason> {
+  try {
+    const s = await fetchRaw(year);
+    lastGood.set(year, s);
+    return withEraLogos(s);
+  } catch (err) {
+    // ESPN didn't answer: nothing was cached, so the next visit asks again
+    const prev = lastGood.get(year);
+    if (prev) return withEraLogos(prev);
+    if (year <= 2021) return withEraLogos(await loadHistory(year, true));
+    throw err;
+  }
 }
