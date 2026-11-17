@@ -165,3 +165,51 @@ describe("games ESPN never recorded", () => {
     expect(s.games.filter((g) => g.status === "scheduled")).toEqual([]);
   });
 });
+
+describe("PLL when ESPN doesn't answer", () => {
+  const down = () =>
+    vi.stubGlobal(
+      "fetch",
+      vi.fn(async () => ({ ok: false, status: 503, json: async () => ({}) })),
+    );
+  const up = () =>
+    vi.stubGlobal(
+      "fetch",
+      vi.fn(async (url: string) => ({
+        ok: true,
+        json: async () => (String(url).includes("/teams") ? fixture.teams : fixture.scoreboard),
+      })),
+    );
+  it("doesn't cache an empty season: the next request asks ESPN again", async () => {
+    down();
+    await expect(fetchPllSeason(2031)).rejects.toThrow();
+    up();
+    const s = await fetchPllSeason(2031);
+    expect(s.games.length).toBeGreaterThan(0);
+  });
+  it("keeps the last good season when ESPN fails later", async () => {
+    up();
+    const good = await fetchPllSeason(2032);
+    const { clearCached } = await import("@/lib/shared/espn-core.server");
+    clearCached("pll-season-2032");
+    down();
+    const s = await fetchPllSeason(2032);
+    expect(s.games).toHaveLength(good.games.length);
+  });
+  it("names 2019-2021 clubs without ESPN's team list (never ESPN ids)", async () => {
+    down();
+    const s = await fetchPllSeason(2020);
+    expect(s.teams.length).toBeGreaterThan(0);
+    for (const t of s.teams) expect(t.name).not.toMatch(/^\d+$/);
+    expect(s.teams.map((t) => t.short)).toContain("Whipsnakes");
+  });
+  it("sends a User-Agent to ESPN", async () => {
+    const f = vi.fn(async (url: string, _init?: RequestInit) => ({
+      ok: true,
+      json: async () => (String(url).includes("/teams") ? fixture.teams : fixture.scoreboard),
+    }));
+    vi.stubGlobal("fetch", f);
+    await fetchPllSeason(2033);
+    expect((f.mock.calls[0][1]?.headers as Record<string, string>)["User-Agent"]).toBeTruthy();
+  });
+});
