@@ -1,7 +1,7 @@
-import { useMemo } from "react";
+import { useMemo, useState } from "react";
 import { createFileRoute, Link } from "@tanstack/react-router";
 import { PageTitle, Panel, PanelHeader, StatCard } from "@/components/shared/booth";
-import { PllLogo } from "@/components/pll/PllBits";
+import { PllLogo, PllSeasonPicker } from "@/components/pll/PllBits";
 import { collegeLogoFor } from "@/lib/pll/colleges";
 import { teamOf, type PllGame, type PllSeason } from "@/lib/pll/pll";
 import { posAbbr } from "@/lib/pll/players";
@@ -68,7 +68,9 @@ function Bio({ p }: { p: PllPlayer }) {
 function PllPlayerPage() {
   const { playerId } = Route.useParams();
   const p = pllPlayer(playerId);
-  const season = p?.games[p.games.length - 1]?.season ?? 2026;
+  const seasons = useMemo(() => [...new Set((p?.games ?? []).map((g) => g.season))].sort(), [p]);
+  const [picked, setPicked] = useState<number | null>(null);
+  const season = picked ?? seasons[seasons.length - 1] ?? 2026;
   const q = usePllSeason(season);
   const games = useMemo(() => (p ? p.games.filter((g) => g.season === season) : []), [p, season]);
   const t = useMemo(() => totalsOf(games), [games]);
@@ -102,6 +104,11 @@ function PllPlayerPage() {
         }
       />
       <Bio p={p} />
+      {seasons.length > 1 ? (
+        <div className="mb-4">
+          <PllSeasonPicker season={season} onChange={setPicked} seasons={seasons} />
+        </div>
+      ) : null}
 
       <div className="grid grid-cols-2 gap-3 lg:grid-cols-4">
         {kind === "goalie" ? (
@@ -218,6 +225,8 @@ function PllPlayerPage() {
         </Panel>
       ) : null}
 
+      {seasons.length > 1 ? <SeasonsTable p={p} kind={kind} /> : null}
+
       <Panel padded={false} className="mt-6">
         <PanelHeader
           title="Game log"
@@ -315,5 +324,78 @@ function PllPlayerPage() {
         </p>
       </Panel>
     </>
+  );
+}
+
+type Totals = ReturnType<typeof totalsOf>;
+
+/** A player's season-by-season totals (one row per season and club), newest first, then his career. */
+function SeasonsTable({ p, kind }: { p: PllPlayer; kind: ReturnType<typeof playerKind> }) {
+  const groups = new Map<string, PllPlayerGame[]>();
+  for (const g of p.games) {
+    const k = `${g.season}|${g.team}`;
+    groups.set(k, [...(groups.get(k) ?? []), g]);
+  }
+  const rows = [...groups.entries()]
+    .map(([k, games]) => ({ label: k.split("|")[0], team: k.split("|")[1], t: totalsOf(games) }))
+    .reverse();
+  rows.push({ label: "Career", team: "", t: totalsOf(p.games) });
+  const cols: [string, (t: Totals) => string][] =
+    kind === "goalie"
+      ? [
+          ["Sv", (t) => String(t.Sv)],
+          ["GA", (t) => String(t.GA)],
+          ["Sv%", (t) => pct(t.svPct)],
+          ["GB", (t) => String(t.GB)],
+        ]
+      : [
+          ["P", (t) => String(t.P)],
+          ["G", (t) => String(t.G)],
+          ["2PG", (t) => String(t.G2)],
+          ["A", (t) => String(t.A)],
+          ["Sh", (t) => String(t.Sh)],
+          ["Sh%", (t) => pct(t.shPct)],
+          ["GB", (t) => String(t.GB)],
+          ...(kind === "faceoff"
+            ? [["FO%", (t: Totals) => pct(t.foPct)] as [string, (t: Totals) => string]]
+            : []),
+        ];
+  return (
+    <Panel padded={false} className="mt-6">
+      <PanelHeader title="By season" aside={<span className="label-mono">totals</span>} />
+      <div className="overflow-x-auto">
+        <table className="w-full min-w-[480px] font-mono text-sm tabular-nums">
+          <thead>
+            <tr className="text-right text-[10px] uppercase tracking-wider text-faint">
+              <th className="px-4 py-2 text-left font-normal">Season</th>
+              <th className="px-2 py-2 text-left font-normal">Team</th>
+              <th className="px-2 py-2 font-normal">GP</th>
+              {cols.map(([h]) => (
+                <th key={h} className="px-2 py-2 font-normal">
+                  {h}
+                </th>
+              ))}
+            </tr>
+          </thead>
+          <tbody className="divide-y divide-line/5">
+            {rows.map((r) => (
+              <tr
+                key={`${r.label}|${r.team}`}
+                className={`text-right ${r.label === "Career" ? "font-semibold" : ""}`}
+              >
+                <td className="px-4 py-1.5 text-left">{r.label}</td>
+                <td className="px-2 py-1.5 text-left font-sans text-mute">{r.team}</td>
+                <td className="px-2 py-1.5 text-mute">{r.t.gp}</td>
+                {cols.map(([h, f]) => (
+                  <td key={h} className="px-2 py-1.5">
+                    {f(r.t)}
+                  </td>
+                ))}
+              </tr>
+            ))}
+          </tbody>
+        </table>
+      </div>
+    </Panel>
   );
 }
