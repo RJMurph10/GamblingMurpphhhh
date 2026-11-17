@@ -9,4 +9,4 @@ jobs:
       - uses: actions/checkout@v4
       - uses: actions/setup-node@v4
         with: { node-version: 22 }
-      - run: node probe/live-probe.mjs
+      - run: node probe/qb-starters.mjs --season 2026 --out /tmp/o && cat /tmp/o/nfl/qb-starters-2026.json
