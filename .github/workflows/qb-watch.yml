@@ -1,7 +1,8 @@
 # QB and injury news watch: every 10 minutes during the NFL season, checks each team's starting QB and
 # every player worth 0.4+ points on the spread against ESPN's injury report, logs status changes with
 # DraftKings' spread at that moment, then follows the line to kickoff.
-# Output: props-site/nfl/qb-watch-<season>.json (the site's "Injury news" panel). Player values
+# Output: props-site/nfl/qb-watch-<season>.json (the site's "Injury news" panel), and hourly
+# props-site/nfl/qb-starters-<season>.json (starting-QB corrections the model and props boards use). Player values
 # (props-site/nfl/player-values-<season>.json) are rebuilt once a day.
 # GitHub may run scheduled jobs a few minutes late.
 name: QB watch
@@ -53,6 +54,10 @@ jobs:
               node app/scripts/nfl/player-values.mjs --season "$season" --contracts contracts.csv --out site-repo || echo "player values build failed"
             fi
             node app/scripts/nfl/qb-watch.mjs --season "$season" --out site-repo
+            # starting-QB corrections for the next week of games (nflverse lags trades and injuries): hourly
+            if [ "$(date -u +%M)" -lt 10 ] || [ ! -f "site-repo/nfl/qb-starters-$season.json" ]; then
+              node app/scripts/nfl/qb-starters.mjs --season "$season" --out site-repo || echo "qb starters check failed"
+            fi
             cd site-repo
             git config user.name "qb-watch-bot"
             git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
