@@ -8213,7 +8213,7 @@
 {
 "name": "Will Manny",
 "pos": "A",
-"num": null,
+"num": "0",
 "stats": {
 "P": 3,
 "G1": 3,
@@ -10287,7 +10287,7 @@
 {
 "name": "Will Manny",
 "pos": "A",
-"num": null,
+"num": "0",
 "stats": {
 "P": 1,
 "G1": 1,
@@ -10503,7 +10503,7 @@
 {
 "name": "Will Manny",
 "pos": "A",
-"num": null,
+"num": "0",
 "stats": {
 "P": 4,
 "G1": 1,
@@ -10919,7 +10919,7 @@
 {
 "name": "Will Manny",
 "pos": "A",
-"num": null,
+"num": "0",
 "stats": {
 "P": 1,
 "G1": 1,
@@ -11191,7 +11191,7 @@
 {
 "name": "Will Manny",
 "pos": "A",
-"num": null,
+"num": "0",
 "stats": {
 "P": 1,
 "G1": 1,
