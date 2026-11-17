@@ -22,6 +22,7 @@ describe("PLL player stats from the Cannons sheets", () => {
     expect(n("Waterdogs")).toBe(14);
     expect(n("Archers")).toBe(13);
     expect(data.games.filter((g) => g.team === "Cannons" && g.season === 2025).length).toBe(10);
+    expect(data.games.filter((g) => g.team === "Cannons" && g.season === 2024).length).toBe(11);
     expect(data.games.filter((g) => g.team === "Waterdogs" && g.season === 2025).length).toBe(12);
     expect(data.games.filter((g) => g.team === "Archers" && g.season === 2025).length).toBe(10);
   });
@@ -33,12 +34,13 @@ describe("PLL player stats from the Cannons sheets", () => {
       }
   });
   it("builds players with slugs and kinds", () => {
-    expect(pllPlayers().size).toBe(268);
+    expect(pllPlayers().size).toBe(275);
     const h = pllPlayer(playerSlug("Marcus Holman"));
     expect(h?.games.length).toBeGreaterThan(0);
     expect(playerKind(pllPlayer(playerSlug("Colin Kirst"))!)).toBe("goalie");
     expect(pllTeamPlayers("122997", 2026).length).toBe(26);
     expect(pllTeamPlayers("122997", 2025).length).toBe(22);
+    expect(pllTeamPlayers("122997", 2024).length).toBe(23);
     expect(pllTeamPlayers("127636", 2025).length).toBe(24);
     expect(pllTeamPlayers("127634", 2025).length).toBe(28);
     expect(pllTeamPlayers("122896", 2025).length).toBe(24);
@@ -92,16 +94,19 @@ describe("the full 2026 season", () => {
   });
 });
 
-describe("2025 sheets", () => {
+describe.each([2024, 2025])("%i sheets", (season) => {
   type Line = { stats?: Record<string, number | null> };
   const goals = (ps: Line[]) => ps.reduce((n, p) => n + (p.stats ? p.stats.P! - p.stats.A! : 0), 0);
   const against = (ps: Line[]) => ps.reduce((n, p) => n + (p.stats?.SA ?? 0), 0);
   it("match ESPN's final scores", async () => {
-    const espn = (await import("@/test/fixtures/pll-2025-espn.json")).default as unknown as {
+    const espn = (season === 2024
+      ? await import("@/test/fixtures/pll-2024-espn.json")
+      : await import("@/test/fixtures/pll-2025-espn.json")
+    ).default as unknown as {
       date: string;
       sides: [string, string, string, string][];
     }[];
-    const games = data.games.filter((g) => g.season === 2025);
+    const games = data.games.filter((g) => g.season === season);
     expect(games.length).toBeGreaterThan(0);
     for (const g of games) {
       const day = Date.parse(g.date);
