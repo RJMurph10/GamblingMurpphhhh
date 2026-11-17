@@ -238,6 +238,9 @@ function ScoreBox({
               {game.city || game.venue}
             </span>
           ) : null}
+          {game.tv?.length ? (
+            <span className="font-mono text-[10px] text-faint">TV: {game.tv.join(" · ")}</span>
+          ) : null}
         </div>
         <div className="flex items-center gap-3 sm:gap-6">
           {score(game.home.score, homeWon)}

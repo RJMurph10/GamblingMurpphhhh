@@ -38,13 +38,15 @@ export interface PllGame {
   season: number;
   home: PllSide;
   away: PllSide;
-  /** Where it was played (2019-2021 tour years, from Wikipedia; 2026 on, from the owner's schedule). */
+  /** Where it was played (2019-2021 tour years, from Wikipedia; 2025 on, from the owner's schedule). */
   venue?: string;
   city?: string;
-  /** The PLL's week number (2026 on, from the owner's schedule). */
+  /** The PLL's week number (2025 on, from the owner's schedule). */
   week?: number;
   /** "Week 3", or the playoff round ("Semifinals"). */
   weekLabel?: string;
+  /** Where it aired, as the PLL lists it ("ABC", "ESPN+"); only where the owner's schedule has it. */
+  tv?: string[];
 }
 
 export interface PllSeason {
