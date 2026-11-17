@@ -1,24 +1,24 @@
 {
  "id": "401906773",
  "league": "cbb",
- "date": "2026-11-17T21:30Z",
+ "date": "2026-11-17T21:51Z",
  "name": "ND VS FLA",
  "away": {
   "id": "87",
   "abbr": "ND",
   "name": "Notre Dame Fighting Irish",
-  "score": 0
+  "score": 32
  },
  "home": {
   "id": "57",
   "abbr": "FLA",
   "name": "Florida Gators",
-  "score": 0
+  "score": 47
  },
  "neutral": true,
  "venue": "Michelob ULTRA Arena",
  "seasonType": 2,
- "state": "pre",
+ "state": "in",
  "lines": {
   "open": {
    "at": "2026-11-16T22:13:01.047Z",
