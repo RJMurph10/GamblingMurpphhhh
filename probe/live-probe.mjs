@@ -5,7 +5,7 @@ const split = (l) => { const o = []; let cur = "", q = false; for (const ch of l
 const lines = csv.split("\n").filter(Boolean); const h = split(lines[0]);
 const c = (n) => h.indexOf(n);
 const FIX = { LA: "LAR", WAS: "WSH" };
-const rows = lines.slice(1).map(split).filter((f) => f[c("season")] === "2026" && f[c("home_score")] === "NA" && Number(f[c("week")]) <= 11);
+const rows = lines.slice(1).map(split).filter((f) => f[c("season")] === "2026" && f[c("home_score")] === "" && Number(f[c("week")]) <= 11);
 console.log("QB rows", rows.length);
 const teams = await j("https://site.api.espn.com/apis/site/v2/sports/football/nfl/teams");
 const ids = Object.fromEntries((teams.sports[0].leagues[0].teams).map((t) => [t.team.abbreviation, t.team.id]));
