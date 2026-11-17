@@ -1,6 +1,6 @@
 {
  "day": "2026-11-17",
- "updated": "2026-11-17T13:53:33.623Z",
+ "updated": "2026-11-17T22:41:28.011Z",
  "picks": [
   {
    "id": "401923325-total",
@@ -14,8 +14,8 @@
    "edge": 8.2,
    "best": true,
    "firstSeen": "2026-11-17T13:53:33.623Z",
-   "latest": 130.5,
-   "latestAt": "2026-11-17T13:53:33.623Z",
+   "latest": 128.5,
+   "latestAt": "2026-11-17T22:41:28.011Z",
    "alerted": false
   },
   {
@@ -30,8 +30,8 @@
    "edge": 6.1,
    "best": true,
    "firstSeen": "2026-11-17T13:53:33.623Z",
-   "latest": 169.5,
-   "latestAt": "2026-11-17T13:53:33.623Z",
+   "latest": 168.5,
+   "latestAt": "2026-11-17T22:41:28.011Z",
    "alerted": false
   },
   {
@@ -46,8 +46,8 @@
    "edge": 6.6,
    "best": true,
    "firstSeen": "2026-11-17T13:53:33.623Z",
-   "latest": 138.5,
-   "latestAt": "2026-11-17T13:53:33.623Z",
+   "latest": 137.5,
+   "latestAt": "2026-11-17T22:41:28.011Z",
    "alerted": false
   },
   {
@@ -63,7 +63,7 @@
    "best": true,
    "firstSeen": "2026-11-17T13:53:33.623Z",
    "latest": 150.5,
-   "latestAt": "2026-11-17T13:53:33.623Z",
+   "latestAt": "2026-11-17T22:41:28.011Z",
    "alerted": false
   },
   {
@@ -78,8 +78,8 @@
    "edge": 6.3,
    "best": true,
    "firstSeen": "2026-11-17T13:53:33.623Z",
-   "latest": 136.5,
-   "latestAt": "2026-11-17T13:53:33.623Z",
+   "latest": 137.5,
+   "latestAt": "2026-11-17T22:41:28.011Z",
    "alerted": false
   },
   {
@@ -94,8 +94,8 @@
    "edge": 10.4,
    "best": true,
    "firstSeen": "2026-11-17T13:53:33.623Z",
-   "latest": 140.5,
-   "latestAt": "2026-11-17T13:53:33.623Z",
+   "latest": 141.5,
+   "latestAt": "2026-11-17T22:41:28.011Z",
    "alerted": false
   },
   {
@@ -110,8 +110,8 @@
    "edge": 6.1,
    "best": true,
    "firstSeen": "2026-11-17T13:53:33.623Z",
-   "latest": 126.5,
-   "latestAt": "2026-11-17T13:53:33.623Z",
+   "latest": 125.5,
+   "latestAt": "2026-11-17T22:41:28.011Z",
    "alerted": false
   },
   {
@@ -127,7 +127,7 @@
    "best": true,
    "firstSeen": "2026-11-17T13:53:33.623Z",
    "latest": 145.5,
-   "latestAt": "2026-11-17T13:53:33.623Z",
+   "latestAt": "2026-11-17T22:41:28.011Z",
    "alerted": false
   }
  ]
