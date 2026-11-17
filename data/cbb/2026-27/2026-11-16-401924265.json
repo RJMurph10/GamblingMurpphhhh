@@ -7,18 +7,18 @@
   "id": "299",
   "abbr": "LBSU",
   "name": "Long Beach State Beach",
-  "score": 47
+  "score": 66
  },
  "home": {
   "id": "26",
   "abbr": "UCLA",
   "name": "UCLA Bruins",
-  "score": 77
+  "score": 105
  },
  "neutral": false,
  "venue": "Pauley Pavilion",
  "seasonType": 2,
- "state": "in",
+ "state": "post",
  "lines": {
   "open": {
    "at": "2026-11-15T22:55:11.258Z",
@@ -395,5 +395,9 @@
    ]
   }
  },
- "props": {}
+ "props": {},
+ "final": {
+  "away": 66,
+  "home": 105
+ }
 }
