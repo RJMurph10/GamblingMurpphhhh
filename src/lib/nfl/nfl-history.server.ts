@@ -138,11 +138,18 @@ export function parseHistoryCsv(
 }
 
 /** Finished games, plus this season's upcoming games with their projected starting QBs. */
+/** Automatic starting-QB corrections by ESPN game id (scripts/nfl/qb-starters.mjs, hourly). */
+export type QbCorrections = Record<
+  string,
+  Partial<Record<"home" | "away", { qbId: string | null; name: string }>>
+>;
+
 export function parseGamesCsv(
   csv: string,
   first: number,
   last: number,
   passing: PassingByTeamWeek = new Map(),
+  corrections: QbCorrections = {},
 ): { games: HistoryGame[]; upcoming: UpcomingStarters[] } {
   const lines = csv.split(/\r?\n/).filter(Boolean);
   const header = splitCsvLine(lines[0]);
@@ -194,7 +201,11 @@ export function parseGamesCsv(
       awayQbName: str(f[idx.awayQbName]),
     };
     if (awayScore === null || homeScore === null) {
-      // the owner's hand-set starters win over nflverse's projection
+      // nflverse's projection, corrected for QBs ruled out or gone (hourly check), then the owner's
+      // hand-set starters, which win over both
+      const auto = corrections[String(Number(f[idx.espn]))];
+      if (auto?.home) Object.assign(qbs, { homeQb: auto.home.qbId, homeQbName: auto.home.name });
+      if (auto?.away) Object.assign(qbs, { awayQb: auto.away.qbId, awayQbName: auto.away.name });
       for (const o of QB_OVERRIDES) {
         if (o.espnId !== Number(f[idx.espn])) continue;
         if (o.side === "home") Object.assign(qbs, { homeQb: o.qbId, homeQbName: o.qbName });
@@ -251,6 +262,9 @@ let cache: { at: number; value: NflHistory } | null = null;
 const TTL = 60 * 60 * 1000;
 
 /** Past seasons plus this season's finished games. Empty if GitHub can't be reached. */
+const QB_STARTERS_JSON = (season: number) =>
+  `https://raw.githubusercontent.com/RJMurph10/gamblingnfl/props-site/nfl/qb-starters-${season}.json`;
+
 export async function fetchNflHistory(): Promise<NflHistory> {
   if (cache && Date.now() - cache.at < TTL) return cache.value;
   try {
@@ -284,11 +298,16 @@ export async function fetchNflHistory(): Promise<NflHistory> {
     if (!res.ok) throw new Error(`nflverse ${res.status}`);
     const passing: PassingByTeamWeek = new Map();
     for (const text of statFiles) parseTeamWeekCsv(text, passing);
+    const corrections = await fetch(QB_STARTERS_JSON(CURRENT_SEASON))
+      .then((r) => (r.ok ? r.json() : null))
+      .then((j) => (j?.games ?? {}) as QbCorrections)
+      .catch(() => ({}) as QbCorrections);
     const { games, upcoming } = parseGamesCsv(
       await res.text(),
       FIRST_HISTORY_SEASON,
       CURRENT_SEASON,
       passing,
+      corrections,
     );
     const qbStarts = [
       ...Object.entries(QB_STARTS)

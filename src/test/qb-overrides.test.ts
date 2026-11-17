@@ -24,4 +24,13 @@ describe("hand-set starting QBs", () => {
     expect(games[0].homeQbName).toBe("Tyler Huntley");
     expect(upcoming[0].homeQbName).toBe("Tyler Huntley");
   });
+  it("apply the hourly automatic corrections, with hand-set starters winning", () => {
+    const csv = [header, row(401999999, "NA", "NA"), row(401873065, "NA", "NA")].join("\n");
+    const { upcoming } = parseGamesCsv(csv, 2026, 2026, new Map(), {
+      "401999999": { home: { qbId: "00-0033119", name: "Jacoby Brissett" } },
+      "401873065": { home: { qbId: "x", name: "Someone Else" } },
+    });
+    expect(upcoming[0].homeQbName).toBe("Jacoby Brissett");
+    expect(upcoming[1].homeQbName).toBe("Jacoby Brissett"); // the hand-set one wins
+  });
 });
