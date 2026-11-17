@@ -1,6 +1,6 @@
 {
  "day": "2026-11-22",
- "updated": "2026-11-16T19:41:09.395Z",
+ "updated": "2026-11-17T03:58:47.747Z",
  "picks": [
   {
    "id": "401873067-spread-bounce",
@@ -15,9 +15,26 @@
    "best": true,
    "tag": "bounce",
    "firstSeen": "2026-11-16T06:44:22.078Z",
-   "lastSeen": "2026-11-16T19:41:09.395Z",
+   "lastSeen": "2026-11-17T03:58:47.747Z",
    "latest": -16.5,
-   "latestAt": "2026-11-16T19:41:09.395Z"
+   "latestAt": "2026-11-17T03:58:47.747Z"
+  },
+  {
+   "id": "401873067-spread-qb-change",
+   "game": "ARI @ KC",
+   "tip": "2026-11-22T18:00Z",
+   "market": "spread",
+   "pick": "KC -16.5",
+   "line": -16.5,
+   "open": -11.5,
+   "model": null,
+   "edge": null,
+   "best": false,
+   "tag": "qb-change",
+   "firstSeen": "2026-11-17T03:58:47.747Z",
+   "lastSeen": "2026-11-17T03:58:47.747Z",
+   "latest": -16.5,
+   "latestAt": "2026-11-17T03:58:47.747Z"
   },
   {
    "id": "401873067-spread-road-dog",
@@ -32,9 +49,9 @@
    "best": false,
    "tag": "road-dog",
    "firstSeen": "2026-11-16T06:44:22.078Z",
-   "lastSeen": "2026-11-16T19:41:09.395Z",
+   "lastSeen": "2026-11-17T03:58:47.747Z",
    "latest": -16.5,
-   "latestAt": "2026-11-16T19:41:09.395Z"
+   "latestAt": "2026-11-17T03:58:47.747Z"
   },
   {
    "id": "401873068-spread-qb-style",
@@ -66,9 +83,9 @@
    "best": false,
    "tag": "road-dog",
    "firstSeen": "2026-11-15T22:56:35.955Z",
-   "lastSeen": "2026-11-16T19:41:09.395Z",
+   "lastSeen": "2026-11-17T03:58:47.747Z",
    "latest": -16.5,
-   "latestAt": "2026-11-16T19:41:09.395Z"
+   "latestAt": "2026-11-17T03:58:47.747Z"
   },
   {
    "id": "401873071-spread-road-dog",
@@ -83,9 +100,9 @@
    "best": false,
    "tag": "road-dog",
    "firstSeen": "2026-11-16T06:44:22.078Z",
-   "lastSeen": "2026-11-16T19:41:09.395Z",
+   "lastSeen": "2026-11-17T03:58:47.747Z",
    "latest": -11.5,
-   "latestAt": "2026-11-16T19:41:09.395Z"
+   "latestAt": "2026-11-17T03:58:47.747Z"
   },
   {
    "id": "401873071-total-wind",
@@ -101,9 +118,9 @@
    "tag": "wind",
    "note": "10 mph",
    "firstSeen": "2026-11-16T19:41:09.395Z",
-   "lastSeen": "2026-11-16T19:41:09.395Z",
+   "lastSeen": "2026-11-17T03:58:47.747Z",
    "latest": 48.5,
-   "latestAt": "2026-11-16T19:41:09.395Z"
+   "latestAt": "2026-11-17T03:58:47.747Z"
   },
   {
    "id": "401873073-spread-road-dog",
@@ -118,9 +135,9 @@
    "best": false,
    "tag": "road-dog",
    "firstSeen": "2026-11-16T06:44:22.078Z",
-   "lastSeen": "2026-11-16T19:41:09.395Z",
+   "lastSeen": "2026-11-17T03:58:47.747Z",
    "latest": -8.5,
-   "latestAt": "2026-11-16T19:41:09.395Z"
+   "latestAt": "2026-11-17T03:58:47.747Z"
   },
   {
    "id": "401873073-total-total-gap",
@@ -136,9 +153,9 @@
    "best": false,
    "tag": "total-gap",
    "firstSeen": "2026-11-16T06:44:22.078Z",
-   "lastSeen": "2026-11-16T19:41:09.395Z",
+   "lastSeen": "2026-11-17T03:58:47.747Z",
    "latest": 54.5,
-   "latestAt": "2026-11-16T19:41:09.395Z"
+   "latestAt": "2026-11-17T03:58:47.747Z"
   },
   {
    "id": "401873076-spread-qb-change",
@@ -153,9 +170,9 @@
    "best": false,
    "tag": "qb-change",
    "firstSeen": "2026-11-16T06:44:22.078Z",
-   "lastSeen": "2026-11-16T19:41:09.395Z",
+   "lastSeen": "2026-11-17T03:58:47.747Z",
    "latest": 4.5,
-   "latestAt": "2026-11-16T19:41:09.395Z"
+   "latestAt": "2026-11-17T03:58:47.747Z"
   },
   {
    "id": "401873076-total-linc-calm",
@@ -171,9 +188,9 @@
    "tag": "linc-calm",
    "note": "5 mph · gusts 10",
    "firstSeen": "2026-11-16T19:41:09.395Z",
-   "lastSeen": "2026-11-16T19:41:09.395Z",
+   "lastSeen": "2026-11-17T03:58:47.747Z",
    "latest": 38.5,
-   "latestAt": "2026-11-16T19:41:09.395Z"
+   "latestAt": "2026-11-17T03:58:47.747Z"
   },
   {
    "id": "401873074-spread-qb-style",
@@ -205,9 +222,9 @@
    "best": false,
    "tag": "qb-change",
    "firstSeen": "2026-11-15T22:56:35.955Z",
-   "lastSeen": "2026-11-16T19:41:09.395Z",
+   "lastSeen": "2026-11-17T03:58:47.747Z",
    "latest": -10,
-   "latestAt": "2026-11-16T19:41:09.395Z"
+   "latestAt": "2026-11-17T03:58:47.747Z"
   },
   {
    "id": "401873075-spread-road-dog",
@@ -222,9 +239,9 @@
    "best": false,
    "tag": "road-dog",
    "firstSeen": "2026-11-15T22:56:35.955Z",
-   "lastSeen": "2026-11-16T19:41:09.395Z",
+   "lastSeen": "2026-11-17T03:58:47.747Z",
    "latest": -10,
-   "latestAt": "2026-11-16T19:41:09.395Z"
+   "latestAt": "2026-11-17T03:58:47.747Z"
   },
   {
    "id": "401873075-total-total-gap",
@@ -239,9 +256,9 @@
    "best": false,
    "tag": "total-gap",
    "firstSeen": "2026-11-15T22:56:35.955Z",
-   "lastSeen": "2026-11-16T19:41:09.395Z",
+   "lastSeen": "2026-11-17T03:58:47.747Z",
    "latest": 40.5,
-   "latestAt": "2026-11-16T19:41:09.395Z"
+   "latestAt": "2026-11-17T03:58:47.747Z"
   },
   {
    "id": "401873077-spread-qb-change",
@@ -256,9 +273,9 @@
    "best": false,
    "tag": "qb-change",
    "firstSeen": "2026-11-16T06:44:22.078Z",
-   "lastSeen": "2026-11-16T19:41:09.395Z",
+   "lastSeen": "2026-11-17T03:58:47.747Z",
    "latest": -3,
-   "latestAt": "2026-11-16T19:41:09.395Z"
+   "latestAt": "2026-11-17T03:58:47.747Z"
   },
   {
    "id": "401873077-total-total-gap",
@@ -273,9 +290,9 @@
    "best": false,
    "tag": "total-gap",
    "firstSeen": "2026-11-16T06:44:22.078Z",
-   "lastSeen": "2026-11-16T19:41:09.395Z",
+   "lastSeen": "2026-11-17T03:58:47.747Z",
    "latest": 46.5,
-   "latestAt": "2026-11-16T19:41:09.395Z"
+   "latestAt": "2026-11-17T03:58:47.747Z"
   }
  ]
 }

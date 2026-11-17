@@ -1,0 +1,23 @@
+{
+ "day": "2026-11-23",
+ "updated": "2026-11-17T03:58:47.747Z",
+ "picks": [
+  {
+   "id": "401873078-spread-qb-style",
+   "game": "CIN @ WSH",
+   "tip": "2026-11-24T01:15Z",
+   "market": "spread",
+   "pick": "WSH +6.5",
+   "line": 6.5,
+   "open": 1.5,
+   "model": null,
+   "edge": null,
+   "best": true,
+   "tag": "qb-style",
+   "firstSeen": "2026-11-17T03:58:47.747Z",
+   "lastSeen": "2026-11-17T03:58:47.747Z",
+   "latest": 6.5,
+   "latestAt": "2026-11-17T03:58:47.747Z"
+  }
+ ]
+}
