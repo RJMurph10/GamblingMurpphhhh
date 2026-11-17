@@ -1,0 +1,535 @@
+{
+ "source": "PLL 2024 schedule (weeks, host cities, dates, results; regular season and playoffs) as entered by the site owner from the PLL site, Nov 17 2026. All 45 regular-season and playoff results match ESPN. All-Star week (Louisville, Jul 13; East 15, West 12) is kept without games: ESPN has no 2024 All-Star game.",
+ "weeks": [
+  {
+   "week": 1,
+   "round": "Regular season",
+   "dates": "Jun 1 - Jun 2",
+   "city": "Albany, NY",
+   "allStar": false,
+   "games": [
+    {
+     "espnId": "401656178",
+     "date": "2024-06-01",
+     "away": "Archers",
+     "home": "Waterdogs",
+     "awayScore": 12,
+     "homeScore": 11,
+     "ot": false
+    },
+    {
+     "espnId": "401656196",
+     "date": "2024-06-01",
+     "away": "Cannons",
+     "home": "Atlas",
+     "awayScore": 12,
+     "homeScore": 19,
+     "ot": false
+    },
+    {
+     "espnId": "401657252",
+     "date": "2024-06-02",
+     "away": "Chaos",
+     "home": "Outlaws",
+     "awayScore": 16,
+     "homeScore": 11,
+     "ot": false
+    },
+    {
+     "espnId": "401656179",
+     "date": "2024-06-02",
+     "away": "Whipsnakes",
+     "home": "Atlas",
+     "awayScore": 13,
+     "homeScore": 17,
+     "ot": false
+    }
+   ]
+  },
+  {
+   "week": 2,
+   "round": "Regular season",
+   "dates": "Jun 7 - Jun 8",
+   "city": "Charlotte, NC",
+   "allStar": false,
+   "games": [
+    {
+     "espnId": "401656180",
+     "date": "2024-06-07",
+     "away": "Redwoods",
+     "home": "Chaos",
+     "awayScore": 11,
+     "homeScore": 12,
+     "ot": false
+    },
+    {
+     "espnId": "401657258",
+     "date": "2024-06-07",
+     "away": "Archers",
+     "home": "Outlaws",
+     "awayScore": 17,
+     "homeScore": 18,
+     "ot": true
+    },
+    {
+     "espnId": "401656184",
+     "date": "2024-06-08",
+     "away": "Atlas",
+     "home": "Chaos",
+     "awayScore": 15,
+     "homeScore": 12,
+     "ot": false
+    },
+    {
+     "espnId": "401656181",
+     "date": "2024-06-08",
+     "away": "Whipsnakes",
+     "home": "Cannons",
+     "awayScore": 9,
+     "homeScore": 13,
+     "ot": false
+    }
+   ]
+  },
+  {
+   "week": 3,
+   "round": "Regular season",
+   "dates": "Jun 15 - Jun 16",
+   "city": "Philadelphia, PA",
+   "allStar": false,
+   "games": [
+    {
+     "espnId": "401656188",
+     "date": "2024-06-15",
+     "away": "Cannons",
+     "home": "Waterdogs",
+     "awayScore": 12,
+     "homeScore": 11,
+     "ot": true
+    },
+    {
+     "espnId": "401656182",
+     "date": "2024-06-15",
+     "away": "Archers",
+     "home": "Chaos",
+     "awayScore": 9,
+     "homeScore": 7,
+     "ot": false
+    },
+    {
+     "espnId": "401656197",
+     "date": "2024-06-16",
+     "away": "Redwoods",
+     "home": "Atlas",
+     "awayScore": 15,
+     "homeScore": 20,
+     "ot": false
+    },
+    {
+     "espnId": "401656177",
+     "date": "2024-06-16",
+     "away": "Whipsnakes",
+     "home": "Waterdogs",
+     "awayScore": 15,
+     "homeScore": 14,
+     "ot": true
+    }
+   ]
+  },
+  {
+   "week": 4,
+   "round": "Regular season",
+   "dates": "Jun 28 - Jun 29",
+   "city": "Minneapolis, MN",
+   "allStar": false,
+   "games": [
+    {
+     "espnId": "401656185",
+     "date": "2024-06-28",
+     "away": "Atlas",
+     "home": "Whipsnakes",
+     "awayScore": 12,
+     "homeScore": 16,
+     "ot": false
+    },
+    {
+     "espnId": "401656190",
+     "date": "2024-06-28",
+     "away": "Cannons",
+     "home": "Archers",
+     "awayScore": 14,
+     "homeScore": 9,
+     "ot": false
+    },
+    {
+     "espnId": "401657250",
+     "date": "2024-06-29",
+     "away": "Redwoods",
+     "home": "Outlaws",
+     "awayScore": 8,
+     "homeScore": 13,
+     "ot": false
+    },
+    {
+     "espnId": "401656192",
+     "date": "2024-06-29",
+     "away": "Waterdogs",
+     "home": "Chaos",
+     "awayScore": 10,
+     "homeScore": 6,
+     "ot": false
+    }
+   ]
+  },
+  {
+   "week": 5,
+   "round": "Regular season",
+   "dates": "Jul 5 - Jul 6",
+   "city": "Boston, MA",
+   "allStar": false,
+   "games": [
+    {
+     "espnId": "401656198",
+     "date": "2024-07-05",
+     "away": "Redwoods",
+     "home": "Cannons",
+     "awayScore": 9,
+     "homeScore": 7,
+     "ot": false
+    },
+    {
+     "espnId": "401657253",
+     "date": "2024-07-05",
+     "away": "Outlaws",
+     "home": "Atlas",
+     "awayScore": 4,
+     "homeScore": 17,
+     "ot": false
+    },
+    {
+     "espnId": "401656186",
+     "date": "2024-07-06",
+     "away": "Archers",
+     "home": "Whipsnakes",
+     "awayScore": 16,
+     "homeScore": 11,
+     "ot": false
+    },
+    {
+     "espnId": "401656199",
+     "date": "2024-07-06",
+     "away": "Waterdogs",
+     "home": "Cannons",
+     "awayScore": 10,
+     "homeScore": 14,
+     "ot": false
+    }
+   ]
+  },
+  {
+   "week": 6,
+   "round": "All-Star",
+   "dates": "Jul 13",
+   "city": "Louisville, KY",
+   "allStar": true,
+   "games": []
+  },
+  {
+   "week": 7,
+   "round": "Regular season",
+   "dates": "Jul 19 - Jul 20",
+   "city": "Fairfield, CT",
+   "allStar": false,
+   "games": [
+    {
+     "espnId": "401657257",
+     "date": "2024-07-19",
+     "away": "Outlaws",
+     "home": "Waterdogs",
+     "awayScore": 15,
+     "homeScore": 13,
+     "ot": false
+    },
+    {
+     "espnId": "401656189",
+     "date": "2024-07-19",
+     "away": "Chaos",
+     "home": "Whipsnakes",
+     "awayScore": 10,
+     "homeScore": 9,
+     "ot": true
+    },
+    {
+     "espnId": "401656193",
+     "date": "2024-07-20",
+     "away": "Atlas",
+     "home": "Cannons",
+     "awayScore": 12,
+     "homeScore": 17,
+     "ot": false
+    },
+    {
+     "espnId": "401656191",
+     "date": "2024-07-20",
+     "away": "Archers",
+     "home": "Redwoods",
+     "awayScore": 15,
+     "homeScore": 8,
+     "ot": false
+    }
+   ]
+  },
+  {
+   "week": 8,
+   "round": "Regular season",
+   "dates": "Jul 27 - Jul 28",
+   "city": "San Diego, CA",
+   "allStar": false,
+   "games": [
+    {
+     "espnId": "401657254",
+     "date": "2024-07-27",
+     "away": "Outlaws",
+     "home": "Cannons",
+     "awayScore": 10,
+     "homeScore": 12,
+     "ot": false
+    },
+    {
+     "espnId": "401656183",
+     "date": "2024-07-27",
+     "away": "Chaos",
+     "home": "Redwoods",
+     "awayScore": 8,
+     "homeScore": 10,
+     "ot": false
+    },
+    {
+     "espnId": "401656195",
+     "date": "2024-07-28",
+     "away": "Waterdogs",
+     "home": "Atlas",
+     "awayScore": 11,
+     "homeScore": 12,
+     "ot": false
+    },
+    {
+     "espnId": "401656216",
+     "date": "2024-07-28",
+     "away": "Whipsnakes",
+     "home": "Redwoods",
+     "awayScore": 18,
+     "homeScore": 13,
+     "ot": false
+    }
+   ]
+  },
+  {
+   "week": 9,
+   "round": "Regular season",
+   "dates": "Aug 3 - Aug 4",
+   "city": "Baltimore, MD",
+   "allStar": false,
+   "games": [
+    {
+     "espnId": "401656200",
+     "date": "2024-08-03",
+     "away": "Waterdogs",
+     "home": "Whipsnakes",
+     "awayScore": 6,
+     "homeScore": 12,
+     "ot": false
+    },
+    {
+     "espnId": "401657255",
+     "date": "2024-08-03",
+     "away": "Outlaws",
+     "home": "Redwoods",
+     "awayScore": 18,
+     "homeScore": 5,
+     "ot": false
+    },
+    {
+     "espnId": "401656194",
+     "date": "2024-08-04",
+     "away": "Chaos",
+     "home": "Archers",
+     "awayScore": 15,
+     "homeScore": 14,
+     "ot": false
+    },
+    {
+     "espnId": "401656187",
+     "date": "2024-08-04",
+     "away": "Cannons",
+     "home": "Whipsnakes",
+     "awayScore": 14,
+     "homeScore": 16,
+     "ot": false
+    }
+   ]
+  },
+  {
+   "week": 10,
+   "round": "Regular season",
+   "dates": "Aug 9 - Aug 10",
+   "city": "Denver, CO",
+   "allStar": false,
+   "games": [
+    {
+     "espnId": "401657251",
+     "date": "2024-08-09",
+     "away": "Whipsnakes",
+     "home": "Outlaws",
+     "awayScore": 16,
+     "homeScore": 9,
+     "ot": false
+    },
+    {
+     "espnId": "401656201",
+     "date": "2024-08-09",
+     "away": "Waterdogs",
+     "home": "Redwoods",
+     "awayScore": 12,
+     "homeScore": 13,
+     "ot": true
+    },
+    {
+     "espnId": "401656217",
+     "date": "2024-08-10",
+     "away": "Atlas",
+     "home": "Archers",
+     "awayScore": 15,
+     "homeScore": 11,
+     "ot": false
+    },
+    {
+     "espnId": "401657249",
+     "date": "2024-08-10",
+     "away": "Chaos",
+     "home": "Outlaws",
+     "awayScore": 4,
+     "homeScore": 10,
+     "ot": false
+    }
+   ]
+  },
+  {
+   "week": 11,
+   "round": "Regular season",
+   "dates": "Aug 16 - Aug 17",
+   "city": "Salt Lake City, UT",
+   "allStar": false,
+   "games": [
+    {
+     "espnId": "401656202",
+     "date": "2024-08-16",
+     "away": "Redwoods",
+     "home": "Archers",
+     "awayScore": 12,
+     "homeScore": 13,
+     "ot": true
+    },
+    {
+     "espnId": "401656219",
+     "date": "2024-08-16",
+     "away": "Cannons",
+     "home": "Chaos",
+     "awayScore": 11,
+     "homeScore": 10,
+     "ot": true
+    },
+    {
+     "espnId": "401656218",
+     "date": "2024-08-17",
+     "away": "Atlas",
+     "home": "Waterdogs",
+     "awayScore": 12,
+     "homeScore": 13,
+     "ot": false
+    },
+    {
+     "espnId": "401657256",
+     "date": "2024-08-17",
+     "away": "Outlaws",
+     "home": "Archers",
+     "awayScore": 9,
+     "homeScore": 13,
+     "ot": false
+    }
+   ]
+  },
+  {
+   "week": 12,
+   "round": "Quarterfinals",
+   "dates": "Sept 2",
+   "city": "Boston, MA",
+   "allStar": false,
+   "games": [
+    {
+     "espnId": "401707339",
+     "date": "2024-09-02",
+     "away": "Chaos",
+     "home": "Cannons",
+     "awayScore": 8,
+     "homeScore": 4,
+     "ot": false
+    },
+    {
+     "espnId": "401707340",
+     "date": "2024-09-02",
+     "away": "Outlaws",
+     "home": "Whipsnakes",
+     "awayScore": 10,
+     "homeScore": 11,
+     "ot": false
+    }
+   ]
+  },
+  {
+   "week": 13,
+   "round": "Semifinals",
+   "dates": "Sept 7",
+   "city": "Long Island, NY",
+   "allStar": false,
+   "games": [
+    {
+     "espnId": "401711888",
+     "date": "2024-09-07",
+     "away": "Whipsnakes",
+     "home": "Atlas",
+     "awayScore": 12,
+     "homeScore": 11,
+     "ot": true
+    },
+    {
+     "espnId": "401711907",
+     "date": "2024-09-07",
+     "away": "Chaos",
+     "home": "Archers",
+     "awayScore": 1,
+     "homeScore": 10,
+     "ot": false
+    }
+   ]
+  },
+  {
+   "week": 14,
+   "round": "Championship",
+   "dates": "Sept 15",
+   "city": "Philadelphia, PA",
+   "allStar": false,
+   "games": [
+    {
+     "espnId": "401715777",
+     "date": "2024-09-15",
+     "away": "Whipsnakes",
+     "home": "Archers",
+     "awayScore": 8,
+     "homeScore": 12,
+     "ot": false
+    }
+   ]
+  }
+ ]
+}

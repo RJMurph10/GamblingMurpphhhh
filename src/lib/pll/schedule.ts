@@ -1,8 +1,9 @@
 /**
  * Where and in which week each PLL game was played, from the schedules the site owner enters from the
- * PLL site (src/data/pll-<season>-schedule.json; 2025 regular season, 2026 regular season and playoffs). The PLL plays each week's
+ * PLL site (src/data/pll-<season>-schedule.json; 2024 regular season; 2025 and 2026 regular season and playoffs). The PLL plays each week's
  * games at one host city ("Week 3 · Baltimore, MD").
  */
+import s2024 from "@/data/pll-2024-schedule.json";
 import s2025 from "@/data/pll-2025-schedule.json";
 import s2026 from "@/data/pll-2026-schedule.json";
 
@@ -29,6 +30,8 @@ const toWeek = (w: (typeof s2026.weeks)[number]): PllWeek => ({
   allStar: w.allStar,
 });
 const SEASONS: Record<number, (typeof s2026.weeks)[number][]> = {
+  // 2024 has an All-Star week with no games (ESPN never recorded the game)
+  2024: s2024.weeks as unknown as (typeof s2026.weeks)[number][],
   2025: s2025.weeks,
   2026: s2026.weeks,
 };
