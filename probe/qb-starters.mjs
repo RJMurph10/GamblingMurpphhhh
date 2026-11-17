@@ -4,10 +4,11 @@
  * lags trades and injuries (Nov 2026: Ravens still Tyler Huntley after he went on IR and Jacoby Brissett
  * arrived; Cardinals still Gardner Minshew after his UCL tear). For each team in a game within --days:
  *   - nflverse's projected QB is replaced when ESPN's injury report has him Out / Doubtful / on IR /
- *     suspended, or he's no longer on the team's ESPN depth chart (traded or released);
+ *     suspended, he's no longer on the team's ESPN depth chart (traded or released), or the depth chart
+ *     has him 3rd or lower (Huntley, Nov 2026: 5th behind Brissett and missing from the injury report);
  *   - the replacement is the first QB on the team's ESPN depth chart who isn't ruled out.
- * A healthy projected starter is kept even when ESPN's depth chart lists someone else first (depth
- * charts lag too: Caleb Williams' return); those are listed under "disagree" to check by hand.
+ * A healthy projected starter 2nd on the depth chart is kept (depth charts lag too: Caleb Williams was
+ * listed behind his backup after returning); those are listed under "disagree" to check by hand.
  * The site applies the corrections to upcoming games (hand-set ones in src/data/nfl/qb-overrides.ts win).
  *
  *   node scripts/nfl/qb-starters.mjs --season 2026 --out site-repo [--days 8]
@@ -128,11 +129,12 @@ async function main() {
       if (!qbs.length) continue;
       const st = (name) =>
         status.get(`${abbr}|${norm(name)}`) ?? status.get(`*|${norm(name)}`) ?? "";
-      const onTeam = qbs.some((q) => norm(q.name) === norm(was));
+      const rank = qbs.findIndex((q) => norm(q.name) === norm(was)) + 1; // 0 = not listed
       const wasStatus = st(was);
       let reason = "";
       if (RULED_OUT.test(wasStatus)) reason = `${was}: ${wasStatus}`;
-      else if (!onTeam) reason = `${was} is not on the team's depth chart`;
+      else if (!rank) reason = `${was} is not on the team's depth chart`;
+      else if (rank >= 3) reason = `${was} is QB${rank} on the team's depth chart`;
       if (!reason) {
         if (norm(qbs[0].name) !== norm(was))
           out.disagree.push({
