@@ -2,7 +2,7 @@
  * PLL schedule and scores from ESPN's lacrosse scoreboard. A whole year comes back in one request
  * (`dates=2026`; date ranges are refused). Teams from ESPN's team list, minus the All-Star teams.
  */
-import { pllWeekOf } from "./schedule";
+import { pllTvOf, pllWeekOf } from "./schedule";
 import { cached } from "@/lib/shared/espn-core.server";
 import history from "@/data/pll-2019-2021.json";
 import { tagPhases, type PllGame, type PllPhase, type PllSeason, type PllTeam } from "./pll";
@@ -218,7 +218,9 @@ export function withEraLogos(s: PllSeason): PllSeason {
     // the week and host city from the owner-entered schedule (2025 on)
     games: s.games.map((g) => {
       const w = pllWeekOf(g.id);
-      return w && !g.city ? { ...g, city: w.city, week: w.week, weekLabel: w.label } : g;
+      const tv = pllTvOf(g.id);
+      const out = w && !g.city ? { ...g, city: w.city, week: w.week, weekLabel: w.label } : g;
+      return tv ? { ...out, tv } : out;
     }),
     teams: s.teams.map((t) => {
       const logo = ERA_LOGOS[t.id]?.find(([from, to]) => y >= from && y <= to)?.[2];

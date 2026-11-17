@@ -1,7 +1,7 @@
 import { describe, expect, it } from "vitest";
 import data from "@/data/pll-2026-schedule.json";
 import s2025 from "@/data/pll-2025-schedule.json";
-import { pllWeekOf, pllWeeks } from "@/lib/pll/schedule";
+import { pllTvOf, pllWeekOf, pllWeeks } from "@/lib/pll/schedule";
 
 describe("PLL 2026 schedule (owner-entered)", () => {
   it("has 16 weeks and every game tied to an ESPN game", () => {
@@ -24,10 +24,9 @@ describe("PLL 2026 schedule (owner-entered)", () => {
 });
 
 describe("PLL 2025 schedule (owner-entered)", () => {
-  it("has 11 weeks, 40 regular-season games and the All-Star game, each tied to ESPN", () => {
-    expect(pllWeeks(2025)).toHaveLength(11);
+  it("has 40 regular-season games, the All-Star game and 5 playoff games, each tied to ESPN", () => {
     const games = s2025.weeks.flatMap((w) => w.games);
-    expect(games).toHaveLength(41);
+    expect(games).toHaveLength(46);
     expect(games.every((g) => g.espnId)).toBe(true);
   });
   it("finds a 2025 game's week and host city", () => {
@@ -35,5 +34,19 @@ describe("PLL 2025 schedule (owner-entered)", () => {
     const g = s2025.weeks[8].games[2]; // Waterdogs at Chaos, Jul 26 (OT)
     expect(g).toMatchObject({ away: "Waterdogs", home: "Chaos", ot: true });
     expect(pllWeekOf(g.espnId)).toMatchObject({ label: "Week 9", city: "Salt Lake City, UT" });
+  });
+});
+
+describe("PLL 2025 playoffs (owner-entered)", () => {
+  it("labels rounds, hosts and TV", () => {
+    expect(pllWeeks(2025)).toHaveLength(14);
+    expect(pllWeekOf("401809304")).toMatchObject({
+      label: "Quarterfinals",
+      city: "Minneapolis, MN",
+    });
+    expect(pllWeekOf("401813930")).toMatchObject({ label: "Semifinals", city: "Philadelphia, PA" });
+    expect(pllWeekOf("401819953")).toMatchObject({ label: "Championship", city: "Harrison, NJ" });
+    expect(pllTvOf("401819953")).toEqual(["ABC", "ESPN+"]);
+    expect(pllTvOf("401774035")).toBeUndefined();
   });
 });

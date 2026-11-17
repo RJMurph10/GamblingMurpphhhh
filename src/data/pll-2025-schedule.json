@@ -1,5 +1,5 @@
 {
- "source": "PLL 2025 regular-season schedule (weeks, host cities, dates, results) as entered by the site owner from the PLL site, Nov 17 2026. Every result matches ESPN. Left out: the Friday Jul 4 All-Star listing (0-0 on the PLL site, no matching ESPN game).",
+ "source": "PLL 2025 schedule (weeks, host cities, dates, results; regular season and playoffs, with TV for the playoffs) as entered by the site owner from the PLL site, Nov 17 2026. Every result matches ESPN. Left out: the Friday Jul 4 All-Star listing (0-0 on the PLL site, no matching ESPN game).",
  "weeks": [
   {
    "week": 1,
@@ -466,6 +466,95 @@
      "awayScore": 15,
      "homeScore": 8,
      "ot": false
+    }
+   ]
+  },
+  {
+   "week": 12,
+   "round": "Quarterfinals",
+   "dates": "Aug 23",
+   "city": "Minneapolis, MN",
+   "allStar": false,
+   "games": [
+    {
+     "espnId": "401809304",
+     "date": "2025-08-23",
+     "away": "Waterdogs",
+     "home": "Whipsnakes",
+     "awayScore": 14,
+     "homeScore": 12,
+     "ot": false,
+     "tv": [
+      "ESPN+"
+     ]
+    },
+    {
+     "espnId": "401809222",
+     "date": "2025-08-23",
+     "away": "Chaos",
+     "home": "Redwoods",
+     "awayScore": 12,
+     "homeScore": 14,
+     "ot": false,
+     "tv": [
+      "ESPN+"
+     ]
+    }
+   ]
+  },
+  {
+   "week": 13,
+   "round": "Semifinals",
+   "dates": "Sept 1",
+   "city": "Philadelphia, PA",
+   "allStar": false,
+   "games": [
+    {
+     "espnId": "401813929",
+     "date": "2025-09-01",
+     "away": "Waterdogs",
+     "home": "Atlas",
+     "awayScore": 11,
+     "homeScore": 13,
+     "ot": false,
+     "tv": [
+      "ESPN+"
+     ]
+    },
+    {
+     "espnId": "401813930",
+     "date": "2025-09-01",
+     "away": "Redwoods",
+     "home": "Outlaws",
+     "awayScore": 7,
+     "homeScore": 12,
+     "ot": false,
+     "tv": [
+      "ESPN2",
+      "ESPN+"
+     ]
+    }
+   ]
+  },
+  {
+   "week": 14,
+   "round": "Championship",
+   "dates": "Sept 14",
+   "city": "Harrison, NJ",
+   "allStar": false,
+   "games": [
+    {
+     "espnId": "401819953",
+     "date": "2025-09-14",
+     "away": "Atlas",
+     "home": "Outlaws",
+     "awayScore": 14,
+     "homeScore": 13,
+     "ot": false,
+     "tv": [
+      "ABC",
+      "ESPN+"
+     ]
     }
    ]
   }

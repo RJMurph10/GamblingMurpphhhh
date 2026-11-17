@@ -19,6 +19,7 @@ export interface PllWeek {
 }
 
 const BY_ID = new Map<string, PllWeek>();
+const TV = new Map<string, string[]>();
 const toWeek = (w: (typeof s2026.weeks)[number]): PllWeek => ({
   week: w.week,
   round: w.round,
@@ -27,15 +28,26 @@ const toWeek = (w: (typeof s2026.weeks)[number]): PllWeek => ({
   city: w.city,
   allStar: w.allStar,
 });
-const SEASONS: Record<number, (typeof s2026.weeks)[number][]> = { 2025: s2025.weeks, 2026: s2026.weeks };
+const SEASONS: Record<number, (typeof s2026.weeks)[number][]> = {
+  2025: s2025.weeks,
+  2026: s2026.weeks,
+};
 for (const weeks of Object.values(SEASONS))
   for (const w of weeks) {
     const info = toWeek(w);
-    for (const g of w.games) if (g.espnId) BY_ID.set(g.espnId, info);
+    for (const g of w.games) {
+      if (!g.espnId) continue;
+      BY_ID.set(g.espnId, info);
+      const tv = (g as { tv?: string[] }).tv;
+      if (tv?.length) TV.set(g.espnId, tv);
+    }
   }
 
 /** The week and host city of a game, by ESPN event id (undefined when not entered). */
 export const pllWeekOf = (espnId: string): PllWeek | undefined => BY_ID.get(espnId);
+
+/** Where a game aired ("ABC", "ESPN+"), by ESPN event id, when the owner's schedule lists it. */
+export const pllTvOf = (espnId: string): string[] | undefined => TV.get(espnId);
 
 /** Every entered week of a season, in order. */
 export const pllWeeks = (season: number): PllWeek[] => (SEASONS[season] ?? []).map(toWeek);
