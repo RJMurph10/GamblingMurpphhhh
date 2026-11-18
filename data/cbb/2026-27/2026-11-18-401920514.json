@@ -1,24 +1,24 @@
 {
  "id": "401920514",
  "league": "cbb",
- "date": "2026-11-18T21:30Z",
+ "date": "2026-11-18T21:48Z",
  "name": "HOU VS FLA",
  "away": {
   "id": "248",
   "abbr": "HOU",
   "name": "Houston Cougars",
-  "score": 0
+  "score": 12
  },
  "home": {
   "id": "57",
   "abbr": "FLA",
   "name": "Florida Gators",
-  "score": 0
+  "score": 12
  },
  "neutral": true,
  "venue": "Michelob ULTRA Arena",
  "seasonType": 2,
- "state": "pre",
+ "state": "in",
  "lines": {
   "open": {
    "at": "2026-11-18T04:29:39.955Z",
