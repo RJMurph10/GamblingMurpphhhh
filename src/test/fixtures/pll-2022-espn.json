@@ -44,7 +44,7 @@
   "sides": [
    [
     "home",
-    "CAN",
+    "Cannons",
     "CAN",
     "16"
    ],
@@ -69,7 +69,7 @@
    ],
    [
     "away",
-    "Chr",
+    "Chrome",
     "CHR",
     "11"
    ]
@@ -88,7 +88,7 @@
    ],
    [
     "away",
-    "Chr",
+    "Chrome",
     "CHR",
     "12"
    ]
@@ -120,7 +120,7 @@
   "sides": [
    [
     "home",
-    "CAN",
+    "Cannons",
     "CAN",
     "8"
    ],
@@ -158,7 +158,7 @@
   "sides": [
    [
     "home",
-    "Chr",
+    "Chrome",
     "CHR",
     "17"
    ],
@@ -202,7 +202,7 @@
    ],
    [
     "away",
-    "CAN",
+    "Cannons",
     "CAN",
     "9"
    ]
@@ -272,13 +272,13 @@
   "sides": [
    [
     "home",
-    "Chr",
+    "Chrome",
     "CHR",
     "12"
    ],
    [
     "away",
-    "CAN",
+    "Cannons",
     "CAN",
     "11"
    ]
@@ -329,7 +329,7 @@
   "sides": [
    [
     "home",
-    "Chr",
+    "Chrome",
     "CHR",
     "13"
    ],
@@ -348,7 +348,7 @@
   "sides": [
    [
     "home",
-    "CAN",
+    "Cannons",
     "CAN",
     "11"
    ],
@@ -430,7 +430,7 @@
    ],
    [
     "away",
-    "CAN",
+    "Cannons",
     "CAN",
     "12"
    ]
@@ -449,7 +449,7 @@
    ],
    [
     "away",
-    "Chr",
+    "Chrome",
     "CHR",
     "10"
    ]
@@ -487,7 +487,7 @@
    ],
    [
     "away",
-    "Chr",
+    "Chrome",
     "CHR",
     "8"
    ]
@@ -500,7 +500,7 @@
   "sides": [
    [
     "home",
-    "CAN",
+    "Cannons",
     "CAN",
     "14"
    ],
@@ -544,7 +544,7 @@
    ],
    [
     "away",
-    "CAN",
+    "Cannons",
     "CAN",
     "12"
    ]
@@ -557,7 +557,7 @@
   "sides": [
    [
     "home",
-    "Chr",
+    "Chrome",
     "CHR",
     "13"
    ],
@@ -671,13 +671,13 @@
   "sides": [
    [
     "home",
-    "Chr",
+    "Chrome",
     "CHR",
     "11"
    ],
    [
     "away",
-    "CAN",
+    "Cannons",
     "CAN",
     "9"
    ]
@@ -696,7 +696,7 @@
    ],
    [
     "away",
-    "Chr",
+    "Chrome",
     "CHR",
     "13"
    ]
@@ -728,7 +728,7 @@
   "sides": [
    [
     "home",
-    "CAN",
+    "Cannons",
     "CAN",
     "9"
    ],
@@ -766,7 +766,7 @@
   "sides": [
    [
     "home",
-    "Chr",
+    "Chrome",
     "CHR",
     "3"
    ],
