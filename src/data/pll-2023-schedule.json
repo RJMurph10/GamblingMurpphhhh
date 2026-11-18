@@ -1,0 +1,463 @@
+{
+ "source": "PLL 2023 regular-season schedule (weeks, host cities, dates, results) as entered by the site owner from the PLL site, Nov 17 2026. All 40 results match ESPN. All-Star week (Louisville, Jul 22; 26-19) is kept without games: ESPN has no 2023 All-Star game.",
+ "weeks": [
+  {
+   "week": 1,
+   "round": "Regular season",
+   "dates": "Jun 3 - Jun 4",
+   "city": "Albany, NY",
+   "allStar": false,
+   "games": [
+    {
+     "espnId": "401545152",
+     "date": "2023-06-03",
+     "away": "Redwoods",
+     "home": "Atlas",
+     "awayScore": 13,
+     "homeScore": 12,
+     "ot": false
+    },
+    {
+     "espnId": "401545132",
+     "date": "2023-06-03",
+     "away": "Cannons",
+     "home": "Archers",
+     "awayScore": 13,
+     "homeScore": 16,
+     "ot": false
+    },
+    {
+     "espnId": "401545151",
+     "date": "2023-06-04",
+     "away": "Chaos",
+     "home": "Waterdogs",
+     "awayScore": 7,
+     "homeScore": 8,
+     "ot": true
+    },
+    {
+     "espnId": "401545153",
+     "date": "2023-06-04",
+     "away": "Whipsnakes",
+     "home": "Chrome",
+     "awayScore": 11,
+     "homeScore": 12,
+     "ot": false
+    }
+   ]
+  },
+  {
+   "week": 2,
+   "round": "Regular season",
+   "dates": "Jun 9 - Jun 10",
+   "city": "Charlotte, NC",
+   "allStar": false,
+   "games": [
+    {
+     "espnId": "401545131",
+     "date": "2023-06-09",
+     "away": "Chrome",
+     "home": "Archers",
+     "awayScore": 7,
+     "homeScore": 12,
+     "ot": false
+    },
+    {
+     "espnId": "401545154",
+     "date": "2023-06-09",
+     "away": "Waterdogs",
+     "home": "Redwoods",
+     "awayScore": 9,
+     "homeScore": 10,
+     "ot": false
+    },
+    {
+     "espnId": "401545156",
+     "date": "2023-06-10",
+     "away": "Whipsnakes",
+     "home": "Atlas",
+     "awayScore": 11,
+     "homeScore": 12,
+     "ot": false
+    },
+    {
+     "espnId": "401545133",
+     "date": "2023-06-10",
+     "away": "Chaos",
+     "home": "Cannons",
+     "awayScore": 14,
+     "homeScore": 13,
+     "ot": true
+    }
+   ]
+  },
+  {
+   "week": 3,
+   "round": "Regular season",
+   "dates": "Jun 16 - Jun 17",
+   "city": "Columbus, OH",
+   "allStar": false,
+   "games": [
+    {
+     "espnId": "401545162",
+     "date": "2023-06-16",
+     "away": "Waterdogs",
+     "home": "Atlas",
+     "awayScore": 19,
+     "homeScore": 18,
+     "ot": false
+    },
+    {
+     "espnId": "401545155",
+     "date": "2023-06-16",
+     "away": "Chrome",
+     "home": "Cannons",
+     "awayScore": 13,
+     "homeScore": 14,
+     "ot": false
+    },
+    {
+     "espnId": "401545134",
+     "date": "2023-06-17",
+     "away": "Archers",
+     "home": "Chaos",
+     "awayScore": 10,
+     "homeScore": 15,
+     "ot": false
+    },
+    {
+     "espnId": "401545158",
+     "date": "2023-06-17",
+     "away": "Redwoods",
+     "home": "Whipsnakes",
+     "awayScore": 11,
+     "homeScore": 18,
+     "ot": false
+    }
+   ]
+  },
+  {
+   "week": 4,
+   "round": "Regular season",
+   "dates": "Jul 8 - Jul 9",
+   "city": "Minneapolis, MN",
+   "allStar": false,
+   "games": [
+    {
+     "espnId": "401545135",
+     "date": "2023-07-08",
+     "away": "Waterdogs",
+     "home": "Chrome",
+     "awayScore": 10,
+     "homeScore": 7,
+     "ot": false
+    },
+    {
+     "espnId": "401545157",
+     "date": "2023-07-08",
+     "away": "Cannons",
+     "home": "Atlas",
+     "awayScore": 19,
+     "homeScore": 12,
+     "ot": false
+    },
+    {
+     "espnId": "401545142",
+     "date": "2023-07-09",
+     "away": "Redwoods",
+     "home": "Chaos",
+     "awayScore": 13,
+     "homeScore": 8,
+     "ot": false
+    },
+    {
+     "espnId": "401545168",
+     "date": "2023-07-09",
+     "away": "Whipsnakes",
+     "home": "Archers",
+     "awayScore": 12,
+     "homeScore": 15,
+     "ot": false
+    }
+   ]
+  },
+  {
+   "week": 5,
+   "round": "Regular season",
+   "dates": "Jul 14 - Jul 15",
+   "city": "Fairfield, CT",
+   "allStar": false,
+   "games": [
+    {
+     "espnId": "401545136",
+     "date": "2023-07-14",
+     "away": "Waterdogs",
+     "home": "Whipsnakes",
+     "awayScore": 16,
+     "homeScore": 13,
+     "ot": false
+    },
+    {
+     "espnId": "401545143",
+     "date": "2023-07-14",
+     "away": "Archers",
+     "home": "Redwoods",
+     "awayScore": 10,
+     "homeScore": 3,
+     "ot": false
+    },
+    {
+     "espnId": "401545169",
+     "date": "2023-07-15",
+     "away": "Chrome",
+     "home": "Cannons",
+     "awayScore": 6,
+     "homeScore": 12,
+     "ot": false
+    },
+    {
+     "espnId": "401545144",
+     "date": "2023-07-15",
+     "away": "Atlas",
+     "home": "Chaos",
+     "awayScore": 11,
+     "homeScore": 15,
+     "ot": false
+    }
+   ]
+  },
+  {
+   "week": 6,
+   "round": "All-Star",
+   "dates": "Jul 22",
+   "city": "Louisville, KY",
+   "allStar": true,
+   "games": []
+  },
+  {
+   "week": 7,
+   "round": "Regular season",
+   "dates": "Jul 29 - Jul 30",
+   "city": "Dallas, TX",
+   "allStar": false,
+   "games": [
+    {
+     "espnId": "401545137",
+     "date": "2023-07-29",
+     "away": "Atlas",
+     "home": "Chrome",
+     "awayScore": 11,
+     "homeScore": 9,
+     "ot": false
+    },
+    {
+     "espnId": "401545160",
+     "date": "2023-07-29",
+     "away": "Cannons",
+     "home": "Redwoods",
+     "awayScore": 16,
+     "homeScore": 10,
+     "ot": false
+    },
+    {
+     "espnId": "401545159",
+     "date": "2023-07-30",
+     "away": "Waterdogs",
+     "home": "Archers",
+     "awayScore": 18,
+     "homeScore": 19,
+     "ot": false
+    },
+    {
+     "espnId": "401545170",
+     "date": "2023-07-30",
+     "away": "Whipsnakes",
+     "home": "Chaos",
+     "awayScore": 17,
+     "homeScore": 16,
+     "ot": false
+    }
+   ]
+  },
+  {
+   "week": 8,
+   "round": "Regular season",
+   "dates": "Aug 5 - Aug 6",
+   "city": "Baltimore, MD",
+   "allStar": false,
+   "games": [
+    {
+     "espnId": "401545171",
+     "date": "2023-08-05",
+     "away": "Archers",
+     "home": "Atlas",
+     "awayScore": 14,
+     "homeScore": 13,
+     "ot": true
+    },
+    {
+     "espnId": "401545138",
+     "date": "2023-08-05",
+     "away": "Whipsnakes",
+     "home": "Chrome",
+     "awayScore": 12,
+     "homeScore": 5,
+     "ot": false
+    },
+    {
+     "espnId": "401545145",
+     "date": "2023-08-06",
+     "away": "Redwoods",
+     "home": "Chaos",
+     "awayScore": 12,
+     "homeScore": 14,
+     "ot": false
+    },
+    {
+     "espnId": "401545161",
+     "date": "2023-08-06",
+     "away": "Waterdogs",
+     "home": "Cannons",
+     "awayScore": 8,
+     "homeScore": 12,
+     "ot": false
+    }
+   ]
+  },
+  {
+   "week": 9,
+   "round": "Regular season",
+   "dates": "Aug 11 - Aug 12",
+   "city": "Denver, CO",
+   "allStar": false,
+   "games": [
+    {
+     "espnId": "401545147",
+     "date": "2023-08-11",
+     "away": "Chaos",
+     "home": "Whipsnakes",
+     "awayScore": 10,
+     "homeScore": 12,
+     "ot": false
+    },
+    {
+     "espnId": "401545172",
+     "date": "2023-08-11",
+     "away": "Chrome",
+     "home": "Archers",
+     "awayScore": 5,
+     "homeScore": 13,
+     "ot": false
+    },
+    {
+     "espnId": "401545164",
+     "date": "2023-08-12",
+     "away": "Atlas",
+     "home": "Waterdogs",
+     "awayScore": 11,
+     "homeScore": 14,
+     "ot": false
+    },
+    {
+     "espnId": "401545139",
+     "date": "2023-08-12",
+     "away": "Cannons",
+     "home": "Redwoods",
+     "awayScore": 15,
+     "homeScore": 16,
+     "ot": true
+    }
+   ]
+  },
+  {
+   "week": 10,
+   "round": "Regular season",
+   "dates": "Aug 18 - Aug 19",
+   "city": "Seattle, WA",
+   "allStar": false,
+   "games": [
+    {
+     "espnId": "401545140",
+     "date": "2023-08-18",
+     "away": "Archers",
+     "home": "Whipsnakes",
+     "awayScore": 16,
+     "homeScore": 11,
+     "ot": false
+    },
+    {
+     "espnId": "401545141",
+     "date": "2023-08-18",
+     "away": "Atlas",
+     "home": "Cannons",
+     "awayScore": 13,
+     "homeScore": 14,
+     "ot": false
+    },
+    {
+     "espnId": "401545146",
+     "date": "2023-08-19",
+     "away": "Chrome",
+     "home": "Redwoods",
+     "awayScore": 10,
+     "homeScore": 11,
+     "ot": true
+    },
+    {
+     "espnId": "401545165",
+     "date": "2023-08-19",
+     "away": "Chaos",
+     "home": "Waterdogs",
+     "awayScore": 8,
+     "homeScore": 13,
+     "ot": false
+    }
+   ]
+  },
+  {
+   "week": 11,
+   "round": "Regular season",
+   "dates": "Aug 25 - Aug 26",
+   "city": "Salt Lake City, UT",
+   "allStar": false,
+   "games": [
+    {
+     "espnId": "401545167",
+     "date": "2023-08-25",
+     "away": "Archers",
+     "home": "Waterdogs",
+     "awayScore": 13,
+     "homeScore": 14,
+     "ot": false
+    },
+    {
+     "espnId": "401545163",
+     "date": "2023-08-25",
+     "away": "Atlas",
+     "home": "Redwoods",
+     "awayScore": 7,
+     "homeScore": 12,
+     "ot": false
+    },
+    {
+     "espnId": "401545166",
+     "date": "2023-08-26",
+     "away": "Cannons",
+     "home": "Whipsnakes",
+     "awayScore": 15,
+     "homeScore": 11,
+     "ot": false
+    },
+    {
+     "espnId": "401545148",
+     "date": "2023-08-26",
+     "away": "Chaos",
+     "home": "Chrome",
+     "awayScore": 13,
+     "homeScore": 7,
+     "ot": false
+    }
+   ]
+  }
+ ]
+}
