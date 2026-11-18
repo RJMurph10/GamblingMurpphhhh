@@ -34,6 +34,7 @@ describe("PLL player stats from the Cannons sheets", () => {
     expect(data.games.filter((g) => g.team === "Atlas" && g.season === 2023).length).toBe(11);
     expect(data.games.filter((g) => g.team === "Cannons" && g.season === 2023).length).toBe(12);
     expect(data.games.filter((g) => g.team === "Chaos" && g.season === 2023).length).toBe(11);
+    expect(data.games.filter((g) => g.team === "Chrome" && g.season === 2023).length).toBe(10);
     expect(data.games.filter((g) => g.team === "Waterdogs" && g.season === 2025).length).toBe(12);
     expect(data.games.filter((g) => g.team === "Archers" && g.season === 2025).length).toBe(10);
   });
@@ -45,7 +46,7 @@ describe("PLL player stats from the Cannons sheets", () => {
       }
   });
   it("builds players with slugs and kinds", () => {
-    expect(pllPlayers().size).toBe(350);
+    expect(pllPlayers().size).toBe(353);
     const h = pllPlayer(playerSlug("Marcus Holman"));
     expect(h?.games.length).toBeGreaterThan(0);
     expect(playerKind(pllPlayer(playerSlug("Colin Kirst"))!)).toBe("goalie");
@@ -63,6 +64,7 @@ describe("PLL player stats from the Cannons sheets", () => {
     expect(pllTeamPlayers("127632", 2023).length).toBe(26);
     expect(pllTeamPlayers("122997", 2023).length).toBe(23);
     expect(pllTeamPlayers("127634", 2023).length).toBe(28);
+    expect(pllTeamPlayers("127635", 2023).length).toBe(25);
     expect(pllTeamPlayers("127636", 2025).length).toBe(24);
     expect(pllTeamPlayers("127634", 2025).length).toBe(28);
     expect(pllTeamPlayers("122896", 2025).length).toBe(24);
