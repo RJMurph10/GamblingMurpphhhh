@@ -1,6 +1,6 @@
 {
  "day": "2026-11-23",
- "updated": "2026-11-18T01:00:28.094Z",
+ "updated": "2026-11-18T11:54:08.137Z",
  "picks": [
   {
    "id": "401873078-spread-qb-style",
@@ -15,9 +15,27 @@
    "best": true,
    "tag": "qb-style",
    "firstSeen": "2026-11-17T03:58:47.747Z",
-   "lastSeen": "2026-11-18T01:00:28.094Z",
+   "lastSeen": "2026-11-18T11:54:08.137Z",
    "latest": 6.5,
-   "latestAt": "2026-11-18T01:00:28.094Z"
+   "latestAt": "2026-11-18T11:54:08.137Z"
+  },
+  {
+   "id": "401873078-total-wind",
+   "game": "CIN @ WSH",
+   "tip": "2026-11-24T01:15Z",
+   "market": "total",
+   "pick": "Under 53.5",
+   "line": 53.5,
+   "open": 52.5,
+   "model": 52.5,
+   "edge": 1,
+   "best": true,
+   "tag": "wind",
+   "note": "10 mph",
+   "firstSeen": "2026-11-18T11:54:08.137Z",
+   "lastSeen": "2026-11-18T11:54:08.137Z",
+   "latest": 53.5,
+   "latestAt": "2026-11-18T11:54:08.137Z"
   }
  ]
 }
