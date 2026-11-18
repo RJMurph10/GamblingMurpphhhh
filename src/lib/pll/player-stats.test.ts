@@ -34,6 +34,10 @@ describe("PLL player stats from the Cannons sheets", () => {
     expect(data.games.filter((g) => g.team === "Atlas" && g.season === 2023).length).toBe(11);
     expect(data.games.filter((g) => g.team === "Cannons" && g.season === 2023).length).toBe(12);
     expect(data.games.filter((g) => g.team === "Chaos" && g.season === 2023).length).toBe(11);
+    expect(data.games.filter((g) => g.team === "Chrome" && g.season === 2023).length).toBe(10);
+    expect(data.games.filter((g) => g.team === "Waterdogs" && g.season === 2023).length).toBe(13);
+    expect(data.games.filter((g) => g.team === "Whipsnakes" && g.season === 2023).length).toBe(11);
+    expect(data.games.filter((g) => g.team === "Redwoods" && g.season === 2023).length).toBe(12);
     expect(data.games.filter((g) => g.team === "Waterdogs" && g.season === 2025).length).toBe(12);
     expect(data.games.filter((g) => g.team === "Archers" && g.season === 2025).length).toBe(10);
   });
@@ -45,7 +49,7 @@ describe("PLL player stats from the Cannons sheets", () => {
       }
   });
   it("builds players with slugs and kinds", () => {
-    expect(pllPlayers().size).toBe(350);
+    expect(pllPlayers().size).toBe(368);
     const h = pllPlayer(playerSlug("Marcus Holman"));
     expect(h?.games.length).toBeGreaterThan(0);
     expect(playerKind(pllPlayer(playerSlug("Colin Kirst"))!)).toBe("goalie");
@@ -63,6 +67,10 @@ describe("PLL player stats from the Cannons sheets", () => {
     expect(pllTeamPlayers("127632", 2023).length).toBe(26);
     expect(pllTeamPlayers("122997", 2023).length).toBe(23);
     expect(pllTeamPlayers("127634", 2023).length).toBe(28);
+    expect(pllTeamPlayers("127635", 2023).length).toBe(25);
+    expect(pllTeamPlayers("127637", 2023).length).toBe(26);
+    expect(pllTeamPlayers("127638", 2023).length).toBe(28);
+    expect(pllTeamPlayers("127636", 2023).length).toBe(24);
     expect(pllTeamPlayers("127636", 2025).length).toBe(24);
     expect(pllTeamPlayers("127634", 2025).length).toBe(28);
     expect(pllTeamPlayers("122896", 2025).length).toBe(24);
@@ -115,10 +123,13 @@ describe("players traded mid-season", () => {
   });
 });
 
-describe("the full 2024 season", () => {
+describe.each([
+  [2023, 92],
+  [2024, 90],
+])("the full %i season", (season, teamGames) => {
   it("has both clubs' sheets for every game", () => {
-    const g24 = data.games.filter((g) => g.season === 2024);
-    expect(g24).toHaveLength(90);
+    const g24 = data.games.filter((g) => g.season === season);
+    expect(g24).toHaveLength(teamGames);
     for (const g of g24)
       expect(
         g24.some((o) => o.team === g.opponent && o.opponent === g.team && o.date === g.date),
