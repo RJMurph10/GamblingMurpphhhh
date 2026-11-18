@@ -1,6 +1,6 @@
 {
  "day": "2026-11-21",
- "updated": "2026-11-18T11:54:08.137Z",
+ "updated": "2026-11-18T20:39:52.153Z",
  "picks": [
   {
    "id": "401856865-total-late",
@@ -17,7 +17,7 @@
    "firstSeen": "2026-11-15T16:26:29.217Z",
    "lastSeen": "2026-11-15T16:26:29.217Z",
    "latest": 52.5,
-   "latestAt": "2026-11-18T11:54:08.137Z"
+   "latestAt": "2026-11-18T20:39:52.153Z"
   },
   {
    "id": "401856865-total-open-total",
@@ -32,9 +32,9 @@
    "best": true,
    "tag": "open-total",
    "firstSeen": "2026-11-15T16:26:29.217Z",
-   "lastSeen": "2026-11-18T11:54:08.137Z",
+   "lastSeen": "2026-11-18T20:39:52.153Z",
    "latest": 52.5,
-   "latestAt": "2026-11-18T11:54:08.137Z"
+   "latestAt": "2026-11-18T20:39:52.153Z"
   },
   {
    "id": "401856865-total-weather",
@@ -52,7 +52,7 @@
    "firstSeen": "2026-11-15T16:26:29.217Z",
    "lastSeen": "2026-11-18T11:54:08.137Z",
    "latest": 52.5,
-   "latestAt": "2026-11-18T11:54:08.137Z"
+   "latestAt": "2026-11-18T20:39:52.153Z"
   },
   {
    "id": "401856866-total-late",
@@ -69,7 +69,7 @@
    "firstSeen": "2026-11-15T06:45:32.981Z",
    "lastSeen": "2026-11-15T16:26:29.217Z",
    "latest": 47.5,
-   "latestAt": "2026-11-18T11:54:08.137Z"
+   "latestAt": "2026-11-18T20:39:52.153Z"
   },
   {
    "id": "401856866-total-weather",
@@ -87,7 +87,7 @@
    "firstSeen": "2026-11-15T06:45:32.981Z",
    "lastSeen": "2026-11-15T16:26:29.217Z",
    "latest": 47.5,
-   "latestAt": "2026-11-18T11:54:08.137Z"
+   "latestAt": "2026-11-18T20:39:52.153Z"
   },
   {
    "id": "401856868-total-late",
@@ -104,7 +104,7 @@
    "firstSeen": "2026-11-15T16:26:29.217Z",
    "lastSeen": "2026-11-15T16:26:29.217Z",
    "latest": 70.5,
-   "latestAt": "2026-11-18T11:54:08.137Z"
+   "latestAt": "2026-11-18T20:39:52.153Z"
   },
   {
    "id": "401856868-total-open-total",
@@ -119,9 +119,9 @@
    "best": true,
    "tag": "open-total",
    "firstSeen": "2026-11-15T16:26:29.217Z",
-   "lastSeen": "2026-11-18T11:54:08.137Z",
+   "lastSeen": "2026-11-18T20:39:52.153Z",
    "latest": 70.5,
-   "latestAt": "2026-11-18T11:54:08.137Z"
+   "latestAt": "2026-11-18T20:39:52.153Z"
   },
   {
    "id": "401856868-total-under60",
@@ -136,9 +136,9 @@
    "best": false,
    "tag": "under60",
    "firstSeen": "2026-11-15T16:26:29.217Z",
-   "lastSeen": "2026-11-18T11:54:08.137Z",
+   "lastSeen": "2026-11-18T20:39:52.153Z",
    "latest": 70.5,
-   "latestAt": "2026-11-18T11:54:08.137Z"
+   "latestAt": "2026-11-18T20:39:52.153Z"
   },
   {
    "id": "401856868-total-under65",
@@ -153,9 +153,9 @@
    "best": false,
    "tag": "under65",
    "firstSeen": "2026-11-15T16:26:29.217Z",
-   "lastSeen": "2026-11-18T11:54:08.137Z",
+   "lastSeen": "2026-11-18T20:39:52.153Z",
    "latest": 70.5,
-   "latestAt": "2026-11-18T11:54:08.137Z"
+   "latestAt": "2026-11-18T20:39:52.153Z"
   },
   {
    "id": "401856871-total-late",
@@ -172,7 +172,7 @@
    "firstSeen": "2026-11-14T10:37:59.193Z",
    "lastSeen": "2026-11-15T16:26:29.217Z",
    "latest": 55.5,
-   "latestAt": "2026-11-18T11:54:08.137Z"
+   "latestAt": "2026-11-18T20:39:52.153Z"
   },
   {
    "id": "401856872-total-late",
@@ -189,7 +189,7 @@
    "firstSeen": "2026-11-14T10:37:59.193Z",
    "lastSeen": "2026-11-15T16:26:29.217Z",
    "latest": 46.5,
-   "latestAt": "2026-11-18T11:54:08.137Z"
+   "latestAt": "2026-11-18T20:39:52.153Z"
   },
   {
    "id": "401856872-total-open-total",
@@ -204,9 +204,9 @@
    "best": true,
    "tag": "open-total",
    "firstSeen": "2026-11-14T10:37:59.193Z",
-   "lastSeen": "2026-11-18T11:54:08.137Z",
+   "lastSeen": "2026-11-18T20:39:52.153Z",
    "latest": 46.5,
-   "latestAt": "2026-11-18T11:54:08.137Z"
+   "latestAt": "2026-11-18T20:39:52.153Z"
   },
   {
    "id": "401858302-total-late",
@@ -222,8 +222,8 @@
    "tag": "late",
    "firstSeen": "2026-11-14T10:37:59.193Z",
    "lastSeen": "2026-11-15T22:56:35.955Z",
-   "latest": 61.5,
-   "latestAt": "2026-11-18T11:54:08.137Z"
+   "latest": 60.5,
+   "latestAt": "2026-11-18T20:39:52.153Z"
   },
   {
    "id": "401858302-total-under60",
@@ -238,9 +238,9 @@
    "best": false,
    "tag": "under60",
    "firstSeen": "2026-11-14T10:37:59.193Z",
-   "lastSeen": "2026-11-18T11:54:08.137Z",
-   "latest": 61.5,
-   "latestAt": "2026-11-18T11:54:08.137Z"
+   "lastSeen": "2026-11-18T20:39:52.153Z",
+   "latest": 60.5,
+   "latestAt": "2026-11-18T20:39:52.153Z"
   },
   {
    "id": "401858302-total-weather",
@@ -258,8 +258,8 @@
    "note": "9 mph · gusts 21 · rain 0.02 in",
    "firstSeen": "2026-11-15T22:56:35.955Z",
    "lastSeen": "2026-11-15T22:56:35.955Z",
-   "latest": 61.5,
-   "latestAt": "2026-11-18T11:54:08.137Z"
+   "latest": 60.5,
+   "latestAt": "2026-11-18T20:39:52.153Z"
   },
   {
    "id": "401858306-total-late",
@@ -276,7 +276,7 @@
    "firstSeen": "2026-11-15T22:56:35.955Z",
    "lastSeen": "2026-11-15T22:56:35.955Z",
    "latest": 50.5,
-   "latestAt": "2026-11-18T11:54:08.137Z"
+   "latestAt": "2026-11-18T20:39:52.153Z"
   },
   {
    "id": "401858310-total-late",
@@ -293,7 +293,7 @@
    "firstSeen": "2026-11-15T06:45:32.981Z",
    "lastSeen": "2026-11-15T16:26:29.217Z",
    "latest": 56.5,
-   "latestAt": "2026-11-18T11:54:08.137Z"
+   "latestAt": "2026-11-18T20:39:52.153Z"
   },
   {
    "id": "401858528-spread-tz3",
@@ -308,9 +308,9 @@
    "best": false,
    "tag": "tz3",
    "firstSeen": "2026-11-15T06:45:32.981Z",
-   "lastSeen": "2026-11-18T11:54:08.137Z",
+   "lastSeen": "2026-11-18T20:39:52.153Z",
    "latest": 3.5,
-   "latestAt": "2026-11-18T11:54:08.137Z"
+   "latestAt": "2026-11-18T20:39:52.153Z"
   },
   {
    "id": "401858528-total-late",
@@ -327,7 +327,7 @@
    "firstSeen": "2026-11-15T06:45:32.981Z",
    "lastSeen": "2026-11-15T06:45:32.981Z",
    "latest": 37.5,
-   "latestAt": "2026-11-18T11:54:08.137Z"
+   "latestAt": "2026-11-18T20:39:52.153Z"
   },
   {
    "id": "401858531-total-late",
@@ -344,7 +344,7 @@
    "firstSeen": "2026-11-14T10:37:59.193Z",
    "lastSeen": "2026-11-15T06:45:32.981Z",
    "latest": 41.5,
-   "latestAt": "2026-11-18T11:54:08.137Z"
+   "latestAt": "2026-11-18T20:39:52.153Z"
   },
   {
    "id": "401858531-total-weather",
@@ -361,9 +361,9 @@
    "tag": "weather",
    "note": "15 mph · gusts 28 · rain 0.09 in",
    "firstSeen": "2026-11-15T06:45:32.981Z",
-   "lastSeen": "2026-11-18T11:54:08.137Z",
+   "lastSeen": "2026-11-18T20:39:52.153Z",
    "latest": 41.5,
-   "latestAt": "2026-11-18T11:54:08.137Z"
+   "latestAt": "2026-11-18T20:39:52.153Z"
   },
   {
    "id": "401858535-spread-eastlate",
@@ -380,7 +380,7 @@
    "firstSeen": "2026-11-15T06:45:32.981Z",
    "lastSeen": "2026-11-15T06:45:32.981Z",
    "latest": 7.5,
-   "latestAt": "2026-11-18T11:54:08.137Z"
+   "latestAt": "2026-11-18T20:39:52.153Z"
   },
   {
    "id": "401858535-spread-tz3",
@@ -395,9 +395,9 @@
    "best": false,
    "tag": "tz3",
    "firstSeen": "2026-11-15T06:45:32.981Z",
-   "lastSeen": "2026-11-18T11:54:08.137Z",
+   "lastSeen": "2026-11-18T20:39:52.153Z",
    "latest": 7.5,
-   "latestAt": "2026-11-18T11:54:08.137Z"
+   "latestAt": "2026-11-18T20:39:52.153Z"
   },
   {
    "id": "401858535-total-late",
@@ -414,7 +414,7 @@
    "firstSeen": "2026-11-15T06:45:32.981Z",
    "lastSeen": "2026-11-15T06:45:32.981Z",
    "latest": 43.5,
-   "latestAt": "2026-11-18T11:54:08.137Z"
+   "latestAt": "2026-11-18T20:39:52.153Z"
   },
   {
    "id": "401862835-total-late",
@@ -431,7 +431,7 @@
    "firstSeen": "2026-11-15T22:56:35.955Z",
    "lastSeen": "2026-11-15T22:56:35.955Z",
    "latest": 55.5,
-   "latestAt": "2026-11-18T11:54:08.137Z"
+   "latestAt": "2026-11-18T20:39:52.153Z"
   },
   {
    "id": "401862836-total-late",
@@ -448,7 +448,7 @@
    "firstSeen": "2026-11-15T16:26:29.217Z",
    "lastSeen": "2026-11-15T16:26:29.217Z",
    "latest": 51.5,
-   "latestAt": "2026-11-18T11:54:08.137Z"
+   "latestAt": "2026-11-18T20:39:52.153Z"
   },
   {
    "id": "401856748-total-weather",
@@ -465,9 +465,9 @@
    "tag": "weather",
    "note": "12 mph · gusts 17 · rain 0.03 in",
    "firstSeen": "2026-11-18T01:00:28.094Z",
-   "lastSeen": "2026-11-18T11:54:08.137Z",
+   "lastSeen": "2026-11-18T20:39:52.153Z",
    "latest": 46.5,
-   "latestAt": "2026-11-18T11:54:08.137Z"
+   "latestAt": "2026-11-18T20:39:52.153Z"
   },
   {
    "id": "401856752-total-open-total",
@@ -483,9 +483,9 @@
    "best": true,
    "tag": "open-total",
    "firstSeen": "2026-11-15T22:56:35.955Z",
-   "lastSeen": "2026-11-18T11:54:08.137Z",
+   "lastSeen": "2026-11-18T20:39:52.153Z",
    "latest": 38.5,
-   "latestAt": "2026-11-18T11:54:08.137Z"
+   "latestAt": "2026-11-18T20:39:52.153Z"
   },
   {
    "id": "401856867-total-open-total",
@@ -501,9 +501,9 @@
    "best": true,
    "tag": "open-total",
    "firstSeen": "2026-11-15T16:26:29.217Z",
-   "lastSeen": "2026-11-18T11:54:08.137Z",
+   "lastSeen": "2026-11-18T20:39:52.153Z",
    "latest": 58.5,
-   "latestAt": "2026-11-18T11:54:08.137Z"
+   "latestAt": "2026-11-18T20:39:52.153Z"
   },
   {
    "id": "401856867-total-under60",
@@ -520,7 +520,7 @@
    "firstSeen": "2026-11-15T16:26:29.217Z",
    "lastSeen": "2026-11-16T19:41:09.395Z",
    "latest": 58.5,
-   "latestAt": "2026-11-18T11:54:08.137Z"
+   "latestAt": "2026-11-18T20:39:52.153Z"
   },
   {
    "id": "401858530-total-weather",
@@ -538,7 +538,7 @@
    "firstSeen": "2026-11-15T16:26:29.217Z",
    "lastSeen": "2026-11-18T11:54:08.137Z",
    "latest": 42.5,
-   "latestAt": "2026-11-18T11:54:08.137Z"
+   "latestAt": "2026-11-18T20:39:52.153Z"
   },
   {
    "id": "401862831-total-open-total",
@@ -553,9 +553,9 @@
    "best": true,
    "tag": "open-total",
    "firstSeen": "2026-11-15T16:26:29.217Z",
-   "lastSeen": "2026-11-18T11:54:08.137Z",
+   "lastSeen": "2026-11-18T20:39:52.153Z",
    "latest": 45.5,
-   "latestAt": "2026-11-18T11:54:08.137Z"
+   "latestAt": "2026-11-18T20:39:52.153Z"
   },
   {
    "id": "401862834-total-open-total",
@@ -570,9 +570,9 @@
    "best": true,
    "tag": "open-total",
    "firstSeen": "2026-11-15T16:26:29.217Z",
-   "lastSeen": "2026-11-18T11:54:08.137Z",
+   "lastSeen": "2026-11-18T20:39:52.153Z",
    "latest": 67.5,
-   "latestAt": "2026-11-18T11:54:08.137Z"
+   "latestAt": "2026-11-18T20:39:52.153Z"
   },
   {
    "id": "401862834-total-under60",
@@ -587,9 +587,9 @@
    "best": false,
    "tag": "under60",
    "firstSeen": "2026-11-15T16:26:29.217Z",
-   "lastSeen": "2026-11-18T11:54:08.137Z",
+   "lastSeen": "2026-11-18T20:39:52.153Z",
    "latest": 67.5,
-   "latestAt": "2026-11-18T11:54:08.137Z"
+   "latestAt": "2026-11-18T20:39:52.153Z"
   },
   {
    "id": "401862834-total-under65",
@@ -604,9 +604,9 @@
    "best": false,
    "tag": "under65",
    "firstSeen": "2026-11-15T22:56:35.955Z",
-   "lastSeen": "2026-11-18T11:54:08.137Z",
+   "lastSeen": "2026-11-18T20:39:52.153Z",
    "latest": 67.5,
-   "latestAt": "2026-11-18T11:54:08.137Z"
+   "latestAt": "2026-11-18T20:39:52.153Z"
   },
   {
    "id": "401858527-total-weather",
@@ -624,7 +624,7 @@
    "firstSeen": "2026-11-15T16:26:29.217Z",
    "lastSeen": "2026-11-16T19:41:09.395Z",
    "latest": 40.5,
-   "latestAt": "2026-11-18T11:54:08.137Z"
+   "latestAt": "2026-11-18T20:39:52.153Z"
   },
   {
    "id": "401862833-total-open-total",
@@ -639,9 +639,9 @@
    "best": true,
    "tag": "open-total",
    "firstSeen": "2026-11-15T16:26:29.217Z",
-   "lastSeen": "2026-11-18T11:54:08.137Z",
+   "lastSeen": "2026-11-18T20:39:52.153Z",
    "latest": 64.5,
-   "latestAt": "2026-11-18T11:54:08.137Z"
+   "latestAt": "2026-11-18T20:39:52.153Z"
   },
   {
    "id": "401862833-total-under60",
@@ -656,9 +656,9 @@
    "best": false,
    "tag": "under60",
    "firstSeen": "2026-11-15T16:26:29.217Z",
-   "lastSeen": "2026-11-18T11:54:08.137Z",
+   "lastSeen": "2026-11-18T20:39:52.153Z",
    "latest": 64.5,
-   "latestAt": "2026-11-18T11:54:08.137Z"
+   "latestAt": "2026-11-18T20:39:52.153Z"
   },
   {
    "id": "401862833-total-under65",
@@ -675,7 +675,7 @@
    "firstSeen": "2026-11-15T16:26:29.217Z",
    "lastSeen": "2026-11-16T19:41:09.395Z",
    "latest": 64.5,
-   "latestAt": "2026-11-18T11:54:08.137Z"
+   "latestAt": "2026-11-18T20:39:52.153Z"
   },
   {
    "id": "401862833-total-weather",
@@ -694,7 +694,7 @@
    "firstSeen": "2026-11-15T22:56:35.955Z",
    "lastSeen": "2026-11-16T06:44:22.078Z",
    "latest": 64.5,
-   "latestAt": "2026-11-18T11:54:08.137Z"
+   "latestAt": "2026-11-18T20:39:52.153Z"
   },
   {
    "id": "401871078-total-open-total",
@@ -710,9 +710,9 @@
    "best": true,
    "tag": "open-total",
    "firstSeen": "2026-11-15T22:56:35.955Z",
-   "lastSeen": "2026-11-18T11:54:08.137Z",
+   "lastSeen": "2026-11-18T20:39:52.153Z",
    "latest": 44.5,
-   "latestAt": "2026-11-18T11:54:08.137Z"
+   "latestAt": "2026-11-18T20:39:52.153Z"
   },
   {
    "id": "401856754-total-open-total",
@@ -728,9 +728,9 @@
    "best": true,
    "tag": "open-total",
    "firstSeen": "2026-11-15T06:45:32.981Z",
-   "lastSeen": "2026-11-18T11:54:08.137Z",
+   "lastSeen": "2026-11-18T20:39:52.153Z",
    "latest": 45.5,
-   "latestAt": "2026-11-18T11:54:08.137Z"
+   "latestAt": "2026-11-18T20:39:52.153Z"
   },
   {
    "id": "401858532-spread-bounce",
@@ -745,9 +745,9 @@
    "best": true,
    "tag": "bounce",
    "firstSeen": "2026-11-15T16:26:29.217Z",
-   "lastSeen": "2026-11-18T11:54:08.137Z",
+   "lastSeen": "2026-11-18T20:39:52.153Z",
    "latest": -24.5,
-   "latestAt": "2026-11-18T11:54:08.137Z"
+   "latestAt": "2026-11-18T20:39:52.153Z"
   },
   {
    "id": "401858532-total-open-total",
@@ -762,9 +762,28 @@
    "best": true,
    "tag": "open-total",
    "firstSeen": "2026-11-15T16:26:29.217Z",
-   "lastSeen": "2026-11-18T11:54:08.137Z",
+   "lastSeen": "2026-11-18T20:39:52.153Z",
    "latest": 50.5,
-   "latestAt": "2026-11-18T11:54:08.137Z"
+   "latestAt": "2026-11-18T20:39:52.153Z"
+  },
+  {
+   "id": "401856752-total-weather",
+   "game": "TA&M @ OU",
+   "tip": "2026-11-21T20:45Z",
+   "market": "total",
+   "pick": "Under 38.5",
+   "line": 38.5,
+   "rule": 51.5,
+   "open": 51.5,
+   "model": null,
+   "edge": null,
+   "best": false,
+   "tag": "weather",
+   "note": "16 mph · gusts 24",
+   "firstSeen": "2026-11-18T20:39:52.153Z",
+   "lastSeen": "2026-11-18T20:39:52.153Z",
+   "latest": 38.5,
+   "latestAt": "2026-11-18T20:39:52.153Z"
   },
   {
    "id": "401860920-total-under60",
@@ -779,9 +798,9 @@
    "best": false,
    "tag": "under60",
    "firstSeen": "2026-11-16T06:44:22.078Z",
-   "lastSeen": "2026-11-18T11:54:08.137Z",
+   "lastSeen": "2026-11-18T20:39:52.153Z",
    "latest": 61.5,
-   "latestAt": "2026-11-18T11:54:08.137Z"
+   "latestAt": "2026-11-18T20:39:52.153Z"
   },
   {
    "id": "401858534-spread-travel",
@@ -796,9 +815,9 @@
    "best": true,
    "tag": "travel",
    "firstSeen": "2026-11-15T16:26:29.217Z",
-   "lastSeen": "2026-11-18T11:54:08.137Z",
+   "lastSeen": "2026-11-18T20:39:52.153Z",
    "latest": -17.5,
-   "latestAt": "2026-11-18T11:54:08.137Z"
+   "latestAt": "2026-11-18T20:39:52.153Z"
   },
   {
    "id": "401858534-spread-tz3",
@@ -813,9 +832,9 @@
    "best": false,
    "tag": "tz3",
    "firstSeen": "2026-11-15T16:26:29.217Z",
-   "lastSeen": "2026-11-18T11:54:08.137Z",
+   "lastSeen": "2026-11-18T20:39:52.153Z",
    "latest": -17.5,
-   "latestAt": "2026-11-18T11:54:08.137Z"
+   "latestAt": "2026-11-18T20:39:52.153Z"
   },
   {
    "id": "401864544-total-weather",
@@ -834,7 +853,7 @@
    "firstSeen": "2026-11-16T06:44:22.078Z",
    "lastSeen": "2026-11-16T06:44:22.078Z",
    "latest": 46.5,
-   "latestAt": "2026-11-18T11:54:08.137Z"
+   "latestAt": "2026-11-18T20:39:52.153Z"
   },
   {
    "id": "401856753-spread-rivalry",
@@ -849,9 +868,9 @@
    "best": true,
    "tag": "rivalry",
    "firstSeen": "2026-11-15T16:26:29.217Z",
-   "lastSeen": "2026-11-18T11:54:08.137Z",
+   "lastSeen": "2026-11-18T20:39:52.153Z",
    "latest": 16.5,
-   "latestAt": "2026-11-18T11:54:08.137Z"
+   "latestAt": "2026-11-18T20:39:52.153Z"
   },
   {
    "id": "401858307-spread-bounce",
@@ -866,9 +885,9 @@
    "best": true,
    "tag": "bounce",
    "firstSeen": "2026-11-15T06:45:32.981Z",
-   "lastSeen": "2026-11-18T11:54:08.137Z",
+   "lastSeen": "2026-11-18T20:39:52.153Z",
    "latest": -20.5,
-   "latestAt": "2026-11-18T11:54:08.137Z"
+   "latestAt": "2026-11-18T20:39:52.153Z"
   },
   {
    "id": "401858308-spread-rivalry",
@@ -883,9 +902,9 @@
    "best": true,
    "tag": "rivalry",
    "firstSeen": "2026-11-15T16:26:29.217Z",
-   "lastSeen": "2026-11-18T11:54:08.137Z",
+   "lastSeen": "2026-11-18T20:39:52.153Z",
    "latest": 2.5,
-   "latestAt": "2026-11-18T11:54:08.137Z"
+   "latestAt": "2026-11-18T20:39:52.153Z"
   },
   {
    "id": "401860918-spread-bounce",
@@ -900,9 +919,9 @@
    "best": true,
    "tag": "bounce",
    "firstSeen": "2026-11-15T22:56:35.955Z",
-   "lastSeen": "2026-11-18T11:54:08.137Z",
+   "lastSeen": "2026-11-18T20:39:52.153Z",
    "latest": -20.5,
-   "latestAt": "2026-11-18T11:54:08.137Z"
+   "latestAt": "2026-11-18T20:39:52.153Z"
   },
   {
    "id": "401860918-total-under60",
@@ -917,9 +936,9 @@
    "best": false,
    "tag": "under60",
    "firstSeen": "2026-11-15T22:56:35.955Z",
-   "lastSeen": "2026-11-18T11:54:08.137Z",
-   "latest": 65.5,
-   "latestAt": "2026-11-18T11:54:08.137Z"
+   "lastSeen": "2026-11-18T20:39:52.153Z",
+   "latest": 66.5,
+   "latestAt": "2026-11-18T20:39:52.153Z"
   },
   {
    "id": "401860918-total-under65",
@@ -934,9 +953,9 @@
    "best": false,
    "tag": "under65",
    "firstSeen": "2026-11-17T03:58:47.747Z",
-   "lastSeen": "2026-11-18T11:54:08.137Z",
-   "latest": 65.5,
-   "latestAt": "2026-11-18T11:54:08.137Z"
+   "lastSeen": "2026-11-18T20:39:52.153Z",
+   "latest": 66.5,
+   "latestAt": "2026-11-18T20:39:52.153Z"
   },
   {
    "id": "401860925-total-open-total",
@@ -951,9 +970,9 @@
    "best": true,
    "tag": "open-total",
    "firstSeen": "2026-11-15T22:56:35.955Z",
-   "lastSeen": "2026-11-18T11:54:08.137Z",
-   "latest": 61.5,
-   "latestAt": "2026-11-18T11:54:08.137Z"
+   "lastSeen": "2026-11-18T20:39:52.153Z",
+   "latest": 62.5,
+   "latestAt": "2026-11-18T20:39:52.153Z"
   },
   {
    "id": "401860925-total-under60",
@@ -968,9 +987,9 @@
    "best": false,
    "tag": "under60",
    "firstSeen": "2026-11-15T22:56:35.955Z",
-   "lastSeen": "2026-11-18T11:54:08.137Z",
-   "latest": 61.5,
-   "latestAt": "2026-11-18T11:54:08.137Z"
+   "lastSeen": "2026-11-18T20:39:52.153Z",
+   "latest": 62.5,
+   "latestAt": "2026-11-18T20:39:52.153Z"
   },
   {
    "id": "401856870-total-late",
@@ -985,9 +1004,9 @@
    "best": false,
    "tag": "late",
    "firstSeen": "2026-11-15T16:26:29.217Z",
-   "lastSeen": "2026-11-18T11:54:08.137Z",
+   "lastSeen": "2026-11-18T20:39:52.153Z",
    "latest": 61.5,
-   "latestAt": "2026-11-18T11:54:08.137Z"
+   "latestAt": "2026-11-18T20:39:52.153Z"
   },
   {
    "id": "401856870-total-open-total",
@@ -1002,9 +1021,9 @@
    "best": true,
    "tag": "open-total",
    "firstSeen": "2026-11-15T16:26:29.217Z",
-   "lastSeen": "2026-11-18T11:54:08.137Z",
+   "lastSeen": "2026-11-18T20:39:52.153Z",
    "latest": 61.5,
-   "latestAt": "2026-11-18T11:54:08.137Z"
+   "latestAt": "2026-11-18T20:39:52.153Z"
   },
   {
    "id": "401856870-total-under60",
@@ -1019,9 +1038,9 @@
    "best": false,
    "tag": "under60",
    "firstSeen": "2026-11-15T16:26:29.217Z",
-   "lastSeen": "2026-11-18T11:54:08.137Z",
+   "lastSeen": "2026-11-18T20:39:52.153Z",
    "latest": 61.5,
-   "latestAt": "2026-11-18T11:54:08.137Z"
+   "latestAt": "2026-11-18T20:39:52.153Z"
   },
   {
    "id": "401860919-total-late",
@@ -1036,9 +1055,9 @@
    "best": false,
    "tag": "late",
    "firstSeen": "2026-11-15T22:56:35.955Z",
-   "lastSeen": "2026-11-18T11:54:08.137Z",
+   "lastSeen": "2026-11-18T20:39:52.153Z",
    "latest": 50.5,
-   "latestAt": "2026-11-18T11:54:08.137Z"
+   "latestAt": "2026-11-18T20:39:52.153Z"
   },
   {
    "id": "401860919-total-weather",
@@ -1057,7 +1076,7 @@
    "firstSeen": "2026-11-18T11:54:08.137Z",
    "lastSeen": "2026-11-18T11:54:08.137Z",
    "latest": 50.5,
-   "latestAt": "2026-11-18T11:54:08.137Z"
+   "latestAt": "2026-11-18T20:39:52.153Z"
   },
   {
    "id": "401864541-spread-travel",
@@ -1072,9 +1091,9 @@
    "best": true,
    "tag": "travel",
    "firstSeen": "2026-11-15T22:56:35.955Z",
-   "lastSeen": "2026-11-18T11:54:08.137Z",
-   "latest": -4,
-   "latestAt": "2026-11-18T11:54:08.137Z"
+   "lastSeen": "2026-11-18T20:39:52.153Z",
+   "latest": -4.5,
+   "latestAt": "2026-11-18T20:39:52.153Z"
   },
   {
    "id": "401864541-total-late",
@@ -1089,9 +1108,9 @@
    "best": false,
    "tag": "late",
    "firstSeen": "2026-11-15T22:56:35.955Z",
-   "lastSeen": "2026-11-18T11:54:08.137Z",
+   "lastSeen": "2026-11-18T20:39:52.153Z",
    "latest": 40.5,
-   "latestAt": "2026-11-18T11:54:08.137Z"
+   "latestAt": "2026-11-18T20:39:52.153Z"
   }
  ]
 }
