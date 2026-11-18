@@ -90,10 +90,10 @@ describe("PLL 2024 schedule (owner-entered)", () => {
 });
 
 describe("PLL 2023 schedule (owner-entered)", () => {
-  it("has 11 weeks and 40 regular-season games, each tied to ESPN", () => {
-    expect(pllWeeks(2023)).toHaveLength(11);
+  it("has 14 weeks and 46 games (40 regular season, 6 playoffs), each tied to ESPN", () => {
+    expect(pllWeeks(2023)).toHaveLength(14);
     const games = s2023.weeks.flatMap((w) => w.games);
-    expect(games).toHaveLength(40);
+    expect(games).toHaveLength(46);
     expect(games.every((g) => g.espnId)).toBe(true);
     expect(pllWeeks(2023)[5]).toMatchObject({ label: "All-Star", city: "Louisville, KY" });
   });
@@ -101,5 +101,27 @@ describe("PLL 2023 schedule (owner-entered)", () => {
     const g = s2023.weeks[9].games[2]; // Chrome at Redwoods, Aug 19 (OT)
     expect(g).toMatchObject({ away: "Chrome", home: "Redwoods", ot: true });
     expect(pllWeekOf(g.espnId)).toMatchObject({ label: "Week 10", city: "Seattle, WA" });
+  });
+  it("labels the 2023 playoffs", () => {
+    const [qf, sf, final] = [11, 12, 13].map((i) => s2023.weeks[i]);
+    expect(qf.games).toHaveLength(3);
+    expect(pllWeekOf(qf.games[2].espnId)).toMatchObject({
+      label: "Quarterfinals",
+      city: "Boston, MA",
+    });
+    expect(pllWeekOf(sf.games[0].espnId)).toMatchObject({
+      label: "Semifinals",
+      city: "Long Island, NY",
+    });
+    expect(final.games[0]).toMatchObject({
+      away: "Waterdogs",
+      home: "Archers",
+      awayScore: 14,
+      homeScore: 15,
+    });
+    expect(pllWeekOf(final.games[0].espnId)).toMatchObject({
+      label: "Championship",
+      city: "Philadelphia, PA",
+    });
   });
 });
