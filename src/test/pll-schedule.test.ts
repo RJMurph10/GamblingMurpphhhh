@@ -1,5 +1,6 @@
 import { describe, expect, it } from "vitest";
 import data from "@/data/pll-2026-schedule.json";
+import s2023 from "@/data/pll-2023-schedule.json";
 import s2024 from "@/data/pll-2024-schedule.json";
 import s2025 from "@/data/pll-2025-schedule.json";
 import { pllTvOf, pllWeekOf, pllWeeks } from "@/lib/pll/schedule";
@@ -85,5 +86,20 @@ describe("PLL 2024 schedule (owner-entered)", () => {
       label: "Championship",
       city: "Philadelphia, PA",
     });
+  });
+});
+
+describe("PLL 2023 schedule (owner-entered)", () => {
+  it("has 11 weeks and 40 regular-season games, each tied to ESPN", () => {
+    expect(pllWeeks(2023)).toHaveLength(11);
+    const games = s2023.weeks.flatMap((w) => w.games);
+    expect(games).toHaveLength(40);
+    expect(games.every((g) => g.espnId)).toBe(true);
+    expect(pllWeeks(2023)[5]).toMatchObject({ label: "All-Star", city: "Louisville, KY" });
+  });
+  it("finds a 2023 game's week and host city", () => {
+    const g = s2023.weeks[9].games[2]; // Chrome at Redwoods, Aug 19 (OT)
+    expect(g).toMatchObject({ away: "Chrome", home: "Redwoods", ot: true });
+    expect(pllWeekOf(g.espnId)).toMatchObject({ label: "Week 10", city: "Seattle, WA" });
   });
 });
