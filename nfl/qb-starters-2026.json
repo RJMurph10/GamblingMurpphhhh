@@ -1,14 +1,6 @@
 {
- "updatedAt": "2026-11-17T03:57:07.165Z",
+ "updatedAt": "2026-11-18T03:00:25.376Z",
  "games": {
-  "401873065": {
-   "home": {
-    "qbId": "00-0033119",
-    "name": "Jacoby Brissett",
-    "was": "Tyler Huntley",
-    "reason": "Tyler Huntley is QB5 on the team's depth chart"
-   }
-  },
   "401873067": {
    "away": {
     "qbId": "00-0041561",
