@@ -478,14 +478,14 @@
    ]
   },
   "close": {
-   "at": "2026-11-18T22:02:04.326Z",
+   "at": "2026-11-18T22:43:03.774Z",
    "scoreboard": [
     {
      "provider": {
       "id": "100",
-      "name": "DraftKings",
+      "name": "Draft Kings",
       "priority": 1,
-      "displayName": "DraftKings"
+      "displayName": "Draft Kings"
      },
      "details": "DET -110",
      "overUnder": 5.5,
@@ -528,7 +528,7 @@
           "home",
           "desktop",
           "bets",
-          "draftkings"
+          "draft-kings"
          ],
          "href": "https://sportsbook.draftkings.com/gateway?s=__s__&wpcid=__wpcid__&wpsrc=413&wpcn=ESPN&wpscn=Widget&wpcrn=BetSlipDeepLink&wpscid=__wpscid__&wpcrid=xx&preurl=https%3A%2F%2Fsportsbook.draftkings.com%2Fevent%2F35040603%3Foutcomes%3D0ML87298241_1",
          "text": "Home Bet",
@@ -560,7 +560,7 @@
           "away",
           "desktop",
           "bets",
-          "draftkings"
+          "draft-kings"
          ],
          "href": "https://sportsbook.draftkings.com/gateway?s=__s__&wpcid=__wpcid__&wpsrc=413&wpcn=ESPN&wpscn=Widget&wpcrn=BetSlipDeepLink&wpscid=__wpscid__&wpcrid=xx&preurl=https%3A%2F%2Fsportsbook.draftkings.com%2Fevent%2F35040603%3Foutcomes%3D0ML87298241_3",
          "text": "Away Bet",
@@ -769,7 +769,7 @@
     {
      "provider": {
       "id": "100",
-      "name": "DraftKings",
+      "name": "Draft Kings",
       "priority": 1
      },
      "details": "DET -110",
@@ -1238,7 +1238,7 @@
    ]
   },
   "latest": {
-   "at": "2026-11-18T22:02:04.326Z",
+   "at": "2026-11-18T22:43:03.774Z",
    "count": 580,
    "rows": [
   {"a":"5746","t":"Total Points","ti":"1","op":[0.5,null,null],"cur":[0.5,null,null],"px":[145,160]},
@@ -1603,7 +1603,7 @@
   {"a":"3114778","t":"Anytime Goalscorer","ti":"230","cur":[null,145,null]},
   {"a":"3114997","t":"Anytime Goalscorer","ti":"230","cur":[null,2500,null]},
   {"a":"3120307","t":"Anytime Goalscorer","ti":"230","cur":[null,195,null]},
-  {"a":"3899949","t":"Anytime Goalscorer","ti":"230","cur":[null,210,null]},
+  {"a":"3899949","t":"Anytime Goalscorer","ti":"230","cur":[null,205,null]},
   {"a":"3941546","t":"Anytime Goalscorer","ti":"230","cur":[null,950,null]},
   {"a":"3941946","t":"Anytime Goalscorer","ti":"230","cur":[null,1300,null]},
   {"a":"3988803","t":"Anytime Goalscorer","ti":"230","cur":[null,650,null]},
@@ -1824,7 +1824,7 @@
  ]
   },
   "close": {
-   "at": "2026-11-18T22:02:04.326Z",
+   "at": "2026-11-18T22:43:03.774Z",
    "provider": 100,
    "count": 580,
    "rows": [
@@ -2190,7 +2190,7 @@
   {"a":"3114778","t":"Anytime Goalscorer","ti":"230","cur":[null,145,null]},
   {"a":"3114997","t":"Anytime Goalscorer","ti":"230","cur":[null,2500,null]},
   {"a":"3120307","t":"Anytime Goalscorer","ti":"230","cur":[null,195,null]},
-  {"a":"3899949","t":"Anytime Goalscorer","ti":"230","cur":[null,210,null]},
+  {"a":"3899949","t":"Anytime Goalscorer","ti":"230","cur":[null,205,null]},
   {"a":"3941546","t":"Anytime Goalscorer","ti":"230","cur":[null,950,null]},
   {"a":"3941946","t":"Anytime Goalscorer","ti":"230","cur":[null,1300,null]},
   {"a":"3988803","t":"Anytime Goalscorer","ti":"230","cur":[null,650,null]},

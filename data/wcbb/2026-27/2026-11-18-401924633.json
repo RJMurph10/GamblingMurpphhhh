@@ -477,7 +477,7 @@
    ]
   },
   "close": {
-   "at": "2026-11-18T22:02:04.326Z",
+   "at": "2026-11-18T22:43:03.774Z",
    "scoreboard": [
     {
      "provider": {
@@ -770,15 +770,15 @@
       "name": "DraftKings",
       "priority": 1
      },
-     "details": "OSU -9.5",
+     "details": "OSU -8.5",
      "overUnder": 141.5,
-     "spread": -9.5,
+     "spread": -8.5,
      "overOdds": -110,
      "underOdds": -110,
      "awayTeamOdds": {
       "favorite": false,
       "underdog": true,
-      "moneyLine": 360,
+      "moneyLine": 320,
       "spreadOdds": -110,
       "open": {
        "favorite": false,
@@ -805,8 +805,8 @@
       },
       "current": {
        "pointSpread": {
-        "alternateDisplayValue": "+9.5",
-        "american": "+9.5"
+        "alternateDisplayValue": "+8.5",
+        "american": "+8.5"
        },
        "spread": {
         "value": 1.9,
@@ -817,12 +817,12 @@
         "american": "-110"
        },
        "moneyLine": {
-        "value": 4.6,
-        "displayValue": "18/5",
-        "alternateDisplayValue": "+360",
-        "decimal": 4.6,
-        "fraction": "18/5",
-        "american": "+360"
+        "value": 4.2,
+        "displayValue": "16/5",
+        "alternateDisplayValue": "+320",
+        "decimal": 4.2,
+        "fraction": "16/5",
+        "american": "+320"
        }
       },
       "team": {
@@ -832,7 +832,7 @@
      "homeTeamOdds": {
       "favorite": true,
       "underdog": false,
-      "moneyLine": -470,
+      "moneyLine": -410,
       "spreadOdds": -110,
       "open": {
        "favorite": true,
@@ -859,8 +859,8 @@
       },
       "current": {
        "pointSpread": {
-        "alternateDisplayValue": "-9.5",
-        "american": "-9.5"
+        "alternateDisplayValue": "-8.5",
+        "american": "-8.5"
        },
        "spread": {
         "value": 1.9,
@@ -871,12 +871,12 @@
         "american": "-110"
        },
        "moneyLine": {
-        "value": 1.21,
-        "displayValue": "10/47",
-        "alternateDisplayValue": "-470",
-        "decimal": 1.21,
-        "fraction": "10/47",
-        "american": "-470"
+        "value": 1.24,
+        "displayValue": "10/41",
+        "alternateDisplayValue": "-410",
+        "decimal": 1.24,
+        "fraction": "10/41",
+        "american": "-410"
        }
       },
       "team": {

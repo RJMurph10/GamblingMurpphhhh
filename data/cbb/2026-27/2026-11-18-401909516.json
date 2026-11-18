@@ -395,16 +395,16 @@
    ]
   },
   "close": {
-   "at": "2026-11-18T22:02:04.326Z",
+   "at": "2026-11-18T22:43:03.774Z",
    "scoreboard": [
     {
      "provider": {
       "id": "100",
-      "name": "DraftKings",
+      "name": "Draft Kings",
       "priority": 1
      },
      "details": "GTWN -20.5",
-     "overUnder": 138.5,
+     "overUnder": 137.5,
      "spread": -20.5,
      "awayTeamOdds": {
       "favorite": false,
@@ -444,7 +444,7 @@
           "home",
           "desktop",
           "bets",
-          "draftkings"
+          "draft-kings"
          ],
          "href": "https://sportsbook.draftkings.com/gateway?s=__s__&wpcid=__wpcid__&wpsrc=413&wpcn=ESPN&wpscn=Widget&wpcrn=BetSlipDeepLink&wpscid=__wpscid__&wpcrid=xx&preurl=https%3A%2F%2Fsportsbook.draftkings.com%2Fevent%2F35043202%3Foutcomes%3D0ML87302708_1",
          "text": "Home Bet",
@@ -476,7 +476,7 @@
           "away",
           "desktop",
           "bets",
-          "draftkings"
+          "draft-kings"
          ],
          "href": "https://sportsbook.draftkings.com/gateway?s=__s__&wpcid=__wpcid__&wpsrc=413&wpcn=ESPN&wpscn=Widget&wpcrn=BetSlipDeepLink&wpscid=__wpscid__&wpcrid=xx&preurl=https%3A%2F%2Fsportsbook.draftkings.com%2Fevent%2F35043202%3Foutcomes%3D0ML87302708_3",
          "text": "Away Bet",
@@ -577,8 +577,8 @@
       "shortDisplayName": "Total",
       "over": {
        "close": {
-        "line": "o138.5",
-        "odds": "-112",
+        "line": "o137.5",
+        "odds": "-110",
         "link": {
          "language": "en-US",
          "rel": [
@@ -586,7 +586,7 @@
           "desktop",
           "bets"
          ],
-         "href": "https://sportsbook.draftkings.com/gateway?s=__s__&wpcid=__wpcid__&wpsrc=413&wpcn=ESPN&wpscn=Widget&wpcrn=BetSlipDeepLink&wpscid=__wpscid__&wpcrid=xx&preurl=https%3A%2F%2Fsportsbook.draftkings.com%2Fevent%2F35043202%3Foutcomes%3D0OU87302708O13850_1",
+         "href": "https://sportsbook.draftkings.com/gateway?s=__s__&wpcid=__wpcid__&wpsrc=413&wpcn=ESPN&wpscn=Widget&wpcrn=BetSlipDeepLink&wpscid=__wpscid__&wpcrid=xx&preurl=https%3A%2F%2Fsportsbook.draftkings.com%2Fevent%2F35043202%3Foutcomes%3D0OU87302708O13750_1",
          "text": "Over Odds",
          "shortText": "Over Odds",
          "isExternal": true,
@@ -599,7 +599,7 @@
            "gameId": 401909516,
            "betSide": "over",
            "betType": "straight",
-           "betDetails": "Over:138.5"
+           "betDetails": "Over:137.5"
           }
          }
         }
@@ -611,8 +611,8 @@
       },
       "under": {
        "close": {
-        "line": "u138.5",
-        "odds": "-108",
+        "line": "u137.5",
+        "odds": "-110",
         "link": {
          "language": "en-US",
          "rel": [
@@ -620,7 +620,7 @@
           "desktop",
           "bets"
          ],
-         "href": "https://sportsbook.draftkings.com/gateway?s=__s__&wpcid=__wpcid__&wpsrc=413&wpcn=ESPN&wpscn=Widget&wpcrn=BetSlipDeepLink&wpscid=__wpscid__&wpcrid=xx&preurl=https%3A%2F%2Fsportsbook.draftkings.com%2Fevent%2F35043202%3Foutcomes%3D0OU87302708U13850_3",
+         "href": "https://sportsbook.draftkings.com/gateway?s=__s__&wpcid=__wpcid__&wpsrc=413&wpcn=ESPN&wpscn=Widget&wpcrn=BetSlipDeepLink&wpscid=__wpscid__&wpcrid=xx&preurl=https%3A%2F%2Fsportsbook.draftkings.com%2Fevent%2F35043202%3Foutcomes%3D0OU87302708U13750_3",
          "text": "Under Odds",
          "shortText": "Under Odds",
          "isExternal": true,
@@ -633,7 +633,7 @@
            "gameId": 401909516,
            "betSide": "under",
            "betType": "straight",
-           "betDetails": "Under:138.5"
+           "betDetails": "Under:137.5"
           }
          }
         }
@@ -685,14 +685,14 @@
     {
      "provider": {
       "id": "100",
-      "name": "DraftKings",
+      "name": "Draft Kings",
       "priority": 1
      },
      "details": "GTWN -20.5",
-     "overUnder": 138.5,
+     "overUnder": 137.5,
      "spread": -20.5,
-     "overOdds": -112,
-     "underOdds": -108,
+     "overOdds": -110,
+     "underOdds": -110,
      "awayTeamOdds": {
       "favorite": false,
       "underdog": true,
@@ -827,24 +827,24 @@
      },
      "current": {
       "over": {
-       "value": 1.89,
-       "displayValue": "25/28",
-       "alternateDisplayValue": "-112",
-       "decimal": 1.89,
-       "fraction": "25/28",
-       "american": "-112"
+       "value": 1.9,
+       "displayValue": "10/11",
+       "alternateDisplayValue": "-110",
+       "decimal": 1.9,
+       "fraction": "10/11",
+       "american": "-110"
       },
       "under": {
-       "value": 1.92,
-       "displayValue": "25/27",
-       "alternateDisplayValue": "-108",
-       "decimal": 1.92,
-       "fraction": "25/27",
-       "american": "-108"
+       "value": 1.9,
+       "displayValue": "10/11",
+       "alternateDisplayValue": "-110",
+       "decimal": 1.9,
+       "fraction": "10/11",
+       "american": "-110"
       },
       "total": {
-       "alternateDisplayValue": "138.5",
-       "american": "138.5"
+       "alternateDisplayValue": "137.5",
+       "american": "137.5"
       }
      }
     }
