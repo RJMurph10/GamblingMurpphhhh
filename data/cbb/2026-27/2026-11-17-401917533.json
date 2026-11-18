@@ -7,18 +7,18 @@
   "id": "2547",
   "abbr": "SEA",
   "name": "Seattle U Redhawks",
-  "score": 0
+  "score": 62
  },
  "home": {
   "id": "2856",
   "abbr": "CBU",
   "name": "California Baptist Lancers",
-  "score": 0
+  "score": 42
  },
  "neutral": false,
  "venue": "Dale E. and Sarah Ann Fowler Events Center",
  "seasonType": 2,
- "state": "pre",
+ "state": "in",
  "lines": {
   "open": {
    "at": "2026-11-16T23:51:23.180Z",

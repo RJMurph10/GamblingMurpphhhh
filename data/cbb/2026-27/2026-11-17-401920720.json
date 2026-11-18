@@ -7,18 +7,18 @@
   "id": "331",
   "abbr": "EWU",
   "name": "Eastern Washington Eagles",
-  "score": 0
+  "score": 71
  },
  "home": {
   "id": "254",
   "abbr": "UTAH",
   "name": "Utah Utes",
-  "score": 0
+  "score": 67
  },
  "neutral": false,
  "venue": "Jon M. Huntsman Center",
  "seasonType": 2,
- "state": "pre",
+ "state": "post",
  "lines": {
   "open": {
    "at": "2026-11-16T23:51:23.180Z",
@@ -851,5 +851,9 @@
    ]
   }
  },
- "props": {}
+ "props": {},
+ "final": {
+  "away": 71,
+  "home": 67
+ }
 }

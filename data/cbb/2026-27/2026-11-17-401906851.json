@@ -7,18 +7,18 @@
   "id": "127",
   "abbr": "MSU",
   "name": "Michigan State Spartans",
-  "score": 0
+  "score": 46
  },
  "home": {
   "id": "2633",
   "abbr": "TENN",
   "name": "Tennessee Volunteers",
-  "score": 0
+  "score": 61
  },
  "neutral": false,
  "venue": "Food City Center",
  "seasonType": 2,
- "state": "pre",
+ "state": "post",
  "lines": {
   "open": {
    "at": "2026-11-16T22:13:01.047Z",
@@ -933,5 +933,9 @@
    ]
   }
  },
- "props": {}
+ "props": {},
+ "final": {
+  "away": 46,
+  "home": 61
+ }
 }

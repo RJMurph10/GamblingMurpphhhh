@@ -7,18 +7,18 @@
   "id": "2640",
   "abbr": "TXSO",
   "name": "Texas Southern Tigers",
-  "score": 0
+  "score": 48
  },
  "home": {
   "id": "201",
   "abbr": "OU",
   "name": "Oklahoma Sooners",
-  "score": 0
+  "score": 124
  },
  "neutral": false,
  "venue": "Lloyd Noble Center",
  "seasonType": 2,
- "state": "pre",
+ "state": "post",
  "lines": {
   "open": {
    "at": "2026-11-17T22:56:52.781Z",
@@ -769,5 +769,9 @@
    ]
   }
  },
- "props": {}
+ "props": {},
+ "final": {
+  "away": 48,
+  "home": 124
+ }
 }

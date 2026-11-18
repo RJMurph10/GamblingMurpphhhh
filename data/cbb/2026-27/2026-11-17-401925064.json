@@ -7,18 +7,18 @@
   "id": "2447",
   "abbr": "NICH",
   "name": "Nicholls Colonels",
-  "score": 0
+  "score": 41
  },
  "home": {
   "id": "145",
   "abbr": "MISS",
   "name": "Ole Miss Rebels",
-  "score": 0
+  "score": 76
  },
  "neutral": false,
  "venue": "The Sandy and John Black Pavilion at Ole Miss",
  "seasonType": 2,
- "state": "pre",
+ "state": "post",
  "lines": {
   "open": {
    "at": "2026-11-16T23:51:23.180Z",
@@ -851,5 +851,9 @@
    ]
   }
  },
- "props": {}
+ "props": {},
+ "final": {
+  "away": 41,
+  "home": 76
+ }
 }
