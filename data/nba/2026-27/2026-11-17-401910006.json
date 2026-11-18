@@ -7,13 +7,13 @@
   "id": "26",
   "abbr": "UTAH",
   "name": "Utah Jazz",
-  "score": 53
+  "score": 58
  },
  "home": {
   "id": "12",
   "abbr": "LAC",
   "name": "LA Clippers",
-  "score": 46
+  "score": 62
  },
  "neutral": false,
  "venue": "Intuit Dome",

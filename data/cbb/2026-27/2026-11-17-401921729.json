@@ -7,13 +7,13 @@
   "id": "300",
   "abbr": "UCI",
   "name": "UC Irvine Anteaters",
-  "score": 49
+  "score": 53
  },
  "home": {
   "id": "24",
   "abbr": "STAN",
   "name": "Stanford Cardinal",
-  "score": 40
+  "score": 47
  },
  "neutral": false,
  "venue": "Maples Pavilion",

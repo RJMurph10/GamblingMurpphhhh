@@ -7,13 +7,13 @@
   "id": "30",
   "abbr": "CHA",
   "name": "Charlotte Hornets",
-  "score": 24
+  "score": 34
  },
  "home": {
   "id": "13",
   "abbr": "LAL",
   "name": "Los Angeles Lakers",
-  "score": 20
+  "score": 30
  },
  "neutral": false,
  "venue": "crypto.com Arena",
