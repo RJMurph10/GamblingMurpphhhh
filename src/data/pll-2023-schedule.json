@@ -1,5 +1,5 @@
 {
- "source": "PLL 2023 regular-season schedule (weeks, host cities, dates, results) as entered by the site owner from the PLL site, Nov 17 2026. All 40 results match ESPN. All-Star week (Louisville, Jul 22; 26-19) is kept without games: ESPN has no 2023 All-Star game.",
+ "source": "PLL 2023 schedule (weeks, host cities, dates, results; regular season and playoffs) as entered by the site owner from the PLL site, Nov 17 2026. All 46 regular-season and playoff results match ESPN. All-Star week (Louisville, Jul 22; 26-19) is kept without games: ESPN has no 2023 All-Star game.",
  "weeks": [
   {
    "week": 1,
@@ -455,6 +455,87 @@
      "home": "Chrome",
      "awayScore": 13,
      "homeScore": 7,
+     "ot": false
+    }
+   ]
+  },
+  {
+   "week": 12,
+   "round": "Quarterfinals",
+   "dates": "Sept 4",
+   "city": "Boston, MA",
+   "allStar": false,
+   "games": [
+    {
+     "espnId": "401591349",
+     "date": "2023-09-04",
+     "away": "Chaos",
+     "home": "Redwoods",
+     "awayScore": 9,
+     "homeScore": 15,
+     "ot": false
+    },
+    {
+     "espnId": "401591350",
+     "date": "2023-09-04",
+     "away": "Whipsnakes",
+     "home": "Waterdogs",
+     "awayScore": 12,
+     "homeScore": 15,
+     "ot": false
+    },
+    {
+     "espnId": "401591329",
+     "date": "2023-09-04",
+     "away": "Atlas",
+     "home": "Cannons",
+     "awayScore": 11,
+     "homeScore": 20,
+     "ot": false
+    }
+   ]
+  },
+  {
+   "week": 13,
+   "round": "Semifinals",
+   "dates": "Sept 10",
+   "city": "Long Island, NY",
+   "allStar": false,
+   "games": [
+    {
+     "espnId": "401595186",
+     "date": "2023-09-10",
+     "away": "Redwoods",
+     "home": "Archers",
+     "awayScore": 6,
+     "homeScore": 14,
+     "ot": false
+    },
+    {
+     "espnId": "401595187",
+     "date": "2023-09-10",
+     "away": "Waterdogs",
+     "home": "Cannons",
+     "awayScore": 17,
+     "homeScore": 6,
+     "ot": false
+    }
+   ]
+  },
+  {
+   "week": 14,
+   "round": "Championship",
+   "dates": "Sept 24",
+   "city": "Philadelphia, PA",
+   "allStar": false,
+   "games": [
+    {
+     "espnId": "401597929",
+     "date": "2023-09-24",
+     "away": "Waterdogs",
+     "home": "Archers",
+     "awayScore": 14,
+     "homeScore": 15,
      "ot": false
     }
    ]
