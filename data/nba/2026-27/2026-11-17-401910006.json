@@ -7,18 +7,18 @@
   "id": "26",
   "abbr": "UTAH",
   "name": "Utah Jazz",
-  "score": 58
+  "score": 132
  },
  "home": {
   "id": "12",
   "abbr": "LAC",
   "name": "LA Clippers",
-  "score": 62
+  "score": 107
  },
  "neutral": false,
  "venue": "Intuit Dome",
  "seasonType": 2,
- "state": "in",
+ "state": "post",
  "lines": {
   "open": {
    "at": "2026-11-17T04:34:25.830Z",
@@ -471,6 +471,243 @@
       "total": {
        "alternateDisplayValue": "225.5",
        "american": "225.5"
+      }
+     }
+    }
+   ]
+  },
+  "final": {
+   "at": "2026-11-18T14:08:27.558Z",
+   "books": [
+    {
+     "provider": {
+      "id": "100",
+      "name": "Draft Kings",
+      "priority": 1
+     },
+     "details": "LAC -5.5",
+     "overUnder": 227.5,
+     "spread": -5.5,
+     "overOdds": -106,
+     "underOdds": -114,
+     "awayTeamOdds": {
+      "favorite": false,
+      "underdog": true,
+      "moneyLine": 190,
+      "spreadOdds": -103,
+      "open": {
+       "favorite": false,
+       "pointSpread": {
+        "alternateDisplayValue": "+5.5",
+        "american": "+5.5"
+       },
+       "spread": {
+        "value": 1.94,
+        "displayValue": "50/53",
+        "alternateDisplayValue": "-106",
+        "decimal": 1.94,
+        "fraction": "50/53",
+        "american": "-106"
+       },
+       "moneyLine": {
+        "value": 2.66,
+        "displayValue": "83/50",
+        "alternateDisplayValue": "+166",
+        "decimal": 2.66,
+        "fraction": "83/50",
+        "american": "+166"
+       }
+      },
+      "close": {
+       "pointSpread": {
+        "alternateDisplayValue": "+5.5",
+        "american": "+5.5"
+       },
+       "spread": {
+        "value": 1.97,
+        "displayValue": "100/103",
+        "alternateDisplayValue": "-103",
+        "decimal": 1.97,
+        "fraction": "100/103",
+        "american": "-103"
+       },
+       "moneyLine": {
+        "value": 2.9,
+        "displayValue": "19/10",
+        "alternateDisplayValue": "+190",
+        "decimal": 2.9,
+        "fraction": "19/10",
+        "american": "+190"
+       }
+      },
+      "current": {
+       "pointSpread": {
+        "alternateDisplayValue": "+5.5",
+        "american": "+5.5"
+       },
+       "spread": {
+        "value": 1.97,
+        "displayValue": "100/103",
+        "alternateDisplayValue": "-103",
+        "decimal": 1.97,
+        "fraction": "100/103",
+        "american": "-103"
+       },
+       "moneyLine": {
+        "value": 2.9,
+        "displayValue": "19/10",
+        "alternateDisplayValue": "+190",
+        "decimal": 2.9,
+        "fraction": "19/10",
+        "american": "+190"
+       }
+      },
+      "team": {
+       "id": "26"
+      }
+     },
+     "homeTeamOdds": {
+      "favorite": true,
+      "underdog": false,
+      "moneyLine": -229,
+      "spreadOdds": -117,
+      "open": {
+       "favorite": true,
+       "pointSpread": {
+        "alternateDisplayValue": "-5.5",
+        "american": "-5.5"
+       },
+       "spread": {
+        "value": 1.87,
+        "displayValue": "50/57",
+        "alternateDisplayValue": "-114",
+        "decimal": 1.87,
+        "fraction": "50/57",
+        "american": "-114"
+       },
+       "moneyLine": {
+        "value": 1.5,
+        "displayValue": "100/199",
+        "alternateDisplayValue": "-199",
+        "decimal": 1.5,
+        "fraction": "100/199",
+        "american": "-199"
+       }
+      },
+      "close": {
+       "pointSpread": {
+        "alternateDisplayValue": "-5.5",
+        "american": "-5.5"
+       },
+       "spread": {
+        "value": 1.85,
+        "displayValue": "100/117",
+        "alternateDisplayValue": "-117",
+        "decimal": 1.85,
+        "fraction": "100/117",
+        "american": "-117"
+       },
+       "moneyLine": {
+        "value": 1.43,
+        "displayValue": "100/229",
+        "alternateDisplayValue": "-229",
+        "decimal": 1.43,
+        "fraction": "100/229",
+        "american": "-229"
+       }
+      },
+      "current": {
+       "pointSpread": {
+        "alternateDisplayValue": "-5.5",
+        "american": "-5.5"
+       },
+       "spread": {
+        "value": 1.85,
+        "displayValue": "100/117",
+        "alternateDisplayValue": "-117",
+        "decimal": 1.85,
+        "fraction": "100/117",
+        "american": "-117"
+       },
+       "moneyLine": {
+        "value": 1.43,
+        "displayValue": "100/229",
+        "alternateDisplayValue": "-229",
+        "decimal": 1.43,
+        "fraction": "100/229",
+        "american": "-229"
+       }
+      },
+      "team": {
+       "id": "12"
+      }
+     },
+     "moneylineWinner": false,
+     "spreadWinner": false,
+     "open": {
+      "over": {
+       "value": 1.9,
+       "displayValue": "10/11",
+       "alternateDisplayValue": "-110",
+       "decimal": 1.9,
+       "fraction": "10/11",
+       "american": "-110"
+      },
+      "under": {
+       "value": 1.9,
+       "displayValue": "10/11",
+       "alternateDisplayValue": "-110",
+       "decimal": 1.9,
+       "fraction": "10/11",
+       "american": "-110"
+      },
+      "total": {
+       "alternateDisplayValue": "223.5",
+       "american": "223.5"
+      }
+     },
+     "close": {
+      "over": {
+       "value": 1.94,
+       "displayValue": "50/53",
+       "alternateDisplayValue": "-106",
+       "decimal": 1.94,
+       "fraction": "50/53",
+       "american": "-106"
+      },
+      "under": {
+       "value": 1.87,
+       "displayValue": "50/57",
+       "alternateDisplayValue": "-114",
+       "decimal": 1.87,
+       "fraction": "50/57",
+       "american": "-114"
+      },
+      "total": {
+       "alternateDisplayValue": "227.5",
+       "american": "227.5"
+      }
+     },
+     "current": {
+      "over": {
+       "value": 1.94,
+       "displayValue": "50/53",
+       "alternateDisplayValue": "-106",
+       "decimal": 1.94,
+       "fraction": "50/53",
+       "american": "-106"
+      },
+      "under": {
+       "value": 1.87,
+       "displayValue": "50/57",
+       "alternateDisplayValue": "-114",
+       "decimal": 1.87,
+       "fraction": "50/57",
+       "american": "-114"
+      },
+      "total": {
+       "alternateDisplayValue": "227.5",
+       "american": "227.5"
       }
      }
     }
@@ -2572,5 +2809,9 @@
    "Keaton Wagler",
    "LAC"
   ]
+ },
+ "final": {
+  "away": 132,
+  "home": 107
  }
 }

@@ -266,7 +266,7 @@
    ]
   },
   "latest": {
-   "at": "2026-11-18T04:29:39.955Z",
+   "at": "2026-11-18T14:08:27.558Z",
    "count": 124,
    "rows": [
   {"a":null,"t":"1st Half Total","ti":"72","op":[20.5,null,null],"cur":[20.5,null,null]},
@@ -318,7 +318,7 @@
   {"a":null,"tm":"20","t":"Team Total Points","ti":"98","op":[17.5,null,null],"cur":[26.5,null,null]},
   {"a":null,"tm":"20","t":"Team Total Points","ti":"98","op":[17.5,null,null],"cur":[27.5,null,null]},
   {"a":null,"tm":"20","t":"Team Total Points","ti":"98","op":[17.5,null,null],"cur":[28.5,null,null]},
-  {"a":null,"tm":"20","t":"Team Total Points","ti":"98","op":[17.5,null,null],"cur":[29.5,null,null]},
+  {"a":null,"tm":"20","t":"Team Total Points","ti":"98","op":[17.5,null,null],"cur":[8.5,null,null]},
   {"a":null,"tm":"20","t":"Team Total Points","ti":"98","op":[17.5,null,null],"cur":[9.5,null,null]},
   {"a":null,"tm":"20","t":"Team Total Points","ti":"98","op":[17.5,null,null],"cur":[10.5,null,null]},
   {"a":null,"tm":"20","t":"Team Total Points","ti":"98","op":[17.5,null,null],"cur":[11.5,null,null]},
@@ -339,7 +339,7 @@
   {"a":null,"tm":"20","t":"Team Total Points","ti":"98","op":[17.5,null,null],"cur":[26.5,null,null]},
   {"a":null,"tm":"20","t":"Team Total Points","ti":"98","op":[17.5,null,null],"cur":[27.5,null,null]},
   {"a":null,"tm":"20","t":"Team Total Points","ti":"98","op":[17.5,null,null],"cur":[28.5,null,null]},
-  {"a":null,"tm":"20","t":"Team Total Points","ti":"98","op":[17.5,null,null],"cur":[29.5,null,null]},
+  {"a":null,"tm":"20","t":"Team Total Points","ti":"98","op":[17.5,null,null],"cur":[8.5,null,null]},
   {"a":null,"tm":"20","t":"Team Total Points","ti":"98","op":[17.5,null,null],"cur":[9.5,null,null]},
   {"a":null,"tm":"24","t":"Team Total Points","ti":"98","op":[22.5,null,null],"cur":[12.5,null,null]},
   {"a":null,"tm":"24","t":"Team Total Points","ti":"98","op":[22.5,null,null],"cur":[13.5,null,null]},
