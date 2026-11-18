@@ -23,7 +23,7 @@ SECTIONS = ("Offensive", "Defensive", "Faceoff", "Goalie")
 # jersey numbers the PLL's box score leaves off (the owner supplied these)
 NUM_FIX = {"Blaze Riorden": "0", "Graham Bundy": "0", "Will Manny": "0", "Brendan Krebs": "0", "Koby Smith": "0"}
 # the most any player has had in a game: a cut that goes past these isn't a real stat line
-MAX = dict(Sh=30, GB=30, TO=12, TCH=150, CT=10, SA=45, A=10, FOT=60)
+MAX = dict(Sh=30, GB=40, TO=12, TCH=150, CT=10, SA=45, A=10, FOT=60)
 
 
 def plausibility(o, d, pos=None):
