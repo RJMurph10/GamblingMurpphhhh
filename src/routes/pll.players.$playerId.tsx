@@ -8,6 +8,7 @@ import { posAbbr } from "@/lib/pll/players";
 import {
   playerKind,
   pllPlayer,
+  pllSeasonClub,
   totalsOf,
   type PllPlayer,
   type PllPlayerGame,
@@ -87,7 +88,9 @@ function PllPlayerPage() {
       </Panel>
     );
   const kind = playerKind(p);
-  const team = teamOf(q.data, p.teamId);
+  // a whole season with one club shows that club (and that season's logo); a mid-season move keeps his current club
+  const club = pllSeasonClub(p, season) ?? { team: p.team, teamId: p.teamId };
+  const team = teamOf(q.data, club.teamId);
   const rows = [...games].reverse();
   const showFO = games.some((g) => (g.stats.FOT ?? 0) > 0);
   const showSv = kind === "goalie";
@@ -95,10 +98,10 @@ function PllPlayerPage() {
   return (
     <>
       <PageTitle
-        eyebrow={`PLL ${season} · ${team?.name ?? p.team}`}
+        eyebrow={`PLL ${season} · ${team?.name ?? club.team}`}
         title={p.name}
         leading={
-          <Link to="/pll/teams/$teamId" params={{ teamId: p.teamId }}>
+          <Link to="/pll/teams/$teamId" params={{ teamId: club.teamId }}>
             <PllLogo team={team} className="size-12 shrink-0 sm:size-14" />
           </Link>
         }

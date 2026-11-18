@@ -155,6 +155,20 @@ export function pllPlayers(): Map<string, PllPlayer> {
 
 export const pllPlayer = (slug: string) => pllPlayers().get(slug);
 
+/**
+ * The one club a player spent a whole season with, for that season's logo on his page: undefined when he
+ * played for two clubs that season (a mid-season move), so the page keeps his current club.
+ */
+export function pllSeasonClub(
+  p: PllPlayer,
+  season: number,
+): { team: string; teamId: string } | undefined {
+  const games = p.games.filter((g) => g.season === season);
+  const ids = new Set(games.map((g) => g.teamId));
+  if (ids.size !== 1) return undefined;
+  return { team: games[0].team, teamId: games[0].teamId };
+}
+
 /** A club's players with entered stats for a season. */
 export const pllTeamPlayers = (teamId: string, season: number) =>
   [...pllPlayers().values()].filter((p) =>
