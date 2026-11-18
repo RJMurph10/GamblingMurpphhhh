@@ -1,6 +1,6 @@
 {
  "day": "2026-11-17",
- "updated": "2026-11-17T22:41:28.011Z",
+ "updated": "2026-11-18T03:54:16.873Z",
  "picks": [
   {
    "id": "401923325-total",
@@ -16,7 +16,12 @@
    "firstSeen": "2026-11-17T13:53:33.623Z",
    "latest": 128.5,
    "latestAt": "2026-11-17T22:41:28.011Z",
-   "alerted": false
+   "alerted": false,
+   "score": [
+    51,
+    66
+   ],
+   "close": 127.5
   },
   {
    "id": "401911018-total",
@@ -32,7 +37,12 @@
    "firstSeen": "2026-11-17T13:53:33.623Z",
    "latest": 168.5,
    "latestAt": "2026-11-17T22:41:28.011Z",
-   "alerted": false
+   "alerted": false,
+   "score": [
+    73,
+    77
+   ],
+   "close": 169.5
   },
   {
    "id": "401920194-total",
@@ -48,7 +58,12 @@
    "firstSeen": "2026-11-17T13:53:33.623Z",
    "latest": 137.5,
    "latestAt": "2026-11-17T22:41:28.011Z",
-   "alerted": false
+   "alerted": false,
+   "score": [
+    65,
+    84
+   ],
+   "close": 137.5
   },
   {
    "id": "401920308-total",
@@ -64,7 +79,12 @@
    "firstSeen": "2026-11-17T13:53:33.623Z",
    "latest": 150.5,
    "latestAt": "2026-11-17T22:41:28.011Z",
-   "alerted": false
+   "alerted": false,
+   "score": [
+    79,
+    93
+   ],
+   "close": 147.5
   },
   {
    "id": "401920921-total",
@@ -80,7 +100,12 @@
    "firstSeen": "2026-11-17T13:53:33.623Z",
    "latest": 137.5,
    "latestAt": "2026-11-17T22:41:28.011Z",
-   "alerted": false
+   "alerted": false,
+   "score": [
+    99,
+    65
+   ],
+   "close": 137.5
   },
   {
    "id": "401911020-total",
@@ -96,7 +121,12 @@
    "firstSeen": "2026-11-17T13:53:33.623Z",
    "latest": 141.5,
    "latestAt": "2026-11-17T22:41:28.011Z",
-   "alerted": false
+   "alerted": false,
+   "score": [
+    83,
+    79
+   ],
+   "close": 141.5
   },
   {
    "id": "401909504-total",
@@ -112,7 +142,12 @@
    "firstSeen": "2026-11-17T13:53:33.623Z",
    "latest": 125.5,
    "latestAt": "2026-11-17T22:41:28.011Z",
-   "alerted": false
+   "alerted": false,
+   "score": [
+    39,
+    83
+   ],
+   "close": 125.5
   },
   {
    "id": "401920720-total",

@@ -1,0 +1,70 @@
+{
+ "day": "2026-11-18",
+ "updated": "2026-11-18T03:54:16.873Z",
+ "picks": [
+  {
+   "id": "401920682-total",
+   "game": "SIE @ SJU",
+   "tip": "2026-11-19T00:00Z",
+   "market": "total",
+   "pick": "Under 164.5",
+   "line": 164.5,
+   "open": 164.5,
+   "model": 157.8,
+   "edge": 6.7,
+   "best": true,
+   "firstSeen": "2026-11-18T03:54:16.873Z",
+   "latest": 166.5,
+   "latestAt": "2026-11-18T03:54:16.873Z",
+   "alerted": false
+  },
+  {
+   "id": "401921141-total",
+   "game": "ELON @ SC",
+   "tip": "2026-11-19T00:00Z",
+   "market": "total",
+   "pick": "Over 138.5",
+   "line": 138.5,
+   "open": 138.5,
+   "model": 145.6,
+   "edge": 7.1,
+   "best": true,
+   "firstSeen": "2026-11-18T03:54:16.873Z",
+   "latest": 137.5,
+   "latestAt": "2026-11-18T03:54:16.873Z",
+   "alerted": false
+  },
+  {
+   "id": "401927357-total",
+   "game": "PFW @ BRAD",
+   "tip": "2026-11-19T01:00Z",
+   "market": "total",
+   "pick": "Over 135.5",
+   "line": 135.5,
+   "open": 135.5,
+   "model": 143.7,
+   "edge": 8.2,
+   "best": true,
+   "firstSeen": "2026-11-18T03:54:16.873Z",
+   "latest": 136.5,
+   "latestAt": "2026-11-18T03:54:16.873Z",
+   "alerted": false
+  },
+  {
+   "id": "401925949-total",
+   "game": "WEB @ USU",
+   "tip": "2026-11-19T02:00Z",
+   "market": "total",
+   "pick": "Under 168.5",
+   "line": 168.5,
+   "open": 168.5,
+   "model": 160,
+   "edge": 8.5,
+   "best": true,
+   "firstSeen": "2026-11-18T03:54:16.873Z",
+   "latest": 168.5,
+   "latestAt": "2026-11-18T03:54:16.873Z",
+   "alerted": false
+  }
+ ]
+}
