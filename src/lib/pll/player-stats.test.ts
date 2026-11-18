@@ -5,6 +5,7 @@ import {
   playerSlug,
   pllPlayer,
   pllPlayers,
+  pllSeasonClub,
   pllTeamPlayers,
   totalsOf,
 } from "./player-stats";
@@ -194,5 +195,18 @@ describe.each([2022, 2023, 2024, 2025])("%i sheets", (season) => {
       expect(goals(g.players as unknown as Line[])).toBe(score(g.team));
       expect(against(g.players as unknown as Line[])).toBe(score(g.opponent));
     }
+  });
+});
+
+describe("pllSeasonClub (the club shown on a player's page for a season)", () => {
+  it("is the one club of a whole season: Pat Kavanagh, Cannons 2024 then Outlaws", () => {
+    const p = pllPlayer(playerSlug("Pat Kavanagh"))!;
+    expect(pllSeasonClub(p, 2024)).toEqual({ team: "Cannons", teamId: "122997" });
+    expect(pllSeasonClub(p, 2025)).toEqual({ team: "Outlaws", teamId: "122896" });
+  });
+  it("is undefined for a season split between clubs: Matt Rambo 2026", () => {
+    const p = pllPlayer(playerSlug("Matt Rambo"))!;
+    expect(pllSeasonClub(p, 2026)).toBeUndefined();
+    expect(pllSeasonClub(p, 2025)).toEqual({ team: "Whipsnakes", teamId: "127638" });
   });
 });
