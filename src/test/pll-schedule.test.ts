@@ -163,10 +163,10 @@ describe("PLL 2022 schedule (owner-entered)", () => {
 });
 
 describe("PLL 2021 schedule (owner-entered; tied to the site's Wikipedia games)", () => {
-  it("has 8 weeks: 36 regular-season games and the All-Star game", () => {
-    expect(pllWeeks(2021)).toHaveLength(8);
+  it("has 11 weeks: 36 regular-season games, the All-Star game and 6 playoff games", () => {
+    expect(pllWeeks(2021)).toHaveLength(11);
     const games = s2021.weeks.flatMap((w) => w.games);
-    expect(games).toHaveLength(37);
+    expect(games).toHaveLength(43);
     expect(games.every((g) => g.espnId?.startsWith("wiki-2021-"))).toBe(true);
     expect(pllWeekOf("wiki-2021-26")).toMatchObject({ label: "All-Star", city: "San Jose, CA" });
   });
@@ -179,5 +179,21 @@ describe("PLL 2021 schedule (owner-entered; tied to the site's Wikipedia games)"
     const wat = games.find((g) => g.away === "Waterdogs" && g.home === "Whipsnakes")!;
     expect(wat.date).toBe("2021-08-01");
     expect(pllWeekOf(wat.espnId)).toMatchObject({ label: "Week 7", city: "Colorado Springs, CO" });
+  });
+  it("labels the 2021 playoffs, home and away as the PLL lists them", () => {
+    expect(pllWeekOf("wiki-2021-38")).toMatchObject({
+      label: "Quarterfinals",
+      city: "Salt Lake City, UT",
+    });
+    expect(pllWeekOf("wiki-2021-41")).toMatchObject({
+      label: "Semifinals",
+      city: "Philadelphia, PA",
+    });
+    expect(pllWeekOf("wiki-2021-43")).toMatchObject({
+      label: "Championship",
+      city: "Washington, DC",
+    });
+    const final = s2021.weeks[10].games[0];
+    expect(final).toMatchObject({ away: "Chaos", home: "Whipsnakes", awayScore: 14, homeScore: 9 });
   });
 });

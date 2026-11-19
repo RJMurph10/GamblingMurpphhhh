@@ -1,6 +1,6 @@
 /**
  * Where and in which week each PLL game was played, from the schedules the site owner enters from the
- * PLL site (src/data/pll-<season>-schedule.json; 2021 regular season; 2022-2026 regular season and playoffs). The PLL plays each week's
+ * PLL site (src/data/pll-<season>-schedule.json; 2021-2026 regular season and playoffs). The PLL plays each week's
  * games at one host city ("Week 3 · Baltimore, MD").
  */
 import s2021 from "@/data/pll-2021-schedule.json";

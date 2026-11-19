@@ -1,5 +1,5 @@
 {
- "source": "PLL 2021 regular-season schedule (weeks, host cities, dates, results) as entered by the site owner from the PLL site, Nov 19 2026. Tied to the site's 2021 games (Wikipedia ids). All 36 regular-season games match; two corrections from the PLL's own recaps: Archers at Redwoods Jul 31 was 15-12 (the schedule page says 13-12), and Waterdogs-Whipsnakes was Sun Aug 1 (Wikipedia had Jul 31). The All-Star game (San Jose, Jul 18, 23-21) is tied to the site's wiki-2021-26.",
+ "source": "PLL 2021 schedule (weeks, host cities, dates, results; regular season and playoffs) as entered by the site owner from the PLL site, Nov 19 2026. Tied to the site's 2021 games (Wikipedia ids); all 42 regular-season and playoff games match. Corrections from the PLL: Archers at Redwoods Jul 31 was 15-12 (the schedule page says 13-12; PLL recap and box score say 15-12); Waterdogs-Whipsnakes was Sun Aug 1 (Wikipedia had Jul 31); five playoff games' home/away follow the PLL (Wikipedia had them reversed). The All-Star game (San Jose, Jul 18, 23-21) is tied to the site's wiki-2021-26.",
  "weeks": [
   {
    "week": 1,
@@ -403,6 +403,87 @@
      "awayScore": 15,
      "homeScore": 14,
      "ot": true
+    }
+   ]
+  },
+  {
+   "week": 9,
+   "round": "Quarterfinals",
+   "dates": "Aug 20 - Aug 21",
+   "city": "Salt Lake City, UT",
+   "allStar": false,
+   "games": [
+    {
+     "espnId": "wiki-2021-38",
+     "date": "2021-08-20",
+     "away": "Chaos",
+     "home": "Archers",
+     "awayScore": 13,
+     "homeScore": 10,
+     "ot": false
+    },
+    {
+     "espnId": "wiki-2021-39",
+     "date": "2021-08-21",
+     "away": "Cannons",
+     "home": "Atlas",
+     "awayScore": 9,
+     "homeScore": 13,
+     "ot": false
+    },
+    {
+     "espnId": "wiki-2021-40",
+     "date": "2021-08-21",
+     "away": "Whipsnakes",
+     "home": "Redwoods",
+     "awayScore": 14,
+     "homeScore": 13,
+     "ot": false
+    }
+   ]
+  },
+  {
+   "week": 10,
+   "round": "Semifinals",
+   "dates": "Sept 5",
+   "city": "Philadelphia, PA",
+   "allStar": false,
+   "games": [
+    {
+     "espnId": "wiki-2021-41",
+     "date": "2021-09-05",
+     "away": "Chaos",
+     "home": "Atlas",
+     "awayScore": 15,
+     "homeScore": 9,
+     "ot": false
+    },
+    {
+     "espnId": "wiki-2021-42",
+     "date": "2021-09-05",
+     "away": "Whipsnakes",
+     "home": "Waterdogs",
+     "awayScore": 14,
+     "homeScore": 10,
+     "ot": false
+    }
+   ]
+  },
+  {
+   "week": 11,
+   "round": "Championship",
+   "dates": "Sept 19",
+   "city": "Washington, DC",
+   "allStar": false,
+   "games": [
+    {
+     "espnId": "wiki-2021-43",
+     "date": "2021-09-19",
+     "away": "Chaos",
+     "home": "Whipsnakes",
+     "awayScore": 14,
+     "homeScore": 9,
+     "ot": false
     }
    ]
   }
