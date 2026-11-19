@@ -1,0 +1,54 @@
+{
+ "day": "2026-11-19",
+ "updated": "2026-11-19T03:52:34.783Z",
+ "picks": [
+  {
+   "id": "401928826-total",
+   "game": "RMU @ TOL",
+   "tip": "2026-11-20T00:00Z",
+   "market": "total",
+   "pick": "Over 144.5",
+   "line": 144.5,
+   "open": 144.5,
+   "model": 150.5,
+   "edge": 6,
+   "best": true,
+   "firstSeen": "2026-11-19T03:52:34.783Z",
+   "latest": 144.5,
+   "latestAt": "2026-11-19T03:52:34.783Z",
+   "alerted": false
+  },
+  {
+   "id": "401911534-total",
+   "game": "UTEP @ NMSU",
+   "tip": "2026-11-20T02:00Z",
+   "market": "total",
+   "pick": "Over 136.5",
+   "line": 136.5,
+   "open": 136.5,
+   "model": 143.3,
+   "edge": 6.8,
+   "best": true,
+   "firstSeen": "2026-11-19T03:52:34.783Z",
+   "latest": 136.5,
+   "latestAt": "2026-11-19T03:52:34.783Z",
+   "alerted": false
+  },
+  {
+   "id": "401930884-total",
+   "game": "ORST @ ORE",
+   "tip": "2026-11-20T02:00Z",
+   "market": "total",
+   "pick": "Under 164.5",
+   "line": 164.5,
+   "open": 164.5,
+   "model": 155.6,
+   "edge": 8.9,
+   "best": true,
+   "firstSeen": "2026-11-19T03:52:34.783Z",
+   "latest": 162.5,
+   "latestAt": "2026-11-19T03:52:34.783Z",
+   "alerted": false
+  }
+ ]
+}

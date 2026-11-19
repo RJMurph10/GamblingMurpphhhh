@@ -1,5 +1,22 @@
 {
  "day": "2026-11-19",
- "updated": "2026-11-18T22:23:15.059Z",
- "picks": []
+ "updated": "2026-11-19T03:52:33.855Z",
+ "picks": [
+  {
+   "id": "401910022-spread",
+   "game": "LAC @ SA",
+   "tip": "2026-11-20T01:00Z",
+   "market": "spread",
+   "pick": "LAC +16.5",
+   "line": -16.5,
+   "open": -16.5,
+   "model": 12.7,
+   "edge": 3.8,
+   "best": true,
+   "firstSeen": "2026-11-19T03:52:33.855Z",
+   "latest": -16.5,
+   "latestAt": "2026-11-19T03:52:33.855Z",
+   "alerted": false
+  }
+ ]
 }
