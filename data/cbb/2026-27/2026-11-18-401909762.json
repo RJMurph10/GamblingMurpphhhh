@@ -7,18 +7,18 @@
   "id": "2501",
   "abbr": "PORT",
   "name": "Portland Pilots",
-  "score": 62
+  "score": 77
  },
  "home": {
   "id": "38",
   "abbr": "COLO",
   "name": "Colorado Buffaloes",
-  "score": 53
+  "score": 74
  },
  "neutral": false,
  "venue": "CU Events Center",
  "seasonType": 2,
- "state": "in",
+ "state": "post",
  "lines": {
   "open": {
    "at": "2026-11-18T04:29:39.955Z",
@@ -477,5 +477,9 @@
    ]
   }
  },
- "props": {}
+ "props": {},
+ "final": {
+  "away": 77,
+  "home": 74
+ }
 }

@@ -7,18 +7,18 @@
   "id": "2458",
   "abbr": "UNCO",
   "name": "Northern Colorado Bears",
-  "score": 42
+  "score": 54
  },
  "home": {
   "id": "252",
   "abbr": "BYU",
   "name": "BYU Cougars",
-  "score": 79
+  "score": 98
  },
  "neutral": false,
  "venue": "Marriott Center",
  "seasonType": 2,
- "state": "in",
+ "state": "post",
  "lines": {
   "open": {
    "at": "2026-11-18T04:29:39.955Z",
@@ -395,5 +395,9 @@
    ]
   }
  },
- "props": {}
+ "props": {},
+ "final": {
+  "away": 54,
+  "home": 98
+ }
 }

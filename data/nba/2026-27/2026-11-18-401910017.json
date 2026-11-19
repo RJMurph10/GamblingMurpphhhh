@@ -7,13 +7,13 @@
   "id": "26",
   "abbr": "UTAH",
   "name": "Utah Jazz",
-  "score": 25
+  "score": 56
  },
  "home": {
   "id": "13",
   "abbr": "LAL",
   "name": "Los Angeles Lakers",
-  "score": 28
+  "score": 54
  },
  "neutral": false,
  "venue": "crypto.com Arena",

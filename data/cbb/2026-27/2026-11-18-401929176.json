@@ -7,18 +7,18 @@
   "id": "2449",
   "abbr": "NDSU",
   "name": "North Dakota State Bison",
-  "score": 54
+  "score": 64
  },
  "home": {
   "id": "36",
   "abbr": "CSU",
   "name": "Colorado State Rams",
-  "score": 58
+  "score": 71
  },
  "neutral": false,
  "venue": "Moby Arena",
  "seasonType": 2,
- "state": "in",
+ "state": "post",
  "lines": {
   "open": {
    "at": "2026-11-18T04:29:39.955Z",
@@ -477,5 +477,9 @@
    ]
   }
  },
- "props": {}
+ "props": {},
+ "final": {
+  "away": 64,
+  "home": 71
+ }
 }

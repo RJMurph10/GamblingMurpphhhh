@@ -7,13 +7,13 @@
   "id": "21",
   "abbr": "PHX",
   "name": "Phoenix Suns",
-  "score": 34
+  "score": 87
  },
  "home": {
   "id": "23",
   "abbr": "SAC",
   "name": "Sacramento Kings",
-  "score": 31
+  "score": 74
  },
  "neutral": false,
  "venue": "Golden 1 Center",
