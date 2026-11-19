@@ -128,10 +128,10 @@ describe("PLL 2023 schedule (owner-entered)", () => {
 });
 
 describe("PLL 2022 schedule (owner-entered)", () => {
-  it("has 11 weeks and 40 regular-season games, each tied to ESPN", () => {
-    expect(pllWeeks(2022)).toHaveLength(11);
+  it("has 14 weeks and 46 games (40 regular season, 6 playoffs), each tied to ESPN", () => {
+    expect(pllWeeks(2022)).toHaveLength(14);
     const games = s2022.weeks.flatMap((w) => w.games);
-    expect(games).toHaveLength(40);
+    expect(games).toHaveLength(46);
     expect(games.every((g) => g.espnId)).toBe(true);
     expect(pllWeeks(2022)[5]).toMatchObject({ label: "All-Star", city: "Boston, MA" });
   });
@@ -139,5 +139,24 @@ describe("PLL 2022 schedule (owner-entered)", () => {
     const g = s2022.weeks[1].games[0]; // Chrome at Redwoods, Jun 10 (12-3)
     expect(g).toMatchObject({ away: "Chrome", home: "Redwoods", awayScore: 12, homeScore: 3 });
     expect(pllWeekOf(g.espnId)).toMatchObject({ label: "Week 2", city: "Charlotte, NC" });
+  });
+  it("labels the 2022 playoffs; the championship is tied to ESPN although ESPN dates it a day later", () => {
+    const [qf, sf, final] = [11, 12, 13].map((i) => s2022.weeks[i]);
+    expect(qf.games).toHaveLength(3);
+    expect(pllWeekOf(sf.games[0].espnId)).toMatchObject({
+      label: "Semifinals",
+      city: "Washington, D.C.",
+    });
+    expect(final.games[0]).toMatchObject({
+      date: "2022-09-18",
+      away: "Chaos",
+      home: "Waterdogs",
+      awayScore: 9,
+      homeScore: 11,
+    });
+    expect(pllWeekOf(final.games[0].espnId)).toMatchObject({
+      label: "Championship",
+      city: "Philadelphia, PA",
+    });
   });
 });

@@ -1,5 +1,5 @@
 {
- "source": "PLL 2022 regular-season schedule (weeks, host cities, dates, results) as entered by the site owner from the PLL site, Nov 18 2026. All 40 results match ESPN. All-Star week (Boston, Jul 16; 33-13) is kept without games: ESPN has no 2022 All-Star game.",
+ "source": "PLL 2022 schedule (weeks, host cities, dates, results; regular season and playoffs) as entered by the site owner from the PLL site, Nov 18 2026. All 46 regular-season and playoff results match ESPN; ESPN dates the championship Sep 19, the PLL Sep 18 (kept). All-Star week (Boston, Jul 16; 33-13) is kept without games: ESPN has no 2022 All-Star game.",
  "weeks": [
   {
    "week": 1,
@@ -455,6 +455,87 @@
      "home": "Chaos",
      "awayScore": 10,
      "homeScore": 9,
+     "ot": false
+    }
+   ]
+  },
+  {
+   "week": 12,
+   "round": "Quarterfinals",
+   "dates": "Sept 3",
+   "city": "Boston, MA",
+   "allStar": false,
+   "games": [
+    {
+     "espnId": "401544248",
+     "date": "2022-09-03",
+     "away": "Chaos",
+     "home": "Chrome",
+     "awayScore": 11,
+     "homeScore": 3,
+     "ot": false
+    },
+    {
+     "espnId": "401544222",
+     "date": "2022-09-03",
+     "away": "Redwoods",
+     "home": "Archers",
+     "awayScore": 8,
+     "homeScore": 13,
+     "ot": false
+    },
+    {
+     "espnId": "401544243",
+     "date": "2022-09-03",
+     "away": "Waterdogs",
+     "home": "Atlas",
+     "awayScore": 19,
+     "homeScore": 14,
+     "ot": false
+    }
+   ]
+  },
+  {
+   "week": 13,
+   "round": "Semifinals",
+   "dates": "Sept 11",
+   "city": "Washington, D.C.",
+   "allStar": false,
+   "games": [
+    {
+     "espnId": "401544223",
+     "date": "2022-09-11",
+     "away": "Waterdogs",
+     "home": "Whipsnakes",
+     "awayScore": 11,
+     "homeScore": 10,
+     "ot": false
+    },
+    {
+     "espnId": "401544249",
+     "date": "2022-09-11",
+     "away": "Chaos",
+     "home": "Archers",
+     "awayScore": 9,
+     "homeScore": 7,
+     "ot": false
+    }
+   ]
+  },
+  {
+   "week": 14,
+   "round": "Championship",
+   "dates": "Sept 18",
+   "city": "Philadelphia, PA",
+   "allStar": false,
+   "games": [
+    {
+     "espnId": "401544250",
+     "date": "2022-09-18",
+     "away": "Chaos",
+     "home": "Waterdogs",
+     "awayScore": 9,
+     "homeScore": 11,
      "ot": false
     }
    ]
