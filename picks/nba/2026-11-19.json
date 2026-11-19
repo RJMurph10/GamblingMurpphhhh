@@ -1,7 +1,55 @@
 {
  "day": "2026-11-19",
- "updated": "2026-11-19T03:52:33.855Z",
+ "updated": "2026-11-19T13:57:11.680Z",
  "picks": [
+  {
+   "id": "401910019-spread",
+   "game": "GS @ MEM",
+   "tip": "2026-11-20T01:00Z",
+   "market": "spread",
+   "pick": "GS +6.5",
+   "line": -6.5,
+   "open": -8.5,
+   "model": 2.6,
+   "edge": 3.9,
+   "best": true,
+   "firstSeen": "2026-11-19T13:57:11.680Z",
+   "latest": -6.5,
+   "latestAt": "2026-11-19T13:57:11.680Z",
+   "alerted": false
+  },
+  {
+   "id": "401910019-total",
+   "game": "GS @ MEM",
+   "tip": "2026-11-20T01:00Z",
+   "market": "total",
+   "pick": "Over 225.5",
+   "line": 225.5,
+   "open": 225.5,
+   "model": 231.5,
+   "edge": 6,
+   "best": false,
+   "firstSeen": "2026-11-19T13:57:11.680Z",
+   "latest": 226.5,
+   "latestAt": "2026-11-19T13:57:11.680Z",
+   "alerted": false
+  },
+  {
+   "id": "401910021-spread",
+   "game": "NY @ MIN",
+   "tip": "2026-11-20T01:00Z",
+   "market": "spread",
+   "pick": "MIN +1.5",
+   "line": 1.5,
+   "open": 1.5,
+   "model": 3.6,
+   "edge": 5.1,
+   "best": true,
+   "firstSeen": "2026-11-19T13:57:11.680Z",
+   "latest": 1.5,
+   "latestAt": "2026-11-19T13:57:11.680Z",
+   "alerted": false
+  },
   {
    "id": "401910022-spread",
    "game": "LAC @ SA",
@@ -14,8 +62,8 @@
    "edge": 3.8,
    "best": true,
    "firstSeen": "2026-11-19T03:52:33.855Z",
-   "latest": -16.5,
-   "latestAt": "2026-11-19T03:52:33.855Z",
+   "latest": -15.5,
+   "latestAt": "2026-11-19T13:57:11.680Z",
    "alerted": false
   }
  ]

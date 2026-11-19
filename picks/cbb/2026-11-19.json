@@ -1,7 +1,23 @@
 {
  "day": "2026-11-19",
- "updated": "2026-11-19T03:52:34.783Z",
+ "updated": "2026-11-19T13:57:12.487Z",
  "picks": [
+  {
+   "id": "401920413-total",
+   "game": "MTST @ HPU",
+   "tip": "2026-11-20T00:00Z",
+   "market": "total",
+   "pick": "Over 143.5",
+   "line": 143.5,
+   "open": 143.5,
+   "model": 151.4,
+   "edge": 7.9,
+   "best": true,
+   "firstSeen": "2026-11-19T13:57:12.487Z",
+   "latest": 145.5,
+   "latestAt": "2026-11-19T13:57:12.487Z",
+   "alerted": false
+  },
   {
    "id": "401928826-total",
    "game": "RMU @ TOL",
@@ -15,7 +31,7 @@
    "best": true,
    "firstSeen": "2026-11-19T03:52:34.783Z",
    "latest": 144.5,
-   "latestAt": "2026-11-19T03:52:34.783Z",
+   "latestAt": "2026-11-19T13:57:12.487Z",
    "alerted": false
   },
   {
@@ -30,8 +46,8 @@
    "edge": 6.8,
    "best": true,
    "firstSeen": "2026-11-19T03:52:34.783Z",
-   "latest": 136.5,
-   "latestAt": "2026-11-19T03:52:34.783Z",
+   "latest": 135.5,
+   "latestAt": "2026-11-19T13:57:12.487Z",
    "alerted": false
   },
   {
@@ -46,8 +62,8 @@
    "edge": 8.9,
    "best": true,
    "firstSeen": "2026-11-19T03:52:34.783Z",
-   "latest": 162.5,
-   "latestAt": "2026-11-19T03:52:34.783Z",
+   "latest": 160.5,
+   "latestAt": "2026-11-19T13:57:12.487Z",
    "alerted": false
   }
  ]
