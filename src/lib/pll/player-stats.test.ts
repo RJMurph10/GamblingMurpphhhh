@@ -47,6 +47,7 @@ describe("PLL player stats from the Cannons sheets", () => {
     expect(data.games.filter((g) => g.team === "Redwoods" && g.season === 2022).length).toBe(11);
     expect(data.games.filter((g) => g.team === "Waterdogs" && g.season === 2022).length).toBe(13);
     expect(data.games.filter((g) => g.team === "Whipsnakes" && g.season === 2022).length).toBe(11);
+    expect(data.games.filter((g) => g.team === "Archers" && g.season === 2021).length).toBe(10);
     expect(data.games.filter((g) => g.team === "Waterdogs" && g.season === 2025).length).toBe(12);
     expect(data.games.filter((g) => g.team === "Archers" && g.season === 2025).length).toBe(10);
   });
@@ -58,7 +59,7 @@ describe("PLL player stats from the Cannons sheets", () => {
       }
   });
   it("builds players with slugs and kinds", () => {
-    expect(pllPlayers().size).toBe(416);
+    expect(pllPlayers().size).toBe(420);
     const h = pllPlayer(playerSlug("Marcus Holman"));
     expect(h?.games.length).toBeGreaterThan(0);
     expect(playerKind(pllPlayer(playerSlug("Colin Kirst"))!)).toBe("goalie");
@@ -88,6 +89,7 @@ describe("PLL player stats from the Cannons sheets", () => {
     expect(pllTeamPlayers("127636", 2022).length).toBe(25);
     expect(pllTeamPlayers("127637", 2022).length).toBe(25);
     expect(pllTeamPlayers("127638", 2022).length).toBe(23);
+    expect(pllTeamPlayers("127631", 2021).length).toBe(23);
     expect(pllTeamPlayers("127636", 2025).length).toBe(24);
     expect(pllTeamPlayers("127634", 2025).length).toBe(28);
     expect(pllTeamPlayers("122896", 2025).length).toBe(24);
@@ -173,18 +175,21 @@ describe("the full 2026 season", () => {
   });
 });
 
-describe.each([2022, 2023, 2024, 2025])("%i sheets", (season) => {
+describe.each([2021, 2022, 2023, 2024, 2025])("%i sheets", (season) => {
   type Line = { stats?: Record<string, number | null> };
   const goals = (ps: Line[]) => ps.reduce((n, p) => n + (p.stats ? p.stats.P! - p.stats.A! : 0), 0);
   const against = (ps: Line[]) => ps.reduce((n, p) => n + (p.stats?.SA ?? 0), 0);
   it("match ESPN's final scores", async () => {
-    const espn = (season === 2022
-      ? await import("@/test/fixtures/pll-2022-espn.json")
-      : season === 2023
-        ? await import("@/test/fixtures/pll-2023-espn.json")
-        : season === 2024
-          ? await import("@/test/fixtures/pll-2024-espn.json")
-          : await import("@/test/fixtures/pll-2025-espn.json")
+    // 2021 isn't on ESPN: its results come from the site's Wikipedia data (pll-2021-results.json)
+    const espn = (season === 2021
+      ? await import("@/test/fixtures/pll-2021-results.json")
+      : season === 2022
+        ? await import("@/test/fixtures/pll-2022-espn.json")
+        : season === 2023
+          ? await import("@/test/fixtures/pll-2023-espn.json")
+          : season === 2024
+            ? await import("@/test/fixtures/pll-2024-espn.json")
+            : await import("@/test/fixtures/pll-2025-espn.json")
     ).default as unknown as {
       date: string;
       sides: [string, string, string, string][];
@@ -217,5 +222,15 @@ describe("pllSeasonClub (the club shown on a player's page for a season)", () =>
     const p = pllPlayer(playerSlug("Matt Rambo"))!;
     expect(pllSeasonClub(p, 2026)).toBeUndefined();
     expect(pllSeasonClub(p, 2025)).toEqual({ team: "Whipsnakes", teamId: "127638" });
+  });
+});
+
+describe("2021 sheets: touches and passes weren't tracked", () => {
+  it("shows them as unknown (null), not 0", () => {
+    const g = data.games.find((x) => x.team === "Archers" && x.season === 2021)!;
+    for (const p of g.players) {
+      expect((p.stats as Record<string, unknown>).TCH).toBeNull();
+      expect((p.stats as Record<string, unknown>).PAS).toBeNull();
+    }
   });
 });
