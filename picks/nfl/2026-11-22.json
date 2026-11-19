@@ -1,6 +1,6 @@
 {
  "day": "2026-11-22",
- "updated": "2026-11-19T11:51:11.691Z",
+ "updated": "2026-11-19T20:45:47.466Z",
  "picks": [
   {
    "id": "401873067-spread-bounce",
@@ -15,9 +15,9 @@
    "best": true,
    "tag": "bounce",
    "firstSeen": "2026-11-16T06:44:22.078Z",
-   "lastSeen": "2026-11-19T11:51:11.691Z",
+   "lastSeen": "2026-11-19T20:45:47.466Z",
    "latest": -15.5,
-   "latestAt": "2026-11-19T11:51:11.691Z"
+   "latestAt": "2026-11-19T20:45:47.466Z"
   },
   {
    "id": "401873067-spread-qb-change",
@@ -32,9 +32,9 @@
    "best": false,
    "tag": "qb-change",
    "firstSeen": "2026-11-17T03:58:47.747Z",
-   "lastSeen": "2026-11-19T11:51:11.691Z",
+   "lastSeen": "2026-11-19T20:45:47.466Z",
    "latest": -15.5,
-   "latestAt": "2026-11-19T11:51:11.691Z"
+   "latestAt": "2026-11-19T20:45:47.466Z"
   },
   {
    "id": "401873067-spread-road-dog",
@@ -49,9 +49,9 @@
    "best": false,
    "tag": "road-dog",
    "firstSeen": "2026-11-16T06:44:22.078Z",
-   "lastSeen": "2026-11-19T11:51:11.691Z",
+   "lastSeen": "2026-11-19T20:45:47.466Z",
    "latest": -15.5,
-   "latestAt": "2026-11-19T11:51:11.691Z"
+   "latestAt": "2026-11-19T20:45:47.466Z"
   },
   {
    "id": "401873067-total-wind",
@@ -67,9 +67,9 @@
    "tag": "wind",
    "note": "13 mph",
    "firstSeen": "2026-11-18T20:39:52.153Z",
-   "lastSeen": "2026-11-19T11:51:11.691Z",
+   "lastSeen": "2026-11-19T20:45:47.466Z",
    "latest": 40.5,
-   "latestAt": "2026-11-19T11:51:11.691Z"
+   "latestAt": "2026-11-19T20:45:47.466Z"
   },
   {
    "id": "401873068-spread-qb-style",
@@ -85,8 +85,26 @@
    "tag": "qb-style",
    "firstSeen": "2026-11-16T06:44:22.078Z",
    "lastSeen": "2026-11-16T19:41:09.395Z",
-   "latest": -2.5,
-   "latestAt": "2026-11-19T11:51:11.691Z"
+   "latest": -3,
+   "latestAt": "2026-11-19T20:45:47.466Z"
+  },
+  {
+   "id": "401873068-total-wind",
+   "game": "BAL @ CAR",
+   "tip": "2026-11-22T18:00Z",
+   "market": "total",
+   "pick": "Under 43.5",
+   "line": 43.5,
+   "open": 46.5,
+   "model": 42.5,
+   "edge": 1,
+   "best": true,
+   "tag": "wind",
+   "note": "12 mph",
+   "firstSeen": "2026-11-19T20:45:47.466Z",
+   "lastSeen": "2026-11-19T20:45:47.466Z",
+   "latest": 43.5,
+   "latestAt": "2026-11-19T20:45:47.466Z"
   },
   {
    "id": "401873070-spread-qb-change",
@@ -101,9 +119,9 @@
    "best": false,
    "tag": "qb-change",
    "firstSeen": "2026-11-17T16:12:25.087Z",
-   "lastSeen": "2026-11-19T11:51:11.691Z",
+   "lastSeen": "2026-11-19T20:45:47.466Z",
    "latest": -16.5,
-   "latestAt": "2026-11-19T11:51:11.691Z"
+   "latestAt": "2026-11-19T20:45:47.466Z"
   },
   {
    "id": "401873070-spread-road-dog",
@@ -118,9 +136,9 @@
    "best": false,
    "tag": "road-dog",
    "firstSeen": "2026-11-15T22:56:35.955Z",
-   "lastSeen": "2026-11-19T11:51:11.691Z",
+   "lastSeen": "2026-11-19T20:45:47.466Z",
    "latest": -16.5,
-   "latestAt": "2026-11-19T11:51:11.691Z"
+   "latestAt": "2026-11-19T20:45:47.466Z"
   },
   {
    "id": "401873070-total-wind",
@@ -137,8 +155,8 @@
    "note": "10 mph",
    "firstSeen": "2026-11-17T16:12:25.087Z",
    "lastSeen": "2026-11-17T16:12:25.087Z",
-   "latest": 45.5,
-   "latestAt": "2026-11-19T11:51:11.691Z"
+   "latest": 44.5,
+   "latestAt": "2026-11-19T20:45:47.466Z"
   },
   {
    "id": "401873071-spread-road-dog",
@@ -153,9 +171,9 @@
    "best": false,
    "tag": "road-dog",
    "firstSeen": "2026-11-16T06:44:22.078Z",
-   "lastSeen": "2026-11-19T11:51:11.691Z",
+   "lastSeen": "2026-11-19T20:45:47.466Z",
    "latest": -11.5,
-   "latestAt": "2026-11-19T11:51:11.691Z"
+   "latestAt": "2026-11-19T20:45:47.466Z"
   },
   {
    "id": "401873071-total-wind",
@@ -171,9 +189,9 @@
    "tag": "wind",
    "note": "10 mph",
    "firstSeen": "2026-11-16T19:41:09.395Z",
-   "lastSeen": "2026-11-19T11:51:11.691Z",
+   "lastSeen": "2026-11-19T20:45:47.466Z",
    "latest": 48.5,
-   "latestAt": "2026-11-19T11:51:11.691Z"
+   "latestAt": "2026-11-19T20:45:47.466Z"
   },
   {
    "id": "401873072-spread-road-dog",
@@ -189,8 +207,8 @@
    "tag": "road-dog",
    "firstSeen": "2026-11-18T01:00:28.094Z",
    "lastSeen": "2026-11-19T11:51:11.691Z",
-   "latest": -7,
-   "latestAt": "2026-11-19T11:51:11.691Z"
+   "latest": -6,
+   "latestAt": "2026-11-19T20:45:47.466Z"
   },
   {
    "id": "401873073-spread-road-dog",
@@ -205,9 +223,9 @@
    "best": false,
    "tag": "road-dog",
    "firstSeen": "2026-11-16T06:44:22.078Z",
-   "lastSeen": "2026-11-19T11:51:11.691Z",
+   "lastSeen": "2026-11-19T20:45:47.466Z",
    "latest": -8.5,
-   "latestAt": "2026-11-19T11:51:11.691Z"
+   "latestAt": "2026-11-19T20:45:47.466Z"
   },
   {
    "id": "401873073-total-total-gap",
@@ -223,9 +241,9 @@
    "best": false,
    "tag": "total-gap",
    "firstSeen": "2026-11-16T06:44:22.078Z",
-   "lastSeen": "2026-11-19T11:51:11.691Z",
-   "latest": 54.5,
-   "latestAt": "2026-11-19T11:51:11.691Z"
+   "lastSeen": "2026-11-19T20:45:47.466Z",
+   "latest": 55.5,
+   "latestAt": "2026-11-19T20:45:47.466Z"
   },
   {
    "id": "401873076-spread-qb-change",
@@ -240,9 +258,9 @@
    "best": false,
    "tag": "qb-change",
    "firstSeen": "2026-11-16T06:44:22.078Z",
-   "lastSeen": "2026-11-19T11:51:11.691Z",
+   "lastSeen": "2026-11-19T20:45:47.466Z",
    "latest": 4.5,
-   "latestAt": "2026-11-19T11:51:11.691Z"
+   "latestAt": "2026-11-19T20:45:47.466Z"
   },
   {
    "id": "401873076-total-linc-calm",
@@ -258,9 +276,9 @@
    "tag": "linc-calm",
    "note": "5 mph · gusts 10",
    "firstSeen": "2026-11-16T19:41:09.395Z",
-   "lastSeen": "2026-11-19T11:51:11.691Z",
+   "lastSeen": "2026-11-19T20:45:47.466Z",
    "latest": 37.5,
-   "latestAt": "2026-11-19T11:51:11.691Z"
+   "latestAt": "2026-11-19T20:45:47.466Z"
   },
   {
    "id": "401873074-spread-qb-style",
@@ -275,9 +293,9 @@
    "best": true,
    "tag": "qb-style",
    "firstSeen": "2026-11-16T06:44:22.078Z",
-   "lastSeen": "2026-11-19T11:51:11.691Z",
+   "lastSeen": "2026-11-19T20:45:47.466Z",
    "latest": -3,
-   "latestAt": "2026-11-19T11:51:11.691Z"
+   "latestAt": "2026-11-19T20:45:47.466Z"
   },
   {
    "id": "401873075-spread-qb-change",
@@ -292,9 +310,9 @@
    "best": false,
    "tag": "qb-change",
    "firstSeen": "2026-11-15T22:56:35.955Z",
-   "lastSeen": "2026-11-19T11:51:11.691Z",
+   "lastSeen": "2026-11-19T20:45:47.466Z",
    "latest": -10,
-   "latestAt": "2026-11-19T11:51:11.691Z"
+   "latestAt": "2026-11-19T20:45:47.466Z"
   },
   {
    "id": "401873075-spread-road-dog",
@@ -309,9 +327,9 @@
    "best": false,
    "tag": "road-dog",
    "firstSeen": "2026-11-15T22:56:35.955Z",
-   "lastSeen": "2026-11-19T11:51:11.691Z",
+   "lastSeen": "2026-11-19T20:45:47.466Z",
    "latest": -10,
-   "latestAt": "2026-11-19T11:51:11.691Z"
+   "latestAt": "2026-11-19T20:45:47.466Z"
   },
   {
    "id": "401873075-total-total-gap",
@@ -326,9 +344,9 @@
    "best": false,
    "tag": "total-gap",
    "firstSeen": "2026-11-15T22:56:35.955Z",
-   "lastSeen": "2026-11-19T11:51:11.691Z",
+   "lastSeen": "2026-11-19T20:45:47.466Z",
    "latest": 40.5,
-   "latestAt": "2026-11-19T11:51:11.691Z"
+   "latestAt": "2026-11-19T20:45:47.466Z"
   },
   {
    "id": "401873077-spread-qb-change",
@@ -345,7 +363,7 @@
    "firstSeen": "2026-11-16T06:44:22.078Z",
    "lastSeen": "2026-11-17T03:58:47.747Z",
    "latest": -3,
-   "latestAt": "2026-11-19T11:51:11.691Z"
+   "latestAt": "2026-11-19T20:45:47.466Z"
   },
   {
    "id": "401873077-total-total-gap",
@@ -360,9 +378,9 @@
    "best": false,
    "tag": "total-gap",
    "firstSeen": "2026-11-16T06:44:22.078Z",
-   "lastSeen": "2026-11-19T11:51:11.691Z",
+   "lastSeen": "2026-11-19T20:45:47.466Z",
    "latest": 46.5,
-   "latestAt": "2026-11-19T11:51:11.691Z"
+   "latestAt": "2026-11-19T20:45:47.466Z"
   }
  ]
 }
