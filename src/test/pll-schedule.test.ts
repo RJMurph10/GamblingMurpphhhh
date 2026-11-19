@@ -1,5 +1,6 @@
 import { describe, expect, it } from "vitest";
 import data from "@/data/pll-2026-schedule.json";
+import s2022 from "@/data/pll-2022-schedule.json";
 import s2023 from "@/data/pll-2023-schedule.json";
 import s2024 from "@/data/pll-2024-schedule.json";
 import s2025 from "@/data/pll-2025-schedule.json";
@@ -123,5 +124,20 @@ describe("PLL 2023 schedule (owner-entered)", () => {
       label: "Championship",
       city: "Philadelphia, PA",
     });
+  });
+});
+
+describe("PLL 2022 schedule (owner-entered)", () => {
+  it("has 11 weeks and 40 regular-season games, each tied to ESPN", () => {
+    expect(pllWeeks(2022)).toHaveLength(11);
+    const games = s2022.weeks.flatMap((w) => w.games);
+    expect(games).toHaveLength(40);
+    expect(games.every((g) => g.espnId)).toBe(true);
+    expect(pllWeeks(2022)[5]).toMatchObject({ label: "All-Star", city: "Boston, MA" });
+  });
+  it("finds a 2022 game's week and host city", () => {
+    const g = s2022.weeks[1].games[0]; // Chrome at Redwoods, Jun 10 (12-3)
+    expect(g).toMatchObject({ away: "Chrome", home: "Redwoods", awayScore: 12, homeScore: 3 });
+    expect(pllWeekOf(g.espnId)).toMatchObject({ label: "Week 2", city: "Charlotte, NC" });
   });
 });
