@@ -1,0 +1,23 @@
+{
+ "day": "2026-11-25",
+ "updated": "2026-11-19T02:39:06.436Z",
+ "picks": [
+  {
+   "id": "401873079-spread-east-at-west-night",
+   "game": "GB @ LAR",
+   "tip": "2026-11-26T01:00Z",
+   "market": "spread",
+   "pick": "LAR -3.5",
+   "line": -3.5,
+   "open": -3.5,
+   "model": null,
+   "edge": null,
+   "best": false,
+   "tag": "east-at-west-night",
+   "firstSeen": "2026-11-19T02:39:06.436Z",
+   "lastSeen": "2026-11-19T02:39:06.436Z",
+   "latest": -3.5,
+   "latestAt": "2026-11-19T02:39:06.436Z"
+  }
+ ]
+}
