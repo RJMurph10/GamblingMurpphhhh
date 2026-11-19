@@ -7,18 +7,18 @@
   "id": "57",
   "abbr": "FLA",
   "name": "Florida Gators",
-  "score": 0
+  "score": 85
  },
  "home": {
   "id": "277",
   "abbr": "WVU",
   "name": "West Virginia Mountaineers",
-  "score": 0
+  "score": 72
  },
  "neutral": true,
  "venue": "Michelob ULTRA Arena",
  "seasonType": 2,
- "state": "pre",
+ "state": "post",
  "lines": {
   "open": {
    "at": "2026-11-19T13:20:49.784Z",
@@ -467,5 +467,9 @@
    ]
   }
  },
- "props": {}
+ "props": {},
+ "final": {
+  "away": 85,
+  "home": 72
+ }
 }
