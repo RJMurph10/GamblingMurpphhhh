@@ -6,6 +6,7 @@ import {
   pllPlayer,
   pllPlayers,
   pllSeasonClub,
+  pllTracksTouches,
   pllTeamPlayers,
   totalsOf,
 } from "./player-stats";
@@ -232,5 +233,15 @@ describe("2021 sheets: touches and passes weren't tracked", () => {
       expect((p.stats as Record<string, unknown>).TCH).toBeNull();
       expect((p.stats as Record<string, unknown>).PAS).toBeNull();
     }
+  });
+});
+
+describe("touches before 2022", () => {
+  it("are left out of 2019-2021 tables and are unknown in 2021 totals", () => {
+    expect(pllTracksTouches(2021)).toBe(false);
+    expect(pllTracksTouches(2022)).toBe(true);
+    const p = pllPlayer(playerSlug("Grant Ament"))!;
+    expect(totalsOf(p.games.filter((g) => g.season === 2021)).TCH).toBeNull();
+    expect(totalsOf(p.games.filter((g) => g.season === 2022)).TCH).toBeGreaterThan(0);
   });
 });

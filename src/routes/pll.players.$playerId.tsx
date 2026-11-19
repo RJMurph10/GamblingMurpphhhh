@@ -9,6 +9,7 @@ import {
   playerKind,
   pllPlayer,
   pllSeasonClub,
+  pllTracksTouches,
   totalsOf,
   type PllPlayer,
   type PllPlayerGame,
@@ -94,6 +95,8 @@ function PllPlayerPage() {
   const rows = [...games].reverse();
   const showFO = games.some((g) => (g.stats.FOT ?? 0) > 0);
   const showSv = kind === "goalie";
+  // no touches before 2022: leave the column out rather than fill it with dashes
+  const showTch = pllTracksTouches(season);
 
   return (
     <>
@@ -250,7 +253,7 @@ function PllPlayerPage() {
                 <th className="px-2 py-2 font-normal">GB</th>
                 <th className="px-2 py-2 font-normal">TO</th>
                 <th className="px-2 py-2 font-normal">CT</th>
-                <th className="px-2 py-2 font-normal">TCH</th>
+                {showTch ? <th className="px-2 py-2 font-normal">TCH</th> : null}
                 {showFO ? <th className="px-2 py-2 font-normal">FO</th> : null}
                 {showSv ? (
                   <>
@@ -302,7 +305,7 @@ function PllPlayerPage() {
                     <td className="px-2 py-1.5">{s.GB}</td>
                     <td className="px-2 py-1.5">{dash(s.TO)}</td>
                     <td className="px-2 py-1.5">{dash(s.CT)}</td>
-                    <td className="px-2 py-1.5 text-mute">{s.TCH}</td>
+                    {showTch ? <td className="px-2 py-1.5 text-mute">{dash(s.TCH)}</td> : null}
                     {showFO ? (
                       <td className="px-2 py-1.5">{s.FOT ? `${s.FOW}/${s.FOT}` : "—"}</td>
                     ) : null}
