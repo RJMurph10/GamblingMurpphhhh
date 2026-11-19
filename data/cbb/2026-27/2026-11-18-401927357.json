@@ -7,18 +7,18 @@
   "id": "2870",
   "abbr": "PFW",
   "name": "Purdue Fort Wayne Mastodons",
-  "score": 0
+  "score": 78
  },
  "home": {
   "id": "71",
   "abbr": "BRAD",
   "name": "Bradley Braves",
-  "score": 0
+  "score": 73
  },
  "neutral": false,
  "venue": "Carver Arena",
  "seasonType": 2,
- "state": "pre",
+ "state": "post",
  "lines": {
   "open": {
    "at": "2026-11-18T04:29:39.955Z",
@@ -933,5 +933,9 @@
    ]
   }
  },
- "props": {}
+ "props": {},
+ "final": {
+  "away": 78,
+  "home": 73
+ }
 }

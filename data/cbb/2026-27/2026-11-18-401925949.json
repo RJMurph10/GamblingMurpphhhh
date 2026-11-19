@@ -7,18 +7,18 @@
   "id": "2692",
   "abbr": "WEB",
   "name": "Weber State Wildcats",
-  "score": 0
+  "score": 55
  },
  "home": {
   "id": "328",
   "abbr": "USU",
   "name": "Utah State Aggies",
-  "score": 0
+  "score": 87
  },
  "neutral": false,
  "venue": "Dee Glen Smith Spectrum",
  "seasonType": 2,
- "state": "pre",
+ "state": "in",
  "lines": {
   "open": {
    "at": "2026-11-18T04:29:39.955Z",

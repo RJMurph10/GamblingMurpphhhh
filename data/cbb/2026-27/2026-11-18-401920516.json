@@ -1,24 +1,24 @@
 {
  "id": "401920516",
  "league": "cbb",
- "date": "2026-11-19T03:00Z",
+ "date": "2026-11-19T03:30Z",
  "name": "UNLV VS AUB",
  "away": {
   "id": "2439",
   "abbr": "UNLV",
   "name": "UNLV Rebels",
-  "score": 0
+  "score": 8
  },
  "home": {
   "id": "2",
   "abbr": "AUB",
   "name": "Auburn Tigers",
-  "score": 0
+  "score": 9
  },
  "neutral": true,
  "venue": "Michelob ULTRA Arena",
  "seasonType": 2,
- "state": "pre",
+ "state": "in",
  "lines": {
   "open": {
    "at": "2026-11-18T14:08:27.558Z",

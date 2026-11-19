@@ -7,18 +7,18 @@
   "id": "2430",
   "abbr": "UNCG",
   "name": "UNC Greensboro Spartans",
-  "score": 0
+  "score": 78
  },
  "home": {
   "id": "2241",
   "abbr": "GWEB",
   "name": "Gardner-Webb Runnin' Bulldogs",
-  "score": 0
+  "score": 72
  },
  "neutral": false,
  "venue": "Paul Porter Arena",
  "seasonType": 2,
- "state": "pre",
+ "state": "post",
  "lines": {
   "open": {
    "at": "2026-11-18T04:29:39.955Z",
@@ -933,5 +933,9 @@
    ]
   }
  },
- "props": {}
+ "props": {},
+ "final": {
+  "away": 78,
+  "home": 72
+ }
 }

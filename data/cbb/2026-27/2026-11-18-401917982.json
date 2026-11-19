@@ -7,18 +7,18 @@
   "id": "2433",
   "abbr": "ULM",
   "name": "UL Monroe Warhawks",
-  "score": 0
+  "score": 67
  },
  "home": {
   "id": "99",
   "abbr": "LSU",
   "name": "LSU Tigers",
-  "score": 0
+  "score": 79
  },
  "neutral": false,
  "venue": "Pete Maravich Assembly Center",
  "seasonType": 2,
- "state": "pre",
+ "state": "post",
  "lines": {
   "open": {
    "at": "2026-11-18T04:29:39.955Z",
@@ -769,5 +769,9 @@
    ]
   }
  },
- "props": {}
+ "props": {},
+ "final": {
+  "away": 67,
+  "home": 79
+ }
 }

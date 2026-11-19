@@ -7,18 +7,18 @@
   "id": "2305",
   "abbr": "KU",
   "name": "Kansas Jayhawks",
-  "score": 0
+  "score": 58
  },
  "home": {
   "id": "135",
   "abbr": "MINN",
   "name": "Minnesota Golden Gophers",
-  "score": 0
+  "score": 76
  },
  "neutral": false,
  "venue": "The Barn by Blue Cross and Blue Shield of Minnesota",
  "seasonType": 2,
- "state": "pre",
+ "state": "post",
  "lines": {
   "open": {
    "at": "2026-11-18T22:02:04.326Z",
@@ -933,5 +933,9 @@
    ]
   }
  },
- "props": {}
+ "props": {},
+ "final": {
+  "away": 58,
+  "home": 76
+ }
 }

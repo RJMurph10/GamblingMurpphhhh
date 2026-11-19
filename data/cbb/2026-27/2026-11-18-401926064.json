@@ -7,18 +7,18 @@
   "id": "233",
   "abbr": "SDAK",
   "name": "South Dakota Coyotes",
-  "score": 0
+  "score": 47
  },
  "home": {
   "id": "158",
   "abbr": "NEB",
   "name": "Nebraska Cornhuskers",
-  "score": 0
+  "score": 73
  },
  "neutral": false,
  "venue": "Pinnacle Bank Arena",
  "seasonType": 2,
- "state": "pre",
+ "state": "post",
  "lines": {
   "open": {
    "at": "2026-11-18T04:29:39.955Z",
@@ -769,5 +769,9 @@
    ]
   }
  },
- "props": {}
+ "props": {},
+ "final": {
+  "away": 47,
+  "home": 73
+ }
 }

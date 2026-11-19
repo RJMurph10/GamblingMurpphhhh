@@ -1,24 +1,24 @@
 {
  "id": "401922283",
  "league": "cbb",
- "date": "2026-11-18T23:30Z",
+ "date": "2026-11-19T01:30Z",
  "name": "SAM @ UPST",
  "away": {
   "id": "2535",
   "abbr": "SAM",
   "name": "Samford Bulldogs",
-  "score": 0
+  "score": 74
  },
  "home": {
   "id": "2908",
   "abbr": "UPST",
   "name": "South Carolina Upstate Spartans",
-  "score": 0
+  "score": 64
  },
  "neutral": false,
- "venue": "G.B. Hodge Center",
+ "venue": "Timmons Arena",
  "seasonType": 2,
- "state": "pre",
+ "state": "post",
  "lines": {
   "open": {
    "at": "2026-11-18T04:29:39.955Z",
@@ -933,5 +933,9 @@
    ]
   }
  },
- "props": {}
+ "props": {},
+ "final": {
+  "away": 74,
+  "home": 64
+ }
 }

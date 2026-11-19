@@ -7,18 +7,18 @@
   "id": "278",
   "abbr": "FRES",
   "name": "Fresno State Bulldogs",
-  "score": 0
+  "score": 65
  },
  "home": {
   "id": "23",
   "abbr": "SJSU",
   "name": "San José State Spartans",
-  "score": 0
+  "score": 70
  },
  "neutral": false,
  "venue": "Provident Credit Union Event Center",
  "seasonType": 2,
- "state": "pre",
+ "state": "in",
  "lines": {
   "open": {
    "at": "2026-11-18T04:29:39.955Z",

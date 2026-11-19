@@ -7,18 +7,18 @@
   "id": "309",
   "abbr": "UL",
   "name": "Louisiana Ragin' Cajuns",
-  "score": 0
+  "score": 16
  },
  "home": {
   "id": "2539",
   "abbr": "SF",
   "name": "San Francisco Dons",
-  "score": 0
+  "score": 24
  },
  "neutral": false,
  "venue": "The Sobrato Center",
  "seasonType": 2,
- "state": "pre",
+ "state": "in",
  "lines": {
   "open": {
    "at": "2026-11-18T04:29:39.955Z",

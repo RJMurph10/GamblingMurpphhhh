@@ -7,18 +7,18 @@
   "id": "160",
   "abbr": "UNH",
   "name": "New Hampshire Wildcats",
-  "score": 0
+  "score": 90
  },
  "home": {
   "id": "284",
   "abbr": "STO",
   "name": "Stonehill Skyhawks",
-  "score": 0
+  "score": 70
  },
  "neutral": false,
  "venue": "Merkert Gymnasium",
  "seasonType": 2,
- "state": "pre",
+ "state": "post",
  "lines": {
   "open": {
    "at": "2026-11-18T04:29:39.955Z",
@@ -933,5 +933,9 @@
    ]
   }
  },
- "props": {}
+ "props": {},
+ "final": {
+  "away": 90,
+  "home": 70
+ }
 }

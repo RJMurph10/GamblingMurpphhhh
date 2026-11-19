@@ -7,18 +7,18 @@
   "id": "2916",
   "abbr": "UIW",
   "name": "Incarnate Word Cardinals",
-  "score": 0
+  "score": 51
  },
  "home": {
   "id": "326",
   "abbr": "TXST",
   "name": "Texas State Bobcats",
-  "score": 0
+  "score": 84
  },
  "neutral": false,
  "venue": "Strahan Arena at the University Events Center",
  "seasonType": 2,
- "state": "pre",
+ "state": "post",
  "lines": {
   "open": {
    "at": "2026-11-18T04:29:39.955Z",
@@ -851,5 +851,9 @@
    ]
   }
  },
- "props": {}
+ "props": {},
+ "final": {
+  "away": 51,
+  "home": 84
+ }
 }

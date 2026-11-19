@@ -7,18 +7,18 @@
   "id": "9",
   "abbr": "GS",
   "name": "Golden State Warriors",
-  "score": 0
+  "score": 94
  },
  "home": {
   "id": "6",
   "abbr": "DAL",
   "name": "Dallas Mavericks",
-  "score": 0
+  "score": 116
  },
  "neutral": false,
  "venue": "American Airlines Center",
  "seasonType": 2,
- "state": "pre",
+ "state": "post",
  "lines": {
   "open": {
    "at": "2026-11-18T04:29:39.955Z",
@@ -4347,5 +4347,9 @@
    "Sergio de Larrea",
    "DAL"
   ]
+ },
+ "final": {
+  "away": 94,
+  "home": 116
  }
 }

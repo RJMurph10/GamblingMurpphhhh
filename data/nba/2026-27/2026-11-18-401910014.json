@@ -7,18 +7,18 @@
   "id": "1",
   "abbr": "ATL",
   "name": "Atlanta Hawks",
-  "score": 0
+  "score": 117
  },
  "home": {
   "id": "25",
   "abbr": "OKC",
   "name": "Oklahoma City Thunder",
-  "score": 0
+  "score": 112
  },
  "neutral": false,
  "venue": "Paycom Center",
  "seasonType": 2,
- "state": "pre",
+ "state": "post",
  "lines": {
   "open": {
    "at": "2026-11-18T04:29:39.955Z",
@@ -4820,5 +4820,9 @@
    "Bennett Stirtz",
    "OKC"
   ]
+ },
+ "final": {
+  "away": 117,
+  "home": 112
  }
 }

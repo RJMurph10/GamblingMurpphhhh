@@ -7,18 +7,18 @@
   "id": "103",
   "abbr": "BC",
   "name": "Boston College Eagles",
-  "score": 0
+  "score": 74
  },
  "home": {
   "id": "108",
   "abbr": "HARV",
   "name": "Harvard Crimson",
-  "score": 0
+  "score": 69
  },
  "neutral": false,
  "venue": "Lavietes Pavilion",
  "seasonType": 2,
- "state": "pre",
+ "state": "post",
  "lines": {
   "open": {
    "at": "2026-11-18T04:29:39.955Z",
@@ -933,5 +933,9 @@
    ]
   }
  },
- "props": {}
+ "props": {},
+ "final": {
+  "away": 74,
+  "home": 69
+ }
 }
