@@ -1,6 +1,6 @@
 {
  "day": "2026-11-19",
- "updated": "2026-11-19T13:57:11.680Z",
+ "updated": "2026-11-19T22:28:41.190Z",
  "picks": [
   {
    "id": "401910019-spread",
@@ -14,8 +14,8 @@
    "edge": 3.9,
    "best": true,
    "firstSeen": "2026-11-19T13:57:11.680Z",
-   "latest": -6.5,
-   "latestAt": "2026-11-19T13:57:11.680Z",
+   "latest": -5.5,
+   "latestAt": "2026-11-19T22:28:41.190Z",
    "alerted": false
   },
   {
@@ -30,8 +30,24 @@
    "edge": 6,
    "best": false,
    "firstSeen": "2026-11-19T13:57:11.680Z",
-   "latest": 226.5,
-   "latestAt": "2026-11-19T13:57:11.680Z",
+   "latest": 225.5,
+   "latestAt": "2026-11-19T22:28:41.190Z",
+   "alerted": false
+  },
+  {
+   "id": "401910020-spread",
+   "game": "POR @ MIL",
+   "tip": "2026-11-20T01:00Z",
+   "market": "spread",
+   "pick": "MIL +11.5",
+   "line": 11.5,
+   "open": 9.5,
+   "model": -9.8,
+   "edge": 1.7,
+   "best": false,
+   "firstSeen": "2026-11-19T22:28:41.190Z",
+   "latest": 11.5,
+   "latestAt": "2026-11-19T22:28:41.190Z",
    "alerted": false
   },
   {
@@ -47,7 +63,7 @@
    "best": true,
    "firstSeen": "2026-11-19T13:57:11.680Z",
    "latest": 1.5,
-   "latestAt": "2026-11-19T13:57:11.680Z",
+   "latestAt": "2026-11-19T22:28:41.190Z",
    "alerted": false
   },
   {
@@ -63,7 +79,7 @@
    "best": true,
    "firstSeen": "2026-11-19T03:52:33.855Z",
    "latest": -15.5,
-   "latestAt": "2026-11-19T13:57:11.680Z",
+   "latestAt": "2026-11-19T22:28:41.190Z",
    "alerted": false
   }
  ]
