@@ -29,7 +29,8 @@ export interface PllStatLine {
   SA?: number;
   Sv?: number;
   SvPct?: number;
-  CSv?: number;
+  /** null before 2022: the PLL kept no clean saves then. */
+  CSv?: number | null;
   GA?: number | null;
 }
 
@@ -156,8 +157,9 @@ export function pllPlayers(): Map<string, PllPlayer> {
 
 export const pllPlayer = (slug: string) => pllPlayers().get(slug);
 
-/** The PLL started keeping touches and passes in 2022; tables for 2019-2021 leave those columns out. */
+/** The PLL started keeping touches, passes and clean saves in 2022; tables for 2019-2021 leave those columns out. */
 export const pllTracksTouches = (season: number) => season >= 2022;
+export const pllTracksCleanSaves = pllTracksTouches;
 
 /**
  * The one club a player spent a whole season with, for that season's logo on his page: undefined when he
