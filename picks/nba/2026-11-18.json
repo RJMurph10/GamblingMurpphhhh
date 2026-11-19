@@ -205,7 +205,12 @@
    "firstSeen": "2026-11-18T13:29:25.888Z",
    "latest": -10.5,
    "latestAt": "2026-11-18T13:29:25.888Z",
-   "alerted": false
+   "alerted": false,
+   "score": [
+    109,
+    97
+   ],
+   "close": -11.5
   },
   {
    "id": "401910017-total",
@@ -221,7 +226,12 @@
    "firstSeen": "2026-11-18T13:29:25.888Z",
    "latest": 231.5,
    "latestAt": "2026-11-18T22:23:15.059Z",
-   "alerted": false
+   "alerted": false,
+   "score": [
+    109,
+    97
+   ],
+   "close": 229.5
   }
  ]
 }
