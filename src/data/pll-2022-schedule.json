@@ -1,0 +1,544 @@
+{
+ "source": "PLL 2022 schedule (weeks, host cities, dates, results; regular season and playoffs) as entered by the site owner from the PLL site, Nov 18 2026. All 46 regular-season and playoff results match ESPN; ESPN dates the championship Sep 19, the PLL Sep 18 (kept). All-Star week (Boston, Jul 16; 33-13) is kept without games: ESPN has no 2022 All-Star game.",
+ "weeks": [
+  {
+   "week": 1,
+   "round": "Regular season",
+   "dates": "Jun 4 - Jun 5",
+   "city": "Albany, NY",
+   "allStar": false,
+   "games": [
+    {
+     "espnId": "401544211",
+     "date": "2022-06-04",
+     "away": "Whipsnakes",
+     "home": "Chaos",
+     "awayScore": 9,
+     "homeScore": 8,
+     "ot": false
+    },
+    {
+     "espnId": "401544226",
+     "date": "2022-06-04",
+     "away": "Redwoods",
+     "home": "Atlas",
+     "awayScore": 11,
+     "homeScore": 17,
+     "ot": false
+    },
+    {
+     "espnId": "401544232",
+     "date": "2022-06-05",
+     "away": "Waterdogs",
+     "home": "Cannons",
+     "awayScore": 10,
+     "homeScore": 16,
+     "ot": false
+    },
+    {
+     "espnId": "401544233",
+     "date": "2022-06-05",
+     "away": "Chrome",
+     "home": "Archers",
+     "awayScore": 11,
+     "homeScore": 10,
+     "ot": false
+    }
+   ]
+  },
+  {
+   "week": 2,
+   "round": "Regular season",
+   "dates": "Jun 10 - Jun 11",
+   "city": "Charlotte, NC",
+   "allStar": false,
+   "games": [
+    {
+     "espnId": "401544228",
+     "date": "2022-06-10",
+     "away": "Chrome",
+     "home": "Redwoods",
+     "awayScore": 12,
+     "homeScore": 3,
+     "ot": false
+    },
+    {
+     "espnId": "401544237",
+     "date": "2022-06-10",
+     "away": "Chaos",
+     "home": "Archers",
+     "awayScore": 12,
+     "homeScore": 17,
+     "ot": false
+    },
+    {
+     "espnId": "401544185",
+     "date": "2022-06-11",
+     "away": "Atlas",
+     "home": "Cannons",
+     "awayScore": 16,
+     "homeScore": 8,
+     "ot": false
+    },
+    {
+     "espnId": "401544212",
+     "date": "2022-06-11",
+     "away": "Whipsnakes",
+     "home": "Waterdogs",
+     "awayScore": 12,
+     "homeScore": 11,
+     "ot": true
+    }
+   ]
+  },
+  {
+   "week": 3,
+   "round": "Regular season",
+   "dates": "Jun 17 - Jun 18",
+   "city": "Long Island, NY",
+   "allStar": false,
+   "games": [
+    {
+     "espnId": "401544238",
+     "date": "2022-06-17",
+     "away": "Waterdogs",
+     "home": "Chrome",
+     "awayScore": 14,
+     "homeScore": 17,
+     "ot": false
+    },
+    {
+     "espnId": "401544186",
+     "date": "2022-06-17",
+     "away": "Atlas",
+     "home": "Whipsnakes",
+     "awayScore": 9,
+     "homeScore": 12,
+     "ot": false
+    },
+    {
+     "espnId": "401544187",
+     "date": "2022-06-18",
+     "away": "Cannons",
+     "home": "Archers",
+     "awayScore": 9,
+     "homeScore": 20,
+     "ot": false
+    },
+    {
+     "espnId": "401544229",
+     "date": "2022-06-18",
+     "away": "Redwoods",
+     "home": "Chaos",
+     "awayScore": 11,
+     "homeScore": 7,
+     "ot": false
+    }
+   ]
+  },
+  {
+   "week": 4,
+   "round": "Regular season",
+   "dates": "Jun 24 - Jun 25",
+   "city": "Baltimore, MD",
+   "allStar": false,
+   "games": [
+    {
+     "espnId": "401544188",
+     "date": "2022-06-24",
+     "away": "Redwoods",
+     "home": "Whipsnakes",
+     "awayScore": 11,
+     "homeScore": 12,
+     "ot": false
+    },
+    {
+     "espnId": "401544213",
+     "date": "2022-06-24",
+     "away": "Chaos",
+     "home": "Waterdogs",
+     "awayScore": 9,
+     "homeScore": 18,
+     "ot": false
+    },
+    {
+     "espnId": "401544189",
+     "date": "2022-06-25",
+     "away": "Cannons",
+     "home": "Chrome",
+     "awayScore": 11,
+     "homeScore": 12,
+     "ot": true
+    },
+    {
+     "espnId": "401544230",
+     "date": "2022-06-25",
+     "away": "Archers",
+     "home": "Atlas",
+     "awayScore": 9,
+     "homeScore": 10,
+     "ot": false
+    }
+   ]
+  },
+  {
+   "week": 5,
+   "round": "Regular season",
+   "dates": "Jul 1 - Jul 2",
+   "city": "Minneapolis, MN",
+   "allStar": false,
+   "games": [
+    {
+     "espnId": "401544215",
+     "date": "2022-07-01",
+     "away": "Archers",
+     "home": "Redwoods",
+     "awayScore": 10,
+     "homeScore": 9,
+     "ot": false
+    },
+    {
+     "espnId": "401544239",
+     "date": "2022-07-01",
+     "away": "Atlas",
+     "home": "Chrome",
+     "awayScore": 14,
+     "homeScore": 13,
+     "ot": false
+    },
+    {
+     "espnId": "401544190",
+     "date": "2022-07-02",
+     "away": "Chaos",
+     "home": "Cannons",
+     "awayScore": 13,
+     "homeScore": 11,
+     "ot": false
+    },
+    {
+     "espnId": "401544216",
+     "date": "2022-07-02",
+     "away": "Whipsnakes",
+     "home": "Waterdogs",
+     "awayScore": 10,
+     "homeScore": 11,
+     "ot": false
+    }
+   ]
+  },
+  {
+   "week": 6,
+   "round": "All-Star",
+   "dates": "Jul 16",
+   "city": "Boston, MA",
+   "allStar": true,
+   "games": []
+  },
+  {
+   "week": 7,
+   "round": "Regular season",
+   "dates": "Jul 23 - Jul 24",
+   "city": "Fairfield, CT",
+   "allStar": false,
+   "games": [
+    {
+     "espnId": "401544231",
+     "date": "2022-07-23",
+     "away": "Redwoods",
+     "home": "Atlas",
+     "awayScore": 16,
+     "homeScore": 15,
+     "ot": false
+    },
+    {
+     "espnId": "401544240",
+     "date": "2022-07-23",
+     "away": "Whipsnakes",
+     "home": "Chaos",
+     "awayScore": 14,
+     "homeScore": 12,
+     "ot": false
+    },
+    {
+     "espnId": "401544217",
+     "date": "2022-07-24",
+     "away": "Cannons",
+     "home": "Archers",
+     "awayScore": 12,
+     "homeScore": 17,
+     "ot": false
+    },
+    {
+     "espnId": "401544234",
+     "date": "2022-07-24",
+     "away": "Chrome",
+     "home": "Waterdogs",
+     "awayScore": 10,
+     "homeScore": 11,
+     "ot": true
+    }
+   ]
+  },
+  {
+   "week": 8,
+   "round": "Regular season",
+   "dates": "Jul 30 - Jul 31",
+   "city": "Dallas, TX",
+   "allStar": false,
+   "games": [
+    {
+     "espnId": "401544235",
+     "date": "2022-07-30",
+     "away": "Archers",
+     "home": "Atlas",
+     "awayScore": 9,
+     "homeScore": 14,
+     "ot": false
+    },
+    {
+     "espnId": "401544241",
+     "date": "2022-07-30",
+     "away": "Chrome",
+     "home": "Whipsnakes",
+     "awayScore": 8,
+     "homeScore": 9,
+     "ot": false
+    },
+    {
+     "espnId": "401544214",
+     "date": "2022-07-31",
+     "away": "Waterdogs",
+     "home": "Cannons",
+     "awayScore": 15,
+     "homeScore": 14,
+     "ot": false
+    },
+    {
+     "espnId": "401544242",
+     "date": "2022-07-31",
+     "away": "Redwoods",
+     "home": "Chaos",
+     "awayScore": 12,
+     "homeScore": 14,
+     "ot": false
+    }
+   ]
+  },
+  {
+   "week": 9,
+   "round": "Regular season",
+   "dates": "Aug 5 - Aug 6",
+   "city": "Denver, CO",
+   "allStar": false,
+   "games": [
+    {
+     "espnId": "401544219",
+     "date": "2022-08-05",
+     "away": "Cannons",
+     "home": "Redwoods",
+     "awayScore": 12,
+     "homeScore": 15,
+     "ot": false
+    },
+    {
+     "espnId": "401544220",
+     "date": "2022-08-06",
+     "away": "Chaos",
+     "home": "Chrome",
+     "awayScore": 9,
+     "homeScore": 13,
+     "ot": false
+    },
+    {
+     "espnId": "401544244",
+     "date": "2022-08-06",
+     "away": "Waterdogs",
+     "home": "Atlas",
+     "awayScore": 16,
+     "homeScore": 15,
+     "ot": true
+    },
+    {
+     "espnId": "401544218",
+     "date": "2022-08-06",
+     "away": "Archers",
+     "home": "Whipsnakes",
+     "awayScore": 11,
+     "homeScore": 13,
+     "ot": false
+    }
+   ]
+  },
+  {
+   "week": 10,
+   "round": "Regular season",
+   "dates": "Aug 12 - Aug 13",
+   "city": "Salt Lake City, UT",
+   "allStar": false,
+   "games": [
+    {
+     "espnId": "401544245",
+     "date": "2022-08-12",
+     "away": "Atlas",
+     "home": "Whipsnakes",
+     "awayScore": 8,
+     "homeScore": 16,
+     "ot": false
+    },
+    {
+     "espnId": "401544224",
+     "date": "2022-08-12",
+     "away": "Waterdogs",
+     "home": "Redwoods",
+     "awayScore": 12,
+     "homeScore": 14,
+     "ot": false
+    },
+    {
+     "espnId": "401544246",
+     "date": "2022-08-13",
+     "away": "Chaos",
+     "home": "Archers",
+     "awayScore": 8,
+     "homeScore": 11,
+     "ot": false
+    },
+    {
+     "espnId": "401544225",
+     "date": "2022-08-13",
+     "away": "Cannons",
+     "home": "Chrome",
+     "awayScore": 9,
+     "homeScore": 11,
+     "ot": false
+    }
+   ]
+  },
+  {
+   "week": 11,
+   "round": "Regular season",
+   "dates": "Aug 20 - Aug 21",
+   "city": "Seattle, WA",
+   "allStar": false,
+   "games": [
+    {
+     "espnId": "401544221",
+     "date": "2022-08-20",
+     "away": "Chrome",
+     "home": "Redwoods",
+     "awayScore": 13,
+     "homeScore": 12,
+     "ot": false
+    },
+    {
+     "espnId": "401544247",
+     "date": "2022-08-20",
+     "away": "Archers",
+     "home": "Waterdogs",
+     "awayScore": 16,
+     "homeScore": 12,
+     "ot": false
+    },
+    {
+     "espnId": "401544236",
+     "date": "2022-08-21",
+     "away": "Whipsnakes",
+     "home": "Cannons",
+     "awayScore": 11,
+     "homeScore": 9,
+     "ot": false
+    },
+    {
+     "espnId": "401544227",
+     "date": "2022-08-21",
+     "away": "Atlas",
+     "home": "Chaos",
+     "awayScore": 10,
+     "homeScore": 9,
+     "ot": false
+    }
+   ]
+  },
+  {
+   "week": 12,
+   "round": "Quarterfinals",
+   "dates": "Sept 3",
+   "city": "Boston, MA",
+   "allStar": false,
+   "games": [
+    {
+     "espnId": "401544248",
+     "date": "2022-09-03",
+     "away": "Chaos",
+     "home": "Chrome",
+     "awayScore": 11,
+     "homeScore": 3,
+     "ot": false
+    },
+    {
+     "espnId": "401544222",
+     "date": "2022-09-03",
+     "away": "Redwoods",
+     "home": "Archers",
+     "awayScore": 8,
+     "homeScore": 13,
+     "ot": false
+    },
+    {
+     "espnId": "401544243",
+     "date": "2022-09-03",
+     "away": "Waterdogs",
+     "home": "Atlas",
+     "awayScore": 19,
+     "homeScore": 14,
+     "ot": false
+    }
+   ]
+  },
+  {
+   "week": 13,
+   "round": "Semifinals",
+   "dates": "Sept 11",
+   "city": "Washington, D.C.",
+   "allStar": false,
+   "games": [
+    {
+     "espnId": "401544223",
+     "date": "2022-09-11",
+     "away": "Waterdogs",
+     "home": "Whipsnakes",
+     "awayScore": 11,
+     "homeScore": 10,
+     "ot": false
+    },
+    {
+     "espnId": "401544249",
+     "date": "2022-09-11",
+     "away": "Chaos",
+     "home": "Archers",
+     "awayScore": 9,
+     "homeScore": 7,
+     "ot": false
+    }
+   ]
+  },
+  {
+   "week": 14,
+   "round": "Championship",
+   "dates": "Sept 18",
+   "city": "Philadelphia, PA",
+   "allStar": false,
+   "games": [
+    {
+     "espnId": "401544250",
+     "date": "2022-09-18",
+     "away": "Chaos",
+     "home": "Waterdogs",
+     "awayScore": 9,
+     "homeScore": 11,
+     "ot": false
+    }
+   ]
+  }
+ ]
+}
