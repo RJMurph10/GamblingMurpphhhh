@@ -71,7 +71,15 @@ def pct_ok(text, num, den):
 
 
 def offensive(s):
-    """P 1G 2G A Sh Sh% | GB TO TCH PAS -> list of readings."""
+    """P 1G 2G A Sh Sh% | GB TO TCH PAS -> list of readings.
+
+    Assists > passes is ruled out only as a tie-break: the PLL does credit an assist with no pass now and
+    then (Chris Sabia, Waterdogs 7/2/2022: 1 A, 0 PAS is the line's only reading)."""
+    strict = _offensive(s, assists_within_passes=True)
+    return strict or _offensive(s, assists_within_passes=False)
+
+
+def _offensive(s, assists_within_passes):
     pre, post = s.split("%")
     out = []
     for cut in range(1, len(pre)):
@@ -82,7 +90,7 @@ def offensive(s):
                 continue
             for GB, TO, TCH, PAS in splits(post, [2, 2, 3, 3]):
                 # touches don't count ground balls (a faceoff man can have 5 GB and 3 touches)
-                if PAS > TCH or A > PAS or TO > TCH or GB > MAX["GB"] or TO > MAX["TO"] or TCH > MAX["TCH"]: continue
+                if PAS > TCH or (assists_within_passes and A > PAS) or TO > TCH or GB > MAX["GB"] or TO > MAX["TO"] or TCH > MAX["TCH"]: continue
                 # every touch ends in a pass, a shot or a turnover (held on all 2,281 lines through Nov 2026)
                 if TCH != PAS + Sh + TO: continue
                 out.append(dict(P=P, G1=g1, G2=g2, A=A, Sh=Sh, GB=GB, TO=TO, TCH=TCH, PAS=PAS))
