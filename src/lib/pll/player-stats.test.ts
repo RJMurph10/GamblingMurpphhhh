@@ -50,6 +50,8 @@ describe("PLL player stats from the Cannons sheets", () => {
     expect(data.games.filter((g) => g.team === "Waterdogs" && g.season === 2022).length).toBe(13);
     expect(data.games.filter((g) => g.team === "Whipsnakes" && g.season === 2022).length).toBe(11);
     expect(data.games.filter((g) => g.team === "Archers" && g.season === 2021).length).toBe(10);
+    expect(data.games.filter((g) => g.team === "Atlas" && g.season === 2021).length).toBe(11);
+    expect(data.games.filter((g) => g.team === "Cannons" && g.season === 2021).length).toBe(10);
     expect(data.games.filter((g) => g.team === "Waterdogs" && g.season === 2025).length).toBe(12);
     expect(data.games.filter((g) => g.team === "Archers" && g.season === 2025).length).toBe(10);
   });
@@ -61,7 +63,7 @@ describe("PLL player stats from the Cannons sheets", () => {
       }
   });
   it("builds players with slugs and kinds", () => {
-    expect(pllPlayers().size).toBe(420);
+    expect(pllPlayers().size).toBe(436);
     const h = pllPlayer(playerSlug("Marcus Holman"));
     expect(h?.games.length).toBeGreaterThan(0);
     expect(playerKind(pllPlayer(playerSlug("Colin Kirst"))!)).toBe("goalie");
@@ -92,6 +94,8 @@ describe("PLL player stats from the Cannons sheets", () => {
     expect(pllTeamPlayers("127637", 2022).length).toBe(25);
     expect(pllTeamPlayers("127638", 2022).length).toBe(23);
     expect(pllTeamPlayers("127631", 2021).length).toBe(23);
+    expect(pllTeamPlayers("127632", 2021).length).toBe(23);
+    expect(pllTeamPlayers("122997", 2021).length).toBe(30);
     expect(pllTeamPlayers("127636", 2025).length).toBe(24);
     expect(pllTeamPlayers("127634", 2025).length).toBe(28);
     expect(pllTeamPlayers("122896", 2025).length).toBe(24);
@@ -177,6 +181,13 @@ describe("the full 2026 season", () => {
   });
 });
 
+/**
+ * Known gaps in the PLL's own box scores (the owner's sheets copy them as they are): scores against a club that
+ * aren't charged to any of its goalies. Atlas at Chrome 7/30/2021: final 19-10 (PLL recap), but JD Colarusso,
+ * the only goalie, is charged 9 (12 saves, 57.1%).
+ */
+const BOX_SCORE_GAPS: Record<string, number> = { "Atlas 2021-07-30": 1 };
+
 describe.each([2021, 2022, 2023, 2024, 2025])("%i sheets", (season) => {
   type Line = { stats?: Record<string, number | null> };
   const goals = (ps: Line[]) => ps.reduce((n, p) => n + (p.stats ? p.stats.P! - p.stats.A! : 0), 0);
@@ -209,7 +220,9 @@ describe.each([2021, 2022, 2023, 2024, 2025])("%i sheets", (season) => {
       expect(e, `${g.date} ${g.team} vs ${g.opponent}`).toBeDefined();
       const score = (t: string) => Number(e!.sides.find((s) => s[1] === t)![3]);
       expect(goals(g.players as unknown as Line[])).toBe(score(g.team));
-      expect(against(g.players as unknown as Line[])).toBe(score(g.opponent));
+      // the PLL's own box score can charge the goalie with one score fewer than the final
+      const gap = BOX_SCORE_GAPS[`${g.team} ${g.date}`] ?? 0;
+      expect(against(g.players as unknown as Line[]) + gap).toBe(score(g.opponent));
     }
   });
 });
