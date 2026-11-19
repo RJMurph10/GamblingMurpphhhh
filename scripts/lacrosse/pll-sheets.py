@@ -90,9 +90,12 @@ def _offensive(s, assists_within_passes):
                 continue
             for GB, TO, TCH, PAS in splits(post, [2, 2, 3, 3]):
                 # touches don't count ground balls (a faceoff man can have 5 GB and 3 touches)
-                if PAS > TCH or (assists_within_passes and A > PAS) or TO > TCH or GB > MAX["GB"] or TO > MAX["TO"] or TCH > MAX["TCH"]: continue
+                # in 2021 the PLL kept no touches or passes (both 0 on every line): the touch rules don't apply
+                tracked = not (TCH == 0 and PAS == 0)
+                if GB > MAX["GB"] or TO > MAX["TO"] or TCH > MAX["TCH"]: continue
+                if tracked and (PAS > TCH or (assists_within_passes and A > PAS) or TO > TCH): continue
                 # every touch ends in a pass, a shot or a turnover (held on all 2,281 lines through Nov 2026)
-                if TCH != PAS + Sh + TO: continue
+                if tracked and TCH != PAS + Sh + TO: continue
                 out.append(dict(P=P, G1=g1, G2=g2, A=A, Sh=Sh, GB=GB, TO=TO, TCH=TCH, PAS=PAS))
     return out
 
@@ -219,6 +222,12 @@ def parse_game(path):
             **({"FOW": f["FOW"], "FOT": f["FOT"]} if f else {}),
             **({"SA": g["SA"], "Sv": g["Sv"], "SvPct": g["SvPct"], "CSv": g["CSv"], "GA": g["GA"]} if g else {}),
         )
+    # a game where nobody has a touch or a pass didn't track them (2021): unknown, not 0
+    stats = [p["stats"] for p in (players.values() if isinstance(players, dict) else players) if p.get("stats")]
+    if stats and not any((x.get("TCH") or 0) or (x.get("PAS") or 0) for x in stats):
+        for x in stats:
+            x["TCH"] = None
+            x["PAS"] = None
     return players, problems
 
 

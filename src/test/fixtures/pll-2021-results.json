@@ -1,0 +1,800 @@
+[
+ {
+  "id": "wiki-2021-01",
+  "date": "2021-06-04T20:00Z",
+  "status": "STATUS_FINAL",
+  "sides": [
+   [
+    "home",
+    "Redwoods",
+    "",
+    "12"
+   ],
+   [
+    "away",
+    "Cannons",
+    "",
+    "11"
+   ]
+  ]
+ },
+ {
+  "id": "wiki-2021-02",
+  "date": "2021-06-05T20:00Z",
+  "status": "STATUS_FINAL",
+  "sides": [
+   [
+    "home",
+    "Chaos",
+    "",
+    "7"
+   ],
+   [
+    "away",
+    "Whipsnakes",
+    "",
+    "13"
+   ]
+  ]
+ },
+ {
+  "id": "wiki-2021-03",
+  "date": "2021-06-05T20:00Z",
+  "status": "STATUS_FINAL",
+  "sides": [
+   [
+    "home",
+    "Atlas",
+    "",
+    "6"
+   ],
+   [
+    "away",
+    "Archers",
+    "",
+    "18"
+   ]
+  ]
+ },
+ {
+  "id": "wiki-2021-04",
+  "date": "2021-06-06T20:00Z",
+  "status": "STATUS_FINAL",
+  "sides": [
+   [
+    "home",
+    "Cannons",
+    "",
+    "13"
+   ],
+   [
+    "away",
+    "Waterdogs",
+    "",
+    "7"
+   ]
+  ]
+ },
+ {
+  "id": "wiki-2021-05",
+  "date": "2021-06-06T20:00Z",
+  "status": "STATUS_FINAL",
+  "sides": [
+   [
+    "home",
+    "Redwoods",
+    "",
+    "14"
+   ],
+   [
+    "away",
+    "Chrome",
+    "",
+    "11"
+   ]
+  ]
+ },
+ {
+  "id": "wiki-2021-06",
+  "date": "2021-06-11T20:00Z",
+  "status": "STATUS_FINAL",
+  "sides": [
+   [
+    "home",
+    "Waterdogs",
+    "",
+    "14"
+   ],
+   [
+    "away",
+    "Chaos",
+    "",
+    "12"
+   ]
+  ]
+ },
+ {
+  "id": "wiki-2021-07",
+  "date": "2021-06-12T20:00Z",
+  "status": "STATUS_FINAL",
+  "sides": [
+   [
+    "home",
+    "Cannons",
+    "",
+    "14"
+   ],
+   [
+    "away",
+    "Whipsnakes",
+    "",
+    "15"
+   ]
+  ]
+ },
+ {
+  "id": "wiki-2021-08",
+  "date": "2021-06-12T20:00Z",
+  "status": "STATUS_FINAL",
+  "sides": [
+   [
+    "home",
+    "Atlas",
+    "",
+    "12"
+   ],
+   [
+    "away",
+    "Redwoods",
+    "",
+    "9"
+   ]
+  ]
+ },
+ {
+  "id": "wiki-2021-09",
+  "date": "2021-06-13T20:00Z",
+  "status": "STATUS_FINAL",
+  "sides": [
+   [
+    "home",
+    "Waterdogs",
+    "",
+    "14"
+   ],
+   [
+    "away",
+    "Chrome",
+    "",
+    "9"
+   ]
+  ]
+ },
+ {
+  "id": "wiki-2021-10",
+  "date": "2021-06-13T20:00Z",
+  "status": "STATUS_FINAL",
+  "sides": [
+   [
+    "home",
+    "Archers",
+    "",
+    "12"
+   ],
+   [
+    "away",
+    "Chaos",
+    "",
+    "8"
+   ]
+  ]
+ },
+ {
+  "id": "wiki-2021-11",
+  "date": "2021-06-25T20:00Z",
+  "status": "STATUS_FINAL",
+  "sides": [
+   [
+    "home",
+    "Atlas",
+    "",
+    "11"
+   ],
+   [
+    "away",
+    "Whipsnakes",
+    "",
+    "12"
+   ]
+  ]
+ },
+ {
+  "id": "wiki-2021-12",
+  "date": "2021-06-26T20:00Z",
+  "status": "STATUS_FINAL",
+  "sides": [
+   [
+    "home",
+    "Chaos",
+    "",
+    "11"
+   ],
+   [
+    "away",
+    "Redwoods",
+    "",
+    "9"
+   ]
+  ]
+ },
+ {
+  "id": "wiki-2021-13",
+  "date": "2021-06-26T20:00Z",
+  "status": "STATUS_FINAL",
+  "sides": [
+   [
+    "home",
+    "Archers",
+    "",
+    "17"
+   ],
+   [
+    "away",
+    "Waterdogs",
+    "",
+    "8"
+   ]
+  ]
+ },
+ {
+  "id": "wiki-2021-14",
+  "date": "2021-06-27T20:00Z",
+  "status": "STATUS_FINAL",
+  "sides": [
+   [
+    "home",
+    "Atlas",
+    "",
+    "18"
+   ],
+   [
+    "away",
+    "Cannons",
+    "",
+    "17"
+   ]
+  ]
+ },
+ {
+  "id": "wiki-2021-15",
+  "date": "2021-06-27T20:00Z",
+  "status": "STATUS_FINAL",
+  "sides": [
+   [
+    "home",
+    "Whipsnakes",
+    "",
+    "6"
+   ],
+   [
+    "away",
+    "Chrome",
+    "",
+    "16"
+   ]
+  ]
+ },
+ {
+  "id": "wiki-2021-16",
+  "date": "2021-07-02T20:00Z",
+  "status": "STATUS_FINAL",
+  "sides": [
+   [
+    "home",
+    "Chrome",
+    "",
+    "8"
+   ],
+   [
+    "away",
+    "Archers",
+    "",
+    "7"
+   ]
+  ]
+ },
+ {
+  "id": "wiki-2021-17",
+  "date": "2021-07-03T20:00Z",
+  "status": "STATUS_FINAL",
+  "sides": [
+   [
+    "home",
+    "Waterdogs",
+    "",
+    "16"
+   ],
+   [
+    "away",
+    "Redwoods",
+    "",
+    "19"
+   ]
+  ]
+ },
+ {
+  "id": "wiki-2021-18",
+  "date": "2021-07-03T20:00Z",
+  "status": "STATUS_FINAL",
+  "sides": [
+   [
+    "home",
+    "Chaos",
+    "",
+    "14"
+   ],
+   [
+    "away",
+    "Cannons",
+    "",
+    "10"
+   ]
+  ]
+ },
+ {
+  "id": "wiki-2021-19",
+  "date": "2021-07-04T20:00Z",
+  "status": "STATUS_FINAL",
+  "sides": [
+   [
+    "home",
+    "Atlas",
+    "",
+    "16"
+   ],
+   [
+    "away",
+    "Chrome",
+    "",
+    "10"
+   ]
+  ]
+ },
+ {
+  "id": "wiki-2021-20",
+  "date": "2021-07-04T20:00Z",
+  "status": "STATUS_FINAL",
+  "sides": [
+   [
+    "home",
+    "Archers",
+    "",
+    "14"
+   ],
+   [
+    "away",
+    "Whipsnakes",
+    "",
+    "15"
+   ]
+  ]
+ },
+ {
+  "id": "wiki-2021-21",
+  "date": "2021-07-09T20:00Z",
+  "status": "STATUS_FINAL",
+  "sides": [
+   [
+    "home",
+    "Cannons",
+    "",
+    "7"
+   ],
+   [
+    "away",
+    "Waterdogs",
+    "",
+    "19"
+   ]
+  ]
+ },
+ {
+  "id": "wiki-2021-22",
+  "date": "2021-07-10T20:00Z",
+  "status": "STATUS_FINAL",
+  "sides": [
+   [
+    "home",
+    "Whipsnakes",
+    "",
+    "7"
+   ],
+   [
+    "away",
+    "Redwoods",
+    "",
+    "13"
+   ]
+  ]
+ },
+ {
+  "id": "wiki-2021-23",
+  "date": "2021-07-10T20:00Z",
+  "status": "STATUS_FINAL",
+  "sides": [
+   [
+    "home",
+    "Chaos",
+    "",
+    "10"
+   ],
+   [
+    "away",
+    "Atlas",
+    "",
+    "16"
+   ]
+  ]
+ },
+ {
+  "id": "wiki-2021-24",
+  "date": "2021-07-11T20:00Z",
+  "status": "STATUS_FINAL",
+  "sides": [
+   [
+    "home",
+    "Waterdogs",
+    "",
+    "12"
+   ],
+   [
+    "away",
+    "Chrome",
+    "",
+    "6"
+   ]
+  ]
+ },
+ {
+  "id": "wiki-2021-25",
+  "date": "2021-07-11T20:00Z",
+  "status": "STATUS_FINAL",
+  "sides": [
+   [
+    "home",
+    "Archers",
+    "",
+    "12"
+   ],
+   [
+    "away",
+    "Cannons",
+    "",
+    "13"
+   ]
+  ]
+ },
+ {
+  "id": "wiki-2021-27",
+  "date": "2021-07-30T20:00Z",
+  "status": "STATUS_FINAL",
+  "sides": [
+   [
+    "home",
+    "Chrome",
+    "",
+    "10"
+   ],
+   [
+    "away",
+    "Atlas",
+    "",
+    "19"
+   ]
+  ]
+ },
+ {
+  "id": "wiki-2021-28",
+  "date": "2021-07-31T20:00Z",
+  "status": "STATUS_FINAL",
+  "sides": [
+   [
+    "home",
+    "Redwoods",
+    "",
+    "12"
+   ],
+   [
+    "away",
+    "Archers",
+    "",
+    "15"
+   ]
+  ]
+ },
+ {
+  "id": "wiki-2021-29",
+  "date": "2021-07-31T20:00Z",
+  "status": "STATUS_FINAL",
+  "sides": [
+   [
+    "home",
+    "Whipsnakes",
+    "",
+    "6"
+   ],
+   [
+    "away",
+    "Waterdogs",
+    "",
+    "11"
+   ]
+  ]
+ },
+ {
+  "id": "wiki-2021-30",
+  "date": "2021-08-01T20:00Z",
+  "status": "STATUS_FINAL",
+  "sides": [
+   [
+    "home",
+    "Chrome",
+    "",
+    "12"
+   ],
+   [
+    "away",
+    "Chaos",
+    "",
+    "14"
+   ]
+  ]
+ },
+ {
+  "id": "wiki-2021-31",
+  "date": "2021-08-01T20:00Z",
+  "status": "STATUS_FINAL",
+  "sides": [
+   [
+    "home",
+    "Cannons",
+    "",
+    "12"
+   ],
+   [
+    "away",
+    "Atlas",
+    "",
+    "13"
+   ]
+  ]
+ },
+ {
+  "id": "wiki-2021-32",
+  "date": "2021-08-13T20:00Z",
+  "status": "STATUS_FINAL",
+  "sides": [
+   [
+    "home",
+    "Whipsnakes",
+    "",
+    "14"
+   ],
+   [
+    "away",
+    "Redwoods",
+    "",
+    "12"
+   ]
+  ]
+ },
+ {
+  "id": "wiki-2021-33",
+  "date": "2021-08-13T20:00Z",
+  "status": "STATUS_FINAL",
+  "sides": [
+   [
+    "home",
+    "Chaos",
+    "",
+    "11"
+   ],
+   [
+    "away",
+    "Archers",
+    "",
+    "9"
+   ]
+  ]
+ },
+ {
+  "id": "wiki-2021-34",
+  "date": "2021-08-14T20:00Z",
+  "status": "STATUS_FINAL",
+  "sides": [
+   [
+    "home",
+    "Waterdogs",
+    "",
+    "10"
+   ],
+   [
+    "away",
+    "Atlas",
+    "",
+    "9"
+   ]
+  ]
+ },
+ {
+  "id": "wiki-2021-35",
+  "date": "2021-08-14T20:00Z",
+  "status": "STATUS_FINAL",
+  "sides": [
+   [
+    "home",
+    "Chrome",
+    "",
+    "10"
+   ],
+   [
+    "away",
+    "Cannons",
+    "",
+    "13"
+   ]
+  ]
+ },
+ {
+  "id": "wiki-2021-36",
+  "date": "2021-08-15T20:00Z",
+  "status": "STATUS_FINAL",
+  "sides": [
+   [
+    "home",
+    "Redwoods",
+    "",
+    "10"
+   ],
+   [
+    "away",
+    "Chaos",
+    "",
+    "9"
+   ]
+  ]
+ },
+ {
+  "id": "wiki-2021-37",
+  "date": "2021-08-15T20:00Z",
+  "status": "STATUS_FINAL",
+  "sides": [
+   [
+    "home",
+    "Whipsnakes",
+    "",
+    "14"
+   ],
+   [
+    "away",
+    "Archers",
+    "",
+    "15"
+   ]
+  ]
+ },
+ {
+  "id": "wiki-2021-38",
+  "date": "2021-08-20T20:00Z",
+  "status": "STATUS_FINAL",
+  "sides": [
+   [
+    "home",
+    "Chaos",
+    "",
+    "13"
+   ],
+   [
+    "away",
+    "Archers",
+    "",
+    "10"
+   ]
+  ]
+ },
+ {
+  "id": "wiki-2021-39",
+  "date": "2021-08-21T20:00Z",
+  "status": "STATUS_FINAL",
+  "sides": [
+   [
+    "home",
+    "Cannons",
+    "",
+    "9"
+   ],
+   [
+    "away",
+    "Atlas",
+    "",
+    "13"
+   ]
+  ]
+ },
+ {
+  "id": "wiki-2021-40",
+  "date": "2021-08-21T20:00Z",
+  "status": "STATUS_FINAL",
+  "sides": [
+   [
+    "home",
+    "Redwoods",
+    "",
+    "13"
+   ],
+   [
+    "away",
+    "Whipsnakes",
+    "",
+    "14"
+   ]
+  ]
+ },
+ {
+  "id": "wiki-2021-41",
+  "date": "2021-09-05T20:00Z",
+  "status": "STATUS_FINAL",
+  "sides": [
+   [
+    "home",
+    "Chaos",
+    "",
+    "15"
+   ],
+   [
+    "away",
+    "Atlas",
+    "",
+    "9"
+   ]
+  ]
+ },
+ {
+  "id": "wiki-2021-42",
+  "date": "2021-09-05T20:00Z",
+  "status": "STATUS_FINAL",
+  "sides": [
+   [
+    "home",
+    "Whipsnakes",
+    "",
+    "14"
+   ],
+   [
+    "away",
+    "Waterdogs",
+    "",
+    "10"
+   ]
+  ]
+ },
+ {
+  "id": "wiki-2021-43",
+  "date": "2021-09-19T20:00Z",
+  "status": "STATUS_FINAL",
+  "sides": [
+   [
+    "home",
+    "Chaos",
+    "",
+    "14"
+   ],
+   [
+    "away",
+    "Whipsnakes",
+    "",
+    "9"
+   ]
+  ]
+ }
+]

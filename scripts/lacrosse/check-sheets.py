@@ -5,11 +5,13 @@ ESPN results come from src/test/fixtures/pll-<season>-espn.json (one row per gam
 sides [[homeAway, shortName, abbr, score]]). A game passes when the team's goals (2-pointers count 2)
 equal its ESPN score and its goalies' scores-against equal the opponent's.
 """
-import json, sys, datetime as dt, collections
+import json, os, sys, datetime as dt, collections
 
 team, season = sys.argv[1], int(sys.argv[2])
 data = json.load(open(sys.argv[3] if len(sys.argv) > 3 else "src/data/pll-player-games.json"))
-espn = json.load(open(f"src/test/fixtures/pll-{season}-espn.json"))
+# 2019-2021 aren't on ESPN: their results come from the site's Wikipedia data, in the same shape
+_fx = f"src/test/fixtures/pll-{season}-espn.json"
+espn = json.load(open(_fx if os.path.exists(_fx) else f"src/test/fixtures/pll-{season}-results.json"))
 goals = lambda g: sum(p["stats"]["P"] - p["stats"]["A"] for p in g["players"])
 against = lambda g: sum(p["stats"].get("SA") or 0 for p in g["players"])
 mine = [g for g in data["games"] if g["team"] == team and g["season"] == season]
