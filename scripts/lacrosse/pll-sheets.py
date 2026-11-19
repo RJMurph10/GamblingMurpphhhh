@@ -248,6 +248,10 @@ def main():
             print("EMPTY SHEET, skipped:", f.name); continue
         for pr in problems: pr["game"] = f.name
         all_problems += problems
+        # the PLL kept no clean saves before 2022 (0 on every 2021 goalie line, owner Nov 18): unknown, not 0
+        if season <= 2021:
+            for p in players.values():
+                if "CSv" in p.get("stats", {}): p["stats"]["CSv"] = None
         data["games"].append(dict(team=team, season=season, date=date, opponent=opp, file=f.name, players=[
             dict(name=p["name"], pos=p["pos"], num=p["num"] or NUM_FIX.get(p["name"]), **({"stats": p["stats"]} if "stats" in p else {}))
             for p in players.values()]))

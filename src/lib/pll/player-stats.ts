@@ -17,7 +17,8 @@ export interface PllStatLine {
   GB: number;
   /** Turnovers and passes are on the sheet's offensive lines only: null when the player had none. */
   TO: number | null;
-  TCH: number;
+  /** null in 2019-2021: the PLL kept no touches or passes then. */
+  TCH: number | null;
   PAS: number | null;
   /** Caused turnovers and penalties are on the defensive lines only. */
   CT: number | null;
@@ -28,7 +29,8 @@ export interface PllStatLine {
   SA?: number;
   Sv?: number;
   SvPct?: number;
-  CSv?: number;
+  /** null before 2022: the PLL kept no clean saves then. */
+  CSv?: number | null;
   GA?: number | null;
 }
 
@@ -155,6 +157,10 @@ export function pllPlayers(): Map<string, PllPlayer> {
 
 export const pllPlayer = (slug: string) => pllPlayers().get(slug);
 
+/** The PLL started keeping touches, passes and clean saves in 2022; tables for 2019-2021 leave those columns out. */
+export const pllTracksTouches = (season: number) => season >= 2022;
+export const pllTracksCleanSaves = pllTracksTouches;
+
 /**
  * The one club a player spent a whole season with, for that season's logo on his page: undefined when he
  * played for two clubs that season (a mid-season move), so the page keeps his current club.
@@ -188,7 +194,8 @@ export interface PllTotals {
   /** null when no game had the stat. */
   TO: number | null;
   CT: number | null;
-  TCH: number;
+  /** null when no game had it: the PLL kept no touches before 2022. */
+  TCH: number | null;
   FOW: number;
   FOT: number;
   foPct: number | null;
@@ -228,7 +235,7 @@ export function totalsOf(games: PllPlayerGame[]): PllTotals {
     GB: s("GB"),
     TO: sumKnown(games.map((g) => g.stats.TO)),
     CT: sumKnown(games.map((g) => g.stats.CT)),
-    TCH: s("TCH"),
+    TCH: sumKnown(games.map((g) => g.stats.TCH)),
     FOW,
     FOT,
     foPct: FOT ? FOW / FOT : null,

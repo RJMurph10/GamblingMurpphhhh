@@ -6,6 +6,8 @@ import {
   pllPlayer,
   pllPlayers,
   pllSeasonClub,
+  pllTracksCleanSaves,
+  pllTracksTouches,
   pllTeamPlayers,
   totalsOf,
 } from "./player-stats";
@@ -232,5 +234,29 @@ describe("2021 sheets: touches and passes weren't tracked", () => {
       expect((p.stats as Record<string, unknown>).TCH).toBeNull();
       expect((p.stats as Record<string, unknown>).PAS).toBeNull();
     }
+  });
+});
+
+describe("touches before 2022", () => {
+  it("are left out of 2019-2021 tables and are unknown in 2021 totals", () => {
+    expect(pllTracksTouches(2021)).toBe(false);
+    expect(pllTracksTouches(2022)).toBe(true);
+    const p = pllPlayer(playerSlug("Grant Ament"))!;
+    expect(totalsOf(p.games.filter((g) => g.season === 2021)).TCH).toBeNull();
+    expect(totalsOf(p.games.filter((g) => g.season === 2022)).TCH).toBeGreaterThan(0);
+  });
+});
+
+describe("clean saves before 2022", () => {
+  it("are unknown (null) on 2021 goalie lines and tracked from 2022", () => {
+    expect(pllTracksCleanSaves(2021)).toBe(false);
+    const goalie = (season: number) =>
+      data.games
+        .filter((g) => g.season === season)
+        .flatMap((g) => g.players.map((p) => p.stats as Record<string, unknown> | undefined))
+        .filter((s) => s && s.Sv != null);
+    expect(goalie(2021).length).toBeGreaterThan(0);
+    for (const s of goalie(2021)) expect(s!.CSv).toBeNull();
+    expect(goalie(2022).some((s) => (s!.CSv as number) > 0)).toBe(true);
   });
 });
