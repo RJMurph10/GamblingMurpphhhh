@@ -1,0 +1,410 @@
+{
+ "source": "PLL 2021 regular-season schedule (weeks, host cities, dates, results) as entered by the site owner from the PLL site, Nov 19 2026. Tied to the site's 2021 games (Wikipedia ids). All 36 regular-season games match; two corrections from the PLL's own recaps: Archers at Redwoods Jul 31 was 15-12 (the schedule page says 13-12), and Waterdogs-Whipsnakes was Sun Aug 1 (Wikipedia had Jul 31). The All-Star game (San Jose, Jul 18, 23-21) is tied to the site's wiki-2021-26.",
+ "weeks": [
+  {
+   "week": 1,
+   "round": "Regular season",
+   "dates": "Jun 4 - Jun 6",
+   "city": "Boston, MA",
+   "allStar": false,
+   "games": [
+    {
+     "espnId": "wiki-2021-01",
+     "date": "2021-06-04",
+     "away": "Cannons",
+     "home": "Redwoods",
+     "awayScore": 11,
+     "homeScore": 12,
+     "ot": false
+    },
+    {
+     "espnId": "wiki-2021-02",
+     "date": "2021-06-05",
+     "away": "Whipsnakes",
+     "home": "Chaos",
+     "awayScore": 13,
+     "homeScore": 7,
+     "ot": false
+    },
+    {
+     "espnId": "wiki-2021-03",
+     "date": "2021-06-05",
+     "away": "Archers",
+     "home": "Atlas",
+     "awayScore": 18,
+     "homeScore": 6,
+     "ot": false
+    },
+    {
+     "espnId": "wiki-2021-04",
+     "date": "2021-06-06",
+     "away": "Waterdogs",
+     "home": "Cannons",
+     "awayScore": 7,
+     "homeScore": 13,
+     "ot": false
+    },
+    {
+     "espnId": "wiki-2021-05",
+     "date": "2021-06-06",
+     "away": "Chrome",
+     "home": "Redwoods",
+     "awayScore": 11,
+     "homeScore": 14,
+     "ot": false
+    }
+   ]
+  },
+  {
+   "week": 2,
+   "round": "Regular season",
+   "dates": "Jun 11 - Jun 13",
+   "city": "Atlanta, GA",
+   "allStar": false,
+   "games": [
+    {
+     "espnId": "wiki-2021-06",
+     "date": "2021-06-11",
+     "away": "Chaos",
+     "home": "Waterdogs",
+     "awayScore": 12,
+     "homeScore": 14,
+     "ot": false
+    },
+    {
+     "espnId": "wiki-2021-07",
+     "date": "2021-06-12",
+     "away": "Whipsnakes",
+     "home": "Cannons",
+     "awayScore": 15,
+     "homeScore": 14,
+     "ot": true
+    },
+    {
+     "espnId": "wiki-2021-08",
+     "date": "2021-06-12",
+     "away": "Redwoods",
+     "home": "Atlas",
+     "awayScore": 9,
+     "homeScore": 12,
+     "ot": false
+    },
+    {
+     "espnId": "wiki-2021-09",
+     "date": "2021-06-13",
+     "away": "Chrome",
+     "home": "Waterdogs",
+     "awayScore": 9,
+     "homeScore": 14,
+     "ot": false
+    },
+    {
+     "espnId": "wiki-2021-10",
+     "date": "2021-06-13",
+     "away": "Chaos",
+     "home": "Archers",
+     "awayScore": 8,
+     "homeScore": 12,
+     "ot": false
+    }
+   ]
+  },
+  {
+   "week": 3,
+   "round": "Regular season",
+   "dates": "Jun 25 - Jun 27",
+   "city": "Baltimore, MD",
+   "allStar": false,
+   "games": [
+    {
+     "espnId": "wiki-2021-11",
+     "date": "2021-06-25",
+     "away": "Whipsnakes",
+     "home": "Atlas",
+     "awayScore": 12,
+     "homeScore": 11,
+     "ot": true
+    },
+    {
+     "espnId": "wiki-2021-12",
+     "date": "2021-06-26",
+     "away": "Redwoods",
+     "home": "Chaos",
+     "awayScore": 9,
+     "homeScore": 11,
+     "ot": false
+    },
+    {
+     "espnId": "wiki-2021-13",
+     "date": "2021-06-26",
+     "away": "Waterdogs",
+     "home": "Archers",
+     "awayScore": 8,
+     "homeScore": 17,
+     "ot": false
+    },
+    {
+     "espnId": "wiki-2021-14",
+     "date": "2021-06-27",
+     "away": "Cannons",
+     "home": "Atlas",
+     "awayScore": 17,
+     "homeScore": 18,
+     "ot": false
+    },
+    {
+     "espnId": "wiki-2021-15",
+     "date": "2021-06-27",
+     "away": "Chrome",
+     "home": "Whipsnakes",
+     "awayScore": 16,
+     "homeScore": 6,
+     "ot": false
+    }
+   ]
+  },
+  {
+   "week": 4,
+   "round": "Regular season",
+   "dates": "Jul 2 - Jul 4",
+   "city": "Long Island, NY",
+   "allStar": false,
+   "games": [
+    {
+     "espnId": "wiki-2021-16",
+     "date": "2021-07-02",
+     "away": "Archers",
+     "home": "Chrome",
+     "awayScore": 7,
+     "homeScore": 8,
+     "ot": false
+    },
+    {
+     "espnId": "wiki-2021-17",
+     "date": "2021-07-03",
+     "away": "Redwoods",
+     "home": "Waterdogs",
+     "awayScore": 19,
+     "homeScore": 16,
+     "ot": false
+    },
+    {
+     "espnId": "wiki-2021-18",
+     "date": "2021-07-03",
+     "away": "Cannons",
+     "home": "Chaos",
+     "awayScore": 10,
+     "homeScore": 14,
+     "ot": false
+    },
+    {
+     "espnId": "wiki-2021-20",
+     "date": "2021-07-04",
+     "away": "Whipsnakes",
+     "home": "Archers",
+     "awayScore": 15,
+     "homeScore": 14,
+     "ot": false
+    },
+    {
+     "espnId": "wiki-2021-19",
+     "date": "2021-07-04",
+     "away": "Chrome",
+     "home": "Atlas",
+     "awayScore": 10,
+     "homeScore": 16,
+     "ot": false
+    }
+   ]
+  },
+  {
+   "week": 5,
+   "round": "Regular season",
+   "dates": "Jul 9 - Jul 11",
+   "city": "Minneapolis, MN",
+   "allStar": false,
+   "games": [
+    {
+     "espnId": "wiki-2021-21",
+     "date": "2021-07-09",
+     "away": "Waterdogs",
+     "home": "Cannons",
+     "awayScore": 19,
+     "homeScore": 7,
+     "ot": false
+    },
+    {
+     "espnId": "wiki-2021-22",
+     "date": "2021-07-10",
+     "away": "Redwoods",
+     "home": "Whipsnakes",
+     "awayScore": 13,
+     "homeScore": 7,
+     "ot": false
+    },
+    {
+     "espnId": "wiki-2021-23",
+     "date": "2021-07-10",
+     "away": "Atlas",
+     "home": "Chaos",
+     "awayScore": 16,
+     "homeScore": 10,
+     "ot": false
+    },
+    {
+     "espnId": "wiki-2021-24",
+     "date": "2021-07-11",
+     "away": "Chrome",
+     "home": "Waterdogs",
+     "awayScore": 6,
+     "homeScore": 12,
+     "ot": false
+    },
+    {
+     "espnId": "wiki-2021-25",
+     "date": "2021-07-11",
+     "away": "Cannons",
+     "home": "Archers",
+     "awayScore": 13,
+     "homeScore": 12,
+     "ot": false
+    }
+   ]
+  },
+  {
+   "week": 6,
+   "round": "All-Star",
+   "dates": "Jul 18",
+   "city": "San Jose, CA",
+   "allStar": true,
+   "games": [
+    {
+     "espnId": "wiki-2021-26",
+     "date": "2021-07-18",
+     "away": "All-Star A",
+     "home": "All-Star H",
+     "awayScore": 23,
+     "homeScore": 21,
+     "ot": false
+    }
+   ]
+  },
+  {
+   "week": 7,
+   "round": "Regular season",
+   "dates": "Jul 30 - Aug 1",
+   "city": "Colorado Springs, CO",
+   "allStar": false,
+   "games": [
+    {
+     "espnId": "wiki-2021-27",
+     "date": "2021-07-30",
+     "away": "Atlas",
+     "home": "Chrome",
+     "awayScore": 19,
+     "homeScore": 10,
+     "ot": false
+    },
+    {
+     "espnId": "wiki-2021-28",
+     "date": "2021-07-31",
+     "away": "Archers",
+     "home": "Redwoods",
+     "awayScore": 15,
+     "homeScore": 12,
+     "ot": false
+    },
+    {
+     "espnId": "wiki-2021-29",
+     "date": "2021-08-01",
+     "away": "Waterdogs",
+     "home": "Whipsnakes",
+     "awayScore": 11,
+     "homeScore": 6,
+     "ot": false
+    },
+    {
+     "espnId": "wiki-2021-30",
+     "date": "2021-08-01",
+     "away": "Chaos",
+     "home": "Chrome",
+     "awayScore": 14,
+     "homeScore": 12,
+     "ot": false
+    },
+    {
+     "espnId": "wiki-2021-31",
+     "date": "2021-08-01",
+     "away": "Atlas",
+     "home": "Cannons",
+     "awayScore": 13,
+     "homeScore": 12,
+     "ot": false
+    }
+   ]
+  },
+  {
+   "week": 8,
+   "round": "Regular season",
+   "dates": "Aug 13 - Aug 15",
+   "city": "Albany, NY",
+   "allStar": false,
+   "games": [
+    {
+     "espnId": "wiki-2021-32",
+     "date": "2021-08-13",
+     "away": "Redwoods",
+     "home": "Whipsnakes",
+     "awayScore": 12,
+     "homeScore": 14,
+     "ot": false
+    },
+    {
+     "espnId": "wiki-2021-33",
+     "date": "2021-08-13",
+     "away": "Archers",
+     "home": "Chaos",
+     "awayScore": 9,
+     "homeScore": 11,
+     "ot": false
+    },
+    {
+     "espnId": "wiki-2021-34",
+     "date": "2021-08-14",
+     "away": "Atlas",
+     "home": "Waterdogs",
+     "awayScore": 9,
+     "homeScore": 10,
+     "ot": false
+    },
+    {
+     "espnId": "wiki-2021-35",
+     "date": "2021-08-14",
+     "away": "Cannons",
+     "home": "Chrome",
+     "awayScore": 13,
+     "homeScore": 10,
+     "ot": false
+    },
+    {
+     "espnId": "wiki-2021-36",
+     "date": "2021-08-15",
+     "away": "Chaos",
+     "home": "Redwoods",
+     "awayScore": 9,
+     "homeScore": 10,
+     "ot": false
+    },
+    {
+     "espnId": "wiki-2021-37",
+     "date": "2021-08-15",
+     "away": "Archers",
+     "home": "Whipsnakes",
+     "awayScore": 15,
+     "homeScore": 14,
+     "ot": true
+    }
+   ]
+  }
+ ]
+}

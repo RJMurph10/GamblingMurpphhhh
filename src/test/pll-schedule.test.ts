@@ -1,5 +1,6 @@
 import { describe, expect, it } from "vitest";
 import data from "@/data/pll-2026-schedule.json";
+import s2021 from "@/data/pll-2021-schedule.json";
 import s2022 from "@/data/pll-2022-schedule.json";
 import s2023 from "@/data/pll-2023-schedule.json";
 import s2024 from "@/data/pll-2024-schedule.json";
@@ -158,5 +159,25 @@ describe("PLL 2022 schedule (owner-entered)", () => {
       label: "Championship",
       city: "Philadelphia, PA",
     });
+  });
+});
+
+describe("PLL 2021 schedule (owner-entered; tied to the site's Wikipedia games)", () => {
+  it("has 8 weeks: 36 regular-season games and the All-Star game", () => {
+    expect(pllWeeks(2021)).toHaveLength(8);
+    const games = s2021.weeks.flatMap((w) => w.games);
+    expect(games).toHaveLength(37);
+    expect(games.every((g) => g.espnId?.startsWith("wiki-2021-"))).toBe(true);
+    expect(pllWeekOf("wiki-2021-26")).toMatchObject({ label: "All-Star", city: "San Jose, CA" });
+  });
+  it("keeps the PLL recaps' corrections", () => {
+    const games = s2021.weeks.flatMap((w) => w.games);
+    expect(games.find((g) => g.away === "Archers" && g.home === "Redwoods")).toMatchObject({
+      awayScore: 15,
+      homeScore: 12,
+    });
+    const wat = games.find((g) => g.away === "Waterdogs" && g.home === "Whipsnakes")!;
+    expect(wat.date).toBe("2021-08-01");
+    expect(pllWeekOf(wat.espnId)).toMatchObject({ label: "Week 7", city: "Colorado Springs, CO" });
   });
 });
