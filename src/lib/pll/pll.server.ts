@@ -241,11 +241,12 @@ export function withEraLogos(s: PllSeason): PllSeason {
   const y = s.season;
   return {
     ...s,
-    // the week and host city from the owner-entered schedule (2022 on)
+    // the week and host city from the owner-entered schedule (2021 on)
     games: s.games.map((g) => {
       const w = pllWeekOf(g.id);
       const tv = pllTvOf(g.id);
-      const out = w && !g.city ? { ...g, city: w.city, week: w.week, weekLabel: w.label } : g;
+      // 2019-2021 games already carry Wikipedia's city; the week label still applies
+      const out = w ? { ...g, city: g.city || w.city, week: w.week, weekLabel: w.label } : g;
       return tv ? { ...out, tv } : out;
     }),
     teams: s.teams.map((t) => {

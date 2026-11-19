@@ -514,7 +514,7 @@
  },
  {
   "id": "wiki-2021-29",
-  "date": "2021-07-31T20:00Z",
+  "date": "2021-08-01T20:00Z",
   "status": "STATUS_FINAL",
   "sides": [
    [
@@ -690,15 +690,15 @@
   "sides": [
    [
     "home",
-    "Chaos",
-    "",
-    "13"
-   ],
-   [
-    "away",
     "Archers",
     "",
     "10"
+   ],
+   [
+    "away",
+    "Chaos",
+    "",
+    "13"
    ]
   ]
  },
@@ -709,15 +709,15 @@
   "sides": [
    [
     "home",
-    "Cannons",
-    "",
-    "9"
-   ],
-   [
-    "away",
     "Atlas",
     "",
     "13"
+   ],
+   [
+    "away",
+    "Cannons",
+    "",
+    "9"
    ]
   ]
  },
@@ -747,15 +747,15 @@
   "sides": [
    [
     "home",
-    "Chaos",
-    "",
-    "15"
-   ],
-   [
-    "away",
     "Atlas",
     "",
     "9"
+   ],
+   [
+    "away",
+    "Chaos",
+    "",
+    "15"
    ]
   ]
  },
@@ -766,15 +766,15 @@
   "sides": [
    [
     "home",
-    "Whipsnakes",
-    "",
-    "14"
-   ],
-   [
-    "away",
     "Waterdogs",
     "",
     "10"
+   ],
+   [
+    "away",
+    "Whipsnakes",
+    "",
+    "14"
    ]
   ]
  },
@@ -785,15 +785,15 @@
   "sides": [
    [
     "home",
-    "Chaos",
-    "",
-    "14"
-   ],
-   [
-    "away",
     "Whipsnakes",
     "",
     "9"
+   ],
+   [
+    "away",
+    "Chaos",
+    "",
+    "14"
    ]
   ]
  }
