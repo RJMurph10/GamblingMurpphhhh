@@ -418,8 +418,8 @@
    ]
   },
   "latest": {
-   "at": "2026-11-20T09:56:38.905Z",
-   "count": 1143,
+   "at": "2026-11-20T13:00:44.718Z",
+   "count": 1144,
    "rows": [
   {"a":"4426338","t":"Total Passing Yards (incl. overtime)","ti":"8","op":[218.5,null,null],"cur":[215.5,null,null]},
   {"a":"4426338","t":"Total Passing Yards (incl. overtime)","ti":"8","op":[218.5,null,null],"cur":[215.5,null,null]},
@@ -453,6 +453,8 @@
   {"a":"4702555","t":"Total Rushing Yards (incl. overtime)","ti":"12","op":[64.5,null,null],"cur":[68.5,null,null]},
   {"a":"4837248","t":"Total Rushing Yards (incl. overtime)","ti":"12","op":[16.5,null,null],"cur":[18.5,null,null]},
   {"a":"4837248","t":"Total Rushing Yards (incl. overtime)","ti":"12","op":[16.5,null,null],"cur":[18.5,null,null]},
+  {"a":"4890973","t":"Total Rushing Yards (incl. overtime)","ti":"12","op":[32.5,null,null],"cur":[31.5,null,null]},
+  {"a":"4890973","t":"Total Rushing Yards (incl. overtime)","ti":"12","op":[32.5,null,null],"cur":[31.5,null,null]},
   {"a":"3051876","t":"Total Receiving Yards (incl. overtime)","ti":"13","op":[21.5,null,null],"cur":[21.5,null,null]},
   {"a":"3051876","t":"Total Receiving Yards (incl. overtime)","ti":"13","op":[21.5,null,null],"cur":[21.5,null,null]},
   {"a":"3128429","t":"Total Receiving Yards (incl. overtime)","ti":"13","op":[35.5,null,null],"cur":[35.5,null,null]},
@@ -897,8 +899,8 @@
   {"a":"4837248","t":"1st Half Total Passing Yards","ti":"186","op":[72.5,null,null],"cur":[73.5,null,null]},
   {"a":"3051876","t":"1st Half Total Receiving Yards","ti":"187","op":[9.5,null,null],"cur":[9.5,null,null]},
   {"a":"3051876","t":"1st Half Total Receiving Yards","ti":"187","op":[9.5,null,null],"cur":[9.5,null,null]},
-  {"a":"3128429","t":"1st Half Total Receiving Yards","ti":"187","op":[17.5,null,null],"cur":[17.5,null,null]},
-  {"a":"3128429","t":"1st Half Total Receiving Yards","ti":"187","op":[17.5,null,null],"cur":[17.5,null,null]},
+  {"a":"3128429","t":"1st Half Total Receiving Yards","ti":"187","op":[17.5,null,null],"cur":[18.5,null,null]},
+  {"a":"3128429","t":"1st Half Total Receiving Yards","ti":"187","op":[17.5,null,null],"cur":[18.5,null,null]},
   {"a":"4372016","t":"1st Half Total Receiving Yards","ti":"187","op":[21.5,null,null],"cur":[21.5,null,null]},
   {"a":"4372016","t":"1st Half Total Receiving Yards","ti":"187","op":[21.5,null,null],"cur":[21.5,null,null]},
   {"a":"4600981","t":"1st Half Total Receiving Yards","ti":"187","op":[12.5,null,null],"cur":[12.5,null,null]},
@@ -1085,7 +1087,6 @@
   {"a":"4426338","t":"Rushing Yards Milestones","ti":"196","op":[12,null,null],"cur":[40,null,null]},
   {"a":"4426338","t":"Rushing Yards Milestones","ti":"196","op":[12,null,null],"cur":[50,null,null]},
   {"a":"4426338","t":"Rushing Yards Milestones","ti":"196","op":[12,null,null],"cur":[60,null,null]},
-  {"a":"4426338","t":"Rushing Yards Milestones","ti":"196","op":[12,null,null],"cur":[70,null,null]},
   {"a":"4426338","t":"Rushing Yards Milestones","ti":"196","op":[12,null,null],"cur":[11,null,null]},
   {"a":"4686658","t":"Rushing Yards Milestones","ti":"196","op":[30,null,null],"cur":[10,null,null]},
   {"a":"4686658","t":"Rushing Yards Milestones","ti":"196","op":[30,null,null],"cur":[15,null,null]},

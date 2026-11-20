@@ -539,8 +539,8 @@
    ]
   },
   "latest": {
-   "at": "2026-11-20T09:56:38.905Z",
-   "count": 1271,
+   "at": "2026-11-20T13:00:44.718Z",
+   "count": 1270,
    "rows": [
   {"a":"8439","t":"Total Passing Yards (incl. overtime)","ti":"8","op":[201.5,null,null],"cur":[211.5,null,null]},
   {"a":"8439","t":"Total Passing Yards (incl. overtime)","ti":"8","op":[201.5,null,null],"cur":[211.5,null,null]},
@@ -1169,7 +1169,6 @@
   {"a":"4047650","t":"Receiving Yards Milestones","ti":"195","op":[50,null,null],"cur":[110,null,null]},
   {"a":"4047650","t":"Receiving Yards Milestones","ti":"195","op":[50,null,null],"cur":[120,null,null]},
   {"a":"4047650","t":"Receiving Yards Milestones","ti":"195","op":[50,null,null],"cur":[130,null,null]},
-  {"a":"4047650","t":"Receiving Yards Milestones","ti":"195","op":[50,null,null],"cur":[140,null,null]},
   {"a":"4047650","t":"Receiving Yards Milestones","ti":"195","op":[50,null,null],"cur":[43,null,null]},
   {"a":"4241478","t":"Receiving Yards Milestones","ti":"195","op":[53,null,null],"cur":[10,null,null]},
   {"a":"4241478","t":"Receiving Yards Milestones","ti":"195","op":[53,null,null],"cur":[15,null,null]},
