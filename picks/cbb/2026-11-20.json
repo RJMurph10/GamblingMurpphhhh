@@ -1,0 +1,54 @@
+{
+ "day": "2026-11-20",
+ "updated": "2026-11-20T03:44:51.339Z",
+ "picks": [
+  {
+   "id": "401921418-total",
+   "game": "OKST @ MINN",
+   "tip": "2026-11-20T17:30Z",
+   "market": "total",
+   "pick": "Over 146.5",
+   "line": 146.5,
+   "open": 146.5,
+   "model": 154.8,
+   "edge": 8.3,
+   "best": true,
+   "firstSeen": "2026-11-20T03:44:51.339Z",
+   "latest": 147.5,
+   "latestAt": "2026-11-20T03:44:51.339Z",
+   "alerted": false
+  },
+  {
+   "id": "401921419-total",
+   "game": "DAY @ UTAH",
+   "tip": "2026-11-20T22:30Z",
+   "market": "total",
+   "pick": "Over 141.5",
+   "line": 141.5,
+   "open": 141.5,
+   "model": 147.6,
+   "edge": 6.1,
+   "best": true,
+   "firstSeen": "2026-11-20T03:44:51.339Z",
+   "latest": 140.5,
+   "latestAt": "2026-11-20T03:44:51.339Z",
+   "alerted": false
+  },
+  {
+   "id": "401913529-total",
+   "game": "EIU @ ILL",
+   "tip": "2026-11-21T02:00Z",
+   "market": "total",
+   "pick": "Under 163.5",
+   "line": 163.5,
+   "open": 163.5,
+   "model": 156.5,
+   "edge": 7,
+   "best": true,
+   "firstSeen": "2026-11-20T03:44:51.339Z",
+   "latest": 164.5,
+   "latestAt": "2026-11-20T03:44:51.339Z",
+   "alerted": false
+  }
+ ]
+}

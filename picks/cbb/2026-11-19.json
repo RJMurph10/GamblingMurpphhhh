@@ -1,6 +1,6 @@
 {
  "day": "2026-11-19",
- "updated": "2026-11-19T22:28:42.225Z",
+ "updated": "2026-11-20T03:44:51.339Z",
  "picks": [
   {
    "id": "401920413-total",
@@ -16,7 +16,12 @@
    "firstSeen": "2026-11-19T13:57:12.487Z",
    "latest": 144.5,
    "latestAt": "2026-11-19T22:28:42.225Z",
-   "alerted": false
+   "alerted": false,
+   "score": [
+    74,
+    85
+   ],
+   "close": 143.5
   },
   {
    "id": "401928826-total",
@@ -32,7 +37,12 @@
    "firstSeen": "2026-11-19T03:52:34.783Z",
    "latest": 144.5,
    "latestAt": "2026-11-19T22:28:42.225Z",
-   "alerted": false
+   "alerted": false,
+   "score": [
+    76,
+    83
+   ],
+   "close": 144.5
   },
   {
    "id": "401911534-total",
