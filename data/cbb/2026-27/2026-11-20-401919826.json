@@ -7,18 +7,18 @@
   "id": "399",
   "abbr": "UALB",
   "name": "UAlbany Great Danes",
-  "score": 34
+  "score": 65
  },
  "home": {
   "id": "2710",
   "abbr": "WIU",
   "name": "Western Illinois Leathernecks",
-  "score": 22
+  "score": 60
  },
  "neutral": true,
  "venue": "Koessler Athletic Center",
  "seasonType": 2,
- "state": "in",
+ "state": "post",
  "lines": {
   "open": {
    "at": "2026-11-20T03:26:33.911Z",
@@ -477,5 +477,9 @@
    ]
   }
  },
- "props": {}
+ "props": {},
+ "final": {
+  "away": 65,
+  "home": 60
+ }
 }

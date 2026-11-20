@@ -395,12 +395,12 @@
    ]
   },
   "close": {
-   "at": "2026-11-20T21:12:31.580Z",
+   "at": "2026-11-20T22:22:10.516Z",
    "scoreboard": [
     {
      "provider": {
       "id": "100",
-      "name": "Draft Kings",
+      "name": "DraftKings",
       "priority": 1
      },
      "details": "EKU -8.5",
@@ -437,14 +437,14 @@
       "shortDisplayName": "ML",
       "home": {
        "close": {
-        "odds": "-360",
+        "odds": "-395",
         "link": {
          "language": "en-US",
          "rel": [
           "home",
           "desktop",
           "bets",
-          "draft-kings"
+          "draftkings"
          ],
          "href": "https://sportsbook.draftkings.com/gateway?s=__s__&wpcid=__wpcid__&wpsrc=413&wpcn=ESPN&wpscn=Widget&wpcrn=BetSlipDeepLink&wpscid=__wpscid__&wpcrid=xx&preurl=https%3A%2F%2Fsportsbook.draftkings.com%2Fevent%2F35055773%3Foutcomes%3D0ML87334800_1",
          "text": "Home Bet",
@@ -469,14 +469,14 @@
       },
       "away": {
        "close": {
-        "odds": "+285",
+        "odds": "+310",
         "link": {
          "language": "en-US",
          "rel": [
           "away",
           "desktop",
           "bets",
-          "draft-kings"
+          "draftkings"
          ],
          "href": "https://sportsbook.draftkings.com/gateway?s=__s__&wpcid=__wpcid__&wpsrc=413&wpcn=ESPN&wpscn=Widget&wpcrn=BetSlipDeepLink&wpscid=__wpscid__&wpcrid=xx&preurl=https%3A%2F%2Fsportsbook.draftkings.com%2Fevent%2F35055773%3Foutcomes%3D0ML87334800_3",
          "text": "Away Bet",
@@ -578,7 +578,7 @@
       "over": {
        "close": {
         "line": "o144.5",
-        "odds": "-110",
+        "odds": "-115",
         "link": {
          "language": "en-US",
          "rel": [
@@ -612,7 +612,7 @@
       "under": {
        "close": {
         "line": "u144.5",
-        "odds": "-110",
+        "odds": "-105",
         "link": {
          "language": "en-US",
          "rel": [
@@ -685,18 +685,18 @@
     {
      "provider": {
       "id": "100",
-      "name": "Draft Kings",
+      "name": "DraftKings",
       "priority": 1
      },
      "details": "EKU -8.5",
      "overUnder": 144.5,
      "spread": -8.5,
-     "overOdds": -110,
-     "underOdds": -110,
+     "overOdds": -115,
+     "underOdds": -105,
      "awayTeamOdds": {
       "favorite": false,
       "underdog": true,
-      "moneyLine": 285,
+      "moneyLine": 310,
       "spreadOdds": -115,
       "open": {
        "favorite": false,
@@ -735,12 +735,12 @@
         "american": "-115"
        },
        "moneyLine": {
-        "value": 3.85,
-        "displayValue": "57/20",
-        "alternateDisplayValue": "+285",
-        "decimal": 3.85,
-        "fraction": "57/20",
-        "american": "+285"
+        "value": 4.1,
+        "displayValue": "31/10",
+        "alternateDisplayValue": "+310",
+        "decimal": 4.1,
+        "fraction": "31/10",
+        "american": "+310"
        }
       },
       "team": {
@@ -750,7 +750,7 @@
      "homeTeamOdds": {
       "favorite": true,
       "underdog": false,
-      "moneyLine": -360,
+      "moneyLine": -395,
       "spreadOdds": -105,
       "open": {
        "favorite": true,
@@ -789,12 +789,12 @@
         "american": "-105"
        },
        "moneyLine": {
-        "value": 1.27,
-        "displayValue": "5/18",
-        "alternateDisplayValue": "-360",
-        "decimal": 1.27,
-        "fraction": "5/18",
-        "american": "-360"
+        "value": 1.25,
+        "displayValue": "20/79",
+        "alternateDisplayValue": "-395",
+        "decimal": 1.25,
+        "fraction": "20/79",
+        "american": "-395"
        }
       },
       "team": {
@@ -827,20 +827,20 @@
      },
      "current": {
       "over": {
-       "value": 1.9,
-       "displayValue": "10/11",
-       "alternateDisplayValue": "-110",
-       "decimal": 1.9,
-       "fraction": "10/11",
-       "american": "-110"
+       "value": 1.86,
+       "displayValue": "20/23",
+       "alternateDisplayValue": "-115",
+       "decimal": 1.86,
+       "fraction": "20/23",
+       "american": "-115"
       },
       "under": {
-       "value": 1.9,
-       "displayValue": "10/11",
-       "alternateDisplayValue": "-110",
-       "decimal": 1.9,
-       "fraction": "10/11",
-       "american": "-110"
+       "value": 1.95,
+       "displayValue": "20/21",
+       "alternateDisplayValue": "-105",
+       "decimal": 1.95,
+       "fraction": "20/21",
+       "american": "-105"
       },
       "total": {
        "alternateDisplayValue": "144.5",

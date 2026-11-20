@@ -395,12 +395,12 @@
    ]
   },
   "close": {
-   "at": "2026-11-20T21:12:31.580Z",
+   "at": "2026-11-20T22:22:10.516Z",
    "scoreboard": [
     {
      "provider": {
       "id": "100",
-      "name": "Draft Kings",
+      "name": "DraftKings",
       "priority": 1
      },
      "details": "UVA -41.5",
@@ -458,7 +458,7 @@
       "home": {
        "close": {
         "line": "-41.5",
-        "odds": "-115",
+        "odds": "-112",
         "link": {
          "language": "en-US",
          "rel": [
@@ -492,7 +492,7 @@
       "away": {
        "close": {
         "line": "+41.5",
-        "odds": "-105",
+        "odds": "-108",
         "link": {
          "language": "en-US",
          "rel": [
@@ -637,7 +637,7 @@
     {
      "provider": {
       "id": "100",
-      "name": "Draft Kings",
+      "name": "DraftKings",
       "priority": 1
      },
      "details": "UVA -41.5",
@@ -648,7 +648,7 @@
      "awayTeamOdds": {
       "favorite": false,
       "underdog": true,
-      "spreadOdds": -105,
+      "spreadOdds": -108,
       "open": {
        "favorite": false,
        "pointSpread": {
@@ -670,12 +670,12 @@
         "american": "+41.5"
        },
        "spread": {
-        "value": 1.95,
-        "displayValue": "20/21",
-        "alternateDisplayValue": "-105",
-        "decimal": 1.95,
-        "fraction": "20/21",
-        "american": "-105"
+        "value": 1.92,
+        "displayValue": "25/27",
+        "alternateDisplayValue": "-108",
+        "decimal": 1.92,
+        "fraction": "25/27",
+        "american": "-108"
        }
       },
       "team": {
@@ -685,7 +685,7 @@
      "homeTeamOdds": {
       "favorite": true,
       "underdog": false,
-      "spreadOdds": -115,
+      "spreadOdds": -112,
       "open": {
        "favorite": true,
        "pointSpread": {
@@ -707,12 +707,12 @@
         "american": "-41.5"
        },
        "spread": {
-        "value": 1.86,
-        "displayValue": "20/23",
-        "alternateDisplayValue": "-115",
-        "decimal": 1.86,
-        "fraction": "20/23",
-        "american": "-115"
+        "value": 1.89,
+        "displayValue": "25/28",
+        "alternateDisplayValue": "-112",
+        "decimal": 1.89,
+        "fraction": "25/28",
+        "american": "-112"
        }
       },
       "team": {
