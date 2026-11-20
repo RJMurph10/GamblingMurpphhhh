@@ -540,8 +540,8 @@
    ]
   },
   "latest": {
-   "at": "2026-11-20T03:26:33.911Z",
-   "count": 1447,
+   "at": "2026-11-20T09:56:38.905Z",
+   "count": 1448,
    "rows": [
   {"a":"3046779","t":"Total Passing Yards (incl. overtime)","ti":"8","op":[249.5,null,null],"cur":[249.5,null,null]},
   {"a":"3046779","t":"Total Passing Yards (incl. overtime)","ti":"8","op":[249.5,null,null],"cur":[249.5,null,null]},
@@ -1285,6 +1285,7 @@
   {"a":"3046779","t":"Rushing Yards Milestones","ti":"196","op":[1,null,null],"cur":[15,null,null]},
   {"a":"3046779","t":"Rushing Yards Milestones","ti":"196","op":[1,null,null],"cur":[20,null,null]},
   {"a":"3046779","t":"Rushing Yards Milestones","ti":"196","op":[1,null,null],"cur":[25,null,null]},
+  {"a":"3046779","t":"Rushing Yards Milestones","ti":"196","op":[1,null,null],"cur":[30,null,null]},
   {"a":"3046779","t":"Rushing Yards Milestones","ti":"196","op":[1,null,null],"cur":[1,null,null]},
   {"a":"3052587","t":"Rushing Yards Milestones","ti":"196","op":[13,null,null],"cur":[10,null,null]},
   {"a":"3052587","t":"Rushing Yards Milestones","ti":"196","op":[13,null,null],"cur":[15,null,null]},
