@@ -1,0 +1,22 @@
+{
+ "day": "2026-11-21",
+ "updated": "2026-11-20T21:59:50.953Z",
+ "picks": [
+  {
+   "id": "401921183-total",
+   "game": "PENN @ LAS",
+   "tip": "2026-11-21T21:00Z",
+   "market": "total",
+   "pick": "Under 161.5",
+   "line": 161.5,
+   "open": 161.5,
+   "model": 153.4,
+   "edge": 8.1,
+   "best": true,
+   "firstSeen": "2026-11-20T21:59:50.953Z",
+   "latest": 161.5,
+   "latestAt": "2026-11-20T21:59:50.953Z",
+   "alerted": false
+  }
+ ]
+}
