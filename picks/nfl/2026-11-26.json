@@ -1,0 +1,23 @@
+{
+ "day": "2026-11-26",
+ "updated": "2026-11-20T02:23:56.478Z",
+ "picks": [
+  {
+   "id": "401873080-spread-road-dog",
+   "game": "PHI @ DAL",
+   "tip": "2026-11-26T21:30Z",
+   "market": "spread",
+   "pick": "PHI +8.5",
+   "line": -8.5,
+   "open": -1.5,
+   "model": null,
+   "edge": null,
+   "best": false,
+   "tag": "road-dog",
+   "firstSeen": "2026-11-20T02:23:56.478Z",
+   "lastSeen": "2026-11-20T02:23:56.478Z",
+   "latest": -8.5,
+   "latestAt": "2026-11-20T02:23:56.478Z"
+  }
+ ]
+}
