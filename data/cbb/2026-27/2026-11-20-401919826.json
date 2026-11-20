@@ -2,23 +2,23 @@
  "id": "401919826",
  "league": "cbb",
  "date": "2026-11-20T20:00Z",
- "name": "WIU VS UALB",
+ "name": "UALB VS WIU",
  "away": {
-  "id": "2710",
-  "abbr": "WIU",
-  "name": "Western Illinois Leathernecks",
-  "score": 0
- },
- "home": {
   "id": "399",
   "abbr": "UALB",
   "name": "UAlbany Great Danes",
-  "score": 0
+  "score": 34
+ },
+ "home": {
+  "id": "2710",
+  "abbr": "WIU",
+  "name": "Western Illinois Leathernecks",
+  "score": 22
  },
  "neutral": true,
  "venue": "Koessler Athletic Center",
  "seasonType": 2,
- "state": "pre",
+ "state": "in",
  "lines": {
   "open": {
    "at": "2026-11-20T03:26:33.911Z",
