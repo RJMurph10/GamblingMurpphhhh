@@ -1,6 +1,6 @@
 {
  "day": "2026-11-20",
- "updated": "2026-11-20T03:44:51.339Z",
+ "updated": "2026-11-20T13:38:46.944Z",
  "picks": [
   {
    "id": "401921418-total",
@@ -14,8 +14,8 @@
    "edge": 8.3,
    "best": true,
    "firstSeen": "2026-11-20T03:44:51.339Z",
-   "latest": 147.5,
-   "latestAt": "2026-11-20T03:44:51.339Z",
+   "latest": 148.5,
+   "latestAt": "2026-11-20T13:38:46.944Z",
    "alerted": false
   },
   {
@@ -30,8 +30,8 @@
    "edge": 6.1,
    "best": true,
    "firstSeen": "2026-11-20T03:44:51.339Z",
-   "latest": 140.5,
-   "latestAt": "2026-11-20T03:44:51.339Z",
+   "latest": 139.5,
+   "latestAt": "2026-11-20T13:38:46.944Z",
    "alerted": false
   },
   {
@@ -46,8 +46,8 @@
    "edge": 7,
    "best": true,
    "firstSeen": "2026-11-20T03:44:51.339Z",
-   "latest": 164.5,
-   "latestAt": "2026-11-20T03:44:51.339Z",
+   "latest": 165.5,
+   "latestAt": "2026-11-20T13:38:46.944Z",
    "alerted": false
   }
  ]
