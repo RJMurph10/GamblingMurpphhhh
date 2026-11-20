@@ -7,7 +7,7 @@
   "id": "29",
   "abbr": "CBJ",
   "name": "Columbus Blue Jackets",
-  "score": 3
+  "score": 4
  },
  "home": {
   "id": "4",
@@ -18,7 +18,7 @@
  "neutral": false,
  "venue": "United Center",
  "seasonType": 2,
- "state": "in",
+ "state": "post",
  "lines": {
   "open": {
    "at": "2026-11-18T22:02:04.326Z",
@@ -927,6 +927,243 @@
       "total": {
        "alternateDisplayValue": "5.5",
        "american": "5.5"
+      }
+     }
+    }
+   ]
+  },
+  "final": {
+   "at": "2026-11-20T04:15:20.939Z",
+   "books": [
+    {
+     "provider": {
+      "id": "100",
+      "name": "DraftKings",
+      "priority": 1
+     },
+     "details": "CBJ -162",
+     "overUnder": 6.5,
+     "spread": 1.5,
+     "overOdds": 110,
+     "underOdds": -130,
+     "awayTeamOdds": {
+      "favorite": true,
+      "underdog": false,
+      "moneyLine": -162,
+      "spreadOdds": 160,
+      "open": {
+       "favorite": true,
+       "pointSpread": {
+        "alternateDisplayValue": "-1.5",
+        "american": "-1.5"
+       },
+       "spread": {
+        "value": 2.6,
+        "displayValue": "8/5",
+        "alternateDisplayValue": "+160",
+        "decimal": 2.6,
+        "fraction": "8/5",
+        "american": "+160"
+       },
+       "moneyLine": {
+        "value": 1.61,
+        "displayValue": "50/81",
+        "alternateDisplayValue": "-162",
+        "decimal": 1.61,
+        "fraction": "50/81",
+        "american": "-162"
+       }
+      },
+      "close": {
+       "pointSpread": {
+        "alternateDisplayValue": "-1.5",
+        "american": "-1.5"
+       },
+       "spread": {
+        "value": 2.6,
+        "displayValue": "8/5",
+        "alternateDisplayValue": "+160",
+        "decimal": 2.6,
+        "fraction": "8/5",
+        "american": "+160"
+       },
+       "moneyLine": {
+        "value": 1.61,
+        "displayValue": "50/81",
+        "alternateDisplayValue": "-162",
+        "decimal": 1.61,
+        "fraction": "50/81",
+        "american": "-162"
+       }
+      },
+      "current": {
+       "pointSpread": {
+        "alternateDisplayValue": "-1.5",
+        "american": "-1.5"
+       },
+       "spread": {
+        "value": 2.6,
+        "displayValue": "8/5",
+        "alternateDisplayValue": "+160",
+        "decimal": 2.6,
+        "fraction": "8/5",
+        "american": "+160"
+       },
+       "moneyLine": {
+        "value": 1.61,
+        "displayValue": "50/81",
+        "alternateDisplayValue": "-162",
+        "decimal": 1.61,
+        "fraction": "50/81",
+        "american": "-162"
+       }
+      },
+      "team": {
+       "id": "29"
+      }
+     },
+     "homeTeamOdds": {
+      "favorite": false,
+      "underdog": true,
+      "moneyLine": 136,
+      "spreadOdds": -192,
+      "open": {
+       "favorite": false,
+       "pointSpread": {
+        "alternateDisplayValue": "+1.5",
+        "american": "+1.5"
+       },
+       "spread": {
+        "value": 1.52,
+        "displayValue": "25/48",
+        "alternateDisplayValue": "-192",
+        "decimal": 1.52,
+        "fraction": "25/48",
+        "american": "-192"
+       },
+       "moneyLine": {
+        "value": 2.36,
+        "displayValue": "34/25",
+        "alternateDisplayValue": "+136",
+        "decimal": 2.36,
+        "fraction": "34/25",
+        "american": "+136"
+       }
+      },
+      "close": {
+       "pointSpread": {
+        "alternateDisplayValue": "+1.5",
+        "american": "+1.5"
+       },
+       "spread": {
+        "value": 1.52,
+        "displayValue": "25/48",
+        "alternateDisplayValue": "-192",
+        "decimal": 1.52,
+        "fraction": "25/48",
+        "american": "-192"
+       },
+       "moneyLine": {
+        "value": 2.36,
+        "displayValue": "34/25",
+        "alternateDisplayValue": "+136",
+        "decimal": 2.36,
+        "fraction": "34/25",
+        "american": "+136"
+       }
+      },
+      "current": {
+       "pointSpread": {
+        "alternateDisplayValue": "+1.5",
+        "american": "+1.5"
+       },
+       "spread": {
+        "value": 1.52,
+        "displayValue": "25/48",
+        "alternateDisplayValue": "-192",
+        "decimal": 1.52,
+        "fraction": "25/48",
+        "american": "-192"
+       },
+       "moneyLine": {
+        "value": 2.36,
+        "displayValue": "34/25",
+        "alternateDisplayValue": "+136",
+        "decimal": 2.36,
+        "fraction": "34/25",
+        "american": "+136"
+       }
+      },
+      "team": {
+       "id": "4"
+      }
+     },
+     "moneylineWinner": false,
+     "spreadWinner": false,
+     "open": {
+      "over": {
+       "value": 1.74,
+       "displayValue": "20/27",
+       "alternateDisplayValue": "-135",
+       "decimal": 1.74,
+       "fraction": "20/27",
+       "american": "-135"
+      },
+      "under": {
+       "value": 2.14,
+       "displayValue": "57/50",
+       "alternateDisplayValue": "+114",
+       "decimal": 2.14,
+       "fraction": "57/50",
+       "american": "+114"
+      },
+      "total": {
+       "alternateDisplayValue": "5.5",
+       "american": "5.5"
+      }
+     },
+     "close": {
+      "over": {
+       "value": 2.1,
+       "displayValue": "11/10",
+       "alternateDisplayValue": "+110",
+       "decimal": 2.1,
+       "fraction": "11/10",
+       "american": "+110"
+      },
+      "under": {
+       "value": 1.76,
+       "displayValue": "10/13",
+       "alternateDisplayValue": "-130",
+       "decimal": 1.76,
+       "fraction": "10/13",
+       "american": "-130"
+      },
+      "total": {
+       "alternateDisplayValue": "6.5",
+       "american": "6.5"
+      }
+     },
+     "current": {
+      "over": {
+       "value": 2.1,
+       "displayValue": "11/10",
+       "alternateDisplayValue": "+110",
+       "decimal": 2.1,
+       "fraction": "11/10",
+       "american": "+110"
+      },
+      "under": {
+       "value": 1.76,
+       "displayValue": "10/13",
+       "alternateDisplayValue": "-130",
+       "decimal": 1.76,
+       "fraction": "10/13",
+       "american": "-130"
+      },
+      "total": {
+       "alternateDisplayValue": "6.5",
+       "american": "6.5"
       }
      }
     }
@@ -2876,5 +3113,9 @@
    "Anton Frondell",
    "CHI"
   ]
+ },
+ "final": {
+  "away": 4,
+  "home": 2
  }
 }

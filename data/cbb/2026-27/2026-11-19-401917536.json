@@ -7,18 +7,18 @@
   "id": "2670",
   "abbr": "VCU",
   "name": "VCU Rams",
-  "score": 0
+  "score": 25
  },
  "home": {
   "id": "2541",
   "abbr": "SCU",
   "name": "Santa Clara Broncos",
-  "score": 0
+  "score": 31
  },
  "neutral": false,
  "venue": "Leavey Center",
  "seasonType": 2,
- "state": "pre",
+ "state": "in",
  "lines": {
   "open": {
    "at": "2026-11-19T03:35:57.448Z",

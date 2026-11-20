@@ -7,18 +7,18 @@
   "id": "204",
   "abbr": "ORST",
   "name": "Oregon State Beavers",
-  "score": 43
+  "score": 82
  },
  "home": {
   "id": "2483",
   "abbr": "ORE",
   "name": "Oregon Ducks",
-  "score": 45
+  "score": 71
  },
  "neutral": true,
  "venue": "Moda Center",
  "seasonType": 2,
- "state": "in",
+ "state": "post",
  "lines": {
   "open": {
    "at": "2026-11-19T03:35:57.448Z",
@@ -477,5 +477,9 @@
    ]
   }
  },
- "props": {}
+ "props": {},
+ "final": {
+  "away": 82,
+  "home": 71
+ }
 }

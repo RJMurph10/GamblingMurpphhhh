@@ -7,18 +7,18 @@
   "id": "164",
   "abbr": "RUTG",
   "name": "Rutgers Scarlet Knights",
-  "score": 80
+  "score": 89
  },
  "home": {
   "id": "2439",
   "abbr": "UNLV",
   "name": "UNLV Rebels",
-  "score": 59
+  "score": 70
  },
  "neutral": true,
  "venue": "Michelob ULTRA Arena",
  "seasonType": 2,
- "state": "in",
+ "state": "post",
  "lines": {
   "open": {
    "at": "2026-11-19T13:20:49.784Z",
@@ -933,5 +933,9 @@
    ]
   }
  },
- "props": {}
+ "props": {},
+ "final": {
+  "away": 89,
+  "home": 70
+ }
 }
