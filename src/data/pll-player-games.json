@@ -67522,6 +67522,3929 @@
 },
 {
 "team": "Chaos",
+"season": 2021,
+"date": "2021-06-05",
+"opponent": "Whipsnakes",
+"file": "6_5 vs Whipsnakes.xlsx",
+"players": [
+{
+"name": "Wes Berg",
+"pos": "A",
+"num": "14",
+"stats": {
+"P": 3,
+"G1": 3,
+"G2": 0,
+"A": 0,
+"Sh": 4,
+"GB": 0,
+"TO": 2,
+"PAS": null,
+"TCH": null,
+"CT": null,
+"Pen": null
+}
+},
+{
+"name": "Dhane Smith",
+"pos": "M",
+"num": "92",
+"stats": {
+"P": 3,
+"G1": 2,
+"G2": 0,
+"A": 1,
+"Sh": 3,
+"GB": 1,
+"TO": 2,
+"PAS": null,
+"TCH": null,
+"CT": 0,
+"Pen": 0
+}
+},
+{
+"name": "Josh Byrne",
+"pos": "A",
+"num": "22",
+"stats": {
+"P": 3,
+"G1": 1,
+"G2": 0,
+"A": 2,
+"Sh": 4,
+"GB": 0,
+"TO": 1,
+"PAS": null,
+"TCH": null,
+"CT": null,
+"Pen": null
+}
+},
+{
+"name": "Chris Cloutier",
+"pos": "A",
+"num": "2",
+"stats": {
+"P": 2,
+"G1": 1,
+"G2": 0,
+"A": 1,
+"Sh": 2,
+"GB": 4,
+"TO": 1,
+"PAS": null,
+"TCH": null,
+"CT": null,
+"Pen": null
+}
+},
+{
+"name": "Ian MacKay",
+"pos": "LSM",
+"num": "55",
+"stats": {
+"P": 0,
+"G1": 0,
+"G2": 0,
+"A": 0,
+"Sh": 1,
+"GB": 3,
+"TO": 1,
+"PAS": null,
+"TCH": null,
+"CT": 1,
+"Pen": 1
+}
+},
+{
+"name": "Austin Staats",
+"pos": null,
+"num": null,
+"stats": {
+"P": 0,
+"G1": 0,
+"G2": 0,
+"A": 0,
+"Sh": 1,
+"GB": 0,
+"TO": 1,
+"PAS": null,
+"TCH": null,
+"CT": null,
+"Pen": null
+}
+},
+{
+"name": "Jake Froccaro",
+"pos": "M",
+"num": "54",
+"stats": {
+"P": 0,
+"G1": 0,
+"G2": 0,
+"A": 0,
+"Sh": 2,
+"GB": 0,
+"TO": 2,
+"PAS": null,
+"TCH": null,
+"CT": null,
+"Pen": null
+}
+},
+{
+"name": "Troy Reh",
+"pos": "LSM",
+"num": "10",
+"stats": {
+"P": 0,
+"G1": 0,
+"G2": 0,
+"A": 0,
+"Sh": 1,
+"GB": 4,
+"TO": 0,
+"PAS": null,
+"TCH": null,
+"CT": 1,
+"Pen": 0
+}
+},
+{
+"name": "Sergio Salcido",
+"pos": null,
+"num": null,
+"stats": {
+"P": 0,
+"G1": 0,
+"G2": 0,
+"A": 0,
+"Sh": 2,
+"GB": 0,
+"TO": 0,
+"PAS": null,
+"TCH": null,
+"CT": null,
+"Pen": null
+}
+},
+{
+"name": "Mac O'Keefe",
+"pos": "A",
+"num": "3",
+"stats": {
+"P": 0,
+"G1": 0,
+"G2": 0,
+"A": 0,
+"Sh": 3,
+"GB": 0,
+"TO": 0,
+"PAS": null,
+"TCH": null,
+"CT": null,
+"Pen": null
+}
+},
+{
+"name": "Jarrod Neumann",
+"pos": "D",
+"num": "88",
+"stats": {
+"P": 0,
+"G1": 0,
+"G2": 0,
+"A": 0,
+"Sh": 0,
+"GB": 2,
+"TO": null,
+"PAS": null,
+"TCH": null,
+"CT": 3,
+"Pen": 0
+}
+},
+{
+"name": "Johnny Surdick",
+"pos": "D",
+"num": "18",
+"stats": {
+"P": 0,
+"G1": 0,
+"G2": 0,
+"A": 0,
+"Sh": 0,
+"GB": 2,
+"TO": null,
+"PAS": null,
+"TCH": null,
+"CT": 3,
+"Pen": 0
+}
+},
+{
+"name": "Jack Rowlett",
+"pos": "D",
+"num": "99",
+"stats": {
+"P": 0,
+"G1": 0,
+"G2": 0,
+"A": 0,
+"Sh": 0,
+"GB": 1,
+"TO": null,
+"PAS": null,
+"TCH": null,
+"CT": 2,
+"Pen": 1
+}
+},
+{
+"name": "Max Adler",
+"pos": "FO",
+"num": "9",
+"stats": {
+"P": 0,
+"G1": 0,
+"G2": 0,
+"A": 0,
+"Sh": 0,
+"GB": 2,
+"TO": null,
+"PAS": null,
+"TCH": null,
+"CT": 1,
+"Pen": 0,
+"FOW": 7,
+"FOT": 23
+}
+},
+{
+"name": "Blaze Riorden",
+"pos": "G",
+"num": "0",
+"stats": {
+"P": 0,
+"G1": 0,
+"G2": 0,
+"A": 0,
+"Sh": 0,
+"GB": 2,
+"TO": null,
+"PAS": null,
+"TCH": null,
+"CT": 0,
+"Pen": 0,
+"SA": 13,
+"Sv": 19,
+"SvPct": 61.3,
+"CSv": null,
+"GA": 12
+}
+},
+{
+"name": "Mark Glicini",
+"pos": "SSDM",
+"num": "16",
+"stats": {
+"P": 0,
+"G1": 0,
+"G2": 0,
+"A": 0,
+"Sh": 0,
+"GB": 1,
+"TO": null,
+"PAS": null,
+"TCH": null,
+"CT": 0,
+"Pen": 0
+}
+}
+]
+},
+{
+"team": "Chaos",
+"season": 2021,
+"date": "2021-06-11",
+"opponent": "Waterdogs",
+"file": "6_11 vs Waterdogs.xlsx",
+"players": [
+{
+"name": "Jake Froccaro",
+"pos": "M",
+"num": "54",
+"stats": {
+"P": 5,
+"G1": 0,
+"G2": 2,
+"A": 1,
+"Sh": 6,
+"GB": 4,
+"TO": 0,
+"PAS": null,
+"TCH": null,
+"CT": 0,
+"Pen": 0
+}
+},
+{
+"name": "Chris Cloutier",
+"pos": "A",
+"num": "2",
+"stats": {
+"P": 2,
+"G1": 2,
+"G2": 0,
+"A": 0,
+"Sh": 3,
+"GB": 0,
+"TO": 1,
+"PAS": null,
+"TCH": null,
+"CT": null,
+"Pen": null
+}
+},
+{
+"name": "Josh Byrne",
+"pos": "A",
+"num": "22",
+"stats": {
+"P": 2,
+"G1": 2,
+"G2": 0,
+"A": 0,
+"Sh": 6,
+"GB": 4,
+"TO": 4,
+"PAS": null,
+"TCH": null,
+"CT": null,
+"Pen": null
+}
+},
+{
+"name": "Dhane Smith",
+"pos": "M",
+"num": "92",
+"stats": {
+"P": 2,
+"G1": 0,
+"G2": 0,
+"A": 2,
+"Sh": 1,
+"GB": 0,
+"TO": 3,
+"PAS": null,
+"TCH": null,
+"CT": null,
+"Pen": null
+}
+},
+{
+"name": "Mac O'Keefe",
+"pos": "A",
+"num": "3",
+"stats": {
+"P": 2,
+"G1": 0,
+"G2": 1,
+"A": 0,
+"Sh": 4,
+"GB": 1,
+"TO": 1,
+"PAS": null,
+"TCH": null,
+"CT": null,
+"Pen": null
+}
+},
+{
+"name": "Wes Berg",
+"pos": "A",
+"num": "14",
+"stats": {
+"P": 1,
+"G1": 1,
+"G2": 0,
+"A": 0,
+"Sh": 2,
+"GB": 1,
+"TO": 1,
+"PAS": null,
+"TCH": null,
+"CT": null,
+"Pen": null
+}
+},
+{
+"name": "Kyle Jackson",
+"pos": "M",
+"num": "47",
+"stats": {
+"P": 1,
+"G1": 1,
+"G2": 0,
+"A": 0,
+"Sh": 3,
+"GB": 0,
+"TO": 0,
+"PAS": null,
+"TCH": null,
+"CT": null,
+"Pen": null
+}
+},
+{
+"name": "Blaze Riorden",
+"pos": "G",
+"num": "0",
+"stats": {
+"P": 1,
+"G1": 0,
+"G2": 0,
+"A": 1,
+"Sh": 0,
+"GB": 1,
+"TO": 1,
+"PAS": null,
+"TCH": null,
+"CT": 0,
+"Pen": 0,
+"SA": 14,
+"Sv": 14,
+"SvPct": 53.8,
+"CSv": null,
+"GA": 12
+}
+},
+{
+"name": "Ian MacKay",
+"pos": "LSM",
+"num": "55",
+"stats": {
+"P": 0,
+"G1": 0,
+"G2": 0,
+"A": 0,
+"Sh": 1,
+"GB": 1,
+"TO": 2,
+"PAS": null,
+"TCH": null,
+"CT": 0,
+"Pen": 0
+}
+},
+{
+"name": "Troy Reh",
+"pos": "LSM",
+"num": "10",
+"stats": {
+"P": 0,
+"G1": 0,
+"G2": 0,
+"A": 0,
+"Sh": 2,
+"GB": 2,
+"TO": 0,
+"PAS": null,
+"TCH": null,
+"CT": 1,
+"Pen": 0
+}
+},
+{
+"name": "Jack Rowlett",
+"pos": "D",
+"num": "99",
+"stats": {
+"P": 0,
+"G1": 0,
+"G2": 0,
+"A": 0,
+"Sh": 0,
+"GB": 6,
+"TO": null,
+"PAS": null,
+"TCH": null,
+"CT": 2,
+"Pen": 1,
+"FOW": 0,
+"FOT": 1
+}
+},
+{
+"name": "Max Adler",
+"pos": "FO",
+"num": "9",
+"stats": {
+"P": 0,
+"G1": 0,
+"G2": 0,
+"A": 0,
+"Sh": 0,
+"GB": 4,
+"TO": null,
+"PAS": null,
+"TCH": null,
+"CT": 2,
+"Pen": 0,
+"FOW": 11,
+"FOT": 24
+}
+},
+{
+"name": "Patrick Resch",
+"pos": "SSDM",
+"num": "34",
+"stats": {
+"P": 0,
+"G1": 0,
+"G2": 0,
+"A": 0,
+"Sh": 0,
+"GB": 3,
+"TO": null,
+"PAS": null,
+"TCH": null,
+"CT": 2,
+"Pen": 0
+}
+},
+{
+"name": "Jarrod Neumann",
+"pos": "D",
+"num": "88",
+"stats": {
+"P": 0,
+"G1": 0,
+"G2": 0,
+"A": 0,
+"Sh": 0,
+"GB": 2,
+"TO": null,
+"PAS": null,
+"TCH": null,
+"CT": 1,
+"Pen": 0
+}
+},
+{
+"name": "Johnny Surdick",
+"pos": "D",
+"num": "18",
+"stats": {
+"P": 0,
+"G1": 0,
+"G2": 0,
+"A": 0,
+"Sh": 0,
+"GB": 2,
+"TO": null,
+"PAS": null,
+"TCH": null,
+"CT": 1,
+"Pen": 0
+}
+},
+{
+"name": "Mark Glicini",
+"pos": "SSDM",
+"num": "16",
+"stats": {
+"P": 0,
+"G1": 0,
+"G2": 0,
+"A": 0,
+"Sh": 0,
+"GB": 3,
+"TO": null,
+"PAS": null,
+"TCH": null,
+"CT": 0,
+"Pen": 0
+}
+},
+{
+"name": "Dan Coates",
+"pos": "D",
+"num": "57",
+"stats": {
+"P": 0,
+"G1": 0,
+"G2": 0,
+"A": 0,
+"Sh": 0,
+"GB": 2,
+"TO": null,
+"PAS": null,
+"TCH": null,
+"CT": 0,
+"Pen": 1
+}
+}
+]
+},
+{
+"team": "Chaos",
+"season": 2021,
+"date": "2021-06-13",
+"opponent": "Archers",
+"file": "6_13 vs Archers.xlsx",
+"players": [
+{
+"name": "Ian MacKay",
+"pos": "LSM",
+"num": "55",
+"stats": {
+"P": 4,
+"G1": 0,
+"G2": 2,
+"A": 0,
+"Sh": 2,
+"GB": 2,
+"TO": 0,
+"PAS": null,
+"TCH": null,
+"CT": 2,
+"Pen": 2
+}
+},
+{
+"name": "Dhane Smith",
+"pos": "M",
+"num": "92",
+"stats": {
+"P": 2,
+"G1": 2,
+"G2": 0,
+"A": 0,
+"Sh": 4,
+"GB": 0,
+"TO": 0,
+"PAS": null,
+"TCH": null,
+"CT": null,
+"Pen": null
+}
+},
+{
+"name": "Chris Cloutier",
+"pos": "A",
+"num": "2",
+"stats": {
+"P": 2,
+"G1": 0,
+"G2": 0,
+"A": 2,
+"Sh": 2,
+"GB": 6,
+"TO": 1,
+"PAS": null,
+"TCH": null,
+"CT": null,
+"Pen": null
+}
+},
+{
+"name": "Jake Froccaro",
+"pos": "M",
+"num": "54",
+"stats": {
+"P": 1,
+"G1": 1,
+"G2": 0,
+"A": 0,
+"Sh": 5,
+"GB": 0,
+"TO": 1,
+"PAS": null,
+"TCH": null,
+"CT": null,
+"Pen": null
+}
+},
+{
+"name": "Sergio Salcido",
+"pos": null,
+"num": null,
+"stats": {
+"P": 1,
+"G1": 1,
+"G2": 0,
+"A": 0,
+"Sh": 2,
+"GB": 0,
+"TO": 1,
+"PAS": null,
+"TCH": null,
+"CT": null,
+"Pen": null
+}
+},
+{
+"name": "Josh Byrne",
+"pos": "A",
+"num": "22",
+"stats": {
+"P": 1,
+"G1": 0,
+"G2": 0,
+"A": 1,
+"Sh": 5,
+"GB": 0,
+"TO": 4,
+"PAS": null,
+"TCH": null,
+"CT": null,
+"Pen": null
+}
+},
+{
+"name": "Patrick Resch",
+"pos": "SSDM",
+"num": "34",
+"stats": {
+"P": 1,
+"G1": 0,
+"G2": 0,
+"A": 1,
+"Sh": 0,
+"GB": 1,
+"TO": 1,
+"PAS": null,
+"TCH": null,
+"CT": 0,
+"Pen": 0
+}
+},
+{
+"name": "Troy Reh",
+"pos": "LSM",
+"num": "10",
+"stats": {
+"P": 0,
+"G1": 0,
+"G2": 0,
+"A": 0,
+"Sh": 2,
+"GB": 5,
+"TO": 3,
+"PAS": null,
+"TCH": null,
+"CT": 3,
+"Pen": 0
+}
+},
+{
+"name": "Wes Berg",
+"pos": "A",
+"num": "14",
+"stats": {
+"P": 0,
+"G1": 0,
+"G2": 0,
+"A": 0,
+"Sh": 3,
+"GB": 2,
+"TO": 2,
+"PAS": null,
+"TCH": null,
+"CT": null,
+"Pen": null
+}
+},
+{
+"name": "Kyle Jackson",
+"pos": "M",
+"num": "47",
+"stats": {
+"P": 0,
+"G1": 0,
+"G2": 0,
+"A": 0,
+"Sh": 5,
+"GB": 1,
+"TO": 0,
+"PAS": null,
+"TCH": null,
+"CT": 0,
+"Pen": 0
+}
+},
+{
+"name": "Mac O'Keefe",
+"pos": "A",
+"num": "3",
+"stats": {
+"P": 0,
+"G1": 0,
+"G2": 0,
+"A": 0,
+"Sh": 1,
+"GB": 1,
+"TO": 0,
+"PAS": null,
+"TCH": null,
+"CT": null,
+"Pen": null
+}
+},
+{
+"name": "Blaze Riorden",
+"pos": "G",
+"num": "0",
+"stats": {
+"P": 0,
+"G1": 0,
+"G2": 0,
+"A": 0,
+"Sh": 0,
+"GB": 3,
+"TO": null,
+"PAS": null,
+"TCH": null,
+"CT": 2,
+"Pen": 0,
+"SA": 12,
+"Sv": 21,
+"SvPct": 63.6,
+"CSv": null,
+"GA": 12
+}
+},
+{
+"name": "Jack Rowlett",
+"pos": "D",
+"num": "99",
+"stats": {
+"P": 0,
+"G1": 0,
+"G2": 0,
+"A": 0,
+"Sh": 0,
+"GB": 3,
+"TO": null,
+"PAS": null,
+"TCH": null,
+"CT": 2,
+"Pen": 0,
+"FOW": 0,
+"FOT": 2
+}
+},
+{
+"name": "Kyle Gallagher",
+"pos": "FO",
+"num": "52",
+"stats": {
+"P": 0,
+"G1": 0,
+"G2": 0,
+"A": 0,
+"Sh": 0,
+"GB": 3,
+"TO": null,
+"PAS": null,
+"TCH": null,
+"CT": 1,
+"Pen": 0,
+"FOW": 7,
+"FOT": 20
+}
+},
+{
+"name": "Mark Glicini",
+"pos": "SSDM",
+"num": "16",
+"stats": {
+"P": 0,
+"G1": 0,
+"G2": 0,
+"A": 0,
+"Sh": 0,
+"GB": 1,
+"TO": null,
+"PAS": null,
+"TCH": null,
+"CT": 1,
+"Pen": 0
+}
+},
+{
+"name": "Dan Coates",
+"pos": "D",
+"num": "57",
+"stats": {
+"P": 0,
+"G1": 0,
+"G2": 0,
+"A": 0,
+"Sh": 0,
+"GB": 3,
+"TO": null,
+"PAS": null,
+"TCH": null,
+"CT": 0,
+"Pen": 0
+}
+},
+{
+"name": "Jarrod Neumann",
+"pos": "D",
+"num": "88",
+"stats": {
+"P": 0,
+"G1": 0,
+"G2": 0,
+"A": 0,
+"Sh": 0,
+"GB": 3,
+"TO": null,
+"PAS": null,
+"TCH": null,
+"CT": 0,
+"Pen": 0
+}
+},
+{
+"name": "Johnny Surdick",
+"pos": "D",
+"num": "18",
+"stats": {
+"P": 0,
+"G1": 0,
+"G2": 0,
+"A": 0,
+"Sh": 0,
+"GB": 3,
+"TO": null,
+"PAS": null,
+"TCH": null,
+"CT": 0,
+"Pen": 0
+}
+}
+]
+},
+{
+"team": "Chaos",
+"season": 2021,
+"date": "2021-06-26",
+"opponent": "Redwoods",
+"file": "6_26 vs Redwoods.xlsx",
+"players": [
+{
+"name": "Jake Froccaro",
+"pos": "M",
+"num": "54",
+"stats": {
+"P": 4,
+"G1": 0,
+"G2": 0,
+"A": 4,
+"Sh": 3,
+"GB": 1,
+"TO": 0,
+"PAS": null,
+"TCH": null,
+"CT": 0,
+"Pen": 0
+}
+},
+{
+"name": "Josh Byrne",
+"pos": "A",
+"num": "22",
+"stats": {
+"P": 3,
+"G1": 2,
+"G2": 0,
+"A": 1,
+"Sh": 8,
+"GB": 2,
+"TO": 2,
+"PAS": null,
+"TCH": null,
+"CT": null,
+"Pen": null
+}
+},
+{
+"name": "Dhane Smith",
+"pos": "M",
+"num": "92",
+"stats": {
+"P": 3,
+"G1": 1,
+"G2": 0,
+"A": 2,
+"Sh": 3,
+"GB": 1,
+"TO": 2,
+"PAS": null,
+"TCH": null,
+"CT": 0,
+"Pen": 1
+}
+},
+{
+"name": "Mac O'Keefe",
+"pos": "A",
+"num": "3",
+"stats": {
+"P": 3,
+"G1": 1,
+"G2": 1,
+"A": 0,
+"Sh": 5,
+"GB": 1,
+"TO": 1,
+"PAS": null,
+"TCH": null,
+"CT": null,
+"Pen": null
+}
+},
+{
+"name": "Ryan Smith",
+"pos": "A",
+"num": "43",
+"stats": {
+"P": 2,
+"G1": 2,
+"G2": 0,
+"A": 0,
+"Sh": 4,
+"GB": 2,
+"TO": 1,
+"PAS": null,
+"TCH": null,
+"CT": null,
+"Pen": null
+}
+},
+{
+"name": "Chris Cloutier",
+"pos": "A",
+"num": "2",
+"stats": {
+"P": 2,
+"G1": 1,
+"G2": 0,
+"A": 1,
+"Sh": 5,
+"GB": 0,
+"TO": 0,
+"PAS": null,
+"TCH": null,
+"CT": null,
+"Pen": null
+}
+},
+{
+"name": "Kyle Jackson",
+"pos": "M",
+"num": "47",
+"stats": {
+"P": 2,
+"G1": 1,
+"G2": 0,
+"A": 1,
+"Sh": 2,
+"GB": 0,
+"TO": 0,
+"PAS": null,
+"TCH": null,
+"CT": null,
+"Pen": null
+}
+},
+{
+"name": "Ian MacKay",
+"pos": "LSM",
+"num": "55",
+"stats": {
+"P": 1,
+"G1": 1,
+"G2": 0,
+"A": 0,
+"Sh": 2,
+"GB": 0,
+"TO": 2,
+"PAS": null,
+"TCH": null,
+"CT": null,
+"Pen": null
+}
+},
+{
+"name": "Patrick Resch",
+"pos": "SSDM",
+"num": "34",
+"stats": {
+"P": 0,
+"G1": 0,
+"G2": 0,
+"A": 0,
+"Sh": 1,
+"GB": 1,
+"TO": 0,
+"PAS": null,
+"TCH": null,
+"CT": 1,
+"Pen": 0
+}
+},
+{
+"name": "Kyle Gallagher",
+"pos": "FO",
+"num": "52",
+"stats": {
+"P": 0,
+"G1": 0,
+"G2": 0,
+"A": 0,
+"Sh": 1,
+"GB": 5,
+"TO": 0,
+"PAS": null,
+"TCH": null,
+"CT": 0,
+"Pen": 0,
+"FOW": 5,
+"FOT": 20
+}
+},
+{
+"name": "Troy Reh",
+"pos": "LSM",
+"num": "10",
+"stats": {
+"P": 0,
+"G1": 0,
+"G2": 0,
+"A": 0,
+"Sh": 0,
+"GB": 3,
+"TO": null,
+"PAS": null,
+"TCH": null,
+"CT": 3,
+"Pen": 0
+}
+},
+{
+"name": "Jarrod Neumann",
+"pos": "D",
+"num": "88",
+"stats": {
+"P": 0,
+"G1": 0,
+"G2": 0,
+"A": 0,
+"Sh": 0,
+"GB": 0,
+"TO": null,
+"PAS": null,
+"TCH": null,
+"CT": 3,
+"Pen": 0
+}
+},
+{
+"name": "Blaze Riorden",
+"pos": "G",
+"num": "0",
+"stats": {
+"P": 0,
+"G1": 0,
+"G2": 0,
+"A": 0,
+"Sh": 0,
+"GB": 3,
+"TO": null,
+"PAS": null,
+"TCH": null,
+"CT": 1,
+"Pen": 0,
+"SA": 9,
+"Sv": 14,
+"SvPct": 60.9,
+"CSv": null,
+"GA": 9
+}
+},
+{
+"name": "Jack Rowlett",
+"pos": "D",
+"num": "99",
+"stats": {
+"P": 0,
+"G1": 0,
+"G2": 0,
+"A": 0,
+"Sh": 0,
+"GB": 1,
+"TO": null,
+"PAS": null,
+"TCH": null,
+"CT": 1,
+"Pen": 0,
+"FOW": 0,
+"FOT": 2
+}
+},
+{
+"name": "Johnny Surdick",
+"pos": "D",
+"num": "18",
+"stats": {
+"P": 0,
+"G1": 0,
+"G2": 0,
+"A": 0,
+"Sh": 0,
+"GB": 3,
+"TO": null,
+"PAS": null,
+"TCH": null,
+"CT": 0,
+"Pen": 0
+}
+},
+{
+"name": "Mark Glicini",
+"pos": "SSDM",
+"num": "16",
+"stats": {
+"P": 0,
+"G1": 0,
+"G2": 0,
+"A": 0,
+"Sh": 0,
+"GB": 2,
+"TO": null,
+"PAS": null,
+"TCH": null,
+"CT": 0,
+"Pen": 0
+}
+}
+]
+},
+{
+"team": "Chaos",
+"season": 2021,
+"date": "2021-07-03",
+"opponent": "Cannons",
+"file": "7_3 vs Cannons.xlsx",
+"players": [
+{
+"name": "Josh Byrne",
+"pos": "A",
+"num": "22",
+"stats": {
+"P": 5,
+"G1": 2,
+"G2": 0,
+"A": 3,
+"Sh": 4,
+"GB": 5,
+"TO": 1,
+"PAS": null,
+"TCH": null,
+"CT": null,
+"Pen": null
+}
+},
+{
+"name": "Mac O'Keefe",
+"pos": "A",
+"num": "3",
+"stats": {
+"P": 4,
+"G1": 3,
+"G2": 0,
+"A": 1,
+"Sh": 4,
+"GB": 0,
+"TO": 0,
+"PAS": null,
+"TCH": null,
+"CT": null,
+"Pen": null
+}
+},
+{
+"name": "Ryan Smith",
+"pos": "A",
+"num": "43",
+"stats": {
+"P": 4,
+"G1": 3,
+"G2": 0,
+"A": 1,
+"Sh": 4,
+"GB": 1,
+"TO": 0,
+"PAS": null,
+"TCH": null,
+"CT": null,
+"Pen": null
+}
+},
+{
+"name": "Chris Cloutier",
+"pos": "A",
+"num": "2",
+"stats": {
+"P": 4,
+"G1": 2,
+"G2": 0,
+"A": 2,
+"Sh": 4,
+"GB": 2,
+"TO": 2,
+"PAS": null,
+"TCH": null,
+"CT": null,
+"Pen": null
+}
+},
+{
+"name": "Ian MacKay",
+"pos": "LSM",
+"num": "55",
+"stats": {
+"P": 2,
+"G1": 2,
+"G2": 0,
+"A": 0,
+"Sh": 4,
+"GB": 4,
+"TO": 0,
+"PAS": null,
+"TCH": null,
+"CT": 1,
+"Pen": 0
+}
+},
+{
+"name": "Chase Fraser",
+"pos": "A",
+"num": "95",
+"stats": {
+"P": 2,
+"G1": 1,
+"G2": 0,
+"A": 1,
+"Sh": 3,
+"GB": 0,
+"TO": 1,
+"PAS": null,
+"TCH": null,
+"CT": null,
+"Pen": null
+}
+},
+{
+"name": "Kyle Jackson",
+"pos": "M",
+"num": "47",
+"stats": {
+"P": 1,
+"G1": 1,
+"G2": 0,
+"A": 0,
+"Sh": 3,
+"GB": 0,
+"TO": 0,
+"PAS": null,
+"TCH": null,
+"CT": null,
+"Pen": null
+}
+},
+{
+"name": "Dhane Smith",
+"pos": "M",
+"num": "92",
+"stats": {
+"P": 1,
+"G1": 0,
+"G2": 0,
+"A": 1,
+"Sh": 1,
+"GB": 1,
+"TO": 6,
+"PAS": null,
+"TCH": null,
+"CT": 0,
+"Pen": 1
+}
+},
+{
+"name": "CJ Costabile",
+"pos": "LSM",
+"num": "9",
+"stats": {
+"P": 1,
+"G1": 0,
+"G2": 0,
+"A": 1,
+"Sh": 1,
+"GB": 2,
+"TO": 1,
+"PAS": null,
+"TCH": null,
+"CT": 1,
+"Pen": 0,
+"FOW": 1,
+"FOT": 1
+}
+},
+{
+"name": "Jake Froccaro",
+"pos": "M",
+"num": "54",
+"stats": {
+"P": 0,
+"G1": 0,
+"G2": 0,
+"A": 0,
+"Sh": 4,
+"GB": 1,
+"TO": 1,
+"PAS": null,
+"TCH": null,
+"CT": 0,
+"Pen": 0
+}
+},
+{
+"name": "Jarrod Neumann",
+"pos": "D",
+"num": "88",
+"stats": {
+"P": 0,
+"G1": 0,
+"G2": 0,
+"A": 0,
+"Sh": 2,
+"GB": 1,
+"TO": 0,
+"PAS": null,
+"TCH": null,
+"CT": 2,
+"Pen": 0
+}
+},
+{
+"name": "Troy Reh",
+"pos": "LSM",
+"num": "10",
+"stats": {
+"P": 0,
+"G1": 0,
+"G2": 0,
+"A": 0,
+"Sh": 2,
+"GB": 2,
+"TO": 0,
+"PAS": null,
+"TCH": null,
+"CT": 0,
+"Pen": 2
+}
+},
+{
+"name": "Max Adler",
+"pos": "FO",
+"num": "9",
+"stats": {
+"P": 0,
+"G1": 0,
+"G2": 0,
+"A": 0,
+"Sh": 2,
+"GB": 9,
+"TO": 3,
+"PAS": null,
+"TCH": null,
+"CT": 0,
+"Pen": 0,
+"FOW": 17,
+"FOT": 26
+}
+},
+{
+"name": "Jack Rowlett",
+"pos": "D",
+"num": "99",
+"stats": {
+"P": 0,
+"G1": 0,
+"G2": 0,
+"A": 0,
+"Sh": 0,
+"GB": 0,
+"TO": null,
+"PAS": null,
+"TCH": null,
+"CT": 1,
+"Pen": 0
+}
+},
+{
+"name": "Blaze Riorden",
+"pos": "G",
+"num": "0",
+"stats": {
+"P": 0,
+"G1": 0,
+"G2": 0,
+"A": 0,
+"Sh": 0,
+"GB": 4,
+"TO": null,
+"PAS": null,
+"TCH": null,
+"CT": 0,
+"Pen": 0,
+"SA": 10,
+"Sv": 18,
+"SvPct": 66.7,
+"CSv": null,
+"GA": 9
+}
+},
+{
+"name": "Mark Glicini",
+"pos": "SSDM",
+"num": "16",
+"stats": {
+"P": 0,
+"G1": 0,
+"G2": 0,
+"A": 0,
+"Sh": 0,
+"GB": 3,
+"TO": null,
+"PAS": null,
+"TCH": null,
+"CT": 0,
+"Pen": 0
+}
+},
+{
+"name": "Patrick Resch",
+"pos": "SSDM",
+"num": "34",
+"stats": {
+"P": 0,
+"G1": 0,
+"G2": 0,
+"A": 0,
+"Sh": 0,
+"GB": 2,
+"TO": null,
+"PAS": null,
+"TCH": null,
+"CT": 0,
+"Pen": 0
+}
+},
+{
+"name": "Johnny Surdick",
+"pos": "D",
+"num": "18",
+"stats": {
+"P": 0,
+"G1": 0,
+"G2": 0,
+"A": 0,
+"Sh": 0,
+"GB": 1,
+"TO": null,
+"PAS": null,
+"TCH": null,
+"CT": 0,
+"Pen": 0
+}
+}
+]
+},
+{
+"team": "Chaos",
+"season": 2021,
+"date": "2021-07-10",
+"opponent": "Atlas",
+"file": "7_10 vs Atlas.xlsx",
+"players": [
+{
+"name": "Josh Byrne",
+"pos": "A",
+"num": "22",
+"stats": {
+"P": 5,
+"G1": 4,
+"G2": 0,
+"A": 1,
+"Sh": 7,
+"GB": 0,
+"TO": 2,
+"PAS": null,
+"TCH": null,
+"CT": null,
+"Pen": null
+}
+},
+{
+"name": "Dhane Smith",
+"pos": "M",
+"num": "92",
+"stats": {
+"P": 3,
+"G1": 1,
+"G2": 0,
+"A": 2,
+"Sh": 3,
+"GB": 1,
+"TO": 3,
+"PAS": null,
+"TCH": null,
+"CT": 0,
+"Pen": 0
+}
+},
+{
+"name": "CJ Costabile",
+"pos": "LSM",
+"num": "9",
+"stats": {
+"P": 2,
+"G1": 0,
+"G2": 1,
+"A": 0,
+"Sh": 2,
+"GB": 2,
+"TO": 1,
+"PAS": null,
+"TCH": null,
+"CT": 1,
+"Pen": 0,
+"FOW": 1,
+"FOT": 2
+}
+},
+{
+"name": "Troy Reh",
+"pos": "LSM",
+"num": "10",
+"stats": {
+"P": 1,
+"G1": 1,
+"G2": 0,
+"A": 0,
+"Sh": 2,
+"GB": 3,
+"TO": 0,
+"PAS": null,
+"TCH": null,
+"CT": 1,
+"Pen": 0
+}
+},
+{
+"name": "Chase Fraser",
+"pos": "A",
+"num": "95",
+"stats": {
+"P": 1,
+"G1": 1,
+"G2": 0,
+"A": 0,
+"Sh": 5,
+"GB": 0,
+"TO": 1,
+"PAS": null,
+"TCH": null,
+"CT": null,
+"Pen": null
+}
+},
+{
+"name": "Mac O'Keefe",
+"pos": "A",
+"num": "3",
+"stats": {
+"P": 1,
+"G1": 1,
+"G2": 0,
+"A": 0,
+"Sh": 2,
+"GB": 0,
+"TO": 1,
+"PAS": null,
+"TCH": null,
+"CT": null,
+"Pen": null
+}
+},
+{
+"name": "Jarrod Neumann",
+"pos": "D",
+"num": "88",
+"stats": {
+"P": 1,
+"G1": 0,
+"G2": 0,
+"A": 1,
+"Sh": 0,
+"GB": 4,
+"TO": 0,
+"PAS": null,
+"TCH": null,
+"CT": 0,
+"Pen": 0
+}
+},
+{
+"name": "Patrick Resch",
+"pos": "SSDM",
+"num": "34",
+"stats": {
+"P": 1,
+"G1": 0,
+"G2": 0,
+"A": 1,
+"Sh": 0,
+"GB": 3,
+"TO": 1,
+"PAS": null,
+"TCH": null,
+"CT": 1,
+"Pen": 0
+}
+},
+{
+"name": "Ian MacKay",
+"pos": "LSM",
+"num": "55",
+"stats": {
+"P": 0,
+"G1": 0,
+"G2": 0,
+"A": 0,
+"Sh": 1,
+"GB": 0,
+"TO": 0,
+"PAS": null,
+"TCH": null,
+"CT": 1,
+"Pen": 1
+}
+},
+{
+"name": "Chris Cloutier",
+"pos": "A",
+"num": "2",
+"stats": {
+"P": 0,
+"G1": 0,
+"G2": 0,
+"A": 0,
+"Sh": 3,
+"GB": 1,
+"TO": 3,
+"PAS": null,
+"TCH": null,
+"CT": null,
+"Pen": null
+}
+},
+{
+"name": "Mark Glicini",
+"pos": "SSDM",
+"num": "16",
+"stats": {
+"P": 0,
+"G1": 0,
+"G2": 0,
+"A": 0,
+"Sh": 1,
+"GB": 4,
+"TO": 1,
+"PAS": null,
+"TCH": null,
+"CT": 0,
+"Pen": 1
+}
+},
+{
+"name": "Bryce Wasserman",
+"pos": "A",
+"num": "77",
+"stats": {
+"P": 0,
+"G1": 0,
+"G2": 0,
+"A": 0,
+"Sh": 2,
+"GB": 0,
+"TO": 1,
+"PAS": null,
+"TCH": null,
+"CT": null,
+"Pen": null
+}
+},
+{
+"name": "Ryan Smith",
+"pos": "A",
+"num": "43",
+"stats": {
+"P": 0,
+"G1": 0,
+"G2": 0,
+"A": 0,
+"Sh": 1,
+"GB": 1,
+"TO": 0,
+"PAS": null,
+"TCH": null,
+"CT": null,
+"Pen": null
+}
+},
+{
+"name": "Johnny Surdick",
+"pos": "D",
+"num": "18",
+"stats": {
+"P": 0,
+"G1": 0,
+"G2": 0,
+"A": 0,
+"Sh": 0,
+"GB": 2,
+"TO": null,
+"PAS": null,
+"TCH": null,
+"CT": 2,
+"Pen": 1
+}
+},
+{
+"name": "Blaze Riorden",
+"pos": "G",
+"num": "0",
+"stats": {
+"P": 0,
+"G1": 0,
+"G2": 0,
+"A": 0,
+"Sh": 0,
+"GB": 2,
+"TO": null,
+"PAS": null,
+"TCH": null,
+"CT": 1,
+"Pen": 0,
+"SA": 14,
+"Sv": 18,
+"SvPct": 56.3,
+"CSv": null,
+"GA": 14
+}
+},
+{
+"name": "Max Adler",
+"pos": "FO",
+"num": "9",
+"stats": {
+"P": 0,
+"G1": 0,
+"G2": 0,
+"A": 0,
+"Sh": 0,
+"GB": 4,
+"TO": null,
+"PAS": null,
+"TCH": null,
+"CT": 0,
+"Pen": 0,
+"FOW": 8,
+"FOT": 26
+}
+},
+{
+"name": "Matt Rees",
+"pos": "LSM",
+"num": "44",
+"stats": {
+"P": 0,
+"G1": 0,
+"G2": 0,
+"A": 0,
+"Sh": 0,
+"GB": 2,
+"TO": null,
+"PAS": null,
+"TCH": null,
+"CT": 0,
+"Pen": 1
+}
+},
+{
+"name": "Austin Kaut",
+"pos": "G",
+"num": "19",
+"stats": {
+"P": 0,
+"G1": 0,
+"G2": 0,
+"A": 0,
+"Sh": 0,
+"GB": 0,
+"TO": null,
+"PAS": null,
+"TCH": null,
+"CT": null,
+"Pen": null,
+"SA": 2,
+"Sv": 0,
+"SvPct": 0.0,
+"CSv": null,
+"GA": null
+}
+}
+]
+},
+{
+"team": "Chaos",
+"season": 2021,
+"date": "2021-08-01",
+"opponent": "Chrome",
+"file": "8_1 vs Chrome.xlsx",
+"players": [
+{
+"name": "Josh Byrne",
+"pos": "A",
+"num": "22",
+"stats": {
+"P": 5,
+"G1": 3,
+"G2": 0,
+"A": 2,
+"Sh": 9,
+"GB": 4,
+"TO": 1,
+"PAS": null,
+"TCH": null,
+"CT": null,
+"Pen": null
+}
+},
+{
+"name": "Chris Cloutier",
+"pos": "A",
+"num": "2",
+"stats": {
+"P": 4,
+"G1": 4,
+"G2": 0,
+"A": 0,
+"Sh": 7,
+"GB": 2,
+"TO": 0,
+"PAS": null,
+"TCH": null,
+"CT": null,
+"Pen": null
+}
+},
+{
+"name": "Dhane Smith",
+"pos": "M",
+"num": "92",
+"stats": {
+"P": 3,
+"G1": 1,
+"G2": 0,
+"A": 2,
+"Sh": 1,
+"GB": 2,
+"TO": 0,
+"PAS": null,
+"TCH": null,
+"CT": 0,
+"Pen": 0
+}
+},
+{
+"name": "Chase Fraser",
+"pos": "A",
+"num": "95",
+"stats": {
+"P": 2,
+"G1": 2,
+"G2": 0,
+"A": 0,
+"Sh": 7,
+"GB": 2,
+"TO": 3,
+"PAS": null,
+"TCH": null,
+"CT": null,
+"Pen": null
+}
+},
+{
+"name": "Max Adler",
+"pos": "FO",
+"num": "9",
+"stats": {
+"P": 2,
+"G1": 0,
+"G2": 0,
+"A": 2,
+"Sh": 0,
+"GB": 5,
+"TO": 1,
+"PAS": null,
+"TCH": null,
+"CT": 1,
+"Pen": 0,
+"FOW": 13,
+"FOT": 27
+}
+},
+{
+"name": "CJ Costabile",
+"pos": "LSM",
+"num": "9",
+"stats": {
+"P": 2,
+"G1": 0,
+"G2": 1,
+"A": 0,
+"Sh": 2,
+"GB": 4,
+"TO": 2,
+"PAS": null,
+"TCH": null,
+"CT": 1,
+"Pen": 0
+}
+},
+{
+"name": "Mac O'Keefe",
+"pos": "A",
+"num": "3",
+"stats": {
+"P": 1,
+"G1": 1,
+"G2": 0,
+"A": 0,
+"Sh": 4,
+"GB": 0,
+"TO": 0,
+"PAS": null,
+"TCH": null,
+"CT": null,
+"Pen": null
+}
+},
+{
+"name": "Tanner Cook",
+"pos": "M",
+"num": "77",
+"stats": {
+"P": 1,
+"G1": 1,
+"G2": 0,
+"A": 0,
+"Sh": 1,
+"GB": 1,
+"TO": 1,
+"PAS": null,
+"TCH": null,
+"CT": 1,
+"Pen": 0
+}
+},
+{
+"name": "Patrick Resch",
+"pos": "SSDM",
+"num": "34",
+"stats": {
+"P": 1,
+"G1": 0,
+"G2": 0,
+"A": 1,
+"Sh": 0,
+"GB": 0,
+"TO": 0,
+"PAS": null,
+"TCH": null,
+"CT": null,
+"Pen": null
+}
+},
+{
+"name": "Jake Froccaro",
+"pos": "M",
+"num": "54",
+"stats": {
+"P": 0,
+"G1": 0,
+"G2": 0,
+"A": 0,
+"Sh": 4,
+"GB": 1,
+"TO": 3,
+"PAS": null,
+"TCH": null,
+"CT": 0,
+"Pen": 0
+}
+},
+{
+"name": "Mark Glicini",
+"pos": "SSDM",
+"num": "16",
+"stats": {
+"P": 0,
+"G1": 0,
+"G2": 0,
+"A": 0,
+"Sh": 1,
+"GB": 3,
+"TO": 1,
+"PAS": null,
+"TCH": null,
+"CT": 0,
+"Pen": 0
+}
+},
+{
+"name": "Troy Reh",
+"pos": "LSM",
+"num": "10",
+"stats": {
+"P": 0,
+"G1": 0,
+"G2": 0,
+"A": 0,
+"Sh": 1,
+"GB": 4,
+"TO": 0,
+"PAS": null,
+"TCH": null,
+"CT": 1,
+"Pen": 0
+}
+},
+{
+"name": "Eric Scott",
+"pos": "M",
+"num": "5",
+"stats": {
+"P": 0,
+"G1": 0,
+"G2": 0,
+"A": 0,
+"Sh": 2,
+"GB": 0,
+"TO": 2,
+"PAS": null,
+"TCH": null,
+"CT": null,
+"Pen": null
+}
+},
+{
+"name": "Johnny Surdick",
+"pos": "D",
+"num": "18",
+"stats": {
+"P": 0,
+"G1": 0,
+"G2": 0,
+"A": 0,
+"Sh": 0,
+"GB": 2,
+"TO": null,
+"PAS": null,
+"TCH": null,
+"CT": 3,
+"Pen": 0
+}
+},
+{
+"name": "Jack Rowlett",
+"pos": "D",
+"num": "99",
+"stats": {
+"P": 0,
+"G1": 0,
+"G2": 0,
+"A": 0,
+"Sh": 0,
+"GB": 2,
+"TO": null,
+"PAS": null,
+"TCH": null,
+"CT": 2,
+"Pen": 0
+}
+},
+{
+"name": "Blaze Riorden",
+"pos": "G",
+"num": "0",
+"stats": {
+"P": 0,
+"G1": 0,
+"G2": 0,
+"A": 0,
+"Sh": 0,
+"GB": 2,
+"TO": null,
+"PAS": null,
+"TCH": null,
+"CT": 1,
+"Pen": 0,
+"SA": 12,
+"Sv": 20,
+"SvPct": 66.7,
+"CSv": null,
+"GA": 10
+}
+},
+{
+"name": "Jarrod Neumann",
+"pos": "D",
+"num": "88",
+"stats": {
+"P": 0,
+"G1": 0,
+"G2": 0,
+"A": 0,
+"Sh": 0,
+"GB": 2,
+"TO": null,
+"PAS": null,
+"TCH": null,
+"CT": 0,
+"Pen": 0
+}
+}
+]
+},
+{
+"team": "Chaos",
+"season": 2021,
+"date": "2021-08-13",
+"opponent": "Archers",
+"file": "8_13 vs Archers.xlsx",
+"players": [
+{
+"name": "Josh Byrne",
+"pos": "A",
+"num": "22",
+"stats": {
+"P": 3,
+"G1": 3,
+"G2": 0,
+"A": 0,
+"Sh": 12,
+"GB": 4,
+"TO": 2,
+"PAS": null,
+"TCH": null,
+"CT": null,
+"Pen": null
+}
+},
+{
+"name": "Chase Fraser",
+"pos": "A",
+"num": "95",
+"stats": {
+"P": 3,
+"G1": 3,
+"G2": 0,
+"A": 0,
+"Sh": 10,
+"GB": 0,
+"TO": 4,
+"PAS": null,
+"TCH": null,
+"CT": null,
+"Pen": null
+}
+},
+{
+"name": "Wes Berg",
+"pos": "A",
+"num": "14",
+"stats": {
+"P": 2,
+"G1": 0,
+"G2": 0,
+"A": 2,
+"Sh": 0,
+"GB": 0,
+"TO": 0,
+"PAS": null,
+"TCH": null,
+"CT": null,
+"Pen": null
+}
+},
+{
+"name": "Ian MacKay",
+"pos": "LSM",
+"num": "55",
+"stats": {
+"P": 2,
+"G1": 0,
+"G2": 1,
+"A": 0,
+"Sh": 2,
+"GB": 4,
+"TO": 0,
+"PAS": null,
+"TCH": null,
+"CT": 0,
+"Pen": 0
+}
+},
+{
+"name": "Chris Cloutier",
+"pos": "A",
+"num": "2",
+"stats": {
+"P": 1,
+"G1": 1,
+"G2": 0,
+"A": 0,
+"Sh": 4,
+"GB": 1,
+"TO": 0,
+"PAS": null,
+"TCH": null,
+"CT": null,
+"Pen": null
+}
+},
+{
+"name": "Max Adler",
+"pos": "FO",
+"num": "9",
+"stats": {
+"P": 1,
+"G1": 1,
+"G2": 0,
+"A": 0,
+"Sh": 1,
+"GB": 6,
+"TO": 1,
+"PAS": null,
+"TCH": null,
+"CT": 0,
+"Pen": 0,
+"FOW": 11,
+"FOT": 21
+}
+},
+{
+"name": "Ryan Smith",
+"pos": "A",
+"num": "43",
+"stats": {
+"P": 1,
+"G1": 1,
+"G2": 0,
+"A": 0,
+"Sh": 1,
+"GB": 1,
+"TO": 2,
+"PAS": null,
+"TCH": null,
+"CT": null,
+"Pen": null
+}
+},
+{
+"name": "Jarrod Neumann",
+"pos": "D",
+"num": "88",
+"stats": {
+"P": 1,
+"G1": 0,
+"G2": 0,
+"A": 1,
+"Sh": 3,
+"GB": 2,
+"TO": 0,
+"PAS": null,
+"TCH": null,
+"CT": 0,
+"Pen": 0
+}
+},
+{
+"name": "Jack Rowlett",
+"pos": "D",
+"num": "99",
+"stats": {
+"P": 1,
+"G1": 0,
+"G2": 0,
+"A": 1,
+"Sh": 0,
+"GB": 1,
+"TO": 1,
+"PAS": null,
+"TCH": null,
+"CT": 2,
+"Pen": 2
+}
+},
+{
+"name": "Mac O'Keefe",
+"pos": "A",
+"num": "3",
+"stats": {
+"P": 1,
+"G1": 0,
+"G2": 0,
+"A": 1,
+"Sh": 3,
+"GB": 1,
+"TO": 2,
+"PAS": null,
+"TCH": null,
+"CT": null,
+"Pen": null
+}
+},
+{
+"name": "Tanner Cook",
+"pos": "M",
+"num": "77",
+"stats": {
+"P": 1,
+"G1": 0,
+"G2": 0,
+"A": 1,
+"Sh": 2,
+"GB": 0,
+"TO": 0,
+"PAS": null,
+"TCH": null,
+"CT": null,
+"Pen": null
+}
+},
+{
+"name": "Dhane Smith",
+"pos": "M",
+"num": "92",
+"stats": {
+"P": 0,
+"G1": 0,
+"G2": 0,
+"A": 0,
+"Sh": 2,
+"GB": 2,
+"TO": 2,
+"PAS": null,
+"TCH": null,
+"CT": 0,
+"Pen": 0
+}
+},
+{
+"name": "Patrick Resch",
+"pos": "SSDM",
+"num": "34",
+"stats": {
+"P": 0,
+"G1": 0,
+"G2": 0,
+"A": 0,
+"Sh": 1,
+"GB": 0,
+"TO": 0,
+"PAS": null,
+"TCH": null,
+"CT": null,
+"Pen": null
+}
+},
+{
+"name": "Mark Glicini",
+"pos": "SSDM",
+"num": "16",
+"stats": {
+"P": 0,
+"G1": 0,
+"G2": 0,
+"A": 0,
+"Sh": 0,
+"GB": 3,
+"TO": null,
+"PAS": null,
+"TCH": null,
+"CT": 2,
+"Pen": 0
+}
+},
+{
+"name": "Johnny Surdick",
+"pos": "D",
+"num": "18",
+"stats": {
+"P": 0,
+"G1": 0,
+"G2": 0,
+"A": 0,
+"Sh": 0,
+"GB": 2,
+"TO": null,
+"PAS": null,
+"TCH": null,
+"CT": 2,
+"Pen": 0
+}
+},
+{
+"name": "Troy Reh",
+"pos": "LSM",
+"num": "10",
+"stats": {
+"P": 0,
+"G1": 0,
+"G2": 0,
+"A": 0,
+"Sh": 0,
+"GB": 2,
+"TO": null,
+"PAS": null,
+"TCH": null,
+"CT": 0,
+"Pen": 0
+}
+},
+{
+"name": "CJ Costabile",
+"pos": "LSM",
+"num": "9",
+"stats": {
+"P": 0,
+"G1": 0,
+"G2": 0,
+"A": 0,
+"Sh": 0,
+"GB": 2,
+"TO": null,
+"PAS": null,
+"TCH": null,
+"CT": 0,
+"Pen": 0,
+"FOW": 0,
+"FOT": 2
+}
+},
+{
+"name": "Blaze Riorden",
+"pos": "G",
+"num": "0",
+"stats": {
+"P": 0,
+"G1": 0,
+"G2": 0,
+"A": 0,
+"Sh": 0,
+"GB": 0,
+"TO": null,
+"PAS": null,
+"TCH": null,
+"CT": null,
+"Pen": null,
+"SA": 9,
+"Sv": 12,
+"SvPct": 57.1,
+"CSv": null,
+"GA": 9
+}
+}
+]
+},
+{
+"team": "Chaos",
+"season": 2021,
+"date": "2021-08-15",
+"opponent": "Redwoods",
+"file": "8_15 vs Redwoods.xlsx",
+"players": [
+{
+"name": "Chase Fraser",
+"pos": "A",
+"num": "95",
+"stats": {
+"P": 5,
+"G1": 5,
+"G2": 0,
+"A": 0,
+"Sh": 10,
+"GB": 3,
+"TO": 1,
+"PAS": null,
+"TCH": null,
+"CT": null,
+"Pen": null
+}
+},
+{
+"name": "Dhane Smith",
+"pos": "M",
+"num": "92",
+"stats": {
+"P": 3,
+"G1": 0,
+"G2": 0,
+"A": 3,
+"Sh": 4,
+"GB": 2,
+"TO": 3,
+"PAS": null,
+"TCH": null,
+"CT": 0,
+"Pen": 0
+}
+},
+{
+"name": "Chris Cloutier",
+"pos": "A",
+"num": "2",
+"stats": {
+"P": 2,
+"G1": 1,
+"G2": 0,
+"A": 1,
+"Sh": 3,
+"GB": 5,
+"TO": 2,
+"PAS": null,
+"TCH": null,
+"CT": null,
+"Pen": null
+}
+},
+{
+"name": "Ryan Smith",
+"pos": "A",
+"num": "43",
+"stats": {
+"P": 2,
+"G1": 1,
+"G2": 0,
+"A": 1,
+"Sh": 3,
+"GB": 0,
+"TO": 0,
+"PAS": null,
+"TCH": null,
+"CT": null,
+"Pen": null
+}
+},
+{
+"name": "Josh Byrne",
+"pos": "A",
+"num": "22",
+"stats": {
+"P": 2,
+"G1": 0,
+"G2": 0,
+"A": 2,
+"Sh": 12,
+"GB": 0,
+"TO": 5,
+"PAS": null,
+"TCH": null,
+"CT": null,
+"Pen": null
+}
+},
+{
+"name": "Wes Berg",
+"pos": "A",
+"num": "14",
+"stats": {
+"P": 1,
+"G1": 1,
+"G2": 0,
+"A": 0,
+"Sh": 2,
+"GB": 1,
+"TO": 0,
+"PAS": null,
+"TCH": null,
+"CT": null,
+"Pen": null
+}
+},
+{
+"name": "Mac O'Keefe",
+"pos": "A",
+"num": "3",
+"stats": {
+"P": 1,
+"G1": 1,
+"G2": 0,
+"A": 0,
+"Sh": 3,
+"GB": 0,
+"TO": 0,
+"PAS": null,
+"TCH": null,
+"CT": null,
+"Pen": null
+}
+},
+{
+"name": "Blaze Riorden",
+"pos": "G",
+"num": "0",
+"stats": {
+"P": 0,
+"G1": 0,
+"G2": 0,
+"A": 0,
+"Sh": 1,
+"GB": 6,
+"TO": 0,
+"PAS": null,
+"TCH": null,
+"CT": 2,
+"Pen": 0,
+"SA": 10,
+"Sv": 13,
+"SvPct": 61.9,
+"CSv": null,
+"GA": 8
+}
+},
+{
+"name": "Patrick Resch",
+"pos": "SSDM",
+"num": "34",
+"stats": {
+"P": 0,
+"G1": 0,
+"G2": 0,
+"A": 0,
+"Sh": 1,
+"GB": 2,
+"TO": 0,
+"PAS": null,
+"TCH": null,
+"CT": 1,
+"Pen": 0
+}
+},
+{
+"name": "Max Adler",
+"pos": "FO",
+"num": "9",
+"stats": {
+"P": 0,
+"G1": 0,
+"G2": 0,
+"A": 0,
+"Sh": 1,
+"GB": 8,
+"TO": 1,
+"PAS": null,
+"TCH": null,
+"CT": 0,
+"Pen": 0,
+"FOW": 14,
+"FOT": 20
+}
+},
+{
+"name": "Tanner Cook",
+"pos": "M",
+"num": "77",
+"stats": {
+"P": 0,
+"G1": 0,
+"G2": 0,
+"A": 0,
+"Sh": 3,
+"GB": 1,
+"TO": 0,
+"PAS": null,
+"TCH": null,
+"CT": 0,
+"Pen": 0
+}
+},
+{
+"name": "Johnny Surdick",
+"pos": "D",
+"num": "18",
+"stats": {
+"P": 0,
+"G1": 0,
+"G2": 0,
+"A": 0,
+"Sh": 0,
+"GB": 4,
+"TO": null,
+"PAS": null,
+"TCH": null,
+"CT": 2,
+"Pen": 0
+}
+},
+{
+"name": "CJ Costabile",
+"pos": "LSM",
+"num": "9",
+"stats": {
+"P": 0,
+"G1": 0,
+"G2": 0,
+"A": 0,
+"Sh": 0,
+"GB": 3,
+"TO": null,
+"PAS": null,
+"TCH": null,
+"CT": 2,
+"Pen": 1
+}
+},
+{
+"name": "Jarrod Neumann",
+"pos": "D",
+"num": "88",
+"stats": {
+"P": 0,
+"G1": 0,
+"G2": 0,
+"A": 0,
+"Sh": 0,
+"GB": 1,
+"TO": null,
+"PAS": null,
+"TCH": null,
+"CT": 2,
+"Pen": 0
+}
+},
+{
+"name": "Jack Rowlett",
+"pos": "D",
+"num": "99",
+"stats": {
+"P": 0,
+"G1": 0,
+"G2": 0,
+"A": 0,
+"Sh": 0,
+"GB": 1,
+"TO": null,
+"PAS": null,
+"TCH": null,
+"CT": 2,
+"Pen": 1
+}
+},
+{
+"name": "Ian MacKay",
+"pos": "LSM",
+"num": "55",
+"stats": {
+"P": 0,
+"G1": 0,
+"G2": 0,
+"A": 0,
+"Sh": 0,
+"GB": 4,
+"TO": null,
+"PAS": null,
+"TCH": null,
+"CT": 1,
+"Pen": 2
+}
+},
+{
+"name": "Troy Reh",
+"pos": "LSM",
+"num": "10",
+"stats": {
+"P": 0,
+"G1": 0,
+"G2": 0,
+"A": 0,
+"Sh": 0,
+"GB": 2,
+"TO": null,
+"PAS": null,
+"TCH": null,
+"CT": 0,
+"Pen": 0
+}
+},
+{
+"name": "Mark Glicini",
+"pos": "SSDM",
+"num": "16",
+"stats": {
+"P": 0,
+"G1": 0,
+"G2": 0,
+"A": 0,
+"Sh": 0,
+"GB": 1,
+"TO": null,
+"PAS": null,
+"TCH": null,
+"CT": 0,
+"Pen": 0
+}
+}
+]
+},
+{
+"team": "Chaos",
+"season": 2021,
+"date": "2021-08-20",
+"opponent": "Archers",
+"file": "8_20 vs Archers.xlsx",
+"players": [
+{
+"name": "Kyle Jackson",
+"pos": "M",
+"num": "47",
+"stats": {
+"P": 6,
+"G1": 4,
+"G2": 0,
+"A": 2,
+"Sh": 8,
+"GB": 2,
+"TO": 3,
+"PAS": null,
+"TCH": null,
+"CT": 1,
+"Pen": 0
+}
+},
+{
+"name": "Dhane Smith",
+"pos": "M",
+"num": "92",
+"stats": {
+"P": 6,
+"G1": 2,
+"G2": 1,
+"A": 2,
+"Sh": 6,
+"GB": 1,
+"TO": 2,
+"PAS": null,
+"TCH": null,
+"CT": 0,
+"Pen": 0
+}
+},
+{
+"name": "Tanner Cook",
+"pos": "M",
+"num": "77",
+"stats": {
+"P": 3,
+"G1": 1,
+"G2": 0,
+"A": 2,
+"Sh": 2,
+"GB": 1,
+"TO": 1,
+"PAS": null,
+"TCH": null,
+"CT": 0,
+"Pen": 0
+}
+},
+{
+"name": "Josh Byrne",
+"pos": "A",
+"num": "22",
+"stats": {
+"P": 2,
+"G1": 1,
+"G2": 0,
+"A": 1,
+"Sh": 7,
+"GB": 0,
+"TO": 3,
+"PAS": null,
+"TCH": null,
+"CT": null,
+"Pen": null
+}
+},
+{
+"name": "Chase Fraser",
+"pos": "A",
+"num": "95",
+"stats": {
+"P": 2,
+"G1": 1,
+"G2": 0,
+"A": 1,
+"Sh": 4,
+"GB": 2,
+"TO": 4,
+"PAS": null,
+"TCH": null,
+"CT": null,
+"Pen": null
+}
+},
+{
+"name": "Mac O'Keefe",
+"pos": "A",
+"num": "3",
+"stats": {
+"P": 1,
+"G1": 1,
+"G2": 0,
+"A": 0,
+"Sh": 4,
+"GB": 0,
+"TO": 0,
+"PAS": null,
+"TCH": null,
+"CT": null,
+"Pen": null
+}
+},
+{
+"name": "Ryan Smith",
+"pos": "A",
+"num": "43",
+"stats": {
+"P": 1,
+"G1": 1,
+"G2": 0,
+"A": 0,
+"Sh": 1,
+"GB": 0,
+"TO": 0,
+"PAS": null,
+"TCH": null,
+"CT": null,
+"Pen": null
+}
+},
+{
+"name": "Ian MacKay",
+"pos": "LSM",
+"num": "55",
+"stats": {
+"P": 1,
+"G1": 0,
+"G2": 0,
+"A": 1,
+"Sh": 0,
+"GB": 0,
+"TO": 3,
+"PAS": null,
+"TCH": null,
+"CT": 1,
+"Pen": 0
+}
+},
+{
+"name": "Jarrod Neumann",
+"pos": "D",
+"num": "88",
+"stats": {
+"P": 0,
+"G1": 0,
+"G2": 0,
+"A": 0,
+"Sh": 1,
+"GB": 0,
+"TO": 0,
+"PAS": null,
+"TCH": null,
+"CT": 2,
+"Pen": 0
+}
+},
+{
+"name": "Jack Rowlett",
+"pos": "D",
+"num": "99",
+"stats": {
+"P": 0,
+"G1": 0,
+"G2": 0,
+"A": 0,
+"Sh": 1,
+"GB": 2,
+"TO": 1,
+"PAS": null,
+"TCH": null,
+"CT": 0,
+"Pen": 1
+}
+},
+{
+"name": "Wes Berg",
+"pos": "A",
+"num": "14",
+"stats": {
+"P": 0,
+"G1": 0,
+"G2": 0,
+"A": 0,
+"Sh": 1,
+"GB": 1,
+"TO": 0,
+"PAS": null,
+"TCH": null,
+"CT": null,
+"Pen": null
+}
+},
+{
+"name": "Max Adler",
+"pos": "FO",
+"num": "9",
+"stats": {
+"P": 0,
+"G1": 0,
+"G2": 0,
+"A": 0,
+"Sh": 1,
+"GB": 11,
+"TO": 3,
+"PAS": null,
+"TCH": null,
+"CT": 0,
+"Pen": 0,
+"FOW": 16,
+"FOT": 23
+}
+},
+{
+"name": "Johnny Surdick",
+"pos": "D",
+"num": "18",
+"stats": {
+"P": 0,
+"G1": 0,
+"G2": 0,
+"A": 0,
+"Sh": 0,
+"GB": 3,
+"TO": null,
+"PAS": null,
+"TCH": null,
+"CT": 1,
+"Pen": 0
+}
+},
+{
+"name": "Blaze Riorden",
+"pos": "G",
+"num": "0",
+"stats": {
+"P": 0,
+"G1": 0,
+"G2": 0,
+"A": 0,
+"Sh": 0,
+"GB": 4,
+"TO": null,
+"PAS": null,
+"TCH": null,
+"CT": 0,
+"Pen": 0,
+"SA": 10,
+"Sv": 13,
+"SvPct": 56.5,
+"CSv": null,
+"GA": 10
+}
+},
+{
+"name": "Troy Reh",
+"pos": "LSM",
+"num": "10",
+"stats": {
+"P": 0,
+"G1": 0,
+"G2": 0,
+"A": 0,
+"Sh": 0,
+"GB": 2,
+"TO": null,
+"PAS": null,
+"TCH": null,
+"CT": 0,
+"Pen": 0
+}
+},
+{
+"name": "CJ Costabile",
+"pos": "LSM",
+"num": "9",
+"stats": {
+"P": 0,
+"G1": 0,
+"G2": 0,
+"A": 0,
+"Sh": 0,
+"GB": 0,
+"TO": null,
+"PAS": null,
+"TCH": null,
+"CT": null,
+"Pen": null,
+"FOW": 0,
+"FOT": 1
+}
+}
+]
+},
+{
+"team": "Chaos",
+"season": 2021,
+"date": "2021-09-05",
+"opponent": "Atlas",
+"file": "9_5 vs Atlas.xlsx",
+"players": [
+{
+"name": "Dhane Smith",
+"pos": "M",
+"num": "92",
+"stats": {
+"P": 6,
+"G1": 3,
+"G2": 0,
+"A": 3,
+"Sh": 4,
+"GB": 1,
+"TO": 2,
+"PAS": null,
+"TCH": null,
+"CT": 0,
+"Pen": 0
+}
+},
+{
+"name": "Josh Byrne",
+"pos": "A",
+"num": "22",
+"stats": {
+"P": 5,
+"G1": 4,
+"G2": 0,
+"A": 1,
+"Sh": 8,
+"GB": 2,
+"TO": 2,
+"PAS": null,
+"TCH": null,
+"CT": null,
+"Pen": null
+}
+},
+{
+"name": "CJ Costabile",
+"pos": "LSM",
+"num": "9",
+"stats": {
+"P": 3,
+"G1": 1,
+"G2": 1,
+"A": 0,
+"Sh": 4,
+"GB": 2,
+"TO": 1,
+"PAS": null,
+"TCH": null,
+"CT": 1,
+"Pen": 0,
+"FOW": 0,
+"FOT": 3
+}
+},
+{
+"name": "Chris Cloutier",
+"pos": "A",
+"num": "2",
+"stats": {
+"P": 2,
+"G1": 2,
+"G2": 0,
+"A": 0,
+"Sh": 4,
+"GB": 2,
+"TO": 2,
+"PAS": null,
+"TCH": null,
+"CT": null,
+"Pen": null
+}
+},
+{
+"name": "Chase Fraser",
+"pos": "A",
+"num": "95",
+"stats": {
+"P": 2,
+"G1": 1,
+"G2": 0,
+"A": 1,
+"Sh": 7,
+"GB": 3,
+"TO": 3,
+"PAS": null,
+"TCH": null,
+"CT": null,
+"Pen": null
+}
+},
+{
+"name": "Blaze Riorden",
+"pos": "G",
+"num": "0",
+"stats": {
+"P": 2,
+"G1": 0,
+"G2": 0,
+"A": 2,
+"Sh": 0,
+"GB": 5,
+"TO": 0,
+"PAS": null,
+"TCH": null,
+"CT": 1,
+"Pen": 0,
+"SA": 9,
+"Sv": 17,
+"SvPct": 68.0,
+"CSv": null,
+"GA": 8
+}
+},
+{
+"name": "Troy Reh",
+"pos": "LSM",
+"num": "10",
+"stats": {
+"P": 2,
+"G1": 0,
+"G2": 1,
+"A": 0,
+"Sh": 2,
+"GB": 3,
+"TO": 2,
+"PAS": null,
+"TCH": null,
+"CT": 2,
+"Pen": 1
+}
+},
+{
+"name": "Jack Rowlett",
+"pos": "D",
+"num": "99",
+"stats": {
+"P": 1,
+"G1": 0,
+"G2": 0,
+"A": 1,
+"Sh": 0,
+"GB": 0,
+"TO": 0,
+"PAS": null,
+"TCH": null,
+"CT": 1,
+"Pen": 0
+}
+},
+{
+"name": "Ian MacKay",
+"pos": "LSM",
+"num": "55",
+"stats": {
+"P": 0,
+"G1": 0,
+"G2": 0,
+"A": 0,
+"Sh": 1,
+"GB": 3,
+"TO": 1,
+"PAS": null,
+"TCH": null,
+"CT": 1,
+"Pen": 0
+}
+},
+{
+"name": "Jarrod Neumann",
+"pos": "D",
+"num": "88",
+"stats": {
+"P": 0,
+"G1": 0,
+"G2": 0,
+"A": 0,
+"Sh": 1,
+"GB": 2,
+"TO": 0,
+"PAS": null,
+"TCH": null,
+"CT": 0,
+"Pen": 0
+}
+},
+{
+"name": "Wes Berg",
+"pos": "A",
+"num": "14",
+"stats": {
+"P": 0,
+"G1": 0,
+"G2": 0,
+"A": 0,
+"Sh": 1,
+"GB": 0,
+"TO": 0,
+"PAS": null,
+"TCH": null,
+"CT": null,
+"Pen": null
+}
+},
+{
+"name": "Kyle Jackson",
+"pos": "M",
+"num": "47",
+"stats": {
+"P": 0,
+"G1": 0,
+"G2": 0,
+"A": 0,
+"Sh": 2,
+"GB": 0,
+"TO": 0,
+"PAS": null,
+"TCH": null,
+"CT": null,
+"Pen": null
+}
+},
+{
+"name": "Max Adler",
+"pos": "FO",
+"num": "9",
+"stats": {
+"P": 0,
+"G1": 0,
+"G2": 0,
+"A": 0,
+"Sh": 1,
+"GB": 5,
+"TO": 2,
+"PAS": null,
+"TCH": null,
+"CT": 1,
+"Pen": 0,
+"FOW": 10,
+"FOT": 22
+}
+},
+{
+"name": "Johnny Surdick",
+"pos": "D",
+"num": "18",
+"stats": {
+"P": 0,
+"G1": 0,
+"G2": 0,
+"A": 0,
+"Sh": 0,
+"GB": 6,
+"TO": null,
+"PAS": null,
+"TCH": null,
+"CT": 2,
+"Pen": 0
+}
+},
+{
+"name": "Mark Glicini",
+"pos": "SSDM",
+"num": "16",
+"stats": {
+"P": 0,
+"G1": 0,
+"G2": 0,
+"A": 0,
+"Sh": 0,
+"GB": 1,
+"TO": null,
+"PAS": null,
+"TCH": null,
+"CT": 1,
+"Pen": 1
+}
+},
+{
+"name": "Patrick Resch",
+"pos": "SSDM",
+"num": "34",
+"stats": {
+"P": 0,
+"G1": 0,
+"G2": 0,
+"A": 0,
+"Sh": 0,
+"GB": 1,
+"TO": null,
+"PAS": null,
+"TCH": null,
+"CT": 0,
+"Pen": 1
+}
+}
+]
+},
+{
+"team": "Chaos",
+"season": 2021,
+"date": "2021-09-19",
+"opponent": "Whipsnakes",
+"file": "9_19 vs Whipsnakes.xlsx",
+"players": [
+{
+"name": "Dhane Smith",
+"pos": "M",
+"num": "92",
+"stats": {
+"P": 6,
+"G1": 2,
+"G2": 0,
+"A": 4,
+"Sh": 3,
+"GB": 1,
+"TO": 1,
+"PAS": null,
+"TCH": null,
+"CT": 0,
+"Pen": 0
+}
+},
+{
+"name": "Chase Fraser",
+"pos": "A",
+"num": "95",
+"stats": {
+"P": 4,
+"G1": 4,
+"G2": 0,
+"A": 0,
+"Sh": 5,
+"GB": 0,
+"TO": 3,
+"PAS": null,
+"TCH": null,
+"CT": null,
+"Pen": null
+}
+},
+{
+"name": "Chris Cloutier",
+"pos": "A",
+"num": "2",
+"stats": {
+"P": 4,
+"G1": 2,
+"G2": 0,
+"A": 2,
+"Sh": 8,
+"GB": 5,
+"TO": 1,
+"PAS": null,
+"TCH": null,
+"CT": null,
+"Pen": null
+}
+},
+{
+"name": "Josh Byrne",
+"pos": "A",
+"num": "22",
+"stats": {
+"P": 4,
+"G1": 2,
+"G2": 0,
+"A": 2,
+"Sh": 12,
+"GB": 2,
+"TO": 1,
+"PAS": null,
+"TCH": null,
+"CT": null,
+"Pen": null
+}
+},
+{
+"name": "Mac O'Keefe",
+"pos": "A",
+"num": "3",
+"stats": {
+"P": 2,
+"G1": 2,
+"G2": 0,
+"A": 0,
+"Sh": 3,
+"GB": 0,
+"TO": 0,
+"PAS": null,
+"TCH": null,
+"CT": null,
+"Pen": null
+}
+},
+{
+"name": "Wes Berg",
+"pos": "A",
+"num": "14",
+"stats": {
+"P": 1,
+"G1": 1,
+"G2": 0,
+"A": 0,
+"Sh": 1,
+"GB": 1,
+"TO": 1,
+"PAS": null,
+"TCH": null,
+"CT": null,
+"Pen": null
+}
+},
+{
+"name": "Ryan Smith",
+"pos": "A",
+"num": "43",
+"stats": {
+"P": 1,
+"G1": 1,
+"G2": 0,
+"A": 0,
+"Sh": 3,
+"GB": 0,
+"TO": 1,
+"PAS": null,
+"TCH": null,
+"CT": null,
+"Pen": null
+}
+},
+{
+"name": "Jarrod Neumann",
+"pos": "D",
+"num": "88",
+"stats": {
+"P": 0,
+"G1": 0,
+"G2": 0,
+"A": 0,
+"Sh": 1,
+"GB": 1,
+"TO": 0,
+"PAS": null,
+"TCH": null,
+"CT": 1,
+"Pen": 0
+}
+},
+{
+"name": "CJ Costabile",
+"pos": "LSM",
+"num": "9",
+"stats": {
+"P": 0,
+"G1": 0,
+"G2": 0,
+"A": 0,
+"Sh": 1,
+"GB": 2,
+"TO": 0,
+"PAS": null,
+"TCH": null,
+"CT": 1,
+"Pen": 0,
+"FOW": 0,
+"FOT": 1
+}
+},
+{
+"name": "Kyle Jackson",
+"pos": "M",
+"num": "47",
+"stats": {
+"P": 0,
+"G1": 0,
+"G2": 0,
+"A": 0,
+"Sh": 2,
+"GB": 2,
+"TO": 3,
+"PAS": null,
+"TCH": null,
+"CT": 1,
+"Pen": 0
+}
+},
+{
+"name": "Max Adler",
+"pos": "FO",
+"num": "9",
+"stats": {
+"P": 0,
+"G1": 0,
+"G2": 0,
+"A": 0,
+"Sh": 1,
+"GB": 8,
+"TO": 0,
+"PAS": null,
+"TCH": null,
+"CT": 0,
+"Pen": 0,
+"FOW": 13,
+"FOT": 26
+}
+},
+{
+"name": "Troy Reh",
+"pos": "LSM",
+"num": "10",
+"stats": {
+"P": 0,
+"G1": 0,
+"G2": 0,
+"A": 0,
+"Sh": 0,
+"GB": 5,
+"TO": null,
+"PAS": null,
+"TCH": null,
+"CT": 1,
+"Pen": 0
+}
+},
+{
+"name": "Johnny Surdick",
+"pos": "D",
+"num": "18",
+"stats": {
+"P": 0,
+"G1": 0,
+"G2": 0,
+"A": 0,
+"Sh": 0,
+"GB": 4,
+"TO": null,
+"PAS": null,
+"TCH": null,
+"CT": 1,
+"Pen": 0
+}
+},
+{
+"name": "Mark Glicini",
+"pos": "SSDM",
+"num": "16",
+"stats": {
+"P": 0,
+"G1": 0,
+"G2": 0,
+"A": 0,
+"Sh": 0,
+"GB": 0,
+"TO": null,
+"PAS": null,
+"TCH": null,
+"CT": 1,
+"Pen": 0
+}
+},
+{
+"name": "Patrick Resch",
+"pos": "SSDM",
+"num": "34",
+"stats": {
+"P": 0,
+"G1": 0,
+"G2": 0,
+"A": 0,
+"Sh": 0,
+"GB": 0,
+"TO": null,
+"PAS": null,
+"TCH": null,
+"CT": 1,
+"Pen": 0
+}
+},
+{
+"name": "Blaze Riorden",
+"pos": "G",
+"num": "0",
+"stats": {
+"P": 0,
+"G1": 0,
+"G2": 0,
+"A": 0,
+"Sh": 0,
+"GB": 4,
+"TO": null,
+"PAS": null,
+"TCH": null,
+"CT": 0,
+"Pen": 0,
+"SA": 9,
+"Sv": 15,
+"SvPct": 62.5,
+"CSv": null,
+"GA": 9
+}
+},
+{
+"name": "Jack Rowlett",
+"pos": "D",
+"num": "99",
+"stats": {
+"P": 0,
+"G1": 0,
+"G2": 0,
+"A": 0,
+"Sh": 0,
+"GB": 2,
+"TO": null,
+"PAS": null,
+"TCH": null,
+"CT": 0,
+"Pen": 2
+}
+},
+{
+"name": "Ian MacKay",
+"pos": "LSM",
+"num": "55",
+"stats": {
+"P": 0,
+"G1": 0,
+"G2": 0,
+"A": 0,
+"Sh": 0,
+"GB": 1,
+"TO": null,
+"PAS": null,
+"TCH": null,
+"CT": 0,
+"Pen": 0
+}
+}
+]
+},
+{
+"team": "Chaos",
 "season": 2022,
 "date": "2022-06-04",
 "opponent": "Whipsnakes",
