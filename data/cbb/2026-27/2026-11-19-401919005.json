@@ -7,18 +7,18 @@
   "id": "2655",
   "abbr": "TULN",
   "name": "Tulane Green Wave",
-  "score": 0
+  "score": 67
  },
  "home": {
   "id": "2348",
   "abbr": "LT",
   "name": "Louisiana Tech Bulldogs",
-  "score": 0
+  "score": 74
  },
  "neutral": false,
  "venue": "Thomas Assembly Center",
  "seasonType": 2,
- "state": "pre",
+ "state": "post",
  "lines": {
   "open": {
    "at": "2026-11-19T03:35:57.448Z",
@@ -933,5 +933,9 @@
    ]
   }
  },
- "props": {}
+ "props": {},
+ "final": {
+  "away": 67,
+  "home": 74
+ }
 }

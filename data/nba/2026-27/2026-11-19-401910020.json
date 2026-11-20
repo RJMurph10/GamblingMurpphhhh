@@ -7,18 +7,18 @@
   "id": "22",
   "abbr": "POR",
   "name": "Portland Trail Blazers",
-  "score": 0
+  "score": 121
  },
  "home": {
   "id": "15",
   "abbr": "MIL",
   "name": "Milwaukee Bucks",
-  "score": 0
+  "score": 114
  },
  "neutral": false,
  "venue": "Fiserv Forum",
  "seasonType": 2,
- "state": "pre",
+ "state": "in",
  "lines": {
   "open": {
    "at": "2026-11-19T13:20:49.784Z",

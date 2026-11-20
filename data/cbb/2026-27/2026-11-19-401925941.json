@@ -7,18 +7,18 @@
   "id": "3101",
   "abbr": "UTU",
   "name": "Utah Tech Trailblazers",
-  "score": 0
+  "score": 43
  },
  "home": {
   "id": "264",
   "abbr": "WASH",
   "name": "Washington Huskies",
-  "score": 0
+  "score": 64
  },
  "neutral": false,
  "venue": "Alaska Airlines Arena",
  "seasonType": 2,
- "state": "pre",
+ "state": "in",
  "lines": {
   "open": {
    "at": "2026-11-19T03:35:57.448Z",

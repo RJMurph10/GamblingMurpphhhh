@@ -7,18 +7,18 @@
   "id": "2546",
   "abbr": "SEMO",
   "name": "Southeast Missouri State Redhawks",
-  "score": 0
+  "score": 61
  },
  "home": {
   "id": "2900",
   "abbr": "STMN",
   "name": "St. Thomas Tommies",
-  "score": 0
+  "score": 93
  },
  "neutral": false,
  "venue": "Lee & Penny Anderson Arena",
  "seasonType": 2,
- "state": "pre",
+ "state": "post",
  "lines": {
   "open": {
    "at": "2026-11-19T03:35:57.448Z",
@@ -851,5 +851,9 @@
    ]
   }
  },
- "props": {}
+ "props": {},
+ "final": {
+  "away": 61,
+  "home": 93
+ }
 }

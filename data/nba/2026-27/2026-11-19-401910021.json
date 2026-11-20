@@ -7,18 +7,18 @@
   "id": "18",
   "abbr": "NY",
   "name": "New York Knicks",
-  "score": 0
+  "score": 102
  },
  "home": {
   "id": "16",
   "abbr": "MIN",
   "name": "Minnesota Timberwolves",
-  "score": 0
+  "score": 99
  },
  "neutral": false,
  "venue": "Target Center",
  "seasonType": 2,
- "state": "pre",
+ "state": "post",
  "lines": {
   "open": {
    "at": "2026-11-19T04:30:03.221Z",
@@ -5191,5 +5191,9 @@
    "Mohamed Diawara",
    "NY"
   ]
+ },
+ "final": {
+  "away": 102,
+  "home": 99
  }
 }

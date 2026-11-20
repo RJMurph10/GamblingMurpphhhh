@@ -7,18 +7,18 @@
   "id": "11",
   "abbr": "IND",
   "name": "Indianapolis Colts",
-  "score": 0
+  "score": 3
  },
  "home": {
   "id": "34",
   "abbr": "HOU",
   "name": "Houston Texans",
-  "score": 0
+  "score": 26
  },
  "neutral": false,
  "venue": "Reliant Stadium",
  "seasonType": 2,
- "state": "pre",
+ "state": "in",
  "lines": {
   "open": {
    "at": "2026-11-13T01:36:25.578Z",

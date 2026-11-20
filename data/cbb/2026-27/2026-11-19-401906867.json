@@ -7,18 +7,18 @@
   "id": "253",
   "abbr": "SUU",
   "name": "Southern Utah Thunderbirds",
-  "score": 0
+  "score": 68
  },
  "home": {
   "id": "251",
   "abbr": "TEX",
   "name": "Texas Longhorns",
-  "score": 0
+  "score": 92
  },
  "neutral": false,
  "venue": "Moody Center",
  "seasonType": 2,
- "state": "pre",
+ "state": "post",
  "lines": {
   "open": {
    "at": "2026-11-19T03:35:57.448Z",
@@ -769,5 +769,9 @@
    ]
   }
  },
- "props": {}
+ "props": {},
+ "final": {
+  "away": 68,
+  "home": 92
+ }
 }

@@ -7,18 +7,18 @@
   "id": "232",
   "abbr": "COFC",
   "name": "Charleston Cougars",
-  "score": 0
+  "score": 70
  },
  "home": {
   "id": "2181",
   "abbr": "DRKE",
   "name": "Drake Bulldogs",
-  "score": 0
+  "score": 86
  },
  "neutral": false,
  "venue": "Knapp Center",
  "seasonType": 2,
- "state": "pre",
+ "state": "post",
  "lines": {
   "open": {
    "at": "2026-11-19T03:35:57.448Z",
@@ -933,5 +933,9 @@
    ]
   }
  },
- "props": {}
+ "props": {},
+ "final": {
+  "away": 70,
+  "home": 86
+ }
 }

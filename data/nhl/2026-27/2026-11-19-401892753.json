@@ -7,7 +7,7 @@
   "id": "9",
   "abbr": "DAL",
   "name": "Dallas Stars",
-  "score": 0
+  "score": 1
  },
  "home": {
   "id": "37",
@@ -18,7 +18,7 @@
  "neutral": false,
  "venue": "T-Mobile Arena",
  "seasonType": 2,
- "state": "pre",
+ "state": "in",
  "lines": {
   "open": {
    "at": "2026-11-18T22:02:04.326Z",

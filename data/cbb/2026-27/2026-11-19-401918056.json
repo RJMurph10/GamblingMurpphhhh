@@ -7,18 +7,18 @@
   "id": "2837",
   "abbr": "ETAM",
   "name": "East Texas A&M Lions",
-  "score": 0
+  "score": 14
  },
  "home": {
   "id": "25",
   "abbr": "CAL",
   "name": "California Golden Bears",
-  "score": 0
+  "score": 26
  },
  "neutral": false,
  "venue": "Haas Pavilion",
  "seasonType": 2,
- "state": "pre",
+ "state": "in",
  "lines": {
   "open": {
    "at": "2026-11-19T03:35:57.448Z",

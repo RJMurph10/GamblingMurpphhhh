@@ -7,18 +7,18 @@
   "id": "2540",
   "abbr": "UCSB",
   "name": "UC Santa Barbara Gauchos",
-  "score": 0
+  "score": 55
  },
  "home": {
   "id": "2492",
   "abbr": "PEPP",
   "name": "Pepperdine Waves",
-  "score": 0
+  "score": 54
  },
  "neutral": false,
  "venue": "Firestone Fieldhouse",
  "seasonType": 2,
- "state": "pre",
+ "state": "in",
  "lines": {
   "open": {
    "at": "2026-11-19T03:35:57.448Z",

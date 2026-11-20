@@ -7,18 +7,18 @@
   "id": "2550",
   "abbr": "HALL",
   "name": "Seton Hall Pirates",
-  "score": 0
+  "score": 52
  },
  "home": {
   "id": "275",
   "abbr": "WIS",
   "name": "Wisconsin Badgers",
-  "score": 0
+  "score": 46
  },
  "neutral": true,
  "venue": "Baha Mar Convention Center",
  "seasonType": 2,
- "state": "pre",
+ "state": "in",
  "lines": {
   "open": {
    "at": "2026-11-19T03:35:57.448Z",

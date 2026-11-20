@@ -7,18 +7,18 @@
   "id": "6",
   "abbr": "EDM",
   "name": "Edmonton Oilers",
-  "score": 0
+  "score": 1
  },
  "home": {
   "id": "20",
   "abbr": "TB",
   "name": "Tampa Bay Lightning",
-  "score": 0
+  "score": 3
  },
  "neutral": false,
  "venue": "Benchmark International Arena",
  "seasonType": 2,
- "state": "pre",
+ "state": "post",
  "lines": {
   "open": {
    "at": "2026-11-18T22:02:04.326Z",
@@ -2893,5 +2893,9 @@
    "Sam O'Reilly",
    "TB"
   ]
+ },
+ "final": {
+  "away": 1,
+  "home": 3
  }
 }

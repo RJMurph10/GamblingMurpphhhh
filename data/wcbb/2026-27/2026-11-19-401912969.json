@@ -7,18 +7,18 @@
   "id": "161",
   "abbr": "FDU",
   "name": "Fairleigh Dickinson Knights",
-  "score": 0
+  "score": 33
  },
  "home": {
   "id": "99",
   "abbr": "LSU",
   "name": "LSU Tigers",
-  "score": 0
+  "score": 91
  },
  "neutral": false,
  "venue": "Pete Maravich Assembly Center",
  "seasonType": 2,
- "state": "pre",
+ "state": "post",
  "lines": {
   "open": {
    "at": "2026-11-19T13:20:49.784Z",
@@ -769,5 +769,9 @@
    ]
   }
  },
- "props": {}
+ "props": {},
+ "final": {
+  "away": 33,
+  "home": 91
+ }
 }

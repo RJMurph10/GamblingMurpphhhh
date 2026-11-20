@@ -7,18 +7,18 @@
   "id": "9",
   "abbr": "GS",
   "name": "Golden State Warriors",
-  "score": 0
+  "score": 98
  },
  "home": {
   "id": "29",
   "abbr": "MEM",
   "name": "Memphis Grizzlies",
-  "score": 0
+  "score": 126
  },
  "neutral": false,
  "venue": "FedExForum",
  "seasonType": 2,
- "state": "pre",
+ "state": "in",
  "lines": {
   "open": {
    "at": "2026-11-19T13:20:49.784Z",

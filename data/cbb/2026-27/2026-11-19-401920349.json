@@ -7,18 +7,18 @@
   "id": "16",
   "abbr": "SAC",
   "name": "Sacramento State Hornets",
-  "score": 0
+  "score": 25
  },
  "home": {
   "id": "24",
   "abbr": "STAN",
   "name": "Stanford Cardinal",
-  "score": 0
+  "score": 20
  },
  "neutral": false,
  "venue": "Maples Pavilion",
  "seasonType": 2,
- "state": "pre",
+ "state": "in",
  "lines": {
   "open": {
    "at": "2026-11-19T03:35:57.448Z",

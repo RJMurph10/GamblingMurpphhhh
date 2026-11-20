@@ -7,18 +7,18 @@
   "id": "22",
   "abbr": "VAN",
   "name": "Vancouver Canucks",
-  "score": 0
+  "score": 1
  },
  "home": {
   "id": "124292",
   "abbr": "SEA",
   "name": "Seattle Kraken",
-  "score": 0
+  "score": 1
  },
  "neutral": false,
  "venue": "Climate Pledge Arena",
  "seasonType": 2,
- "state": "pre",
+ "state": "in",
  "lines": {
   "open": {
    "at": "2026-11-18T22:02:04.326Z",
