@@ -1,7 +1,24 @@
 {
  "day": "2026-11-26",
- "updated": "2026-11-20T11:52:13.845Z",
+ "updated": "2026-11-20T20:30:09.984Z",
  "picks": [
+  {
+   "id": "401873080-spread-qb-change",
+   "game": "PHI @ DAL",
+   "tip": "2026-11-26T21:30Z",
+   "market": "spread",
+   "pick": "DAL -8.5",
+   "line": -8.5,
+   "open": -1.5,
+   "model": null,
+   "edge": null,
+   "best": false,
+   "tag": "qb-change",
+   "firstSeen": "2026-11-20T20:30:09.984Z",
+   "lastSeen": "2026-11-20T20:30:09.984Z",
+   "latest": -8.5,
+   "latestAt": "2026-11-20T20:30:09.984Z"
+  },
   {
    "id": "401873080-spread-road-dog",
    "game": "PHI @ DAL",
@@ -15,9 +32,9 @@
    "best": false,
    "tag": "road-dog",
    "firstSeen": "2026-11-20T02:23:56.478Z",
-   "lastSeen": "2026-11-20T11:52:13.845Z",
+   "lastSeen": "2026-11-20T20:30:09.984Z",
    "latest": -8.5,
-   "latestAt": "2026-11-20T11:52:13.845Z"
+   "latestAt": "2026-11-20T20:30:09.984Z"
   }
  ]
 }

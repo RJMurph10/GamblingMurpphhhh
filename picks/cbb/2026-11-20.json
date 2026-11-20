@@ -16,7 +16,12 @@
    "firstSeen": "2026-11-20T03:44:51.339Z",
    "latest": 148.5,
    "latestAt": "2026-11-20T13:38:46.944Z",
-   "alerted": false
+   "alerted": false,
+   "score": [
+    70,
+    85
+   ],
+   "close": 149.5
   },
   {
    "id": "401921419-total",

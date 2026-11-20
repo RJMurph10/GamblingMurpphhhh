@@ -1,0 +1,40 @@
+{
+ "day": "2026-11-27",
+ "updated": "2026-11-20T20:30:09.984Z",
+ "picks": [
+  {
+   "id": "401858536-spread-rivalry",
+   "game": "NEB @ IOWA",
+   "tip": "2026-11-27T17:00Z",
+   "market": "spread",
+   "pick": "NEB +6.5",
+   "line": -6.5,
+   "open": -6.5,
+   "model": -6.5,
+   "edge": 0,
+   "best": true,
+   "tag": "rivalry",
+   "firstSeen": "2026-11-20T20:30:09.984Z",
+   "lastSeen": "2026-11-20T20:30:09.984Z",
+   "latest": -6.5,
+   "latestAt": "2026-11-20T20:30:09.984Z"
+  },
+  {
+   "id": "401858536-total-open-total",
+   "game": "NEB @ IOWA",
+   "tip": "2026-11-27T17:00Z",
+   "market": "total",
+   "pick": "Over 38.5",
+   "line": 38.5,
+   "open": 38.5,
+   "model": 38.6,
+   "edge": 0.1,
+   "best": true,
+   "tag": "open-total",
+   "firstSeen": "2026-11-20T20:30:09.984Z",
+   "lastSeen": "2026-11-20T20:30:09.984Z",
+   "latest": 38.5,
+   "latestAt": "2026-11-20T20:30:09.984Z"
+  }
+ ]
+}
