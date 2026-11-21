@@ -16,7 +16,12 @@
    "firstSeen": "2026-11-20T03:44:50.443Z",
    "latest": -5.5,
    "latestAt": "2026-11-20T03:44:50.443Z",
-   "alerted": false
+   "alerted": false,
+   "score": [
+    97,
+    111
+   ],
+   "close": -7.5
   },
   {
    "id": "401909305-total",
@@ -32,7 +37,12 @@
    "firstSeen": "2026-11-20T13:38:46.201Z",
    "latest": 218.5,
    "latestAt": "2026-11-20T21:59:50.358Z",
-   "alerted": false
+   "alerted": false,
+   "score": [
+    97,
+    111
+   ],
+   "close": 219.5
   },
   {
    "id": "401909306-spread",
@@ -48,7 +58,12 @@
    "firstSeen": "2026-11-20T03:44:50.443Z",
    "latest": 6.5,
    "latestAt": "2026-11-20T21:59:50.358Z",
-   "alerted": false
+   "alerted": false,
+   "score": [
+    113,
+    111
+   ],
+   "close": 6.5
   },
   {
    "id": "401909307-spread",
@@ -64,7 +79,12 @@
    "firstSeen": "2026-11-20T03:44:50.443Z",
    "latest": -5.5,
    "latestAt": "2026-11-20T21:59:50.358Z",
-   "alerted": false
+   "alerted": false,
+   "score": [
+    119,
+    128
+   ],
+   "close": -6.5
   },
   {
    "id": "401909308-spread",
@@ -80,7 +100,12 @@
    "firstSeen": "2026-11-20T21:59:50.358Z",
    "latest": -6.5,
    "latestAt": "2026-11-20T21:59:50.358Z",
-   "alerted": false
+   "alerted": false,
+   "score": [
+    105,
+    102
+   ],
+   "close": -6.5
   },
   {
    "id": "401909308-total",
@@ -96,7 +121,12 @@
    "firstSeen": "2026-11-20T03:44:50.443Z",
    "latest": 216.5,
    "latestAt": "2026-11-20T21:59:50.358Z",
-   "alerted": false
+   "alerted": false,
+   "score": [
+    105,
+    102
+   ],
+   "close": 215.5
   },
   {
    "id": "401909309-spread",
@@ -112,7 +142,12 @@
    "firstSeen": "2026-11-20T03:44:50.443Z",
    "latest": -2.5,
    "latestAt": "2026-11-20T21:59:50.358Z",
-   "alerted": false
+   "alerted": false,
+   "score": [
+    98,
+    94
+   ],
+   "close": -2.5
   },
   {
    "id": "401909310-spread",
@@ -128,7 +163,12 @@
    "firstSeen": "2026-11-20T03:44:50.443Z",
    "latest": -11.5,
    "latestAt": "2026-11-20T21:59:50.358Z",
-   "alerted": false
+   "alerted": false,
+   "score": [
+    120,
+    126
+   ],
+   "close": -11.5
   },
   {
    "id": "401909311-spread",
