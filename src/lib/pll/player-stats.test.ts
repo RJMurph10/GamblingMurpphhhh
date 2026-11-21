@@ -56,6 +56,7 @@ describe("PLL player stats from the Cannons sheets", () => {
     expect(data.games.filter((g) => g.team === "Chrome" && g.season === 2021).length).toBe(9);
     expect(data.games.filter((g) => g.team === "Redwoods" && g.season === 2021).length).toBe(10);
     expect(data.games.filter((g) => g.team === "Waterdogs" && g.season === 2021).length).toBe(10);
+    expect(data.games.filter((g) => g.team === "Whipsnakes" && g.season === 2021).length).toBe(12);
     expect(data.games.filter((g) => g.team === "Waterdogs" && g.season === 2025).length).toBe(12);
     expect(data.games.filter((g) => g.team === "Archers" && g.season === 2025).length).toBe(10);
   });
@@ -67,7 +68,7 @@ describe("PLL player stats from the Cannons sheets", () => {
       }
   });
   it("builds players with slugs and kinds", () => {
-    expect(pllPlayers().size).toBe(460);
+    expect(pllPlayers().size).toBe(464);
     const h = pllPlayer(playerSlug("Marcus Holman"));
     expect(h?.games.length).toBeGreaterThan(0);
     expect(playerKind(pllPlayer(playerSlug("Colin Kirst"))!)).toBe("goalie");
@@ -104,6 +105,7 @@ describe("PLL player stats from the Cannons sheets", () => {
     expect(pllTeamPlayers("127635", 2021).length).toBe(25);
     expect(pllTeamPlayers("127636", 2021).length).toBe(26);
     expect(pllTeamPlayers("127637", 2021).length).toBe(25);
+    expect(pllTeamPlayers("127638", 2021).length).toBe(27);
     expect(pllTeamPlayers("127636", 2025).length).toBe(24);
     expect(pllTeamPlayers("127634", 2025).length).toBe(28);
     expect(pllTeamPlayers("122896", 2025).length).toBe(24);
@@ -157,6 +159,7 @@ describe("players traded mid-season", () => {
 });
 
 describe.each([
+  [2021, 84],
   [2022, 92],
   [2023, 92],
   [2024, 90],
@@ -193,8 +196,13 @@ describe("the full 2026 season", () => {
  * Known gaps in the PLL's own box scores (the owner's sheets copy them as they are): scores against a club that
  * aren't charged to any of its goalies. Atlas at Chrome 7/30/2021: final 19-10 (PLL recap), but JD Colarusso,
  * the only goalie, is charged 9 (12 saves, 57.1%). Chrome's own sheet has 10 goals that day, none of them 2-pointers.
+ * Whipsnakes vs Chrome 6/27/2021: final 6-16; Chrome scored 14 goals (two 2-pointers), but Kyle Bernlohr, the only
+ * goalie, is charged 13 goals (15 points with both 2-pointers).
  */
-const BOX_SCORE_GAPS: Record<string, number> = { "Atlas 2021-07-30": 1 };
+const BOX_SCORE_GAPS: Record<string, number> = {
+  "Atlas 2021-07-30": 1,
+  "Whipsnakes 2021-06-27": 1,
+};
 
 describe.each([2021, 2022, 2023, 2024, 2025])("%i sheets", (season) => {
   type Line = { stats?: Record<string, number | null> };
