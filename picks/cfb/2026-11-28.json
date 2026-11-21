@@ -1,6 +1,6 @@
 {
  "day": "2026-11-28",
- "updated": "2026-11-21T11:20:38.634Z",
+ "updated": "2026-11-21T19:25:44.891Z",
  "picks": [
   {
    "id": "401856757-spread-rivalry",
@@ -69,6 +69,23 @@
    "lastSeen": "2026-11-21T11:20:38.634Z",
    "latest": 54.5,
    "latestAt": "2026-11-21T11:20:38.634Z"
+  },
+  {
+   "id": "401858313-total-open-total",
+   "game": "NCSU @ UNC",
+   "tip": "2026-11-28T17:00Z",
+   "market": "total",
+   "pick": "Under 55.5",
+   "line": 55.5,
+   "open": 55.5,
+   "model": 55.4,
+   "edge": 0.1,
+   "best": true,
+   "tag": "open-total",
+   "firstSeen": "2026-11-21T19:25:44.891Z",
+   "lastSeen": "2026-11-21T19:25:44.891Z",
+   "latest": 55.5,
+   "latestAt": "2026-11-21T19:25:44.891Z"
   }
  ]
 }
