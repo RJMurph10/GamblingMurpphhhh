@@ -1,6 +1,6 @@
 {
  "day": "2026-11-21",
- "updated": "2026-11-21T13:04:23.918Z",
+ "updated": "2026-11-21T20:41:30.057Z",
  "picks": [
   {
    "id": "401921169-total",
@@ -16,7 +16,12 @@
    "firstSeen": "2026-11-21T03:31:44.816Z",
    "latest": 147.5,
    "latestAt": "2026-11-21T13:04:23.918Z",
-   "alerted": false
+   "alerted": false,
+   "score": [
+    69,
+    62
+   ],
+   "close": 145.5
   },
   {
    "id": "401923312-total",
@@ -32,7 +37,12 @@
    "firstSeen": "2026-11-21T03:31:44.816Z",
    "latest": 130.5,
    "latestAt": "2026-11-21T13:04:23.918Z",
-   "alerted": false
+   "alerted": false,
+   "score": [
+    47,
+    50
+   ],
+   "close": 130.5
   },
   {
    "id": "401924882-total",
@@ -62,8 +72,8 @@
    "edge": 8.1,
    "best": true,
    "firstSeen": "2026-11-20T21:59:50.953Z",
-   "latest": 160.5,
-   "latestAt": "2026-11-21T13:04:23.918Z",
+   "latest": 159.5,
+   "latestAt": "2026-11-21T20:41:30.057Z",
    "alerted": false
   },
   {
@@ -78,8 +88,24 @@
    "edge": 11,
    "best": true,
    "firstSeen": "2026-11-21T03:31:44.816Z",
-   "latest": 172.5,
-   "latestAt": "2026-11-21T13:04:23.918Z",
+   "latest": 173.5,
+   "latestAt": "2026-11-21T20:41:30.057Z",
+   "alerted": false
+  },
+  {
+   "id": "401911310-total",
+   "game": "BRWN @ UVM",
+   "tip": "2026-11-22T00:00Z",
+   "market": "total",
+   "pick": "Over 134.5",
+   "line": 134.5,
+   "open": 134.5,
+   "model": 140.6,
+   "edge": 6.1,
+   "best": true,
+   "firstSeen": "2026-11-21T20:41:30.057Z",
+   "latest": 133.5,
+   "latestAt": "2026-11-21T20:41:30.057Z",
    "alerted": false
   },
   {
@@ -94,8 +120,8 @@
    "edge": 6.9,
    "best": true,
    "firstSeen": "2026-11-21T03:31:44.816Z",
-   "latest": 142.5,
-   "latestAt": "2026-11-21T13:04:23.918Z",
+   "latest": 144.5,
+   "latestAt": "2026-11-21T20:41:30.057Z",
    "alerted": false
   }
  ]
