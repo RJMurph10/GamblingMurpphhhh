@@ -7,18 +7,18 @@
   "id": "324",
   "abbr": "CCU",
   "name": "Coastal Carolina Chanticleers",
-  "score": 3
+  "score": 24
  },
  "home": {
   "id": "309",
   "abbr": "UL",
   "name": "Louisiana Ragin' Cajuns",
-  "score": 21
+  "score": 38
  },
  "neutral": false,
  "venue": "Our Lady of Lourdes Stadium",
  "seasonType": 2,
- "state": "in",
+ "state": "post",
  "lines": {
   "open": {
    "at": "2026-11-15T17:47:38.554Z",
@@ -931,7 +931,405 @@
      }
     }
    ]
+  },
+  "final": {
+   "at": "2026-11-21T23:25:07.697Z",
+   "books": [
+    {
+     "provider": {
+      "id": "100",
+      "name": "DraftKings",
+      "priority": 1
+     },
+     "details": "UL -10.5",
+     "overUnder": 49.5,
+     "spread": -10.5,
+     "overOdds": -105,
+     "underOdds": -115,
+     "awayTeamOdds": {
+      "favorite": false,
+      "underdog": true,
+      "moneyLine": 310,
+      "spreadOdds": -115,
+      "open": {
+       "favorite": false,
+       "pointSpread": {
+        "alternateDisplayValue": "+7.5",
+        "american": "+7.5"
+       },
+       "spread": {
+        "value": 1.9,
+        "displayValue": "10/11",
+        "alternateDisplayValue": "-110",
+        "decimal": 1.9,
+        "fraction": "10/11",
+        "american": "-110"
+       },
+       "moneyLine": {
+        "value": 3.25,
+        "displayValue": "9/4",
+        "alternateDisplayValue": "+225",
+        "decimal": 3.25,
+        "fraction": "9/4",
+        "american": "+225"
+       }
+      },
+      "close": {
+       "pointSpread": {
+        "alternateDisplayValue": "+10.5",
+        "american": "+10.5"
+       },
+       "spread": {
+        "value": 1.86,
+        "displayValue": "20/23",
+        "alternateDisplayValue": "-115",
+        "decimal": 1.86,
+        "fraction": "20/23",
+        "american": "-115"
+       },
+       "moneyLine": {
+        "value": 4.1,
+        "displayValue": "31/10",
+        "alternateDisplayValue": "+310",
+        "decimal": 4.1,
+        "fraction": "31/10",
+        "american": "+310"
+       }
+      },
+      "current": {
+       "pointSpread": {
+        "alternateDisplayValue": "+10.5",
+        "american": "+10.5"
+       },
+       "spread": {
+        "value": 1.86,
+        "displayValue": "20/23",
+        "alternateDisplayValue": "-115",
+        "decimal": 1.86,
+        "fraction": "20/23",
+        "american": "-115"
+       },
+       "moneyLine": {
+        "value": 4.1,
+        "displayValue": "31/10",
+        "alternateDisplayValue": "+310",
+        "decimal": 4.1,
+        "fraction": "31/10",
+        "american": "+310"
+       }
+      },
+      "team": {
+       "id": "324"
+      }
+     },
+     "homeTeamOdds": {
+      "favorite": true,
+      "underdog": false,
+      "moneyLine": -395,
+      "spreadOdds": -105,
+      "open": {
+       "favorite": true,
+       "pointSpread": {
+        "alternateDisplayValue": "-7.5",
+        "american": "-7.5"
+       },
+       "spread": {
+        "value": 1.9,
+        "displayValue": "10/11",
+        "alternateDisplayValue": "-110",
+        "decimal": 1.9,
+        "fraction": "10/11",
+        "american": "-110"
+       },
+       "moneyLine": {
+        "value": 1.35,
+        "displayValue": "50/139",
+        "alternateDisplayValue": "-278",
+        "decimal": 1.35,
+        "fraction": "50/139",
+        "american": "-278"
+       }
+      },
+      "close": {
+       "pointSpread": {
+        "alternateDisplayValue": "-10.5",
+        "american": "-10.5"
+       },
+       "spread": {
+        "value": 1.95,
+        "displayValue": "20/21",
+        "alternateDisplayValue": "-105",
+        "decimal": 1.95,
+        "fraction": "20/21",
+        "american": "-105"
+       },
+       "moneyLine": {
+        "value": 1.25,
+        "displayValue": "20/79",
+        "alternateDisplayValue": "-395",
+        "decimal": 1.25,
+        "fraction": "20/79",
+        "american": "-395"
+       }
+      },
+      "current": {
+       "pointSpread": {
+        "alternateDisplayValue": "-10.5",
+        "american": "-10.5"
+       },
+       "spread": {
+        "value": 1.95,
+        "displayValue": "20/21",
+        "alternateDisplayValue": "-105",
+        "decimal": 1.95,
+        "fraction": "20/21",
+        "american": "-105"
+       },
+       "moneyLine": {
+        "value": 1.25,
+        "displayValue": "20/79",
+        "alternateDisplayValue": "-395",
+        "decimal": 1.25,
+        "fraction": "20/79",
+        "american": "-395"
+       }
+      },
+      "team": {
+       "id": "309"
+      }
+     },
+     "moneylineWinner": false,
+     "spreadWinner": false,
+     "open": {
+      "over": {
+       "value": 1.9,
+       "displayValue": "10/11",
+       "alternateDisplayValue": "-110",
+       "decimal": 1.9,
+       "fraction": "10/11",
+       "american": "-110"
+      },
+      "under": {
+       "value": 1.9,
+       "displayValue": "10/11",
+       "alternateDisplayValue": "-110",
+       "decimal": 1.9,
+       "fraction": "10/11",
+       "american": "-110"
+      },
+      "total": {
+       "alternateDisplayValue": "50.5",
+       "american": "50.5"
+      }
+     },
+     "close": {
+      "over": {
+       "value": 1.95,
+       "displayValue": "20/21",
+       "alternateDisplayValue": "-105",
+       "decimal": 1.95,
+       "fraction": "20/21",
+       "american": "-105"
+      },
+      "under": {
+       "value": 1.86,
+       "displayValue": "20/23",
+       "alternateDisplayValue": "-115",
+       "decimal": 1.86,
+       "fraction": "20/23",
+       "american": "-115"
+      },
+      "total": {
+       "alternateDisplayValue": "49.5",
+       "american": "49.5"
+      }
+     },
+     "current": {
+      "over": {
+       "value": 1.95,
+       "displayValue": "20/21",
+       "alternateDisplayValue": "-105",
+       "decimal": 1.95,
+       "fraction": "20/21",
+       "american": "-105"
+      },
+      "under": {
+       "value": 1.86,
+       "displayValue": "20/23",
+       "alternateDisplayValue": "-115",
+       "decimal": 1.86,
+       "fraction": "20/23",
+       "american": "-115"
+      },
+      "total": {
+       "alternateDisplayValue": "49.5",
+       "american": "49.5"
+      }
+     }
+    },
+    {
+     "provider": {
+      "id": "200",
+      "name": "DraftKings - Live Odds",
+      "priority": 0
+     },
+     "details": "UL -13.5",
+     "overUnder": 62.5,
+     "spread": -13.5,
+     "overOdds": 1020,
+     "underOdds": -2900,
+     "awayTeamOdds": {
+      "favorite": false,
+      "underdog": true,
+      "moneyLine": 4800,
+      "spreadOdds": 1560,
+      "open": {
+       "favorite": false,
+       "pointSpread": {
+        "alternateDisplayValue": "+10.5",
+        "american": "+10.5"
+       },
+       "spread": {
+        "value": 1.84,
+        "displayValue": "50/59",
+        "alternateDisplayValue": "-118",
+        "decimal": 1.84,
+        "fraction": "50/59",
+        "american": "-118"
+       },
+       "moneyLine": {
+        "value": 3.94,
+        "displayValue": "147/50",
+        "alternateDisplayValue": "+294",
+        "decimal": 3.94,
+        "fraction": "147/50",
+        "american": "+294"
+       }
+      },
+      "current": {
+       "pointSpread": {
+        "alternateDisplayValue": "+13.5",
+        "american": "+13.5"
+       },
+       "spread": {
+        "value": 16.6,
+        "displayValue": "78/5",
+        "alternateDisplayValue": "+1560",
+        "decimal": 16.6,
+        "fraction": "78/5",
+        "american": "+1560"
+       },
+       "moneyLine": {
+        "value": 49,
+        "displayValue": "48/1",
+        "alternateDisplayValue": "+4800",
+        "decimal": 49,
+        "fraction": "48/1",
+        "american": "+4800"
+       }
+      },
+      "team": {
+       "id": "324"
+      }
+     },
+     "homeTeamOdds": {
+      "favorite": true,
+      "underdog": false,
+      "spreadOdds": -10000,
+      "open": {
+       "favorite": true,
+       "pointSpread": {
+        "alternateDisplayValue": "-10.5",
+        "american": "-10.5"
+       },
+       "spread": {
+        "value": 1.89,
+        "displayValue": "25/28",
+        "alternateDisplayValue": "-112",
+        "decimal": 1.89,
+        "fraction": "25/28",
+        "american": "-112"
+       },
+       "moneyLine": {
+        "value": 1.23,
+        "displayValue": "100/431",
+        "alternateDisplayValue": "-431",
+        "decimal": 1.23,
+        "fraction": "100/431",
+        "american": "-431"
+       }
+      },
+      "current": {
+       "pointSpread": {
+        "alternateDisplayValue": "-13.5",
+        "american": "-13.5"
+       },
+       "spread": {
+        "value": 1.01,
+        "displayValue": "1/100",
+        "alternateDisplayValue": "-10000",
+        "decimal": 1.01,
+        "fraction": "1/100",
+        "american": "-10000"
+       }
+      },
+      "team": {
+       "id": "309"
+      }
+     },
+     "moneylineWinner": false,
+     "spreadWinner": false,
+     "open": {
+      "over": {
+       "value": 1.9,
+       "displayValue": "100/111",
+       "alternateDisplayValue": "-111",
+       "decimal": 1.9,
+       "fraction": "100/111",
+       "american": "-111"
+      },
+      "under": {
+       "value": 1.83,
+       "displayValue": "5/6",
+       "alternateDisplayValue": "-120",
+       "decimal": 1.83,
+       "fraction": "5/6",
+       "american": "-120"
+      },
+      "total": {
+       "alternateDisplayValue": "49.5",
+       "american": "49.5"
+      }
+     },
+     "current": {
+      "over": {
+       "value": 11.2,
+       "displayValue": "51/5",
+       "alternateDisplayValue": "+1020",
+       "decimal": 11.2,
+       "fraction": "51/5",
+       "american": "+1020"
+      },
+      "under": {
+       "value": 1.03,
+       "displayValue": "1/29",
+       "alternateDisplayValue": "-2900",
+       "decimal": 1.03,
+       "fraction": "1/29",
+       "american": "-2900"
+      },
+      "total": {
+       "alternateDisplayValue": "62.5",
+       "american": "62.5"
+      }
+     }
+    }
+   ]
   }
  },
- "props": {}
+ "props": {},
+ "final": {
+  "away": 24,
+  "home": 38
+ }
 }

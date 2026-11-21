@@ -7,18 +7,18 @@
   "id": "2572",
   "abbr": "USM",
   "name": "Southern Miss Golden Eagles",
-  "score": 0
+  "score": 55
  },
  "home": {
   "id": "2447",
   "abbr": "NICH",
   "name": "Nicholls Colonels",
-  "score": 0
+  "score": 50
  },
  "neutral": true,
  "venue": "Pensacola Bay Center",
  "seasonType": 2,
- "state": "pre",
+ "state": "in",
  "lines": {
   "open": {
    "at": "2026-11-21T04:16:21.782Z",

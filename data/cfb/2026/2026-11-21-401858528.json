@@ -7,13 +7,13 @@
   "id": "26",
   "abbr": "UCLA",
   "name": "UCLA Bruins",
-  "score": 0
+  "score": 3
  },
  "home": {
   "id": "130",
   "abbr": "MICH",
   "name": "Michigan Wolverines",
-  "score": 0
+  "score": 10
  },
  "neutral": false,
  "venue": "Michigan Stadium",

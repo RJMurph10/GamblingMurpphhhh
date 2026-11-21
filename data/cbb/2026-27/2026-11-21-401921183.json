@@ -7,18 +7,18 @@
   "id": "219",
   "abbr": "PENN",
   "name": "Pennsylvania Quakers",
-  "score": 14
+  "score": 83
  },
  "home": {
   "id": "2325",
   "abbr": "LAS",
   "name": "La Salle Explorers",
-  "score": 4
+  "score": 73
  },
  "neutral": false,
  "venue": "John Glaser Arena",
  "seasonType": 2,
- "state": "in",
+ "state": "post",
  "lines": {
   "open": {
    "at": "2026-11-20T21:12:31.580Z",
@@ -851,5 +851,9 @@
    ]
   }
  },
- "props": {}
+ "props": {},
+ "final": {
+  "away": 83,
+  "home": 73
+ }
 }

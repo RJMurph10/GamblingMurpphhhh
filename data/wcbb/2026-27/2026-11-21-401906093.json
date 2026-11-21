@@ -7,18 +7,18 @@
   "id": "333",
   "abbr": "ALA",
   "name": "Alabama Crimson Tide",
-  "score": 0
+  "score": 47
  },
  "home": {
   "id": "153",
   "abbr": "UNC",
   "name": "North Carolina Tar Heels",
-  "score": 0
+  "score": 44
  },
  "neutral": true,
  "venue": "State Farm Field House",
  "seasonType": 2,
- "state": "pre",
+ "state": "in",
  "lines": {
   "open": {
    "at": "2026-11-21T18:04:14.227Z",

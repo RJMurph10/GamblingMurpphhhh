@@ -7,18 +7,18 @@
   "id": "2154",
   "abbr": "COPP",
   "name": "Coppin State Eagles",
-  "score": 0
+  "score": 19
  },
  "home": {
   "id": "46",
   "abbr": "GTWN",
   "name": "Georgetown Hoyas",
-  "score": 0
+  "score": 20
  },
  "neutral": false,
  "venue": "McDonough Arena",
  "seasonType": 2,
- "state": "pre",
+ "state": "in",
  "lines": {
   "open": {
    "at": "2026-11-21T04:16:21.782Z",

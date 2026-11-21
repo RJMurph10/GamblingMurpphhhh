@@ -7,18 +7,18 @@
   "id": "2005",
   "abbr": "AF",
   "name": "Air Force Falcons",
-  "score": 0
+  "score": 53
  },
  "home": {
   "id": "2636",
   "abbr": "UTSA",
   "name": "UTSA Roadrunners",
-  "score": 0
+  "score": 70
  },
  "neutral": false,
  "venue": "UTSA Convocation Center",
  "seasonType": 2,
- "state": "pre",
+ "state": "in",
  "lines": {
   "open": {
    "at": "2026-11-20T22:22:10.516Z",

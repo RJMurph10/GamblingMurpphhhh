@@ -7,13 +7,13 @@
   "id": "4",
   "abbr": "CHI",
   "name": "Chicago Blackhawks",
-  "score": 0
+  "score": 3
  },
  "home": {
   "id": "3",
   "abbr": "CGY",
   "name": "Calgary Flames",
-  "score": 1
+  "score": 3
  },
  "neutral": false,
  "venue": "Scotiabank Saddledome",

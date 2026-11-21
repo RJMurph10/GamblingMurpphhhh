@@ -7,18 +7,18 @@
   "id": "349",
   "abbr": "ARMY",
   "name": "Army Black Knights",
-  "score": 11
+  "score": 46
  },
  "home": {
   "id": "2066",
   "abbr": "BING",
   "name": "Binghamton Bearcats",
-  "score": 28
+  "score": 67
  },
  "neutral": false,
  "venue": "Events Center (Binghamton)",
  "seasonType": 2,
- "state": "in",
+ "state": "post",
  "lines": {
   "open": {
    "at": "2026-11-21T04:16:21.782Z",
@@ -933,5 +933,9 @@
    ]
   }
  },
- "props": {}
+ "props": {},
+ "final": {
+  "away": 46,
+  "home": 67
+ }
 }

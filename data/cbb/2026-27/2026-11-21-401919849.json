@@ -7,18 +7,18 @@
   "id": "111",
   "abbr": "NE",
   "name": "Northeastern Huskies",
-  "score": 0
+  "score": 61
  },
  "home": {
   "id": "284",
   "abbr": "STO",
   "name": "Stonehill Skyhawks",
-  "score": 0
+  "score": 71
  },
  "neutral": false,
  "venue": "Merkert Gymnasium",
  "seasonType": 2,
- "state": "pre",
+ "state": "in",
  "lines": {
   "open": {
    "at": "2026-11-21T04:16:21.782Z",

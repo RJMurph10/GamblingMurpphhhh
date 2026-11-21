@@ -7,18 +7,18 @@
   "id": "79",
   "abbr": "SIU",
   "name": "Southern Illinois Salukis",
-  "score": 0
+  "score": 45
  },
  "home": {
   "id": "151",
   "abbr": "ECU",
   "name": "East Carolina Pirates",
-  "score": 0
+  "score": 35
  },
  "neutral": true,
  "venue": "Elridge Blake Sports and Fitness Center",
  "seasonType": 2,
- "state": "pre",
+ "state": "in",
  "lines": {
   "open": {
    "at": "2026-11-21T11:15:07.773Z",

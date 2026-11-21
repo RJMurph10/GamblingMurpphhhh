@@ -7,18 +7,18 @@
   "id": "311",
   "abbr": "ME",
   "name": "Maine Black Bears",
-  "score": 0
+  "score": 9
  },
  "home": {
   "id": "113",
   "abbr": "MASS",
   "name": "Massachusetts Minutemen",
-  "score": 0
+  "score": 21
  },
  "neutral": false,
  "venue": "Mullins Center",
  "seasonType": 2,
- "state": "pre",
+ "state": "in",
  "lines": {
   "open": {
    "at": "2026-11-21T02:24:29.690Z",

@@ -477,13 +477,14 @@
    ]
   },
   "close": {
-   "at": "2026-11-21T21:10:26.960Z",
+   "at": "2026-11-21T23:25:07.697Z",
    "scoreboard": [
     {
      "provider": {
       "id": "100",
       "name": "DraftKings",
-      "priority": 1
+      "priority": 1,
+      "displayName": "DraftKings"
      },
      "details": "DUKE -17.5",
      "overUnder": 134.5,

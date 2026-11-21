@@ -2,23 +2,23 @@
  "id": "401917538",
  "league": "cbb",
  "date": "2026-11-21T21:30Z",
- "name": "UCI VS USD",
+ "name": "USD VS UCI",
  "away": {
-  "id": "300",
-  "abbr": "UCI",
-  "name": "UC Irvine Anteaters",
-  "score": 0
- },
- "home": {
   "id": "301",
   "abbr": "USD",
   "name": "San Diego Toreros",
-  "score": 0
+  "score": 67
+ },
+ "home": {
+  "id": "300",
+  "abbr": "UCI",
+  "name": "UC Irvine Anteaters",
+  "score": 60
  },
  "neutral": true,
  "venue": "Acrisure Arena",
  "seasonType": 2,
- "state": "pre",
+ "state": "in",
  "lines": {
   "open": {
    "at": "2026-11-20T22:22:10.516Z",
