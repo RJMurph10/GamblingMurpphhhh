@@ -7,18 +7,18 @@
   "id": "2934",
   "abbr": "CSUB",
   "name": "Cal State Bakersfield Roadrunners",
-  "score": 20
+  "score": 81
  },
  "home": {
   "id": "70",
   "abbr": "IDHO",
   "name": "Idaho Vandals",
-  "score": 24
+  "score": 84
  },
  "neutral": false,
  "venue": "ICCU Arena",
  "seasonType": 2,
- "state": "in",
+ "state": "post",
  "lines": {
   "open": {
    "at": "2026-11-20T03:26:33.911Z",
@@ -477,5 +477,9 @@
    ]
   }
  },
- "props": {}
+ "props": {},
+ "final": {
+  "away": 81,
+  "home": 84
+ }
 }

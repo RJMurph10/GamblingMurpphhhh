@@ -7,18 +7,18 @@
   "id": "24",
   "abbr": "STAN",
   "name": "Stanford Cardinal",
-  "score": 0
+  "score": 32
  },
  "home": {
   "id": "264",
   "abbr": "WASH",
   "name": "Washington Huskies",
-  "score": 0
+  "score": 63
  },
  "neutral": false,
  "venue": "Alaska Airlines Arena",
  "seasonType": 2,
- "state": "pre",
+ "state": "in",
  "lines": {
   "open": {
    "at": "2026-11-20T21:12:31.580Z",

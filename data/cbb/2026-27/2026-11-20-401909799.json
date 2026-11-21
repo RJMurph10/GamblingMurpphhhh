@@ -7,18 +7,18 @@
   "id": "2097",
   "abbr": "CAM",
   "name": "Campbell Fighting Camels",
-  "score": 63
+  "score": 80
  },
  "home": {
   "id": "2306",
   "abbr": "KSU",
   "name": "Kansas State Wildcats",
-  "score": 45
+  "score": 70
  },
  "neutral": false,
  "venue": "Bramlage Coliseum",
  "seasonType": 2,
- "state": "in",
+ "state": "post",
  "lines": {
   "open": {
    "at": "2026-11-20T03:26:33.911Z",
@@ -865,7 +865,248 @@
      }
     }
    ]
+  },
+  "final": {
+   "at": "2026-11-21T04:16:21.782Z",
+   "books": [
+    {
+     "provider": {
+      "id": "100",
+      "name": "DraftKings",
+      "priority": 1
+     },
+     "details": "KSU -15.5",
+     "overUnder": 154.5,
+     "spread": -15.5,
+     "overOdds": -112,
+     "underOdds": -108,
+     "awayTeamOdds": {
+      "favorite": false,
+      "underdog": true,
+      "moneyLine": 1100,
+      "spreadOdds": -102,
+      "open": {
+       "favorite": false,
+       "pointSpread": {
+        "alternateDisplayValue": "+15.5",
+        "american": "+15.5"
+       },
+       "spread": {
+        "value": 1.95,
+        "displayValue": "20/21",
+        "alternateDisplayValue": "-105",
+        "decimal": 1.95,
+        "fraction": "20/21",
+        "american": "-105"
+       },
+       "moneyLine": {
+        "value": 11,
+        "displayValue": "10/1",
+        "alternateDisplayValue": "+1000",
+        "decimal": 11,
+        "fraction": "10/1",
+        "american": "+1000"
+       }
+      },
+      "close": {
+       "pointSpread": {
+        "alternateDisplayValue": "+15.5",
+        "american": "+15.5"
+       },
+       "spread": {
+        "value": 1.98,
+        "displayValue": "50/51",
+        "alternateDisplayValue": "-102",
+        "decimal": 1.98,
+        "fraction": "50/51",
+        "american": "-102"
+       },
+       "moneyLine": {
+        "value": 12,
+        "displayValue": "11/1",
+        "alternateDisplayValue": "+1100",
+        "decimal": 12,
+        "fraction": "11/1",
+        "american": "+1100"
+       }
+      },
+      "current": {
+       "pointSpread": {
+        "alternateDisplayValue": "+15.5",
+        "american": "+15.5"
+       },
+       "spread": {
+        "value": 1.98,
+        "displayValue": "50/51",
+        "alternateDisplayValue": "-102",
+        "decimal": 1.98,
+        "fraction": "50/51",
+        "american": "-102"
+       },
+       "moneyLine": {
+        "value": 12,
+        "displayValue": "11/1",
+        "alternateDisplayValue": "+1100",
+        "decimal": 12,
+        "fraction": "11/1",
+        "american": "+1100"
+       }
+      },
+      "team": {
+       "id": "2097"
+      }
+     },
+     "homeTeamOdds": {
+      "favorite": true,
+      "underdog": false,
+      "moneyLine": -2100,
+      "spreadOdds": -118,
+      "open": {
+       "favorite": true,
+       "pointSpread": {
+        "alternateDisplayValue": "-15.5",
+        "american": "-15.5"
+       },
+       "spread": {
+        "value": 1.86,
+        "displayValue": "20/23",
+        "alternateDisplayValue": "-115",
+        "decimal": 1.86,
+        "fraction": "20/23",
+        "american": "-115"
+       },
+       "moneyLine": {
+        "value": 1.05,
+        "displayValue": "1/18",
+        "alternateDisplayValue": "-1800",
+        "decimal": 1.05,
+        "fraction": "1/18",
+        "american": "-1800"
+       }
+      },
+      "close": {
+       "pointSpread": {
+        "alternateDisplayValue": "-15.5",
+        "american": "-15.5"
+       },
+       "spread": {
+        "value": 1.84,
+        "displayValue": "50/59",
+        "alternateDisplayValue": "-118",
+        "decimal": 1.84,
+        "fraction": "50/59",
+        "american": "-118"
+       },
+       "moneyLine": {
+        "value": 1.04,
+        "displayValue": "1/21",
+        "alternateDisplayValue": "-2100",
+        "decimal": 1.04,
+        "fraction": "1/21",
+        "american": "-2100"
+       }
+      },
+      "current": {
+       "pointSpread": {
+        "alternateDisplayValue": "-15.5",
+        "american": "-15.5"
+       },
+       "spread": {
+        "value": 1.84,
+        "displayValue": "50/59",
+        "alternateDisplayValue": "-118",
+        "decimal": 1.84,
+        "fraction": "50/59",
+        "american": "-118"
+       },
+       "moneyLine": {
+        "value": 1.04,
+        "displayValue": "1/21",
+        "alternateDisplayValue": "-2100",
+        "decimal": 1.04,
+        "fraction": "1/21",
+        "american": "-2100"
+       }
+      },
+      "team": {
+       "id": "2306"
+      }
+     },
+     "moneylineWinner": false,
+     "spreadWinner": false,
+     "open": {
+      "over": {
+       "value": 1.95,
+       "displayValue": "20/21",
+       "alternateDisplayValue": "-105",
+       "decimal": 1.95,
+       "fraction": "20/21",
+       "american": "-105"
+      },
+      "under": {
+       "value": 1.86,
+       "displayValue": "20/23",
+       "alternateDisplayValue": "-115",
+       "decimal": 1.86,
+       "fraction": "20/23",
+       "american": "-115"
+      },
+      "total": {
+       "alternateDisplayValue": "156.5",
+       "american": "156.5"
+      }
+     },
+     "close": {
+      "over": {
+       "value": 1.89,
+       "displayValue": "25/28",
+       "alternateDisplayValue": "-112",
+       "decimal": 1.89,
+       "fraction": "25/28",
+       "american": "-112"
+      },
+      "under": {
+       "value": 1.92,
+       "displayValue": "25/27",
+       "alternateDisplayValue": "-108",
+       "decimal": 1.92,
+       "fraction": "25/27",
+       "american": "-108"
+      },
+      "total": {
+       "alternateDisplayValue": "154.5",
+       "american": "154.5"
+      }
+     },
+     "current": {
+      "over": {
+       "value": 1.89,
+       "displayValue": "25/28",
+       "alternateDisplayValue": "-112",
+       "decimal": 1.89,
+       "fraction": "25/28",
+       "american": "-112"
+      },
+      "under": {
+       "value": 1.92,
+       "displayValue": "25/27",
+       "alternateDisplayValue": "-108",
+       "decimal": 1.92,
+       "fraction": "25/27",
+       "american": "-108"
+      },
+      "total": {
+       "alternateDisplayValue": "154.5",
+       "american": "154.5"
+      }
+     }
+    }
+   ]
   }
  },
- "props": {}
+ "props": {},
+ "final": {
+  "away": 80,
+  "home": 70
+ }
 }

@@ -7,18 +7,18 @@
   "id": "139",
   "abbr": "SLU",
   "name": "Saint Louis Billikens",
-  "score": 0
+  "score": 12
  },
  "home": {
   "id": "2608",
   "abbr": "SMC",
   "name": "Saint Mary's Gaels",
-  "score": 0
+  "score": 17
  },
  "neutral": false,
  "venue": "University Credit Union Pavilion",
  "seasonType": 2,
- "state": "pre",
+ "state": "in",
  "lines": {
   "open": {
    "at": "2026-11-20T03:26:33.911Z",

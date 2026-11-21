@@ -7,18 +7,18 @@
   "id": "11",
   "abbr": "IND",
   "name": "Indiana Pacers",
-  "score": 84
+  "score": 119
  },
  "home": {
   "id": "5",
   "abbr": "CLE",
   "name": "Cleveland Cavaliers",
-  "score": 107
+  "score": 128
  },
  "neutral": false,
  "venue": "Rocket Arena",
  "seasonType": 2,
- "state": "in",
+ "state": "post",
  "lines": {
   "open": {
    "at": "2026-11-20T03:26:33.911Z",
@@ -927,6 +927,243 @@
       "total": {
        "alternateDisplayValue": "234.5",
        "american": "234.5"
+      }
+     }
+    }
+   ]
+  },
+  "final": {
+   "at": "2026-11-21T04:16:21.782Z",
+   "books": [
+    {
+     "provider": {
+      "id": "100",
+      "name": "DraftKings",
+      "priority": 1
+     },
+     "details": "CLE -6.5",
+     "overUnder": 235.5,
+     "spread": -6.5,
+     "overOdds": -107,
+     "underOdds": -113,
+     "awayTeamOdds": {
+      "favorite": false,
+      "underdog": true,
+      "moneyLine": 201,
+      "spreadOdds": -116,
+      "open": {
+       "favorite": false,
+       "pointSpread": {
+        "alternateDisplayValue": "+7.5",
+        "american": "+7.5"
+       },
+       "spread": {
+        "value": 1.87,
+        "displayValue": "50/57",
+        "alternateDisplayValue": "-114",
+        "decimal": 1.87,
+        "fraction": "50/57",
+        "american": "-114"
+       },
+       "moneyLine": {
+        "value": 3.03,
+        "displayValue": "203/100",
+        "alternateDisplayValue": "+203",
+        "decimal": 3.03,
+        "fraction": "203/100",
+        "american": "+203"
+       }
+      },
+      "close": {
+       "pointSpread": {
+        "alternateDisplayValue": "+6.5",
+        "american": "+6.5"
+       },
+       "spread": {
+        "value": 1.86,
+        "displayValue": "25/29",
+        "alternateDisplayValue": "-116",
+        "decimal": 1.86,
+        "fraction": "25/29",
+        "american": "-116"
+       },
+       "moneyLine": {
+        "value": 3.01,
+        "displayValue": "201/100",
+        "alternateDisplayValue": "+201",
+        "decimal": 3.01,
+        "fraction": "201/100",
+        "american": "+201"
+       }
+      },
+      "current": {
+       "pointSpread": {
+        "alternateDisplayValue": "+6.5",
+        "american": "+6.5"
+       },
+       "spread": {
+        "value": 1.86,
+        "displayValue": "25/29",
+        "alternateDisplayValue": "-116",
+        "decimal": 1.86,
+        "fraction": "25/29",
+        "american": "-116"
+       },
+       "moneyLine": {
+        "value": 3.01,
+        "displayValue": "201/100",
+        "alternateDisplayValue": "+201",
+        "decimal": 3.01,
+        "fraction": "201/100",
+        "american": "+201"
+       }
+      },
+      "team": {
+       "id": "11"
+      }
+     },
+     "homeTeamOdds": {
+      "favorite": true,
+      "underdog": false,
+      "moneyLine": -244,
+      "spreadOdds": -104,
+      "open": {
+       "favorite": true,
+       "pointSpread": {
+        "alternateDisplayValue": "-7.5",
+        "american": "-7.5"
+       },
+       "spread": {
+        "value": 1.94,
+        "displayValue": "50/53",
+        "alternateDisplayValue": "-106",
+        "decimal": 1.94,
+        "fraction": "50/53",
+        "american": "-106"
+       },
+       "moneyLine": {
+        "value": 1.4,
+        "displayValue": "50/123",
+        "alternateDisplayValue": "-246",
+        "decimal": 1.4,
+        "fraction": "50/123",
+        "american": "-246"
+       }
+      },
+      "close": {
+       "pointSpread": {
+        "alternateDisplayValue": "-6.5",
+        "american": "-6.5"
+       },
+       "spread": {
+        "value": 1.96,
+        "displayValue": "25/26",
+        "alternateDisplayValue": "-104",
+        "decimal": 1.96,
+        "fraction": "25/26",
+        "american": "-104"
+       },
+       "moneyLine": {
+        "value": 1.4,
+        "displayValue": "25/61",
+        "alternateDisplayValue": "-244",
+        "decimal": 1.4,
+        "fraction": "25/61",
+        "american": "-244"
+       }
+      },
+      "current": {
+       "pointSpread": {
+        "alternateDisplayValue": "-6.5",
+        "american": "-6.5"
+       },
+       "spread": {
+        "value": 1.96,
+        "displayValue": "25/26",
+        "alternateDisplayValue": "-104",
+        "decimal": 1.96,
+        "fraction": "25/26",
+        "american": "-104"
+       },
+       "moneyLine": {
+        "value": 1.4,
+        "displayValue": "25/61",
+        "alternateDisplayValue": "-244",
+        "decimal": 1.4,
+        "fraction": "25/61",
+        "american": "-244"
+       }
+      },
+      "team": {
+       "id": "5"
+      }
+     },
+     "moneylineWinner": false,
+     "spreadWinner": false,
+     "open": {
+      "over": {
+       "value": 1.87,
+       "displayValue": "50/57",
+       "alternateDisplayValue": "-114",
+       "decimal": 1.87,
+       "fraction": "50/57",
+       "american": "-114"
+      },
+      "under": {
+       "value": 1.94,
+       "displayValue": "50/53",
+       "alternateDisplayValue": "-106",
+       "decimal": 1.94,
+       "fraction": "50/53",
+       "american": "-106"
+      },
+      "total": {
+       "alternateDisplayValue": "234.5",
+       "american": "234.5"
+      }
+     },
+     "close": {
+      "over": {
+       "value": 1.93,
+       "displayValue": "100/107",
+       "alternateDisplayValue": "-107",
+       "decimal": 1.93,
+       "fraction": "100/107",
+       "american": "-107"
+      },
+      "under": {
+       "value": 1.88,
+       "displayValue": "100/113",
+       "alternateDisplayValue": "-113",
+       "decimal": 1.88,
+       "fraction": "100/113",
+       "american": "-113"
+      },
+      "total": {
+       "alternateDisplayValue": "235.5",
+       "american": "235.5"
+      }
+     },
+     "current": {
+      "over": {
+       "value": 1.93,
+       "displayValue": "100/107",
+       "alternateDisplayValue": "-107",
+       "decimal": 1.93,
+       "fraction": "100/107",
+       "american": "-107"
+      },
+      "under": {
+       "value": 1.88,
+       "displayValue": "100/113",
+       "alternateDisplayValue": "-113",
+       "decimal": 1.88,
+       "fraction": "100/113",
+       "american": "-113"
+      },
+      "total": {
+       "alternateDisplayValue": "235.5",
+       "american": "235.5"
       }
      }
     }
@@ -4180,5 +4417,9 @@
    "Riley Minix",
    "CLE"
   ]
+ },
+ "final": {
+  "away": 119,
+  "home": 128
  }
 }
