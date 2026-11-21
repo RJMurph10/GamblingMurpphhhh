@@ -184,7 +184,12 @@
    "firstSeen": "2026-11-20T03:44:50.443Z",
    "latest": 4.5,
    "latestAt": "2026-11-20T21:59:50.358Z",
-   "alerted": false
+   "alerted": false,
+   "score": [
+    111,
+    101
+   ],
+   "close": 4.5
   },
   {
    "id": "401909312-spread",
@@ -200,7 +205,12 @@
    "firstSeen": "2026-11-20T03:44:50.443Z",
    "latest": -1.5,
    "latestAt": "2026-11-20T21:59:50.358Z",
-   "alerted": false
+   "alerted": false,
+   "score": [
+    124,
+    133
+   ],
+   "close": 1.5
   },
   {
    "id": "401909313-spread",
@@ -216,7 +226,12 @@
    "firstSeen": "2026-11-20T03:44:50.443Z",
    "latest": -14.5,
    "latestAt": "2026-11-20T21:59:50.358Z",
-   "alerted": false
+   "alerted": false,
+   "score": [
+    104,
+    106
+   ],
+   "close": -14.5
   }
  ]
 }
