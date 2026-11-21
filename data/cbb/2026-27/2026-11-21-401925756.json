@@ -7,18 +7,18 @@
   "id": "2174",
   "abbr": "DETM",
   "name": "Detroit Mercy Titans",
-  "score": 0
+  "score": 27
  },
  "home": {
   "id": "127",
   "abbr": "MSU",
   "name": "Michigan State Spartans",
-  "score": 0
+  "score": 42
  },
  "neutral": false,
  "venue": "Breslin Center",
  "seasonType": 2,
- "state": "pre",
+ "state": "in",
  "lines": {
   "open": {
    "at": "2026-11-20T21:12:31.580Z",

@@ -7,18 +7,18 @@
   "id": "235",
   "abbr": "MEM",
   "name": "Memphis Tigers",
-  "score": 0
+  "score": 7
  },
  "home": {
   "id": "2426",
   "abbr": "NAVY",
   "name": "Navy Midshipmen",
-  "score": 0
+  "score": 7
  },
  "neutral": false,
  "venue": "Navy-Marine Corps Memorial Stadium",
  "seasonType": 2,
- "state": "pre",
+ "state": "in",
  "lines": {
   "open": {
    "at": "2026-11-15T17:47:38.554Z",

@@ -7,18 +7,18 @@
   "id": "2908",
   "abbr": "UPST",
   "name": "South Carolina Upstate Spartans",
-  "score": 0
+  "score": 66
  },
  "home": {
   "id": "2430",
   "abbr": "UNCG",
   "name": "UNC Greensboro Spartans",
-  "score": 0
+  "score": 85
  },
  "neutral": false,
  "venue": "Bodford Arena",
  "seasonType": 2,
- "state": "pre",
+ "state": "post",
  "lines": {
   "open": {
    "at": "2026-11-20T22:22:10.516Z",
@@ -395,5 +395,9 @@
    ]
   }
  },
- "props": {}
+ "props": {},
+ "final": {
+  "away": 66,
+  "home": 85
+ }
 }

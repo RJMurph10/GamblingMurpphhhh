@@ -7,7 +7,7 @@
   "id": "2172",
   "abbr": "DEN",
   "name": "Denver Pioneers",
-  "score": 0
+  "score": 2
  },
  "home": {
   "id": "2199",
@@ -18,7 +18,7 @@
  "neutral": false,
  "venue": "Gervin GameAbove Center",
  "seasonType": 2,
- "state": "pre",
+ "state": "in",
  "lines": {
   "open": {
    "at": "2026-11-20T21:12:31.580Z",

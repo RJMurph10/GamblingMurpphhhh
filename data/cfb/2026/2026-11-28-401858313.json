@@ -1,0 +1,245 @@
+{
+ "id": "401858313",
+ "league": "cfb",
+ "date": "2026-11-28T17:00Z",
+ "name": "NCSU @ UNC",
+ "away": {
+  "id": "152",
+  "abbr": "NCSU",
+  "name": "NC State Wolfpack",
+  "score": 0
+ },
+ "home": {
+  "id": "153",
+  "abbr": "UNC",
+  "name": "North Carolina Tar Heels",
+  "score": 0
+ },
+ "neutral": false,
+ "venue": "Kenan Stadium",
+ "seasonType": 2,
+ "state": "pre",
+ "lines": {
+  "open": {
+   "at": "2026-11-21T18:04:14.227Z",
+   "scoreboard": [
+    {
+     "provider": {
+      "id": "100",
+      "name": "DraftKings",
+      "priority": 1,
+      "displayName": "DraftKings"
+     },
+     "overUnder": 55.5,
+     "awayTeamOdds": {
+      "favorite": false,
+      "underdog": false,
+      "team": {
+       "id": "152",
+       "uid": "s:20~l:23~t:152",
+       "abbreviation": "NCSU",
+       "name": "Wolfpack",
+       "displayName": "NC State Wolfpack",
+       "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/152.png"
+      }
+     },
+     "homeTeamOdds": {
+      "favorite": false,
+      "underdog": false,
+      "team": {
+       "id": "153",
+       "uid": "s:20~l:23~t:153",
+       "abbreviation": "UNC",
+       "name": "Tar Heels",
+       "displayName": "North Carolina Tar Heels",
+       "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/153.png"
+      }
+     },
+     "moneyline": {
+      "displayName": "Moneyline",
+      "shortDisplayName": "ML",
+      "home": {
+       "close": {
+        "odds": "OFF"
+       },
+       "open": {
+        "odds": "OFF"
+       }
+      },
+      "away": {
+       "close": {
+        "odds": "OFF"
+       },
+       "open": {
+        "odds": "OFF"
+       }
+      }
+     },
+     "pointSpread": {
+      "displayName": "Spread",
+      "shortDisplayName": "Spread",
+      "home": {
+       "close": {
+        "line": "OFF",
+        "odds": "OFF"
+       },
+       "open": {
+        "line": "OFF",
+        "odds": "OFF"
+       }
+      },
+      "away": {
+       "close": {
+        "line": "OFF",
+        "odds": "OFF"
+       },
+       "open": {
+        "line": "OFF",
+        "odds": "OFF"
+       }
+      }
+     },
+     "total": {
+      "displayName": "Total",
+      "shortDisplayName": "Total",
+      "over": {
+       "close": {
+        "line": "o55.5",
+        "odds": "-110",
+        "link": {
+         "language": "en-US",
+         "rel": [
+          "over",
+          "desktop",
+          "bets"
+         ],
+         "href": "https://sportsbook.draftkings.com/gateway?s=__s__&wpcid=__wpcid__&wpsrc=413&wpcn=ESPN&wpscn=Widget&wpcrn=BetSlipDeepLink&wpscid=__wpscid__&wpcrid=xx&preurl=https%3A%2F%2Fsportsbook.draftkings.com%2Fevent%2F34226157%3Foutcomes%3D0OU84998543O5550_1",
+         "text": "Over Odds",
+         "shortText": "Over Odds",
+         "isExternal": true,
+         "isPremium": false,
+         "tracking": {
+          "campaign": "betting-integrations",
+          "tags": {
+           "league": "college-football",
+           "sport": "football",
+           "gameId": 401858313,
+           "betSide": "over",
+           "betType": "straight",
+           "betDetails": "Over:55.5"
+          }
+         }
+        }
+       },
+       "open": {
+        "line": "o55.5",
+        "odds": "-112"
+       }
+      },
+      "under": {
+       "close": {
+        "line": "u55.5",
+        "odds": "OFF"
+       },
+       "open": {
+        "line": "u55.5",
+        "odds": "OFF"
+       }
+      }
+     },
+     "link": {
+      "language": "en-US",
+      "rel": [
+       "game",
+       "desktop",
+       "bets"
+      ],
+      "href": "https://sportsbook.draftkings.com/gateway?s=__s__&wpcid=__wpcid__&wpsrc=413&wpcn=ESPN&wpscn=Widget&wpcrn=BetSlipDeepLink&wpscid=__wpscid__&wpcrid=xx&preurl=https%3A%2F%2Fsportsbook.draftkings.com%2Fevent%2F34226157",
+      "text": "See More Odds",
+      "shortText": "Game",
+      "isExternal": true,
+      "isPremium": false,
+      "tracking": {
+       "campaign": "betting-integrations",
+       "tags": {
+        "league": "college-football",
+        "sport": "football",
+        "gameId": 401858313,
+        "betSide": "none",
+        "betType": "straight"
+       }
+      }
+     },
+     "header": {
+      "logo": {
+       "dark": "https://a.espncdn.com/i/espnbet/dark/espn-bet-square-off.svg",
+       "light": "https://a.espncdn.com/i/espnbet/espn-bet-square-off.svg",
+       "exclusivesLogoDark": "https://a.espncdn.com/i/espnbet/espn-bet-square-mint.svg",
+       "exclusivesLogoLight": "https://a.espncdn.com/i/espnbet/espn-bet-square-mint.svg"
+      },
+      "text": "Game Odds"
+     },
+     "footer": {
+      "disclaimer": "GAMBLING PROBLEM? CALL 1-800-GAMBLER or 1-800-MY-RESET, (800) 327-5050 or visit gamblinghelplinema.org (MA). Call 877-8-HOPENY/text HOPENY (467369) (NY). Call 888-789-7777/visit ccpg.org (CT), or visit www.mdgamblinghelp.org (MD), 1-800-981-0023 (PR). 21+ and present in most states. (18+ DC/KY/NH/PR/WY). Void in ONT. Eligibility restrictions apply. Terms: draftkings.com/sportsbook. On behalf of Boot Hill Casino (KS). Pass-thru of per wager tax may apply in IL."
+     }
+    }
+   ],
+   "books": [
+    {
+     "provider": {
+      "id": "100",
+      "name": "DraftKings",
+      "priority": 1
+     },
+     "overUnder": 55.5,
+     "overOdds": -110,
+     "awayTeamOdds": {
+      "favorite": false,
+      "underdog": false,
+      "team": {
+       "id": "152"
+      }
+     },
+     "homeTeamOdds": {
+      "favorite": false,
+      "underdog": false,
+      "team": {
+       "id": "153"
+      }
+     },
+     "moneylineWinner": false,
+     "spreadWinner": false,
+     "open": {
+      "over": {
+       "value": 1.89,
+       "displayValue": "25/28",
+       "alternateDisplayValue": "-112",
+       "decimal": 1.89,
+       "fraction": "25/28",
+       "american": "-112"
+      },
+      "total": {
+       "alternateDisplayValue": "55.5",
+       "american": "55.5"
+      }
+     },
+     "current": {
+      "over": {
+       "value": 1.9,
+       "displayValue": "10/11",
+       "alternateDisplayValue": "-110",
+       "decimal": 1.9,
+       "fraction": "10/11",
+       "american": "-110"
+      },
+      "total": {
+       "alternateDisplayValue": "55.5",
+       "american": "55.5"
+      }
+     }
+    }
+   ]
+  }
+ },
+ "props": {}
+}

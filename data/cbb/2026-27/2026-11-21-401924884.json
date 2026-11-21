@@ -7,18 +7,18 @@
   "id": "2561",
   "abbr": "SIE",
   "name": "Siena Saints",
-  "score": 0
+  "score": 87
  },
  "home": {
   "id": "2083",
   "abbr": "BUCK",
   "name": "Bucknell Bison",
-  "score": 0
+  "score": 78
  },
  "neutral": false,
  "venue": "Sojka Pavilion",
  "seasonType": 2,
- "state": "pre",
+ "state": "in",
  "lines": {
   "open": {
    "at": "2026-11-20T22:22:10.516Z",

@@ -7,18 +7,18 @@
   "id": "252",
   "abbr": "BYU",
   "name": "BYU Cougars",
-  "score": 0
+  "score": 3
  },
  "home": {
   "id": "2305",
   "abbr": "KU",
   "name": "Kansas Jayhawks",
-  "score": 0
+  "score": 3
  },
  "neutral": false,
  "venue": "David Booth Kansas Memorial Stadium",
  "seasonType": 2,
- "state": "pre",
+ "state": "in",
  "lines": {
   "open": {
    "at": "2026-11-15T11:04:29.925Z",

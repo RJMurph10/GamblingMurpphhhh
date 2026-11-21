@@ -7,18 +7,18 @@
   "id": "171",
   "abbr": "COLU",
   "name": "Columbia Lions",
-  "score": 0
+  "score": 35
  },
  "home": {
   "id": "104",
   "abbr": "BU",
   "name": "Boston University Terriers",
-  "score": 0
+  "score": 25
  },
  "neutral": false,
  "venue": "Case Gym",
  "seasonType": 2,
- "state": "pre",
+ "state": "in",
  "lines": {
   "open": {
    "at": "2026-11-21T02:24:29.690Z",
