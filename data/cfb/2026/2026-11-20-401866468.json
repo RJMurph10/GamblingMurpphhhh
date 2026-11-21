@@ -13,12 +13,12 @@
   "id": "2649",
   "abbr": "TOL",
   "name": "Toledo Rockets",
-  "score": 0
+  "score": 16
  },
  "neutral": false,
  "venue": "Glass Bowl",
  "seasonType": 2,
- "state": "pre",
+ "state": "in",
  "lines": {
   "open": {
    "at": "2026-11-15T17:47:38.554Z",

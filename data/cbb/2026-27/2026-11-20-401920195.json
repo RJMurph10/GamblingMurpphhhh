@@ -7,18 +7,18 @@
   "id": "2603",
   "abbr": "JOES",
   "name": "Saint Joseph's Hawks",
-  "score": 0
+  "score": 64
  },
  "home": {
   "id": "2182",
   "abbr": "DREX",
   "name": "Drexel Dragons",
-  "score": 0
+  "score": 75
  },
  "neutral": false,
  "venue": "Daskalakis Athletic Center",
  "seasonType": 2,
- "state": "pre",
+ "state": "post",
  "lines": {
   "open": {
    "at": "2026-11-20T03:26:33.911Z",
@@ -933,5 +933,9 @@
    ]
   }
  },
- "props": {}
+ "props": {},
+ "final": {
+  "away": 64,
+  "home": 75
+ }
 }

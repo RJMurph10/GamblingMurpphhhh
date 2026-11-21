@@ -7,18 +7,18 @@
   "id": "2247",
   "abbr": "GAST",
   "name": "Georgia State Panthers",
-  "score": 0
+  "score": 77
  },
  "home": {
   "id": "55",
   "abbr": "JXST",
   "name": "Jacksonville State Gamecocks",
-  "score": 0
+  "score": 82
  },
  "neutral": false,
  "venue": "Pete Mathews Coliseum",
  "seasonType": 2,
- "state": "pre",
+ "state": "post",
  "lines": {
   "open": {
    "at": "2026-11-20T03:26:33.911Z",
@@ -933,5 +933,9 @@
    ]
   }
  },
- "props": {}
+ "props": {},
+ "final": {
+  "away": 77,
+  "home": 82
+ }
 }

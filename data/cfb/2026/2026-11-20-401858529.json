@@ -7,7 +7,7 @@
   "id": "2483",
   "abbr": "ORE",
   "name": "Oregon Ducks",
-  "score": 0
+  "score": 10
  },
  "home": {
   "id": "127",
@@ -18,7 +18,7 @@
  "neutral": false,
  "venue": "Spartan Stadium",
  "seasonType": 2,
- "state": "pre",
+ "state": "in",
  "lines": {
   "open": {
    "at": "2026-11-15T11:04:29.925Z",

@@ -7,18 +7,18 @@
   "id": "11",
   "abbr": "IND",
   "name": "Indiana Pacers",
-  "score": 0
+  "score": 84
  },
  "home": {
   "id": "5",
   "abbr": "CLE",
   "name": "Cleveland Cavaliers",
-  "score": 0
+  "score": 107
  },
  "neutral": false,
  "venue": "Rocket Arena",
  "seasonType": 2,
- "state": "pre",
+ "state": "in",
  "lines": {
   "open": {
    "at": "2026-11-20T03:26:33.911Z",

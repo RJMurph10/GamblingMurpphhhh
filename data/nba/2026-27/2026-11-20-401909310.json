@@ -7,18 +7,18 @@
   "id": "3",
   "abbr": "NO",
   "name": "New Orleans Pelicans",
-  "score": 0
+  "score": 70
  },
  "home": {
   "id": "25",
   "abbr": "OKC",
   "name": "Oklahoma City Thunder",
-  "score": 0
+  "score": 64
  },
  "neutral": false,
  "venue": "Paycom Center",
  "seasonType": 2,
- "state": "pre",
+ "state": "in",
  "lines": {
   "open": {
    "at": "2026-11-20T03:26:33.911Z",

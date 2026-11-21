@@ -2,23 +2,23 @@
  "id": "401916125",
  "league": "cbb",
  "date": "2026-11-21T01:00Z",
- "name": "UVU VS ECU",
+ "name": "ECU VS UVU",
  "away": {
-  "id": "3084",
-  "abbr": "UVU",
-  "name": "Utah Valley Wolverines",
-  "score": 0
- },
- "home": {
   "id": "151",
   "abbr": "ECU",
   "name": "East Carolina Pirates",
-  "score": 0
+  "score": 39
+ },
+ "home": {
+  "id": "3084",
+  "abbr": "UVU",
+  "name": "Utah Valley Wolverines",
+  "score": 48
  },
  "neutral": true,
  "venue": "Elridge Blake Sports and Fitness Center",
  "seasonType": 2,
- "state": "pre",
+ "state": "in",
  "lines": {
   "open": {
    "at": "2026-11-20T03:26:33.911Z",

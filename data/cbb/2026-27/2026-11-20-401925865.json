@@ -7,18 +7,18 @@
   "id": "202",
   "abbr": "TLSA",
   "name": "Tulsa Golden Hurricane",
-  "score": 0
+  "score": 55
  },
  "home": {
   "id": "344",
   "abbr": "MSST",
   "name": "Mississippi State Bulldogs",
-  "score": 0
+  "score": 64
  },
  "neutral": true,
  "venue": "Mississippi Coliseum",
  "seasonType": 2,
- "state": "pre",
+ "state": "in",
  "lines": {
   "open": {
    "at": "2026-11-20T03:26:33.911Z",

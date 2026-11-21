@@ -7,18 +7,18 @@
   "id": "250",
   "abbr": "UTA",
   "name": "UT Arlington Mavericks",
-  "score": 0
+  "score": 64
  },
  "home": {
   "id": "2466",
   "abbr": "NWST",
   "name": "Northwestern State Demons",
-  "score": 0
+  "score": 56
  },
  "neutral": false,
  "venue": "Prather Coliseum",
  "seasonType": 2,
- "state": "pre",
+ "state": "in",
  "lines": {
   "open": {
    "at": "2026-11-20T03:26:33.911Z",

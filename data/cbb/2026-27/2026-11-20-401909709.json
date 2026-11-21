@@ -7,18 +7,18 @@
   "id": "2117",
   "abbr": "CMU",
   "name": "Central Michigan Chippewas",
-  "score": 0
+  "score": 82
  },
  "home": {
   "id": "221",
   "abbr": "PITT",
   "name": "Pittsburgh Panthers",
-  "score": 0
+  "score": 104
  },
  "neutral": false,
  "venue": "Petersen Events Center",
  "seasonType": 2,
- "state": "pre",
+ "state": "post",
  "lines": {
   "open": {
    "at": "2026-11-20T03:26:33.911Z",
@@ -933,5 +933,9 @@
    ]
   }
  },
- "props": {}
+ "props": {},
+ "final": {
+  "away": 82,
+  "home": 104
+ }
 }

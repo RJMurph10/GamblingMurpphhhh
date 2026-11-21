@@ -2,23 +2,23 @@
  "id": "401927396",
  "league": "cbb",
  "date": "2026-11-21T00:00Z",
- "name": "RICH VS WKU",
+ "name": "WKU VS RICH",
  "away": {
-  "id": "257",
-  "abbr": "RICH",
-  "name": "Richmond Spiders",
-  "score": 0
- },
- "home": {
   "id": "98",
   "abbr": "WKU",
   "name": "Western Kentucky Hilltoppers",
-  "score": 0
+  "score": 82
+ },
+ "home": {
+  "id": "257",
+  "abbr": "RICH",
+  "name": "Richmond Spiders",
+  "score": 68
  },
  "neutral": true,
  "venue": "Colonial Hall",
  "seasonType": 2,
- "state": "pre",
+ "state": "post",
  "lines": {
   "open": {
    "at": "2026-11-20T03:26:33.911Z",
@@ -933,5 +933,9 @@
    ]
   }
  },
- "props": {}
+ "props": {},
+ "final": {
+  "away": 82,
+  "home": 68
+ }
 }

@@ -7,18 +7,18 @@
   "id": "2545",
   "abbr": "SELA",
   "name": "SE Louisiana Lions",
-  "score": 0
+  "score": 59
  },
  "home": {
   "id": "338",
   "abbr": "KENN",
   "name": "Kennesaw State Owls",
-  "score": 0
+  "score": 96
  },
  "neutral": false,
  "venue": "VyStar Arena",
  "seasonType": 2,
- "state": "pre",
+ "state": "post",
  "lines": {
   "open": {
    "at": "2026-11-20T03:26:33.911Z",
@@ -851,5 +851,9 @@
    ]
   }
  },
- "props": {}
+ "props": {},
+ "final": {
+  "away": 59,
+  "home": 96
+ }
 }

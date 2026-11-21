@@ -7,18 +7,18 @@
   "id": "275",
   "abbr": "WIS",
   "name": "Wisconsin Badgers",
-  "score": 0
+  "score": 53
  },
  "home": {
   "id": "93",
   "abbr": "MUR",
   "name": "Murray State Racers",
-  "score": 0
+  "score": 70
  },
  "neutral": true,
  "venue": "Baha Mar Convention Center",
  "seasonType": 2,
- "state": "pre",
+ "state": "post",
  "lines": {
   "open": {
    "at": "2026-11-20T21:12:31.580Z",
@@ -933,5 +933,9 @@
    ]
   }
  },
- "props": {}
+ "props": {},
+ "final": {
+  "away": 53,
+  "home": 70
+ }
 }

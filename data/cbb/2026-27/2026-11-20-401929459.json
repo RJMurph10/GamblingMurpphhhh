@@ -7,18 +7,18 @@
   "id": "6",
   "abbr": "USA",
   "name": "South Alabama Jaguars",
-  "score": 0
+  "score": 40
  },
  "home": {
   "id": "2567",
   "abbr": "SMU",
   "name": "SMU Mustangs",
-  "score": 0
+  "score": 82
  },
  "neutral": false,
  "venue": "Moody Coliseum (Dallas)",
  "seasonType": 2,
- "state": "pre",
+ "state": "in",
  "lines": {
   "open": {
    "at": "2026-11-20T03:26:33.911Z",

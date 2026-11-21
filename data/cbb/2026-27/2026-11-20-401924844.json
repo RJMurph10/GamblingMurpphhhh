@@ -7,18 +7,18 @@
   "id": "315",
   "abbr": "NIA",
   "name": "Niagara Purple Eagles",
-  "score": 0
+  "score": 90
  },
  "home": {
   "id": "2169",
   "abbr": "DSU",
   "name": "Delaware State Hornets",
-  "score": 0
+  "score": 90
  },
  "neutral": false,
  "venue": "Memorial Hall (DE)",
  "seasonType": 2,
- "state": "pre",
+ "state": "in",
  "lines": {
   "open": {
    "at": "2026-11-20T03:26:33.911Z",

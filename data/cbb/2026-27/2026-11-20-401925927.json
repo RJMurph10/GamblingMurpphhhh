@@ -7,18 +7,18 @@
   "id": "2569",
   "abbr": "SCST",
   "name": "South Carolina State Bulldogs",
-  "score": 0
+  "score": 63
  },
  "home": {
   "id": "2643",
   "abbr": "CIT",
   "name": "The Citadel Bulldogs",
-  "score": 0
+  "score": 79
  },
  "neutral": false,
  "venue": "McAlister Field House",
  "seasonType": 2,
- "state": "pre",
+ "state": "post",
  "lines": {
   "open": {
    "at": "2026-11-20T03:26:33.911Z",
@@ -851,5 +851,9 @@
    ]
   }
  },
- "props": {}
+ "props": {},
+ "final": {
+  "away": 63,
+  "home": 79
+ }
 }

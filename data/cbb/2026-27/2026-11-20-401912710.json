@@ -7,18 +7,18 @@
   "id": "276",
   "abbr": "MRSH",
   "name": "Marshall Thundering Herd",
-  "score": 0
+  "score": 14
  },
  "home": {
   "id": "153",
   "abbr": "UNC",
   "name": "North Carolina Tar Heels",
-  "score": 0
+  "score": 27
  },
  "neutral": false,
  "venue": "Dean E. Smith Center",
  "seasonType": 2,
- "state": "pre",
+ "state": "in",
  "lines": {
   "open": {
    "at": "2026-11-20T03:26:33.911Z",

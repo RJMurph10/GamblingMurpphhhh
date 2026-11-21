@@ -7,18 +7,18 @@
   "id": "30",
   "abbr": "CHA",
   "name": "Charlotte Hornets",
-  "score": 0
+  "score": 97
  },
  "home": {
   "id": "1",
   "abbr": "ATL",
   "name": "Atlanta Hawks",
-  "score": 0
+  "score": 111
  },
  "neutral": false,
  "venue": "State Farm Arena",
  "seasonType": 2,
- "state": "pre",
+ "state": "post",
  "lines": {
   "open": {
    "at": "2026-11-20T03:26:33.911Z",
@@ -4575,5 +4575,9 @@
    "Hannes Steinbach",
    "CHA"
   ]
+ },
+ "final": {
+  "away": 97,
+  "home": 111
  }
 }

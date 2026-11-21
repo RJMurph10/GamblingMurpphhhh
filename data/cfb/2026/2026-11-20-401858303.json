@@ -7,7 +7,7 @@
   "id": "228",
   "abbr": "CLEM",
   "name": "Clemson Tigers",
-  "score": 0
+  "score": 3
  },
  "home": {
   "id": "150",
@@ -18,7 +18,7 @@
  "neutral": false,
  "venue": "Wallace Wade Stadium",
  "seasonType": 2,
- "state": "pre",
+ "state": "in",
  "lines": {
   "open": {
    "at": "2026-11-15T11:04:29.925Z",

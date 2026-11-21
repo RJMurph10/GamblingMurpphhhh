@@ -7,18 +7,18 @@
   "id": "2473",
   "abbr": "OAK",
   "name": "Oakland Golden Grizzlies",
-  "score": 0
+  "score": 49
  },
  "home": {
   "id": "2509",
   "abbr": "PUR",
   "name": "Purdue Boilermakers",
-  "score": 0
+  "score": 95
  },
  "neutral": false,
  "venue": "Mackey Arena",
  "seasonType": 2,
- "state": "pre",
+ "state": "post",
  "lines": {
   "open": {
    "at": "2026-11-20T03:26:33.911Z",
@@ -851,5 +851,9 @@
    ]
   }
  },
- "props": {}
+ "props": {},
+ "final": {
+  "away": 49,
+  "home": 95
+ }
 }

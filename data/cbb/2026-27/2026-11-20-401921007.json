@@ -7,18 +7,18 @@
   "id": "140",
   "abbr": "KC",
   "name": "Kansas City Roos",
-  "score": 0
+  "score": 61
  },
  "home": {
   "id": "314",
   "abbr": "IONA",
   "name": "Iona Gaels",
-  "score": 0
+  "score": 62
  },
  "neutral": false,
  "venue": "Hynes Athletics Center",
  "seasonType": 2,
- "state": "pre",
+ "state": "post",
  "lines": {
   "open": {
    "at": "2026-11-20T03:26:33.911Z",
@@ -933,5 +933,9 @@
    ]
   }
  },
- "props": {}
+ "props": {},
+ "final": {
+  "away": 61,
+  "home": 62
+ }
 }

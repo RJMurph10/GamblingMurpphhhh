@@ -7,18 +7,18 @@
   "id": "2031",
   "abbr": "LR",
   "name": "Little Rock Trojans",
-  "score": 0
+  "score": 61
  },
  "home": {
   "id": "197",
   "abbr": "OKST",
   "name": "Oklahoma State Cowgirls",
-  "score": 0
+  "score": 103
  },
  "neutral": false,
  "venue": "Gallagher-Iba Arena",
  "seasonType": 2,
- "state": "pre",
+ "state": "post",
  "lines": {
   "open": {
    "at": "2026-11-20T21:12:31.580Z",
@@ -769,5 +769,9 @@
    ]
   }
  },
- "props": {}
+ "props": {},
+ "final": {
+  "away": 61,
+  "home": 103
+ }
 }

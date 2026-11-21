@@ -7,18 +7,18 @@
   "id": "2116",
   "abbr": "UCF",
   "name": "UCF Knights",
-  "score": 0
+  "score": 37
  },
  "home": {
   "id": "238",
   "abbr": "VAN",
   "name": "Vanderbilt Commodores",
-  "score": 0
+  "score": 51
  },
  "neutral": false,
  "venue": "Memorial Gymnasium (TN)",
  "seasonType": 2,
- "state": "pre",
+ "state": "in",
  "lines": {
   "open": {
    "at": "2026-11-20T03:26:33.911Z",
