@@ -7,18 +7,18 @@
   "id": "2900",
   "abbr": "STMN",
   "name": "St. Thomas Tommies",
-  "score": 0
+  "score": 56
  },
  "home": {
   "id": "270",
   "abbr": "MILW",
   "name": "Milwaukee Panthers",
-  "score": 0
+  "score": 41
  },
  "neutral": false,
  "venue": "UW-Milwaukee Panther Arena",
  "seasonType": 2,
- "state": "pre",
+ "state": "in",
  "lines": {
   "open": {
    "at": "2026-11-20T22:22:10.516Z",

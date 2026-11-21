@@ -7,18 +7,18 @@
   "id": "2110",
   "abbr": "CARK",
   "name": "Central Arkansas Bears",
-  "score": 0
+  "score": 12
  },
  "home": {
   "id": "294",
   "abbr": "JAX",
   "name": "Jacksonville Dolphins",
-  "score": 0
+  "score": 13
  },
  "neutral": false,
  "venue": "Swisher Gymnasium",
  "seasonType": 2,
- "state": "pre",
+ "state": "in",
  "lines": {
   "open": {
    "at": "2026-11-21T04:16:21.782Z",

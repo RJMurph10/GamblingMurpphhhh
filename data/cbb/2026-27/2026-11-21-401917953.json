@@ -7,18 +7,18 @@
   "id": "292",
   "abbr": "RGV",
   "name": "UT Rio Grande Valley Vaqueros",
-  "score": 0
+  "score": 30
  },
  "home": {
   "id": "2046",
   "abbr": "APSU",
   "name": "Austin Peay Governors",
-  "score": 0
+  "score": 36
  },
  "neutral": false,
  "venue": "F&M Bank Arena",
  "seasonType": 2,
- "state": "pre",
+ "state": "in",
  "lines": {
   "open": {
    "at": "2026-11-21T18:04:14.227Z",

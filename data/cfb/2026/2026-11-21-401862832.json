@@ -7,18 +7,18 @@
   "id": "2429",
   "abbr": "CLT",
   "name": "Charlotte 49ers",
-  "score": 0
+  "score": 14
  },
  "home": {
   "id": "202",
   "abbr": "TLSA",
   "name": "Tulsa Golden Hurricane",
-  "score": 0
+  "score": 14
  },
  "neutral": false,
  "venue": "H. A. Chapman Stadium",
  "seasonType": 2,
- "state": "pre",
+ "state": "in",
  "lines": {
   "open": {
    "at": "2026-11-15T17:47:38.554Z",

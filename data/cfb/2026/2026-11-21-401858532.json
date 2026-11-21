@@ -13,12 +13,12 @@
   "id": "213",
   "abbr": "PSU",
   "name": "Penn State Nittany Lions",
-  "score": 0
+  "score": 7
  },
  "neutral": false,
  "venue": "Beaver Stadium",
  "seasonType": 2,
- "state": "pre",
+ "state": "in",
  "lines": {
   "open": {
    "at": "2026-11-15T17:47:38.554Z",

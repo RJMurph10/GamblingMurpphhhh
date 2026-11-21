@@ -7,18 +7,18 @@
   "id": "172",
   "abbr": "COR",
   "name": "Cornell Big Red",
-  "score": 0
+  "score": 84
  },
  "home": {
   "id": "2415",
   "abbr": "MORG",
   "name": "Morgan State Bears",
-  "score": 0
+  "score": 63
  },
  "neutral": false,
  "venue": "Hill Field House",
  "seasonType": 2,
- "state": "pre",
+ "state": "post",
  "lines": {
   "open": {
    "at": "2026-11-21T02:24:29.690Z",
@@ -933,5 +933,9 @@
    ]
   }
  },
- "props": {}
+ "props": {},
+ "final": {
+  "away": 84,
+  "home": 63
+ }
 }

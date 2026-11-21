@@ -7,18 +7,18 @@
   "id": "2344",
   "abbr": "LONG",
   "name": "Longwood Lancers",
-  "score": 0
+  "score": 6
  },
  "home": {
   "id": "2193",
   "abbr": "ETSU",
   "name": "East Tennessee State Buccaneers",
-  "score": 0
+  "score": 12
  },
  "neutral": false,
  "venue": "Freedom Hall (TN)",
  "seasonType": 2,
- "state": "pre",
+ "state": "in",
  "lines": {
   "open": {
    "at": "2026-11-21T04:16:21.782Z",

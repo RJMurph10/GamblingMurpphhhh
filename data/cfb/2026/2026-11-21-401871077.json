@@ -7,18 +7,18 @@
   "id": "48",
   "abbr": "DEL",
   "name": "Delaware Blue Hens",
-  "score": 0
+  "score": 14
  },
  "home": {
   "id": "166",
   "abbr": "NMSU",
   "name": "New Mexico State Aggies",
-  "score": 0
+  "score": 10
  },
  "neutral": false,
  "venue": "Aggie Memorial Stadium",
  "seasonType": 2,
- "state": "pre",
+ "state": "in",
  "lines": {
   "open": {
    "at": "2026-11-15T17:47:38.554Z",

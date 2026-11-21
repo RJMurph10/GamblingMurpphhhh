@@ -7,18 +7,18 @@
   "id": "84",
   "abbr": "IU",
   "name": "Indiana Hoosiers",
-  "score": 0
+  "score": 14
  },
  "home": {
   "id": "264",
   "abbr": "WASH",
   "name": "Washington Huskies",
-  "score": 0
+  "score": 7
  },
  "neutral": false,
  "venue": "Husky Stadium",
  "seasonType": 2,
- "state": "pre",
+ "state": "in",
  "lines": {
   "open": {
    "at": "2026-11-15T11:04:29.925Z",

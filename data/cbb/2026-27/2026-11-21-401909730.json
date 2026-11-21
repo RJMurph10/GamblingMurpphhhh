@@ -7,18 +7,18 @@
   "id": "2717",
   "abbr": "WCU",
   "name": "Western Carolina Catamounts",
-  "score": 0
+  "score": 63
  },
  "home": {
   "id": "154",
   "abbr": "WAKE",
   "name": "Wake Forest Demon Deacons",
-  "score": 0
+  "score": 90
  },
  "neutral": false,
  "venue": "LJVM Coliseum",
  "seasonType": 2,
- "state": "pre",
+ "state": "post",
  "lines": {
   "open": {
    "at": "2026-11-20T22:22:10.516Z",
@@ -851,5 +851,9 @@
    ]
   }
  },
- "props": {}
+ "props": {},
+ "final": {
+  "away": 63,
+  "home": 90
+ }
 }

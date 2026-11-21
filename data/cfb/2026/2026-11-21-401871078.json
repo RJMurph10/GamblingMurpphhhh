@@ -7,18 +7,18 @@
   "id": "2229",
   "abbr": "FIU",
   "name": "Florida International Panthers",
-  "score": 0
+  "score": 10
  },
  "home": {
   "id": "338",
   "abbr": "KENN",
   "name": "Kennesaw State Owls",
-  "score": 0
+  "score": 14
  },
  "neutral": false,
  "venue": "Walens Family Field at Fifth Third Stadium",
  "seasonType": 2,
- "state": "pre",
+ "state": "in",
  "lines": {
   "open": {
    "at": "2026-11-15T17:47:38.554Z",

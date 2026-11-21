@@ -7,18 +7,18 @@
   "id": "58",
   "abbr": "USF",
   "name": "South Florida Bulls",
-  "score": 0
+  "score": 1
  },
  "home": {
   "id": "2244",
   "abbr": "GMU",
   "name": "George Mason Patriots",
-  "score": 0
+  "score": 8
  },
  "neutral": false,
  "venue": "EagleBank Arena",
  "seasonType": 2,
- "state": "pre",
+ "state": "in",
  "lines": {
   "open": {
    "at": "2026-11-21T02:24:29.690Z",

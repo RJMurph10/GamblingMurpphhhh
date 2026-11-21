@@ -7,18 +7,18 @@
   "id": "2459",
   "abbr": "NIU",
   "name": "Northern Illinois Huskies",
-  "score": 0
+  "score": 86
  },
  "home": {
   "id": "189",
   "abbr": "BGSU",
   "name": "Bowling Green Falcons",
-  "score": 0
+  "score": 68
  },
  "neutral": false,
  "venue": "Stroh Center",
  "seasonType": 2,
- "state": "pre",
+ "state": "post",
  "lines": {
   "open": {
    "at": "2026-11-21T02:24:29.690Z",
@@ -933,5 +933,9 @@
    ]
   }
  },
- "props": {}
+ "props": {},
+ "final": {
+  "away": 86,
+  "home": 68
+ }
 }

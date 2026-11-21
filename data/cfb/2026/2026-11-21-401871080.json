@@ -7,18 +7,18 @@
   "id": "98",
   "abbr": "WKU",
   "name": "Western Kentucky Hilltoppers",
-  "score": 0
+  "score": 14
  },
  "home": {
   "id": "2335",
   "abbr": "LIB",
   "name": "Liberty Flames",
-  "score": 0
+  "score": 38
  },
  "neutral": false,
  "venue": "Williams Stadium (VA)",
  "seasonType": 2,
- "state": "pre",
+ "state": "in",
  "lines": {
   "open": {
    "at": "2026-11-15T17:47:38.554Z",

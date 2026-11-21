@@ -7,18 +7,18 @@
   "id": "2710",
   "abbr": "WIU",
   "name": "Western Illinois Leathernecks",
-  "score": 0
+  "score": 65
  },
  "home": {
   "id": "2385",
   "abbr": "MERC",
   "name": "Mercyhurst Lakers",
-  "score": 0
+  "score": 68
  },
  "neutral": true,
  "venue": "Koessler Athletic Center",
  "seasonType": 2,
- "state": "pre",
+ "state": "post",
  "lines": {
   "open": {
    "at": "2026-11-21T04:16:21.782Z",
@@ -934,5 +934,9 @@
    ]
   }
  },
- "props": {}
+ "props": {},
+ "final": {
+  "away": 65,
+  "home": 68
+ }
 }

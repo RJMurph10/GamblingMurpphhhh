@@ -13,12 +13,12 @@
   "id": "2226",
   "abbr": "FAU",
   "name": "Florida Atlantic Owls",
-  "score": 0
+  "score": 20
  },
  "neutral": false,
  "venue": "Flagler Credit Union Stadium",
  "seasonType": 2,
- "state": "pre",
+ "state": "in",
  "lines": {
   "open": {
    "at": "2026-11-15T17:47:38.554Z",

@@ -7,18 +7,18 @@
   "id": "322",
   "abbr": "LAF",
   "name": "Lafayette Leopards",
-  "score": 0
+  "score": 70
  },
  "home": {
   "id": "183",
   "abbr": "SYR",
   "name": "Syracuse Orange",
-  "score": 0
+  "score": 74
  },
  "neutral": false,
  "venue": "JMA Wireless Dome",
  "seasonType": 2,
- "state": "pre",
+ "state": "in",
  "lines": {
   "open": {
    "at": "2026-11-21T02:24:29.690Z",

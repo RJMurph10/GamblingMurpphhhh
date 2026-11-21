@@ -7,18 +7,18 @@
   "id": "2579",
   "abbr": "SC",
   "name": "South Carolina Gamecocks",
-  "score": 0
+  "score": 72
  },
  "home": {
   "id": "2507",
   "abbr": "PROV",
   "name": "Providence Friars",
-  "score": 0
+  "score": 43
  },
  "neutral": false,
  "venue": "Alumni Hall (RI)",
  "seasonType": 2,
- "state": "pre",
+ "state": "post",
  "lines": {
   "open": {
    "at": "2026-11-21T18:04:14.227Z",
@@ -771,5 +771,9 @@
    ]
   }
  },
- "props": {}
+ "props": {},
+ "final": {
+  "away": 72,
+  "home": 43
+ }
 }

@@ -7,18 +7,18 @@
   "id": "2031",
   "abbr": "LR",
   "name": "Little Rock Trojans",
-  "score": 0
+  "score": 77
  },
  "home": {
   "id": "2454",
   "abbr": "UNF",
   "name": "North Florida Ospreys",
-  "score": 0
+  "score": 89
  },
  "neutral": false,
  "venue": "UNF Arena",
  "seasonType": 2,
- "state": "pre",
+ "state": "in",
  "lines": {
   "open": {
    "at": "2026-11-21T02:24:29.690Z",
