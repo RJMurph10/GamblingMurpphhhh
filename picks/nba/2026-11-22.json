@@ -1,5 +1,70 @@
 {
  "day": "2026-11-22",
- "updated": "2026-11-21T20:41:28.982Z",
- "picks": []
+ "updated": "2026-11-22T02:40:49.197Z",
+ "picks": [
+  {
+   "id": "401910030-spread",
+   "game": "OKC @ MIA",
+   "tip": "2026-11-22T23:00Z",
+   "market": "spread",
+   "pick": "OKC +2.5",
+   "line": -2.5,
+   "open": -2.5,
+   "model": -3.2,
+   "edge": 5.7,
+   "best": true,
+   "firstSeen": "2026-11-22T02:40:49.197Z",
+   "latest": -2.5,
+   "latestAt": "2026-11-22T02:40:49.197Z",
+   "alerted": false
+  },
+  {
+   "id": "401910031-spread",
+   "game": "ORL @ WSH",
+   "tip": "2026-11-23T00:00Z",
+   "market": "spread",
+   "pick": "WSH +5.5",
+   "line": 5.5,
+   "open": 5.5,
+   "model": -3.4,
+   "edge": 2.1,
+   "best": false,
+   "firstSeen": "2026-11-22T02:40:49.197Z",
+   "latest": 5.5,
+   "latestAt": "2026-11-22T02:40:49.197Z",
+   "alerted": false
+  },
+  {
+   "id": "401910031-total",
+   "game": "ORL @ WSH",
+   "tip": "2026-11-23T00:00Z",
+   "market": "total",
+   "pick": "Over 222.5",
+   "line": 222.5,
+   "open": 222.5,
+   "model": 228.9,
+   "edge": 6.4,
+   "best": false,
+   "firstSeen": "2026-11-22T02:40:49.197Z",
+   "latest": 222.5,
+   "latestAt": "2026-11-22T02:40:49.197Z",
+   "alerted": false
+  },
+  {
+   "id": "401910032-spread",
+   "game": "DEN @ CHI",
+   "tip": "2026-11-23T00:00Z",
+   "market": "spread",
+   "pick": "CHI +8.5",
+   "line": 8.5,
+   "open": 8.5,
+   "model": -5.8,
+   "edge": 2.7,
+   "best": false,
+   "firstSeen": "2026-11-22T02:40:49.197Z",
+   "latest": 8.5,
+   "latestAt": "2026-11-22T02:40:49.197Z",
+   "alerted": false
+  }
+ ]
 }

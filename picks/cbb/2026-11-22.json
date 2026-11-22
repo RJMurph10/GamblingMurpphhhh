@@ -1,0 +1,54 @@
+{
+ "day": "2026-11-22",
+ "updated": "2026-11-22T02:40:50.091Z",
+ "picks": [
+  {
+   "id": "401920736-total",
+   "game": "DAY @ NU",
+   "tip": "2026-11-22T18:00Z",
+   "market": "total",
+   "pick": "Over 135.5",
+   "line": 135.5,
+   "open": 135.5,
+   "model": 143.8,
+   "edge": 8.3,
+   "best": true,
+   "firstSeen": "2026-11-22T02:40:50.091Z",
+   "latest": 135.5,
+   "latestAt": "2026-11-22T02:40:50.091Z",
+   "alerted": false
+  },
+  {
+   "id": "401921706-total",
+   "game": "WYO @ DUQ",
+   "tip": "2026-11-22T19:00Z",
+   "market": "total",
+   "pick": "Over 139.5",
+   "line": 139.5,
+   "open": 139.5,
+   "model": 146.9,
+   "edge": 7.4,
+   "best": true,
+   "firstSeen": "2026-11-22T02:40:50.091Z",
+   "latest": 138.5,
+   "latestAt": "2026-11-22T02:40:50.091Z",
+   "alerted": false
+  },
+  {
+   "id": "401921420-total",
+   "game": "UTAH @ MINN",
+   "tip": "2026-11-22T23:00Z",
+   "market": "total",
+   "pick": "Over 130.5",
+   "line": 130.5,
+   "open": 130.5,
+   "model": 140.6,
+   "edge": 10.1,
+   "best": true,
+   "firstSeen": "2026-11-22T02:40:50.091Z",
+   "latest": 130.5,
+   "latestAt": "2026-11-22T02:40:50.091Z",
+   "alerted": false
+  }
+ ]
+}
