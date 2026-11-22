@@ -1,6 +1,6 @@
 {
  "day": "2026-11-22",
- "updated": "2026-11-22T02:40:50.091Z",
+ "updated": "2026-11-22T12:53:32.187Z",
  "picks": [
   {
    "id": "401920736-total",
@@ -15,7 +15,7 @@
    "best": true,
    "firstSeen": "2026-11-22T02:40:50.091Z",
    "latest": 135.5,
-   "latestAt": "2026-11-22T02:40:50.091Z",
+   "latestAt": "2026-11-22T12:53:32.187Z",
    "alerted": false
   },
   {
@@ -30,8 +30,56 @@
    "edge": 7.4,
    "best": true,
    "firstSeen": "2026-11-22T02:40:50.091Z",
-   "latest": 138.5,
-   "latestAt": "2026-11-22T02:40:50.091Z",
+   "latest": 139.5,
+   "latestAt": "2026-11-22T12:53:32.187Z",
+   "alerted": false
+  },
+  {
+   "id": "401928790-total",
+   "game": "RMU @ NMSU",
+   "tip": "2026-11-22T19:30Z",
+   "market": "total",
+   "pick": "Over 137.5",
+   "line": 137.5,
+   "open": 137.5,
+   "model": 143.9,
+   "edge": 6.4,
+   "best": true,
+   "firstSeen": "2026-11-22T12:53:32.187Z",
+   "latest": 137.5,
+   "latestAt": "2026-11-22T12:53:32.187Z",
+   "alerted": false
+  },
+  {
+   "id": "401923323-total",
+   "game": "MERC @ UALB",
+   "tip": "2026-11-22T20:30Z",
+   "market": "total",
+   "pick": "Over 128.5",
+   "line": 128.5,
+   "open": 128.5,
+   "model": 137.3,
+   "edge": 8.8,
+   "best": true,
+   "firstSeen": "2026-11-22T12:53:32.187Z",
+   "latest": 129.5,
+   "latestAt": "2026-11-22T12:53:32.187Z",
+   "alerted": false
+  },
+  {
+   "id": "401921176-total",
+   "game": "IUIN @ UMES",
+   "tip": "2026-11-22T21:30Z",
+   "market": "total",
+   "pick": "Over 142.5",
+   "line": 142.5,
+   "open": 142.5,
+   "model": 149.7,
+   "edge": 7.2,
+   "best": true,
+   "firstSeen": "2026-11-22T12:53:32.187Z",
+   "latest": 140.5,
+   "latestAt": "2026-11-22T12:53:32.187Z",
    "alerted": false
   },
   {
@@ -46,8 +94,8 @@
    "edge": 10.1,
    "best": true,
    "firstSeen": "2026-11-22T02:40:50.091Z",
-   "latest": 130.5,
-   "latestAt": "2026-11-22T02:40:50.091Z",
+   "latest": 131.5,
+   "latestAt": "2026-11-22T12:53:32.187Z",
    "alerted": false
   }
  ]

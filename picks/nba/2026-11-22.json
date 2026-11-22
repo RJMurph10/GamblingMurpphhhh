@@ -1,6 +1,6 @@
 {
  "day": "2026-11-22",
- "updated": "2026-11-22T02:40:49.197Z",
+ "updated": "2026-11-22T12:53:31.214Z",
  "picks": [
   {
    "id": "401910030-spread",
@@ -15,7 +15,7 @@
    "best": true,
    "firstSeen": "2026-11-22T02:40:49.197Z",
    "latest": -2.5,
-   "latestAt": "2026-11-22T02:40:49.197Z",
+   "latestAt": "2026-11-22T12:53:31.214Z",
    "alerted": false
   },
   {
@@ -31,7 +31,7 @@
    "best": false,
    "firstSeen": "2026-11-22T02:40:49.197Z",
    "latest": 5.5,
-   "latestAt": "2026-11-22T02:40:49.197Z",
+   "latestAt": "2026-11-22T12:53:31.214Z",
    "alerted": false
   },
   {
@@ -46,8 +46,8 @@
    "edge": 6.4,
    "best": false,
    "firstSeen": "2026-11-22T02:40:49.197Z",
-   "latest": 222.5,
-   "latestAt": "2026-11-22T02:40:49.197Z",
+   "latest": 220.5,
+   "latestAt": "2026-11-22T12:53:31.214Z",
    "alerted": false
   },
   {
@@ -63,7 +63,39 @@
    "best": false,
    "firstSeen": "2026-11-22T02:40:49.197Z",
    "latest": 8.5,
-   "latestAt": "2026-11-22T02:40:49.197Z",
+   "latestAt": "2026-11-22T12:53:31.214Z",
+   "alerted": false
+  },
+  {
+   "id": "401910034-spread",
+   "game": "IND @ NY",
+   "tip": "2026-11-23T01:00Z",
+   "market": "spread",
+   "pick": "NY -9.5",
+   "line": -9.5,
+   "open": -9.5,
+   "model": 12.5,
+   "edge": 3,
+   "best": false,
+   "firstSeen": "2026-11-22T12:53:31.214Z",
+   "latest": -9.5,
+   "latestAt": "2026-11-22T12:53:31.214Z",
+   "alerted": false
+  },
+  {
+   "id": "401910035-spread",
+   "game": "BOS @ GS",
+   "tip": "2026-11-23T01:30Z",
+   "market": "spread",
+   "pick": "GS +8.5",
+   "line": 8.5,
+   "open": 8.5,
+   "model": -4.6,
+   "edge": 3.9,
+   "best": true,
+   "firstSeen": "2026-11-22T12:53:31.214Z",
+   "latest": 8.5,
+   "latestAt": "2026-11-22T12:53:31.214Z",
    "alerted": false
   }
  ]
