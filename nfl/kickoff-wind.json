@@ -1,0 +1,1870 @@
+{
+ "updated": "2026-11-22T23:52:33.067Z",
+ "note": "Kickoff wind (mph, Open-Meteo 10 m wind x 1.09) for finished outdoor NFL games nflverse left without weather; keyed by ESPN game id.",
+ "factor": 1.09,
+ "games": {
+  "401434030": {
+   "game": "2022_02_LAC_KC",
+   "wind": 10,
+   "raw": 8.8,
+   "gust": 17.7,
+   "precip": 0,
+   "temp": 79,
+   "source": "archive"
+  },
+  "401435638": {
+   "game": "2022_10_SEA_TB",
+   "wind": 6,
+   "raw": 5.8,
+   "gust": 13.9,
+   "precip": 0,
+   "temp": 52,
+   "source": "archive"
+  },
+  "401435639": {
+   "game": "2022_04_MIN_NO",
+   "wind": 9,
+   "raw": 8.1,
+   "gust": 18.6,
+   "precip": 0,
+   "temp": 63,
+   "source": "archive"
+  },
+  "401435640": {
+   "game": "2022_05_NYG_GB",
+   "wind": 10,
+   "raw": 9.4,
+   "gust": 21.5,
+   "precip": 0,
+   "temp": 63,
+   "source": "archive"
+  },
+  "401435641": {
+   "game": "2022_08_DEN_JAX",
+   "wind": 14,
+   "raw": 12.4,
+   "gust": 25.9,
+   "precip": 0.012,
+   "temp": 58,
+   "source": "archive"
+  },
+  "401435642": {
+   "game": "2022_11_SF_ARI",
+   "wind": 4,
+   "raw": 3.3,
+   "gust": 17,
+   "precip": 0.154,
+   "temp": 57,
+   "source": "archive"
+  },
+  "401436831": {
+   "game": "2022_02_TEN_BUF",
+   "wind": 16,
+   "raw": 14.8,
+   "gust": 27.7,
+   "precip": 0.004,
+   "temp": 67,
+   "source": "archive"
+  },
+  "401436832": {
+   "game": "2022_02_MIN_PHI",
+   "wind": 5,
+   "raw": 4.7,
+   "gust": 6.7,
+   "precip": 0,
+   "temp": 73,
+   "source": "archive"
+  },
+  "401437470": {
+   "game": "2022_04_KC_TB",
+   "wind": 7,
+   "raw": 6,
+   "gust": 9.6,
+   "precip": 0,
+   "temp": 72,
+   "source": "archive"
+  },
+  "401437605": {
+   "game": "2022_02_SEA_SF",
+   "wind": 18,
+   "raw": 16.9,
+   "gust": 33.8,
+   "precip": 0.008,
+   "temp": 70,
+   "source": "archive"
+  },
+  "401437606": {
+   "game": "2022_02_CHI_GB",
+   "wind": 7,
+   "raw": 6.2,
+   "gust": 14.8,
+   "precip": 0,
+   "temp": 72,
+   "source": "archive"
+  },
+  "401437607": {
+   "game": "2022_03_GB_TB",
+   "wind": 8,
+   "raw": 7.6,
+   "gust": 16.1,
+   "precip": 0.008,
+   "temp": 82,
+   "source": "archive"
+  },
+  "401437630": {
+   "game": "2022_01_NE_MIA",
+   "wind": 7,
+   "raw": 6.8,
+   "gust": 18.1,
+   "precip": 0.248,
+   "temp": 91,
+   "source": "archive"
+  },
+  "401437631": {
+   "game": "2022_03_BAL_NE",
+   "wind": 12,
+   "raw": 10.8,
+   "gust": 25.1,
+   "precip": 0.02,
+   "temp": 67,
+   "source": "archive"
+  },
+  "401437632": {
+   "game": "2022_01_BAL_NYJ",
+   "wind": 2,
+   "raw": 2.2,
+   "gust": 7.8,
+   "precip": 0.158,
+   "temp": 74,
+   "source": "archive"
+  },
+  "401437633": {
+   "game": "2022_02_MIA_BAL",
+   "wind": 6,
+   "raw": 5.4,
+   "gust": 13.2,
+   "precip": 0,
+   "temp": 80,
+   "source": "archive"
+  },
+  "401437634": {
+   "game": "2022_01_PIT_CIN",
+   "wind": 8,
+   "raw": 7.2,
+   "gust": 18.6,
+   "precip": 0.099,
+   "temp": 75,
+   "source": "archive"
+  },
+  "401437635": {
+   "game": "2022_02_NYJ_CLE",
+   "wind": 14,
+   "raw": 13.1,
+   "gust": 20.8,
+   "precip": 0,
+   "temp": 80,
+   "source": "archive"
+  },
+  "401437636": {
+   "game": "2022_02_NE_PIT",
+   "wind": 10,
+   "raw": 9.6,
+   "gust": 23,
+   "precip": 0,
+   "temp": 80,
+   "source": "archive"
+  },
+  "401437638": {
+   "game": "2022_03_KC_IND",
+   "wind": 16,
+   "raw": 15,
+   "gust": 30.4,
+   "precip": 0,
+   "temp": 69,
+   "source": "archive"
+  },
+  "401437639": {
+   "game": "2022_02_IND_JAX",
+   "wind": 11,
+   "raw": 10.3,
+   "gust": 21,
+   "precip": 0.217,
+   "temp": 80,
+   "source": "archive"
+  },
+  "401437640": {
+   "game": "2022_01_NYG_TEN",
+   "wind": 9,
+   "raw": 7.9,
+   "gust": 21,
+   "precip": 0.043,
+   "temp": 73,
+   "source": "archive"
+  },
+  "401437641": {
+   "game": "2022_02_HOU_DEN",
+   "wind": 7,
+   "raw": 6.1,
+   "gust": 17.9,
+   "precip": 0,
+   "temp": 83,
+   "source": "archive"
+  },
+  "401437645": {
+   "game": "2022_02_CAR_NYG",
+   "wind": 13,
+   "raw": 11.5,
+   "gust": 22.8,
+   "precip": 0,
+   "temp": 81,
+   "source": "archive"
+  },
+  "401437646": {
+   "game": "2022_01_JAX_WAS",
+   "wind": 6,
+   "raw": 5.3,
+   "gust": 17.7,
+   "precip": 0.012,
+   "temp": 76,
+   "source": "archive"
+  },
+  "401437647": {
+   "game": "2022_01_SF_CHI",
+   "wind": 6,
+   "raw": 5.8,
+   "gust": 16.1,
+   "precip": 0.09,
+   "temp": 69,
+   "source": "archive"
+  },
+  "401437651": {
+   "game": "2022_01_CLE_CAR",
+   "wind": 6,
+   "raw": 5.9,
+   "gust": 16.6,
+   "precip": 0.004,
+   "temp": 81,
+   "source": "archive"
+  },
+  "401437655": {
+   "game": "2022_01_DEN_SEA",
+   "wind": 3,
+   "raw": 2.3,
+   "gust": 17,
+   "precip": 0,
+   "temp": 72,
+   "source": "archive"
+  },
+  "401437735": {
+   "game": "2022_03_PIT_CLE",
+   "wind": 20,
+   "raw": 18.2,
+   "gust": 29.8,
+   "precip": 0,
+   "temp": 60,
+   "source": "archive"
+  },
+  "401437736": {
+   "game": "2022_03_NO_CAR",
+   "wind": 12,
+   "raw": 11.1,
+   "gust": 25.3,
+   "precip": 0,
+   "temp": 71,
+   "source": "archive"
+  },
+  "401437737": {
+   "game": "2022_03_HOU_CHI",
+   "wind": 14,
+   "raw": 13.1,
+   "gust": 23.5,
+   "precip": 0.043,
+   "temp": 66,
+   "source": "archive"
+  },
+  "401437738": {
+   "game": "2022_03_BUF_MIA",
+   "wind": 6,
+   "raw": 5.9,
+   "gust": 15.7,
+   "precip": 0,
+   "temp": 89,
+   "source": "archive"
+  },
+  "401437740": {
+   "game": "2022_03_CIN_NYJ",
+   "wind": 8,
+   "raw": 7.5,
+   "gust": 16.6,
+   "precip": 0,
+   "temp": 68,
+   "source": "archive"
+  },
+  "401437741": {
+   "game": "2022_03_LV_TEN",
+   "wind": 16,
+   "raw": 14.7,
+   "gust": 27.7,
+   "precip": 0.185,
+   "temp": 71,
+   "source": "archive"
+  },
+  "401437742": {
+   "game": "2022_03_PHI_WAS",
+   "wind": 11,
+   "raw": 10,
+   "gust": 31.1,
+   "precip": 0.205,
+   "temp": 76,
+   "source": "archive"
+  },
+  "401437745": {
+   "game": "2022_03_ATL_SEA",
+   "wind": 10,
+   "raw": 8.8,
+   "gust": 20.8,
+   "precip": 0,
+   "temp": 70,
+   "source": "archive"
+  },
+  "401437746": {
+   "game": "2022_03_SF_DEN",
+   "wind": 7,
+   "raw": 6.4,
+   "gust": 15.7,
+   "precip": 0,
+   "temp": 72,
+   "source": "archive"
+  },
+  "401437747": {
+   "game": "2022_03_DAL_NYG",
+   "wind": 6,
+   "raw": 5.1,
+   "gust": 17.9,
+   "precip": 0,
+   "temp": 64,
+   "source": "archive"
+  },
+  "401437748": {
+   "game": "2022_04_MIA_CIN",
+   "wind": 7,
+   "raw": 6.8,
+   "gust": 14.5,
+   "precip": 0,
+   "temp": 58,
+   "source": "archive"
+  },
+  "401437749": {
+   "game": "2022_04_CLE_ATL",
+   "wind": 11,
+   "raw": 9.7,
+   "gust": 21.9,
+   "precip": 0,
+   "temp": 71,
+   "source": "archive"
+  },
+  "401437750": {
+   "game": "2022_04_BUF_BAL",
+   "wind": 15,
+   "raw": 13.9,
+   "gust": 26.6,
+   "precip": 0.271,
+   "temp": 57,
+   "source": "archive"
+  },
+  "401437754": {
+   "game": "2022_04_TEN_IND",
+   "wind": 14,
+   "raw": 13.1,
+   "gust": 26.8,
+   "precip": 0,
+   "temp": 68,
+   "source": "archive"
+  },
+  "401437755": {
+   "game": "2022_04_CHI_NYG",
+   "wind": 19,
+   "raw": 17.7,
+   "gust": 33.1,
+   "precip": 0.181,
+   "temp": 55,
+   "source": "archive"
+  },
+  "401437756": {
+   "game": "2022_04_JAX_PHI",
+   "wind": 18,
+   "raw": 16.8,
+   "gust": 32.7,
+   "precip": 0.267,
+   "temp": 56,
+   "source": "archive"
+  },
+  "401437757": {
+   "game": "2022_04_NYJ_PIT",
+   "wind": 13,
+   "raw": 11.9,
+   "gust": 25.5,
+   "precip": 0,
+   "temp": 60,
+   "source": "archive"
+  },
+  "401437758": {
+   "game": "2022_04_ARI_CAR",
+   "wind": 15,
+   "raw": 14,
+   "gust": 27.3,
+   "precip": 0,
+   "temp": 65,
+   "source": "archive"
+  },
+  "401437759": {
+   "game": "2022_04_NE_GB",
+   "wind": 8,
+   "raw": 7.6,
+   "gust": 17.7,
+   "precip": 0,
+   "temp": 62,
+   "source": "archive"
+  },
+  "401437761": {
+   "game": "2022_04_LA_SF",
+   "wind": 13,
+   "raw": 12.1,
+   "gust": 25.7,
+   "precip": 0,
+   "temp": 71,
+   "source": "archive"
+  },
+  "401437762": {
+   "game": "2022_05_IND_DEN",
+   "wind": 3,
+   "raw": 2.9,
+   "gust": 16.1,
+   "precip": 0,
+   "temp": 69,
+   "source": "archive"
+  },
+  "401437763": {
+   "game": "2022_05_PIT_BUF",
+   "wind": 22,
+   "raw": 20.4,
+   "gust": 40.9,
+   "precip": 0,
+   "temp": 55,
+   "source": "archive"
+  },
+  "401437764": {
+   "game": "2022_05_LAC_CLE",
+   "wind": 15,
+   "raw": 13.7,
+   "gust": 22.8,
+   "precip": 0,
+   "temp": 58,
+   "source": "archive"
+  },
+  "401437765": {
+   "game": "2022_05_HOU_JAX",
+   "wind": 4,
+   "raw": 4.1,
+   "gust": 13.2,
+   "precip": 0,
+   "temp": 80,
+   "source": "archive"
+  },
+  "401437767": {
+   "game": "2022_05_DET_NE",
+   "wind": 11,
+   "raw": 10.3,
+   "gust": 26.8,
+   "precip": 0,
+   "temp": 59,
+   "source": "archive"
+  },
+  "401437769": {
+   "game": "2022_05_MIA_NYJ",
+   "wind": 13,
+   "raw": 11.6,
+   "gust": 23,
+   "precip": 0,
+   "temp": 60,
+   "source": "archive"
+  },
+  "401437770": {
+   "game": "2022_05_ATL_TB",
+   "wind": 9,
+   "raw": 8.5,
+   "gust": 17.2,
+   "precip": 0,
+   "temp": 82,
+   "source": "archive"
+  },
+  "401437771": {
+   "game": "2022_05_TEN_WAS",
+   "wind": 8,
+   "raw": 7.1,
+   "gust": 18.8,
+   "precip": 0,
+   "temp": 60,
+   "source": "archive"
+  },
+  "401437772": {
+   "game": "2022_05_SF_CAR",
+   "wind": 3,
+   "raw": 2.9,
+   "gust": 9.6,
+   "precip": 0,
+   "temp": 66,
+   "source": "archive"
+  },
+  "401437775": {
+   "game": "2022_05_CIN_BAL",
+   "wind": 5,
+   "raw": 4.3,
+   "gust": 8.3,
+   "precip": 0,
+   "temp": 52,
+   "source": "archive"
+  },
+  "401437776": {
+   "game": "2022_05_LV_KC",
+   "wind": 8,
+   "raw": 7.7,
+   "gust": 17.4,
+   "precip": 0,
+   "temp": 74,
+   "source": "archive"
+  },
+  "401437777": {
+   "game": "2022_06_WAS_CHI",
+   "wind": 13,
+   "raw": 11.7,
+   "gust": 24.4,
+   "precip": 0,
+   "temp": 44,
+   "source": "archive"
+  },
+  "401437778": {
+   "game": "2022_06_SF_ATL",
+   "wind": 8,
+   "raw": 7.1,
+   "gust": 15.4,
+   "precip": 0,
+   "temp": 77,
+   "source": "archive"
+  },
+  "401437779": {
+   "game": "2022_06_NE_CLE",
+   "wind": 11,
+   "raw": 10.1,
+   "gust": 19.7,
+   "precip": 0,
+   "temp": 62,
+   "source": "archive"
+  },
+  "401437780": {
+   "game": "2022_06_NYJ_GB",
+   "wind": 9,
+   "raw": 8.7,
+   "gust": 23.9,
+   "precip": 0.059,
+   "temp": 49,
+   "source": "archive"
+  },
+  "401437781": {
+   "game": "2022_06_JAX_IND",
+   "wind": 10,
+   "raw": 9.3,
+   "gust": 23.5,
+   "precip": 0,
+   "temp": 64,
+   "source": "archive"
+  },
+  "401437782": {
+   "game": "2022_06_MIN_MIA",
+   "wind": 12,
+   "raw": 10.9,
+   "gust": 22.1,
+   "precip": 0.012,
+   "temp": 84,
+   "source": "archive"
+  },
+  "401437784": {
+   "game": "2022_06_BAL_NYG",
+   "wind": 2,
+   "raw": 1.9,
+   "gust": 9.8,
+   "precip": 0,
+   "temp": 62,
+   "source": "archive"
+  },
+  "401437785": {
+   "game": "2022_06_TB_PIT",
+   "wind": 8,
+   "raw": 7.4,
+   "gust": 21.3,
+   "precip": 0,
+   "temp": 62,
+   "source": "archive"
+  },
+  "401437787": {
+   "game": "2022_06_ARI_SEA",
+   "wind": 7,
+   "raw": 6.8,
+   "gust": 15,
+   "precip": 0,
+   "temp": 80,
+   "source": "archive"
+  },
+  "401437788": {
+   "game": "2022_06_BUF_KC",
+   "wind": 14,
+   "raw": 13.1,
+   "gust": 30,
+   "precip": 0,
+   "temp": 64,
+   "source": "archive"
+  },
+  "401437789": {
+   "game": "2022_06_DAL_PHI",
+   "wind": 4,
+   "raw": 3.6,
+   "gust": 8.3,
+   "precip": 0,
+   "temp": 59,
+   "source": "archive"
+  },
+  "401437791": {
+   "game": "2022_07_NO_ARI",
+   "wind": 3,
+   "raw": 2.3,
+   "gust": 8.9,
+   "precip": 0,
+   "temp": 86,
+   "source": "archive"
+  },
+  "401437792": {
+   "game": "2022_07_CLE_BAL",
+   "wind": 8,
+   "raw": 7.3,
+   "gust": 13.6,
+   "precip": 0.056,
+   "temp": 61,
+   "source": "archive"
+  },
+  "401437793": {
+   "game": "2022_07_TB_CAR",
+   "wind": 5,
+   "raw": 4.5,
+   "gust": 13,
+   "precip": 0,
+   "temp": 68,
+   "source": "archive"
+  },
+  "401437794": {
+   "game": "2022_07_ATL_CIN",
+   "wind": 9,
+   "raw": 8.7,
+   "gust": 20.1,
+   "precip": 0,
+   "temp": 74,
+   "source": "archive"
+  },
+  "401437796": {
+   "game": "2022_07_NYG_JAX",
+   "wind": 7,
+   "raw": 6.8,
+   "gust": 18.6,
+   "precip": 0,
+   "temp": 75,
+   "source": "archive"
+  },
+  "401437797": {
+   "game": "2022_07_IND_TEN",
+   "wind": 12,
+   "raw": 10.9,
+   "gust": 22.8,
+   "precip": 0,
+   "temp": 75,
+   "source": "archive"
+  },
+  "401437798": {
+   "game": "2022_07_GB_WAS",
+   "wind": 8,
+   "raw": 7.2,
+   "gust": 16.8,
+   "precip": 0.118,
+   "temp": 60,
+   "source": "archive"
+  },
+  "401437799": {
+   "game": "2022_07_NYJ_DEN",
+   "wind": 21,
+   "raw": 19.4,
+   "gust": 34.4,
+   "precip": 0,
+   "temp": 66,
+   "source": "archive"
+  },
+  "401437802": {
+   "game": "2022_07_KC_SF",
+   "wind": 12,
+   "raw": 10.8,
+   "gust": 25.7,
+   "precip": 0,
+   "temp": 68,
+   "source": "archive"
+  },
+  "401437803": {
+   "game": "2022_07_PIT_MIA",
+   "wind": 5,
+   "raw": 4.6,
+   "gust": 14.1,
+   "precip": 0,
+   "temp": 73,
+   "source": "archive"
+  },
+  "401437804": {
+   "game": "2022_07_CHI_NE",
+   "wind": 4,
+   "raw": 3.5,
+   "gust": 8.9,
+   "precip": 0,
+   "temp": 57,
+   "source": "archive"
+  },
+  "401437805": {
+   "game": "2022_08_BAL_TB",
+   "wind": 5,
+   "raw": 4.5,
+   "gust": 15,
+   "precip": 0.024,
+   "temp": 75,
+   "source": "archive"
+  },
+  "401437807": {
+   "game": "2022_08_CHI_DAL",
+   "wind": 8,
+   "raw": 7.7,
+   "gust": 18.6,
+   "precip": 0,
+   "temp": 68,
+   "source": "archive"
+  },
+  "401437811": {
+   "game": "2022_08_NE_NYJ",
+   "wind": 1,
+   "raw": 1.3,
+   "gust": 8.9,
+   "precip": 0,
+   "temp": 60,
+   "source": "archive"
+  },
+  "401437812": {
+   "game": "2022_08_PIT_PHI",
+   "wind": 0,
+   "raw": 0.3,
+   "gust": 6.9,
+   "precip": 0,
+   "temp": 60,
+   "source": "archive"
+  },
+  "401437816": {
+   "game": "2022_08_NYG_SEA",
+   "wind": 19,
+   "raw": 17.2,
+   "gust": 32.4,
+   "precip": 0.107,
+   "temp": 54,
+   "source": "archive"
+  },
+  "401437817": {
+   "game": "2022_08_GB_BUF",
+   "wind": 4,
+   "raw": 3.5,
+   "gust": 14.8,
+   "precip": 0,
+   "temp": 50,
+   "source": "archive"
+  },
+  "401437820": {
+   "game": "2022_09_LAC_ATL",
+   "wind": 4,
+   "raw": 3.8,
+   "gust": 14.1,
+   "precip": 0,
+   "temp": 79,
+   "source": "archive"
+  },
+  "401437828": {
+   "game": "2022_09_SEA_ARI",
+   "wind": 4,
+   "raw": 3.8,
+   "gust": 11.9,
+   "precip": 0,
+   "temp": 78,
+   "source": "archive"
+  },
+  "401437901": {
+   "game": "2022_15_SF_SEA",
+   "wind": 9,
+   "raw": 7.8,
+   "gust": 15.2,
+   "precip": 0,
+   "temp": 39,
+   "source": "archive"
+  },
+  "401437930": {
+   "game": "2022_16_TB_ARI",
+   "wind": 2,
+   "raw": 1.6,
+   "gust": 7.4,
+   "precip": 0,
+   "temp": 69,
+   "source": "archive"
+  },
+  "401547227": {
+   "game": "2023_04_ATL_JAX",
+   "wind": 13,
+   "raw": 11.6,
+   "gust": 24.6,
+   "precip": 0,
+   "temp": 70,
+   "source": "archive"
+  },
+  "401547228": {
+   "game": "2023_05_JAX_BUF",
+   "wind": 7,
+   "raw": 6,
+   "gust": 13.2,
+   "precip": 0,
+   "temp": 71,
+   "source": "archive"
+  },
+  "401547229": {
+   "game": "2023_06_BAL_TEN",
+   "wind": 8,
+   "raw": 7.2,
+   "gust": 18.1,
+   "precip": 0,
+   "temp": 50,
+   "source": "archive"
+  },
+  "401547230": {
+   "game": "2023_09_MIA_KC",
+   "wind": 16,
+   "raw": 15.1,
+   "gust": 32.7,
+   "precip": 0.02,
+   "temp": 54,
+   "source": "archive"
+  },
+  "401547231": {
+   "game": "2023_10_IND_NE",
+   "wind": 4,
+   "raw": 3.4,
+   "gust": 9.4,
+   "precip": 0,
+   "temp": 48,
+   "source": "archive"
+  },
+  "401547352": {
+   "game": "2023_01_BUF_NYJ",
+   "wind": 2,
+   "raw": 1.9,
+   "gust": 11.4,
+   "precip": 0.161,
+   "temp": 73,
+   "source": "archive"
+  },
+  "401547353": {
+   "game": "2023_01_DET_KC",
+   "wind": 8,
+   "raw": 6.9,
+   "gust": 13.6,
+   "precip": 0,
+   "temp": 78,
+   "source": "archive"
+  },
+  "401547396": {
+   "game": "2023_01_HOU_BAL",
+   "wind": 4,
+   "raw": 3.7,
+   "gust": 14.3,
+   "precip": 0.067,
+   "temp": 72,
+   "source": "archive"
+  },
+  "401547397": {
+   "game": "2023_01_CIN_CLE",
+   "wind": 8,
+   "raw": 7.6,
+   "gust": 14.3,
+   "precip": 0,
+   "temp": 68,
+   "source": "archive"
+  },
+  "401547400": {
+   "game": "2023_01_LV_DEN",
+   "wind": 8,
+   "raw": 7.4,
+   "gust": 22.8,
+   "precip": 0.059,
+   "temp": 70,
+   "source": "archive"
+  },
+  "401547402": {
+   "game": "2023_01_PHI_NE",
+   "wind": 2,
+   "raw": 1.5,
+   "gust": 9.2,
+   "precip": 0.123,
+   "temp": 73,
+   "source": "archive"
+  },
+  "401547405": {
+   "game": "2023_01_SF_PIT",
+   "wind": 6,
+   "raw": 5.6,
+   "gust": 14.1,
+   "precip": 0.008,
+   "temp": 71,
+   "source": "archive"
+  },
+  "401547406": {
+   "game": "2023_01_ARI_WAS",
+   "wind": 1,
+   "raw": 0.7,
+   "gust": 12.3,
+   "precip": 0.04,
+   "temp": 72,
+   "source": "archive"
+  },
+  "401547407": {
+   "game": "2023_01_GB_CHI",
+   "wind": 9,
+   "raw": 8.7,
+   "gust": 16.6,
+   "precip": 0,
+   "temp": 74,
+   "source": "archive"
+  },
+  "401547408": {
+   "game": "2023_01_LA_SEA",
+   "wind": 9,
+   "raw": 8.3,
+   "gust": 17.7,
+   "precip": 0,
+   "temp": 75,
+   "source": "archive"
+  },
+  "401547409": {
+   "game": "2023_01_DAL_NYG",
+   "wind": 5,
+   "raw": 4.2,
+   "gust": 13.2,
+   "precip": 0.536,
+   "temp": 71,
+   "source": "archive"
+  },
+  "401547410": {
+   "game": "2023_02_MIN_PHI",
+   "wind": 10,
+   "raw": 9.1,
+   "gust": 18.1,
+   "precip": 0,
+   "temp": 68,
+   "source": "archive"
+  },
+  "401547411": {
+   "game": "2023_02_LV_BUF",
+   "wind": 0,
+   "raw": 0,
+   "gust": 11.4,
+   "precip": 0,
+   "temp": 71,
+   "source": "archive"
+  },
+  "401547412": {
+   "game": "2023_02_BAL_CIN",
+   "wind": 3,
+   "raw": 3.2,
+   "gust": 13,
+   "precip": 0,
+   "temp": 73,
+   "source": "archive"
+  },
+  "401547413": {
+   "game": "2023_02_KC_JAX",
+   "wind": 8,
+   "raw": 7.5,
+   "gust": 20.4,
+   "precip": 0.623,
+   "temp": 85,
+   "source": "archive"
+  },
+  "401547414": {
+   "game": "2023_02_LAC_TEN",
+   "wind": 8,
+   "raw": 7.4,
+   "gust": 18.1,
+   "precip": 0,
+   "temp": 73,
+   "source": "archive"
+  },
+  "401547415": {
+   "game": "2023_02_NYJ_DAL",
+   "wind": 5,
+   "raw": 4.7,
+   "gust": 12.8,
+   "precip": 0,
+   "temp": 86,
+   "source": "archive"
+  },
+  "401547416": {
+   "game": "2023_02_WAS_DEN",
+   "wind": 3,
+   "raw": 2.9,
+   "gust": 13.4,
+   "precip": 0,
+   "temp": 79,
+   "source": "archive"
+  },
+  "401547417": {
+   "game": "2023_02_GB_ATL",
+   "wind": 10,
+   "raw": 9.5,
+   "gust": 22.4,
+   "precip": 0.012,
+   "temp": 76,
+   "source": "archive"
+  },
+  "401547419": {
+   "game": "2023_02_IND_HOU",
+   "wind": 9,
+   "raw": 8.6,
+   "gust": 17,
+   "precip": 0,
+   "temp": 87,
+   "source": "archive"
+  },
+  "401547420": {
+   "game": "2023_02_CHI_TB",
+   "wind": 8,
+   "raw": 6.9,
+   "gust": 24.2,
+   "precip": 0.004,
+   "temp": 92,
+   "source": "archive"
+  },
+  "401547423": {
+   "game": "2023_02_MIA_NE",
+   "wind": 7,
+   "raw": 6.5,
+   "gust": 13.2,
+   "precip": 0,
+   "temp": 65,
+   "source": "archive"
+  },
+  "401547424": {
+   "game": "2023_02_CLE_PIT",
+   "wind": 8,
+   "raw": 7.4,
+   "gust": 15.9,
+   "precip": 0,
+   "temp": 62,
+   "source": "archive"
+  },
+  "401547425": {
+   "game": "2023_02_NO_CAR",
+   "wind": 3,
+   "raw": 2.5,
+   "gust": 6.5,
+   "precip": 0,
+   "temp": 75,
+   "source": "archive"
+  },
+  "401547437": {
+   "game": "2023_03_DAL_ARI",
+   "wind": 3,
+   "raw": 2.8,
+   "gust": 12.8,
+   "precip": 0,
+   "temp": 96,
+   "source": "archive"
+  },
+  "401547438": {
+   "game": "2023_03_CHI_KC",
+   "wind": 6,
+   "raw": 5.5,
+   "gust": 13.9,
+   "precip": 0,
+   "temp": 80,
+   "source": "archive"
+  },
+  "401547446": {
+   "game": "2023_04_PIT_HOU",
+   "wind": 17,
+   "raw": 15.3,
+   "gust": 28,
+   "precip": 0,
+   "temp": 92,
+   "source": "archive"
+  },
+  "401547449": {
+   "game": "2023_04_LA_IND",
+   "wind": 4,
+   "raw": 4,
+   "gust": 13.6,
+   "precip": 0,
+   "temp": 79,
+   "source": "archive"
+  },
+  "401547451": {
+   "game": "2023_04_WAS_PHI",
+   "wind": 8,
+   "raw": 7.7,
+   "gust": 17.7,
+   "precip": 0,
+   "temp": 77,
+   "source": "archive"
+  },
+  "401547458": {
+   "game": "2023_05_TEN_IND",
+   "wind": 11,
+   "raw": 10.4,
+   "gust": 22.4,
+   "precip": 0,
+   "temp": 52,
+   "source": "archive"
+  },
+  "401547463": {
+   "game": "2023_05_HOU_ATL",
+   "wind": 10,
+   "raw": 9.3,
+   "gust": 21,
+   "precip": 0,
+   "temp": 63,
+   "source": "archive"
+  },
+  "401547469": {
+   "game": "2023_06_DEN_KC",
+   "wind": 14,
+   "raw": 13.1,
+   "gust": 31.8,
+   "precip": 0,
+   "temp": 69,
+   "source": "archive"
+  },
+  "401547472": {
+   "game": "2023_06_IND_JAX",
+   "wind": 10,
+   "raw": 8.8,
+   "gust": 21.3,
+   "precip": 0,
+   "temp": 70,
+   "source": "archive"
+  },
+  "401547484": {
+   "game": "2023_07_CLE_IND",
+   "wind": 7,
+   "raw": 6.6,
+   "gust": 15.9,
+   "precip": 0,
+   "temp": 53,
+   "source": "archive"
+  },
+  "401547518": {
+   "game": "2023_09_MIN_ATL",
+   "wind": 10,
+   "raw": 9.1,
+   "gust": 20.6,
+   "precip": 0,
+   "temp": 71,
+   "source": "archive"
+  },
+  "401547596": {
+   "game": "2023_15_SF_ARI",
+   "wind": 4,
+   "raw": 3.3,
+   "gust": 8.7,
+   "precip": 0,
+   "temp": 74,
+   "source": "archive"
+  },
+  "401671698": {
+   "game": "2024_17_DET_SF",
+   "wind": 4,
+   "raw": 3.3,
+   "gust": 9.2,
+   "precip": 0,
+   "temp": 53,
+   "source": "archive"
+  },
+  "401671705": {
+   "game": "2024_13_HOU_JAX",
+   "wind": 5,
+   "raw": 5,
+   "gust": 14.3,
+   "precip": 0,
+   "temp": 57,
+   "source": "archive"
+  },
+  "401671706": {
+   "game": "2024_15_NYJ_JAX",
+   "wind": 11,
+   "raw": 10.4,
+   "gust": 22.8,
+   "precip": 0.02,
+   "temp": 71,
+   "source": "archive"
+  },
+  "401671803": {
+   "game": "2024_10_NYG_CAR",
+   "wind": 2,
+   "raw": 2,
+   "gust": 6.3,
+   "precip": 0,
+   "temp": 41,
+   "source": "archive"
+  },
+  "401671805": {
+   "game": "2024_01_GB_PHI",
+   "wind": 7,
+   "raw": 6.7,
+   "gust": 11.9,
+   "precip": 0,
+   "temp": 63,
+   "source": "archive"
+  },
+  "401772622": {
+   "game": "2025_17_DEN_KC",
+   "wind": 12,
+   "raw": 11.3,
+   "gust": 23.7,
+   "precip": 0,
+   "temp": 64,
+   "source": "archive"
+  },
+  "401772631": {
+   "game": "2025_11_WAS_MIA",
+   "wind": 1,
+   "raw": 1.2,
+   "gust": 14.3,
+   "precip": 0,
+   "temp": 71,
+   "source": "archive"
+  },
+  "401772779": {
+   "game": "2025_12_IND_KC",
+   "wind": 4,
+   "raw": 3.7,
+   "gust": 14.5,
+   "precip": 0,
+   "temp": 56,
+   "source": "archive"
+  },
+  "401772798": {
+   "game": "2025_15_LAC_KC",
+   "wind": 1,
+   "raw": 1.2,
+   "gust": 11.6,
+   "precip": 0,
+   "temp": 18,
+   "source": "archive"
+  },
+  "401872951": {
+   "game": "2026_03_HOU_IND",
+   "wind": 5,
+   "raw": 4.7,
+   "gust": 16.3,
+   "precip": 0,
+   "temp": 70,
+   "source": "archive"
+  },
+  "401872981": {
+   "game": "2026_05_PHI_JAX",
+   "wind": 11,
+   "raw": 10.5,
+   "gust": 22.8,
+   "precip": 0.008,
+   "temp": 74,
+   "source": "archive"
+  },
+  "401872982": {
+   "game": "2026_05_CIN_MIA",
+   "wind": 6,
+   "raw": 5.4,
+   "gust": 16.1,
+   "precip": 0.02,
+   "temp": 88,
+   "source": "archive"
+  },
+  "401872983": {
+   "game": "2026_05_CLE_NYJ",
+   "wind": 10,
+   "raw": 9,
+   "gust": 22.1,
+   "precip": 0.492,
+   "temp": 58,
+   "source": "archive"
+  },
+  "401872984": {
+   "game": "2026_05_HOU_TEN",
+   "wind": 11,
+   "raw": 9.7,
+   "gust": 22.8,
+   "precip": 0.004,
+   "temp": 66,
+   "source": "archive"
+  },
+  "401872985": {
+   "game": "2026_05_IND_PIT",
+   "wind": 10,
+   "raw": 9,
+   "gust": 21.9,
+   "precip": 0.224,
+   "temp": 58,
+   "source": "archive"
+  },
+  "401872986": {
+   "game": "2026_05_LV_NE",
+   "wind": 4,
+   "raw": 4,
+   "gust": 11.4,
+   "precip": 0.043,
+   "temp": 56,
+   "source": "archive"
+  },
+  "401872988": {
+   "game": "2026_05_NYG_WAS",
+   "wind": 11,
+   "raw": 10.5,
+   "gust": 23.3,
+   "precip": 0.133,
+   "temp": 65,
+   "source": "archive"
+  },
+  "401872990": {
+   "game": "2026_05_CHI_GB",
+   "wind": 13,
+   "raw": 11.6,
+   "gust": 26.6,
+   "precip": 0,
+   "temp": 74,
+   "source": "archive"
+  },
+  "401872992": {
+   "game": "2026_05_SF_SEA",
+   "wind": 13,
+   "raw": 11.5,
+   "gust": 26.8,
+   "precip": 0,
+   "temp": 57,
+   "source": "archive"
+  },
+  "401872993": {
+   "game": "2026_05_BAL_ATL",
+   "wind": 7,
+   "raw": 6.8,
+   "gust": 15.7,
+   "precip": 0,
+   "temp": 65,
+   "source": "archive"
+  },
+  "401872995": {
+   "game": "2026_06_SEA_DEN",
+   "wind": 6,
+   "raw": 5.9,
+   "gust": 14.5,
+   "precip": 0,
+   "temp": 52,
+   "source": "archive"
+  },
+  "401872996": {
+   "game": "2026_06_HOU_JAX",
+   "wind": 14,
+   "raw": 12.7,
+   "gust": 29.1,
+   "precip": 0.012,
+   "temp": 56,
+   "source": "archive"
+  },
+  "401872997": {
+   "game": "2026_06_BAL_CLE",
+   "wind": 9,
+   "raw": 8,
+   "gust": 13,
+   "precip": 0,
+   "temp": 57,
+   "source": "archive"
+  },
+  "401872998": {
+   "game": "2026_06_CAR_PHI",
+   "wind": 6,
+   "raw": 5.4,
+   "gust": 15,
+   "precip": 0,
+   "temp": 55,
+   "source": "archive"
+  },
+  "401873000": {
+   "game": "2026_06_NO_NYG",
+   "wind": 2,
+   "raw": 1.9,
+   "gust": 10.5,
+   "precip": 0,
+   "temp": 53,
+   "source": "archive"
+  },
+  "401873001": {
+   "game": "2026_06_NYJ_NE",
+   "wind": 2,
+   "raw": 1.7,
+   "gust": 9.8,
+   "precip": 0,
+   "temp": 52,
+   "source": "archive"
+  },
+  "401873002": {
+   "game": "2026_06_PIT_TB",
+   "wind": 15,
+   "raw": 13.4,
+   "gust": 34.7,
+   "precip": 0,
+   "temp": 78,
+   "source": "archive"
+  },
+  "401873003": {
+   "game": "2026_06_TEN_IND",
+   "wind": 7,
+   "raw": 6.1,
+   "gust": 16.3,
+   "precip": 0,
+   "temp": 56,
+   "source": "archive"
+  },
+  "401873006": {
+   "game": "2026_06_LAC_KC",
+   "wind": 10,
+   "raw": 9.6,
+   "gust": 21.5,
+   "precip": 0,
+   "temp": 65,
+   "source": "archive"
+  },
+  "401873007": {
+   "game": "2026_06_DAL_GB",
+   "wind": 15,
+   "raw": 14.1,
+   "gust": 29.3,
+   "precip": 0,
+   "temp": 57,
+   "source": "archive"
+  },
+  "401873008": {
+   "game": "2026_06_WAS_SF",
+   "wind": 9,
+   "raw": 7.8,
+   "gust": 19.7,
+   "precip": 0,
+   "temp": 65,
+   "source": "archive"
+  },
+  "401873009": {
+   "game": "2026_07_DAL_PHI",
+   "wind": 5,
+   "raw": 4.7,
+   "gust": 9.8,
+   "precip": 0,
+   "temp": 57,
+   "source": "archive"
+  },
+  "401873010": {
+   "game": "2026_07_NE_CHI",
+   "wind": 4,
+   "raw": 3.6,
+   "gust": 7.8,
+   "precip": 0,
+   "temp": 60,
+   "source": "archive"
+  },
+  "401873012": {
+   "game": "2026_07_CIN_BAL",
+   "wind": 1,
+   "raw": 1.3,
+   "gust": 8.7,
+   "precip": 0,
+   "temp": 60,
+   "source": "archive"
+  },
+  "401873013": {
+   "game": "2026_07_CLE_TEN",
+   "wind": 3,
+   "raw": 3.1,
+   "gust": 11,
+   "precip": 0,
+   "temp": 69,
+   "source": "archive"
+  },
+  "401873015": {
+   "game": "2026_07_MIA_NYJ",
+   "wind": 1,
+   "raw": 0.8,
+   "gust": 7.8,
+   "precip": 0,
+   "temp": 61,
+   "source": "archive"
+  },
+  "401873017": {
+   "game": "2026_07_SF_ATL",
+   "wind": 11,
+   "raw": 9.7,
+   "gust": 24.8,
+   "precip": 0,
+   "temp": 65,
+   "source": "archive"
+  },
+  "401873018": {
+   "game": "2026_07_TB_CAR",
+   "wind": 11,
+   "raw": 10.5,
+   "gust": 25.5,
+   "precip": 0,
+   "temp": 65,
+   "source": "archive"
+  },
+  "401873022": {
+   "game": "2026_07_KC_SEA",
+   "wind": 2,
+   "raw": 1.4,
+   "gust": 17,
+   "precip": 0.004,
+   "temp": 55,
+   "source": "archive"
+  },
+  "401873023": {
+   "game": "2026_08_CAR_GB",
+   "wind": 9,
+   "raw": 8,
+   "gust": 17.9,
+   "precip": 0,
+   "temp": 52,
+   "source": "archive"
+  },
+  "401873025": {
+   "game": "2026_08_ATL_TB",
+   "wind": 10,
+   "raw": 9.5,
+   "gust": 28.9,
+   "precip": 0.43,
+   "temp": 75,
+   "source": "archive"
+  },
+  "401873026": {
+   "game": "2026_08_BAL_BUF",
+   "wind": 6,
+   "raw": 5.9,
+   "gust": 14.1,
+   "precip": 0,
+   "temp": 66,
+   "source": "archive"
+  },
+  "401873027": {
+   "game": "2026_08_CLE_PIT",
+   "wind": 5,
+   "raw": 4.6,
+   "gust": 12.8,
+   "precip": 0,
+   "temp": 66,
+   "source": "archive"
+  },
+  "401873028": {
+   "game": "2026_08_IND_JAX",
+   "wind": 15,
+   "raw": 13.6,
+   "gust": 31.5,
+   "precip": 0.067,
+   "temp": 78,
+   "source": "archive"
+  },
+  "401873029": {
+   "game": "2026_08_LV_NYJ",
+   "wind": 3,
+   "raw": 2.9,
+   "gust": 13.2,
+   "precip": 0,
+   "temp": 60,
+   "source": "archive"
+  },
+  "401873031": {
+   "game": "2026_08_TEN_CIN",
+   "wind": 3,
+   "raw": 2.4,
+   "gust": 11.9,
+   "precip": 0,
+   "temp": 68,
+   "source": "archive"
+  },
+  "401873033": {
+   "game": "2026_08_KC_DEN",
+   "wind": 4,
+   "raw": 4.1,
+   "gust": 15.7,
+   "precip": 0,
+   "temp": 63,
+   "source": "archive"
+  },
+  "401873034": {
+   "game": "2026_08_NE_MIA",
+   "wind": 6,
+   "raw": 5.2,
+   "gust": 14.8,
+   "precip": 0.134,
+   "temp": 74,
+   "source": "archive"
+  },
+  "401873035": {
+   "game": "2026_08_PHI_WAS",
+   "wind": 4,
+   "raw": 3.5,
+   "gust": 5.8,
+   "precip": 0,
+   "temp": 50,
+   "source": "archive"
+  },
+  "401873036": {
+   "game": "2026_08_CHI_SEA",
+   "wind": 1,
+   "raw": 0.6,
+   "gust": 4.5,
+   "precip": 0,
+   "temp": 49,
+   "source": "archive"
+  },
+  "401873037": {
+   "game": "2026_09_JAX_BAL",
+   "wind": 9,
+   "raw": 8.6,
+   "gust": 17.2,
+   "precip": 0.125,
+   "temp": 66,
+   "source": "archive"
+  },
+  "401873040": {
+   "game": "2026_09_DAL_IND",
+   "wind": 11,
+   "raw": 10.1,
+   "gust": 24.2,
+   "precip": 0,
+   "temp": 56,
+   "source": "archive"
+  },
+  "401873041": {
+   "game": "2026_09_DEN_CAR",
+   "wind": 6,
+   "raw": 5.2,
+   "gust": 16.1,
+   "precip": 0,
+   "temp": 66,
+   "source": "archive"
+  },
+  "401873042": {
+   "game": "2026_09_DET_MIA",
+   "wind": 2,
+   "raw": 2.1,
+   "gust": 11.6,
+   "precip": 0.004,
+   "temp": 84,
+   "source": "archive"
+  },
+  "401873043": {
+   "game": "2026_09_LA_WAS",
+   "wind": 8,
+   "raw": 7.7,
+   "gust": 20.1,
+   "precip": 0,
+   "temp": 60,
+   "source": "archive"
+  },
+  "401873044": {
+   "game": "2026_09_NYG_PHI",
+   "wind": 10,
+   "raw": 9,
+   "gust": 21.9,
+   "precip": 0,
+   "temp": 58,
+   "source": "archive"
+  },
+  "401873045": {
+   "game": "2026_09_NYJ_KC",
+   "wind": 3,
+   "raw": 2.6,
+   "gust": 10.7,
+   "precip": 0,
+   "temp": 60,
+   "source": "archive"
+  },
+  "401873047": {
+   "game": "2026_09_LV_SF",
+   "wind": 3,
+   "raw": 2.6,
+   "gust": 12.8,
+   "precip": 0,
+   "temp": 67,
+   "source": "archive"
+  },
+  "401873048": {
+   "game": "2026_09_ARI_SEA",
+   "wind": 15,
+   "raw": 13.5,
+   "gust": 29.5,
+   "precip": 0,
+   "temp": 57,
+   "source": "archive"
+  },
+  "401873049": {
+   "game": "2026_09_GB_NE",
+   "wind": 10,
+   "raw": 9.6,
+   "gust": 25.1,
+   "precip": 0,
+   "temp": 53,
+   "source": "archive"
+  },
+  "401873050": {
+   "game": "2026_09_TB_CHI",
+   "wind": 9,
+   "raw": 7.9,
+   "gust": 15.9,
+   "precip": 0,
+   "temp": 52,
+   "source": "archive"
+  },
+  "401873052": {
+   "game": "2026_10_WAS_NYG",
+   "wind": 9,
+   "raw": 8.6,
+   "gust": 19.5,
+   "precip": 0.004,
+   "temp": 48,
+   "source": "archive"
+  },
+  "401873054": {
+   "game": "2026_10_BUF_NYJ",
+   "wind": 9,
+   "raw": 7.9,
+   "gust": 22.8,
+   "precip": 0,
+   "temp": 50,
+   "source": "archive"
+  },
+  "401873056": {
+   "game": "2026_10_HOU_CLE",
+   "wind": 14,
+   "raw": 12.9,
+   "gust": 18.1,
+   "precip": 0.02,
+   "temp": 47,
+   "source": "archive"
+  },
+  "401873057": {
+   "game": "2026_10_JAX_TEN",
+   "wind": 3,
+   "raw": 2.6,
+   "gust": 13.6,
+   "precip": 0,
+   "temp": 53,
+   "source": "archive"
+  },
+  "401873060": {
+   "game": "2026_10_MIN_GB",
+   "wind": 1,
+   "raw": 0.8,
+   "gust": 6.7,
+   "precip": 0,
+   "temp": 44,
+   "source": "archive"
+  },
+  "401873061": {
+   "game": "2026_10_LA_ARI",
+   "wind": 2,
+   "raw": 1.5,
+   "gust": 8.7,
+   "precip": 0,
+   "temp": 75,
+   "source": "archive"
+  },
+  "401873064": {
+   "game": "2026_10_PIT_CIN",
+   "wind": 4,
+   "raw": 3.5,
+   "gust": 7.2,
+   "precip": 0,
+   "temp": 41,
+   "source": "archive"
+  },
+  "401873065": {
+   "game": "2026_10_LAC_BAL",
+   "wind": 2,
+   "raw": 2,
+   "gust": 8.7,
+   "precip": 0,
+   "temp": 45,
+   "source": "forecast"
+  },
+  "401873066": {
+   "game": "2026_11_IND_HOU",
+   "wind": 4,
+   "raw": 3.4,
+   "gust": 7.8,
+   "precip": 0,
+   "temp": 68,
+   "source": "forecast"
+  },
+  "401873067": {
+   "game": "2026_11_ARI_KC",
+   "wind": 17,
+   "raw": 15.7,
+   "gust": 25.7,
+   "precip": 0,
+   "temp": 48,
+   "source": "forecast"
+  },
+  "401873068": {
+   "game": "2026_11_BAL_CAR",
+   "wind": 9,
+   "raw": 8.3,
+   "gust": 14.5,
+   "precip": 0,
+   "temp": 59,
+   "source": "forecast"
+  },
+  "401873070": {
+   "game": "2026_11_MIA_BUF",
+   "wind": 12,
+   "raw": 10.8,
+   "gust": 19.9,
+   "precip": 0,
+   "temp": 65,
+   "source": "forecast"
+  },
+  "401873071": {
+   "game": "2026_11_NO_CHI",
+   "wind": 11,
+   "raw": 10.1,
+   "gust": 21.3,
+   "precip": 0.055,
+   "temp": 55,
+   "source": "forecast"
+  },
+  "401873076": {
+   "game": "2026_11_PIT_PHI",
+   "wind": 9,
+   "raw": 8,
+   "gust": 16.3,
+   "precip": 0,
+   "temp": 63,
+   "source": "forecast"
+  }
+ }
+}
