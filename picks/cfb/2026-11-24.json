@@ -1,6 +1,6 @@
 {
  "day": "2026-11-24",
- "updated": "2026-11-22T11:38:16.930Z",
+ "updated": "2026-11-22T19:49:07.490Z",
  "picks": [
   {
    "id": "401866470-total-open-total",
@@ -15,9 +15,9 @@
    "best": true,
    "tag": "open-total",
    "firstSeen": "2026-11-22T01:25:07.655Z",
-   "lastSeen": "2026-11-22T11:38:16.930Z",
-   "latest": 46.5,
-   "latestAt": "2026-11-22T11:38:16.930Z"
+   "lastSeen": "2026-11-22T19:49:07.490Z",
+   "latest": 45.5,
+   "latestAt": "2026-11-22T19:49:07.490Z"
   },
   {
    "id": "401866471-total-wmu-calm",
@@ -33,9 +33,9 @@
    "tag": "wmu-calm",
    "note": "1 mph · gusts 2",
    "firstSeen": "2026-11-22T01:25:07.655Z",
-   "lastSeen": "2026-11-22T11:38:16.930Z",
+   "lastSeen": "2026-11-22T19:49:07.490Z",
    "latest": 46.5,
-   "latestAt": "2026-11-22T11:38:16.930Z"
+   "latestAt": "2026-11-22T19:49:07.490Z"
   }
  ]
 }

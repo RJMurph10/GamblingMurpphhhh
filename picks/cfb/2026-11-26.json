@@ -1,0 +1,24 @@
+{
+ "day": "2026-11-26",
+ "updated": "2026-11-22T19:49:07.490Z",
+ "picks": [
+  {
+   "id": "401856879-total-open-total",
+   "game": "TCU @ TTU",
+   "tip": "2026-11-27T01:00Z",
+   "market": "total",
+   "pick": "Under 46.5",
+   "line": 46.5,
+   "rule": 55.5,
+   "open": 55.5,
+   "model": 55.3,
+   "edge": 0.2,
+   "best": true,
+   "tag": "open-total",
+   "firstSeen": "2026-11-22T19:49:07.490Z",
+   "lastSeen": "2026-11-22T19:49:07.490Z",
+   "latest": 46.5,
+   "latestAt": "2026-11-22T19:49:07.490Z"
+  }
+ ]
+}

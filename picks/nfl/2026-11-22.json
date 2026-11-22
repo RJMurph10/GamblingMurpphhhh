@@ -1,6 +1,6 @@
 {
  "day": "2026-11-22",
- "updated": "2026-11-22T11:38:16.930Z",
+ "updated": "2026-11-22T19:49:07.490Z",
  "picks": [
   {
    "id": "401873067-spread-bounce",
@@ -311,9 +311,9 @@
    "best": true,
    "tag": "qb-style",
    "firstSeen": "2026-11-16T06:44:22.078Z",
-   "lastSeen": "2026-11-22T11:38:16.930Z",
+   "lastSeen": "2026-11-22T19:49:07.490Z",
    "latest": -3,
-   "latestAt": "2026-11-22T11:38:16.930Z"
+   "latestAt": "2026-11-22T19:49:07.490Z"
   },
   {
    "id": "401873069-total-gusty-rain",
@@ -331,7 +331,7 @@
    "firstSeen": "2026-11-22T01:25:07.655Z",
    "lastSeen": "2026-11-22T11:38:16.930Z",
    "latest": 45.5,
-   "latestAt": "2026-11-22T11:38:16.930Z"
+   "latestAt": "2026-11-22T19:49:07.490Z"
   },
   {
    "id": "401873075-spread-qb-change",
@@ -346,9 +346,9 @@
    "best": false,
    "tag": "qb-change",
    "firstSeen": "2026-11-15T22:56:35.955Z",
-   "lastSeen": "2026-11-22T11:38:16.930Z",
+   "lastSeen": "2026-11-22T19:49:07.490Z",
    "latest": -10.5,
-   "latestAt": "2026-11-22T11:38:16.930Z"
+   "latestAt": "2026-11-22T19:49:07.490Z"
   },
   {
    "id": "401873075-spread-road-dog",
@@ -363,9 +363,9 @@
    "best": false,
    "tag": "road-dog",
    "firstSeen": "2026-11-15T22:56:35.955Z",
-   "lastSeen": "2026-11-22T11:38:16.930Z",
+   "lastSeen": "2026-11-22T19:49:07.490Z",
    "latest": -10.5,
-   "latestAt": "2026-11-22T11:38:16.930Z"
+   "latestAt": "2026-11-22T19:49:07.490Z"
   },
   {
    "id": "401873075-total-total-gap",
@@ -380,9 +380,9 @@
    "best": false,
    "tag": "total-gap",
    "firstSeen": "2026-11-15T22:56:35.955Z",
-   "lastSeen": "2026-11-22T11:38:16.930Z",
-   "latest": 41.5,
-   "latestAt": "2026-11-22T11:38:16.930Z"
+   "lastSeen": "2026-11-22T19:49:07.490Z",
+   "latest": 40.5,
+   "latestAt": "2026-11-22T19:49:07.490Z"
   },
   {
    "id": "401873077-spread-qb-change",
@@ -399,7 +399,7 @@
    "firstSeen": "2026-11-16T06:44:22.078Z",
    "lastSeen": "2026-11-17T03:58:47.747Z",
    "latest": -3.5,
-   "latestAt": "2026-11-22T11:38:16.930Z"
+   "latestAt": "2026-11-22T19:49:07.490Z"
   },
   {
    "id": "401873077-total-total-gap",
@@ -414,9 +414,9 @@
    "best": false,
    "tag": "total-gap",
    "firstSeen": "2026-11-16T06:44:22.078Z",
-   "lastSeen": "2026-11-22T11:38:16.930Z",
+   "lastSeen": "2026-11-22T19:49:07.490Z",
    "latest": 46.5,
-   "latestAt": "2026-11-22T11:38:16.930Z"
+   "latestAt": "2026-11-22T19:49:07.490Z"
   }
  ]
 }
