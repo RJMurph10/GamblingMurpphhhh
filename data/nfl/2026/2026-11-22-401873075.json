@@ -7,13 +7,13 @@
   "id": "13",
   "abbr": "LV",
   "name": "Las Vegas Raiders",
-  "score": 0
+  "score": 17
  },
  "home": {
   "id": "7",
   "abbr": "DEN",
   "name": "Denver Broncos",
-  "score": 3
+  "score": 24
  },
  "neutral": false,
  "venue": "Empower Field at Mile High",

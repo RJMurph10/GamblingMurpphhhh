@@ -7,13 +7,13 @@
   "id": "30",
   "abbr": "JAX",
   "name": "Jacksonville Jaguars",
-  "score": 3
+  "score": 6
  },
  "home": {
   "id": "19",
   "abbr": "NYG",
   "name": "New York Giants",
-  "score": 3
+  "score": 20
  },
  "neutral": false,
  "venue": "MetLife Stadium",

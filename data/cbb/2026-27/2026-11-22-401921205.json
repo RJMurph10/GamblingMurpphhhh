@@ -7,18 +7,18 @@
   "id": "218",
   "abbr": "TEM",
   "name": "Temple Owls",
-  "score": 0
+  "score": 41
  },
  "home": {
   "id": "2617",
   "abbr": "SFA",
   "name": "Stephen F. Austin Lumberjacks",
-  "score": 0
+  "score": 42
  },
  "neutral": true,
  "venue": "Elridge Blake Sports and Fitness Center",
  "seasonType": 2,
- "state": "pre",
+ "state": "in",
  "lines": {
   "open": {
    "at": "2026-11-21T23:25:07.697Z",

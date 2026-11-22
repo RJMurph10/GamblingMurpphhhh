@@ -395,17 +395,18 @@
    ]
   },
   "close": {
-   "at": "2026-11-22T21:54:08.583Z",
+   "at": "2026-11-22T23:50:51.406Z",
    "scoreboard": [
     {
      "provider": {
       "id": "100",
-      "name": "Draft Kings",
-      "priority": 1
+      "name": "DraftKings",
+      "priority": 1,
+      "displayName": "DraftKings"
      },
-     "details": "UCLA -28.5",
-     "overUnder": 145.5,
-     "spread": -28.5,
+     "details": "UCLA -30.5",
+     "overUnder": 144.5,
+     "spread": -30.5,
      "awayTeamOdds": {
       "favorite": false,
       "underdog": true,
@@ -437,18 +438,66 @@
       "shortDisplayName": "ML",
       "home": {
        "close": {
-        "odds": "OFF"
+        "odds": "-20000",
+        "link": {
+         "language": "en-US",
+         "rel": [
+          "home",
+          "desktop",
+          "bets",
+          "draftkings"
+         ],
+         "href": "https://sportsbook.draftkings.com/gateway?s=__s__&wpcid=__wpcid__&wpsrc=413&wpcn=ESPN&wpscn=Widget&wpcrn=BetSlipDeepLink&wpscid=__wpscid__&wpcrid=xx&preurl=https%3A%2F%2Fsportsbook.draftkings.com%2Fevent%2F35064701%3Foutcomes%3D0ML87358718_1",
+         "text": "Home Bet",
+         "shortText": "Home Bet",
+         "isExternal": true,
+         "isPremium": false,
+         "tracking": {
+          "campaign": "betting-integrations",
+          "tags": {
+           "league": "mens-college-basketball",
+           "sport": "basketball",
+           "gameId": 401920905,
+           "betSide": "home",
+           "betType": "straight"
+          }
+         }
+        }
        },
        "open": {
-        "odds": "OFF"
+        "odds": "-20000"
        }
       },
       "away": {
        "close": {
-        "odds": "OFF"
+        "odds": "+3500",
+        "link": {
+         "language": "en-US",
+         "rel": [
+          "away",
+          "desktop",
+          "bets",
+          "draftkings"
+         ],
+         "href": "https://sportsbook.draftkings.com/gateway?s=__s__&wpcid=__wpcid__&wpsrc=413&wpcn=ESPN&wpscn=Widget&wpcrn=BetSlipDeepLink&wpscid=__wpscid__&wpcrid=xx&preurl=https%3A%2F%2Fsportsbook.draftkings.com%2Fevent%2F35064701%3Foutcomes%3D0ML87358718_3",
+         "text": "Away Bet",
+         "shortText": "Away Bet",
+         "isExternal": true,
+         "isPremium": false,
+         "tracking": {
+          "campaign": "betting-integrations",
+          "tags": {
+           "league": "mens-college-basketball",
+           "sport": "basketball",
+           "gameId": 401920905,
+           "betSide": "away",
+           "betType": "straight"
+          }
+         }
+        }
        },
        "open": {
-        "odds": "OFF"
+        "odds": "+3500"
        }
       }
      },
@@ -457,8 +506,8 @@
       "shortDisplayName": "Spread",
       "home": {
        "close": {
-        "line": "-28.5",
-        "odds": "-105",
+        "line": "-30.5",
+        "odds": "-110",
         "link": {
          "language": "en-US",
          "rel": [
@@ -466,7 +515,7 @@
           "desktop",
           "bets"
          ],
-         "href": "https://sportsbook.draftkings.com/gateway?s=__s__&wpcid=__wpcid__&wpsrc=413&wpcn=ESPN&wpscn=Widget&wpcrn=BetSlipDeepLink&wpscid=__wpscid__&wpcrid=xx&preurl=https%3A%2F%2Fsportsbook.draftkings.com%2Fevent%2F35064701%3Foutcomes%3D0HC87358718N2850_1",
+         "href": "https://sportsbook.draftkings.com/gateway?s=__s__&wpcid=__wpcid__&wpsrc=413&wpcn=ESPN&wpscn=Widget&wpcrn=BetSlipDeepLink&wpscid=__wpscid__&wpcrid=xx&preurl=https%3A%2F%2Fsportsbook.draftkings.com%2Fevent%2F35064701%3Foutcomes%3D0HC87358718N3050_1",
          "text": "Home Point Spread",
          "shortText": "Home Point Spread",
          "isExternal": true,
@@ -479,7 +528,7 @@
            "gameId": 401920905,
            "betSide": "none",
            "betType": "straight",
-           "betDetails": "Spread:UCLA-28.5"
+           "betDetails": "Spread:UCLA-30.5"
           }
          }
         }
@@ -491,8 +540,8 @@
       },
       "away": {
        "close": {
-        "line": "+28.5",
-        "odds": "-115",
+        "line": "+30.5",
+        "odds": "-110",
         "link": {
          "language": "en-US",
          "rel": [
@@ -500,7 +549,7 @@
           "desktop",
           "bets"
          ],
-         "href": "https://sportsbook.draftkings.com/gateway?s=__s__&wpcid=__wpcid__&wpsrc=413&wpcn=ESPN&wpscn=Widget&wpcrn=BetSlipDeepLink&wpscid=__wpscid__&wpcrid=xx&preurl=https%3A%2F%2Fsportsbook.draftkings.com%2Fevent%2F35064701%3Foutcomes%3D0HC87358718P2850_3",
+         "href": "https://sportsbook.draftkings.com/gateway?s=__s__&wpcid=__wpcid__&wpsrc=413&wpcn=ESPN&wpscn=Widget&wpcrn=BetSlipDeepLink&wpscid=__wpscid__&wpcrid=xx&preurl=https%3A%2F%2Fsportsbook.draftkings.com%2Fevent%2F35064701%3Foutcomes%3D0HC87358718P3050_3",
          "text": "Away Point Spread",
          "shortText": "Away Point Spread",
          "isExternal": true,
@@ -513,7 +562,7 @@
            "gameId": 401920905,
            "betSide": "none",
            "betType": "straight",
-           "betDetails": "Spread:DEL+28.5"
+           "betDetails": "Spread:DEL+30.5"
           }
          }
         }
@@ -529,8 +578,8 @@
       "shortDisplayName": "Total",
       "over": {
        "close": {
-        "line": "o145.5",
-        "odds": "-105",
+        "line": "o144.5",
+        "odds": "-108",
         "link": {
          "language": "en-US",
          "rel": [
@@ -538,7 +587,7 @@
           "desktop",
           "bets"
          ],
-         "href": "https://sportsbook.draftkings.com/gateway?s=__s__&wpcid=__wpcid__&wpsrc=413&wpcn=ESPN&wpscn=Widget&wpcrn=BetSlipDeepLink&wpscid=__wpscid__&wpcrid=xx&preurl=https%3A%2F%2Fsportsbook.draftkings.com%2Fevent%2F35064701%3Foutcomes%3D0OU87358718O14550_1",
+         "href": "https://sportsbook.draftkings.com/gateway?s=__s__&wpcid=__wpcid__&wpsrc=413&wpcn=ESPN&wpscn=Widget&wpcrn=BetSlipDeepLink&wpscid=__wpscid__&wpcrid=xx&preurl=https%3A%2F%2Fsportsbook.draftkings.com%2Fevent%2F35064701%3Foutcomes%3D0OU87358718O14450_1",
          "text": "Over Odds",
          "shortText": "Over Odds",
          "isExternal": true,
@@ -551,7 +600,7 @@
            "gameId": 401920905,
            "betSide": "over",
            "betType": "straight",
-           "betDetails": "Over:145.5"
+           "betDetails": "Over:144.5"
           }
          }
         }
@@ -563,8 +612,8 @@
       },
       "under": {
        "close": {
-        "line": "u145.5",
-        "odds": "-115",
+        "line": "u144.5",
+        "odds": "-112",
         "link": {
          "language": "en-US",
          "rel": [
@@ -572,7 +621,7 @@
           "desktop",
           "bets"
          ],
-         "href": "https://sportsbook.draftkings.com/gateway?s=__s__&wpcid=__wpcid__&wpsrc=413&wpcn=ESPN&wpscn=Widget&wpcrn=BetSlipDeepLink&wpscid=__wpscid__&wpcrid=xx&preurl=https%3A%2F%2Fsportsbook.draftkings.com%2Fevent%2F35064701%3Foutcomes%3D0OU87358718U14550_3",
+         "href": "https://sportsbook.draftkings.com/gateway?s=__s__&wpcid=__wpcid__&wpsrc=413&wpcn=ESPN&wpscn=Widget&wpcrn=BetSlipDeepLink&wpscid=__wpscid__&wpcrid=xx&preurl=https%3A%2F%2Fsportsbook.draftkings.com%2Fevent%2F35064701%3Foutcomes%3D0OU87358718U14450_3",
          "text": "Under Odds",
          "shortText": "Under Odds",
          "isExternal": true,
@@ -585,7 +634,7 @@
            "gameId": 401920905,
            "betSide": "under",
            "betType": "straight",
-           "betDetails": "Under:145.5"
+           "betDetails": "Under:144.5"
           }
          }
         }
@@ -637,18 +686,19 @@
     {
      "provider": {
       "id": "100",
-      "name": "Draft Kings",
+      "name": "DraftKings",
       "priority": 1
      },
-     "details": "UCLA -28.5",
-     "overUnder": 145.5,
-     "spread": -28.5,
-     "overOdds": -105,
-     "underOdds": -115,
+     "details": "UCLA -30.5",
+     "overUnder": 144.5,
+     "spread": -30.5,
+     "overOdds": -108,
+     "underOdds": -112,
      "awayTeamOdds": {
       "favorite": false,
       "underdog": true,
-      "spreadOdds": -115,
+      "moneyLine": 3500,
+      "spreadOdds": -110,
       "open": {
        "favorite": false,
        "pointSpread": {
@@ -662,20 +712,36 @@
         "decimal": 1.95,
         "fraction": "20/21",
         "american": "-105"
+       },
+       "moneyLine": {
+        "value": 36,
+        "displayValue": "35/1",
+        "alternateDisplayValue": "+3500",
+        "decimal": 36,
+        "fraction": "35/1",
+        "american": "+3500"
        }
       },
       "current": {
        "pointSpread": {
-        "alternateDisplayValue": "+28.5",
-        "american": "+28.5"
+        "alternateDisplayValue": "+30.5",
+        "american": "+30.5"
        },
        "spread": {
-        "value": 1.86,
-        "displayValue": "20/23",
-        "alternateDisplayValue": "-115",
-        "decimal": 1.86,
-        "fraction": "20/23",
-        "american": "-115"
+        "value": 1.9,
+        "displayValue": "10/11",
+        "alternateDisplayValue": "-110",
+        "decimal": 1.9,
+        "fraction": "10/11",
+        "american": "-110"
+       },
+       "moneyLine": {
+        "value": 36,
+        "displayValue": "35/1",
+        "alternateDisplayValue": "+3500",
+        "decimal": 36,
+        "fraction": "35/1",
+        "american": "+3500"
        }
       },
       "team": {
@@ -685,7 +751,8 @@
      "homeTeamOdds": {
       "favorite": true,
       "underdog": false,
-      "spreadOdds": -105,
+      "moneyLine": -20000,
+      "spreadOdds": -110,
       "open": {
        "favorite": true,
        "pointSpread": {
@@ -699,20 +766,36 @@
         "decimal": 1.86,
         "fraction": "20/23",
         "american": "-115"
+       },
+       "moneyLine": {
+        "value": 1.005,
+        "displayValue": "1/200",
+        "alternateDisplayValue": "-20000",
+        "decimal": 1.005,
+        "fraction": "1/200",
+        "american": "-20000"
        }
       },
       "current": {
        "pointSpread": {
-        "alternateDisplayValue": "-28.5",
-        "american": "-28.5"
+        "alternateDisplayValue": "-30.5",
+        "american": "-30.5"
        },
        "spread": {
-        "value": 1.95,
-        "displayValue": "20/21",
-        "alternateDisplayValue": "-105",
-        "decimal": 1.95,
-        "fraction": "20/21",
-        "american": "-105"
+        "value": 1.9,
+        "displayValue": "10/11",
+        "alternateDisplayValue": "-110",
+        "decimal": 1.9,
+        "fraction": "10/11",
+        "american": "-110"
+       },
+       "moneyLine": {
+        "value": 1.005,
+        "displayValue": "1/200",
+        "alternateDisplayValue": "-20000",
+        "decimal": 1.005,
+        "fraction": "1/200",
+        "american": "-20000"
        }
       },
       "team": {
@@ -745,24 +828,24 @@
      },
      "current": {
       "over": {
-       "value": 1.95,
-       "displayValue": "20/21",
-       "alternateDisplayValue": "-105",
-       "decimal": 1.95,
-       "fraction": "20/21",
-       "american": "-105"
+       "value": 1.92,
+       "displayValue": "25/27",
+       "alternateDisplayValue": "-108",
+       "decimal": 1.92,
+       "fraction": "25/27",
+       "american": "-108"
       },
       "under": {
-       "value": 1.86,
-       "displayValue": "20/23",
-       "alternateDisplayValue": "-115",
-       "decimal": 1.86,
-       "fraction": "20/23",
-       "american": "-115"
+       "value": 1.89,
+       "displayValue": "25/28",
+       "alternateDisplayValue": "-112",
+       "decimal": 1.89,
+       "fraction": "25/28",
+       "american": "-112"
       },
       "total": {
-       "alternateDisplayValue": "145.5",
-       "american": "145.5"
+       "alternateDisplayValue": "144.5",
+       "american": "144.5"
       }
      }
     }

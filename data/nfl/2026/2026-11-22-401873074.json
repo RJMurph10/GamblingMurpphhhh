@@ -7,18 +7,18 @@
   "id": "20",
   "abbr": "NYJ",
   "name": "New York Jets",
-  "score": 10
+  "score": 27
  },
  "home": {
   "id": "24",
   "abbr": "LAC",
   "name": "Los Angeles Chargers",
-  "score": 3
+  "score": 24
  },
  "neutral": false,
  "venue": "SoFi Stadium",
  "seasonType": 2,
- "state": "in",
+ "state": "post",
  "lines": {
   "open": {
    "at": "2026-11-15T22:55:11.258Z",
@@ -3105,5 +3105,9 @@
    "Paschal Ekeji",
    "NYJ"
   ]
+ },
+ "final": {
+  "away": 27,
+  "home": 24
  }
 }

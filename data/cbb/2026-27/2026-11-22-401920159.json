@@ -7,18 +7,18 @@
   "id": "2239",
   "abbr": "CSUF",
   "name": "Cal State Fullerton Titans",
-  "score": 0
+  "score": 86
  },
  "home": {
   "id": "2502",
   "abbr": "PRST",
   "name": "Portland State Vikings",
-  "score": 0
+  "score": 72
  },
  "neutral": false,
  "venue": "Viking Pavilion",
  "seasonType": 2,
- "state": "pre",
+ "state": "in",
  "lines": {
   "open": {
    "at": "2026-11-22T03:27:54.997Z",

@@ -7,18 +7,18 @@
   "id": "242",
   "abbr": "RICE",
   "name": "Rice Owls",
-  "score": 0
+  "score": 54
  },
  "home": {
   "id": "2320",
   "abbr": "LAM",
   "name": "Lamar Cardinals",
-  "score": 0
+  "score": 50
  },
  "neutral": true,
  "venue": "The Reef",
  "seasonType": 2,
- "state": "pre",
+ "state": "in",
  "lines": {
   "open": {
    "at": "2026-11-22T03:27:54.997Z",
