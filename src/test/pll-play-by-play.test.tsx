@@ -7,6 +7,8 @@ import pbp2026 from "@/data/pll-pbp-2026.json";
 import { fetchPllSeason } from "@/lib/pll/pll.server";
 import { isGoal, pbpForGame, pbpQuarters, type PllPbpFile } from "@/lib/pll/play-by-play";
 import { PllPlayByPlay } from "@/components/pll/PllPlayByPlay";
+import { PLL_CLUB_IDS } from "@/lib/pll/player-stats";
+import type { PllGame } from "@/lib/pll/pll";
 
 afterEach(() => vi.unstubAllGlobals());
 
@@ -118,5 +120,40 @@ describe("PLL international games (national teams in ESPN's PLL feed)", () => {
       expect(t.logo).toMatch(/^\/logos\/flags\/(usa|can|aus|hau)\.svg$/);
     // the summer season is untouched: 5 playoff games, none of them international
     expect(s.games.filter((g) => g.phase === "playoffs").length).toBe(5);
+  });
+});
+
+describe("PLL play-by-play (2025, as the sheets come in)", () => {
+  it("each sheet matches one ESPN game, and its last goal is that game's final", async () => {
+    const espn = (await import("./fixtures/pll-2025-espn.json")).default as {
+      id: string;
+      date: string;
+      status: string;
+      sides: [string, string, string, string][];
+    }[];
+    const file = (await import("@/data/pll-pbp-2025.json")).default as unknown as PllPbpFile;
+    const games = espn
+      .filter((e) => e.status === "STATUS_FINAL")
+      .map((e) => {
+        const side = (h: string) => {
+          const [, club, , score] = e.sides.find((x) => x[0] === h)!;
+          return { teamId: PLL_CLUB_IDS[club], score: Number(score), quarters: [] };
+        };
+        return {
+          id: e.id,
+          date: e.date,
+          home: side("home"),
+          away: side("away"),
+        } as unknown as PllGame;
+      });
+    let matched = 0;
+    for (const g of games) {
+      const plays = pbpForGame(file, g);
+      if (!plays) continue;
+      matched++;
+      const last = [...plays].reverse().find((p) => isGoal(p.kind))!;
+      expect([last.awayScore, last.homeScore], g.date).toEqual([g.away.score, g.home.score]);
+    }
+    expect(matched).toBe(file.games.length);
   });
 });
