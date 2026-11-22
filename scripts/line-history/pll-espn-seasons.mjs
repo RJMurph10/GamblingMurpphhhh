@@ -1,21 +1,17 @@
-// One-off: test the exact ESPN PLL requests the site makes (limit=1000, teams list).
+// One-off: the ESPN PLL feeds in full, to see the international (country) games and their teams.
 import { mkdir, writeFile } from "node:fs/promises";
 const out = process.argv[process.argv.indexOf("--out") + 1];
 await mkdir(out, { recursive: true });
 const B = "https://site.api.espn.com/apis/site/v2/sports/lacrosse/pll";
-const urls = [
-  `${B}/scoreboard?dates=2026&limit=1000`, `${B}/scoreboard?dates=2026&limit=500`, `${B}/scoreboard?dates=2026`,
-  `${B}/scoreboard?dates=2024&limit=1000`, `${B}/teams`,
-];
-const res = [];
-for (const u of urls) {
-  const t0 = Date.now();
+const urls = {
+  "pll-espn-2026": `${B}/scoreboard?dates=2026&limit=1000`,
+  "pll-espn-2027": `${B}/scoreboard?dates=2027&limit=1000`,
+  "pll-espn-now": `${B}/scoreboard`,
+  "pll-espn-teams": `${B}/teams`,
+};
+for (const [name, u] of Object.entries(urls)) {
   try {
-    const r = await fetch(u, { signal: AbortSignal.timeout(20000) });
-    const txt = await r.text();
-    let n = null; try { const j = JSON.parse(txt); n = j.events?.length ?? j.sports?.[0]?.leagues?.[0]?.teams?.length; } catch {}
-    res.push({ u, status: r.status, ms: Date.now() - t0, bytes: txt.length, n, head: txt.slice(0, 150) });
-  } catch (e) { res.push({ u, err: String(e), ms: Date.now() - t0 }); }
+    const r = await fetch(u, { headers: { "User-Agent": "GamblingNFL/1.0" }, signal: AbortSignal.timeout(20000) });
+    await writeFile(`${out}/${name}.json`, await r.text());
+  } catch (e) { await writeFile(`${out}/${name}.json`, JSON.stringify({ err: String(e) })); }
 }
-console.log(JSON.stringify(res, null, 1));
-await writeFile(`${out}/pll-espn-site-test.json`, JSON.stringify(res));
