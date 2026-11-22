@@ -3,6 +3,7 @@ import { createFileRoute, Link } from "@tanstack/react-router";
 import { PageTitle, Panel } from "@/components/shared/booth";
 import { PllLogo, PllSeasonPicker } from "@/components/pll/PllBits";
 import {
+  isPllClubId,
   conferenceOf,
   conferenceRecords,
   standings,
@@ -71,7 +72,7 @@ function PllTeamsPage() {
   const confRec = useMemo(() => (q.data ? conferenceRecords(q.data) : new Map()), [q.data]);
   // clubs only (no All-Star teams), in standings order, then any without a game yet
   const teams = useMemo(() => {
-    const clubs = (q.data?.teams ?? []).filter((t) => !t.id.startsWith("as-"));
+    const clubs = (q.data?.teams ?? []).filter((t) => isPllClubId(t.id));
     const rank = (t: PllTeam) => {
       const i = table.findIndex((r) => r.team.id === t.id);
       return i < 0 ? table.length : i;

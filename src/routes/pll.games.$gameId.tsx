@@ -4,6 +4,9 @@ import { createFileRoute, Link } from "@tanstack/react-router";
 import { Panel, PanelHeader } from "@/components/shared/booth";
 import { PllLinesNote, PllLogo, PllSourceNote } from "@/components/pll/PllBits";
 import { PllGameRosters } from "@/components/pll/PllGameRosters";
+import { PllPlayByPlay } from "@/components/pll/PllPlayByPlay";
+import { usePllPlays } from "@/lib/pll/use-pll-plays";
+import { pbpQuarters } from "@/lib/pll/play-by-play";
 import {
   americanText,
   lineResult,
@@ -14,6 +17,7 @@ import {
 } from "@/lib/pll/lines";
 
 import {
+  isPllClubId,
   PHASE_LABEL,
   pllDate,
   teamOf,
@@ -58,6 +62,7 @@ function PllGamePage() {
   const { game, season, loading } = useGame(gameId);
   const linesQ = usePllLines();
   const [tab, setTab] = useState<"game" | "rosters">("game");
+  const plays = usePllPlays(game);
   if (!game)
     return (
       <Panel>
@@ -69,7 +74,17 @@ function PllGamePage() {
   const away = teamOf(season, game.away.teamId);
   const home = teamOf(season, game.home.teamId);
   const started = game.status !== "scheduled";
-  const n = Math.max(4, game.home.quarters.length, game.away.quarters.length);
+  // ESPN's quarter scores are sometimes missing (all zeros): the play-by-play's goals fill them in
+  const sum = (q: number[]) => q.reduce((a, b) => a + b, 0);
+  const espnOk =
+    game.status !== "final" ||
+    (sum(game.home.quarters) === game.home.score && sum(game.away.quarters) === game.away.score);
+  const pq = !espnOk && plays ? pbpQuarters(plays) : null;
+  const quarters = {
+    home: pq ? pq.home : game.home.quarters,
+    away: pq ? pq.away : game.away.quarters,
+  };
+  const n = Math.max(4, quarters.home.length, quarters.away.length);
   const cols = Array.from({ length: n }, (_, i) =>
     i < 4 ? `Q${i + 1}` : n > 5 ? `OT${i - 3}` : "OT",
   );
@@ -100,7 +115,7 @@ function PllGamePage() {
 
       {tab === "rosters" ? <PllGameRosters game={game} season={season} /> : null}
 
-      {tab === "game" && started && game.home.quarters.length ? (
+      {tab === "game" && started && quarters.home.length ? (
         <Panel padded={false}>
           <PanelHeader title="Goals by quarter" />
           <div className="overflow-x-auto">
@@ -118,9 +133,9 @@ function PllGamePage() {
               </thead>
               <tbody className="divide-y divide-line/5">
                 {[
-                  [away, game.away],
-                  [home, game.home],
-                ].map(([t, s]) => (
+                  [away, game.away, quarters.away],
+                  [home, game.home, quarters.home],
+                ].map(([t, s, q]) => (
                   <tr key={(s as PllGame["home"]).teamId}>
                     <td className="px-4 py-2">
                       <span className="flex items-center gap-2">
@@ -130,7 +145,7 @@ function PllGamePage() {
                     </td>
                     {cols.map((c, i) => (
                       <td key={c} className="px-2 py-2 text-right font-mono tabular-nums text-mute">
-                        {(s as PllGame["home"]).quarters[i] ?? ""}
+                        {(q as number[])[i] ?? ""}
                       </td>
                     ))}
                     <td className="px-4 py-2 text-right font-mono font-semibold tabular-nums">
@@ -143,6 +158,8 @@ function PllGamePage() {
           </div>
         </Panel>
       ) : null}
+
+      {tab === "game" ? <PllPlayByPlay game={game} season={season} /> : null}
 
       {tab === "game" ? <GameLines game={game} season={season} lines={linesQ.data} /> : null}
     </div>
@@ -173,18 +190,28 @@ function ScoreBox({
   const lg = linesFor(game, season, lines);
   const line = lg?.latest;
   const res = line ? lineResult(game, line) : null;
-  const club = (t: PllTeam | undefined, side: PllGame["home"]) => (
-    <Link
-      to="/pll/teams/$teamId"
-      params={{ teamId: side.teamId }}
-      className="group flex flex-col items-center gap-1 text-center"
-    >
-      <PllLogo team={t} className="size-10 transition-transform group-hover:scale-105 sm:size-14" />
-      {side.record ? (
-        <span className="font-mono text-xs text-mute group-hover:text-acc">{side.record}</span>
-      ) : null}
-    </Link>
-  );
+  const club = (t: PllTeam | undefined, side: PllGame["home"]) =>
+    // national teams (international games) have no team page: their flag and name
+    isPllClubId(side.teamId) ? (
+      <Link
+        to="/pll/teams/$teamId"
+        params={{ teamId: side.teamId }}
+        className="group flex flex-col items-center gap-1 text-center"
+      >
+        <PllLogo
+          team={t}
+          className="size-10 transition-transform group-hover:scale-105 sm:size-14"
+        />
+        {side.record ? (
+          <span className="font-mono text-xs text-mute group-hover:text-acc">{side.record}</span>
+        ) : null}
+      </Link>
+    ) : (
+      <div className="flex flex-col items-center gap-1 text-center">
+        <PllLogo team={t} className="h-10 w-auto rounded-sm sm:h-14" />
+        <span className="font-mono text-xs text-mute">{t?.short}</span>
+      </div>
+    );
   const score = (n: number | null, won: boolean) => (
     <span
       className={`font-mono text-3xl font-bold tabular-nums sm:text-5xl ${won ? "text-acc" : ""}`}

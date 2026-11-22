@@ -60,6 +60,43 @@ type EspnEvent = {
 const isAllStar = (t?: EspnTeam) => /^(east|west|team\b|all-?star)/i.test(t?.displayName ?? "");
 
 /**
+ * National teams ESPN lists in the PLL feed for international games ("USA United States Men", "CAN Canada
+ * Women", "HAU Haudenosaunee Men", "AUS Australia Women"; December 2026). ESPN has no logos for them, so
+ * each gets its flag (public/logos/flags) and a short name with the men's or women's side.
+ */
+const NATIONS: [RegExp, { abbr: string; short: string; flag: string }][] = [
+  [/united states|\busa\b/i, { abbr: "USA", short: "USA", flag: "usa" }],
+  [/canada/i, { abbr: "CAN", short: "Canada", flag: "can" }],
+  [/australia/i, { abbr: "AUS", short: "Australia", flag: "aus" }],
+  [/haudenosaunee|iroquois/i, { abbr: "HAU", short: "Haudenosaunee", flag: "hau" }],
+];
+const nationOf = (t: EspnTeam) => {
+  const name = t.displayName ?? t.name ?? "";
+  if (!/\b(men|women)$/i.test(name)) return undefined;
+  return (
+    NATIONS.find(([re]) => re.test(name))?.[1] ?? {
+      abbr: t.abbreviation ?? "",
+      short: t.location ?? name,
+      flag: "",
+    }
+  );
+};
+const isIntl = (t?: EspnTeam) => Boolean(t && nationOf(t));
+const intlId = (t: EspnTeam) => `intl-${t.id}`;
+const toIntlTeam = (t: EspnTeam): PllTeam => {
+  const n = nationOf(t)!;
+  const side = /women$/i.test(t.displayName ?? t.name ?? "") ? "Women" : "Men";
+  return {
+    id: intlId(t),
+    abbr: n.abbr,
+    name: `${n.short} ${side}`,
+    short: `${n.short} ${side}`,
+    location: "",
+    ...(n.flag ? { logo: `/logos/flags/${n.flag}.svg` } : {}),
+  };
+};
+
+/**
  * Chrome (2019-2023; the franchise became the Denver Outlaws, ESPN id 122896, in 2024). ESPN keeps Chrome's
  * id 127635 but its logo now shows the Outlaws' art, so Chrome uses its own logo (from the PLL's site,
  * stored in public/logos).
@@ -92,7 +129,7 @@ const toTeam = (t: EspnTeam): PllTeam =>
  * no logo) are today's Boston Cannons (122997), so the club is one team across every season.
  */
 const SAME_CLUB: Record<string, string> = { "127633": "122997" };
-const clubId = (t: EspnTeam) => SAME_CLUB[String(t.id)] ?? String(t.id);
+const clubId = (t: EspnTeam) => (isIntl(t) ? intlId(t) : (SAME_CLUB[String(t.id)] ?? String(t.id)));
 
 async function load(year: number): Promise<PllSeason> {
   const [sb, tl] = await Promise.all([
@@ -104,6 +141,7 @@ async function load(year: number): Promise<PllSeason> {
   const allStar = new Set<string>();
   for (const { team } of tl?.sports?.[0]?.leagues?.[0]?.teams ?? []) {
     if (isAllStar(team)) allStar.add(String(team.id));
+    else if (isIntl(team)) teams.set(intlId(team), toIntlTeam(team));
     else teams.set(String(team.id), toTeam(team));
   }
   const raw: Omit<PllGame, "phase">[] = [];
@@ -115,6 +153,7 @@ async function load(year: number): Promise<PllSeason> {
     for (const c of [h, a]) {
       const id = clubId(c.team!);
       if (isAllStar(c.team)) allStar.add(id);
+      else if (isIntl(c.team)) teams.set(id, toIntlTeam(c.team!));
       else if (!teams.has(id)) teams.set(id, { ...toTeam(c.team!), id });
     }
     const state = e.status?.type?.state;

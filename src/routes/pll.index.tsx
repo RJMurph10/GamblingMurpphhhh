@@ -7,6 +7,7 @@ import { PllDashGames } from "@/components/pll/PllDashGames";
 import { PllAwards, PllLeaders } from "@/components/pll/PllPlayers";
 import { linesSummary } from "@/lib/pll/lines";
 import {
+  isPllClubId,
   conferenceOf,
   PLL_CONFERENCES_FROM,
   pulse,
@@ -100,7 +101,7 @@ function PllDashboard() {
   );
   const conferences = season >= PLL_CONFERENCES_FROM;
   const byConf = (c: PllConference) => table.filter((r) => conferenceOf(r.team.id, season) === c);
-  const clubs = (s?.teams ?? []).filter((t) => !t.id.startsWith("as-"));
+  const clubs = (s?.teams ?? []).filter((t) => isPllClubId(t.id));
   const loading = q.isLoading ? "Loading…" : undefined;
   const hasLines = ls.games > 0;
 
