@@ -246,6 +246,26 @@ export function parseGamesCsv(
   return { games: out, upcoming };
 }
 
+/** Kickoff wind filled in for games nflverse left without weather (scripts/nfl/kickoff-wind.mjs). */
+export type KickoffWindFill = Record<
+  string,
+  { wind: number; temp?: number; source?: string; gust?: number; precip?: number }
+>;
+
+/**
+ * nflverse sometimes leaves kickoff weather blank (in 2026 it stopped after week 4; about 1 in 6
+ * outdoor games 2022-25), and the ★ wind unders are graded on that wind. Fill the blanks from the
+ * Open-Meteo reading at the stadium (scaled to read like the reported wind). Reported wind is never
+ * replaced; dome and closed-roof games are left alone.
+ */
+export function fillKickoffWind(games: HistoryGame[], fill: KickoffWindFill): HistoryGame[] {
+  return games.map((g) => {
+    const f = fill[String(g.espnId)];
+    if (!f || g.wind !== null || (g.roof !== "outdoors" && g.roof !== "open")) return g;
+    return { ...g, wind: f.wind, temp: g.temp ?? f.temp ?? null, windSource: "open-meteo" };
+  });
+}
+
 export interface NflHistory {
   /** The season being played now; `games` from it are this season's finished games. */
   currentSeason: number;
@@ -262,6 +282,8 @@ let cache: { at: number; value: NflHistory } | null = null;
 const TTL = 60 * 60 * 1000;
 
 /** Past seasons plus this season's finished games. Empty if GitHub can't be reached. */
+const KICKOFF_WIND_JSON =
+  "https://raw.githubusercontent.com/RJMurph10/gamblingnfl/props-site/nfl/kickoff-wind.json";
 const QB_STARTERS_JSON = (season: number) =>
   `https://raw.githubusercontent.com/RJMurph10/gamblingnfl/props-site/nfl/qb-starters-${season}.json`;
 
@@ -302,13 +324,19 @@ export async function fetchNflHistory(): Promise<NflHistory> {
       .then((r) => (r.ok ? r.json() : null))
       .then((j) => (j?.games ?? {}) as QbCorrections)
       .catch(() => ({}) as QbCorrections);
-    const { games, upcoming } = parseGamesCsv(
+    const windFill = await fetch(KICKOFF_WIND_JSON)
+      .then((r) => (r.ok ? r.json() : null))
+      .then((j) => (j?.games ?? {}) as KickoffWindFill)
+      .catch(() => ({}) as KickoffWindFill);
+    const parsed = parseGamesCsv(
       await res.text(),
       FIRST_HISTORY_SEASON,
       CURRENT_SEASON,
       passing,
       corrections,
     );
+    const games = fillKickoffWind(parsed.games, windFill);
+    const upcoming = parsed.upcoming;
     const qbStarts = [
       ...Object.entries(QB_STARTS)
         .filter(([y]) => Number(y) >= FIRST_QB_SEASON)

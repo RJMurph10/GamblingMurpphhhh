@@ -49,6 +49,8 @@ export interface HistoryGame {
   /** Kickoff temperature (°F) and wind (mph) for outdoor games; null when not recorded. */
   temp: number | null;
   wind: number | null;
+  /** "open-meteo" when nflverse had no wind and it was filled from the stadium's weather record. */
+  windSource?: "open-meteo";
   /** Neutral site (international games and relocated games). */
   neutral?: boolean;
   /** Kickoff time, Eastern, "HH:MM". */
@@ -361,7 +363,7 @@ export function pastSeasonRuns(input: HistoryGame[], options: RunOptions = {}): 
  * Bump when the NFL model's code changes, so browsers drop their saved past-season replays.
  * (The current season is always recomputed; only past seasons are saved.)
  */
-const PAST_RUNS_VERSION = "2026-11-10";
+const PAST_RUNS_VERSION = "2026-11-22";
 
 /** Pages: true once the saved replays have been read (wait for it before running the model). */
 export function pastRunsReady(): Promise<void> {
