@@ -1,6 +1,6 @@
 {
  "day": "2026-11-28",
- "updated": "2026-11-21T19:25:44.891Z",
+ "updated": "2026-11-22T01:25:07.655Z",
  "picks": [
   {
    "id": "401856757-spread-rivalry",
@@ -15,9 +15,9 @@
    "best": true,
    "tag": "rivalry",
    "firstSeen": "2026-11-21T11:20:38.634Z",
-   "lastSeen": "2026-11-21T11:20:38.634Z",
-   "latest": -15.5,
-   "latestAt": "2026-11-21T11:20:38.634Z"
+   "lastSeen": "2026-11-22T01:25:07.655Z",
+   "latest": -14,
+   "latestAt": "2026-11-22T01:25:07.655Z"
   },
   {
    "id": "401856757-total-late",
@@ -32,9 +32,9 @@
    "best": false,
    "tag": "late",
    "firstSeen": "2026-11-21T11:20:38.634Z",
-   "lastSeen": "2026-11-21T11:20:38.634Z",
+   "lastSeen": "2026-11-22T01:25:07.655Z",
    "latest": 50.5,
-   "latestAt": "2026-11-21T11:20:38.634Z"
+   "latestAt": "2026-11-22T01:25:07.655Z"
   },
   {
    "id": "401856761-spread-rivalry",
@@ -71,6 +71,23 @@
    "latestAt": "2026-11-21T11:20:38.634Z"
   },
   {
+   "id": "401858312-total-late",
+   "game": "DUKE @ WAKE",
+   "tip": "2026-11-28T05:00Z",
+   "market": "total",
+   "pick": "Under 55.5",
+   "line": 55.5,
+   "open": 52.5,
+   "model": null,
+   "edge": null,
+   "best": false,
+   "tag": "late",
+   "firstSeen": "2026-11-22T01:25:07.655Z",
+   "lastSeen": "2026-11-22T01:25:07.655Z",
+   "latest": 55.5,
+   "latestAt": "2026-11-22T01:25:07.655Z"
+  },
+  {
    "id": "401858313-total-open-total",
    "game": "NCSU @ UNC",
    "tip": "2026-11-28T17:00Z",
@@ -83,9 +100,26 @@
    "best": true,
    "tag": "open-total",
    "firstSeen": "2026-11-21T19:25:44.891Z",
-   "lastSeen": "2026-11-21T19:25:44.891Z",
+   "lastSeen": "2026-11-22T01:25:07.655Z",
    "latest": 55.5,
-   "latestAt": "2026-11-21T19:25:44.891Z"
+   "latestAt": "2026-11-22T01:25:07.655Z"
+  },
+  {
+   "id": "401858537-spread-rivalry",
+   "game": "ILL @ NU",
+   "tip": "2026-11-28T17:30Z",
+   "market": "spread",
+   "pick": "ILL +4.5",
+   "line": -4.5,
+   "open": 3.5,
+   "model": -4.1,
+   "edge": 0.4,
+   "best": true,
+   "tag": "rivalry",
+   "firstSeen": "2026-11-22T01:25:07.655Z",
+   "lastSeen": "2026-11-22T01:25:07.655Z",
+   "latest": -4.5,
+   "latestAt": "2026-11-22T01:25:07.655Z"
   }
  ]
 }

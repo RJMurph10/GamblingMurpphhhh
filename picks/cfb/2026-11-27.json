@@ -1,7 +1,24 @@
 {
  "day": "2026-11-27",
- "updated": "2026-11-21T19:25:44.891Z",
+ "updated": "2026-11-22T01:25:07.655Z",
  "picks": [
+  {
+   "id": "401856762-spread-rivalry",
+   "game": "MSST @ MISS",
+   "tip": "2026-11-27T17:00Z",
+   "market": "spread",
+   "pick": "MSST +19.5",
+   "line": -19.5,
+   "open": -14.5,
+   "model": -19.2,
+   "edge": 0.3,
+   "best": true,
+   "tag": "rivalry",
+   "firstSeen": "2026-11-22T01:25:07.655Z",
+   "lastSeen": "2026-11-22T01:25:07.655Z",
+   "latest": -19.5,
+   "latestAt": "2026-11-22T01:25:07.655Z"
+  },
   {
    "id": "401858536-spread-rivalry",
    "game": "NEB @ IOWA",
@@ -15,9 +32,9 @@
    "best": true,
    "tag": "rivalry",
    "firstSeen": "2026-11-20T20:30:09.984Z",
-   "lastSeen": "2026-11-21T11:20:38.634Z",
-   "latest": -6.5,
-   "latestAt": "2026-11-21T11:20:38.634Z"
+   "lastSeen": "2026-11-22T01:25:07.655Z",
+   "latest": -6,
+   "latestAt": "2026-11-22T01:25:07.655Z"
   },
   {
    "id": "401858536-total-open-total",
@@ -32,9 +49,9 @@
    "best": true,
    "tag": "open-total",
    "firstSeen": "2026-11-20T20:30:09.984Z",
-   "lastSeen": "2026-11-21T11:20:38.634Z",
+   "lastSeen": "2026-11-22T01:25:07.655Z",
    "latest": 38.5,
-   "latestAt": "2026-11-21T11:20:38.634Z"
+   "latestAt": "2026-11-22T01:25:07.655Z"
   },
   {
    "id": "401856756-spread-rivalry",
