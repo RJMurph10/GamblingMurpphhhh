@@ -1,0 +1,481 @@
+{
+ "id": "401869947",
+ "league": "cfb",
+ "date": "2026-11-28T19:00Z",
+ "name": "CCU @ JMU",
+ "away": {
+  "id": "324",
+  "abbr": "CCU",
+  "name": "Coastal Carolina Chanticleers",
+  "score": 0
+ },
+ "home": {
+  "id": "256",
+  "abbr": "JMU",
+  "name": "James Madison Dukes",
+  "score": 0
+ },
+ "neutral": false,
+ "venue": "Bridgeforth Stadium",
+ "seasonType": 2,
+ "state": "pre",
+ "lines": {
+  "open": {
+   "at": "2026-11-22T21:17:00.667Z",
+   "scoreboard": [
+    {
+     "provider": {
+      "id": "100",
+      "name": "Draft Kings",
+      "priority": 1
+     },
+     "details": "JMU -15.5",
+     "overUnder": 55.5,
+     "spread": -15.5,
+     "awayTeamOdds": {
+      "favorite": false,
+      "underdog": true,
+      "team": {
+       "id": "324",
+       "uid": "s:20~l:23~t:324",
+       "abbreviation": "CCU",
+       "name": "Chanticleers",
+       "displayName": "Coastal Carolina Chanticleers",
+       "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/324.png"
+      },
+      "favoriteAtOpen": false
+     },
+     "homeTeamOdds": {
+      "favorite": true,
+      "underdog": false,
+      "team": {
+       "id": "256",
+       "uid": "s:20~l:23~t:256",
+       "abbreviation": "JMU",
+       "name": "Dukes",
+       "displayName": "James Madison Dukes",
+       "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/256.png"
+      },
+      "favoriteAtOpen": true
+     },
+     "moneyline": {
+      "displayName": "Moneyline",
+      "shortDisplayName": "ML",
+      "home": {
+       "close": {
+        "odds": "-800",
+        "link": {
+         "language": "en-US",
+         "rel": [
+          "home",
+          "desktop",
+          "bets",
+          "draft-kings"
+         ],
+         "href": "https://sportsbook.draftkings.com/gateway?s=__s__&wpcid=__wpcid__&wpsrc=413&wpcn=ESPN&wpscn=Widget&wpcrn=BetSlipDeepLink&wpscid=__wpscid__&wpcrid=xx&preurl=https%3A%2F%2Fsportsbook.draftkings.com%2Fevent%2F35043784%3Foutcomes%3D0ML87304047_1",
+         "text": "Home Bet",
+         "shortText": "Home Bet",
+         "isExternal": true,
+         "isPremium": false,
+         "tracking": {
+          "campaign": "betting-integrations",
+          "tags": {
+           "league": "college-football",
+           "sport": "football",
+           "gameId": 401869947,
+           "betSide": "home",
+           "betType": "straight"
+          }
+         }
+        }
+       },
+       "open": {
+        "odds": "-700"
+       }
+      },
+      "away": {
+       "close": {
+        "odds": "+550",
+        "link": {
+         "language": "en-US",
+         "rel": [
+          "away",
+          "desktop",
+          "bets",
+          "draft-kings"
+         ],
+         "href": "https://sportsbook.draftkings.com/gateway?s=__s__&wpcid=__wpcid__&wpsrc=413&wpcn=ESPN&wpscn=Widget&wpcrn=BetSlipDeepLink&wpscid=__wpscid__&wpcrid=xx&preurl=https%3A%2F%2Fsportsbook.draftkings.com%2Fevent%2F35043784%3Foutcomes%3D0ML87304047_3",
+         "text": "Away Bet",
+         "shortText": "Away Bet",
+         "isExternal": true,
+         "isPremium": false,
+         "tracking": {
+          "campaign": "betting-integrations",
+          "tags": {
+           "league": "college-football",
+           "sport": "football",
+           "gameId": 401869947,
+           "betSide": "away",
+           "betType": "straight"
+          }
+         }
+        }
+       },
+       "open": {
+        "odds": "+500"
+       }
+      }
+     },
+     "pointSpread": {
+      "displayName": "Spread",
+      "shortDisplayName": "Spread",
+      "home": {
+       "close": {
+        "line": "-15.5",
+        "odds": "-110",
+        "link": {
+         "language": "en-US",
+         "rel": [
+          "homeSpread",
+          "desktop",
+          "bets"
+         ],
+         "href": "https://sportsbook.draftkings.com/gateway?s=__s__&wpcid=__wpcid__&wpsrc=413&wpcn=ESPN&wpscn=Widget&wpcrn=BetSlipDeepLink&wpscid=__wpscid__&wpcrid=xx&preurl=https%3A%2F%2Fsportsbook.draftkings.com%2Fevent%2F35043784%3Foutcomes%3D0HC87304047N1550_1",
+         "text": "Home Point Spread",
+         "shortText": "Home Point Spread",
+         "isExternal": true,
+         "isPremium": false,
+         "tracking": {
+          "campaign": "betting-integrations",
+          "tags": {
+           "league": "college-football",
+           "sport": "football",
+           "gameId": 401869947,
+           "betSide": "none",
+           "betType": "straight",
+           "betDetails": "Spread:JMU-15.5"
+          }
+         }
+        }
+       },
+       "open": {
+        "line": "-13.5",
+        "odds": "-110"
+       }
+      },
+      "away": {
+       "close": {
+        "line": "+15.5",
+        "odds": "-110",
+        "link": {
+         "language": "en-US",
+         "rel": [
+          "awaySpread",
+          "desktop",
+          "bets"
+         ],
+         "href": "https://sportsbook.draftkings.com/gateway?s=__s__&wpcid=__wpcid__&wpsrc=413&wpcn=ESPN&wpscn=Widget&wpcrn=BetSlipDeepLink&wpscid=__wpscid__&wpcrid=xx&preurl=https%3A%2F%2Fsportsbook.draftkings.com%2Fevent%2F35043784%3Foutcomes%3D0HC87304047P1550_3",
+         "text": "Away Point Spread",
+         "shortText": "Away Point Spread",
+         "isExternal": true,
+         "isPremium": false,
+         "tracking": {
+          "campaign": "betting-integrations",
+          "tags": {
+           "league": "college-football",
+           "sport": "football",
+           "gameId": 401869947,
+           "betSide": "none",
+           "betType": "straight",
+           "betDetails": "Spread:CCU+15.5"
+          }
+         }
+        }
+       },
+       "open": {
+        "line": "+13.5",
+        "odds": "-110"
+       }
+      }
+     },
+     "total": {
+      "displayName": "Total",
+      "shortDisplayName": "Total",
+      "over": {
+       "close": {
+        "line": "o55.5",
+        "odds": "-115",
+        "link": {
+         "language": "en-US",
+         "rel": [
+          "over",
+          "desktop",
+          "bets"
+         ],
+         "href": "https://sportsbook.draftkings.com/gateway?s=__s__&wpcid=__wpcid__&wpsrc=413&wpcn=ESPN&wpscn=Widget&wpcrn=BetSlipDeepLink&wpscid=__wpscid__&wpcrid=xx&preurl=https%3A%2F%2Fsportsbook.draftkings.com%2Fevent%2F35043784%3Foutcomes%3D0OU87304047O5550_1",
+         "text": "Over Odds",
+         "shortText": "Over Odds",
+         "isExternal": true,
+         "isPremium": false,
+         "tracking": {
+          "campaign": "betting-integrations",
+          "tags": {
+           "league": "college-football",
+           "sport": "football",
+           "gameId": 401869947,
+           "betSide": "over",
+           "betType": "straight",
+           "betDetails": "Over:55.5"
+          }
+         }
+        }
+       },
+       "open": {
+        "line": "o55.5",
+        "odds": "-110"
+       }
+      },
+      "under": {
+       "close": {
+        "line": "u55.5",
+        "odds": "-105",
+        "link": {
+         "language": "en-US",
+         "rel": [
+          "under",
+          "desktop",
+          "bets"
+         ],
+         "href": "https://sportsbook.draftkings.com/gateway?s=__s__&wpcid=__wpcid__&wpsrc=413&wpcn=ESPN&wpscn=Widget&wpcrn=BetSlipDeepLink&wpscid=__wpscid__&wpcrid=xx&preurl=https%3A%2F%2Fsportsbook.draftkings.com%2Fevent%2F35043784%3Foutcomes%3D0OU87304047U5550_3",
+         "text": "Under Odds",
+         "shortText": "Under Odds",
+         "isExternal": true,
+         "isPremium": false,
+         "tracking": {
+          "campaign": "betting-integrations",
+          "tags": {
+           "league": "college-football",
+           "sport": "football",
+           "gameId": 401869947,
+           "betSide": "under",
+           "betType": "straight",
+           "betDetails": "Under:55.5"
+          }
+         }
+        }
+       },
+       "open": {
+        "line": "u55.5",
+        "odds": "-110"
+       }
+      }
+     },
+     "link": {
+      "language": "en-US",
+      "rel": [
+       "game",
+       "desktop",
+       "bets"
+      ],
+      "href": "https://sportsbook.draftkings.com/gateway?s=__s__&wpcid=__wpcid__&wpsrc=413&wpcn=ESPN&wpscn=Widget&wpcrn=BetSlipDeepLink&wpscid=__wpscid__&wpcrid=xx&preurl=https%3A%2F%2Fsportsbook.draftkings.com%2Fevent%2F35043784",
+      "text": "See More Odds",
+      "shortText": "Game",
+      "isExternal": true,
+      "isPremium": false,
+      "tracking": {
+       "campaign": "betting-integrations",
+       "tags": {
+        "league": "college-football",
+        "sport": "football",
+        "gameId": 401869947,
+        "betSide": "none",
+        "betType": "straight"
+       }
+      }
+     },
+     "header": {
+      "logo": {
+       "dark": "https://a.espncdn.com/i/espnbet/dark/espn-bet-square-off.svg",
+       "light": "https://a.espncdn.com/i/espnbet/espn-bet-square-off.svg",
+       "exclusivesLogoDark": "https://a.espncdn.com/i/espnbet/espn-bet-square-mint.svg",
+       "exclusivesLogoLight": "https://a.espncdn.com/i/espnbet/espn-bet-square-mint.svg"
+      },
+      "text": "Game Odds"
+     },
+     "footer": {
+      "disclaimer": "GAMBLING PROBLEM? CALL 1-800-GAMBLER or 1-800-MY-RESET, (800) 327-5050 or visit gamblinghelplinema.org (MA). Call 877-8-HOPENY/text HOPENY (467369) (NY). Call 888-789-7777/visit ccpg.org (CT), or visit www.mdgamblinghelp.org (MD), 1-800-981-0023 (PR). 21+ and present in most states. (18+ DC/KY/NH/PR/WY). Void in ONT. Eligibility restrictions apply. Terms: draftkings.com/sportsbook. On behalf of Boot Hill Casino (KS). Pass-thru of per wager tax may apply in IL."
+     }
+    }
+   ],
+   "books": [
+    {
+     "provider": {
+      "id": "100",
+      "name": "Draft Kings",
+      "priority": 1
+     },
+     "details": "JMU -15.5",
+     "overUnder": 55.5,
+     "spread": -15.5,
+     "overOdds": -115,
+     "underOdds": -105,
+     "awayTeamOdds": {
+      "favorite": false,
+      "underdog": true,
+      "moneyLine": 550,
+      "spreadOdds": -110,
+      "open": {
+       "favorite": false,
+       "pointSpread": {
+        "alternateDisplayValue": "+13.5",
+        "american": "+13.5"
+       },
+       "spread": {
+        "value": 1.9,
+        "displayValue": "10/11",
+        "alternateDisplayValue": "-110",
+        "decimal": 1.9,
+        "fraction": "10/11",
+        "american": "-110"
+       },
+       "moneyLine": {
+        "value": 6,
+        "displayValue": "5/1",
+        "alternateDisplayValue": "+500",
+        "decimal": 6,
+        "fraction": "5/1",
+        "american": "+500"
+       }
+      },
+      "current": {
+       "pointSpread": {
+        "alternateDisplayValue": "+15.5",
+        "american": "+15.5"
+       },
+       "spread": {
+        "value": 1.9,
+        "displayValue": "10/11",
+        "alternateDisplayValue": "-110",
+        "decimal": 1.9,
+        "fraction": "10/11",
+        "american": "-110"
+       },
+       "moneyLine": {
+        "value": 6.5,
+        "displayValue": "11/2",
+        "alternateDisplayValue": "+550",
+        "decimal": 6.5,
+        "fraction": "11/2",
+        "american": "+550"
+       }
+      },
+      "team": {
+       "id": "324"
+      }
+     },
+     "homeTeamOdds": {
+      "favorite": true,
+      "underdog": false,
+      "moneyLine": -800,
+      "spreadOdds": -110,
+      "open": {
+       "favorite": true,
+       "pointSpread": {
+        "alternateDisplayValue": "-13.5",
+        "american": "-13.5"
+       },
+       "spread": {
+        "value": 1.9,
+        "displayValue": "10/11",
+        "alternateDisplayValue": "-110",
+        "decimal": 1.9,
+        "fraction": "10/11",
+        "american": "-110"
+       },
+       "moneyLine": {
+        "value": 1.14,
+        "displayValue": "1/7",
+        "alternateDisplayValue": "-700",
+        "decimal": 1.14,
+        "fraction": "1/7",
+        "american": "-700"
+       }
+      },
+      "current": {
+       "pointSpread": {
+        "alternateDisplayValue": "-15.5",
+        "american": "-15.5"
+       },
+       "spread": {
+        "value": 1.9,
+        "displayValue": "10/11",
+        "alternateDisplayValue": "-110",
+        "decimal": 1.9,
+        "fraction": "10/11",
+        "american": "-110"
+       },
+       "moneyLine": {
+        "value": 1.12,
+        "displayValue": "1/8",
+        "alternateDisplayValue": "-800",
+        "decimal": 1.12,
+        "fraction": "1/8",
+        "american": "-800"
+       }
+      },
+      "team": {
+       "id": "256"
+      }
+     },
+     "moneylineWinner": false,
+     "spreadWinner": false,
+     "open": {
+      "over": {
+       "value": 1.9,
+       "displayValue": "10/11",
+       "alternateDisplayValue": "-110",
+       "decimal": 1.9,
+       "fraction": "10/11",
+       "american": "-110"
+      },
+      "under": {
+       "value": 1.9,
+       "displayValue": "10/11",
+       "alternateDisplayValue": "-110",
+       "decimal": 1.9,
+       "fraction": "10/11",
+       "american": "-110"
+      },
+      "total": {
+       "alternateDisplayValue": "55.5",
+       "american": "55.5"
+      }
+     },
+     "current": {
+      "over": {
+       "value": 1.86,
+       "displayValue": "20/23",
+       "alternateDisplayValue": "-115",
+       "decimal": 1.86,
+       "fraction": "20/23",
+       "american": "-115"
+      },
+      "under": {
+       "value": 1.95,
+       "displayValue": "20/21",
+       "alternateDisplayValue": "-105",
+       "decimal": 1.95,
+       "fraction": "20/21",
+       "american": "-105"
+      },
+      "total": {
+       "alternateDisplayValue": "55.5",
+       "american": "55.5"
+      }
+     }
+    }
+   ]
+  }
+ },
+ "props": {}
+}

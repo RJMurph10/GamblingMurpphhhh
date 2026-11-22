@@ -7,18 +7,18 @@
   "id": "2349",
   "abbr": "UML",
   "name": "UMass Lowell River Hawks",
-  "score": 0
+  "score": 68
  },
  "home": {
   "id": "2132",
   "abbr": "CIN",
   "name": "Cincinnati Bearcats",
-  "score": 0
+  "score": 78
  },
  "neutral": false,
  "venue": "Fifth Third Arena (OH)",
  "seasonType": 2,
- "state": "pre",
+ "state": "post",
  "lines": {
   "open": {
    "at": "2026-11-22T03:27:54.997Z",
@@ -395,5 +395,9 @@
    ]
   }
  },
- "props": {}
+ "props": {},
+ "final": {
+  "away": 68,
+  "home": 78
+ }
 }

@@ -7,18 +7,18 @@
   "id": "33",
   "abbr": "BAL",
   "name": "Baltimore Ravens",
-  "score": 0
+  "score": 33
  },
  "home": {
   "id": "29",
   "abbr": "CAR",
   "name": "Carolina Panthers",
-  "score": 0
+  "score": 35
  },
  "neutral": false,
  "venue": "Bank of America Stadium",
  "seasonType": 2,
- "state": "pre",
+ "state": "in",
  "lines": {
   "open": {
    "at": "2026-11-15T22:55:11.258Z",

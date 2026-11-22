@@ -7,18 +7,18 @@
   "id": "88",
   "abbr": "USI",
   "name": "Southern Indiana Screaming Eagles",
-  "score": 0
+  "score": 35
  },
  "home": {
   "id": "251",
   "abbr": "TEX",
   "name": "Texas Longhorns",
-  "score": 0
+  "score": 53
  },
  "neutral": false,
  "venue": "Moody Center",
  "seasonType": 2,
- "state": "pre",
+ "state": "in",
  "lines": {
   "open": {
    "at": "2026-11-22T03:27:54.997Z",

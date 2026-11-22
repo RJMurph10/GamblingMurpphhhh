@@ -7,18 +7,18 @@
   "id": "8",
   "abbr": "DET",
   "name": "Detroit Pistons",
-  "score": 0
+  "score": 31
  },
  "home": {
   "id": "1",
   "abbr": "ATL",
   "name": "Atlanta Hawks",
-  "score": 0
+  "score": 40
  },
  "neutral": false,
  "venue": "State Farm Arena",
  "seasonType": 2,
- "state": "pre",
+ "state": "in",
  "lines": {
   "open": {
    "at": "2026-11-21T23:25:07.697Z",

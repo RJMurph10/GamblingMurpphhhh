@@ -2,23 +2,23 @@
  "id": "401911200",
  "league": "cbb",
  "date": "2026-11-22T19:00Z",
- "name": "USD VS FOR",
+ "name": "FOR VS USD",
  "away": {
-  "id": "301",
-  "abbr": "USD",
-  "name": "San Diego Toreros",
-  "score": 0
- },
- "home": {
   "id": "2230",
   "abbr": "FOR",
   "name": "Fordham Rams",
-  "score": 0
+  "score": 58
+ },
+ "home": {
+  "id": "301",
+  "abbr": "USD",
+  "name": "San Diego Toreros",
+  "score": 80
  },
  "neutral": true,
  "venue": "Acrisure Arena",
  "seasonType": 2,
- "state": "pre",
+ "state": "post",
  "lines": {
   "open": {
    "at": "2026-11-21T23:25:07.697Z",
@@ -477,5 +477,9 @@
    ]
   }
  },
- "props": {}
+ "props": {},
+ "final": {
+  "away": 58,
+  "home": 80
+ }
 }

@@ -7,18 +7,18 @@
   "id": "339",
   "abbr": "EVAN",
   "name": "Evansville Purple Aces",
-  "score": 0
+  "score": 62
  },
  "home": {
   "id": "235",
   "abbr": "MEM",
   "name": "Memphis Tigers",
-  "score": 0
+  "score": 82
  },
  "neutral": false,
  "venue": "FedExForum",
  "seasonType": 2,
- "state": "pre",
+ "state": "post",
  "lines": {
   "open": {
    "at": "2026-11-21T23:25:07.697Z",
@@ -193,5 +193,9 @@
    ]
   }
  },
- "props": {}
+ "props": {},
+ "final": {
+  "away": 62,
+  "home": 82
+ }
 }

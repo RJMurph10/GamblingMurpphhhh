@@ -7,18 +7,18 @@
   "id": "2117",
   "abbr": "CMU",
   "name": "Central Michigan Chippewas",
-  "score": 0
+  "score": 24
  },
  "home": {
   "id": "135",
   "abbr": "MINN",
   "name": "Minnesota Golden Gophers",
-  "score": 0
+  "score": 63
  },
  "neutral": false,
  "venue": "The Barn by Blue Cross and Blue Shield of Minnesota",
  "seasonType": 2,
- "state": "pre",
+ "state": "in",
  "lines": {
   "open": {
    "at": "2026-11-22T15:25:19.278Z",

@@ -475,6 +475,462 @@
      }
     }
    ]
+  },
+  "close": {
+   "at": "2026-11-22T21:17:00.667Z",
+   "scoreboard": [
+    {
+     "provider": {
+      "id": "100",
+      "name": "DraftKings",
+      "priority": 1
+     },
+     "details": "UCLA -5.5",
+     "overUnder": 145.5,
+     "spread": 5.5,
+     "awayTeamOdds": {
+      "favorite": true,
+      "underdog": false,
+      "team": {
+       "id": "26",
+       "uid": "s:40~l:54~t:26",
+       "abbreviation": "UCLA",
+       "name": "Bruins",
+       "displayName": "UCLA Bruins",
+       "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/26.png"
+      },
+      "favoriteAtOpen": true
+     },
+     "homeTeamOdds": {
+      "favorite": false,
+      "underdog": true,
+      "team": {
+       "id": "2633",
+       "uid": "s:40~l:54~t:2633",
+       "abbreviation": "TENN",
+       "name": "Lady Volunteers",
+       "displayName": "Tennessee Lady Volunteers",
+       "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/2633_ncw.png"
+      },
+      "favoriteAtOpen": false
+     },
+     "moneyline": {
+      "displayName": "Moneyline",
+      "shortDisplayName": "ML",
+      "home": {
+       "close": {
+        "odds": "+205",
+        "link": {
+         "language": "en-US",
+         "rel": [
+          "home",
+          "desktop",
+          "bets",
+          "draftkings"
+         ],
+         "href": "https://sportsbook.draftkings.com/gateway?s=__s__&wpcid=__wpcid__&wpsrc=413&wpcn=ESPN&wpscn=Widget&wpcrn=BetSlipDeepLink&wpscid=__wpscid__&wpcrid=xx&preurl=https%3A%2F%2Fsportsbook.draftkings.com%2Fevent%2F35067824%3Foutcomes%3D0ML87366892_1",
+         "text": "Home Bet",
+         "shortText": "Home Bet",
+         "isExternal": true,
+         "isPremium": false,
+         "tracking": {
+          "campaign": "betting-integrations",
+          "tags": {
+           "league": "womens-college-basketball",
+           "sport": "basketball",
+           "gameId": 401912957,
+           "betSide": "home",
+           "betType": "straight"
+          }
+         }
+        }
+       },
+       "open": {
+        "odds": "+360"
+       }
+      },
+      "away": {
+       "close": {
+        "odds": "-250",
+        "link": {
+         "language": "en-US",
+         "rel": [
+          "away",
+          "desktop",
+          "bets",
+          "draftkings"
+         ],
+         "href": "https://sportsbook.draftkings.com/gateway?s=__s__&wpcid=__wpcid__&wpsrc=413&wpcn=ESPN&wpscn=Widget&wpcrn=BetSlipDeepLink&wpscid=__wpscid__&wpcrid=xx&preurl=https%3A%2F%2Fsportsbook.draftkings.com%2Fevent%2F35067824%3Foutcomes%3D0ML87366892_3",
+         "text": "Away Bet",
+         "shortText": "Away Bet",
+         "isExternal": true,
+         "isPremium": false,
+         "tracking": {
+          "campaign": "betting-integrations",
+          "tags": {
+           "league": "womens-college-basketball",
+           "sport": "basketball",
+           "gameId": 401912957,
+           "betSide": "away",
+           "betType": "straight"
+          }
+         }
+        }
+       },
+       "open": {
+        "odds": "-470"
+       }
+      }
+     },
+     "pointSpread": {
+      "displayName": "Spread",
+      "shortDisplayName": "Spread",
+      "home": {
+       "close": {
+        "line": "+5.5",
+        "odds": "-110",
+        "link": {
+         "language": "en-US",
+         "rel": [
+          "homeSpread",
+          "desktop",
+          "bets"
+         ],
+         "href": "https://sportsbook.draftkings.com/gateway?s=__s__&wpcid=__wpcid__&wpsrc=413&wpcn=ESPN&wpscn=Widget&wpcrn=BetSlipDeepLink&wpscid=__wpscid__&wpcrid=xx&preurl=https%3A%2F%2Fsportsbook.draftkings.com%2Fevent%2F35067824%3Foutcomes%3D0HC87366892P550_1",
+         "text": "Home Point Spread",
+         "shortText": "Home Point Spread",
+         "isExternal": true,
+         "isPremium": false,
+         "tracking": {
+          "campaign": "betting-integrations",
+          "tags": {
+           "league": "womens-college-basketball",
+           "sport": "basketball",
+           "gameId": 401912957,
+           "betSide": "none",
+           "betType": "straight",
+           "betDetails": "Spread:TENN+5.5"
+          }
+         }
+        }
+       },
+       "open": {
+        "line": "+9.5",
+        "odds": "-110"
+       }
+      },
+      "away": {
+       "close": {
+        "line": "-5.5",
+        "odds": "-110",
+        "link": {
+         "language": "en-US",
+         "rel": [
+          "awaySpread",
+          "desktop",
+          "bets"
+         ],
+         "href": "https://sportsbook.draftkings.com/gateway?s=__s__&wpcid=__wpcid__&wpsrc=413&wpcn=ESPN&wpscn=Widget&wpcrn=BetSlipDeepLink&wpscid=__wpscid__&wpcrid=xx&preurl=https%3A%2F%2Fsportsbook.draftkings.com%2Fevent%2F35067824%3Foutcomes%3D0HC87366892N550_3",
+         "text": "Away Point Spread",
+         "shortText": "Away Point Spread",
+         "isExternal": true,
+         "isPremium": false,
+         "tracking": {
+          "campaign": "betting-integrations",
+          "tags": {
+           "league": "womens-college-basketball",
+           "sport": "basketball",
+           "gameId": 401912957,
+           "betSide": "none",
+           "betType": "straight",
+           "betDetails": "Spread:UCLA-5.5"
+          }
+         }
+        }
+       },
+       "open": {
+        "line": "-9.5",
+        "odds": "-110"
+       }
+      }
+     },
+     "total": {
+      "displayName": "Total",
+      "shortDisplayName": "Total",
+      "over": {
+       "close": {
+        "line": "o145.5",
+        "odds": "-110",
+        "link": {
+         "language": "en-US",
+         "rel": [
+          "over",
+          "desktop",
+          "bets"
+         ],
+         "href": "https://sportsbook.draftkings.com/gateway?s=__s__&wpcid=__wpcid__&wpsrc=413&wpcn=ESPN&wpscn=Widget&wpcrn=BetSlipDeepLink&wpscid=__wpscid__&wpcrid=xx&preurl=https%3A%2F%2Fsportsbook.draftkings.com%2Fevent%2F35067824%3Foutcomes%3D0OU87366892O14550_1",
+         "text": "Over Odds",
+         "shortText": "Over Odds",
+         "isExternal": true,
+         "isPremium": false,
+         "tracking": {
+          "campaign": "betting-integrations",
+          "tags": {
+           "league": "womens-college-basketball",
+           "sport": "basketball",
+           "gameId": 401912957,
+           "betSide": "over",
+           "betType": "straight",
+           "betDetails": "Over:145.5"
+          }
+         }
+        }
+       },
+       "open": {
+        "line": "o145.5",
+        "odds": "-110"
+       }
+      },
+      "under": {
+       "close": {
+        "line": "u145.5",
+        "odds": "-110",
+        "link": {
+         "language": "en-US",
+         "rel": [
+          "under",
+          "desktop",
+          "bets"
+         ],
+         "href": "https://sportsbook.draftkings.com/gateway?s=__s__&wpcid=__wpcid__&wpsrc=413&wpcn=ESPN&wpscn=Widget&wpcrn=BetSlipDeepLink&wpscid=__wpscid__&wpcrid=xx&preurl=https%3A%2F%2Fsportsbook.draftkings.com%2Fevent%2F35067824%3Foutcomes%3D0OU87366892U14550_3",
+         "text": "Under Odds",
+         "shortText": "Under Odds",
+         "isExternal": true,
+         "isPremium": false,
+         "tracking": {
+          "campaign": "betting-integrations",
+          "tags": {
+           "league": "womens-college-basketball",
+           "sport": "basketball",
+           "gameId": 401912957,
+           "betSide": "under",
+           "betType": "straight",
+           "betDetails": "Under:145.5"
+          }
+         }
+        }
+       },
+       "open": {
+        "line": "u145.5",
+        "odds": "-110"
+       }
+      }
+     },
+     "link": {
+      "language": "en-US",
+      "rel": [
+       "game",
+       "desktop",
+       "bets"
+      ],
+      "href": "https://sportsbook.draftkings.com/gateway?s=__s__&wpcid=__wpcid__&wpsrc=413&wpcn=ESPN&wpscn=Widget&wpcrn=BetSlipDeepLink&wpscid=__wpscid__&wpcrid=xx&preurl=https%3A%2F%2Fsportsbook.draftkings.com%2Fevent%2F35067824",
+      "text": "See More Odds",
+      "shortText": "Game",
+      "isExternal": true,
+      "isPremium": false,
+      "tracking": {
+       "campaign": "betting-integrations",
+       "tags": {
+        "league": "womens-college-basketball",
+        "sport": "basketball",
+        "gameId": 401912957,
+        "betSide": "none",
+        "betType": "straight"
+       }
+      }
+     },
+     "header": {
+      "logo": {
+       "dark": "https://a.espncdn.com/i/espnbet/dark/espn-bet-square-off.svg",
+       "light": "https://a.espncdn.com/i/espnbet/espn-bet-square-off.svg",
+       "exclusivesLogoDark": "https://a.espncdn.com/i/espnbet/espn-bet-square-mint.svg",
+       "exclusivesLogoLight": "https://a.espncdn.com/i/espnbet/espn-bet-square-mint.svg"
+      },
+      "text": "Game Odds"
+     },
+     "footer": {
+      "disclaimer": "GAMBLING PROBLEM? CALL 1-800-GAMBLER or 1-800-MY-RESET, (800) 327-5050 or visit gamblinghelplinema.org (MA). Call 877-8-HOPENY/text HOPENY (467369) (NY). Call 888-789-7777/visit ccpg.org (CT), or visit www.mdgamblinghelp.org (MD), 1-800-981-0023 (PR). 21+ and present in most states. (18+ DC/KY/NH/PR/WY). Void in ONT. Eligibility restrictions apply. Terms: draftkings.com/sportsbook. On behalf of Boot Hill Casino (KS). Pass-thru of per wager tax may apply in IL."
+     }
+    }
+   ],
+   "books": [
+    {
+     "provider": {
+      "id": "100",
+      "name": "DraftKings",
+      "priority": 1
+     },
+     "details": "UCLA -5.5",
+     "overUnder": 145.5,
+     "spread": 5.5,
+     "overOdds": -110,
+     "underOdds": -110,
+     "awayTeamOdds": {
+      "favorite": true,
+      "underdog": false,
+      "moneyLine": -250,
+      "spreadOdds": -110,
+      "open": {
+       "favorite": true,
+       "pointSpread": {
+        "alternateDisplayValue": "-9.5",
+        "american": "-9.5"
+       },
+       "spread": {
+        "value": 1.9,
+        "displayValue": "10/11",
+        "alternateDisplayValue": "-110",
+        "decimal": 1.9,
+        "fraction": "10/11",
+        "american": "-110"
+       },
+       "moneyLine": {
+        "value": 1.21,
+        "displayValue": "10/47",
+        "alternateDisplayValue": "-470",
+        "decimal": 1.21,
+        "fraction": "10/47",
+        "american": "-470"
+       }
+      },
+      "current": {
+       "pointSpread": {
+        "alternateDisplayValue": "-5.5",
+        "american": "-5.5"
+       },
+       "spread": {
+        "value": 1.9,
+        "displayValue": "10/11",
+        "alternateDisplayValue": "-110",
+        "decimal": 1.9,
+        "fraction": "10/11",
+        "american": "-110"
+       },
+       "moneyLine": {
+        "value": 1.4,
+        "displayValue": "2/5",
+        "alternateDisplayValue": "-250",
+        "decimal": 1.4,
+        "fraction": "2/5",
+        "american": "-250"
+       }
+      },
+      "team": {
+       "id": "26"
+      }
+     },
+     "homeTeamOdds": {
+      "favorite": false,
+      "underdog": true,
+      "moneyLine": 205,
+      "spreadOdds": -110,
+      "open": {
+       "favorite": false,
+       "pointSpread": {
+        "alternateDisplayValue": "+9.5",
+        "american": "+9.5"
+       },
+       "spread": {
+        "value": 1.9,
+        "displayValue": "10/11",
+        "alternateDisplayValue": "-110",
+        "decimal": 1.9,
+        "fraction": "10/11",
+        "american": "-110"
+       },
+       "moneyLine": {
+        "value": 4.6,
+        "displayValue": "18/5",
+        "alternateDisplayValue": "+360",
+        "decimal": 4.6,
+        "fraction": "18/5",
+        "american": "+360"
+       }
+      },
+      "current": {
+       "pointSpread": {
+        "alternateDisplayValue": "+5.5",
+        "american": "+5.5"
+       },
+       "spread": {
+        "value": 1.9,
+        "displayValue": "10/11",
+        "alternateDisplayValue": "-110",
+        "decimal": 1.9,
+        "fraction": "10/11",
+        "american": "-110"
+       },
+       "moneyLine": {
+        "value": 3.05,
+        "displayValue": "41/20",
+        "alternateDisplayValue": "+205",
+        "decimal": 3.05,
+        "fraction": "41/20",
+        "american": "+205"
+       }
+      },
+      "team": {
+       "id": "2633"
+      }
+     },
+     "moneylineWinner": false,
+     "spreadWinner": false,
+     "open": {
+      "over": {
+       "value": 1.9,
+       "displayValue": "10/11",
+       "alternateDisplayValue": "-110",
+       "decimal": 1.9,
+       "fraction": "10/11",
+       "american": "-110"
+      },
+      "under": {
+       "value": 1.9,
+       "displayValue": "10/11",
+       "alternateDisplayValue": "-110",
+       "decimal": 1.9,
+       "fraction": "10/11",
+       "american": "-110"
+      },
+      "total": {
+       "alternateDisplayValue": "145.5",
+       "american": "145.5"
+      }
+     },
+     "current": {
+      "over": {
+       "value": 1.9,
+       "displayValue": "10/11",
+       "alternateDisplayValue": "-110",
+       "decimal": 1.9,
+       "fraction": "10/11",
+       "american": "-110"
+      },
+      "under": {
+       "value": 1.9,
+       "displayValue": "10/11",
+       "alternateDisplayValue": "-110",
+       "decimal": 1.9,
+       "fraction": "10/11",
+       "american": "-110"
+      },
+      "total": {
+       "alternateDisplayValue": "145.5",
+       "american": "145.5"
+      }
+     }
+    }
+   ]
   }
  },
  "props": {}

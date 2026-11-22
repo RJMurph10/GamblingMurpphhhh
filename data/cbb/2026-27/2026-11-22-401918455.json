@@ -7,18 +7,18 @@
   "id": "2729",
   "abbr": "W&M",
   "name": "William & Mary Tribe",
-  "score": 0
+  "score": 75
  },
  "home": {
   "id": "2754",
   "abbr": "YSU",
   "name": "Youngstown State Penguins",
-  "score": 0
+  "score": 63
  },
  "neutral": false,
  "venue": "Zidian Family Arena at Beeghly Center",
  "seasonType": 2,
- "state": "pre",
+ "state": "post",
  "lines": {
   "open": {
    "at": "2026-11-21T23:25:07.697Z",
@@ -310,5 +310,9 @@
    "books": []
   }
  },
- "props": {}
+ "props": {},
+ "final": {
+  "away": 75,
+  "home": 63
+ }
 }
