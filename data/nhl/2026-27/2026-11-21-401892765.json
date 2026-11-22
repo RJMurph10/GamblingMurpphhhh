@@ -7,18 +7,18 @@
   "id": "25",
   "abbr": "ANA",
   "name": "Anaheim Ducks",
-  "score": 0
+  "score": 1
  },
  "home": {
   "id": "129764",
   "abbr": "UTA",
   "name": "Utah Mammoth",
-  "score": 0
+  "score": 2
  },
  "neutral": false,
  "venue": "Delta Center",
  "seasonType": 2,
- "state": "pre",
+ "state": "in",
  "lines": {
   "open": {
    "at": "2026-11-20T21:12:31.580Z",

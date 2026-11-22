@@ -7,7 +7,7 @@
   "id": "254",
   "abbr": "UTAH",
   "name": "Utah Utes",
-  "score": 0
+  "score": 10
  },
  "home": {
   "id": "2628",
@@ -18,7 +18,7 @@
  "neutral": false,
  "venue": "Amon G. Carter Stadium",
  "seasonType": 2,
- "state": "pre",
+ "state": "in",
  "lines": {
   "open": {
    "at": "2026-11-14T06:26:52.591Z",

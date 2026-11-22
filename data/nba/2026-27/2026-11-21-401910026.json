@@ -7,18 +7,18 @@
   "id": "29",
   "abbr": "MEM",
   "name": "Memphis Grizzlies",
-  "score": 0
+  "score": 95
  },
  "home": {
   "id": "16",
   "abbr": "MIN",
   "name": "Minnesota Timberwolves",
-  "score": 0
+  "score": 104
  },
  "neutral": false,
  "venue": "Target Center",
  "seasonType": 2,
- "state": "pre",
+ "state": "post",
  "lines": {
   "open": {
    "at": "2026-11-21T02:24:29.690Z",
@@ -4882,5 +4882,9 @@
    "Joan Beringer",
    "MIN"
   ]
+ },
+ "final": {
+  "away": 95,
+  "home": 104
  }
 }

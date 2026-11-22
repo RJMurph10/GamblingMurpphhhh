@@ -7,18 +7,18 @@
   "id": "12",
   "abbr": "LAC",
   "name": "LA Clippers",
-  "score": 0
+  "score": 100
  },
  "home": {
   "id": "6",
   "abbr": "DAL",
   "name": "Dallas Mavericks",
-  "score": 0
+  "score": 110
  },
  "neutral": false,
  "venue": "American Airlines Center",
  "seasonType": 2,
- "state": "pre",
+ "state": "post",
  "lines": {
   "open": {
    "at": "2026-11-21T02:24:29.690Z",
@@ -4579,5 +4579,9 @@
    "Sergio de Larrea",
    "DAL"
   ]
+ },
+ "final": {
+  "away": 100,
+  "home": 110
  }
 }

@@ -7,18 +7,18 @@
   "id": "259",
   "abbr": "VT",
   "name": "Virginia Tech Hokies",
-  "score": 0
+  "score": 20
  },
  "home": {
   "id": "2390",
   "abbr": "MIA",
   "name": "Miami Hurricanes",
-  "score": 0
+  "score": 28
  },
  "neutral": false,
  "venue": "Hard Rock Stadium",
  "seasonType": 2,
- "state": "pre",
+ "state": "in",
  "lines": {
   "open": {
    "at": "2026-11-14T06:26:52.591Z",

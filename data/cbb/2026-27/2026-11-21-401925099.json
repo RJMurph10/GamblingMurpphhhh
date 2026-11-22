@@ -7,18 +7,18 @@
   "id": "357",
   "abbr": "AMCC",
   "name": "Texas A&M-Corpus Christi Islanders",
-  "score": 0
+  "score": 69
  },
  "home": {
   "id": "198",
   "abbr": "ORU",
   "name": "Oral Roberts Golden Eagles",
-  "score": 0
+  "score": 74
  },
  "neutral": false,
  "venue": "Mabee Center",
  "seasonType": 2,
- "state": "pre",
+ "state": "in",
  "lines": {
   "open": {
    "at": "2026-11-21T02:24:29.690Z",

@@ -2,23 +2,23 @@
  "id": "401928998",
  "league": "cbb",
  "date": "2026-11-22T01:00Z",
- "name": "TROY VS VAL",
+ "name": "VAL VS TROY",
  "away": {
-  "id": "2653",
-  "abbr": "TROY",
-  "name": "Troy Trojans",
-  "score": 0
- },
- "home": {
   "id": "2674",
   "abbr": "VAL",
   "name": "Valparaiso Beacons",
-  "score": 0
+  "score": 77
+ },
+ "home": {
+  "id": "2653",
+  "abbr": "TROY",
+  "name": "Troy Trojans",
+  "score": 72
  },
  "neutral": true,
  "venue": "Pensacola Bay Center",
  "seasonType": 2,
- "state": "pre",
+ "state": "post",
  "lines": {
   "open": {
    "at": "2026-11-20T21:12:31.580Z",
@@ -851,5 +851,9 @@
    ]
   }
  },
- "props": {}
+ "props": {},
+ "final": {
+  "away": 77,
+  "home": 72
+ }
 }

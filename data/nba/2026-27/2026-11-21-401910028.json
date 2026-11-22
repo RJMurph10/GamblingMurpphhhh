@@ -7,18 +7,18 @@
   "id": "2",
   "abbr": "BOS",
   "name": "Boston Celtics",
-  "score": 0
+  "score": 16
  },
  "home": {
   "id": "23",
   "abbr": "SAC",
   "name": "Sacramento Kings",
-  "score": 0
+  "score": 11
  },
  "neutral": false,
  "venue": "Golden 1 Center",
  "seasonType": 2,
- "state": "pre",
+ "state": "in",
  "lines": {
   "open": {
    "at": "2026-11-21T11:15:07.773Z",

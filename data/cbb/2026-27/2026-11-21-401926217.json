@@ -7,18 +7,18 @@
   "id": "2506",
   "abbr": "PRES",
   "name": "Presbyterian Blue Hose",
-  "score": 0
+  "score": 69
  },
  "home": {
   "id": "2635",
   "abbr": "TNTC",
   "name": "Tennessee Tech Golden Eagles",
-  "score": 0
+  "score": 97
  },
  "neutral": false,
  "venue": "Hooper Eblen Center",
  "seasonType": 2,
- "state": "pre",
+ "state": "post",
  "lines": {
   "open": {
    "at": "2026-11-21T02:24:29.690Z",
@@ -933,5 +933,9 @@
    ]
   }
  },
- "props": {}
+ "props": {},
+ "final": {
+  "away": 69,
+  "home": 97
+ }
 }

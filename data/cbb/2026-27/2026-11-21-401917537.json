@@ -7,18 +7,18 @@
   "id": "71",
   "abbr": "BRAD",
   "name": "Bradley Braves",
-  "score": 0
+  "score": 27
  },
  "home": {
   "id": "279",
   "abbr": "PAC",
   "name": "Pacific Tigers",
-  "score": 0
+  "score": 17
  },
  "neutral": false,
  "venue": "Alex G. Spanos Center",
  "seasonType": 2,
- "state": "pre",
+ "state": "in",
  "lines": {
   "open": {
    "at": "2026-11-20T22:22:10.516Z",

@@ -7,18 +7,18 @@
   "id": "24",
   "abbr": "STAN",
   "name": "Stanford Cardinal",
-  "score": 0
+  "score": 37
  },
  "home": {
   "id": "25",
   "abbr": "CAL",
   "name": "California Golden Bears",
-  "score": 0
+  "score": 20
  },
  "neutral": false,
  "venue": "California Memorial Stadium",
  "seasonType": 2,
- "state": "pre",
+ "state": "in",
  "lines": {
   "open": {
    "at": "2026-11-15T17:47:38.554Z",

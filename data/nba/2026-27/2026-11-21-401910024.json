@@ -7,18 +7,18 @@
   "id": "22",
   "abbr": "POR",
   "name": "Portland Trail Blazers",
-  "score": 0
+  "score": 96
  },
  "home": {
   "id": "18",
   "abbr": "NY",
   "name": "New York Knicks",
-  "score": 0
+  "score": 97
  },
  "neutral": false,
  "venue": "Madison Square Garden",
  "seasonType": 2,
- "state": "pre",
+ "state": "post",
  "lines": {
   "open": {
    "at": "2026-11-21T02:24:29.690Z",
@@ -4787,5 +4787,9 @@
    "Mohamed Diawara",
    "NY"
   ]
+ },
+ "final": {
+  "away": 96,
+  "home": 97
  }
 }
