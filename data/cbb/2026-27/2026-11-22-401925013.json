@@ -436,13 +436,14 @@
    ]
   },
   "close": {
-   "at": "2026-11-22T21:17:00.667Z",
+   "at": "2026-11-22T21:52:12.878Z",
    "scoreboard": [
     {
      "provider": {
       "id": "100",
       "name": "Draft Kings",
-      "priority": 1
+      "priority": 1,
+      "displayName": "Draft Kings"
      },
      "details": "LAM -2.5",
      "overUnder": 162.5,

@@ -7,18 +7,18 @@
   "id": "30",
   "abbr": "JAX",
   "name": "Jacksonville Jaguars",
-  "score": 0
+  "score": 3
  },
  "home": {
   "id": "19",
   "abbr": "NYG",
   "name": "New York Giants",
-  "score": 0
+  "score": 3
  },
  "neutral": false,
  "venue": "MetLife Stadium",
  "seasonType": 2,
- "state": "pre",
+ "state": "in",
  "lines": {
   "open": {
    "at": "2026-11-15T22:55:11.258Z",

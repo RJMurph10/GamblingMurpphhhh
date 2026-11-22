@@ -7,7 +7,7 @@
   "id": "257",
   "abbr": "RICH",
   "name": "Richmond Spiders",
-  "score": 0
+  "score": 5
  },
  "home": {
   "id": "2335",
@@ -18,7 +18,7 @@
  "neutral": true,
  "venue": "Colonial Hall",
  "seasonType": 2,
- "state": "pre",
+ "state": "in",
  "lines": {
   "open": {
    "at": "2026-11-22T03:27:54.997Z",

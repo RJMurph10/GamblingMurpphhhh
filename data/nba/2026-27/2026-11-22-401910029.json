@@ -7,13 +7,13 @@
   "id": "8",
   "abbr": "DET",
   "name": "Detroit Pistons",
-  "score": 31
+  "score": 52
  },
  "home": {
   "id": "1",
   "abbr": "ATL",
   "name": "Atlanta Hawks",
-  "score": 40
+  "score": 51
  },
  "neutral": false,
  "venue": "State Farm Arena",

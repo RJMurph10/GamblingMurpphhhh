@@ -7,16 +7,16 @@
   "id": "2628",
   "abbr": "TCU",
   "name": "TCU Horned Frogs",
-  "score": 30
+  "score": 56
  },
  "home": {
   "id": "328",
   "abbr": "USU",
   "name": "Utah State Aggies",
-  "score": 8
+  "score": 15
  },
  "neutral": true,
- "venue": "Dickies Arena",
+ "venue": "Ariat Arena",
  "seasonType": 2,
  "state": "in",
  "lines": {
