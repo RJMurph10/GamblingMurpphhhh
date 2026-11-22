@@ -1,0 +1,333 @@
+{
+ "note": "ESPN PLL scoreboard, international games (Dec 2026), trimmed",
+ "events": [
+  {
+   "id": "401934147",
+   "date": "2026-12-08T22:30Z",
+   "status": {
+    "type": {
+     "state": "pre",
+     "completed": false,
+     "shortDetail": "12/8 - 5:30 PM EST"
+    }
+   },
+   "competitions": [
+    {
+     "competitors": [
+      {
+       "homeAway": "home",
+       "score": "0",
+       "team": {
+        "id": "135063",
+        "abbreviation": "UNI",
+        "displayName": "USA United States Men",
+        "shortDisplayName": "United States Men",
+        "name": "United States Men",
+        "location": "USA"
+       }
+      },
+      {
+       "homeAway": "away",
+       "score": "0",
+       "team": {
+        "id": "135064",
+        "abbreviation": "CAN",
+        "displayName": "CAN Canada Men",
+        "shortDisplayName": "Canada Men",
+        "name": "Canada Men",
+        "location": "CAN"
+       }
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "401934148",
+   "date": "2026-12-09T00:30Z",
+   "status": {
+    "type": {
+     "state": "pre",
+     "completed": false,
+     "shortDetail": "12/8 - 7:30 PM EST"
+    }
+   },
+   "competitions": [
+    {
+     "competitors": [
+      {
+       "homeAway": "home",
+       "score": "0",
+       "team": {
+        "id": "135066",
+        "abbreviation": "AUS",
+        "displayName": "AUS Australia Men",
+        "shortDisplayName": "Australia Men",
+        "name": "Australia Men",
+        "location": "AUS"
+       }
+      },
+      {
+       "homeAway": "away",
+       "score": "0",
+       "team": {
+        "id": "135065",
+        "abbreviation": "HAU",
+        "displayName": "HAU Haudenosaunee Men",
+        "shortDisplayName": "Haudenosaunee Men",
+        "name": "Haudenosaunee Men",
+        "location": "HAU"
+       }
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "401934175",
+   "date": "2026-12-09T22:30Z",
+   "status": {
+    "type": {
+     "state": "pre",
+     "completed": false,
+     "shortDetail": "12/9 - 5:30 PM EST"
+    }
+   },
+   "competitions": [
+    {
+     "competitors": [
+      {
+       "homeAway": "home",
+       "score": "0",
+       "team": {
+        "id": "135092",
+        "abbreviation": "CAN",
+        "displayName": "CAN Canada Women",
+        "shortDisplayName": "Canada Women",
+        "name": "Canada Women",
+        "location": "CAN"
+       }
+      },
+      {
+       "homeAway": "away",
+       "score": "0",
+       "team": {
+        "id": "135094",
+        "abbreviation": "HAU",
+        "displayName": "HAU Haudenosaunee Women",
+        "shortDisplayName": "Haudenosaunee Women",
+        "name": "Haudenosaunee Women",
+        "location": "HAU"
+       }
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "401934176",
+   "date": "2026-12-10T00:30Z",
+   "status": {
+    "type": {
+     "state": "pre",
+     "completed": false,
+     "shortDetail": "12/9 - 7:30 PM EST"
+    }
+   },
+   "competitions": [
+    {
+     "competitors": [
+      {
+       "homeAway": "home",
+       "score": "0",
+       "team": {
+        "id": "135091",
+        "abbreviation": "UNI",
+        "displayName": "USA United States Women",
+        "shortDisplayName": "United States Women",
+        "name": "United States Women",
+        "location": "USA"
+       }
+      },
+      {
+       "homeAway": "away",
+       "score": "0",
+       "team": {
+        "id": "135093",
+        "abbreviation": "AUS",
+        "displayName": "AUS Australia Women",
+        "shortDisplayName": "Australia Women",
+        "name": "Australia Women",
+        "location": "AUS"
+       }
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "401934150",
+   "date": "2026-12-10T22:30Z",
+   "status": {
+    "type": {
+     "state": "pre",
+     "completed": false,
+     "shortDetail": "12/10 - 5:30 PM EST"
+    }
+   },
+   "competitions": [
+    {
+     "competitors": [
+      {
+       "homeAway": "home",
+       "score": "0",
+       "team": {
+        "id": "135064",
+        "abbreviation": "CAN",
+        "displayName": "CAN Canada Men",
+        "shortDisplayName": "Canada Men",
+        "name": "Canada Men",
+        "location": "CAN"
+       }
+      },
+      {
+       "homeAway": "away",
+       "score": "0",
+       "team": {
+        "id": "135066",
+        "abbreviation": "AUS",
+        "displayName": "AUS Australia Men",
+        "shortDisplayName": "Australia Men",
+        "name": "Australia Men",
+        "location": "AUS"
+       }
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "401934151",
+   "date": "2026-12-11T00:30Z",
+   "status": {
+    "type": {
+     "state": "pre",
+     "completed": false,
+     "shortDetail": "12/10 - 7:30 PM EST"
+    }
+   },
+   "competitions": [
+    {
+     "competitors": [
+      {
+       "homeAway": "home",
+       "score": "0",
+       "team": {
+        "id": "135063",
+        "abbreviation": "UNI",
+        "displayName": "USA United States Men",
+        "shortDisplayName": "United States Men",
+        "name": "United States Men",
+        "location": "USA"
+       }
+      },
+      {
+       "homeAway": "away",
+       "score": "0",
+       "team": {
+        "id": "135065",
+        "abbreviation": "HAU",
+        "displayName": "HAU Haudenosaunee Men",
+        "shortDisplayName": "Haudenosaunee Men",
+        "name": "Haudenosaunee Men",
+        "location": "HAU"
+       }
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "401934177",
+   "date": "2026-12-11T22:30Z",
+   "status": {
+    "type": {
+     "state": "pre",
+     "completed": false,
+     "shortDetail": "12/11 - 5:30 PM EST"
+    }
+   },
+   "competitions": [
+    {
+     "competitors": [
+      {
+       "homeAway": "home",
+       "score": "0",
+       "team": {
+        "id": "135093",
+        "abbreviation": "AUS",
+        "displayName": "AUS Australia Women",
+        "shortDisplayName": "Australia Women",
+        "name": "Australia Women",
+        "location": "AUS"
+       }
+      },
+      {
+       "homeAway": "away",
+       "score": "0",
+       "team": {
+        "id": "135094",
+        "abbreviation": "HAU",
+        "displayName": "HAU Haudenosaunee Women",
+        "shortDisplayName": "Haudenosaunee Women",
+        "name": "Haudenosaunee Women",
+        "location": "HAU"
+       }
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "401934178",
+   "date": "2026-12-12T00:30Z",
+   "status": {
+    "type": {
+     "state": "pre",
+     "completed": false,
+     "shortDetail": "12/11 - 7:30 PM EST"
+    }
+   },
+   "competitions": [
+    {
+     "competitors": [
+      {
+       "homeAway": "home",
+       "score": "0",
+       "team": {
+        "id": "135091",
+        "abbreviation": "UNI",
+        "displayName": "USA United States Women",
+        "shortDisplayName": "United States Women",
+        "name": "United States Women",
+        "location": "USA"
+       }
+      },
+      {
+       "homeAway": "away",
+       "score": "0",
+       "team": {
+        "id": "135092",
+        "abbreviation": "CAN",
+        "displayName": "CAN Canada Women",
+        "shortDisplayName": "Canada Women",
+        "name": "Canada Women",
+        "location": "CAN"
+       }
+      }
+     ]
+    }
+   ]
+  }
+ ]
+}

@@ -10,7 +10,7 @@ export const Route = createFileRoute("/pll/games/")({
   component: PllGamesPage,
 });
 
-const ORDER: PllPhase[] = ["playoffs", "allstar", "regular", "champ"];
+const ORDER: PllPhase[] = ["intl", "playoffs", "allstar", "regular", "champ"];
 
 function PllGamesPage() {
   const [season, setSeason] = useState(currentPllSeason());

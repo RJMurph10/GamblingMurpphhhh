@@ -16,8 +16,11 @@ export interface PllTeam {
   logo?: string;
 }
 
-/** Part of the PLL year: the winter Championship Series (sixes), the summer season, the All-Star game, the playoffs. */
-export type PllPhase = "champ" | "regular" | "allstar" | "playoffs";
+/**
+ * Part of the PLL year: the winter Championship Series (sixes), the summer season, the All-Star game, the
+ * playoffs, and international games between national teams that ESPN lists in the PLL feed.
+ */
+export type PllPhase = "champ" | "regular" | "allstar" | "playoffs" | "intl";
 
 export interface PllSide {
   teamId: string;
@@ -60,7 +63,11 @@ export const PHASE_LABEL: Record<PllPhase, string> = {
   regular: "Regular season",
   allstar: "All-Star",
   playoffs: "Playoffs",
+  intl: "International",
 };
+
+/** National teams in international games carry ids "intl-<ESPN id>"; All-Star teams "as-…". */
+export const isPllClubId = (id: string) => !id.startsWith("as-") && !id.startsWith("intl-");
 
 /**
  * Where the regular season ends among a summer's club games (in date order): after the last game at which
@@ -85,25 +92,30 @@ export function regularSeasonLength(club: Omit<PllGame, "phase">[]): number {
 /**
  * Tags each game's phase from its date and teams (ESPN calls every PLL game "regular season"):
  * February–April = Championship Series; All-Star teams (East, West, Team …) = All-Star; summer club
- * games = regular season up to regularSeasonLength, then playoffs.
+ * games = regular season up to regularSeasonLength, then playoffs; a national team ("intl-…" ids) =
+ * International, whatever the month.
  */
 export function tagPhases(games: Omit<PllGame, "phase">[], allStarIds: Set<string>): PllGame[] {
   const sorted = [...games].sort((a, b) => a.date.localeCompare(b.date));
   const isAllStar = (g: Omit<PllGame, "phase">) =>
     allStarIds.has(g.home.teamId) || allStarIds.has(g.away.teamId);
+  const isIntl = (g: Omit<PllGame, "phase">) =>
+    g.home.teamId.startsWith("intl-") || g.away.teamId.startsWith("intl-");
   const month = (g: Omit<PllGame, "phase">) => new Date(g.date).getUTCMonth() + 1;
-  const club = sorted.filter((g) => !isAllStar(g) && month(g) > 4);
+  const club = sorted.filter((g) => !isAllStar(g) && !isIntl(g) && month(g) > 4);
   const regular = regularSeasonLength(club);
   const playoffIds = new Set(club.slice(regular).map((g) => g.id));
   return sorted.map((g) => ({
     ...g,
-    phase: isAllStar(g)
-      ? "allstar"
-      : month(g) <= 4
-        ? "champ"
-        : playoffIds.has(g.id)
-          ? "playoffs"
-          : "regular",
+    phase: isIntl(g)
+      ? "intl"
+      : isAllStar(g)
+        ? "allstar"
+        : month(g) <= 4
+          ? "champ"
+          : playoffIds.has(g.id)
+            ? "playoffs"
+            : "regular",
   }));
 }
 
