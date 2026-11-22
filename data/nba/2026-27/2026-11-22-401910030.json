@@ -477,5 +477,327 @@
    ]
   }
  },
- "props": {}
+ "props": {
+  "open": {
+   "at": "2026-11-22T06:58:51.612Z",
+   "provider": 100,
+   "count": 36,
+   "rows": [
+  {"a":"6475","t":"Total Points","ti":"1","op":[14.5,null,null],"cur":[14.5,null,null],"px":[-109,-109]},
+  {"a":"6475","t":"Total Points","ti":"1","op":[14.5,null,null],"cur":[14.5,null,null],"px":[-117,-117]},
+  {"a":"3032977","t":"Total Points","ti":"1","op":[27.5,null,null],"cur":[27.5,null,null],"px":[-113,-115]},
+  {"a":"3032977","t":"Total Points","ti":"1","op":[27.5,null,null],"cur":[27.5,null,null],"px":[-112,-111]},
+  {"a":"4066261","t":"Total Points","ti":"1","op":[19.5,null,null],"cur":[19.5,null,null],"px":[-107,-107]},
+  {"a":"4066261","t":"Total Points","ti":"1","op":[19.5,null,null],"cur":[19.5,null,null],"px":[-119,-119]},
+  {"a":"4222252","t":"Total Points","ti":"1","op":[9.5,null,null],"cur":[8.5,null,null],"px":[-123,-105]},
+  {"a":"4222252","t":"Total Points","ti":"1","op":[9.5,null,null],"cur":[8.5,null,null],"px":[-103,-121]},
+  {"a":"4278053","t":"Total Points","ti":"1","op":[14.5,null,null],"cur":[14.5,null,null],"px":[-104,-104]},
+  {"a":"4278053","t":"Total Points","ti":"1","op":[14.5,null,null],"cur":[14.5,null,null],"px":[-123,-123]},
+  {"a":"4278073","t":"Total Points","ti":"1","op":[31.5,null,null],"cur":[31.5,null,null],"px":[-107,-116]},
+  {"a":"4278073","t":"Total Points","ti":"1","op":[31.5,null,null],"cur":[31.5,null,null],"px":[-119,-110]},
+  {"a":"4601025","t":"Total Points","ti":"1","op":[10.5,null,null],"cur":[10.5,null,null],"px":[-102,-102]},
+  {"a":"4601025","t":"Total Points","ti":"1","op":[10.5,null,null],"cur":[10.5,null,null],"px":[-125,-125]},
+  {"a":"4683778","t":"Total Points","ti":"1","op":[18.5,null,null],"cur":[18.5,null,null],"px":[-114,-123]},
+  {"a":"4683778","t":"Total Points","ti":"1","op":[18.5,null,null],"cur":[18.5,null,null],"px":[-112,-104]},
+  {"a":"4900671","t":"Total Points","ti":"1","op":[21.5,null,null],"cur":[20.5,null,null],"px":[-122,-110]},
+  {"a":"4900671","t":"Total Points","ti":"1","op":[21.5,null,null],"cur":[20.5,null,null],"px":[-104,-116]},
+  {"a":"5174983","t":"Total Points","ti":"1","op":[12.5,null,null],"cur":[12.5,null,null],"px":[-103,-103]},
+  {"a":"5174983","t":"Total Points","ti":"1","op":[12.5,null,null],"cur":[12.5,null,null],"px":[-123,-123]},
+  {"a":"6475","t":"Total 3-Point Field Goals","ti":"4","op":[3.5,null,null],"cur":[3.5,null,null],"px":[-128,-128]},
+  {"a":"6475","t":"Total 3-Point Field Goals","ti":"4","op":[3.5,null,null],"cur":[3.5,null,null],"px":[-103,-103]},
+  {"a":"3032977","t":"Total 3-Point Field Goals","ti":"4","op":[0.5,null,null],"cur":[0.5,null,null],"px":[-121,-126]},
+  {"a":"3032977","t":"Total 3-Point Field Goals","ti":"4","op":[0.5,null,null],"cur":[0.5,null,null],"px":[-109,-104]},
+  {"a":"4066261","t":"Total 3-Point Field Goals","ti":"4","op":[1.5,null,null],"cur":[1.5,null,null],"px":[137,137]},
+  {"a":"4066261","t":"Total 3-Point Field Goals","ti":"4","op":[1.5,null,null],"cur":[1.5,null,null],"px":[-182,-182]},
+  {"a":"4278053","t":"Total 3-Point Field Goals","ti":"4","op":[2.5,null,null],"cur":[2.5,null,null],"px":[132,132]},
+  {"a":"4278053","t":"Total 3-Point Field Goals","ti":"4","op":[2.5,null,null],"cur":[2.5,null,null],"px":[-175,-175]},
+  {"a":"4278073","t":"Total 3-Point Field Goals","ti":"4","op":[1.5,null,null],"cur":[1.5,null,null],"px":[-164,-164]},
+  {"a":"4278073","t":"Total 3-Point Field Goals","ti":"4","op":[1.5,null,null],"cur":[1.5,null,null],"px":[124,124]},
+  {"a":"4601025","t":"Total 3-Point Field Goals","ti":"4","op":[0.5,null,null],"cur":[0.5,null,null],"px":[-210,-210]},
+  {"a":"4601025","t":"Total 3-Point Field Goals","ti":"4","op":[0.5,null,null],"cur":[0.5,null,null],"px":[157,157]},
+  {"a":"4683778","t":"Total 3-Point Field Goals","ti":"4","op":[3.5,null,null],"cur":[3.5,null,null],"px":[124,124]},
+  {"a":"4683778","t":"Total 3-Point Field Goals","ti":"4","op":[3.5,null,null],"cur":[3.5,null,null],"px":[-164,-164]},
+  {"a":"4900671","t":"Total 3-Point Field Goals","ti":"4","op":[1.5,null,null],"cur":[1.5,null,null],"px":[143,143]},
+  {"a":"4900671","t":"Total 3-Point Field Goals","ti":"4","op":[1.5,null,null],"cur":[1.5,null,null],"px":[-190,-190]}
+ ],
+   "sample": [
+    {
+     "competition": {
+      "id": "401910030"
+     },
+     "athlete": {
+      "id": "6475"
+     },
+     "provider": {
+      "id": "100"
+     },
+     "type": {
+      "id": "1",
+      "name": "Total Points"
+     },
+     "odds": {
+      "american": {
+       "value": "-109",
+       "open": "-109"
+      },
+      "decimal": {
+       "value": "1.91",
+       "open": "1.91"
+      },
+      "fraction": {
+       "value": "100/109",
+       "open": "100/109"
+      },
+      "total": {
+       "value": "14.5",
+       "open": "14.5"
+      }
+     },
+     "lastUpdated": "2026-11-22T09:29Z",
+     "current": {
+      "target": {
+       "value": 14.5,
+       "displayValue": "14.5"
+      }
+     },
+     "open": {
+      "target": {
+       "value": 14.5,
+       "displayValue": "14.5"
+      }
+     }
+    },
+    {
+     "competition": {
+      "id": "401910030"
+     },
+     "athlete": {
+      "id": "6475"
+     },
+     "provider": {
+      "id": "100"
+     },
+     "type": {
+      "id": "1",
+      "name": "Total Points"
+     },
+     "odds": {
+      "american": {
+       "value": "-117",
+       "open": "-117"
+      },
+      "decimal": {
+       "value": "1.85",
+       "open": "1.85"
+      },
+      "fraction": {
+       "value": "100/117",
+       "open": "100/117"
+      },
+      "total": {
+       "value": "14.5",
+       "open": "14.5"
+      }
+     },
+     "lastUpdated": "2026-11-22T09:29Z",
+     "current": {
+      "target": {
+       "value": 14.5,
+       "displayValue": "14.5"
+      }
+     },
+     "open": {
+      "target": {
+       "value": 14.5,
+       "displayValue": "14.5"
+      }
+     }
+    }
+   ]
+  },
+  "latest": {
+   "at": "2026-11-22T06:58:51.612Z",
+   "count": 36,
+   "rows": [
+  {"a":"6475","t":"Total Points","ti":"1","op":[14.5,null,null],"cur":[14.5,null,null],"px":[-109,-109]},
+  {"a":"6475","t":"Total Points","ti":"1","op":[14.5,null,null],"cur":[14.5,null,null],"px":[-117,-117]},
+  {"a":"3032977","t":"Total Points","ti":"1","op":[27.5,null,null],"cur":[27.5,null,null],"px":[-113,-115]},
+  {"a":"3032977","t":"Total Points","ti":"1","op":[27.5,null,null],"cur":[27.5,null,null],"px":[-112,-111]},
+  {"a":"4066261","t":"Total Points","ti":"1","op":[19.5,null,null],"cur":[19.5,null,null],"px":[-107,-107]},
+  {"a":"4066261","t":"Total Points","ti":"1","op":[19.5,null,null],"cur":[19.5,null,null],"px":[-119,-119]},
+  {"a":"4222252","t":"Total Points","ti":"1","op":[9.5,null,null],"cur":[8.5,null,null],"px":[-123,-105]},
+  {"a":"4222252","t":"Total Points","ti":"1","op":[9.5,null,null],"cur":[8.5,null,null],"px":[-103,-121]},
+  {"a":"4278053","t":"Total Points","ti":"1","op":[14.5,null,null],"cur":[14.5,null,null],"px":[-104,-104]},
+  {"a":"4278053","t":"Total Points","ti":"1","op":[14.5,null,null],"cur":[14.5,null,null],"px":[-123,-123]},
+  {"a":"4278073","t":"Total Points","ti":"1","op":[31.5,null,null],"cur":[31.5,null,null],"px":[-107,-116]},
+  {"a":"4278073","t":"Total Points","ti":"1","op":[31.5,null,null],"cur":[31.5,null,null],"px":[-119,-110]},
+  {"a":"4601025","t":"Total Points","ti":"1","op":[10.5,null,null],"cur":[10.5,null,null],"px":[-102,-102]},
+  {"a":"4601025","t":"Total Points","ti":"1","op":[10.5,null,null],"cur":[10.5,null,null],"px":[-125,-125]},
+  {"a":"4683778","t":"Total Points","ti":"1","op":[18.5,null,null],"cur":[18.5,null,null],"px":[-114,-123]},
+  {"a":"4683778","t":"Total Points","ti":"1","op":[18.5,null,null],"cur":[18.5,null,null],"px":[-112,-104]},
+  {"a":"4900671","t":"Total Points","ti":"1","op":[21.5,null,null],"cur":[20.5,null,null],"px":[-122,-110]},
+  {"a":"4900671","t":"Total Points","ti":"1","op":[21.5,null,null],"cur":[20.5,null,null],"px":[-104,-116]},
+  {"a":"5174983","t":"Total Points","ti":"1","op":[12.5,null,null],"cur":[12.5,null,null],"px":[-103,-103]},
+  {"a":"5174983","t":"Total Points","ti":"1","op":[12.5,null,null],"cur":[12.5,null,null],"px":[-123,-123]},
+  {"a":"6475","t":"Total 3-Point Field Goals","ti":"4","op":[3.5,null,null],"cur":[3.5,null,null],"px":[-128,-128]},
+  {"a":"6475","t":"Total 3-Point Field Goals","ti":"4","op":[3.5,null,null],"cur":[3.5,null,null],"px":[-103,-103]},
+  {"a":"3032977","t":"Total 3-Point Field Goals","ti":"4","op":[0.5,null,null],"cur":[0.5,null,null],"px":[-121,-126]},
+  {"a":"3032977","t":"Total 3-Point Field Goals","ti":"4","op":[0.5,null,null],"cur":[0.5,null,null],"px":[-109,-104]},
+  {"a":"4066261","t":"Total 3-Point Field Goals","ti":"4","op":[1.5,null,null],"cur":[1.5,null,null],"px":[137,137]},
+  {"a":"4066261","t":"Total 3-Point Field Goals","ti":"4","op":[1.5,null,null],"cur":[1.5,null,null],"px":[-182,-182]},
+  {"a":"4278053","t":"Total 3-Point Field Goals","ti":"4","op":[2.5,null,null],"cur":[2.5,null,null],"px":[132,132]},
+  {"a":"4278053","t":"Total 3-Point Field Goals","ti":"4","op":[2.5,null,null],"cur":[2.5,null,null],"px":[-175,-175]},
+  {"a":"4278073","t":"Total 3-Point Field Goals","ti":"4","op":[1.5,null,null],"cur":[1.5,null,null],"px":[-164,-164]},
+  {"a":"4278073","t":"Total 3-Point Field Goals","ti":"4","op":[1.5,null,null],"cur":[1.5,null,null],"px":[124,124]},
+  {"a":"4601025","t":"Total 3-Point Field Goals","ti":"4","op":[0.5,null,null],"cur":[0.5,null,null],"px":[-210,-210]},
+  {"a":"4601025","t":"Total 3-Point Field Goals","ti":"4","op":[0.5,null,null],"cur":[0.5,null,null],"px":[157,157]},
+  {"a":"4683778","t":"Total 3-Point Field Goals","ti":"4","op":[3.5,null,null],"cur":[3.5,null,null],"px":[124,124]},
+  {"a":"4683778","t":"Total 3-Point Field Goals","ti":"4","op":[3.5,null,null],"cur":[3.5,null,null],"px":[-164,-164]},
+  {"a":"4900671","t":"Total 3-Point Field Goals","ti":"4","op":[1.5,null,null],"cur":[1.5,null,null],"px":[143,143]},
+  {"a":"4900671","t":"Total 3-Point Field Goals","ti":"4","op":[1.5,null,null],"cur":[1.5,null,null],"px":[-190,-190]}
+ ]
+  }
+ },
+ "names": {
+  "6475": [
+   "Klay Thompson",
+   "MIA"
+  ],
+  "2528210": [
+   "Tim Hardaway Jr.",
+   "MIA"
+  ],
+  "2991350": [
+   "Alex Caruso",
+   "OKC"
+  ],
+  "3032977": [
+   "Giannis Antetokounmpo",
+   "MIA"
+  ],
+  "3059319": [
+   "Andrew Wiggins",
+   "MIA"
+  ],
+  "3064482": [
+   "Bobby Portis",
+   "MIA"
+  ],
+  "3133626": [
+   "Kenrich Williams",
+   "OKC"
+  ],
+  "3899664": [
+   "Simone Fontecchio",
+   "MIA"
+  ],
+  "4066261": [
+   "Bam Adebayo",
+   "MIA"
+  ],
+  "4066993": [
+   "Dru Smith",
+   "MIA"
+  ],
+  "4222252": [
+   "Isaiah Hartenstein",
+   "OKC"
+  ],
+  "4278053": [
+   "Davion Mitchell",
+   "MIA"
+  ],
+  "4278073": [
+   "Shai Gilgeous-Alexander",
+   "OKC"
+  ],
+  "4278076": [
+   "Nick Richards",
+   "MIA"
+  ],
+  "4431772": [
+   "Myron Gardner",
+   "MIA"
+  ],
+  "4431786": [
+   "Keshad Johnson",
+   "MIA"
+  ],
+  "4432185": [
+   "Micah Peavy",
+   "OKC"
+  ],
+  "4432823": [
+   "Jaylin Williams",
+   "OKC"
+  ],
+  "4433255": [
+   "Chet Holmgren",
+   "OKC"
+  ],
+  "4593803": [
+   "Jalen Williams",
+   "OKC"
+  ],
+  "4601025": [
+   "Pelle Larsson",
+   "MIA"
+  ],
+  "4683692": [
+   "Cason Wallace",
+   "OKC"
+  ],
+  "4683778": [
+   "Jared McCain",
+   "OKC"
+  ],
+  "4684208": [
+   "Brooks Barnhizer",
+   "OKC"
+  ],
+  "4700818": [
+   "Vladislav Goldin",
+   "MIA"
+  ],
+  "4702384": [
+   "Nique Clifford",
+   "OKC"
+  ],
+  "4837356": [
+   "Tre Donaldson",
+   "MIA"
+  ],
+  "4900671": [
+   "Ajay Mitchell",
+   "OKC"
+  ],
+  "4997528": [
+   "Nikola Jovic",
+   "MIA"
+  ],
+  "5061603": [
+   "Thomas Sorber",
+   "OKC"
+  ],
+  "5105800": [
+   "Josh Dix",
+   "OKC"
+  ],
+  "5107157": [
+   "Ryan Conwell",
+   "MIA"
+  ],
+  "5159925": [
+   "Nikola Topic",
+   "OKC"
+  ],
+  "5174983": [
+   "Aday Mara",
+   "OKC"
+  ],
+  "5241364": [
+   "Bennett Stirtz",
+   "OKC"
+  ]
+ }
 }

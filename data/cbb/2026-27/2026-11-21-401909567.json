@@ -7,18 +7,18 @@
   "id": "265",
   "abbr": "WSU",
   "name": "Washington State Cougars",
-  "score": 0
+  "score": 74
  },
  "home": {
   "id": "150",
   "abbr": "DUKE",
   "name": "Duke Blue Devils",
-  "score": 0
+  "score": 78
  },
  "neutral": true,
  "venue": "Acrisure Arena",
  "seasonType": 2,
- "state": "pre",
+ "state": "post",
  "lines": {
   "open": {
    "at": "2026-11-20T22:22:10.516Z",
@@ -852,5 +852,9 @@
    ]
   }
  },
- "props": {}
+ "props": {},
+ "final": {
+  "away": 74,
+  "home": 78
+ }
 }
