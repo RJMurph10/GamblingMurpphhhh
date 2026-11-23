@@ -7,18 +7,18 @@
   "id": "7",
   "abbr": "DEN",
   "name": "Denver Nuggets",
-  "score": 147
+  "score": 151
  },
  "home": {
   "id": "4",
   "abbr": "CHI",
   "name": "Chicago Bulls",
-  "score": 142
+  "score": 145
  },
  "neutral": false,
  "venue": "United Center",
  "seasonType": 2,
- "state": "in",
+ "state": "post",
  "lines": {
   "open": {
    "at": "2026-11-22T03:27:54.997Z",
@@ -4700,5 +4700,9 @@
    "Noa Essengue",
    "CHI"
   ]
+ },
+ "final": {
+  "away": 151,
+  "home": 145
  }
 }

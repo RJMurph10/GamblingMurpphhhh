@@ -478,5 +478,757 @@
    ]
   }
  },
- "props": {}
+ "props": {
+  "open": {
+   "at": "2026-11-23T02:52:16.812Z",
+   "provider": 100,
+   "count": 5,
+   "rows": [
+  {"a":"4912274","t":"Total Rushing Yards (incl. overtime)","ti":"12","op":[9.5,null,null],"cur":[9.5,null,null]},
+  {"a":"4912274","t":"Total Rushing Yards (incl. overtime)","ti":"12","op":[9.5,null,null],"cur":[9.5,null,null]},
+  {"a":"4912274","t":"Rushing Yards Milestones","ti":"196","op":[10,null,null],"cur":[10,null,null]},
+  {"a":"4912274","t":"Rushing Yards Milestones","ti":"196","op":[10,null,null],"cur":[25,null,null]},
+  {"a":"4912274","t":"Rushing Yards Milestones","ti":"196","op":[10,null,null],"cur":[70,null,null]}
+ ],
+   "sample": [
+    {
+     "competition": {
+      "id": "401873081"
+     },
+     "athlete": {
+      "id": "4912274"
+     },
+     "provider": {
+      "id": "100"
+     },
+     "type": {
+      "id": "12",
+      "name": "Total Rushing Yards (incl. overtime)"
+     },
+     "lastUpdated": "2026-11-23T05:50Z",
+     "current": {
+      "target": {
+       "value": 9.5,
+       "displayValue": "9.5"
+      }
+     },
+     "open": {
+      "target": {
+       "value": 9.5,
+       "displayValue": "9.5"
+      }
+     }
+    },
+    {
+     "competition": {
+      "id": "401873081"
+     },
+     "athlete": {
+      "id": "4912274"
+     },
+     "provider": {
+      "id": "100"
+     },
+     "type": {
+      "id": "12",
+      "name": "Total Rushing Yards (incl. overtime)"
+     },
+     "lastUpdated": "2026-11-23T05:50Z",
+     "current": {
+      "target": {
+       "value": 9.5,
+       "displayValue": "9.5"
+      }
+     },
+     "open": {
+      "target": {
+       "value": 9.5,
+       "displayValue": "9.5"
+      }
+     }
+    }
+   ]
+  },
+  "latest": {
+   "at": "2026-11-23T02:52:16.812Z",
+   "count": 5,
+   "rows": [
+  {"a":"4912274","t":"Total Rushing Yards (incl. overtime)","ti":"12","op":[9.5,null,null],"cur":[9.5,null,null]},
+  {"a":"4912274","t":"Total Rushing Yards (incl. overtime)","ti":"12","op":[9.5,null,null],"cur":[9.5,null,null]},
+  {"a":"4912274","t":"Rushing Yards Milestones","ti":"196","op":[10,null,null],"cur":[10,null,null]},
+  {"a":"4912274","t":"Rushing Yards Milestones","ti":"196","op":[10,null,null],"cur":[25,null,null]},
+  {"a":"4912274","t":"Rushing Yards Milestones","ti":"196","op":[10,null,null],"cur":[70,null,null]}
+ ]
+  }
+ },
+ "names": {
+  "15168": [
+   "Case Keenum",
+   "CHI"
+  ],
+  "17427": [
+   "Cairo Santos",
+   "CHI"
+  ],
+  "2576492": [
+   "Grady Jarrett",
+   "CHI"
+  ],
+  "2577773": [
+   "Joe Thuney",
+   "CHI"
+  ],
+  "2580216": [
+   "DeAndre Carter",
+   "DET"
+  ],
+  "2973405": [
+   "Kalif Raymond",
+   "CHI"
+  ],
+  "2980138": [
+   "Scott Daly",
+   "CHI"
+  ],
+  "3044720": [
+   "Joshua Dobbs",
+   "DET"
+  ],
+  "3045463": [
+   "Chuck Clark",
+   "DET"
+  ],
+  "3046779": [
+   "Jared Goff",
+   "DET"
+  ],
+  "3116136": [
+   "Justin Jackson",
+   "DET"
+  ],
+  "3116726": [
+   "Kentavius Street",
+   "CHI"
+  ],
+  "3116729": [
+   "Garrett Bradbury",
+   "CHI"
+  ],
+  "3121544": [
+   "T.J. Edwards",
+   "CHI"
+  ],
+  "3123938": [
+   "Avonte Maddox",
+   "DET"
+  ],
+  "3124058": [
+   "Marcus Davenport",
+   "CHI"
+  ],
+  "3126997": [
+   "Tom Kennedy",
+   "DET"
+  ],
+  "3134690": [
+   "Montez Sweat",
+   "CHI"
+  ],
+  "3139387": [
+   "D.J. Reed",
+   "DET"
+  ],
+  "3892883": [
+   "Neville Gallimore",
+   "CHI"
+  ],
+  "3910229": [
+   "Rock Ya-Sin",
+   "DET"
+  ],
+  "3914397": [
+   "Scotty Miller",
+   "CHI"
+  ],
+  "3915486": [
+   "Tyler Conklin",
+   "DET"
+  ],
+  "3915802": [
+   "Lucky Jackson",
+   "DET"
+  ],
+  "3916370": [
+   "Jack Fox",
+   "DET"
+  ],
+  "3916577": [
+   "Cam Lewis",
+   "CHI"
+  ],
+  "3929814": [
+   "Josh Butler",
+   "CHI"
+  ],
+  "3930040": [
+   "Jonah Jackson",
+   "CHI"
+  ],
+  "3948283": [
+   "Stephen Carlson",
+   "CHI"
+  ],
+  "4027919": [
+   "Khalil Dorsey",
+   "DET"
+  ],
+  "4034861": [
+   "Ben Stille",
+   "DET"
+  ],
+  "4035270": [
+   "Devin Cochran",
+   "DET"
+  ],
+  "4035369": [
+   "Jeffery Simmons",
+   "CHI"
+  ],
+  "4035434": [
+   "Devin White",
+   "DET"
+  ],
+  "4036032": [
+   "Brittain Brown",
+   "CHI"
+  ],
+  "4036261": [
+   "Devin Bush",
+   "CHI"
+  ],
+  "4036507": [
+   "Joe Bachie",
+   "DET"
+  ],
+  "4038432": [
+   "Amen Ogbongbemiga",
+   "DET"
+  ],
+  "4038849": [
+   "DJ Wonnum",
+   "DET"
+  ],
+  "4039010": [
+   "Myles Bryant",
+   "DET"
+  ],
+  "4039020": [
+   "Levi Onwuzurike",
+   "DET"
+  ],
+  "4239094": [
+   "Coby Bryant",
+   "CHI"
+  ],
+  "4240269": [
+   "Payton Turner",
+   "DET"
+  ],
+  "4240459": [
+   "Josh Blackwell",
+   "CHI"
+  ],
+  "4240900": [
+   "Buddy Johnson",
+   "CHI"
+  ],
+  "4241007": [
+   "D'Marco Jackson",
+   "CHI"
+  ],
+  "4241217": [
+   "Larry Borom",
+   "DET"
+  ],
+  "4241411": [
+   "Malcolm Rodriguez",
+   "DET"
+  ],
+  "4241611": [
+   "Nephi Sewell",
+   "CHI"
+  ],
+  "4242292": [
+   "Earnest Brown IV",
+   "CHI"
+  ],
+  "4242392": [
+   "Brock Wright",
+   "DET"
+  ],
+  "4242402": [
+   "Elijah Hicks",
+   "CHI"
+  ],
+  "4242521": [
+   "K.J. Britt",
+   "DET"
+  ],
+  "4242659": [
+   "Dayo Odeyingbo",
+   "CHI"
+  ],
+  "4243253": [
+   "Jaylon Johnson",
+   "CHI"
+  ],
+  "4243315": [
+   "Salvon Ahmed",
+   "CHI"
+  ],
+  "4245144": [
+   "Tay Martin",
+   "DET"
+  ],
+  "4245655": [
+   "Tony Fields II",
+   "CHI"
+  ],
+  "4251007": [
+   "Braxton Jones",
+   "CHI"
+  ],
+  "4257364": [
+   "Zavier Scott",
+   "CHI"
+  ],
+  "4258595": [
+   "Cole Kmet",
+   "CHI"
+  ],
+  "4259181": [
+   "James Lynch",
+   "CHI"
+  ],
+  "4259545": [
+   "D'Andre Swift",
+   "CHI"
+  ],
+  "4260409": [
+   "Derrick Barnes",
+   "DET"
+  ],
+  "4360319": [
+   "Jordan McFadden",
+   "CHI"
+  ],
+  "4360335": [
+   "Elijah Jones",
+   "CHI"
+  ],
+  "4360383": [
+   "Kerby Joseph",
+   "DET"
+  ],
+  "4361093": [
+   "Kyler Gordon",
+   "CHI"
+  ],
+  "4361425": [
+   "Juice Scruggs",
+   "DET"
+  ],
+  "4361529": [
+   "Isiah Pacheco",
+   "DET"
+  ],
+  "4361662": [
+   "Alim McNeill",
+   "DET"
+  ],
+  "4361788": [
+   "Cade Mays",
+   "DET"
+  ],
+  "4361861": [
+   "Tyler Lacy",
+   "DET"
+  ],
+  "4361939": [
+   "Andre Cisco",
+   "DET"
+  ],
+  "4362066": [
+   "Elijah Klein",
+   "DET"
+  ],
+  "4362103": [
+   "Christian Jones",
+   "CHI"
+  ],
+  "4362636": [
+   "Damone Clark",
+   "DET"
+  ],
+  "4365629": [
+   "Daniel Hardy",
+   "CHI"
+  ],
+  "4371973": [
+   "Roger McCreary",
+   "DET"
+  ],
+  "4372099": [
+   "Aidan Hutchinson",
+   "DET"
+  ],
+  "4372418": [
+   "Keidron Smith",
+   "CHI"
+  ],
+  "4372459": [
+   "Christian Izien",
+   "DET"
+  ],
+  "4372576": [
+   "Jack Sanborn",
+   "CHI"
+  ],
+  "4373825": [
+   "Penei Sewell",
+   "DET"
+  ],
+  "4374302": [
+   "Amon-Ra St. Brown",
+   "DET"
+  ],
+  "4379769": [
+   "Qadir Ismail",
+   "CHI"
+  ],
+  "4383429": [
+   "Jacob Saylors",
+   "DET"
+  ],
+  "4426358": [
+   "Darnell Wright",
+   "CHI"
+  ],
+  "4426374": [
+   "Tyrique Stevenson Sr.",
+   "CHI"
+  ],
+  "4426386": [
+   "Roschon Johnson",
+   "CHI"
+  ],
+  "4426388": [
+   "Jameson Williams",
+   "DET"
+  ],
+  "4427864": [
+   "Christian Mahogany",
+   "DET"
+  ],
+  "4429035": [
+   "Tate Ratledge",
+   "DET"
+  ],
+  "4429067": [
+   "Clark Phillips III",
+   "CHI"
+  ],
+  "4429187": [
+   "Seth McLaughlin",
+   "DET"
+  ],
+  "4429795": [
+   "Jahmyr Gibbs",
+   "DET"
+  ],
+  "4429970": [
+   "Ruben Hyppolite II",
+   "CHI"
+  ],
+  "4430027": [
+   "Sam LaPorta",
+   "DET"
+  ],
+  "4430121": [
+   "Aidan Keanaaina",
+   "DET"
+  ],
+  "4430822": [
+   "Noah Sewell",
+   "CHI"
+  ],
+  "4431299": [
+   "Rome Odunze",
+   "CHI"
+  ],
+  "4431580": [
+   "Miller Moss",
+   "CHI"
+  ],
+  "4431611": [
+   "Caleb Williams",
+   "CHI"
+  ],
+  "4431615": [
+   "Tyleik Williams",
+   "DET"
+  ],
+  "4432545": [
+   "Jabari Small",
+   "DET"
+  ],
+  "4432595": [
+   "Ozzy Trapilo",
+   "CHI"
+  ],
+  "4432804": [
+   "Shemar Turner",
+   "CHI"
+  ],
+  "4434153": [
+   "Tyson Bagent",
+   "CHI"
+  ],
+  "4565445": [
+   "Aamaris Brown",
+   "DET"
+  ],
+  "4566092": [
+   "Ennis Rakestraw Jr.",
+   "DET"
+  ],
+  "4567219": [
+   "Owen Pappoe",
+   "DET"
+  ],
+  "4569323": [
+   "Thomas Harper",
+   "DET"
+  ],
+  "4569465": [
+   "Jack Campbell",
+   "DET"
+  ],
+  "4569615": [
+   "Thomas Gordon",
+   "DET"
+  ],
+  "4571755": [
+   "Hogan Hatten",
+   "DET"
+  ],
+  "4586333": [
+   "Mekhi Wingo",
+   "DET"
+  ],
+  "4596439": [
+   "Dominic Lovett",
+   "DET"
+  ],
+  "4597679": [
+   "Luke Altmyer",
+   "DET"
+  ],
+  "4602788": [
+   "Jackson Meeks",
+   "DET"
+  ],
+  "4608686": [
+   "Kyle Monangai",
+   "CHI"
+  ],
+  "4608890": [
+   "Miles Frazier",
+   "DET"
+  ],
+  "4611506": [
+   "Ben Bartch",
+   "DET"
+  ],
+  "4682641": [
+   "Marlen Sewell",
+   "CHI"
+  ],
+  "4683553": [
+   "Austin Booker",
+   "CHI"
+  ],
+  "4684963": [
+   "Wayne Matthews III",
+   "CHI"
+  ],
+  "4685183": [
+   "JP Richardson",
+   "CHI"
+  ],
+  "4685278": [
+   "Luther Burden III",
+   "CHI"
+  ],
+  "4685441": [
+   "Kendrick Law",
+   "DET"
+  ],
+  "4685442": [
+   "Anthony Lucas",
+   "DET"
+  ],
+  "4685461": [
+   "Derrick Moore",
+   "DET"
+  ],
+  "4685504": [
+   "Sam Roush",
+   "CHI"
+  ],
+  "4686889": [
+   "Tory Taylor",
+   "CHI"
+  ],
+  "4686907": [
+   "Logan Jones",
+   "CHI"
+  ],
+  "4689333": [
+   "Tyrus Wheat",
+   "DET"
+  ],
+  "4689936": [
+   "Jake Bates",
+   "DET"
+  ],
+  "4692025": [
+   "Brian Branch",
+   "DET"
+  ],
+  "4693332": [
+   "Mason Miller",
+   "DET"
+  ],
+  "4695895": [
+   "Luke Newman",
+   "CHI"
+  ],
+  "4696723": [
+   "Beau Gardner",
+   "CHI"
+  ],
+  "4709983": [
+   "Caden Barnett",
+   "CHI"
+  ],
+  "4710422": [
+   "Ahmed Hassanein",
+   "DET"
+  ],
+  "4723086": [
+   "Colston Loveland",
+   "CHI"
+  ],
+  "4869748": [
+   "Zavion Thomas",
+   "CHI"
+  ],
+  "4870953": [
+   "Malik Muhammad II",
+   "CHI"
+  ],
+  "4875381": [
+   "Jordan van den Berg",
+   "CHI"
+  ],
+  "4877376": [
+   "Jayden Loving",
+   "CHI"
+  ],
+  "4879561": [
+   "Skyler Thomas",
+   "CHI"
+  ],
+  "4892218": [
+   "Eric O'Neill",
+   "DET"
+  ],
+  "4896353": [
+   "Jimmy Rolder",
+   "DET"
+  ],
+  "4911952": [
+   "Keyshaun Elliott",
+   "CHI"
+  ],
+  "4912274": [
+   "Sione Vaki",
+   "DET"
+  ],
+  "4916349": [
+   "Nikola Kalinic",
+   "CHI"
+  ],
+  "4917592": [
+   "Dallis Flowers",
+   "CHI"
+  ],
+  "4954445": [
+   "Dillon Thieneman",
+   "CHI"
+  ],
+  "5065495": [
+   "Kaden Davis",
+   "CHI"
+  ],
+  "5081056": [
+   "Jeffrey M'ba",
+   "DET"
+  ],
+  "5081450": [
+   "Blake Miller",
+   "DET"
+  ],
+  "5089453": [
+   "Miles Kitselman",
+   "DET"
+  ],
+  "5093004": [
+   "Keith Abney II",
+   "DET"
+  ],
+  "5103940": [
+   "Skyler Gill-Howard",
+   "DET"
+  ],
+  "5123663": [
+   "Isaac TeSlaa",
+   "DET"
+  ],
+  "5125873": [
+   "Theo Benedet",
+   "CHI"
+  ],
+  "5143915": [
+   "Nick Whiteside",
+   "DET"
+  ],
+  "5144894": [
+   "Trevor Nowaske",
+   "DET"
+  ],
+  "5150662": [
+   "Hayden Large",
+   "CHI"
+  ],
+  "5160110": [
+   "Jahdae Walker",
+   "CHI"
+  ],
+  "5209589": [
+   "Giovanni Manu",
+   "DET"
+  ]
+ }
 }

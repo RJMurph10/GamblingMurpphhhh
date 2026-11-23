@@ -1,24 +1,24 @@
 {
  "id": "401917542",
  "league": "cbb",
- "date": "2026-11-23T02:30Z",
+ "date": "2026-11-23T02:45Z",
  "name": "UCSD VS SEA",
  "away": {
   "id": "28",
   "abbr": "UCSD",
   "name": "UC San Diego Tritons",
-  "score": 0
+  "score": 6
  },
  "home": {
   "id": "2547",
   "abbr": "SEA",
   "name": "Seattle U Redhawks",
-  "score": 0
+  "score": 14
  },
  "neutral": true,
  "venue": "Acrisure Arena",
  "seasonType": 2,
- "state": "pre",
+ "state": "in",
  "lines": {
   "open": {
    "at": "2026-11-21T23:25:07.697Z",

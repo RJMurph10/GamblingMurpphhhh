@@ -7,13 +7,13 @@
   "id": "4",
   "abbr": "CHI",
   "name": "Chicago Blackhawks",
-  "score": 4
+  "score": 5
  },
  "home": {
   "id": "22",
   "abbr": "VAN",
   "name": "Vancouver Canucks",
-  "score": 2
+  "score": 3
  },
  "neutral": false,
  "venue": "Rogers Arena",

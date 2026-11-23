@@ -7,13 +7,13 @@
   "id": "11",
   "abbr": "IND",
   "name": "Indiana Pacers",
-  "score": 56
+  "score": 69
  },
  "home": {
   "id": "18",
   "abbr": "NY",
   "name": "New York Knicks",
-  "score": 67
+  "score": 76
  },
  "neutral": false,
  "venue": "Madison Square Garden",
