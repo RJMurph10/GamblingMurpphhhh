@@ -26,7 +26,9 @@ function game(
     location: "",
     awayTeamId: away,
     homeTeamId: home,
-    quarters: score ? { away: [score[0], 0, 0, 0], home: [score[1], 0, 0, 0] } : { away: [], home: [] },
+    quarters: score
+      ? { away: [score[0], 0, 0, 0], home: [score[1], 0, 0, 0] }
+      : { away: [], home: [] },
     spread,
     total: 44.5,
     drives: [],
@@ -113,7 +115,27 @@ describe("road-underdog watch item", () => {
     expect(hit.angle).toBe("road-dog");
     expect(hit.label).toBe("NYJ +9.5");
     expect(hit.result).toBe("win");
-    expect(roadDogHitsForGame(game("r2", 5, "jets", "chiefs", "KC -6.5", [17, 20]), 2026)).toHaveLength(0);
-    expect(roadDogHitsForGame(game("r3", 5, "chiefs", "jets", "KC -9.5", [20, 17]), 2026)).toHaveLength(0);
+    expect(
+      roadDogHitsForGame(game("r2", 5, "jets", "chiefs", "KC -6.5", [17, 20]), 2026),
+    ).toHaveLength(0);
+    expect(
+      roadDogHitsForGame(game("r3", 5, "chiefs", "jets", "KC -9.5", [20, 17]), 2026),
+    ).toHaveLength(0);
+  });
+});
+
+describe("QB-style best bet (off since November 2026)", () => {
+  it("no longer stars a scrambler's team against a pocket passer's team", () => {
+    const g = game("g9", 6, "chiefs", "jets", "KC -3.5");
+    const styles = {
+      home: { style: "scrambler" },
+      away: { style: "pocket" },
+    } as unknown as Parameters<typeof predictionsForGame>[4];
+    const spread = predictionsForGame(g, onLine(3.5), onLine(3.5), null, styles).find(
+      (p) => p.market === "spread",
+    )!;
+    expect(MODEL_SETTINGS.qbStyleBets).toBe(false);
+    expect(spread.best).toBe(false);
+    expect(spread.reason).toBeUndefined();
   });
 });

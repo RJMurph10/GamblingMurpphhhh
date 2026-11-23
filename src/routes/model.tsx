@@ -13,7 +13,12 @@ import { RushUndersPanel } from "@/components/nfl/RushUndersPanel";
 import { AltLaddersPanel } from "@/components/nfl/AltLaddersPanel";
 import { NextManUpPanel } from "@/components/shared/NextManUpPanel";
 import { QbStarsPanel } from "@/components/shared/QbStarsPanel";
-import { pastSeasonRuns, readHistory, runModelWithHistory, pastRunsReady } from "@/lib/nfl/model-history";
+import {
+  pastSeasonRuns,
+  readHistory,
+  runModelWithHistory,
+  pastRunsReady,
+} from "@/lib/nfl/model-history";
 import { LiveResults } from "@/components/shared/LiveResults";
 import type { LivePick } from "@/lib/shared/live-results";
 
@@ -196,13 +201,20 @@ function ModelPage() {
                 ★ Best bets, against the spread: every home underdog getting{" "}
                 {MODEL_SETTINGS.bigUnderdogPts}+ points (279-224 at closing lines since 1999); the
                 road team after it lost its previous game by {MODEL_SETTINGS.bounceLossMargin}+ (the
-                college bounce-back rule, 118-92 on 27 NFL seasons it had never seen); and a
-                scrambler&apos;s team against a pocket passer&apos;s team. On totals: the under in
-                every outdoor game with {MODEL_SETTINGS.windUnderMph}+ mph of wind at kickoff
-                (469-361 since 2012; picked on 2012–2021 and confirmed on 2022–2026 games it had
-                never seen). Upcoming wind uses the National Weather Service forecast; finished
-                games use the wind recorded at kickoff. Past results don&apos;t guarantee future
-                ones; the track record above keeps score.
+                college bounce-back rule, 118-92 on 27 NFL seasons it had never seen). On totals:
+                the under in every outdoor game with {MODEL_SETTINGS.windUnderMph}+ mph of wind at
+                kickoff (469-361 since 2012; picked on 2012–2021 and confirmed on 2022–2026 games it
+                had never seen). Upcoming wind uses the National Weather Service forecast; finished
+                games use the wind recorded at kickoff, or the stadium&apos;s weather record when
+                none was recorded. Past results don&apos;t guarantee future ones; the track record
+                above keeps score.
+              </li>
+              <li>
+                Changed in November 2026: the scrambler-vs-pocket-passer ★ best bet was turned off.
+                QB &quot;styles&quot; were too subjective, and it went 7-18-1 in 2026, its first
+                season outside the data it was found on. It comes back only with an objective
+                definition that holds up over many seasons (once QB data before 2022 is in). The
+                seasons in the track record above are replayed without it.
               </li>
               <li>
                 Changed in October 2026: road underdogs of {MODEL_SETTINGS.bigUnderdogPts}+ were
