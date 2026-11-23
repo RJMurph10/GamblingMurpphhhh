@@ -7,18 +7,18 @@
   "id": "11",
   "abbr": "IND",
   "name": "Indiana Pacers",
-  "score": 69
+  "score": 106
  },
  "home": {
   "id": "18",
   "abbr": "NY",
   "name": "New York Knicks",
-  "score": 76
+  "score": 113
  },
  "neutral": false,
  "venue": "Madison Square Garden",
  "seasonType": 2,
- "state": "in",
+ "state": "post",
  "lines": {
   "open": {
    "at": "2026-11-22T06:58:51.612Z",
@@ -3849,5 +3849,9 @@
    "Mohamed Diawara",
    "NY"
   ]
+ },
+ "final": {
+  "away": 106,
+  "home": 113
  }
 }
