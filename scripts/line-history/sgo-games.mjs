@@ -10,6 +10,7 @@
  */
 import { mkdir, writeFile } from "node:fs/promises";
 import { join } from "node:path";
+import { altGameOf, saveAltLadders } from "./sgo-alts.mjs";
 
 const args = process.argv.slice(2);
 const opt = (n, d) => {
@@ -22,6 +23,8 @@ const HOURS = Number(opt("hours", "30"));
 const KEEP = Number(opt("keep", "150"));
 // also save every posted player prop from the same events (costs nothing extra: one game = one event)
 const PROPS_OUT = opt("props", "");
+// alternate spreads / totals from the same events (costs nothing extra): saved under this folder
+const ALTS_OUT = opt("alts", "");
 /** Books whose player props are kept (SportsGameOdds bookmaker ids). */
 export const PROP_BOOKS = ["draftkings", "fanduel", "betmgm", "caesars"];
 const KEY = process.env.SPORTSGAMEODDS_API_KEY;
@@ -122,6 +125,7 @@ async function main() {
   const now = Date.now();
   const games = [];
   const propGames = [];
+  const altGames = [];
   let cursor = "";
   for (let page = 0; page < 10; page += 1) {
     const q = new URLSearchParams({
@@ -131,12 +135,14 @@ async function main() {
       startsBefore: new Date(now + HOURS * 3_600_000).toISOString(),
       limit: "100",
     });
+    if (ALTS_OUT) q.set("includeAltLines", "true");
     if (cursor) q.set("cursor", cursor);
     const r = await get(`/events/?${q}`);
     for (const e of r?.data ?? []) {
       const name = (t) => t?.names?.long ?? t?.names?.medium ?? t?.teamID ?? "";
       const books = booksOf(e);
       if (books.length) games.push({ home: name(e.teams?.home), away: name(e.teams?.away), commence: e.status?.startsAt, books });
+      if (ALTS_OUT) altGames.push(altGameOf(e));
       const props = PROPS_OUT ? playerPropsOf(e) : [];
       if (props.length)
         propGames.push({ id: e.eventID, home: name(e.teams?.home), away: name(e.teams?.away), commence: e.status?.startsAt, props });
@@ -148,6 +154,7 @@ async function main() {
   await mkdir(OUT, { recursive: true });
   await writeFile(join(OUT, `${at.slice(0, 13)}.json`), JSON.stringify({ at, source: "sgo", league: LEAGUE, usage, games }));
   console.log(`${LEAGUE}: ${games.length} games with lines; month usage before: ${usage ? `${usage.used}/${usage.max}` : "?"}`);
+  if (ALTS_OUT) console.log(`${LEAGUE}: ${await saveAltLadders(ALTS_OUT, LEAGUE, at, altGames)} games with alt ladders`);
   if (PROPS_OUT && propGames.length) {
     // { at, source, league, games: [{ id, home, away, commence, props: [[player, team, statID, line, over, under, book]] }] }
     await mkdir(PROPS_OUT, { recursive: true });

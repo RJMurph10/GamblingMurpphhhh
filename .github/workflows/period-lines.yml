@@ -37,12 +37,14 @@ jobs:
           SPORTSGAMEODDS_API_KEY: ${{ secrets.SPORTSGAMEODDS_API_KEY }}
         run: |
           set -e
-          node app/scripts/line-history/sgo-periods.mjs --league NHL --out pull/nhl || echo "SportsGameOdds pull failed"
+          node app/scripts/line-history/sgo-periods.mjs --league NHL --out pull/nhl --alts alts/nhl || echo "SportsGameOdds pull failed"
           if [ -z "$(find pull -name '*.json' 2>/dev/null)" ]; then echo "nothing pulled"; exit 0; fi
           url="https://x-access-token:${{ secrets.GITHUB_TOKEN }}@github.com/${{ github.repository }}.git"
           for attempt in 1 2 3 4 5; do
             rm -rf site-repo && git clone -q --depth 1 --branch props-site "$url" site-repo
             mkdir -p site-repo/period-lines && cp -r pull/* site-repo/period-lines/
+            # alternate spreads (puck lines) / totals ladders (every book), for alt-line edges
+            if [ -d alts ]; then mkdir -p site-repo/alt-lines && cp -r alts/* site-repo/alt-lines/; fi
             cd site-repo
             git config user.name "line-history-bot"
             git config user.email "41898282+github-actions[bot]@users.noreply.github.com"

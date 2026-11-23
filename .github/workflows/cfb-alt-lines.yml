@@ -1,0 +1,54 @@
+name: College football lines and alt ladders (SportsGameOdds)
+
+# College football game lines from SportsGameOdds with every book's alternate spreads / totals ladders
+# (scripts/line-history/sgo-games.mjs --alts; scripts/line-history/sgo-alts.mjs), for alt-line edges
+# (project doc alt-lines-strategy.md). Saturday morning only, for that day's games (~60 events a week of the
+# free plan's 2,500 a month); skipped when fewer than 400 events are left this month, so the NFL prop prices
+# keep their budget. Snapshots: props-site/extra-lines/sgo/cfb/ and props-site/alt-lines/cfb/.
+
+on:
+  schedule:
+    - cron: "25 15 * 1,9-12 6" # Saturday 9:25 / 10:25 Central
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: props-site-cfb-alts
+  cancel-in-progress: false
+
+jobs:
+  pull:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          path: app
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+      - name: Pull and publish
+        env:
+          SPORTSGAMEODDS_API_KEY: ${{ secrets.SPORTSGAMEODDS_API_KEY }}
+        run: |
+          set -e
+          node app/scripts/line-history/sgo-games.mjs --league NCAAF --hours 20 --keep 400 --out pull/sgo/cfb --alts alts/cfb || echo "SportsGameOdds pull failed"
+          if [ -z "$(find pull alts -name '*.json' 2>/dev/null)" ]; then echo "nothing pulled"; exit 0; fi
+          url="https://x-access-token:${{ secrets.GITHUB_TOKEN }}@github.com/${{ github.repository }}.git"
+          for attempt in 1 2 3 4 5; do
+            rm -rf site-repo && git clone -q --depth 1 --branch props-site "$url" site-repo
+            mkdir -p site-repo/extra-lines && cp -r pull/* site-repo/extra-lines/ 2>/dev/null || true
+            if [ -d alts ]; then mkdir -p site-repo/alt-lines && cp -r alts/* site-repo/alt-lines/; fi
+            cd site-repo
+            git config user.name "line-history-bot"
+            git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+            git add -A
+            if git diff --cached --quiet; then echo "no changes"; exit 0; fi
+            git commit -q -m "College football lines $(date -u +%Y-%m-%dT%H:%MZ)"
+            if git push -q origin props-site; then exit 0; fi
+            cd ..
+            sleep $((attempt * 15))
+          done
+          exit 1
