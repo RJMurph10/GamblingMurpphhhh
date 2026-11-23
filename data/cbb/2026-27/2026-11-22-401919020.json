@@ -1,24 +1,24 @@
 {
  "id": "401919020",
  "league": "cbb",
- "date": "2026-11-23T00:00Z",
+ "date": "2026-11-23T00:40Z",
  "name": "URI VS UAB",
  "away": {
   "id": "227",
   "abbr": "URI",
   "name": "Rhode Island Rams",
-  "score": 0
+  "score": 79
  },
  "home": {
   "id": "5",
   "abbr": "UAB",
   "name": "UAB Blazers",
-  "score": 0
+  "score": 64
  },
  "neutral": true,
  "venue": "Colonial Hall",
  "seasonType": 2,
- "state": "pre",
+ "state": "post",
  "lines": {
   "open": {
    "at": "2026-11-22T03:27:54.997Z",
@@ -933,5 +933,9 @@
    ]
   }
  },
- "props": {}
+ "props": {},
+ "final": {
+  "away": 79,
+  "home": 64
+ }
 }

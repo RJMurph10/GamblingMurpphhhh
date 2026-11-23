@@ -7,18 +7,18 @@
   "id": "309",
   "abbr": "UL",
   "name": "Louisiana Ragin' Cajuns",
-  "score": 0
+  "score": 43
  },
  "home": {
   "id": "30",
   "abbr": "USC",
   "name": "USC Trojans",
-  "score": 0
+  "score": 63
  },
  "neutral": false,
  "venue": "Galen Center",
  "seasonType": 2,
- "state": "pre",
+ "state": "in",
  "lines": {
   "open": {
    "at": "2026-11-22T03:27:54.997Z",

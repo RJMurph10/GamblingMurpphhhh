@@ -7,13 +7,13 @@
   "id": "7",
   "abbr": "DEN",
   "name": "Denver Nuggets",
-  "score": 31
+  "score": 147
  },
  "home": {
   "id": "4",
   "abbr": "CHI",
   "name": "Chicago Bulls",
-  "score": 25
+  "score": 142
  },
  "neutral": false,
  "venue": "United Center",

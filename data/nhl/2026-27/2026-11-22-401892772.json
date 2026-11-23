@@ -7,18 +7,18 @@
   "id": "4",
   "abbr": "CHI",
   "name": "Chicago Blackhawks",
-  "score": 0
+  "score": 4
  },
  "home": {
   "id": "22",
   "abbr": "VAN",
   "name": "Vancouver Canucks",
-  "score": 0
+  "score": 2
  },
  "neutral": false,
  "venue": "Rogers Arena",
  "seasonType": 2,
- "state": "pre",
+ "state": "in",
  "lines": {
   "open": {
    "at": "2026-11-21T18:04:14.227Z",

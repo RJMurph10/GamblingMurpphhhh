@@ -7,13 +7,13 @@
   "id": "6",
   "abbr": "EDM",
   "name": "Edmonton Oilers",
-  "score": 1
+  "score": 4
  },
  "home": {
   "id": "19",
   "abbr": "STL",
   "name": "St. Louis Blues",
-  "score": 0
+  "score": 4
  },
  "neutral": false,
  "venue": "Enterprise Center",

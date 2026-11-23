@@ -7,18 +7,18 @@
   "id": "6",
   "abbr": "DAL",
   "name": "Dallas Mavericks",
-  "score": 23
+  "score": 116
  },
  "home": {
   "id": "26",
   "abbr": "UTAH",
   "name": "Utah Jazz",
-  "score": 24
+  "score": 114
  },
  "neutral": false,
  "venue": "Delta Center",
  "seasonType": 2,
- "state": "in",
+ "state": "post",
  "lines": {
   "open": {
    "at": "2026-11-22T06:58:51.612Z",
@@ -3331,5 +3331,9 @@
    "Sergio de Larrea",
    "DAL"
   ]
+ },
+ "final": {
+  "away": 116,
+  "home": 114
  }
 }

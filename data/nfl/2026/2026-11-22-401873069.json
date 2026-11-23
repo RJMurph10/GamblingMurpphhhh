@@ -7,7 +7,7 @@
   "id": "30",
   "abbr": "JAX",
   "name": "Jacksonville Jaguars",
-  "score": 9
+  "score": 18
  },
  "home": {
   "id": "19",
@@ -18,7 +18,7 @@
  "neutral": false,
  "venue": "MetLife Stadium",
  "seasonType": 2,
- "state": "in",
+ "state": "post",
  "lines": {
   "open": {
    "at": "2026-11-15T22:55:11.258Z",
@@ -927,6 +927,243 @@
       "total": {
        "alternateDisplayValue": "45.5",
        "american": "45.5"
+      }
+     }
+    }
+   ]
+  },
+  "final": {
+   "at": "2026-11-23T02:36:40.480Z",
+   "books": [
+    {
+     "provider": {
+      "id": "100",
+      "name": "DraftKings",
+      "priority": 1
+     },
+     "details": "JAX -6",
+     "overUnder": 44.5,
+     "spread": 6,
+     "overOdds": -110,
+     "underOdds": -109,
+     "awayTeamOdds": {
+      "favorite": true,
+      "underdog": false,
+      "moneyLine": -256,
+      "spreadOdds": -111,
+      "open": {
+       "favorite": true,
+       "pointSpread": {
+        "alternateDisplayValue": "-1.5",
+        "american": "-1.5"
+       },
+       "spread": {
+        "value": 1.9,
+        "displayValue": "10/11",
+        "alternateDisplayValue": "-110",
+        "decimal": 1.9,
+        "fraction": "10/11",
+        "american": "-110"
+       },
+       "moneyLine": {
+        "value": 1.8,
+        "displayValue": "4/5",
+        "alternateDisplayValue": "-125",
+        "decimal": 1.8,
+        "fraction": "4/5",
+        "american": "-125"
+       }
+      },
+      "close": {
+       "pointSpread": {
+        "alternateDisplayValue": "-6",
+        "american": "-6"
+       },
+       "spread": {
+        "value": 1.9,
+        "displayValue": "100/111",
+        "alternateDisplayValue": "-111",
+        "decimal": 1.9,
+        "fraction": "100/111",
+        "american": "-111"
+       },
+       "moneyLine": {
+        "value": 1.39,
+        "displayValue": "25/64",
+        "alternateDisplayValue": "-256",
+        "decimal": 1.39,
+        "fraction": "25/64",
+        "american": "-256"
+       }
+      },
+      "current": {
+       "pointSpread": {
+        "alternateDisplayValue": "-6",
+        "american": "-6"
+       },
+       "spread": {
+        "value": 1.9,
+        "displayValue": "100/111",
+        "alternateDisplayValue": "-111",
+        "decimal": 1.9,
+        "fraction": "100/111",
+        "american": "-111"
+       },
+       "moneyLine": {
+        "value": 1.39,
+        "displayValue": "25/64",
+        "alternateDisplayValue": "-256",
+        "decimal": 1.39,
+        "fraction": "25/64",
+        "american": "-256"
+       }
+      },
+      "team": {
+       "id": "30"
+      }
+     },
+     "homeTeamOdds": {
+      "favorite": false,
+      "underdog": true,
+      "moneyLine": 211,
+      "spreadOdds": -108,
+      "open": {
+       "favorite": false,
+       "pointSpread": {
+        "alternateDisplayValue": "+1.5",
+        "american": "+1.5"
+       },
+       "spread": {
+        "value": 1.9,
+        "displayValue": "10/11",
+        "alternateDisplayValue": "-110",
+        "decimal": 1.9,
+        "fraction": "10/11",
+        "american": "-110"
+       },
+       "moneyLine": {
+        "value": 2.05,
+        "displayValue": "21/20",
+        "alternateDisplayValue": "+105",
+        "decimal": 2.05,
+        "fraction": "21/20",
+        "american": "+105"
+       }
+      },
+      "close": {
+       "pointSpread": {
+        "alternateDisplayValue": "+6",
+        "american": "+6"
+       },
+       "spread": {
+        "value": 1.92,
+        "displayValue": "25/27",
+        "alternateDisplayValue": "-108",
+        "decimal": 1.92,
+        "fraction": "25/27",
+        "american": "-108"
+       },
+       "moneyLine": {
+        "value": 3.11,
+        "displayValue": "211/100",
+        "alternateDisplayValue": "+211",
+        "decimal": 3.11,
+        "fraction": "211/100",
+        "american": "+211"
+       }
+      },
+      "current": {
+       "pointSpread": {
+        "alternateDisplayValue": "+6",
+        "american": "+6"
+       },
+       "spread": {
+        "value": 1.92,
+        "displayValue": "25/27",
+        "alternateDisplayValue": "-108",
+        "decimal": 1.92,
+        "fraction": "25/27",
+        "american": "-108"
+       },
+       "moneyLine": {
+        "value": 3.11,
+        "displayValue": "211/100",
+        "alternateDisplayValue": "+211",
+        "decimal": 3.11,
+        "fraction": "211/100",
+        "american": "+211"
+       }
+      },
+      "team": {
+       "id": "19"
+      }
+     },
+     "moneylineWinner": false,
+     "spreadWinner": false,
+     "open": {
+      "over": {
+       "value": 1.9,
+       "displayValue": "10/11",
+       "alternateDisplayValue": "-110",
+       "decimal": 1.9,
+       "fraction": "10/11",
+       "american": "-110"
+      },
+      "under": {
+       "value": 1.9,
+       "displayValue": "10/11",
+       "alternateDisplayValue": "-110",
+       "decimal": 1.9,
+       "fraction": "10/11",
+       "american": "-110"
+      },
+      "total": {
+       "alternateDisplayValue": "46.5",
+       "american": "46.5"
+      }
+     },
+     "close": {
+      "over": {
+       "value": 1.9,
+       "displayValue": "10/11",
+       "alternateDisplayValue": "-110",
+       "decimal": 1.9,
+       "fraction": "10/11",
+       "american": "-110"
+      },
+      "under": {
+       "value": 1.91,
+       "displayValue": "100/109",
+       "alternateDisplayValue": "-109",
+       "decimal": 1.91,
+       "fraction": "100/109",
+       "american": "-109"
+      },
+      "total": {
+       "alternateDisplayValue": "44.5",
+       "american": "44.5"
+      }
+     },
+     "current": {
+      "over": {
+       "value": 1.9,
+       "displayValue": "10/11",
+       "alternateDisplayValue": "-110",
+       "decimal": 1.9,
+       "fraction": "10/11",
+       "american": "-110"
+      },
+      "under": {
+       "value": 1.91,
+       "displayValue": "100/109",
+       "alternateDisplayValue": "-109",
+       "decimal": 1.91,
+       "fraction": "100/109",
+       "american": "-109"
+      },
+      "total": {
+       "alternateDisplayValue": "44.5",
+       "american": "44.5"
       }
      }
     }
@@ -5179,5 +5416,9 @@
    "Grant Finley",
    "NYG"
   ]
+ },
+ "final": {
+  "away": 18,
+  "home": 23
  }
 }

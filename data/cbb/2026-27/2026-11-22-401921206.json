@@ -1,24 +1,24 @@
 {
  "id": "401921206",
  "league": "cbb",
- "date": "2026-11-23T01:00Z",
+ "date": "2026-11-23T01:10Z",
  "name": "UTM VS UVU",
  "away": {
   "id": "2630",
   "abbr": "UTM",
   "name": "UT Martin Skyhawks",
-  "score": 0
+  "score": 42
  },
  "home": {
   "id": "3084",
   "abbr": "UVU",
   "name": "Utah Valley Wolverines",
-  "score": 0
+  "score": 32
  },
  "neutral": true,
  "venue": "Elridge Blake Sports and Fitness Center",
  "seasonType": 2,
- "state": "pre",
+ "state": "in",
  "lines": {
   "open": {
    "at": "2026-11-22T03:27:54.997Z",

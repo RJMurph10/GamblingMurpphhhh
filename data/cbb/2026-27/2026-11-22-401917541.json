@@ -7,18 +7,18 @@
   "id": "2501",
   "abbr": "PORT",
   "name": "Portland Pilots",
-  "score": 15
+  "score": 71
  },
  "home": {
   "id": "2856",
   "abbr": "CBU",
   "name": "California Baptist Lancers",
-  "score": 23
+  "score": 79
  },
  "neutral": true,
  "venue": "Acrisure Arena",
  "seasonType": 2,
- "state": "in",
+ "state": "post",
  "lines": {
   "open": {
    "at": "2026-11-22T03:27:54.997Z",
@@ -933,5 +933,9 @@
    ]
   }
  },
- "props": {}
+ "props": {},
+ "final": {
+  "away": 71,
+  "home": 79
+ }
 }

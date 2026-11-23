@@ -7,18 +7,18 @@
   "id": "48",
   "abbr": "DEL",
   "name": "Delaware Blue Hens",
-  "score": 19
+  "score": 48
  },
  "home": {
   "id": "26",
   "abbr": "UCLA",
   "name": "UCLA Bruins",
-  "score": 25
+  "score": 85
  },
  "neutral": false,
  "venue": "Pauley Pavilion",
  "seasonType": 2,
- "state": "in",
+ "state": "post",
  "lines": {
   "open": {
    "at": "2026-11-21T23:25:07.697Z",
@@ -852,5 +852,9 @@
    ]
   }
  },
- "props": {}
+ "props": {},
+ "final": {
+  "away": 48,
+  "home": 85
+ }
 }

@@ -13,12 +13,12 @@
   "id": "9",
   "abbr": "DAL",
   "name": "Dallas Stars",
-  "score": 0
+  "score": 1
  },
  "neutral": false,
  "venue": "American Airlines Center",
  "seasonType": 2,
- "state": "in",
+ "state": "post",
  "lines": {
   "open": {
    "at": "2026-11-21T18:04:14.227Z",
@@ -2498,5 +2498,9 @@
    "Jaxon Fuder",
    "DAL"
   ]
+ },
+ "final": {
+  "away": 0,
+  "home": 1
  }
 }

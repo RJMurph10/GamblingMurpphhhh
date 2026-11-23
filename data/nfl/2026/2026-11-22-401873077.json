@@ -7,18 +7,18 @@
   "id": "16",
   "abbr": "MIN",
   "name": "Minnesota Vikings",
-  "score": 0
+  "score": 10
  },
  "home": {
   "id": "25",
   "abbr": "SF",
   "name": "San Francisco 49ers",
-  "score": 0
+  "score": 28
  },
  "neutral": true,
  "venue": "Estadio Banorte",
  "seasonType": 2,
- "state": "pre",
+ "state": "in",
  "lines": {
   "open": {
    "at": "2026-11-16T01:55:29.908Z",
