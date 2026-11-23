@@ -78,6 +78,13 @@ export const MODEL_SETTINGS = {
   bounceLossMargin: 28,
   /** Outdoor wind at kickoff (mph) at or above this makes the under a ★ best bet. */
   windUnderMph: 10,
+  /**
+   * The scrambler-vs-pocket-passer ★ best bet, off since November 2026: QB "styles" proved too
+   * subjective (Justin Herbert read as a scrambler) and the rule went 7-18-1 in 2026, its first
+   * season outside the data it was found on. To be rebuilt on an objective, multi-season definition
+   * once QB data before 2022 is in.
+   */
+  qbStyleBets: false,
   /** Standard deviation of NFL final margins, used for win probability. */
   marginSd: 13.5,
   /** Spreads and totals are always graded at this standard price; moneylines at their real odds. */
@@ -203,7 +210,14 @@ export function fitRatings(
   };
   for (const g of finals) {
     const s = gameScore(g);
-    add(g.homeTeamId, g.awayTeamId, s.home, s.away, g.fcs ? cfg.fcsWeight : 1, Boolean(g.neutralSite));
+    add(
+      g.homeTeamId,
+      g.awayTeamId,
+      s.home,
+      s.away,
+      g.fcs ? cfg.fcsWeight : 1,
+      Boolean(g.neutralSite),
+    );
     currentGames[g.homeTeamId] = (currentGames[g.homeTeamId] ?? 0) + 1;
     currentGames[g.awayTeamId] = (currentGames[g.awayTeamId] ?? 0) + 1;
     if (cfg.marketWeight > 0 && !g.fcs && g.total > 0) {
@@ -517,12 +531,11 @@ export function predictionsForGame(
       awayLastMargin <= -MODEL_SETTINGS.bounceLossMargin;
     // The two rules back opposite teams when a home dog hosts a bounce-back team: then neither.
     const ruleSide = bigDog && bounce ? 0 : bigDog ? 1 : bounce ? -1 : 0;
-    // ★ Best bets: a scrambler's team against a pocket passer's team (53% since 2000; found on
-    // 2016–2026, confirmed on 2000–2015). The underdog and bounce-back rules win if they
-    // disagree.
+    // ★ Best bets (off for now, MODEL_SETTINGS.qbStyleBets): a scrambler's team against a pocket
+    // passer's team. The underdog and bounce-back rules win if they disagree.
     const hs = styles?.home?.style;
     const as = styles?.away?.style;
-    const free = !bigDog && !bounce;
+    const free = MODEL_SETTINGS.qbStyleBets && !bigDog && !bounce;
     const styleSide =
       free && hs === "scrambler" && as === "pocket"
         ? 1
@@ -716,8 +729,7 @@ export function anchorToMarket(
     const ih = impliedProb(ml.homeMoneyline);
     const ia = impliedProb(ml.awayMoneyline);
     const fairHome = ih / (ih + ia);
-    const shift =
-      normalCdf(margin / cfg.marginSd) - normalCdf(marketMargin / cfg.marginSd);
+    const shift = normalCdf(margin / cfg.marginSd) - normalCdf(marketMargin / cfg.marginSd);
     homeWinProb = Math.min(0.99, Math.max(0.01, fairHome + shift));
   }
   return {
@@ -936,7 +948,9 @@ export function summarizeModel(
 
   const lastWeek = gradedWeeks.at(-1);
   const before = lastWeek === undefined ? [] : picks.filter((p) => p.week < lastWeek);
-  const moved = picks.filter((p) => p.result !== "pending" && p.market !== "moneyline" && p.clv !== undefined);
+  const moved = picks.filter(
+    (p) => p.result !== "pending" && p.market !== "moneyline" && p.clv !== undefined,
+  );
   const n = moved.length;
   const clv = {
     picks: n,

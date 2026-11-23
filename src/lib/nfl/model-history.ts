@@ -363,7 +363,7 @@ export function pastSeasonRuns(input: HistoryGame[], options: RunOptions = {}): 
  * Bump when the NFL model's code changes, so browsers drop their saved past-season replays.
  * (The current season is always recomputed; only past seasons are saved.)
  */
-const PAST_RUNS_VERSION = "2026-11-22";
+const PAST_RUNS_VERSION = "2026-11-22b";
 
 /** Pages: true once the saved replays have been read (wait for it before running the model). */
 export function pastRunsReady(): Promise<void> {
