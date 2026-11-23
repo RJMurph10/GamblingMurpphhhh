@@ -64,15 +64,17 @@ jobs:
           have=$(gh api "repos/${{ github.repository }}/contents/extra-lines/sgo/cbb?ref=props-site" --jq '.[].name' 2>/dev/null | grep -c "^$today" || true)
           if [ "$cron" = "10 15 * * *" ] || [ "${{ github.event_name }}" != "schedule" ] || [ "$have" = "0" ]; then
             # player props come in the same events at no extra cost: saved to extra-lines/sgo-props/cbb
-            node app/scripts/line-history/sgo-games.mjs --league NCAAB --hours 30 --out pull/sgo/cbb --props pull/sgo-props/cbb || echo "SportsGameOdds pull failed"
+            node app/scripts/line-history/sgo-games.mjs --league NCAAB --hours 30 --out pull/sgo/cbb --props pull/sgo-props/cbb --alts alts/cbb || echo "SportsGameOdds pull failed"
             # NBA, for line shopping only (every book's lines; ~8 events a day)
-            node app/scripts/line-history/sgo-games.mjs --league NBA --hours 30 --out pull/sgo/nba || echo "SportsGameOdds NBA pull failed"
+            node app/scripts/line-history/sgo-games.mjs --league NBA --hours 30 --out pull/sgo/nba --alts alts/nba || echo "SportsGameOdds NBA pull failed"
           fi
           if [ -z "$(find pull -name '*.json' 2>/dev/null)" ]; then echo "nothing pulled"; exit 0; fi
           url="https://x-access-token:${{ secrets.GITHUB_TOKEN }}@github.com/${{ github.repository }}.git"
           for attempt in 1 2 3 4 5; do
             rm -rf site-repo && git clone -q --depth 1 --branch props-site "$url" site-repo
             mkdir -p site-repo/extra-lines && cp -r pull/* site-repo/extra-lines/
+            # alternate spreads / totals ladders (every book), for alt-line edges
+            if [ -d alts ]; then mkdir -p site-repo/alt-lines && cp -r alts/* site-repo/alt-lines/; fi
             # line shopping: merge today's every-book snapshots into the site's latest files
             mkdir -p site-repo/best-lines
             # PLL: fold the snapshots into the site's lines file (opener + latest consensus, every book)

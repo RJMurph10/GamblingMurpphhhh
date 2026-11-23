@@ -18,6 +18,7 @@ import { mkdir, writeFile } from "node:fs/promises";
 import { dirname, join } from "node:path";
 import { booksOf } from "./sgo-games.mjs";
 import { fullLineOf, marketsOf, periodPropsOf } from "./sgo-markets.mjs";
+import { altGameOf, saveAltLadders } from "./sgo-alts.mjs";
 
 const args = process.argv.slice(2);
 const opt = (n, d) => {
@@ -38,6 +39,8 @@ const MARKETS_OUT = opt("markets", "markets/nfl.json");
 // games in progress: their closing lines and prices (SportsGameOdds keeps each prop's close, averaged
 // across books, after kickoff), for props whose DraftKings price wasn't saved before kickoff
 const LIVE = args.includes("--live");
+// alternate game spreads / totals from the same events (costs nothing extra): saved under this folder
+const ALTS_OUT = opt("alts", "");
 const KEY = process.env.SPORTSGAMEODDS_API_KEY;
 const BASE = "https://api.sportsgameodds.com/v2";
 
@@ -372,6 +375,7 @@ async function main() {
   const lines = [];
   const markets = [];
   const seen = new Set();
+  const altGames = [];
   const windows = LIVE ? [[null, null]] : [[now, now + HOURS * 3_600_000]];
   for (const t of ALSO) {
     const k = Date.parse(t);
@@ -434,6 +438,7 @@ async function main() {
             sides,
             bp,
           });
+        if (ALTS_OUT && !LIVE) altGames.push(altGameOf(e));
         const books = LIVE ? [] : booksOf(e);
         if (books.length) lines.push({ ...g, books });
         const mk = LIVE ? [] : marketsOf(e);
@@ -444,6 +449,10 @@ async function main() {
       if (!cursor) break;
     }
   }
+  if (ALTS_OUT && altGames.length)
+    console.log(
+      `alt ladders: ${await saveAltLadders(ALTS_OUT, "NFL", new Date().toISOString(), altGames)} games`,
+    );
   if (lines.length) {
     await mkdir(dirname(BEST), { recursive: true });
     await writeFile(

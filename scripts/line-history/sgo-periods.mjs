@@ -15,6 +15,7 @@
  */
 import { mkdir, writeFile } from "node:fs/promises";
 import { join } from "node:path";
+import { altGameOf, saveAltLadders } from "./sgo-alts.mjs";
 
 const args = process.argv.slice(2);
 const opt = (n, d) => {
@@ -25,6 +26,8 @@ const LEAGUE = opt("league", "NHL");
 const OUT = opt("out", "pull/sgo-periods/nhl");
 const HOURS = Number(opt("hours", "20"));
 const KEEP = Number(opt("keep", "150"));
+// alternate spreads / totals from the same events (costs nothing extra): saved under this folder
+const ALTS_OUT = opt("alts", "");
 // which periods to keep (SportsGameOdds period ids)
 const PERIODS = new Set(opt("periods", "game,reg,1p,2p,3p").split(","));
 const KEY = process.env.SPORTSGAMEODDS_API_KEY;
@@ -80,6 +83,7 @@ async function main() {
   const now = Date.now();
   const games = [];
   let cursor = "";
+  const altGames = [];
   for (let page = 0; page < 5; page += 1) {
     const q = new URLSearchParams({
       leagueID: LEAGUE,
@@ -88,10 +92,12 @@ async function main() {
       startsBefore: new Date(now + HOURS * 3_600_000).toISOString(),
       limit: "50",
     });
+    if (ALTS_OUT) q.set("includeAltLines", "true");
     if (cursor) q.set("cursor", cursor);
     const r = await get(`/events/?${q}`);
     for (const e of r?.data ?? []) {
       const name = (t) => t?.names?.long ?? t?.names?.medium ?? t?.teamID ?? "";
+      if (ALTS_OUT) altGames.push(altGameOf(e));
       const markets = marketsOf(e);
       if (Object.keys(markets).length)
         games.push({ id: e.eventID ?? null, home: name(e.teams?.home), away: name(e.teams?.away), commence: e.status?.startsAt, markets });
@@ -102,6 +108,7 @@ async function main() {
   const at = new Date().toISOString();
   await mkdir(OUT, { recursive: true });
   await writeFile(join(OUT, `${at.slice(0, 13)}.json`), JSON.stringify({ at, source: "sgo", league: LEAGUE, usage, games }));
+  if (ALTS_OUT) console.log(`${LEAGUE}: ${await saveAltLadders(ALTS_OUT, LEAGUE, at, altGames)} games with alt ladders`);
   const p1 = games.filter((g) => Object.keys(g.markets).some((k) => k.startsWith("points-all-1p-ou"))).length;
   const books = new Set(games.flatMap((g) => Object.values(g.markets).flatMap((m) => Object.keys(m.books))));
   console.log(
