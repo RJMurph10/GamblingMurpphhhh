@@ -18,7 +18,7 @@
  "neutral": false,
  "venue": "Chase Center",
  "seasonType": 2,
- "state": "in",
+ "state": "post",
  "lines": {
   "open": {
    "at": "2026-11-22T03:27:54.997Z",
@@ -4676,5 +4676,9 @@
    "Yaxel Lendeborg",
    "GS"
   ]
+ },
+ "final": {
+  "away": 87,
+  "home": 88
  }
 }
