@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-22T23:52:33.067Z",
+ "updated": "2026-11-23T22:55:33.638Z",
  "note": "Kickoff wind (mph, Open-Meteo 10 m wind x 1.09) for finished outdoor NFL games nflverse left without weather; keyed by ESPN game id.",
  "factor": 1.09,
  "games": {
@@ -1805,12 +1805,12 @@
   },
   "401873065": {
    "game": "2026_10_LAC_BAL",
-   "wind": 2,
-   "raw": 2,
-   "gust": 8.7,
+   "wind": 4,
+   "raw": 3.4,
+   "gust": 11.4,
    "precip": 0,
    "temp": 45,
-   "source": "forecast"
+   "source": "archive"
   },
   "401873066": {
    "game": "2026_11_IND_HOU",
@@ -1839,6 +1839,15 @@
    "temp": 59,
    "source": "forecast"
   },
+  "401873069": {
+   "game": "2026_11_JAX_NYG",
+   "wind": 8,
+   "raw": 7,
+   "gust": 15.7,
+   "precip": 0,
+   "temp": 60,
+   "source": "forecast"
+  },
   "401873070": {
    "game": "2026_11_MIA_BUF",
    "wind": 12,
@@ -1857,12 +1866,30 @@
    "temp": 55,
    "source": "forecast"
   },
+  "401873075": {
+   "game": "2026_11_LV_DEN",
+   "wind": 7,
+   "raw": 6.4,
+   "gust": 11.2,
+   "precip": 0,
+   "temp": 44,
+   "source": "forecast"
+  },
   "401873076": {
    "game": "2026_11_PIT_PHI",
    "wind": 9,
    "raw": 8,
    "gust": 16.3,
    "precip": 0,
+   "temp": 63,
+   "source": "forecast"
+  },
+  "401873077": {
+   "game": "2026_11_MIN_SF",
+   "wind": 2,
+   "raw": 1.9,
+   "gust": 16.6,
+   "precip": 0.036,
    "temp": 63,
    "source": "forecast"
   }
