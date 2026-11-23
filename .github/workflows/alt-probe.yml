@@ -1,0 +1,27 @@
+name: Alt line probe
+on:
+  push:
+    branches: [alt-probe]
+permissions:
+  contents: write
+jobs:
+  probe:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          path: app
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+      - run: |
+          set -e
+          url="https://x-access-token:${{ secrets.GITHUB_TOKEN }}@github.com/${{ github.repository }}.git"
+          git clone -q --depth 1 --branch props-site "$url" site
+          node app/scripts/probe/sgo-alt-probe.mjs site/probes
+          cd site
+          git config user.name "line-history-bot"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add -A && git commit -q -m "Alt line probe" && for i in 1 2 3; do git push -q origin props-site && exit 0; git pull -q --rebase origin props-site; done
+        env:
+          SPORTSGAMEODDS_API_KEY: ${{ secrets.SPORTSGAMEODDS_API_KEY }}
