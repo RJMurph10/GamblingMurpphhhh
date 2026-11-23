@@ -1,6 +1,6 @@
 {
  "day": "2026-11-23",
- "updated": "2026-11-23T03:11:47.008Z",
+ "updated": "2026-11-23T15:26:02.847Z",
  "picks": [
   {
    "id": "401910036-total",
@@ -14,8 +14,8 @@
    "edge": 5.9,
    "best": false,
    "firstSeen": "2026-11-23T03:11:47.008Z",
-   "latest": 216.5,
-   "latestAt": "2026-11-23T03:11:47.008Z",
+   "latest": 214.5,
+   "latestAt": "2026-11-23T15:26:02.847Z",
    "alerted": false
   },
   {
@@ -31,7 +31,7 @@
    "best": true,
    "firstSeen": "2026-11-23T03:11:47.008Z",
    "latest": -3.5,
-   "latestAt": "2026-11-23T03:11:47.008Z",
+   "latestAt": "2026-11-23T15:26:02.847Z",
    "alerted": false
   },
   {
@@ -47,7 +47,7 @@
    "best": true,
    "firstSeen": "2026-11-23T03:11:47.008Z",
    "latest": 4.5,
-   "latestAt": "2026-11-23T03:11:47.008Z",
+   "latestAt": "2026-11-23T15:26:02.847Z",
    "alerted": false
   },
   {
@@ -62,8 +62,24 @@
    "edge": 3.6,
    "best": true,
    "firstSeen": "2026-11-23T03:11:47.008Z",
-   "latest": -12.5,
-   "latestAt": "2026-11-23T03:11:47.008Z",
+   "latest": -11.5,
+   "latestAt": "2026-11-23T15:26:02.847Z",
+   "alerted": false
+  },
+  {
+   "id": "401910040-total",
+   "game": "BKN @ MIN",
+   "tip": "2026-11-24T00:30Z",
+   "market": "total",
+   "pick": "Under 225.5",
+   "line": 225.5,
+   "open": 225.5,
+   "model": 220.4,
+   "edge": 5.1,
+   "best": false,
+   "firstSeen": "2026-11-23T15:26:02.847Z",
+   "latest": 224.5,
+   "latestAt": "2026-11-23T15:26:02.847Z",
    "alerted": false
   },
   {
@@ -78,8 +94,8 @@
    "edge": 4.4,
    "best": true,
    "firstSeen": "2026-11-23T03:11:47.008Z",
-   "latest": 9.5,
-   "latestAt": "2026-11-23T03:11:47.008Z",
+   "latest": 8.5,
+   "latestAt": "2026-11-23T15:26:02.847Z",
    "alerted": false
   },
   {
@@ -95,7 +111,7 @@
    "best": false,
    "firstSeen": "2026-11-23T03:11:47.008Z",
    "latest": -12.5,
-   "latestAt": "2026-11-23T03:11:47.008Z",
+   "latestAt": "2026-11-23T15:26:02.847Z",
    "alerted": false
   },
   {
@@ -111,7 +127,7 @@
    "best": false,
    "firstSeen": "2026-11-23T03:11:47.008Z",
    "latest": -13.5,
-   "latestAt": "2026-11-23T03:11:47.008Z",
+   "latestAt": "2026-11-23T15:26:02.847Z",
    "alerted": false
   },
   {
@@ -127,7 +143,7 @@
    "best": true,
    "firstSeen": "2026-11-23T03:11:47.008Z",
    "latest": 10.5,
-   "latestAt": "2026-11-23T03:11:47.008Z",
+   "latestAt": "2026-11-23T15:26:02.847Z",
    "alerted": false
   }
  ]
