@@ -1,7 +1,42 @@
 {
  "day": "2026-11-29",
- "updated": "2026-11-23T01:49:11.805Z",
+ "updated": "2026-11-23T13:07:02.381Z",
  "picks": [
+  {
+   "id": "401873084-spread-road-dog",
+   "game": "ATL @ MIN",
+   "tip": "2026-11-29T18:00Z",
+   "market": "spread",
+   "pick": "ATL +7",
+   "line": -7,
+   "open": -4.5,
+   "model": null,
+   "edge": null,
+   "best": false,
+   "tag": "road-dog",
+   "firstSeen": "2026-11-23T13:07:02.381Z",
+   "lastSeen": "2026-11-23T13:07:02.381Z",
+   "latest": -7,
+   "latestAt": "2026-11-23T13:07:02.381Z"
+  },
+  {
+   "id": "401873084-total-total-gap",
+   "game": "ATL @ MIN",
+   "tip": "2026-11-29T18:00Z",
+   "market": "total",
+   "pick": "Under 42.5",
+   "line": 42.5,
+   "rule": 43.5,
+   "open": 43.5,
+   "model": null,
+   "edge": null,
+   "best": false,
+   "tag": "total-gap",
+   "firstSeen": "2026-11-23T13:07:02.381Z",
+   "lastSeen": "2026-11-23T13:07:02.381Z",
+   "latest": 42.5,
+   "latestAt": "2026-11-23T13:07:02.381Z"
+  },
   {
    "id": "401873087-spread-road-dog",
    "game": "NO @ CIN",
@@ -15,9 +50,9 @@
    "best": false,
    "tag": "road-dog",
    "firstSeen": "2026-11-23T01:49:11.805Z",
-   "lastSeen": "2026-11-23T01:49:11.805Z",
+   "lastSeen": "2026-11-23T13:07:02.381Z",
    "latest": -10,
-   "latestAt": "2026-11-23T01:49:11.805Z"
+   "latestAt": "2026-11-23T13:07:02.381Z"
   },
   {
    "id": "401873090-spread-road-dog",
@@ -32,9 +67,27 @@
    "best": false,
    "tag": "road-dog",
    "firstSeen": "2026-11-23T01:49:11.805Z",
-   "lastSeen": "2026-11-23T01:49:11.805Z",
-   "latest": -14,
-   "latestAt": "2026-11-23T01:49:11.805Z"
+   "lastSeen": "2026-11-23T13:07:02.381Z",
+   "latest": -14.5,
+   "latestAt": "2026-11-23T13:07:02.381Z"
+  },
+  {
+   "id": "401873091-total-wind",
+   "game": "SEA @ SF",
+   "tip": "2026-11-29T21:25Z",
+   "market": "total",
+   "pick": "Under 47.5",
+   "line": 47.5,
+   "open": 46.5,
+   "model": 46.4,
+   "edge": 1.1,
+   "best": true,
+   "tag": "wind",
+   "note": "10 mph · rain",
+   "firstSeen": "2026-11-23T13:07:02.381Z",
+   "lastSeen": "2026-11-23T13:07:02.381Z",
+   "latest": 47.5,
+   "latestAt": "2026-11-23T13:07:02.381Z"
   },
   {
    "id": "401873092-spread-underdog",
@@ -49,9 +102,9 @@
    "best": true,
    "tag": "underdog",
    "firstSeen": "2026-11-23T01:49:11.805Z",
-   "lastSeen": "2026-11-23T01:49:11.805Z",
+   "lastSeen": "2026-11-23T13:07:02.381Z",
    "latest": 7,
-   "latestAt": "2026-11-23T01:49:11.805Z"
+   "latestAt": "2026-11-23T13:07:02.381Z"
   },
   {
    "id": "401873086-spread-qb-change",
@@ -66,9 +119,9 @@
    "best": false,
    "tag": "qb-change",
    "firstSeen": "2026-11-23T01:49:11.805Z",
-   "lastSeen": "2026-11-23T01:49:11.805Z",
+   "lastSeen": "2026-11-23T13:07:02.381Z",
    "latest": -4.5,
-   "latestAt": "2026-11-23T01:49:11.805Z"
+   "latestAt": "2026-11-23T13:07:02.381Z"
   },
   {
    "id": "401873086-spread-west-coast-east",
@@ -83,9 +136,9 @@
    "best": false,
    "tag": "west-coast-east",
    "firstSeen": "2026-11-23T01:49:11.805Z",
-   "lastSeen": "2026-11-23T01:49:11.805Z",
+   "lastSeen": "2026-11-23T13:07:02.381Z",
    "latest": -4.5,
-   "latestAt": "2026-11-23T01:49:11.805Z"
+   "latestAt": "2026-11-23T13:07:02.381Z"
   },
   {
    "id": "401873086-total-total-gap",
@@ -101,9 +154,9 @@
    "best": false,
    "tag": "total-gap",
    "firstSeen": "2026-11-23T01:49:11.805Z",
-   "lastSeen": "2026-11-23T01:49:11.805Z",
+   "lastSeen": "2026-11-23T13:07:02.381Z",
    "latest": 40.5,
-   "latestAt": "2026-11-23T01:49:11.805Z"
+   "latestAt": "2026-11-23T13:07:02.381Z"
   }
  ]
 }

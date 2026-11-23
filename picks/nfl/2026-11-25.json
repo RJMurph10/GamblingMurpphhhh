@@ -1,6 +1,6 @@
 {
  "day": "2026-11-25",
- "updated": "2026-11-23T01:49:11.805Z",
+ "updated": "2026-11-23T13:07:02.381Z",
  "picks": [
   {
    "id": "401873079-spread-east-at-west-night",
@@ -15,9 +15,9 @@
    "best": false,
    "tag": "east-at-west-night",
    "firstSeen": "2026-11-19T02:39:06.436Z",
-   "lastSeen": "2026-11-23T01:49:11.805Z",
-   "latest": -3,
-   "latestAt": "2026-11-23T01:49:11.805Z"
+   "lastSeen": "2026-11-23T13:07:02.381Z",
+   "latest": -2.5,
+   "latestAt": "2026-11-23T13:07:02.381Z"
   }
  ]
 }
