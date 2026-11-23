@@ -562,17 +562,17 @@
    ]
   },
   "latest": {
-   "at": "2026-11-22T21:17:00.667Z",
+   "at": "2026-11-23T00:27:20.940Z",
    "count": 8,
    "rows": [
   {"a":null,"tm":"28","t":"1st Period Moneyline","ti":"139","cur":[null,180,null]},
   {"a":null,"tm":"129764","t":"1st Period Moneyline","ti":"139","cur":[null,175,null]},
   {"a":null,"t":"1st Period Moneyline","ti":"139","cur":[null,180,null]},
-  {"a":null,"tm":"28","t":"1st Period Spread","ti":"140","op":[0.5,null,null],"cur":[0.5,null,null],"px":[-220,-220]},
-  {"a":null,"tm":"129764","t":"1st Period Spread","ti":"140","op":[-0.5,null,null],"cur":[-0.5,null,null],"px":[170,170]},
+  {"a":null,"tm":"28","t":"1st Period Spread","ti":"140","op":[0.5,null,null],"cur":[-0.5,null,null],"px":[170,-220]},
+  {"a":null,"tm":"129764","t":"1st Period Spread","ti":"140","op":[-0.5,null,null],"cur":[0.5,null,null],"px":[-220,170]},
   {"a":null,"t":"1st Period Total Goals","ti":"141","op":[1.5,null,null],"cur":[1.5,null,null],"px":[-140,-140]},
   {"a":null,"t":"1st Period Total Goals","ti":"141","op":[1.5,null,null],"cur":[1.5,null,null],"px":[110,110]},
-  {"a":null,"t":"Will There Be Overtime?","ti":"153","cur":[null,270,null]}
+  {"a":null,"t":"Will There Be Overtime?","ti":"153","cur":[null,280,null]}
  ]
   }
  },

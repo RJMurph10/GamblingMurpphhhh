@@ -7,18 +7,18 @@
   "id": "257",
   "abbr": "RICH",
   "name": "Richmond Spiders",
-  "score": 76
+  "score": 92
  },
  "home": {
   "id": "2335",
   "abbr": "LIB",
   "name": "Liberty Flames",
-  "score": 78
+  "score": 88
  },
  "neutral": true,
  "venue": "Colonial Hall",
  "seasonType": 2,
- "state": "in",
+ "state": "post",
  "lines": {
   "open": {
    "at": "2026-11-22T03:27:54.997Z",
@@ -934,5 +934,9 @@
    ]
   }
  },
- "props": {}
+ "props": {},
+ "final": {
+  "away": 92,
+  "home": 88
+ }
 }

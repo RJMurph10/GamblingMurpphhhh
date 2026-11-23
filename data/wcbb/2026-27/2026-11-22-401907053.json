@@ -7,18 +7,18 @@
   "id": "2724",
   "abbr": "WICH",
   "name": "Wichita State Shockers",
-  "score": 21
+  "score": 43
  },
  "home": {
   "id": "197",
   "abbr": "OKST",
   "name": "Oklahoma State Cowgirls",
-  "score": 71
+  "score": 92
  },
  "neutral": true,
  "venue": "T-Mobile Center",
  "seasonType": 2,
- "state": "in",
+ "state": "post",
  "lines": {
   "open": {
    "at": "2026-11-22T15:25:19.278Z",
@@ -801,5 +801,9 @@
    ]
   }
  },
- "props": {}
+ "props": {},
+ "final": {
+  "away": 43,
+  "home": 92
+ }
 }

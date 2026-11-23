@@ -477,5 +477,711 @@
    ]
   }
  },
- "props": {}
+ "props": {
+  "open": {
+   "at": "2026-11-23T00:27:20.940Z",
+   "provider": 100,
+   "count": 16,
+   "rows": [
+  {"a":"2577417","t":"Player to score 2 or more touchdowns","ti":"32"},
+  {"a":"3052096","t":"Player to score 2 or more touchdowns","ti":"32"},
+  {"a":"3121023","t":"Player to score 2 or more touchdowns","ti":"32"},
+  {"a":"3676833","t":"Player to score 2 or more touchdowns","ti":"32"},
+  {"a":"3929630","t":"Player to score 2 or more touchdowns","ti":"32"},
+  {"a":"4241374","t":"Player to score 2 or more touchdowns","ti":"32"},
+  {"a":"4241389","t":"Player to score 2 or more touchdowns","ti":"32"},
+  {"a":"4241478","t":"Player to score 2 or more touchdowns","ti":"32"},
+  {"a":"4361579","t":"Player to score 2 or more touchdowns","ti":"32"},
+  {"a":"4383396","t":"Player to score 2 or more touchdowns","ti":"32"},
+  {"a":"4426354","t":"Player to score 2 or more touchdowns","ti":"32"},
+  {"a":"4426485","t":"Player to score 2 or more touchdowns","ti":"32"},
+  {"a":"4431574","t":"Player to score 2 or more touchdowns","ti":"32"},
+  {"a":"4808759","t":"Player to score 2 or more touchdowns","ti":"32"},
+  {"a":"4870795","t":"Player to score 2 or more touchdowns","ti":"32"},
+  {"a":"5083754","t":"Player to score 2 or more touchdowns","ti":"32"}
+ ],
+   "sample": [
+    {
+     "competition": {
+      "id": "401873080"
+     },
+     "athlete": {
+      "id": "2577417"
+     },
+     "provider": {
+      "id": "100"
+     },
+     "type": {
+      "id": "32",
+      "name": "Player to score 2 or more touchdowns"
+     },
+     "lastUpdated": "2026-11-23T03:25Z",
+     "current": {},
+     "open": {}
+    },
+    {
+     "competition": {
+      "id": "401873080"
+     },
+     "athlete": {
+      "id": "3052096"
+     },
+     "provider": {
+      "id": "100"
+     },
+     "type": {
+      "id": "32",
+      "name": "Player to score 2 or more touchdowns"
+     },
+     "lastUpdated": "2026-11-23T03:25Z",
+     "current": {},
+     "open": {}
+    }
+   ]
+  },
+  "latest": {
+   "at": "2026-11-23T00:27:20.940Z",
+   "count": 16,
+   "rows": [
+  {"a":"2577417","t":"Player to score 2 or more touchdowns","ti":"32"},
+  {"a":"3052096","t":"Player to score 2 or more touchdowns","ti":"32"},
+  {"a":"3121023","t":"Player to score 2 or more touchdowns","ti":"32"},
+  {"a":"3676833","t":"Player to score 2 or more touchdowns","ti":"32"},
+  {"a":"3929630","t":"Player to score 2 or more touchdowns","ti":"32"},
+  {"a":"4241374","t":"Player to score 2 or more touchdowns","ti":"32"},
+  {"a":"4241389","t":"Player to score 2 or more touchdowns","ti":"32"},
+  {"a":"4241478","t":"Player to score 2 or more touchdowns","ti":"32"},
+  {"a":"4361579","t":"Player to score 2 or more touchdowns","ti":"32"},
+  {"a":"4383396","t":"Player to score 2 or more touchdowns","ti":"32"},
+  {"a":"4426354","t":"Player to score 2 or more touchdowns","ti":"32"},
+  {"a":"4426485","t":"Player to score 2 or more touchdowns","ti":"32"},
+  {"a":"4431574","t":"Player to score 2 or more touchdowns","ti":"32"},
+  {"a":"4808759","t":"Player to score 2 or more touchdowns","ti":"32"},
+  {"a":"4870795","t":"Player to score 2 or more touchdowns","ti":"32"},
+  {"a":"5083754","t":"Player to score 2 or more touchdowns","ti":"32"}
+ ]
+  }
+ },
+ "names": {
+  "13976": [
+   "Von Miller",
+   "DAL"
+  ],
+  "14950": [
+   "Bryan Anger",
+   "DAL"
+  ],
+  "15835": [
+   "Zach Ertz",
+   "PHI"
+  ],
+  "2577417": [
+   "Dak Prescott",
+   "DAL"
+  ],
+  "2971027": [
+   "Jonathan Jones",
+   "PHI"
+  ],
+  "2980097": [
+   "Jonathan Bullard",
+   "DAL"
+  ],
+  "3050478": [
+   "Jake Elliott",
+   "PHI"
+  ],
+  "3052096": [
+   "Johnny Mundt",
+   "PHI"
+  ],
+  "3052357": [
+   "Trent Sieg",
+   "DAL"
+  ],
+  "3121023": [
+   "Dallas Goedert",
+   "PHI"
+  ],
+  "3121415": [
+   "Malik Hooker",
+   "DAL"
+  ],
+  "3122752": [
+   "Kenny Clark",
+   "DAL"
+  ],
+  "3139368": [
+   "Marcus Epps",
+   "PHI"
+  ],
+  "3676833": [
+   "KaVontae Turpin",
+   "DAL"
+  ],
+  "3915834": [
+   "Terence Steele",
+   "DAL"
+  ],
+  "3916409": [
+   "Jonathan Greenard",
+   "PHI"
+  ],
+  "3917657": [
+   "Zack Baun",
+   "PHI"
+  ],
+  "3920591": [
+   "Nick Leverett",
+   "DAL"
+  ],
+  "3926231": [
+   "Britain Covey",
+   "PHI"
+  ],
+  "3929630": [
+   "Saquon Barkley",
+   "PHI"
+  ],
+  "3929850": [
+   "P.J. Locke",
+   "DAL"
+  ],
+  "3953687": [
+   "Brandon Aubrey",
+   "DAL"
+  ],
+  "4034946": [
+   "Kyle Trask",
+   "DAL"
+  ],
+  "4035239": [
+   "Braden Mann",
+   "PHI"
+  ],
+  "4035624": [
+   "Landon Dickerson",
+   "PHI"
+  ],
+  "4035666": [
+   "Leki Fotu",
+   "PHI"
+  ],
+  "4039170": [
+   "Elijah Garcia",
+   "DAL"
+  ],
+  "4040715": [
+   "Jalen Hurts",
+   "PHI"
+  ],
+  "4040982": [
+   "Quinnen Williams",
+   "DAL"
+  ],
+  "4043089": [
+   "Jalen Thompson",
+   "DAL"
+  ],
+  "4044138": [
+   "Matt Hennessy",
+   "DAL"
+  ],
+  "4044448": [
+   "Curtis Robinson",
+   "DAL"
+  ],
+  "4046523": [
+   "Rashan Gary",
+   "DAL"
+  ],
+  "4218312": [
+   "Kenny Moore II",
+   "PHI"
+  ],
+  "4240015": [
+   "John Ojukwu",
+   "PHI"
+  ],
+  "4240456": [
+   "Michael Carter II",
+   "PHI"
+  ],
+  "4240585": [
+   "AJ Epenesa",
+   "PHI"
+  ],
+  "4240603": [
+   "Malik Davis",
+   "DAL"
+  ],
+  "4240608": [
+   "James Houston",
+   "DAL"
+  ],
+  "4241374": [
+   "Grant Calcaterra",
+   "PHI"
+  ],
+  "4241389": [
+   "CeeDee Lamb",
+   "DAL"
+  ],
+  "4241478": [
+   "DeVonta Smith",
+   "PHI"
+  ],
+  "4241555": [
+   "Elijah Mitchell",
+   "PHI"
+  ],
+  "4241921": [
+   "Markquese Bell",
+   "DAL"
+  ],
+  "4242355": [
+   "Jake Ferguson",
+   "DAL"
+  ],
+  "4242442": [
+   "Princeton Fant",
+   "DAL"
+  ],
+  "4245185": [
+   "Riq Woolen",
+   "PHI"
+  ],
+  "4248911": [
+   "DaRon Bland",
+   "DAL"
+  ],
+  "4250510": [
+   "Andre' Sam",
+   "PHI"
+  ],
+  "4257580": [
+   "Christian Braswell",
+   "PHI"
+  ],
+  "4257591": [
+   "Arnold Ebiketie",
+   "PHI"
+  ],
+  "4259546": [
+   "Ameer Speed",
+   "DAL"
+  ],
+  "4259590": [
+   "Tariq Castro-Fields",
+   "PHI"
+  ],
+  "4334215": [
+   "Jordan Mailata",
+   "PHI"
+  ],
+  "4360238": [
+   "Dameon Pierce",
+   "PHI"
+  ],
+  "4360307": [
+   "Derion Kendrick",
+   "DAL"
+  ],
+  "4360590": [
+   "Juanyeh Thomas",
+   "DAL"
+  ],
+  "4360698": [
+   "Joe Milton",
+   "PHI"
+  ],
+  "4360967": [
+   "Brevyn Spann-Ford",
+   "DAL"
+  ],
+  "4361579": [
+   "Javonte Williams",
+   "DAL"
+  ],
+  "4361988": [
+   "James Mitchell",
+   "DAL"
+  ],
+  "4362088": [
+   "DeMarvion Overshown",
+   "DAL"
+  ],
+  "4362116": [
+   "Moro Ojomo",
+   "PHI"
+  ],
+  "4362186": [
+   "Erik Ezukanma",
+   "PHI"
+  ],
+  "4362805": [
+   "Tyler Steen",
+   "PHI"
+  ],
+  "4363547": [
+   "Marcellus Johnson",
+   "DAL"
+  ],
+  "4367210": [
+   "Otito Ogbonnia",
+   "DAL"
+  ],
+  "4367330": [
+   "Tyrek Funderburk",
+   "DAL"
+  ],
+  "4372051": [
+   "Chance Campbell",
+   "PHI"
+  ],
+  "4372096": [
+   "Luke Schoonmaker",
+   "DAL"
+  ],
+  "4372414": [
+   "Elijah Moore",
+   "PHI"
+  ],
+  "4372519": [
+   "Jashaun Corbin",
+   "DAL"
+  ],
+  "4383396": [
+   "Hunter Luepke",
+   "DAL"
+  ],
+  "4383405": [
+   "Jake Kubas",
+   "DAL"
+  ],
+  "4384549": [
+   "Cobie Durant",
+   "DAL"
+  ],
+  "4426331": [
+   "Nolan Smith Jr.",
+   "PHI"
+  ],
+  "4426354": [
+   "George Pickens",
+   "DAL"
+  ],
+  "4426485": [
+   "Jonathan Mingo",
+   "DAL"
+  ],
+  "4426506": [
+   "Joey Porter Jr.",
+   "DAL"
+  ],
+  "4426663": [
+   "Cooper Beebe",
+   "DAL"
+  ],
+  "4426875": [
+   "Sam Howell",
+   "DAL"
+  ],
+  "4427816": [
+   "Marist Liufau",
+   "DAL"
+  ],
+  "4428396": [
+   "Hayden Rucci",
+   "PHI"
+  ],
+  "4428713": [
+   "Bralen Trice",
+   "DAL"
+  ],
+  "4428850": [
+   "Dontayvion Wicks",
+   "PHI"
+  ],
+  "4428914": [
+   "Dee Winters",
+   "DAL"
+  ],
+  "4428990": [
+   "Broderick Jones",
+   "DAL"
+  ],
+  "4428992": [
+   "Kelee Ringo",
+   "PHI"
+  ],
+  "4429013": [
+   "Tank Bigsby",
+   "PHI"
+  ],
+  "4429202": [
+   "Israel Abanikanda",
+   "DAL"
+  ],
+  "4429249": [
+   "Justin Barron",
+   "DAL"
+  ],
+  "4429676": [
+   "Tyler Goodson",
+   "DAL"
+  ],
+  "4429731": [
+   "Gabe Hall",
+   "PHI"
+  ],
+  "4430814": [
+   "Jake Majors",
+   "PHI"
+  ],
+  "4431545": [
+   "Will Shipley",
+   "PHI"
+  ],
+  "4431547": [
+   "Kelvin Gilliam Jr.",
+   "DAL"
+  ],
+  "4431573": [
+   "Smael Mondon Jr.",
+   "PHI"
+  ],
+  "4431574": [
+   "Eli Stowers",
+   "PHI"
+  ],
+  "4432738": [
+   "Micah Morris",
+   "PHI"
+  ],
+  "4432777": [
+   "Jeremiah Trotter Jr.",
+   "PHI"
+  ],
+  "4567123": [
+   "Byron Young",
+   "PHI"
+  ],
+  "4567134": [
+   "Evan Neal",
+   "PHI"
+  ],
+  "4567535": [
+   "Anfernee Orji",
+   "PHI"
+  ],
+  "4567802": [
+   "Drew Kendall",
+   "PHI"
+  ],
+  "4568652": [
+   "Tyler Smith",
+   "DAL"
+  ],
+  "4569586": [
+   "Ty Robinson",
+   "PHI"
+  ],
+  "4570577": [
+   "Wanya Morris",
+   "DAL"
+  ],
+  "4571162": [
+   "Jalyx Hunt",
+   "PHI"
+  ],
+  "4574551": [
+   "Isaiah Land",
+   "DAL"
+  ],
+  "4582836": [
+   "Willie Lampkin",
+   "PHI"
+  ],
+  "4594749": [
+   "Michael Trigg",
+   "DAL"
+  ],
+  "4595352": [
+   "Alijah Clark",
+   "DAL"
+  ],
+  "4599739": [
+   "Kendre Miller",
+   "DAL"
+  ],
+  "4602197": [
+   "Andrew Mukuba",
+   "PHI"
+  ],
+  "4609048": [
+   "Tyler Guyton",
+   "DAL"
+  ],
+  "4613050": [
+   "Quentin Skinner",
+   "PHI"
+  ],
+  "4682618": [
+   "Cooper DeJean",
+   "PHI"
+  ],
+  "4683848": [
+   "Donovan Ezeiruaku",
+   "DAL"
+  ],
+  "4685110": [
+   "Anthony Smith",
+   "DAL"
+  ],
+  "4685120": [
+   "T.J. Bass",
+   "DAL"
+  ],
+  "4685201": [
+   "Tanner McKee",
+   "PHI"
+  ],
+  "4685263": [
+   "Tyler Booker",
+   "DAL"
+  ],
+  "4685266": [
+   "Jaishawn Barham",
+   "DAL"
+  ],
+  "4685279": [
+   "Jaydon Blue",
+   "PHI"
+  ],
+  "4685287": [
+   "Jihaad Campbell",
+   "PHI"
+  ],
+  "4685400": [
+   "Shemar James",
+   "DAL"
+  ],
+  "4685409": [
+   "Jordan Hudson",
+   "DAL"
+  ],
+  "4685554": [
+   "Drew Shelton",
+   "DAL"
+  ],
+  "4685759": [
+   "Jalen Carter",
+   "PHI"
+  ],
+  "4686104": [
+   "Johnny Wilson",
+   "PHI"
+  ],
+  "4686273": [
+   "Quinyon Mitchell",
+   "PHI"
+  ],
+  "4686566": [
+   "Rocco Underwood",
+   "PHI"
+  ],
+  "4689364": [
+   "Tommy Dunn Jr.",
+   "DAL"
+  ],
+  "4689651": [
+   "Mac McWilliams",
+   "PHI"
+  ],
+  "4691903": [
+   "Mason Reiger",
+   "PHI"
+  ],
+  "4693345": [
+   "Cole Wisniewski",
+   "PHI"
+  ],
+  "4696203": [
+   "Ajani Cornelius",
+   "PHI"
+  ],
+  "4702577": [
+   "Devin Moore",
+   "DAL"
+  ],
+  "4710067": [
+   "Malachi Lawrence",
+   "DAL"
+  ],
+  "4715355": [
+   "Darius Cooper",
+   "PHI"
+  ],
+  "4808759": [
+   "Camden Brown",
+   "DAL"
+  ],
+  "4870706": [
+   "Caleb Downs",
+   "DAL"
+  ],
+  "4870795": [
+   "Makai Lemon",
+   "PHI"
+  ],
+  "4870960": [
+   "LT Overton",
+   "DAL"
+  ],
+  "4872850": [
+   "Zion Wilson",
+   "PHI"
+  ],
+  "4878896": [
+   "Tucker Large",
+   "PHI"
+  ],
+  "4879250": [
+   "Cole Payton",
+   "PHI"
+  ],
+  "4883090": [
+   "Kiran Amegadjie",
+   "PHI"
+  ],
+  "5066095": [
+   "Adedayo Odeleye",
+   "DAL"
+  ],
+  "5083754": [
+   "Ryan Flournoy",
+   "DAL"
+  ],
+  "5095865": [
+   "Shavon Revel Jr.",
+   "DAL"
+  ],
+  "5165139": [
+   "Keyshawn James-Newby",
+   "PHI"
+  ],
+  "5219831": [
+   "Markel Bell",
+   "PHI"
+  ],
+  "5344965": [
+   "Joshua Weru",
+   "PHI"
+  ],
+  "5344966": [
+   "Uar Bernard",
+   "PHI"
+  ]
+ }
 }

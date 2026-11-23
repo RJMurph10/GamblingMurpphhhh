@@ -7,7 +7,7 @@
   "id": "6",
   "abbr": "EDM",
   "name": "Edmonton Oilers",
-  "score": 0
+  "score": 1
  },
  "home": {
   "id": "19",
@@ -18,7 +18,7 @@
  "neutral": false,
  "venue": "Enterprise Center",
  "seasonType": 2,
- "state": "pre",
+ "state": "in",
  "lines": {
   "open": {
    "at": "2026-11-21T18:04:14.227Z",

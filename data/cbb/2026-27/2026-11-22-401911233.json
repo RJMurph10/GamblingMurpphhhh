@@ -2,17 +2,17 @@
  "id": "401911233",
  "league": "cbb",
  "date": "2026-11-23T04:59Z",
- "name": "SJSU VS LUC",
+ "name": "LUC VS SJSU",
  "away": {
-  "id": "23",
-  "abbr": "SJSU",
-  "name": "San José State Spartans",
-  "score": 0
- },
- "home": {
   "id": "2350",
   "abbr": "LUC",
   "name": "Loyola Chicago Ramblers",
+  "score": 0
+ },
+ "home": {
+  "id": "23",
+  "abbr": "SJSU",
+  "name": "San José State Spartans",
   "score": 0
  },
  "neutral": true,

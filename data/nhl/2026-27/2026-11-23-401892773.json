@@ -520,10 +520,17 @@
    ]
   },
   "latest": {
-   "at": "2026-11-22T21:17:00.667Z",
-   "count": 1,
+   "at": "2026-11-23T00:27:20.940Z",
+   "count": 8,
    "rows": [
-  {"a":null,"t":"Will There Be Overtime?","ti":"153","cur":[null,290,null]}
+  {"a":null,"tm":"11","t":"1st Period Moneyline","ti":"139","cur":[null,140,null]},
+  {"a":null,"tm":"29","t":"1st Period Moneyline","ti":"139","cur":[null,240,null]},
+  {"a":null,"t":"1st Period Moneyline","ti":"139","cur":[null,175,null]},
+  {"a":null,"tm":"11","t":"1st Period Spread","ti":"140","op":[-0.5,null,null],"cur":[-0.5,null,null],"px":[135,135]},
+  {"a":null,"tm":"29","t":"1st Period Spread","ti":"140","op":[0.5,null,null],"cur":[0.5,null,null],"px":[-175,-175]},
+  {"a":null,"t":"1st Period Total Goals","ti":"141","op":[1.5,null,null],"cur":[1.5,null,null],"px":[-130,-130]},
+  {"a":null,"t":"1st Period Total Goals","ti":"141","op":[1.5,null,null],"cur":[1.5,null,null],"px":[100,100]},
+  {"a":null,"t":"Will There Be Overtime?","ti":"153","cur":[null,300,null]}
  ]
   }
  },

@@ -7,18 +7,18 @@
   "id": "2885",
   "abbr": "NJIT",
   "name": "NJIT Highlanders",
-  "score": 54
+  "score": 59
  },
  "home": {
   "id": "103",
   "abbr": "BC",
   "name": "Boston College Eagles",
-  "score": 64
+  "score": 79
  },
  "neutral": false,
  "venue": "Conte Forum",
  "seasonType": 2,
- "state": "in",
+ "state": "post",
  "lines": {
   "open": {
    "at": "2026-11-22T03:27:54.997Z",
@@ -851,5 +851,9 @@
    ]
   }
  },
- "props": {}
+ "props": {},
+ "final": {
+  "away": 59,
+  "home": 79
+ }
 }

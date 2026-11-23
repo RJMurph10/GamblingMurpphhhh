@@ -7,18 +7,18 @@
   "id": "2427",
   "abbr": "UNCA",
   "name": "UNC Asheville Bulldogs",
-  "score": 68
+  "score": 77
  },
  "home": {
   "id": "2535",
   "abbr": "SAM",
   "name": "Samford Bulldogs",
-  "score": 70
+  "score": 80
  },
  "neutral": false,
  "venue": "Pete Hanna Center",
  "seasonType": 2,
- "state": "in",
+ "state": "post",
  "lines": {
   "open": {
    "at": "2026-11-22T03:27:54.997Z",
@@ -933,5 +933,9 @@
    ]
   }
  },
- "props": {}
+ "props": {},
+ "final": {
+  "away": 77,
+  "home": 80
+ }
 }
