@@ -16,7 +16,12 @@
    "firstSeen": "2026-11-22T02:40:49.197Z",
    "latest": -3.5,
    "latestAt": "2026-11-22T20:51:13.855Z",
-   "alerted": false
+   "alerted": false,
+   "score": [
+    113,
+    123
+   ],
+   "close": -4.5
   },
   {
    "id": "401910031-spread",

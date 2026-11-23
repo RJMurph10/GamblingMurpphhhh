@@ -37,7 +37,12 @@
    "firstSeen": "2026-11-22T02:40:50.091Z",
    "latest": 139.5,
    "latestAt": "2026-11-22T12:53:32.187Z",
-   "alerted": false
+   "alerted": false,
+   "score": [
+    79,
+    61
+   ],
+   "close": 136.5
   },
   {
    "id": "401928790-total",
@@ -53,7 +58,12 @@
    "firstSeen": "2026-11-22T12:53:32.187Z",
    "latest": 137.5,
    "latestAt": "2026-11-22T12:53:32.187Z",
-   "alerted": false
+   "alerted": false,
+   "score": [
+    84,
+    79
+   ],
+   "close": 134.5
   },
   {
    "id": "401923323-total",
@@ -69,7 +79,12 @@
    "firstSeen": "2026-11-22T12:53:32.187Z",
    "latest": 129.5,
    "latestAt": "2026-11-22T12:53:32.187Z",
-   "alerted": false
+   "alerted": false,
+   "score": [
+    78,
+    75
+   ],
+   "close": 132.5
   },
   {
    "id": "401921176-total",
@@ -85,7 +100,12 @@
    "firstSeen": "2026-11-22T12:53:32.187Z",
    "latest": 141.5,
    "latestAt": "2026-11-22T20:51:14.732Z",
-   "alerted": false
+   "alerted": false,
+   "score": [
+    81,
+    61
+   ],
+   "close": 141.5
   },
   {
    "id": "401921420-total",
@@ -101,7 +121,12 @@
    "firstSeen": "2026-11-22T02:40:50.091Z",
    "latest": 131.5,
    "latestAt": "2026-11-22T20:51:14.732Z",
-   "alerted": false
+   "alerted": false,
+   "score": [
+    62,
+    77
+   ],
+   "close": 132.5
   }
  ]
 }
