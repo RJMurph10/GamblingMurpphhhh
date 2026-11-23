@@ -16,6 +16,7 @@ import { useEffect, useRef, useState, type ReactNode } from "react";
 import appCss from "../styles.css?url";
 import { reportLovableError } from "../lib/lovable-error-reporting";
 import { LEAGUES, leagueFromPath, switchLeaguePath, type League } from "../lib/shared/leagues";
+import { AssistantChat } from "@/components/shared/AssistantChat";
 
 const nflNav = [
   { to: "/", label: "Dashboard" },
@@ -208,7 +209,25 @@ function SiteHeader() {
   const pathname = useRouterState({ select: (s) => s.location.pathname });
   const league = leagueFromPath(pathname);
   const nav =
-    league.id === "cfb" ? cfbNav : league.id === "nba" ? nbaNav : league.id === "nhl" ? nhlNav : league.id === "mlb" ? mlbNav : league.id === "cbb" ? cbbNav : league.id === "wnba" ? wnbaNav : league.id === "wcbb" ? wcbbNav : league.id === "cbase" ? cbaseNav : league.id === "pll" ? pllNav : nflNav;
+    league.id === "cfb"
+      ? cfbNav
+      : league.id === "nba"
+        ? nbaNav
+        : league.id === "nhl"
+          ? nhlNav
+          : league.id === "mlb"
+            ? mlbNav
+            : league.id === "cbb"
+              ? cbbNav
+              : league.id === "wnba"
+                ? wnbaNav
+                : league.id === "wcbb"
+                  ? wcbbNav
+                  : league.id === "cbase"
+                    ? cbaseNav
+                    : league.id === "pll"
+                      ? pllNav
+                      : nflNav;
   return (
     <header className="glass sticky top-0 z-40 rounded-none border-x-0 border-t-0">
       <div className="mx-auto flex max-w-[1400px] items-center gap-4 px-4 py-3 sm:px-5">
@@ -218,7 +237,20 @@ function SiteHeader() {
             <Link
               key={item.to}
               to={item.to}
-              activeOptions={{ exact: ["/", "/cfb", "/nba", "/nhl", "/mlb", "/cbb", "/wnba", "/wcbb", "/cbase", "/pll"].includes(item.to) }}
+              activeOptions={{
+                exact: [
+                  "/",
+                  "/cfb",
+                  "/nba",
+                  "/nhl",
+                  "/mlb",
+                  "/cbb",
+                  "/wnba",
+                  "/wcbb",
+                  "/cbase",
+                  "/pll",
+                ].includes(item.to),
+              }}
               className="shrink-0 rounded-lg px-3 py-1.5 text-sm text-mute hover:text-ink"
               activeProps={{ className: "bg-acc/10 text-acc ring-1 ring-acc/25" }}
             >
@@ -239,7 +271,17 @@ function SiteFooter() {
       <p className="mx-auto max-w-[1400px] font-mono text-[10px] uppercase leading-relaxed tracking-wider text-faint">
         Gambling{league.short} · {league.name} analytics & betting research ·{" "}
         {league.id === "cbase" ? "results from the NCAA, lines from ESPN" : "live data from ESPN"}
-        {league.id === "nba" || league.id === "nhl" || league.id === "mlb" || league.id === "cbb" || league.id === "wnba" || league.id === "wcbb" || league.id === "cbase" || league.id === "pll" ? "" : " and nflverse"} · for research, not betting advice ·{" "}
+        {league.id === "nba" ||
+        league.id === "nhl" ||
+        league.id === "mlb" ||
+        league.id === "cbb" ||
+        league.id === "wnba" ||
+        league.id === "wcbb" ||
+        league.id === "cbase" ||
+        league.id === "pll"
+          ? ""
+          : " and nflverse"}{" "}
+        · for research, not betting advice ·{" "}
         <Link to="/status" className="text-acc hover:underline">
           Status
         </Link>
@@ -382,6 +424,7 @@ function RootComponent() {
           <Outlet />
         </main>
         <SiteFooter />
+        <AssistantChat />
       </div>
     </QueryClientProvider>
   );
