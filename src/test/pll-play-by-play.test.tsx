@@ -123,15 +123,18 @@ describe("PLL international games (national teams in ESPN's PLL feed)", () => {
   });
 });
 
-describe("PLL play-by-play (2025, as the sheets come in)", () => {
+describe.each([2024, 2025])("PLL play-by-play (%i)", (season) => {
   it("each sheet matches one ESPN game, and its last goal is that game's final", async () => {
-    const espn = (await import("./fixtures/pll-2025-espn.json")).default as {
+    const espn = (await import(`./fixtures/pll-${season}-espn.json`)).default as {
       id: string;
       date: string;
       status: string;
       sides: [string, string, string, string][];
     }[];
-    const file = (await import("@/data/pll-pbp-2025.json")).default as unknown as PllPbpFile;
+    const file = (season === 2024
+      ? await import("@/data/pll-pbp-2024.json")
+      : await import("@/data/pll-pbp-2025.json")
+    ).default as unknown as PllPbpFile;
     const games = espn
       .filter((e) => e.status === "STATUS_FINAL")
       .map((e) => {
