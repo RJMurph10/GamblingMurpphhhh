@@ -330,5 +330,755 @@
    ]
   }
  },
- "props": {}
+ "props": {
+  "open": {
+   "at": "2026-11-24T00:58:17.105Z",
+   "provider": 100,
+   "count": 12,
+   "rows": [
+  {"a":null,"t":"1st Half Total","ti":"72","op":[20.5,null,null],"cur":[20.5,null,null]},
+  {"a":null,"t":"1st Half Total","ti":"72","op":[20.5,null,null],"cur":[20.5,null,null]},
+  {"a":null,"tm":"22","t":"1st Half Moneyline","ti":"73"},
+  {"a":null,"tm":"28","t":"1st Half Moneyline","ti":"73"},
+  {"a":null,"tm":"22","t":"1st Half Spread","ti":"74","op":[3.5,null,null],"cur":[3.5,null,null]},
+  {"a":null,"tm":"28","t":"1st Half Spread","ti":"74","op":[-3.5,null,null],"cur":[-3.5,null,null]},
+  {"a":null,"t":"1st Quarter Total","ti":"75","op":[7.5,null,null],"cur":[7.5,null,null]},
+  {"a":null,"t":"1st Quarter Total","ti":"75","op":[7.5,null,null],"cur":[7.5,null,null]},
+  {"a":null,"tm":"22","t":"1st Quarter Moneyline","ti":"76"},
+  {"a":null,"tm":"28","t":"1st Quarter Moneyline","ti":"76"},
+  {"a":null,"tm":"22","t":"1st Quarter Spread","ti":"77","op":[0.5,null,null],"cur":[0.5,null,null]},
+  {"a":null,"tm":"28","t":"1st Quarter Spread","ti":"77","op":[-0.5,null,null],"cur":[-0.5,null,null]}
+ ],
+   "sample": [
+    {
+     "competition": {
+      "id": "401873092"
+     },
+     "provider": {
+      "id": "100"
+     },
+     "type": {
+      "id": "72",
+      "name": "1st Half Total"
+     },
+     "lastUpdated": "2026-11-23T23:57Z",
+     "current": {
+      "target": {
+       "value": 20.5,
+       "displayValue": "20.5"
+      }
+     },
+     "open": {
+      "target": {
+       "value": 20.5,
+       "displayValue": "20.5"
+      }
+     }
+    },
+    {
+     "competition": {
+      "id": "401873092"
+     },
+     "provider": {
+      "id": "100"
+     },
+     "type": {
+      "id": "72",
+      "name": "1st Half Total"
+     },
+     "lastUpdated": "2026-11-23T23:57Z",
+     "current": {
+      "target": {
+       "value": 20.5,
+       "displayValue": "20.5"
+      }
+     },
+     "open": {
+      "target": {
+       "value": 20.5,
+       "displayValue": "20.5"
+      }
+     }
+    }
+   ]
+  }
+ },
+ "names": {
+  "11394": [
+   "Josh Johnson",
+   "ARI"
+  ],
+  "16166": [
+   "Tress Way",
+   "WSH"
+  ],
+  "17304": [
+   "Casey Kreiter",
+   "ARI"
+  ],
+  "17378": [
+   "Tyler Ott",
+   "WSH"
+  ],
+  "2576736": [
+   "Lucas Patrick",
+   "WSH"
+  ],
+  "2576980": [
+   "Marcus Mariota",
+   "WSH"
+  ],
+  "2579604": [
+   "Phillip Dorsett II",
+   "ARI"
+  ],
+  "2971586": [
+   "Fabian Moreau",
+   "WSH"
+  ],
+  "2976212": [
+   "Stefon Diggs",
+   "WSH"
+  ],
+  "2978247": [
+   "Isaac Seumalo",
+   "ARI"
+  ],
+  "2980080": [
+   "Deatrich Wise Jr.",
+   "WSH"
+  ],
+  "3042702": [
+   "Andrew Wylie",
+   "WSH"
+  ],
+  "3045147": [
+   "James Conner",
+   "ARI"
+  ],
+  "3045523": [
+   "Kendrick Bourne",
+   "ARI"
+  ],
+  "3051775": [
+   "Andrew Billings",
+   "ARI"
+  ],
+  "3051890": [
+   "Laremy Tunsil",
+   "WSH"
+  ],
+  "3052059": [
+   "Daniel Ekuale",
+   "WSH"
+  ],
+  "3059722": [
+   "Zay Jones",
+   "ARI"
+  ],
+  "3059839": [
+   "Elijah Wilkinson",
+   "ARI"
+  ],
+  "3068267": [
+   "Austin Ekeler",
+   "WSH"
+  ],
+  "3115922": [
+   "Nick Allegretti",
+   "WSH"
+  ],
+  "3116449": [
+   "L.J. Collier",
+   "ARI"
+  ],
+  "3121422": [
+   "Terry McLaurin",
+   "WSH"
+  ],
+  "3122797": [
+   "Isaac Yiadom",
+   "WSH"
+  ],
+  "3123303": [
+   "Trent Scott",
+   "WSH"
+  ],
+  "3125248": [
+   "Jeremy Reaves",
+   "WSH"
+  ],
+  "3127273": [
+   "Frankie Luvu",
+   "WSH"
+  ],
+  "3127287": [
+   "Budda Baker",
+   "ARI"
+  ],
+  "3127586": [
+   "Jeremy McNichols",
+   "WSH"
+  ],
+  "3693166": [
+   "Josh Sweat",
+   "ARI"
+  ],
+  "3886601": [
+   "Shy Tuttle",
+   "WSH"
+  ],
+  "3886633": [
+   "Hjalte Froholdt",
+   "ARI"
+  ],
+  "3916922": [
+   "Byron Cowart",
+   "WSH"
+  ],
+  "3917949": [
+   "Julian Good-Jones",
+   "WSH"
+  ],
+  "3918331": [
+   "Andrew Wingard",
+   "ARI"
+  ],
+  "3925354": [
+   "Daron Payne",
+   "WSH"
+  ],
+  "3928979": [
+   "Dorance Armstrong",
+   "WSH"
+  ],
+  "3929865": [
+   "Charles Omenihu",
+   "WSH"
+  ],
+  "3929956": [
+   "Tim Settle",
+   "WSH"
+  ],
+  "3930066": [
+   "Van Jefferson",
+   "WSH"
+  ],
+  "3943270": [
+   "Rasul Douglas",
+   "WSH"
+  ],
+  "4038524": [
+   "Gardner Minshew II",
+   "ARI"
+  ],
+  "4039050": [
+   "Devin Duvernay",
+   "ARI"
+  ],
+  "4040805": [
+   "Roy Lopez",
+   "ARI"
+  ],
+  "4040983": [
+   "Mack Wilson Sr.",
+   "ARI"
+  ],
+  "4044144": [
+   "Kenny Yeboah",
+   "ARI"
+  ],
+  "4045180": [
+   "Blake Gillikin",
+   "ARI"
+  ],
+  "4048228": [
+   "John Bates",
+   "WSH"
+  ],
+  "4239694": [
+   "Amik Robertson",
+   "WSH"
+  ],
+  "4239944": [
+   "Hunter Long",
+   "ARI"
+  ],
+  "4240619": [
+   "Zachary Carter",
+   "ARI"
+  ],
+  "4240824": [
+   "Joey Blount",
+   "ARI"
+  ],
+  "4241482": [
+   "Jedrick Wills Jr.",
+   "ARI"
+  ],
+  "4241987": [
+   "Baron Browning",
+   "ARI"
+  ],
+  "4242205": [
+   "K'Lavon Chaisson",
+   "WSH"
+  ],
+  "4242229": [
+   "Austin Deculus",
+   "ARI"
+  ],
+  "4244606": [
+   "Zaven Collins",
+   "ARI"
+  ],
+  "4244615": [
+   "Chris Paul",
+   "WSH"
+  ],
+  "4249739": [
+   "Jack Gibbens",
+   "ARI"
+  ],
+  "4250935": [
+   "Demontrey Jacobs",
+   "ARI"
+  ],
+  "4259491": [
+   "Javon Kinlaw",
+   "WSH"
+  ],
+  "4261606": [
+   "Darren Hall",
+   "WSH"
+  ],
+  "4262199": [
+   "Sam Cosmi",
+   "WSH"
+  ],
+  "4360378": [
+   "Quan Martin",
+   "WSH"
+  ],
+  "4360635": [
+   "Chig Okonkwo",
+   "WSH"
+  ],
+  "4360739": [
+   "Simi Fehoko",
+   "ARI"
+  ],
+  "4360761": [
+   "Michael Wilson",
+   "ARI"
+  ],
+  "4361088": [
+   "Colson Yankoff",
+   "WSH"
+  ],
+  "4361090": [
+   "Ale Kaho",
+   "WSH"
+  ],
+  "4361100": [
+   "Jack Westover",
+   "WSH"
+  ],
+  "4361272": [
+   "Eku Leota",
+   "ARI"
+  ],
+  "4361307": [
+   "Trey McBride",
+   "ARI"
+  ],
+  "4361332": [
+   "Shedrick Jackson",
+   "ARI"
+  ],
+  "4361357": [
+   "Javontae Jean-Baptiste",
+   "WSH"
+  ],
+  "4361422": [
+   "Odafe Oweh",
+   "WSH"
+  ],
+  "4361577": [
+   "Dyami Brown",
+   "WSH"
+  ],
+  "4361994": [
+   "Sam Hartman",
+   "WSH"
+  ],
+  "4362225": [
+   "Dante Stills",
+   "ARI"
+  ],
+  "4363097": [
+   "Percy Butler",
+   "WSH"
+  ],
+  "4363408": [
+   "Starling Thomas V",
+   "ARI"
+  ],
+  "4363538": [
+   "Chad Ryland",
+   "ARI"
+  ],
+  "4366910": [
+   "Shawn Bowman",
+   "ARI"
+  ],
+  "4367199": [
+   "Jon Gaines II",
+   "ARI"
+  ],
+  "4372019": [
+   "Jerome Ford",
+   "ARI"
+  ],
+  "4372063": [
+   "Ronnie Bell",
+   "ARI"
+  ],
+  "4373626": [
+   "Tyler Allgeier",
+   "ARI"
+  ],
+  "4374045": [
+   "Teagan Quitoriano",
+   "ARI"
+  ],
+  "4379412": [
+   "Jamaree Salyer",
+   "ARI"
+  ],
+  "4421446": [
+   "Craig Reynolds",
+   "WSH"
+  ],
+  "4426348": [
+   "Jayden Daniels",
+   "WSH"
+  ],
+  "4426403": [
+   "Nick Cross",
+   "WSH"
+  ],
+  "4426844": [
+   "Elijah Higgins",
+   "ARI"
+  ],
+  "4426901": [
+   "Leo Chenal",
+   "WSH"
+  ],
+  "4426923": [
+   "Kei'Trel Clark",
+   "ARI"
+  ],
+  "4426948": [
+   "Luke McCaffrey",
+   "WSH"
+  ],
+  "4427401": [
+   "Jared Harrison-Hunte",
+   "ARI"
+  ],
+  "4427728": [
+   "Bam Knight",
+   "ARI"
+  ],
+  "4427984": [
+   "Kain Medrano",
+   "WSH"
+  ],
+  "4427985": [
+   "Bub Means",
+   "ARI"
+  ],
+  "4428343": [
+   "Ricky Barber",
+   "WSH"
+  ],
+  "4428414": [
+   "Mike Sainristil",
+   "WSH"
+  ],
+  "4428458": [
+   "Valentin Senn",
+   "ARI"
+  ],
+  "4428633": [
+   "Dadrion Taylor-Demerson",
+   "ARI"
+  ],
+  "4428811": [
+   "Xavier Weaver",
+   "ARI"
+  ],
+  "4428991": [
+   "Paris Johnson Jr.",
+   "ARI"
+  ],
+  "4428996": [
+   "Jordan Burch",
+   "ARI"
+  ],
+  "4429071": [
+   "Cody Simon",
+   "ARI"
+  ],
+  "4429185": [
+   "Austin Keys",
+   "WSH"
+  ],
+  "4429275": [
+   "Trey Benson",
+   "ARI"
+  ],
+  "4429782": [
+   "Josh Fryar",
+   "ARI"
+  ],
+  "4430560": [
+   "Jer'Zhan Newton",
+   "WSH"
+  ],
+  "4430821": [
+   "Kitan Crawford",
+   "ARI"
+  ],
+  "4430841": [
+   "Carson Beck",
+   "ARI"
+  ],
+  "4431214": [
+   "Hayden Conner",
+   "ARI"
+  ],
+  "4431424": [
+   "Bradyn Swinson",
+   "ARI"
+  ],
+  "4431433": [
+   "Kalen King",
+   "ARI"
+  ],
+  "4432333": [
+   "Kyle Kennard",
+   "WSH"
+  ],
+  "4432668": [
+   "Denzel Burke",
+   "ARI"
+  ],
+  "4432722": [
+   "Athan Kaliakmanis",
+   "WSH"
+  ],
+  "4567156": [
+   "Treylon Burks",
+   "WSH"
+  ],
+  "4567410": [
+   "Kingsley Eguakun",
+   "ARI"
+  ],
+  "4568506": [
+   "Garrett Williams",
+   "ARI"
+  ],
+  "4568617": [
+   "Jordan Magee",
+   "WSH"
+  ],
+  "4569480": [
+   "Darius Robinson",
+   "ARI"
+  ],
+  "4569609": [
+   "Evan Hull",
+   "ARI"
+  ],
+  "4570084": [
+   "Jerrick Reed II",
+   "ARI"
+  ],
+  "4572460": [
+   "Tyler Owens",
+   "WSH"
+  ],
+  "4574689": [
+   "Trey Amos",
+   "WSH"
+  ],
+  "4575131": [
+   "Jacory Croskey-Merritt",
+   "WSH"
+  ],
+  "4602667": [
+   "Jaylin Lane",
+   "WSH"
+  ],
+  "4605488": [
+   "Tanoa Togiai",
+   "WSH"
+  ],
+  "4613029": [
+   "Riley Wilson",
+   "ARI"
+  ],
+  "4682652": [
+   "Devin Neal",
+   "WSH"
+  ],
+  "4683111": [
+   "Jaden Bradley",
+   "WSH"
+  ],
+  "4683463": [
+   "Matt Gulbin",
+   "WSH"
+  ],
+  "4685030": [
+   "Brandon Coleman",
+   "WSH"
+  ],
+  "4685326": [
+   "Josh Conerly Jr.",
+   "WSH"
+  ],
+  "4685408": [
+   "Will Johnson",
+   "ARI"
+  ],
+  "4685503": [
+   "Walter Nolen III",
+   "ARI"
+  ],
+  "4685582": [
+   "Damonic Williams",
+   "ARI"
+  ],
+  "4686092": [
+   "Fred Davis II",
+   "WSH"
+  ],
+  "4686338": [
+   "Josh Minkins",
+   "ARI"
+  ],
+  "4689334": [
+   "Malik Heath",
+   "WSH"
+  ],
+  "4689674": [
+   "Art Green",
+   "ARI"
+  ],
+  "4690923": [
+   "Ben Sinnott",
+   "WSH"
+  ],
+  "4692796": [
+   "Nick DeGennaro",
+   "WSH"
+  ],
+  "4692835": [
+   "Jalen Brooks",
+   "ARI"
+  ],
+  "4696700": [
+   "Tip Reiman",
+   "ARI"
+  ],
+  "4697815": [
+   "Rachaad White",
+   "WSH"
+  ],
+  "4698113": [
+   "Max Melton",
+   "ARI"
+  ],
+  "4699354": [
+   "Harrison Wallace III",
+   "ARI"
+  ],
+  "4709695": [
+   "Karson Sharar",
+   "ARI"
+  ],
+  "4709718": [
+   "Jayden Williams",
+   "ARI"
+  ],
+  "4869132": [
+   "Reggie Virgil",
+   "ARI"
+  ],
+  "4870596": [
+   "Chase Bisontis",
+   "ARI"
+  ],
+  "4870808": [
+   "Jeremiyah Love",
+   "ARI"
+  ],
+  "4875350": [
+   "Quentin Moore",
+   "WSH"
+  ],
+  "4900789": [
+   "Cameron Robertson",
+   "ARI"
+  ],
+  "5081335": [
+   "Drew Stevens",
+   "WSH"
+  ],
+  "5081392": [
+   "Joshua Josephs",
+   "WSH"
+  ],
+  "5081432": [
+   "Antonio Williams",
+   "WSH"
+  ],
+  "5081807": [
+   "Sonny Styles",
+   "WSH"
+  ],
+  "5084514": [
+   "Kaleb Proctor",
+   "ARI"
+  ],
+  "5084939": [
+   "Isaiah Adams",
+   "ARI"
+  ],
+  "5099542": [
+   "Wydett Williams Jr.",
+   "ARI"
+  ],
+  "5151317": [
+   "Robert Henry Jr.",
+   "WSH"
+  ],
+  "5151948": [
+   "Joey Aguilar",
+   "ARI"
+  ],
+  "5153070": [
+   "Esa Pole",
+   "WSH"
+  ],
+  "5278092": [
+   "T.J. Maguranyanga",
+   "WSH"
+  ]
+ }
 }

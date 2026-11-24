@@ -1,24 +1,24 @@
 {
  "id": "401921210",
  "league": "cbb",
- "date": "2026-11-23T22:30Z",
+ "date": "2026-11-23T23:00Z",
  "name": "TEM VS UTM",
  "away": {
   "id": "218",
   "abbr": "TEM",
   "name": "Temple Owls",
-  "score": 0
+  "score": 72
  },
  "home": {
   "id": "2630",
   "abbr": "UTM",
   "name": "UT Martin Skyhawks",
-  "score": 0
+  "score": 78
  },
  "neutral": true,
  "venue": "Elridge Blake Sports and Fitness Center",
  "seasonType": 2,
- "state": "pre",
+ "state": "in",
  "lines": {
   "open": {
    "at": "2026-11-23T10:39:07.968Z",

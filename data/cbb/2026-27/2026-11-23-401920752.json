@@ -7,18 +7,18 @@
   "id": "2379",
   "abbr": "UMES",
   "name": "Maryland Eastern Shore Hawks",
-  "score": 0
+  "score": 45
  },
  "home": {
   "id": "2754",
   "abbr": "YSU",
   "name": "Youngstown State Penguins",
-  "score": 0
+  "score": 53
  },
  "neutral": false,
  "venue": "Zidian Family Arena at Beeghly Center",
  "seasonType": 2,
- "state": "pre",
+ "state": "in",
  "lines": {
   "open": {
    "at": "2026-11-23T02:36:40.480Z",

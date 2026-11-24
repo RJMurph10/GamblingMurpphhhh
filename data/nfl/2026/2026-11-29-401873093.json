@@ -477,5 +477,799 @@
    ]
   }
  },
- "props": {}
+ "props": {
+  "open": {
+   "at": "2026-11-24T00:58:17.105Z",
+   "provider": 100,
+   "count": 90,
+   "rows": [
+  {"a":null,"tm":"17","t":"Team Total Points","ti":"98","op":[17.5,null,null],"cur":[10.5,null,null]},
+  {"a":null,"tm":"17","t":"Team Total Points","ti":"98","op":[17.5,null,null],"cur":[11.5,null,null]},
+  {"a":null,"tm":"17","t":"Team Total Points","ti":"98","op":[17.5,null,null],"cur":[12.5,null,null]},
+  {"a":null,"tm":"17","t":"Team Total Points","ti":"98","op":[17.5,null,null],"cur":[13.5,null,null]},
+  {"a":null,"tm":"17","t":"Team Total Points","ti":"98","op":[17.5,null,null],"cur":[14.5,null,null]},
+  {"a":null,"tm":"17","t":"Team Total Points","ti":"98","op":[17.5,null,null],"cur":[15.5,null,null]},
+  {"a":null,"tm":"17","t":"Team Total Points","ti":"98","op":[17.5,null,null],"cur":[16.5,null,null]},
+  {"a":null,"tm":"17","t":"Team Total Points","ti":"98","op":[17.5,null,null],"cur":[17.5,null,null]},
+  {"a":null,"tm":"17","t":"Team Total Points","ti":"98","op":[17.5,null,null],"cur":[18.5,null,null]},
+  {"a":null,"tm":"17","t":"Team Total Points","ti":"98","op":[17.5,null,null],"cur":[19.5,null,null]},
+  {"a":null,"tm":"17","t":"Team Total Points","ti":"98","op":[17.5,null,null],"cur":[20.5,null,null]},
+  {"a":null,"tm":"17","t":"Team Total Points","ti":"98","op":[17.5,null,null],"cur":[21.5,null,null]},
+  {"a":null,"tm":"17","t":"Team Total Points","ti":"98","op":[17.5,null,null],"cur":[22.5,null,null]},
+  {"a":null,"tm":"17","t":"Team Total Points","ti":"98","op":[17.5,null,null],"cur":[23.5,null,null]},
+  {"a":null,"tm":"17","t":"Team Total Points","ti":"98","op":[17.5,null,null],"cur":[24.5,null,null]},
+  {"a":null,"tm":"17","t":"Team Total Points","ti":"98","op":[17.5,null,null],"cur":[25.5,null,null]},
+  {"a":null,"tm":"17","t":"Team Total Points","ti":"98","op":[17.5,null,null],"cur":[26.5,null,null]},
+  {"a":null,"tm":"17","t":"Team Total Points","ti":"98","op":[17.5,null,null],"cur":[27.5,null,null]},
+  {"a":null,"tm":"17","t":"Team Total Points","ti":"98","op":[17.5,null,null],"cur":[7.5,null,null]},
+  {"a":null,"tm":"17","t":"Team Total Points","ti":"98","op":[17.5,null,null],"cur":[8.5,null,null]},
+  {"a":null,"tm":"17","t":"Team Total Points","ti":"98","op":[17.5,null,null],"cur":[9.5,null,null]},
+  {"a":null,"tm":"17","t":"Team Total Points","ti":"98","op":[17.5,null,null],"cur":[10.5,null,null]},
+  {"a":null,"tm":"17","t":"Team Total Points","ti":"98","op":[17.5,null,null],"cur":[11.5,null,null]},
+  {"a":null,"tm":"17","t":"Team Total Points","ti":"98","op":[17.5,null,null],"cur":[12.5,null,null]},
+  {"a":null,"tm":"17","t":"Team Total Points","ti":"98","op":[17.5,null,null],"cur":[13.5,null,null]},
+  {"a":null,"tm":"17","t":"Team Total Points","ti":"98","op":[17.5,null,null],"cur":[14.5,null,null]},
+  {"a":null,"tm":"17","t":"Team Total Points","ti":"98","op":[17.5,null,null],"cur":[15.5,null,null]},
+  {"a":null,"tm":"17","t":"Team Total Points","ti":"98","op":[17.5,null,null],"cur":[16.5,null,null]},
+  {"a":null,"tm":"17","t":"Team Total Points","ti":"98","op":[17.5,null,null],"cur":[17.5,null,null]},
+  {"a":null,"tm":"17","t":"Team Total Points","ti":"98","op":[17.5,null,null],"cur":[18.5,null,null]},
+  {"a":null,"tm":"17","t":"Team Total Points","ti":"98","op":[17.5,null,null],"cur":[19.5,null,null]},
+  {"a":null,"tm":"17","t":"Team Total Points","ti":"98","op":[17.5,null,null],"cur":[20.5,null,null]},
+  {"a":null,"tm":"17","t":"Team Total Points","ti":"98","op":[17.5,null,null],"cur":[21.5,null,null]},
+  {"a":null,"tm":"17","t":"Team Total Points","ti":"98","op":[17.5,null,null],"cur":[22.5,null,null]},
+  {"a":null,"tm":"17","t":"Team Total Points","ti":"98","op":[17.5,null,null],"cur":[23.5,null,null]},
+  {"a":null,"tm":"17","t":"Team Total Points","ti":"98","op":[17.5,null,null],"cur":[24.5,null,null]},
+  {"a":null,"tm":"17","t":"Team Total Points","ti":"98","op":[17.5,null,null],"cur":[25.5,null,null]},
+  {"a":null,"tm":"17","t":"Team Total Points","ti":"98","op":[17.5,null,null],"cur":[26.5,null,null]},
+  {"a":null,"tm":"17","t":"Team Total Points","ti":"98","op":[17.5,null,null],"cur":[27.5,null,null]},
+  {"a":null,"tm":"17","t":"Team Total Points","ti":"98","op":[17.5,null,null],"cur":[7.5,null,null]},
+  {"a":null,"tm":"17","t":"Team Total Points","ti":"98","op":[17.5,null,null],"cur":[8.5,null,null]},
+  {"a":null,"tm":"17","t":"Team Total Points","ti":"98","op":[17.5,null,null],"cur":[9.5,null,null]},
+  {"a":null,"tm":"24","t":"Team Total Points","ti":"98","op":[9.5,null,null],"cur":[10.5,null,null]},
+  {"a":null,"tm":"24","t":"Team Total Points","ti":"98","op":[9.5,null,null],"cur":[11.5,null,null]},
+  {"a":null,"tm":"24","t":"Team Total Points","ti":"98","op":[9.5,null,null],"cur":[12.5,null,null]},
+  {"a":null,"tm":"24","t":"Team Total Points","ti":"98","op":[9.5,null,null],"cur":[13.5,null,null]},
+  {"a":null,"tm":"24","t":"Team Total Points","ti":"98","op":[9.5,null,null],"cur":[14.5,null,null]},
+  {"a":null,"tm":"24","t":"Team Total Points","ti":"98","op":[9.5,null,null],"cur":[15.5,null,null]},
+  {"a":null,"tm":"24","t":"Team Total Points","ti":"98","op":[9.5,null,null],"cur":[16.5,null,null]},
+  {"a":null,"tm":"24","t":"Team Total Points","ti":"98","op":[9.5,null,null],"cur":[17.5,null,null]},
+  {"a":null,"tm":"24","t":"Team Total Points","ti":"98","op":[9.5,null,null],"cur":[18.5,null,null]},
+  {"a":null,"tm":"24","t":"Team Total Points","ti":"98","op":[9.5,null,null],"cur":[19.5,null,null]},
+  {"a":null,"tm":"24","t":"Team Total Points","ti":"98","op":[9.5,null,null],"cur":[20.5,null,null]},
+  {"a":null,"tm":"24","t":"Team Total Points","ti":"98","op":[9.5,null,null],"cur":[21.5,null,null]},
+  {"a":null,"tm":"24","t":"Team Total Points","ti":"98","op":[9.5,null,null],"cur":[22.5,null,null]},
+  {"a":null,"tm":"24","t":"Team Total Points","ti":"98","op":[9.5,null,null],"cur":[23.5,null,null]},
+  {"a":null,"tm":"24","t":"Team Total Points","ti":"98","op":[9.5,null,null],"cur":[24.5,null,null]},
+  {"a":null,"tm":"24","t":"Team Total Points","ti":"98","op":[9.5,null,null],"cur":[25.5,null,null]},
+  {"a":null,"tm":"24","t":"Team Total Points","ti":"98","op":[9.5,null,null],"cur":[26.5,null,null]},
+  {"a":null,"tm":"24","t":"Team Total Points","ti":"98","op":[9.5,null,null],"cur":[27.5,null,null]},
+  {"a":null,"tm":"24","t":"Team Total Points","ti":"98","op":[9.5,null,null],"cur":[7.5,null,null]},
+  {"a":null,"tm":"24","t":"Team Total Points","ti":"98","op":[9.5,null,null],"cur":[8.5,null,null]},
+  {"a":null,"tm":"24","t":"Team Total Points","ti":"98","op":[9.5,null,null],"cur":[9.5,null,null]},
+  {"a":null,"tm":"24","t":"Team Total Points","ti":"98","op":[9.5,null,null],"cur":[10.5,null,null]},
+  {"a":null,"tm":"24","t":"Team Total Points","ti":"98","op":[9.5,null,null],"cur":[11.5,null,null]},
+  {"a":null,"tm":"24","t":"Team Total Points","ti":"98","op":[9.5,null,null],"cur":[12.5,null,null]},
+  {"a":null,"tm":"24","t":"Team Total Points","ti":"98","op":[9.5,null,null],"cur":[13.5,null,null]},
+  {"a":null,"tm":"24","t":"Team Total Points","ti":"98","op":[9.5,null,null],"cur":[14.5,null,null]},
+  {"a":null,"tm":"24","t":"Team Total Points","ti":"98","op":[9.5,null,null],"cur":[15.5,null,null]},
+  {"a":null,"tm":"24","t":"Team Total Points","ti":"98","op":[9.5,null,null],"cur":[16.5,null,null]},
+  {"a":null,"tm":"24","t":"Team Total Points","ti":"98","op":[9.5,null,null],"cur":[17.5,null,null]},
+  {"a":null,"tm":"24","t":"Team Total Points","ti":"98","op":[9.5,null,null],"cur":[18.5,null,null]},
+  {"a":null,"tm":"24","t":"Team Total Points","ti":"98","op":[9.5,null,null],"cur":[19.5,null,null]},
+  {"a":null,"tm":"24","t":"Team Total Points","ti":"98","op":[9.5,null,null],"cur":[20.5,null,null]},
+  {"a":null,"tm":"24","t":"Team Total Points","ti":"98","op":[9.5,null,null],"cur":[21.5,null,null]},
+  {"a":null,"tm":"24","t":"Team Total Points","ti":"98","op":[9.5,null,null],"cur":[22.5,null,null]},
+  {"a":null,"tm":"24","t":"Team Total Points","ti":"98","op":[9.5,null,null],"cur":[23.5,null,null]},
+  {"a":null,"tm":"24","t":"Team Total Points","ti":"98","op":[9.5,null,null],"cur":[24.5,null,null]},
+  {"a":null,"tm":"24","t":"Team Total Points","ti":"98","op":[9.5,null,null],"cur":[25.5,null,null]},
+  {"a":null,"tm":"24","t":"Team Total Points","ti":"98","op":[9.5,null,null],"cur":[26.5,null,null]},
+  {"a":null,"tm":"24","t":"Team Total Points","ti":"98","op":[9.5,null,null],"cur":[27.5,null,null]},
+  {"a":null,"tm":"24","t":"Team Total Points","ti":"98","op":[9.5,null,null],"cur":[7.5,null,null]},
+  {"a":null,"tm":"24","t":"Team Total Points","ti":"98","op":[9.5,null,null],"cur":[8.5,null,null]},
+  {"a":null,"tm":"24","t":"Team Total Points","ti":"98","op":[9.5,null,null],"cur":[9.5,null,null]},
+  {"a":null,"tm":"17","t":"Team Total Touchdowns","ti":"104","op":[1.5,null,null],"cur":[1.5,null,null]},
+  {"a":null,"tm":"17","t":"Team Total Touchdowns","ti":"104","op":[1.5,null,null],"cur":[1.5,null,null]},
+  {"a":null,"tm":"24","t":"Team Total Touchdowns","ti":"104","op":[1.5,null,null],"cur":[1.5,null,null]},
+  {"a":null,"tm":"24","t":"Team Total Touchdowns","ti":"104","op":[1.5,null,null],"cur":[1.5,null,null]},
+  {"a":null,"t":"Will There Be Overtime?","ti":"153"},
+  {"a":null,"t":"Will There Be Overtime?","ti":"153"}
+ ],
+   "sample": [
+    {
+     "competition": {
+      "id": "401873093"
+     },
+     "team": {
+      "id": "17"
+     },
+     "provider": {
+      "id": "100"
+     },
+     "type": {
+      "id": "98",
+      "name": "Team Total Points"
+     },
+     "lastUpdated": "2026-11-23T18:55Z",
+     "current": {
+      "target": {
+       "value": 10.5,
+       "displayValue": "10.5"
+      }
+     },
+     "open": {
+      "target": {
+       "value": 17.5,
+       "displayValue": "17.5"
+      }
+     }
+    },
+    {
+     "competition": {
+      "id": "401873093"
+     },
+     "team": {
+      "id": "17"
+     },
+     "provider": {
+      "id": "100"
+     },
+     "type": {
+      "id": "98",
+      "name": "Team Total Points"
+     },
+     "lastUpdated": "2026-11-23T19:03Z",
+     "current": {
+      "target": {
+       "value": 11.5,
+       "displayValue": "11.5"
+      }
+     },
+     "open": {
+      "target": {
+       "value": 17.5,
+       "displayValue": "17.5"
+      }
+     }
+    }
+   ]
+  }
+ },
+ "names": {
+  "15151": [
+   "Josh Harris",
+   "LAC"
+  ],
+  "15718": [
+   "Greg Van Roten",
+   "NE"
+  ],
+  "16195": [
+   "Tony Jefferson",
+   "LAC"
+  ],
+  "16710": [
+   "Khalil Mack",
+   "LAC"
+  ],
+  "16771": [
+   "Morgan Moses",
+   "NE"
+  ],
+  "16910": [
+   "DaQuan Jones",
+   "NE"
+  ],
+  "2574056": [
+   "Kevin Byard",
+   "NE"
+  ],
+  "2576702": [
+   "Bud Dupree",
+   "LAC"
+  ],
+  "2579621": [
+   "Denzel Perryman",
+   "LAC"
+  ],
+  "2979860": [
+   "Dalvin Tomlinson",
+   "LAC"
+  ],
+  "2991662": [
+   "Mack Hollins",
+   "NE"
+  ],
+  "3046439": [
+   "Hunter Henry",
+   "NE"
+  ],
+  "3055886": [
+   "Matt Pryor",
+   "NE"
+  ],
+  "3122793": [
+   "Harold Landry III",
+   "NE"
+  ],
+  "3123076": [
+   "David Njoku",
+   "LAC"
+  ],
+  "3126368": [
+   "JK Scott",
+   "LAC"
+  ],
+  "3129446": [
+   "Robert Spillane",
+   "NE"
+  ],
+  "3691739": [
+   "Derwin James Jr.",
+   "LAC"
+  ],
+  "3843769": [
+   "Donte Jackson",
+   "LAC"
+  ],
+  "3886812": [
+   "Jake Browning",
+   "LAC"
+  ],
+  "3914151": [
+   "Josiah Deguara",
+   "LAC"
+  ],
+  "3915525": [
+   "Dre'Mont Jones",
+   "NE"
+  ],
+  "3916923": [
+   "Carlton Davis III",
+   "NE"
+  ],
+  "3917668": [
+   "Alec Ingold",
+   "LAC"
+  ],
+  "4035685": [
+   "Mitch Wishnowsky",
+   "NE"
+  ],
+  "4035788": [
+   "Tyler Biadasz",
+   "LAC"
+  ],
+  "4036651": [
+   "Kindle Vildor",
+   "NE"
+  ],
+  "4038941": [
+   "Justin Herbert",
+   "LAC"
+  ],
+  "4038946": [
+   "Troy Dye",
+   "LAC"
+  ],
+  "4039164": [
+   "Myles Adams",
+   "LAC"
+  ],
+  "4039505": [
+   "Reggie Gilliam",
+   "NE"
+  ],
+  "4040842": [
+   "Kayode Awosika",
+   "LAC"
+  ],
+  "4046545": [
+   "Mike Onwenu",
+   "NE"
+  ],
+  "4047422": [
+   "Tanner Conner",
+   "NE"
+  ],
+  "4047646": [
+   "A.J. Brown",
+   "NE"
+  ],
+  "4047941": [
+   "Brenden Schooler",
+   "NE"
+  ],
+  "4051001": [
+   "Cole Strange",
+   "LAC"
+  ],
+  "4239699": [
+   "Milton Williams",
+   "NE"
+  ],
+  "4240042": [
+   "Cory Durden",
+   "NE"
+  ],
+  "4240391": [
+   "Tommy DeVito",
+   "NE"
+  ],
+  "4240528": [
+   "Del'Shawn Phillips",
+   "LAC"
+  ],
+  "4241263": [
+   "Charlie Kolar",
+   "LAC"
+  ],
+  "4241597": [
+   "Daiyan Henley",
+   "LAC"
+  ],
+  "4241720": [
+   "Marcus Jones",
+   "NE"
+  ],
+  "4242283": [
+   "Rashawn Slater",
+   "LAC"
+  ],
+  "4243328": [
+   "Elijah Molden",
+   "LAC"
+  ],
+  "4244310": [
+   "Mike Brown",
+   "NE"
+  ],
+  "4245273": [
+   "Christian Elliss",
+   "NE"
+  ],
+  "4247722": [
+   "Benton Whitley",
+   "NE"
+  ],
+  "4248627": [
+   "Trevor Penning",
+   "LAC"
+  ],
+  "4259186": [
+   "Xavier Newman-Johnson",
+   "NE"
+  ],
+  "4259646": [
+   "Alijah Vera-Tucker",
+   "NE"
+  ],
+  "4360063": [
+   "Lorenz Metz",
+   "NE"
+  ],
+  "4360745": [
+   "Kendall Williamson",
+   "LAC"
+  ],
+  "4361432": [
+   "Romeo Doubs",
+   "NE"
+  ],
+  "4362081": [
+   "Cameron Dicker",
+   "LAC"
+  ],
+  "4362477": [
+   "Derius Davis",
+   "LAC"
+  ],
+  "4362890": [
+   "Ben Brown",
+   "NE"
+  ],
+  "4365395": [
+   "Julian Hill",
+   "NE"
+  ],
+  "4368113": [
+   "Charles Woods",
+   "NE"
+  ],
+  "4369466": [
+   "Ryan Miller",
+   "NE"
+  ],
+  "4372017": [
+   "Jalyn Armour-Davis",
+   "LAC"
+  ],
+  "4372026": [
+   "Cameron Latu",
+   "NE"
+  ],
+  "4372030": [
+   "Christian Barmore",
+   "NE"
+  ],
+  "4373684": [
+   "Scott Matlock",
+   "LAC"
+  ],
+  "4374269": [
+   "Teair Tart",
+   "LAC"
+  ],
+  "4383351": [
+   "Trey Lance",
+   "LAC"
+  ],
+  "4411189": [
+   "Trey Pipkins III",
+   "LAC"
+  ],
+  "4426535": [
+   "Theo Wease Jr.",
+   "LAC"
+  ],
+  "4427095": [
+   "DeMario Douglas",
+   "NE"
+  ],
+  "4427404": [
+   "Cam Hart",
+   "LAC"
+  ],
+  "4427600": [
+   "Terrell Jennings",
+   "NE"
+  ],
+  "4427695": [
+   "Kyu Blu Kelly",
+   "LAC"
+  ],
+  "4428072": [
+   "Darius Muasau",
+   "NE"
+  ],
+  "4428098": [
+   "Elias Neal",
+   "NE"
+  ],
+  "4428232": [
+   "Dell Pettus",
+   "NE"
+  ],
+  "4428394": [
+   "Walter Rouse",
+   "NE"
+  ],
+  "4428930": [
+   "Craig Woodson",
+   "NE"
+  ],
+  "4429018": [
+   "RJ Mickens",
+   "LAC"
+  ],
+  "4429020": [
+   "DJ Uiagalelei",
+   "LAC"
+  ],
+  "4429025": [
+   "Quentin Johnston",
+   "LAC"
+  ],
+  "4429190": [
+   "Akheem Mesidor",
+   "LAC"
+  ],
+  "4429811": [
+   "Patrick Herbert",
+   "LAC"
+  ],
+  "4430114": [
+   "Josh Kaltenberger",
+   "LAC"
+  ],
+  "4430870": [
+   "KeAndre Lambert-Smith",
+   "LAC"
+  ],
+  "4430968": [
+   "Kimani Vidal",
+   "LAC"
+  ],
+  "4431212": [
+   "Junior Colson",
+   "LAC"
+  ],
+  "4431431": [
+   "Corey Kiner",
+   "NE"
+  ],
+  "4431442": [
+   "Tuli Tuipulotu",
+   "LAC"
+  ],
+  "4431452": [
+   "Drake Maye",
+   "NE"
+  ],
+  "4431465": [
+   "Behren Morton",
+   "NE"
+  ],
+  "4431467": [
+   "Marlowe Wax",
+   "LAC"
+  ],
+  "4431526": [
+   "Dametrious Crownover",
+   "NE"
+  ],
+  "4431598": [
+   "Leonard Taylor III",
+   "NE"
+  ],
+  "4432571": [
+   "Tarheeb Still",
+   "LAC"
+  ],
+  "4432710": [
+   "TreVeyon Henderson",
+   "NE"
+  ],
+  "4432758": [
+   "Jaylen Reed",
+   "NE"
+  ],
+  "4433830": [
+   "Luke Grimm",
+   "LAC"
+  ],
+  "4433914": [
+   "Branson Taylor",
+   "LAC"
+  ],
+  "4565293": [
+   "Marcus Bryant",
+   "NE"
+  ],
+  "4567138": [
+   "Justin Eboigbe",
+   "LAC"
+  ],
+  "4567171": [
+   "Eric Gregory",
+   "NE"
+  ],
+  "4567399": [
+   "Kaiir Elam",
+   "LAC"
+  ],
+  "4569173": [
+   "Rhamondre Stevenson",
+   "NE"
+  ],
+  "4569923": [
+   "Andy Borregales",
+   "NE"
+  ],
+  "4573243": [
+   "Chandler Brayboy",
+   "NE"
+  ],
+  "4574105": [
+   "Isas Waxter",
+   "LAC"
+  ],
+  "4577333": [
+   "Andre Carter II",
+   "LAC"
+  ],
+  "4595342": [
+   "Oronde Gadsden",
+   "LAC"
+  ],
+  "4596334": [
+   "Keaton Mitchell",
+   "LAC"
+  ],
+  "4599198": [
+   "Jared Wilson",
+   "NE"
+  ],
+  "4606666": [
+   "Karon Prunty",
+   "NE"
+  ],
+  "4611993": [
+   "Joshua Farmer",
+   "NE"
+  ],
+  "4612826": [
+   "Ladd McConkey",
+   "LAC"
+  ],
+  "4613202": [
+   "Kyle Williams",
+   "NE"
+  ],
+  "4676889": [
+   "Myles Montgomery",
+   "NE"
+  ],
+  "4682506": [
+   "Jake Slaughter",
+   "LAC"
+  ],
+  "4682789": [
+   "Logan Taylor",
+   "LAC"
+  ],
+  "4682818": [
+   "Nick Barrett",
+   "LAC"
+  ],
+  "4683308": [
+   "Tanner Arkin",
+   "NE"
+  ],
+  "4683487": [
+   "Joe Alt",
+   "LAC"
+  ],
+  "4685272": [
+   "Lander Barton",
+   "LAC"
+  ],
+  "4685298": [
+   "Will Campbell",
+   "NE"
+  ],
+  "4685382": [
+   "Omarion Hampton",
+   "LAC"
+  ],
+  "4685553": [
+   "Brenen Thompson",
+   "LAC"
+  ],
+  "4685841": [
+   "Zion Childress",
+   "LAC"
+  ],
+  "4686612": [
+   "Tre' Harris",
+   "LAC"
+  ],
+  "4686772": [
+   "Christian Gonzalez",
+   "NE"
+  ],
+  "4688366": [
+   "Elliott Davison",
+   "NE"
+  ],
+  "4688432": [
+   "Elijah Ponder",
+   "NE"
+  ],
+  "4688779": [
+   "Channing Canada",
+   "NE"
+  ],
+  "4690171": [
+   "Deane Leonard",
+   "LAC"
+  ],
+  "4690606": [
+   "Al'zillion Hamilton",
+   "NE"
+  ],
+  "4695193": [
+   "Efton Chism III",
+   "NE"
+  ],
+  "4695254": [
+   "Julian Ashby",
+   "NE"
+  ],
+  "4698181": [
+   "Quintayvious Hutchins",
+   "NE"
+  ],
+  "4698253": [
+   "Lan Larison",
+   "NE"
+  ],
+  "4831959": [
+   "Eli Raridon",
+   "NE"
+  ],
+  "4837244": [
+   "Gabe Jacas",
+   "NE"
+  ],
+  "4838693": [
+   "Rodney Shelley",
+   "LAC"
+  ],
+  "4875912": [
+   "Tejhaun Palmer",
+   "LAC"
+  ],
+  "4876658": [
+   "Travis Burke",
+   "LAC"
+  ],
+  "4877877": [
+   "Xavier Holmes",
+   "NE"
+  ],
+  "4878878": [
+   "Amar Johnson",
+   "LAC"
+  ],
+  "4890074": [
+   "Erick Hunter",
+   "NE"
+  ],
+  "4911489": [
+   "Caleb Murphy",
+   "LAC"
+  ],
+  "4912116": [
+   "Khalil Jacobs",
+   "NE"
+  ],
+  "4916597": [
+   "Andrew Rupcich",
+   "NE"
+  ],
+  "4921438": [
+   "Caleb Lomu",
+   "NE"
+  ],
+  "4950551": [
+   "Genesis Smith",
+   "LAC"
+  ],
+  "5011554": [
+   "Kyle Dixon",
+   "NE"
+  ],
+  "5081728": [
+   "Jeremiah Pharms Jr.",
+   "NE"
+  ],
+  "5082312": [
+   "Jacob Spomer",
+   "LAC"
+  ],
+  "5082660": [
+   "Alex Harkey",
+   "LAC"
+  ],
+  "5084965": [
+   "Isaiah World",
+   "LAC"
+  ],
+  "5085407": [
+   "Namdi Obiazor",
+   "NE"
+  ],
+  "5089178": [
+   "Jamaree Caldwell",
+   "LAC"
+  ],
+  "5152226": [
+   "Terry Webb",
+   "LAC"
+  ],
+  "5211218": [
+   "Laekin Vakalahi",
+   "LAC"
+  ]
+ }
 }

@@ -7,18 +7,18 @@
   "id": "2110",
   "abbr": "CARK",
   "name": "Central Arkansas Bears",
-  "score": 0
+  "score": 44
  },
  "home": {
   "id": "2454",
   "abbr": "UNF",
   "name": "North Florida Ospreys",
-  "score": 0
+  "score": 23
  },
  "neutral": false,
  "venue": "UNF Arena",
  "seasonType": 2,
- "state": "pre",
+ "state": "in",
  "lines": {
   "open": {
    "at": "2026-11-23T02:36:40.480Z",

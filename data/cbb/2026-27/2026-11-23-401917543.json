@@ -2,23 +2,23 @@
  "id": "401917543",
  "league": "cbb",
  "date": "2026-11-24T00:00Z",
- "name": "ILST VS SCU",
+ "name": "SCU VS ILST",
  "away": {
-  "id": "2287",
-  "abbr": "ILST",
-  "name": "Illinois State Redbirds",
-  "score": 0
- },
- "home": {
   "id": "2541",
   "abbr": "SCU",
   "name": "Santa Clara Broncos",
-  "score": 0
+  "score": 47
+ },
+ "home": {
+  "id": "2287",
+  "abbr": "ILST",
+  "name": "Illinois State Redbirds",
+  "score": 47
  },
  "neutral": true,
  "venue": "Acrisure Arena",
  "seasonType": 2,
- "state": "pre",
+ "state": "in",
  "lines": {
   "open": {
    "at": "2026-11-22T23:50:51.406Z",

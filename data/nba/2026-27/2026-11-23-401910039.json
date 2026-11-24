@@ -7,18 +7,18 @@
   "id": "15",
   "abbr": "MIL",
   "name": "Milwaukee Bucks",
-  "score": 0
+  "score": 24
  },
  "home": {
   "id": "28",
   "abbr": "TOR",
   "name": "Toronto Raptors",
-  "score": 0
+  "score": 23
  },
  "neutral": false,
  "venue": "Scotiabank Arena",
  "seasonType": 2,
- "state": "pre",
+ "state": "in",
  "lines": {
   "open": {
    "at": "2026-11-23T02:36:40.480Z",

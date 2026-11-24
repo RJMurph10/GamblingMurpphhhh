@@ -477,5 +477,835 @@
    ]
   }
  },
- "props": {}
+ "props": {
+  "open": {
+   "at": "2026-11-24T00:58:17.105Z",
+   "provider": 100,
+   "count": 96,
+   "rows": [
+  {"a":null,"t":"1st Half Total","ti":"72","op":[23.5,null,null],"cur":[23.5,null,null]},
+  {"a":null,"t":"1st Half Total","ti":"72","op":[23.5,null,null],"cur":[23.5,null,null]},
+  {"a":null,"tm":"25","t":"1st Half Moneyline","ti":"73"},
+  {"a":null,"tm":"26","t":"1st Half Moneyline","ti":"73"},
+  {"a":null,"tm":"25","t":"1st Half Spread","ti":"74","op":[-2.5,null,null],"cur":[-2.5,null,null]},
+  {"a":null,"tm":"26","t":"1st Half Spread","ti":"74","op":[2.5,null,null],"cur":[2.5,null,null]},
+  {"a":null,"t":"1st Quarter Total","ti":"75","op":[9.5,null,null],"cur":[9.5,null,null]},
+  {"a":null,"t":"1st Quarter Total","ti":"75","op":[9.5,null,null],"cur":[9.5,null,null]},
+  {"a":null,"tm":"25","t":"1st Quarter Moneyline","ti":"76"},
+  {"a":null,"tm":"26","t":"1st Quarter Moneyline","ti":"76"},
+  {"a":null,"tm":"25","t":"1st Quarter Spread","ti":"77","op":[-0.5,null,null],"cur":[-0.5,null,null]},
+  {"a":null,"tm":"26","t":"1st Quarter Spread","ti":"77","op":[0.5,null,null],"cur":[0.5,null,null]},
+  {"a":null,"tm":"25","t":"Team Total Points","ti":"98","op":[24.5,null,null],"cur":[14.5,null,null]},
+  {"a":null,"tm":"25","t":"Team Total Points","ti":"98","op":[24.5,null,null],"cur":[15.5,null,null]},
+  {"a":null,"tm":"25","t":"Team Total Points","ti":"98","op":[24.5,null,null],"cur":[16.5,null,null]},
+  {"a":null,"tm":"25","t":"Team Total Points","ti":"98","op":[24.5,null,null],"cur":[17.5,null,null]},
+  {"a":null,"tm":"25","t":"Team Total Points","ti":"98","op":[24.5,null,null],"cur":[18.5,null,null]},
+  {"a":null,"tm":"25","t":"Team Total Points","ti":"98","op":[24.5,null,null],"cur":[19.5,null,null]},
+  {"a":null,"tm":"25","t":"Team Total Points","ti":"98","op":[24.5,null,null],"cur":[20.5,null,null]},
+  {"a":null,"tm":"25","t":"Team Total Points","ti":"98","op":[24.5,null,null],"cur":[21.5,null,null]},
+  {"a":null,"tm":"25","t":"Team Total Points","ti":"98","op":[24.5,null,null],"cur":[22.5,null,null]},
+  {"a":null,"tm":"25","t":"Team Total Points","ti":"98","op":[24.5,null,null],"cur":[23.5,null,null]},
+  {"a":null,"tm":"25","t":"Team Total Points","ti":"98","op":[24.5,null,null],"cur":[24.5,null,null]},
+  {"a":null,"tm":"25","t":"Team Total Points","ti":"98","op":[24.5,null,null],"cur":[25.5,null,null]},
+  {"a":null,"tm":"25","t":"Team Total Points","ti":"98","op":[24.5,null,null],"cur":[27.5,null,null]},
+  {"a":null,"tm":"25","t":"Team Total Points","ti":"98","op":[24.5,null,null],"cur":[28.5,null,null]},
+  {"a":null,"tm":"25","t":"Team Total Points","ti":"98","op":[24.5,null,null],"cur":[29.5,null,null]},
+  {"a":null,"tm":"25","t":"Team Total Points","ti":"98","op":[24.5,null,null],"cur":[30.5,null,null]},
+  {"a":null,"tm":"25","t":"Team Total Points","ti":"98","op":[24.5,null,null],"cur":[31.5,null,null]},
+  {"a":null,"tm":"25","t":"Team Total Points","ti":"98","op":[24.5,null,null],"cur":[32.5,null,null]},
+  {"a":null,"tm":"25","t":"Team Total Points","ti":"98","op":[24.5,null,null],"cur":[33.5,null,null]},
+  {"a":null,"tm":"25","t":"Team Total Points","ti":"98","op":[24.5,null,null],"cur":[34.5,null,null]},
+  {"a":null,"tm":"25","t":"Team Total Points","ti":"98","op":[24.5,null,null],"cur":[15.5,null,null]},
+  {"a":null,"tm":"25","t":"Team Total Points","ti":"98","op":[24.5,null,null],"cur":[16.5,null,null]},
+  {"a":null,"tm":"25","t":"Team Total Points","ti":"98","op":[24.5,null,null],"cur":[17.5,null,null]},
+  {"a":null,"tm":"25","t":"Team Total Points","ti":"98","op":[24.5,null,null],"cur":[18.5,null,null]},
+  {"a":null,"tm":"25","t":"Team Total Points","ti":"98","op":[24.5,null,null],"cur":[19.5,null,null]},
+  {"a":null,"tm":"25","t":"Team Total Points","ti":"98","op":[24.5,null,null],"cur":[20.5,null,null]},
+  {"a":null,"tm":"25","t":"Team Total Points","ti":"98","op":[24.5,null,null],"cur":[21.5,null,null]},
+  {"a":null,"tm":"25","t":"Team Total Points","ti":"98","op":[24.5,null,null],"cur":[22.5,null,null]},
+  {"a":null,"tm":"25","t":"Team Total Points","ti":"98","op":[24.5,null,null],"cur":[23.5,null,null]},
+  {"a":null,"tm":"25","t":"Team Total Points","ti":"98","op":[24.5,null,null],"cur":[24.5,null,null]},
+  {"a":null,"tm":"25","t":"Team Total Points","ti":"98","op":[24.5,null,null],"cur":[25.5,null,null]},
+  {"a":null,"tm":"25","t":"Team Total Points","ti":"98","op":[24.5,null,null],"cur":[26.5,null,null]},
+  {"a":null,"tm":"25","t":"Team Total Points","ti":"98","op":[24.5,null,null],"cur":[27.5,null,null]},
+  {"a":null,"tm":"25","t":"Team Total Points","ti":"98","op":[24.5,null,null],"cur":[28.5,null,null]},
+  {"a":null,"tm":"25","t":"Team Total Points","ti":"98","op":[24.5,null,null],"cur":[29.5,null,null]},
+  {"a":null,"tm":"25","t":"Team Total Points","ti":"98","op":[24.5,null,null],"cur":[33.5,null,null]},
+  {"a":null,"tm":"26","t":"Team Total Points","ti":"98","op":[21.5,null,null],"cur":[11.5,null,null]},
+  {"a":null,"tm":"26","t":"Team Total Points","ti":"98","op":[21.5,null,null],"cur":[12.5,null,null]},
+  {"a":null,"tm":"26","t":"Team Total Points","ti":"98","op":[21.5,null,null],"cur":[13.5,null,null]},
+  {"a":null,"tm":"26","t":"Team Total Points","ti":"98","op":[21.5,null,null],"cur":[14.5,null,null]},
+  {"a":null,"tm":"26","t":"Team Total Points","ti":"98","op":[21.5,null,null],"cur":[15.5,null,null]},
+  {"a":null,"tm":"26","t":"Team Total Points","ti":"98","op":[21.5,null,null],"cur":[16.5,null,null]},
+  {"a":null,"tm":"26","t":"Team Total Points","ti":"98","op":[21.5,null,null],"cur":[17.5,null,null]},
+  {"a":null,"tm":"26","t":"Team Total Points","ti":"98","op":[21.5,null,null],"cur":[18.5,null,null]},
+  {"a":null,"tm":"26","t":"Team Total Points","ti":"98","op":[21.5,null,null],"cur":[19.5,null,null]},
+  {"a":null,"tm":"26","t":"Team Total Points","ti":"98","op":[21.5,null,null],"cur":[20.5,null,null]},
+  {"a":null,"tm":"26","t":"Team Total Points","ti":"98","op":[21.5,null,null],"cur":[21.5,null,null]},
+  {"a":null,"tm":"26","t":"Team Total Points","ti":"98","op":[21.5,null,null],"cur":[22.5,null,null]},
+  {"a":null,"tm":"26","t":"Team Total Points","ti":"98","op":[21.5,null,null],"cur":[23.5,null,null]},
+  {"a":null,"tm":"26","t":"Team Total Points","ti":"98","op":[21.5,null,null],"cur":[24.5,null,null]},
+  {"a":null,"tm":"26","t":"Team Total Points","ti":"98","op":[21.5,null,null],"cur":[25.5,null,null]},
+  {"a":null,"tm":"26","t":"Team Total Points","ti":"98","op":[21.5,null,null],"cur":[26.5,null,null]},
+  {"a":null,"tm":"26","t":"Team Total Points","ti":"98","op":[21.5,null,null],"cur":[27.5,null,null]},
+  {"a":null,"tm":"26","t":"Team Total Points","ti":"98","op":[21.5,null,null],"cur":[28.5,null,null]},
+  {"a":null,"tm":"26","t":"Team Total Points","ti":"98","op":[21.5,null,null],"cur":[29.5,null,null]},
+  {"a":null,"tm":"26","t":"Team Total Points","ti":"98","op":[21.5,null,null],"cur":[30.5,null,null]},
+  {"a":null,"tm":"26","t":"Team Total Points","ti":"98","op":[21.5,null,null],"cur":[31.5,null,null]},
+  {"a":null,"tm":"26","t":"Team Total Points","ti":"98","op":[21.5,null,null],"cur":[11.5,null,null]},
+  {"a":null,"tm":"26","t":"Team Total Points","ti":"98","op":[21.5,null,null],"cur":[12.5,null,null]},
+  {"a":null,"tm":"26","t":"Team Total Points","ti":"98","op":[21.5,null,null],"cur":[13.5,null,null]},
+  {"a":null,"tm":"26","t":"Team Total Points","ti":"98","op":[21.5,null,null],"cur":[14.5,null,null]},
+  {"a":null,"tm":"26","t":"Team Total Points","ti":"98","op":[21.5,null,null],"cur":[15.5,null,null]},
+  {"a":null,"tm":"26","t":"Team Total Points","ti":"98","op":[21.5,null,null],"cur":[16.5,null,null]},
+  {"a":null,"tm":"26","t":"Team Total Points","ti":"98","op":[21.5,null,null],"cur":[17.5,null,null]},
+  {"a":null,"tm":"26","t":"Team Total Points","ti":"98","op":[21.5,null,null],"cur":[18.5,null,null]},
+  {"a":null,"tm":"26","t":"Team Total Points","ti":"98","op":[21.5,null,null],"cur":[19.5,null,null]},
+  {"a":null,"tm":"26","t":"Team Total Points","ti":"98","op":[21.5,null,null],"cur":[20.5,null,null]},
+  {"a":null,"tm":"26","t":"Team Total Points","ti":"98","op":[21.5,null,null],"cur":[21.5,null,null]},
+  {"a":null,"tm":"26","t":"Team Total Points","ti":"98","op":[21.5,null,null],"cur":[22.5,null,null]},
+  {"a":null,"tm":"26","t":"Team Total Points","ti":"98","op":[21.5,null,null],"cur":[23.5,null,null]},
+  {"a":null,"tm":"26","t":"Team Total Points","ti":"98","op":[21.5,null,null],"cur":[24.5,null,null]},
+  {"a":null,"tm":"26","t":"Team Total Points","ti":"98","op":[21.5,null,null],"cur":[25.5,null,null]},
+  {"a":null,"tm":"26","t":"Team Total Points","ti":"98","op":[21.5,null,null],"cur":[26.5,null,null]},
+  {"a":null,"tm":"26","t":"Team Total Points","ti":"98","op":[21.5,null,null],"cur":[27.5,null,null]},
+  {"a":null,"tm":"26","t":"Team Total Points","ti":"98","op":[21.5,null,null],"cur":[28.5,null,null]},
+  {"a":null,"tm":"26","t":"Team Total Points","ti":"98","op":[21.5,null,null],"cur":[29.5,null,null]},
+  {"a":null,"tm":"26","t":"Team Total Points","ti":"98","op":[21.5,null,null],"cur":[30.5,null,null]},
+  {"a":null,"tm":"26","t":"Team Total Points","ti":"98","op":[21.5,null,null],"cur":[31.5,null,null]},
+  {"a":null,"tm":"25","t":"Team Total Touchdowns","ti":"104","op":[2.5,null,null],"cur":[2.5,null,null]},
+  {"a":null,"tm":"25","t":"Team Total Touchdowns","ti":"104","op":[2.5,null,null],"cur":[2.5,null,null]},
+  {"a":null,"tm":"26","t":"Team Total Touchdowns","ti":"104","op":[2.5,null,null],"cur":[2.5,null,null]},
+  {"a":null,"tm":"26","t":"Team Total Touchdowns","ti":"104","op":[2.5,null,null],"cur":[2.5,null,null]},
+  {"a":null,"t":"Will There Be Overtime?","ti":"153"},
+  {"a":null,"t":"Will There Be Overtime?","ti":"153"}
+ ],
+   "sample": [
+    {
+     "competition": {
+      "id": "401873091"
+     },
+     "provider": {
+      "id": "100"
+     },
+     "type": {
+      "id": "72",
+      "name": "1st Half Total"
+     },
+     "lastUpdated": "2026-11-23T18:50Z",
+     "current": {
+      "target": {
+       "value": 23.5,
+       "displayValue": "23.5"
+      }
+     },
+     "open": {
+      "target": {
+       "value": 23.5,
+       "displayValue": "23.5"
+      }
+     }
+    },
+    {
+     "competition": {
+      "id": "401873091"
+     },
+     "provider": {
+      "id": "100"
+     },
+     "type": {
+      "id": "72",
+      "name": "1st Half Total"
+     },
+     "lastUpdated": "2026-11-23T18:50Z",
+     "current": {
+      "target": {
+       "value": 23.5,
+       "displayValue": "23.5"
+      }
+     },
+     "open": {
+      "target": {
+       "value": 23.5,
+       "displayValue": "23.5"
+      }
+     }
+    }
+   ]
+  }
+ },
+ "names": {
+  "13241": [
+   "Trent Williams",
+   "SF"
+  ],
+  "13729": [
+   "Jon Weeks",
+   "SF"
+  ],
+  "15818": [
+   "Keenan Allen",
+   "SF"
+  ],
+  "16002": [
+   "Kyle Juszczyk",
+   "SF"
+  ],
+  "16737": [
+   "Mike Evans",
+   "SF"
+  ],
+  "16802": [
+   "DeMarcus Lawrence",
+   "SEA"
+  ],
+  "2094390": [
+   "Michael Dansby",
+   "SEA"
+  ],
+  "2473037": [
+   "Jason Myers",
+   "SEA"
+  ],
+  "2576789": [
+   "Bobby Hart",
+   "SEA"
+  ],
+  "2577185": [
+   "Jake Brendel",
+   "SF"
+  ],
+  "2971282": [
+   "DeForest Buckner",
+   "SF"
+  ],
+  "2971622": [
+   "Leonard Williams",
+   "SEA"
+  ],
+  "2975863": [
+   "Eric Saubert",
+   "SEA"
+  ],
+  "2977187": [
+   "Cooper Kupp",
+   "SEA"
+  ],
+  "2980100": [
+   "Dante Fowler Jr.",
+   "SEA"
+  ],
+  "3040151": [
+   "George Kittle",
+   "SF"
+  ],
+  "3043116": [
+   "Demarcus Robinson",
+   "SF"
+  ],
+  "3047876": [
+   "KhaDarel Hodge",
+   "SF"
+  ],
+  "3052667": [
+   "Ogbo Okoronkwo",
+   "SF"
+  ],
+  "3057524": [
+   "Siran Neal",
+   "SF"
+  ],
+  "3115312": [
+   "Jarran Reed",
+   "SEA"
+  ],
+  "3116097": [
+   "Luke Gifford",
+   "SF"
+  ],
+  "3117251": [
+   "Christian McCaffrey",
+   "SF"
+  ],
+  "3120358": [
+   "Uchenna Nwosu",
+   "SEA"
+  ],
+  "3125280": [
+   "Corliss Waitman",
+   "SF"
+  ],
+  "3126486": [
+   "Deebo Samuel Sr.",
+   "SF"
+  ],
+  "3129116": [
+   "Brett Toth",
+   "SF"
+  ],
+  "3129308": [
+   "Quenton Nelson",
+   "SEA"
+  ],
+  "3138826": [
+   "Fred Warner",
+   "SF"
+  ],
+  "3858271": [
+   "Ashtyn Davis",
+   "SF"
+  ],
+  "3895856": [
+   "Christian Kirk",
+   "SF"
+  ],
+  "3912547": [
+   "Sam Darnold",
+   "SEA"
+  ],
+  "3914630": [
+   "Josh Jones",
+   "SEA"
+  ],
+  "3916075": [
+   "Colton McKivitz",
+   "SF"
+  ],
+  "3916903": [
+   "Dre Greenlaw",
+   "SF"
+  ],
+  "3920814": [
+   "Austen Pleasants",
+   "SF"
+  ],
+  "3924327": [
+   "Drew Lock",
+   "SEA"
+  ],
+  "3929636": [
+   "Irv Charles",
+   "SEA"
+  ],
+  "3929851": [
+   "Michael Dickson",
+   "SEA"
+  ],
+  "4032473": [
+   "Rashid Shaheed",
+   "SEA"
+  ],
+  "4034862": [
+   "Jack Stoll",
+   "SF"
+  ],
+  "4034949": [
+   "Eddy Pineiro",
+   "SF"
+  ],
+  "4035686": [
+   "Jack Jones",
+   "SF"
+  ],
+  "4035693": [
+   "Velus Jones Jr.",
+   "SEA"
+  ],
+  "4035840": [
+   "Osa Odighizuwa",
+   "SF"
+  ],
+  "4037521": [
+   "Chazz Surratt",
+   "SEA"
+  ],
+  "4039029": [
+   "Khalid Kareem",
+   "SF"
+  ],
+  "4040605": [
+   "Nick Bosa",
+   "SF"
+  ],
+  "4040612": [
+   "Luke Farrell",
+   "SF"
+  ],
+  "4040950": [
+   "Cordell Volson",
+   "SEA"
+  ],
+  "4040966": [
+   "Trevon Diggs",
+   "SEA"
+  ],
+  "4046675": [
+   "Julian Love",
+   "SEA"
+  ],
+  "4239088": [
+   "Darrick Forrest",
+   "SF"
+  ],
+  "4240542": [
+   "Nate Hobbs",
+   "SF"
+  ],
+  "4240554": [
+   "Vederian Lowe",
+   "SF"
+  ],
+  "4241464": [
+   "Mac Jones",
+   "SF"
+  ],
+  "4241807": [
+   "Garret Wallow",
+   "SF"
+  ],
+  "4242488": [
+   "Deommodore Lenoir",
+   "SF"
+  ],
+  "4242555": [
+   "Foster Sarell",
+   "SF"
+  ],
+  "4243176": [
+   "Brady Russell",
+   "SEA"
+  ],
+  "4243493": [
+   "Keion White",
+   "SF"
+  ],
+  "4244768": [
+   "Julian Hicks",
+   "SEA"
+  ],
+  "4245171": [
+   "Abraham Lucas",
+   "SEA"
+  ],
+  "4247590": [
+   "Nick Zakelj",
+   "SF"
+  ],
+  "4247808": [
+   "Ty Okada",
+   "SEA"
+  ],
+  "4248455": [
+   "Rodney Thomas II",
+   "SEA"
+  ],
+  "4259147": [
+   "Jake Tonges",
+   "SF"
+  ],
+  "4259558": [
+   "Robert Beal Jr.",
+   "SF"
+  ],
+  "4259606": [
+   "Chris Stoll",
+   "SEA"
+  ],
+  "4259651": [
+   "Brandon Pili",
+   "SEA"
+  ],
+  "4360290": [
+   "Brayden Willis",
+   "SF"
+  ],
+  "4360405": [
+   "Jake Bobo",
+   "SEA"
+  ],
+  "4360438": [
+   "Brandon Aiyuk",
+   "SF"
+  ],
+  "4361741": [
+   "Brock Purdy",
+   "SF"
+  ],
+  "4362851": [
+   "Ernest Jones IV",
+   "SEA"
+  ],
+  "4364623": [
+   "Patrick O'Connell",
+   "SEA"
+  ],
+  "4370807": [
+   "Olu Oluwatimi",
+   "SEA"
+  ],
+  "4372020": [
+   "Josh Jobe",
+   "SEA"
+  ],
+  "4372561": [
+   "Isaac Guerendo",
+   "SF"
+  ],
+  "4372774": [
+   "Jarrett Patterson",
+   "SF"
+  ],
+  "4373030": [
+   "Ben Sims",
+   "SEA"
+  ],
+  "4374148": [
+   "Viliami Fehoko Jr.",
+   "SF"
+  ],
+  "4383409": [
+   "Jalen Sundell",
+   "SEA"
+  ],
+  "4394894": [
+   "Andrew Farmer II",
+   "SF"
+  ],
+  "4426376": [
+   "Charles Cross",
+   "SEA"
+  ],
+  "4426385": [
+   "Zach Charbonnet",
+   "SEA"
+  ],
+  "4426698": [
+   "Tatum Bethune",
+   "SF"
+  ],
+  "4427325": [
+   "Renardo Green",
+   "SF"
+  ],
+  "4428144": [
+   "Drake Nugent",
+   "SF"
+  ],
+  "4428209": [
+   "Ricky Pearsall",
+   "SF"
+  ],
+  "4428659": [
+   "Drake Thomas",
+   "SEA"
+  ],
+  "4428943": [
+   "Jacardia Wright",
+   "SEA"
+  ],
+  "4429211": [
+   "Anthony Bradford",
+   "SEA"
+  ],
+  "4429835": [
+   "George Holani",
+   "SEA"
+  ],
+  "4430070": [
+   "Federico Maranges",
+   "SEA"
+  ],
+  "4430104": [
+   "Sincere McCormick",
+   "SF"
+  ],
+  "4430262": [
+   "Bud Clark",
+   "SEA"
+  ],
+  "4430431": [
+   "Kurtis Rourke",
+   "SF"
+  ],
+  "4430818": [
+   "Cole Brevard",
+   "SEA"
+  ],
+  "4430835": [
+   "Alfred Collins",
+   "SF"
+  ],
+  "4430838": [
+   "Rylie Mills",
+   "SEA"
+  ],
+  "4430878": [
+   "Jaxon Smith-Njigba",
+   "SEA"
+  ],
+  "4431145": [
+   "Maxen Hook",
+   "SEA"
+  ],
+  "4431466": [
+   "Jordan Watkins",
+   "SF"
+  ],
+  "4431479": [
+   "Ricky White III",
+   "SEA"
+  ],
+  "4431523": [
+   "Connor Colby",
+   "SF"
+  ],
+  "4432244": [
+   "Romello Height",
+   "SF"
+  ],
+  "4432525": [
+   "Mason Richman",
+   "SEA"
+  ],
+  "4432734": [
+   "Jalen Milroe",
+   "SEA"
+  ],
+  "4565200": [
+   "Upton Stout",
+   "SF"
+  ],
+  "4565779": [
+   "Carver Willis",
+   "SF"
+  ],
+  "4567222": [
+   "Nehemiah Pritchett",
+   "SEA"
+  ],
+  "4567226": [
+   "Derick Hall",
+   "SEA"
+  ],
+  "4569497": [
+   "Sam Okuayinonu",
+   "SF"
+  ],
+  "4569547": [
+   "Nick Kallerup",
+   "SEA"
+  ],
+  "4570040": [
+   "Byron Murphy II",
+   "SEA"
+  ],
+  "4570075": [
+   "Logan Brown",
+   "SEA"
+  ],
+  "4570410": [
+   "Jalen Graham",
+   "SF"
+  ],
+  "4572055": [
+   "Mike Morris",
+   "SEA"
+  ],
+  "4573188": [
+   "Nick Martin",
+   "SF"
+  ],
+  "4575431": [
+   "Devon Witherspoon",
+   "SEA"
+  ],
+  "4575665": [
+   "Jacob Cowing",
+   "SF"
+  ],
+  "4576069": [
+   "Brandon Codrington",
+   "SF"
+  ],
+  "4576297": [
+   "AJ Barner",
+   "SEA"
+  ],
+  "4592823": [
+   "Beau Stephens",
+   "SEA"
+  ],
+  "4592837": [
+   "Terrion Arnold",
+   "SEA"
+  ],
+  "4597703": [
+   "Tory Horton",
+   "SEA"
+  ],
+  "4600597": [
+   "Montorie Foster Jr.",
+   "SEA"
+  ],
+  "4603089": [
+   "Aidan Hubbard",
+   "SEA"
+  ],
+  "4605491": [
+   "Connor O'Toole",
+   "SEA"
+  ],
+  "4609203": [
+   "Deven Eastern",
+   "SEA"
+  ],
+  "4678006": [
+   "Elijah Arroyo",
+   "SEA"
+  ],
+  "4683114": [
+   "Will Pauling",
+   "SF"
+  ],
+  "4683155": [
+   "Jalen Stroman",
+   "SF"
+  ],
+  "4684543": [
+   "Julian Neal",
+   "SEA"
+  ],
+  "4685369": [
+   "Gracen Halton",
+   "SF"
+  ],
+  "4685381": [
+   "Emmanuel Henderson Jr.",
+   "SEA"
+  ],
+  "4685397": [
+   "Jordan James",
+   "SF"
+  ],
+  "4685512": [
+   "Jadarian Price",
+   "SEA"
+  ],
+  "4685523": [
+   "Ephesians Prysock",
+   "SF"
+  ],
+  "4685623": [
+   "Mykel Williams",
+   "SF"
+  ],
+  "4685984": [
+   "Jamie Sheriff",
+   "SEA"
+  ],
+  "4686308": [
+   "C.J. West",
+   "SF"
+  ],
+  "4686540": [
+   "Tyrice Knight",
+   "SEA"
+  ],
+  "4686629": [
+   "Isaac Alarcon",
+   "SF"
+  ],
+  "4689804": [
+   "Jimmy Ciarlo",
+   "SEA"
+  ],
+  "4691556": [
+   "Enrique Cruz Jr.",
+   "SF"
+  ],
+  "4691688": [
+   "Robbie Ouzts",
+   "SEA"
+  ],
+  "4692680": [
+   "McKinnley Jackson",
+   "SF"
+  ],
+  "4693337": [
+   "Marques Sigle",
+   "SF"
+  ],
+  "4693346": [
+   "Grey Zabel",
+   "SEA"
+  ],
+  "4693371": [
+   "James Thompson Jr.",
+   "SF"
+  ],
+  "4693644": [
+   "Ji'Ayir Brown",
+   "SF"
+  ],
+  "4693934": [
+   "Andre Fuller",
+   "SEA"
+  ],
+  "4696044": [
+   "Kaelon Black",
+   "SF"
+  ],
+  "4696051": [
+   "Mikail Kamara",
+   "SF"
+  ],
+  "4696211": [
+   "Malik Mustapha",
+   "SF"
+  ],
+  "4699678": [
+   "Khalil Dinkins",
+   "SF"
+  ],
+  "4710714": [
+   "De'Zhaun Stribling",
+   "SF"
+  ],
+  "4775220": [
+   "Sebastian Valdez",
+   "SF"
+  ],
+  "4869523": [
+   "Nick Emmanwori",
+   "SEA"
+  ],
+  "4875123": [
+   "Vincent Anthony Jr.",
+   "SF"
+  ],
+  "4887558": [
+   "Emanuel Wilson",
+   "SEA"
+  ],
+  "4888723": [
+   "Wesley Grimes",
+   "SF"
+  ],
+  "5081916": [
+   "Uso Seumalo",
+   "SEA"
+  ],
+  "5082331": [
+   "Avery Smith",
+   "SEA"
+  ],
+  "5086161": [
+   "Jaden Dugger",
+   "SF"
+  ],
+  "5092959": [
+   "Dominick Puni",
+   "SF"
+  ]
+ }
 }

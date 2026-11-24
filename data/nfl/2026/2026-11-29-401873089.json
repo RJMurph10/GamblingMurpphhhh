@@ -477,5 +477,770 @@
    ]
   }
  },
- "props": {}
+ "props": {
+  "open": {
+   "at": "2026-11-24T00:58:17.105Z",
+   "provider": 100,
+   "count": 55,
+   "rows": [
+  {"a":null,"t":"1st Half Total","ti":"72","op":[20.5,null,null],"cur":[20.5,null,null]},
+  {"a":null,"t":"1st Half Total","ti":"72","op":[20.5,null,null],"cur":[20.5,null,null]},
+  {"a":null,"tm":"15","t":"1st Half Moneyline","ti":"73"},
+  {"a":null,"tm":"20","t":"1st Half Moneyline","ti":"73"},
+  {"a":null,"tm":"15","t":"1st Half Spread","ti":"74","op":[2.5,null,null],"cur":[2.5,null,null]},
+  {"a":null,"tm":"20","t":"1st Half Spread","ti":"74","op":[-2.5,null,null],"cur":[-2.5,null,null]},
+  {"a":null,"t":"1st Quarter Total","ti":"75","op":[7.5,null,null],"cur":[7.5,null,null]},
+  {"a":null,"t":"1st Quarter Total","ti":"75","op":[7.5,null,null],"cur":[7.5,null,null]},
+  {"a":null,"tm":"15","t":"1st Quarter Moneyline","ti":"76"},
+  {"a":null,"tm":"20","t":"1st Quarter Moneyline","ti":"76"},
+  {"a":null,"tm":"15","t":"1st Quarter Spread","ti":"77","op":[0.5,null,null],"cur":[0.5,null,null]},
+  {"a":null,"tm":"20","t":"1st Quarter Spread","ti":"77","op":[-0.5,null,null],"cur":[-0.5,null,null]},
+  {"a":null,"tm":"15","t":"Team Total Points","ti":"98","op":[17.5,null,null],"cur":[10.5,null,null]},
+  {"a":null,"tm":"15","t":"Team Total Points","ti":"98","op":[17.5,null,null],"cur":[11.5,null,null]},
+  {"a":null,"tm":"15","t":"Team Total Points","ti":"98","op":[17.5,null,null],"cur":[13.5,null,null]},
+  {"a":null,"tm":"15","t":"Team Total Points","ti":"98","op":[17.5,null,null],"cur":[14.5,null,null]},
+  {"a":null,"tm":"15","t":"Team Total Points","ti":"98","op":[17.5,null,null],"cur":[15.5,null,null]},
+  {"a":null,"tm":"15","t":"Team Total Points","ti":"98","op":[17.5,null,null],"cur":[16.5,null,null]},
+  {"a":null,"tm":"15","t":"Team Total Points","ti":"98","op":[17.5,null,null],"cur":[17.5,null,null]},
+  {"a":null,"tm":"15","t":"Team Total Points","ti":"98","op":[17.5,null,null],"cur":[18.5,null,null]},
+  {"a":null,"tm":"15","t":"Team Total Points","ti":"98","op":[17.5,null,null],"cur":[19.5,null,null]},
+  {"a":null,"tm":"15","t":"Team Total Points","ti":"98","op":[17.5,null,null],"cur":[20.5,null,null]},
+  {"a":null,"tm":"15","t":"Team Total Points","ti":"98","op":[17.5,null,null],"cur":[21.5,null,null]},
+  {"a":null,"tm":"15","t":"Team Total Points","ti":"98","op":[17.5,null,null],"cur":[23.5,null,null]},
+  {"a":null,"tm":"15","t":"Team Total Points","ti":"98","op":[17.5,null,null],"cur":[24.5,null,null]},
+  {"a":null,"tm":"15","t":"Team Total Points","ti":"98","op":[17.5,null,null],"cur":[26.5,null,null]},
+  {"a":null,"tm":"15","t":"Team Total Points","ti":"98","op":[17.5,null,null],"cur":[27.5,null,null]},
+  {"a":null,"tm":"15","t":"Team Total Points","ti":"98","op":[17.5,null,null],"cur":[28.5,null,null]},
+  {"a":null,"tm":"15","t":"Team Total Points","ti":"98","op":[17.5,null,null],"cur":[8.5,null,null]},
+  {"a":null,"tm":"15","t":"Team Total Points","ti":"98","op":[17.5,null,null],"cur":[9.5,null,null]},
+  {"a":null,"tm":"15","t":"Team Total Points","ti":"98","op":[17.5,null,null],"cur":[10.5,null,null]},
+  {"a":null,"tm":"15","t":"Team Total Points","ti":"98","op":[17.5,null,null],"cur":[12.5,null,null]},
+  {"a":null,"tm":"15","t":"Team Total Points","ti":"98","op":[17.5,null,null],"cur":[13.5,null,null]},
+  {"a":null,"tm":"15","t":"Team Total Points","ti":"98","op":[17.5,null,null],"cur":[14.5,null,null]},
+  {"a":null,"tm":"15","t":"Team Total Points","ti":"98","op":[17.5,null,null],"cur":[15.5,null,null]},
+  {"a":null,"tm":"15","t":"Team Total Points","ti":"98","cur":[16.5,null,null]},
+  {"a":null,"tm":"15","t":"Team Total Points","ti":"98","op":[17.5,null,null],"cur":[17.5,null,null]},
+  {"a":null,"tm":"15","t":"Team Total Points","ti":"98","op":[17.5,null,null],"cur":[18.5,null,null]},
+  {"a":null,"tm":"15","t":"Team Total Points","ti":"98","op":[17.5,null,null],"cur":[19.5,null,null]},
+  {"a":null,"tm":"15","t":"Team Total Points","ti":"98","op":[17.5,null,null],"cur":[20.5,null,null]},
+  {"a":null,"tm":"15","t":"Team Total Points","ti":"98","cur":[21.5,null,null]},
+  {"a":null,"tm":"15","t":"Team Total Points","ti":"98","op":[17.5,null,null],"cur":[25.5,null,null]},
+  {"a":null,"tm":"15","t":"Team Total Points","ti":"98","op":[17.5,null,null],"cur":[26.5,null,null]},
+  {"a":null,"tm":"15","t":"Team Total Points","ti":"98","op":[17.5,null,null],"cur":[28.5,null,null]},
+  {"a":null,"tm":"15","t":"Team Total Points","ti":"98","op":[17.5,null,null],"cur":[8.5,null,null]},
+  {"a":null,"tm":"15","t":"Team Total Points","ti":"98","op":[17.5,null,null],"cur":[9.5,null,null]},
+  {"a":null,"tm":"20","t":"Team Total Points","ti":"98","op":[22.5,null,null],"cur":[22.5,null,null]},
+  {"a":null,"tm":"20","t":"Team Total Points","ti":"98","op":[22.5,null,null],"cur":[25.5,null,null]},
+  {"a":null,"tm":"20","t":"Team Total Points","ti":"98","op":[22.5,null,null],"cur":[22.5,null,null]},
+  {"a":null,"tm":"15","t":"Team Total Touchdowns","ti":"104","op":[1.5,null,null],"cur":[1.5,null,null]},
+  {"a":null,"tm":"15","t":"Team Total Touchdowns","ti":"104","op":[1.5,null,null],"cur":[1.5,null,null]},
+  {"a":null,"tm":"20","t":"Team Total Touchdowns","ti":"104","op":[2.5,null,null],"cur":[2.5,null,null]},
+  {"a":null,"tm":"20","t":"Team Total Touchdowns","ti":"104","op":[2.5,null,null],"cur":[2.5,null,null]},
+  {"a":null,"t":"Will There Be Overtime?","ti":"153"},
+  {"a":null,"t":"Will There Be Overtime?","ti":"153"}
+ ],
+   "sample": [
+    {
+     "competition": {
+      "id": "401873089"
+     },
+     "provider": {
+      "id": "100"
+     },
+     "type": {
+      "id": "72",
+      "name": "1st Half Total"
+     },
+     "lastUpdated": "2026-11-23T18:45Z",
+     "current": {
+      "target": {
+       "value": 20.5,
+       "displayValue": "20.5"
+      }
+     },
+     "open": {
+      "target": {
+       "value": 20.5,
+       "displayValue": "20.5"
+      }
+     }
+    },
+    {
+     "competition": {
+      "id": "401873089"
+     },
+     "provider": {
+      "id": "100"
+     },
+     "type": {
+      "id": "72",
+      "name": "1st Half Total"
+     },
+     "lastUpdated": "2026-11-23T18:45Z",
+     "current": {
+      "target": {
+       "value": 20.5,
+       "displayValue": "20.5"
+      }
+     },
+     "open": {
+      "target": {
+       "value": 20.5,
+       "displayValue": "20.5"
+      }
+     }
+    }
+   ]
+  }
+ },
+ "names": {
+  "14958": [
+   "Demario Davis",
+   "NYJ"
+  ],
+  "15864": [
+   "Geno Smith",
+   "NYJ"
+  ],
+  "2976592": [
+   "Sterling Shepard",
+   "NYJ"
+  ],
+  "2977680": [
+   "Bradley Pinion",
+   "MIA"
+  ],
+  "2983155": [
+   "Thomas Hennessy",
+   "NYJ"
+  ],
+  "3051909": [
+   "Daniel Carlson",
+   "MIA"
+  ],
+  "3057956": [
+   "Zach Sieler",
+   "MIA"
+  ],
+  "3116177": [
+   "Troy Reeder",
+   "NYJ"
+  ],
+  "3117255": [
+   "Harrison Phillips",
+   "NYJ"
+  ],
+  "3124679": [
+   "Jason Sanders",
+   "NYJ"
+  ],
+  "3125107": [
+   "Andrew Beck",
+   "NYJ"
+  ],
+  "3129473": [
+   "Chukwuma Okorafor",
+   "NYJ"
+  ],
+  "3134353": [
+   "Tim Patrick",
+   "NYJ"
+  ],
+  "3859006": [
+   "Ronnie Harrison Jr.",
+   "MIA"
+  ],
+  "3925345": [
+   "Minkah Fitzpatrick",
+   "NYJ"
+  ],
+  "3932335": [
+   "Zayne Anderson",
+   "MIA"
+  ],
+  "3933407": [
+   "Quinton Bell",
+   "NYJ"
+  ],
+  "4002046": [
+   "David Onyemata",
+   "NYJ"
+  ],
+  "4034729": [
+   "Tucker Addington",
+   "MIA"
+  ],
+  "4035537": [
+   "Kene Nwangwu",
+   "NYJ"
+  ],
+  "4035798": [
+   "Isaiahh Loudermilk",
+   "NYJ"
+  ],
+  "4035824": [
+   "Brandon Stephens",
+   "NYJ"
+  ],
+  "4036660": [
+   "Darrell Baker Jr.",
+   "MIA"
+  ],
+  "4039485": [
+   "Jack Heflin",
+   "NYJ"
+  ],
+  "4040537": [
+   "Aaron Brewer",
+   "MIA"
+  ],
+  "4043130": [
+   "Jordyn Brooks",
+   "MIA"
+  ],
+  "4045299": [
+   "Marcelino McCrary-Ball",
+   "NYJ"
+  ],
+  "4046165": [
+   "Jimmy Morrissey",
+   "NYJ"
+  ],
+  "4046528": [
+   "Josh Uche",
+   "MIA"
+  ],
+  "4076803": [
+   "Jordan Meredith",
+   "NYJ"
+  ],
+  "4240405": [
+   "Kingsley Jonathan",
+   "NYJ"
+  ],
+  "4241410": [
+   "Jelani Woods",
+   "NYJ"
+  ],
+  "4241802": [
+   "Jalen Reagor",
+   "MIA"
+  ],
+  "4242000": [
+   "Josh Myers",
+   "NYJ"
+  ],
+  "4242457": [
+   "Matthew Butler",
+   "MIA"
+  ],
+  "4242512": [
+   "Malik Willis",
+   "MIA"
+  ],
+  "4243009": [
+   "Mykal Walker",
+   "NYJ"
+  ],
+  "4243375": [
+   "Dylan Parham",
+   "NYJ"
+  ],
+  "4248425": [
+   "Carlos Washington Jr.",
+   "MIA"
+  ],
+  "4249417": [
+   "Jalen Tolbert",
+   "MIA"
+  ],
+  "4259547": [
+   "Malik Herring",
+   "MIA"
+  ],
+  "4259804": [
+   "Willie Gay Jr.",
+   "MIA"
+  ],
+  "4271632": [
+   "Austin Jackson",
+   "MIA"
+  ],
+  "4280416": [
+   "Samuel Womack III",
+   "NYJ"
+  ],
+  "4360413": [
+   "Shaka Heyward",
+   "MIA"
+  ],
+  "4360469": [
+   "Amari Gainer",
+   "MIA"
+  ],
+  "4360488": [
+   "JuJu Brents",
+   "MIA"
+  ],
+  "4360746": [
+   "Ethan Bonner",
+   "MIA"
+  ],
+  "4361331": [
+   "Jamien Sherwood",
+   "NYJ"
+  ],
+  "4361372": [
+   "Jeremy Ruckert",
+   "NYJ"
+  ],
+  "4361418": [
+   "Will Levis",
+   "NYJ"
+  ],
+  "4361438": [
+   "Cole Turner",
+   "MIA"
+  ],
+  "4361767": [
+   "Will McDonald IV",
+   "NYJ"
+  ],
+  "4362064": [
+   "Andrew Meyer",
+   "MIA"
+  ],
+  "4362094": [
+   "Joseph Ossai",
+   "NYJ"
+  ],
+  "4362135": [
+   "Christian Haynes",
+   "MIA"
+  ],
+  "4362840": [
+   "Kingsley Enagbare",
+   "NYJ"
+  ],
+  "4367209": [
+   "Greg Dulcich",
+   "MIA"
+  ],
+  "4367835": [
+   "Chris Smith",
+   "MIA"
+  ],
+  "4368056": [
+   "Liam Anderson",
+   "MIA"
+  ],
+  "4373474": [
+   "Jarrett Kingston",
+   "MIA"
+  ],
+  "4373656": [
+   "Max Mitchell",
+   "NYJ"
+  ],
+  "4373951": [
+   "Kohl Levao",
+   "NYJ"
+  ],
+  "4426446": [
+   "Caedan Wallace",
+   "MIA"
+  ],
+  "4426623": [
+   "Brant Banks",
+   "NYJ"
+  ],
+  "4426676": [
+   "Jowon Briggs",
+   "NYJ"
+  ],
+  "4426686": [
+   "Dane Belton",
+   "NYJ"
+  ],
+  "4426817": [
+   "Jarvis Brownlee Jr.",
+   "NYJ"
+  ],
+  "4427366": [
+   "Breece Hall",
+   "NYJ"
+  ],
+  "4427982": [
+   "Austin McNamara",
+   "NYJ"
+  ],
+  "4428617": [
+   "T'Vondre Sweat",
+   "NYJ"
+  ],
+  "4428681": [
+   "Joe Tippmann",
+   "NYJ"
+  ],
+  "4429005": [
+   "Braiden McGregor",
+   "NYJ"
+  ],
+  "4429036": [
+   "Major Burns",
+   "MIA"
+  ],
+  "4429053": [
+   "AJ Henning",
+   "MIA"
+  ],
+  "4429105": [
+   "Arian Smith",
+   "NYJ"
+  ],
+  "4429160": [
+   "De'Von Achane",
+   "MIA"
+  ],
+  "4429411": [
+   "Jordan Clark",
+   "NYJ"
+  ],
+  "4429435": [
+   "Brady Cook",
+   "MIA"
+  ],
+  "4429576": [
+   "James Ester",
+   "MIA"
+  ],
+  "4429636": [
+   "Blake Freeland",
+   "NYJ"
+  ],
+  "4430185": [
+   "Caullin Lacy",
+   "NYJ"
+  ],
+  "4430681": [
+   "Jared Wayne",
+   "MIA"
+  ],
+  "4430893": [
+   "Chip Trayanum",
+   "NYJ"
+  ],
+  "4431060": [
+   "Nick Dawkins",
+   "NYJ"
+  ],
+  "4431582": [
+   "Payton Page",
+   "NYJ"
+  ],
+  "4431586": [
+   "Chop Robinson",
+   "MIA"
+  ],
+  "4431664": [
+   "Dante Trader Jr.",
+   "MIA"
+  ],
+  "4431809": [
+   "Olu Fashanu",
+   "NYJ"
+  ],
+  "4432730": [
+   "Jason Marshall Jr.",
+   "MIA"
+  ],
+  "4433971": [
+   "Kyle McCord",
+   "MIA"
+  ],
+  "4433974": [
+   "Rodney McGraw",
+   "MIA"
+  ],
+  "4566094": [
+   "Jacob Rodriguez",
+   "MIA"
+  ],
+  "4567225": [
+   "Jaylin Simpson",
+   "MIA"
+  ],
+  "4567493": [
+   "Patrick Paul",
+   "MIA"
+  ],
+  "4569016": [
+   "Eric Watts",
+   "MIA"
+  ],
+  "4569371": [
+   "Isaiah Williams",
+   "NYJ"
+  ],
+  "4569448": [
+   "Jordan Jefferson",
+   "MIA"
+  ],
+  "4569603": [
+   "Malik Washington",
+   "MIA"
+  ],
+  "4569618": [
+   "Garrett Wilson",
+   "NYJ"
+  ],
+  "4570470": [
+   "Nahshon Wright",
+   "NYJ"
+  ],
+  "4574142": [
+   "Nate Lynn",
+   "NYJ"
+  ],
+  "4594319": [
+   "Brady Boyd",
+   "MIA"
+  ],
+  "4597500": [
+   "Adonai Mitchell",
+   "NYJ"
+  ],
+  "4599158": [
+   "Al-Jay Henderson",
+   "NYJ"
+  ],
+  "4608679": [
+   "Will Sheppard",
+   "MIA"
+  ],
+  "4612836": [
+   "Darrell Jackson Jr.",
+   "NYJ"
+  ],
+  "4682509": [
+   "Malik McClain",
+   "NYJ"
+  ],
+  "4682745": [
+   "Jaylen Wright",
+   "MIA"
+  ],
+  "4683101": [
+   "Max Llewellyn",
+   "MIA"
+  ],
+  "4683227": [
+   "Joseph Manjack IV",
+   "NYJ"
+  ],
+  "4683276": [
+   "Zeek Biggers",
+   "MIA"
+  ],
+  "4683815": [
+   "Trevin Wallace",
+   "NYJ"
+  ],
+  "4685116": [
+   "DJ Herman",
+   "MIA"
+  ],
+  "4685246": [
+   "Kaytron Allen",
+   "MIA"
+  ],
+  "4685247": [
+   "Braelon Allen",
+   "NYJ"
+  ],
+  "4685248": [
+   "David Bailey",
+   "NYJ"
+  ],
+  "4685307": [
+   "Kevin Coleman Jr.",
+   "MIA"
+  ],
+  "4685413": [
+   "Cade Klubnik",
+   "NYJ"
+  ],
+  "4685596": [
+   "Azareye'h Thomas",
+   "NYJ"
+  ],
+  "4685637": [
+   "Jackson Woodard",
+   "MIA"
+  ],
+  "4685784": [
+   "Tre Watson",
+   "MIA"
+  ],
+  "4692024": [
+   "Malachi Moore",
+   "NYJ"
+  ],
+  "4692555": [
+   "Tyler Baron",
+   "NYJ"
+  ],
+  "4695404": [
+   "Isaiah Davis",
+   "NYJ"
+  ],
+  "4698109": [
+   "Rene Konga",
+   "MIA"
+  ],
+  "4700136": [
+   "Kiko Mauigoa",
+   "NYJ"
+  ],
+  "4700756": [
+   "Jaden Keller",
+   "NYJ"
+  ],
+  "4708859": [
+   "Amari McNeill",
+   "NYJ"
+  ],
+  "4711533": [
+   "Ollie Gordon II",
+   "MIA"
+  ],
+  "4712462": [
+   "Keith Cooper Jr.",
+   "MIA"
+  ],
+  "4714379": [
+   "Seydou Traore",
+   "MIA"
+  ],
+  "4723820": [
+   "Omar Cooper Jr.",
+   "NYJ"
+  ],
+  "4789907": [
+   "Armand Membou",
+   "NYJ"
+  ],
+  "4808766": [
+   "Mason Taylor",
+   "NYJ"
+  ],
+  "4819257": [
+   "Jonah Savaiinaea",
+   "MIA"
+  ],
+  "4837188": [
+   "Jordan Phillips",
+   "MIA"
+  ],
+  "4837388": [
+   "VJ Payne",
+   "NYJ"
+  ],
+  "4869579": [
+   "Chris Johnson",
+   "MIA"
+  ],
+  "4869645": [
+   "Caleb Douglas",
+   "MIA"
+  ],
+  "4869961": [
+   "Chris Bell",
+   "MIA"
+  ],
+  "4870976": [
+   "Kadyn Proctor",
+   "MIA"
+  ],
+  "4872841": [
+   "Julius Wood",
+   "MIA"
+  ],
+  "4875079": [
+   "Marcellas Dial Jr.",
+   "MIA"
+  ],
+  "4876013": [
+   "Jack Browning",
+   "MIA"
+  ],
+  "4879212": [
+   "Trey Moore",
+   "MIA"
+  ],
+  "4880093": [
+   "Nathan Voorhis",
+   "NYJ"
+  ],
+  "4880236": [
+   "Will Kacmarek",
+   "MIA"
+  ],
+  "4880273": [
+   "Kyle Louis",
+   "MIA"
+  ],
+  "4880346": [
+   "Michael Taaffe",
+   "MIA"
+  ],
+  "4892576": [
+   "Jamaal Pritchett",
+   "NYJ"
+  ],
+  "4894654": [
+   "Kenneth Grant",
+   "MIA"
+  ],
+  "4905597": [
+   "Anez Cooper",
+   "NYJ"
+  ],
+  "4912052": [
+   "Justin Joly",
+   "MIA"
+  ],
+  "5081977": [
+   "DJ Campbell",
+   "MIA"
+  ],
+  "5083315": [
+   "Kenyon Sadiq",
+   "NYJ"
+  ],
+  "5086529": [
+   "Cody Hardy",
+   "NYJ"
+  ],
+  "5092196": [
+   "Mory Bamba",
+   "NYJ"
+  ],
+  "5118340": [
+   "D'Angelo Ponds",
+   "NYJ"
+  ],
+  "5144457": [
+   "Chukwuebuka Godrick",
+   "MIA"
+  ],
+  "5208977": [
+   "Qwan'tez Stiggers",
+   "NYJ"
+  ],
+  "5279356": [
+   "Paschal Ekeji",
+   "NYJ"
+  ]
+ }
 }
