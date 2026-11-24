@@ -1,6 +1,6 @@
 {
  "day": "2026-11-26",
- "updated": "2026-11-24T02:19:01.221Z",
+ "updated": "2026-11-24T13:55:19.925Z",
  "picks": [
   {
    "id": "401873080-spread-qb-change",
@@ -15,9 +15,9 @@
    "best": false,
    "tag": "qb-change",
    "firstSeen": "2026-11-20T20:30:09.984Z",
-   "lastSeen": "2026-11-24T02:19:01.221Z",
+   "lastSeen": "2026-11-24T13:55:19.925Z",
    "latest": -8.5,
-   "latestAt": "2026-11-24T02:19:01.221Z"
+   "latestAt": "2026-11-24T13:55:19.925Z"
   },
   {
    "id": "401873080-spread-road-dog",
@@ -32,9 +32,9 @@
    "best": false,
    "tag": "road-dog",
    "firstSeen": "2026-11-20T02:23:56.478Z",
-   "lastSeen": "2026-11-24T02:19:01.221Z",
+   "lastSeen": "2026-11-24T13:55:19.925Z",
    "latest": -8.5,
-   "latestAt": "2026-11-24T02:19:01.221Z"
+   "latestAt": "2026-11-24T13:55:19.925Z"
   },
   {
    "id": "401873082-total-gusty-rain",
@@ -51,8 +51,8 @@
    "note": "9 mph · gusts 20 · rain",
    "firstSeen": "2026-11-23T13:07:02.381Z",
    "lastSeen": "2026-11-23T13:07:02.381Z",
-   "latest": 48.5,
-   "latestAt": "2026-11-24T02:19:01.221Z"
+   "latest": 47.5,
+   "latestAt": "2026-11-24T13:55:19.925Z"
   },
   {
    "id": "401873082-total-wind",
@@ -68,9 +68,9 @@
    "tag": "wind",
    "note": "10 mph · rain",
    "firstSeen": "2026-11-24T02:19:01.221Z",
-   "lastSeen": "2026-11-24T02:19:01.221Z",
-   "latest": 48.5,
-   "latestAt": "2026-11-24T02:19:01.221Z"
+   "lastSeen": "2026-11-24T13:55:19.925Z",
+   "latest": 47.5,
+   "latestAt": "2026-11-24T13:55:19.925Z"
   }
  ]
 }
