@@ -63,6 +63,7 @@ export type PllPlay = {
 
 /** Seasons with play-by-play. Loaded only when a game page asks for it. */
 const FILES: Record<number, () => Promise<{ default: unknown }>> = {
+  2024: () => import("@/data/pll-pbp-2024.json"),
   2025: () => import("@/data/pll-pbp-2025.json"),
   2026: () => import("@/data/pll-pbp-2026.json"),
 };

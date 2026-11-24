@@ -15,6 +15,7 @@ What is cleaned, nothing else:
   - a "Goal" with no scorer that doesn't change the score is dropped (one in 2026: Redwoods-Archers 5/8,
     Q4 9:17, the box shows it was a saved shot);
   - the same play repeated back to back (same period, clock and text) is shown once;
+  - a faceoff listed twice (a copy at the goal, then the real one seconds later; some 2024 games) once;
   - club codes in the text become club names ("Save by NYA L. Entenmann" -> "Save by Atlas L. Entenmann").
 The box-score sheets stay the source of every stat total; this is the game's event log.
 See the project doc pll-play-by-play.md for the checks against the box scores.
@@ -52,6 +53,40 @@ def rows_of(path):
     return [str(r[0]) for r in ws.iter_rows(values_only=True) if r and r[0]]
 
 
+def secs(e):
+    m, s = map(int, e["c"].split(":"))
+    return (e["p"] - 1) * 720 + 720 - (m * 60 + s)
+
+
+def drop_ghost_faceoffs(plays):
+    """Some 2024 games list every faceoff twice: a copy stamped at the goal (or period start) a few seconds
+    before the real one, with the same text. Drop a faceoff when the next faceoff has the same text, comes 15
+    seconds or less later in the same period, and this one has no groundball right after it at the same clock
+    (a real faceoff is followed by the groundball it names; a quick goal between two real faceoffs keeps both)."""
+    fos = [i for i, e in enumerate(plays) if e["k"] == "fo"]
+    ghost = set()
+    for a, b in zip(fos, fos[1:]):
+        # who picked the ball up: "... GB Chaos N. Rowlett." (else the winner)
+        winner = re.search(r"GB \w+ (.+?)\.?$", plays[a]["d"]) or re.match(r"Faceoff win (.+?) \(vs", plays[a]["d"])
+        nxt = plays[a + 1] if a + 1 < len(plays) else None
+        own_gb = (
+            nxt is not None
+            and nxt["k"] == "gb"
+            and nxt["c"] == plays[a]["c"]
+            and nxt["p"] == plays[a]["p"]
+            and bool(winner)
+            and winner.group(1) in nxt["d"]
+        )
+        if (
+            plays[a]["d"] == plays[b]["d"]
+            and plays[a]["p"] == plays[b]["p"]
+            and 0 <= secs(plays[b]) - secs(plays[a]) <= 15
+            and not own_gb
+        ):
+            ghost.add(a)
+    return [e for i, e in enumerate(plays) if i not in ghost]
+
+
 def parse(path, home, away):
     plays, score = [], {home: 0, away: 0}
     for text in rows_of(path):
@@ -82,6 +117,7 @@ def parse(path, home, away):
             row.append(dict(p=period, c=g["clock"], k=kind, club=club, d=CODE.sub(lambda x: CLUB[x.group(1)], desc),
                             wp=home_wp, sc=sc))
         plays += reversed(row)  # each row lists the newest play first
+    plays = drop_ghost_faceoffs(plays)
     out, last = [], None
     for e in plays:
         if e["k"].startswith("goal"):
