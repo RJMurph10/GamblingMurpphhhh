@@ -1,24 +1,24 @@
 {
  "id": "401909743",
  "league": "cbb",
- "date": "2026-11-24T04:30Z",
+ "date": "2026-11-24T04:55Z",
  "name": "CSU VS ARIZ",
  "away": {
   "id": "36",
   "abbr": "CSU",
   "name": "Colorado State Rams",
-  "score": 0
+  "score": 83
  },
  "home": {
   "id": "12",
   "abbr": "ARIZ",
   "name": "Arizona Wildcats",
-  "score": 0
+  "score": 96
  },
  "neutral": true,
  "venue": "Lahaina Civic Center",
  "seasonType": 2,
- "state": "pre",
+ "state": "post",
  "lines": {
   "open": {
    "at": "2026-11-22T21:17:00.667Z",
@@ -933,5 +933,9 @@
    ]
   }
  },
- "props": {}
+ "props": {},
+ "final": {
+  "away": 83,
+  "home": 96
+ }
 }

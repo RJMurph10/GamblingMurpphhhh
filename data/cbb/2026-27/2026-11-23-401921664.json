@@ -7,18 +7,18 @@
   "id": "23",
   "abbr": "SJSU",
   "name": "San José State Spartans",
-  "score": 0
+  "score": 88
  },
  "home": {
   "id": "28",
   "abbr": "UCSD",
   "name": "UC San Diego Tritons",
-  "score": 0
+  "score": 79
  },
  "neutral": true,
  "venue": "Acrisure Arena",
  "seasonType": 2,
- "state": "pre",
+ "state": "post",
  "lines": {
   "open": {
    "at": "2026-11-24T00:58:17.105Z",
@@ -933,5 +933,9 @@
    ]
   }
  },
- "props": {}
+ "props": {},
+ "final": {
+  "away": 88,
+  "home": 79
+ }
 }

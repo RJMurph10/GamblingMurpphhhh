@@ -477,5 +477,283 @@
    ]
   }
  },
- "props": {}
+ "props": {
+  "open": {
+   "at": "2026-11-24T07:05:12.836Z",
+   "provider": 100,
+   "count": 14,
+   "rows": [
+  {"a":"6583","t":"Total Points","ti":"1","op":[21.5,null,null],"cur":[21.5,null,null],"px":[-113,-113]},
+  {"a":"6583","t":"Total Points","ti":"1","op":[21.5,null,null],"cur":[21.5,null,null],"px":[-113,-113]},
+  {"a":"4277905","t":"Total Points","ti":"1","op":[14.5,null,null],"cur":[14.5,null,null],"px":[-125,-125]},
+  {"a":"4277905","t":"Total Points","ti":"1","op":[14.5,null,null],"cur":[14.5,null,null],"px":[-102,-102]},
+  {"a":"5142718","t":"Total Points","ti":"1","op":[16.5,null,null],"cur":[16.5,null,null],"px":[-103,-106]},
+  {"a":"5142718","t":"Total Points","ti":"1","op":[16.5,null,null],"cur":[16.5,null,null],"px":[-124,-120]},
+  {"a":"5160992","t":"Total Points","ti":"1","op":[10.5,null,null],"cur":[10.5,null,null],"px":[-103,-103]},
+  {"a":"5160992","t":"Total Points","ti":"1","op":[10.5,null,null],"cur":[10.5,null,null],"px":[-123,-123]},
+  {"a":"5174563","t":"Total Points","ti":"1","op":[14.5,null,null],"cur":[14.5,null,null],"px":[-119,-119]},
+  {"a":"5174563","t":"Total Points","ti":"1","op":[14.5,null,null],"cur":[14.5,null,null],"px":[-107,-107]},
+  {"a":"4277905","t":"Total 3-Point Field Goals","ti":"4","op":[1.5,null,null],"cur":[1.5,null,null],"px":[-185,-185]},
+  {"a":"4277905","t":"Total 3-Point Field Goals","ti":"4","op":[1.5,null,null],"cur":[1.5,null,null],"px":[139,139]},
+  {"a":"5174563","t":"Total 3-Point Field Goals","ti":"4","op":[2.5,null,null],"cur":[2.5,null,null],"px":[133,133]},
+  {"a":"5174563","t":"Total 3-Point Field Goals","ti":"4","op":[2.5,null,null],"cur":[2.5,null,null],"px":[-177,-177]}
+ ],
+   "sample": [
+    {
+     "competition": {
+      "id": "401909315"
+     },
+     "athlete": {
+      "id": "6583"
+     },
+     "provider": {
+      "id": "100"
+     },
+     "type": {
+      "id": "1",
+      "name": "Total Points"
+     },
+     "odds": {
+      "american": {
+       "value": "-113",
+       "open": "-113"
+      },
+      "decimal": {
+       "value": "1.88",
+       "open": "1.88"
+      },
+      "fraction": {
+       "value": "100/113",
+       "open": "100/113"
+      },
+      "total": {
+       "value": "21.5",
+       "open": "21.5"
+      }
+     },
+     "lastUpdated": "2026-11-24T09:43Z",
+     "current": {
+      "target": {
+       "value": 21.5,
+       "displayValue": "21.5"
+      }
+     },
+     "open": {
+      "target": {
+       "value": 21.5,
+       "displayValue": "21.5"
+      }
+     }
+    },
+    {
+     "competition": {
+      "id": "401909315"
+     },
+     "athlete": {
+      "id": "6583"
+     },
+     "provider": {
+      "id": "100"
+     },
+     "type": {
+      "id": "1",
+      "name": "Total Points"
+     },
+     "odds": {
+      "american": {
+       "value": "-113",
+       "open": "-113"
+      },
+      "decimal": {
+       "value": "1.88",
+       "open": "1.88"
+      },
+      "fraction": {
+       "value": "100/113",
+       "open": "100/113"
+      },
+      "total": {
+       "value": "21.5",
+       "open": "21.5"
+      }
+     },
+     "lastUpdated": "2026-11-24T09:43Z",
+     "current": {
+      "target": {
+       "value": 21.5,
+       "displayValue": "21.5"
+      }
+     },
+     "open": {
+      "target": {
+       "value": 21.5,
+       "displayValue": "21.5"
+      }
+     }
+    }
+   ]
+  },
+  "latest": {
+   "at": "2026-11-24T07:05:12.836Z",
+   "count": 14,
+   "rows": [
+  {"a":"6583","t":"Total Points","ti":"1","op":[21.5,null,null],"cur":[21.5,null,null],"px":[-113,-113]},
+  {"a":"6583","t":"Total Points","ti":"1","op":[21.5,null,null],"cur":[21.5,null,null],"px":[-113,-113]},
+  {"a":"4277905","t":"Total Points","ti":"1","op":[14.5,null,null],"cur":[14.5,null,null],"px":[-125,-125]},
+  {"a":"4277905","t":"Total Points","ti":"1","op":[14.5,null,null],"cur":[14.5,null,null],"px":[-102,-102]},
+  {"a":"5142718","t":"Total Points","ti":"1","op":[16.5,null,null],"cur":[16.5,null,null],"px":[-103,-106]},
+  {"a":"5142718","t":"Total Points","ti":"1","op":[16.5,null,null],"cur":[16.5,null,null],"px":[-124,-120]},
+  {"a":"5160992","t":"Total Points","ti":"1","op":[10.5,null,null],"cur":[10.5,null,null],"px":[-103,-103]},
+  {"a":"5160992","t":"Total Points","ti":"1","op":[10.5,null,null],"cur":[10.5,null,null],"px":[-123,-123]},
+  {"a":"5174563","t":"Total Points","ti":"1","op":[14.5,null,null],"cur":[14.5,null,null],"px":[-119,-119]},
+  {"a":"5174563","t":"Total Points","ti":"1","op":[14.5,null,null],"cur":[14.5,null,null],"px":[-107,-107]},
+  {"a":"4277905","t":"Total 3-Point Field Goals","ti":"4","op":[1.5,null,null],"cur":[1.5,null,null],"px":[-185,-185]},
+  {"a":"4277905","t":"Total 3-Point Field Goals","ti":"4","op":[1.5,null,null],"cur":[1.5,null,null],"px":[139,139]},
+  {"a":"5174563","t":"Total 3-Point Field Goals","ti":"4","op":[2.5,null,null],"cur":[2.5,null,null],"px":[133,133]},
+  {"a":"5174563","t":"Total 3-Point Field Goals","ti":"4","op":[2.5,null,null],"cur":[2.5,null,null],"px":[-177,-177]}
+ ]
+  }
+ },
+ "names": {
+  "3195": [
+   "Mike Conley",
+   "BOS"
+  ],
+  "4251": [
+   "Paul George",
+   "BOS"
+  ],
+  "6583": [
+   "Anthony Davis",
+   "WSH"
+  ],
+  "6609": [
+   "Khris Middleton",
+   "WSH"
+  ],
+  "2581184": [
+   "Anthony Gill",
+   "WSH"
+  ],
+  "3078576": [
+   "Derrick White",
+   "BOS"
+  ],
+  "4065648": [
+   "Jayson Tatum",
+   "BOS"
+  ],
+  "4065804": [
+   "Sam Hauser",
+   "BOS"
+  ],
+  "4066354": [
+   "Payton Pritchard",
+   "BOS"
+  ],
+  "4277905": [
+   "Trae Young",
+   "WSH"
+  ],
+  "4277951": [
+   "Luka Garza",
+   "BOS"
+  ],
+  "4278129": [
+   "Deandre Ayton",
+   "WSH"
+  ],
+  "4351852": [
+   "Mitchell Robinson",
+   "BOS"
+  ],
+  "4397251": [
+   "Ron Harper Jr.",
+   "BOS"
+  ],
+  "4397424": [
+   "Neemias Queta",
+   "BOS"
+  ],
+  "4432187": [
+   "Reece Beekman",
+   "WSH"
+  ],
+  "4432819": [
+   "Tre Mann",
+   "WSH"
+  ],
+  "4432907": [
+   "Justin Champagnie",
+   "WSH"
+  ],
+  "4433188": [
+   "Devin Carter",
+   "BOS"
+  ],
+  "4593841": [
+   "Baylor Scheierman",
+   "BOS"
+  ],
+  "4606840": [
+   "Jamir Watkins",
+   "WSH"
+  ],
+  "4683689": [
+   "Jordan Walsh",
+   "BOS"
+  ],
+  "4702745": [
+   "Amari Williams",
+   "BOS"
+  ],
+  "4845374": [
+   "Bub Carrington",
+   "WSH"
+  ],
+  "4997537": [
+   "Tristan Vukcevic",
+   "WSH"
+  ],
+  "5104155": [
+   "Bilal Coulibaly",
+   "WSH"
+  ],
+  "5105841": [
+   "Felix Okpara",
+   "WSH"
+  ],
+  "5106283": [
+   "Dillon Mitchell",
+   "BOS"
+  ],
+  "5142621": [
+   "Chris Cenac Jr.",
+   "BOS"
+  ],
+  "5142718": [
+   "AJ Dybantsa",
+   "WSH"
+  ],
+  "5144126": [
+   "Will Riley",
+   "WSH"
+  ],
+  "5160992": [
+   "Alex Sarr",
+   "WSH"
+  ],
+  "5174563": [
+   "Kyshawn George",
+   "WSH"
+  ],
+  "5175647": [
+   "Hugo Gonzalez",
+   "BOS"
+  ],
+  "5238230": [
+   "Tre Johnson",
+   "WSH"
+  ]
+ }
 }
