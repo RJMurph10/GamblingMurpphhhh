@@ -227,3 +227,38 @@ describe("busy model", () => {
     vi.unstubAllEnvs();
   });
 });
+
+describe("thinking level", () => {
+  it("asks for low thinking, and drops it if the model rejects the setting", async () => {
+    vi.stubEnv("GEMINI_API_KEY", "k");
+    const bodies: { generationConfig: { thinkingConfig?: unknown } }[] = [];
+    vi.stubGlobal(
+      "fetch",
+      vi.fn(async (_url: string, init: { body: string }) => {
+        const b = JSON.parse(init.body);
+        bodies.push(b);
+        if (b.generationConfig.thinkingConfig) {
+          const text = "Invalid JSON payload: thinking_level is not supported";
+          return {
+            ok: false,
+            status: 400,
+            text: async () => text,
+            clone: () => ({ text: async () => text }),
+          };
+        }
+        return {
+          ok: true,
+          status: 200,
+          json: async () => ({
+            candidates: [{ content: { role: "model", parts: [{ text: "OK" }] } }],
+          }),
+        };
+      }),
+    );
+    const r = await ask([{ role: "user", text: "hi" }], "2026-11-23");
+    expect(r).toMatchObject({ ok: true, text: "OK" });
+    expect(bodies[0].generationConfig.thinkingConfig).toEqual({ thinkingLevel: "low" });
+    expect(bodies[1].generationConfig.thinkingConfig).toBeUndefined();
+    vi.unstubAllEnvs();
+  });
+});

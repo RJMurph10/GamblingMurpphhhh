@@ -4,6 +4,24 @@ import { askAssistant } from "@/lib/assistant/assistant.functions";
 
 type Turn = { role: "user" | "assistant"; text: string; tools?: string[]; error?: boolean };
 
+/** Give up waiting after ms (the free model can stall at busy times). */
+function withTimeout<T>(ms: number, p: Promise<T>): Promise<T> {
+  return Promise.race([
+    p,
+    new Promise<T>((_, reject) =>
+      setTimeout(
+        () =>
+          reject(
+            new Error(
+              "No answer after 75 seconds: Google's free model is overloaded. Try again in a minute.",
+            ),
+          ),
+        ms,
+      ),
+    ),
+  ]);
+}
+
 const STARTERS = [
   "What are this week's NFL ★ best bets?",
   "How have the college football ★ rules done this season?",
@@ -20,6 +38,12 @@ export function AssistantChat() {
   const [turns, setTurns] = useState<Turn[]>([]);
   const [draft, setDraft] = useState("");
   const [busy, setBusy] = useState(false);
+  const [waited, setWaited] = useState(0);
+  useEffect(() => {
+    if (!busy) return setWaited(0);
+    const t = setInterval(() => setWaited((w) => w + 1), 1000);
+    return () => clearInterval(t);
+  }, [busy]);
   const end = useRef<HTMLDivElement>(null);
   useEffect(() => end.current?.scrollIntoView({ block: "end" }), [turns, busy]);
 
@@ -31,11 +55,14 @@ export function AssistantChat() {
     setDraft("");
     setBusy(true);
     try {
-      const r = await askAssistant({
-        data: {
-          turns: next.filter((t) => !t.error).map(({ role, text: t }) => ({ role, text: t })),
-        },
-      });
+      const r = await withTimeout(
+        75_000,
+        askAssistant({
+          data: {
+            turns: next.filter((t) => !t.error).map(({ role, text: t }) => ({ role, text: t })),
+          },
+        }),
+      );
       setTurns([
         ...next,
         r.ok
@@ -114,7 +141,12 @@ export function AssistantChat() {
               </div>
             </div>
           ))}
-          {busy ? <div className="font-mono text-[11px] text-faint">Looking it up…</div> : null}
+          {busy ? (
+            <div className="font-mono text-[11px] text-faint">
+              Looking it up… {waited}s
+              {waited >= 15 ? " · Google's free model is slow right now" : ""}
+            </div>
+          ) : null}
           <div ref={end} />
         </div>
         <form

@@ -76,21 +76,39 @@ async function askGemini(turns: ChatTurn[], today: string): Promise<AskResult> {
     get_record: "record",
     get_rules: "rules",
   };
+  // Gemini 3 models think before answering (slow); these look-ups need little reasoning, so keep it
+  // "low". Older models reject thinkingLevel: then the request goes again without it.
+  let lowThinking = true;
   for (let round = 0; round < 6; round++) {
-    const body = JSON.stringify({
-      systemInstruction: { parts: [{ text: SYSTEM_PROMPT.replace("{today}", today) }] },
-      contents,
-      tools: [{ functionDeclarations: geminiSchema(TOOL_DECLARATIONS) }],
-      generationConfig: { temperature: 0.2 },
-    });
+    const bodyOf = () =>
+      JSON.stringify({
+        systemInstruction: { parts: [{ text: SYSTEM_PROMPT.replace("{today}", today) }] },
+        contents,
+        tools: [{ functionDeclarations: geminiSchema(TOOL_DECLARATIONS) }],
+        generationConfig: {
+          temperature: 0.2,
+          ...(lowThinking ? { thinkingConfig: { thinkingLevel: "low" } } : {}),
+        },
+      });
     let res: Response | undefined;
     // up to 2 tries per model on "busy" answers (500 / 503 / 529), short pauses, then the next model
     for (let attempt = 0; ; attempt++) {
       res = await fetch(urlOf(models[modelIx]), {
         method: "POST",
         headers: { "Content-Type": "application/json", "x-goog-api-key": key },
-        body,
+        body: bodyOf(),
       });
+      if (res.status === 400 && lowThinking) {
+        const text = await res
+          .clone()
+          .text()
+          .catch(() => "");
+        if (/thinking/i.test(text)) {
+          lowThinking = false;
+          attempt--;
+          continue;
+        }
+      }
       const busy = res.status === 500 || res.status === 503 || res.status === 529;
       if (!busy) break;
       if (attempt < 1) {
