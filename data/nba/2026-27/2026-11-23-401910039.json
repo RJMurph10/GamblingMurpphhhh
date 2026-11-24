@@ -7,13 +7,13 @@
   "id": "15",
   "abbr": "MIL",
   "name": "Milwaukee Bucks",
-  "score": 24
+  "score": 89
  },
  "home": {
   "id": "28",
   "abbr": "TOR",
   "name": "Toronto Raptors",
-  "score": 23
+  "score": 89
  },
  "neutral": false,
  "venue": "Scotiabank Arena",

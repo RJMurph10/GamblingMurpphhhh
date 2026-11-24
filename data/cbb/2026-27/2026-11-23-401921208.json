@@ -7,18 +7,18 @@
   "id": "2617",
   "abbr": "SFA",
   "name": "Stephen F. Austin Lumberjacks",
-  "score": 0
+  "score": 32
  },
  "home": {
   "id": "3084",
   "abbr": "UVU",
   "name": "Utah Valley Wolverines",
-  "score": 0
+  "score": 32
  },
  "neutral": true,
  "venue": "Elridge Blake Sports and Fitness Center",
  "seasonType": 2,
- "state": "pre",
+ "state": "in",
  "lines": {
   "open": {
    "at": "2026-11-23T10:39:07.968Z",

@@ -7,18 +7,18 @@
   "id": "357",
   "abbr": "AMCC",
   "name": "Texas A&M-Corpus Christi Islanders",
-  "score": 16
+  "score": 73
  },
  "home": {
   "id": "2724",
   "abbr": "WICH",
   "name": "Wichita State Shockers",
-  "score": 21
+  "score": 91
  },
  "neutral": false,
  "venue": "Charles Koch Arena",
  "seasonType": 2,
- "state": "in",
+ "state": "post",
  "lines": {
   "open": {
    "at": "2026-11-23T02:36:40.480Z",
@@ -395,5 +395,9 @@
    ]
   }
  },
- "props": {}
+ "props": {},
+ "final": {
+  "away": 73,
+  "home": 91
+ }
 }

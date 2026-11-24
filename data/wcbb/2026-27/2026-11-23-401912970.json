@@ -7,18 +7,18 @@
   "id": "2057",
   "abbr": "BEL",
   "name": "Belmont Bruins",
-  "score": 0
+  "score": 39
  },
  "home": {
   "id": "99",
   "abbr": "LSU",
   "name": "LSU Tigers",
-  "score": 0
+  "score": 91
  },
  "neutral": false,
  "venue": "Pete Maravich Assembly Center",
  "seasonType": 2,
- "state": "pre",
+ "state": "in",
  "lines": {
   "open": {
    "at": "2026-11-24T00:58:17.105Z",

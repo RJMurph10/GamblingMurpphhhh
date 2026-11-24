@@ -7,18 +7,18 @@
   "id": "2541",
   "abbr": "SCU",
   "name": "Santa Clara Broncos",
-  "score": 47
+  "score": 102
  },
  "home": {
   "id": "2287",
   "abbr": "ILST",
   "name": "Illinois State Redbirds",
-  "score": 47
+  "score": 99
  },
  "neutral": true,
  "venue": "Acrisure Arena",
  "seasonType": 2,
- "state": "in",
+ "state": "post",
  "lines": {
   "open": {
    "at": "2026-11-22T23:50:51.406Z",
@@ -477,5 +477,9 @@
    ]
   }
  },
- "props": {}
+ "props": {},
+ "final": {
+  "away": 102,
+  "home": 99
+ }
 }

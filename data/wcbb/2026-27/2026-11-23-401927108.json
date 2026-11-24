@@ -395,13 +395,14 @@
    ]
   },
   "close": {
-   "at": "2026-11-24T00:58:17.105Z",
+   "at": "2026-11-24T02:36:16.686Z",
    "scoreboard": [
     {
      "provider": {
       "id": "100",
       "name": "DraftKings",
-      "priority": 1
+      "priority": 1,
+      "displayName": "DraftKings"
      },
      "details": "USC -55.5",
      "overUnder": 156.5,

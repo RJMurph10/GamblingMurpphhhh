@@ -7,18 +7,18 @@
   "id": "29",
   "abbr": "MEM",
   "name": "Memphis Grizzlies",
-  "score": 55
+  "score": 117
  },
  "home": {
   "id": "30",
   "abbr": "CHA",
   "name": "Charlotte Hornets",
-  "score": 55
+  "score": 111
  },
  "neutral": false,
  "venue": "Spectrum Center",
  "seasonType": 2,
- "state": "in",
+ "state": "post",
  "lines": {
   "open": {
    "at": "2026-11-23T02:36:40.480Z",
@@ -1853,5 +1853,9 @@
    "Hannes Steinbach",
    "CHA"
   ]
+ },
+ "final": {
+  "away": 117,
+  "home": 111
  }
 }

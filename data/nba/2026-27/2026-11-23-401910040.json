@@ -7,13 +7,13 @@
   "id": "17",
   "abbr": "BKN",
   "name": "Brooklyn Nets",
-  "score": 15
+  "score": 100
  },
  "home": {
   "id": "16",
   "abbr": "MIN",
   "name": "Minnesota Timberwolves",
-  "score": 25
+  "score": 123
  },
  "neutral": false,
  "venue": "Target Center",

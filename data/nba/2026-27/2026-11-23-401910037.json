@@ -7,18 +7,18 @@
   "id": "22",
   "abbr": "POR",
   "name": "Portland Trail Blazers",
-  "score": 55
+  "score": 128
  },
  "home": {
   "id": "20",
   "abbr": "PHI",
   "name": "Philadelphia 76ers",
-  "score": 52
+  "score": 111
  },
  "neutral": false,
  "venue": "Xfinity Mobile Arena",
  "seasonType": 2,
- "state": "in",
+ "state": "post",
  "lines": {
   "open": {
    "at": "2026-11-23T00:27:20.940Z",
@@ -3004,5 +3004,9 @@
    "Yang Hansen",
    "POR"
   ]
+ },
+ "final": {
+  "away": 128,
+  "home": 111
  }
 }

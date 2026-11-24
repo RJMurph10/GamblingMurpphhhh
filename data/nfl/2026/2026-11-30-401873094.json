@@ -1,0 +1,1255 @@
+{
+ "id": "401873094",
+ "league": "nfl",
+ "date": "2026-12-01T01:15Z",
+ "name": "CAR @ TB",
+ "away": {
+  "id": "29",
+  "abbr": "CAR",
+  "name": "Carolina Panthers",
+  "score": 0
+ },
+ "home": {
+  "id": "27",
+  "abbr": "TB",
+  "name": "Tampa Bay Buccaneers",
+  "score": 0
+ },
+ "neutral": false,
+ "venue": "Raymond James Stadium",
+ "seasonType": 2,
+ "state": "pre",
+ "lines": {
+  "open": {
+   "at": "2026-11-24T02:36:16.686Z",
+   "scoreboard": [
+    {
+     "provider": {
+      "id": "100",
+      "name": "DraftKings",
+      "priority": 1,
+      "displayName": "DraftKings"
+     },
+     "details": "TB -3",
+     "overUnder": 43.5,
+     "spread": -3,
+     "awayTeamOdds": {
+      "favorite": false,
+      "underdog": true,
+      "team": {
+       "id": "29",
+       "uid": "s:20~l:28~t:29",
+       "abbreviation": "CAR",
+       "name": "Panthers",
+       "displayName": "Carolina Panthers",
+       "logo": "https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/car.png"
+      },
+      "favoriteAtOpen": false
+     },
+     "homeTeamOdds": {
+      "favorite": true,
+      "underdog": false,
+      "team": {
+       "id": "27",
+       "uid": "s:20~l:28~t:27",
+       "abbreviation": "TB",
+       "name": "Buccaneers",
+       "displayName": "Tampa Bay Buccaneers",
+       "logo": "https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/tb.png"
+      },
+      "favoriteAtOpen": true
+     },
+     "moneyline": {
+      "displayName": "Moneyline",
+      "shortDisplayName": "ML",
+      "home": {
+       "close": {
+        "odds": "-155",
+        "link": {
+         "language": "en-US",
+         "rel": [
+          "home",
+          "desktop",
+          "bets",
+          "draftkings"
+         ],
+         "href": "https://sportsbook.draftkings.com/gateway?s=__s__&wpcid=__wpcid__&wpsrc=413&wpcn=ESPN&wpscn=Widget&wpcrn=BetSlipDeepLink&wpscid=__wpscid__&wpcrid=xx&preurl=https%3A%2F%2Fsportsbook.draftkings.com%2Fevent%2F34118136%3Foutcomes%3D0ML84695569_1",
+         "text": "Home Bet",
+         "shortText": "Home Bet",
+         "isExternal": true,
+         "isPremium": false,
+         "tracking": {
+          "campaign": "betting-integrations",
+          "tags": {
+           "league": "nfl",
+           "sport": "football",
+           "gameId": 401873094,
+           "betSide": "home",
+           "betType": "straight"
+          }
+         }
+        }
+       },
+       "open": {
+        "odds": "-192"
+       }
+      },
+      "away": {
+       "close": {
+        "odds": "+131",
+        "link": {
+         "language": "en-US",
+         "rel": [
+          "away",
+          "desktop",
+          "bets",
+          "draftkings"
+         ],
+         "href": "https://sportsbook.draftkings.com/gateway?s=__s__&wpcid=__wpcid__&wpsrc=413&wpcn=ESPN&wpscn=Widget&wpcrn=BetSlipDeepLink&wpscid=__wpscid__&wpcrid=xx&preurl=https%3A%2F%2Fsportsbook.draftkings.com%2Fevent%2F34118136%3Foutcomes%3D0ML84695569_3",
+         "text": "Away Bet",
+         "shortText": "Away Bet",
+         "isExternal": true,
+         "isPremium": false,
+         "tracking": {
+          "campaign": "betting-integrations",
+          "tags": {
+           "league": "nfl",
+           "sport": "football",
+           "gameId": 401873094,
+           "betSide": "away",
+           "betType": "straight"
+          }
+         }
+        }
+       },
+       "open": {
+        "odds": "+160"
+       }
+      }
+     },
+     "pointSpread": {
+      "displayName": "Spread",
+      "shortDisplayName": "Spread",
+      "home": {
+       "close": {
+        "line": "-3",
+        "odds": "-102",
+        "link": {
+         "language": "en-US",
+         "rel": [
+          "homeSpread",
+          "desktop",
+          "bets"
+         ],
+         "href": "https://sportsbook.draftkings.com/gateway?s=__s__&wpcid=__wpcid__&wpsrc=413&wpcn=ESPN&wpscn=Widget&wpcrn=BetSlipDeepLink&wpscid=__wpscid__&wpcrid=xx&preurl=https%3A%2F%2Fsportsbook.draftkings.com%2Fevent%2F34118136%3Foutcomes%3D0HC84695569N300_1",
+         "text": "Home Point Spread",
+         "shortText": "Home Point Spread",
+         "isExternal": true,
+         "isPremium": false,
+         "tracking": {
+          "campaign": "betting-integrations",
+          "tags": {
+           "league": "nfl",
+           "sport": "football",
+           "gameId": 401873094,
+           "betSide": "none",
+           "betType": "straight",
+           "betDetails": "Spread:TB-3"
+          }
+         }
+        }
+       },
+       "open": {
+        "line": "-3.5",
+        "odds": "-110"
+       }
+      },
+      "away": {
+       "close": {
+        "line": "+3",
+        "odds": "-117",
+        "link": {
+         "language": "en-US",
+         "rel": [
+          "awaySpread",
+          "desktop",
+          "bets"
+         ],
+         "href": "https://sportsbook.draftkings.com/gateway?s=__s__&wpcid=__wpcid__&wpsrc=413&wpcn=ESPN&wpscn=Widget&wpcrn=BetSlipDeepLink&wpscid=__wpscid__&wpcrid=xx&preurl=https%3A%2F%2Fsportsbook.draftkings.com%2Fevent%2F34118136%3Foutcomes%3D0HC84695569P300_3",
+         "text": "Away Point Spread",
+         "shortText": "Away Point Spread",
+         "isExternal": true,
+         "isPremium": false,
+         "tracking": {
+          "campaign": "betting-integrations",
+          "tags": {
+           "league": "nfl",
+           "sport": "football",
+           "gameId": 401873094,
+           "betSide": "none",
+           "betType": "straight",
+           "betDetails": "Spread:CAR+3"
+          }
+         }
+        }
+       },
+       "open": {
+        "line": "+3.5",
+        "odds": "-110"
+       }
+      }
+     },
+     "total": {
+      "displayName": "Total",
+      "shortDisplayName": "Total",
+      "over": {
+       "close": {
+        "line": "o43.5",
+        "odds": "-110",
+        "link": {
+         "language": "en-US",
+         "rel": [
+          "over",
+          "desktop",
+          "bets"
+         ],
+         "href": "https://sportsbook.draftkings.com/gateway?s=__s__&wpcid=__wpcid__&wpsrc=413&wpcn=ESPN&wpscn=Widget&wpcrn=BetSlipDeepLink&wpscid=__wpscid__&wpcrid=xx&preurl=https%3A%2F%2Fsportsbook.draftkings.com%2Fevent%2F34118136%3Foutcomes%3D0OU84695569O4350_1",
+         "text": "Over Odds",
+         "shortText": "Over Odds",
+         "isExternal": true,
+         "isPremium": false,
+         "tracking": {
+          "campaign": "betting-integrations",
+          "tags": {
+           "league": "nfl",
+           "sport": "football",
+           "gameId": 401873094,
+           "betSide": "over",
+           "betType": "straight",
+           "betDetails": "Over:43.5"
+          }
+         }
+        }
+       },
+       "open": {
+        "line": "o44.5",
+        "odds": "-110"
+       }
+      },
+      "under": {
+       "close": {
+        "line": "u43.5",
+        "odds": "-109",
+        "link": {
+         "language": "en-US",
+         "rel": [
+          "under",
+          "desktop",
+          "bets"
+         ],
+         "href": "https://sportsbook.draftkings.com/gateway?s=__s__&wpcid=__wpcid__&wpsrc=413&wpcn=ESPN&wpscn=Widget&wpcrn=BetSlipDeepLink&wpscid=__wpscid__&wpcrid=xx&preurl=https%3A%2F%2Fsportsbook.draftkings.com%2Fevent%2F34118136%3Foutcomes%3D0OU84695569U4350_3",
+         "text": "Under Odds",
+         "shortText": "Under Odds",
+         "isExternal": true,
+         "isPremium": false,
+         "tracking": {
+          "campaign": "betting-integrations",
+          "tags": {
+           "league": "nfl",
+           "sport": "football",
+           "gameId": 401873094,
+           "betSide": "under",
+           "betType": "straight",
+           "betDetails": "Under:43.5"
+          }
+         }
+        }
+       },
+       "open": {
+        "line": "u44.5",
+        "odds": "-110"
+       }
+      }
+     },
+     "link": {
+      "language": "en-US",
+      "rel": [
+       "game",
+       "desktop",
+       "bets"
+      ],
+      "href": "https://sportsbook.draftkings.com/gateway?s=__s__&wpcid=__wpcid__&wpsrc=413&wpcn=ESPN&wpscn=Widget&wpcrn=BetSlipDeepLink&wpscid=__wpscid__&wpcrid=xx&preurl=https%3A%2F%2Fsportsbook.draftkings.com%2Fevent%2F34118136",
+      "text": "See More Odds",
+      "shortText": "Game",
+      "isExternal": true,
+      "isPremium": false,
+      "tracking": {
+       "campaign": "betting-integrations",
+       "tags": {
+        "league": "nfl",
+        "sport": "football",
+        "gameId": 401873094,
+        "betSide": "none",
+        "betType": "straight"
+       }
+      }
+     },
+     "header": {
+      "logo": {
+       "dark": "https://a.espncdn.com/i/espnbet/dark/espn-bet-square-off.svg",
+       "light": "https://a.espncdn.com/i/espnbet/espn-bet-square-off.svg",
+       "exclusivesLogoDark": "https://a.espncdn.com/i/espnbet/espn-bet-square-mint.svg",
+       "exclusivesLogoLight": "https://a.espncdn.com/i/espnbet/espn-bet-square-mint.svg"
+      },
+      "text": "Game Odds"
+     },
+     "footer": {
+      "disclaimer": "GAMBLING PROBLEM? CALL 1-800-GAMBLER or 1-800-MY-RESET, (800) 327-5050 or visit gamblinghelplinema.org (MA). Call 877-8-HOPENY/text HOPENY (467369) (NY). Call 888-789-7777/visit ccpg.org (CT), or visit www.mdgamblinghelp.org (MD), 1-800-981-0023 (PR). 21+ and present in most states. (18+ DC/KY/NH/PR/WY). Void in ONT. Eligibility restrictions apply. Terms: draftkings.com/sportsbook. On behalf of Boot Hill Casino (KS). Pass-thru of per wager tax may apply in IL."
+     }
+    }
+   ],
+   "books": [
+    {
+     "provider": {
+      "id": "100",
+      "name": "DraftKings",
+      "priority": 1
+     },
+     "details": "TB -3",
+     "overUnder": 43.5,
+     "spread": -3,
+     "overOdds": -110,
+     "underOdds": -109,
+     "awayTeamOdds": {
+      "favorite": false,
+      "underdog": true,
+      "moneyLine": 131,
+      "spreadOdds": -117,
+      "open": {
+       "favorite": false,
+       "pointSpread": {
+        "alternateDisplayValue": "+3.5",
+        "american": "+3.5"
+       },
+       "spread": {
+        "value": 1.9,
+        "displayValue": "10/11",
+        "alternateDisplayValue": "-110",
+        "decimal": 1.9,
+        "fraction": "10/11",
+        "american": "-110"
+       },
+       "moneyLine": {
+        "value": 2.6,
+        "displayValue": "8/5",
+        "alternateDisplayValue": "+160",
+        "decimal": 2.6,
+        "fraction": "8/5",
+        "american": "+160"
+       }
+      },
+      "current": {
+       "pointSpread": {
+        "alternateDisplayValue": "+3",
+        "american": "+3"
+       },
+       "spread": {
+        "value": 1.85,
+        "displayValue": "100/117",
+        "alternateDisplayValue": "-117",
+        "decimal": 1.85,
+        "fraction": "100/117",
+        "american": "-117"
+       },
+       "moneyLine": {
+        "value": 2.31,
+        "displayValue": "131/100",
+        "alternateDisplayValue": "+131",
+        "decimal": 2.31,
+        "fraction": "131/100",
+        "american": "+131"
+       }
+      },
+      "team": {
+       "id": "29"
+      }
+     },
+     "homeTeamOdds": {
+      "favorite": true,
+      "underdog": false,
+      "moneyLine": -155,
+      "spreadOdds": -102,
+      "open": {
+       "favorite": true,
+       "pointSpread": {
+        "alternateDisplayValue": "-3.5",
+        "american": "-3.5"
+       },
+       "spread": {
+        "value": 1.9,
+        "displayValue": "10/11",
+        "alternateDisplayValue": "-110",
+        "decimal": 1.9,
+        "fraction": "10/11",
+        "american": "-110"
+       },
+       "moneyLine": {
+        "value": 1.52,
+        "displayValue": "25/48",
+        "alternateDisplayValue": "-192",
+        "decimal": 1.52,
+        "fraction": "25/48",
+        "american": "-192"
+       }
+      },
+      "current": {
+       "pointSpread": {
+        "alternateDisplayValue": "-3",
+        "american": "-3"
+       },
+       "spread": {
+        "value": 1.98,
+        "displayValue": "50/51",
+        "alternateDisplayValue": "-102",
+        "decimal": 1.98,
+        "fraction": "50/51",
+        "american": "-102"
+       },
+       "moneyLine": {
+        "value": 1.64,
+        "displayValue": "20/31",
+        "alternateDisplayValue": "-155",
+        "decimal": 1.64,
+        "fraction": "20/31",
+        "american": "-155"
+       }
+      },
+      "team": {
+       "id": "27"
+      }
+     },
+     "moneylineWinner": false,
+     "spreadWinner": false,
+     "open": {
+      "over": {
+       "value": 1.9,
+       "displayValue": "10/11",
+       "alternateDisplayValue": "-110",
+       "decimal": 1.9,
+       "fraction": "10/11",
+       "american": "-110"
+      },
+      "under": {
+       "value": 1.9,
+       "displayValue": "10/11",
+       "alternateDisplayValue": "-110",
+       "decimal": 1.9,
+       "fraction": "10/11",
+       "american": "-110"
+      },
+      "total": {
+       "alternateDisplayValue": "44.5",
+       "american": "44.5"
+      }
+     },
+     "current": {
+      "over": {
+       "value": 1.9,
+       "displayValue": "10/11",
+       "alternateDisplayValue": "-110",
+       "decimal": 1.9,
+       "fraction": "10/11",
+       "american": "-110"
+      },
+      "under": {
+       "value": 1.91,
+       "displayValue": "100/109",
+       "alternateDisplayValue": "-109",
+       "decimal": 1.91,
+       "fraction": "100/109",
+       "american": "-109"
+      },
+      "total": {
+       "alternateDisplayValue": "43.5",
+       "american": "43.5"
+      }
+     }
+    }
+   ]
+  }
+ },
+ "props": {
+  "open": {
+   "at": "2026-11-24T02:36:16.686Z",
+   "provider": 100,
+   "count": 83,
+   "rows": [
+  {"a":null,"t":"1st Half Total","ti":"72","op":[22.5,null,null],"cur":[21.5,null,null]},
+  {"a":null,"t":"1st Half Total","ti":"72","op":[22.5,null,null],"cur":[21.5,null,null]},
+  {"a":null,"tm":"27","t":"1st Half Moneyline","ti":"73"},
+  {"a":null,"tm":"29","t":"1st Half Moneyline","ti":"73"},
+  {"a":null,"tm":"27","t":"1st Half Spread","ti":"74","op":[-2.5,null,null],"cur":[-1.5,null,null]},
+  {"a":null,"tm":"29","t":"1st Half Spread","ti":"74","op":[2.5,null,null],"cur":[1.5,null,null]},
+  {"a":null,"t":"1st Quarter Total","ti":"75","op":[7.5,null,null],"cur":[7.5,null,null]},
+  {"a":null,"t":"1st Quarter Total","ti":"75","op":[7.5,null,null],"cur":[7.5,null,null]},
+  {"a":null,"tm":"27","t":"1st Quarter Moneyline","ti":"76"},
+  {"a":null,"tm":"29","t":"1st Quarter Moneyline","ti":"76"},
+  {"a":null,"tm":"27","t":"1st Quarter Spread","ti":"77","op":[-0.5,null,null],"cur":[-0.5,null,null]},
+  {"a":null,"tm":"29","t":"1st Quarter Spread","ti":"77","op":[0.5,null,null],"cur":[0.5,null,null]},
+  {"a":null,"tm":"27","t":"Team Total Points","ti":"98","op":[23.5,null,null],"cur":[15.5,null,null]},
+  {"a":null,"tm":"27","t":"Team Total Points","ti":"98","op":[23.5,null,null],"cur":[16.5,null,null]},
+  {"a":null,"tm":"27","t":"Team Total Points","ti":"98","op":[23.5,null,null],"cur":[19.5,null,null]},
+  {"a":null,"tm":"27","t":"Team Total Points","ti":"98","op":[23.5,null,null],"cur":[21.5,null,null]},
+  {"a":null,"tm":"27","t":"Team Total Points","ti":"98","op":[23.5,null,null],"cur":[23.5,null,null]},
+  {"a":null,"tm":"27","t":"Team Total Points","ti":"98","op":[23.5,null,null],"cur":[24.5,null,null]},
+  {"a":null,"tm":"27","t":"Team Total Points","ti":"98","op":[23.5,null,null],"cur":[25.5,null,null]},
+  {"a":null,"tm":"27","t":"Team Total Points","ti":"98","op":[23.5,null,null],"cur":[26.5,null,null]},
+  {"a":null,"tm":"27","t":"Team Total Points","ti":"98","op":[23.5,null,null],"cur":[27.5,null,null]},
+  {"a":null,"tm":"27","t":"Team Total Points","ti":"98","op":[23.5,null,null],"cur":[28.5,null,null]},
+  {"a":null,"tm":"27","t":"Team Total Points","ti":"98","op":[23.5,null,null],"cur":[29.5,null,null]},
+  {"a":null,"tm":"27","t":"Team Total Points","ti":"98","op":[23.5,null,null],"cur":[30.5,null,null]},
+  {"a":null,"tm":"27","t":"Team Total Points","ti":"98","op":[23.5,null,null],"cur":[31.5,null,null]},
+  {"a":null,"tm":"27","t":"Team Total Points","ti":"98","op":[23.5,null,null],"cur":[32.5,null,null]},
+  {"a":null,"tm":"27","t":"Team Total Points","ti":"98","op":[23.5,null,null],"cur":[14.5,null,null]},
+  {"a":null,"tm":"27","t":"Team Total Points","ti":"98","op":[23.5,null,null],"cur":[15.5,null,null]},
+  {"a":null,"tm":"27","t":"Team Total Points","ti":"98","op":[23.5,null,null],"cur":[18.5,null,null]},
+  {"a":null,"tm":"27","t":"Team Total Points","ti":"98","op":[23.5,null,null],"cur":[21.5,null,null]},
+  {"a":null,"tm":"27","t":"Team Total Points","ti":"98","op":[23.5,null,null],"cur":[23.5,null,null]},
+  {"a":null,"tm":"27","t":"Team Total Points","ti":"98","op":[23.5,null,null],"cur":[24.5,null,null]},
+  {"a":null,"tm":"27","t":"Team Total Points","ti":"98","op":[23.5,null,null],"cur":[25.5,null,null]},
+  {"a":null,"tm":"27","t":"Team Total Points","ti":"98","op":[23.5,null,null],"cur":[26.5,null,null]},
+  {"a":null,"tm":"27","t":"Team Total Points","ti":"98","op":[23.5,null,null],"cur":[27.5,null,null]},
+  {"a":null,"tm":"27","t":"Team Total Points","ti":"98","op":[23.5,null,null],"cur":[28.5,null,null]},
+  {"a":null,"tm":"27","t":"Team Total Points","ti":"98","op":[23.5,null,null],"cur":[29.5,null,null]},
+  {"a":null,"tm":"27","t":"Team Total Points","ti":"98","op":[23.5,null,null],"cur":[30.5,null,null]},
+  {"a":null,"tm":"27","t":"Team Total Points","ti":"98","op":[23.5,null,null],"cur":[31.5,null,null]},
+  {"a":null,"tm":"27","t":"Team Total Points","ti":"98","op":[23.5,null,null],"cur":[32.5,null,null]},
+  {"a":null,"tm":"27","t":"Team Total Points","ti":"98","op":[23.5,null,null],"cur":[33.5,null,null]},
+  {"a":null,"tm":"29","t":"Team Total Points","ti":"98","op":[20.5,null,null],"cur":[10.5,null,null]},
+  {"a":null,"tm":"29","t":"Team Total Points","ti":"98","op":[20.5,null,null],"cur":[12.5,null,null]},
+  {"a":null,"tm":"29","t":"Team Total Points","ti":"98","op":[20.5,null,null],"cur":[14.5,null,null]},
+  {"a":null,"tm":"29","t":"Team Total Points","ti":"98","op":[20.5,null,null],"cur":[15.5,null,null]},
+  {"a":null,"tm":"29","t":"Team Total Points","ti":"98","op":[20.5,null,null],"cur":[16.5,null,null]},
+  {"a":null,"tm":"29","t":"Team Total Points","ti":"98","op":[20.5,null,null],"cur":[17.5,null,null]},
+  {"a":null,"tm":"29","t":"Team Total Points","ti":"98","op":[20.5,null,null],"cur":[18.5,null,null]},
+  {"a":null,"tm":"29","t":"Team Total Points","ti":"98","op":[20.5,null,null],"cur":[19.5,null,null]},
+  {"a":null,"tm":"29","t":"Team Total Points","ti":"98","op":[20.5,null,null],"cur":[20.5,null,null]},
+  {"a":null,"tm":"29","t":"Team Total Points","ti":"98","op":[20.5,null,null],"cur":[23.5,null,null]},
+  {"a":null,"tm":"29","t":"Team Total Points","ti":"98","op":[20.5,null,null],"cur":[24.5,null,null]},
+  {"a":null,"tm":"29","t":"Team Total Points","ti":"98","op":[20.5,null,null],"cur":[25.5,null,null]},
+  {"a":null,"tm":"29","t":"Team Total Points","ti":"98","op":[20.5,null,null],"cur":[26.5,null,null]},
+  {"a":null,"tm":"29","t":"Team Total Points","ti":"98","op":[20.5,null,null],"cur":[27.5,null,null]},
+  {"a":null,"tm":"29","t":"Team Total Points","ti":"98","op":[20.5,null,null],"cur":[28.5,null,null]},
+  {"a":null,"tm":"29","t":"Team Total Points","ti":"98","op":[20.5,null,null],"cur":[10.5,null,null]},
+  {"a":null,"tm":"29","t":"Team Total Points","ti":"98","op":[20.5,null,null],"cur":[11.5,null,null]},
+  {"a":null,"tm":"29","t":"Team Total Points","ti":"98","op":[20.5,null,null],"cur":[12.5,null,null]},
+  {"a":null,"tm":"29","t":"Team Total Points","ti":"98","op":[20.5,null,null],"cur":[13.5,null,null]},
+  {"a":null,"tm":"29","t":"Team Total Points","ti":"98","op":[20.5,null,null],"cur":[14.5,null,null]},
+  {"a":null,"tm":"29","t":"Team Total Points","ti":"98","op":[20.5,null,null],"cur":[15.5,null,null]},
+  {"a":null,"tm":"29","t":"Team Total Points","ti":"98","op":[20.5,null,null],"cur":[16.5,null,null]},
+  {"a":null,"tm":"29","t":"Team Total Points","ti":"98","op":[20.5,null,null],"cur":[17.5,null,null]},
+  {"a":null,"tm":"29","t":"Team Total Points","ti":"98","op":[20.5,null,null],"cur":[18.5,null,null]},
+  {"a":null,"tm":"29","t":"Team Total Points","ti":"98","op":[20.5,null,null],"cur":[19.5,null,null]},
+  {"a":null,"tm":"29","t":"Team Total Points","ti":"98","op":[20.5,null,null],"cur":[20.5,null,null]},
+  {"a":null,"tm":"29","t":"Team Total Points","ti":"98","op":[20.5,null,null],"cur":[21.5,null,null]},
+  {"a":null,"tm":"29","t":"Team Total Points","ti":"98","op":[20.5,null,null],"cur":[22.5,null,null]},
+  {"a":null,"tm":"29","t":"Team Total Points","ti":"98","op":[20.5,null,null],"cur":[23.5,null,null]},
+  {"a":null,"tm":"29","t":"Team Total Points","ti":"98","op":[20.5,null,null],"cur":[24.5,null,null]},
+  {"a":null,"tm":"29","t":"Team Total Points","ti":"98","op":[20.5,null,null],"cur":[25.5,null,null]},
+  {"a":null,"tm":"29","t":"Team Total Points","ti":"98","op":[20.5,null,null],"cur":[26.5,null,null]},
+  {"a":null,"tm":"29","t":"Team Total Points","ti":"98","op":[20.5,null,null],"cur":[27.5,null,null]},
+  {"a":null,"tm":"29","t":"Team Total Points","ti":"98","op":[20.5,null,null],"cur":[28.5,null,null]},
+  {"a":null,"tm":"29","t":"Team Total Points","ti":"98","op":[20.5,null,null],"cur":[29.5,null,null]},
+  {"a":null,"tm":"29","t":"Team Total Points","ti":"98","op":[20.5,null,null],"cur":[30.5,null,null]},
+  {"a":null,"tm":"27","t":"Team Total Touchdowns","ti":"104","op":[2.5,null,null],"cur":[2.5,null,null]},
+  {"a":null,"tm":"27","t":"Team Total Touchdowns","ti":"104","op":[2.5,null,null],"cur":[2.5,null,null]},
+  {"a":null,"tm":"29","t":"Team Total Touchdowns","ti":"104","op":[2.5,null,null],"cur":[2.5,null,null]},
+  {"a":null,"tm":"29","t":"Team Total Touchdowns","ti":"104","op":[2.5,null,null],"cur":[2.5,null,null]},
+  {"a":null,"t":"Will There Be Overtime?","ti":"153"},
+  {"a":null,"t":"Will There Be Overtime?","ti":"153"}
+ ],
+   "sample": [
+    {
+     "competition": {
+      "id": "401873094"
+     },
+     "provider": {
+      "id": "100"
+     },
+     "type": {
+      "id": "72",
+      "name": "1st Half Total"
+     },
+     "lastUpdated": "2026-11-23T15:53Z",
+     "current": {
+      "target": {
+       "value": 21.5,
+       "displayValue": "21.5"
+      }
+     },
+     "open": {
+      "target": {
+       "value": 22.5,
+       "displayValue": "22.5"
+      }
+     }
+    },
+    {
+     "competition": {
+      "id": "401873094"
+     },
+     "provider": {
+      "id": "100"
+     },
+     "type": {
+      "id": "72",
+      "name": "1st Half Total"
+     },
+     "lastUpdated": "2026-11-23T15:53Z",
+     "current": {
+      "target": {
+       "value": 21.5,
+       "displayValue": "21.5"
+      }
+     },
+     "open": {
+      "target": {
+       "value": 22.5,
+       "displayValue": "22.5"
+      }
+     }
+    }
+   ]
+  }
+ },
+ "names": {
+  "11759": [
+   "JJ Jansen",
+   "CAR"
+  ],
+  "15928": [
+   "Sam Martin",
+   "CAR"
+  ],
+  "2575164": [
+   "Miles Killebrew",
+   "TB"
+  ],
+  "2575453": [
+   "Rakeem Nunez-Roches",
+   "TB"
+  ],
+  "2576925": [
+   "Darren Waller",
+   "CAR"
+  ],
+  "2577619": [
+   "Riley Dixon",
+   "TB"
+  ],
+  "2972515": [
+   "Cooper Rush",
+   "TB"
+  ],
+  "2973051": [
+   "Taylor Moton",
+   "CAR"
+  ],
+  "2979482": [
+   "Dan Feeney",
+   "TB"
+  ],
+  "3043107": [
+   "Alex Anzalone",
+   "TB"
+  ],
+  "3051942": [
+   "Al-Quadin Muhammad",
+   "TB"
+  ],
+  "3052587": [
+   "Baker Mayfield",
+   "TB"
+  ],
+  "3054857": [
+   "A'Shawn Robinson",
+   "TB"
+  ],
+  "3116165": [
+   "Chris Godwin Jr.",
+   "TB"
+  ],
+  "3116179": [
+   "Nick Scott",
+   "CAR"
+  ],
+  "3117253": [
+   "Bobby Okereke",
+   "CAR"
+  ],
+  "3120590": [
+   "Easton Stick",
+   "TB"
+  ],
+  "3134362": [
+   "Vita Vea",
+   "TB"
+  ],
+  "3150744": [
+   "Chase McLaughlin",
+   "TB"
+  ],
+  "3894856": [
+   "Anthony Nelson",
+   "TB"
+  ],
+  "3909013": [
+   "Christian Rozeboom",
+   "TB"
+  ],
+  "3915777": [
+   "Justin Skule",
+   "TB"
+  ],
+  "3917016": [
+   "Trevis Gipson",
+   "CAR"
+  ],
+  "3917592": [
+   "Robert Hunt",
+   "CAR"
+  ],
+  "3917853": [
+   "Mike Jackson",
+   "CAR"
+  ],
+  "4034779": [
+   "Ko Kieft",
+   "TB"
+  ],
+  "4034790": [
+   "Antoine Winfield Jr.",
+   "TB"
+  ],
+  "4034948": [
+   "Feleipe Franks",
+   "CAR"
+  ],
+  "4034959": [
+   "Jeremiah Moon",
+   "CAR"
+  ],
+  "4034962": [
+   "Stone Forsythe",
+   "CAR"
+  ],
+  "4035048": [
+   "Luke Fortner",
+   "CAR"
+  ],
+  "4035232": [
+   "Tyrel Dodson",
+   "CAR"
+  ],
+  "4035462": [
+   "Isaiah Simmons",
+   "CAR"
+  ],
+  "4035495": [
+   "Derrick Brown",
+   "CAR"
+  ],
+  "4035870": [
+   "Jake Curhan",
+   "CAR"
+  ],
+  "4036063": [
+   "Patrick Jones II",
+   "CAR"
+  ],
+  "4046551": [
+   "Ben Bredeson",
+   "TB"
+  ],
+  "4058925": [
+   "Tershawn Wharton",
+   "CAR"
+  ],
+  "4212909": [
+   "David Moore",
+   "CAR"
+  ],
+  "4239934": [
+   "AJ Dillon",
+   "CAR"
+  ],
+  "4240401": [
+   "Ifeatu Melifonwu",
+   "TB"
+  ],
+  "4240589": [
+   "Tristan Wirfs",
+   "TB"
+  ],
+  "4240595": [
+   "Marco Wilson",
+   "CAR"
+  ],
+  "4240703": [
+   "Kenny Pickett",
+   "CAR"
+  ],
+  "4241416": [
+   "Chuba Hubbard",
+   "CAR"
+  ],
+  "4242230": [
+   "Saahdiq Charles",
+   "CAR"
+  ],
+  "4242975": [
+   "Jaelan Phillips",
+   "CAR"
+  ],
+  "4243256": [
+   "Devin Lloyd",
+   "CAR"
+  ],
+  "4243331": [
+   "Cade Otton",
+   "TB"
+  ],
+  "4244607": [
+   "Akayleb Evans",
+   "CAR"
+  ],
+  "4248533": [
+   "Josh Hayes",
+   "TB"
+  ],
+  "4248545": [
+   "Cody Mauch",
+   "TB"
+  ],
+  "4250392": [
+   "Zyon McCollum",
+   "TB"
+  ],
+  "4256062": [
+   "Brady Christensen",
+   "CAR"
+  ],
+  "4256224": [
+   "Claudin Cherelus",
+   "CAR"
+  ],
+  "4360763": [
+   "Brycen Tremayne",
+   "CAR"
+  ],
+  "4360773": [
+   "Nick Hampton",
+   "CAR"
+  ],
+  "4361429": [
+   "Rasheed Walker",
+   "CAR"
+  ],
+  "4361727": [
+   "Evan Deckers",
+   "TB"
+  ],
+  "4362487": [
+   "Tre'von Moehrig",
+   "CAR"
+  ],
+  "4362647": [
+   "Damien Lewis",
+   "CAR"
+  ],
+  "4362847": [
+   "Jaycee Horn",
+   "CAR"
+  ],
+  "4371733": [
+   "Kenny Gainwell",
+   "TB"
+  ],
+  "4372505": [
+   "Payne Durham",
+   "TB"
+  ],
+  "4372518": [
+   "Bobby Brown III",
+   "CAR"
+  ],
+  "4372780": [
+   "Tommy Tremble",
+   "CAR"
+  ],
+  "4380507": [
+   "Luke Goedeke",
+   "TB"
+  ],
+  "4427132": [
+   "Ikem Ekwonu",
+   "CAR"
+  ],
+  "4427140": [
+   "Trevor Keegan",
+   "TB"
+  ],
+  "4427673": [
+   "Calijah Kancey",
+   "TB"
+  ],
+  "4427677": [
+   "Mohamed Kamara",
+   "TB"
+  ],
+  "4428522": [
+   "Tykee Smith",
+   "TB"
+  ],
+  "4428796": [
+   "Casey Washington",
+   "CAR"
+  ],
+  "4428941": [
+   "Javin Wright",
+   "TB"
+  ],
+  "4428993": [
+   "Haynes King",
+   "CAR"
+  ],
+  "4429007": [
+   "DeMonte Capehart",
+   "TB"
+  ],
+  "4429110": [
+   "Lathan Ransom",
+   "CAR"
+  ],
+  "4429166": [
+   "Princely Umanmielen",
+   "CAR"
+  ],
+  "4429251": [
+   "Graham Barton",
+   "TB"
+  ],
+  "4429511": [
+   "SirVocea Dennis",
+   "TB"
+  ],
+  "4429847": [
+   "Garrett Greene",
+   "TB"
+  ],
+  "4430034": [
+   "Xavier Legette",
+   "CAR"
+  ],
+  "4430478": [
+   "Elijah Simmons",
+   "TB"
+  ],
+  "4430482": [
+   "Joshua Simon",
+   "CAR"
+  ],
+  "4430834": [
+   "Jalen McMillan",
+   "TB"
+  ],
+  "4430871": [
+   "Sean Tucker",
+   "TB"
+  ],
+  "4431006": [
+   "Caelen Carson",
+   "CAR"
+  ],
+  "4431077": [
+   "TeRah Edwards",
+   "CAR"
+  ],
+  "4431147": [
+   "Cam Horsley",
+   "CAR"
+  ],
+  "4431184": [
+   "Jayson Jones",
+   "TB"
+  ],
+  "4431426": [
+   "Corey Thornton",
+   "CAR"
+  ],
+  "4431551": [
+   "Lee Hunter",
+   "CAR"
+  ],
+  "4431588": [
+   "Ja'Tavion Sanders",
+   "CAR"
+  ],
+  "4432374": [
+   "Ahmani Marshall",
+   "CAR"
+  ],
+  "4566165": [
+   "JJ Roberts",
+   "TB"
+  ],
+  "4566384": [
+   "Zakee Wheatley",
+   "CAR"
+  ],
+  "4567096": [
+   "John Metchie III",
+   "CAR"
+  ],
+  "4567416": [
+   "Ja'Markis Weston",
+   "CAR"
+  ],
+  "4567750": [
+   "Emeka Egbuka",
+   "TB"
+  ],
+  "4567896": [
+   "Paul Rubelt",
+   "TB"
+  ],
+  "4568024": [
+   "Josh Williams",
+   "TB"
+  ],
+  "4568263": [
+   "Ryan Fitzgerald",
+   "CAR"
+  ],
+  "4569202": [
+   "Ben Scott",
+   "TB"
+  ],
+  "4576075": [
+   "Corey Bullock",
+   "CAR"
+  ],
+  "4594329": [
+   "Henry Lutovsky",
+   "TB"
+  ],
+  "4594338": [
+   "Brandon Johnson",
+   "TB"
+  ],
+  "4594449": [
+   "DeVonta Smith",
+   "CAR"
+  ],
+  "4596448": [
+   "Bucky Irving",
+   "TB"
+  ],
+  "4596472": [
+   "Jalon Daniels",
+   "TB"
+  ],
+  "4596545": [
+   "CJ Dippre",
+   "TB"
+  ],
+  "4602648": [
+   "Kevin Knowles",
+   "TB"
+  ],
+  "4602967": [
+   "Aaron Hall",
+   "CAR"
+  ],
+  "4608810": [
+   "Tez Johnson",
+   "TB"
+  ],
+  "4678008": [
+   "Jonathon Brooks",
+   "CAR"
+  ],
+  "4683096": [
+   "Caden Fordham",
+   "TB"
+  ],
+  "4683243": [
+   "Mitchell Evans",
+   "CAR"
+  ],
+  "4683506": [
+   "Albert Reese IV",
+   "CAR"
+  ],
+  "4685350": [
+   "Trevor Etienne",
+   "CAR"
+  ],
+  "4685472": [
+   "Tetairoa McMillan",
+   "CAR"
+  ],
+  "4685549": [
+   "Billy Schrauth",
+   "TB"
+  ],
+  "4685720": [
+   "Bryce Young",
+   "CAR"
+  ],
+  "4686334": [
+   "Yaya Diaby",
+   "TB"
+  ],
+  "4686884": [
+   "Luke Haggard",
+   "TB"
+  ],
+  "4686911": [
+   "Jakorian Bennett",
+   "CAR"
+  ],
+  "4687513": [
+   "Cam Jackson",
+   "CAR"
+  ],
+  "4690787": [
+   "Benjamin Chukwuma",
+   "TB"
+  ],
+  "4690795": [
+   "Elijah Roberts",
+   "TB"
+  ],
+  "4695883": [
+   "Jalen Coker",
+   "CAR"
+  ],
+  "4696902": [
+   "Torricelli Simpkins III",
+   "CAR"
+  ],
+  "4697636": [
+   "Chau Smith-Wade",
+   "CAR"
+  ],
+  "4709392": [
+   "Anthony Tyus III",
+   "CAR"
+  ],
+  "4713277": [
+   "Eric Rivers Jr.",
+   "TB"
+  ],
+  "4714157": [
+   "Thomas Incoom",
+   "CAR"
+  ],
+  "4816107": [
+   "Benjamin Morrison",
+   "TB"
+  ],
+  "4833355": [
+   "Nic Scourton",
+   "CAR"
+  ],
+  "4870617": [
+   "Rueben Bain Jr.",
+   "TB"
+  ],
+  "4870694": [
+   "Monroe Freeling",
+   "CAR"
+  ],
+  "4870998": [
+   "Josiah Trotter",
+   "TB"
+  ],
+  "4874515": [
+   "Sam Hecht",
+   "CAR"
+  ],
+  "4875592": [
+   "Jackson Kuwatch",
+   "CAR"
+  ],
+  "4875613": [
+   "Dean Patterson",
+   "TB"
+  ],
+  "4875848": [
+   "Parker Petersen",
+   "CAR"
+  ],
+  "4876995": [
+   "Ja'seem Reed",
+   "CAR"
+  ],
+  "4880219": [
+   "Silas Walters",
+   "TB"
+  ],
+  "4880613": [
+   "Bam Martin-Scott",
+   "CAR"
+  ],
+  "4890373": [
+   "Bauer Sharp",
+   "TB"
+  ],
+  "4890885": [
+   "Ayden Garnes",
+   "TB"
+  ],
+  "4912847": [
+   "Jacob Parrish",
+   "TB"
+  ],
+  "5085355": [
+   "David Walker",
+   "TB"
+  ],
+  "5091739": [
+   "Chris Brazzell II",
+   "CAR"
+  ],
+  "5093694": [
+   "Keionte Scott",
+   "TB"
+  ],
+  "5097554": [
+   "Kameron Johnson",
+   "TB"
+  ],
+  "5151083": [
+   "Will Lee III",
+   "CAR"
+  ],
+  "5220680": [
+   "Ted Hurst III",
+   "TB"
+  ],
+  "5225091": [
+   "Yasir Holmes",
+   "TB"
+  ],
+  "5225251": [
+   "Malcolm DeWalt IV",
+   "CAR"
+  ],
+  "5279357": [
+   "Mapalo Mwansa",
+   "CAR"
+  ]
+ }
+}

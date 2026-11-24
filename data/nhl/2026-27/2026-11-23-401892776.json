@@ -7,13 +7,13 @@
   "id": "21",
   "abbr": "TOR",
   "name": "Toronto Maple Leafs",
-  "score": 0
+  "score": 1
  },
  "home": {
   "id": "12",
   "abbr": "NYI",
   "name": "New York Islanders",
-  "score": 1
+  "score": 2
  },
  "neutral": false,
  "venue": "UBS Arena",
