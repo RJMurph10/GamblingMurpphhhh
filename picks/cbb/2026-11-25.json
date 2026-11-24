@@ -1,0 +1,38 @@
+{
+ "day": "2026-11-25",
+ "updated": "2026-11-24T23:40:35.276Z",
+ "picks": [
+  {
+   "id": "401909568-total",
+   "game": "CONN @ DUKE",
+   "tip": "2026-11-26T00:00Z",
+   "market": "total",
+   "pick": "Under 152.5",
+   "line": 152.5,
+   "open": 152.5,
+   "model": 146.3,
+   "edge": 6.2,
+   "best": true,
+   "firstSeen": "2026-11-24T23:40:35.276Z",
+   "latest": 151.5,
+   "latestAt": "2026-11-24T23:40:35.276Z",
+   "alerted": false
+  },
+  {
+   "id": "401918971-total",
+   "game": "SMU @ USU",
+   "tip": "2026-11-26T00:00Z",
+   "market": "total",
+   "pick": "Under 169.5",
+   "line": 169.5,
+   "open": 169.5,
+   "model": 161.4,
+   "edge": 8.1,
+   "best": true,
+   "firstSeen": "2026-11-24T23:40:35.276Z",
+   "latest": 169.5,
+   "latestAt": "2026-11-24T23:40:35.276Z",
+   "alerted": false
+  }
+ ]
+}

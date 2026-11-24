@@ -1,6 +1,6 @@
 {
  "day": "2026-11-25",
- "updated": "2026-11-24T15:20:20.474Z",
+ "updated": "2026-11-24T23:40:34.420Z",
  "picks": [
   {
    "id": "401909317-spread",
@@ -31,7 +31,23 @@
    "best": false,
    "firstSeen": "2026-11-24T15:20:20.474Z",
    "latest": 238.5,
-   "latestAt": "2026-11-24T15:20:20.474Z",
+   "latestAt": "2026-11-24T23:40:34.420Z",
+   "alerted": false
+  },
+  {
+   "id": "401909319-spread",
+   "game": "CLE @ NY",
+   "tip": "2026-11-26T00:30Z",
+   "market": "spread",
+   "pick": "NY -3.5",
+   "line": -3.5,
+   "open": -5.5,
+   "model": 5.4,
+   "edge": 1.9,
+   "best": false,
+   "firstSeen": "2026-11-24T23:40:34.420Z",
+   "latest": -3.5,
+   "latestAt": "2026-11-24T23:40:34.420Z",
    "alerted": false
   },
   {
@@ -62,8 +78,8 @@
    "edge": 9.2,
    "best": true,
    "firstSeen": "2026-11-24T15:20:20.474Z",
-   "latest": 223.5,
-   "latestAt": "2026-11-24T15:20:20.474Z",
+   "latest": 224.5,
+   "latestAt": "2026-11-24T23:40:34.420Z",
    "alerted": false
   },
   {
