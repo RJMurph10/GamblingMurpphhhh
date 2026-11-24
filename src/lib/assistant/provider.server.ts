@@ -11,7 +11,7 @@ export type AskResult =
   /** sources: what was looked up, e.g. "picks · NFL", "record · CFB". */
   { ok: true; text: string; sources: string[] } | { ok: false; error: string };
 
-import { serverEnv } from "@/lib/server-env";
+import { serverEnv, serverEnvNames } from "@/lib/server-env";
 
 export const SYSTEM_PROMPT = `You are the assistant on GamblingNFL, a private sports-betting research site (NFL, college football, NBA, men's college basketball).
 Answer questions about the site's picks, ★ best bets, edges, rules and records.
@@ -43,12 +43,16 @@ type GeminiContent = { role: "user" | "model"; parts: GeminiPart[] };
 
 async function askGemini(turns: ChatTurn[], today: string): Promise<AskResult> {
   const key = serverEnv("GEMINI_API_KEY");
-  if (!key)
+  if (!key) {
+    const seen = serverEnvNames();
+    const list = (xs: string[]) => (xs.length ? xs.join(", ") : "none");
     return {
       ok: false,
       error:
-        "The assistant isn't set up yet: add a GEMINI_API_KEY secret (free from Google AI Studio).",
+        "The assistant isn't set up yet: the server can't see a GEMINI_API_KEY secret. " +
+        `Settings it can see (names only): worker: ${list(seen.worker)}; nitro: ${list(seen.nitro)}; process: ${list(seen.process)}.`,
     };
+  }
   const model = serverEnv("GEMINI_MODEL") || "gemini-flash-latest";
   const url = `https://generativelanguage.googleapis.com/v1beta/models/${model}:generateContent`;
   const contents: GeminiContent[] = turns.map((t) => ({

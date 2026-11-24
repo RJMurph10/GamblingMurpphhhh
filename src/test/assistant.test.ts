@@ -186,3 +186,15 @@ describe("server secrets", () => {
     vi.unstubAllEnvs();
   });
 });
+
+describe("server secrets on the Worker (nitro)", () => {
+  it("reads nitro's globalThis.__env__ and lists names only when the key is missing", async () => {
+    const { serverEnv, serverEnvNames } = await import("@/lib/server-env");
+    vi.stubEnv("GEMINI_API_KEY", "");
+    (globalThis as Record<string, unknown>).__env__ = { GEMINI_API_KEY: "k", OTHER_SECRET: "x" };
+    expect(serverEnv("GEMINI_API_KEY")).toBe("k");
+    expect(serverEnvNames().nitro).toEqual(["GEMINI_API_KEY", "OTHER_SECRET"]);
+    delete (globalThis as Record<string, unknown>).__env__;
+    vi.unstubAllEnvs();
+  });
+});
