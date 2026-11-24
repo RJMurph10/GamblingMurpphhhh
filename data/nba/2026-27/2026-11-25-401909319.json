@@ -586,14 +586,14 @@
    ]
   },
   "latest": {
-   "at": "2026-11-24T11:01:47.173Z",
+   "at": "2026-11-24T21:19:02.149Z",
    "count": 6,
    "rows": [
-  {"a":null,"tm":"5","t":"Team Total Points","ti":"98","op":[107.5,null,null],"cur":[107.5,null,null],"px":[-108,-108]},
-  {"a":null,"tm":"5","t":"Team Total Points","ti":"98","op":[107.5,null,null],"cur":[107.5,null,null],"px":[-112,-112]},
-  {"a":null,"tm":"18","t":"Team Total Points","ti":"98","op":[113.5,null,null],"cur":[113.5,null,null],"px":[-105,-105]},
-  {"a":null,"tm":"18","t":"Team Total Points","ti":"98","op":[113.5,null,null],"cur":[113.5,null,null],"px":[-115,-115]},
-  {"a":null,"t":"Will There Be Overtime?","ti":"153","cur":[null,1700,null]},
+  {"a":null,"tm":"5","t":"Team Total Points","ti":"98","op":[107.5,null,null],"cur":[108.5,null,null],"px":[-110,-108]},
+  {"a":null,"tm":"5","t":"Team Total Points","ti":"98","op":[107.5,null,null],"cur":[108.5,null,null],"px":[-110,-112]},
+  {"a":null,"tm":"18","t":"Team Total Points","ti":"98","op":[113.5,null,null],"cur":[112.5,null,null],"px":[-112,-105]},
+  {"a":null,"tm":"18","t":"Team Total Points","ti":"98","op":[113.5,null,null],"cur":[112.5,null,null],"px":[-108,-115]},
+  {"a":null,"t":"Will There Be Overtime?","ti":"153","cur":[null,1600,null]},
   {"a":null,"t":"Will There Be Overtime?","ti":"153","cur":[null,-3500,null]}
  ]
   }

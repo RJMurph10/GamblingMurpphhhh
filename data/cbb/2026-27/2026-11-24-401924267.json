@@ -1,24 +1,24 @@
 {
  "id": "401924267",
  "league": "cbb",
- "date": "2026-11-24T20:30Z",
- "name": "LBSU VS ARST",
+ "date": "2026-11-24T20:45Z",
+ "name": "ARST VS LBSU",
  "away": {
-  "id": "299",
-  "abbr": "LBSU",
-  "name": "Long Beach State Beach",
-  "score": 0
- },
- "home": {
   "id": "2032",
   "abbr": "ARST",
   "name": "Arkansas State Red Wolves",
-  "score": 0
+  "score": 30
+ },
+ "home": {
+  "id": "299",
+  "abbr": "LBSU",
+  "name": "Long Beach State Beach",
+  "score": 26
  },
  "neutral": true,
  "venue": "Ocean Bank Convocation Center",
  "seasonType": 2,
- "state": "pre",
+ "state": "in",
  "lines": {
   "open": {
    "at": "2026-11-24T02:36:16.686Z",

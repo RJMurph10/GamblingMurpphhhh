@@ -2,23 +2,23 @@
  "id": "401928859",
  "league": "cbb",
  "date": "2026-11-24T18:30Z",
- "name": "RICE VS UIC",
+ "name": "UIC VS RICE",
  "away": {
-  "id": "242",
-  "abbr": "RICE",
-  "name": "Rice Owls",
-  "score": 0
- },
- "home": {
   "id": "82",
   "abbr": "UIC",
   "name": "UIC Flames",
-  "score": 0
+  "score": 67
+ },
+ "home": {
+  "id": "242",
+  "abbr": "RICE",
+  "name": "Rice Owls",
+  "score": 68
  },
  "neutral": true,
  "venue": "The Reef",
  "seasonType": 2,
- "state": "pre",
+ "state": "post",
  "lines": {
   "open": {
    "at": "2026-11-24T00:58:17.105Z",
@@ -477,5 +477,9 @@
    ]
   }
  },
- "props": {}
+ "props": {},
+ "final": {
+  "away": 67,
+  "home": 68
+ }
 }

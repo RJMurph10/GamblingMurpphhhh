@@ -2,23 +2,23 @@
  "id": "401929035",
  "league": "cbb",
  "date": "2026-11-24T21:00Z",
- "name": "LIN VS NHVN",
+ "name": "NHVN VS LIN",
  "away": {
-  "id": "2815",
-  "abbr": "LIN",
-  "name": "Lindenwood Lions",
-  "score": 0
- },
- "home": {
   "id": "2441",
   "abbr": "NHVN",
   "name": "New Haven Chargers",
-  "score": 0
+  "score": 10
+ },
+ "home": {
+  "id": "2815",
+  "abbr": "LIN",
+  "name": "Lindenwood Lions",
+  "score": 12
  },
  "neutral": true,
  "venue": "Stony Brook Arena",
  "seasonType": 2,
- "state": "pre",
+ "state": "in",
  "lines": {
   "open": {
    "at": "2026-11-24T02:36:16.686Z",
