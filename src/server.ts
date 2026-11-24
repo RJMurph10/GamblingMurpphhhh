@@ -3,6 +3,7 @@ import "./lib/error-capture";
 import { consumeLastCapturedError } from "./lib/error-capture";
 import { renderErrorPage } from "./lib/error-page";
 import { runWithVisitorTimeZone } from "./lib/shared/ssr-timezone";
+import { rememberServerEnv } from "./lib/server-env";
 
 type ServerEntry = {
   fetch: (request: Request, env: unknown, ctx: unknown) => Promise<Response> | Response;
@@ -47,10 +48,14 @@ function isH3SwallowedErrorBody(body: string): boolean {
 
 export default {
   async fetch(request: Request, env: unknown, ctx: unknown) {
+    // the Worker's secrets (GEMINI_API_KEY ...) for server code (lib/server-env.ts)
+    rememberServerEnv(env);
     try {
       const handler = await getServerEntry();
       // Dates and times on the page are drawn in the visitor's time zone (lib/shared/ssr-timezone.ts).
-      const response = await runWithVisitorTimeZone(request, () => handler.fetch(request, env, ctx));
+      const response = await runWithVisitorTimeZone(request, () =>
+        handler.fetch(request, env, ctx),
+      );
       return await normalizeCatastrophicSsrResponse(response);
     } catch (error) {
       console.error(error);

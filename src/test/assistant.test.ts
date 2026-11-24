@@ -175,3 +175,14 @@ describe("assistant conversation (Gemini)", () => {
     vi.unstubAllEnvs();
   });
 });
+
+describe("server secrets", () => {
+  it("reads the key from the Worker's env bindings (deployed site), not only process.env", async () => {
+    const { rememberServerEnv, serverEnv } = await import("@/lib/server-env");
+    vi.stubEnv("GEMINI_API_KEY", "");
+    rememberServerEnv({ GEMINI_API_KEY: "from-binding" });
+    expect(serverEnv("GEMINI_API_KEY")).toBe("from-binding");
+    rememberServerEnv({});
+    vi.unstubAllEnvs();
+  });
+});

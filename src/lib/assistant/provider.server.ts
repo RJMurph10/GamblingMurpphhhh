@@ -11,8 +11,7 @@ export type AskResult =
   /** sources: what was looked up, e.g. "picks · NFL", "record · CFB". */
   { ok: true; text: string; sources: string[] } | { ok: false; error: string };
 
-const env = () =>
-  (typeof process !== "undefined" ? process.env : {}) as Record<string, string | undefined>;
+import { serverEnv } from "@/lib/server-env";
 
 export const SYSTEM_PROMPT = `You are the assistant on GamblingNFL, a private sports-betting research site (NFL, college football, NBA, men's college basketball).
 Answer questions about the site's picks, ★ best bets, edges, rules and records.
@@ -43,14 +42,14 @@ type GeminiPart = {
 type GeminiContent = { role: "user" | "model"; parts: GeminiPart[] };
 
 async function askGemini(turns: ChatTurn[], today: string): Promise<AskResult> {
-  const key = env().GEMINI_API_KEY;
+  const key = serverEnv("GEMINI_API_KEY");
   if (!key)
     return {
       ok: false,
       error:
         "The assistant isn't set up yet: add a GEMINI_API_KEY secret (free from Google AI Studio).",
     };
-  const model = env().GEMINI_MODEL || "gemini-flash-latest";
+  const model = serverEnv("GEMINI_MODEL") || "gemini-flash-latest";
   const url = `https://generativelanguage.googleapis.com/v1beta/models/${model}:generateContent`;
   const contents: GeminiContent[] = turns.map((t) => ({
     role: t.role === "assistant" ? "model" : "user",
