@@ -5,6 +5,8 @@
  * job can share them. The UI never calculates projections: it only displays stored ones.
  */
 
+import calibration from "@/data/nfl/prop-range-calibration.json";
+
 export type PropCategory =
   "passing" | "rushing" | "receiving" | "receptions" | "other" | "kicking" | "punting";
 
@@ -132,26 +134,44 @@ export function isMarketForPosition(marketKey: string, position?: string): boole
 /* ---------- projected ranges ---------- */
 
 /** Increment this when the range rules change, so saved predictions stay comparable. */
-export const RANGE_METHOD = "pct25-v1";
+export const RANGE_METHOD = calibration.version;
 
 export const RANGE_METHOD_NOTE =
-  "Yards and longs: projection ±25%. Counts: ±25% rounded outward to whole numbers. " +
-  "Touchdowns: nearest whole number ±1. A range of likely outcomes — not a sportsbook line or a guarantee.";
+  "the narrowest range that held 70% of results for that stat and projection size when the model " +
+  "was replayed on 2024-25 games (74% on 2026 games it never saw). Longest-play stats: projection ±25%. " +
+  "A range of likely outcomes — not a sportsbook line or a guarantee.";
 
 /** Target share of actual results that should land inside the projected range. */
-export const RANGE_COVERAGE_TARGET = 0.75;
+export const RANGE_COVERAGE_TARGET = calibration.target;
 
 export interface ProjectedRange {
   lower: number;
   upper: number;
 }
 
+type CalBin = { upTo: number | null; lo: number; hi: number };
+const CALIBRATED = calibration.markets as Record<string, { type: string; bins: CalBin[] }>;
+
 /**
  * Projected range for a central estimate. Never negative; discrete statistics stay whole numbers.
- * Future versions can swap this for empirically calibrated intervals without touching the UI.
+ * With the market key, the calibrated range for that stat and projection size
+ * (src/data/nfl/prop-range-calibration.json, built by research/props/nfl_prop_range_calibrate.py);
+ * otherwise (and for longest-play stats, which have no calibration) the fixed ±25% rule.
  */
-export function computeRange(kind: PropStatKind, projected: number): ProjectedRange {
+export function computeRange(kind: PropStatKind, projected: number, key?: string): ProjectedRange {
   const p = Number.isFinite(projected) ? Math.max(0, projected) : 0;
+  const cal = key ? CALIBRATED[key] : undefined;
+  if (cal && p > 0) {
+    const bin =
+      cal.bins.find((b) => b.upTo === null || p <= b.upTo) ?? cal.bins[cal.bins.length - 1];
+    if (cal.type === "int") return { lower: bin.lo, upper: Math.max(bin.lo, bin.hi) };
+    if (kind === "count") {
+      const lower = Math.max(0, Math.floor(p * bin.lo));
+      return { lower, upper: Math.max(lower, Math.ceil(p * bin.hi)) };
+    }
+    const lower = Math.max(0, Math.round(p * bin.lo));
+    return { lower, upper: Math.max(lower, Math.round(p * bin.hi)) };
+  }
   switch (kind) {
     case "yards":
     case "long": {

@@ -816,7 +816,7 @@ export function GamePropAnalysis({ game, away, home }: { game: Game; away: Team;
           </>
         ) : (
           <>
-            Ranges follow one fixed rule per statistic ({RANGE_METHOD_NOTE}) The goal is for about{" "}
+            Ranges: {RANGE_METHOD_NOTE} The goal is for about{" "}
             {Math.round(RANGE_COVERAGE_TARGET * 100)}% of actual results to land inside the range.
           </>
         )}

@@ -1,0 +1,567 @@
+{
+ "version": "cal70-v2",
+ "target": 0.7,
+ "note": "Shortest range holding 70% of results, by stat and projection size. Fitted on a walk-forward replay of the site's projections on nflverse 2024-25 weekly stats; 2026 weeks 1-11 (out of sample): 74% inside, every stat 68%+.",
+ "markets": {
+  "pass_yds": {
+   "type": "ratio",
+   "bins": [
+    {
+     "upTo": 211.9,
+     "lo": 0.729,
+     "hi": 1.478
+    },
+    {
+     "upTo": 240.1,
+     "lo": 0.664,
+     "hi": 1.263
+    },
+    {
+     "upTo": null,
+     "lo": 0.591,
+     "hi": 1.182
+    }
+   ]
+  },
+  "pass_tds": {
+   "type": "int",
+   "bins": [
+    {
+     "upTo": 1.2,
+     "lo": 1,
+     "hi": 3
+    },
+    {
+     "upTo": 1.6,
+     "lo": 1,
+     "hi": 3
+    },
+    {
+     "upTo": null,
+     "lo": 1,
+     "hi": 3
+    }
+   ]
+  },
+  "pass_cmp": {
+   "type": "ratio",
+   "bins": [
+    {
+     "upTo": 19.6,
+     "lo": 0.757,
+     "hi": 1.378
+    },
+    {
+     "upTo": 21.8,
+     "lo": 0.68,
+     "hi": 1.206
+    },
+    {
+     "upTo": null,
+     "lo": 0.682,
+     "hi": 1.195
+    }
+   ]
+  },
+  "pass_att": {
+   "type": "ratio",
+   "bins": [
+    {
+     "upTo": 30.1,
+     "lo": 0.728,
+     "hi": 1.269
+    },
+    {
+     "upTo": 33.2,
+     "lo": 0.721,
+     "hi": 1.226
+    },
+    {
+     "upTo": null,
+     "lo": 0.653,
+     "hi": 1.131
+    }
+   ]
+  },
+  "pass_int": {
+   "type": "int",
+   "bins": [
+    {
+     "upTo": 0.5,
+     "lo": 0,
+     "hi": 1
+    },
+    {
+     "upTo": 0.7,
+     "lo": 0,
+     "hi": 1
+    },
+    {
+     "upTo": null,
+     "lo": 0,
+     "hi": 1
+    }
+   ]
+  },
+  "rush_yds": {
+   "type": "ratio",
+   "bins": [
+    {
+     "upTo": 16.7,
+     "lo": -0.238,
+     "hi": 1.562
+    },
+    {
+     "upTo": 25.1,
+     "lo": 0.0,
+     "hi": 1.451
+    },
+    {
+     "upTo": 35.9,
+     "lo": -0.079,
+     "hi": 1.172
+    },
+    {
+     "upTo": 54.5,
+     "lo": 0.042,
+     "hi": 1.299
+    },
+    {
+     "upTo": null,
+     "lo": 0.366,
+     "hi": 1.419
+    }
+   ]
+  },
+  "rush_att": {
+   "type": "int",
+   "bins": [
+    {
+     "upTo": 3.9,
+     "lo": 1,
+     "hi": 4
+    },
+    {
+     "upTo": 5.7,
+     "lo": 1,
+     "hi": 5
+    },
+    {
+     "upTo": 8.2,
+     "lo": 1,
+     "hi": 8
+    },
+    {
+     "upTo": 12.6,
+     "lo": 5,
+     "hi": 16
+    },
+    {
+     "upTo": null,
+     "lo": 11,
+     "hi": 23
+    }
+   ]
+  },
+  "rush_tds": {
+   "type": "int",
+   "bins": [
+    {
+     "upTo": 0.1,
+     "lo": 0,
+     "hi": 0
+    },
+    {
+     "upTo": 0.2,
+     "lo": 0,
+     "hi": 0
+    },
+    {
+     "upTo": 0.3,
+     "lo": 0,
+     "hi": 0
+    },
+    {
+     "upTo": 0.5,
+     "lo": 0,
+     "hi": 1
+    },
+    {
+     "upTo": null,
+     "lo": 0,
+     "hi": 1
+    }
+   ]
+  },
+  "rec_yds": {
+   "type": "ratio",
+   "bins": [
+    {
+     "upTo": 13.8,
+     "lo": 0.0,
+     "hi": 1.754
+    },
+    {
+     "upTo": 19.4,
+     "lo": 0.0,
+     "hi": 1.289
+    },
+    {
+     "upTo": 24.2,
+     "lo": 0.0,
+     "hi": 1.092
+    },
+    {
+     "upTo": 29.5,
+     "lo": 0.0,
+     "hi": 1.154
+    },
+    {
+     "upTo": 35.5,
+     "lo": 0.0,
+     "hi": 1.161
+    },
+    {
+     "upTo": 44.4,
+     "lo": 0.0,
+     "hi": 1.145
+    },
+    {
+     "upTo": 58,
+     "lo": 0.0,
+     "hi": 1.206
+    },
+    {
+     "upTo": null,
+     "lo": 0.151,
+     "hi": 1.224
+    }
+   ]
+  },
+  "rec_tds": {
+   "type": "int",
+   "bins": [
+    {
+     "upTo": 0.1,
+     "lo": 0,
+     "hi": 0
+    },
+    {
+     "upTo": 0.2,
+     "lo": 0,
+     "hi": 0
+    },
+    {
+     "upTo": 0.3,
+     "lo": 0,
+     "hi": 0
+    },
+    {
+     "upTo": 0.4,
+     "lo": 0,
+     "hi": 0
+    },
+    {
+     "upTo": null,
+     "lo": 0,
+     "hi": 1
+    }
+   ]
+  },
+  "receptions": {
+   "type": "int",
+   "bins": [
+    {
+     "upTo": 1.7,
+     "lo": 1,
+     "hi": 3
+    },
+    {
+     "upTo": 2.1,
+     "lo": 1,
+     "hi": 3
+    },
+    {
+     "upTo": 2.4,
+     "lo": 1,
+     "hi": 4
+    },
+    {
+     "upTo": 2.8,
+     "lo": 1,
+     "hi": 4
+    },
+    {
+     "upTo": 3.2,
+     "lo": 1,
+     "hi": 4
+    },
+    {
+     "upTo": 3.8,
+     "lo": 1,
+     "hi": 4
+    },
+    {
+     "upTo": 4.7,
+     "lo": 2,
+     "hi": 6
+    },
+    {
+     "upTo": null,
+     "lo": 3,
+     "hi": 8
+    }
+   ]
+  },
+  "targets": {
+   "type": "int",
+   "bins": [
+    {
+     "upTo": 2.4,
+     "lo": 1,
+     "hi": 2
+    },
+    {
+     "upTo": 3,
+     "lo": 1,
+     "hi": 3
+    },
+    {
+     "upTo": 3.5,
+     "lo": 1,
+     "hi": 3
+    },
+    {
+     "upTo": 4,
+     "lo": 1,
+     "hi": 4
+    },
+    {
+     "upTo": 4.8,
+     "lo": 1,
+     "hi": 5
+    },
+    {
+     "upTo": 5.7,
+     "lo": 2,
+     "hi": 7
+    },
+    {
+     "upTo": 7,
+     "lo": 3,
+     "hi": 9
+    },
+    {
+     "upTo": null,
+     "lo": 5,
+     "hi": 12
+    }
+   ]
+  },
+  "pass_rush_yds": {
+   "type": "ratio",
+   "bins": [
+    {
+     "upTo": 231.5,
+     "lo": 0.693,
+     "hi": 1.372
+    },
+    {
+     "upTo": 259.5,
+     "lo": 0.645,
+     "hi": 1.251
+    },
+    {
+     "upTo": null,
+     "lo": 0.627,
+     "hi": 1.191
+    }
+   ]
+  },
+  "rush_rec_yds": {
+   "type": "ratio",
+   "bins": [
+    {
+     "upTo": 22.5,
+     "lo": 0.0,
+     "hi": 1.045
+    },
+    {
+     "upTo": 27.8,
+     "lo": 0.0,
+     "hi": 1.127
+    },
+    {
+     "upTo": 32.9,
+     "lo": 0.0,
+     "hi": 1.078
+    },
+    {
+     "upTo": 38.7,
+     "lo": 0.0,
+     "hi": 1.124
+    },
+    {
+     "upTo": 46.4,
+     "lo": 0.0,
+     "hi": 1.169
+    },
+    {
+     "upTo": 57,
+     "lo": 0.0,
+     "hi": 1.181
+    },
+    {
+     "upTo": 72.4,
+     "lo": 0.154,
+     "hi": 1.298
+    },
+    {
+     "upTo": null,
+     "lo": 0.469,
+     "hi": 1.41
+    }
+   ]
+  },
+  "pass_rush_tds": {
+   "type": "int",
+   "bins": [
+    {
+     "upTo": 1.4,
+     "lo": 1,
+     "hi": 3
+    },
+    {
+     "upTo": 1.8,
+     "lo": 1,
+     "hi": 3
+    },
+    {
+     "upTo": null,
+     "lo": 1,
+     "hi": 3
+    }
+   ]
+  },
+  "fg_made": {
+   "type": "int",
+   "bins": [
+    {
+     "upTo": 1.6,
+     "lo": 1,
+     "hi": 3
+    },
+    {
+     "upTo": 1.9,
+     "lo": 1,
+     "hi": 3
+    },
+    {
+     "upTo": null,
+     "lo": 1,
+     "hi": 3
+    }
+   ]
+  },
+  "xp_made": {
+   "type": "int",
+   "bins": [
+    {
+     "upTo": 1.9,
+     "lo": 1,
+     "hi": 3
+    },
+    {
+     "upTo": 2.4,
+     "lo": 1,
+     "hi": 3
+    },
+    {
+     "upTo": null,
+     "lo": 2,
+     "hi": 5
+    }
+   ]
+  },
+  "kick_pts": {
+   "type": "ratio",
+   "bins": [
+    {
+     "upTo": 6.8,
+     "lo": 0.441,
+     "hi": 1.639
+    },
+    {
+     "upTo": 7.9,
+     "lo": 0.4,
+     "hi": 1.392
+    },
+    {
+     "upTo": null,
+     "lo": 0.444,
+     "hi": 1.294
+    }
+   ]
+  },
+  "fg_long": {
+   "type": "ratio",
+   "bins": [
+    {
+     "upTo": 42.9,
+     "lo": 0.81,
+     "hi": 1.335
+    },
+    {
+     "upTo": 45.4,
+     "lo": 0.698,
+     "hi": 1.211
+    },
+    {
+     "upTo": null,
+     "lo": 0.774,
+     "hi": 1.216
+    }
+   ]
+  },
+  "punts": {
+   "type": "int",
+   "bins": [
+    {
+     "upTo": 3.5,
+     "lo": 2,
+     "hi": 5
+    },
+    {
+     "upTo": 4,
+     "lo": 2,
+     "hi": 5
+    },
+    {
+     "upTo": null,
+     "lo": 3,
+     "hi": 6
+    }
+   ]
+  },
+  "punt_yds": {
+   "type": "ratio",
+   "bins": [
+    {
+     "upTo": 165.8,
+     "lo": 0.527,
+     "hi": 1.619
+    },
+    {
+     "upTo": 192.2,
+     "lo": 0.446,
+     "hi": 1.328
+    },
+    {
+     "upTo": null,
+     "lo": 0.449,
+     "hi": 1.275
+    }
+   ]
+  }
+ }
+}

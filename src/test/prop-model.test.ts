@@ -53,8 +53,14 @@ describe("projected ranges", () => {
 
 describe("accuracy tracking", () => {
   it("measures absolute error and range membership", () => {
-    expect(evaluatePrediction({ projected: 80, lower: 60, upper: 100 }, 112)).toEqual({ absError: 32, inRange: false });
-    expect(evaluatePrediction({ projected: 80, lower: 60, upper: 100 }, 100)).toEqual({ absError: 20, inRange: true });
+    expect(evaluatePrediction({ projected: 80, lower: 60, upper: 100 }, 112)).toEqual({
+      absError: 32,
+      inRange: false,
+    });
+    expect(evaluatePrediction({ projected: 80, lower: 60, upper: 100 }, 100)).toEqual({
+      absError: 20,
+      inRange: true,
+    });
   });
 
   it("summarizes MAE and coverage overall and by category", () => {
@@ -67,7 +73,7 @@ describe("accuracy tracking", () => {
     expect(summary.overall.coverage).toBeCloseTo(2 / 3);
     expect(summary.byCategory.rushing?.mae).toBeCloseTo(22.5);
     expect(summary.byCategory.passing?.coverage).toBe(1);
-    expect(summary.coverageTarget).toBe(0.75);
+    expect(summary.coverageTarget).toBe(0.7);
   });
 
   it("returns empty results when nothing has been evaluated", () => {
@@ -77,14 +83,39 @@ describe("accuracy tracking", () => {
 
 describe("players covered by the props page", () => {
   it("adds kickers and punters to the offensive skill positions", () => {
-    for (const position of ["QB", "RB", "FB", "WR", "TE", "K", "P", "p"]) expect(isPropPlayerPosition(position)).toBe(true);
-    for (const position of ["LB", "CB", "S", "DE", "OL", undefined]) expect(isPropPlayerPosition(position)).toBe(false);
+    for (const position of ["QB", "RB", "FB", "WR", "TE", "K", "P", "p"])
+      expect(isPropPlayerPosition(position)).toBe(true);
+    for (const position of ["LB", "CB", "S", "DE", "OL", undefined])
+      expect(isPropPlayerPosition(position)).toBe(false);
   });
 });
 
 describe("offensive scope", () => {
   it("accepts offensive skill positions only", () => {
-    for (const position of ["QB", "RB", "FB", "WR", "TE", "wr"]) expect(isOffensivePosition(position)).toBe(true);
-    for (const position of ["LB", "CB", "S", "DE", "K", "P", "OL", undefined]) expect(isOffensivePosition(position)).toBe(false);
+    for (const position of ["QB", "RB", "FB", "WR", "TE", "wr"])
+      expect(isOffensivePosition(position)).toBe(true);
+    for (const position of ["LB", "CB", "S", "DE", "K", "P", "OL", undefined])
+      expect(isOffensivePosition(position)).toBe(false);
+  });
+});
+
+describe("calibrated NFL prop ranges (cal70-v2)", () => {
+  it("uses the stat's calibration when the market is known", () => {
+    // a 50-yard receiver: the narrowest 70% range runs from 0 to about 1.2x
+    const r = computeRange("yards", 50, "rec_yds");
+    expect(r.lower).toBe(0);
+    expect(r.upper).toBeGreaterThan(50);
+    expect(r.upper).toBeLessThan(75);
+    // passing yards keep a floor
+    const q = computeRange("yards", 230, "pass_yds");
+    expect(q.lower).toBeGreaterThan(100);
+    expect(q.upper).toBeGreaterThan(230);
+    // touchdowns for a receiver: usually 0
+    expect(computeRange("touchdowns", 0.3, "rec_tds")).toEqual({ lower: 0, upper: 0 });
+  });
+
+  it("keeps the ±25% rule for longest plays and when no market is given", () => {
+    expect(computeRange("long", 20, "rec_long")).toEqual({ lower: 15, upper: 25 });
+    expect(computeRange("yards", 80)).toEqual({ lower: 60, upper: 100 });
   });
 });

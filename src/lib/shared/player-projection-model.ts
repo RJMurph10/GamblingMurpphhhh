@@ -345,7 +345,7 @@ export function projectStat(
     ? Math.min(oHi, Math.max(oLo, Number.isFinite(options.opportunity) ? options.opportunity! : 1))
     : 1;
   const projected = Math.max(0, form * defense * script * opportunity);
-  const range = computeRange(market.kind, projected);
+  const range = computeRange(market.kind, projected, key);
   return {
     projected: Math.round(projected * 10) / 10,
     lower: range.lower,
