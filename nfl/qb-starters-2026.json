@@ -1,20 +1,20 @@
 {
- "updatedAt": "2026-11-18T03:00:25.376Z",
+ "updatedAt": "2026-11-24T23:03:32.839Z",
  "games": {
-  "401873067": {
-   "away": {
+  "401873092": {
+   "home": {
     "qbId": "00-0041561",
     "name": "Carson Beck",
     "was": "Gardner Minshew",
-    "reason": "Gardner Minshew: Injured Reserve"
+    "reason": "Gardner Minshew is QB4 on the team's depth chart"
    }
   },
-  "401873068": {
+  "401873093": {
    "away": {
-    "qbId": "00-0033119",
-    "name": "Jacoby Brissett",
-    "was": "Tyler Huntley",
-    "reason": "Tyler Huntley is QB5 on the team's depth chart"
+    "qbId": "00-0038476",
+    "name": "Tommy DeVito",
+    "was": "Drake Maye",
+    "reason": "Drake Maye: Out"
    }
   }
  },
