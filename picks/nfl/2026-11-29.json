@@ -1,6 +1,6 @@
 {
  "day": "2026-11-29",
- "updated": "2026-11-24T13:55:19.925Z",
+ "updated": "2026-11-24T23:56:41.323Z",
  "picks": [
   {
    "id": "401873084-spread-road-dog",
@@ -15,9 +15,9 @@
    "best": false,
    "tag": "road-dog",
    "firstSeen": "2026-11-23T13:07:02.381Z",
-   "lastSeen": "2026-11-24T13:55:19.925Z",
+   "lastSeen": "2026-11-24T23:56:41.323Z",
    "latest": -7,
-   "latestAt": "2026-11-24T13:55:19.925Z"
+   "latestAt": "2026-11-24T23:56:41.323Z"
   },
   {
    "id": "401873084-total-total-gap",
@@ -33,9 +33,26 @@
    "best": false,
    "tag": "total-gap",
    "firstSeen": "2026-11-23T13:07:02.381Z",
-   "lastSeen": "2026-11-24T13:55:19.925Z",
-   "latest": 42.5,
-   "latestAt": "2026-11-24T13:55:19.925Z"
+   "lastSeen": "2026-11-24T23:56:41.323Z",
+   "latest": 41.5,
+   "latestAt": "2026-11-24T23:56:41.323Z"
+  },
+  {
+   "id": "401873085-spread-road-dog",
+   "game": "BAL @ HOU",
+   "tip": "2026-11-29T18:00Z",
+   "market": "spread",
+   "pick": "BAL +7",
+   "line": -7,
+   "open": -1.5,
+   "model": null,
+   "edge": null,
+   "best": false,
+   "tag": "road-dog",
+   "firstSeen": "2026-11-24T23:56:41.323Z",
+   "lastSeen": "2026-11-24T23:56:41.323Z",
+   "latest": -7,
+   "latestAt": "2026-11-24T23:56:41.323Z"
   },
   {
    "id": "401873087-spread-road-dog",
@@ -50,9 +67,9 @@
    "best": false,
    "tag": "road-dog",
    "firstSeen": "2026-11-23T01:49:11.805Z",
-   "lastSeen": "2026-11-24T13:55:19.925Z",
+   "lastSeen": "2026-11-24T23:56:41.323Z",
    "latest": -10,
-   "latestAt": "2026-11-24T13:55:19.925Z"
+   "latestAt": "2026-11-24T23:56:41.323Z"
   },
   {
    "id": "401873087-total-wind",
@@ -68,9 +85,9 @@
    "tag": "wind",
    "note": "10 mph",
    "firstSeen": "2026-11-24T13:55:19.925Z",
-   "lastSeen": "2026-11-24T13:55:19.925Z",
+   "lastSeen": "2026-11-24T23:56:41.323Z",
    "latest": 50.5,
-   "latestAt": "2026-11-24T13:55:19.925Z"
+   "latestAt": "2026-11-24T23:56:41.323Z"
   },
   {
    "id": "401873090-spread-road-dog",
@@ -85,9 +102,26 @@
    "best": false,
    "tag": "road-dog",
    "firstSeen": "2026-11-23T01:49:11.805Z",
-   "lastSeen": "2026-11-24T13:55:19.925Z",
+   "lastSeen": "2026-11-24T23:56:41.323Z",
    "latest": -14.5,
-   "latestAt": "2026-11-24T13:55:19.925Z"
+   "latestAt": "2026-11-24T23:56:41.323Z"
+  },
+  {
+   "id": "401873093-spread-qb-change",
+   "game": "NE @ LAC",
+   "tip": "2026-11-29T21:05Z",
+   "market": "spread",
+   "pick": "LAC -1.5",
+   "line": -1.5,
+   "open": -2.5,
+   "model": null,
+   "edge": null,
+   "best": false,
+   "tag": "qb-change",
+   "firstSeen": "2026-11-24T23:56:41.323Z",
+   "lastSeen": "2026-11-24T23:56:41.323Z",
+   "latest": -1.5,
+   "latestAt": "2026-11-24T23:56:41.323Z"
   },
   {
    "id": "401873091-total-wind",
@@ -103,9 +137,26 @@
    "tag": "wind",
    "note": "10 mph · rain",
    "firstSeen": "2026-11-23T13:07:02.381Z",
-   "lastSeen": "2026-11-24T13:55:19.925Z",
-   "latest": 46.5,
-   "latestAt": "2026-11-24T13:55:19.925Z"
+   "lastSeen": "2026-11-24T23:56:41.323Z",
+   "latest": 45.5,
+   "latestAt": "2026-11-24T23:56:41.323Z"
+  },
+  {
+   "id": "401873092-spread-qb-change",
+   "game": "WSH @ ARI",
+   "tip": "2026-11-29T21:25Z",
+   "market": "spread",
+   "pick": "WSH -7",
+   "line": 7,
+   "open": 4.5,
+   "model": null,
+   "edge": null,
+   "best": false,
+   "tag": "qb-change",
+   "firstSeen": "2026-11-24T23:56:41.323Z",
+   "lastSeen": "2026-11-24T23:56:41.323Z",
+   "latest": 7,
+   "latestAt": "2026-11-24T23:56:41.323Z"
   },
   {
    "id": "401873092-spread-underdog",
@@ -120,9 +171,9 @@
    "best": true,
    "tag": "underdog",
    "firstSeen": "2026-11-23T01:49:11.805Z",
-   "lastSeen": "2026-11-24T13:55:19.925Z",
-   "latest": 7.5,
-   "latestAt": "2026-11-24T13:55:19.925Z"
+   "lastSeen": "2026-11-24T23:56:41.323Z",
+   "latest": 7,
+   "latestAt": "2026-11-24T23:56:41.323Z"
   },
   {
    "id": "401873086-spread-qb-change",
@@ -137,9 +188,9 @@
    "best": false,
    "tag": "qb-change",
    "firstSeen": "2026-11-23T01:49:11.805Z",
-   "lastSeen": "2026-11-24T13:55:19.925Z",
+   "lastSeen": "2026-11-24T23:56:41.323Z",
    "latest": -4.5,
-   "latestAt": "2026-11-24T13:55:19.925Z"
+   "latestAt": "2026-11-24T23:56:41.323Z"
   },
   {
    "id": "401873086-spread-west-coast-east",
@@ -154,9 +205,9 @@
    "best": false,
    "tag": "west-coast-east",
    "firstSeen": "2026-11-23T01:49:11.805Z",
-   "lastSeen": "2026-11-24T13:55:19.925Z",
+   "lastSeen": "2026-11-24T23:56:41.323Z",
    "latest": -4.5,
-   "latestAt": "2026-11-24T13:55:19.925Z"
+   "latestAt": "2026-11-24T23:56:41.323Z"
   },
   {
    "id": "401873086-total-total-gap",
@@ -172,9 +223,9 @@
    "best": false,
    "tag": "total-gap",
    "firstSeen": "2026-11-23T01:49:11.805Z",
-   "lastSeen": "2026-11-24T13:55:19.925Z",
-   "latest": 41.5,
-   "latestAt": "2026-11-24T13:55:19.925Z"
+   "lastSeen": "2026-11-24T23:56:41.323Z",
+   "latest": 40.5,
+   "latestAt": "2026-11-24T23:56:41.323Z"
   },
   {
    "id": "401873086-total-wind",
@@ -190,9 +241,9 @@
    "tag": "wind",
    "note": "12 mph",
    "firstSeen": "2026-11-24T02:19:01.221Z",
-   "lastSeen": "2026-11-24T13:55:19.925Z",
-   "latest": 41.5,
-   "latestAt": "2026-11-24T13:55:19.925Z"
+   "lastSeen": "2026-11-24T23:56:41.323Z",
+   "latest": 40.5,
+   "latestAt": "2026-11-24T23:56:41.323Z"
   }
  ]
 }

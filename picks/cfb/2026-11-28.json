@@ -1,6 +1,6 @@
 {
  "day": "2026-11-28",
- "updated": "2026-11-24T13:55:19.925Z",
+ "updated": "2026-11-24T23:56:41.323Z",
  "picks": [
   {
    "id": "401856757-spread-rivalry",
@@ -15,9 +15,9 @@
    "best": true,
    "tag": "rivalry",
    "firstSeen": "2026-11-21T11:20:38.634Z",
-   "lastSeen": "2026-11-24T13:55:19.925Z",
-   "latest": -16.5,
-   "latestAt": "2026-11-24T13:55:19.925Z"
+   "lastSeen": "2026-11-24T23:56:41.323Z",
+   "latest": -14.5,
+   "latestAt": "2026-11-24T23:56:41.323Z"
   },
   {
    "id": "401856757-total-late",
@@ -34,7 +34,7 @@
    "firstSeen": "2026-11-21T11:20:38.634Z",
    "lastSeen": "2026-11-22T01:25:07.655Z",
    "latest": 49.5,
-   "latestAt": "2026-11-24T13:55:19.925Z"
+   "latestAt": "2026-11-24T23:56:41.323Z"
   },
   {
    "id": "401856761-spread-rivalry",
@@ -49,9 +49,9 @@
    "best": true,
    "tag": "rivalry",
    "firstSeen": "2026-11-21T11:20:38.634Z",
-   "lastSeen": "2026-11-24T13:55:19.925Z",
+   "lastSeen": "2026-11-24T23:56:41.323Z",
    "latest": 3,
-   "latestAt": "2026-11-24T13:55:19.925Z"
+   "latestAt": "2026-11-24T23:56:41.323Z"
   },
   {
    "id": "401856761-total-late",
@@ -68,7 +68,7 @@
    "firstSeen": "2026-11-21T11:20:38.634Z",
    "lastSeen": "2026-11-21T11:20:38.634Z",
    "latest": 54.5,
-   "latestAt": "2026-11-24T13:55:19.925Z"
+   "latestAt": "2026-11-24T23:56:41.323Z"
   },
   {
    "id": "401858312-total-late",
@@ -85,7 +85,7 @@
    "firstSeen": "2026-11-22T01:25:07.655Z",
    "lastSeen": "2026-11-22T01:25:07.655Z",
    "latest": 55.5,
-   "latestAt": "2026-11-24T13:55:19.925Z"
+   "latestAt": "2026-11-24T23:56:41.323Z"
   },
   {
    "id": "401858313-spread-rivalry",
@@ -100,9 +100,9 @@
    "best": true,
    "tag": "rivalry",
    "firstSeen": "2026-11-22T19:49:07.490Z",
-   "lastSeen": "2026-11-24T13:55:19.925Z",
+   "lastSeen": "2026-11-24T23:56:41.323Z",
    "latest": -5.5,
-   "latestAt": "2026-11-24T13:55:19.925Z"
+   "latestAt": "2026-11-24T23:56:41.323Z"
   },
   {
    "id": "401858313-total-open-total",
@@ -117,9 +117,9 @@
    "best": true,
    "tag": "open-total",
    "firstSeen": "2026-11-21T19:25:44.891Z",
-   "lastSeen": "2026-11-24T13:55:19.925Z",
-   "latest": 53.5,
-   "latestAt": "2026-11-24T13:55:19.925Z"
+   "lastSeen": "2026-11-24T23:56:41.323Z",
+   "latest": 54.5,
+   "latestAt": "2026-11-24T23:56:41.323Z"
   },
   {
    "id": "401858540-spread-rivalry",
@@ -134,9 +134,9 @@
    "best": true,
    "tag": "rivalry",
    "firstSeen": "2026-11-22T11:38:16.930Z",
-   "lastSeen": "2026-11-24T13:55:19.925Z",
+   "lastSeen": "2026-11-24T23:56:41.323Z",
    "latest": -10.5,
-   "latestAt": "2026-11-24T13:55:19.925Z"
+   "latestAt": "2026-11-24T23:56:41.323Z"
   },
   {
    "id": "401861969-total-weather",
@@ -153,9 +153,9 @@
    "tag": "weather",
    "note": "20 mph · gusts 33",
    "firstSeen": "2026-11-22T19:49:07.490Z",
-   "lastSeen": "2026-11-24T13:55:19.925Z",
-   "latest": 46.5,
-   "latestAt": "2026-11-24T13:55:19.925Z"
+   "lastSeen": "2026-11-24T23:56:41.323Z",
+   "latest": 45.5,
+   "latestAt": "2026-11-24T23:56:41.323Z"
   },
   {
    "id": "401858537-spread-rivalry",
@@ -170,9 +170,9 @@
    "best": true,
    "tag": "rivalry",
    "firstSeen": "2026-11-22T01:25:07.655Z",
-   "lastSeen": "2026-11-24T13:55:19.925Z",
+   "lastSeen": "2026-11-24T23:56:41.323Z",
    "latest": -3,
-   "latestAt": "2026-11-24T13:55:19.925Z"
+   "latestAt": "2026-11-24T23:56:41.323Z"
   },
   {
    "id": "401856758-spread-rivalry",
@@ -187,9 +187,9 @@
    "best": true,
    "tag": "rivalry",
    "firstSeen": "2026-11-22T19:49:07.490Z",
-   "lastSeen": "2026-11-24T13:55:19.925Z",
+   "lastSeen": "2026-11-24T23:56:41.323Z",
    "latest": 14.5,
-   "latestAt": "2026-11-24T13:55:19.925Z"
+   "latestAt": "2026-11-24T23:56:41.323Z"
   },
   {
    "id": "401871082-total-open-total",
@@ -205,9 +205,9 @@
    "best": true,
    "tag": "open-total",
    "firstSeen": "2026-11-22T19:49:07.490Z",
-   "lastSeen": "2026-11-24T13:55:19.925Z",
+   "lastSeen": "2026-11-24T23:56:41.323Z",
    "latest": 41.5,
-   "latestAt": "2026-11-24T13:55:19.925Z"
+   "latestAt": "2026-11-24T23:56:41.323Z"
   },
   {
    "id": "401856764-spread-rivalry",
@@ -222,9 +222,9 @@
    "best": true,
    "tag": "rivalry",
    "firstSeen": "2026-11-22T11:38:16.930Z",
-   "lastSeen": "2026-11-24T13:55:19.925Z",
-   "latest": 5.5,
-   "latestAt": "2026-11-24T13:55:19.925Z"
+   "lastSeen": "2026-11-24T23:56:41.323Z",
+   "latest": 6,
+   "latestAt": "2026-11-24T23:56:41.323Z"
   },
   {
    "id": "401856764-total-open-total",
@@ -240,9 +240,9 @@
    "best": true,
    "tag": "open-total",
    "firstSeen": "2026-11-22T11:38:16.930Z",
-   "lastSeen": "2026-11-24T13:55:19.925Z",
+   "lastSeen": "2026-11-24T23:56:41.323Z",
    "latest": 41.5,
-   "latestAt": "2026-11-24T13:55:19.925Z"
+   "latestAt": "2026-11-24T23:56:41.323Z"
   },
   {
    "id": "401858317-spread-rivalry",
@@ -257,9 +257,9 @@
    "best": true,
    "tag": "rivalry",
    "firstSeen": "2026-11-22T11:38:16.930Z",
-   "lastSeen": "2026-11-24T13:55:19.925Z",
+   "lastSeen": "2026-11-24T23:56:41.323Z",
    "latest": -3,
-   "latestAt": "2026-11-24T13:55:19.925Z"
+   "latestAt": "2026-11-24T23:56:41.323Z"
   },
   {
    "id": "401856760-spread-rivalry",
@@ -274,9 +274,9 @@
    "best": true,
    "tag": "rivalry",
    "firstSeen": "2026-11-22T19:49:07.490Z",
-   "lastSeen": "2026-11-24T13:55:19.925Z",
+   "lastSeen": "2026-11-24T23:56:41.323Z",
    "latest": -35.5,
-   "latestAt": "2026-11-24T13:55:19.925Z"
+   "latestAt": "2026-11-24T23:56:41.323Z"
   },
   {
    "id": "401856876-total-open-total",
@@ -291,9 +291,9 @@
    "best": true,
    "tag": "open-total",
    "firstSeen": "2026-11-22T19:49:07.490Z",
-   "lastSeen": "2026-11-24T13:55:19.925Z",
-   "latest": 55.5,
-   "latestAt": "2026-11-24T13:55:19.925Z"
+   "lastSeen": "2026-11-24T23:56:41.323Z",
+   "latest": 56.5,
+   "latestAt": "2026-11-24T23:56:41.323Z"
   },
   {
    "id": "401858316-total-open-total",
@@ -308,9 +308,9 @@
    "best": true,
    "tag": "open-total",
    "firstSeen": "2026-11-22T19:49:07.490Z",
-   "lastSeen": "2026-11-24T13:55:19.925Z",
+   "lastSeen": "2026-11-24T23:56:41.323Z",
    "latest": 60.5,
-   "latestAt": "2026-11-24T13:55:19.925Z"
+   "latestAt": "2026-11-24T23:56:41.323Z"
   },
   {
    "id": "401858316-total-under60",
@@ -325,9 +325,9 @@
    "best": false,
    "tag": "under60",
    "firstSeen": "2026-11-22T19:49:07.490Z",
-   "lastSeen": "2026-11-24T13:55:19.925Z",
+   "lastSeen": "2026-11-24T23:56:41.323Z",
    "latest": 60.5,
-   "latestAt": "2026-11-24T13:55:19.925Z"
+   "latestAt": "2026-11-24T23:56:41.323Z"
   },
   {
    "id": "401858316-total-weather",
@@ -345,7 +345,7 @@
    "firstSeen": "2026-11-22T19:49:07.490Z",
    "lastSeen": "2026-11-23T01:49:11.805Z",
    "latest": 60.5,
-   "latestAt": "2026-11-24T13:55:19.925Z"
+   "latestAt": "2026-11-24T23:56:41.323Z"
   },
   {
    "id": "401858543-spread-rivalry",
@@ -360,9 +360,9 @@
    "best": true,
    "tag": "rivalry",
    "firstSeen": "2026-11-22T11:38:16.930Z",
-   "lastSeen": "2026-11-24T13:55:19.925Z",
+   "lastSeen": "2026-11-24T23:56:41.323Z",
    "latest": 7,
-   "latestAt": "2026-11-24T13:55:19.925Z"
+   "latestAt": "2026-11-24T23:56:41.323Z"
   },
   {
    "id": "401858543-total-open-total",
@@ -378,9 +378,9 @@
    "best": true,
    "tag": "open-total",
    "firstSeen": "2026-11-22T11:38:16.930Z",
-   "lastSeen": "2026-11-24T13:55:19.925Z",
+   "lastSeen": "2026-11-24T23:56:41.323Z",
    "latest": 45.5,
-   "latestAt": "2026-11-24T13:55:19.925Z"
+   "latestAt": "2026-11-24T23:56:41.323Z"
   },
   {
    "id": "401862839-total-open-total",
@@ -396,9 +396,9 @@
    "best": true,
    "tag": "open-total",
    "firstSeen": "2026-11-22T19:49:07.490Z",
-   "lastSeen": "2026-11-24T13:55:19.925Z",
+   "lastSeen": "2026-11-24T23:56:41.323Z",
    "latest": 43.5,
-   "latestAt": "2026-11-24T13:55:19.925Z"
+   "latestAt": "2026-11-24T23:56:41.323Z"
   },
   {
    "id": "401864550-spread-bounce",
@@ -413,9 +413,9 @@
    "best": true,
    "tag": "bounce",
    "firstSeen": "2026-11-22T19:49:07.490Z",
-   "lastSeen": "2026-11-24T13:55:19.925Z",
+   "lastSeen": "2026-11-24T23:56:41.323Z",
    "latest": -4.5,
-   "latestAt": "2026-11-24T13:55:19.925Z"
+   "latestAt": "2026-11-24T23:56:41.323Z"
   },
   {
    "id": "401866475-total-open-total",
@@ -430,9 +430,9 @@
    "best": true,
    "tag": "open-total",
    "firstSeen": "2026-11-22T19:49:07.490Z",
-   "lastSeen": "2026-11-24T13:55:19.925Z",
+   "lastSeen": "2026-11-24T23:56:41.323Z",
    "latest": 43.5,
-   "latestAt": "2026-11-24T13:55:19.925Z"
+   "latestAt": "2026-11-24T23:56:41.323Z"
   },
   {
    "id": "401862843-total-open-total",
@@ -448,9 +448,9 @@
    "best": true,
    "tag": "open-total",
    "firstSeen": "2026-11-22T19:49:07.490Z",
-   "lastSeen": "2026-11-24T13:55:19.925Z",
-   "latest": 46.5,
-   "latestAt": "2026-11-24T13:55:19.925Z"
+   "lastSeen": "2026-11-24T23:56:41.323Z",
+   "latest": 45.5,
+   "latestAt": "2026-11-24T23:56:41.323Z"
   },
   {
    "id": "401858542-spread-bounce",
@@ -465,9 +465,9 @@
    "best": true,
    "tag": "bounce",
    "firstSeen": "2026-11-22T19:49:07.490Z",
-   "lastSeen": "2026-11-24T13:55:19.925Z",
+   "lastSeen": "2026-11-24T23:56:41.323Z",
    "latest": 3.5,
-   "latestAt": "2026-11-24T13:55:19.925Z"
+   "latestAt": "2026-11-24T23:56:41.323Z"
   },
   {
    "id": "401860926-total-open-total",
@@ -483,9 +483,9 @@
    "best": true,
    "tag": "open-total",
    "firstSeen": "2026-11-22T19:49:07.490Z",
-   "lastSeen": "2026-11-24T13:55:19.925Z",
+   "lastSeen": "2026-11-24T23:56:41.323Z",
    "latest": 76.5,
-   "latestAt": "2026-11-24T13:55:19.925Z"
+   "latestAt": "2026-11-24T23:56:41.323Z"
   },
   {
    "id": "401860926-total-under60",
@@ -500,9 +500,9 @@
    "best": false,
    "tag": "under60",
    "firstSeen": "2026-11-22T19:49:07.490Z",
-   "lastSeen": "2026-11-24T13:55:19.925Z",
+   "lastSeen": "2026-11-24T23:56:41.323Z",
    "latest": 76.5,
-   "latestAt": "2026-11-24T13:55:19.925Z"
+   "latestAt": "2026-11-24T23:56:41.323Z"
   },
   {
    "id": "401860926-total-under65",
@@ -517,9 +517,28 @@
    "best": false,
    "tag": "under65",
    "firstSeen": "2026-11-22T19:49:07.490Z",
-   "lastSeen": "2026-11-24T13:55:19.925Z",
+   "lastSeen": "2026-11-24T23:56:41.323Z",
    "latest": 76.5,
-   "latestAt": "2026-11-24T13:55:19.925Z"
+   "latestAt": "2026-11-24T23:56:41.323Z"
+  },
+  {
+   "id": "401860926-total-weather",
+   "game": "BOIS @ CSU",
+   "tip": "2026-11-28T23:00Z",
+   "market": "total",
+   "pick": "Under 76.5",
+   "line": 76.5,
+   "rule": 75.5,
+   "open": 75.5,
+   "model": null,
+   "edge": null,
+   "best": false,
+   "tag": "weather",
+   "note": "16 mph · gusts 30",
+   "firstSeen": "2026-11-24T23:56:41.323Z",
+   "lastSeen": "2026-11-24T23:56:41.323Z",
+   "latest": 76.5,
+   "latestAt": "2026-11-24T23:56:41.323Z"
   },
   {
    "id": "401856877-total-open-total",
@@ -535,9 +554,9 @@
    "best": true,
    "tag": "open-total",
    "firstSeen": "2026-11-22T19:49:07.490Z",
-   "lastSeen": "2026-11-24T13:55:19.925Z",
+   "lastSeen": "2026-11-24T23:56:41.323Z",
    "latest": 65.5,
-   "latestAt": "2026-11-24T13:55:19.925Z"
+   "latestAt": "2026-11-24T23:56:41.323Z"
   },
   {
    "id": "401856877-total-under60",
@@ -552,9 +571,9 @@
    "best": false,
    "tag": "under60",
    "firstSeen": "2026-11-22T19:49:07.490Z",
-   "lastSeen": "2026-11-24T13:55:19.925Z",
+   "lastSeen": "2026-11-24T23:56:41.323Z",
    "latest": 65.5,
-   "latestAt": "2026-11-24T13:55:19.925Z"
+   "latestAt": "2026-11-24T23:56:41.323Z"
   },
   {
    "id": "401856877-total-under65",
@@ -569,9 +588,9 @@
    "best": false,
    "tag": "under65",
    "firstSeen": "2026-11-22T19:49:07.490Z",
-   "lastSeen": "2026-11-24T13:55:19.925Z",
+   "lastSeen": "2026-11-24T23:56:41.323Z",
    "latest": 65.5,
-   "latestAt": "2026-11-24T13:55:19.925Z"
+   "latestAt": "2026-11-24T23:56:41.323Z"
   },
   {
    "id": "401856765-spread-rivalry",
@@ -586,9 +605,9 @@
    "best": true,
    "tag": "rivalry",
    "firstSeen": "2026-11-22T11:38:16.930Z",
-   "lastSeen": "2026-11-24T13:55:19.925Z",
+   "lastSeen": "2026-11-24T23:56:41.323Z",
    "latest": 13.5,
-   "latestAt": "2026-11-24T13:55:19.925Z"
+   "latestAt": "2026-11-24T23:56:41.323Z"
   },
   {
    "id": "401856765-total-open-total",
@@ -604,9 +623,9 @@
    "best": true,
    "tag": "open-total",
    "firstSeen": "2026-11-22T11:38:16.930Z",
-   "lastSeen": "2026-11-24T13:55:19.925Z",
+   "lastSeen": "2026-11-24T23:56:41.323Z",
    "latest": 43.5,
-   "latestAt": "2026-11-24T13:55:19.925Z"
+   "latestAt": "2026-11-24T23:56:41.323Z"
   },
   {
    "id": "401858538-spread-rivalry",
@@ -621,9 +640,9 @@
    "best": true,
    "tag": "rivalry",
    "firstSeen": "2026-11-22T19:49:07.490Z",
-   "lastSeen": "2026-11-24T13:55:19.925Z",
+   "lastSeen": "2026-11-24T23:56:41.323Z",
    "latest": -22.5,
-   "latestAt": "2026-11-24T13:55:19.925Z"
+   "latestAt": "2026-11-24T23:56:41.323Z"
   },
   {
    "id": "401858315-spread-tz3",
@@ -638,9 +657,9 @@
    "best": false,
    "tag": "tz3",
    "firstSeen": "2026-11-22T19:49:07.490Z",
-   "lastSeen": "2026-11-24T13:55:19.925Z",
+   "lastSeen": "2026-11-24T23:56:41.323Z",
    "latest": 9.5,
-   "latestAt": "2026-11-24T13:55:19.925Z"
+   "latestAt": "2026-11-24T23:56:41.323Z"
   },
   {
    "id": "401858315-total-open-total",
@@ -655,9 +674,9 @@
    "best": true,
    "tag": "open-total",
    "firstSeen": "2026-11-22T19:49:07.490Z",
-   "lastSeen": "2026-11-24T13:55:19.925Z",
+   "lastSeen": "2026-11-24T23:56:41.323Z",
    "latest": 47.5,
-   "latestAt": "2026-11-24T13:55:19.925Z"
+   "latestAt": "2026-11-24T23:56:41.323Z"
   },
   {
    "id": "401858541-spread-rivalry",
@@ -672,9 +691,9 @@
    "best": true,
    "tag": "rivalry",
    "firstSeen": "2026-11-22T11:38:16.930Z",
-   "lastSeen": "2026-11-24T13:55:19.925Z",
+   "lastSeen": "2026-11-24T23:56:41.323Z",
    "latest": -14,
-   "latestAt": "2026-11-24T13:55:19.925Z"
+   "latestAt": "2026-11-24T23:56:41.323Z"
   },
   {
    "id": "401858541-total-open-total",
@@ -690,9 +709,9 @@
    "best": true,
    "tag": "open-total",
    "firstSeen": "2026-11-22T11:38:16.930Z",
-   "lastSeen": "2026-11-24T13:55:19.925Z",
+   "lastSeen": "2026-11-24T23:56:41.323Z",
    "latest": 50.5,
-   "latestAt": "2026-11-24T13:55:19.925Z"
+   "latestAt": "2026-11-24T23:56:41.323Z"
   },
   {
    "id": "401856873-spread-rivalry",
@@ -707,9 +726,9 @@
    "best": true,
    "tag": "rivalry",
    "firstSeen": "2026-11-22T19:49:07.490Z",
-   "lastSeen": "2026-11-24T13:55:19.925Z",
+   "lastSeen": "2026-11-24T23:56:41.323Z",
    "latest": -8.5,
-   "latestAt": "2026-11-24T13:55:19.925Z"
+   "latestAt": "2026-11-24T23:56:41.323Z"
   },
   {
    "id": "401864548-spread-rivalry",
@@ -724,9 +743,9 @@
    "best": true,
    "tag": "rivalry",
    "firstSeen": "2026-11-22T19:49:07.490Z",
-   "lastSeen": "2026-11-24T13:55:19.925Z",
+   "lastSeen": "2026-11-24T23:56:41.323Z",
    "latest": -5.5,
-   "latestAt": "2026-11-24T13:55:19.925Z"
+   "latestAt": "2026-11-24T23:56:41.323Z"
   },
   {
    "id": "401860927-total-late",
@@ -741,9 +760,9 @@
    "best": false,
    "tag": "late",
    "firstSeen": "2026-11-22T19:49:07.490Z",
-   "lastSeen": "2026-11-24T13:55:19.925Z",
-   "latest": 56.5,
-   "latestAt": "2026-11-24T13:55:19.925Z"
+   "lastSeen": "2026-11-24T23:56:41.323Z",
+   "latest": 57.5,
+   "latestAt": "2026-11-24T23:56:41.323Z"
   },
   {
    "id": "401864547-total-late",
@@ -758,9 +777,9 @@
    "best": false,
    "tag": "late",
    "firstSeen": "2026-11-22T19:49:07.490Z",
-   "lastSeen": "2026-11-24T13:55:19.925Z",
+   "lastSeen": "2026-11-24T23:56:41.323Z",
    "latest": 39.5,
-   "latestAt": "2026-11-24T13:55:19.925Z"
+   "latestAt": "2026-11-24T23:56:41.323Z"
   }
  ]
 }
