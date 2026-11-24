@@ -21,6 +21,12 @@ Answer questions about the site's picks, ★ best bets, edges, rules and records
 - Be short and plain: a sentence or two, then a small list if there are several picks. No hype; these are edges, not locks.
 - Today is ${"{today}"} (US Central time).`;
 
+/** Pause before retrying a busy model (tests set it to 0). */
+export let BUSY_PAUSE_MS = 1500;
+export const setBusyPause = (ms: number) => {
+  BUSY_PAUSE_MS = ms;
+};
+
 /** Gemini wants upper-case schema types (OBJECT, STRING ...). */
 function geminiSchema(s: unknown): unknown {
   if (Array.isArray(s)) return s.map(geminiSchema);
@@ -53,8 +59,13 @@ async function askGemini(turns: ChatTurn[], today: string): Promise<AskResult> {
         `Settings it can see (names only): worker: ${list(seen.worker)}; nitro: ${list(seen.nitro)}; process: ${list(seen.process)}.`,
     };
   }
-  const model = serverEnv("GEMINI_MODEL") || "gemini-flash-latest";
-  const url = `https://generativelanguage.googleapis.com/v1beta/models/${model}:generateContent`;
+  // Google's free models get busy (503 "high demand"): retry, then fall back to the lighter model
+  const models = [
+    ...new Set([serverEnv("GEMINI_MODEL") || "gemini-flash-latest", "gemini-flash-lite-latest"]),
+  ];
+  const urlOf = (m: string) =>
+    `https://generativelanguage.googleapis.com/v1beta/models/${m}:generateContent`;
+  let modelIx = 0;
   const contents: GeminiContent[] = turns.map((t) => ({
     role: t.role === "assistant" ? "model" : "user",
     parts: [{ text: t.text }],
@@ -66,24 +77,44 @@ async function askGemini(turns: ChatTurn[], today: string): Promise<AskResult> {
     get_rules: "rules",
   };
   for (let round = 0; round < 6; round++) {
-    const res = await fetch(url, {
-      method: "POST",
-      headers: { "Content-Type": "application/json", "x-goog-api-key": key },
-      body: JSON.stringify({
-        systemInstruction: { parts: [{ text: SYSTEM_PROMPT.replace("{today}", today) }] },
-        contents,
-        tools: [{ functionDeclarations: geminiSchema(TOOL_DECLARATIONS) }],
-        generationConfig: { temperature: 0.2 },
-      }),
+    const body = JSON.stringify({
+      systemInstruction: { parts: [{ text: SYSTEM_PROMPT.replace("{today}", today) }] },
+      contents,
+      tools: [{ functionDeclarations: geminiSchema(TOOL_DECLARATIONS) }],
+      generationConfig: { temperature: 0.2 },
     });
+    let res: Response | undefined;
+    // up to 2 tries per model on "busy" answers (500 / 503 / 529), short pauses, then the next model
+    for (let attempt = 0; ; attempt++) {
+      res = await fetch(urlOf(models[modelIx]), {
+        method: "POST",
+        headers: { "Content-Type": "application/json", "x-goog-api-key": key },
+        body,
+      });
+      const busy = res.status === 500 || res.status === 503 || res.status === 529;
+      if (!busy) break;
+      if (attempt < 1) {
+        await new Promise((r) => setTimeout(r, BUSY_PAUSE_MS));
+        continue;
+      }
+      if (modelIx < models.length - 1) {
+        modelIx++;
+        attempt = -1;
+        continue;
+      }
+      return {
+        ok: false,
+        error: "Google's free AI models are busy right now. Try again in a minute or two.",
+      };
+    }
     if (!res.ok) {
-      const body = await res.text().catch(() => "");
+      const text = await res.text().catch(() => "");
       if (res.status === 429)
         return {
           ok: false,
           error: "The free AI allowance is used up for the moment. Try again in a minute.",
         };
-      return { ok: false, error: `The AI service answered ${res.status}. ${body.slice(0, 200)}` };
+      return { ok: false, error: `The AI service answered ${res.status}. ${text.slice(0, 200)}` };
     }
     const data = (await res.json()) as { candidates?: { content?: GeminiContent }[] };
     const content = data.candidates?.[0]?.content;

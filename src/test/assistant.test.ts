@@ -198,3 +198,32 @@ describe("server secrets on the Worker (nitro)", () => {
     vi.unstubAllEnvs();
   });
 });
+
+describe("busy model", () => {
+  it("retries a 503, then falls back to the lighter model", async () => {
+    const { setBusyPause } = await import("@/lib/assistant/provider.server");
+    setBusyPause(0);
+    vi.stubEnv("GEMINI_API_KEY", "k");
+    const urls: string[] = [];
+    vi.stubGlobal(
+      "fetch",
+      vi.fn(async (url: string) => {
+        urls.push(String(url));
+        if (String(url).includes("gemini-flash-latest"))
+          return { ok: false, status: 503, text: async () => "busy" };
+        return {
+          ok: true,
+          status: 200,
+          json: async () => ({
+            candidates: [{ content: { role: "model", parts: [{ text: "Hi" }] } }],
+          }),
+        };
+      }),
+    );
+    const r = await ask([{ role: "user", text: "hi" }], "2026-11-23");
+    expect(r).toMatchObject({ ok: true, text: "Hi" });
+    expect(urls.filter((u) => u.includes("gemini-flash-latest"))).toHaveLength(2);
+    expect(urls.at(-1)).toContain("gemini-flash-lite-latest");
+    vi.unstubAllEnvs();
+  });
+});
