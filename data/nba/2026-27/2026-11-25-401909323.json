@@ -1,0 +1,739 @@
+{
+ "id": "401909323",
+ "league": "nba",
+ "date": "2026-11-26T01:30Z",
+ "name": "PHX @ HOU",
+ "away": {
+  "id": "21",
+  "abbr": "PHX",
+  "name": "Phoenix Suns",
+  "score": 0
+ },
+ "home": {
+  "id": "10",
+  "abbr": "HOU",
+  "name": "Houston Rockets",
+  "score": 0
+ },
+ "neutral": false,
+ "venue": "Toyota Center (Houston)",
+ "seasonType": 2,
+ "state": "pre",
+ "lines": {
+  "open": {
+   "at": "2026-11-24T11:01:47.173Z",
+   "scoreboard": [
+    {
+     "provider": {
+      "id": "100",
+      "name": "DraftKings",
+      "priority": 1
+     },
+     "details": "HOU -10.5",
+     "overUnder": 223.5,
+     "spread": -10.5,
+     "awayTeamOdds": {
+      "favorite": false,
+      "underdog": true,
+      "team": {
+       "id": "21",
+       "uid": "s:40~l:46~t:21",
+       "abbreviation": "PHX",
+       "name": "Suns",
+       "displayName": "Phoenix Suns",
+       "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/phx.png"
+      },
+      "favoriteAtOpen": false
+     },
+     "homeTeamOdds": {
+      "favorite": true,
+      "underdog": false,
+      "team": {
+       "id": "10",
+       "uid": "s:40~l:46~t:10",
+       "abbreviation": "HOU",
+       "name": "Rockets",
+       "displayName": "Houston Rockets",
+       "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/hou.png"
+      },
+      "favoriteAtOpen": true
+     },
+     "moneyline": {
+      "displayName": "Moneyline",
+      "shortDisplayName": "ML",
+      "home": {
+       "close": {
+        "odds": "-406",
+        "link": {
+         "language": "en-US",
+         "rel": [
+          "home",
+          "desktop",
+          "bets",
+          "draftkings"
+         ],
+         "href": "https://sportsbook.draftkings.com/gateway?s=__s__&wpcid=__wpcid__&wpsrc=413&wpcn=ESPN&wpscn=Widget&wpcrn=BetSlipDeepLink&wpscid=__wpscid__&wpcrid=xx&preurl=https%3A%2F%2Fsportsbook.draftkings.com%2Fevent%2F35075692%3Foutcomes%3D0ML87386543_1",
+         "text": "Home Bet",
+         "shortText": "Home Bet",
+         "isExternal": true,
+         "isPremium": false,
+         "tracking": {
+          "campaign": "betting-integrations",
+          "tags": {
+           "league": "nba",
+           "sport": "basketball",
+           "gameId": 401909323,
+           "betSide": "home",
+           "betType": "straight"
+          }
+         }
+        }
+       },
+       "open": {
+        "odds": "-369"
+       }
+      },
+      "away": {
+       "close": {
+        "odds": "+319",
+        "link": {
+         "language": "en-US",
+         "rel": [
+          "away",
+          "desktop",
+          "bets",
+          "draftkings"
+         ],
+         "href": "https://sportsbook.draftkings.com/gateway?s=__s__&wpcid=__wpcid__&wpsrc=413&wpcn=ESPN&wpscn=Widget&wpcrn=BetSlipDeepLink&wpscid=__wpscid__&wpcrid=xx&preurl=https%3A%2F%2Fsportsbook.draftkings.com%2Fevent%2F35075692%3Foutcomes%3D0ML87386543_3",
+         "text": "Away Bet",
+         "shortText": "Away Bet",
+         "isExternal": true,
+         "isPremium": false,
+         "tracking": {
+          "campaign": "betting-integrations",
+          "tags": {
+           "league": "nba",
+           "sport": "basketball",
+           "gameId": 401909323,
+           "betSide": "away",
+           "betType": "straight"
+          }
+         }
+        }
+       },
+       "open": {
+        "odds": "+294"
+       }
+      }
+     },
+     "pointSpread": {
+      "displayName": "Spread",
+      "shortDisplayName": "Spread",
+      "home": {
+       "close": {
+        "line": "-10.5",
+        "odds": "-110",
+        "link": {
+         "language": "en-US",
+         "rel": [
+          "homeSpread",
+          "desktop",
+          "bets"
+         ],
+         "href": "https://sportsbook.draftkings.com/gateway?s=__s__&wpcid=__wpcid__&wpsrc=413&wpcn=ESPN&wpscn=Widget&wpcrn=BetSlipDeepLink&wpscid=__wpscid__&wpcrid=xx&preurl=https%3A%2F%2Fsportsbook.draftkings.com%2Fevent%2F35075692%3Foutcomes%3D0HC87386543N1050_1",
+         "text": "Home Point Spread",
+         "shortText": "Home Point Spread",
+         "isExternal": true,
+         "isPremium": false,
+         "tracking": {
+          "campaign": "betting-integrations",
+          "tags": {
+           "league": "nba",
+           "sport": "basketball",
+           "gameId": 401909323,
+           "betSide": "none",
+           "betType": "straight",
+           "betDetails": "Spread:HOU-10.5"
+          }
+         }
+        }
+       },
+       "open": {
+        "line": "-10.5",
+        "odds": "-110"
+       }
+      },
+      "away": {
+       "close": {
+        "line": "+10.5",
+        "odds": "-110",
+        "link": {
+         "language": "en-US",
+         "rel": [
+          "awaySpread",
+          "desktop",
+          "bets"
+         ],
+         "href": "https://sportsbook.draftkings.com/gateway?s=__s__&wpcid=__wpcid__&wpsrc=413&wpcn=ESPN&wpscn=Widget&wpcrn=BetSlipDeepLink&wpscid=__wpscid__&wpcrid=xx&preurl=https%3A%2F%2Fsportsbook.draftkings.com%2Fevent%2F35075692%3Foutcomes%3D0HC87386543P1050_3",
+         "text": "Away Point Spread",
+         "shortText": "Away Point Spread",
+         "isExternal": true,
+         "isPremium": false,
+         "tracking": {
+          "campaign": "betting-integrations",
+          "tags": {
+           "league": "nba",
+           "sport": "basketball",
+           "gameId": 401909323,
+           "betSide": "none",
+           "betType": "straight",
+           "betDetails": "Spread:PHX+10.5"
+          }
+         }
+        }
+       },
+       "open": {
+        "line": "+10.5",
+        "odds": "-110"
+       }
+      }
+     },
+     "total": {
+      "displayName": "Total",
+      "shortDisplayName": "Total",
+      "over": {
+       "close": {
+        "line": "o223.5",
+        "odds": "-110",
+        "link": {
+         "language": "en-US",
+         "rel": [
+          "over",
+          "desktop",
+          "bets"
+         ],
+         "href": "https://sportsbook.draftkings.com/gateway?s=__s__&wpcid=__wpcid__&wpsrc=413&wpcn=ESPN&wpscn=Widget&wpcrn=BetSlipDeepLink&wpscid=__wpscid__&wpcrid=xx&preurl=https%3A%2F%2Fsportsbook.draftkings.com%2Fevent%2F35075692%3Foutcomes%3D0OU87386543O22350_1",
+         "text": "Over Odds",
+         "shortText": "Over Odds",
+         "isExternal": true,
+         "isPremium": false,
+         "tracking": {
+          "campaign": "betting-integrations",
+          "tags": {
+           "league": "nba",
+           "sport": "basketball",
+           "gameId": 401909323,
+           "betSide": "over",
+           "betType": "straight",
+           "betDetails": "Over:223.5"
+          }
+         }
+        }
+       },
+       "open": {
+        "line": "o223.5",
+        "odds": "-110"
+       }
+      },
+      "under": {
+       "close": {
+        "line": "u223.5",
+        "odds": "-110",
+        "link": {
+         "language": "en-US",
+         "rel": [
+          "under",
+          "desktop",
+          "bets"
+         ],
+         "href": "https://sportsbook.draftkings.com/gateway?s=__s__&wpcid=__wpcid__&wpsrc=413&wpcn=ESPN&wpscn=Widget&wpcrn=BetSlipDeepLink&wpscid=__wpscid__&wpcrid=xx&preurl=https%3A%2F%2Fsportsbook.draftkings.com%2Fevent%2F35075692%3Foutcomes%3D0OU87386543U22350_3",
+         "text": "Under Odds",
+         "shortText": "Under Odds",
+         "isExternal": true,
+         "isPremium": false,
+         "tracking": {
+          "campaign": "betting-integrations",
+          "tags": {
+           "league": "nba",
+           "sport": "basketball",
+           "gameId": 401909323,
+           "betSide": "under",
+           "betType": "straight",
+           "betDetails": "Under:223.5"
+          }
+         }
+        }
+       },
+       "open": {
+        "line": "u223.5",
+        "odds": "-110"
+       }
+      }
+     },
+     "link": {
+      "language": "en-US",
+      "rel": [
+       "game",
+       "desktop",
+       "bets"
+      ],
+      "href": "https://sportsbook.draftkings.com/gateway?s=__s__&wpcid=__wpcid__&wpsrc=413&wpcn=ESPN&wpscn=Widget&wpcrn=BetSlipDeepLink&wpscid=__wpscid__&wpcrid=xx&preurl=https%3A%2F%2Fsportsbook.draftkings.com%2Fevent%2F35075692",
+      "text": "See More Odds",
+      "shortText": "Game",
+      "isExternal": true,
+      "isPremium": false,
+      "tracking": {
+       "campaign": "betting-integrations",
+       "tags": {
+        "league": "nba",
+        "sport": "basketball",
+        "gameId": 401909323,
+        "betSide": "none",
+        "betType": "straight"
+       }
+      }
+     },
+     "header": {
+      "logo": {
+       "dark": "https://a.espncdn.com/i/espnbet/dark/espn-bet-square-off.svg",
+       "light": "https://a.espncdn.com/i/espnbet/espn-bet-square-off.svg",
+       "exclusivesLogoDark": "https://a.espncdn.com/i/espnbet/espn-bet-square-mint.svg",
+       "exclusivesLogoLight": "https://a.espncdn.com/i/espnbet/espn-bet-square-mint.svg"
+      },
+      "text": "Game Odds"
+     },
+     "footer": {
+      "disclaimer": "GAMBLING PROBLEM? CALL 1-800-GAMBLER or 1-800-MY-RESET, (800) 327-5050 or visit gamblinghelplinema.org (MA). Call 877-8-HOPENY/text HOPENY (467369) (NY). Call 888-789-7777/visit ccpg.org (CT), or visit www.mdgamblinghelp.org (MD), 1-800-981-0023 (PR). 21+ and present in most states. (18+ DC/KY/NH/PR/WY). Void in ONT. Eligibility restrictions apply. Terms: draftkings.com/sportsbook. On behalf of Boot Hill Casino (KS). Pass-thru of per wager tax may apply in IL."
+     }
+    }
+   ],
+   "books": [
+    {
+     "provider": {
+      "id": "100",
+      "name": "DraftKings",
+      "priority": 1
+     },
+     "details": "HOU -10.5",
+     "overUnder": 223.5,
+     "spread": -10.5,
+     "overOdds": -110,
+     "underOdds": -110,
+     "awayTeamOdds": {
+      "favorite": false,
+      "underdog": true,
+      "moneyLine": 319,
+      "spreadOdds": -110,
+      "open": {
+       "favorite": false,
+       "pointSpread": {
+        "alternateDisplayValue": "+10.5",
+        "american": "+10.5"
+       },
+       "spread": {
+        "value": 1.9,
+        "displayValue": "10/11",
+        "alternateDisplayValue": "-110",
+        "decimal": 1.9,
+        "fraction": "10/11",
+        "american": "-110"
+       },
+       "moneyLine": {
+        "value": 3.94,
+        "displayValue": "147/50",
+        "alternateDisplayValue": "+294",
+        "decimal": 3.94,
+        "fraction": "147/50",
+        "american": "+294"
+       }
+      },
+      "current": {
+       "pointSpread": {
+        "alternateDisplayValue": "+10.5",
+        "american": "+10.5"
+       },
+       "spread": {
+        "value": 1.9,
+        "displayValue": "10/11",
+        "alternateDisplayValue": "-110",
+        "decimal": 1.9,
+        "fraction": "10/11",
+        "american": "-110"
+       },
+       "moneyLine": {
+        "value": 4.19,
+        "displayValue": "319/100",
+        "alternateDisplayValue": "+319",
+        "decimal": 4.19,
+        "fraction": "319/100",
+        "american": "+319"
+       }
+      },
+      "team": {
+       "id": "21"
+      }
+     },
+     "homeTeamOdds": {
+      "favorite": true,
+      "underdog": false,
+      "moneyLine": -406,
+      "spreadOdds": -110,
+      "open": {
+       "favorite": true,
+       "pointSpread": {
+        "alternateDisplayValue": "-10.5",
+        "american": "-10.5"
+       },
+       "spread": {
+        "value": 1.9,
+        "displayValue": "10/11",
+        "alternateDisplayValue": "-110",
+        "decimal": 1.9,
+        "fraction": "10/11",
+        "american": "-110"
+       },
+       "moneyLine": {
+        "value": 1.27,
+        "displayValue": "100/369",
+        "alternateDisplayValue": "-369",
+        "decimal": 1.27,
+        "fraction": "100/369",
+        "american": "-369"
+       }
+      },
+      "current": {
+       "pointSpread": {
+        "alternateDisplayValue": "-10.5",
+        "american": "-10.5"
+       },
+       "spread": {
+        "value": 1.9,
+        "displayValue": "10/11",
+        "alternateDisplayValue": "-110",
+        "decimal": 1.9,
+        "fraction": "10/11",
+        "american": "-110"
+       },
+       "moneyLine": {
+        "value": 1.24,
+        "displayValue": "50/203",
+        "alternateDisplayValue": "-406",
+        "decimal": 1.24,
+        "fraction": "50/203",
+        "american": "-406"
+       }
+      },
+      "team": {
+       "id": "10"
+      }
+     },
+     "moneylineWinner": false,
+     "spreadWinner": false,
+     "open": {
+      "over": {
+       "value": 1.9,
+       "displayValue": "10/11",
+       "alternateDisplayValue": "-110",
+       "decimal": 1.9,
+       "fraction": "10/11",
+       "american": "-110"
+      },
+      "under": {
+       "value": 1.9,
+       "displayValue": "10/11",
+       "alternateDisplayValue": "-110",
+       "decimal": 1.9,
+       "fraction": "10/11",
+       "american": "-110"
+      },
+      "total": {
+       "alternateDisplayValue": "223.5",
+       "american": "223.5"
+      }
+     },
+     "current": {
+      "over": {
+       "value": 1.9,
+       "displayValue": "10/11",
+       "alternateDisplayValue": "-110",
+       "decimal": 1.9,
+       "fraction": "10/11",
+       "american": "-110"
+      },
+      "under": {
+       "value": 1.9,
+       "displayValue": "10/11",
+       "alternateDisplayValue": "-110",
+       "decimal": 1.9,
+       "fraction": "10/11",
+       "american": "-110"
+      },
+      "total": {
+       "alternateDisplayValue": "223.5",
+       "american": "223.5"
+      }
+     }
+    }
+   ]
+  }
+ },
+ "props": {
+  "open": {
+   "at": "2026-11-24T11:01:47.173Z",
+   "provider": 100,
+   "count": 6,
+   "rows": [
+  {"a":null,"tm":"10","t":"Team Total Points","ti":"98","op":[117.5,null,null],"cur":[117.5,null,null],"px":[-105,-105]},
+  {"a":null,"tm":"10","t":"Team Total Points","ti":"98","op":[117.5,null,null],"cur":[117.5,null,null],"px":[-115,-115]},
+  {"a":null,"tm":"21","t":"Team Total Points","ti":"98","op":[106.5,null,null],"cur":[106.5,null,null],"px":[-105,-105]},
+  {"a":null,"tm":"21","t":"Team Total Points","ti":"98","op":[106.5,null,null],"cur":[106.5,null,null],"px":[-115,-115]},
+  {"a":null,"t":"Will There Be Overtime?","ti":"153","cur":[null,2000,null]},
+  {"a":null,"t":"Will There Be Overtime?","ti":"153","cur":[null,-5000,null]}
+ ],
+   "sample": [
+    {
+     "competition": {
+      "id": "401909323"
+     },
+     "team": {
+      "id": "10"
+     },
+     "provider": {
+      "id": "100"
+     },
+     "type": {
+      "id": "98",
+      "name": "Team Total Points"
+     },
+     "odds": {
+      "american": {
+       "value": "-105",
+       "open": "-105"
+      },
+      "decimal": {
+       "value": "1.95",
+       "open": "1.95"
+      },
+      "fraction": {
+       "value": "20/21",
+       "open": "20/21"
+      },
+      "total": {
+       "value": "117.5",
+       "open": "117.5"
+      }
+     },
+     "lastUpdated": "2026-11-24T13:15Z",
+     "current": {
+      "target": {
+       "value": 117.5,
+       "displayValue": "117.5"
+      }
+     },
+     "open": {
+      "target": {
+       "value": 117.5,
+       "displayValue": "117.5"
+      }
+     }
+    },
+    {
+     "competition": {
+      "id": "401909323"
+     },
+     "team": {
+      "id": "10"
+     },
+     "provider": {
+      "id": "100"
+     },
+     "type": {
+      "id": "98",
+      "name": "Team Total Points"
+     },
+     "odds": {
+      "american": {
+       "value": "-115",
+       "open": "-115"
+      },
+      "decimal": {
+       "value": "1.86",
+       "open": "1.86"
+      },
+      "fraction": {
+       "value": "20/23",
+       "open": "20/23"
+      },
+      "total": {
+       "value": "117.5",
+       "open": "117.5"
+      }
+     },
+     "lastUpdated": "2026-11-24T13:15Z",
+     "current": {
+      "target": {
+       "value": 117.5,
+       "displayValue": "117.5"
+      }
+     },
+     "open": {
+      "target": {
+       "value": 117.5,
+       "displayValue": "117.5"
+      }
+     }
+    }
+   ]
+  },
+  "latest": {
+   "at": "2026-11-24T11:01:47.173Z",
+   "count": 6,
+   "rows": [
+  {"a":null,"tm":"10","t":"Team Total Points","ti":"98","op":[117.5,null,null],"cur":[117.5,null,null],"px":[-105,-105]},
+  {"a":null,"tm":"10","t":"Team Total Points","ti":"98","op":[117.5,null,null],"cur":[117.5,null,null],"px":[-115,-115]},
+  {"a":null,"tm":"21","t":"Team Total Points","ti":"98","op":[106.5,null,null],"cur":[106.5,null,null],"px":[-105,-105]},
+  {"a":null,"tm":"21","t":"Team Total Points","ti":"98","op":[106.5,null,null],"cur":[106.5,null,null],"px":[-115,-115]},
+  {"a":null,"t":"Will There Be Overtime?","ti":"153","cur":[null,2000,null]},
+  {"a":null,"t":"Will There Be Overtime?","ti":"153","cur":[null,-5000,null]}
+ ]
+  }
+ },
+ "names": {
+  "3202": [
+   "Kevin Durant",
+   "HOU"
+  ],
+  "2990992": [
+   "Marcus Smart",
+   "HOU"
+  ],
+  "2991230": [
+   "Fred VanVleet",
+   "HOU"
+  ],
+  "2991235": [
+   "Steven Adams",
+   "HOU"
+  ],
+  "3037789": [
+   "Bogdan Bogdanovic",
+   "HOU"
+  ],
+  "3102529": [
+   "Clint Capela",
+   "HOU"
+  ],
+  "3136193": [
+   "Devin Booker",
+   "PHX"
+  ],
+  "3136777": [
+   "Jae'Sean Tate",
+   "HOU"
+  ],
+  "3155526": [
+   "Dillon Brooks",
+   "PHX"
+  ],
+  "3913174": [
+   "Luke Kennard",
+   "PHX"
+  ],
+  "4066268": [
+   "Duop Reath",
+   "PHX"
+  ],
+  "4066383": [
+   "Miles Bridges",
+   "PHX"
+  ],
+  "4278402": [
+   "Jordan Goodwin",
+   "PHX"
+  ],
+  "4278585": [
+   "Collin Gillespie",
+   "PHX"
+  ],
+  "4280245": [
+   "Jamaree Bouyea",
+   "PHX"
+  ],
+  "4431695": [
+   "Drew Timme",
+   "PHX"
+  ],
+  "4432639": [
+   "Jabari Smith Jr.",
+   "HOU"
+  ],
+  "4432827": [
+   "Oscar Tshiebwe",
+   "HOU"
+  ],
+  "4433192": [
+   "Tari Eason",
+   "HOU"
+  ],
+  "4437244": [
+   "Jalen Green",
+   "PHX"
+  ],
+  "4592714": [
+   "Pat Spencer",
+   "PHX"
+  ],
+  "4592857": [
+   "Isaiah Crawford",
+   "HOU"
+  ],
+  "4601023": [
+   "Oso Ighodaro",
+   "PHX"
+  ],
+  "4683860": [
+   "Quadir Copeland",
+   "HOU"
+  ],
+  "4684740": [
+   "Amen Thompson",
+   "HOU"
+  ],
+  "4701232": [
+   "Mark Williams",
+   "PHX"
+  ],
+  "4711272": [
+   "Reed Sheppard",
+   "HOU"
+  ],
+  "4871144": [
+   "Alperen Sengun",
+   "HOU"
+  ],
+  "4888725": [
+   "Ryan Dunn",
+   "PHX"
+  ],
+  "5041953": [
+   "Koa Peat",
+   "PHX"
+  ],
+  "5105553": [
+   "Julian Phillips",
+   "HOU"
+  ],
+  "5105837": [
+   "Bruce Thornton",
+   "HOU"
+  ],
+  "5105977": [
+   "Rasheer Fleming",
+   "PHX"
+  ],
+  "5203685": [
+   "Khaman Maluach",
+   "PHX"
+  ]
+ }
+}
