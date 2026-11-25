@@ -108,7 +108,7 @@ const CHROME: PllTeam = {
   short: "Chrome",
   location: "",
   color: "#8ad8dc",
-  logo: "/logos/pll-chrome.png",
+  logo: "/logos/pll-chrome-app.png",
 };
 
 const toTeam = (t: EspnTeam): PllTeam =>
@@ -254,21 +254,44 @@ export const STALE_MS = 2 * 24 * 3_600_000;
 /** One PLL year's games and teams. Refreshed every minute while a game is on, else every 30 minutes. */
 /**
  * Logos by era. The clubs used their original "Lacrosse Club" logos through 2023; the league moved to
- * city/state names and new logos in 2024 (ESPN only has the current ones). The Whipsnakes' 2024-2025
- * logo had gold trim; ESPN's current one has teal. From the PLL's site and TheSportsDB, stored in
- * public/logos.
+ * city/state names and new logos in 2024. All owner-supplied, in public/logos (pll-<club>-app.png for
+ * 2019-2023, pll-<club>-2024.png from 2024); ESPN's logo is the fallback.
  */
 const ERA_LOGOS: Record<string, [from: number, to: number, logo: string][]> = {
-  "127631": [[2019, 2023, "/logos/pll-archers-original.png"]],
-  "127632": [[2019, 2023, "/logos/pll-atlas-original.png"]],
-  "127634": [[2019, 2023, "/logos/pll-chaos-original.png"]],
-  "127636": [[2019, 2023, "/logos/pll-redwoods-original.png"]],
-  "127637": [[2019, 2023, "/logos/pll-waterdogs-original.png"]],
-  "127638": [
-    [2019, 2023, "/logos/pll-whipsnakes-original.png"],
-    [2024, 2025, "/logos/pll-whipsnakes-2024.png"],
+  // From the owner. 2019-2023: the clubs' original PLL logos (the six 2019 clubs, the Waterdogs from 2020,
+  // the Cannons from 2021). 2024-2026: the city/state-era logos (the Outlaws replaced Chrome in 2024); the
+  // Whipsnakes' 2024-25 logo had gold trim; in 2026 it switched to cyan.
+  "127631": [
+    [2019, 2023, "/logos/pll-archers-app.png"],
+    [2024, 2026, "/logos/pll-archers-2024.png"],
   ],
-  "122997": [[2019, 2023, "/logos/pll-cannons-original.png"]],
+  "127632": [
+    [2019, 2023, "/logos/pll-atlas-app.png"],
+    [2024, 2026, "/logos/pll-atlas-2024.png"],
+  ],
+  "127634": [
+    [2019, 2023, "/logos/pll-chaos-app.png"],
+    [2024, 2026, "/logos/pll-chaos-2024.png"],
+  ],
+  "127635": [[2019, 2023, "/logos/pll-chrome-app.png"]],
+  "127636": [
+    [2019, 2023, "/logos/pll-redwoods-app.png"],
+    [2024, 2026, "/logos/pll-redwoods-2024.png"],
+  ],
+  "127637": [
+    [2019, 2023, "/logos/pll-waterdogs-app.png"],
+    [2024, 2026, "/logos/pll-waterdogs-2024.png"],
+  ],
+  "127638": [
+    [2019, 2023, "/logos/pll-whipsnakes-app.png"],
+    [2024, 2025, "/logos/pll-whipsnakes-2024.png"],
+    [2026, 2026, "/logos/pll-whipsnakes-2026.png"],
+  ],
+  "122896": [[2024, 2026, "/logos/pll-outlaws-2024.png"]],
+  "122997": [
+    [2019, 2023, "/logos/pll-cannons-app.png"],
+    [2024, 2026, "/logos/pll-cannons-2024.png"],
+  ],
 };
 
 /**
