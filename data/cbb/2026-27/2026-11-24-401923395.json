@@ -7,18 +7,18 @@
   "id": "88",
   "abbr": "USI",
   "name": "Southern Indiana Screaming Eagles",
-  "score": 0
+  "score": 41
  },
  "home": {
   "id": "2678",
   "abbr": "VMI",
   "name": "VMI Keydets",
-  "score": 0
+  "score": 45
  },
  "neutral": false,
  "venue": "Cameron Hall",
  "seasonType": 2,
- "state": "pre",
+ "state": "in",
  "lines": {
   "open": {
    "at": "2026-11-24T00:58:17.105Z",

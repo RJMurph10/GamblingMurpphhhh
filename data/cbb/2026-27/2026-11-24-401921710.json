@@ -7,18 +7,18 @@
   "id": "2507",
   "abbr": "PROV",
   "name": "Providence Friars",
-  "score": 0
+  "score": 55
  },
  "home": {
   "id": "12",
   "abbr": "ARIZ",
   "name": "Arizona Wildcats",
-  "score": 0
+  "score": 80
  },
  "neutral": true,
  "venue": "Lahaina Civic Center",
  "seasonType": 2,
- "state": "pre",
+ "state": "in",
  "lines": {
   "open": {
    "at": "2026-11-24T07:07:23.916Z",

@@ -7,18 +7,18 @@
   "id": "2382",
   "abbr": "MER",
   "name": "Mercer Bears",
-  "score": 0
+  "score": 41
  },
  "home": {
   "id": "2226",
   "abbr": "FAU",
   "name": "Florida Atlantic Owls",
-  "score": 0
+  "score": 52
  },
  "neutral": false,
  "venue": "Abessinio Court at Eleanor R. Baldwin Arena",
  "seasonType": 2,
- "state": "pre",
+ "state": "in",
  "lines": {
   "open": {
    "at": "2026-11-24T00:58:17.105Z",

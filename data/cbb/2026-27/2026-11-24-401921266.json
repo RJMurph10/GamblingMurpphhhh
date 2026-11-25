@@ -7,18 +7,18 @@
   "id": "2520",
   "abbr": "RID",
   "name": "Rider Broncs",
-  "score": 0
+  "score": 5
  },
  "home": {
   "id": "2352",
   "abbr": "L-MD",
   "name": "Loyola Maryland Greyhounds",
-  "score": 0
+  "score": 2
  },
  "neutral": false,
  "venue": "Reitz Arena",
  "seasonType": 2,
- "state": "pre",
+ "state": "in",
  "lines": {
   "open": {
    "at": "2026-11-24T07:05:12.836Z",

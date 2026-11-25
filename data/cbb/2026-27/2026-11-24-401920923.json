@@ -7,7 +7,7 @@
   "id": "116",
   "abbr": "MSM",
   "name": "Mount St. Mary's Mountaineers",
-  "score": 0
+  "score": 6
  },
  "home": {
   "id": "2415",
@@ -18,7 +18,7 @@
  "neutral": false,
  "venue": "Hill Field House",
  "seasonType": 2,
- "state": "pre",
+ "state": "in",
  "lines": {
   "open": {
    "at": "2026-11-24T07:05:12.836Z",

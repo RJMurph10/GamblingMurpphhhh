@@ -7,18 +7,18 @@
   "id": "2803",
   "abbr": "BRY",
   "name": "Bryant Bulldogs",
-  "score": 0
+  "score": 7
  },
  "home": {
   "id": "2368",
   "abbr": "MRST",
   "name": "Marist Red Foxes",
-  "score": 0
+  "score": 6
  },
  "neutral": false,
  "venue": "McCann Arena",
  "seasonType": 2,
- "state": "pre",
+ "state": "in",
  "lines": {
   "open": {
    "at": "2026-11-24T07:05:12.836Z",

@@ -7,18 +7,18 @@
   "id": "2378",
   "abbr": "UMBC",
   "name": "UMBC Retrievers",
-  "score": 0
+  "score": 7
  },
  "home": {
   "id": "2294",
   "abbr": "IOWA",
   "name": "Iowa Hawkeyes",
-  "score": 0
+  "score": 10
  },
  "neutral": false,
  "venue": "Carver-Hawkeye Arena",
  "seasonType": 2,
- "state": "pre",
+ "state": "in",
  "lines": {
   "open": {
    "at": "2026-11-24T07:05:12.836Z",

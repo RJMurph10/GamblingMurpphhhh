@@ -1,24 +1,24 @@
 {
  "id": "401909495",
  "league": "cbb",
- "date": "2026-11-24T22:30Z",
+ "date": "2026-11-24T22:55Z",
  "name": "CREI VS MICH",
  "away": {
   "id": "156",
   "abbr": "CREI",
   "name": "Creighton Bluejays",
-  "score": 0
+  "score": 59
  },
  "home": {
   "id": "130",
   "abbr": "MICH",
   "name": "Michigan Wolverines",
-  "score": 0
+  "score": 38
  },
  "neutral": true,
  "venue": "T-Mobile Arena",
  "seasonType": 2,
- "state": "pre",
+ "state": "in",
  "lines": {
   "open": {
    "at": "2026-11-22T23:50:51.406Z",

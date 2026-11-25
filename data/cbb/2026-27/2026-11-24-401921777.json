@@ -7,18 +7,18 @@
   "id": "2154",
   "abbr": "COPP",
   "name": "Coppin State Eagles",
-  "score": 0
+  "score": 6
  },
  "home": {
   "id": "222",
   "abbr": "VILL",
   "name": "Villanova Wildcats",
-  "score": 0
+  "score": 7
  },
  "neutral": false,
  "venue": "Finneran Pavilion",
  "seasonType": 2,
- "state": "pre",
+ "state": "in",
  "lines": {
   "open": {
    "at": "2026-11-24T07:05:12.836Z",

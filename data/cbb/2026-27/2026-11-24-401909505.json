@@ -7,18 +7,18 @@
   "id": "305",
   "abbr": "DEP",
   "name": "DePaul Blue Demons",
-  "score": 0
+  "score": 32
  },
  "home": {
   "id": "2509",
   "abbr": "PUR",
   "name": "Purdue Boilermakers",
-  "score": 0
+  "score": 33
  },
  "neutral": true,
  "venue": "Suncoast Credit Union Arena",
  "seasonType": 2,
- "state": "pre",
+ "state": "in",
  "lines": {
   "open": {
    "at": "2026-11-24T00:58:17.105Z",

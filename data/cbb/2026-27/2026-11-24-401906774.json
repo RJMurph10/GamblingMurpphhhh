@@ -7,18 +7,18 @@
   "id": "270",
   "abbr": "MILW",
   "name": "Milwaukee Panthers",
-  "score": 0
+  "score": 7
  },
  "home": {
   "id": "57",
   "abbr": "FLA",
   "name": "Florida Gators",
-  "score": 0
+  "score": 9
  },
  "neutral": false,
  "venue": "Tower Hill Arena",
  "seasonType": 2,
- "state": "pre",
+ "state": "in",
  "lines": {
   "open": {
    "at": "2026-11-24T00:58:17.105Z",

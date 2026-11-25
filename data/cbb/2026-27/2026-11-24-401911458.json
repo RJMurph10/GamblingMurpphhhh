@@ -2,17 +2,17 @@
  "id": "401911458",
  "league": "cbb",
  "date": "2026-11-25T00:00Z",
- "name": "NEV VS SCU",
+ "name": "SCU VS NEV",
  "away": {
-  "id": "2440",
-  "abbr": "NEV",
-  "name": "Nevada Wolf Pack",
-  "score": 0
- },
- "home": {
   "id": "2541",
   "abbr": "SCU",
   "name": "Santa Clara Broncos",
+  "score": 0
+ },
+ "home": {
+  "id": "2440",
+  "abbr": "NEV",
+  "name": "Nevada Wolf Pack",
   "score": 0
  },
  "neutral": true,

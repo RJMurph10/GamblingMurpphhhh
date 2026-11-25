@@ -13,12 +13,12 @@
   "id": "84",
   "abbr": "IU",
   "name": "Indiana Hoosiers",
-  "score": 0
+  "score": 7
  },
  "neutral": false,
  "venue": "Simon Skjodt Assembly Hall",
  "seasonType": 2,
- "state": "pre",
+ "state": "in",
  "lines": {
   "open": {
    "at": "2026-11-24T02:36:16.686Z",

@@ -13,12 +13,12 @@
   "id": "2199",
   "abbr": "EMU",
   "name": "Eastern Michigan Eagles",
-  "score": 0
+  "score": 7
  },
  "neutral": false,
  "venue": "Rynearson Stadium",
  "seasonType": 2,
- "state": "pre",
+ "state": "in",
  "lines": {
   "open": {
    "at": "2026-11-21T23:25:07.697Z",

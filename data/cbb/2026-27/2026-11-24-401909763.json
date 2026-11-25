@@ -2,17 +2,17 @@
  "id": "401909763",
  "league": "cbb",
  "date": "2026-11-25T04:59Z",
- "name": "STAN VS COLO",
+ "name": "COLO VS STAN",
  "away": {
-  "id": "24",
-  "abbr": "STAN",
-  "name": "Stanford Cardinal",
-  "score": 0
- },
- "home": {
   "id": "38",
   "abbr": "COLO",
   "name": "Colorado Buffaloes",
+  "score": 0
+ },
+ "home": {
+  "id": "24",
+  "abbr": "STAN",
+  "name": "Stanford Cardinal",
   "score": 0
  },
  "neutral": true,

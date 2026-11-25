@@ -7,7 +7,7 @@
   "id": "104",
   "abbr": "BU",
   "name": "Boston University Terriers",
-  "score": 0
+  "score": 2
  },
  "home": {
   "id": "108",
@@ -18,7 +18,7 @@
  "neutral": false,
  "venue": "Lavietes Pavilion",
  "seasonType": 2,
- "state": "pre",
+ "state": "in",
  "lines": {
   "open": {
    "at": "2026-11-24T07:05:12.836Z",

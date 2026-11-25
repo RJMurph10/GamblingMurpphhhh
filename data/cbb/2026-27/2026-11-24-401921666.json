@@ -7,18 +7,18 @@
   "id": "2287",
   "abbr": "ILST",
   "name": "Illinois State Redbirds",
-  "score": 0
+  "score": 79
  },
  "home": {
   "id": "202",
   "abbr": "TLSA",
   "name": "Tulsa Golden Hurricane",
-  "score": 0
+  "score": 67
  },
  "neutral": true,
  "venue": "Acrisure Arena",
  "seasonType": 2,
- "state": "pre",
+ "state": "post",
  "lines": {
   "open": {
    "at": "2026-11-24T07:05:12.836Z",
@@ -923,5 +923,9 @@
    ]
   }
  },
- "props": {}
+ "props": {},
+ "final": {
+  "away": 79,
+  "home": 67
+ }
 }

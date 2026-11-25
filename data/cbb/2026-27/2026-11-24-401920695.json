@@ -7,18 +7,18 @@
   "id": "261",
   "abbr": "UVM",
   "name": "Vermont Catamounts",
-  "score": 0
+  "score": 9
  },
  "home": {
   "id": "2561",
   "abbr": "SIE",
   "name": "Siena Saints",
-  "score": 0
+  "score": 7
  },
  "neutral": false,
  "venue": "MVP Arena",
  "seasonType": 2,
- "state": "pre",
+ "state": "in",
  "lines": {
   "open": {
    "at": "2026-11-24T07:05:12.836Z",
