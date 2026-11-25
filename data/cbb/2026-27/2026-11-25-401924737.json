@@ -7,18 +7,18 @@
   "id": "163",
   "abbr": "PRIN",
   "name": "Princeton Tigers",
-  "score": 0
+  "score": 79
  },
  "home": {
   "id": "2335",
   "abbr": "LIB",
   "name": "Liberty Flames",
-  "score": 0
+  "score": 72
  },
  "neutral": true,
  "venue": "Trask Coliseum",
  "seasonType": 2,
- "state": "pre",
+ "state": "post",
  "lines": {
   "open": {
    "at": "2026-11-25T00:07:42.175Z",
@@ -477,5 +477,9 @@
    ]
   }
  },
- "props": {}
+ "props": {},
+ "final": {
+  "away": 79,
+  "home": 72
+ }
 }

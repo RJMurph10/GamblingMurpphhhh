@@ -2,17 +2,17 @@
  "id": "401920540",
  "league": "cbb",
  "date": "2026-11-27T04:30Z",
- "name": "GONZ VS BAY",
+ "name": "BAY VS GONZ",
  "away": {
-  "id": "2250",
-  "abbr": "GONZ",
-  "name": "Gonzaga Bulldogs",
-  "score": 0
- },
- "home": {
   "id": "239",
   "abbr": "BAY",
   "name": "Baylor Bears",
+  "score": 0
+ },
+ "home": {
+  "id": "2250",
+  "abbr": "GONZ",
+  "name": "Gonzaga Bulldogs",
   "score": 0
  },
  "neutral": true,

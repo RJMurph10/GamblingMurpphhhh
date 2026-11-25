@@ -7,18 +7,18 @@
   "id": "2502",
   "abbr": "PRST",
   "name": "Portland State Vikings",
-  "score": 0
+  "score": 63
  },
  "home": {
   "id": "27",
   "abbr": "UCR",
   "name": "UC Riverside Highlanders",
-  "score": 0
+  "score": 58
  },
  "neutral": false,
  "venue": "SRC Arena",
  "seasonType": 2,
- "state": "pre",
+ "state": "in",
  "lines": {
   "open": {
    "at": "2026-11-25T00:07:42.175Z",

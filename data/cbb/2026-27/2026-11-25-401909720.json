@@ -7,18 +7,18 @@
   "id": "399",
   "abbr": "UALB",
   "name": "UAlbany Great Danes",
-  "score": 0
+  "score": 26
  },
  "home": {
   "id": "183",
   "abbr": "SYR",
   "name": "Syracuse Orange",
-  "score": 0
+  "score": 26
  },
  "neutral": false,
  "venue": "JMA Wireless Dome",
  "seasonType": 2,
- "state": "pre",
+ "state": "in",
  "lines": {
   "open": {
    "at": "2026-11-25T04:55:12.027Z",

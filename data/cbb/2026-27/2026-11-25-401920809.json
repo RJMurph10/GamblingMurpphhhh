@@ -1,24 +1,24 @@
 {
  "id": "401920809",
  "league": "cbb",
- "date": "2026-11-25T19:30Z",
+ "date": "2026-11-25T21:13Z",
  "name": "TA&M VS XAV",
  "away": {
   "id": "245",
   "abbr": "TA&M",
   "name": "Texas A&M Aggies",
-  "score": 0
+  "score": 83
  },
  "home": {
   "id": "2752",
   "abbr": "XAV",
   "name": "Xavier Musketeers",
-  "score": 0
+  "score": 88
  },
  "neutral": true,
  "venue": "Imperial Arena",
  "seasonType": 2,
- "state": "pre",
+ "state": "post",
  "lines": {
   "open": {
    "at": "2026-11-24T21:19:02.149Z",
@@ -477,5 +477,9 @@
    ]
   }
  },
- "props": {}
+ "props": {},
+ "final": {
+  "away": 83,
+  "home": 88
+ }
 }

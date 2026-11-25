@@ -7,18 +7,18 @@
   "id": "107",
   "abbr": "HC",
   "name": "Holy Cross Crusaders",
-  "score": 0
+  "score": 61
  },
  "home": {
   "id": "159",
   "abbr": "DART",
   "name": "Dartmouth Big Green",
-  "score": 0
+  "score": 63
  },
  "neutral": false,
  "venue": "Leede Arena",
  "seasonType": 2,
- "state": "pre",
+ "state": "in",
  "lines": {
   "open": {
    "at": "2026-11-25T04:55:12.027Z",

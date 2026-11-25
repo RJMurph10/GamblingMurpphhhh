@@ -7,18 +7,18 @@
   "id": "2755",
   "abbr": "GRAM",
   "name": "Grambling Tigers",
-  "score": 0
+  "score": 81
  },
  "home": {
   "id": "2443",
   "abbr": "NOLA",
   "name": "LSU New Orleans Privateers",
-  "score": 0
+  "score": 80
  },
  "neutral": false,
  "venue": "Lakefront Arena",
  "seasonType": 2,
- "state": "pre",
+ "state": "post",
  "lines": {
   "open": {
    "at": "2026-11-25T04:55:12.027Z",
@@ -477,5 +477,9 @@
    ]
   }
  },
- "props": {}
+ "props": {},
+ "final": {
+  "away": 81,
+  "home": 80
+ }
 }

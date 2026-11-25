@@ -7,18 +7,18 @@
   "id": "252",
   "abbr": "BYU",
   "name": "BYU Cougars",
-  "score": 0
+  "score": 55
  },
  "home": {
   "id": "2507",
   "abbr": "PROV",
   "name": "Providence Friars",
-  "score": 0
+  "score": 54
  },
  "neutral": true,
  "venue": "Lahaina Civic Center",
  "seasonType": 2,
- "state": "pre",
+ "state": "in",
  "lines": {
   "open": {
    "at": "2026-11-25T04:55:12.027Z",

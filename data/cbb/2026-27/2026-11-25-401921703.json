@@ -7,18 +7,18 @@
   "id": "2247",
   "abbr": "GAST",
   "name": "Georgia State Panthers",
-  "score": 0
+  "score": 72
  },
  "home": {
   "id": "526",
   "abbr": "FGCU",
   "name": "Florida Gulf Coast Eagles",
-  "score": 0
+  "score": 77
  },
  "neutral": true,
  "venue": "Suncoast Credit Union Arena",
  "seasonType": 2,
- "state": "pre",
+ "state": "post",
  "lines": {
   "open": {
    "at": "2026-11-25T04:55:12.027Z",
@@ -477,5 +477,9 @@
    ]
   }
  },
- "props": {}
+ "props": {},
+ "final": {
+  "away": 72,
+  "home": 77
+ }
 }

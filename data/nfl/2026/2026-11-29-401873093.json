@@ -634,7 +634,7 @@
    ]
   },
   "latest": {
-   "at": "2026-11-25T15:42:08.656Z",
+   "at": "2026-11-25T23:48:34.043Z",
    "count": 124,
    "rows": [
   {"a":null,"t":"1st Half Total","ti":"72","op":[17.5,null,null],"cur":[17.5,null,null]},
@@ -665,8 +665,8 @@
   {"a":null,"t":"4th Quarter Total","ti":"84","op":[9.5,null,null],"cur":[9.5,null,null]},
   {"a":null,"tm":"17","t":"4th Quarter Moneyline","ti":"85"},
   {"a":null,"tm":"24","t":"4th Quarter Moneyline","ti":"85"},
-  {"a":null,"tm":"17","t":"4th Quarter Spread","ti":"86","op":[0.5,null,null],"cur":[0.5,null,null]},
-  {"a":null,"tm":"24","t":"4th Quarter Spread","ti":"86","op":[-0.5,null,null],"cur":[-0.5,null,null]},
+  {"a":null,"tm":"17","t":"4th Quarter Spread","ti":"86","op":[0.5,null,null],"cur":[-0.5,null,null]},
+  {"a":null,"tm":"24","t":"4th Quarter Spread","ti":"86","op":[-0.5,null,null],"cur":[0.5,null,null]},
   {"a":null,"tm":"17","t":"Team Total Points","ti":"98","op":[17.5,null,null],"cur":[10.5,null,null]},
   {"a":null,"tm":"17","t":"Team Total Points","ti":"98","op":[17.5,null,null],"cur":[11.5,null,null]},
   {"a":null,"tm":"17","t":"Team Total Points","ti":"98","op":[17.5,null,null],"cur":[12.5,null,null]},

@@ -332,86 +332,25 @@
  },
  "props": {
   "open": {
-   "at": "2026-11-24T00:58:17.105Z",
+   "at": "2026-11-25T23:48:34.043Z",
    "provider": 100,
-   "count": 12,
+   "count": 75,
    "rows": [
+  {"a":"4426348","t":"Total Passing Yards (incl. overtime)","ti":"8","op":[220.5,null,null],"cur":[220.5,null,null]},
+  {"a":"4426348","t":"Total Passing Yards (incl. overtime)","ti":"8","op":[220.5,null,null],"cur":[220.5,null,null]},
+  {"a":"4426348","t":"Total Pass Completions (incl. overtime)","ti":"9","op":[19.5,null,null],"cur":[19.5,null,null]},
+  {"a":"4426348","t":"Total Pass Completions (incl. overtime)","ti":"9","op":[19.5,null,null],"cur":[19.5,null,null]},
+  {"a":"4426348","t":"Total Passing Touchdowns (incl. overtime)","ti":"10","op":[1.5,null,null],"cur":[1.5,null,null]},
+  {"a":"4426348","t":"Total Passing Touchdowns (incl. overtime)","ti":"10","op":[1.5,null,null],"cur":[1.5,null,null]},
+  {"a":"4426348","t":"Total Passing Attempts (incl. overtime)","ti":"16","op":[28.5,null,null],"cur":[28.5,null,null]},
+  {"a":"4426348","t":"Total Passing Attempts (incl. overtime)","ti":"16","op":[28.5,null,null],"cur":[28.5,null,null]},
+  {"a":"4426348","t":"Anytime Touchdown Scorer","ti":"31"},
   {"a":null,"t":"1st Half Total","ti":"72","op":[20.5,null,null],"cur":[20.5,null,null]},
   {"a":null,"t":"1st Half Total","ti":"72","op":[20.5,null,null],"cur":[20.5,null,null]},
   {"a":null,"tm":"22","t":"1st Half Moneyline","ti":"73"},
   {"a":null,"tm":"28","t":"1st Half Moneyline","ti":"73"},
-  {"a":null,"tm":"22","t":"1st Half Spread","ti":"74","op":[3.5,null,null],"cur":[3.5,null,null]},
-  {"a":null,"tm":"28","t":"1st Half Spread","ti":"74","op":[-3.5,null,null],"cur":[-3.5,null,null]},
-  {"a":null,"t":"1st Quarter Total","ti":"75","op":[7.5,null,null],"cur":[7.5,null,null]},
-  {"a":null,"t":"1st Quarter Total","ti":"75","op":[7.5,null,null],"cur":[7.5,null,null]},
-  {"a":null,"tm":"22","t":"1st Quarter Moneyline","ti":"76"},
-  {"a":null,"tm":"28","t":"1st Quarter Moneyline","ti":"76"},
-  {"a":null,"tm":"22","t":"1st Quarter Spread","ti":"77","op":[0.5,null,null],"cur":[0.5,null,null]},
-  {"a":null,"tm":"28","t":"1st Quarter Spread","ti":"77","op":[-0.5,null,null],"cur":[-0.5,null,null]}
- ],
-   "sample": [
-    {
-     "competition": {
-      "id": "401873092"
-     },
-     "provider": {
-      "id": "100"
-     },
-     "type": {
-      "id": "72",
-      "name": "1st Half Total"
-     },
-     "lastUpdated": "2026-11-23T23:57Z",
-     "current": {
-      "target": {
-       "value": 20.5,
-       "displayValue": "20.5"
-      }
-     },
-     "open": {
-      "target": {
-       "value": 20.5,
-       "displayValue": "20.5"
-      }
-     }
-    },
-    {
-     "competition": {
-      "id": "401873092"
-     },
-     "provider": {
-      "id": "100"
-     },
-     "type": {
-      "id": "72",
-      "name": "1st Half Total"
-     },
-     "lastUpdated": "2026-11-23T23:57Z",
-     "current": {
-      "target": {
-       "value": 20.5,
-       "displayValue": "20.5"
-      }
-     },
-     "open": {
-      "target": {
-       "value": 20.5,
-       "displayValue": "20.5"
-      }
-     }
-    }
-   ]
-  },
-  "latest": {
-   "at": "2026-11-25T15:42:08.656Z",
-   "count": 34,
-   "rows": [
-  {"a":null,"t":"1st Half Total","ti":"72","op":[20.5,null,null],"cur":[20.5,null,null]},
-  {"a":null,"t":"1st Half Total","ti":"72","op":[20.5,null,null],"cur":[20.5,null,null]},
-  {"a":null,"tm":"22","t":"1st Half Moneyline","ti":"73"},
-  {"a":null,"tm":"28","t":"1st Half Moneyline","ti":"73"},
-  {"a":null,"tm":"22","t":"1st Half Spread","ti":"74","op":[3.5,null,null],"cur":[3.5,null,null]},
-  {"a":null,"tm":"28","t":"1st Half Spread","ti":"74","op":[-3.5,null,null],"cur":[-3.5,null,null]},
+  {"a":null,"tm":"22","t":"1st Half Spread","ti":"74","op":[3.5,null,null],"cur":[4.5,null,null]},
+  {"a":null,"tm":"28","t":"1st Half Spread","ti":"74","op":[-3.5,null,null],"cur":[-4.5,null,null]},
   {"a":null,"t":"1st Quarter Total","ti":"75","op":[7.5,null,null],"cur":[7.5,null,null]},
   {"a":null,"t":"1st Quarter Total","ti":"75","op":[7.5,null,null],"cur":[7.5,null,null]},
   {"a":null,"tm":"22","t":"1st Quarter Moneyline","ti":"76"},
@@ -434,12 +373,183 @@
   {"a":null,"t":"4th Quarter Total","ti":"84","op":[11.5,null,null],"cur":[11.5,null,null]},
   {"a":null,"tm":"22","t":"4th Quarter Moneyline","ti":"85"},
   {"a":null,"tm":"28","t":"4th Quarter Moneyline","ti":"85"},
-  {"a":null,"tm":"22","t":"4th Quarter Spread","ti":"86","op":[1.5,null,null],"cur":[2.5,null,null]},
-  {"a":null,"tm":"28","t":"4th Quarter Spread","ti":"86","op":[-1.5,null,null],"cur":[-2.5,null,null]},
+  {"a":null,"tm":"22","t":"4th Quarter Spread","ti":"86","op":[1.5,null,null],"cur":[1.5,null,null]},
+  {"a":null,"tm":"28","t":"4th Quarter Spread","ti":"86","op":[-1.5,null,null],"cur":[-1.5,null,null]},
   {"a":null,"tm":"22","t":"Team 1st Half Total Points","ti":"99","op":[7.5,null,null],"cur":[7.5,null,null]},
   {"a":null,"tm":"22","t":"Team 1st Half Total Points","ti":"99","op":[7.5,null,null],"cur":[7.5,null,null]},
   {"a":null,"tm":"28","t":"Team 1st Half Total Points","ti":"99","op":[12.5,null,null],"cur":[12.5,null,null]},
-  {"a":null,"tm":"28","t":"Team 1st Half Total Points","ti":"99","op":[12.5,null,null],"cur":[12.5,null,null]}
+  {"a":null,"tm":"28","t":"Team 1st Half Total Points","ti":"99","op":[12.5,null,null],"cur":[12.5,null,null]},
+  {"a":"4426348","t":"Passing Yards Milestones","ti":"194","cur":[150,null,null]},
+  {"a":"4426348","t":"Passing Yards Milestones","ti":"194","op":[230,null,null],"cur":[160,null,null]},
+  {"a":"4426348","t":"Passing Yards Milestones","ti":"194","op":[230,null,null],"cur":[170,null,null]},
+  {"a":"4426348","t":"Passing Yards Milestones","ti":"194","op":[230,null,null],"cur":[190,null,null]},
+  {"a":"4426348","t":"Passing Yards Milestones","ti":"194","op":[230,null,null],"cur":[200,null,null]},
+  {"a":"4426348","t":"Passing Yards Milestones","ti":"194","op":[230,null,null],"cur":[210,null,null]},
+  {"a":"4426348","t":"Passing Yards Milestones","ti":"194","cur":[220,null,null]},
+  {"a":"4426348","t":"Passing Yards Milestones","ti":"194","op":[230,null,null],"cur":[230,null,null]},
+  {"a":"4426348","t":"Passing Yards Milestones","ti":"194","op":[230,null,null],"cur":[240,null,null]},
+  {"a":"4426348","t":"Passing Yards Milestones","ti":"194","cur":[270,null,null]},
+  {"a":"4426348","t":"Passing Yards Milestones","ti":"194","op":[230,null,null],"cur":[280,null,null]},
+  {"a":"4426348","t":"Passing Yards Milestones","ti":"194","op":[230,null,null],"cur":[290,null,null]},
+  {"a":"4426348","t":"Passing Yards Milestones","ti":"194","cur":[300,null,null]},
+  {"a":"4426348","t":"Passing Yards Milestones","ti":"194","op":[230,null,null],"cur":[310,null,null]},
+  {"a":"4426348","t":"Passing Yards Milestones","ti":"194","op":[230,null,null],"cur":[320,null,null]},
+  {"a":"4426348","t":"Passing Yards Milestones","ti":"194","op":[230,null,null],"cur":[330,null,null]},
+  {"a":"4426348","t":"Passing Yards Milestones","ti":"194","op":[230,null,null],"cur":[340,null,null]},
+  {"a":"4426348","t":"Passing Yards Milestones","ti":"194","op":[230,null,null],"cur":[350,null,null]},
+  {"a":"4426348","t":"Passing Yards Milestones","ti":"194","op":[230,null,null],"cur":[360,null,null]},
+  {"a":"4426348","t":"Passing Yards Milestones","ti":"194","op":[230,null,null],"cur":[380,null,null]},
+  {"a":"4426348","t":"Passing Touchdown Milestones","ti":"198","op":[2,null,null],"cur":[1,null,null]},
+  {"a":"4426348","t":"Passing Touchdown Milestones","ti":"198","op":[2,null,null],"cur":[2,null,null]},
+  {"a":"4426348","t":"Passing Touchdown Milestones","ti":"198","cur":[3,null,null]},
+  {"a":"4426348","t":"Passing Touchdown Milestones","ti":"198","op":[2,null,null],"cur":[5,null,null]},
+  {"a":"4426348","t":"Passing Attempts Milestones","ti":"200","op":[30,null,null],"cur":[30,null,null]},
+  {"a":"4426348","t":"Passing Attempts Milestones","ti":"200","op":[30,null,null],"cur":[40,null,null]},
+  {"a":"4426348","t":"Passing Completions Milestones","ti":"207","op":[20,null,null],"cur":[14,null,null]},
+  {"a":"4426348","t":"Passing Completions Milestones","ti":"207","op":[20,null,null],"cur":[16,null,null]},
+  {"a":"4426348","t":"Passing Completions Milestones","ti":"207","op":[20,null,null],"cur":[20,null,null]},
+  {"a":"4426348","t":"Passing Completions Milestones","ti":"207","op":[20,null,null],"cur":[22,null,null]},
+  {"a":"4426348","t":"Passing Completions Milestones","ti":"207","op":[20,null,null],"cur":[24,null,null]},
+  {"a":"4426348","t":"Passing Completions Milestones","ti":"207","op":[20,null,null],"cur":[26,null,null]}
+ ],
+   "sample": [
+    {
+     "competition": {
+      "id": "401873092"
+     },
+     "athlete": {
+      "id": "4426348"
+     },
+     "provider": {
+      "id": "100"
+     },
+     "type": {
+      "id": "8",
+      "name": "Total Passing Yards (incl. overtime)"
+     },
+     "lastUpdated": "2026-11-26T02:44Z",
+     "current": {
+      "target": {
+       "value": 220.5,
+       "displayValue": "220.5"
+      }
+     },
+     "open": {
+      "target": {
+       "value": 220.5,
+       "displayValue": "220.5"
+      }
+     }
+    },
+    {
+     "competition": {
+      "id": "401873092"
+     },
+     "athlete": {
+      "id": "4426348"
+     },
+     "provider": {
+      "id": "100"
+     },
+     "type": {
+      "id": "8",
+      "name": "Total Passing Yards (incl. overtime)"
+     },
+     "lastUpdated": "2026-11-26T02:44Z",
+     "current": {
+      "target": {
+       "value": 220.5,
+       "displayValue": "220.5"
+      }
+     },
+     "open": {
+      "target": {
+       "value": 220.5,
+       "displayValue": "220.5"
+      }
+     }
+    }
+   ]
+  },
+  "latest": {
+   "at": "2026-11-25T23:48:34.043Z",
+   "count": 75,
+   "rows": [
+  {"a":"4426348","t":"Total Passing Yards (incl. overtime)","ti":"8","op":[220.5,null,null],"cur":[220.5,null,null]},
+  {"a":"4426348","t":"Total Passing Yards (incl. overtime)","ti":"8","op":[220.5,null,null],"cur":[220.5,null,null]},
+  {"a":"4426348","t":"Total Pass Completions (incl. overtime)","ti":"9","op":[19.5,null,null],"cur":[19.5,null,null]},
+  {"a":"4426348","t":"Total Pass Completions (incl. overtime)","ti":"9","op":[19.5,null,null],"cur":[19.5,null,null]},
+  {"a":"4426348","t":"Total Passing Touchdowns (incl. overtime)","ti":"10","op":[1.5,null,null],"cur":[1.5,null,null]},
+  {"a":"4426348","t":"Total Passing Touchdowns (incl. overtime)","ti":"10","op":[1.5,null,null],"cur":[1.5,null,null]},
+  {"a":"4426348","t":"Total Passing Attempts (incl. overtime)","ti":"16","op":[28.5,null,null],"cur":[28.5,null,null]},
+  {"a":"4426348","t":"Total Passing Attempts (incl. overtime)","ti":"16","op":[28.5,null,null],"cur":[28.5,null,null]},
+  {"a":"4426348","t":"Anytime Touchdown Scorer","ti":"31"},
+  {"a":null,"t":"1st Half Total","ti":"72","op":[20.5,null,null],"cur":[20.5,null,null]},
+  {"a":null,"t":"1st Half Total","ti":"72","op":[20.5,null,null],"cur":[20.5,null,null]},
+  {"a":null,"tm":"22","t":"1st Half Moneyline","ti":"73"},
+  {"a":null,"tm":"28","t":"1st Half Moneyline","ti":"73"},
+  {"a":null,"tm":"22","t":"1st Half Spread","ti":"74","op":[3.5,null,null],"cur":[4.5,null,null]},
+  {"a":null,"tm":"28","t":"1st Half Spread","ti":"74","op":[-3.5,null,null],"cur":[-4.5,null,null]},
+  {"a":null,"t":"1st Quarter Total","ti":"75","op":[7.5,null,null],"cur":[7.5,null,null]},
+  {"a":null,"t":"1st Quarter Total","ti":"75","op":[7.5,null,null],"cur":[7.5,null,null]},
+  {"a":null,"tm":"22","t":"1st Quarter Moneyline","ti":"76"},
+  {"a":null,"tm":"28","t":"1st Quarter Moneyline","ti":"76"},
+  {"a":null,"tm":"22","t":"1st Quarter Spread","ti":"77","op":[0.5,null,null],"cur":[0.5,null,null]},
+  {"a":null,"tm":"28","t":"1st Quarter Spread","ti":"77","op":[-0.5,null,null],"cur":[-0.5,null,null]},
+  {"a":null,"t":"2nd Quarter Total","ti":"78","op":[12.5,null,null],"cur":[12.5,null,null]},
+  {"a":null,"t":"2nd Quarter Total","ti":"78","op":[12.5,null,null],"cur":[12.5,null,null]},
+  {"a":null,"tm":"22","t":"2nd Quarter Moneyline","ti":"79"},
+  {"a":null,"tm":"28","t":"2nd Quarter Moneyline","ti":"79"},
+  {"a":null,"tm":"22","t":"2nd Quarter Spread","ti":"80","op":[2.5,null,null],"cur":[2.5,null,null]},
+  {"a":null,"tm":"28","t":"2nd Quarter Spread","ti":"80","op":[-2.5,null,null],"cur":[-2.5,null,null]},
+  {"a":null,"t":"3rd Quarter Total","ti":"81","op":[7.5,null,null],"cur":[7.5,null,null]},
+  {"a":null,"t":"3rd Quarter Total","ti":"81","op":[7.5,null,null],"cur":[7.5,null,null]},
+  {"a":null,"tm":"22","t":"3rd Quarter Moneyline","ti":"82"},
+  {"a":null,"tm":"28","t":"3rd Quarter Moneyline","ti":"82"},
+  {"a":null,"tm":"22","t":"3rd Quarter Spread","ti":"83","op":[0.5,null,null],"cur":[0.5,null,null]},
+  {"a":null,"tm":"28","t":"3rd Quarter Spread","ti":"83","op":[-0.5,null,null],"cur":[-0.5,null,null]},
+  {"a":null,"t":"4th Quarter Total","ti":"84","op":[11.5,null,null],"cur":[11.5,null,null]},
+  {"a":null,"t":"4th Quarter Total","ti":"84","op":[11.5,null,null],"cur":[11.5,null,null]},
+  {"a":null,"tm":"22","t":"4th Quarter Moneyline","ti":"85"},
+  {"a":null,"tm":"28","t":"4th Quarter Moneyline","ti":"85"},
+  {"a":null,"tm":"22","t":"4th Quarter Spread","ti":"86","op":[1.5,null,null],"cur":[1.5,null,null]},
+  {"a":null,"tm":"28","t":"4th Quarter Spread","ti":"86","op":[-1.5,null,null],"cur":[-1.5,null,null]},
+  {"a":null,"tm":"22","t":"Team 1st Half Total Points","ti":"99","op":[7.5,null,null],"cur":[7.5,null,null]},
+  {"a":null,"tm":"22","t":"Team 1st Half Total Points","ti":"99","op":[7.5,null,null],"cur":[7.5,null,null]},
+  {"a":null,"tm":"28","t":"Team 1st Half Total Points","ti":"99","op":[12.5,null,null],"cur":[12.5,null,null]},
+  {"a":null,"tm":"28","t":"Team 1st Half Total Points","ti":"99","op":[12.5,null,null],"cur":[12.5,null,null]},
+  {"a":"4426348","t":"Passing Yards Milestones","ti":"194","cur":[150,null,null]},
+  {"a":"4426348","t":"Passing Yards Milestones","ti":"194","op":[230,null,null],"cur":[160,null,null]},
+  {"a":"4426348","t":"Passing Yards Milestones","ti":"194","op":[230,null,null],"cur":[170,null,null]},
+  {"a":"4426348","t":"Passing Yards Milestones","ti":"194","op":[230,null,null],"cur":[190,null,null]},
+  {"a":"4426348","t":"Passing Yards Milestones","ti":"194","op":[230,null,null],"cur":[200,null,null]},
+  {"a":"4426348","t":"Passing Yards Milestones","ti":"194","op":[230,null,null],"cur":[210,null,null]},
+  {"a":"4426348","t":"Passing Yards Milestones","ti":"194","cur":[220,null,null]},
+  {"a":"4426348","t":"Passing Yards Milestones","ti":"194","op":[230,null,null],"cur":[230,null,null]},
+  {"a":"4426348","t":"Passing Yards Milestones","ti":"194","op":[230,null,null],"cur":[240,null,null]},
+  {"a":"4426348","t":"Passing Yards Milestones","ti":"194","cur":[270,null,null]},
+  {"a":"4426348","t":"Passing Yards Milestones","ti":"194","op":[230,null,null],"cur":[280,null,null]},
+  {"a":"4426348","t":"Passing Yards Milestones","ti":"194","op":[230,null,null],"cur":[290,null,null]},
+  {"a":"4426348","t":"Passing Yards Milestones","ti":"194","cur":[300,null,null]},
+  {"a":"4426348","t":"Passing Yards Milestones","ti":"194","op":[230,null,null],"cur":[310,null,null]},
+  {"a":"4426348","t":"Passing Yards Milestones","ti":"194","op":[230,null,null],"cur":[320,null,null]},
+  {"a":"4426348","t":"Passing Yards Milestones","ti":"194","op":[230,null,null],"cur":[330,null,null]},
+  {"a":"4426348","t":"Passing Yards Milestones","ti":"194","op":[230,null,null],"cur":[340,null,null]},
+  {"a":"4426348","t":"Passing Yards Milestones","ti":"194","op":[230,null,null],"cur":[350,null,null]},
+  {"a":"4426348","t":"Passing Yards Milestones","ti":"194","op":[230,null,null],"cur":[360,null,null]},
+  {"a":"4426348","t":"Passing Yards Milestones","ti":"194","op":[230,null,null],"cur":[380,null,null]},
+  {"a":"4426348","t":"Passing Touchdown Milestones","ti":"198","op":[2,null,null],"cur":[1,null,null]},
+  {"a":"4426348","t":"Passing Touchdown Milestones","ti":"198","op":[2,null,null],"cur":[2,null,null]},
+  {"a":"4426348","t":"Passing Touchdown Milestones","ti":"198","cur":[3,null,null]},
+  {"a":"4426348","t":"Passing Touchdown Milestones","ti":"198","op":[2,null,null],"cur":[5,null,null]},
+  {"a":"4426348","t":"Passing Attempts Milestones","ti":"200","op":[30,null,null],"cur":[30,null,null]},
+  {"a":"4426348","t":"Passing Attempts Milestones","ti":"200","op":[30,null,null],"cur":[40,null,null]},
+  {"a":"4426348","t":"Passing Completions Milestones","ti":"207","op":[20,null,null],"cur":[14,null,null]},
+  {"a":"4426348","t":"Passing Completions Milestones","ti":"207","op":[20,null,null],"cur":[16,null,null]},
+  {"a":"4426348","t":"Passing Completions Milestones","ti":"207","op":[20,null,null],"cur":[20,null,null]},
+  {"a":"4426348","t":"Passing Completions Milestones","ti":"207","op":[20,null,null],"cur":[22,null,null]},
+  {"a":"4426348","t":"Passing Completions Milestones","ti":"207","op":[20,null,null],"cur":[24,null,null]},
+  {"a":"4426348","t":"Passing Completions Milestones","ti":"207","op":[20,null,null],"cur":[26,null,null]}
  ]
   }
  },

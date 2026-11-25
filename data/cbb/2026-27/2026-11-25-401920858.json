@@ -7,18 +7,18 @@
   "id": "2504",
   "abbr": "PV",
   "name": "Prairie View A&M Panthers",
-  "score": 0
+  "score": 58
  },
  "home": {
   "id": "276",
   "abbr": "MRSH",
   "name": "Marshall Thundering Herd",
-  "score": 0
+  "score": 64
  },
  "neutral": false,
  "venue": "Cam Henderson Center",
  "seasonType": 2,
- "state": "pre",
+ "state": "post",
  "lines": {
   "open": {
    "at": "2026-11-25T04:55:12.027Z",
@@ -395,5 +395,9 @@
    ]
   }
  },
- "props": {}
+ "props": {},
+ "final": {
+  "away": 58,
+  "home": 64
+ }
 }
