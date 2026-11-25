@@ -3,8 +3,8 @@ import { useMemo, useState } from "react";
 import { Link } from "@tanstack/react-router";
 import { Panel, PanelHeader } from "@/components/shared/booth";
 import { Chip, NbaLogo } from "@/components/nba/NbaBits";
-import { STAT_LABEL, STAT_SHORT, pct, type NbaGame, type NbaGameRosterStat, type NbaPropOffer, type NbaStatKey } from "@/lib/nba/nba";
-import { buildRatings, evaluateProp, predictGame, projectStat, ratingRows, type StatProjection } from "@/lib/nba/nba-model";
+import { STAT_LABEL, STAT_SHORT, pct, statValue, type NbaGame, type NbaLogRow, type NbaGameRosterStat, type NbaPropOffer, type NbaStatKey } from "@/lib/nba/nba";
+import { NBA_RANGE_TARGET, buildRatings, evaluateProp, predictGame, projectStat, ratingRows, type StatProjection } from "@/lib/nba/nba-model";
 import { isRebStar, rebProjection } from "@/lib/nba/nba-reb-stars";
 import { useNbaGameProps, useNbaGameRosterStats, useNbaPrior, useNbaRebStars, useNbaSchedule } from "@/lib/nba/use-nba";
 
@@ -16,6 +16,8 @@ interface Projected {
   home: boolean;
   proj: Partial<Record<NbaStatKey, StatProjection>>;
   minutes: number | null;
+  /** The player's line in this game, once it's played (null if he didn't play or it hasn't happened). */
+  actual: NbaLogRow | null;
 }
 
 function useProjections(game: NbaGame, entries: NbaGameRosterStat[] | undefined): Projected[] {
@@ -23,7 +25,12 @@ function useProjections(game: NbaGame, entries: NbaGameRosterStat[] | undefined)
   const prior = useNbaPrior();
   return useMemo(() => {
     if (!entries) return [];
-    const finals = games.filter((g) => g.status === "final" && g.part !== "pre" && g.home.score !== null);
+    // Only games before this one count, so a finished game shows what the model said beforehand.
+    const tip = Date.parse(game.date);
+    const before = (d: string) => !(Date.parse(d) >= tip);
+    const finals = games.filter(
+      (g) => g.status === "final" && g.part !== "pre" && g.home.score !== null && g.id !== game.id && before(g.date),
+    );
     const table = buildRatings(finals, prior);
     const pred = predictGame(table, game.home.team.id, game.away.team.id);
     const rows = ratingRows(table);
@@ -33,19 +40,38 @@ function useProjections(game: NbaGame, entries: NbaGameRosterStat[] | undefined)
       .map((entry) => {
         const home = entry.player.teamId === game.home.team.id;
         const factor = factorFor(home);
+        const log = entry.log.filter((r) => r.gameId !== game.id && before(r.date));
+        const played = entry.log.find((r) => r.gameId === game.id && r.min > 0) ?? null;
         const proj: Partial<Record<NbaStatKey, StatProjection>> = {};
         for (const k of [...BOARD_STATS, ...MORE_STATS, "min"] as NbaStatKey[]) {
-          const p = projectStat(entry.log, entry.priorLog, k, k === "min" ? 1 : factor);
+          const p = projectStat(log, entry.priorLog, k, k === "min" ? 1 : factor);
           if (p) proj[k] = p;
         }
-        return { entry, home, proj, minutes: proj.min?.mean ?? null };
+        return { entry, home, proj, minutes: proj.min?.mean ?? null, actual: played };
       })
       .filter((x) => Object.keys(x.proj).length > 0)
       .sort((a, b) => (b.minutes ?? 0) - (a.minutes ?? 0));
   }, [entries, games, prior, game]);
 }
 
-const range = (p?: StatProjection) => (p ? `${p.p25.toFixed(0)}–${p.p75.toFixed(0)}` : "");
+const range = (p?: StatProjection) => (p ? `${p.lo}–${p.hi}` : "");
+
+/** How many finished stat lines landed inside the projected range. */
+export function rangeHits(rows: { proj: Partial<Record<NbaStatKey, StatProjection>>; actual: NbaLogRow | null }[], stats: NbaStatKey[]) {
+  let inside = 0;
+  let total = 0;
+  for (const r of rows) {
+    if (!r.actual) continue;
+    for (const k of stats) {
+      const p = r.proj[k];
+      if (!p) continue;
+      const v = statValue(r.actual, k);
+      total += 1;
+      if (v >= p.lo && v <= p.hi) inside += 1;
+    }
+  }
+  return { inside, total };
+}
 
 export function NbaPropsBoard({ game }: { game: NbaGame }) {
   const stats = useNbaGameRosterStats(game);
@@ -79,9 +105,30 @@ export function NbaPropsBoard({ game }: { game: NbaGame }) {
 
   const loading = stats.isLoading;
   const teams = [game.away.team, game.home.team];
+  const finished = game.status === "final";
+  const hits = useMemo(() => rangeHits(projected, [...BOARD_STATS, ...MORE_STATS]), [projected]);
 
   return (
     <div className="space-y-6">
+      {finished && hits.total ? (
+        <Panel>
+          <div className="flex flex-wrap items-baseline justify-between gap-3">
+            <div>
+              <p className="label-mono">How the ranges did</p>
+              <p className="mt-1 text-2xl font-semibold tabular-nums">
+                {Math.round((100 * hits.inside) / hits.total)}%
+                <span className="ml-2 text-sm font-normal text-mute">
+                  of {hits.total} stat lines landed inside the range
+                </span>
+              </p>
+            </div>
+            <p className="max-w-md font-mono text-[10px] uppercase tracking-wider text-faint">
+              Projections use only games before this one. Ranges are built to hold about {Math.round(NBA_RANGE_TARGET * 100)}% of
+              results; one game swings a lot, the long-run rate is what counts.
+            </p>
+          </div>
+        </Panel>
+      ) : null}
       <Panel padded={false}>
         <PanelHeader
           title="DraftKings lines vs. model"
@@ -197,7 +244,7 @@ export function NbaPropsBoard({ game }: { game: NbaGame }) {
                     </tr>
                   </thead>
                   <tbody className="divide-y divide-line/5">
-                    {list.map(({ entry, proj, minutes }) => {
+                    {list.map(({ entry, proj, minutes, actual }) => {
                       const out = /out/i.test(entry.player.status ?? "");
                       return (
                         <tr key={entry.player.id} className={`hover:bg-line/5 ${out ? "opacity-50" : ""}`}>
@@ -213,6 +260,20 @@ export function NbaPropsBoard({ game }: { game: NbaGame }) {
                                 <>
                                   <span>{proj[k]!.mean.toFixed(1)}</span>
                                   <span className="ml-1 text-[10px] text-faint">{range(proj[k])}</span>
+                                  {finished && actual ? (
+                                    (() => {
+                                      const v = statValue(actual, k);
+                                      const inside = v >= proj[k]!.lo && v <= proj[k]!.hi;
+                                      return (
+                                        <span
+                                          className={`block text-[11px] ${inside ? "text-win" : "text-loss"}`}
+                                          title={inside ? "Inside the range" : "Outside the range"}
+                                        >
+                                          {inside ? "✓" : "✗"} {v}
+                                        </span>
+                                      );
+                                    })()
+                                  ) : null}
                                 </>
                               ) : "—"}
                             </td>
@@ -229,7 +290,7 @@ export function NbaPropsBoard({ game }: { game: NbaGame }) {
         );
       })}
       <p className="font-mono text-[10px] uppercase tracking-wider text-faint">
-        Projection = recent games weighted most, last season filling in early on, nudged for the game&apos;s expected scoring. Small grey range = middle 50% of outcomes.
+        Projection = recent games weighted most, last season filling in early on, nudged for the game&apos;s expected scoring. Small grey range = where about {Math.round(NBA_RANGE_TARGET * 100)}% of results land for projections this size (checked on past seasons, using only games before each one).{finished ? " Green/red = the actual result, inside/outside the range." : ""}
       </p>
     </div>
   );

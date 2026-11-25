@@ -2,6 +2,7 @@
  * One NBA game, laid out like the NFL game page: header, then Gamecast / Stats / Markets / Props /
  * Information tabs.
  */
+import { NbaPropsBoard } from "@/components/nba/NbaPropsBoard";
 import { useMemo, useState } from "react";
 import { Link } from "@tanstack/react-router";
 import { ClosedPropLines } from "@/components/shared/GamePropsTab";
@@ -240,13 +241,7 @@ export function NbaGameDetailView({ gameId }: { gameId: string }) {
                     }
                   />
                 ) : null}
-                <Link
-                  to="/nba/props"
-                  search={{ game: game.id }}
-                  className="glass block p-4 text-center font-mono text-[11px] uppercase tracking-wider text-acc hover:glow"
-                >
-                  Player prop projections for this game →
-                </Link>
+                <NbaPropsBoard game={game} />
               </div>
             }
             halftime={
