@@ -3,7 +3,7 @@ import { mkdirSync, writeFileSync } from "node:fs";
 const out = process.argv[2];
 mkdirSync(`${out}/std`, { recursive: true });
 mkdirSync(`${out}/dark`, { recursive: true });
-const r = await fetch("https://site.api.espn.com/apis/site/v2/sports/football/college-football/teams?groups=80&limit=500");
+const r = await fetch("https://site.api.espn.com/apis/site/v2/sports/football/college-football/teams?groups=80&limit=2000");
 const j = await r.json();
 const teams = j.sports[0].leagues[0].teams.map(({ team }) => ({
   id: team.id, name: team.displayName,
