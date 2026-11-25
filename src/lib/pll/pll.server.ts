@@ -108,7 +108,7 @@ const CHROME: PllTeam = {
   short: "Chrome",
   location: "",
   color: "#8ad8dc",
-  logo: "/logos/pll-chrome.png",
+  logo: "/logos/pll-chrome-app.png",
 };
 
 const toTeam = (t: EspnTeam): PllTeam =>
@@ -256,41 +256,22 @@ export const STALE_MS = 2 * 24 * 3_600_000;
  * Logos by era. The clubs used their original "Lacrosse Club" logos through 2023; the league moved to
  * city/state names and new logos in 2024 (ESPN only has the current ones). The Whipsnakes' 2024-2025
  * logo had gold trim; ESPN's current one has teal. From the PLL's site and TheSportsDB, stored in
- * public/logos. 2019-2021 use those seasons' app icons (owner-supplied).
+ * public/logos. 2019-2023 use the owner-supplied originals (pll-<club>-app.png).
  */
 const ERA_LOGOS: Record<string, [from: number, to: number, logo: string][]> = {
-  // 2019-2021: the PLL app icons of those years, from the owner (the six 2019 clubs, the Waterdogs from 2020,
+  // 2019-2023: the clubs' original PLL logos, from the owner (the six 2019 clubs, the Waterdogs from 2020,
   // the Cannons from 2021)
-  "127631": [
-    [2019, 2021, "/logos/pll-archers-app.png"],
-    [2022, 2023, "/logos/pll-archers-original.png"],
-  ],
-  "127632": [
-    [2019, 2021, "/logos/pll-atlas-app.png"],
-    [2022, 2023, "/logos/pll-atlas-original.png"],
-  ],
-  "127634": [
-    [2019, 2021, "/logos/pll-chaos-app.png"],
-    [2022, 2023, "/logos/pll-chaos-original.png"],
-  ],
-  "127635": [[2019, 2021, "/logos/pll-chrome-app.png"]],
-  "127636": [
-    [2019, 2021, "/logos/pll-redwoods-app.png"],
-    [2022, 2023, "/logos/pll-redwoods-original.png"],
-  ],
-  "127637": [
-    [2019, 2021, "/logos/pll-waterdogs-app.png"],
-    [2022, 2023, "/logos/pll-waterdogs-original.png"],
-  ],
+  "127631": [[2019, 2023, "/logos/pll-archers-app.png"]],
+  "127632": [[2019, 2023, "/logos/pll-atlas-app.png"]],
+  "127634": [[2019, 2023, "/logos/pll-chaos-app.png"]],
+  "127635": [[2019, 2023, "/logos/pll-chrome-app.png"]],
+  "127636": [[2019, 2023, "/logos/pll-redwoods-app.png"]],
+  "127637": [[2019, 2023, "/logos/pll-waterdogs-app.png"]],
   "127638": [
-    [2019, 2021, "/logos/pll-whipsnakes-app.png"],
-    [2022, 2023, "/logos/pll-whipsnakes-original.png"],
+    [2019, 2023, "/logos/pll-whipsnakes-app.png"],
     [2024, 2025, "/logos/pll-whipsnakes-2024.png"],
   ],
-  "122997": [
-    [2019, 2021, "/logos/pll-cannons-app.png"],
-    [2022, 2023, "/logos/pll-cannons-original.png"],
-  ],
+  "122997": [[2019, 2023, "/logos/pll-cannons-app.png"]],
 };
 
 /**

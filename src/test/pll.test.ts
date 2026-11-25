@@ -96,20 +96,18 @@ describe("withEraLogos", () => {
   });
   const season = (y: number) => ({ season: y, teams: [team("127631"), team("122896")], games: [] });
   it("uses the original club logos through 2023 and ESPN's after", () => {
-    expect(withEraLogos(season(2023)).teams[0].logo).toBe("/logos/pll-archers-original.png");
+    expect(withEraLogos(season(2023)).teams[0].logo).toBe("/logos/pll-archers-app.png");
     expect(withEraLogos(season(2023)).teams[1].logo).toBe("espn/122896");
     expect(withEraLogos(season(2024)).teams[0].logo).toBe("espn/127631");
   });
-  it("uses the app icons in 2019-2021, including Chrome's, the Waterdogs' and the Cannons'", () => {
+  it("uses the owner's original logos 2019-2023, including Chrome's, the Waterdogs' and the Cannons'", () => {
     expect(withEraLogos(season(2019)).teams[0].logo).toBe("/logos/pll-archers-app.png");
-    expect(withEraLogos(season(2021)).teams[0].logo).toBe("/logos/pll-archers-app.png");
-    expect(withEraLogos(season(2022)).teams[0].logo).toBe("/logos/pll-archers-original.png");
+    expect(withEraLogos(season(2022)).teams[0].logo).toBe("/logos/pll-archers-app.png");
     const chrome = (y: number) =>
       withEraLogos({ season: y, teams: [{ ...team("127635"), id: "127635", logo: "/logos/pll-chrome.png" }], games: [] })
         .teams[0].logo;
     expect(chrome(2019)).toBe("/logos/pll-chrome-app.png");
-    expect(chrome(2021)).toBe("/logos/pll-chrome-app.png");
-    expect(chrome(2022)).toBe("/logos/pll-chrome.png");
+    expect(chrome(2023)).toBe("/logos/pll-chrome-app.png");
     for (const n of ["archers", "atlas", "cannons", "chaos", "chrome", "redwoods", "whipsnakes", "waterdogs"])
       expect(existsSync(`public/logos/pll-${n}-app.png`), n).toBe(true);
   });
