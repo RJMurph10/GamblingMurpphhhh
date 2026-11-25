@@ -13,6 +13,7 @@
  * use the listed moneyline when ESPN has one).
  */
 import { walkForward } from "../shared/walk-cache";
+import rangeCalibration from "../../data/nba/prop-range-calibration.json";
 import {
   atsResult,
   etDayKey,
@@ -557,13 +558,44 @@ export const unitsText = (u: number) => `${u > 0 ? "+" : ""}${u.toFixed(2)}u`;
 
 /* ---------- player projections ---------- */
 
+interface RangeBin {
+  upTo: number | null;
+  lo: number;
+  hi: number;
+}
+interface RangeMarket {
+  type: "ratio" | "offset" | "int";
+  bins: RangeBin[];
+}
+const RANGE_MARKETS = (rangeCalibration as { markets: Record<string, RangeMarket> }).markets;
+export const NBA_RANGE_METHOD = rangeCalibration.version;
+export const NBA_RANGE_TARGET = rangeCalibration.target;
+
+/**
+ * The prop range for a projection: the narrowest band that held 70% of results for projections of
+ * this size (walk-forward replay of this model, fit on 2023-25, ~78% on unseen 2025-26 games).
+ * Points and combos scale with the projection; rebounds, assists and threes are the projection
+ * plus/minus a few; steals, blocks and turnovers are whole-number bands. Null for stats without one.
+ */
+export function propRange(stat: NbaStatKey, mean: number): { lo: number; hi: number } | null {
+  const m = RANGE_MARKETS[stat];
+  if (!m || !Number.isFinite(mean)) return null;
+  const b = m.bins.find((x) => x.upTo === null || mean <= x.upTo) ?? m.bins[m.bins.length - 1];
+  if (m.type === "int") return { lo: b.lo, hi: Math.max(b.lo, b.hi) };
+  if (m.type === "offset") return { lo: Math.max(0, Math.round(mean + b.lo)), hi: Math.max(0, Math.round(mean + b.hi)) };
+  return { lo: Math.floor(mean * b.lo), hi: Math.ceil(mean * b.hi) };
+}
+
 export interface StatProjection {
   stat: NbaStatKey;
   mean: number;
   sd: number;
-  /** Middle-50% range. */
+  /** Middle-50% range (normal approximation). */
   p25: number;
   p75: number;
+  /** Calibrated range: about 70% of results land here (see `propRange`). */
+  lo: number;
+  hi: number;
   /** Games behind the number (this season, plus last season's if the sample is small). */
   games: number;
   /** This season's per-game average for context. */
@@ -615,12 +647,17 @@ export function projectStat(
     pool.length > 1 ? pool.reduce((s, v) => s + (v - avgPool) ** 2, 0) / (pool.length - 1) : 0;
   const sd = Math.max(Math.sqrt(variance), 0.55 * Math.sqrt(Math.max(mean, 1)));
   const seasonAvg = values.length ? values.reduce((a, b) => a + b, 0) / values.length : null;
+  const p25 = Math.max(0, mean - 0.674 * sd);
+  const p75 = mean + 0.674 * sd;
+  const band = propRange(stat, mean) ?? { lo: Math.floor(p25), hi: Math.ceil(p75) };
   return {
     stat,
     mean,
     sd,
-    p25: Math.max(0, mean - 0.674 * sd),
-    p75: mean + 0.674 * sd,
+    p25,
+    p75,
+    lo: band.lo,
+    hi: band.hi,
     games: values.length,
     seasonAvg,
   };
