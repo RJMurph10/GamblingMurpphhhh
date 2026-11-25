@@ -123,17 +123,25 @@ describe("PLL international games (national teams in ESPN's PLL feed)", () => {
   });
 });
 
-describe.each([2024, 2025])("PLL play-by-play (%i)", (season) => {
+describe.each([2021, 2024, 2025])("PLL play-by-play (%i)", (season) => {
   it("each sheet matches one ESPN game, and its last goal is that game's final", async () => {
-    const espn = (await import(`./fixtures/pll-${season}-espn.json`)).default as {
+    // 2021 predates ESPN's PLL coverage: the site's results come from Wikipedia (same shape)
+    const espn = (
+      season === 2021
+        ? await import("./fixtures/pll-2021-results.json")
+        : await import(`./fixtures/pll-${season}-espn.json`)
+    ).default as {
       id: string;
       date: string;
       status: string;
       sides: [string, string, string, string][];
     }[];
-    const file = (season === 2024
-      ? await import("@/data/pll-pbp-2024.json")
-      : await import("@/data/pll-pbp-2025.json")
+    const file = (
+      season === 2021
+        ? await import("@/data/pll-pbp-2021.json")
+        : season === 2024
+          ? await import("@/data/pll-pbp-2024.json")
+          : await import("@/data/pll-pbp-2025.json")
     ).default as unknown as PllPbpFile;
     const games = espn
       .filter((e) => e.status === "STATUS_FINAL")
@@ -158,5 +166,19 @@ describe.each([2024, 2025])("PLL play-by-play (%i)", (season) => {
       expect([last.awayScore, last.homeScore], g.date).toEqual([g.away.score, g.home.score]);
     }
     expect(matched).toBe(file.games.length);
+  });
+
+  it("plays run in game order, oldest first", async () => {
+    const file = (await import(`@/data/pll-pbp-${season}.json`)).default as unknown as PllPbpFile;
+    for (const g of file.games) {
+      const t = g.plays.map(([p, c]) => {
+        const [m, sec] = c.split(":").map(Number);
+        return (p - 1) * 720 + 720 - (m * 60 + sec);
+      });
+      expect(
+        t.every((x, i) => i === 0 || x >= t[i - 1]),
+        g.file,
+      ).toBe(true);
+    }
   });
 });
