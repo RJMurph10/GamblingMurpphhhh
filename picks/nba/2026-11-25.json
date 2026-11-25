@@ -1,6 +1,6 @@
 {
  "day": "2026-11-25",
- "updated": "2026-11-25T15:00:27.053Z",
+ "updated": "2026-11-25T23:22:55.370Z",
  "picks": [
   {
    "id": "401909317-spread",
@@ -46,8 +46,8 @@
    "edge": 6.7,
    "best": false,
    "firstSeen": "2026-11-25T15:00:27.053Z",
-   "latest": 220.5,
-   "latestAt": "2026-11-25T15:00:27.053Z",
+   "latest": 218.5,
+   "latestAt": "2026-11-25T23:22:55.370Z",
    "alerted": false
   },
   {
@@ -79,7 +79,7 @@
    "best": false,
    "firstSeen": "2026-11-24T15:20:20.474Z",
    "latest": -2.5,
-   "latestAt": "2026-11-24T15:20:20.474Z",
+   "latestAt": "2026-11-25T23:22:55.370Z",
    "alerted": false
   },
   {
@@ -95,7 +95,7 @@
    "best": true,
    "firstSeen": "2026-11-24T15:20:20.474Z",
    "latest": 222.5,
-   "latestAt": "2026-11-25T15:00:27.053Z",
+   "latestAt": "2026-11-25T23:22:55.370Z",
    "alerted": false
   },
   {
@@ -111,7 +111,7 @@
    "best": false,
    "firstSeen": "2026-11-25T15:00:27.053Z",
    "latest": -1.5,
-   "latestAt": "2026-11-25T15:00:27.053Z",
+   "latestAt": "2026-11-25T23:22:55.370Z",
    "alerted": false
   },
   {
@@ -127,7 +127,7 @@
    "best": false,
    "firstSeen": "2026-11-24T15:20:20.474Z",
    "latest": -9.5,
-   "latestAt": "2026-11-25T15:00:27.053Z",
+   "latestAt": "2026-11-25T23:22:55.370Z",
    "alerted": false
   },
   {
@@ -142,8 +142,8 @@
    "edge": 4.9,
    "best": true,
    "firstSeen": "2026-11-25T15:00:27.053Z",
-   "latest": -6.5,
-   "latestAt": "2026-11-25T15:00:27.053Z",
+   "latest": -7.5,
+   "latestAt": "2026-11-25T23:22:55.370Z",
    "alerted": false
   },
   {
@@ -158,8 +158,8 @@
    "edge": 1,
    "best": false,
    "firstSeen": "2026-11-25T15:00:27.053Z",
-   "latest": 2.5,
-   "latestAt": "2026-11-25T15:00:27.053Z",
+   "latest": 3.5,
+   "latestAt": "2026-11-25T23:22:55.370Z",
    "alerted": false
   },
   {
@@ -175,7 +175,7 @@
    "best": true,
    "firstSeen": "2026-11-25T15:00:27.053Z",
    "latest": 225.5,
-   "latestAt": "2026-11-25T15:00:27.053Z",
+   "latestAt": "2026-11-25T23:22:55.370Z",
    "alerted": false
   }
  ]

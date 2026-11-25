@@ -1,6 +1,6 @@
 {
  "day": "2026-11-25",
- "updated": "2026-11-25T15:00:27.923Z",
+ "updated": "2026-11-25T23:22:56.362Z",
  "picks": [
   {
    "id": "401928831-total",
@@ -16,7 +16,12 @@
    "firstSeen": "2026-11-25T15:00:27.923Z",
    "latest": 138.5,
    "latestAt": "2026-11-25T15:00:27.923Z",
-   "alerted": false
+   "alerted": false,
+   "score": [
+    72,
+    70
+   ],
+   "close": 137.5
   },
   {
    "id": "401919007-total",
@@ -32,7 +37,12 @@
    "firstSeen": "2026-11-25T15:00:27.923Z",
    "latest": 137.5,
    "latestAt": "2026-11-25T15:00:27.923Z",
-   "alerted": false
+   "alerted": false,
+   "score": [
+    47,
+    74
+   ],
+   "close": 137.5
   },
   {
    "id": "401924705-total",
@@ -48,7 +58,12 @@
    "firstSeen": "2026-11-25T15:00:27.923Z",
    "latest": 125.5,
    "latestAt": "2026-11-25T15:00:27.923Z",
-   "alerted": false
+   "alerted": false,
+   "score": [
+    44,
+    65
+   ],
+   "close": 125.5
   },
   {
    "id": "401924737-total",
@@ -94,8 +109,8 @@
    "edge": 6.2,
    "best": true,
    "firstSeen": "2026-11-24T23:40:35.276Z",
-   "latest": 146.5,
-   "latestAt": "2026-11-25T15:00:27.923Z",
+   "latest": 145.5,
+   "latestAt": "2026-11-25T23:22:56.362Z",
    "alerted": false
   },
   {
@@ -111,7 +126,7 @@
    "best": true,
    "firstSeen": "2026-11-24T23:40:35.276Z",
    "latest": 162.5,
-   "latestAt": "2026-11-25T15:00:27.923Z",
+   "latestAt": "2026-11-25T23:22:56.362Z",
    "alerted": false
   },
   {
@@ -126,8 +141,24 @@
    "edge": 6.5,
    "best": true,
    "firstSeen": "2026-11-25T15:00:27.923Z",
-   "latest": 148.5,
-   "latestAt": "2026-11-25T15:00:27.923Z",
+   "latest": 146.5,
+   "latestAt": "2026-11-25T23:22:56.362Z",
+   "alerted": false
+  },
+  {
+   "id": "401921713-total",
+   "game": "WASH @ VCU",
+   "tip": "2026-11-26T03:00Z",
+   "market": "total",
+   "pick": "Over 147.5",
+   "line": 147.5,
+   "open": 147.5,
+   "model": 153.6,
+   "edge": 6.1,
+   "best": true,
+   "firstSeen": "2026-11-25T23:22:56.362Z",
+   "latest": 144.5,
+   "latestAt": "2026-11-25T23:22:56.362Z",
    "alerted": false
   }
  ]
