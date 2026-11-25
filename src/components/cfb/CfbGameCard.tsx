@@ -1,7 +1,7 @@
 /** One college football game: teams with ranks and records, score or kickoff, TV and the line. */
 
 import type { CfbGame, CfbSide, CfbTeamRef } from "@/lib/cfb/cfb";
-import { spreadText } from "@/lib/cfb/cfb";
+import { lightCollegeLogo, spreadText } from "@/lib/cfb/cfb";
 
 export function CfbLogo({ team, className = "size-6" }: { team: CfbTeamRef; className?: string }) {
   return team.logo ? (
@@ -9,6 +9,10 @@ export function CfbLogo({ team, className = "size-6" }: { team: CfbTeamRef; clas
       src={team.logo}
       alt={`${team.location} ${team.name} logo`}
       loading="lazy"
+      onError={(e) => {
+        const light = lightCollegeLogo(e.currentTarget.src);
+        if (light !== e.currentTarget.src) e.currentTarget.src = light;
+      }}
       className={`inline-block shrink-0 object-contain ${className}`}
     />
   ) : (

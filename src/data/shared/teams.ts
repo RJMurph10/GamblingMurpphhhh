@@ -118,24 +118,21 @@ export const teamByAbbr = (abbr: string): Team | undefined =>
 export const isCollegeId = (id: string) => id.startsWith("cfb-");
 
 /**
- * Team logo from ESPN's public team-logo CDN, keyed by lowercase abbreviation.
- * The site only has a dark theme, so the Rams use ESPN's dark-background logo
- * variant (500-dark). The light-background (all-blue) logo is `teamLogoLight`.
+ * Team logo from ESPN's public team-logo CDN, keyed by lowercase abbreviation (the Rams included: the
+ * owner prefers ESPN's standard blue-and-gold LA logo to the dark-background variant).
  */
 export const teamLogo = (team: Team): string =>
-  team.logo
-    ? team.logo
-    : team.id === "rams"
-    ? `https://a.espncdn.com/i/teamlogos/nfl/500-dark/${team.abbr.toLowerCase()}.png`
-    : `https://a.espncdn.com/i/teamlogos/nfl/500/${team.abbr.toLowerCase()}.png`;
+  team.logo ? team.logo : `https://a.espncdn.com/i/teamlogos/nfl/500/${team.abbr.toLowerCase()}.png`;
 
-/** Light-background logo (ESPN's standard version). Not used while the site is dark-only. */
+/** ESPN's standard logo (the same as `teamLogo` for NFL clubs). */
 export const teamLogoLight = (team: Team): string =>
   `https://a.espncdn.com/i/teamlogos/nfl/500/${team.abbr.toLowerCase()}.png`;
 
 /** Locally hosted backup used if a team's main logo fails to load. */
 export const teamLogoFallback = (team: Team): string | undefined =>
-  team.id === "rams" ? "/logos/lar.png" : undefined;
+  team.logo?.includes("/teamlogos/ncaa/500-dark/")
+    ? team.logo.replace("/500-dark/", "/500/") // a college with no dark-background logo
+    : undefined;
 
 export const divisions: { conference: Conference; division: DivisionName }[] = [
   { conference: "AFC", division: "East" },
