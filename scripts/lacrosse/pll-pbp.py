@@ -16,6 +16,8 @@ What is cleaned, nothing else:
     Q4 9:17, the box shows it was a saved shot);
   - the same play repeated back to back (same period, clock and text) is shown once;
   - a faceoff listed twice (a copy at the goal, then the real one seconds later; some 2024 games) once;
+  - 2021: the stat crew's duplicate of each goal is dropped; clears, power-play ends, challenges and
+    offsides (events only that year's feed has) are kept as "clear", "ppend", "challenge" and "viol";
   - club codes in the text become club names ("Save by NYA L. Entenmann" -> "Save by Atlas L. Entenmann").
 The box-score sheets stay the source of every stat total; this is the game's event log.
 See the project doc pll-play-by-play.md for the checks against the box scores.
@@ -29,11 +31,13 @@ CLUB = {
     # city codes (the acting club)
     "UTA": "Archers", "NYA": "Atlas", "BOS": "Cannons", "CAR": "Chaos", "DEN": "Outlaws",
     "CAL": "Redwoods", "PHI": "Waterdogs", "MDW": "Whipsnakes",
+    # Chrome (2019-2023) has one code for both
+    "CHR": "Chrome",
     # club codes (the favored club on the win probability)
     "ARC": "Archers", "ATL": "Atlas", "CAN": "Cannons", "CHA": "Chaos", "OUT": "Outlaws",
     "RED": "Redwoods", "WAT": "Waterdogs", "WHP": "Whipsnakes",
 }
-TYPES = "Shot|Groundball|Turnover|Faceoff|Goal|Violation|Penalty|Timeout"
+TYPES = "Shot|Groundball|Turnover|Faceoff|Goal|Violation|Penalty|Timeout|Clear|Power Play|challengeend|offside"
 EV = re.compile(
     r"(?:(?P<type>" + TYPES + r") "
     r"(?:(?P<wpteam>[A-Z]{2,4}) logo (?P<wp>[\d.]+)% \((?P<dwp>[+-]?[\d.]+)%\) )?"
@@ -45,7 +49,12 @@ EV = re.compile(
 SCORE = re.compile(r"\s*([A-Z]{2,4}) (\d+) ([A-Z]{2,4}) (\d+)\s*$")
 CODE = re.compile(r"\b(" + "|".join(CLUB) + r")\b")
 KIND = {"Shot": "shot", "Groundball": "gb", "Turnover": "to", "Faceoff": "fo", "Violation": "viol",
-        "Penalty": "pen", "Timeout": "timeout"}
+        "Penalty": "pen", "Timeout": "timeout", "Clear": "clear", "Power Play": "ppend",
+        "challengeend": "challenge", "offside": "viol"}
+# 2021: every goal is listed twice, once as the stat crew's line ("WAT: 1st-0:13: SHOT GOOD S: #2-Reeves ...")
+# and once as the PLL's ("GOAL by B. Reeves."); the crew's copy is dropped. The crew's lines for challenges and
+# offsides ("CHA: 1st-1:48: CHALLENGE") are reworded.
+CREW = re.compile(r"^[A-Z]{2,4}: \d(?:st|nd|rd|th)-\d+:\d\d: ")
 
 
 def rows_of(path):
@@ -105,8 +114,15 @@ def parse(path, home, away):
             elif g["final"]:
                 kind, club, desc = "end", None, "Game end"
             else:
-                kind, club = KIND.get(g["type"], "goal"), CLUB[g["team"]]
+                # an unknown code (2021 Whipsnakes-Cannons: "Penalty ZPP logo") leaves the club blank
+                kind, club = KIND.get(g["type"], "goal"), CLUB.get(g["team"])
             sc = None
+            if g["type"] == "Goal" and CREW.match(desc):
+                continue
+            if g["type"] == "challengeend":
+                desc = "Coach's challenge."
+            elif g["type"] == "offside":
+                desc = "Offsides."
             if g["type"] == "Goal":
                 s = SCORE.search(desc)
                 if s:
@@ -140,6 +156,11 @@ def main(season, folder, out_path):
         home, away = rest.split(" vs ")
         m, d = md.split("_")
         plays, final = parse(f, home, away)
+        if not any(e[2].startswith("goal") for e in plays):
+            # the PLL's page for this game is nearly empty (2021 Chrome-Whipsnakes 6/27: three penalties);
+            # left off the site so its quarter scores don't read 0-0. The sheet stays for later.
+            print(f"skipped (no goals in the feed): {f.name}")
+            continue
         games.append(dict(date=f"{season}-{int(m):02d}-{int(d):02d}", home=home, away=away, file=f.name,
                           final=[final[home], final[away]], plays=plays))
     games.sort(key=lambda g: (g["date"], g["home"]))
