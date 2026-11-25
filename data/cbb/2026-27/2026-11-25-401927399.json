@@ -7,18 +7,18 @@
   "id": "179",
   "abbr": "SBU",
   "name": "St. Bonaventure Bonnies",
-  "score": 0
+  "score": 24
  },
  "home": {
   "id": "2057",
   "abbr": "BEL",
   "name": "Belmont Bruins",
-  "score": 0
+  "score": 35
  },
  "neutral": true,
  "venue": "State Farm Field House",
  "seasonType": 2,
- "state": "pre",
+ "state": "in",
  "lines": {
   "open": {
    "at": "2026-11-25T00:07:42.175Z",

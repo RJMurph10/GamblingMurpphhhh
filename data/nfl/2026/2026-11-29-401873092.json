@@ -403,8 +403,8 @@
    ]
   },
   "latest": {
-   "at": "2026-11-25T04:55:12.027Z",
-   "count": 12,
+   "at": "2026-11-25T15:42:08.656Z",
+   "count": 34,
    "rows": [
   {"a":null,"t":"1st Half Total","ti":"72","op":[20.5,null,null],"cur":[20.5,null,null]},
   {"a":null,"t":"1st Half Total","ti":"72","op":[20.5,null,null],"cur":[20.5,null,null]},
@@ -417,7 +417,29 @@
   {"a":null,"tm":"22","t":"1st Quarter Moneyline","ti":"76"},
   {"a":null,"tm":"28","t":"1st Quarter Moneyline","ti":"76"},
   {"a":null,"tm":"22","t":"1st Quarter Spread","ti":"77","op":[0.5,null,null],"cur":[0.5,null,null]},
-  {"a":null,"tm":"28","t":"1st Quarter Spread","ti":"77","op":[-0.5,null,null],"cur":[-0.5,null,null]}
+  {"a":null,"tm":"28","t":"1st Quarter Spread","ti":"77","op":[-0.5,null,null],"cur":[-0.5,null,null]},
+  {"a":null,"t":"2nd Quarter Total","ti":"78","op":[12.5,null,null],"cur":[12.5,null,null]},
+  {"a":null,"t":"2nd Quarter Total","ti":"78","op":[12.5,null,null],"cur":[12.5,null,null]},
+  {"a":null,"tm":"22","t":"2nd Quarter Moneyline","ti":"79"},
+  {"a":null,"tm":"28","t":"2nd Quarter Moneyline","ti":"79"},
+  {"a":null,"tm":"22","t":"2nd Quarter Spread","ti":"80","op":[2.5,null,null],"cur":[2.5,null,null]},
+  {"a":null,"tm":"28","t":"2nd Quarter Spread","ti":"80","op":[-2.5,null,null],"cur":[-2.5,null,null]},
+  {"a":null,"t":"3rd Quarter Total","ti":"81","op":[7.5,null,null],"cur":[7.5,null,null]},
+  {"a":null,"t":"3rd Quarter Total","ti":"81","op":[7.5,null,null],"cur":[7.5,null,null]},
+  {"a":null,"tm":"22","t":"3rd Quarter Moneyline","ti":"82"},
+  {"a":null,"tm":"28","t":"3rd Quarter Moneyline","ti":"82"},
+  {"a":null,"tm":"22","t":"3rd Quarter Spread","ti":"83","op":[0.5,null,null],"cur":[0.5,null,null]},
+  {"a":null,"tm":"28","t":"3rd Quarter Spread","ti":"83","op":[-0.5,null,null],"cur":[-0.5,null,null]},
+  {"a":null,"t":"4th Quarter Total","ti":"84","op":[11.5,null,null],"cur":[11.5,null,null]},
+  {"a":null,"t":"4th Quarter Total","ti":"84","op":[11.5,null,null],"cur":[11.5,null,null]},
+  {"a":null,"tm":"22","t":"4th Quarter Moneyline","ti":"85"},
+  {"a":null,"tm":"28","t":"4th Quarter Moneyline","ti":"85"},
+  {"a":null,"tm":"22","t":"4th Quarter Spread","ti":"86","op":[1.5,null,null],"cur":[2.5,null,null]},
+  {"a":null,"tm":"28","t":"4th Quarter Spread","ti":"86","op":[-1.5,null,null],"cur":[-2.5,null,null]},
+  {"a":null,"tm":"22","t":"Team 1st Half Total Points","ti":"99","op":[7.5,null,null],"cur":[7.5,null,null]},
+  {"a":null,"tm":"22","t":"Team 1st Half Total Points","ti":"99","op":[7.5,null,null],"cur":[7.5,null,null]},
+  {"a":null,"tm":"28","t":"Team 1st Half Total Points","ti":"99","op":[12.5,null,null],"cur":[12.5,null,null]},
+  {"a":null,"tm":"28","t":"Team 1st Half Total Points","ti":"99","op":[12.5,null,null],"cur":[12.5,null,null]}
  ]
   }
  },
