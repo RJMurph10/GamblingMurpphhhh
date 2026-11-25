@@ -118,11 +118,16 @@ export const teamByAbbr = (abbr: string): Team | undefined =>
 export const isCollegeId = (id: string) => id.startsWith("cfb-");
 
 /**
- * Team logo from ESPN's public team-logo CDN, keyed by lowercase abbreviation (the Rams included: the
- * owner prefers ESPN's standard blue-and-gold LA logo to the dark-background variant).
+ * Team logo from ESPN's public team-logo CDN, keyed by lowercase abbreviation. The Rams use the
+ * blue-and-gold LA logo the owner supplied (public/logos/lar.png): ESPN's standard one is all navy
+ * and its dark variant all white.
  */
 export const teamLogo = (team: Team): string =>
-  team.logo ? team.logo : `https://a.espncdn.com/i/teamlogos/nfl/500/${team.abbr.toLowerCase()}.png`;
+  team.logo
+    ? team.logo
+    : team.id === "rams"
+      ? "/logos/lar.png"
+      : `https://a.espncdn.com/i/teamlogos/nfl/500/${team.abbr.toLowerCase()}.png`;
 
 /** ESPN's standard logo (the same as `teamLogo` for NFL clubs). */
 export const teamLogoLight = (team: Team): string =>
