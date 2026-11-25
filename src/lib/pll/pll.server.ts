@@ -260,7 +260,7 @@ export const STALE_MS = 2 * 24 * 3_600_000;
 const ERA_LOGOS: Record<string, [from: number, to: number, logo: string][]> = {
   // From the owner. 2019-2023: the clubs' original PLL logos (the six 2019 clubs, the Waterdogs from 2020,
   // the Cannons from 2021). 2024-2026: the city/state-era logos (the Outlaws replaced Chrome in 2024); the
-  // Whipsnakes' 2024-25 logo had gold trim, and 2026 on falls back to ESPN's (teal).
+  // Whipsnakes' 2024-25 logo had gold trim; in 2026 it switched to cyan.
   "127631": [
     [2019, 2023, "/logos/pll-archers-app.png"],
     [2024, 2026, "/logos/pll-archers-2024.png"],
@@ -285,6 +285,7 @@ const ERA_LOGOS: Record<string, [from: number, to: number, logo: string][]> = {
   "127638": [
     [2019, 2023, "/logos/pll-whipsnakes-app.png"],
     [2024, 2025, "/logos/pll-whipsnakes-2024.png"],
+    [2026, 2026, "/logos/pll-whipsnakes-2026.png"],
   ],
   "122896": [[2024, 2026, "/logos/pll-outlaws-2024.png"]],
   "122997": [
