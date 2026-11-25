@@ -56,9 +56,10 @@
 :root {
   --radius: 0.75rem;
 
-  --bg: oklch(0.158 0.026 266);
-  --panel: oklch(0.247 0.027 266);
-  --panel2: oklch(0.203 0.025 266);
+  /* Near-black backdrop with charcoal panels (was navy: oklch(0.158 0.026 266) / 0.247 / 0.203). */
+  --bg: oklch(0.13 0 0);
+  --panel: oklch(0.22 0 0);
+  --panel2: oklch(0.18 0 0);
   --ink: oklch(0.959 0.006 247);
   --mute: oklch(0.683 0.018 253);
   --faint: oklch(0.521 0.019 253);
@@ -94,13 +95,13 @@
   --popover: var(--panel);
   --popover-foreground: var(--ink);
   --primary: var(--acc);
-  --primary-foreground: oklch(0.158 0.026 266);
+  --primary-foreground: oklch(0.13 0 0);
   --secondary: var(--panel2);
   --secondary-foreground: var(--ink);
   --muted: var(--panel2);
   --muted-foreground: var(--mute);
   --accent: var(--acc);
-  --accent-foreground: oklch(0.158 0.026 266);
+  --accent-foreground: oklch(0.13 0 0);
   --destructive: var(--loss);
   --destructive-foreground: var(--ink);
   --border: oklch(0.912 0.008 247 / 10%);
@@ -152,7 +153,7 @@
   );
   border: 1px solid oklch(0.912 0.008 247 / 0.09);
   box-shadow:
-    0 24px 60px -28px oklch(0.12 0.03 266 / 0.8),
+    0 24px 60px -28px oklch(0.06 0 0 / 0.8),
     inset 0 1px 0 oklch(0.912 0.008 247 / 0.12);
   border-radius: 16px;
 }
