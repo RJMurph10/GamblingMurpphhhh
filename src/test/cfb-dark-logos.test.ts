@@ -12,6 +12,8 @@ describe("college football logos on the dark site", () => {
     expect(darkCollegeLogo("https://a.espncdn.com/i/teamlogos/ncaa/500/2132.png")).toContain("/500-dark/2132"); // Cincinnati
     for (const id of ["333", "127", "2633"])
       expect(darkCollegeLogo(`https://a.espncdn.com/i/teamlogos/ncaa/500/${id}.png`)).toContain(`/500/${id}`);
+    for (const id of ["252", "2649"]) // BYU, Toledo: owner prefers the dark version
+      expect(darkCollegeLogo(`https://a.espncdn.com/i/teamlogos/ncaa/500/${id}.png`)).toContain(`/500-dark/${id}`);
     expect(lightCollegeLogo(DARK)).toBe(STD);
     expect(darkCollegeLogo(undefined)).toBeUndefined();
   });
