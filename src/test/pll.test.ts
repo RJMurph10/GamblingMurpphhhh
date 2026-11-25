@@ -1,3 +1,4 @@
+import { existsSync } from "node:fs";
 import { afterEach, describe, expect, it, vi } from "vitest";
 import fixture from "./fixtures/pll-2026.json";
 import { fetchPllSeason } from "@/lib/pll/pll.server";
@@ -98,6 +99,17 @@ describe("withEraLogos", () => {
     expect(withEraLogos(season(2023)).teams[0].logo).toBe("/logos/pll-archers-original.png");
     expect(withEraLogos(season(2023)).teams[1].logo).toBe("espn/122896");
     expect(withEraLogos(season(2024)).teams[0].logo).toBe("espn/127631");
+  });
+  it("uses the 2019 app icons in 2019 only, including Chrome's", () => {
+    expect(withEraLogos(season(2019)).teams[0].logo).toBe("/logos/pll-archers-2019.png");
+    expect(withEraLogos(season(2020)).teams[0].logo).toBe("/logos/pll-archers-original.png");
+    const chrome = (y: number) =>
+      withEraLogos({ season: y, teams: [{ ...team("127635"), id: "127635", logo: "/logos/pll-chrome.png" }], games: [] })
+        .teams[0].logo;
+    expect(chrome(2019)).toBe("/logos/pll-chrome-2019.png");
+    expect(chrome(2021)).toBe("/logos/pll-chrome.png");
+    for (const n of ["archers", "atlas", "chaos", "chrome", "redwoods", "whipsnakes"])
+      expect(existsSync(`public/logos/pll-${n}-2019.png`), n).toBe(true);
   });
   it("drops the city before 2024", () => {
     expect(withEraLogos(season(2023)).teams[0].name).toBe("Archers Lacrosse Club");
