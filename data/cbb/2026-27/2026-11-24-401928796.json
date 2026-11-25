@@ -7,18 +7,18 @@
   "id": "2534",
   "abbr": "SHSU",
   "name": "Sam Houston Bearkats",
-  "score": 0
+  "score": 73
  },
  "home": {
   "id": "265",
   "abbr": "WSU",
   "name": "Washington State Cougars",
-  "score": 0
+  "score": 80
  },
  "neutral": false,
  "venue": "Beasley Coliseum",
  "seasonType": 2,
- "state": "pre",
+ "state": "post",
  "lines": {
   "open": {
    "at": "2026-11-24T00:58:17.105Z",
@@ -933,5 +933,9 @@
    ]
   }
  },
- "props": {}
+ "props": {},
+ "final": {
+  "away": 73,
+  "home": 80
+ }
 }

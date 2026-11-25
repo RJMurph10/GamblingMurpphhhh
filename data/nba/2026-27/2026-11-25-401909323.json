@@ -586,11 +586,11 @@
    ]
   },
   "latest": {
-   "at": "2026-11-24T21:19:02.149Z",
+   "at": "2026-11-25T04:55:12.027Z",
    "count": 6,
    "rows": [
-  {"a":null,"tm":"10","t":"Team Total Points","ti":"98","op":[117.5,null,null],"cur":[116.5,null,null],"px":[-118,-105]},
-  {"a":null,"tm":"10","t":"Team Total Points","ti":"98","op":[117.5,null,null],"cur":[116.5,null,null],"px":[-102,-115]},
+  {"a":null,"tm":"10","t":"Team Total Points","ti":"98","op":[117.5,null,null],"cur":[117.5,null,null],"px":[-105,-105]},
+  {"a":null,"tm":"10","t":"Team Total Points","ti":"98","op":[117.5,null,null],"cur":[117.5,null,null],"px":[-115,-115]},
   {"a":null,"tm":"21","t":"Team Total Points","ti":"98","op":[106.5,null,null],"cur":[107.5,null,null],"px":[-105,-105]},
   {"a":null,"tm":"21","t":"Team Total Points","ti":"98","op":[106.5,null,null],"cur":[107.5,null,null],"px":[-115,-115]},
   {"a":null,"t":"Will There Be Overtime?","ti":"153","cur":[null,1900,null]},

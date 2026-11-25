@@ -1,24 +1,24 @@
 {
  "id": "401911535",
  "league": "cbb",
- "date": "2026-11-25T01:30Z",
+ "date": "2026-11-25T02:00Z",
  "name": "UTEP VS COFC",
  "away": {
   "id": "2638",
   "abbr": "UTEP",
   "name": "UTEP Miners",
-  "score": 0
+  "score": 80
  },
  "home": {
   "id": "232",
   "abbr": "COFC",
   "name": "Charleston Cougars",
-  "score": 0
+  "score": 69
  },
  "neutral": true,
  "venue": "Hard Rock Hotel Riviera Maya",
  "seasonType": 2,
- "state": "pre",
+ "state": "post",
  "lines": {
   "open": {
    "at": "2026-11-24T00:58:17.105Z",
@@ -922,5 +922,9 @@
    ]
   }
  },
- "props": {}
+ "props": {},
+ "final": {
+  "away": 80,
+  "home": 69
+ }
 }

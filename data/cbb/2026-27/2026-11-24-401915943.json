@@ -1,24 +1,24 @@
 {
  "id": "401915943",
  "league": "cbb",
- "date": "2026-11-25T03:30Z",
+ "date": "2026-11-25T04:18Z",
  "name": "ORE VS SJU",
  "away": {
   "id": "2483",
   "abbr": "ORE",
   "name": "Oregon Ducks",
-  "score": 0
+  "score": 22
  },
  "home": {
   "id": "2599",
   "abbr": "SJU",
   "name": "St. John's Red Storm",
-  "score": 0
+  "score": 26
  },
  "neutral": true,
  "venue": "Michelob ULTRA Arena",
  "seasonType": 2,
- "state": "pre",
+ "state": "in",
  "lines": {
   "open": {
    "at": "2026-11-22T23:50:51.406Z",

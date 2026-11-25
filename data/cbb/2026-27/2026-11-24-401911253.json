@@ -1,24 +1,24 @@
 {
  "id": "401911253",
  "league": "cbb",
- "date": "2026-11-25T02:30Z",
+ "date": "2026-11-25T02:55Z",
  "name": "SLU VS GCU",
  "away": {
   "id": "139",
   "abbr": "SLU",
   "name": "Saint Louis Billikens",
-  "score": 0
+  "score": 70
  },
  "home": {
   "id": "2253",
   "abbr": "GCU",
   "name": "Grand Canyon Lopes",
-  "score": 0
+  "score": 72
  },
  "neutral": true,
  "venue": "Acrisure Arena",
  "seasonType": 2,
- "state": "pre",
+ "state": "in",
  "lines": {
   "open": {
    "at": "2026-11-24T00:58:17.105Z",

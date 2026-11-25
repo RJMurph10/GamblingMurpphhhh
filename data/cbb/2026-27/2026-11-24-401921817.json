@@ -7,18 +7,18 @@
   "id": "339",
   "abbr": "EVAN",
   "name": "Evansville Purple Aces",
-  "score": 0
+  "score": 67
  },
  "home": {
   "id": "142",
   "abbr": "MIZ",
   "name": "Missouri Tigers",
-  "score": 0
+  "score": 78
  },
  "neutral": false,
  "venue": "Mizzou Arena",
  "seasonType": 2,
- "state": "pre",
+ "state": "post",
  "lines": {
   "open": {
    "at": "2026-11-24T00:58:17.105Z",
@@ -769,5 +769,9 @@
    ]
   }
  },
- "props": {}
+ "props": {},
+ "final": {
+  "away": 67,
+  "home": 78
+ }
 }

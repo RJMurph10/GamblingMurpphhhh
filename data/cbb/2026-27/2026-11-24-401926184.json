@@ -7,18 +7,18 @@
   "id": "2430",
   "abbr": "UNCG",
   "name": "UNC Greensboro Spartans",
-  "score": 0
+  "score": 65
  },
  "home": {
   "id": "2540",
   "abbr": "UCSB",
   "name": "UC Santa Barbara Gauchos",
-  "score": 0
+  "score": 85
  },
  "neutral": false,
  "venue": "The Thunderdome",
  "seasonType": 2,
- "state": "pre",
+ "state": "post",
  "lines": {
   "open": {
    "at": "2026-11-24T00:58:17.105Z",
@@ -933,5 +933,9 @@
    ]
   }
  },
- "props": {}
+ "props": {},
+ "final": {
+  "away": 65,
+  "home": 85
+ }
 }
