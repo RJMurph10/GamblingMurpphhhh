@@ -1,0 +1,31 @@
+name: CFB logo probe (research)
+on:
+  push:
+    branches: [cfb-logo-probe]
+    paths: [probe/cfb-logos.mjs, .github/workflows/cfb-logo-probe.yml]
+permissions:
+  contents: write
+jobs:
+  probe:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with: { node-version: 22 }
+      - run: node probe/cfb-logos.mjs out
+      - name: Publish to props-site/probes
+        run: |
+          url="https://x-access-token:${{ secrets.GITHUB_TOKEN }}@github.com/${{ github.repository }}.git"
+          for attempt in 1 2 3 4 5; do
+            rm -rf dst && git clone -q --depth 1 --branch props-site "$url" dst
+            rm -rf dst/probes/cfb-logos && mkdir -p dst/probes && cp -r out dst/probes/cfb-logos
+            cd dst
+            git config user.name "line-history-bot"
+            git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+            git add -A
+            if git diff --cached --quiet; then exit 0; fi
+            git commit -q -m "probe: cfb logos"
+            if git push -q origin props-site; then exit 0; fi
+            cd ..; sleep $((attempt * 10 + RANDOM % 10))
+          done
+          exit 1
