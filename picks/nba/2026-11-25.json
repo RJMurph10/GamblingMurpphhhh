@@ -1,6 +1,6 @@
 {
  "day": "2026-11-25",
- "updated": "2026-11-24T23:40:34.420Z",
+ "updated": "2026-11-25T15:00:27.053Z",
  "picks": [
   {
    "id": "401909317-spread",
@@ -30,8 +30,24 @@
    "edge": 5.2,
    "best": false,
    "firstSeen": "2026-11-24T15:20:20.474Z",
-   "latest": 238.5,
-   "latestAt": "2026-11-24T23:40:34.420Z",
+   "latest": 237.5,
+   "latestAt": "2026-11-25T15:00:27.053Z",
+   "alerted": false
+  },
+  {
+   "id": "401909318-total",
+   "game": "CHI @ CHA",
+   "tip": "2026-11-26T00:00Z",
+   "market": "total",
+   "pick": "Over 222.5",
+   "line": 222.5,
+   "open": 222.5,
+   "model": 229.2,
+   "edge": 6.7,
+   "best": false,
+   "firstSeen": "2026-11-25T15:00:27.053Z",
+   "latest": 220.5,
+   "latestAt": "2026-11-25T15:00:27.053Z",
    "alerted": false
   },
   {
@@ -47,7 +63,7 @@
    "best": false,
    "firstSeen": "2026-11-24T23:40:34.420Z",
    "latest": -3.5,
-   "latestAt": "2026-11-24T23:40:34.420Z",
+   "latestAt": "2026-11-25T15:00:27.053Z",
    "alerted": false
   },
   {
@@ -78,8 +94,24 @@
    "edge": 9.2,
    "best": true,
    "firstSeen": "2026-11-24T15:20:20.474Z",
-   "latest": 224.5,
-   "latestAt": "2026-11-24T23:40:34.420Z",
+   "latest": 222.5,
+   "latestAt": "2026-11-25T15:00:27.053Z",
+   "alerted": false
+  },
+  {
+   "id": "401909322-spread",
+   "game": "BKN @ MIL",
+   "tip": "2026-11-26T01:00Z",
+   "market": "spread",
+   "pick": "MIL -1.5",
+   "line": -1.5,
+   "open": -1.5,
+   "model": 2.8,
+   "edge": 1.3,
+   "best": false,
+   "firstSeen": "2026-11-25T15:00:27.053Z",
+   "latest": -1.5,
+   "latestAt": "2026-11-25T15:00:27.053Z",
    "alerted": false
   },
   {
@@ -94,8 +126,56 @@
    "edge": 2.2,
    "best": false,
    "firstSeen": "2026-11-24T15:20:20.474Z",
-   "latest": -10.5,
-   "latestAt": "2026-11-24T15:20:20.474Z",
+   "latest": -9.5,
+   "latestAt": "2026-11-25T15:00:27.053Z",
+   "alerted": false
+  },
+  {
+   "id": "401909324-spread",
+   "game": "SAC @ GS",
+   "tip": "2026-11-26T03:00Z",
+   "market": "spread",
+   "pick": "GS -6.5",
+   "line": -6.5,
+   "open": -5.5,
+   "model": 11.4,
+   "edge": 4.9,
+   "best": true,
+   "firstSeen": "2026-11-25T15:00:27.053Z",
+   "latest": -6.5,
+   "latestAt": "2026-11-25T15:00:27.053Z",
+   "alerted": false
+  },
+  {
+   "id": "401909325-spread",
+   "game": "SA @ POR",
+   "tip": "2026-11-26T03:00Z",
+   "market": "spread",
+   "pick": "POR +2.5",
+   "line": 2.5,
+   "open": 4.5,
+   "model": -1.5,
+   "edge": 1,
+   "best": false,
+   "firstSeen": "2026-11-25T15:00:27.053Z",
+   "latest": 2.5,
+   "latestAt": "2026-11-25T15:00:27.053Z",
+   "alerted": false
+  },
+  {
+   "id": "401909325-total",
+   "game": "SA @ POR",
+   "tip": "2026-11-26T03:00Z",
+   "market": "total",
+   "pick": "Under 237.5",
+   "line": 237.5,
+   "open": 237.5,
+   "model": 224.1,
+   "edge": 13.4,
+   "best": true,
+   "firstSeen": "2026-11-25T15:00:27.053Z",
+   "latest": 225.5,
+   "latestAt": "2026-11-25T15:00:27.053Z",
    "alerted": false
   }
  ]
