@@ -95,10 +95,14 @@ describe("withEraLogos", () => {
     logo: `espn/${id}`,
   });
   const season = (y: number) => ({ season: y, teams: [team("127631"), team("122896")], games: [] });
-  it("uses the original club logos through 2023 and ESPN's after", () => {
+  it("uses the original club logos through 2023, the 2024-era logos for 2024-2026, ESPN's after", () => {
     expect(withEraLogos(season(2023)).teams[0].logo).toBe("/logos/pll-archers-app.png");
     expect(withEraLogos(season(2023)).teams[1].logo).toBe("espn/122896");
-    expect(withEraLogos(season(2024)).teams[0].logo).toBe("espn/127631");
+    expect(withEraLogos(season(2024)).teams[0].logo).toBe("/logos/pll-archers-2024.png");
+    expect(withEraLogos(season(2026)).teams[1].logo).toBe("/logos/pll-outlaws-2024.png");
+    expect(withEraLogos(season(2027)).teams[0].logo).toBe("espn/127631");
+    for (const n of ["archers", "atlas", "cannons", "chaos", "outlaws", "redwoods", "whipsnakes", "waterdogs"])
+      expect(existsSync(`public/logos/pll-${n}-2024.png`), n).toBe(true);
   });
   it("uses the owner's original logos 2019-2023, including Chrome's, the Waterdogs' and the Cannons'", () => {
     expect(withEraLogos(season(2019)).teams[0].logo).toBe("/logos/pll-archers-app.png");
