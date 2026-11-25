@@ -1,7 +1,24 @@
 {
  "day": "2026-11-27",
- "updated": "2026-11-24T23:56:41.323Z",
+ "updated": "2026-11-25T08:47:09.799Z",
  "picks": [
+  {
+   "id": "401873083-spread-qb-change",
+   "game": "DEN @ PIT",
+   "tip": "2026-11-27T20:00Z",
+   "market": "spread",
+   "pick": "DEN -3.5",
+   "line": 3.5,
+   "open": 1.5,
+   "model": null,
+   "edge": null,
+   "best": false,
+   "tag": "qb-change",
+   "firstSeen": "2026-11-25T08:47:09.799Z",
+   "lastSeen": "2026-11-25T08:47:09.799Z",
+   "latest": 3.5,
+   "latestAt": "2026-11-25T08:47:09.799Z"
+  },
   {
    "id": "401873083-total-wind",
    "game": "DEN @ PIT",
@@ -16,9 +33,9 @@
    "tag": "wind",
    "note": "13 mph",
    "firstSeen": "2026-11-22T11:38:16.930Z",
-   "lastSeen": "2026-11-24T23:56:41.323Z",
-   "latest": 37.5,
-   "latestAt": "2026-11-24T23:56:41.323Z"
+   "lastSeen": "2026-11-25T08:47:09.799Z",
+   "latest": 36.5,
+   "latestAt": "2026-11-25T08:47:09.799Z"
   }
  ]
 }
