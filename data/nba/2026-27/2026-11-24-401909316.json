@@ -7,18 +7,18 @@
   "id": "6",
   "abbr": "DAL",
   "name": "Dallas Mavericks",
-  "score": 84
+  "score": 120
  },
  "home": {
   "id": "7",
   "abbr": "DEN",
   "name": "Denver Nuggets",
-  "score": 77
+  "score": 101
  },
  "neutral": false,
  "venue": "Ball Arena",
  "seasonType": 2,
- "state": "in",
+ "state": "post",
  "lines": {
   "open": {
    "at": "2026-11-24T00:58:17.105Z",
@@ -4525,5 +4525,9 @@
    "Sergio de Larrea",
    "DAL"
   ]
+ },
+ "final": {
+  "away": 120,
+  "home": 101
  }
 }

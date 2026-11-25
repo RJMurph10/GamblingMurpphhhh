@@ -7,18 +7,18 @@
   "id": "139",
   "abbr": "SLU",
   "name": "Saint Louis Billikens",
-  "score": 70
+  "score": 88
  },
  "home": {
   "id": "2253",
   "abbr": "GCU",
   "name": "Grand Canyon Lopes",
-  "score": 72
+  "score": 91
  },
  "neutral": true,
  "venue": "Acrisure Arena",
  "seasonType": 2,
- "state": "in",
+ "state": "post",
  "lines": {
   "open": {
    "at": "2026-11-24T00:58:17.105Z",
@@ -922,5 +922,9 @@
    ]
   }
  },
- "props": {}
+ "props": {},
+ "final": {
+  "away": 88,
+  "home": 91
+ }
 }

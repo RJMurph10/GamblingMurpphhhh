@@ -7,18 +7,18 @@
   "id": "239",
   "abbr": "BAY",
   "name": "Baylor Bears",
-  "score": 60
+  "score": 68
  },
  "home": {
   "id": "333",
   "abbr": "ALA",
   "name": "Alabama Crimson Tide",
-  "score": 50
+  "score": 63
  },
  "neutral": true,
  "venue": "T-Mobile Arena",
  "seasonType": 2,
- "state": "in",
+ "state": "post",
  "lines": {
   "open": {
    "at": "2026-11-22T23:50:51.406Z",
@@ -851,5 +851,9 @@
    ]
   }
  },
- "props": {}
+ "props": {},
+ "final": {
+  "away": 68,
+  "home": 63
+ }
 }
