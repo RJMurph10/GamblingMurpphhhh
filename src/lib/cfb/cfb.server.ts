@@ -114,7 +114,7 @@ export function fetchCfbRankings(): Promise<CfbRanking[]> {
       ranks: (r.ranks ?? []).map((x: any) => ({
         rank: Number(x.current),
         previous: Number.isFinite(Number(x.previous)) ? Number(x.previous) : undefined,
-        team: parseTeamRef({ ...x.team, logo: x.team?.logos?.[0]?.href ?? x.team?.logo }),
+        team: parseTeamRef(x.team),
         record: x.recordSummary,
       })),
     }));

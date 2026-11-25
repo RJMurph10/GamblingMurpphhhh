@@ -98,6 +98,21 @@ const american = (v: unknown): number | undefined => {
   return n !== undefined && Math.abs(n) >= 100 ? n : undefined;
 };
 
+/**
+ * The site is dark, so college logos use ESPN's dark-background version (".../ncaa/500-dark/<id>.png"):
+ * Iowa's gold Tigerhawk instead of the black one, Cincinnati's white C, Wake Forest in gold. A logo that
+ * fails to load falls back to the standard one (`lightCollegeLogo`).
+ */
+export const darkCollegeLogo = (url: string | undefined): string | undefined =>
+  url?.replace(/\/teamlogos\/ncaa\/500\//, "/teamlogos/ncaa/500-dark/");
+export const lightCollegeLogo = (url: string): string =>
+  url.replace(/\/teamlogos\/ncaa\/500-dark\//, "/teamlogos/ncaa/500/");
+
+const darkRel = (logos: unknown): string | undefined =>
+  Array.isArray(logos)
+    ? logos.find((l: any) => Array.isArray(l?.rel) && l.rel.includes("dark"))?.href
+    : undefined;
+
 export function parseTeamRef(t: any): CfbTeamRef {
   return {
     id: String(t?.id ?? ""),
@@ -105,7 +120,7 @@ export function parseTeamRef(t: any): CfbTeamRef {
     name: String(t?.name ?? ""),
     abbr: String(t?.abbreviation ?? ""),
     shortName: String(t?.shortDisplayName ?? t?.location ?? ""),
-    logo: t?.logo ?? t?.logos?.[0]?.href,
+    logo: darkCollegeLogo(darkRel(t?.logos) ?? t?.logo ?? t?.logos?.[0]?.href),
     color: t?.color,
     conferenceId: t?.conferenceId !== undefined ? String(t.conferenceId) : undefined,
   };
@@ -262,8 +277,7 @@ export function rekeyCollegeTeams(json: unknown): Team[] {
     const prev = found.get(espnId);
     // The site is dark, so prefer ESPN's dark-background logo when the payload lists one.
     const logos: any[] = Array.isArray(o.logos) ? o.logos : [];
-    const dark = logos.find((l) => Array.isArray(l?.rel) && l.rel.includes("dark"));
-    const logo: string | undefined = dark?.href ?? o.logo ?? logos[0]?.href;
+    const logo = darkCollegeLogo(darkRel(logos) ?? o.logo ?? logos[0]?.href);
     const team: Team = {
       id: `cfb-${espnId}`,
       espnId,
