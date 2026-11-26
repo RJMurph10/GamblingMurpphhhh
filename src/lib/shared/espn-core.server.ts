@@ -285,15 +285,20 @@ function mergeOdds(base: Game["odds"], extra: Game["odds"]): Game["odds"] {
 export const hasMoneylines = (odds?: Game["odds"]) =>
   odds?.homeMoneyline !== undefined && odds?.awayMoneyline !== undefined;
 
+/** Events whose last odds lookup failed outright (ESPN errors / timeouts), so "no lines" can't be trusted. */
+const failedLookups = new Set<string>();
+
 async function loadHistoricalOdds(
   eventId: string,
   league: FeedLeague = "nfl",
 ): Promise<HistoricalOdds> {
   const { coreOdds: CORE_ODDS, summary: SUMMARY } = FEEDS[league];
   const result: HistoricalOdds = {};
+  let answered = false;
   // 1) Core odds feed: look through every provider for a spread and a total.
   try {
     const data = await fetchJson(`${CORE_ODDS}/${eventId}/competitions/${eventId}/odds`);
+    answered = true;
     for (const odds of Array.isArray(data?.items) ? data.items : []) {
       if (!result.spread && typeof odds?.details === "string" && odds.details.trim()) {
         result.spread = odds.details;
@@ -310,6 +315,7 @@ async function loadHistoricalOdds(
   if (!result.spread || result.total === undefined || !hasMoneylines(result.prices)) {
     try {
       const summary = await fetchJson(`${SUMMARY}?event=${eventId}`);
+      answered = true;
       for (const pick of Array.isArray(summary?.pickcenter) ? summary.pickcenter : []) {
         if (!result.spread && typeof pick?.details === "string" && pick.details.trim()) {
           result.spread = pick.details;
@@ -323,6 +329,8 @@ async function loadHistoricalOdds(
       // leave whatever we found
     }
   }
+  if (answered) failedLookups.delete(`${league}-${eventId}`);
+  else failedLookups.add(`${league}-${eventId}`);
   return result;
 }
 
@@ -347,9 +355,10 @@ export async function fetchHistoricalOdds(
 const LOOKUPS_PER_LOAD = 48;
 
 /** Odds of finished games never change, so they're kept long-term (shared with every server instance). */
+const noLines = (o: HistoricalOdds) => !o?.spread && o?.total === undefined;
 const finalOddsStores = {
-  nfl: finalLinesStore<HistoricalOdds>("nfl-odds"),
-  cfb: finalLinesStore<HistoricalOdds>("cfb-odds"),
+  nfl: finalLinesStore<HistoricalOdds>("nfl-odds", noLines),
+  cfb: finalLinesStore<HistoricalOdds>("cfb-odds", noLines),
 };
 
 /**
@@ -378,7 +387,10 @@ export async function backfillHistoricalOdds(
   const toFetch: Game[] = [];
   for (const g of missing) {
     const hit = g.status === "final" ? stored.get(g.id) : undefined;
-    if (hit) apply(g, hit);
+    // Every NFL game has lines, so a stored "no lines" entry there is a failed lookup that got saved
+    // (that's how finished games lost their spread and total): look it up again. College keeps its
+    // stored "no lines" (FCS opponents ESPN never lists).
+    if (hit && !(league === "nfl" && noLines(hit))) apply(g, hit);
     else toFetch.push(g);
   }
   // Newest first, and only so many per load: a fresh server reloading a whole season (hundreds of
@@ -399,7 +411,10 @@ export async function backfillHistoricalOdds(
           // A game finished over a day ago with no lines never gets any (mostly FCS opponents):
           // remember that too, so it isn't looked up again on every load.
           const old = Date.parse(g.kickoffIso ?? "") < Date.now() - 36 * 3_600_000;
-          if (g.status === "final" && (has || old)) found.push({ id: g.id, date: dateOf(g), odds });
+          // Only a real answer from ESPN counts as "no lines", and never for the NFL.
+          const trustedEmpty =
+            old && league === "cfb" && !failedLookups.has(`${league}-${g.id.replace(prefix, "")}`);
+          if (g.status === "final" && (has || trustedEmpty)) found.push({ id: g.id, date: dateOf(g), odds });
         } catch {
           // leave the dash; it retries the next time the schedule reloads
         }
