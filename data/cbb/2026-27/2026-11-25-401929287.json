@@ -1,24 +1,24 @@
 {
  "id": "401929287",
  "league": "cbb",
- "date": "2026-11-26T02:05Z",
+ "date": "2026-11-26T02:29Z",
  "name": "WAKE VS MSST",
  "away": {
   "id": "154",
   "abbr": "WAKE",
   "name": "Wake Forest Demon Deacons",
-  "score": 0
+  "score": 78
  },
  "home": {
   "id": "344",
   "abbr": "MSST",
   "name": "Mississippi State Bulldogs",
-  "score": 0
+  "score": 71
  },
  "neutral": true,
  "venue": "Imperial Arena",
  "seasonType": 2,
- "state": "pre",
+ "state": "post",
  "lines": {
   "open": {
    "at": "2026-11-24T21:19:02.149Z",
@@ -934,5 +934,9 @@
    ]
   }
  },
- "props": {}
+ "props": {},
+ "final": {
+  "away": 78,
+  "home": 71
+ }
 }

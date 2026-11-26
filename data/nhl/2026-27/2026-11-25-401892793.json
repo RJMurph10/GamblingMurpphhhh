@@ -13,12 +13,12 @@
   "id": "25",
   "abbr": "ANA",
   "name": "Anaheim Ducks",
-  "score": 0
+  "score": 6
  },
  "neutral": false,
  "venue": "Honda Center",
  "seasonType": 2,
- "state": "pre",
+ "state": "in",
  "lines": {
   "open": {
    "at": "2026-11-24T21:19:02.149Z",

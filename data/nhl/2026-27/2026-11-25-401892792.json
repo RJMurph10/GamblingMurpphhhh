@@ -13,12 +13,12 @@
   "id": "17",
   "abbr": "COL",
   "name": "Colorado Avalanche",
-  "score": 0
+  "score": 6
  },
  "neutral": false,
  "venue": "Ball Arena",
  "seasonType": 2,
- "state": "pre",
+ "state": "post",
  "lines": {
   "open": {
    "at": "2026-11-24T21:19:02.149Z",
@@ -2756,5 +2756,9 @@
    "Ivan Demidov",
    "MTL"
   ]
+ },
+ "final": {
+  "away": 0,
+  "home": 6
  }
 }

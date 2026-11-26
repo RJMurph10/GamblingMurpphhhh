@@ -7,18 +7,18 @@
   "id": "264",
   "abbr": "WASH",
   "name": "Washington Huskies",
-  "score": 0
+  "score": 78
  },
  "home": {
   "id": "2670",
   "abbr": "VCU",
   "name": "VCU Rams",
-  "score": 0
+  "score": 80
  },
  "neutral": true,
  "venue": "Lahaina Civic Center",
  "seasonType": 2,
- "state": "pre",
+ "state": "post",
  "lines": {
   "open": {
    "at": "2026-11-25T15:42:08.656Z",
@@ -933,5 +933,9 @@
    ]
   }
  },
- "props": {}
+ "props": {},
+ "final": {
+  "away": 78,
+  "home": 80
+ }
 }

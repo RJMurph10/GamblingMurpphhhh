@@ -7,18 +7,18 @@
   "id": "4",
   "abbr": "CHI",
   "name": "Chicago Blackhawks",
-  "score": 0
+  "score": 3
  },
  "home": {
   "id": "124292",
   "abbr": "SEA",
   "name": "Seattle Kraken",
-  "score": 0
+  "score": 1
  },
  "neutral": false,
  "venue": "Climate Pledge Arena",
  "seasonType": 2,
- "state": "pre",
+ "state": "post",
  "lines": {
   "open": {
    "at": "2026-11-24T21:19:02.149Z",
@@ -2644,5 +2644,9 @@
    "Jake O'Brien",
    "SEA"
   ]
+ },
+ "final": {
+  "away": 3,
+  "home": 1
  }
 }

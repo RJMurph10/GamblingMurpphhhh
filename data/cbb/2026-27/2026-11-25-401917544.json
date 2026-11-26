@@ -1,24 +1,24 @@
 {
  "id": "401917544",
  "league": "cbb",
- "date": "2026-11-26T03:30Z",
+ "date": "2026-11-26T03:55Z",
  "name": "PAC VS JXST",
  "away": {
   "id": "279",
   "abbr": "PAC",
   "name": "Pacific Tigers",
-  "score": 0
+  "score": 63
  },
  "home": {
   "id": "55",
   "abbr": "JXST",
   "name": "Jacksonville State Gamecocks",
-  "score": 0
+  "score": 64
  },
  "neutral": true,
  "venue": "Resorts World Event Center",
  "seasonType": 2,
- "state": "pre",
+ "state": "in",
  "lines": {
   "open": {
    "at": "2026-11-25T00:07:42.175Z",
