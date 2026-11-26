@@ -351,6 +351,34 @@ export async function fetchHistoricalOdds(
   return value;
 }
 
+const SAVED_NFL_LINES_URL = (season: number) =>
+  `https://raw.githubusercontent.com/RJMurph10/gamblingnfl/props-site/nfl/closing-lines-${season}.json`;
+let savedNflLines: { at: number; games: Record<string, HistoricalOdds> } | null = null;
+
+/** props-site/nfl/closing-lines-<season>.json as ESPN id -> odds (cached 20 minutes; {} if it can't load). */
+export async function savedNflClosingLines(): Promise<Record<string, HistoricalOdds>> {
+  if (savedNflLines && Date.now() - savedNflLines.at < 20 * 60_000) return savedNflLines.games;
+  try {
+    const res = await fetch(SAVED_NFL_LINES_URL(SEASON), { signal: AbortSignal.timeout(6000) });
+    const data = res.ok ? ((await res.json()) as { games?: Record<string, any> }) : null;
+    const games: Record<string, HistoricalOdds> = {};
+    for (const [id, r] of Object.entries(data?.games ?? {})) {
+      const prices: NonNullable<Game["odds"]> = {};
+      for (const k of ["homeMoneyline", "awayMoneyline", "homeSpreadOdds", "awaySpreadOdds", "overOdds", "underOdds"] as const)
+        if (typeof r?.[k] === "number") prices[k] = r[k];
+      games[id] = {
+        ...(typeof r?.spread === "string" && r.spread ? { spread: r.spread } : {}),
+        ...(typeof r?.total === "number" ? { total: r.total } : {}),
+        ...(Object.keys(prices).length ? { prices } : {}),
+      };
+    }
+    if (data) savedNflLines = { at: Date.now(), games };
+    return games;
+  } catch {
+    return savedNflLines?.games ?? {};
+  }
+}
+
 /** Most odds lookups one schedule load makes (the rest wait for the next load). */
 const LOOKUPS_PER_LOAD = 48;
 
@@ -384,8 +412,16 @@ export async function backfillHistoricalOdds(
     if (!g.total && typeof odds.total === "number") g.total = odds.total;
     if (odds.prices) g.odds = mergeOdds(g.odds, odds.prices);
   };
+  // NFL: the saved closing lines (props-site, refreshed by GitHub Actions) cover every finished game
+  // in one request, so the season never depends on hundreds of per-game ESPN lookups.
+  const saved = league === "nfl" && finals.length ? await savedNflClosingLines() : null;
   const toFetch: Game[] = [];
   for (const g of missing) {
+    const file = g.status === "final" ? saved?.[g.id.replace(/^espn-/, "")] : undefined;
+    if (file && (file.spread || file.total !== undefined)) {
+      apply(g, file);
+      if (!needsOdds(g)) continue;
+    }
     const hit = g.status === "final" ? stored.get(g.id) : undefined;
     // Every NFL game has lines, so a stored "no lines" entry there is a failed lookup that got saved
     // (that's how finished games lost their spread and total): look it up again. College keeps its
@@ -790,9 +826,17 @@ export function mapEvent(event: any, week: number): Game | null {
   if (!homeTeam || !awayTeam) return null;
 
   const line = (c: any) =>
-    (c?.linescores ?? []).map((ls: any) => Math.round(Number(ls?.value ?? 0)));
-  const awayQ = line(away);
-  const homeQ = line(home);
+    (c?.linescores ?? []).map((ls: any) => Math.round(Number(ls?.value ?? ls?.displayValue ?? 0)) || 0);
+  // ESPN's final score wins when its quarter-by-quarter lines are missing or don't add up to it
+  // (otherwise a finished game reads 0-0): keep the score as one entry so the total is right.
+  const checked = (c: any, q: number[]) => {
+    const score = Number(c?.score?.value ?? c?.score?.displayValue ?? c?.score);
+    if (!Number.isFinite(score) || score <= 0) return q;
+    return q.reduce((a, b) => a + b, 0) === score ? q : [score];
+  };
+  const done = comp.status?.type?.completed === true;
+  const awayQ = done ? checked(away, line(away)) : line(away);
+  const homeQ = done ? checked(home, line(home)) : line(home);
   const odds = comp.odds?.[0];
 
   const sit = comp.situation;
