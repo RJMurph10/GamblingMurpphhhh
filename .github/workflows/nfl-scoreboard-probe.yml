@@ -2,7 +2,7 @@ name: NFL scoreboard probe (research)
 on:
   push:
     branches: [nfl-scoreboard-probe]
-    paths: [probe/**, .github/workflows/nfl-scoreboard-probe.yml]
+    paths: [src/test/zz-probe-schedule-live.test.ts, .github/workflows/nfl-scoreboard-probe.yml]
 jobs:
   probe:
     runs-on: ubuntu-latest
@@ -11,4 +11,4 @@ jobs:
       - uses: actions/setup-node@v4
         with: { node-version: 22 }
       - run: npm ci --no-audit --no-fund || npm install --no-audit --no-fund
-      - run: npx vitest run probe/schedule-live.test.ts --dir . 2>&1 | tail -80
+      - run: npx vitest run src/test/zz-probe-schedule-live.test.ts 2>&1 | tail -80
