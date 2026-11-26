@@ -1,6 +1,6 @@
 {
  "day": "2026-11-27",
- "updated": "2026-11-26T03:38:32.987Z",
+ "updated": "2026-11-26T17:03:09.236Z",
  "picks": [
   {
    "id": "401856762-spread-rivalry",
@@ -15,9 +15,9 @@
    "best": true,
    "tag": "rivalry",
    "firstSeen": "2026-11-22T01:25:07.655Z",
-   "lastSeen": "2026-11-26T03:38:32.987Z",
+   "lastSeen": "2026-11-26T17:03:09.236Z",
    "latest": -18.5,
-   "latestAt": "2026-11-26T03:38:32.987Z"
+   "latestAt": "2026-11-26T17:03:09.236Z"
   },
   {
    "id": "401858536-spread-rivalry",
@@ -32,9 +32,9 @@
    "best": true,
    "tag": "rivalry",
    "firstSeen": "2026-11-20T20:30:09.984Z",
-   "lastSeen": "2026-11-26T03:38:32.987Z",
+   "lastSeen": "2026-11-26T17:03:09.236Z",
    "latest": -4.5,
-   "latestAt": "2026-11-26T03:38:32.987Z"
+   "latestAt": "2026-11-26T17:03:09.236Z"
   },
   {
    "id": "401858536-total-open-total",
@@ -49,9 +49,9 @@
    "best": true,
    "tag": "open-total",
    "firstSeen": "2026-11-20T20:30:09.984Z",
-   "lastSeen": "2026-11-26T03:38:32.987Z",
+   "lastSeen": "2026-11-26T17:03:09.236Z",
    "latest": 40.5,
-   "latestAt": "2026-11-26T03:38:32.987Z"
+   "latestAt": "2026-11-26T17:03:09.236Z"
   },
   {
    "id": "401862840-total-under60",
@@ -68,7 +68,7 @@
    "firstSeen": "2026-11-22T19:49:07.490Z",
    "lastSeen": "2026-11-22T19:49:07.490Z",
    "latest": 57.5,
-   "latestAt": "2026-11-26T03:38:32.987Z"
+   "latestAt": "2026-11-26T17:03:09.236Z"
   },
   {
    "id": "401866472-total-weather",
@@ -85,9 +85,9 @@
    "tag": "weather",
    "note": "18 mph · gusts 35 · rain 0.02 in",
    "firstSeen": "2026-11-23T13:07:02.381Z",
-   "lastSeen": "2026-11-26T03:38:32.987Z",
+   "lastSeen": "2026-11-26T17:03:09.236Z",
    "latest": 47.5,
-   "latestAt": "2026-11-26T03:38:32.987Z"
+   "latestAt": "2026-11-26T17:03:09.236Z"
   },
   {
    "id": "401866473-total-weather",
@@ -106,7 +106,7 @@
    "firstSeen": "2026-11-23T13:07:02.381Z",
    "lastSeen": "2026-11-26T03:38:32.987Z",
    "latest": 45.5,
-   "latestAt": "2026-11-26T03:38:32.987Z"
+   "latestAt": "2026-11-26T17:03:09.236Z"
   },
   {
    "id": "401856759-spread-rivalry",
@@ -121,9 +121,9 @@
    "best": true,
    "tag": "rivalry",
    "firstSeen": "2026-11-22T11:38:16.930Z",
-   "lastSeen": "2026-11-26T03:38:32.987Z",
+   "lastSeen": "2026-11-26T17:03:09.236Z",
    "latest": 6.5,
-   "latestAt": "2026-11-26T03:38:32.987Z"
+   "latestAt": "2026-11-26T17:03:09.236Z"
   },
   {
    "id": "401862838-total-open-total",
@@ -138,9 +138,9 @@
    "best": true,
    "tag": "open-total",
    "firstSeen": "2026-11-22T19:49:07.490Z",
-   "lastSeen": "2026-11-26T03:38:32.987Z",
+   "lastSeen": "2026-11-26T17:03:09.236Z",
    "latest": 66.5,
-   "latestAt": "2026-11-26T03:38:32.987Z"
+   "latestAt": "2026-11-26T17:03:09.236Z"
   },
   {
    "id": "401862838-total-under60",
@@ -155,9 +155,9 @@
    "best": false,
    "tag": "under60",
    "firstSeen": "2026-11-22T19:49:07.490Z",
-   "lastSeen": "2026-11-26T03:38:32.987Z",
+   "lastSeen": "2026-11-26T17:03:09.236Z",
    "latest": 66.5,
-   "latestAt": "2026-11-26T03:38:32.987Z"
+   "latestAt": "2026-11-26T17:03:09.236Z"
   },
   {
    "id": "401862838-total-under65",
@@ -172,9 +172,9 @@
    "best": false,
    "tag": "under65",
    "firstSeen": "2026-11-24T02:19:01.221Z",
-   "lastSeen": "2026-11-26T03:38:32.987Z",
+   "lastSeen": "2026-11-26T17:03:09.236Z",
    "latest": 66.5,
-   "latestAt": "2026-11-26T03:38:32.987Z"
+   "latestAt": "2026-11-26T17:03:09.236Z"
   },
   {
    "id": "401864549-total-open-total",
@@ -189,9 +189,9 @@
    "best": true,
    "tag": "open-total",
    "firstSeen": "2026-11-22T19:49:07.490Z",
-   "lastSeen": "2026-11-26T03:38:32.987Z",
-   "latest": 40.5,
-   "latestAt": "2026-11-26T03:38:32.987Z"
+   "lastSeen": "2026-11-26T17:03:09.236Z",
+   "latest": 39.5,
+   "latestAt": "2026-11-26T17:03:09.236Z"
   },
   {
    "id": "401864546-total-open-total",
@@ -206,9 +206,9 @@
    "best": true,
    "tag": "open-total",
    "firstSeen": "2026-11-22T19:49:07.490Z",
-   "lastSeen": "2026-11-26T03:38:32.987Z",
+   "lastSeen": "2026-11-26T17:03:09.236Z",
    "latest": 42.5,
-   "latestAt": "2026-11-26T03:38:32.987Z"
+   "latestAt": "2026-11-26T17:03:09.236Z"
   },
   {
    "id": "401856756-spread-rivalry",
@@ -223,9 +223,9 @@
    "best": true,
    "tag": "rivalry",
    "firstSeen": "2026-11-21T02:26:47.787Z",
-   "lastSeen": "2026-11-26T03:38:32.987Z",
-   "latest": 10.5,
-   "latestAt": "2026-11-26T03:38:32.987Z"
+   "lastSeen": "2026-11-26T17:03:09.236Z",
+   "latest": 11.5,
+   "latestAt": "2026-11-26T17:03:09.236Z"
   },
   {
    "id": "401856756-total-open-total",
@@ -241,9 +241,9 @@
    "best": true,
    "tag": "open-total",
    "firstSeen": "2026-11-21T02:26:47.787Z",
-   "lastSeen": "2026-11-26T03:38:32.987Z",
+   "lastSeen": "2026-11-26T17:03:09.236Z",
    "latest": 40.5,
-   "latestAt": "2026-11-26T03:38:32.987Z"
+   "latestAt": "2026-11-26T17:03:09.236Z"
   },
   {
    "id": "401858544-spread-rivalry",
@@ -258,9 +258,9 @@
    "best": true,
    "tag": "rivalry",
    "firstSeen": "2026-11-22T19:49:07.490Z",
-   "lastSeen": "2026-11-26T03:38:32.987Z",
-   "latest": -7.5,
-   "latestAt": "2026-11-26T03:38:32.987Z"
+   "lastSeen": "2026-11-26T17:03:09.236Z",
+   "latest": -8.5,
+   "latestAt": "2026-11-26T17:03:09.236Z"
   },
   {
    "id": "401856880-spread-eastlate",
@@ -275,9 +275,9 @@
    "best": false,
    "tag": "eastlate",
    "firstSeen": "2026-11-22T19:49:07.490Z",
-   "lastSeen": "2026-11-26T03:38:32.987Z",
+   "lastSeen": "2026-11-26T17:03:09.236Z",
    "latest": -26.5,
-   "latestAt": "2026-11-26T03:38:32.987Z"
+   "latestAt": "2026-11-26T17:03:09.236Z"
   },
   {
    "id": "401856880-total-open-total",
@@ -293,9 +293,9 @@
    "best": true,
    "tag": "open-total",
    "firstSeen": "2026-11-22T19:49:07.490Z",
-   "lastSeen": "2026-11-26T03:38:32.987Z",
+   "lastSeen": "2026-11-26T17:03:09.236Z",
    "latest": 66.5,
-   "latestAt": "2026-11-26T03:38:32.987Z"
+   "latestAt": "2026-11-26T17:03:09.236Z"
   },
   {
    "id": "401856880-total-under60",
@@ -310,9 +310,9 @@
    "best": false,
    "tag": "under60",
    "firstSeen": "2026-11-22T19:49:07.490Z",
-   "lastSeen": "2026-11-26T03:38:32.987Z",
+   "lastSeen": "2026-11-26T17:03:09.236Z",
    "latest": 66.5,
-   "latestAt": "2026-11-26T03:38:32.987Z"
+   "latestAt": "2026-11-26T17:03:09.236Z"
   },
   {
    "id": "401856880-total-under65",
@@ -327,9 +327,9 @@
    "best": false,
    "tag": "under65",
    "firstSeen": "2026-11-22T19:49:07.490Z",
-   "lastSeen": "2026-11-26T03:38:32.987Z",
+   "lastSeen": "2026-11-26T17:03:09.236Z",
    "latest": 66.5,
-   "latestAt": "2026-11-26T03:38:32.987Z"
+   "latestAt": "2026-11-26T17:03:09.236Z"
   }
  ]
 }
