@@ -226,7 +226,8 @@ export function TeamDetail({ team }: { team: Team }) {
                   <thead>
                     <tr className="text-left font-mono text-[10px] uppercase tracking-wider text-faint">
                       <th className="px-4 py-2 font-normal">Date</th>
-                      <th className="px-2 py-2 font-normal">Time</th>
+                      {/* NFL team pages hide the Time column (owner's call); the time stays in the data */}
+                      {college ? <th className="px-2 py-2 font-normal">Time</th> : null}
                       <th className="px-2 py-2 font-normal">Matchup</th>
                       <th className="px-2 py-2 text-right font-normal">Spread</th>
                       <th className="px-4 py-2 text-right font-normal">Total</th>
@@ -238,6 +239,7 @@ export function TeamDetail({ team }: { team: Team }) {
                         key={g.id}
                         game={g}
                         showMarket={true}
+                        showTime={college}
                         perspectiveTeamId={team.id}
                       />
                     ))}
