@@ -1,5 +1,5 @@
 {
-"note": "ESPN college team ids that use ESPN's dark-background logo (ncaa/500-dark) on the dark site: their standard logo is black or loses contrast, and the dark version keeps the team's colors (Iowa gold, Wake Forest gold, Cincinnati white C, white outlines elsewhere). Teams whose dark version is just an all-white logo (Alabama, Michigan State, Tennessee, Texas, Clemson ...) and teams with no separate dark logo keep the standard one. Built Nov 2026 from all 763 college football teams ESPN lists. BYU and Toledo use the dark version by the owner's choice.",
+"note": "ESPN college team ids that use ESPN's dark-background logo (ncaa/500-dark) on the dark site: their standard logo is black or loses contrast, and the dark version keeps the team's colors (Iowa gold, Wake Forest gold, Cincinnati white C, white outlines elsewhere). Teams whose dark version is just an all-white logo (Alabama, Michigan State, Tennessee, Texas, Clemson ...) and teams with no separate dark logo keep the standard one. Built Nov 2026 from all 763 college football teams ESPN lists. BYU and Toledo use the dark version by the owner's choice. Oklahoma State keeps its orange standard logo (owner's choice).",
 "ids": [
 "2",
 "5",
@@ -44,7 +44,6 @@
 "189",
 "193",
 "194",
-"197",
 "201",
 "202",
 "204",
