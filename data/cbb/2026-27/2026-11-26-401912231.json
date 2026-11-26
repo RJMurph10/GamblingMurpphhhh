@@ -7,18 +7,18 @@
   "id": "349",
   "abbr": "ARMY",
   "name": "Army Black Knights",
-  "score": 0
+  "score": 79
  },
  "home": {
   "id": "2636",
   "abbr": "UTSA",
   "name": "UTSA Roadrunners",
-  "score": 0
+  "score": 61
  },
  "neutral": false,
  "venue": "UTSA Convocation Center",
  "seasonType": 2,
- "state": "pre",
+ "state": "post",
  "lines": {
   "open": {
    "at": "2026-11-26T05:26:04.582Z",
@@ -477,5 +477,9 @@
    ]
   }
  },
- "props": {}
+ "props": {},
+ "final": {
+  "away": 79,
+  "home": 61
+ }
 }

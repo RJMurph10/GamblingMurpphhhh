@@ -2,23 +2,23 @@
  "id": "401920528",
  "league": "cbb",
  "date": "2026-11-26T18:00Z",
- "name": "SDSU VS MD",
+ "name": "MD VS SDSU",
  "away": {
-  "id": "21",
-  "abbr": "SDSU",
-  "name": "San Diego State Aztecs",
-  "score": 0
- },
- "home": {
   "id": "120",
   "abbr": "MD",
   "name": "Maryland Terrapins",
-  "score": 0
+  "score": 47
+ },
+ "home": {
+  "id": "21",
+  "abbr": "SDSU",
+  "name": "San Diego State Aztecs",
+  "score": 46
  },
  "neutral": true,
  "venue": "Michelob ULTRA Arena",
  "seasonType": 2,
- "state": "pre",
+ "state": "in",
  "lines": {
   "open": {
    "at": "2026-11-25T04:55:12.027Z",

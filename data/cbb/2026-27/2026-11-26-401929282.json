@@ -7,18 +7,18 @@
   "id": "103",
   "abbr": "BC",
   "name": "Boston College Eagles",
-  "score": 0
+  "score": 27
  },
  "home": {
   "id": "2116",
   "abbr": "UCF",
   "name": "UCF Knights",
-  "score": 0
+  "score": 22
  },
  "neutral": true,
  "venue": "State Farm Field House",
  "seasonType": 2,
- "state": "pre",
+ "state": "in",
  "lines": {
   "open": {
    "at": "2026-11-25T23:48:34.043Z",

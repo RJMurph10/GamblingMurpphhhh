@@ -2,23 +2,23 @@
  "id": "401921674",
  "league": "cbb",
  "date": "2026-11-26T19:00Z",
- "name": "SC VS ASU",
+ "name": "ASU VS SC",
  "away": {
-  "id": "2579",
-  "abbr": "SC",
-  "name": "South Carolina Gamecocks",
-  "score": 0
- },
- "home": {
   "id": "9",
   "abbr": "ASU",
   "name": "Arizona State Sun Devils",
-  "score": 0
+  "score": 30
+ },
+ "home": {
+  "id": "2579",
+  "abbr": "SC",
+  "name": "South Carolina Gamecocks",
+  "score": 32
  },
  "neutral": true,
  "venue": "Acrisure Arena",
  "seasonType": 2,
- "state": "pre",
+ "state": "in",
  "lines": {
   "open": {
    "at": "2026-11-25T23:48:34.043Z",
