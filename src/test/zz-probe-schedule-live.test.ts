@@ -1,13 +1,16 @@
 import { it } from "vitest";
 import { fetchSchedule } from "@/lib/nfl/nfl-schedule.server";
+import { fetchGameDetail } from "@/lib/shared/espn-game-detail.server";
 import { gameScore } from "@/data/shared/games";
-it("live schedule as the site builds it", async () => {
-  const games = await fetchSchedule();
-  const fin = games.filter((g) => g.status === "final");
-  const zero = fin.filter((g) => { const s = gameScore(g); return s.home + s.away === 0; });
-  const dash = fin.filter((g) => g.spread === "—" || !g.total);
-  console.log("games", games.length, "final", fin.length, "0-0 finals", zero.length, "finals missing lines", dash.length);
-  for (const g of games.filter((g) => [g.homeTeamId, g.awayTeamId].some((t) => t === "vikings" || t === "packers")))
-    console.log(g.week, g.id, g.awayTeamId, "@", g.homeTeamId, g.status, JSON.stringify(gameScore(g)), g.spread, g.total);
-  for (const g of zero.slice(0, 10)) console.log("ZERO", g.week, g.id, g.awayTeamId, g.homeTeamId, JSON.stringify(g.quarters));
-}, 300_000);
+it("game detail + repeated schedule loads", async () => {
+  const d: any = await fetchGameDetail("401872927");
+  const g = d?.game ?? d;
+  console.log("DETAIL keys", Object.keys(d ?? {}).join(","));
+  console.log("DETAIL status", g?.status, "score", JSON.stringify(g?.quarters), "spread", g?.spread, "total", g?.total);
+  for (let i = 0; i < 6; i++) {
+    const games = await fetchSchedule();
+    const fin = games.filter((x) => x.status === "final");
+    console.log("LOAD", i, "finals missing lines", fin.filter((x) => x.spread === "—" || !x.total).length, "of", fin.length);
+    await new Promise((r) => setTimeout(r, 2500));
+  }
+}, 600_000);
