@@ -1,0 +1,45 @@
+# Every finished NFL game's closing spread / total / prices from ESPN -> props-site/nfl/closing-lines-<season>.json,
+# which the site reads so finished games never lose their lines. Daily, plus after Sunday and Monday games.
+name: NFL closing lines
+
+on:
+  schedule:
+    - cron: "17 11 * * *"      # every morning
+    - cron: "47 4 * * 1,2,5"   # after Sunday night, Monday night and Thursday night games
+  workflow_dispatch: {}
+  push:
+    branches: [main]
+    paths: [scripts/nfl/export-closing-lines.mjs, .github/workflows/nfl-closing-lines.yml]
+
+permissions:
+  contents: write
+
+concurrency:
+  group: nfl-closing-lines
+  cancel-in-progress: false
+
+jobs:
+  export:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with: { node-version: 22 }
+      - run: node scripts/nfl/export-closing-lines.mjs 2026
+      - name: Publish to props-site
+        run: |
+          url="https://x-access-token:${{ secrets.GITHUB_TOKEN }}@github.com/${{ github.repository }}.git"
+          for attempt in 1 2 3 4 5; do
+            rm -rf dst && git clone -q --depth 1 --branch props-site "$url" dst
+            mkdir -p dst/nfl && cp out/nfl-closing-lines-2026.json dst/nfl/closing-lines-2026.json
+            cd dst
+            git config user.name "line-history-bot"
+            git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+            git add -A
+            if git diff --cached --quiet; then exit 0; fi
+            git commit -q -m "NFL closing lines $(date -u +%F)"
+            if git push -q origin props-site; then exit 0; fi
+            cd ..; sleep $((attempt * 10 + RANDOM % 10))
+          done
+          exit 1

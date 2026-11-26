@@ -6,7 +6,7 @@
  */
 
 import { scheduleBusy } from "@/lib/shared/schedule-busy";
-import { finalCached } from "@/lib/shared/final-cache.server";
+import { finalCached, readFinal, writeFinal } from "@/lib/shared/final-cache.server";
 import type { Game } from "@/data/shared/games";
 import { gameScore } from "@/data/shared/games";
 import { teamByAbbr } from "@/data/shared/teams";
@@ -80,17 +80,28 @@ function loadPriorSeasonResults(): Promise<PriorSeasonResult[]> {
 const eventFinal = (e: any) =>
   (e?.competitions?.[0]?.status?.type ?? e?.status?.type)?.completed === true;
 
-/** One week's scoreboard events. A week whose games are all final is kept long-term. */
-function scheduleWeek(week: number): Promise<{ week: number; events: any[] }> {
-  const load = () =>
-    fetchJson(`${SCOREBOARD}?dates=${SEASON}&seasontype=2&week=${week}&limit=100`)
-      .then((d) => ({ week, events: (d?.events ?? []) as any[] }))
-      .catch(() => ({ week, events: [] as any[] }));
-  return finalCached(
-    `nfl-week-${SEASON}-${week}`,
-    load,
-    (w) => w.events.length > 0 && w.events.every(eventFinal),
-  );
+/** A finished event whose quarter lines add up to each team's final score (a 0-0 "final" doesn't). */
+const scoresAddUp = (e: any) =>
+  (e?.competitions?.[0]?.competitors ?? []).every((c: any) => {
+    const lines = (c?.linescores ?? []).map((l: any) => Number(l?.value ?? 0));
+    return lines.length > 0 && lines.reduce((a: number, b: number) => a + b, 0) === Number(c?.score);
+  });
+const weekDone = (w: { events: any[] }) =>
+  w.events.length > 0 && w.events.every((e) => eventFinal(e) && scoresAddUp(e));
+
+/**
+ * One week's scoreboard events. A week whose games are all final (and whose scores add up) is kept
+ * long-term; a stored copy that fails that check is thrown away and reloaded.
+ */
+async function scheduleWeek(week: number): Promise<{ week: number; events: any[] }> {
+  const key = `nfl-week-${SEASON}-${week}-v2`;
+  const hit = await readFinal<{ week: number; events: any[] }>(key);
+  if (hit && weekDone(hit)) return hit;
+  const loaded = await fetchJson(`${SCOREBOARD}?dates=${SEASON}&seasontype=2&week=${week}&limit=100`)
+    .then((d) => ({ week, events: (d?.events ?? []) as any[] }))
+    .catch(() => ({ week, events: [] as any[] }));
+  if (weekDone(loaded)) await writeFinal(key, loaded);
+  return loaded;
 }
 
 /** How long a quiet schedule (no game on or about to start) is reused before asking ESPN again. */

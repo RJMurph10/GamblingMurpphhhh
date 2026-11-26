@@ -876,7 +876,10 @@ export async function fetchGameDetail(rawEventId: string): Promise<Game | null> 
   // A game that finished over a day ago (late stat updates included) is kept long-term.
   const storeKey = `game-detail-${league}-${eventId}`;
   const stored = await readFinal<Game>(storeKey);
-  if (stored) {
+  // a stored "final" with no score (0-0) was saved from a bad ESPN answer: rebuild it
+  const scoreless = (g: Game) =>
+    g.status === "final" && [...g.quarters.away, ...g.quarters.home].every((q) => !q);
+  if (stored && !scoreless(stored)) {
     if (stored.teamRefs) registerTeams(stored.teamRefs);
     return stored;
   }
