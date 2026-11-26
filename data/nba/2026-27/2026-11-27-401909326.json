@@ -478,5 +478,263 @@
    ]
   }
  },
- "props": {}
+ "props": {
+  "open": {
+   "at": "2026-11-26T09:37:29.213Z",
+   "provider": 100,
+   "count": 6,
+   "rows": [
+  {"a":null,"tm":"14","t":"Team Total Points","ti":"98","op":[110.5,null,null],"cur":[110.5,null,null],"px":[-105,-108]},
+  {"a":null,"tm":"14","t":"Team Total Points","ti":"98","op":[110.5,null,null],"cur":[110.5,null,null],"px":[-115,-112]},
+  {"a":null,"tm":"18","t":"Team Total Points","ti":"98","op":[114.5,null,null],"cur":[113.5,null,null],"px":[-115,-102]},
+  {"a":null,"tm":"18","t":"Team Total Points","ti":"98","op":[114.5,null,null],"cur":[113.5,null,null],"px":[-105,-118]},
+  {"a":null,"t":"Will There Be Overtime?","ti":"153","cur":[null,1600,null]},
+  {"a":null,"t":"Will There Be Overtime?","ti":"153","cur":[null,-3000,null]}
+ ],
+   "sample": [
+    {
+     "competition": {
+      "id": "401909326"
+     },
+     "team": {
+      "id": "14"
+     },
+     "provider": {
+      "id": "100"
+     },
+     "type": {
+      "id": "98",
+      "name": "Team Total Points"
+     },
+     "odds": {
+      "american": {
+       "value": "-105",
+       "open": "-108"
+      },
+      "decimal": {
+       "value": "1.95",
+       "open": "1.92"
+      },
+      "fraction": {
+       "value": "20/21",
+       "open": "25/27"
+      },
+      "total": {
+       "value": "110.5",
+       "open": "110.5"
+      }
+     },
+     "lastUpdated": "2026-11-26T10:46Z",
+     "current": {
+      "target": {
+       "value": 110.5,
+       "displayValue": "110.5"
+      }
+     },
+     "open": {
+      "target": {
+       "value": 110.5,
+       "displayValue": "110.5"
+      }
+     }
+    },
+    {
+     "competition": {
+      "id": "401909326"
+     },
+     "team": {
+      "id": "14"
+     },
+     "provider": {
+      "id": "100"
+     },
+     "type": {
+      "id": "98",
+      "name": "Team Total Points"
+     },
+     "odds": {
+      "american": {
+       "value": "-115",
+       "open": "-112"
+      },
+      "decimal": {
+       "value": "1.86",
+       "open": "1.89"
+      },
+      "fraction": {
+       "value": "20/23",
+       "open": "25/28"
+      },
+      "total": {
+       "value": "110.5",
+       "open": "110.5"
+      }
+     },
+     "lastUpdated": "2026-11-26T10:46Z",
+     "current": {
+      "target": {
+       "value": 110.5,
+       "displayValue": "110.5"
+      }
+     },
+     "open": {
+      "target": {
+       "value": 110.5,
+       "displayValue": "110.5"
+      }
+     }
+    }
+   ]
+  },
+  "latest": {
+   "at": "2026-11-26T09:37:29.213Z",
+   "count": 6,
+   "rows": [
+  {"a":null,"tm":"14","t":"Team Total Points","ti":"98","op":[110.5,null,null],"cur":[110.5,null,null],"px":[-105,-108]},
+  {"a":null,"tm":"14","t":"Team Total Points","ti":"98","op":[110.5,null,null],"cur":[110.5,null,null],"px":[-115,-112]},
+  {"a":null,"tm":"18","t":"Team Total Points","ti":"98","op":[114.5,null,null],"cur":[113.5,null,null],"px":[-115,-102]},
+  {"a":null,"tm":"18","t":"Team Total Points","ti":"98","op":[114.5,null,null],"cur":[113.5,null,null],"px":[-105,-118]},
+  {"a":null,"t":"Will There Be Overtime?","ti":"153","cur":[null,1600,null]},
+  {"a":null,"t":"Will There Be Overtime?","ti":"153","cur":[null,-3000,null]}
+ ]
+  }
+ },
+ "names": {
+  "6475": [
+   "Klay Thompson",
+   "MIA"
+  ],
+  "6585": [
+   "Andre Drummond",
+   "NY"
+  ],
+  "2528210": [
+   "Tim Hardaway Jr.",
+   "MIA"
+  ],
+  "2528426": [
+   "Jordan Clarkson",
+   "NY"
+  ],
+  "3032977": [
+   "Giannis Antetokounmpo",
+   "MIA"
+  ],
+  "3059319": [
+   "Andrew Wiggins",
+   "MIA"
+  ],
+  "3062679": [
+   "Josh Hart",
+   "NY"
+  ],
+  "3064482": [
+   "Bobby Portis",
+   "MIA"
+  ],
+  "3136195": [
+   "Karl-Anthony Towns",
+   "NY"
+  ],
+  "3147657": [
+   "Mikal Bridges",
+   "NY"
+  ],
+  "3899664": [
+   "Simone Fontecchio",
+   "MIA"
+  ],
+  "3914044": [
+   "Landry Shamet",
+   "NY"
+  ],
+  "3934672": [
+   "Jalen Brunson",
+   "NY"
+  ],
+  "3934719": [
+   "OG Anunoby",
+   "NY"
+  ],
+  "4066261": [
+   "Bam Adebayo",
+   "MIA"
+  ],
+  "4066993": [
+   "Dru Smith",
+   "MIA"
+  ],
+  "4277869": [
+   "Jose Alvarado",
+   "NY"
+  ],
+  "4278053": [
+   "Davion Mitchell",
+   "MIA"
+  ],
+  "4278076": [
+   "Nick Richards",
+   "MIA"
+  ],
+  "4431772": [
+   "Myron Gardner",
+   "MIA"
+  ],
+  "4431786": [
+   "Keshad Johnson",
+   "MIA"
+  ],
+  "4431823": [
+   "Miles McBride",
+   "NY"
+  ],
+  "4432808": [
+   "James Wiseman",
+   "NY"
+  ],
+  "4433225": [
+   "Tyler Kolek",
+   "NY"
+  ],
+  "4601025": [
+   "Pelle Larsson",
+   "MIA"
+  ],
+  "4683730": [
+   "Jaden Akins",
+   "NY"
+  ],
+  "4700818": [
+   "Vladislav Goldin",
+   "MIA"
+  ],
+  "4837356": [
+   "Tre Donaldson",
+   "MIA"
+  ],
+  "4838721": [
+   "Tyler Nickel",
+   "NY"
+  ],
+  "4897943": [
+   "Dalton Knecht",
+   "NY"
+  ],
+  "4997528": [
+   "Nikola Jovic",
+   "MIA"
+  ],
+  "5107157": [
+   "Ryan Conwell",
+   "MIA"
+  ],
+  "5211983": [
+   "Pacome Dadiet",
+   "NY"
+  ],
+  "5289900": [
+   "Mohamed Diawara",
+   "NY"
+  ]
+ }
 }

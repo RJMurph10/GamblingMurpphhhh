@@ -477,5 +477,263 @@
    ]
   }
  },
- "props": {}
+ "props": {
+  "open": {
+   "at": "2026-11-26T09:37:29.213Z",
+   "provider": 100,
+   "count": 6,
+   "rows": [
+  {"a":null,"tm":"11","t":"Team Total Points","ti":"98","op":[115.5,null,null],"cur":[115.5,null,null],"px":[-105,-105]},
+  {"a":null,"tm":"11","t":"Team Total Points","ti":"98","op":[115.5,null,null],"cur":[115.5,null,null],"px":[-115,-115]},
+  {"a":null,"tm":"20","t":"Team Total Points","ti":"98","op":[119.5,null,null],"cur":[119.5,null,null],"px":[-105,-105]},
+  {"a":null,"tm":"20","t":"Team Total Points","ti":"98","op":[119.5,null,null],"cur":[119.5,null,null],"px":[-115,-115]},
+  {"a":null,"t":"Will There Be Overtime?","ti":"153","cur":[null,1500,null]},
+  {"a":null,"t":"Will There Be Overtime?","ti":"153","cur":[null,-3000,null]}
+ ],
+   "sample": [
+    {
+     "competition": {
+      "id": "401909328"
+     },
+     "team": {
+      "id": "11"
+     },
+     "provider": {
+      "id": "100"
+     },
+     "type": {
+      "id": "98",
+      "name": "Team Total Points"
+     },
+     "odds": {
+      "american": {
+       "value": "-105",
+       "open": "-105"
+      },
+      "decimal": {
+       "value": "1.95",
+       "open": "1.95"
+      },
+      "fraction": {
+       "value": "20/21",
+       "open": "20/21"
+      },
+      "total": {
+       "value": "115.5",
+       "open": "115.5"
+      }
+     },
+     "lastUpdated": "2026-11-26T10:46Z",
+     "current": {
+      "target": {
+       "value": 115.5,
+       "displayValue": "115.5"
+      }
+     },
+     "open": {
+      "target": {
+       "value": 115.5,
+       "displayValue": "115.5"
+      }
+     }
+    },
+    {
+     "competition": {
+      "id": "401909328"
+     },
+     "team": {
+      "id": "11"
+     },
+     "provider": {
+      "id": "100"
+     },
+     "type": {
+      "id": "98",
+      "name": "Team Total Points"
+     },
+     "odds": {
+      "american": {
+       "value": "-115",
+       "open": "-115"
+      },
+      "decimal": {
+       "value": "1.86",
+       "open": "1.86"
+      },
+      "fraction": {
+       "value": "20/23",
+       "open": "20/23"
+      },
+      "total": {
+       "value": "115.5",
+       "open": "115.5"
+      }
+     },
+     "lastUpdated": "2026-11-26T10:46Z",
+     "current": {
+      "target": {
+       "value": 115.5,
+       "displayValue": "115.5"
+      }
+     },
+     "open": {
+      "target": {
+       "value": 115.5,
+       "displayValue": "115.5"
+      }
+     }
+    }
+   ]
+  },
+  "latest": {
+   "at": "2026-11-26T09:37:29.213Z",
+   "count": 6,
+   "rows": [
+  {"a":null,"tm":"11","t":"Team Total Points","ti":"98","op":[115.5,null,null],"cur":[115.5,null,null],"px":[-105,-105]},
+  {"a":null,"tm":"11","t":"Team Total Points","ti":"98","op":[115.5,null,null],"cur":[115.5,null,null],"px":[-115,-115]},
+  {"a":null,"tm":"20","t":"Team Total Points","ti":"98","op":[119.5,null,null],"cur":[119.5,null,null],"px":[-105,-105]},
+  {"a":null,"tm":"20","t":"Team Total Points","ti":"98","op":[119.5,null,null],"cur":[119.5,null,null],"px":[-115,-115]},
+  {"a":null,"t":"Will There Be Overtime?","ti":"153","cur":[null,1500,null]},
+  {"a":null,"t":"Will There Be Overtime?","ti":"153","cur":[null,-3000,null]}
+ ]
+  }
+ },
+ "names": {
+  "1966": [
+   "LeBron James",
+   "PHI"
+  ],
+  "2530530": [
+   "T.J. McConnell",
+   "IND"
+  ],
+  "2580365": [
+   "Larry Nance Jr.",
+   "IND"
+  ],
+  "2581018": [
+   "Kentavious Caldwell-Pope",
+   "PHI"
+  ],
+  "3059318": [
+   "Joel Embiid",
+   "PHI"
+  ],
+  "3133603": [
+   "Kelly Oubre Jr.",
+   "IND"
+  ],
+  "3149673": [
+   "Pascal Siakam",
+   "IND"
+  ],
+  "3904625": [
+   "Tacko Fall",
+   "PHI"
+  ],
+  "3912848": [
+   "Dean Wade",
+   "PHI"
+  ],
+  "3917376": [
+   "Jaylen Brown",
+   "PHI"
+  ],
+  "4017837": [
+   "Ivica Zubac",
+   "IND"
+  ],
+  "4065731": [
+   "Jay Huff",
+   "IND"
+  ],
+  "4278355": [
+   "Obi Toppin",
+   "IND"
+  ],
+  "4351851": [
+   "Anfernee Simons",
+   "PHI"
+  ],
+  "4395712": [
+   "Andrew Nembhard",
+   "IND"
+  ],
+  "4396909": [
+   "Aaron Nesmith",
+   "IND"
+  ],
+  "4396993": [
+   "Tyrese Haliburton",
+   "IND"
+  ],
+  "4398207": [
+   "Jalen Slawson",
+   "IND"
+  ],
+  "4431678": [
+   "Tyrese Maxey",
+   "PHI"
+  ],
+  "4431752": [
+   "Kobe Brown",
+   "IND"
+  ],
+  "4432446": [
+   "Jabari Walker",
+   "PHI"
+  ],
+  "4433076": [
+   "Ben Sheppard",
+   "IND"
+  ],
+  "4433144": [
+   "Caleb Love",
+   "PHI"
+  ],
+  "4592829": [
+   "Quenton Jackson",
+   "IND"
+  ],
+  "4711297": [
+   "Justin Edwards",
+   "PHI"
+  ],
+  "4870562": [
+   "Dominick Barlow",
+   "PHI"
+  ],
+  "4871141": [
+   "Ariel Hukporti",
+   "PHI"
+  ],
+  "4873090": [
+   "Labaron Philon Jr.",
+   "PHI"
+  ],
+  "5099752": [
+   "Rayan Rupert",
+   "PHI"
+  ],
+  "5105637": [
+   "Adem Bona",
+   "PHI"
+  ],
+  "5105854": [
+   "Braden Smith",
+   "IND"
+  ],
+  "5106060": [
+   "Jarace Walker",
+   "IND"
+  ],
+  "5124612": [
+   "VJ Edgecombe",
+   "PHI"
+  ],
+  "5157066": [
+   "Johnny Furphy",
+   "IND"
+  ]
+ }
 }

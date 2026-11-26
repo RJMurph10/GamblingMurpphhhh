@@ -707,7 +707,7 @@
    ]
   },
   "latest": {
-   "at": "2026-11-26T05:26:04.582Z",
+   "at": "2026-11-26T09:37:29.213Z",
    "count": 1454,
    "rows": [
   {"a":"3912547","t":"Total Passing Yards (incl. overtime)","ti":"8","op":[229.5,null,null],"cur":[227.5,null,null]},
@@ -814,8 +814,8 @@
   {"a":"4361741","t":"Longest Passing Completion (incl. overtime)","ti":"17","op":[35.5,null,null],"cur":[35.5,null,null]},
   {"a":"3912547","t":"Total Passing Plus Rushing Yards (incl. overtime)","ti":"18","op":[237.5,null,null],"cur":[234.5,null,null]},
   {"a":"3912547","t":"Total Passing Plus Rushing Yards (incl. overtime)","ti":"18","op":[237.5,null,null],"cur":[234.5,null,null]},
-  {"a":"4361741","t":"Total Passing Plus Rushing Yards (incl. overtime)","ti":"18","op":[259.5,null,null],"cur":[253.5,null,null]},
-  {"a":"4361741","t":"Total Passing Plus Rushing Yards (incl. overtime)","ti":"18","op":[259.5,null,null],"cur":[253.5,null,null]},
+  {"a":"4361741","t":"Total Passing Plus Rushing Yards (incl. overtime)","ti":"18","op":[259.5,null,null],"cur":[252.5,null,null]},
+  {"a":"4361741","t":"Total Passing Plus Rushing Yards (incl. overtime)","ti":"18","op":[259.5,null,null],"cur":[252.5,null,null]},
   {"a":"15818","t":"Longest Reception (incl. overtime)","ti":"19","op":[13.5,null,null],"cur":[13.5,null,null]},
   {"a":"15818","t":"Longest Reception (incl. overtime)","ti":"19","op":[13.5,null,null],"cur":[13.5,null,null]},
   {"a":"16737","t":"Longest Reception (incl. overtime)","ti":"19","op":[22.5,null,null],"cur":[22.5,null,null]},
@@ -1828,8 +1828,8 @@
   {"a":"4361741","t":"Passing + Rushing Yards Milestones","ti":"209","op":[270,null,null],"cur":[410,null,null]},
   {"a":"4361741","t":"Passing + Rushing Yards Milestones","ti":"209","op":[270,null,null],"cur":[420,null,null]},
   {"a":"4361741","t":"Passing + Rushing Yards Milestones","ti":"209","op":[270,null,null],"cur":[430,null,null]},
-  {"a":"4361741","t":"Passing + Rushing Yards Milestones","ti":"209","op":[270,null,null],"cur":[254,null,null]},
   {"a":"4361741","t":"Passing + Rushing Yards Milestones","ti":"209","op":[270,null,null],"cur":[150,null,null]},
+  {"a":"4361741","t":"Passing + Rushing Yards Milestones","ti":"209","op":[270,null,null],"cur":[253,null,null]},
   {"a":"3912547","t":"Passing Yards Milestones - 1st Quarter","ti":"211","op":[50,null,null],"cur":[10,null,null]},
   {"a":"3912547","t":"Passing Yards Milestones - 1st Quarter","ti":"211","op":[50,null,null],"cur":[15,null,null]},
   {"a":"3912547","t":"Passing Yards Milestones - 1st Quarter","ti":"211","op":[50,null,null],"cur":[20,null,null]},

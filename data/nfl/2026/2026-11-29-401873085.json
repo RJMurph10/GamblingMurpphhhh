@@ -889,7 +889,7 @@
    ]
   },
   "latest": {
-   "at": "2026-11-26T05:26:04.582Z",
+   "at": "2026-11-26T09:37:29.213Z",
    "count": 1546,
    "rows": [
   {"a":"2578570","t":"Total Passing Yards (incl. overtime)","ti":"8","op":[238.5,null,null],"cur":[235.5,null,null]},
@@ -934,8 +934,8 @@
   {"a":"4258173","t":"Total Receiving Yards (incl. overtime)","ti":"13","op":[57.5,null,null],"cur":[57.5,null,null]},
   {"a":"4360939","t":"Total Receiving Yards (incl. overtime)","ti":"13","op":[33.5,null,null],"cur":[31.5,null,null]},
   {"a":"4360939","t":"Total Receiving Yards (incl. overtime)","ti":"13","op":[33.5,null,null],"cur":[31.5,null,null]},
-  {"a":"4366031","t":"Total Receiving Yards (incl. overtime)","ti":"13","op":[33.5,null,null],"cur":[35.5,null,null]},
-  {"a":"4366031","t":"Total Receiving Yards (incl. overtime)","ti":"13","op":[33.5,null,null],"cur":[35.5,null,null]},
+  {"a":"4366031","t":"Total Receiving Yards (incl. overtime)","ti":"13","op":[33.5,null,null],"cur":[34.5,null,null]},
+  {"a":"4366031","t":"Total Receiving Yards (incl. overtime)","ti":"13","op":[33.5,null,null],"cur":[34.5,null,null]},
   {"a":"4429022","t":"Total Receiving Yards (incl. overtime)","ti":"13","op":[19.5,null,null],"cur":[19.5,null,null]},
   {"a":"4429022","t":"Total Receiving Yards (incl. overtime)","ti":"13","op":[19.5,null,null],"cur":[19.5,null,null]},
   {"a":"4429059","t":"Total Receiving Yards (incl. overtime)","ti":"13","op":[8.5,null,null],"cur":[8.5,null,null]},
@@ -1610,7 +1610,6 @@
   {"a":"4366031","t":"Receiving Yards Milestones","ti":"195","op":[34,null,null],"cur":[20,null,null]},
   {"a":"4366031","t":"Receiving Yards Milestones","ti":"195","op":[34,null,null],"cur":[25,null,null]},
   {"a":"4366031","t":"Receiving Yards Milestones","ti":"195","op":[34,null,null],"cur":[30,null,null]},
-  {"a":"4366031","t":"Receiving Yards Milestones","ti":"195","op":[34,null,null],"cur":[36,null,null]},
   {"a":"4366031","t":"Receiving Yards Milestones","ti":"195","op":[34,null,null],"cur":[40,null,null]},
   {"a":"4366031","t":"Receiving Yards Milestones","ti":"195","op":[34,null,null],"cur":[50,null,null]},
   {"a":"4366031","t":"Receiving Yards Milestones","ti":"195","op":[34,null,null],"cur":[60,null,null]},
@@ -1621,6 +1620,7 @@
   {"a":"4366031","t":"Receiving Yards Milestones","ti":"195","op":[34,null,null],"cur":[110,null,null]},
   {"a":"4366031","t":"Receiving Yards Milestones","ti":"195","op":[34,null,null],"cur":[120,null,null]},
   {"a":"4366031","t":"Receiving Yards Milestones","ti":"195","op":[34,null,null],"cur":[130,null,null]},
+  {"a":"4366031","t":"Receiving Yards Milestones","ti":"195","op":[34,null,null],"cur":[35,null,null]},
   {"a":"4429022","t":"Receiving Yards Milestones","ti":"195","op":[20,null,null],"cur":[10,null,null]},
   {"a":"4429022","t":"Receiving Yards Milestones","ti":"195","op":[20,null,null],"cur":[15,null,null]},
   {"a":"4429022","t":"Receiving Yards Milestones","ti":"195","op":[20,null,null],"cur":[20,null,null]},

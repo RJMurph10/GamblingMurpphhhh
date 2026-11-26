@@ -477,5 +477,267 @@
    ]
   }
  },
- "props": {}
+ "props": {
+  "open": {
+   "at": "2026-11-26T09:37:29.213Z",
+   "provider": 100,
+   "count": 6,
+   "rows": [
+  {"a":null,"tm":"1","t":"Team Total Points","ti":"98","op":[105.5,null,null],"cur":[105.5,null,null],"px":[-112,-112]},
+  {"a":null,"tm":"1","t":"Team Total Points","ti":"98","op":[105.5,null,null],"cur":[105.5,null,null],"px":[-108,-108]},
+  {"a":null,"tm":"2","t":"Team Total Points","ti":"98","op":[115.5,null,null],"cur":[115.5,null,null],"px":[-112,-112]},
+  {"a":null,"tm":"2","t":"Team Total Points","ti":"98","op":[115.5,null,null],"cur":[115.5,null,null],"px":[-108,-108]},
+  {"a":null,"t":"Will There Be Overtime?","ti":"153","cur":[null,2000,null]},
+  {"a":null,"t":"Will There Be Overtime?","ti":"153","cur":[null,-5000,null]}
+ ],
+   "sample": [
+    {
+     "competition": {
+      "id": "401909330"
+     },
+     "team": {
+      "id": "1"
+     },
+     "provider": {
+      "id": "100"
+     },
+     "type": {
+      "id": "98",
+      "name": "Team Total Points"
+     },
+     "odds": {
+      "american": {
+       "value": "-112",
+       "open": "-112"
+      },
+      "decimal": {
+       "value": "1.89",
+       "open": "1.89"
+      },
+      "fraction": {
+       "value": "25/28",
+       "open": "25/28"
+      },
+      "total": {
+       "value": "105.5",
+       "open": "105.5"
+      }
+     },
+     "lastUpdated": "2026-11-26T10:46Z",
+     "current": {
+      "target": {
+       "value": 105.5,
+       "displayValue": "105.5"
+      }
+     },
+     "open": {
+      "target": {
+       "value": 105.5,
+       "displayValue": "105.5"
+      }
+     }
+    },
+    {
+     "competition": {
+      "id": "401909330"
+     },
+     "team": {
+      "id": "1"
+     },
+     "provider": {
+      "id": "100"
+     },
+     "type": {
+      "id": "98",
+      "name": "Team Total Points"
+     },
+     "odds": {
+      "american": {
+       "value": "-108",
+       "open": "-108"
+      },
+      "decimal": {
+       "value": "1.92",
+       "open": "1.92"
+      },
+      "fraction": {
+       "value": "25/27",
+       "open": "25/27"
+      },
+      "total": {
+       "value": "105.5",
+       "open": "105.5"
+      }
+     },
+     "lastUpdated": "2026-11-26T10:46Z",
+     "current": {
+      "target": {
+       "value": 105.5,
+       "displayValue": "105.5"
+      }
+     },
+     "open": {
+      "target": {
+       "value": 105.5,
+       "displayValue": "105.5"
+      }
+     }
+    }
+   ]
+  },
+  "latest": {
+   "at": "2026-11-26T09:37:29.213Z",
+   "count": 6,
+   "rows": [
+  {"a":null,"tm":"1","t":"Team Total Points","ti":"98","op":[105.5,null,null],"cur":[105.5,null,null],"px":[-112,-112]},
+  {"a":null,"tm":"1","t":"Team Total Points","ti":"98","op":[105.5,null,null],"cur":[105.5,null,null],"px":[-108,-108]},
+  {"a":null,"tm":"2","t":"Team Total Points","ti":"98","op":[115.5,null,null],"cur":[115.5,null,null],"px":[-112,-112]},
+  {"a":null,"tm":"2","t":"Team Total Points","ti":"98","op":[115.5,null,null],"cur":[115.5,null,null],"px":[-108,-108]},
+  {"a":null,"t":"Will There Be Overtime?","ti":"153","cur":[null,2000,null]},
+  {"a":null,"t":"Will There Be Overtime?","ti":"153","cur":[null,-5000,null]}
+ ]
+  }
+ },
+ "names": {
+  "3195": [
+   "Mike Conley",
+   "BOS"
+  ],
+  "4251": [
+   "Paul George",
+   "BOS"
+  ],
+  "2490149": [
+   "CJ McCollum",
+   "ATL"
+  ],
+  "2578185": [
+   "Dorian Finney-Smith",
+   "ATL"
+  ],
+  "3078576": [
+   "Derrick White",
+   "BOS"
+  ],
+  "3146557": [
+   "Jock Landale",
+   "ATL"
+  ],
+  "4065648": [
+   "Jayson Tatum",
+   "BOS"
+  ],
+  "4065804": [
+   "Sam Hauser",
+   "BOS"
+  ],
+  "4066354": [
+   "Payton Pritchard",
+   "BOS"
+  ],
+  "4277951": [
+   "Luka Garza",
+   "BOS"
+  ],
+  "4278039": [
+   "Nickeil Alexander-Walker",
+   "ATL"
+  ],
+  "4280151": [
+   "Corey Kispert",
+   "ATL"
+  ],
+  "4351852": [
+   "Mitchell Robinson",
+   "BOS"
+  ],
+  "4397020": [
+   "Luguentz Dort",
+   "ATL"
+  ],
+  "4397183": [
+   "Aaron Wiggins",
+   "ATL"
+  ],
+  "4397251": [
+   "Ron Harper Jr.",
+   "BOS"
+  ],
+  "4397424": [
+   "Neemias Queta",
+   "BOS"
+  ],
+  "4431680": [
+   "Onyeka Okongwu",
+   "ATL"
+  ],
+  "4431714": [
+   "Jalen Wilson",
+   "ATL"
+  ],
+  "4431941": [
+   "RayJ Dennis",
+   "ATL"
+  ],
+  "4433188": [
+   "Devin Carter",
+   "BOS"
+  ],
+  "4593841": [
+   "Baylor Scheierman",
+   "BOS"
+  ],
+  "4683689": [
+   "Jordan Walsh",
+   "BOS"
+  ],
+  "4684443": [
+   "Rafael Castro",
+   "ATL"
+  ],
+  "4701230": [
+   "Jalen Johnson",
+   "ATL"
+  ],
+  "4702745": [
+   "Amari Williams",
+   "BOS"
+  ],
+  "4712863": [
+   "Mouhamed Gueye",
+   "ATL"
+  ],
+  "4869342": [
+   "Dyson Daniels",
+   "ATL"
+  ],
+  "4873201": [
+   "Asa Newell",
+   "ATL"
+  ],
+  "5105571": [
+   "Henri Veesaar",
+   "ATL"
+  ],
+  "5106262": [
+   "Zuby Ejiofor",
+   "ATL"
+  ],
+  "5106283": [
+   "Dillon Mitchell",
+   "BOS"
+  ],
+  "5142621": [
+   "Chris Cenac Jr.",
+   "BOS"
+  ],
+  "5149077": [
+   "Kingston Flemings",
+   "ATL"
+  ],
+  "5175647": [
+   "Hugo Gonzalez",
+   "BOS"
+  ]
+ }
 }
