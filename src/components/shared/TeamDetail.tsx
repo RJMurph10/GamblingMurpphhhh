@@ -13,6 +13,7 @@ import {
 import { gamesByTeam } from "@/data/shared/games";
 import { playersByTeam } from "@/data/nfl/players";
 import { isCollegeId, teamById, type Team } from "@/data/shared/teams";
+import { teamLineRecord, type TeamLineRecord } from "@/lib/shared/team-record";
 import { getConferenceTeamOverviewStats } from "@/lib/cfb/cfb.functions";
 import { playerRoute, teamKey, teamRoute, useLeague } from "@/lib/shared/league-links";
 import { useCfbSchedule } from "@/lib/cfb/use-cfb";
@@ -144,6 +145,8 @@ export function TeamDetail({ team }: { team: Team }) {
           ) : null}
         </div>
       </div>
+
+      {!showTeamMetrics ? <LineRecordStrip record={teamLineRecord(schedule, team.id)} /> : null}
 
       {showTeamMetrics ? (
       <div className="space-y-5">
@@ -277,6 +280,44 @@ export function TeamDetail({ team }: { team: Team }) {
   );
 }
 
+
+/** NFL team pages: straight-up, against-the-spread and over/under records, and the average margin vs the spread. */
+function LineRecordStrip({ record }: { record: TeamLineRecord }) {
+  const { su, ats, ou, avgVsSpread } = record;
+  const atsN = ats.w + ats.l;
+  const ouN = ou.o + ou.u;
+  const tiles: { label: string; value: string; sub: string; tone?: string }[] = [
+    { label: "Straight up", value: `${su.w}-${su.l}${su.t ? `-${su.t}` : ""}`, sub: "wins – losses" },
+    {
+      label: "Against the spread",
+      value: `${ats.w}-${ats.l}${ats.p ? `-${ats.p}` : ""}`,
+      sub: atsN ? `${Math.round((100 * ats.w) / atsN)}% covered` : "no lines yet",
+      tone: atsN ? (ats.w > ats.l ? "text-win" : ats.w < ats.l ? "text-loss" : "") : "",
+    },
+    {
+      label: "Over / under",
+      value: `${ou.o}-${ou.u}${ou.p ? `-${ou.p}` : ""}`,
+      sub: ouN ? `${Math.round((100 * ou.o) / ouN)}% overs` : "no lines yet",
+    },
+    {
+      label: "Avg vs spread",
+      value: avgVsSpread === null ? "—" : `${avgVsSpread > 0 ? "+" : ""}${avgVsSpread.toFixed(1)}`,
+      sub: "points per game vs the line",
+      tone: avgVsSpread === null ? "" : avgVsSpread > 0 ? "text-win" : avgVsSpread < 0 ? "text-loss" : "",
+    },
+  ];
+  return (
+    <div className="grid grid-cols-2 gap-3 sm:grid-cols-4">
+      {tiles.map((t) => (
+        <Panel key={t.label}>
+          <p className="label-mono">{t.label}</p>
+          <p className={`mt-1 text-2xl font-semibold tabular-nums ${t.tone ?? ""}`}>{t.value}</p>
+          <p className="mt-0.5 font-mono text-[10px] uppercase tracking-wider text-faint">{t.sub}</p>
+        </Panel>
+      ))}
+    </div>
+  );
+}
 
 type RankingStatsRow = { teamId: string; teamAbbr: string; teamName: string; stats: TeamOverviewStats };
 type MetricTuple = [string, number | undefined, string, string, boolean];
