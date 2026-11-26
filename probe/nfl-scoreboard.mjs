@@ -1,7 +1,7 @@
 // Check ESPN's 2026 NFL week scoreboards: score vs linescores, status, odds; and the core odds / summary for a sample.
 import { writeFileSync, mkdirSync } from "node:fs";
 const SB = "https://site.api.espn.com/apis/site/v2/sports/football/nfl/scoreboard";
-const out = { weeks: [], bad: [] };
+const out = { weeks: [], bad: [], all: [] };
 for (let w = 1; w <= 18; w++) {
   const r = await fetch(`${SB}?dates=2026&seasontype=2&week=${w}&limit=100`);
   const j = await r.json();
@@ -9,6 +9,7 @@ for (let w = 1; w <= 18; w++) {
   let n = 0, final = 0, noLs = 0, mismatch = 0, noOdds = 0;
   for (const e of evs) {
     const c = e.competitions?.[0]; n++;
+    out.all.push([w, e.id, e.shortName, c?.status?.type?.name, (c?.competitors ?? []).map((t) => `${t.team?.abbreviation}:${t.score}:${t.homeAway}:${t.team?.id}`).join(" "), e.date]);
     const done = c?.status?.type?.completed === true; if (done) final++;
     for (const t of c?.competitors ?? []) {
       const ls = (t.linescores ?? []).map((x) => Number(x.value ?? 0));
@@ -38,5 +39,6 @@ if (s) {
 mkdirSync("out", { recursive: true });
 writeFileSync("out/nfl-scoreboard.json", JSON.stringify(out, null, 1));
 console.log(JSON.stringify(out.weeks));
+console.log("ALL", JSON.stringify(out.all));
 console.log(JSON.stringify(out.bad.slice(0, 10), null, 1));
 console.log(JSON.stringify(out.sample, null, 1));
