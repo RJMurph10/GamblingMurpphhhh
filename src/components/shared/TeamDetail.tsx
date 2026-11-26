@@ -34,6 +34,9 @@ import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
  */
 export function TeamDetail({ team }: { team: Team }) {
   const college = isCollegeId(team.id);
+  // NFL team pages hide the season metrics + ranks and the "Live ESPN team data" line for now
+  // (owner's call; kept for later use). College team pages keep them.
+  const showTeamMetrics = college;
   const key = teamKey(team);
   const [activeTab, setActiveTab] = useState("schedule");
   const [selectedRanking, setSelectedRanking] = useState<{ label: string; key: string; higherIsBetter: boolean; compositeMetrics?: [string, boolean][] } | null>(null);
@@ -55,6 +58,7 @@ export function TeamDetail({ team }: { team: Team }) {
     queryKey: ["team-overview-stats", team.id],
     queryFn: () => getTeamOverviewStats({ data: { teamId: team.id } }),
     staleTime: 10 * 60 * 1000,
+    enabled: showTeamMetrics,
     retry: 1,
   });
   // NFL teams rank against the league; college teams against their conference.
@@ -67,6 +71,7 @@ export function TeamDetail({ team }: { team: Team }) {
         ? getConferenceTeamOverviewStats({ data: { teamId: team.id } })
         : getLeagueTeamOverviewStats(),
     staleTime: 10 * 60 * 1000,
+    enabled: showTeamMetrics,
     retry: 1,
   });
   const schedule = (liveTeamGames.length || college ? liveTeamGames : gamesByTeam(team.id))
@@ -131,13 +136,16 @@ export function TeamDetail({ team }: { team: Team }) {
               {record.w}-{record.l}{record.t ? `-${record.t}` : ""}
             </span>
           </div>
-          <div className="mt-1 flex items-center gap-2 font-mono text-[10px] uppercase tracking-wider text-faint">
-            <TeamLogo team={team} className="size-3.5" />
-            Live ESPN team data
-          </div>
+          {showTeamMetrics ? (
+            <div className="mt-1 flex items-center gap-2 font-mono text-[10px] uppercase tracking-wider text-faint">
+              <TeamLogo team={team} className="size-3.5" />
+              Live ESPN team data
+            </div>
+          ) : null}
         </div>
       </div>
 
+      {showTeamMetrics ? (
       <div className="space-y-5">
         <TeamMetricPanel
           title="Offense"
@@ -192,6 +200,7 @@ export function TeamDetail({ team }: { team: Team }) {
           ]}
         />
       </div>
+      ) : null}
 
       {selectedRanking && (
         <RankingModal
