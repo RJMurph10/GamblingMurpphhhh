@@ -7,18 +7,18 @@
   "id": "235",
   "abbr": "MEM",
   "name": "Memphis Tigers",
-  "score": 0
+  "score": 25
  },
  "home": {
   "id": "213",
   "abbr": "PSU",
   "name": "Penn State Nittany Lions",
-  "score": 0
+  "score": 22
  },
  "neutral": true,
  "venue": "Imperial Arena",
  "seasonType": 2,
- "state": "pre",
+ "state": "in",
  "lines": {
   "open": {
    "at": "2026-11-24T21:19:02.149Z",

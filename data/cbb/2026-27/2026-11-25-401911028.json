@@ -7,18 +7,18 @@
   "id": "111",
   "abbr": "NE",
   "name": "Northeastern Huskies",
-  "score": 0
+  "score": 13
  },
  "home": {
   "id": "275",
   "abbr": "WIS",
   "name": "Wisconsin Badgers",
-  "score": 0
+  "score": 28
  },
  "neutral": false,
  "venue": "Kohl Center",
  "seasonType": 2,
- "state": "pre",
+ "state": "in",
  "lines": {
   "open": {
    "at": "2026-11-25T00:07:42.175Z",

@@ -7,7 +7,7 @@
   "id": "11",
   "abbr": "NJ",
   "name": "New Jersey Devils",
-  "score": 0
+  "score": 1
  },
  "home": {
   "id": "29",
@@ -18,7 +18,7 @@
  "neutral": false,
  "venue": "Nationwide Arena",
  "seasonType": 2,
- "state": "pre",
+ "state": "in",
  "lines": {
   "open": {
    "at": "2026-11-24T21:19:02.149Z",

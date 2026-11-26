@@ -7,18 +7,18 @@
   "id": "2016",
   "abbr": "ALCN",
   "name": "Alcorn State Braves",
-  "score": 68
+  "score": 70
  },
  "home": {
   "id": "326",
   "abbr": "TXST",
   "name": "Texas State Bobcats",
-  "score": 94
+  "score": 97
  },
  "neutral": true,
  "venue": "Thomas Assembly Center",
  "seasonType": 2,
- "state": "in",
+ "state": "post",
  "lines": {
   "open": {
    "at": "2026-11-25T04:55:12.027Z",
@@ -477,5 +477,9 @@
    ]
   }
  },
- "props": {}
+ "props": {},
+ "final": {
+  "away": 70,
+  "home": 97
+ }
 }

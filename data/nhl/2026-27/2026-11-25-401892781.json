@@ -7,18 +7,18 @@
   "id": "28",
   "abbr": "WPG",
   "name": "Winnipeg Jets",
-  "score": 0
+  "score": 1
  },
  "home": {
   "id": "1",
   "abbr": "BOS",
   "name": "Boston Bruins",
-  "score": 0
+  "score": 1
  },
  "neutral": false,
  "venue": "TD Garden",
  "seasonType": 2,
- "state": "pre",
+ "state": "in",
  "lines": {
   "open": {
    "at": "2026-11-24T21:19:02.149Z",

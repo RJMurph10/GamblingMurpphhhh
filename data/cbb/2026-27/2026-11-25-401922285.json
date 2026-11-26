@@ -7,18 +7,18 @@
   "id": "2908",
   "abbr": "UPST",
   "name": "South Carolina Upstate Spartans",
-  "score": 0
+  "score": 15
  },
  "home": {
   "id": "2643",
   "abbr": "CIT",
   "name": "The Citadel Bulldogs",
-  "score": 0
+  "score": 25
  },
  "neutral": false,
  "venue": "McAlister Field House",
  "seasonType": 2,
- "state": "pre",
+ "state": "in",
  "lines": {
   "open": {
    "at": "2026-11-25T04:55:12.027Z",

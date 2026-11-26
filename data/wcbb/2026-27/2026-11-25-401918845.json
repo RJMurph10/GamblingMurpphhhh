@@ -7,18 +7,18 @@
   "id": "2545",
   "abbr": "SELA",
   "name": "SE Louisiana Lady Lions",
-  "score": 0
+  "score": 8
  },
  "home": {
   "id": "251",
   "abbr": "TEX",
   "name": "Texas Longhorns",
-  "score": 0
+  "score": 31
  },
  "neutral": false,
  "venue": "Moody Center",
  "seasonType": 2,
- "state": "pre",
+ "state": "in",
  "lines": {
   "open": {
    "at": "2026-11-25T15:42:08.656Z",

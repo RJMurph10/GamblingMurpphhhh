@@ -2,23 +2,23 @@
  "id": "401909568",
  "league": "cbb",
  "date": "2026-11-26T00:00Z",
- "name": "CONN VS DUKE",
+ "name": "DUKE VS CONN",
  "away": {
-  "id": "41",
-  "abbr": "CONN",
-  "name": "UConn Huskies",
-  "score": 0
- },
- "home": {
   "id": "150",
   "abbr": "DUKE",
   "name": "Duke Blue Devils",
-  "score": 0
+  "score": 11
+ },
+ "home": {
+  "id": "41",
+  "abbr": "CONN",
+  "name": "UConn Huskies",
+  "score": 14
  },
  "neutral": true,
  "venue": "T-Mobile Arena",
  "seasonType": 2,
- "state": "pre",
+ "state": "in",
  "lines": {
   "open": {
    "at": "2026-11-24T21:19:02.149Z",
