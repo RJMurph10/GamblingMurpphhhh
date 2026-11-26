@@ -80,7 +80,7 @@ export async function finalCached<T>(key: string, load: () => Promise<T>, isFina
  * Lines for finished games, grouped by month so a whole season needs only a handful of cache reads.
  * `get` returns the stored lines for the given game ids; `save` merges newly found lines in.
  */
-export function finalLinesStore<O>(sport: string) {
+export function finalLinesStore<O>(sport: string, isEmpty: (odds: O) => boolean = () => false) {
   const keyFor = (month: string) => `${sport}-final-lines-${month}`;
   return {
     async get(games: { id: string; date: string }[]): Promise<Map<string, O>> {
@@ -103,7 +103,8 @@ export function finalLinesStore<O>(sport: string) {
           const current = (await readFinal<Record<string, O>>(keyFor(m))) ?? {};
           let changed = false;
           for (const { id, odds } of list) {
-            if (!(id in current)) {
+            // a stored "no lines" entry is replaced once real lines turn up
+            if (!(id in current) || (isEmpty(current[id]) && !isEmpty(odds))) {
               current[id] = odds;
               changed = true;
             }
