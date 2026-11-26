@@ -1,7 +1,23 @@
 {
  "day": "2026-11-26",
- "updated": "2026-11-25T23:22:56.362Z",
+ "updated": "2026-11-26T14:30:50.771Z",
  "picks": [
+  {
+   "id": "401906807-total",
+   "game": "OU @ PUR",
+   "tip": "2026-11-26T17:00Z",
+   "market": "total",
+   "pick": "Over 141.5",
+   "line": 141.5,
+   "open": 141.5,
+   "model": 148.1,
+   "edge": 6.6,
+   "best": true,
+   "firstSeen": "2026-11-26T14:30:50.771Z",
+   "latest": 142.5,
+   "latestAt": "2026-11-26T14:30:50.771Z",
+   "alerted": false
+  },
   {
    "id": "401920539-total",
    "game": "ALA @ KSU",
@@ -15,7 +31,7 @@
    "best": true,
    "firstSeen": "2026-11-25T23:22:56.362Z",
    "latest": 169.5,
-   "latestAt": "2026-11-25T23:22:56.362Z",
+   "latestAt": "2026-11-26T14:30:50.771Z",
    "alerted": false
   },
   {
@@ -30,8 +46,8 @@
    "edge": 10,
    "best": true,
    "firstSeen": "2026-11-25T23:22:56.362Z",
-   "latest": 159.5,
-   "latestAt": "2026-11-25T23:22:56.362Z",
+   "latest": 155.5,
+   "latestAt": "2026-11-26T14:30:50.771Z",
    "alerted": false
   }
  ]

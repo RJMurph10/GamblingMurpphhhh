@@ -163,7 +163,12 @@
    "firstSeen": "2026-11-24T15:20:20.474Z",
    "latest": -9.5,
    "latestAt": "2026-11-25T23:22:55.370Z",
-   "alerted": false
+   "alerted": false,
+   "score": [
+    104,
+    116
+   ],
+   "close": -8.5
   },
   {
    "id": "401909324-spread",
@@ -179,7 +184,12 @@
    "firstSeen": "2026-11-25T15:00:27.053Z",
    "latest": -7.5,
    "latestAt": "2026-11-25T23:22:55.370Z",
-   "alerted": false
+   "alerted": false,
+   "score": [
+    110,
+    129
+   ],
+   "close": -8.5
   },
   {
    "id": "401909325-spread",
@@ -195,7 +205,12 @@
    "firstSeen": "2026-11-25T15:00:27.053Z",
    "latest": 3.5,
    "latestAt": "2026-11-25T23:22:55.370Z",
-   "alerted": false
+   "alerted": false,
+   "score": [
+    111,
+    116
+   ],
+   "close": 3.5
   },
   {
    "id": "401909325-total",
@@ -211,7 +226,12 @@
    "firstSeen": "2026-11-25T15:00:27.053Z",
    "latest": 225.5,
    "latestAt": "2026-11-25T23:22:55.370Z",
-   "alerted": false
+   "alerted": false,
+   "score": [
+    111,
+    116
+   ],
+   "close": 224.5
   }
  ]
 }
