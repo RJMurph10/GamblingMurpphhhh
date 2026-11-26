@@ -1335,10 +1335,13 @@ function RowLocation({ game }: { game: Game }) {
 export function GameRow({
   game,
   showMarket = true,
+  showTime = true,
   perspectiveTeamId,
 }: {
   game: Game;
   showMarket?: boolean;
+  /** false hides the Time column; the kickoff time stays in the data and in the date's tooltip. */
+  showTime?: boolean;
   perspectiveTeamId?: string;
 }) {
   const away = teamById(game.awayTeamId);
@@ -1359,24 +1362,36 @@ export function GameRow({
     (game.quarters?.home?.length ?? 0) > 4 ||
     Boolean(game.clock?.toUpperCase().includes("OT"));
   const showOT = isOT && game.status !== "scheduled";
+  const kickoffTime = game.kickoffIso
+    ? new Date(game.kickoffIso).toLocaleTimeString([], { hour: "numeric", minute: "2-digit" })
+    : (game.time ?? game.kickoff.replace(/^\w+\s+/, "")).replace(/\s*(ET|EDT|EST)$/i, "");
 
   return (
     <tr className="hover:bg-line/5">
-      <td className="whitespace-nowrap px-4 py-2.5 font-mono text-mute">
+      <td
+        suppressHydrationWarning
+        title={showTime ? undefined : kickoffTime}
+        className="whitespace-nowrap px-4 py-2.5 font-mono text-mute"
+      >
         {formatNumericDate(game.date)}
         {/* finished: where it was played, under the date */}
         {game.status === "final" ? <RowLocation game={game} /> : null}
-      </td>
-      <td suppressHydrationWarning className="whitespace-nowrap px-2 py-2.5 font-mono text-mute">
-        {game.kickoffIso
-          ? new Date(game.kickoffIso).toLocaleTimeString([], { hour: "numeric", minute: "2-digit" })
-          : (game.time ?? game.kickoff.replace(/^\w+\s+/, "")).replace(/\s*(ET|EDT|EST)$/i, "")}
-        {/* upcoming: where it'll be played, under the time; live: the running clock */}
-        {game.status === "scheduled" ? <RowLocation game={game} /> : null}
-        {game.status === "live" ? (
+        {/* no Time column: upcoming location and the live clock go under the date instead */}
+        {!showTime && game.status === "scheduled" ? <RowLocation game={game} /> : null}
+        {!showTime && game.status === "live" ? (
           <span className="block text-[10px] text-acc">{runningClock || "Live"}</span>
         ) : null}
       </td>
+      {showTime ? (
+        <td suppressHydrationWarning className="whitespace-nowrap px-2 py-2.5 font-mono text-mute">
+          {kickoffTime}
+          {/* upcoming: where it'll be played, under the time; live: the running clock */}
+          {game.status === "scheduled" ? <RowLocation game={game} /> : null}
+          {game.status === "live" ? (
+            <span className="block text-[10px] text-acc">{runningClock || "Live"}</span>
+          ) : null}
+        </td>
+      ) : null}
       <td className="px-2 py-2.5 text-center">
         <MatchupLink
           game={game}
