@@ -1,9 +1,9 @@
 {
- "checkedAt": "2026-11-26T15:50:11.961Z",
+ "checkedAt": "2026-11-27T00:04:46.900Z",
  "summary": {
-  "ok": 30,
+  "ok": 32,
   "warn": 1,
-  "fail": 6
+  "fail": 4
  },
  "checks": [
   {
@@ -11,7 +11,7 @@
    "id": "data:props-site/period-lines/nhl",
    "name": "NHL period lines",
    "status": "fail",
-   "detail": "updated 6.5 days ago (expected within 26 h)",
+   "detail": "updated 6.9 days ago (expected within 26 h)",
    "since": "2026-11-21T07:44:51.121Z"
   },
   {
@@ -19,7 +19,7 @@
    "id": "data:props-site/cbase",
    "name": "College baseball season file",
    "status": "ok",
-   "detail": "updated 13.4 days ago · off season",
+   "detail": "updated 13.7 days ago · off season",
    "since": "2026-11-13T09:24:01.166Z"
   },
   {
@@ -27,7 +27,7 @@
    "id": "data:line-history/",
    "name": "Line history branch",
    "status": "ok",
-   "detail": "updated 6.2 h ago",
+   "detail": "updated 3 min ago",
    "since": "2026-11-26T05:29:53.211Z"
   },
   {
@@ -35,7 +35,7 @@
    "id": "data:props-site/mlb/upcoming.json",
    "name": "MLB upcoming props",
    "status": "ok",
-   "detail": "updated 25.5 days ago · off season",
+   "detail": "updated 25.8 days ago · off season",
    "since": "2026-11-13T09:24:01.166Z"
   },
   {
@@ -43,7 +43,7 @@
    "id": "data:props-site/picks/nba",
    "name": "NBA / CBB opener picks",
    "status": "ok",
-   "detail": "updated 1.3 h ago",
+   "detail": "updated 43 min ago",
    "since": "2026-11-13T16:45:57.424Z"
   },
   {
@@ -51,7 +51,7 @@
    "id": "data:props-site/nba/upcoming.json",
    "name": "NBA upcoming props",
    "status": "ok",
-   "detail": "updated 10.4 h ago",
+   "detail": "updated 3 min ago",
    "since": "2026-11-13T09:24:01.166Z"
   },
   {
@@ -59,7 +59,7 @@
    "id": "data:props-site/nfl/upcoming.json",
    "name": "NFL upcoming props",
    "status": "ok",
-   "detail": "updated 6.2 h ago",
+   "detail": "updated 3 min ago",
    "since": "2026-11-13T09:24:01.166Z"
   },
   {
@@ -67,16 +67,8 @@
    "id": "data:props-site/nhl/upcoming.json",
    "name": "NHL upcoming props",
    "status": "ok",
-   "detail": "updated 10.4 h ago",
+   "detail": "updated 3 min ago",
    "since": "2026-11-21T00:19:12.288Z"
-  },
-  {
-   "group": "Feeds",
-   "id": "feed:open-meteo",
-   "name": "Open-Meteo forecast",
-   "status": "fail",
-   "detail": "HTTP 0",
-   "since": "2026-11-26T05:29:53.211Z"
   },
   {
    "group": "Feeds",
@@ -107,7 +99,7 @@
    "id": "feed:espn:basketball/mens-college-basketball",
    "name": "ESPN Men's college basketball scoreboard",
    "status": "ok",
-   "detail": "8 games today",
+   "detail": "11 games today, odds on 5 of 5 upcoming",
    "since": "2026-11-13T09:24:01.166Z"
   },
   {
@@ -123,7 +115,7 @@
    "id": "feed:espn:basketball/nba",
    "name": "ESPN NBA scoreboard",
    "status": "ok",
-   "detail": "9 games today",
+   "detail": "11 games today, odds on 11 of 11 upcoming",
    "since": "2026-11-13T09:24:01.166Z"
   },
   {
@@ -131,7 +123,7 @@
    "id": "feed:espn:football/nfl",
    "name": "ESPN NFL scoreboard",
    "status": "ok",
-   "detail": "16 games today, odds on 15 of 15 upcoming",
+   "detail": "16 games today, odds on 13 of 13 upcoming",
    "since": "2026-11-13T09:24:01.166Z"
   },
   {
@@ -139,7 +131,7 @@
    "id": "feed:espn:hockey/nhl",
    "name": "ESPN NHL scoreboard",
    "status": "ok",
-   "detail": "14 games today",
+   "detail": "15 games today, odds on 15 of 15 upcoming",
    "since": "2026-11-13T09:24:01.166Z"
   },
   {
@@ -167,35 +159,35 @@
    "since": "2026-11-13T09:24:01.166Z"
   },
   {
-   "group": "Jobs",
-   "id": "job:football-picks.yml",
-   "name": "Football picks (live results)",
-   "status": "fail",
-   "detail": "stale: last success 12.2 h ago (expected within 9 h)",
-   "since": "2026-11-26T15:50:11.961Z"
+   "group": "Feeds",
+   "id": "feed:open-meteo",
+   "name": "Open-Meteo forecast",
+   "status": "ok",
+   "detail": "24 hours",
+   "since": "2026-11-27T00:04:46.900Z"
   },
   {
    "group": "Jobs",
    "id": "job:odds-api-nfl.yml",
    "name": "NFL prop prices (Odds API)",
    "status": "fail",
-   "detail": "stale: last success 4.5 days ago (expected within 100 h)",
+   "detail": "stale: last success 4.9 days ago (expected within 100 h)",
    "since": "2026-11-26T15:50:11.961Z"
   },
   {
    "group": "Jobs",
-   "id": "job:qb-watch.yml",
-   "name": "QB watch (injury news)",
+   "id": "job:period-lines.yml",
+   "name": "NHL period lines",
    "status": "fail",
-   "detail": "stale: last success 8.8 h ago (expected within 8 h)",
-   "since": "2026-11-26T15:50:11.961Z"
+   "detail": "stale: last success 19.9 h ago (expected within 14 h)",
+   "since": "2026-11-27T00:04:46.900Z"
   },
   {
    "group": "Jobs",
    "id": "job:cbase-season.yml",
    "name": "College baseball season",
    "status": "ok",
-   "detail": "last success 13.4 days ago · off season",
+   "detail": "last success 13.7 days ago · off season",
    "since": "2026-11-13T09:24:01.166Z"
   },
   {
@@ -203,15 +195,23 @@
    "id": "job:extra-lines.yml",
    "name": "Extra game lines (SportsGameOdds / Odds API)",
    "status": "ok",
-   "detail": "last success 11.5 h ago",
+   "detail": "last success 18 min ago",
    "since": "2026-11-13T09:24:01.166Z"
+  },
+  {
+   "group": "Jobs",
+   "id": "job:football-picks.yml",
+   "name": "Football picks (live results)",
+   "status": "ok",
+   "detail": "last success 7.0 h ago",
+   "since": "2026-11-27T00:04:46.900Z"
   },
   {
    "group": "Jobs",
    "id": "job:line-history.yml",
    "name": "Line history (hourly lines, every league)",
    "status": "ok",
-   "detail": "last success 6.2 h ago",
+   "detail": "last success 3 min ago",
    "since": "2026-11-26T05:29:53.211Z"
   },
   {
@@ -219,7 +219,7 @@
    "id": "job:nba-picks.yml",
    "name": "NBA / CBB picks at the opener",
    "status": "ok",
-   "detail": "last success 1.3 h ago",
+   "detail": "last success 43 min ago",
    "since": "2026-11-25T23:48:12.848Z"
   },
   {
@@ -227,7 +227,7 @@
    "id": "job:nba-lines.yml",
    "name": "NBA game lines",
    "status": "ok",
-   "detail": "last success 2.6 days ago",
+   "detail": "last success 3.0 days ago",
    "since": "2026-11-13T09:24:01.166Z"
   },
   {
@@ -235,7 +235,7 @@
    "id": "job:nfl-openers.yml",
    "name": "NFL opening lines",
    "status": "ok",
-   "detail": "last success 40.6 h ago",
+   "detail": "last success 2.0 days ago",
    "since": "2026-11-13T09:24:01.166Z"
   },
   {
@@ -243,7 +243,7 @@
    "id": "job:sgo-nfl-props.yml",
    "name": "NFL prop prices (SportsGameOdds)",
    "status": "ok",
-   "detail": "last success 10.4 h ago",
+   "detail": "last success 4 min ago",
    "since": "2026-11-24T11:39:20.018Z"
   },
   {
@@ -251,7 +251,7 @@
    "id": "job:nfl-qb-stars.yml",
    "name": "NFL QB ★ props",
    "status": "ok",
-   "detail": "last success 15.2 h ago",
+   "detail": "last success 23.4 h ago",
    "since": "2026-11-13T09:24:01.166Z"
   },
   {
@@ -259,24 +259,24 @@
    "id": "job:nhl-periods.yml",
    "name": "NHL period history",
    "status": "ok",
-   "detail": "last success 17.8 h ago",
+   "detail": "last success 2.1 h ago",
    "since": "2026-11-13T09:24:01.166Z"
-  },
-  {
-   "group": "Jobs",
-   "id": "job:period-lines.yml",
-   "name": "NHL period lines",
-   "status": "ok",
-   "detail": "last success 11.7 h ago",
-   "since": "2026-11-26T05:29:53.211Z"
   },
   {
    "group": "Jobs",
    "id": "job:props-daily.yml",
    "name": "Props daily (prop boards, grading)",
    "status": "ok",
-   "detail": "last success 1.7 h ago",
+   "detail": "last success 1.6 h ago",
    "since": "2026-11-13T09:24:01.166Z"
+  },
+  {
+   "group": "Jobs",
+   "id": "job:qb-watch.yml",
+   "name": "QB watch (injury news)",
+   "status": "ok",
+   "detail": "last success 6.4 h ago",
+   "since": "2026-11-27T00:04:46.900Z"
   },
   {
    "group": "Quotas",
