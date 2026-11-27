@@ -2,17 +2,17 @@
  "id": "401920533",
  "league": "cbb",
  "date": "2026-11-27T18:00Z",
- "name": "ISU VS SJU",
+ "name": "SJU VS ISU",
  "away": {
-  "id": "66",
-  "abbr": "ISU",
-  "name": "Iowa State Cyclones",
-  "score": 0
- },
- "home": {
   "id": "2599",
   "abbr": "SJU",
   "name": "St. John's Red Storm",
+  "score": 0
+ },
+ "home": {
+  "id": "66",
+  "abbr": "ISU",
+  "name": "Iowa State Cyclones",
   "score": 0
  },
  "neutral": true,

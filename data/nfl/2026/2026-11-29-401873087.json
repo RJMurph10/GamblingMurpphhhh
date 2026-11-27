@@ -661,8 +661,8 @@
    ]
   },
   "latest": {
-   "at": "2026-11-27T05:20:33.445Z",
-   "count": 1202,
+   "at": "2026-11-27T10:46:22.573Z",
+   "count": 1204,
    "rows": [
   {"a":"4360689","t":"Total Passing Yards (incl. overtime)","ti":"8","op":[245.5,null,null],"cur":[242.5,null,null]},
   {"a":"4360689","t":"Total Passing Yards (incl. overtime)","ti":"8","op":[245.5,null,null],"cur":[242.5,null,null]},
@@ -1074,6 +1074,7 @@
   {"a":"4360689","t":"1st Quarter Total Rushing Yards","ti":"193","op":[0.5,null,null],"cur":[0.5,null,null]},
   {"a":"4362238","t":"1st Quarter Total Rushing Yards","ti":"193","op":[9.5,null,null],"cur":[9.5,null,null]},
   {"a":"4362238","t":"1st Quarter Total Rushing Yards","ti":"193","op":[9.5,null,null],"cur":[9.5,null,null]},
+  {"a":"3915511","t":"Passing Yards Milestones","ti":"194","op":[300,null,null],"cur":[200,null,null]},
   {"a":"3915511","t":"Passing Yards Milestones","ti":"194","op":[300,null,null],"cur":[210,null,null]},
   {"a":"3915511","t":"Passing Yards Milestones","ti":"194","op":[300,null,null],"cur":[220,null,null]},
   {"a":"3915511","t":"Passing Yards Milestones","ti":"194","op":[300,null,null],"cur":[230,null,null]},
@@ -1689,6 +1690,7 @@
   {"a":"4880281","t":"Receiving Yards Milestones - 1st Quarter","ti":"213","op":[5,null,null],"cur":[30,null,null]},
   {"a":"4880281","t":"Receiving Yards Milestones - 1st Quarter","ti":"213","op":[5,null,null],"cur":[35,null,null]},
   {"a":"4880281","t":"Receiving Yards Milestones - 1st Quarter","ti":"213","op":[5,null,null],"cur":[40,null,null]},
+  {"a":"4880281","t":"Receiving Yards Milestones - 1st Quarter","ti":"213","op":[5,null,null],"cur":[45,null,null]},
   {"a":"3915511","t":"Passing Yards Milestones - 1st Half","ti":"214","op":[175,null,null],"cur":[115,null,null]},
   {"a":"3915511","t":"Passing Yards Milestones - 1st Half","ti":"214","op":[175,null,null],"cur":[120,null,null]},
   {"a":"3915511","t":"Passing Yards Milestones - 1st Half","ti":"214","op":[175,null,null],"cur":[125,null,null]},
