@@ -1,6 +1,6 @@
 {
  "day": "2026-11-27",
- "updated": "2026-11-27T14:25:33.258Z",
+ "updated": "2026-11-27T22:59:26.610Z",
  "picks": [
   {
    "id": "401913531-total",
@@ -15,7 +15,7 @@
    "best": true,
    "firstSeen": "2026-11-27T14:25:33.258Z",
    "latest": 176.5,
-   "latestAt": "2026-11-27T14:25:33.258Z",
+   "latestAt": "2026-11-27T22:59:26.610Z",
    "alerted": false
   },
   {
@@ -30,8 +30,24 @@
    "edge": 6.1,
    "best": true,
    "firstSeen": "2026-11-27T14:25:33.258Z",
-   "latest": 159.5,
-   "latestAt": "2026-11-27T14:25:33.258Z",
+   "latest": 160.5,
+   "latestAt": "2026-11-27T22:59:26.610Z",
+   "alerted": false
+  },
+  {
+   "id": "401920535-total",
+   "game": "SDSU @ TTU",
+   "tip": "2026-11-28T04:30Z",
+   "market": "total",
+   "pick": "Over 141.5",
+   "line": 141.5,
+   "open": 141.5,
+   "model": 148.2,
+   "edge": 6.7,
+   "best": true,
+   "firstSeen": "2026-11-27T22:59:26.610Z",
+   "latest": 142.5,
+   "latestAt": "2026-11-27T22:59:26.610Z",
    "alerted": false
   }
  ]

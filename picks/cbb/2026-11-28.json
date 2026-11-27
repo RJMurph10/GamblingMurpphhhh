@@ -1,0 +1,22 @@
+{
+ "day": "2026-11-28",
+ "updated": "2026-11-27T22:59:26.610Z",
+ "picks": [
+  {
+   "id": "401924811-total",
+   "game": "MRMK @ HOF",
+   "tip": "2026-11-28T20:30Z",
+   "market": "total",
+   "pick": "Over 125.5",
+   "line": 125.5,
+   "open": 125.5,
+   "model": 133.3,
+   "edge": 7.8,
+   "best": true,
+   "firstSeen": "2026-11-27T22:59:26.610Z",
+   "latest": 125.5,
+   "latestAt": "2026-11-27T22:59:26.610Z",
+   "alerted": false
+  }
+ ]
+}

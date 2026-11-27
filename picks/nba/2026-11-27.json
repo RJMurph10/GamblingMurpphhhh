@@ -1,6 +1,6 @@
 {
  "day": "2026-11-27",
- "updated": "2026-11-27T14:25:32.404Z",
+ "updated": "2026-11-27T22:59:25.444Z",
  "picks": [
   {
    "id": "401909326-spread",
@@ -14,8 +14,8 @@
    "edge": 2.9,
    "best": false,
    "firstSeen": "2026-11-26T14:30:50.274Z",
-   "latest": -4.5,
-   "latestAt": "2026-11-27T14:25:32.404Z",
+   "latest": -2.5,
+   "latestAt": "2026-11-27T22:59:25.444Z",
    "alerted": false
   },
   {
@@ -31,7 +31,7 @@
    "best": false,
    "firstSeen": "2026-11-26T14:30:50.274Z",
    "latest": 222.5,
-   "latestAt": "2026-11-27T14:25:32.404Z",
+   "latestAt": "2026-11-27T22:59:25.444Z",
    "alerted": false
   },
   {
@@ -46,8 +46,8 @@
    "edge": 6.2,
    "best": true,
    "firstSeen": "2026-11-26T23:22:05.891Z",
-   "latest": -10.5,
-   "latestAt": "2026-11-27T14:25:32.404Z",
+   "latest": -9.5,
+   "latestAt": "2026-11-27T22:59:25.444Z",
    "alerted": false
   },
   {
@@ -79,7 +79,7 @@
    "best": true,
    "firstSeen": "2026-11-26T23:22:05.891Z",
    "latest": -9.5,
-   "latestAt": "2026-11-27T14:25:32.404Z",
+   "latestAt": "2026-11-27T22:59:25.444Z",
    "alerted": false
   },
   {
@@ -94,8 +94,8 @@
    "edge": 2.1,
    "best": false,
    "firstSeen": "2026-11-26T14:30:50.274Z",
-   "latest": -8.5,
-   "latestAt": "2026-11-27T14:25:32.404Z",
+   "latest": -9.5,
+   "latestAt": "2026-11-27T22:59:25.444Z",
    "alerted": false
   },
   {
@@ -110,8 +110,8 @@
    "edge": 3.2,
    "best": true,
    "firstSeen": "2026-11-26T23:22:05.891Z",
-   "latest": -4.5,
-   "latestAt": "2026-11-27T14:25:32.404Z",
+   "latest": -2.5,
+   "latestAt": "2026-11-27T22:59:25.444Z",
    "alerted": false
   },
   {
@@ -158,8 +158,8 @@
    "edge": 6.4,
    "best": false,
    "firstSeen": "2026-11-26T14:30:50.274Z",
-   "latest": 225.5,
-   "latestAt": "2026-11-27T14:25:32.404Z",
+   "latest": 226.5,
+   "latestAt": "2026-11-27T22:59:25.444Z",
    "alerted": false
   },
   {
@@ -174,8 +174,8 @@
    "edge": 3.9,
    "best": true,
    "firstSeen": "2026-11-26T14:30:50.274Z",
-   "latest": 10.5,
-   "latestAt": "2026-11-27T14:25:32.404Z",
+   "latest": 9.5,
+   "latestAt": "2026-11-27T22:59:25.444Z",
    "alerted": false
   },
   {
@@ -190,8 +190,8 @@
    "edge": 8.7,
    "best": true,
    "firstSeen": "2026-11-26T14:30:50.274Z",
-   "latest": 229.5,
-   "latestAt": "2026-11-27T14:25:32.404Z",
+   "latest": 232.5,
+   "latestAt": "2026-11-27T22:59:25.444Z",
    "alerted": false
   },
   {
@@ -207,7 +207,7 @@
    "best": false,
    "firstSeen": "2026-11-26T23:22:05.891Z",
    "latest": -2.5,
-   "latestAt": "2026-11-27T14:25:32.404Z",
+   "latestAt": "2026-11-27T22:59:25.444Z",
    "alerted": false
   },
   {
