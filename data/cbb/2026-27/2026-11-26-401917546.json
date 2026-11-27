@@ -7,18 +7,18 @@
   "id": "279",
   "abbr": "PAC",
   "name": "Pacific Tigers",
-  "score": 0
+  "score": 71
  },
  "home": {
   "id": "2437",
   "abbr": "OMA",
   "name": "Omaha Mavericks",
-  "score": 0
+  "score": 62
  },
  "neutral": true,
  "venue": "Resorts World Event Center",
  "seasonType": 2,
- "state": "pre",
+ "state": "post",
  "lines": {
   "open": {
    "at": "2026-11-26T05:26:04.582Z",
@@ -934,5 +934,9 @@
    ]
   }
  },
- "props": {}
+ "props": {},
+ "final": {
+  "away": 71,
+  "home": 62
+ }
 }

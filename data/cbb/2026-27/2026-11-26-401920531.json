@@ -1,24 +1,24 @@
 {
  "id": "401920531",
  "league": "cbb",
- "date": "2026-11-27T04:30Z",
+ "date": "2026-11-27T04:57Z",
  "name": "TTU VS ORE",
  "away": {
   "id": "2641",
   "abbr": "TTU",
   "name": "Texas Tech Red Raiders",
-  "score": 0
+  "score": 22
  },
  "home": {
   "id": "2483",
   "abbr": "ORE",
   "name": "Oregon Ducks",
-  "score": 0
+  "score": 13
  },
  "neutral": true,
  "venue": "Michelob ULTRA Arena",
  "seasonType": 2,
- "state": "pre",
+ "state": "in",
  "lines": {
   "open": {
    "at": "2026-11-25T15:42:08.656Z",
