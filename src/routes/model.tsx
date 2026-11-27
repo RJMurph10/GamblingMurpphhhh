@@ -10,6 +10,7 @@ import { getNflHistory } from "@/lib/shared/history.functions";
 import { useKickoffForecasts, WatchList } from "@/components/nfl/WatchList";
 import { PropsFindingsPanel } from "@/components/nfl/PropsFindingsPanel";
 import { RushUndersPanel } from "@/components/nfl/RushUndersPanel";
+import { WeatherUndersPanel } from "@/components/nfl/WeatherUndersPanel";
 import { AltLaddersPanel } from "@/components/nfl/AltLaddersPanel";
 import { NextManUpPanel } from "@/components/shared/NextManUpPanel";
 import { QbStarsPanel } from "@/components/shared/QbStarsPanel";
@@ -232,6 +233,7 @@ function ModelPage() {
             </ul>
           </Panel>
           <QbStarsPanel />
+          <WeatherUndersPanel />
           <RushUndersPanel />
           <AltLaddersPanel />
           <NextManUpPanel />
