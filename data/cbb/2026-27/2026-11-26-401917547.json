@@ -2,23 +2,23 @@
  "id": "401917547",
  "league": "cbb",
  "date": "2026-11-26T22:00Z",
- "name": "SMC VS UCLA",
+ "name": "UCLA VS SMC",
  "away": {
-  "id": "2608",
-  "abbr": "SMC",
-  "name": "Saint Mary's Gaels",
-  "score": 0
- },
- "home": {
   "id": "26",
   "abbr": "UCLA",
   "name": "UCLA Bruins",
-  "score": 0
+  "score": 50
+ },
+ "home": {
+  "id": "2608",
+  "abbr": "SMC",
+  "name": "Saint Mary's Gaels",
+  "score": 59
  },
  "neutral": true,
  "venue": "Jenny Craig Pavilion",
  "seasonType": 2,
- "state": "pre",
+ "state": "in",
  "lines": {
   "open": {
    "at": "2026-11-25T23:48:34.043Z",

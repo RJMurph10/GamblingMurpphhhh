@@ -479,10 +479,23 @@
  },
  "props": {
   "open": {
-   "at": "2026-11-26T19:41:12.949Z",
+   "at": "2026-11-27T00:00:48.093Z",
    "provider": 100,
-   "count": 40,
+   "count": 84,
    "rows": [
+  {"a":"3775","t":"To Score 2+ Goals","ti":"39","cur":[null,4000,null]},
+  {"a":"3149829","t":"To Score 2+ Goals","ti":"39","cur":[null,4000,null]},
+  {"a":"4271734","t":"To Score 2+ Goals","ti":"39","cur":[null,1400,null]},
+  {"a":"4565228","t":"To Score 2+ Goals","ti":"39","cur":[null,2500,null]},
+  {"a":"4565245","t":"To Score 2+ Goals","ti":"39","cur":[null,10000,null]},
+  {"a":"4565255","t":"To Score 2+ Goals","ti":"39","cur":[null,2200,null]},
+  {"a":"4587837","t":"To Score 2+ Goals","ti":"39","cur":[null,4500,null]},
+  {"a":"4697384","t":"To Score 2+ Goals","ti":"39","cur":[null,1400,null]},
+  {"a":"4697386","t":"To Score 2+ Goals","ti":"39","cur":[null,8000,null]},
+  {"a":"4697411","t":"To Score 2+ Goals","ti":"39","cur":[null,6000,null]},
+  {"a":"5136706","t":"To Score 2+ Goals","ti":"39","cur":[null,6000,null]},
+  {"a":"4271734","t":"To Score 3+ Goals","ti":"40","cur":[null,7500,null]},
+  {"a":"4697384","t":"To Score 3+ Goals","ti":"40","cur":[null,8000,null]},
   {"a":null,"tm":"14","t":"1st Period Moneyline","ti":"139","cur":[null,205,null]},
   {"a":null,"tm":"20","t":"1st Period Moneyline","ti":"139","cur":[null,165,null]},
   {"a":null,"t":"1st Period Moneyline","ti":"139","cur":[null,170,null]},
@@ -502,8 +515,8 @@
   {"a":null,"t":"3rd Period Moneyline","ti":"145","cur":[null,245,null]},
   {"a":null,"tm":"14","t":"3rd Period Spread","ti":"146","op":[0.5,null,null],"cur":[0.5,null,null],"px":[-175,-175]},
   {"a":null,"tm":"20","t":"3rd Period Spread","ti":"146","op":[-0.5,null,null],"cur":[-0.5,null,null],"px":[135,135]},
-  {"a":null,"t":"3rd Period Total Goals","ti":"147","op":[2.5,null,null],"cur":[2.5,null,null],"px":[145,145]},
-  {"a":null,"t":"3rd Period Total Goals","ti":"147","op":[2.5,null,null],"cur":[2.5,null,null],"px":[-188,-188]},
+  {"a":null,"t":"3rd Period Total Goals","ti":"147","op":[2.5,null,null],"cur":[2.5,null,null],"px":[140,145]},
+  {"a":null,"t":"3rd Period Total Goals","ti":"147","op":[2.5,null,null],"cur":[2.5,null,null],"px":[-180,-188]},
   {"a":null,"tm":"14","t":"Team Total Goals (Excl OT)","ti":"151","op":[2.5,null,null],"cur":[1.5,null,null],"px":[-450,-155]},
   {"a":null,"tm":"14","t":"Team Total Goals (Excl OT)","ti":"151","op":[2.5,null,null],"cur":[2.5,null,null],"px":[-155,-155]},
   {"a":null,"tm":"14","t":"Team Total Goals (Excl OT)","ti":"151","op":[2.5,null,null],"cur":[3.5,null,null],"px":[155,-155]},
@@ -513,6 +526,7 @@
   {"a":null,"tm":"14","t":"Team Total Goals (Excl OT)","ti":"151","op":[2.5,null,null],"cur":[2.5,null,null],"px":[115,115]},
   {"a":null,"tm":"14","t":"Team Total Goals (Excl OT)","ti":"151","op":[2.5,null,null],"cur":[3.5,null,null],"px":[-210,115]},
   {"a":null,"tm":"14","t":"Team Total Goals (Excl OT)","ti":"151","op":[2.5,null,null],"cur":[4.5,null,null],"px":[-575,115]},
+  {"a":null,"tm":"14","t":"Team Total Goals (Excl OT)","ti":"151","op":[2.5,null,null],"cur":[5.5,null,null],"px":[-2000,115]},
   {"a":null,"tm":"20","t":"Team Total Goals (Excl OT)","ti":"151","op":[3.5,null,null],"cur":[1.5,null,null],"px":[-575,120]},
   {"a":null,"tm":"20","t":"Team Total Goals (Excl OT)","ti":"151","op":[3.5,null,null],"cur":[2.5,null,null],"px":[-200,120]},
   {"a":null,"tm":"20","t":"Team Total Goals (Excl OT)","ti":"151","op":[3.5,null,null],"cur":[3.5,null,null],"px":[120,120]},
@@ -522,39 +536,69 @@
   {"a":null,"tm":"20","t":"Team Total Goals (Excl OT)","ti":"151","op":[3.5,null,null],"cur":[3.5,null,null],"px":[-160,-160]},
   {"a":null,"t":"Both Teams To Score","ti":"152","cur":[null,-1400,null]},
   {"a":null,"t":"Both Teams To Score","ti":"152","cur":[null,600,null]},
-  {"a":null,"t":"Will There Be Overtime?","ti":"153","cur":[null,250,null]}
+  {"a":null,"t":"Will There Be Overtime?","ti":"153","cur":[null,245,null]},
+  {"a":"3775","t":"Anytime Goalscorer","ti":"230","cur":[null,370,null]},
+  {"a":"2563027","t":"Anytime Goalscorer","ti":"230","cur":[null,900,null]},
+  {"a":"3149697","t":"Anytime Goalscorer","ti":"230","cur":[null,1100,null]},
+  {"a":"3149829","t":"Anytime Goalscorer","ti":"230","cur":[null,400,null]},
+  {"a":"3900219","t":"Anytime Goalscorer","ti":"230","cur":[null,750,null]},
+  {"a":"4271734","t":"Anytime Goalscorer","ti":"230","cur":[null,190,null]},
+  {"a":"4565228","t":"Anytime Goalscorer","ti":"230","cur":[null,285,null]},
+  {"a":"4565245","t":"Anytime Goalscorer","ti":"230","cur":[null,650,null]},
+  {"a":"4565255","t":"Anytime Goalscorer","ti":"230","cur":[null,250,null]},
+  {"a":"4587837","t":"Anytime Goalscorer","ti":"230","cur":[null,400,null]},
+  {"a":"4588190","t":"Anytime Goalscorer","ti":"230","cur":[null,1200,null]},
+  {"a":"4697384","t":"Anytime Goalscorer","ti":"230","cur":[null,185,null]},
+  {"a":"4697386","t":"Anytime Goalscorer","ti":"230","cur":[null,600,null]},
+  {"a":"4697411","t":"Anytime Goalscorer","ti":"230","cur":[null,475,null]},
+  {"a":"4697448","t":"Anytime Goalscorer","ti":"230","cur":[null,2200,null]},
+  {"a":"4712021","t":"Anytime Goalscorer","ti":"230","cur":[null,1800,null]},
+  {"a":"5136706","t":"Anytime Goalscorer","ti":"230","cur":[null,475,null]},
+  {"a":"5174232","t":"Anytime Goalscorer","ti":"230","cur":[null,2500,null]},
+  {"a":"3775","t":"Goals Milestones","ti":"232","op":[2,null,null],"cur":[2,null,null],"px":[4000,4000]},
+  {"a":"3149829","t":"Goals Milestones","ti":"232","op":[2,null,null],"cur":[2,null,null],"px":[4000,4000]},
+  {"a":"4271734","t":"Goals Milestones","ti":"232","op":[2,null,null],"cur":[2,null,null],"px":[1400,1400]},
+  {"a":"4271734","t":"Goals Milestones","ti":"232","op":[2,null,null],"cur":[3,null,null],"px":[7500,1400]},
+  {"a":"4565228","t":"Goals Milestones","ti":"232","op":[2,null,null],"cur":[2,null,null],"px":[2500,2500]},
+  {"a":"4565245","t":"Goals Milestones","ti":"232","op":[2,null,null],"cur":[2,null,null],"px":[10000,10000]},
+  {"a":"4565255","t":"Goals Milestones","ti":"232","op":[2,null,null],"cur":[2,null,null],"px":[2200,2200]},
+  {"a":"4587837","t":"Goals Milestones","ti":"232","op":[2,null,null],"cur":[2,null,null],"px":[4500,4500]},
+  {"a":"4697384","t":"Goals Milestones","ti":"232","op":[2,null,null],"cur":[2,null,null],"px":[1400,1400]},
+  {"a":"4697386","t":"Goals Milestones","ti":"232","op":[2,null,null],"cur":[2,null,null],"px":[8000,8000]},
+  {"a":"4697411","t":"Goals Milestones","ti":"232","op":[2,null,null],"cur":[2,null,null],"px":[6000,6000]},
+  {"a":"5136706","t":"Goals Milestones","ti":"232","op":[2,null,null],"cur":[2,null,null],"px":[6000,6000]}
  ],
    "sample": [
     {
      "competition": {
       "id": "401892799"
      },
-     "team": {
-      "id": "14"
+     "athlete": {
+      "id": "3775"
      },
      "provider": {
       "id": "100"
      },
      "type": {
-      "id": "139",
-      "name": "1st Period Moneyline"
+      "id": "39",
+      "name": "To Score 2+ Goals"
      },
      "odds": {
       "american": {
-       "value": "+205",
-       "open": "+205"
+       "value": "+4000",
+       "open": "+4000"
       },
       "decimal": {
-       "value": "3.05",
-       "open": "3.05"
+       "value": "41.00",
+       "open": "41.00"
       },
       "fraction": {
-       "value": "41/20",
-       "open": "41/20"
+       "value": "40/1",
+       "open": "40/1"
       },
       "total": {}
      },
-     "lastUpdated": "2026-11-26T18:22Z",
+     "lastUpdated": "2026-11-27T02:28Z",
      "current": {},
      "open": {}
     },
@@ -562,41 +606,54 @@
      "competition": {
       "id": "401892799"
      },
-     "team": {
-      "id": "20"
+     "athlete": {
+      "id": "3149829"
      },
      "provider": {
       "id": "100"
      },
      "type": {
-      "id": "139",
-      "name": "1st Period Moneyline"
+      "id": "39",
+      "name": "To Score 2+ Goals"
      },
      "odds": {
       "american": {
-       "value": "+165",
-       "open": "+165"
+       "value": "+4000",
+       "open": "+4000"
       },
       "decimal": {
-       "value": "2.65",
-       "open": "2.65"
+       "value": "41.00",
+       "open": "41.00"
       },
       "fraction": {
-       "value": "33/20",
-       "open": "33/20"
+       "value": "40/1",
+       "open": "40/1"
       },
       "total": {}
      },
-     "lastUpdated": "2026-11-26T18:22Z",
+     "lastUpdated": "2026-11-27T02:28Z",
      "current": {},
      "open": {}
     }
    ]
   },
   "latest": {
-   "at": "2026-11-26T19:41:12.949Z",
-   "count": 40,
+   "at": "2026-11-27T00:00:48.093Z",
+   "count": 84,
    "rows": [
+  {"a":"3775","t":"To Score 2+ Goals","ti":"39","cur":[null,4000,null]},
+  {"a":"3149829","t":"To Score 2+ Goals","ti":"39","cur":[null,4000,null]},
+  {"a":"4271734","t":"To Score 2+ Goals","ti":"39","cur":[null,1400,null]},
+  {"a":"4565228","t":"To Score 2+ Goals","ti":"39","cur":[null,2500,null]},
+  {"a":"4565245","t":"To Score 2+ Goals","ti":"39","cur":[null,10000,null]},
+  {"a":"4565255","t":"To Score 2+ Goals","ti":"39","cur":[null,2200,null]},
+  {"a":"4587837","t":"To Score 2+ Goals","ti":"39","cur":[null,4500,null]},
+  {"a":"4697384","t":"To Score 2+ Goals","ti":"39","cur":[null,1400,null]},
+  {"a":"4697386","t":"To Score 2+ Goals","ti":"39","cur":[null,8000,null]},
+  {"a":"4697411","t":"To Score 2+ Goals","ti":"39","cur":[null,6000,null]},
+  {"a":"5136706","t":"To Score 2+ Goals","ti":"39","cur":[null,6000,null]},
+  {"a":"4271734","t":"To Score 3+ Goals","ti":"40","cur":[null,7500,null]},
+  {"a":"4697384","t":"To Score 3+ Goals","ti":"40","cur":[null,8000,null]},
   {"a":null,"tm":"14","t":"1st Period Moneyline","ti":"139","cur":[null,205,null]},
   {"a":null,"tm":"20","t":"1st Period Moneyline","ti":"139","cur":[null,165,null]},
   {"a":null,"t":"1st Period Moneyline","ti":"139","cur":[null,170,null]},
@@ -616,8 +673,8 @@
   {"a":null,"t":"3rd Period Moneyline","ti":"145","cur":[null,245,null]},
   {"a":null,"tm":"14","t":"3rd Period Spread","ti":"146","op":[0.5,null,null],"cur":[0.5,null,null],"px":[-175,-175]},
   {"a":null,"tm":"20","t":"3rd Period Spread","ti":"146","op":[-0.5,null,null],"cur":[-0.5,null,null],"px":[135,135]},
-  {"a":null,"t":"3rd Period Total Goals","ti":"147","op":[2.5,null,null],"cur":[2.5,null,null],"px":[145,145]},
-  {"a":null,"t":"3rd Period Total Goals","ti":"147","op":[2.5,null,null],"cur":[2.5,null,null],"px":[-188,-188]},
+  {"a":null,"t":"3rd Period Total Goals","ti":"147","op":[2.5,null,null],"cur":[2.5,null,null],"px":[140,145]},
+  {"a":null,"t":"3rd Period Total Goals","ti":"147","op":[2.5,null,null],"cur":[2.5,null,null],"px":[-180,-188]},
   {"a":null,"tm":"14","t":"Team Total Goals (Excl OT)","ti":"151","op":[2.5,null,null],"cur":[1.5,null,null],"px":[-450,-155]},
   {"a":null,"tm":"14","t":"Team Total Goals (Excl OT)","ti":"151","op":[2.5,null,null],"cur":[2.5,null,null],"px":[-155,-155]},
   {"a":null,"tm":"14","t":"Team Total Goals (Excl OT)","ti":"151","op":[2.5,null,null],"cur":[3.5,null,null],"px":[155,-155]},
@@ -627,6 +684,7 @@
   {"a":null,"tm":"14","t":"Team Total Goals (Excl OT)","ti":"151","op":[2.5,null,null],"cur":[2.5,null,null],"px":[115,115]},
   {"a":null,"tm":"14","t":"Team Total Goals (Excl OT)","ti":"151","op":[2.5,null,null],"cur":[3.5,null,null],"px":[-210,115]},
   {"a":null,"tm":"14","t":"Team Total Goals (Excl OT)","ti":"151","op":[2.5,null,null],"cur":[4.5,null,null],"px":[-575,115]},
+  {"a":null,"tm":"14","t":"Team Total Goals (Excl OT)","ti":"151","op":[2.5,null,null],"cur":[5.5,null,null],"px":[-2000,115]},
   {"a":null,"tm":"20","t":"Team Total Goals (Excl OT)","ti":"151","op":[3.5,null,null],"cur":[1.5,null,null],"px":[-575,120]},
   {"a":null,"tm":"20","t":"Team Total Goals (Excl OT)","ti":"151","op":[3.5,null,null],"cur":[2.5,null,null],"px":[-200,120]},
   {"a":null,"tm":"20","t":"Team Total Goals (Excl OT)","ti":"151","op":[3.5,null,null],"cur":[3.5,null,null],"px":[120,120]},
@@ -636,7 +694,37 @@
   {"a":null,"tm":"20","t":"Team Total Goals (Excl OT)","ti":"151","op":[3.5,null,null],"cur":[3.5,null,null],"px":[-160,-160]},
   {"a":null,"t":"Both Teams To Score","ti":"152","cur":[null,-1400,null]},
   {"a":null,"t":"Both Teams To Score","ti":"152","cur":[null,600,null]},
-  {"a":null,"t":"Will There Be Overtime?","ti":"153","cur":[null,250,null]}
+  {"a":null,"t":"Will There Be Overtime?","ti":"153","cur":[null,245,null]},
+  {"a":"3775","t":"Anytime Goalscorer","ti":"230","cur":[null,370,null]},
+  {"a":"2563027","t":"Anytime Goalscorer","ti":"230","cur":[null,900,null]},
+  {"a":"3149697","t":"Anytime Goalscorer","ti":"230","cur":[null,1100,null]},
+  {"a":"3149829","t":"Anytime Goalscorer","ti":"230","cur":[null,400,null]},
+  {"a":"3900219","t":"Anytime Goalscorer","ti":"230","cur":[null,750,null]},
+  {"a":"4271734","t":"Anytime Goalscorer","ti":"230","cur":[null,190,null]},
+  {"a":"4565228","t":"Anytime Goalscorer","ti":"230","cur":[null,285,null]},
+  {"a":"4565245","t":"Anytime Goalscorer","ti":"230","cur":[null,650,null]},
+  {"a":"4565255","t":"Anytime Goalscorer","ti":"230","cur":[null,250,null]},
+  {"a":"4587837","t":"Anytime Goalscorer","ti":"230","cur":[null,400,null]},
+  {"a":"4588190","t":"Anytime Goalscorer","ti":"230","cur":[null,1200,null]},
+  {"a":"4697384","t":"Anytime Goalscorer","ti":"230","cur":[null,185,null]},
+  {"a":"4697386","t":"Anytime Goalscorer","ti":"230","cur":[null,600,null]},
+  {"a":"4697411","t":"Anytime Goalscorer","ti":"230","cur":[null,475,null]},
+  {"a":"4697448","t":"Anytime Goalscorer","ti":"230","cur":[null,2200,null]},
+  {"a":"4712021","t":"Anytime Goalscorer","ti":"230","cur":[null,1800,null]},
+  {"a":"5136706","t":"Anytime Goalscorer","ti":"230","cur":[null,475,null]},
+  {"a":"5174232","t":"Anytime Goalscorer","ti":"230","cur":[null,2500,null]},
+  {"a":"3775","t":"Goals Milestones","ti":"232","op":[2,null,null],"cur":[2,null,null],"px":[4000,4000]},
+  {"a":"3149829","t":"Goals Milestones","ti":"232","op":[2,null,null],"cur":[2,null,null],"px":[4000,4000]},
+  {"a":"4271734","t":"Goals Milestones","ti":"232","op":[2,null,null],"cur":[2,null,null],"px":[1400,1400]},
+  {"a":"4271734","t":"Goals Milestones","ti":"232","op":[2,null,null],"cur":[3,null,null],"px":[7500,1400]},
+  {"a":"4565228","t":"Goals Milestones","ti":"232","op":[2,null,null],"cur":[2,null,null],"px":[2500,2500]},
+  {"a":"4565245","t":"Goals Milestones","ti":"232","op":[2,null,null],"cur":[2,null,null],"px":[10000,10000]},
+  {"a":"4565255","t":"Goals Milestones","ti":"232","op":[2,null,null],"cur":[2,null,null],"px":[2200,2200]},
+  {"a":"4587837","t":"Goals Milestones","ti":"232","op":[2,null,null],"cur":[2,null,null],"px":[4500,4500]},
+  {"a":"4697384","t":"Goals Milestones","ti":"232","op":[2,null,null],"cur":[2,null,null],"px":[1400,1400]},
+  {"a":"4697386","t":"Goals Milestones","ti":"232","op":[2,null,null],"cur":[2,null,null],"px":[8000,8000]},
+  {"a":"4697411","t":"Goals Milestones","ti":"232","op":[2,null,null],"cur":[2,null,null],"px":[6000,6000]},
+  {"a":"5136706","t":"Goals Milestones","ti":"232","op":[2,null,null],"cur":[2,null,null],"px":[6000,6000]}
  ]
   }
  },

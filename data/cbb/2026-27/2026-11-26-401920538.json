@@ -7,18 +7,18 @@
   "id": "2628",
   "abbr": "TCU",
   "name": "TCU Horned Frogs",
-  "score": 0
+  "score": 35
  },
  "home": {
   "id": "156",
   "abbr": "CREI",
   "name": "Creighton Bluejays",
-  "score": 0
+  "score": 39
  },
  "neutral": true,
  "venue": "T-Mobile Arena",
  "seasonType": 2,
- "state": "pre",
+ "state": "in",
  "lines": {
   "open": {
    "at": "2026-11-25T04:55:12.027Z",

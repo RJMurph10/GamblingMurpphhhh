@@ -600,7 +600,7 @@
    ]
   },
   "latest": {
-   "at": "2026-11-26T19:41:12.949Z",
+   "at": "2026-11-27T00:00:48.093Z",
    "count": 46,
    "rows": [
   {"a":null,"tm":"5","t":"1st Period Moneyline","ti":"139","cur":[null,195,null]},
@@ -622,8 +622,8 @@
   {"a":null,"t":"3rd Period Moneyline","ti":"145","cur":[null,240,null]},
   {"a":null,"tm":"5","t":"3rd Period Spread","ti":"146","op":[0.5,null,null],"cur":[0.5,null,null],"px":[-180,-180]},
   {"a":null,"tm":"29","t":"3rd Period Spread","ti":"146","op":[-0.5,null,null],"cur":[-0.5,null,null],"px":[140,140]},
-  {"a":null,"t":"3rd Period Total Goals","ti":"147","op":[1.5,null,null],"cur":[1.5,null,null],"px":[-200,-200]},
-  {"a":null,"t":"3rd Period Total Goals","ti":"147","op":[1.5,null,null],"cur":[1.5,null,null],"px":[154,154]},
+  {"a":null,"t":"3rd Period Total Goals","ti":"147","op":[1.5,null,null],"cur":[2.5,null,null],"px":[154,-200]},
+  {"a":null,"t":"3rd Period Total Goals","ti":"147","op":[1.5,null,null],"cur":[2.5,null,null],"px":[-200,154]},
   {"a":null,"tm":"5","t":"Team Total Goals (Excl OT)","ti":"151","op":[2.5,null,null],"cur":[1.5,null,null],"px":[-440,-155]},
   {"a":null,"tm":"5","t":"Team Total Goals (Excl OT)","ti":"151","op":[2.5,null,null],"cur":[2.5,null,null],"px":[-155,-155]},
   {"a":null,"tm":"5","t":"Team Total Goals (Excl OT)","ti":"151","op":[2.5,null,null],"cur":[3.5,null,null],"px":[155,-155]},

@@ -7,18 +7,18 @@
   "id": "21",
   "abbr": "PHI",
   "name": "Philadelphia Eagles",
-  "score": 0
+  "score": 10
  },
  "home": {
   "id": "6",
   "abbr": "DAL",
   "name": "Dallas Cowboys",
-  "score": 0
+  "score": 28
  },
  "neutral": false,
  "venue": "AT&T Stadium",
  "seasonType": 2,
- "state": "pre",
+ "state": "in",
  "lines": {
   "open": {
    "at": "2026-11-19T22:12:41.484Z",

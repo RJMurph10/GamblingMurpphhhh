@@ -2,23 +2,23 @@
  "id": "401921673",
  "league": "cbb",
  "date": "2026-11-26T21:30Z",
- "name": "USU VS USC",
+ "name": "USC VS USU",
  "away": {
-  "id": "328",
-  "abbr": "USU",
-  "name": "Utah State Aggies",
-  "score": 0
- },
- "home": {
   "id": "30",
   "abbr": "USC",
   "name": "USC Trojans",
-  "score": 0
+  "score": 74
+ },
+ "home": {
+  "id": "328",
+  "abbr": "USU",
+  "name": "Utah State Aggies",
+  "score": 76
  },
  "neutral": true,
  "venue": "Acrisure Arena",
  "seasonType": 2,
- "state": "pre",
+ "state": "in",
  "lines": {
   "open": {
    "at": "2026-11-25T23:48:34.043Z",
