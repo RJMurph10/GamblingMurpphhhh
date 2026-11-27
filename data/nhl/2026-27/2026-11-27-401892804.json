@@ -7,13 +7,13 @@
   "id": "8",
   "abbr": "LA",
   "name": "Los Angeles Kings",
-  "score": 0
+  "score": 5
  },
  "home": {
   "id": "25",
   "abbr": "ANA",
   "name": "Anaheim Ducks",
-  "score": 2
+  "score": 3
  },
  "neutral": false,
  "venue": "Honda Center",

@@ -7,18 +7,18 @@
   "id": "2378",
   "abbr": "UMBC",
   "name": "UMBC Retrievers",
-  "score": 28
+  "score": 51
  },
  "home": {
   "id": "45",
   "abbr": "GW",
   "name": "George Washington Revolutionaries",
-  "score": 58
+  "score": 91
  },
  "neutral": false,
  "venue": "Charles E. Smith Center",
  "seasonType": 2,
- "state": "in",
+ "state": "post",
  "lines": {
   "open": {
    "at": "2026-11-27T02:54:39.298Z",
@@ -395,5 +395,9 @@
    ]
   }
  },
- "props": {}
+ "props": {},
+ "final": {
+  "away": 51,
+  "home": 91
+ }
 }

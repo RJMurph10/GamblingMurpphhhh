@@ -1,24 +1,24 @@
 {
  "id": "401920541",
  "league": "cbb",
- "date": "2026-11-27T22:30Z",
+ "date": "2026-11-27T22:41Z",
  "name": "MICH VS KSU",
  "away": {
   "id": "130",
   "abbr": "MICH",
   "name": "Michigan Wolverines",
-  "score": 0
+  "score": 47
  },
  "home": {
   "id": "2306",
   "abbr": "KSU",
   "name": "Kansas State Wildcats",
-  "score": 0
+  "score": 30
  },
  "neutral": true,
  "venue": "T-Mobile Arena",
  "seasonType": 2,
- "state": "pre",
+ "state": "in",
  "lines": {
   "open": {
    "at": "2026-11-27T05:20:33.445Z",

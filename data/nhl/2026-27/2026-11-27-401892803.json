@@ -7,13 +7,13 @@
   "id": "17",
   "abbr": "COL",
   "name": "Colorado Avalanche",
-  "score": 0
+  "score": 3
  },
  "home": {
   "id": "30",
   "abbr": "MIN",
   "name": "Minnesota Wild",
-  "score": 2
+  "score": 3
  },
  "neutral": false,
  "venue": "Grand Casino Arena",

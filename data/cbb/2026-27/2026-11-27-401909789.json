@@ -7,18 +7,18 @@
   "id": "222",
   "abbr": "VILL",
   "name": "Villanova Wildcats",
-  "score": 0
+  "score": 38
  },
  "home": {
   "id": "2305",
   "abbr": "KU",
   "name": "Kansas Jayhawks",
-  "score": 0
+  "score": 43
  },
  "neutral": false,
  "venue": "Allen Fieldhouse",
  "seasonType": 2,
- "state": "pre",
+ "state": "in",
  "lines": {
   "open": {
    "at": "2026-11-27T02:54:39.298Z",

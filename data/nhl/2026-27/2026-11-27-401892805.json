@@ -7,18 +7,18 @@
   "id": "37",
   "abbr": "VGK",
   "name": "Vegas Golden Knights",
-  "score": 0
+  "score": 1
  },
  "home": {
   "id": "18",
   "abbr": "SJ",
   "name": "San Jose Sharks",
-  "score": 0
+  "score": 4
  },
  "neutral": false,
  "venue": "SAP Center at San Jose",
  "seasonType": 2,
- "state": "in",
+ "state": "post",
  "lines": {
   "open": {
    "at": "2026-11-26T19:41:12.949Z",
@@ -1193,5 +1193,9 @@
    "Juho Piiparinen",
    "VGK"
   ]
+ },
+ "final": {
+  "away": 1,
+  "home": 4
  }
 }
