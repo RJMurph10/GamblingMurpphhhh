@@ -19,12 +19,13 @@ Output: <site>/nfl/weather-unders-<season>.json
   { season, updated, liveFrom, rule, record: { wr: {replay, live}, qb: {replay, live} } ([w, l, push, units]),
     picks: [[date, game, player, team, kind, line, under price, actual, result, weather, bigPlay, locked]],
     upcoming: [[date, game, player, team, kind, opening line, under price, current line, weather, bigPlay]],
-    locked: { key: [date, game, player, team, kind, line, under price, weather, bigPlay] } }
+    locked: { key: [date, game, player, team, kind, line, under price, weather, bigPlay] },
+    recorded: { nflverse game_id: weather } }  (archive weather for finished games, so reruns skip them)
   kind = "wr" (★) or "qb" (tracked); weather = [precip mm, wind mph].
 
   python3 scripts/nfl/weather_unders.py --site props-site --cache nflverse-cache [--season 2026]
 """
-import argparse, glob, json, os, re, time, urllib.request
+import argparse, functools, glob, json, os, re, time, urllib.request
 from datetime import datetime, timedelta, timezone
 
 import pandas as pd
@@ -80,6 +81,12 @@ def game_of(date_iso, name):
 
 
 offline = json.load(open(args.weather_file)) if args.weather_file else None
+out_path = f"{args.site}/nfl/weather-unders-{SEASON}.json"
+try:
+    _prev = json.load(open(out_path))
+except Exception:
+    _prev = {}
+SEEN = _prev.get("recorded", {})  # game_id -> recorded weather, games finished 6+ days ago (archive data)
 _wx = {}
 
 
@@ -92,6 +99,8 @@ def weather(g):
         return [w["precip"], w["wind"]] if w else None
     if g.game_id in _wx:
         return _wx[g.game_id]
+    if g.game_id in SEEN:
+        return SEEN[g.game_id]
     c = STAD.get(g.stadium_id)
     if not c:
         return None
@@ -114,6 +123,8 @@ def weather(g):
                 w = max(w, h["wind_speed_10m"][idx[t]] or 0)
         out = [round(p, 1), round(w * 1.09)] if n else None
     _wx[g.game_id] = out
+    if old and out is not None:
+        SEEN[g.game_id] = out
     return out
 
 
@@ -134,9 +145,13 @@ if len(W):
     W["k"] = W.player_display_name.map(key)
 
 
+BY = {k: x for k, x in W[W.position == "WR"].groupby("k")} if len(W) else {}
+
+
+@functools.lru_cache(maxsize=None)
 def big_play(name, week):
-    x = W[(W.k == key(name)) & (W.position == "WR")]
-    if x.empty:
+    x = BY.get(key(name))
+    if x is None:
         return None
     cur = x[(x.season == SEASON) & (x.week < week)]
     prev = x[x.season == SEASON - 1]
@@ -155,11 +170,7 @@ def qualifies(kind, line, wx, bp):
 
 pay = lambda o: 100 / -o if o < 0 else o / 100
 local_day = lambda iso: (pd.Timestamp(iso) - pd.Timedelta(hours=5)).strftime("%Y-%m-%d")
-out_path = f"{args.site}/nfl/weather-unders-{SEASON}.json"
-try:
-    locked = json.load(open(out_path)).get("locked", {})
-except Exception:
-    locked = {}
+locked = _prev.get("locked", {})
 
 
 def candidates(g, props):
@@ -232,7 +243,7 @@ rec = {kind: {"replay": record([p for p in picks if p[4] == kind and not p[11]])
               "live": record([p for p in picks if p[4] == kind and p[11]])} for kind in ("wr", "qb")}
 out = {"season": SEASON, "updated": now.isoformat(), "liveFrom": LIVE_FROM,
        "rule": {"bigPlay": BIG, "line": LINE, "rainMm": RAIN, "windMph": WIND},
-       "record": rec, "picks": picks, "upcoming": upc, "locked": locked}
+       "record": rec, "picks": picks, "upcoming": upc, "locked": locked, "recorded": SEEN}
 os.makedirs(f"{args.site}/nfl", exist_ok=True)
 json.dump(out, open(out_path, "w"))
 print(f"{SEASON} weather unders: WR ★ replay {rec['wr']['replay']} live {rec['wr']['live']}; QB wind replay {rec['qb']['replay']} live {rec['qb']['live']}; "
