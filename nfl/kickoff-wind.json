@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-26T20:32:34.924Z",
+ "updated": "2026-11-27T20:19:15.164Z",
  "note": "Kickoff wind (mph, Open-Meteo 10 m wind x 1.09) for finished outdoor NFL games nflverse left without weather; keyed by ESPN game id.",
  "factor": 1.09,
  "games": {
@@ -1900,6 +1900,15 @@
    "gust": 21.9,
    "precip": 0,
    "temp": 56,
+   "source": "forecast"
+  },
+  "401873082": {
+   "game": "2026_12_KC_BUF",
+   "wind": 15,
+   "raw": 13.8,
+   "gust": 40.5,
+   "precip": 0.997,
+   "temp": 34,
    "source": "forecast"
   }
  }
