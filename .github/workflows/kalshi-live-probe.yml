@@ -1,0 +1,11 @@
+name: kalshi live probe
+on: { push: { branches: [kalshi-live-probe] } }
+jobs:
+  p:
+    runs-on: ubuntu-latest
+    timeout-minutes: 45
+    steps:
+      - uses: actions/checkout@v4
+      - run: python3 probe/kalshi_vs_espn.py 30
+      - uses: actions/upload-artifact@v4
+        with: { name: log, path: probe/log.jsonl }
