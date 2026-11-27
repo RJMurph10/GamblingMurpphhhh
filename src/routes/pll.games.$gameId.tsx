@@ -5,6 +5,8 @@ import { Panel, PanelHeader } from "@/components/shared/booth";
 import { PllLinesNote, PllLogo, PllSourceNote } from "@/components/pll/PllBits";
 import { PllGameRosters } from "@/components/pll/PllGameRosters";
 import { PllPlayByPlay } from "@/components/pll/PllPlayByPlay";
+import { PllTeamStats } from "@/components/pll/PllTeamStats";
+import { usePllTeamStats } from "@/lib/pll/team-stats";
 import { usePllPlays } from "@/lib/pll/use-pll-plays";
 import { pbpQuarters } from "@/lib/pll/play-by-play";
 import {
@@ -63,6 +65,7 @@ function PllGamePage() {
   const linesQ = usePllLines();
   const [tab, setTab] = useState<"game" | "rosters">("game");
   const plays = usePllPlays(game);
+  const teamStats = usePllTeamStats(game);
   if (!game)
     return (
       <Panel>
@@ -157,6 +160,10 @@ function PllGamePage() {
             </table>
           </div>
         </Panel>
+      ) : null}
+
+      {tab === "game" && teamStats ? (
+        <PllTeamStats rows={teamStats} away={away} home={home} />
       ) : null}
 
       {tab === "game" ? <PllPlayByPlay game={game} season={season} /> : null}
