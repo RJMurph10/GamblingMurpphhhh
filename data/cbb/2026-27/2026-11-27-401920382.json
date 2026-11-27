@@ -13,12 +13,12 @@
   "id": "259",
   "abbr": "VT",
   "name": "Virginia Tech Hokies",
-  "score": 0
+  "score": 2
  },
  "neutral": false,
  "venue": "Cassell Coliseum",
  "seasonType": 2,
- "state": "pre",
+ "state": "in",
  "lines": {
   "open": {
    "at": "2026-11-27T02:54:39.298Z",

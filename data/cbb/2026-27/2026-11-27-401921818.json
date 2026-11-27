@@ -7,18 +7,18 @@
   "id": "2029",
   "abbr": "UAPB",
   "name": "Arkansas-Pine Bluff Golden Lions",
-  "score": 0
+  "score": 28
  },
  "home": {
   "id": "142",
   "abbr": "MIZ",
   "name": "Missouri Tigers",
-  "score": 0
+  "score": 51
  },
  "neutral": false,
  "venue": "Mizzou Arena",
  "seasonType": 2,
- "state": "pre",
+ "state": "in",
  "lines": {
   "open": {
    "at": "2026-11-27T02:54:39.298Z",

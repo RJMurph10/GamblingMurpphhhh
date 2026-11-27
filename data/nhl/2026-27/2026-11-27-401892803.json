@@ -13,12 +13,12 @@
   "id": "30",
   "abbr": "MIN",
   "name": "Minnesota Wild",
-  "score": 0
+  "score": 2
  },
  "neutral": false,
  "venue": "Grand Casino Arena",
  "seasonType": 2,
- "state": "pre",
+ "state": "in",
  "lines": {
   "open": {
    "at": "2026-11-26T19:41:12.949Z",

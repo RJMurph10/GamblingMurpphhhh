@@ -7,7 +7,7 @@
   "id": "2005",
   "abbr": "AFA",
   "name": "Air Force Falcons",
-  "score": 0
+  "score": 7
  },
  "home": {
   "id": "167",
@@ -18,7 +18,7 @@
  "neutral": false,
  "venue": "University Stadium (NM)",
  "seasonType": 2,
- "state": "pre",
+ "state": "in",
  "lines": {
   "open": {
    "at": "2026-11-22T21:17:00.667Z",

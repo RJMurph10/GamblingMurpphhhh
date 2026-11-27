@@ -7,18 +7,18 @@
   "id": "2132",
   "abbr": "CIN",
   "name": "Cincinnati Bearcats",
-  "score": 0
+  "score": 15
  },
  "home": {
   "id": "103",
   "abbr": "BC",
   "name": "Boston College Eagles",
-  "score": 0
+  "score": 18
  },
  "neutral": true,
  "venue": "State Farm Field House",
  "seasonType": 2,
- "state": "pre",
+ "state": "in",
  "lines": {
   "open": {
    "at": "2026-11-27T00:00:48.093Z",

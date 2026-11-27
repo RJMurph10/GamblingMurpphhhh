@@ -7,18 +7,18 @@
   "id": "57",
   "abbr": "FLA",
   "name": "Florida Gators",
-  "score": 0
+  "score": 10
  },
  "home": {
   "id": "52",
   "abbr": "FSU",
   "name": "Florida State Seminoles",
-  "score": 0
+  "score": 3
  },
  "neutral": false,
  "venue": "Doak Campbell Stadium",
  "seasonType": 2,
- "state": "pre",
+ "state": "in",
  "lines": {
   "open": {
    "at": "2026-11-22T06:58:51.612Z",

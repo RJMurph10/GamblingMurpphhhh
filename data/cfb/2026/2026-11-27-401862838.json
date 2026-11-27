@@ -7,18 +7,18 @@
   "id": "218",
   "abbr": "TEM",
   "name": "Temple Owls",
-  "score": 0
+  "score": 7
  },
  "home": {
   "id": "235",
   "abbr": "MEM",
   "name": "Memphis Tigers",
-  "score": 0
+  "score": 17
  },
  "neutral": false,
  "venue": "Simmons Bank Liberty Stadium",
  "seasonType": 2,
- "state": "pre",
+ "state": "in",
  "lines": {
   "open": {
    "at": "2026-11-22T21:17:00.667Z",

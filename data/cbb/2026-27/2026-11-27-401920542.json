@@ -7,18 +7,18 @@
   "id": "2628",
   "abbr": "TCU",
   "name": "TCU Horned Frogs",
-  "score": 0
+  "score": 76
  },
  "home": {
   "id": "239",
   "abbr": "BAY",
   "name": "Baylor Bears",
-  "score": 0
+  "score": 63
  },
  "neutral": true,
  "venue": "T-Mobile Arena",
  "seasonType": 2,
- "state": "pre",
+ "state": "in",
  "lines": {
   "open": {
    "at": "2026-11-27T10:46:22.573Z",

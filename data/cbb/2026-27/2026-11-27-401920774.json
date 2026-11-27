@@ -7,18 +7,18 @@
   "id": "2142",
   "abbr": "COLG",
   "name": "Colgate Raiders",
-  "score": 0
+  "score": 60
  },
  "home": {
   "id": "2275",
   "abbr": "HOF",
   "name": "Hofstra Pride",
-  "score": 0
+  "score": 34
  },
  "neutral": false,
  "venue": "David S. Mack Sports and Exhibition Complex",
  "seasonType": 2,
- "state": "pre",
+ "state": "in",
  "lines": {
   "open": {
    "at": "2026-11-27T02:54:39.298Z",

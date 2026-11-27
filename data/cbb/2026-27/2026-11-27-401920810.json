@@ -7,7 +7,7 @@
   "id": "269",
   "abbr": "MARQ",
   "name": "Marquette Golden Eagles",
-  "score": 0
+  "score": 2
  },
  "home": {
   "id": "245",
@@ -18,7 +18,7 @@
  "neutral": true,
  "venue": "Imperial Arena",
  "seasonType": 2,
- "state": "pre",
+ "state": "in",
  "lines": {
   "open": {
    "at": "2026-11-27T00:00:48.093Z",

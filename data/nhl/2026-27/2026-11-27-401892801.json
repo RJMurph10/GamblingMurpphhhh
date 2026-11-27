@@ -7,18 +7,18 @@
   "id": "26",
   "abbr": "FLA",
   "name": "Florida Panthers",
-  "score": 0
+  "score": 1
  },
  "home": {
   "id": "23",
   "abbr": "WSH",
   "name": "Washington Capitals",
-  "score": 0
+  "score": 1
  },
  "neutral": false,
  "venue": "Capital One Arena",
  "seasonType": 2,
- "state": "pre",
+ "state": "in",
  "lines": {
   "open": {
    "at": "2026-11-26T19:41:12.949Z",
