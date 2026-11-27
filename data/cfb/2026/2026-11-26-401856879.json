@@ -7,18 +7,18 @@
   "id": "2628",
   "abbr": "TCU",
   "name": "TCU Horned Frogs",
-  "score": 0
+  "score": 10
  },
  "home": {
   "id": "2641",
   "abbr": "TTU",
   "name": "Texas Tech Red Raiders",
-  "score": 0
+  "score": 27
  },
  "neutral": false,
  "venue": "Galaxy Stadium",
  "seasonType": 2,
- "state": "pre",
+ "state": "in",
  "lines": {
   "open": {
    "at": "2026-11-20T03:26:33.911Z",

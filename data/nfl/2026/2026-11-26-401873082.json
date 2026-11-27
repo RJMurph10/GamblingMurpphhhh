@@ -7,18 +7,18 @@
   "id": "12",
   "abbr": "KC",
   "name": "Kansas City Chiefs",
-  "score": 0
+  "score": 3
  },
  "home": {
   "id": "2",
   "abbr": "BUF",
   "name": "Buffalo Bills",
-  "score": 0
+  "score": 7
  },
  "neutral": false,
  "venue": "Highmark Stadium",
  "seasonType": 2,
- "state": "pre",
+ "state": "in",
  "lines": {
   "open": {
    "at": "2026-11-20T03:26:33.911Z",

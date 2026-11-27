@@ -2,23 +2,23 @@
  "id": "401911523",
  "league": "cbb",
  "date": "2026-11-27T01:00Z",
- "name": "JXST VS UCD",
+ "name": "UCD VS JXST",
  "away": {
-  "id": "55",
-  "abbr": "JXST",
-  "name": "Jacksonville State Gamecocks",
-  "score": 0
- },
- "home": {
   "id": "302",
   "abbr": "UCD",
   "name": "UC Davis Aggies",
-  "score": 0
+  "score": 68
+ },
+ "home": {
+  "id": "55",
+  "abbr": "JXST",
+  "name": "Jacksonville State Gamecocks",
+  "score": 63
  },
  "neutral": true,
  "venue": "Resorts World Event Center",
  "seasonType": 2,
- "state": "pre",
+ "state": "post",
  "lines": {
   "open": {
    "at": "2026-11-25T23:48:34.043Z",
@@ -933,5 +933,9 @@
    ]
   }
  },
- "props": {}
+ "props": {},
+ "final": {
+  "away": 68,
+  "home": 63
+ }
 }

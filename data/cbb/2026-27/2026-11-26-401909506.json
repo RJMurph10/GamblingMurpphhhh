@@ -7,18 +7,18 @@
   "id": "305",
   "abbr": "DEP",
   "name": "DePaul Blue Demons",
-  "score": 0
+  "score": 64
  },
  "home": {
   "id": "221",
   "abbr": "PITT",
   "name": "Pittsburgh Panthers",
-  "score": 0
+  "score": 71
  },
  "neutral": true,
  "venue": "Suncoast Credit Union Arena",
  "seasonType": 2,
- "state": "pre",
+ "state": "post",
  "lines": {
   "open": {
    "at": "2026-11-25T23:48:34.043Z",
@@ -477,5 +477,9 @@
    ]
   }
  },
- "props": {}
+ "props": {},
+ "final": {
+  "away": 64,
+  "home": 71
+ }
 }
