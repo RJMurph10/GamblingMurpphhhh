@@ -123,7 +123,7 @@ describe("PLL international games (national teams in ESPN's PLL feed)", () => {
   });
 });
 
-describe.each([2021, 2023, 2024, 2025])("PLL play-by-play (%i)", (season) => {
+describe.each([2021, 2022, 2023, 2024, 2025])("PLL play-by-play (%i)", (season) => {
   it("each sheet matches one ESPN game, and its last goal is that game's final", async () => {
     // 2021 predates ESPN's PLL coverage: the site's results come from Wikipedia (same shape)
     const espn = (
@@ -139,7 +139,9 @@ describe.each([2021, 2023, 2024, 2025])("PLL play-by-play (%i)", (season) => {
     const file = (
       season === 2021
         ? await import("@/data/pll-pbp-2021.json")
-        : season === 2023
+        : season === 2022
+          ? await import("@/data/pll-pbp-2022.json")
+          : season === 2023
           ? await import("@/data/pll-pbp-2023.json")
           : season === 2024
           ? await import("@/data/pll-pbp-2024.json")
