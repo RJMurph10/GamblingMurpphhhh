@@ -1,0 +1,15 @@
+name: weather unders probe
+on: { push: { branches: [weather-unders-probe] } }
+jobs:
+  p:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with: { path: app }
+      - uses: actions/setup-python@v5
+        with: { python-version: "3.12" }
+      - run: pip install --quiet pandas numpy
+      - run: |
+          git clone -q --depth 1 --branch props-site https://github.com/${{ github.repository }}.git site-repo
+          python3 app/scripts/nfl/weather_unders.py --site site-repo --cache c
+          python3 -c "import json;d=json.load(open('site-repo/nfl/weather-unders-2026.json'));print(d['record']);[print(u) for u in d['upcoming']];[print(p) for p in d['picks'][-8:]]"
