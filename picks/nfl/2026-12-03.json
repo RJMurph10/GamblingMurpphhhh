@@ -1,0 +1,23 @@
+{
+ "day": "2026-12-03",
+ "updated": "2026-11-27T01:47:09.796Z",
+ "picks": [
+  {
+   "id": "401873096-spread-east-at-west-night",
+   "game": "KC @ LAR",
+   "tip": "2026-12-04T01:15Z",
+   "market": "spread",
+   "pick": "LAR -1.5",
+   "line": -1.5,
+   "open": -3.5,
+   "model": null,
+   "edge": null,
+   "best": false,
+   "tag": "east-at-west-night",
+   "firstSeen": "2026-11-27T01:47:09.796Z",
+   "lastSeen": "2026-11-27T01:47:09.796Z",
+   "latest": -1.5,
+   "latestAt": "2026-11-27T01:47:09.796Z"
+  }
+ ]
+}
