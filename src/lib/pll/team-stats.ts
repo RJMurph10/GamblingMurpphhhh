@@ -38,6 +38,7 @@ export type PllTeamStatRow = {
 
 /** Seasons with team stats. Loaded only when a game page asks for them. */
 const FILES: Record<number, () => Promise<{ default: unknown }>> = {
+  2025: () => import("@/data/pll-team-stats-2025.json"),
   2026: () => import("@/data/pll-team-stats-2026.json"),
 };
 

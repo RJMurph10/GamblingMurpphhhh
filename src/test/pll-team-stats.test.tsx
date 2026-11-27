@@ -4,6 +4,8 @@ import { render, screen } from "@testing-library/react";
 import fixture from "./fixtures/pll-2026.json";
 import ts2026 from "@/data/pll-team-stats-2026.json";
 import pbp2026 from "@/data/pll-pbp-2026.json";
+import ts2025 from "@/data/pll-team-stats-2025.json";
+import pbp2025 from "@/data/pll-pbp-2025.json";
 import { fetchPllSeason } from "@/lib/pll/pll.server";
 import { teamStatsForGame, type PllTeamStatsFile } from "@/lib/pll/team-stats";
 import { PllTeamStats } from "@/components/pll/PllTeamStats";
@@ -42,18 +44,29 @@ describe("PLL team stats (2026)", () => {
     }
   });
 
-  it("adds up: 1-point + 2 × 2-point goals = score, and the same file names as the play-by-play", () => {
-    const keys = file.fields.map((f) => f[0]);
-    const at = (k: string) => keys.indexOf(k);
-    for (const g of file.games) {
-      for (const side of [0, 1]) {
-        const n = (k: string) => g.stats[at(k)][side] as number;
-        expect(n("g1") + 2 * n("g2"), g.file).toBe(n("score"));
+  it.each([
+    [2025, ts2025, pbp2025, 20],
+    [2026, ts2026, pbp2026, 53],
+  ])(
+    "%i adds up: 1-point + 2 × 2-point goals = score, the play-by-play's final, the same file names",
+    (_, tsFile, pbpFile, games) => {
+      const f = tsFile as unknown as PllTeamStatsFile;
+      expect(f.games.length).toBe(games);
+      const keys = f.fields.map((x) => x[0]);
+      const at = (k: string) => keys.indexOf(k);
+      const pbp = new Map(
+        (pbpFile as { games: { file: string; final: number[] }[] }).games.map((g) => [g.file, g]),
+      );
+      for (const g of f.games) {
+        for (const side of [0, 1]) {
+          const n = (k: string) => g.stats[at(k)][side] as number;
+          expect(n("g1") + 2 * n("g2"), g.file).toBe(n("score"));
+        }
+        expect(pbp.has(g.file), g.file).toBe(true);
+        expect(g.stats[at("score")], g.file).toEqual(pbp.get(g.file)!.final);
       }
-    }
-    const pbpFiles = new Set(pbp2026.games.map((g) => g.file));
-    expect(file.games.filter((g) => !pbpFiles.has(g.file)).map((g) => g.file)).toEqual([]);
-  });
+    },
+  );
 
   it("renders a game's team stats", async () => {
     const s = await season2026();
