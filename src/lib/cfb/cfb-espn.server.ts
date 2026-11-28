@@ -153,6 +153,27 @@ function titleConferences(standings: any): TitleConference[] {
   }));
 }
 
+/** A college team's home stadium and city from ESPN's team page (1-day cache). */
+function homeVenueOf(espnTeamId: string): Promise<{ venue: string; location: string } | null> {
+  return cached(
+    `cfb-home-venue-${espnTeamId}`,
+    async () => {
+      try {
+        const data = await fetchJson(
+          `https://site.api.espn.com/apis/site/v2/sports/football/college-football/teams/${espnTeamId}`,
+        );
+        const v = data?.team?.franchise?.venue ?? data?.team?.venue;
+        if (!v?.fullName) return null;
+        const location = [v.address?.city, v.address?.state].filter(Boolean).join(", ");
+        return { venue: String(v.fullName), location };
+      } catch {
+        return null;
+      }
+    },
+    24 * 60 * MINUTE,
+  );
+}
+
 const isTbd = (teamId: string) => /^cfb--\d+$/.test(teamId);
 
 /**
@@ -245,6 +266,15 @@ async function fillTitleGames(games: Game[]): Promise<Game[]> {
         if (hinted || race.partial.locked) hostKnown = true;
       }
       if (add.length) finish("partial", hostKnown);
+    }
+    // a campus-site title game is at the host's stadium: fill the location once the host is in
+    const noPlace = !g.venue || g.venue === "TBD" || !g.location || g.location === "TBD";
+    if (noPlace && !g.neutralSite && next.titleRace?.status !== "open" && !isTbd(next.homeTeamId)) {
+      const home = await homeVenueOf(espnId(next.homeTeamId));
+      if (home) {
+        next.venue = home.venue;
+        if (home.location) next.location = home.location;
+      }
     }
     filled.set(g.id, next);
   }

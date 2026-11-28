@@ -21,9 +21,21 @@ import {
   SpreadBadge,
   marketResultClass,
 } from "@/components/shared/booth";
-import { gameScore, type BoxScoreLine, type Game, type GameProbabilityPoint } from "@/data/shared/games";
+import { TitleRaceLine } from "@/components/shared/GameCard";
+import {
+  gameScore,
+  type BoxScoreLine,
+  type Game,
+  type GameProbabilityPoint,
+} from "@/data/shared/games";
 import { isCollegeId, registerTeams, teamById, type Team } from "@/data/shared/teams";
-import { headshotUrl, playerRoute, teamRoute, teamShort, useLeague } from "@/lib/shared/league-links";
+import {
+  headshotUrl,
+  playerRoute,
+  teamRoute,
+  teamShort,
+  useLeague,
+} from "@/lib/shared/league-links";
 import { CFB_RULES, cfbBestBets, type CfbPick } from "@/lib/cfb/cfb-model";
 import { useCfbPriorSeason, useCfbSchedule } from "@/lib/cfb/use-cfb";
 import { getGameWeather, getLiveGame, getTeamSeasonAverages } from "@/lib/shared/espn.functions";
@@ -35,15 +47,7 @@ import { ProbabilityGraph } from "@/components/shared/ProbabilityGraph";
 
 /* ---------- Interactive 100-Yard Field Visualizer ---------- */
 
-function LiveFieldTrack({
-  game,
-  away,
-  home,
-}: {
-  game: Game;
-  away: Team;
-  home: Team;
-}) {
+function LiveFieldTrack({ game, away, home }: { game: Game; away: Team; home: Team }) {
   if (game.status !== "live") return null;
   // At halftime the field is shown plain: no ball, line of scrimmage, first-down line or down banner.
   const isHalftime = /half/i.test(game.clock ?? "");
@@ -81,10 +85,7 @@ function LiveFieldTrack({
     }
   }
 
-  const dist =
-    typeof game.distance === "number" && game.distance > 0
-      ? game.distance
-      : 10;
+  const dist = typeof game.distance === "number" && game.distance > 0 ? game.distance : 10;
 
   const firstDownYard = isAwayPossession
     ? Math.min(100, ballYard + dist)
@@ -94,23 +95,37 @@ function LiveFieldTrack({
     <div className="mt-4 overflow-hidden rounded-lg border border-emerald-500/20 bg-[#091b11] p-3 shadow-inner">
       {!plainField ? (
         <>
-        {/* Field status banner */}
-        <div className="mb-2 flex items-center justify-between font-mono text-[11px] uppercase tracking-wider text-emerald-400">
-          <span className="flex items-center gap-1.5 font-semibold text-foreground">
-            <FootballIcon isRedZone={game.isRedZone} />
-            <span>{game.downDistance ?? "1st & 10"}</span>
-            <span className="text-mute">·</span>
-            <span className="inline-flex items-center gap-1">
-              {isMidfield ? "50" : spotMatch ? <><TeamLogo team={teamById(spotMatch[1] === away.abbr ? away.id : home.id) ?? (spotMatch[1] === away.abbr ? away : home)} className="size-4" />{spotMatch[2]}</> : game.possessionText ?? "50"}
+          {/* Field status banner */}
+          <div className="mb-2 flex items-center justify-between font-mono text-[11px] uppercase tracking-wider text-emerald-400">
+            <span className="flex items-center gap-1.5 font-semibold text-foreground">
+              <FootballIcon isRedZone={game.isRedZone} />
+              <span>{game.downDistance ?? "1st & 10"}</span>
+              <span className="text-mute">·</span>
+              <span className="inline-flex items-center gap-1">
+                {isMidfield ? (
+                  "50"
+                ) : spotMatch ? (
+                  <>
+                    <TeamLogo
+                      team={
+                        teamById(spotMatch[1] === away.abbr ? away.id : home.id) ??
+                        (spotMatch[1] === away.abbr ? away : home)
+                      }
+                      className="size-4"
+                    />
+                    {spotMatch[2]}
+                  </>
+                ) : (
+                  (game.possessionText ?? "50")
+                )}
+              </span>
             </span>
-          </span>
 
-          <span className="flex items-center gap-1 text-acc font-semibold">
-            <span>Drive</span>
-            <span>{isAwayPossession ? "→" : "←"}</span>
-          </span>
-        </div>
-
+            <span className="flex items-center gap-1 text-acc font-semibold">
+              <span>Drive</span>
+              <span>{isAwayPossession ? "→" : "←"}</span>
+            </span>
+          </div>
         </>
       ) : null}
 
@@ -127,22 +142,16 @@ function LiveFieldTrack({
         {/* 100-Yard Field */}
         <div className="relative h-full w-[80%] shrink-0">
           <div className="absolute inset-0 flex justify-between pointer-events-none">
-            {[10, 20, 30, 40, 50, 40, 30, 20, 10].map(
-              (yd, idx) => (
-                <div
-                  key={idx}
-                  className="relative flex h-full flex-col justify-between border-l border-white/15 px-0.5 text-center"
-                  style={{ width: "10%" }}
-                >
-                  <span className="font-mono text-[8px] sm:text-[9px] text-white/40">
-                    {yd}
-                  </span>
-                  <span className="font-mono text-[8px] sm:text-[9px] text-white/40">
-                    {yd}
-                  </span>
-                </div>
-              ),
-            )}
+            {[10, 20, 30, 40, 50, 40, 30, 20, 10].map((yd, idx) => (
+              <div
+                key={idx}
+                className="relative flex h-full flex-col justify-between border-l border-white/15 px-0.5 text-center"
+                style={{ width: "10%" }}
+              >
+                <span className="font-mono text-[8px] sm:text-[9px] text-white/40">{yd}</span>
+                <span className="font-mono text-[8px] sm:text-[9px] text-white/40">{yd}</span>
+              </div>
+            ))}
           </div>
 
           {/* 50 Yard Midfield Line */}
@@ -165,15 +174,13 @@ function LiveFieldTrack({
                 className="absolute top-0 z-20 h-full w-[2px] drop-shadow-[0_0_6px_rgba(0,0,0,0.9)]"
                 style={{
                   left: `${ballYard}%`,
-                  backgroundColor:
-                    possessingTeam.color ?? "#ffffff",
+                  backgroundColor: possessingTeam.color ?? "#ffffff",
                 }}
               >
                 <div
                   className="absolute top-1/2 -translate-x-1/2 -translate-y-1/2 rounded-full p-0.5 shadow-[0_0_8px_rgba(0,0,0,0.8)]"
                   style={{
-                    backgroundColor:
-                      possessingTeam.color ?? "#38bdf8",
+                    backgroundColor: possessingTeam.color ?? "#38bdf8",
                   }}
                 >
                   <FootballIcon isRedZone={game.isRedZone} />
@@ -196,12 +203,20 @@ function LiveFieldTrack({
 }
 
 /** Player name cell with ESPN's official NFL headshot. */
-function PlayerNameCell({ line, showHeadshot = true }: { line: BoxScoreLine; showHeadshot?: boolean }) {
+function PlayerNameCell({
+  line,
+  showHeadshot = true,
+}: {
+  line: BoxScoreLine;
+  showHeadshot?: boolean;
+}) {
   const league = useLeague();
   return (
     <div className="flex min-w-0 items-center gap-2.5">
       {showHeadshot && line.jersey ? (
-        <span className="w-5 shrink-0 text-right font-mono text-xs tabular-nums text-mute">{line.jersey}</span>
+        <span className="w-5 shrink-0 text-right font-mono text-xs tabular-nums text-mute">
+          {line.jersey}
+        </span>
       ) : null}
       {showHeadshot && line.playerId ? (
         <img
@@ -209,15 +224,23 @@ function PlayerNameCell({ line, showHeadshot = true }: { line: BoxScoreLine; sho
           alt={`${line.name} headshot`}
           loading="lazy"
           className="size-8 shrink-0 rounded-full bg-panel2 object-cover"
-          onError={(event) => { event.currentTarget.style.visibility = "hidden"; }}
+          onError={(event) => {
+            event.currentTarget.style.visibility = "hidden";
+          }}
         />
       ) : null}
       <span className="min-w-0 truncate">
         {line.playerId ? (
-          <Link to={playerRoute(league)} params={{ playerId: line.playerId }} className="hover:text-acc">
+          <Link
+            to={playerRoute(league)}
+            params={{ playerId: line.playerId }}
+            className="hover:text-acc"
+          >
             {line.name}
           </Link>
-        ) : line.name}
+        ) : (
+          line.name
+        )}
       </span>
     </div>
   );
@@ -247,13 +270,15 @@ function QuarterbackStatsTable({ lines }: { lines: BoxScoreLine[] }) {
     const completions = pair ? Number(pair[1]) : num(st?.completions);
     const attempts = pair ? Number(pair[2]) : num(st?.passingAttempts);
     return [
-      st?.["completions/passingAttempts"] ?? (`${completions}/${attempts}`),
+      st?.["completions/passingAttempts"] ?? `${completions}/${attempts}`,
       st?.passingYards !== undefined ? num(st.passingYards) : 0,
       st?.yardsAfterCatch !== undefined
         ? num(st.yardsAfterCatch)
         : st?.passingYardsAfterCatch !== undefined
           ? num(st.passingYardsAfterCatch)
-          : st?.pyac !== undefined ? num(st.pyac) : 0,
+          : st?.pyac !== undefined
+            ? num(st.pyac)
+            : 0,
       st?.passingTouchdowns !== undefined ? num(st.passingTouchdowns) : 0,
       st?.interceptions !== undefined ? num(st.interceptions) : 0,
       st?.rushingAttempts !== undefined ? num(st.rushingAttempts) : 0,
@@ -272,15 +297,32 @@ function QuarterbackStatsTable({ lines }: { lines: BoxScoreLine[] }) {
   return (
     <div className="overflow-x-auto">
       <table className="w-full min-w-[760px] text-sm">
-        <thead><tr className="text-left font-mono text-[10px] uppercase tracking-wider text-faint">
-          <th className="px-4 py-2 font-normal">QB</th>
-          {columns.map(([abbr, title]) => <th key={abbr} title={title} className="px-2 py-2 text-right font-normal">{abbr}</th>)}
-        </tr></thead>
+        <thead>
+          <tr className="text-left font-mono text-[10px] uppercase tracking-wider text-faint">
+            <th className="px-4 py-2 font-normal">QB</th>
+            {columns.map(([abbr, title]) => (
+              <th key={abbr} title={title} className="px-2 py-2 text-right font-normal">
+                {abbr}
+              </th>
+            ))}
+          </tr>
+        </thead>
         <tbody className="divide-y divide-line/5">
-          {lines.map((line, idx) => <tr key={`${line.name}-${idx}`} className="hover:bg-line/5">
-            <td className="max-w-[220px] px-4 py-2.5 font-medium"><PlayerNameCell line={line} /></td>
-            {rowFor(line).map((value, i) => <td key={columns[i][0]} className="px-2 py-2.5 text-right font-mono text-xs tabular-nums text-mute">{value}</td>)}
-          </tr>)}
+          {lines.map((line, idx) => (
+            <tr key={`${line.name}-${idx}`} className="hover:bg-line/5">
+              <td className="max-w-[220px] px-4 py-2.5 font-medium">
+                <PlayerNameCell line={line} />
+              </td>
+              {rowFor(line).map((value, i) => (
+                <td
+                  key={columns[i][0]}
+                  className="px-2 py-2.5 text-right font-mono text-xs tabular-nums text-mute"
+                >
+                  {value}
+                </td>
+              ))}
+            </tr>
+          ))}
         </tbody>
       </table>
     </div>
@@ -352,9 +394,14 @@ function RunningBackStatsTable({ lines }: { lines: BoxScoreLine[] }) {
         <tbody className="divide-y divide-line/5">
           {lines.map((line, idx) => (
             <tr key={`${line.name}-${idx}`} className="hover:bg-line/5">
-              <td className="max-w-[220px] px-4 py-2.5 font-medium"><PlayerNameCell line={line} /></td>
+              <td className="max-w-[220px] px-4 py-2.5 font-medium">
+                <PlayerNameCell line={line} />
+              </td>
               {rowFor(line).map((value, i) => (
-                <td key={columns[i][0]} className="px-2 py-2.5 text-right font-mono text-xs tabular-nums text-mute">
+                <td
+                  key={columns[i][0]}
+                  className="px-2 py-2.5 text-right font-mono text-xs tabular-nums text-mute"
+                >
                   {value}
                 </td>
               ))}
@@ -370,11 +417,21 @@ function MarketSpreadLabel({ spread, away, home }: { spread: string; away: Team;
   const match = spread.match(/^([A-Za-z]+)\s*([+-]?\d+(?:\.\d+)?)/);
   if (!match) return <span>{spread || "—"}</span>;
   const abbreviation = match[1].toUpperCase();
-  const team = abbreviation === away.abbr.toUpperCase() ? away : abbreviation === home.abbr.toUpperCase() ? home : undefined;
+  const team =
+    abbreviation === away.abbr.toUpperCase()
+      ? away
+      : abbreviation === home.abbr.toUpperCase()
+        ? home
+        : undefined;
   if (!team) return <span>{spread}</span>;
   const points = Number(match[2]);
   const formatted = points === 0 ? "PK" : `${points > 0 ? "+" : ""}${points}`;
-  return <span className="inline-flex items-center gap-1.5"><TeamLogo team={team} className="size-5" /><span>{formatted}</span></span>;
+  return (
+    <span className="inline-flex items-center gap-1.5">
+      <TeamLogo team={team} className="size-5" />
+      <span>{formatted}</span>
+    </span>
+  );
 }
 
 /** Detailed receiving box score: receiving totals first, then rushing splits. */
@@ -436,9 +493,14 @@ function ReceivingStatsTable({ lines, title }: { lines: BoxScoreLine[]; title: s
         <tbody className="divide-y divide-line/5">
           {lines.map((line, idx) => (
             <tr key={`${line.name}-${idx}`} className="hover:bg-line/5">
-              <td className="max-w-[220px] px-4 py-2.5 font-medium"><PlayerNameCell line={line} /></td>
+              <td className="max-w-[220px] px-4 py-2.5 font-medium">
+                <PlayerNameCell line={line} />
+              </td>
               {rowFor(line).map((value, i) => (
-                <td key={columns[i][0]} className="px-2 py-2.5 text-right font-mono text-xs tabular-nums text-mute">
+                <td
+                  key={columns[i][0]}
+                  className="px-2 py-2.5 text-right font-mono text-xs tabular-nums text-mute"
+                >
                   {value}
                 </td>
               ))}
@@ -497,9 +559,10 @@ export function GameDetail({ gameId }: { gameId: string }) {
 
   const { data: seasonAverages } = useQuery({
     queryKey: ["team-season-averages", game?.awayTeamId, game?.homeTeamId],
-    queryFn: () => getTeamSeasonAverages({
-      data: { awayTeamId: game!.awayTeamId, homeTeamId: game!.homeTeamId },
-    }),
+    queryFn: () =>
+      getTeamSeasonAverages({
+        data: { awayTeamId: game!.awayTeamId, homeTeamId: game!.homeTeamId },
+      }),
     enabled: Boolean(game?.status === "scheduled" && game.awayTeamId && game.homeTeamId),
     staleTime: 5 * 60 * 1000,
     retry: 1,
@@ -513,12 +576,7 @@ export function GameDetail({ gameId }: { gameId: string }) {
    * final     → historical weather at game time
    */
   const weatherQuery = useQuery({
-    queryKey: [
-      "weather",
-      game?.id,
-      game?.status,
-      game?.kickoffIso,
-    ],
+    queryKey: ["weather", game?.id, game?.status, game?.kickoffIso],
 
     queryFn: async () => {
       /*
@@ -541,15 +599,14 @@ export function GameDetail({ gameId }: { gameId: string }) {
     enabled: Boolean(
       !(college && game?.neutralSite) &&
       game?.id &&
-        game?.homeTeamId &&
-        game?.kickoffIso &&
-        (game.status !== "scheduled" || (
-          typeof game.spread === "string" &&
+      game?.homeTeamId &&
+      game?.kickoffIso &&
+      (game.status !== "scheduled" ||
+        (typeof game.spread === "string" &&
           game.spread.trim().length > 0 &&
           !["—", "-", "N/A", "NA"].includes(game.spread.trim().toUpperCase()) &&
           typeof game.total === "number" &&
-          game.total > 0
-        )),
+          game.total > 0)),
     ),
 
     /*
@@ -557,26 +614,23 @@ export function GameDetail({ gameId }: { gameId: string }) {
      * Completed-game weather never refreshes.
      */
     refetchInterval:
-      game?.status === "live" ||
-      game?.status === "scheduled"
-        ? 12 * 60 * 1000
-        : false,
+      game?.status === "live" || game?.status === "scheduled" ? 12 * 60 * 1000 : false,
 
     retry: 1,
   });
 
-  const [selectedTeam, setSelectedTeam] =
-    useState<"away" | "home">("away");
+  const [selectedTeam, setSelectedTeam] = useState<"away" | "home">("away");
 
-  const [selectedTeamTab, setSelectedTeamTab] =
-    useState<"offense" | "defense">("offense");
-  const [activeGameTab, setActiveGameTab] =
-    useState<"gamecast" | "stats" | "markets" | "props" | "information">("gamecast");
+  const [selectedTeamTab, setSelectedTeamTab] = useState<"offense" | "defense">("offense");
+  const [activeGameTab, setActiveGameTab] = useState<
+    "gamecast" | "stats" | "markets" | "props" | "information"
+  >("gamecast");
 
   // Markets tab: the model / probabilities, or every book's lines (NFL)
   const [marketsView, setMarketsView] = useState<"model" | "lines">("model");
-  const [activeMarketTab, setActiveMarketTab] =
-    useState<"moneyline" | "cover" | "total">("moneyline");
+  const [activeMarketTab, setActiveMarketTab] = useState<"moneyline" | "cover" | "total">(
+    "moneyline",
+  );
 
   // College ★ best bets need the whole schedule (each team's previous game).
   const cfbSchedule = useCfbSchedule(false, college);
@@ -596,12 +650,7 @@ export function GameDetail({ gameId }: { gameId: string }) {
   });
 
   if (isLoading) {
-    return (
-      <PageTitle
-        eyebrow="2026 Season · ESPN"
-        title="Loading game…"
-      />
-    );
+    return <PageTitle eyebrow="2026 Season · ESPN" title="Loading game…" />;
   }
 
   if (!game) {
@@ -609,11 +658,7 @@ export function GameDetail({ gameId }: { gameId: string }) {
       <PageTitle
         eyebrow="2026 Season · ESPN"
         title="Game unavailable"
-        aside={
-          <span className="label-mono">
-            ESPN detail feed not reachable
-          </span>
-        }
+        aside={<span className="label-mono">ESPN detail feed not reachable</span>}
       />
     );
   }
@@ -635,54 +680,32 @@ export function GameDetail({ gameId }: { gameId: string }) {
         hour: "numeric",
         minute: "2-digit",
       })}`
-    : (game.kickoff ?? "").replace(
-        /\s*(ET|EDT|EST)$/i,
-        "",
-      );
+    : (game.kickoff ?? "").replace(/\s*(ET|EDT|EST)$/i, "");
 
   const localTime = game.kickoffIso
     ? new Date(game.kickoffIso).toLocaleTimeString([], {
         hour: "numeric",
         minute: "2-digit",
       })
-    : (game.time ?? "").replace(
-        /\s*(ET|EDT|EST)$/i,
-        "",
-      );
+    : (game.time ?? "").replace(/\s*(ET|EDT|EST)$/i, "");
 
   // Offense vs Defense filtering
   const isOffense = (line: BoxScoreLine) =>
     line.category
       ? line.category === "offense"
-      : [
-          "QB",
-          "RB",
-          "FB",
-          "WR",
-          "TE",
-          "K",
-          "PASSING",
-          "RUSHING",
-          "RECEIVING",
-        ].includes(line.position.toUpperCase());
+      : ["QB", "RB", "FB", "WR", "TE", "K", "PASSING", "RUSHING", "RECEIVING"].includes(
+          line.position.toUpperCase(),
+        );
 
-  const awayLines = game.boxScore.filter(
-    (l) => l.teamId === away.id,
-  );
+  const awayLines = game.boxScore.filter((l) => l.teamId === away.id);
 
-  const homeLines = game.boxScore.filter(
-    (l) => l.teamId === home.id,
-  );
+  const homeLines = game.boxScore.filter((l) => l.teamId === home.id);
 
   const awayOffense = awayLines.filter(isOffense);
-  const awayDefense = awayLines.filter(
-    (l) => !isOffense(l),
-  );
+  const awayDefense = awayLines.filter((l) => !isOffense(l));
 
   const homeOffense = homeLines.filter(isOffense);
-  const homeDefense = homeLines.filter(
-    (l) => !isOffense(l),
-  );
+  const homeDefense = homeLines.filter((l) => !isOffense(l));
 
   const selectedTeamLines =
     selectedTeam === "away"
@@ -694,85 +717,131 @@ export function GameDetail({ gameId }: { gameId: string }) {
         : homeDefense;
 
   // Quarterbacks, running backs, wide receivers, and tight ends get detailed tables; other positions keep the single stat line.
-  const qbLines = selectedTeamTab === "offense" ? selectedTeamLines.filter((l) => l.position.toUpperCase() === "QB") : [];
-  const rbLines = selectedTeamTab === "offense" ? selectedTeamLines.filter((l) => l.position.toUpperCase() === "RB") : [];
-  const wrLines = selectedTeamTab === "offense" ? selectedTeamLines.filter((l) => l.position.toUpperCase() === "WR") : [];
-  const teLines = selectedTeamTab === "offense" ? selectedTeamLines.filter((l) => l.position.toUpperCase() === "TE") : [];
-  const kickerLines = selectedTeamTab === "offense" ? selectedTeamLines.filter((l) => l.position.toUpperCase() === "K") : [];
-  const punterLines = selectedTeamTab === "offense" ? selectedTeamLines.filter((l) => l.position.toUpperCase() === "P") : [];
-  const detailedLines = [...qbLines, ...rbLines, ...wrLines, ...teLines, ...kickerLines, ...punterLines];
+  const qbLines =
+    selectedTeamTab === "offense"
+      ? selectedTeamLines.filter((l) => l.position.toUpperCase() === "QB")
+      : [];
+  const rbLines =
+    selectedTeamTab === "offense"
+      ? selectedTeamLines.filter((l) => l.position.toUpperCase() === "RB")
+      : [];
+  const wrLines =
+    selectedTeamTab === "offense"
+      ? selectedTeamLines.filter((l) => l.position.toUpperCase() === "WR")
+      : [];
+  const teLines =
+    selectedTeamTab === "offense"
+      ? selectedTeamLines.filter((l) => l.position.toUpperCase() === "TE")
+      : [];
+  const kickerLines =
+    selectedTeamTab === "offense"
+      ? selectedTeamLines.filter((l) => l.position.toUpperCase() === "K")
+      : [];
+  const punterLines =
+    selectedTeamTab === "offense"
+      ? selectedTeamLines.filter((l) => l.position.toUpperCase() === "P")
+      : [];
+  const detailedLines = [
+    ...qbLines,
+    ...rbLines,
+    ...wrLines,
+    ...teLines,
+    ...kickerLines,
+    ...punterLines,
+  ];
   const abbreviatePosition = (position: string | undefined) => {
     const value = (position ?? "").trim();
-    const normalized = value.toUpperCase().replace(/[._-]+/g, " ").replace(/\s+/g, " ");
+    const normalized = value
+      .toUpperCase()
+      .replace(/[._-]+/g, " ")
+      .replace(/\s+/g, " ");
     const abbreviations: Record<string, string> = {
-      "QUARTERBACK": "QB", "RUNNING BACK": "RB", "HALFBACK": "HB",
-      "FULLBACK": "FB", "WIDE RECEIVER": "WR", "TIGHT END": "TE",
-      "OFFENSIVE TACKLE": "OT", "OFFENSIVE GUARD": "OG", "CENTER": "C",
-      "OFFENSIVE LINE": "OL", "PK": "K", "KICKER": "K", "PLACEKICKER": "K",
-      "P": "P", "PUNTER": "P", "LONG SNAPPER": "LS", "RETURN SPECIALIST": "RS",
-      "DEFENSIVE END": "DE", "DEFENSIVE TACKLE": "DT", "LINEBACKER": "LB",
-      "CORNERBACK": "CB", "SAFETY": "S", "DEFENSIVE BACK": "DB",
+      QUARTERBACK: "QB",
+      "RUNNING BACK": "RB",
+      HALFBACK: "HB",
+      FULLBACK: "FB",
+      "WIDE RECEIVER": "WR",
+      "TIGHT END": "TE",
+      "OFFENSIVE TACKLE": "OT",
+      "OFFENSIVE GUARD": "OG",
+      CENTER: "C",
+      "OFFENSIVE LINE": "OL",
+      PK: "K",
+      KICKER: "K",
+      PLACEKICKER: "K",
+      P: "P",
+      PUNTER: "P",
+      "LONG SNAPPER": "LS",
+      "RETURN SPECIALIST": "RS",
+      "DEFENSIVE END": "DE",
+      "DEFENSIVE TACKLE": "DT",
+      LINEBACKER: "LB",
+      CORNERBACK: "CB",
+      SAFETY: "S",
+      "DEFENSIVE BACK": "DB",
     };
     return abbreviations[normalized] ?? value.toUpperCase();
   };
   const otherLines = selectedTeamLines.filter((l) => !detailedLines.includes(l));
-  const defensePositionOrder = ["DE", "DT", "NT", "DL", "EDGE", "OLB", "ILB", "LB", "CB", "S", "FS", "SS", "DB", "K", "P", "LS", "ATH"];
-  const defensePositionGroups = selectedTeamTab === "defense"
-    ? [...new Set(otherLines.map((line) => line.position?.trim() || "DEF"))]
-        .sort((a, b) => {
-          const ai = defensePositionOrder.indexOf(a.toUpperCase());
-          const bi = defensePositionOrder.indexOf(b.toUpperCase());
-          if (ai === -1 && bi === -1) return a.localeCompare(b);
-          if (ai === -1) return 1;
-          if (bi === -1) return -1;
-          return ai - bi;
-        })
-        .map((position) => ({
-          position,
-          lines: otherLines.filter((line) => (line.position?.trim() || "DEF") === position),
-        }))
-    : [];
+  const defensePositionOrder = [
+    "DE",
+    "DT",
+    "NT",
+    "DL",
+    "EDGE",
+    "OLB",
+    "ILB",
+    "LB",
+    "CB",
+    "S",
+    "FS",
+    "SS",
+    "DB",
+    "K",
+    "P",
+    "LS",
+    "ATH",
+  ];
+  const defensePositionGroups =
+    selectedTeamTab === "defense"
+      ? [...new Set(otherLines.map((line) => line.position?.trim() || "DEF"))]
+          .sort((a, b) => {
+            const ai = defensePositionOrder.indexOf(a.toUpperCase());
+            const bi = defensePositionOrder.indexOf(b.toUpperCase());
+            if (ai === -1 && bi === -1) return a.localeCompare(b);
+            if (ai === -1) return 1;
+            if (bi === -1) return -1;
+            return ai - bi;
+          })
+          .map((position) => ({
+            position,
+            lines: otherLines.filter((line) => (line.position?.trim() || "DEF") === position),
+          }))
+      : [];
 
-  const selectedTeamData =
-    selectedTeam === "away" ? away : home;
+  const selectedTeamData = selectedTeam === "away" ? away : home;
 
   return (
     <>
-
       {/* Traditional NFL Score Box */}
       <Panel className="p-4 sm:p-6">
         {(() => {
           const possessingTeam =
-            game.possession === "away"
-              ? away
-              : game.possession === "home"
-                ? home
-                : null;
+            game.possession === "away" ? away : game.possession === "home" ? home : null;
 
           const isHalftime =
-            game.clock === "Halftime" ||
-            Boolean(
-              game.clock
-                ?.toLowerCase()
-                .includes("half"),
-            );
+            game.clock === "Halftime" || Boolean(game.clock?.toLowerCase().includes("half"));
 
           const isOT =
             (game.quarters?.away?.length ?? 0) > 4 ||
             (game.quarters?.home?.length ?? 0) > 4 ||
-            Boolean(
-              game.clock
-                ?.toUpperCase()
-                .includes("OT"),
-            );
+            Boolean(game.clock?.toUpperCase().includes("OT"));
 
           const isFinal = game.status === "final";
 
-          const awayWon =
-            isFinal && score.away > score.home;
+          const awayWon = isFinal && score.away > score.home;
 
-          const homeWon =
-            isFinal && score.home > score.away;
+          const homeWon = isFinal && score.home > score.away;
 
           return (
             <div className="mx-auto flex max-w-2xl items-center justify-between">
@@ -793,8 +862,7 @@ export function GameDetail({ gameId }: { gameId: string }) {
 
                   <span className="font-mono text-xs text-mute group-hover:text-acc">
                     {game.awayRank ? `#${game.awayRank} · ` : ""}
-                    {game.awayRecord ??
-                      `${away.record.w}-${away.record.l}`}
+                    {game.awayRecord ?? `${away.record.w}-${away.record.l}`}
                   </span>
                 </Link>
 
@@ -803,9 +871,7 @@ export function GameDetail({ gameId }: { gameId: string }) {
                     awayWon ? "text-acc" : ""
                   }`}
                 >
-                  {game.status !== "scheduled"
-                    ? score.away
-                    : ""}
+                  {game.status !== "scheduled" ? score.away : ""}
                 </span>
               </div>
 
@@ -813,14 +879,11 @@ export function GameDetail({ gameId }: { gameId: string }) {
               <div className="flex flex-col items-center justify-center px-2 text-center">
                 {game.status === "live" ? (
                   <div className="flex flex-col items-center gap-1.5">
-                    {game.downDistance &&
-                    !isHalftime ? (
+                    {game.downDistance && !isHalftime ? (
                       <span
                         className="rounded px-2 py-0.5 font-mono text-[11px] font-bold tracking-wider uppercase text-black"
                         style={{
-                          backgroundColor:
-                            possessingTeam?.color ??
-                            "#38bdf8",
+                          backgroundColor: possessingTeam?.color ?? "#38bdf8",
                         }}
                       >
                         {game.downDistance}
@@ -831,7 +894,6 @@ export function GameDetail({ gameId }: { gameId: string }) {
                       <span className="size-2 rounded-full bg-emerald-400 animate-pulse" />
                       {runningClock || "Live"}
                     </span>
-
 
                     {isHalftime && game.drives?.length
                       ? (() => {
@@ -859,9 +921,7 @@ export function GameDetail({ gameId }: { gameId: string }) {
                       {isOT ? "FINAL/OT" : "FINAL"}
                     </span>
 
-                    <span className="font-mono text-[11px] text-mute">
-                      {game.date}
-                    </span>
+                    <span className="font-mono text-[11px] text-mute">{game.date}</span>
                     <GameLocation game={game} />
                   </div>
                 ) : (
@@ -874,6 +934,11 @@ export function GameDetail({ gameId }: { gameId: string }) {
                       {localTime || game.date}
                     </span>
                     <GameLocation game={game} />
+                    {game.titleRace ? (
+                      <div className="max-w-[16rem] text-center">
+                        <TitleRaceLine race={game.titleRace} />
+                      </div>
+                    ) : null}
                   </div>
                 )}
               </div>
@@ -885,9 +950,7 @@ export function GameDetail({ gameId }: { gameId: string }) {
                     homeWon ? "text-acc" : ""
                   }`}
                 >
-                  {game.status !== "scheduled"
-                    ? score.home
-                    : ""}
+                  {game.status !== "scheduled" ? score.home : ""}
                 </span>
 
                 <Link
@@ -902,8 +965,7 @@ export function GameDetail({ gameId }: { gameId: string }) {
 
                   <span className="font-mono text-xs text-mute group-hover:text-acc">
                     {game.homeRank ? `#${game.homeRank} · ` : ""}
-                    {game.homeRecord ??
-                      `${home.record.w}-${home.record.l}`}
+                    {game.homeRecord ?? `${home.record.w}-${home.record.l}`}
                   </span>
                 </Link>
                 {game.status === "live" && game.timeouts ? (
@@ -915,44 +977,25 @@ export function GameDetail({ gameId }: { gameId: string }) {
         })()}
 
         {/* Live Field Track */}
-        <LiveFieldTrack
-          game={game}
-          away={away}
-          home={home}
-        />
+        <LiveFieldTrack game={game} away={away} home={home} />
 
         {/* Live spread and total line */}
         {(() => {
-          const {
-            spread: spreadClass,
-            total: totalClass,
-          } = marketResultClass(
-            game,
-            away,
-            home,
-          );
+          const { spread: spreadClass, total: totalClass } = marketResultClass(game, away, home);
 
           return (
             <div className="mt-4 flex flex-wrap items-center justify-center gap-x-3 gap-y-1 border-t border-line/10 pt-3 font-mono text-[11px] text-mute">
               <span>Spread:</span>
 
-              <span
-                className={`inline-flex items-center ${spreadClass}`}
-              >
-                <SpreadBadge
-                  spread={game.spread}
-                  away={away}
-                  home={home}
-                />
+              <span className={`inline-flex items-center ${spreadClass}`}>
+                <SpreadBadge spread={game.spread} away={away} home={home} />
               </span>
 
               <span className="text-mute">·</span>
 
               <span>O/U:</span>
 
-              <span
-                className={`font-semibold tabular-nums ${totalClass}`}
-              >
+              <span className={`font-semibold tabular-nums ${totalClass}`}>
                 {game.total || "—"}
               </span>
             </div>
@@ -971,13 +1014,15 @@ export function GameDetail({ gameId }: { gameId: string }) {
               className={`mt-6 grid border-b border-line/15 grid-cols-5`}
               aria-label="Game details tabs"
             >
-              {([
-                ["gamecast", "Gamecast"],
-                ["stats", "Stats"],
-                ["markets", "Markets"],
-                ["props", "Props"],
-                ["information", "Information"],
-              ] as const).map(([tab, label]) => (
+              {(
+                [
+                  ["gamecast", "Gamecast"],
+                  ["stats", "Stats"],
+                  ["markets", "Markets"],
+                  ["props", "Props"],
+                  ["information", "Information"],
+                ] as const
+              ).map(([tab, label]) => (
                 <button
                   key={tab}
                   type="button"
@@ -997,403 +1042,546 @@ export function GameDetail({ gameId }: { gameId: string }) {
             </section>
           ) : game.status !== "scheduled" ? (
             <>
-          <div>
-          <div className="mt-6 grid gap-6 lg:grid-cols-12">
-            <Panel className={`lg:col-span-5 ${showGameStatistics(game.status) && activeGameTab !== "gamecast" ? "hidden" : ""}`}>
-              <div className="flex items-center justify-between">
-                <h2 className="font-disp text-xl font-semibold uppercase tracking-tight">
-                  Box score
-                </h2>
+              <div>
+                <div className="mt-6 grid gap-6 lg:grid-cols-12">
+                  <Panel
+                    className={`lg:col-span-5 ${showGameStatistics(game.status) && activeGameTab !== "gamecast" ? "hidden" : ""}`}
+                  >
+                    <div className="flex items-center justify-between">
+                      <h2 className="font-disp text-xl font-semibold uppercase tracking-tight">
+                        Box score
+                      </h2>
 
-                <span className="label-mono">
-                  scoring
-                </span>
-              </div>
+                      <span className="label-mono">scoring</span>
+                    </div>
 
-              <div className="mt-3">
-                <LineScore game={game} />
-              </div>
-            </Panel>
+                    <div className="mt-3">
+                      <LineScore game={game} />
+                    </div>
+                  </Panel>
 
-            <Panel className={`lg:col-span-7 ${showGameStatistics(game.status) && activeGameTab !== "stats" ? "hidden" : ""}`}>
-              <h2 className="font-disp text-xl font-semibold uppercase tracking-tight">
-                Team statistics
-              </h2>
+                  <Panel
+                    className={`lg:col-span-7 ${showGameStatistics(game.status) && activeGameTab !== "stats" ? "hidden" : ""}`}
+                  >
+                    <h2 className="font-disp text-xl font-semibold uppercase tracking-tight">
+                      Team statistics
+                    </h2>
 
-              <div className="mt-4">
-                <StatComparison game={game.status === "scheduled" && seasonAverages ? { ...game, stats: { away: seasonAverages.away, home: seasonAverages.home } } : game} />
-              </div>
-            </Panel>
-          </div>
-          </div>
-
-          {showGameStatistics(game.status) && activeGameTab === "gamecast" ? (
-            <section className="mt-6">
-              <Panel padded={false}>
-                <div className="border-b border-line/10 px-4 py-3">
-                  <h2 className="font-disp text-xl font-semibold uppercase tracking-tight">Game leaders</h2>
-                  <p className="label-mono mt-1">Top individual performance for each team</p>
+                    <div className="mt-4">
+                      <StatComparison
+                        game={
+                          game.status === "scheduled" && seasonAverages
+                            ? {
+                                ...game,
+                                stats: { away: seasonAverages.away, home: seasonAverages.home },
+                              }
+                            : game
+                        }
+                      />
+                    </div>
+                  </Panel>
                 </div>
-                <div className="px-3 sm:px-5">
-                  <div className="grid grid-cols-[minmax(0,1fr)_112px_minmax(0,1fr)] items-center gap-2 border-b border-line/10 py-3 text-[10px] font-mono uppercase tracking-wider text-faint sm:grid-cols-[minmax(0,1fr)_160px_minmax(0,1fr)]">
-                    <div className="flex items-center gap-2"><TeamLogo team={away} className="size-5" /><span>{teamShort(away)}</span></div>
-                    <div className="text-center">Category</div>
-                    <div className="flex items-center justify-end gap-2 text-right"><span>{teamShort(home)}</span><TeamLogo team={home} className="size-5" /></div>
+              </div>
+
+              {showGameStatistics(game.status) && activeGameTab === "gamecast" ? (
+                <section className="mt-6">
+                  <Panel padded={false}>
+                    <div className="border-b border-line/10 px-4 py-3">
+                      <h2 className="font-disp text-xl font-semibold uppercase tracking-tight">
+                        Game leaders
+                      </h2>
+                      <p className="label-mono mt-1">Top individual performance for each team</p>
+                    </div>
+                    <div className="px-3 sm:px-5">
+                      <div className="grid grid-cols-[minmax(0,1fr)_112px_minmax(0,1fr)] items-center gap-2 border-b border-line/10 py-3 text-[10px] font-mono uppercase tracking-wider text-faint sm:grid-cols-[minmax(0,1fr)_160px_minmax(0,1fr)]">
+                        <div className="flex items-center gap-2">
+                          <TeamLogo team={away} className="size-5" />
+                          <span>{teamShort(away)}</span>
+                        </div>
+                        <div className="text-center">Category</div>
+                        <div className="flex items-center justify-end gap-2 text-right">
+                          <span>{teamShort(home)}</span>
+                          <TeamLogo team={home} className="size-5" />
+                        </div>
+                      </div>
+                      <div className="divide-y divide-line/10">
+                        {(
+                          [
+                            {
+                              label: "Passing yards",
+                              // Only use the yards attached to a completions/attempts passing line.
+                              // Some ESPN box-score lines append rushing stats for the same QB.
+                              pattern: /^\s*\d+\s*\/\s*\d+\s*,?\s*([0-9,]+)\s+yds/i,
+                              matches: (line: BoxScoreLine) =>
+                                /^\s*\d+\s*\/\s*\d+\b/.test(line.statLine),
+                              suffix: " yds",
+                            },
+                            {
+                              label: "Rushing yards",
+                              // Capture the yardage immediately after the carries count, not the
+                              // first "yds" in a combined passing-and-rushing stat line.
+                              pattern: /\b\d+\s+car\b\s*,?\s*([0-9,]+)\s+yds/i,
+                              matches: (line: BoxScoreLine) => /\b\d+\s+car\b/i.test(line.statLine),
+                              suffix: " yds",
+                            },
+                            {
+                              label: "Receiving yards",
+                              pattern: /\b\d+\s+rec\b\s*,?\s*([0-9,]+)\s+yds/i,
+                              matches: (line: BoxScoreLine) => /\b\d+\s+rec\b/i.test(line.statLine),
+                              suffix: " yds",
+                            },
+                            {
+                              label: "Sacks",
+                              pattern: /([0-9]+(?:\.[0-9])?) sck/i,
+                              matches: (line: BoxScoreLine) =>
+                                line.category === "defense" ||
+                                line.position.toUpperCase() === "DEF",
+                              suffix: "",
+                            },
+                            {
+                              label: "Tackles",
+                              pattern: /([0-9]+) tkl/i,
+                              matches: (line: BoxScoreLine) =>
+                                line.category === "defense" ||
+                                line.position.toUpperCase() === "DEF",
+                              suffix: "",
+                            },
+                          ] as const
+                        ).map((leader) => {
+                          const getTop = (teamId: string) =>
+                            game.boxScore
+                              .filter((line) => line.teamId === teamId && leader.matches(line))
+                              .map((line) => ({
+                                line,
+                                value: Number(
+                                  line.statLine.match(leader.pattern)?.[1]?.replace(/,/g, "") ?? -1,
+                                ),
+                              }))
+                              .filter((item) => Number.isFinite(item.value) && item.value > 0)
+                              .sort((a, b) => b.value - a.value)[0];
+                          const awayLeader = getTop(away.id);
+                          const homeLeader = getTop(home.id);
+                          const playerCell = (
+                            leaderData: ReturnType<typeof getTop>,
+                            side: "away" | "home",
+                          ) => {
+                            const isHome = side === "home";
+                            const alignment = isHome
+                              ? "justify-end text-right"
+                              : "justify-start text-left";
+                            if (!leaderData) return <div className="py-4" aria-hidden="true" />;
+                            const playerContent = (
+                              <>
+                                <div
+                                  className={`flex min-w-0 items-center gap-2.5 ${isHome ? "flex-row-reverse" : ""}`}
+                                >
+                                  <img
+                                    src={headshotUrl(league, leaderData.line.playerId ?? "")}
+                                    alt=""
+                                    loading="lazy"
+                                    className="size-11 shrink-0 rounded-full bg-line/10 object-cover ring-1 ring-line/15 sm:size-12"
+                                    onError={(event) => {
+                                      event.currentTarget.style.visibility = "hidden";
+                                    }}
+                                  />
+                                  <div className={`min-w-0 ${isHome ? "text-right" : "text-left"}`}>
+                                    <div className="truncate text-sm font-semibold text-foreground group-hover:text-acc">
+                                      {leaderData.line.name}
+                                    </div>
+                                    <div className="mt-0.5 text-[11px] text-mute">
+                                      {leaderData.line.position}
+                                    </div>
+                                    <div className="mt-1 font-mono text-sm font-bold tabular-nums text-acc">
+                                      {leaderData.value}
+                                      {leader.suffix}
+                                    </div>
+                                  </div>
+                                </div>
+                              </>
+                            );
+                            return (
+                              <div className={`flex min-w-0 items-center py-3 ${alignment}`}>
+                                {leaderData.line.playerId ? (
+                                  <Link
+                                    to={playerRoute(league)}
+                                    params={{ playerId: leaderData.line.playerId }}
+                                    className="group block min-w-0 rounded-md p-1 transition-colors hover:bg-line/5 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-acc"
+                                  >
+                                    {playerContent}
+                                  </Link>
+                                ) : (
+                                  <div className="min-w-0 p-1">{playerContent}</div>
+                                )}
+                              </div>
+                            );
+                          };
+                          // Hide the entire category when neither team has a positive stat value.
+                          if (!awayLeader && !homeLeader) return null;
+                          return (
+                            <div
+                              key={leader.label}
+                              className="grid grid-cols-[minmax(0,1fr)_112px_minmax(0,1fr)] items-center gap-2 sm:grid-cols-[minmax(0,1fr)_160px_minmax(0,1fr)]"
+                            >
+                              {playerCell(awayLeader, "away")}
+                              <div className="px-1 text-center">
+                                <div className="text-[11px] font-semibold uppercase leading-tight tracking-wide text-mute sm:text-xs">
+                                  {leader.label}
+                                </div>
+                              </div>
+                              {playerCell(homeLeader, "home")}
+                            </div>
+                          );
+                        })}
+                      </div>
+                    </div>
+                  </Panel>
+                </section>
+              ) : null}
+
+              {/* Drive by drive */}
+              <section
+                className={`mt-6 ${showGameStatistics(game.status) && activeGameTab !== "gamecast" ? "hidden" : ""}`}
+              >
+                <Panel padded={false}>
+                  <div className="flex items-center justify-between border-b border-line/10 px-4 py-3">
+                    <h2 className="font-disp text-xl font-semibold uppercase tracking-tight">
+                      Drive by drive
+                    </h2>
+
+                    <span className="label-mono">{game.drives.length} drives</span>
                   </div>
-                  <div className="divide-y divide-line/10">
-                    {([
-                      {
-                        label: "Passing yards",
-                        // Only use the yards attached to a completions/attempts passing line.
-                        // Some ESPN box-score lines append rushing stats for the same QB.
-                        pattern: /^\s*\d+\s*\/\s*\d+\s*,?\s*([0-9,]+)\s+yds/i,
-                        matches: (line: BoxScoreLine) => /^\s*\d+\s*\/\s*\d+\b/.test(line.statLine),
-                        suffix: " yds",
-                      },
-                      {
-                        label: "Rushing yards",
-                        // Capture the yardage immediately after the carries count, not the
-                        // first "yds" in a combined passing-and-rushing stat line.
-                        pattern: /\b\d+\s+car\b\s*,?\s*([0-9,]+)\s+yds/i,
-                        matches: (line: BoxScoreLine) => /\b\d+\s+car\b/i.test(line.statLine),
-                        suffix: " yds",
-                      },
-                      {
-                        label: "Receiving yards",
-                        pattern: /\b\d+\s+rec\b\s*,?\s*([0-9,]+)\s+yds/i,
-                        matches: (line: BoxScoreLine) => /\b\d+\s+rec\b/i.test(line.statLine),
-                        suffix: " yds",
-                      },
-                      { label: "Sacks", pattern: /([0-9]+(?:\.[0-9])?) sck/i, matches: (line: BoxScoreLine) => line.category === "defense" || line.position.toUpperCase() === "DEF", suffix: "" },
-                      { label: "Tackles", pattern: /([0-9]+) tkl/i, matches: (line: BoxScoreLine) => line.category === "defense" || line.position.toUpperCase() === "DEF", suffix: "" },
-                    ] as const).map((leader) => {
-                      const getTop = (teamId: string) => game.boxScore
-                        .filter((line) => line.teamId === teamId && leader.matches(line))
-                        .map((line) => ({ line, value: Number(line.statLine.match(leader.pattern)?.[1]?.replace(/,/g, "") ?? -1) }))
-                        .filter((item) => Number.isFinite(item.value) && item.value > 0)
-                        .sort((a, b) => b.value - a.value)[0];
-                      const awayLeader = getTop(away.id);
-                      const homeLeader = getTop(home.id);
-                      const playerCell = (leaderData: ReturnType<typeof getTop>, side: "away" | "home") => {
-                        const isHome = side === "home";
-                        const alignment = isHome ? "justify-end text-right" : "justify-start text-left";
-                        if (!leaderData) return <div className="py-4" aria-hidden="true" />;
-                        const playerContent = (
-                          <>
-                            <div className={`flex min-w-0 items-center gap-2.5 ${isHome ? "flex-row-reverse" : ""}`}>
-                              <img
-                                src={headshotUrl(league, leaderData.line.playerId ?? "")}
-                                alt=""
-                                loading="lazy"
-                                className="size-11 shrink-0 rounded-full bg-line/10 object-cover ring-1 ring-line/15 sm:size-12"
-                                onError={(event) => { event.currentTarget.style.visibility = "hidden"; }}
-                              />
-                              <div className={`min-w-0 ${isHome ? "text-right" : "text-left"}`}>
-                                <div className="truncate text-sm font-semibold text-foreground group-hover:text-acc">{leaderData.line.name}</div>
-                                <div className="mt-0.5 text-[11px] text-mute">{leaderData.line.position}</div>
-                                <div className="mt-1 font-mono text-sm font-bold tabular-nums text-acc">{leaderData.value}{leader.suffix}</div>
+
+                  {game.drives.length === 0 ? (
+                    <p className="px-4 py-6 font-mono text-[11px] uppercase tracking-wider text-faint">
+                      Drives populate once the game is played.
+                    </p>
+                  ) : (
+                    <DriveTable game={game} />
+                  )}
+                </Panel>
+              </section>
+
+              {/* Team selector + player statistics */}
+              <section
+                className={`mt-6 ${showGameStatistics(game.status) && activeGameTab !== "stats" ? "hidden" : ""}`}
+              >
+                <div className="mb-3 flex items-center justify-between">
+                  <h2 className="font-disp text-xl font-semibold uppercase tracking-tight">
+                    Player statistics
+                  </h2>
+
+                  <span className="label-mono">box score</span>
+                </div>
+
+                <Panel padded={false}>
+                  {/* Team tabs */}
+                  <div className="grid grid-cols-2 border-b border-line/10">
+                    <button
+                      type="button"
+                      onClick={() => setSelectedTeam("away")}
+                      className={`flex items-center justify-center gap-2 border-r border-line/10 px-4 py-3 font-disp text-sm font-semibold uppercase tracking-tight transition-colors ${
+                        selectedTeam === "away"
+                          ? "bg-acc/10 text-foreground shadow-[inset_0_-2px_0_var(--accent)]"
+                          : "text-mute hover:bg-line/5 hover:text-foreground"
+                      }`}
+                    >
+                      <TeamLogo team={away} className="size-6" />
+
+                      <span>{teamShort(away)}</span>
+                    </button>
+
+                    <button
+                      type="button"
+                      onClick={() => setSelectedTeam("home")}
+                      className={`flex items-center justify-center gap-2 px-4 py-3 font-disp text-sm font-semibold uppercase tracking-tight transition-colors ${
+                        selectedTeam === "home"
+                          ? "bg-acc/10 text-foreground shadow-[inset_0_-2px_0_var(--accent)]"
+                          : "text-mute hover:bg-line/5 hover:text-foreground"
+                      }`}
+                    >
+                      <TeamLogo team={home} className="size-6" />
+
+                      <span>{teamShort(home)}</span>
+                    </button>
+                  </div>
+
+                  {/* Offense / Defense tabs */}
+                  <div className="flex items-center justify-between gap-3 border-b border-line/10 px-4 py-3">
+                    <div className="flex items-center gap-2">
+                      <TeamLogo team={selectedTeamData} className="size-5" />
+
+                      <span className="font-disp text-base font-semibold uppercase tracking-tight">
+                        {teamShort(selectedTeamData)}
+                      </span>
+                    </div>
+
+                    <div className="flex gap-1.5">
+                      <button
+                        type="button"
+                        onClick={() => setSelectedTeamTab("offense")}
+                        className={`rounded-md px-3 py-1 font-mono text-xs font-medium transition-colors ${
+                          selectedTeamTab === "offense"
+                            ? "bg-acc text-black font-semibold"
+                            : "bg-panel2 text-mute hover:bg-line/10 hover:text-foreground"
+                        }`}
+                      >
+                        Offense ({selectedTeam === "away" ? awayOffense.length : homeOffense.length}
+                        )
+                      </button>
+
+                      <button
+                        type="button"
+                        onClick={() => setSelectedTeamTab("defense")}
+                        className={`rounded-md px-3 py-1 font-mono text-xs font-medium transition-colors ${
+                          selectedTeamTab === "defense"
+                            ? "bg-acc text-black font-semibold"
+                            : "bg-panel2 text-mute hover:bg-line/10 hover:text-foreground"
+                        }`}
+                      >
+                        Defense ({selectedTeam === "away" ? awayDefense.length : homeDefense.length}
+                        )
+                      </button>
+                    </div>
+                  </div>
+
+                  {selectedTeamLines.length === 0 ? (
+                    <p className="px-4 py-8 text-center font-mono text-xs uppercase tracking-wider text-faint">
+                      No {selectedTeamTab} stats recorded
+                    </p>
+                  ) : (
+                    <>
+                      {qbLines.length > 0 ? <QuarterbackStatsTable lines={qbLines} /> : null}
+                      {rbLines.length > 0 ? (
+                        <div className={`${qbLines.length > 0 ? "border-t border-line/10" : ""}`}>
+                          <RunningBackStatsTable lines={rbLines} />
+                        </div>
+                      ) : null}
+                      {wrLines.length > 0 ? (
+                        <div
+                          className={`${qbLines.length > 0 || rbLines.length > 0 ? "border-t border-line/10" : ""}`}
+                        >
+                          <ReceivingStatsTable lines={wrLines} title="WR" />
+                        </div>
+                      ) : null}
+                      {teLines.length > 0 ? (
+                        <div
+                          className={`${qbLines.length > 0 || rbLines.length > 0 || wrLines.length > 0 ? "border-t border-line/10" : ""}`}
+                        >
+                          <ReceivingStatsTable lines={teLines} title="TE" />
+                        </div>
+                      ) : null}
+                      {kickerLines.length > 0 ? (
+                        <div
+                          className={`${detailedLines.length > kickerLines.length ? "border-t border-line/10" : ""}`}
+                        >
+                          <div className="overflow-x-auto">
+                            <table className="w-full text-sm">
+                              <thead>
+                                <tr className="text-left font-mono text-[10px] uppercase tracking-wider text-faint">
+                                  <th className="w-[28%] px-4 py-2 font-normal">K</th>
+                                  <th className="px-2 py-2 font-normal">FG%</th>
+                                  <th className="px-2 py-2 font-normal">XP%</th>
+                                  <th className="px-2 py-2 font-normal">LNG</th>
+                                  <th className="px-2 py-2 font-normal">FGYDS</th>
+                                  <th className="px-2 py-2 font-normal">0-19</th>
+                                  <th className="px-2 py-2 font-normal">20-29</th>
+                                  <th className="px-2 py-2 font-normal">30-39</th>
+                                  <th className="px-2 py-2 font-normal">40-49</th>
+                                  <th className="px-2 py-2 font-normal">50+</th>
+                                </tr>
+                              </thead>
+                              <tbody className="divide-y divide-line/5">
+                                {kickerLines.map((line, idx) => {
+                                  const raw = line.stats ?? {};
+                                  const pair = (value: string | undefined): [number, number] => {
+                                    const match = String(value ?? "0/0").match(
+                                      /(\d+)\s*[-/]\s*(\d+)/,
+                                    );
+                                    return match ? [Number(match[1]), Number(match[2])] : [0, 0];
+                                  };
+                                  const [fgMade, fgAtt] = pair(
+                                    raw["fieldGoalsMade/fieldGoalAttempts"],
+                                  );
+                                  const [xpMade, xpAtt] = pair(
+                                    raw["extraPointsMade/extraPointAttempts"],
+                                  );
+                                  const longRaw = Number(
+                                    String(raw.longFieldGoalMade ?? "0").match(/\d+/)?.[0] ?? 0,
+                                  );
+                                  const fieldGoals = line.fieldGoalDistances ?? [];
+                                  const bucket = (min: number, max: number) =>
+                                    fieldGoals.filter(
+                                      (distance) => distance >= min && distance <= max,
+                                    ).length;
+                                  const fgyards = fieldGoals.reduce(
+                                    (sum, distance) => sum + distance,
+                                    0,
+                                  );
+                                  const longest = Math.max(longRaw, ...fieldGoals, 0);
+                                  const cell = (value: string | number) => (
+                                    <td className="px-2 py-2.5 whitespace-nowrap font-mono text-xs tabular-nums text-mute">
+                                      {value}
+                                    </td>
+                                  );
+                                  return (
+                                    <tr key={`${line.name}-${idx}`} className="hover:bg-line/5">
+                                      <td className="max-w-[240px] px-4 py-2.5 font-medium">
+                                        <PlayerNameCell line={line} />
+                                      </td>
+                                      {cell(`${fgMade}/${fgAtt}`)}
+                                      {cell(`${xpMade}/${xpAtt}`)}
+                                      {cell(longest || 0)}
+                                      {cell(fgyards)}
+                                      {cell(bucket(0, 19))}
+                                      {cell(bucket(20, 29))}
+                                      {cell(bucket(30, 39))}
+                                      {cell(bucket(40, 49))}
+                                      {cell(fieldGoals.filter((distance) => distance >= 50).length)}
+                                    </tr>
+                                  );
+                                })}
+                              </tbody>
+                            </table>
+                          </div>
+                        </div>
+                      ) : null}
+                      {punterLines.length > 0 ? (
+                        <div
+                          className={`${detailedLines.length > punterLines.length ? "border-t border-line/10" : ""}`}
+                        >
+                          <div className="overflow-x-auto">
+                            <table className="w-full text-sm">
+                              <thead>
+                                <tr className="text-left font-mono text-[10px] uppercase tracking-wider text-faint">
+                                  <th className="w-[28%] px-4 py-2 font-normal">P</th>
+                                  <th className="px-2 py-2 font-normal">PUNT</th>
+                                  <th className="px-2 py-2 font-normal">AVG</th>
+                                  <th className="px-2 py-2 font-normal">LNG</th>
+                                  <th className="px-2 py-2 font-normal">PUYDS</th>
+                                  <th className="px-2 py-2 font-normal">P20</th>
+                                  <th className="px-2 py-2 font-normal">PTB</th>
+                                </tr>
+                              </thead>
+                              <tbody className="divide-y divide-line/5">
+                                {punterLines.map((line, idx) => {
+                                  const raw = line.stats ?? {};
+                                  const number = (...keys: string[]) => {
+                                    for (const key of keys) {
+                                      const value = raw[key];
+                                      if (value !== undefined && value !== null && value !== "") {
+                                        const parsed = Number(String(value).replace(/,/g, ""));
+                                        if (Number.isFinite(parsed)) return parsed;
+                                      }
+                                    }
+                                    return 0;
+                                  };
+                                  const punts = number("punts", "puntAttempts", "puntsAttempted");
+                                  const puntYards = number(
+                                    "puntYards",
+                                    "puntingYards",
+                                    "grossPuntYards",
+                                  );
+                                  const avgRaw = number(
+                                    "grossAvg",
+                                    "grossAverage",
+                                    "yardsPerPunt",
+                                    "averagePuntYards",
+                                  );
+                                  const average = avgRaw || (punts > 0 ? puntYards / punts : 0);
+                                  const longest = number("longestPunt", "longPunt", "longest");
+                                  const inside20 = number(
+                                    "puntsInside20",
+                                    "puntsInsideThe20",
+                                    "inside20",
+                                  );
+                                  const touchbacks = number(
+                                    "puntTouchbacks",
+                                    "puntingTouchbacks",
+                                    "touchbacks",
+                                  );
+                                  const cell = (value: string | number) => (
+                                    <td className="px-2 py-2.5 whitespace-nowrap font-mono text-xs tabular-nums text-mute">
+                                      {value}
+                                    </td>
+                                  );
+                                  return (
+                                    <tr key={`${line.name}-${idx}`} className="hover:bg-line/5">
+                                      <td className="max-w-[240px] px-4 py-2.5 font-medium">
+                                        <PlayerNameCell line={line} />
+                                      </td>
+                                      {cell(punts)}
+                                      {cell(average ? average.toFixed(1) : "0.0")}
+                                      {cell(longest)}
+                                      {cell(puntYards)}
+                                      {cell(inside20)}
+                                      {cell(touchbacks)}
+                                    </tr>
+                                  );
+                                })}
+                              </tbody>
+                            </table>
+                          </div>
+                        </div>
+                      ) : null}
+                      {selectedTeamTab === "defense" && defensePositionGroups.length > 0 ? (
+                        <div className={detailedLines.length > 0 ? "border-t border-line/10" : ""}>
+                          {defensePositionGroups.map(({ position, lines }, groupIndex) => (
+                            <div
+                              key={position}
+                              className={groupIndex > 0 ? "border-t border-line/10" : ""}
+                            >
+                              <div className="overflow-x-auto">
+                                <table className="w-full text-sm">
+                                  <thead>
+                                    <tr className="text-left font-mono text-[10px] uppercase tracking-wider text-faint">
+                                      <th className="w-[60%] px-4 py-2 font-normal">{position}</th>
+                                      <th className="w-[40%] px-4 py-2 font-normal">Stat line</th>
+                                    </tr>
+                                  </thead>
+                                  <tbody className="divide-y divide-line/5">
+                                    {lines.map((line, idx) => (
+                                      <tr
+                                        key={`${line.name}-${line.position}-${idx}`}
+                                        className="hover:bg-line/5"
+                                      >
+                                        <td className="max-w-[320px] px-4 py-2.5 font-medium">
+                                          <PlayerNameCell line={line} />
+                                        </td>
+                                        <td className="px-4 py-2.5 font-mono text-xs tabular-nums text-mute">
+                                          {line.statLine}
+                                        </td>
+                                      </tr>
+                                    ))}
+                                  </tbody>
+                                </table>
                               </div>
                             </div>
-                          </>
-                        );
-                        return (
-                          <div className={`flex min-w-0 items-center py-3 ${alignment}`}>
-                            {leaderData.line.playerId ? (
-                              <Link to={playerRoute(league)} params={{ playerId: leaderData.line.playerId }} className="group block min-w-0 rounded-md p-1 transition-colors hover:bg-line/5 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-acc">
-                                {playerContent}
-                              </Link>
-                            ) : <div className="min-w-0 p-1">{playerContent}</div>}
-                          </div>
-                        );
-                      };
-                      // Hide the entire category when neither team has a positive stat value.
-                      if (!awayLeader && !homeLeader) return null;
-                      return (
-                        <div key={leader.label} className="grid grid-cols-[minmax(0,1fr)_112px_minmax(0,1fr)] items-center gap-2 sm:grid-cols-[minmax(0,1fr)_160px_minmax(0,1fr)]">
-                          {playerCell(awayLeader, "away")}
-                          <div className="px-1 text-center">
-                            <div className="text-[11px] font-semibold uppercase leading-tight tracking-wide text-mute sm:text-xs">{leader.label}</div>
-                          </div>
-                          {playerCell(homeLeader, "home")}
+                          ))}
                         </div>
-                      );
-                    })}
-                  </div>
-                </div>
-              </Panel>
-            </section>
-          ) : null}
-
-          {/* Drive by drive */}
-          <section className={`mt-6 ${showGameStatistics(game.status) && activeGameTab !== "gamecast" ? "hidden" : ""}`}>
-            <Panel padded={false}>
-              <div className="flex items-center justify-between border-b border-line/10 px-4 py-3">
-                <h2 className="font-disp text-xl font-semibold uppercase tracking-tight">
-                  Drive by drive
-                </h2>
-
-                <span className="label-mono">
-                  {game.drives.length} drives
-                </span>
-              </div>
-
-              {game.drives.length === 0 ? (
-                <p className="px-4 py-6 font-mono text-[11px] uppercase tracking-wider text-faint">
-                  Drives populate once the game is played.
-                </p>
-              ) : (
-                <DriveTable game={game} />
-              )}
-            </Panel>
-          </section>
-
-          {/* Team selector + player statistics */}
-          <section className={`mt-6 ${showGameStatistics(game.status) && activeGameTab !== "stats" ? "hidden" : ""}`}>
-            <div className="mb-3 flex items-center justify-between">
-              <h2 className="font-disp text-xl font-semibold uppercase tracking-tight">
-                Player statistics
-              </h2>
-
-              <span className="label-mono">
-                box score
-              </span>
-            </div>
-
-            <Panel padded={false}>
-              {/* Team tabs */}
-              <div className="grid grid-cols-2 border-b border-line/10">
-                <button
-                  type="button"
-                  onClick={() =>
-                    setSelectedTeam("away")
-                  }
-                  className={`flex items-center justify-center gap-2 border-r border-line/10 px-4 py-3 font-disp text-sm font-semibold uppercase tracking-tight transition-colors ${
-                    selectedTeam === "away"
-                      ? "bg-acc/10 text-foreground shadow-[inset_0_-2px_0_var(--accent)]"
-                      : "text-mute hover:bg-line/5 hover:text-foreground"
-                  }`}
-                >
-                  <TeamLogo
-                    team={away}
-                    className="size-6"
-                  />
-
-                  <span>{teamShort(away)}</span>
-                </button>
-
-                <button
-                  type="button"
-                  onClick={() =>
-                    setSelectedTeam("home")
-                  }
-                  className={`flex items-center justify-center gap-2 px-4 py-3 font-disp text-sm font-semibold uppercase tracking-tight transition-colors ${
-                    selectedTeam === "home"
-                      ? "bg-acc/10 text-foreground shadow-[inset_0_-2px_0_var(--accent)]"
-                      : "text-mute hover:bg-line/5 hover:text-foreground"
-                  }`}
-                >
-                  <TeamLogo
-                    team={home}
-                    className="size-6"
-                  />
-
-                  <span>{teamShort(home)}</span>
-                </button>
-              </div>
-
-              {/* Offense / Defense tabs */}
-              <div className="flex items-center justify-between gap-3 border-b border-line/10 px-4 py-3">
-                <div className="flex items-center gap-2">
-                  <TeamLogo
-                    team={selectedTeamData}
-                    className="size-5"
-                  />
-
-                  <span className="font-disp text-base font-semibold uppercase tracking-tight">
-                    {teamShort(selectedTeamData)}
-                  </span>
-                </div>
-
-                <div className="flex gap-1.5">
-                  <button
-                    type="button"
-                    onClick={() =>
-                      setSelectedTeamTab("offense")
-                    }
-                    className={`rounded-md px-3 py-1 font-mono text-xs font-medium transition-colors ${
-                      selectedTeamTab === "offense"
-                        ? "bg-acc text-black font-semibold"
-                        : "bg-panel2 text-mute hover:bg-line/10 hover:text-foreground"
-                    }`}
-                  >
-                    Offense (
-                    {selectedTeam === "away"
-                      ? awayOffense.length
-                      : homeOffense.length}
-                    )
-                  </button>
-
-                  <button
-                    type="button"
-                    onClick={() =>
-                      setSelectedTeamTab("defense")
-                    }
-                    className={`rounded-md px-3 py-1 font-mono text-xs font-medium transition-colors ${
-                      selectedTeamTab === "defense"
-                        ? "bg-acc text-black font-semibold"
-                        : "bg-panel2 text-mute hover:bg-line/10 hover:text-foreground"
-                    }`}
-                  >
-                    Defense (
-                    {selectedTeam === "away"
-                      ? awayDefense.length
-                      : homeDefense.length}
-                    )
-                  </button>
-                </div>
-              </div>
-
-              {selectedTeamLines.length === 0 ? (
-                <p className="px-4 py-8 text-center font-mono text-xs uppercase tracking-wider text-faint">
-                  No {selectedTeamTab} stats recorded
-                </p>
-              ) : (
-                <>
-                {qbLines.length > 0 ? <QuarterbackStatsTable lines={qbLines} /> : null}
-                {rbLines.length > 0 ? <div className={`${qbLines.length > 0 ? "border-t border-line/10" : ""}`}><RunningBackStatsTable lines={rbLines} /></div> : null}
-                {wrLines.length > 0 ? (
-                  <div className={`${qbLines.length > 0 || rbLines.length > 0 ? "border-t border-line/10" : ""}`}>
-                    <ReceivingStatsTable lines={wrLines} title="WR" />
-                  </div>
-                ) : null}
-                {teLines.length > 0 ? (
-                  <div className={`${qbLines.length > 0 || rbLines.length > 0 || wrLines.length > 0 ? "border-t border-line/10" : ""}`}>
-                    <ReceivingStatsTable lines={teLines} title="TE" />
-                  </div>
-                ) : null}
-                {kickerLines.length > 0 ? (
-                  <div className={`${detailedLines.length > kickerLines.length ? "border-t border-line/10" : ""}`}>
-                    <div className="overflow-x-auto">
-                      <table className="w-full text-sm">
-                        <thead>
-                          <tr className="text-left font-mono text-[10px] uppercase tracking-wider text-faint">
-                            <th className="w-[28%] px-4 py-2 font-normal">K</th>
-                            <th className="px-2 py-2 font-normal">FG%</th>
-                            <th className="px-2 py-2 font-normal">XP%</th>
-                            <th className="px-2 py-2 font-normal">LNG</th>
-                            <th className="px-2 py-2 font-normal">FGYDS</th>
-                            <th className="px-2 py-2 font-normal">0-19</th>
-                            <th className="px-2 py-2 font-normal">20-29</th>
-                            <th className="px-2 py-2 font-normal">30-39</th>
-                            <th className="px-2 py-2 font-normal">40-49</th>
-                            <th className="px-2 py-2 font-normal">50+</th>
-                          </tr>
-                        </thead>
-                        <tbody className="divide-y divide-line/5">
-                          {kickerLines.map((line, idx) => {
-                            const raw = line.stats ?? {};
-                            const pair = (value: string | undefined): [number, number] => {
-                              const match = String(value ?? "0/0").match(/(\d+)\s*[-/]\s*(\d+)/);
-                              return match ? [Number(match[1]), Number(match[2])] : [0, 0];
-                            };
-                            const [fgMade, fgAtt] = pair(raw["fieldGoalsMade/fieldGoalAttempts"]);
-                            const [xpMade, xpAtt] = pair(raw["extraPointsMade/extraPointAttempts"]);
-                            const longRaw = Number(String(raw.longFieldGoalMade ?? "0").match(/\d+/)?.[0] ?? 0);
-                            const fieldGoals = line.fieldGoalDistances ?? [];
-                            const bucket = (min: number, max: number) => fieldGoals.filter((distance) => distance >= min && distance <= max).length;
-                            const fgyards = fieldGoals.reduce((sum, distance) => sum + distance, 0);
-                            const longest = Math.max(longRaw, ...fieldGoals, 0);
-                            const cell = (value: string | number) => <td className="px-2 py-2.5 whitespace-nowrap font-mono text-xs tabular-nums text-mute">{value}</td>;
-                            return (
-                              <tr key={`${line.name}-${idx}`} className="hover:bg-line/5">
-                                <td className="max-w-[240px] px-4 py-2.5 font-medium"><PlayerNameCell line={line} /></td>
-                                {cell(`${fgMade}/${fgAtt}`)}
-                                {cell(`${xpMade}/${xpAtt}`)}
-                                {cell(longest || 0)}
-                                {cell(fgyards)}
-                                {cell(bucket(0, 19))}
-                                {cell(bucket(20, 29))}
-                                {cell(bucket(30, 39))}
-                                {cell(bucket(40, 49))}
-                                {cell(fieldGoals.filter((distance) => distance >= 50).length)}
-                              </tr>
-                            );
-                          })}
-                        </tbody>
-                      </table>
-                    </div>
-                  </div>
-                ) : null}
-                {punterLines.length > 0 ? (
-                  <div className={`${detailedLines.length > punterLines.length ? "border-t border-line/10" : ""}`}>
-                    <div className="overflow-x-auto">
-                      <table className="w-full text-sm">
-                        <thead>
-                          <tr className="text-left font-mono text-[10px] uppercase tracking-wider text-faint">
-                            <th className="w-[28%] px-4 py-2 font-normal">P</th>
-                            <th className="px-2 py-2 font-normal">PUNT</th>
-                            <th className="px-2 py-2 font-normal">AVG</th>
-                            <th className="px-2 py-2 font-normal">LNG</th>
-                            <th className="px-2 py-2 font-normal">PUYDS</th>
-                            <th className="px-2 py-2 font-normal">P20</th>
-                            <th className="px-2 py-2 font-normal">PTB</th>
-                          </tr>
-                        </thead>
-                        <tbody className="divide-y divide-line/5">
-                          {punterLines.map((line, idx) => {
-                            const raw = line.stats ?? {};
-                            const number = (...keys: string[]) => {
-                              for (const key of keys) {
-                                const value = raw[key];
-                                if (value !== undefined && value !== null && value !== "") {
-                                  const parsed = Number(String(value).replace(/,/g, ""));
-                                  if (Number.isFinite(parsed)) return parsed;
-                                }
-                              }
-                              return 0;
-                            };
-                            const punts = number("punts", "puntAttempts", "puntsAttempted");
-                            const puntYards = number("puntYards", "puntingYards", "grossPuntYards");
-                            const avgRaw = number("grossAvg", "grossAverage", "yardsPerPunt", "averagePuntYards");
-                            const average = avgRaw || (punts > 0 ? puntYards / punts : 0);
-                            const longest = number("longestPunt", "longPunt", "longest");
-                            const inside20 = number("puntsInside20", "puntsInsideThe20", "inside20");
-                            const touchbacks = number("puntTouchbacks", "puntingTouchbacks", "touchbacks");
-                            const cell = (value: string | number) => <td className="px-2 py-2.5 whitespace-nowrap font-mono text-xs tabular-nums text-mute">{value}</td>;
-                            return (
-                              <tr key={`${line.name}-${idx}`} className="hover:bg-line/5">
-                                <td className="max-w-[240px] px-4 py-2.5 font-medium"><PlayerNameCell line={line} /></td>
-                                {cell(punts)}
-                                {cell(average ? average.toFixed(1) : "0.0")}
-                                {cell(longest)}
-                                {cell(puntYards)}
-                                {cell(inside20)}
-                                {cell(touchbacks)}
-                              </tr>
-                            );
-                          })}
-                        </tbody>
-                      </table>
-                    </div>
-                  </div>
-                ) : null}
-                {selectedTeamTab === "defense" && defensePositionGroups.length > 0 ? (
-                  <div className={detailedLines.length > 0 ? "border-t border-line/10" : ""}>
-                    {defensePositionGroups.map(({ position, lines }, groupIndex) => (
-                      <div key={position} className={groupIndex > 0 ? "border-t border-line/10" : ""}>
-                        <div className="overflow-x-auto">
+                      ) : null}
+                      {selectedTeamTab === "offense" && otherLines.length > 0 ? (
+                        <div
+                          className={`overflow-x-auto ${detailedLines.length > 0 ? "border-t border-line/10" : ""}`}
+                        >
                           <table className="w-full text-sm">
                             <thead>
                               <tr className="text-left font-mono text-[10px] uppercase tracking-wider text-faint">
-                                <th className="w-[60%] px-4 py-2 font-normal">{position}</th>
+                                <th className="w-[42%] px-4 py-2 font-normal">Player</th>
+                                <th className="w-[18%] px-2 py-2 font-normal">Pos</th>
                                 <th className="w-[40%] px-4 py-2 font-normal">Stat line</th>
                               </tr>
                             </thead>
                             <tbody className="divide-y divide-line/5">
-                              {lines.map((line, idx) => (
-                                <tr key={`${line.name}-${line.position}-${idx}`} className="hover:bg-line/5">
-                                  <td className="max-w-[320px] px-4 py-2.5 font-medium">
+                              {otherLines.map((line, idx) => (
+                                <tr
+                                  key={`${line.name}-${line.position}-${idx}`}
+                                  className="hover:bg-line/5"
+                                >
+                                  <td className="max-w-[220px] px-4 py-2.5 font-medium">
                                     <PlayerNameCell line={line} />
+                                  </td>
+                                  <td className="px-2 py-2.5 font-mono text-mute">
+                                    {abbreviatePosition(line.position)}
                                   </td>
                                   <td className="px-4 py-2.5 font-mono text-xs tabular-nums text-mute">
                                     {line.statLine}
@@ -1403,118 +1591,124 @@ export function GameDetail({ gameId }: { gameId: string }) {
                             </tbody>
                           </table>
                         </div>
+                      ) : null}
+                    </>
+                  )}
+                </Panel>
+              </section>
+              {showGameStatistics(game.status) && activeGameTab === "markets" ? (
+                <section className="mt-6 space-y-4">
+                  {league === "nfl" ? (
+                    <MarketsViewTabs
+                      view={marketsView}
+                      onChange={setMarketsView}
+                      first="Probabilities"
+                    />
+                  ) : null}
+                  {league === "nfl" && marketsView === "lines" ? (
+                    <AllLines
+                      home={home}
+                      away={away}
+                      when={game.kickoffIso ?? game.kickoff}
+                      status={game.status === "final" ? "final" : "live"}
+                      quarters={game.quarters}
+                      eventId={game.id}
+                    />
+                  ) : (
+                    <Panel>
+                      <div className="flex flex-wrap items-start justify-between gap-3">
+                        <h2 className="font-disp text-xl font-semibold uppercase tracking-tight">
+                          Probabilities
+                        </h2>
+                        <div className="text-right text-xs text-mute">
+                          <div className="flex items-center justify-end gap-1.5">
+                            Spread:{" "}
+                            <span className="font-mono font-semibold text-foreground">
+                              <MarketSpreadLabel spread={game.spread} away={away} home={home} />
+                            </span>
+                          </div>
+                          <div className="mt-1">
+                            Total:{" "}
+                            <span className="font-mono font-semibold text-foreground">
+                              {game.total || "—"}
+                            </span>
+                          </div>
+                        </div>
                       </div>
-                    ))}
-                  </div>
-                ) : null}
-                {selectedTeamTab === "offense" && otherLines.length > 0 ? (
-                  <div className={`overflow-x-auto ${detailedLines.length > 0 ? "border-t border-line/10" : ""}`}>
-                    <table className="w-full text-sm">
-                      <thead>
-                        <tr className="text-left font-mono text-[10px] uppercase tracking-wider text-faint">
-                          <th className="w-[42%] px-4 py-2 font-normal">Player</th>
-                          <th className="w-[18%] px-2 py-2 font-normal">Pos</th>
-                          <th className="w-[40%] px-4 py-2 font-normal">Stat line</th>
-                        </tr>
-                      </thead>
-                      <tbody className="divide-y divide-line/5">
-                        {otherLines.map((line, idx) => (
-                          <tr key={`${line.name}-${line.position}-${idx}`} className="hover:bg-line/5">
-                            <td className="max-w-[220px] px-4 py-2.5 font-medium">
-                              <PlayerNameCell line={line} />
-                            </td>
-                            <td className="px-2 py-2.5 font-mono text-mute">{abbreviatePosition(line.position)}</td>
-                            <td className="px-4 py-2.5 font-mono text-xs tabular-nums text-mute">{line.statLine}</td>
-                          </tr>
+                      <div
+                        className="mt-4 grid grid-cols-3 gap-1 rounded-lg border border-line/10 p-1"
+                        role="tablist"
+                        aria-label="Probability type"
+                      >
+                        {(
+                          [
+                            ["moneyline", "Moneyline"],
+                            ["cover", "Cover"],
+                            ["total", "Total"],
+                          ] as const
+                        ).map(([tab, label]) => (
+                          <button
+                            key={tab}
+                            type="button"
+                            role="tab"
+                            aria-selected={activeMarketTab === tab}
+                            onClick={() => setActiveMarketTab(tab)}
+                            className={`rounded-md px-2 py-2.5 font-disp text-xs font-semibold uppercase tracking-wider transition-colors sm:text-sm ${activeMarketTab === tab ? "bg-acc text-black" : "text-mute hover:bg-line/5 hover:text-foreground"}`}
+                          >
+                            {label}
+                          </button>
                         ))}
-                      </tbody>
-                    </table>
-                  </div>
-                ) : null}
-                </>
-              )}
-            </Panel>
-          </section>
-          {showGameStatistics(game.status) && activeGameTab === "markets" ? (
-            <section className="mt-6 space-y-4">
-              {league === "nfl" ? (
-                <MarketsViewTabs view={marketsView} onChange={setMarketsView} first="Probabilities" />
+                      </div>
+                      {activeMarketTab === "total" ? (
+                        <ProbabilityGraph
+                          points={game.probabilities ?? []}
+                          probabilityKey="overProbability"
+                          away={away}
+                          home={home}
+                          logo={(team: Team) => <TeamLogo team={team} className="size-8" />}
+                          totalLine={game.total || undefined}
+                          unavailableText="Total probability needs the game's pregame over/under and play-by-play scores, which aren't available for this game."
+                        />
+                      ) : activeMarketTab === "cover" ? (
+                        <ProbabilityGraph
+                          points={game.probabilities ?? []}
+                          probabilityKey="homeCoverProbability"
+                          away={away}
+                          home={home}
+                          logo={(team: Team) => <TeamLogo team={team} className="size-8" />}
+                          unavailableText="Cover probability needs the game's pregame spread and play-by-play probabilities, which aren't available for this game."
+                        />
+                      ) : (
+                        <ProbabilityGraph
+                          points={game.probabilities ?? []}
+                          probabilityKey="homeWinProbability"
+                          away={away}
+                          home={home}
+                          logo={(team: Team) => <TeamLogo team={team} className="size-8" />}
+                          unavailableText="ESPN hasn't published win probabilities for this game yet."
+                        />
+                      )}
+                    </Panel>
+                  )}
+                </section>
               ) : null}
-              {league === "nfl" && marketsView === "lines" ? (
-                <AllLines
-                  home={home}
-                  away={away}
-                  when={game.kickoffIso ?? game.kickoff}
-                  status={game.status === "final" ? "final" : "live"}
-                  quarters={game.quarters}
-                  eventId={game.id}
-                />
-              ) : (
-              <Panel>
-                <div className="flex flex-wrap items-start justify-between gap-3">
-                  <h2 className="font-disp text-xl font-semibold uppercase tracking-tight">Probabilities</h2>
-                  <div className="text-right text-xs text-mute">
-                    <div className="flex items-center justify-end gap-1.5">Spread: <span className="font-mono font-semibold text-foreground"><MarketSpreadLabel spread={game.spread} away={away} home={home} /></span></div>
-                    <div className="mt-1">Total: <span className="font-mono font-semibold text-foreground">{game.total || "—"}</span></div>
-                  </div>
-                </div>
-                <div className="mt-4 grid grid-cols-3 gap-1 rounded-lg border border-line/10 p-1" role="tablist" aria-label="Probability type">
-                  {([["moneyline", "Moneyline"], ["cover", "Cover"], ["total", "Total"]] as const).map(([tab, label]) => (
-                    <button key={tab} type="button" role="tab" aria-selected={activeMarketTab === tab} onClick={() => setActiveMarketTab(tab)} className={`rounded-md px-2 py-2.5 font-disp text-xs font-semibold uppercase tracking-wider transition-colors sm:text-sm ${activeMarketTab === tab ? "bg-acc text-black" : "text-mute hover:bg-line/5 hover:text-foreground"}`}>
-                      {label}
-                    </button>
-                  ))}
-                </div>
-                {activeMarketTab === "total" ? (
-                  <ProbabilityGraph
-                    points={game.probabilities ?? []}
-                    probabilityKey="overProbability"
-                    away={away}
-                    home={home}
-                    logo={(team: Team) => <TeamLogo team={team} className="size-8" />}
-                    totalLine={game.total || undefined}
-                    unavailableText="Total probability needs the game's pregame over/under and play-by-play scores, which aren't available for this game."
+              {/* Live / Finished games Props tab */}
+              {activeGameTab === "props" ? (
+                <section className="mt-6">
+                  <LivePropsViews
+                    live={game.status === "live" && !isCollegeId(game.id)}
+                    pregame={<GamePropsTab game={game} away={away} home={home} />}
+                    halftime={
+                      <HalftimeLines
+                        league="nfl"
+                        id={game.id.replace(/^\D+-/, "")}
+                        home={home.abbr}
+                        away={away.abbr}
+                      />
+                    }
                   />
-                ) : activeMarketTab === "cover" ? (
-                  <ProbabilityGraph
-                    points={game.probabilities ?? []}
-                    probabilityKey="homeCoverProbability"
-                    away={away}
-                    home={home}
-                    logo={(team: Team) => <TeamLogo team={team} className="size-8" />}
-                    unavailableText="Cover probability needs the game's pregame spread and play-by-play probabilities, which aren't available for this game."
-                  />
-                ) : (
-                  <ProbabilityGraph
-                    points={game.probabilities ?? []}
-                    probabilityKey="homeWinProbability"
-                    away={away}
-                    home={home}
-                    logo={(team: Team) => <TeamLogo team={team} className="size-8" />}
-                    unavailableText="ESPN hasn't published win probabilities for this game yet."
-                  />
-                )}
-              </Panel>
-              )}
-            </section>
-          ) : null}
-                    {/* Live / Finished games Props tab */}
-          {activeGameTab === "props" ? (
-            <section className="mt-6">
-              <LivePropsViews
-                live={game.status === "live" && !isCollegeId(game.id)}
-                pregame={<GamePropsTab game={game} away={away} home={home} />}
-                halftime={
-                  <HalftimeLines
-                    league="nfl"
-                    id={game.id.replace(/^\D+-/, "")}
-                    home={home.abbr}
-                    away={away.abbr}
-                  />
-                }
-              />
-            </section>
-          ) : null}
+                </section>
+              ) : null}
             </>
           ) : activeGameTab === "stats" ? (
             /* Upcoming games: use each team's season-to-date per-game averages. */
@@ -1528,7 +1722,10 @@ export function GameDetail({ gameId }: { gameId: string }) {
                   <div className="mt-4">
                     {seasonAverages ? (
                       <StatComparison
-                        game={{ ...game, stats: { away: seasonAverages.away, home: seasonAverages.home } }}
+                        game={{
+                          ...game,
+                          stats: { away: seasonAverages.away, home: seasonAverages.home },
+                        }}
                       />
                     ) : (
                       <p className="py-4 text-center font-mono text-[11px] uppercase tracking-wider text-faint">
@@ -1545,7 +1742,12 @@ export function GameDetail({ gameId }: { gameId: string }) {
                 <MarketsViewTabs view={marketsView} onChange={setMarketsView} first="Model" />
               ) : null}
               {league === "nfl" && marketsView === "lines" ? (
-                <AllLines home={home} away={away} when={game.kickoffIso ?? game.kickoff} status="scheduled" />
+                <AllLines
+                  home={home}
+                  away={away}
+                  when={game.kickoffIso ?? game.kickoff}
+                  status="scheduled"
+                />
               ) : (
                 <MatchupPredictor game={game} away={away} home={home} />
               )}
@@ -1591,7 +1793,11 @@ function MarketsViewTabs({
   first: string;
 }) {
   return (
-    <div className="grid grid-cols-2 gap-1 rounded-lg border border-line/10 p-1" role="tablist" aria-label="Markets view">
+    <div
+      className="grid grid-cols-2 gap-1 rounded-lg border border-line/10 p-1"
+      role="tablist"
+      aria-label="Markets view"
+    >
       {(
         [
           ["model", first],
@@ -1623,7 +1829,9 @@ function CfbBestBetBanner({ picks }: { picks: CfbPick[] }) {
         const line = p.line === 0 ? "PK" : p.line > 0 ? `+${p.line}` : String(p.line);
         return (
           <div key={p.rule} className="flex flex-wrap items-center gap-x-3 gap-y-1 text-sm">
-            <span className="font-mono text-[11px] uppercase tracking-wider text-acc">★ Best bet</span>
+            <span className="font-mono text-[11px] uppercase tracking-wider text-acc">
+              ★ Best bet
+            </span>
             <span className="inline-flex items-center gap-1.5 font-mono font-semibold">
               {p.market === "total" ? (
                 `${p.side === "over" ? "Over" : "Under"} ${p.line}`
