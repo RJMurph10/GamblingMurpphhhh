@@ -4,10 +4,13 @@ jobs:
   p:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v4
-      - uses: oven-sh/setup-bun@v2
-      - run: bun install --frozen-lockfile || bun install
-      - run: bun probe/cbb.ts
       - run: |
-          curl -s -A "Mozilla/5.0" https://gamblingnfl.lovable.app/cbb -o page.html; wc -c page.html
-          grep -o "in progress\|Upcoming games\|Live games\|Could not load games\|No completed games\|Loading games" page.html | sort | uniq -c
+          curl -s -A "Mozilla/5.0" https://gamblingnfl.lovable.app/cbb | head -c 1300; echo
+          google-chrome --headless=new --no-sandbox --disable-gpu --virtual-time-budget=25000 --dump-dom https://gamblingnfl.lovable.app/cbb > dom.html 2>/dev/null; wc -c dom.html
+          python3 - <<'PY'
+          import re,html
+          t=re.sub(r"<script.*?</script>|<style.*?</style>","",open("dom.html").read(),flags=re.S)
+          t=html.unescape(re.sub(r"<[^>]+>"," ",t)); t=re.sub(r"\s+"," ",t)
+          for k in ("Live games","in progress","Upcoming games","Recent games","Could not load","Loading games","No completed games","games graded","Season Pulse"):
+              i=t.find(k); print("FIND",k, i, t[max(0,i-80):i+220] if i>=0 else "")
+          PY
