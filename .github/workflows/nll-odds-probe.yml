@@ -6,41 +6,24 @@ jobs:
     steps:
       - run: |
           python3 - <<'PY'
-          import json, urllib.request
-          UA={"User-Agent":"Mozilla/5.0"}
-          S="https://site.api.espn.com/apis/site/v2/sports/lacrosse/nll"
-          C="https://sports.core.api.espn.com/v2/sports/lacrosse/leagues/nll"
+          import json, urllib.request, urllib.error, time
+          from datetime import datetime, timedelta, timezone
+          UA={"User-Agent":"GamblingNFL/1.0","Accept":"application/json"}
+          S="https://site.api.espn.com/apis/site/v2/sports/basketball/mens-college-basketball"
           def g(u):
-              try: return json.loads(urllib.request.urlopen(urllib.request.Request(u,headers=UA),timeout=30).read())
-              except Exception as e: return {"ERR":str(e)}
-          def show(lbl,d,n=1200): print("==",lbl, json.dumps(d)[:n])
-          sb=g(S+"/scoreboard?dates=202611")
-          fin=[e for e in sb.get("events",[]) if e["status"]["type"]["completed"]]
-          print("Nov finals", [(e["id"],e["name"]) for e in fin])
-          old=g(S+"/scoreboard?dates=202603"); ofin=[e for e in old.get("events",[]) if e["status"]["type"]["completed"]]
-          for e in (fin[:1]+ofin[:1]):
-              sm=g(S+f"/summary?event={e['id']}")
-              print("SUMMARY", e["name"], "keys", list(sm.keys()))
-              for k,v in sm.items():
-                  if k in ("header",): continue
-                  print("  -",k, type(v).__name__, (len(v) if hasattr(v,'__len__') else ''), json.dumps(v)[:500])
-              ev=e["competitions"][0]
-              print("  scoreboard comp keys", list(ev.keys()), "| competitor keys", list(ev["competitors"][0].keys()))
-              print("  competitor stats", json.dumps(ev["competitors"][0].get("statistics"))[:600], "| leaders", json.dumps(ev["competitors"][0].get("leaders"))[:600])
-              print("  broadcasts", json.dumps(ev.get("broadcasts"))[:300], "attendance", ev.get("attendance"), "notes", ev.get("notes"))
-              pbp=g(C+f"/events/{e['id']}/competitions/{e['id']}/plays?limit=5"); show("CORE PLAYS",pbp,800)
-              bs=g(C+f"/events/{e['id']}/competitions/{e['id']}/competitors/{ev['competitors'][0]['id']}/statistics"); show("CORE TEAM STATS",bs,1500)
-          t="125429"
-          show("ROSTER", g(S+f"/teams/{t}/roster"), 1500)
-          show("TEAM", g(S+f"/teams/{t}"), 1500)
-          show("TEAM STATS core", g(C+f"/seasons/2026/types/2/teams/{t}/statistics"), 1500)
-          show("NEWS", g(S+"/news"), 800)
-          st=g("https://site.api.espn.com/apis/v2/sports/lacrosse/nll/standings?season=2026")
-          ch=st.get("children") or [st]
-          for c in ch:
-              ent=(c.get("standings") or {}).get("entries",[])
-              print("STANDINGS group", c.get("name"), len(ent), [s.get("name") for s in (ent[0]["stats"] if ent else [])])
-          show("LEADERS core", g(C+"/seasons/2026/types/2/leaders"), 1500)
-          show("ATHLETES core", g(C+"/seasons/2026/athletes?limit=3"), 600)
-          show("INJURIES", g(S+"/injuries"), 400)
+              t=time.time()
+              try:
+                  r=urllib.request.urlopen(urllib.request.Request(u,headers=UA),timeout=20); return r.status, json.loads(r.read()), round(time.time()-t,1)
+              except urllib.error.HTTPError as e: return e.code, None, round(time.time()-t,1)
+              except Exception as e: return str(e), None, round(time.time()-t,1)
+          now=datetime.now(timezone.utc)
+          for d in range(-1,8):
+              day=(now+timedelta(days=d)).strftime("%Y%m%d")
+              for lim in (1000,300):
+                  st,j,sec=g(f"{S}/scoreboard?dates={day}&groups=50&limit={lim}")
+                  ev=(j or {}).get("events",[])
+                  print("DAY",day,"limit",lim,"status",st,"secs",sec,"events",len(ev), "live",sum(e["status"]["type"]["state"]=="in" for e in ev),"sched",sum(e["status"]["type"]["state"]=="pre" for e in ev))
+          st,j,sec=g(f"{S}/groups"); print("GROUPS",st,sec, len(((j or {}).get("groups") or [{}])[0].get("children",[])) if j else None)
+          st,j,sec=g("https://raw.githubusercontent.com/RJMurph10/gamblingnfl/props-site/cbb/season-2026-27.json"); print("SEASON FILE old url",st,sec, (j or {}).get("updated"), len((j or {}).get("games",[])) if j else None)
+          st,j,sec=g("https://raw.githubusercontent.com/RJMurph10/GamblingMurpphhhh/props-site/cbb/season-2026-27.json"); print("SEASON FILE new url",st,sec, (j or {}).get("updated"))
           PY
