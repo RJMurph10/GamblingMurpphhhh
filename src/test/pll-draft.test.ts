@@ -6,14 +6,14 @@ describe("pllDraftOf", () => {
     const [d] = pllDraftOf("Pat Spencer");
     expect(d).toMatchObject({ season: 2019, round: "1", pick: "1", team: "Archers" });
   });
-  it("lists both picks for a player drafted twice", () => {
-    expect(pllDraftOf("Jeff Teat").map((d) => d.season)).toEqual([2020, 2021]);
+  it("keeps only the latest pick for a player drafted twice", () => {
+    expect(pllDraftOf("Jeff Teat").map((d) => [d.season, d.team])).toEqual([[2021, "Atlas"]]);
   });
   it("tells same-named players apart by college, and guesses nothing without one", () => {
     expect(pllDraftOf("Dylan Hess", "Georgetown").map((d) => d.team)).toEqual(["Chaos"]);
     expect(pllDraftOf("Dylan Hess")).toEqual([]);
   });
   it("matches Saint/St spellings as one college", () => {
-    expect(pllDraftOf("Levi Anderson").length).toBe(2);
+    expect(pllDraftOf("Levi Anderson").map((d) => d.season)).toEqual([2024]);
   });
 });

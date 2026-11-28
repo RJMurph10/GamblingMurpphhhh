@@ -42,7 +42,7 @@ function findGame(season: PllSeason | undefined, g: PllPlayerGame): PllGame | un
 const ordinal = (n: number) =>
   `${n}${["th", "st", "nd", "rd"][n % 100 > 10 && n % 100 < 14 ? 0 : n % 10] ?? "th"}`;
 
-/** "Drafted 2021 · 1st round, 1st overall · Atlas", one line per time he was picked. */
+/** "Drafted 2021 · 1st round, 1st overall · Atlas" (his latest pick if he was drafted twice). */
 function Drafted({ p, season }: { p: PllPlayer; season?: PllSeason }) {
   const picks = pllDraftOf(p.name, p.bio.college);
   if (!picks.length) return null;

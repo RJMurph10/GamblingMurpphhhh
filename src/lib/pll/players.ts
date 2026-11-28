@@ -161,7 +161,7 @@ let draftIndex: Map<string, PllDraftEntry[]> | null = null;
 
 /**
  * Where a player was drafted (season, club, round, pick), matched on name. A player picked twice (taken,
- * went back to school, entered again) gets both. Two different players with one name are told apart by
+ * went back to school, entered again) gets only his latest pick. Two different players with one name are told apart by
  * college; with no college to go on, a name that two colleges share shows nothing rather than a guess.
  */
 export function pllDraftOf(name: string, college?: string | null): PllDraftEntry[] {
@@ -177,13 +177,17 @@ export function pllDraftOf(name: string, college?: string | null): PllDraftEntry
   }
   const all = (draftIndex.get(draftKey(name)) ?? []).sort((a, b) => a.season - b.season);
   const colleges = new Set(all.map((e) => collegeKey(e.college)));
-  if (colleges.size <= 1) return all;
+  // picked more than once (went back to school, entered again): only the latest pick counts
+  const latest = (xs: PllDraftEntry[]) => xs.slice(-1);
+  if (colleges.size <= 1) return latest(all);
   if (!college) return [];
   const c = collegeKey(college);
-  return all.filter((e) => {
-    const k = collegeKey(e.college);
-    return k === c || k.includes(c) || c.includes(k);
-  });
+  return latest(
+    all.filter((e) => {
+      const k = collegeKey(e.college);
+      return k === c || k.includes(c) || c.includes(k);
+    }),
+  );
 }
 
 /** Every championship game, newest first. */
