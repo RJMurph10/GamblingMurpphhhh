@@ -249,8 +249,10 @@ async function fillTitleGames(games: Game[]): Promise<Game[]> {
       };
       let hostKnown = Boolean(g.neutralSite || known.length);
       for (const id of add) {
-        // ESPN's placeholder names the side; else the clinched leader is projected to host
-        const hinted = named(id);
+        // The clinched leader hosts when nobody can catch its record (the conferences' rule for campus
+        // sites). Only when that's not locked does ESPN's placeholder name decide, since ESPN doesn't
+        // always send it.
+        const hinted = race.partial.locked ? undefined : named(id);
         const lead = id === race.partial.teams[0] && race.partial.leads;
         const side =
           hinted && tbdSides.includes(hinted)
