@@ -10,6 +10,8 @@ export interface NllTeam {
   abbr: string;
   name: string;
   short: string;
+  /** City / region ("Buffalo"). */
+  location?: string;
   color: string | null;
   logo: string | null;
 }
@@ -389,4 +391,106 @@ export function nllPulse(games: NllGame[]) {
     homeWinPct: n ? f.filter((g) => g.home.score! > g.away.score!).length / n : null,
     otPct: n ? f.filter((g) => g.ot).length / n : null,
   };
+}
+
+type Rec = { w: number; l: number };
+
+/** A team's season trends from finished games: scoring by quarter, records by game state, lines. */
+export function nllTeamTrends(season: NllSeason, teamId: string, file?: NllLinesFile | null) {
+  const games = season.games.filter(
+    (g) =>
+      g.status === "final" &&
+      (g.home.teamId === teamId || g.away.teamId === teamId) &&
+      g.home.score != null,
+  );
+  const r = (): Rec => ({ w: 0, l: 0 });
+  const out = {
+    games: games.length,
+    withQuarters: 0,
+    forByQ: [0, 0, 0, 0],
+    againstByQ: [0, 0, 0, 0],
+    ledAfterQ1: r(),
+    trailedAfterQ1: r(),
+    ledAtHalf: r(),
+    trailedAtHalf: r(),
+    ledAfterQ3: r(),
+    trailedAfterQ3: r(),
+    overtime: r(),
+    oneGoal: r(),
+    blowouts: r(),
+    asFavorite: r(),
+    asUnderdog: r(),
+    totalSum: 0,
+    last5: [] as ("W" | "L")[],
+    streak: "",
+  };
+  for (const g of games) {
+    const home = g.home.teamId === teamId;
+    const me = home ? g.home : g.away;
+    const them = home ? g.away : g.home;
+    const won = (me.score ?? 0) > (them.score ?? 0);
+    const add = (x: Rec) => (won ? x.w++ : x.l++);
+    out.totalSum += (me.score ?? 0) + (them.score ?? 0);
+    const margin = Math.abs((me.score ?? 0) - (them.score ?? 0));
+    if (g.ot) add(out.overtime);
+    if (margin === 1) add(out.oneGoal);
+    if (margin >= 5) add(out.blowouts);
+    const mq = me.quarters ?? [];
+    const tq = them.quarters ?? [];
+    if (mq.length >= 4 && tq.length >= 4) {
+      out.withQuarters++;
+      for (let i = 0; i < 4; i++) {
+        out.forByQ[i] += mq[i];
+        out.againstByQ[i] += tq[i];
+      }
+      const after = (n: number) =>
+        mq.slice(0, n).reduce((a, b) => a + b, 0) - tq.slice(0, n).reduce((a, b) => a + b, 0);
+      for (const [n, led, trailed] of [
+        [1, out.ledAfterQ1, out.trailedAfterQ1],
+        [2, out.ledAtHalf, out.trailedAtHalf],
+        [3, out.ledAfterQ3, out.trailedAfterQ3],
+      ] as const) {
+        const d = after(n);
+        if (d > 0) add(led);
+        else if (d < 0) add(trailed);
+      }
+    }
+    const line = primaryLine(snapshotsFor(g, season, file));
+    if (line?.mlHome != null && line.mlAway != null && line.mlHome !== line.mlAway) {
+      const favored = home ? line.mlHome < line.mlAway : line.mlAway < line.mlHome;
+      add(favored ? out.asFavorite : out.asUnderdog);
+    }
+  }
+  const n = out.withQuarters || 1;
+  const recent = [...games].reverse();
+  out.last5 = recent.slice(0, 5).map((g) => {
+    const me = g.home.teamId === teamId ? g.home : g.away;
+    const them = g.home.teamId === teamId ? g.away : g.home;
+    return (me.score ?? 0) > (them.score ?? 0) ? "W" : "L";
+  });
+  if (out.last5.length) {
+    const first = out.last5[0];
+    let k = 0;
+    for (const g of recent) {
+      const me = g.home.teamId === teamId ? g.home : g.away;
+      const them = g.home.teamId === teamId ? g.away : g.home;
+      if (((me.score ?? 0) > (them.score ?? 0) ? "W" : "L") !== first) break;
+      k++;
+    }
+    out.streak = `${first}${k}`;
+  }
+  return {
+    ...out,
+    forByQ: out.withQuarters ? out.forByQ.map((x) => x / n) : [],
+    againstByQ: out.withQuarters ? out.againstByQ.map((x) => x / n) : [],
+    avgTotal: games.length ? out.totalSum / games.length : null,
+  };
+}
+
+/** The arena a team plays most of its home games in. */
+export function homeArena(season: NllSeason, teamId: string): string | undefined {
+  const count = new Map<string, number>();
+  for (const g of season.games)
+    if (g.home.teamId === teamId && g.venue) count.set(g.venue, (count.get(g.venue) ?? 0) + 1);
+  return [...count.entries()].sort((a, b) => b[1] - a[1])[0]?.[0];
 }

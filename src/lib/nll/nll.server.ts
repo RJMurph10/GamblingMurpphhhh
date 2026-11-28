@@ -36,6 +36,7 @@ type EspnTeam = {
   abbreviation?: string;
   displayName?: string;
   shortDisplayName?: string;
+  location?: string;
   color?: string;
   logos?: { href?: string }[];
   logo?: string;
@@ -66,6 +67,7 @@ const toTeam = (t: EspnTeam): NllTeam => ({
   abbr: t.abbreviation ?? "",
   name: t.displayName ?? t.id,
   short: t.shortDisplayName ?? t.displayName ?? t.id,
+  location: t.location,
   color: t.color ? `#${t.color}` : null,
   logo: t.logos?.[0]?.href ?? t.logo ?? null,
 });
@@ -126,7 +128,11 @@ export async function fetchNllSeason(season: number): Promise<NllSeason> {
           if (g) seen.set(g.id, g);
         }
       const games = [...seen.values()].sort((a, b) => a.date.localeCompare(b.date));
-      return { season, label: nllSeasonLabel(season), teams, games };
+      // ESPN's team list keeps clubs that no longer play (the Philadelphia Wings): only teams on this
+      // season's schedule count. Teams ESPN lists only inside games (none so far) are added from there.
+      const onSchedule = new Set(games.flatMap((g) => [g.home.teamId, g.away.teamId]));
+      const clubs = games.length ? teams.filter((t) => onSchedule.has(t.id)) : teams;
+      return { season, label: nllSeasonLabel(season), teams: clubs, games };
     },
     5 * 60_000,
   );
