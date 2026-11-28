@@ -153,16 +153,17 @@ function titleConferences(standings: any): TitleConference[] {
   }));
 }
 
-/** A college team's home stadium and city from ESPN's team page (1-day cache). */
+/** A college team's home stadium and city from ESPN's core team record (1-day cache). */
 function homeVenueOf(espnTeamId: string): Promise<{ venue: string; location: string } | null> {
   return cached(
     `cfb-home-venue-${espnTeamId}`,
     async () => {
       try {
+        // the site API's team page has no venue; the core API's does
         const data = await fetchJson(
-          `https://site.api.espn.com/apis/site/v2/sports/football/college-football/teams/${espnTeamId}`,
+          `https://sports.core.api.espn.com/v2/sports/football/leagues/college-football/seasons/${SEASON}/teams/${espnTeamId}`,
         );
-        const v = data?.team?.franchise?.venue ?? data?.team?.venue;
+        const v = data?.venue;
         if (!v?.fullName) return null;
         const location = [v.address?.city, v.address?.state].filter(Boolean).join(", ");
         return { venue: String(v.fullName), location };
