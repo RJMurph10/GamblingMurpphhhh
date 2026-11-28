@@ -1781,7 +1781,8 @@ function TitleGameBanner({ note }: { note?: string }) {
         <img
           src={src}
           alt={conf.name}
-          className="h-7 w-auto object-contain sm:h-8"
+          className="h-7 w-auto max-w-[5.5rem] object-contain sm:h-8 sm:max-w-[6.5rem]"
+          // wide wordmarks (C-USA) are capped in width so every conference reads about the same size;
           // some conferences have no dark-background logo: fall back to the standard one, then text
           onError={() => setSrc(src === conf.logo ? conf.logoLight : undefined)}
         />
