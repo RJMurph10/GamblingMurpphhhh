@@ -22,6 +22,7 @@ import {
   marketResultClass,
 } from "@/components/shared/booth";
 import { TitleRaceLine } from "@/components/shared/GameCard";
+import { titleGameConference } from "@/lib/cfb/cfb-title-games";
 import {
   gameScore,
   type BoxScoreLine,
@@ -825,6 +826,7 @@ export function GameDetail({ gameId }: { gameId: string }) {
     <>
       {/* Traditional NFL Score Box */}
       <Panel className="p-4 sm:p-6">
+        {college ? <TitleGameBanner note={game.note} /> : null}
         {(() => {
           const possessingTeam =
             game.possession === "away" ? away : game.possession === "home" ? home : null;
@@ -1765,6 +1767,33 @@ export function GameDetail({ gameId }: { gameId: string }) {
         </>
       ) : null}
     </>
+  );
+}
+
+/** "[Big 12 logo] Championship", centered over the matchup of a conference title game. */
+function TitleGameBanner({ note }: { note?: string }) {
+  const conf = titleGameConference(note);
+  const [src, setSrc] = useState<string | undefined>(conf?.logo);
+  if (!conf) return null;
+  return (
+    <div className="mb-3 flex items-center justify-center gap-2" title={note}>
+      {src ? (
+        <img
+          src={src}
+          alt={conf.name}
+          className="h-7 w-auto object-contain sm:h-8"
+          // some conferences have no dark-background logo: fall back to the standard one, then text
+          onError={() => setSrc(src === conf.logo ? conf.logoLight : undefined)}
+        />
+      ) : (
+        <span className="font-disp text-base font-semibold uppercase tracking-wide text-ink sm:text-lg">
+          {conf.name.replace(/ Conference$/, "")}
+        </span>
+      )}
+      <span className="font-disp text-base font-semibold uppercase tracking-[0.15em] text-ink sm:text-lg">
+        Championship
+      </span>
+    </div>
   );
 }
 

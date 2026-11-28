@@ -219,3 +219,37 @@ export function conferenceOfNote(note: string, names: string[]): string | undefi
   }
   return undefined;
 }
+
+/** FBS conferences by ESPN group id (logos live at ESPN's ncaa_conf/<id>.png). */
+const CONFERENCE_IDS: Record<string, string> = {
+  "American Conference": "151",
+  "Atlantic Coast Conference": "1",
+  "Big 12 Conference": "4",
+  "Big Ten Conference": "5",
+  "Conference USA": "12",
+  "Mid-American Conference": "15",
+  "Mountain West Conference": "17",
+  "Pac-12 Conference": "9",
+  "Southeastern Conference": "8",
+  "Sun Belt Conference": "37",
+};
+
+/** Conference logos kept in public/logos/conferences (Conference USA, Sun Belt). */
+const OWN_LOGOS = new Set(["12", "37"]);
+
+/** A conference title game's conference and logo, from ESPN's note ("Edward Jones Big 12 Championship"). */
+export function titleGameConference(
+  note: string | undefined,
+): { name: string; logo: string; logoLight: string } | undefined {
+  const name = note ? conferenceOfNote(note, Object.keys(CONFERENCE_IDS)) : undefined;
+  if (!name) return undefined;
+  const id = CONFERENCE_IDS[name];
+  return {
+    name,
+    // ESPN has no dark-background logo for these two; the owner supplied current ones
+    logo: OWN_LOGOS.has(id)
+      ? `/logos/conferences/${id}.png`
+      : `https://a.espncdn.com/i/teamlogos/ncaa_conf/500-dark/${id}.png`,
+    logoLight: `https://a.espncdn.com/i/teamlogos/ncaa_conf/500/${id}.png`,
+  };
+}
