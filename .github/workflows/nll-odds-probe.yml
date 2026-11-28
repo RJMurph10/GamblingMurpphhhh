@@ -5,6 +5,7 @@ jobs:
   p:
     runs-on: ubuntu-latest
     steps:
+      - uses: actions/checkout@v4
       - run: |
           mkdir -p out && cd out
           python3 - <<'PY'
@@ -16,6 +17,7 @@ jobs:
               t=x["team"]; meta[t["abbreviation"]]={"id":t["id"],"logos":[(l["rel"],l.get("lastUpdated"),l["href"]) for l in t.get("logos",[])]}
               for i,l in enumerate(t.get("logos",[])):
                   tag="-".join(r for r in l["rel"] if r not in ("full",))
+                  if tag not in ("default","primary_logo_on_black_color","primary_logo_on_white_color","secondary_logo_on_black_color"): continue
                   url=l["href"].replace("4096","500") if False else l["href"]
                   try:
                       data=urllib.request.urlopen(urllib.request.Request(l["href"],headers=UA),timeout=30).read()
