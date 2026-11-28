@@ -1,0 +1,11 @@
+import { fetchCbbSchedule } from "../src/lib/cbb/cbb.server";
+const t = Date.now();
+const s = await fetchCbbSchedule();
+const by = (f: (g: any) => boolean) => s.games.filter(f).length;
+console.log("SECS", (Date.now() - t) / 1000, "games", s.games.length, "conferences", s.conferences.length, "teams", s.teams.length);
+console.log("LIVE", by((g) => g.status === "live"), "live D-I", by((g) => g.status === "live" && !g.nonDivisionI));
+console.log("SCHED", by((g) => g.status === "scheduled"), "sched D-I", by((g) => g.status === "scheduled" && !g.nonDivisionI));
+console.log("FINAL", by((g) => g.status === "final"), "nonD1 total", by((g) => g.nonDivisionI));
+const live = s.games.filter((g) => g.status === "live").slice(0, 5);
+for (const g of live) console.log("  live", g.away.team.abbr, g.away.team.confId, "@", g.home.team.abbr, g.home.team.confId, "nonD1", g.nonDivisionI);
+console.log("CONFS", s.conferences.map((c) => c.id + ":" + c.short).join(" "));

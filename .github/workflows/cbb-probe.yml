@@ -1,0 +1,13 @@
+name: cbb probe
+on: { push: { branches: [cbb-probe] } }
+jobs:
+  p:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: oven-sh/setup-bun@v2
+      - run: bun install --frozen-lockfile || bun install
+      - run: bun probe/cbb.ts
+      - run: |
+          curl -s -A "Mozilla/5.0" https://gamblingnfl.lovable.app/cbb -o page.html; wc -c page.html
+          grep -o "in progress\|Upcoming games\|Live games\|Could not load games\|No completed games\|Loading games" page.html | sort | uniq -c
