@@ -239,20 +239,12 @@ async function fillTitleGames(games: Game[]): Promise<Game[]> {
       const tbdSides = (["away", "home"] as const).filter((side) =>
         isTbd(side === "away" ? g.awayTeamId : g.homeTeamId),
       );
-      const named = (id: string) => {
-        const t = teamById(`cfb-${id}`);
-        const full = `${t?.city ?? ""} ${t?.name ?? ""}`.trim().toLowerCase();
-        return (["away", "home"] as const).find((side) => {
-          const hint = g.tbdHint?.[side]?.toLowerCase();
-          return hint && (hint === full || hint === t?.city?.toLowerCase());
-        });
-      };
       let hostKnown = Boolean(g.neutralSite || known.length);
       for (const id of add) {
-        // The clinched leader hosts when nobody can catch its record (the conferences' rule for campus
-        // sites). Only when that's not locked does ESPN's placeholder name decide, since ESPN doesn't
-        // always send it.
-        const hinted = race.partial.locked ? undefined : named(id);
+        // The clinched team with the best record hosts (the conferences' rule for campus sites): certain
+        // once nobody can catch it, projected until then. ESPN's placeholder names aren't used, since ESPN
+        // sends them on some calls and not others; its real listing replaces ours once posted.
+        const hinted = undefined as "away" | "home" | undefined;
         const lead = id === race.partial.teams[0] && race.partial.leads;
         const side =
           hinted && tbdSides.includes(hinted)
@@ -266,7 +258,7 @@ async function fillTitleGames(games: Game[]): Promise<Game[]> {
         if (side === "away") next.awayTeamId = `cfb-${id}`;
         else next.homeTeamId = `cfb-${id}`;
         tbdSides.splice(tbdSides.indexOf(side), 1);
-        if (hinted || race.partial.locked) hostKnown = true;
+        if (race.partial.locked) hostKnown = true;
       }
       if (add.length) finish("partial", hostKnown);
     }
