@@ -36,7 +36,7 @@ function Cell({
   result,
 }: {
   line?: string;
-  price: number;
+  price: number | null;
   best: boolean;
   result: Result | null;
 }) {
