@@ -4,31 +4,18 @@ jobs:
   p:
     runs-on: ubuntu-latest
     steps:
-      - name: NLL margins 2024-25 and 2025-26
-        run: |
+      - run: |
           python3 - <<'PY'
-          import json, urllib.request, collections
-          from datetime import date, timedelta
-          from concurrent.futures import ThreadPoolExecutor
+          import json, urllib.request
           UA={"User-Agent":"Mozilla/5.0"}
-          def day(d):
-              u=f"https://site.api.espn.com/apis/site/v2/sports/lacrosse/nll/scoreboard?dates={d.strftime('%Y%m%d')}"
-              for _ in range(3):
-                  try: return json.loads(urllib.request.urlopen(urllib.request.Request(u,headers=UA),timeout=30).read()).get("events",[])
-                  except Exception: pass
-              return []
-          for s0,s1 in ((date(2024,11,25),date(2025,6,1)),(date(2025,11,25),date(2026,6,1))):
-              days=[s0+timedelta(i) for i in range((s1-s0).days)]
-              with ThreadPoolExecutor(8) as ex: evs=[e for r in ex.map(day,days) for e in r]
-              seen={}; 
-              for e in evs:
-                  if e["status"]["type"]["name"]!="STATUS_FINAL": continue
-                  c=e["competitions"][0]; sc={x["homeAway"]:int(x["score"]) for x in c["competitors"]}
-                  seen[e["id"]]=(sc["home"],sc["away"],e["status"].get("period",4),c.get("type",{}).get("abbreviation"))
-              g=list(seen.values()); n=len(g)
-              m=collections.Counter(abs(h-a) for h,a,p,t in g)
-              ot=sum(p>4 for h,a,p,t in g)
-              tot=[h+a for h,a,p,t in g]
-              tc=collections.Counter(tot); print("TOTALS", s0.year, n, {k: round(tc[k]/n,3) for k in range(18,28)})
-              print(f"{s0.year}-{s1.year%100}: {n} games | 1-goal {m[1]} ({m[1]/n:.1%}) | OT {ot} ({ot/n:.1%}) | home win {sum(h>a for h,a,p,t in g)/n:.1%} | avg total {sum(tot)/n:.1f} | margins {sorted(m.items())[:8]}")
+          B="https://site.api.espn.com/apis/site/v2/sports/lacrosse/nll"
+          def g(u):
+              try: return json.loads(urllib.request.urlopen(urllib.request.Request(u,headers=UA),timeout=30).read())
+              except Exception as e: return {"ERR":str(e)}
+          for q in ("/scoreboard","/scoreboard?dates=20261128-20261130","/scoreboard?dates=20261128-20261204","/scoreboard?dates=2027","/scoreboard?dates=202612","/scoreboard?limit=500&dates=20261101-20270630"):
+              d=g(B+q); print("Q",q,"ERR" in d and d["ERR"] or (len(d.get("events",[])), d.get("season"), [e["date"] for e in d.get("events",[])][:3], [e["date"] for e in d.get("events",[])][-2:]))
+          t=g(B+"/teams"); T=[x["team"] for x in t["sports"][0]["leagues"][0]["teams"]]
+          print("TEAMS",len(T),[(x["id"],x["abbreviation"],x["displayName"],x.get("color"),(x.get("logos") or [{}])[0].get("href")) for x in T])
+          s=g(B+f"/teams/{T[0]['id']}/schedule"); ev=s.get("events",[]); print("SCHED",T[0]["displayName"],len(ev), s.get("season"), json.dumps(ev[0])[:1500] if ev else s)
+          st=g("https://site.api.espn.com/apis/v2/sports/lacrosse/nll/standings"); print("STAND", json.dumps(st)[:800])
           PY
