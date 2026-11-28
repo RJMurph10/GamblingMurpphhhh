@@ -1,0 +1,10 @@
+name: ccg probe 2
+on: { push: { branches: [ccg-probe2] } }
+jobs:
+  p:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: oven-sh/setup-bun@v2
+      - run: bun install
+      - run: bun probe/ccg.ts
