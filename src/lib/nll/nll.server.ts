@@ -41,7 +41,16 @@ type EspnEvent = {
     period?: number;
     type?: { state?: string; completed?: boolean; shortDetail?: string };
   };
-  competitions?: { competitors?: { homeAway?: string; score?: string; team?: EspnTeam }[] }[];
+  competitions?: {
+    venue?: { fullName?: string; address?: { city?: string; state?: string } };
+    competitors?: {
+      homeAway?: string;
+      score?: string;
+      team?: EspnTeam;
+      linescores?: { value?: number }[];
+      records?: { summary?: string }[];
+    }[];
+  }[];
 };
 
 const toTeam = (t: EspnTeam): NllTeam => ({
@@ -54,7 +63,8 @@ const toTeam = (t: EspnTeam): NllTeam => ({
 });
 
 export function mapNllEvent(e: EspnEvent): NllGame | null {
-  const comp = e.competitions?.[0]?.competitors ?? [];
+  const c0 = e.competitions?.[0];
+  const comp = c0?.competitors ?? [];
   const home = comp.find((c) => c.homeAway === "home");
   const away = comp.find((c) => c.homeAway === "away");
   if (!home?.team || !away?.team) return null;
@@ -62,15 +72,24 @@ export function mapNllEvent(e: EspnEvent): NllGame | null {
   const status = e.status?.type?.completed ? "final" : state === "in" ? "live" : "scheduled";
   const score = (s?: string) =>
     status === "scheduled" || s == null || s === "" ? null : Number(s);
+  const side = (c: typeof home) => ({
+    teamId: c.team!.id,
+    score: score(c.score),
+    quarters: (c.linescores ?? []).map((q) => q.value ?? 0),
+    record: c.records?.[0]?.summary,
+  });
   return {
     id: e.id,
     date: e.date,
     status,
     detail: e.status?.type?.shortDetail ?? "",
     phase: e.season?.type === 3 ? "playoffs" : "regular",
-    home: { teamId: home.team.id, score: score(home.score) },
-    away: { teamId: away.team.id, score: score(away.score) },
-    ot: (e.status?.period ?? 4) > 4,
+    home: side(home),
+    away: side(away),
+    ot: (e.status?.period ?? 4) > 4 || (home.linescores?.length ?? 0) > 4,
+    venue: c0?.venue?.fullName,
+    city:
+      [c0?.venue?.address?.city, c0?.venue?.address?.state].filter(Boolean).join(", ") || undefined,
   };
 }
 
