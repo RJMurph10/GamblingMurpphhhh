@@ -76,8 +76,9 @@ export interface NllSnapshot {
   game: string;
   start: string;
   live: boolean;
-  spread: { away: [number, number]; home: [number, number] } | null;
-  total: { line: number; over: number; under: number } | null;
+  /** [line, price]; the price is null when the source showed only the line. */
+  spread: { away: [number, number | null]; home: [number, number | null] } | null;
+  total: { line: number; over: number | null; under: number | null } | null;
   moneyline: { away: number; home: number } | null;
   score?: string;
 }
@@ -207,7 +208,8 @@ export function grade(snap: NllSnapshot, home: number, away: number) {
 /** Best (highest-paying) price on each side across books, for the same line number. */
 export function bestPrices(snaps: NllSnapshot[]) {
   const best = new Map<string, { book: string; price: number; line: number | null }>();
-  const offer = (key: string, line: number | null, price: number, book: string) => {
+  const offer = (key: string, line: number | null, price: number | null, book: string) => {
+    if (price == null) return;
     const k = `${key}|${line}`;
     const cur = best.get(k);
     if (!cur || payout(price) > payout(cur.price)) best.set(k, { book, price, line });
@@ -234,7 +236,7 @@ export function isBest(
   best: ReturnType<typeof bestPrices>,
   key: string,
   line: number | null,
-  price: number,
+  price: number | null,
 ) {
   const b = best.get(`${key}|${line}`);
   return Boolean(b && b.price === price);
@@ -258,7 +260,7 @@ export function disagreements(snaps: NllSnapshot[]): string[] {
 }
 
 /** "+120" / "-150". */
-export const american = (n: number) => (n > 0 ? `+${n}` : String(n));
+export const american = (n: number | null) => (n == null ? "—" : n > 0 ? `+${n}` : String(n));
 /** "+1.5" / "-1.5". */
 export const signed = (n: number) => (n > 0 ? `+${n}` : String(n));
 
