@@ -84,7 +84,7 @@ function Bio({ p }: { p: PllPlayer }) {
     p.num ? `#${p.num}` : null,
     posAbbr(p.pos),
     p.bio.experience
-      ? `${p.bio.experience}${["th", "st", "nd", "rd"][p.bio.experience] ?? "th"} PLL season`
+      ? `${p.bio.experience}${["th", "st", "nd", "rd"][p.bio.experience] ?? "th"} pro season`
       : null,
     [p.bio.height, p.bio.weight].filter(Boolean).join(" · ") || null,
     p.bio.shot ? `Shoots ${p.bio.shot[0]}` : null,
