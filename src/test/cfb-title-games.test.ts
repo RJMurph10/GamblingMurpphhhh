@@ -24,6 +24,21 @@ describe("titleRace", () => {
     expect(r.clinched).toEqual(["A"]);
     expect(r.alive).toEqual(["A", "B", "C"]);
   });
+  it("offers the clinched team to fill in now, with whether it leads and whether that's locked", () => {
+    const games = [
+      g("A", "B", 20, 10),
+      g("A", "C", 30, 7),
+      g("A", "D", 14, 3),
+      g("B", "D", 21, 0),
+      g("C", "D", 10, 7),
+      g("B", "C"),
+    ];
+    expect(titleRace(conf(["A", "B", "C", "D"]), games).partial).toEqual({
+      teams: ["A"],
+      leads: true,
+      locked: true,
+    });
+  });
   it("sets the matchup once it's final, higher seed first", () => {
     const games = [
       g("A", "B", 20, 10),

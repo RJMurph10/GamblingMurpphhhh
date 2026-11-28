@@ -225,7 +225,14 @@ export interface Game {
    * College title game ESPN still lists as TBD: "set" once the site has worked out the matchup from final
    * conference results (filled in before ESPN does), otherwise "open" with who has clinched and who is alive.
    */
-  titleRace?: { status: "set" | "open"; clinched: string[]; alive: string[]; hostKnown?: boolean };
+  titleRace?: {
+    status: "set" | "partial" | "open";
+    clinched: string[];
+    alive: string[];
+    hostKnown?: boolean;
+  };
+  /** College: the team names ESPN shows on a TBD title game's placeholder sides ("Louisiana Tech" at "TBD"). */
+  tbdHint?: { away?: string; home?: string };
   /** Short TV network / streaming label from the scoreboard, e.g. "AMZN", "CBS", "FOX". */
   broadcast?: string;
   /** Venue, TV, attendance and officials for the Information tab. */
