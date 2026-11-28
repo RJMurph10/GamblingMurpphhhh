@@ -1,0 +1,16 @@
+name: odds archive probe
+on: { push: { branches: [ccg-probe4] } }
+jobs:
+  p:
+    runs-on: ubuntu-latest
+    steps:
+      - run: |
+          for u in "https://www.sportsbookreviewsonline.com/scoresoddsarchives/ncaafootball/ncaafootballoddsarchives.htm" \
+                   "https://www.sportsbookreviewsonline.com/wp-content/uploads/sportsbookreviewsonline_com_737/ncaa-football-2012-13.xlsx" \
+                   "https://api.collegefootballdata.com/lines?year=2010" \
+                   "https://raw.githubusercontent.com/sportsdataverse/cfbfastR-data/main/betting/csv/cfb_betting_lines_2010.csv" ; do
+            echo "URL $u $(curl -sL -A 'Mozilla/5.0' -o /tmp/f -w '%{http_code} %{size_download} %{content_type}' "$u")"
+            head -c 300 /tmp/f | tr '\n' ' ' | sed 's/^/HEAD /'; echo
+          done
+          curl -sL -A 'Mozilla/5.0' "https://www.sportsbookreviewsonline.com/scoresoddsarchives/ncaafootball/ncaafootballoddsarchives.htm" | grep -o 'href="[^"]*xlsx[^"]*"' | head -20 | sed 's/^/LINK /'
+          curl -s "https://api.github.com/repos/sportsdataverse/cfbfastR-data/contents/betting" | grep -o '"name": "[^"]*"' | head | sed 's/^/GH /'
