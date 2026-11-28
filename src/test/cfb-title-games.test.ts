@@ -1,5 +1,10 @@
 import { describe, expect, it } from "vitest";
-import { conferenceOfNote, titleRace, type ConfGame } from "@/lib/cfb/cfb-title-games";
+import {
+  conferenceOfNote,
+  titleGameConference,
+  titleRace,
+  type ConfGame,
+} from "@/lib/cfb/cfb-title-games";
 
 const g = (away: string, home: string, as?: number, hs?: number): ConfGame =>
   as === undefined ? { away, home } : { away, home, awayScore: as, homeScore: hs };
@@ -105,5 +110,14 @@ describe("conferenceOfNote", () => {
     expect(conferenceOfNote("SEC Championship", names)).toBe("Southeastern Conference");
     expect(conferenceOfNote("Sun Belt Championship", names)).toBe("Sun Belt Conference");
     expect(conferenceOfNote("Rose Bowl - CFP Quarterfinal", names)).toBeUndefined();
+  });
+});
+
+describe("titleGameConference", () => {
+  it("gives the conference logo for a title game", () => {
+    expect(titleGameConference("Edward Jones Big 12 Championship")?.logo).toMatch(
+      /ncaa_conf\/500-dark\/4\.png$/,
+    );
+    expect(titleGameConference("Rose Bowl - CFP Quarterfinal")).toBeUndefined();
   });
 });
