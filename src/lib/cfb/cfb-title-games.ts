@@ -234,6 +234,9 @@ const CONFERENCE_IDS: Record<string, string> = {
   "Sun Belt Conference": "37",
 };
 
+/** Conference logos kept in public/logos/conferences (Conference USA, Sun Belt). */
+const OWN_LOGOS = new Set(["12", "37"]);
+
 /** A conference title game's conference and logo, from ESPN's note ("Edward Jones Big 12 Championship"). */
 export function titleGameConference(
   note: string | undefined,
@@ -243,7 +246,10 @@ export function titleGameConference(
   const id = CONFERENCE_IDS[name];
   return {
     name,
-    logo: `https://a.espncdn.com/i/teamlogos/ncaa_conf/500-dark/${id}.png`,
+    // ESPN has no dark-background logo for these two; the owner supplied current ones
+    logo: OWN_LOGOS.has(id)
+      ? `/logos/conferences/${id}.png`
+      : `https://a.espncdn.com/i/teamlogos/ncaa_conf/500-dark/${id}.png`,
     logoLight: `https://a.espncdn.com/i/teamlogos/ncaa_conf/500/${id}.png`,
   };
 }

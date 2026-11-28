@@ -118,6 +118,7 @@ describe("titleGameConference", () => {
     expect(titleGameConference("Edward Jones Big 12 Championship")?.logo).toMatch(
       /ncaa_conf\/500-dark\/4\.png$/,
     );
+    expect(titleGameConference("Sun Belt Championship")?.logo).toBe("/logos/conferences/37.png");
     expect(titleGameConference("Rose Bowl - CFP Quarterfinal")).toBeUndefined();
   });
 });
