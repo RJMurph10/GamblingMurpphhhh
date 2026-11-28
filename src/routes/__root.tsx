@@ -68,7 +68,11 @@ const pllNav = [
   { to: "/pll/players", label: "Players" },
 ] as const;
 
-const nllNav = [{ to: "/nll", label: "Lines desk" }] as const;
+const nllNav = [
+  { to: "/nll", label: "Dashboard" },
+  { to: "/nll/teams", label: "Teams" },
+  { to: "/nll/games", label: "Games" },
+] as const;
 
 const wnbaNav = [
   { to: "/wnba", label: "Dashboard" },
@@ -232,7 +236,7 @@ function SiteHeader() {
                       ? pllNav
                       : league.id === "nll"
                         ? nllNav
-                      : nflNav;
+                        : nflNav;
   return (
     <header className="glass sticky top-0 z-40 rounded-none border-x-0 border-t-0">
       <div className="mx-auto flex max-w-[1400px] items-center gap-4 px-4 py-3 sm:px-5">

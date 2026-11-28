@@ -24,10 +24,21 @@ export interface NllGame {
   detail: string;
   /** Regular season or playoffs. */
   phase: "regular" | "playoffs";
-  home: { teamId: string; score: number | null };
-  away: { teamId: string; score: number | null };
+  home: NllSide;
+  away: NllSide;
   /** Went past four quarters. */
   ot: boolean;
+  venue?: string;
+  city?: string;
+}
+
+export interface NllSide {
+  teamId: string;
+  score: number | null;
+  /** Goals by quarter (overtime after the fourth). */
+  quarters?: number[];
+  /** Record after the game, "3-1". */
+  record?: string;
 }
 
 export interface NllSeason {
@@ -228,3 +239,95 @@ export function disagreements(snaps: NllSnapshot[]): string[] {
 export const american = (n: number) => (n > 0 ? `+${n}` : String(n));
 /** "+1.5" / "-1.5". */
 export const signed = (n: number) => (n > 0 ? `+${n}` : String(n));
+
+/** The consensus line from each book's latest snapshot: medians of the home spread, the total and both moneylines. */
+export interface NllLine {
+  /** Home spread (negative = home favored). */
+  spread: number | null;
+  total: number | null;
+  mlHome: number | null;
+  mlAway: number | null;
+  books: number;
+}
+
+const median = (xs: number[]) => {
+  if (!xs.length) return null;
+  const v = [...xs].sort((a, b) => a - b);
+  const m = Math.floor(v.length / 2);
+  return v.length % 2 ? v[m] : (v[m - 1] + v[m]) / 2;
+};
+
+export function consensus(snaps: NllSnapshot[]): NllLine | null {
+  const latest = latestByBook(snaps);
+  if (!latest.length) return null;
+  const spreads = latest.filter((s) => s.spread).map((s) => s.spread!.home[0]);
+  // books can disagree on the favorite (+1.5 vs -1.5): the median of an even split is 0, so take the majority side
+  let spread = median(spreads);
+  if (spread === 0 && spreads.length) spread = null;
+  return {
+    spread,
+    total: median(latest.filter((s) => s.total).map((s) => s.total!.line)),
+    mlHome: median(latest.filter((s) => s.moneyline).map((s) => s.moneyline!.home)),
+    mlAway: median(latest.filter((s) => s.moneyline).map((s) => s.moneyline!.away)),
+    books: latest.length,
+  };
+}
+
+/** Which side covered and whether the total went over, for a final game. */
+export function lineResult(game: NllGame, line: NllLine) {
+  if (game.status !== "final" || game.home.score == null || game.away.score == null) return null;
+  const margin = game.home.score - game.away.score;
+  const c = line.spread == null ? null : margin + line.spread;
+  const t = line.total == null ? null : game.home.score + game.away.score - line.total;
+  return {
+    cover:
+      c == null ? null : c > 0 ? ("home" as const) : c < 0 ? ("away" as const) : ("push" as const),
+    ou:
+      t == null ? null : t > 0 ? ("over" as const) : t < 0 ? ("under" as const) : ("push" as const),
+  };
+}
+
+/** A team's record against the consensus lines: ATS and over/under. */
+export function teamLineRecord(
+  season: NllSeason,
+  file: NllLinesFile | null | undefined,
+  teamId: string,
+) {
+  const ats = { w: 0, l: 0, p: 0 };
+  const ou = { o: 0, u: 0, p: 0 };
+  for (const g of season.games) {
+    if (g.home.teamId !== teamId && g.away.teamId !== teamId) continue;
+    const line = consensus(snapshotsFor(g, season, file));
+    const r = line ? lineResult(g, line) : null;
+    if (!r) continue;
+    if (r.cover) {
+      if (r.cover === "push") ats.p++;
+      else if ((r.cover === "home") === (g.home.teamId === teamId)) ats.w++;
+      else ats.l++;
+    }
+    if (r.ou) {
+      if (r.ou === "over") ou.o++;
+      else if (r.ou === "under") ou.u++;
+      else ou.p++;
+    }
+  }
+  return { ats, ou };
+}
+
+/** League pulse from regular-season finals. */
+export function nllPulse(games: NllGame[]) {
+  const f = games.filter(
+    (g) => g.status === "final" && g.phase === "regular" && g.home.score != null,
+  );
+  const n = f.length;
+  const goals = f.reduce((a, g) => a + g.home.score! + g.away.score!, 0);
+  const margins = f.map((g) => Math.abs(g.home.score! - g.away.score!));
+  return {
+    games: n,
+    goalsPerGame: n ? goals / n : null,
+    oneGoalPct: n ? margins.filter((m) => m === 1).length / n : null,
+    avgMargin: n ? margins.reduce((a, b) => a + b, 0) / n : null,
+    homeWinPct: n ? f.filter((g) => g.home.score! > g.away.score!).length / n : null,
+    otPct: n ? f.filter((g) => g.ot).length / n : null,
+  };
+}
