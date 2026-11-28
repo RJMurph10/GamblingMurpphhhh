@@ -1,11 +1,17 @@
 name: kalshi live probe
 on: { push: { branches: [kalshi-live-probe] } }
+permissions: { contents: write }
 jobs:
   p:
     runs-on: ubuntu-latest
-    timeout-minutes: 45
+    timeout-minutes: 60
     steps:
       - uses: actions/checkout@v4
-      - run: python3 probe/kalshi_vs_espn.py 30
-      - uses: actions/upload-artifact@v4
-        with: { name: log, path: probe/log.jsonl }
+      - run: python3 probe/kalshi_vs_espn.py 40
+      - run: python3 probe/analyze.py
+      - run: |
+          git config user.name probe; git config user.email probe@users.noreply.github.com
+          cp probe/log.jsonl /tmp/log.jsonl
+          git fetch -q origin props-site && git checkout -q -B props-site origin/props-site
+          mkdir -p probes && gzip -c /tmp/log.jsonl > probes/kalshi-vs-espn-$(date -u +%Y%m%d%H%M).jsonl.gz
+          git add probes && git commit -qm "probe: kalshi vs espn log" && git push -q origin props-site
