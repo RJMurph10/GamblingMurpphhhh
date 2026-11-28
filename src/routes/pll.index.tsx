@@ -86,18 +86,23 @@ function PllDashboard() {
   const regular = useMemo(() => s?.games.filter((g) => g.phase === "regular") ?? [], [s]);
   const p = useMemo(() => pulse(regular), [regular]);
   const ls = useMemo(() => linesSummary(s, lines), [s, lines]);
-  const live = useMemo(() => (s?.games ?? []).filter((g) => g.status === "live"), [s]);
-  const upcoming = useMemo(
-    () => (s?.games ?? []).filter((g) => g.status === "scheduled").slice(0, 8),
+  // national-team and all-star games share ESPN's PLL feed; the dashboard lists club games only
+  const clubGames = useMemo(
+    () => (s?.games ?? []).filter((g) => isPllClubId(g.home.teamId) && isPllClubId(g.away.teamId)),
     [s],
+  );
+  const live = useMemo(() => clubGames.filter((g) => g.status === "live"), [clubGames]);
+  const upcoming = useMemo(
+    () => clubGames.filter((g) => g.status === "scheduled").slice(0, 6),
+    [clubGames],
   );
   const recent = useMemo(
     () =>
-      [...(s?.games ?? [])]
+      [...clubGames]
         .filter((g) => g.status === "final")
         .reverse()
-        .slice(0, 8),
-    [s],
+        .slice(0, 6),
+    [clubGames],
   );
   const conferences = season >= PLL_CONFERENCES_FROM;
   const byConf = (c: PllConference) => table.filter((r) => conferenceOf(r.team.id, season) === c);
@@ -269,11 +274,13 @@ function PllDashboard() {
         </aside>
       </div>
 
-      <div className="mt-6 grid gap-6 lg:grid-cols-2">
-        <PllLeaders season={season} data={s} />
-        <div className="space-y-6">
-          <PllAwards season={season} data={s} />
-          <PllChampionships season={season} />
+      <div className="mt-6 grid grid-cols-1 gap-6 lg:grid-cols-2">
+        <div className="min-w-0">
+          <PllLeaders season={season} data={s} limit={5} perStat={3} />
+        </div>
+        <div className="min-w-0 space-y-6">
+          <PllAwards season={season} data={s} limit={6} />
+          <PllChampionships season={season} limit={4} />
         </div>
       </div>
     </>

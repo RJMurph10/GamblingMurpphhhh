@@ -1,7 +1,8 @@
-import { useMemo } from "react";
+import { useMemo, useState } from "react";
 import { Link } from "@tanstack/react-router";
 import { Panel, PanelHeader } from "@/components/shared/booth";
 import type { PllGame } from "@/lib/pll/pll";
+import { ShowAll } from "@/components/pll/PllPlayers";
 import { PLL_CLUB_SHORT, pllChampionships, pllDraft, posAbbr } from "@/lib/pll/players";
 import { teamTrends, totalsTrends, type WL } from "@/lib/pll/trends";
 
@@ -15,9 +16,14 @@ function Credit({ children }: { children: React.ReactNode }) {
 }
 
 /** Every PLL championship game: champion, score, runner-up, title-game MVP, best regular season. */
-export function PllChampionships({ season }: { season: number }) {
-  const rows = pllChampionships();
-  if (!rows.length) return null;
+export function PllChampionships({ season, limit }: { season: number; limit?: number }) {
+  const [open, setOpen] = useState(false);
+  const all = pllChampionships();
+  if (!all.length) return null;
+  const cut = limit !== undefined && all.length > limit;
+  // cut short, keep the picked season's final in view
+  const rows =
+    cut && !open ? all.filter((c, i) => i < limit || c.season === season).slice(0, limit + 1) : all;
   return (
     <Panel padded={false}>
       <PanelHeader title="Champions" aside={<span className="label-mono">every season</span>} />
@@ -58,6 +64,7 @@ export function PllChampionships({ season }: { season: number }) {
           </tbody>
         </table>
       </div>
+      {cut ? <ShowAll open={open} total={all.length} onToggle={() => setOpen(!open)} /> : null}
       <Credit>
         Finals from Wikipedia&apos;s Premier Lacrosse League page (CC BY-SA 4.0), checked against
         the game scores on this site.
