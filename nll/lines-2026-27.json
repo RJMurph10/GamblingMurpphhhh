@@ -1,0 +1,322 @@
+{
+ "league": "NLL",
+ "season": "2026-27",
+ "source": "Owner's screenshots of each sportsbook app (Illinois), read by hand. 'captured' = when the screenshot was taken.",
+ "notes": [
+  "bet365 screenshot showed spreads only.",
+  "GA@BUF: DraftKings and FanDuel have Buffalo -1.5; bet365 and theScore have Georgia -1.5."
+ ],
+ "snapshots": [
+  {
+   "captured": "2026-11-28T00:55:00Z",
+   "book": "draftkings",
+   "game": "Georgia Swarm @ Buffalo Bandits",
+   "start": "2026-11-29T00:00:00Z",
+   "live": false,
+   "spread": {
+    "away": [
+     1.5,
+     -166
+    ],
+    "home": [
+     -1.5,
+     130
+    ]
+   },
+   "total": {
+    "line": 22.5,
+    "over": -110,
+    "under": -120
+   },
+   "moneyline": {
+    "away": -105,
+    "home": -125
+   }
+  },
+  {
+   "captured": "2026-11-28T00:55:00Z",
+   "book": "draftkings",
+   "game": "Halifax Thunderbirds @ Rochester Knighthawks",
+   "start": "2026-11-29T00:00:00Z",
+   "live": false,
+   "spread": {
+    "away": [
+     -1.5,
+     -110
+    ],
+    "home": [
+     1.5,
+     -120
+    ]
+   },
+   "total": {
+    "line": 23.5,
+    "over": -130,
+    "under": 100
+   },
+   "moneyline": {
+    "away": -175,
+    "home": 135
+   }
+  },
+  {
+   "captured": "2026-11-28T00:55:00Z",
+   "book": "draftkings",
+   "game": "San Diego Seals @ Toronto Rock",
+   "start": "2026-11-29T00:00:00Z",
+   "live": false,
+   "spread": {
+    "away": [
+     1.5,
+     -154
+    ],
+    "home": [
+     -1.5,
+     120
+    ]
+   },
+   "total": {
+    "line": 21.5,
+    "over": -130,
+    "under": 100
+   },
+   "moneyline": {
+    "away": 105,
+    "home": -135
+   }
+  },
+  {
+   "captured": "2026-11-28T00:55:00Z",
+   "book": "fanduel",
+   "game": "Georgia Swarm @ Buffalo Bandits",
+   "start": "2026-11-29T00:00:00Z",
+   "live": false,
+   "spread": {
+    "away": [
+     1.5,
+     -144
+    ],
+    "home": [
+     -1.5,
+     118
+    ]
+   },
+   "total": {
+    "line": 21.5,
+    "over": -110,
+    "under": -110
+   },
+   "moneyline": {
+    "away": -105,
+    "home": -115
+   }
+  },
+  {
+   "captured": "2026-11-28T00:55:00Z",
+   "book": "fanduel",
+   "game": "Halifax Thunderbirds @ Rochester Knighthawks",
+   "start": "2026-11-29T00:00:00Z",
+   "live": false,
+   "spread": {
+    "away": [
+     -1.5,
+     104
+    ],
+    "home": [
+     1.5,
+     -128
+    ]
+   },
+   "total": {
+    "line": 24.5,
+    "over": -110,
+    "under": -110
+   },
+   "moneyline": {
+    "away": -134,
+    "home": 110
+   }
+  },
+  {
+   "captured": "2026-11-28T00:55:00Z",
+   "book": "fanduel",
+   "game": "San Diego Seals @ Toronto Rock",
+   "start": "2026-11-29T00:00:00Z",
+   "live": false,
+   "spread": {
+    "away": [
+     1.5,
+     -142
+    ],
+    "home": [
+     -1.5,
+     116
+    ]
+   },
+   "total": {
+    "line": 21.5,
+    "over": -110,
+    "under": -110
+   },
+   "moneyline": {
+    "away": 104,
+    "home": -128
+   }
+  },
+  {
+   "captured": "2026-11-28T00:55:00Z",
+   "book": "bet365",
+   "game": "Georgia Swarm @ Buffalo Bandits",
+   "start": "2026-11-29T00:00:00Z",
+   "live": false,
+   "spread": {
+    "away": [
+     -1.5,
+     135
+    ],
+    "home": [
+     1.5,
+     -170
+    ]
+   },
+   "total": null,
+   "moneyline": null
+  },
+  {
+   "captured": "2026-11-28T00:55:00Z",
+   "book": "bet365",
+   "game": "Halifax Thunderbirds @ Rochester Knighthawks",
+   "start": "2026-11-29T00:00:00Z",
+   "live": false,
+   "spread": {
+    "away": [
+     -1.5,
+     110
+    ],
+    "home": [
+     1.5,
+     -140
+    ]
+   },
+   "total": null,
+   "moneyline": null
+  },
+  {
+   "captured": "2026-11-28T00:55:00Z",
+   "book": "bet365",
+   "game": "San Diego Seals @ Toronto Rock",
+   "start": "2026-11-29T00:00:00Z",
+   "live": false,
+   "spread": {
+    "away": [
+     1.5,
+     -130
+    ],
+    "home": [
+     -1.5,
+     100
+    ]
+   },
+   "total": null,
+   "moneyline": null
+  },
+  {
+   "captured": "2026-11-28T00:55:00Z",
+   "book": "thescore",
+   "game": "Georgia Swarm @ Buffalo Bandits",
+   "start": "2026-11-29T00:00:00Z",
+   "live": false,
+   "spread": {
+    "away": [
+     -1.5,
+     120
+    ],
+    "home": [
+     1.5,
+     -150
+    ]
+   },
+   "total": {
+    "line": 22.5,
+    "over": -120,
+    "under": -105
+   },
+   "moneyline": {
+    "away": -120,
+    "home": -105
+   }
+  },
+  {
+   "captured": "2026-11-28T00:55:00Z",
+   "book": "thescore",
+   "game": "Halifax Thunderbirds @ Rochester Knighthawks",
+   "start": "2026-11-29T00:00:00Z",
+   "live": false,
+   "spread": {
+    "away": [
+     -1.5,
+     110
+    ],
+    "home": [
+     1.5,
+     -135
+    ]
+   },
+   "total": {
+    "line": 23.5,
+    "over": -110,
+    "under": -115
+   },
+   "moneyline": {
+    "away": -160,
+    "home": 125
+   }
+  },
+  {
+   "captured": "2026-11-28T00:55:00Z",
+   "book": "thescore",
+   "game": "San Diego Seals @ Toronto Rock",
+   "start": "2026-11-29T00:00:00Z",
+   "live": false,
+   "spread": {
+    "away": [
+     1.5,
+     -150
+    ],
+    "home": [
+     -1.5,
+     120
+    ]
+   },
+   "total": {
+    "line": 21.5,
+    "over": -135,
+    "under": 110
+   },
+   "moneyline": {
+    "away": -105,
+    "home": -120
+   }
+  },
+  {
+   "captured": "2026-11-28T00:55:00Z",
+   "book": "bet365",
+   "game": "Saskatchewan Rush @ Oshawa FireWolves",
+   "start": "2026-11-28T00:30:00Z",
+   "live": true,
+   "score": "3-2",
+   "spread": {
+    "away": [
+     -1.5,
+     -125
+    ],
+    "home": [
+     1.5,
+     -115
+    ]
+   },
+   "total": null,
+   "moneyline": null
+  }
+ ]
+}
