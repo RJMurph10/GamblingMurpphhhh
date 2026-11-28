@@ -335,7 +335,16 @@ export function addCollegeDetails(game: Game, comp: any) {
  * games at a time so a whole week never fires hundreds of requests at once.
  */
 async function fillCollegeLines(games: Game[]): Promise<void> {
-  await backfillHistoricalOdds(games, "cfb", (g) => g.spread === "—" || !g.total);
+  // also the opening total of finished FBS games with a total: the ★ totals rule is graded at the
+  // opener, and the scoreboard drops it once a game starts (those picks fell out of the record)
+  await backfillHistoricalOdds(
+    games,
+    "cfb",
+    (g) =>
+      g.spread === "—" ||
+      !g.total ||
+      (g.status === "final" && !g.fcs && !g.postseason && g.odds?.totalOpen === undefined),
+  );
 }
 
 /**
