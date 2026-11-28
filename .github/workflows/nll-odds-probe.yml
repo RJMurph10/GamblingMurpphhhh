@@ -12,8 +12,13 @@ jobs:
           UA={"User-Agent":"Mozilla/5.0"}
           g=lambda u: json.loads(urllib.request.urlopen(urllib.request.Request(u,headers=UA),timeout=30).read())
           t=datetime.now(timezone.utc)
-          rng=f"{(t-timedelta(days=1)).strftime('%Y%m%d')}-{(t+timedelta(days=5)).strftime('%Y%m%d')}"
-          d=g(f"https://site.api.espn.com/apis/site/v2/sports/lacrosse/nll/scoreboard?dates={rng}")
+          ev=[]
+          for i in range(-1,7):
+              day=(t+timedelta(days=i)).strftime('%Y%m%d')
+              try:
+                  ev+=g(f"https://site.api.espn.com/apis/site/v2/sports/lacrosse/nll/scoreboard?dates={day}").get("events",[])
+              except Exception as x: print("day",day,"err",x)
+          d={"events":ev}
           ev=d.get("events",[]); print("events",len(ev))
           for e in ev:
               c=e["competitions"][0]
