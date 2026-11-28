@@ -12,7 +12,7 @@ jobs:
           UA={"User-Agent":"Mozilla/5.0"}
           g=lambda u: json.loads(urllib.request.urlopen(urllib.request.Request(u,headers=UA),timeout=30).read())
           t=datetime.now(timezone.utc)
-          rng=f"{(t-timedelta(days=3)).strftime('%Y%m%d')}-{(t+timedelta(days=6)).strftime('%Y%m%d')}"
+          rng=f"{(t-timedelta(days=1)).strftime('%Y%m%d')}-{(t+timedelta(days=5)).strftime('%Y%m%d')}"
           d=g(f"https://site.api.espn.com/apis/site/v2/sports/lacrosse/nll/scoreboard?dates={rng}")
           ev=d.get("events",[]); print("events",len(ev))
           for e in ev:
