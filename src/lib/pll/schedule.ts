@@ -60,3 +60,36 @@ export const pllTvOf = (espnId: string): string[] | undefined => TV.get(espnId);
 
 /** Every entered week of a season, in order. */
 export const pllWeeks = (season: number): PllWeek[] => (SEASONS[season] ?? []).map(toWeek);
+
+export interface PllScheduledGame {
+  espnId: string;
+  date: string;
+  home: string;
+  away: string;
+  homeScore: number | null;
+  awayScore: number | null;
+}
+
+const GAMES: PllScheduledGame[] = Object.values(SEASONS).flatMap((weeks) =>
+  weeks.flatMap((w) =>
+    (w.games as unknown as PllScheduledGame[]).filter((g) => g.espnId && g.home && g.away),
+  ),
+);
+
+/**
+ * The owner's saved game between two clubs (short names: "Atlas") within a day of a date, with home/away and
+ * the final score: lets player pages show a matchup without waiting on ESPN.
+ */
+export function pllScheduledGame(
+  date: string,
+  team: string,
+  opponent: string,
+): PllScheduledGame | undefined {
+  const t = Date.parse(`${date}T12:00:00Z`);
+  return GAMES.find(
+    (g) =>
+      Math.abs(Date.parse(`${g.date}T12:00:00Z`) - t) <= 86_400_000 &&
+      [g.home, g.away].includes(team) &&
+      [g.home, g.away].includes(opponent),
+  );
+}

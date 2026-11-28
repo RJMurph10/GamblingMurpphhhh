@@ -3,8 +3,11 @@ import { createFileRoute, Link } from "@tanstack/react-router";
 import { PageTitle, Panel, PanelHeader, StatCard } from "@/components/shared/booth";
 import { PllLogo, PllSeasonPicker } from "@/components/pll/PllBits";
 import { collegeLogoFor } from "@/lib/pll/colleges";
-import { teamOf, type PllGame, type PllSeason } from "@/lib/pll/pll";
-import { pllDraftNote, pllDraftOf, posAbbr } from "@/lib/pll/players";
+import { teamOf, type PllGame, type PllSeason, type PllTeam } from "@/lib/pll/pll";
+import { PLL_CLUB_SHORT, pllDraftOf, posAbbr } from "@/lib/pll/players";
+import { eraLogo } from "@/lib/pll/era-logos";
+import { pllScheduledGame } from "@/lib/pll/schedule";
+import { PLL_CLUB_IDS } from "@/lib/pll/player-stats";
 import {
   playerKind,
   pllPlayer,
@@ -45,8 +48,7 @@ const ordinal = (n: number) =>
 /** "Drafted 2021 · 1st round, 1st overall · Atlas" (his latest pick if he was drafted twice). */
 function Drafted({ p, season }: { p: PllPlayer; season?: PllSeason }) {
   const picks = pllDraftOf(p.name);
-  const note = pllDraftNote(p.name);
-  if (!picks.length && !note) return null;
+  if (!picks.length) return null;
   return (
     <div className="-mt-4 mb-6 space-y-1 font-mono text-xs text-mute">
       {picks.map((d) => (
@@ -72,8 +74,62 @@ function Drafted({ p, season }: { p: PllPlayer; season?: PllSeason }) {
           ) : null}
         </div>
       ))}
-      {note ? <p className="max-w-2xl font-sans text-[12px] italic text-faint">{note}</p> : null}
     </div>
+  );
+}
+
+/** A club as it looked that season: that year's logo, falling back to the loaded season's team. */
+function clubIn(id: string, season: number, loaded?: PllSeason): PllTeam {
+  const base = teamOf(loaded, id);
+  const short = base?.short ?? PLL_CLUB_SHORT[id] ?? id;
+  return {
+    id,
+    abbr: base?.abbr ?? short.slice(0, 3).toUpperCase(),
+    name: base?.name ?? short,
+    short,
+    location: base?.location ?? "",
+    logo: eraLogo(id, season) ?? base?.logo,
+  };
+}
+
+/** "11 [logo] @ [logo] 13" like the games tables, his side's score bold when they won; links to the game. */
+function Matchup({ g, game, season }: { g: PllPlayerGame; game?: PllGame; season?: PllSeason }) {
+  // ESPN's game when loaded, else the owner's saved schedule (home/away and final score)
+  const saved = game ? undefined : pllScheduledGame(g.date, g.team, g.opponent);
+  const homeId =
+    game?.home.teamId ?? (saved ? (PLL_CLUB_IDS[saved.home] ?? saved.home) : g.opponentId);
+  const awayId = game?.away.teamId ?? (saved ? (PLL_CLUB_IDS[saved.away] ?? saved.away) : g.teamId);
+  const away = clubIn(awayId, g.season, season);
+  const home = clubIn(homeId, g.season, season);
+  const as = game ? game.away.score : saved?.awayScore;
+  const hs = game ? game.home.score : saved?.homeScore;
+  const gameId = game?.id ?? saved?.espnId;
+  const done = as != null && hs != null;
+  const bold = (id: string, mine: number | null | undefined, theirs: number | null | undefined) =>
+    done && mine! > theirs!
+      ? id === g.teamId
+        ? "text-win font-semibold"
+        : "font-semibold"
+      : "text-mute";
+  const inner = (
+    <span className="grid grid-cols-[1fr_auto_1fr] items-center gap-1.5">
+      <span className="flex items-center justify-end gap-1.5">
+        <span className={`w-5 text-right ${bold(awayId, as, hs)}`}>{done ? as : ""}</span>
+        <PllLogo team={away} className="size-5" />
+      </span>
+      <span className="font-sans text-[11px] text-faint">@</span>
+      <span className="flex items-center gap-1.5">
+        <PllLogo team={home} className="size-5" />
+        <span className={`w-5 text-left ${bold(homeId, hs, as)}`}>{done ? hs : ""}</span>
+      </span>
+    </span>
+  );
+  return gameId ? (
+    <Link to="/pll/games/$gameId" params={{ gameId }} className="block hover:text-acc">
+      {inner}
+    </Link>
+  ) : (
+    inner
   );
 }
 
@@ -114,7 +170,6 @@ function PllPlayerPage() {
   const q = usePllSeason(season);
   const games = useMemo(() => (p ? p.games.filter((g) => g.season === season) : []), [p, season]);
   const t = useMemo(() => totalsOf(games), [games]);
-  const last5 = useMemo(() => totalsOf(games.slice(-5)), [games]);
   if (!p)
     return (
       <Panel>
@@ -216,61 +271,7 @@ function PllPlayerPage() {
         )}
       </div>
 
-      {games.length >= 5 ? (
-        <Panel padded={false} className="mt-6">
-          <PanelHeader
-            title="Last 5 games vs season"
-            aside={<span className="label-mono">per game</span>}
-          />
-          <div className="overflow-x-auto">
-            <table className="w-full min-w-[420px] font-mono text-sm tabular-nums">
-              <thead>
-                <tr className="text-right text-[10px] uppercase tracking-wider text-faint">
-                  <th className="px-4 py-2 text-left font-normal" />
-                  {(kind === "goalie"
-                    ? ["Saves", "GA", "Sv%"]
-                    : ["Points", "Goals", "Assists", "Shots", "GB", ...(showFO ? ["FO%"] : [])]
-                  ).map((h) => (
-                    <th key={h} className="px-3 py-2 font-normal">
-                      {h}
-                    </th>
-                  ))}
-                </tr>
-              </thead>
-              <tbody className="divide-y divide-line/5">
-                {(
-                  [
-                    ["Last 5", last5],
-                    ["Season", t],
-                  ] as const
-                ).map(([label, x]) => (
-                  <tr key={label}>
-                    <td className="px-4 py-1.5 text-left font-sans text-mute">{label}</td>
-                    {kind === "goalie" ? (
-                      <>
-                        <td className="px-3 py-1.5 text-right">{per(x.Sv, x.gp)}</td>
-                        <td className="px-3 py-1.5 text-right">{per(x.GA, x.gp)}</td>
-                        <td className="px-3 py-1.5 text-right">{pct(x.svPct)}</td>
-                      </>
-                    ) : (
-                      <>
-                        <td className="px-3 py-1.5 text-right">{per(x.P, x.gp)}</td>
-                        <td className="px-3 py-1.5 text-right">{per(x.G, x.gp)}</td>
-                        <td className="px-3 py-1.5 text-right">{per(x.A, x.gp)}</td>
-                        <td className="px-3 py-1.5 text-right">{per(x.Sh, x.gp)}</td>
-                        <td className="px-3 py-1.5 text-right">{per(x.GB, x.gp)}</td>
-                        {showFO ? <td className="px-3 py-1.5 text-right">{pct(x.foPct)}</td> : null}
-                      </>
-                    )}
-                  </tr>
-                ))}
-              </tbody>
-            </table>
-          </div>
-        </Panel>
-      ) : null}
-
-      {seasons.length > 1 ? <SeasonsTable p={p} kind={kind} /> : null}
+      {seasons.length > 1 ? <SeasonsTable p={p} kind={kind} current={q.data} /> : null}
 
       <Panel padded={false} className="mt-6">
         <PanelHeader
@@ -278,12 +279,11 @@ function PllPlayerPage() {
           aside={<span className="label-mono">{games.length} games</span>}
         />
         <div className="overflow-x-auto">
-          <table className="w-full min-w-[760px] text-sm">
+          <table className="w-full min-w-[780px] text-sm">
             <thead>
               <tr className="text-right font-mono text-[10px] uppercase tracking-wider text-faint">
                 <th className="px-4 py-2 text-left font-normal">Date</th>
-                <th className="px-2 py-2 text-left font-normal">Opp</th>
-                <th className="px-2 py-2 text-left font-normal">Result</th>
+                <th className="px-2 py-2 text-center font-normal">Game</th>
                 <th className="px-2 py-2 font-normal">P</th>
                 <th className="px-2 py-2 font-normal">G</th>
                 <th className="px-2 py-2 font-normal">2PG</th>
@@ -305,11 +305,6 @@ function PllPlayerPage() {
             <tbody className="divide-y divide-line/5 font-mono tabular-nums">
               {rows.map((g) => {
                 const game = findGame(q.data, g);
-                const opp = teamOf(q.data, g.opponentId);
-                const home = game?.home.teamId === g.teamId;
-                const mine = game ? (home ? game.home.score : game.away.score) : null;
-                const theirs = game ? (home ? game.away.score : game.home.score) : null;
-                const won = mine != null && theirs != null && mine > theirs;
                 const s = g.stats;
                 const [mm, dd] = g.date.slice(5).split("-").map(Number);
                 return (
@@ -317,24 +312,8 @@ function PllPlayerPage() {
                     <td className="px-4 py-1.5 text-left text-mute">
                       {mm}/{dd}
                     </td>
-                    <td className="px-2 py-1.5 text-left">
-                      <span className="inline-flex items-center gap-1.5 font-sans">
-                        <span className="text-[10px] text-faint">{game && !home ? "@" : "vs"}</span>
-                        <PllLogo team={opp} className="size-5" />
-                      </span>
-                    </td>
-                    <td className="px-2 py-1.5 text-left">
-                      {game && mine != null && theirs != null ? (
-                        <Link
-                          to="/pll/games/$gameId"
-                          params={{ gameId: game.id }}
-                          className={`hover:text-acc ${won ? "text-win" : "text-loss"}`}
-                        >
-                          {won ? "W" : "L"} {mine}-{theirs}
-                        </Link>
-                      ) : (
-                        <span className="text-faint">—</span>
-                      )}
+                    <td className="px-2 py-1.5">
+                      <Matchup g={g} game={game} season={q.data} />
                     </td>
                     <td className="px-2 py-1.5 font-semibold">{s.P}</td>
                     <td className="px-2 py-1.5">{s.G1 + s.G2}</td>
@@ -375,10 +354,18 @@ function PllPlayerPage() {
 type Totals = ReturnType<typeof totalsOf>;
 
 /** A player's season-by-season totals (one row per season and club), newest first, then his career. */
-function SeasonsTable({ p, kind }: { p: PllPlayer; kind: ReturnType<typeof playerKind> }) {
+function SeasonsTable({
+  p,
+  kind,
+  current,
+}: {
+  p: PllPlayer;
+  kind: ReturnType<typeof playerKind>;
+  current?: PllSeason;
+}) {
   const groups = new Map<string, PllPlayerGame[]>();
   for (const g of p.games) {
-    const k = `${g.season}|${g.team}`;
+    const k = `${g.season}|${g.teamId}`;
     groups.set(k, [...(groups.get(k) ?? []), g]);
   }
   const rows = [...groups.entries()]
@@ -429,7 +416,18 @@ function SeasonsTable({ p, kind }: { p: PllPlayer; kind: ReturnType<typeof playe
                 className={`text-right ${r.label === "Career" ? "font-semibold" : ""}`}
               >
                 <td className="px-4 py-1.5 text-left">{r.label}</td>
-                <td className="px-2 py-1.5 text-left font-sans text-mute">{r.team}</td>
+                <td className="px-2 py-1.5 text-left">
+                  {r.team ? (
+                    <Link
+                      to="/pll/teams/$teamId"
+                      params={{ teamId: r.team }}
+                      title={PLL_CLUB_SHORT[r.team] ?? r.team}
+                      className="inline-flex"
+                    >
+                      <PllLogo team={clubIn(r.team, Number(r.label), current)} className="size-5" />
+                    </Link>
+                  ) : null}
+                </td>
                 <td className="px-2 py-1.5 text-mute">{r.t.gp}</td>
                 {cols.map(([h, f]) => (
                   <td key={h} className="px-2 py-1.5">
