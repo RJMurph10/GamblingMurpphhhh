@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-28T03:25:00Z",
+  "updated": "2026-11-28T03:40:00Z",
   "games": {
     "laxapi-2026-07-31T23:00-redwoods-chaos": {
       "home": "California Redwoods",
@@ -4653,6 +4653,277 @@
         }
       },
       "source": "betonlacrosse.com weekly preview (odds via fanduel); spread and total prices not shown; publish time unknown"
+    },
+    "preview-401591349": {
+      "home": "California Redwoods",
+      "away": "Carolina Chaos",
+      "commence": "2023-09-04T15:45:00Z",
+      "open": {
+        "spread": 1.5,
+        "total": 24.5,
+        "mlHome": 105,
+        "mlAway": -135,
+        "books": 2,
+        "at": null
+      },
+      "latest": {
+        "spread": 1.5,
+        "total": 24.5,
+        "mlHome": 105,
+        "mlAway": -135,
+        "books": 2,
+        "at": null
+      },
+      "books": {
+        "fanduel": {
+          "ml": null,
+          "spread": [
+            1.5,
+            -144,
+            118
+          ],
+          "total": null,
+          "at": null
+        },
+        "pllbets_x": {
+          "ml": [
+            105,
+            -135
+          ],
+          "spread": null,
+          "total": [
+            24.5,
+            null,
+            null
+          ],
+          "at": null
+        }
+      },
+      "source": "owner screenshots of X posts (2023 playoffs)",
+      "notes": [
+        "fanduel: PLL/FanDuel \"This Week's Slate\" graphic on X; spread with prices only, no moneyline or total",
+        "pllbets_x: \"PLL Bets\" X post 9/4/23 10:30 AM ET; moneyline and total, book not named, total prices not shown"
+      ]
+    },
+    "preview-401591350": {
+      "home": "Philadelphia Waterdogs",
+      "away": "Maryland Whipsnakes",
+      "commence": "2023-09-04T18:20:00Z",
+      "open": {
+        "spread": -1.5,
+        "total": 24.5,
+        "mlHome": -145,
+        "mlAway": 114,
+        "books": 2,
+        "at": null
+      },
+      "latest": {
+        "spread": -1.5,
+        "total": 24.5,
+        "mlHome": -145,
+        "mlAway": 114,
+        "books": 2,
+        "at": null
+      },
+      "books": {
+        "fanduel": {
+          "ml": null,
+          "spread": [
+            -1.5,
+            110,
+            -134
+          ],
+          "total": null,
+          "at": null
+        },
+        "pllbets_x": {
+          "ml": [
+            -145,
+            114
+          ],
+          "spread": null,
+          "total": [
+            24.5,
+            null,
+            null
+          ],
+          "at": null
+        }
+      },
+      "source": "owner screenshots of X posts (2023 playoffs)",
+      "notes": [
+        "fanduel: PLL/FanDuel \"This Week's Slate\" graphic on X; spread with prices only, no moneyline or total",
+        "pllbets_x: \"PLL Bets\" X post 9/4/23 10:30 AM ET; moneyline and total, book not named, total prices not shown"
+      ]
+    },
+    "preview-401591329": {
+      "home": "Boston Cannons",
+      "away": "New York Atlas",
+      "commence": "2023-09-04T21:00:00Z",
+      "open": {
+        "spread": -1.5,
+        "total": 26.5,
+        "mlHome": -200,
+        "mlAway": 154,
+        "books": 2,
+        "at": null
+      },
+      "latest": {
+        "spread": -1.5,
+        "total": 26.5,
+        "mlHome": -200,
+        "mlAway": 154,
+        "books": 2,
+        "at": null
+      },
+      "books": {
+        "fanduel": {
+          "ml": null,
+          "spread": [
+            -1.5,
+            -144,
+            118
+          ],
+          "total": null,
+          "at": null
+        },
+        "pllbets_x": {
+          "ml": [
+            -200,
+            154
+          ],
+          "spread": null,
+          "total": [
+            26.5,
+            null,
+            null
+          ],
+          "at": null
+        }
+      },
+      "source": "owner screenshots of X posts (2023 playoffs)",
+      "notes": [
+        "fanduel: PLL/FanDuel \"This Week's Slate\" graphic on X; spread with prices only, no moneyline or total",
+        "pllbets_x: \"PLL Bets\" X post 9/4/23 10:30 AM ET; moneyline and total, book not named, total prices not shown"
+      ]
+    },
+    "preview-401595186": {
+      "home": "Utah Archers",
+      "away": "California Redwoods",
+      "commence": "2023-09-10T19:00:00Z",
+      "open": {
+        "spread": -1.5,
+        "total": null,
+        "mlHome": null,
+        "mlAway": null,
+        "books": 1,
+        "at": null
+      },
+      "latest": {
+        "spread": -1.5,
+        "total": null,
+        "mlHome": null,
+        "mlAway": null,
+        "books": 1,
+        "at": null
+      },
+      "books": {
+        "fanduel": {
+          "ml": null,
+          "spread": [
+            -1.5,
+            -118,
+            -104
+          ],
+          "total": null,
+          "at": null
+        }
+      },
+      "source": "owner screenshots of X posts (2023 playoffs)",
+      "notes": [
+        "fanduel: PLL/FanDuel \"This Week's Slate\" graphic on X; spread with prices only, no moneyline or total"
+      ]
+    },
+    "preview-401595187": {
+      "home": "Boston Cannons",
+      "away": "Philadelphia Waterdogs",
+      "commence": "2023-09-10T21:30:00Z",
+      "open": {
+        "spread": 1.5,
+        "total": null,
+        "mlHome": null,
+        "mlAway": null,
+        "books": 1,
+        "at": null
+      },
+      "latest": {
+        "spread": 1.5,
+        "total": null,
+        "mlHome": null,
+        "mlAway": null,
+        "books": 1,
+        "at": null
+      },
+      "books": {
+        "fanduel": {
+          "ml": null,
+          "spread": [
+            1.5,
+            -150,
+            122
+          ],
+          "total": null,
+          "at": null
+        }
+      },
+      "source": "owner screenshots of X posts (2023 playoffs)",
+      "notes": [
+        "fanduel: PLL/FanDuel \"This Week's Slate\" graphic on X; spread with prices only, no moneyline or total"
+      ]
+    },
+    "preview-401597929": {
+      "home": "Utah Archers",
+      "away": "Philadelphia Waterdogs",
+      "commence": "2023-09-24T19:00:00Z",
+      "open": {
+        "spread": -1.5,
+        "total": 25.5,
+        "mlHome": -120,
+        "mlAway": -110,
+        "books": 1,
+        "at": null
+      },
+      "latest": {
+        "spread": -1.5,
+        "total": 25.5,
+        "mlHome": -120,
+        "mlAway": -110,
+        "books": 1,
+        "at": null
+      },
+      "books": {
+        "draftkings": {
+          "ml": [
+            -120,
+            -110
+          ],
+          "spread": [
+            -1.5,
+            124,
+            -160
+          ],
+          "total": [
+            25.5,
+            -120,
+            -110
+          ],
+          "at": null
+        }
+      },
+      "source": "owner screenshots of X posts (2023 playoffs)",
+      "notes": [
+        "draftkings: DraftKings app screenshot shared on X (Hutton Jackson) noting DK joined Caesars in flipping to Archers -1.5; capture time unknown, likely near close"
+      ]
     }
   }
 }
