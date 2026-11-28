@@ -16,7 +16,12 @@
    "firstSeen": "2026-11-27T14:25:33.258Z",
    "latest": 176.5,
    "latestAt": "2026-11-27T22:59:26.610Z",
-   "alerted": false
+   "alerted": false,
+   "score": [
+    76,
+    116
+   ],
+   "close": 176.5
   },
   {
    "id": "401920544-total",
@@ -32,7 +37,12 @@
    "firstSeen": "2026-11-27T14:25:33.258Z",
    "latest": 160.5,
    "latestAt": "2026-11-27T22:59:26.610Z",
-   "alerted": false
+   "alerted": false,
+   "score": [
+    97,
+    89
+   ],
+   "close": 160.5
   },
   {
    "id": "401920535-total",
@@ -48,7 +58,12 @@
    "firstSeen": "2026-11-27T22:59:26.610Z",
    "latest": 142.5,
    "latestAt": "2026-11-27T22:59:26.610Z",
-   "alerted": false
+   "alerted": false,
+   "score": [
+    75,
+    78
+   ],
+   "close": 142.5
   }
  ]
 }
