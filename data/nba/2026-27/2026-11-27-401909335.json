@@ -7,13 +7,13 @@
   "id": "3",
   "abbr": "NO",
   "name": "New Orleans Pelicans",
-  "score": 60
+  "score": 104
  },
  "home": {
   "id": "12",
   "abbr": "LAC",
   "name": "LA Clippers",
-  "score": 57
+  "score": 101
  },
  "neutral": false,
  "venue": "Intuit Dome",

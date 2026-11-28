@@ -7,18 +7,18 @@
   "id": "2724",
   "abbr": "WICH",
   "name": "Wichita State Shockers",
-  "score": 57
+  "score": 73
  },
  "home": {
   "id": "96",
   "abbr": "UK",
   "name": "Kentucky Wildcats",
-  "score": 54
+  "score": 71
  },
  "neutral": false,
  "venue": "Rupp Arena",
  "seasonType": 2,
- "state": "in",
+ "state": "post",
  "lines": {
   "open": {
    "at": "2026-11-27T00:00:48.093Z",
@@ -933,5 +933,9 @@
    ]
   }
  },
- "props": {}
+ "props": {},
+ "final": {
+  "away": 73,
+  "home": 71
+ }
 }

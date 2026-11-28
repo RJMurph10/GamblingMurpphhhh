@@ -7,18 +7,18 @@
   "id": "2633",
   "abbr": "TENN",
   "name": "Tennessee Volunteers",
-  "score": 55
+  "score": 64
  },
  "home": {
   "id": "97",
   "abbr": "LOU",
   "name": "Louisville Cardinals",
-  "score": 69
+  "score": 84
  },
  "neutral": true,
  "venue": "Michelob ULTRA Arena",
  "seasonType": 2,
- "state": "in",
+ "state": "post",
  "lines": {
   "open": {
    "at": "2026-11-27T05:20:33.445Z",
@@ -851,5 +851,9 @@
    ]
   }
  },
- "props": {}
+ "props": {},
+ "final": {
+  "away": 64,
+  "home": 84
+ }
 }

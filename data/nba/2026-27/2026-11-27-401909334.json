@@ -7,18 +7,18 @@
   "id": "7",
   "abbr": "DEN",
   "name": "Denver Nuggets",
-  "score": 70
+  "score": 120
  },
  "home": {
   "id": "26",
   "abbr": "UTAH",
   "name": "Utah Jazz",
-  "score": 70
+  "score": 107
  },
  "neutral": false,
  "venue": "Delta Center",
  "seasonType": 2,
- "state": "in",
+ "state": "post",
  "lines": {
   "open": {
    "at": "2026-11-26T09:37:29.213Z",
@@ -4447,5 +4447,9 @@
    "Brice Sensabaugh",
    "UTAH"
   ]
+ },
+ "final": {
+  "away": 120,
+  "home": 107
  }
 }
