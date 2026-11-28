@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-28T03:10:00Z",
+  "updated": "2026-11-28T03:25:00Z",
   "games": {
     "laxapi-2026-07-31T23:00-redwoods-chaos": {
       "home": "California Redwoods",
@@ -4605,6 +4605,47 @@
           ],
           "total": [
             21.5,
+            null,
+            null
+          ],
+          "at": null
+        }
+      },
+      "source": "betonlacrosse.com weekly preview (odds via fanduel); spread and total prices not shown; publish time unknown"
+    },
+    "preview-401867229": {
+      "home": "Denver Outlaws",
+      "away": "Maryland Whipsnakes",
+      "commence": "2026-06-27T20:00:00Z",
+      "open": {
+        "spread": -1.5,
+        "total": 22.5,
+        "mlHome": -114,
+        "mlAway": -106,
+        "books": 1,
+        "at": null
+      },
+      "latest": {
+        "spread": -1.5,
+        "total": 22.5,
+        "mlHome": -114,
+        "mlAway": -106,
+        "books": 1,
+        "at": null
+      },
+      "books": {
+        "fanduel": {
+          "ml": [
+            -114,
+            -106
+          ],
+          "spread": [
+            -1.5,
+            null,
+            null
+          ],
+          "total": [
+            22.5,
             null,
             null
           ],
