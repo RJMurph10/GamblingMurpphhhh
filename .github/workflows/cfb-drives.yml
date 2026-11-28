@@ -1,0 +1,19 @@
+name: cfb drives
+on: { push: { branches: [cfb-drives-probe] } }
+permissions: { contents: write }
+jobs:
+  p:
+    runs-on: ubuntu-latest
+    timeout-minutes: 120
+    steps:
+      - uses: actions/checkout@v4
+      - run: python3 probe/cfb_drives.py
+      - run: |
+          python3 - <<'PY'
+          import csv,gzip,collections
+          c=collections.Counter(r["result"] for r in csv.DictReader(gzip.open("cfb_drives.csv.gz","rt")))
+          print("RESULTS",c.most_common(25))
+          PY
+          git config user.name "github-actions" && git config user.email "actions@github.com"
+          git fetch origin nfl-weather-data && git checkout -q nfl-weather-data
+          cp -f cfb_drives.csv.gz . 2>/dev/null; git add cfb_drives.csv.gz && git commit -qm "cfb drives 2013-2025 (ESPN summaries)" && git push -q origin nfl-weather-data
