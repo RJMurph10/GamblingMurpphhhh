@@ -4,7 +4,8 @@
  "source": "Owner's screenshots of each sportsbook app (Illinois), read by hand. 'captured' = when the screenshot was taken.",
  "notes": [
   "bet365 screenshot showed spreads only.",
-  "GA@BUF: DraftKings and FanDuel have Buffalo -1.5; bet365 and theScore have Georgia -1.5."
+  "GA@BUF: DraftKings and FanDuel have Buffalo -1.5; bet365 and theScore have Georgia -1.5.",
+  "Rush @ FireWolves (Nov 27): FanDuel line from a betonlacrosse.com preview; spread and total prices weren't shown, capture time is approximate."
  ],
  "snapshots": [
   {
@@ -317,6 +318,33 @@
    },
    "total": null,
    "moneyline": null
+  },
+  {
+   "captured": "2026-11-27T12:00:00Z",
+   "book": "fanduel",
+   "game": "Saskatchewan Rush @ Oshawa FireWolves",
+   "start": "2026-11-28T00:30:00Z",
+   "live": false,
+   "spread": {
+    "away": [
+     -1.5,
+     null
+    ],
+    "home": [
+     1.5,
+     null
+    ]
+   },
+   "total": {
+    "line": 22.5,
+    "over": null,
+    "under": null
+   },
+   "moneyline": {
+    "away": -176,
+    "home": 142
+   },
+   "via": "betonlacrosse.com preview (odds via FanDuel); capture time approximate, prices on spread/total not shown"
   }
  ]
 }
