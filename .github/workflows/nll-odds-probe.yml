@@ -1,0 +1,18 @@
+name: nll odds probe
+on: { push: { branches: [nll-odds-probe] } }
+jobs:
+  p:
+    runs-on: ubuntu-latest
+    steps:
+      - name: The Odds API sports list (free, 0 credits)
+        env: { K: "${{ secrets.ODDS_API_KEY }}", P: "${{ secrets.ODDS_API_KEY_PAID }}" }
+        run: |
+          echo "paid key set: $([ -n "$P" ] && echo yes || echo no)"
+          curl -s "https://api.the-odds-api.com/v4/sports/?all=true&apiKey=$K" | python3 -c "import json,sys; d=json.load(sys.stdin); print([x for x in d if 'lacrosse' in x['key'] or 'acrosse' in x['title']])"
+      - name: SportsGameOdds leagues + NLL events
+        env: { K: "${{ secrets.SPORTSGAMEODDS_API_KEY }}" }
+        run: |
+          curl -s -H "x-api-key: $K" "https://api.sportsgameodds.com/v2/leagues/" | python3 -c "import json,sys; d=json.load(sys.stdin); L=d.get('data',d); print('all leagues:', [x.get('leagueID') for x in L]); print([x for x in L if 'LAX' in str(x).upper() or 'LACROSSE' in str(x).upper() or 'NLL' in str(x)])"
+          curl -s -H "x-api-key: $K" "https://api.sportsgameodds.com/v2/sports/" | python3 -c "import json,sys; d=json.load(sys.stdin); print('sports:', [x.get('sportID') for x in d.get('data',[])])"
+          curl -s -H "x-api-key: $K" "https://api.sportsgameodds.com/v2/events/?leagueID=NLL&limit=5" | head -c 3000; echo
+          curl -s -H "x-api-key: $K" "https://api.sportsgameodds.com/v2/account/usage" | head -c 1500; echo
