@@ -39,6 +39,12 @@ export interface TitleRace {
   clinched: string[];
   /** Teams still able to reach a spot (clinched teams included), best record first. */
   alive: string[];
+  /**
+   * Before it's set: the clinched teams to fill in now, best conference record first, whether the first
+   * has the best record of everyone still alive (so likely hosts / is the higher seed), and whether that's
+   * locked (nobody can catch it).
+   */
+  partial?: { teams: string[]; leads: boolean; locked: boolean };
 }
 
 interface Rec {
@@ -160,7 +166,17 @@ export function titleRace(conf: TitleConference, games: ConfGame[]): TitleRace {
   const results = conf.pools.map((p) => racePool(p, games));
   const clinched = results.flatMap((r) => r.clinched);
   const alive = results.flatMap((r) => r.alive);
-  if (!results.every((r) => r.set)) return { conference: conf.name, clinched, alive };
+  if (!results.every((r) => r.set)) {
+    if (!clinched.length) return { conference: conf.name, clinched, alive };
+    const all = new Map<string, Rec>();
+    for (const p of conf.pools) for (const [id, r] of records(p, games)) all.set(id, r);
+    const teams = [...clinched].sort((a, b) => now(all.get(b)!) - now(all.get(a)!));
+    const top = all.get(teams[0])!;
+    const others = alive.filter((id) => id !== top.id).map((id) => all.get(id)!);
+    const leads = others.every((u) => now(top) >= now(u));
+    const locked = others.every((u) => best(u) < worst(top));
+    return { conference: conf.name, clinched, alive, partial: { teams, leads, locked } };
+  }
   if (conf.pools.length === 1) {
     const r = results[0];
     return { conference: conf.name, set: r.set, seeded: r.ordered, clinched, alive };

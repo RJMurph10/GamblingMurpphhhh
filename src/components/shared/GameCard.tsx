@@ -94,15 +94,17 @@ export function GameCard({ game }: { game: Game }) {
 
 /**
  * Under a conference title game ESPN hasn't filled in: "Matchup set from final standings" once the site has
- * worked it out, else who has clinched (✓) and who's still alive.
+ * worked it out, else who has clinched (✓, already filled in) and who's still alive. "Host projected" when
+ * home/away is the site's call (the clinched leader hosts); ESPN's listing replaces it once posted.
  */
 function TitleRaceLine({ race }: { race: NonNullable<Game["titleRace"]> }) {
   if (race.status === "set")
     return (
       <div className="mt-0.5 font-mono text-[10px] text-mute">
-        Matchup set from final standings{race.hostKnown ? "" : " · host TBD"}
+        Matchup set from final standings{race.hostKnown ? "" : " · host projected"}
       </div>
     );
+  const host = race.status === "partial" && !race.hostKnown ? " · host projected" : "";
   const rest = race.alive.filter((t) => !race.clinched.includes(t));
   return (
     <div className="mt-0.5 truncate font-mono text-[10px] text-mute">
@@ -110,6 +112,7 @@ function TitleRaceLine({ race }: { race: NonNullable<Game["titleRace"]> }) {
         <span className="text-win">{race.clinched.join(", ")} ✓ </span>
       ) : null}
       {rest.length ? `· alive: ${rest.join(", ")}` : null}
+      {host}
     </div>
   );
 }

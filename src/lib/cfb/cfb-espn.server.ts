@@ -187,9 +187,19 @@ async function fillTitleGames(games: Game[]): Promise<Game[]> {
     const race = titleRace(conf, confGames);
     const info = { clinched: race.clinched.map(abbr), alive: race.alive.map(abbr) };
     const next: Game = { ...g, titleRace: { status: "open", ...info } };
+    const rank = (id: string) => {
+      const r = teamById(id)?.rank;
+      return r && r >= 1 && r <= 25 ? r : undefined;
+    };
+    const finish = (status: "set" | "partial", hostKnown: boolean) => {
+      next.titleRace = { status, ...info, hostKnown };
+      next.teamRefs = collegeTeamRefs(next);
+      next.awayRank = rank(next.awayTeamId);
+      next.homeRank = rank(next.homeTeamId);
+    };
+    const known = [g.awayTeamId, g.homeTeamId].filter((t) => !isTbd(t)).map(espnId);
     if (race.set) {
       const [top, other] = race.set;
-      const known = [g.awayTeamId, g.homeTeamId].filter((t) => !isTbd(t)).map(espnId);
       const add = race.set.filter((t) => !known.includes(t));
       // ESPN named a team that isn't one of ours: leave it to ESPN
       if (known.every((k) => race.set!.includes(k)) && add.length) {
@@ -199,19 +209,42 @@ async function fillTitleGames(games: Game[]): Promise<Game[]> {
           next.awayTeamId = `cfb-${other}`;
         } else if (isTbd(g.awayTeamId)) next.awayTeamId = `cfb-${add[0]}`;
         else next.homeTeamId = `cfb-${add[0]}`;
-        next.titleRace = {
-          status: "set",
-          ...info,
-          hostKnown: Boolean(g.neutralSite || race.seeded || known.length),
-        };
-        next.teamRefs = collegeTeamRefs(next);
-        const rank = (id: string) => {
-          const r = teamById(id)?.rank;
-          return r && r >= 1 && r <= 25 ? r : undefined;
-        };
-        next.awayRank = rank(next.awayTeamId);
-        next.homeRank = rank(next.homeTeamId);
+        finish("set", Boolean(g.neutralSite || race.seeded || known.length));
       }
+    } else if (race.partial) {
+      // fill the teams that have clinched, leaving the open spot TBD
+      const add = race.partial.teams.filter((t) => !known.includes(t)).slice(0, 2 - known.length);
+      const tbdSides = (["away", "home"] as const).filter((side) =>
+        isTbd(side === "away" ? g.awayTeamId : g.homeTeamId),
+      );
+      const named = (id: string) => {
+        const t = teamById(`cfb-${id}`);
+        const full = `${t?.city ?? ""} ${t?.name ?? ""}`.trim().toLowerCase();
+        return (["away", "home"] as const).find((side) => {
+          const hint = g.tbdHint?.[side]?.toLowerCase();
+          return hint && (hint === full || hint === t?.city?.toLowerCase());
+        });
+      };
+      let hostKnown = Boolean(g.neutralSite || known.length);
+      for (const id of add) {
+        // ESPN's placeholder names the side; else the clinched leader is projected to host
+        const hinted = named(id);
+        const lead = id === race.partial.teams[0] && race.partial.leads;
+        const side =
+          hinted && tbdSides.includes(hinted)
+            ? hinted
+            : tbdSides.includes(lead ? "home" : "away")
+              ? lead
+                ? "home"
+                : "away"
+              : tbdSides[0];
+        if (!side) break;
+        if (side === "away") next.awayTeamId = `cfb-${id}`;
+        else next.homeTeamId = `cfb-${id}`;
+        tbdSides.splice(tbdSides.indexOf(side), 1);
+        if (hinted || race.partial.locked) hostKnown = true;
+      }
+      if (add.length) finish("partial", hostKnown);
     }
     filled.set(g.id, next);
   }
@@ -258,6 +291,16 @@ export function addCollegeDetails(game: Game, comp: any) {
   const note = comp?.notes?.[0]?.headline;
   if (note) game.note = String(note);
   if (comp?.conferenceCompetition) game.conferenceGame = true;
+  for (const c of comp?.competitors ?? []) {
+    const name = String(c?.team?.displayName ?? "");
+    if (
+      Number(c?.team?.id) < 0 &&
+      name &&
+      name !== "TBD" &&
+      (c.homeAway === "away" || c.homeAway === "home")
+    )
+      game.tbdHint = { ...game.tbdHint, [c.homeAway]: name };
+  }
   game.teamRefs = collegeTeamRefs(game);
 }
 
