@@ -3751,6 +3751,867 @@
         }
       },
       "source": "betonlacrosse.com weekly preview (odds via draftkings); spread and total prices not shown; publish time unknown"
+    },
+    "preview-401819953": {
+      "home": "Denver Outlaws",
+      "away": "New York Atlas",
+      "commence": "2025-09-14T16:00:00Z",
+      "open": {
+        "spread": -1.5,
+        "total": 24.5,
+        "mlHome": -115,
+        "mlAway": -105,
+        "books": 1,
+        "at": null
+      },
+      "latest": {
+        "spread": -1.5,
+        "total": 24.5,
+        "mlHome": -115,
+        "mlAway": -105,
+        "books": 1,
+        "at": null
+      },
+      "books": {
+        "fanduel": {
+          "ml": [
+            -115,
+            -105
+          ],
+          "spread": [
+            -1.5,
+            null,
+            null
+          ],
+          "total": [
+            24.5,
+            null,
+            null
+          ],
+          "at": null
+        }
+      },
+      "source": "betonlacrosse.com weekly preview (odds via fanduel); spread and total prices not shown; publish time unknown"
+    },
+    "preview-401813930": {
+      "home": "Denver Outlaws",
+      "away": "California Redwoods",
+      "commence": "2025-09-01T19:00:00Z",
+      "open": {
+        "spread": -1.5,
+        "total": 25.5,
+        "mlHome": -185,
+        "mlAway": 150,
+        "books": 1,
+        "at": null
+      },
+      "latest": {
+        "spread": -1.5,
+        "total": 25.5,
+        "mlHome": -185,
+        "mlAway": 150,
+        "books": 1,
+        "at": null
+      },
+      "books": {
+        "betmgm": {
+          "ml": [
+            -185,
+            150
+          ],
+          "spread": [
+            -1.5,
+            null,
+            null
+          ],
+          "total": [
+            25.5,
+            null,
+            null
+          ],
+          "at": null
+        }
+      },
+      "source": "betonlacrosse.com weekly preview (odds via betmgm); spread and total prices not shown; publish time unknown"
+    },
+    "preview-401813929": {
+      "home": "New York Atlas",
+      "away": "Philadelphia Waterdogs",
+      "commence": "2025-09-01T16:00:00Z",
+      "open": {
+        "spread": -1.5,
+        "total": 25.5,
+        "mlHome": -162,
+        "mlAway": 132,
+        "books": 1,
+        "at": null
+      },
+      "latest": {
+        "spread": -1.5,
+        "total": 25.5,
+        "mlHome": -162,
+        "mlAway": 132,
+        "books": 1,
+        "at": null
+      },
+      "books": {
+        "fanduel": {
+          "ml": [
+            -162,
+            132
+          ],
+          "spread": [
+            -1.5,
+            null,
+            null
+          ],
+          "total": [
+            25.5,
+            null,
+            null
+          ],
+          "at": null
+        }
+      },
+      "source": "betonlacrosse.com weekly preview (odds via fanduel); spread and total prices not shown; publish time unknown"
+    },
+    "preview-401809222": {
+      "home": "California Redwoods",
+      "away": "Carolina Chaos",
+      "commence": "2025-08-24T00:30:00Z",
+      "open": {
+        "spread": -1.5,
+        "total": 23.5,
+        "mlHome": -122,
+        "mlAway": 100,
+        "books": 1,
+        "at": null
+      },
+      "latest": {
+        "spread": -1.5,
+        "total": 23.5,
+        "mlHome": -122,
+        "mlAway": 100,
+        "books": 1,
+        "at": null
+      },
+      "books": {
+        "fanduel": {
+          "ml": [
+            -122,
+            100
+          ],
+          "spread": [
+            -1.5,
+            null,
+            null
+          ],
+          "total": [
+            23.5,
+            null,
+            null
+          ],
+          "at": null
+        }
+      },
+      "source": "betonlacrosse.com weekly preview (odds via fanduel); spread and total prices not shown; publish time unknown"
+    },
+    "preview-401756782": {
+      "home": "Boston Cannons",
+      "away": "Maryland Whipsnakes",
+      "commence": "2025-08-09T23:00:00Z",
+      "open": {
+        "spread": -1.5,
+        "total": 25.5,
+        "mlHome": -122,
+        "mlAway": 100,
+        "books": 1,
+        "at": null
+      },
+      "latest": {
+        "spread": -1.5,
+        "total": 25.5,
+        "mlHome": -122,
+        "mlAway": 100,
+        "books": 1,
+        "at": null
+      },
+      "books": {
+        "fanduel": {
+          "ml": [
+            -122,
+            100
+          ],
+          "spread": [
+            -1.5,
+            null,
+            null
+          ],
+          "total": [
+            25.5,
+            null,
+            null
+          ],
+          "at": null
+        }
+      },
+      "source": "betonlacrosse.com weekly preview (odds via fanduel); spread and total prices not shown; publish time unknown"
+    },
+    "preview-401756775": {
+      "home": "New York Atlas",
+      "away": "Philadelphia Waterdogs",
+      "commence": "2025-08-09T17:00:00Z",
+      "open": {
+        "spread": -1.5,
+        "total": 25.0,
+        "mlHome": -188,
+        "mlAway": 145,
+        "books": 1,
+        "at": null
+      },
+      "latest": {
+        "spread": -1.5,
+        "total": 25.0,
+        "mlHome": -188,
+        "mlAway": 145,
+        "books": 1,
+        "at": null
+      },
+      "books": {
+        "draftkings": {
+          "ml": [
+            -188,
+            145
+          ],
+          "spread": [
+            -1.5,
+            null,
+            null
+          ],
+          "total": [
+            25.0,
+            null,
+            null
+          ],
+          "at": null
+        }
+      },
+      "source": "betonlacrosse.com weekly preview (odds via draftkings); spread and total prices not shown; publish time unknown"
+    },
+    "preview-401756804": {
+      "home": "Boston Cannons",
+      "away": "California Redwoods",
+      "commence": "2025-08-08T22:30:00Z",
+      "open": {
+        "spread": -1.5,
+        "total": 25.5,
+        "mlHome": -140,
+        "mlAway": 110,
+        "books": 1,
+        "at": null
+      },
+      "latest": {
+        "spread": -1.5,
+        "total": 25.5,
+        "mlHome": -140,
+        "mlAway": 110,
+        "books": 1,
+        "at": null
+      },
+      "books": {
+        "draftkings": {
+          "ml": [
+            -140,
+            110
+          ],
+          "spread": [
+            -1.5,
+            null,
+            null
+          ],
+          "total": [
+            25.5,
+            null,
+            null
+          ],
+          "at": null
+        }
+      },
+      "source": "betonlacrosse.com weekly preview (odds via draftkings); spread and total prices not shown; publish time unknown"
+    },
+    "preview-401756769": {
+      "home": "California Redwoods",
+      "away": "Maryland Whipsnakes",
+      "commence": "2025-08-03T00:00:00Z",
+      "open": {
+        "spread": 1.5,
+        "total": 25.5,
+        "mlHome": -105,
+        "mlAway": -125,
+        "books": 1,
+        "at": null
+      },
+      "latest": {
+        "spread": 1.5,
+        "total": 25.5,
+        "mlHome": -105,
+        "mlAway": -125,
+        "books": 1,
+        "at": null
+      },
+      "books": {
+        "caesars": {
+          "ml": [
+            -105,
+            -125
+          ],
+          "spread": [
+            1.5,
+            null,
+            null
+          ],
+          "total": [
+            25.5,
+            null,
+            null
+          ],
+          "at": null
+        }
+      },
+      "source": "betonlacrosse.com weekly preview (odds via caesars); spread and total prices not shown; publish time unknown"
+    },
+    "preview-401756771": {
+      "home": "Denver Outlaws",
+      "away": "New York Atlas",
+      "commence": "2025-08-02T17:00:00Z",
+      "open": {
+        "spread": 1.5,
+        "total": 25.5,
+        "mlHome": 100,
+        "mlAway": -122,
+        "books": 1,
+        "at": null
+      },
+      "latest": {
+        "spread": 1.5,
+        "total": 25.5,
+        "mlHome": 100,
+        "mlAway": -122,
+        "books": 1,
+        "at": null
+      },
+      "books": {
+        "fanduel": {
+          "ml": [
+            100,
+            -122
+          ],
+          "spread": [
+            1.5,
+            null,
+            null
+          ],
+          "total": [
+            25.5,
+            null,
+            null
+          ],
+          "at": null
+        }
+      },
+      "source": "betonlacrosse.com weekly preview (odds via fanduel); spread and total prices not shown; publish time unknown"
+    },
+    "preview-401756803": {
+      "home": "Boston Cannons",
+      "away": "Philadelphia Waterdogs",
+      "commence": "2025-08-02T02:30:00Z",
+      "open": {
+        "spread": -1.5,
+        "total": 25.5,
+        "mlHome": -115,
+        "mlAway": -115,
+        "books": 1,
+        "at": null
+      },
+      "latest": {
+        "spread": -1.5,
+        "total": 25.5,
+        "mlHome": -115,
+        "mlAway": -115,
+        "books": 1,
+        "at": null
+      },
+      "books": {
+        "draftkings": {
+          "ml": [
+            -115,
+            -115
+          ],
+          "spread": [
+            -1.5,
+            null,
+            null
+          ],
+          "total": [
+            25.5,
+            null,
+            null
+          ],
+          "at": null
+        }
+      },
+      "source": "betonlacrosse.com weekly preview (odds via draftkings); spread and total prices not shown; publish time unknown"
+    },
+    "preview-401756800": {
+      "home": "Denver Outlaws",
+      "away": "Carolina Chaos",
+      "commence": "2025-08-02T00:00:00Z",
+      "open": {
+        "spread": -1.5,
+        "total": 24.0,
+        "mlHome": -200,
+        "mlAway": 160,
+        "books": 1,
+        "at": null
+      },
+      "latest": {
+        "spread": -1.5,
+        "total": 24.0,
+        "mlHome": -200,
+        "mlAway": 160,
+        "books": 1,
+        "at": null
+      },
+      "books": {
+        "caesars": {
+          "ml": [
+            -200,
+            160
+          ],
+          "spread": [
+            -1.5,
+            null,
+            null
+          ],
+          "total": [
+            24.0,
+            null,
+            null
+          ],
+          "at": null
+        }
+      },
+      "source": "betonlacrosse.com weekly preview (odds via caesars); spread and total prices not shown; publish time unknown"
+    },
+    "preview-401756798": {
+      "home": "Utah Archers",
+      "away": "Denver Outlaws",
+      "commence": "2025-07-27T01:00:00Z",
+      "open": {
+        "spread": 1.5,
+        "total": 23.5,
+        "mlHome": 120,
+        "mlAway": -150,
+        "books": 1,
+        "at": null
+      },
+      "latest": {
+        "spread": 1.5,
+        "total": 23.5,
+        "mlHome": 120,
+        "mlAway": -150,
+        "books": 1,
+        "at": null
+      },
+      "books": {
+        "bet365": {
+          "ml": [
+            120,
+            -150
+          ],
+          "spread": [
+            1.5,
+            null,
+            null
+          ],
+          "total": [
+            23.5,
+            null,
+            null
+          ],
+          "at": null
+        }
+      },
+      "source": "betonlacrosse.com weekly preview (odds via bet365); spread and total prices not shown; publish time unknown"
+    },
+    "preview-401756796": {
+      "home": "Carolina Chaos",
+      "away": "Philadelphia Waterdogs",
+      "commence": "2025-07-26T22:30:00Z",
+      "open": {
+        "spread": 1.5,
+        "total": 21.5,
+        "mlHome": 120,
+        "mlAway": -150,
+        "books": 1,
+        "at": null
+      },
+      "latest": {
+        "spread": 1.5,
+        "total": 21.5,
+        "mlHome": 120,
+        "mlAway": -150,
+        "books": 1,
+        "at": null
+      },
+      "books": {
+        "bet365": {
+          "ml": [
+            120,
+            -150
+          ],
+          "spread": [
+            1.5,
+            null,
+            null
+          ],
+          "total": [
+            21.5,
+            null,
+            null
+          ],
+          "at": null
+        }
+      },
+      "source": "betonlacrosse.com weekly preview (odds via bet365); spread and total prices not shown; publish time unknown"
+    },
+    "preview-401756773": {
+      "home": "New York Atlas",
+      "away": "Maryland Whipsnakes",
+      "commence": "2025-07-26T02:30:00Z",
+      "open": {
+        "spread": -1.5,
+        "total": 25.5,
+        "mlHome": -180,
+        "mlAway": 140,
+        "books": 1,
+        "at": null
+      },
+      "latest": {
+        "spread": -1.5,
+        "total": 25.5,
+        "mlHome": -180,
+        "mlAway": 140,
+        "books": 1,
+        "at": null
+      },
+      "books": {
+        "draftkings": {
+          "ml": [
+            -180,
+            140
+          ],
+          "spread": [
+            -1.5,
+            null,
+            null
+          ],
+          "total": [
+            25.5,
+            null,
+            null
+          ],
+          "at": null
+        }
+      },
+      "source": "betonlacrosse.com weekly preview (odds via draftkings); spread and total prices not shown; publish time unknown"
+    },
+    "preview-401756802": {
+      "home": "Utah Archers",
+      "away": "California Redwoods",
+      "commence": "2025-07-26T00:00:00Z",
+      "open": {
+        "spread": 1.5,
+        "total": 23.5,
+        "mlHome": 110,
+        "mlAway": -140,
+        "books": 1,
+        "at": null
+      },
+      "latest": {
+        "spread": 1.5,
+        "total": 23.5,
+        "mlHome": 110,
+        "mlAway": -140,
+        "books": 1,
+        "at": null
+      },
+      "books": {
+        "draftkings": {
+          "ml": [
+            110,
+            -140
+          ],
+          "spread": [
+            1.5,
+            null,
+            null
+          ],
+          "total": [
+            23.5,
+            null,
+            null
+          ],
+          "at": null
+        }
+      },
+      "source": "betonlacrosse.com weekly preview (odds via draftkings); spread and total prices not shown; publish time unknown"
+    },
+    "preview-401756781": {
+      "home": "Denver Outlaws",
+      "away": "Boston Cannons",
+      "commence": "2025-07-19T19:00:00Z",
+      "open": {
+        "spread": -1.5,
+        "total": 24.5,
+        "mlHome": -155,
+        "mlAway": 122,
+        "books": 1,
+        "at": null
+      },
+      "latest": {
+        "spread": -1.5,
+        "total": 24.5,
+        "mlHome": -155,
+        "mlAway": 122,
+        "books": 1,
+        "at": null
+      },
+      "books": {
+        "fanduel": {
+          "ml": [
+            -155,
+            122
+          ],
+          "spread": [
+            -1.5,
+            null,
+            null
+          ],
+          "total": [
+            24.5,
+            null,
+            null
+          ],
+          "at": null
+        }
+      },
+      "source": "betonlacrosse.com weekly preview (odds via fanduel); spread and total prices not shown; publish time unknown"
+    },
+    "preview-401756770": {
+      "home": "Philadelphia Waterdogs",
+      "away": "Maryland Whipsnakes",
+      "commence": "2025-07-20T00:00:00Z",
+      "open": {
+        "spread": -1.5,
+        "total": 24.5,
+        "mlHome": -140,
+        "mlAway": 110,
+        "books": 1,
+        "at": null
+      },
+      "latest": {
+        "spread": -1.5,
+        "total": 24.5,
+        "mlHome": -140,
+        "mlAway": 110,
+        "books": 1,
+        "at": null
+      },
+      "books": {
+        "bet365": {
+          "ml": [
+            -140,
+            110
+          ],
+          "spread": [
+            -1.5,
+            null,
+            null
+          ],
+          "total": [
+            24.5,
+            null,
+            null
+          ],
+          "at": null
+        }
+      },
+      "source": "betonlacrosse.com weekly preview (odds via bet365); spread and total prices not shown; publish time unknown"
+    },
+    "preview-401809304": {
+      "home": "Maryland Whipsnakes",
+      "away": "Philadelphia Waterdogs",
+      "commence": "2025-08-23T22:00:00Z",
+      "open": {
+        "spread": 1.5,
+        "total": 24.5,
+        "mlHome": -110,
+        "mlAway": -120,
+        "books": 1,
+        "at": null
+      },
+      "latest": {
+        "spread": 1.5,
+        "total": 24.5,
+        "mlHome": -110,
+        "mlAway": -120,
+        "books": 1,
+        "at": null
+      },
+      "books": {
+        "draftkings": {
+          "ml": [
+            -110,
+            -120
+          ],
+          "spread": [
+            1.5,
+            null,
+            null
+          ],
+          "total": [
+            24.5,
+            null,
+            null
+          ],
+          "at": null
+        }
+      },
+      "source": "betonlacrosse.com weekly preview (odds via draftkings); spread and total prices not shown; publish time unknown"
+    },
+    "preview-401756801": {
+      "home": "Carolina Chaos",
+      "away": "Utah Archers",
+      "commence": "2025-07-19T01:00:00Z",
+      "open": {
+        "spread": 1.5,
+        "total": 21.5,
+        "mlHome": 110,
+        "mlAway": -140,
+        "books": 1,
+        "at": null
+      },
+      "latest": {
+        "spread": 1.5,
+        "total": 21.5,
+        "mlHome": 110,
+        "mlAway": -140,
+        "books": 1,
+        "at": null
+      },
+      "books": {
+        "draftkings": {
+          "ml": [
+            110,
+            -140
+          ],
+          "spread": [
+            1.5,
+            null,
+            null
+          ],
+          "total": [
+            21.5,
+            null,
+            null
+          ],
+          "at": null
+        }
+      },
+      "source": "betonlacrosse.com weekly preview (odds via draftkings); spread and total prices not shown; publish time unknown"
+    },
+    "preview-401756805": {
+      "home": "Utah Archers",
+      "away": "Carolina Chaos",
+      "commence": "2025-08-09T01:00:00Z",
+      "open": {
+        "spread": 1.5,
+        "total": 21.5,
+        "mlHome": 118,
+        "mlAway": -144,
+        "books": 1,
+        "at": null
+      },
+      "latest": {
+        "spread": 1.5,
+        "total": 21.5,
+        "mlHome": 118,
+        "mlAway": -144,
+        "books": 1,
+        "at": null
+      },
+      "books": {
+        "fanduel": {
+          "ml": [
+            118,
+            -144
+          ],
+          "spread": [
+            1.5,
+            null,
+            null
+          ],
+          "total": [
+            21.5,
+            null,
+            null
+          ],
+          "at": null
+        }
+      },
+      "source": "betonlacrosse.com weekly preview (odds via fanduel); spread and total prices not shown; publish time unknown"
+    },
+    "preview-401756799": {
+      "home": "California Redwoods",
+      "away": "New York Atlas",
+      "commence": "2025-07-18T22:30:00Z",
+      "open": {
+        "spread": 1.5,
+        "total": 21.5,
+        "mlHome": 138,
+        "mlAway": -170,
+        "books": 1,
+        "at": null
+      },
+      "latest": {
+        "spread": 1.5,
+        "total": 21.5,
+        "mlHome": 138,
+        "mlAway": -170,
+        "books": 1,
+        "at": null
+      },
+      "books": {
+        "fanduel": {
+          "ml": [
+            138,
+            -170
+          ],
+          "spread": [
+            1.5,
+            null,
+            null
+          ],
+          "total": [
+            21.5,
+            null,
+            null
+          ],
+          "at": null
+        }
+      },
+      "source": "betonlacrosse.com weekly preview (odds via fanduel); spread and total prices not shown; publish time unknown"
     }
   }
 }
