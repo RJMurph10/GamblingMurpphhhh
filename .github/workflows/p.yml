@@ -1,0 +1,8 @@
+name: ccg probe
+on: { push: { branches: [ccg-probe] } }
+jobs:
+  p:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - run: python3 probe.py
