@@ -9,7 +9,31 @@ import { nflverseGameYac } from "@/lib/nfl/nflverse-yac.server";
 import { readFinal, writeFinal } from "@/lib/shared/final-cache.server";
 import type { BoxScoreLine, Drive, DriveResult, Game, TeamGameStats } from "@/data/shared/games";
 import { registerTeams, teamByAbbr, teamById } from "@/data/shared/teams";
-import { CORE_ODDS, FEEDS, HISTORICAL_ODDS_CACHE_TTL_MS, SEASON, SUMMARY, asProbability, cached, collegeTeamRefs, eventLeague, extractYacValue, fetchCoreProbabilityRecords, fetchHistoricalOdds, fetchJson, formatLocation, mapEvent, optionalNumber, parseGameInfo, parsePredictor, parseSeasonLeaders, parseTimeouts, prepareCollege, teamOf, weekScoreboardUrl } from "@/lib/shared/espn-core.server";
+import {
+  CORE_ODDS,
+  FEEDS,
+  HISTORICAL_ODDS_CACHE_TTL_MS,
+  SEASON,
+  SUMMARY,
+  asProbability,
+  cached,
+  collegeTeamRefs,
+  eventLeague,
+  extractYacValue,
+  fetchCoreProbabilityRecords,
+  fetchHistoricalOdds,
+  fetchJson,
+  formatLocation,
+  mapEvent,
+  optionalNumber,
+  parseGameInfo,
+  parsePredictor,
+  parseSeasonLeaders,
+  parseTimeouts,
+  prepareCollege,
+  teamOf,
+  weekScoreboardUrl,
+} from "@/lib/shared/espn-core.server";
 import { fetchTeamRoster } from "@/lib/shared/espn-teams-players.server";
 import { addCollegeDetails } from "@/lib/cfb/cfb-espn.server";
 
@@ -895,13 +919,21 @@ export async function fetchGameDetail(rawEventId: string): Promise<Game | null> 
     if (ttl) quietGames.set(storeKey, { until: Date.now() + ttl, game });
     else quietGames.delete(storeKey);
   } else quietGames.delete(storeKey);
-  if (game && game.status === "final" && Number.isFinite(kickoff) && Date.now() - kickoff > 36 * 3_600_000) {
+  if (
+    game &&
+    game.status === "final" &&
+    Number.isFinite(kickoff) &&
+    Date.now() - kickoff > 36 * 3_600_000
+  ) {
     await writeFinal(storeKey, game);
   }
   return game;
 }
 
-async function loadGameDetail(league: ReturnType<typeof eventLeague>["league"], eventId: string): Promise<Game | null> {
+async function loadGameDetail(
+  league: ReturnType<typeof eventLeague>["league"],
+  eventId: string,
+): Promise<Game | null> {
   const college = league === "cfb";
   const SUMMARY = FEEDS[league].summary;
   const game = await cached(`game-${league}-${eventId}`, async (): Promise<Game | null> => {
@@ -920,6 +952,8 @@ async function loadGameDetail(league: ReturnType<typeof eventLeague>["league"], 
     if (college) {
       base.id = `cfb-${eventId}`;
       addCollegeDetails(base, comp);
+      // the game summary carries ESPN's note ("Edward Jones Big 12 Championship") on the header, not the competition
+      if (!base.note && d?.header?.gameNote) base.note = String(d.header.gameNote);
     }
 
     const summaryProbabilities = Array.isArray(d?.winprobability) ? d.winprobability : [];
@@ -1227,12 +1261,8 @@ async function loadGameDetail(league: ReturnType<typeof eventLeague>["league"], 
       if (found) base.timeouts = found;
     }
 
-    const awayStats = d?.boxscore?.teams?.find(
-      (t: any) => teamOf(t?.team)?.id === base.awayTeamId,
-    );
-    const homeStats = d?.boxscore?.teams?.find(
-      (t: any) => teamOf(t?.team)?.id === base.homeTeamId,
-    );
+    const awayStats = d?.boxscore?.teams?.find((t: any) => teamOf(t?.team)?.id === base.awayTeamId);
+    const homeStats = d?.boxscore?.teams?.find((t: any) => teamOf(t?.team)?.id === base.homeTeamId);
     if (awayStats) base.stats.away = mapTeamStats(awayStats.statistics ?? []);
     if (homeStats) base.stats.home = mapTeamStats(homeStats.statistics ?? []);
 
