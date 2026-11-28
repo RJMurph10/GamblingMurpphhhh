@@ -30,6 +30,25 @@ export interface NllGame {
   ot: boolean;
   venue?: string;
   city?: string;
+  /** TV / streaming ("ESPN+", "TSN"). */
+  broadcast?: string;
+}
+
+/** An NLL story from ESPN. */
+export interface NllNews {
+  headline: string;
+  description: string;
+  published: string;
+  link: string | null;
+  image: string | null;
+}
+
+/** A highlight video for one game, from ESPN. */
+export interface NllVideo {
+  headline: string;
+  link: string | null;
+  thumbnail: string | null;
+  duration: number | null;
 }
 
 export interface NllSide {
@@ -151,7 +170,10 @@ export function latestByBook(snaps: NllSnapshot[]): NllSnapshot[] {
     const prev = by.get(s.book);
     if (!prev || s.captured > prev.captured) by.set(s.book, s);
   }
-  return [...by.values()].sort((a, b) => a.book.localeCompare(b.book));
+  return [...by.values()].sort(
+    (a, b) =>
+      +(b.book === "draftkings") - +(a.book === "draftkings") || a.book.localeCompare(b.book),
+  );
 }
 
 /** "None" → no lines yet; "open" → captured, but not in the last 3 hours before the start; "close" → captured within 3 hours of the start. */
@@ -248,7 +270,19 @@ export interface NllLine {
   mlHome: number | null;
   mlAway: number | null;
   books: number;
+  /** Where the line comes from: DraftKings (the primary book) or the median of the other books. */
+  source: "draftkings" | "median";
+  /** DraftKings' prices for the shown line, when it's DraftKings'. */
+  prices?: {
+    spreadHome: number | null;
+    spreadAway: number | null;
+    over: number | null;
+    under: number | null;
+  };
 }
+
+/** The book whose line the site shows and grades against. */
+export const PRIMARY_BOOK = "draftkings";
 
 const median = (xs: number[]) => {
   if (!xs.length) return null;
@@ -270,6 +304,31 @@ export function consensus(snaps: NllSnapshot[]): NllLine | null {
     mlHome: median(latest.filter((s) => s.moneyline).map((s) => s.moneyline!.home)),
     mlAway: median(latest.filter((s) => s.moneyline).map((s) => s.moneyline!.away)),
     books: latest.length,
+    source: "median",
+  };
+}
+
+/**
+ * The line the site shows and grades: DraftKings' latest, market by market. A market DraftKings didn't
+ * have (or a game with no DraftKings screenshot) falls back to the median of the other books.
+ */
+export function primaryLine(snaps: NllSnapshot[]): NllLine | null {
+  const med = consensus(snaps);
+  const dk = latestByBook(snaps).find((s) => s.book === PRIMARY_BOOK);
+  if (!dk || !med) return med;
+  return {
+    spread: dk.spread ? dk.spread.home[0] : med.spread,
+    total: dk.total ? dk.total.line : med.total,
+    mlHome: dk.moneyline ? dk.moneyline.home : med.mlHome,
+    mlAway: dk.moneyline ? dk.moneyline.away : med.mlAway,
+    books: med.books,
+    source: "draftkings",
+    prices: {
+      spreadHome: dk.spread?.home[1] ?? null,
+      spreadAway: dk.spread?.away[1] ?? null,
+      over: dk.total?.over ?? null,
+      under: dk.total?.under ?? null,
+    },
   };
 }
 
@@ -297,7 +356,7 @@ export function teamLineRecord(
   const ou = { o: 0, u: 0, p: 0 };
   for (const g of season.games) {
     if (g.home.teamId !== teamId && g.away.teamId !== teamId) continue;
-    const line = consensus(snapshotsFor(g, season, file));
+    const line = primaryLine(snapshotsFor(g, season, file));
     const r = line ? lineResult(g, line) : null;
     if (!r) continue;
     if (r.cover) {

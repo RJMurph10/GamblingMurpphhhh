@@ -12,7 +12,8 @@ import {
   snapshotsFor,
   type NllStanding,
 } from "@/lib/nll/nll";
-import { useNllLines, useNllSeason } from "@/lib/nll/use-nll";
+import { useNllLines, useNllNews, useNllSeason } from "@/lib/nll/use-nll";
+import { NllNewsPanel } from "@/components/nll/NllMedia";
 
 export const Route = createFileRoute("/nll/")({
   head: () => ({
@@ -69,6 +70,7 @@ function NllDashboard() {
   const [season, setSeason] = useState(nllSeasonOf());
   const q = useNllSeason(season);
   const linesQ = useNllLines(season);
+  const news = useNllNews();
   const s = q.data;
   const lines = linesQ.data ?? null;
   const p = useMemo(() => nllPulse(s?.games ?? []), [s]);
@@ -225,6 +227,10 @@ function NllDashboard() {
             </Link>
           </Panel>
           <StandingsPanel rows={table} />
+          <NllNewsPanel
+            items={(news.data ?? []).slice(0, 6)}
+            empty={news.isLoading ? "Loading…" : undefined}
+          />
         </aside>
       </div>
     </>
