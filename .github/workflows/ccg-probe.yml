@@ -3,7 +3,7 @@ on: { push: { branches: [ccg-probe4] } }
 jobs:
   p:
     runs-on: ubuntu-latest
-    timeout-minutes: 60
+    timeout-minutes: 120
     steps:
       - uses: actions/checkout@v4
       - run: python3 probe/snow0712.py

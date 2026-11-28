@@ -29,18 +29,22 @@ for season in range(2007, 2013):
             nm = lambda x: [x["team"].get(k, "") for k in ("location", "displayName", "shortDisplayName", "abbreviation", "name")]
             games.append(dict(id=e["id"], season=season, t=t, hid=hid, home=nm(h), away=nm(a), hs=int(h.get("score") or 0), as_=int(a.get("score") or 0)))
     print("season", season, "candidates so far", len(games), flush=True)
+# one weather request per stadium for all six seasons, only where snow is possible
 groups = {}
-for g in games: groups.setdefault((g["hid"], g["season"]), []).append(g)
+for g in games:
+    lat, lon, _ = STAD[g["hid"]]
+    if lat >= 35.5 or (lon <= -102 and lat >= 32):
+        groups.setdefault(g["hid"], []).append(g)
+print("stadiums", len(groups), "games", sum(map(len, groups.values())), flush=True)
 snow = []
-for i, ((hid, season), lst) in enumerate(groups.items()):
+for i, (hid, lst) in enumerate(groups.items()):
     lat, lon, _ = STAD[hid]
-    ts = [g["t"] for g in lst]
-    q = (f"https://archive-api.open-meteo.com/v1/archive?latitude={lat}&longitude={lon}&start_date={(min(ts)-dt.timedelta(days=1)).date()}"
-         f"&end_date={(max(ts)+dt.timedelta(days=1)).date()}&hourly=temperature_2m,precipitation,rain,snowfall,wind_speed_10m,wind_gusts_10m"
+    q = (f"https://archive-api.open-meteo.com/v1/archive?latitude={lat}&longitude={lon}&start_date=2007-10-01"
+         f"&end_date=2012-12-31&hourly=temperature_2m,precipitation,rain,snowfall,wind_speed_10m,wind_gusts_10m"
          f"&temperature_unit=fahrenheit&wind_speed_unit=mph&precipitation_unit=inch&timezone=GMT")
     h = (get(q) or {}).get("hourly")
-    time.sleep(0.6)
-    if not h: print("no weather", hid, season); continue
+    time.sleep(1.0)
+    if not h: print("no weather", hid, flush=True); continue
     at = {tt[:13]: k for k, tt in enumerate(h["time"])}
     for g in lst:
         i0 = at.get(g["t"].strftime("%Y-%m-%dT%H"))
@@ -50,6 +54,7 @@ for i, ((hid, season), lst) in enumerate(groups.items()):
         if sn < 0.05: continue
         g.update(snow_in=round(sn, 3), wind=h["wind_speed_10m"][i0], gust=max(h["wind_gusts_10m"][k] or 0 for k in win), temp=h["temperature_2m"][i0])
         snow.append(g)
+    if i % 10 == 0: print("weather", i, "of", len(groups), "snow so far", len(snow), flush=True)
 print("snow games", len(snow), flush=True)
 # sportsbookreviewsonline totals
 norm = lambda s: re.sub(r"[^a-z]", "", s.lower())
