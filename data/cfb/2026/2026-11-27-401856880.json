@@ -7,18 +7,18 @@
   "id": "277",
   "abbr": "WVU",
   "name": "West Virginia Mountaineers",
-  "score": 0
+  "score": 7
  },
  "home": {
   "id": "254",
   "abbr": "UTAH",
   "name": "Utah Utes",
-  "score": 0
+  "score": 38
  },
  "neutral": false,
  "venue": "Rice-Eccles Stadium",
  "seasonType": 2,
- "state": "pre",
+ "state": "in",
  "lines": {
   "open": {
    "at": "2026-11-22T21:17:00.667Z",

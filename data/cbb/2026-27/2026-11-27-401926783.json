@@ -2,23 +2,23 @@
  "id": "401926783",
  "league": "cbb",
  "date": "2026-11-28T03:30Z",
- "name": "JXST VS OMA",
+ "name": "OMA VS JXST",
  "away": {
-  "id": "55",
-  "abbr": "JXST",
-  "name": "Jacksonville State Gamecocks",
-  "score": 0
- },
- "home": {
   "id": "2437",
   "abbr": "OMA",
   "name": "Omaha Mavericks",
-  "score": 0
+  "score": 26
+ },
+ "home": {
+  "id": "55",
+  "abbr": "JXST",
+  "name": "Jacksonville State Gamecocks",
+  "score": 21
  },
  "neutral": true,
  "venue": "Resorts World Event Center",
  "seasonType": 2,
- "state": "pre",
+ "state": "in",
  "lines": {
   "open": {
    "at": "2026-11-27T00:00:48.093Z",

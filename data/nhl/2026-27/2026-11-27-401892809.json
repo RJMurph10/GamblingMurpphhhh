@@ -7,18 +7,18 @@
   "id": "124292",
   "abbr": "SEA",
   "name": "Seattle Kraken",
-  "score": 0
+  "score": 4
  },
  "home": {
   "id": "6",
   "abbr": "EDM",
   "name": "Edmonton Oilers",
-  "score": 0
+  "score": 2
  },
  "neutral": false,
  "venue": "Rogers Place",
  "seasonType": 2,
- "state": "pre",
+ "state": "post",
  "lines": {
   "open": {
    "at": "2026-11-26T19:41:12.949Z",
@@ -2510,5 +2510,9 @@
    "Jake O'Brien",
    "SEA"
   ]
+ },
+ "final": {
+  "away": 4,
+  "home": 2
  }
 }

@@ -7,18 +7,18 @@
   "id": "70",
   "abbr": "IDHO",
   "name": "Idaho Vandals",
-  "score": 0
+  "score": 61
  },
  "home": {
   "id": "265",
   "abbr": "WSU",
   "name": "Washington State Cougars",
-  "score": 0
+  "score": 69
  },
  "neutral": false,
  "venue": "Beasley Coliseum",
  "seasonType": 2,
- "state": "pre",
+ "state": "post",
  "lines": {
   "open": {
    "at": "2026-11-27T02:54:39.298Z",
@@ -933,5 +933,9 @@
    ]
   }
  },
- "props": {}
+ "props": {},
+ "final": {
+  "away": 61,
+  "home": 69
+ }
 }
