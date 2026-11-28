@@ -176,17 +176,6 @@ export function pllDraftOf(name: string): PllDraftEntry[] {
   return (draftIndex.get(draftKey(name)) ?? []).sort((x, y) => x.season - y.season).slice(-1);
 }
 
-/**
- * Context for a draft slot that doesn't tell the real story (a pick spent on a player headed elsewhere,
- * who later joined a different club outside the draft). Keyed by player name; written by hand.
- */
-const DRAFT_NOTES: Record<string, string> = {
-  "Jared Bernhardt":
-    "Went 19th only because he was headed to football after college; committed to lacrosse, he'd have been a top pick. Never played for the Chaos. Joined the Outlaws in 2025 outside the draft, in effect a free-agent signing.",
-};
-
-export const pllDraftNote = (name: string): string | undefined => DRAFT_NOTES[name];
-
 /** Every championship game, newest first. */
 export const pllChampionships = (): PllChampionship[] =>
   [...(extra.champions ?? [])].sort((a, b) => b.season - a.season);
