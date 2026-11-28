@@ -1,9 +1,15 @@
-name: odds archive probe 2
+name: odds archive probe 3
 on: { push: { branches: [ccg-probe4] } }
 jobs:
   p:
     runs-on: ubuntu-latest
     steps:
       - run: |
-          curl -sL -A 'Mozilla/5.0' "https://www.sportsbookreviewsonline.com/scoresoddsarchives/ncaafootball/ncaafootballoddsarchives.htm" | grep -oi 'href="[^"]*"' | grep -i "ncaa\|xls\|football" | head -40 | sed 's/^/LINK /'
-          curl -s "https://api.github.com/repos/sportsdataverse/cfbfastR-data/contents/betting/csv" | grep -o '"name": "[^"]*"' | head -40 | sed 's/^/GH /'
+          curl -sL -A 'Mozilla/5.0' "https://www.sportsbookreviewsonline.com/scoresoddsarchives/ncaa-football-2010-11" -o p.html
+          wc -c p.html; grep -oi 'href="[^"]*\.\(xlsx\|xls\|csv\)[^"]*"' p.html | head | sed 's/^/LINK /'
+          python3 - <<'PY'
+          import re;s=open('p.html',encoding='utf8',errors='ignore').read()
+          t=re.findall(r'<tr.*?</tr>',s,re.S)[:8]
+          for r in t: print('ROW',re.sub(r'<[^>]+>','|',re.sub(r'\s+',' ',r))[:250])
+          print('NROWS',len(re.findall(r'<tr',s)))
+          PY
