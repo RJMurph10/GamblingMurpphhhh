@@ -5,12 +5,14 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - run: |
-          curl -s -A "Mozilla/5.0" https://gamblingnfl.lovable.app/cbb | head -c 1300; echo
-          google-chrome --headless=new --no-sandbox --disable-gpu --virtual-time-budget=25000 --dump-dom https://gamblingnfl.lovable.app/cbb > dom.html 2>/dev/null; wc -c dom.html
           python3 - <<'PY'
-          import re,html
-          t=re.sub(r"<script.*?</script>|<style.*?</style>","",open("dom.html").read(),flags=re.S)
-          t=html.unescape(re.sub(r"<[^>]+>"," ",t)); t=re.sub(r"\s+"," ",t)
-          for k in ("Live games","in progress","Upcoming games","Recent games","Could not load","Loading games","No completed games","games graded","Season Pulse"):
-              i=t.find(k); print("FIND",k, i, t[max(0,i-80):i+220] if i>=0 else "")
+          import json, urllib.request
+          S="https://site.api.espn.com/apis/site/v2/sports/basketball/mens-college-basketball"
+          def g(u):
+              r=urllib.request.urlopen(urllib.request.Request(u,headers={"User-Agent":"Mozilla/5.0"}),timeout=20); return json.loads(r.read())
+          for q in ("/groups","/groups?limit=100","/groups?groups=50","/groups?groups=50&limit=100"):
+              try:
+                  d=g(S+q); ch=d["groups"][0].get("children",[]); print("GROUPS",q,len(ch),[c.get("abbreviation") or c.get("shortName") for c in ch][-8:], sum(len(c.get("teams",[])) for c in ch))
+              except Exception as e: print("GROUPS",q,"ERR",e)
           PY
+          curl -s -o /dev/null -D - -H "Origin: https://example.lovable.app" "https://site.api.espn.com/apis/site/v2/sports/basketball/mens-college-basketball/scoreboard?groups=50&limit=5" | grep -i "access-control\|HTTP/"
