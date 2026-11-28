@@ -154,17 +154,14 @@ const draftKey = (s: string) =>
     .replace(/[\u0300-\u036f]/g, "")
     .replace(/\b(jr|sr|ii|iii|iv)\b/g, "")
     .replace(/[^a-z]/g, "");
-const collegeKey = (s: string) =>
-  draftKey(s.replace(/\bSaint\b/gi, "St").replace(/\bUniversity\b|\bof\b/gi, ""));
 
 let draftIndex: Map<string, PllDraftEntry[]> | null = null;
 
 /**
  * Where a player was drafted (season, club, round, pick), matched on name. A player picked twice (taken,
- * went back to school, entered again) gets only his latest pick. Two different players with one name are told apart by
- * college; with no college to go on, a name that two colleges share shows nothing rather than a guess.
+ * went back to school or transferred, entered again) gets only his latest pick.
  */
-export function pllDraftOf(name: string, college?: string | null): PllDraftEntry[] {
+export function pllDraftOf(name: string): PllDraftEntry[] {
   if (!draftIndex) {
     draftIndex = new Map();
     for (const [teamId, years] of Object.entries(extra.drafts ?? {}))
@@ -175,19 +172,8 @@ export function pllDraftOf(name: string, college?: string | null): PllDraftEntry
           draftIndex.set(k, [...(draftIndex.get(k) ?? []), e]);
         }
   }
-  const all = (draftIndex.get(draftKey(name)) ?? []).sort((a, b) => a.season - b.season);
-  const colleges = new Set(all.map((e) => collegeKey(e.college)));
-  // picked more than once (went back to school, entered again): only the latest pick counts
-  const latest = (xs: PllDraftEntry[]) => xs.slice(-1);
-  if (colleges.size <= 1) return latest(all);
-  if (!college) return [];
-  const c = collegeKey(college);
-  return latest(
-    all.filter((e) => {
-      const k = collegeKey(e.college);
-      return k === c || k.includes(c) || c.includes(k);
-    }),
-  );
+  // picked more than once (went back to school or transferred, entered again): only the latest pick counts
+  return (draftIndex.get(draftKey(name)) ?? []).sort((x, y) => x.season - y.season).slice(-1);
 }
 
 /** Every championship game, newest first. */

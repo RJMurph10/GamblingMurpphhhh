@@ -44,7 +44,7 @@ const ordinal = (n: number) =>
 
 /** "Drafted 2021 · 1st round, 1st overall · Atlas" (his latest pick if he was drafted twice). */
 function Drafted({ p, season }: { p: PllPlayer; season?: PllSeason }) {
-  const picks = pllDraftOf(p.name, p.bio.college);
+  const picks = pllDraftOf(p.name);
   if (!picks.length) return null;
   return (
     <div className="-mt-4 mb-6 space-y-1 font-mono text-xs text-mute">

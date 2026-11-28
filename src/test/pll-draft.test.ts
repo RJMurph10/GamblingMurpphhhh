@@ -9,11 +9,10 @@ describe("pllDraftOf", () => {
   it("keeps only the latest pick for a player drafted twice", () => {
     expect(pllDraftOf("Jeff Teat").map((d) => [d.season, d.team])).toEqual([[2021, "Atlas"]]);
   });
-  it("tells same-named players apart by college, and guesses nothing without one", () => {
-    expect(pllDraftOf("Dylan Hess", "Georgetown").map((d) => d.team)).toEqual(["Chaos"]);
-    expect(pllDraftOf("Dylan Hess")).toEqual([]);
+  it("treats a transfer picked twice as one player (latest pick)", () => {
+    expect(pllDraftOf("Dylan Hess").map((d) => [d.season, d.team])).toEqual([[2025, "Waterdogs"]]);
   });
-  it("matches Saint/St spellings as one college", () => {
+  it("keeps the latest pick when the college is spelled two ways", () => {
     expect(pllDraftOf("Levi Anderson").map((d) => d.season)).toEqual([2024]);
   });
 });
