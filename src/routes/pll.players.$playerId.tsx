@@ -4,7 +4,7 @@ import { PageTitle, Panel, PanelHeader, StatCard } from "@/components/shared/boo
 import { PllLogo, PllSeasonPicker } from "@/components/pll/PllBits";
 import { collegeLogoFor } from "@/lib/pll/colleges";
 import { teamOf, type PllGame, type PllSeason } from "@/lib/pll/pll";
-import { posAbbr } from "@/lib/pll/players";
+import { pllDraftOf, posAbbr } from "@/lib/pll/players";
 import {
   playerKind,
   pllPlayer,
@@ -36,6 +36,42 @@ function findGame(season: PllSeason | undefined, g: PllPlayerGame): PllGame | un
       Math.abs(new Date(x.date).getTime() - t) <= 1.5 * 86_400_000 &&
       [x.home.teamId, x.away.teamId].includes(g.teamId) &&
       [x.home.teamId, x.away.teamId].includes(g.opponentId),
+  );
+}
+
+const ordinal = (n: number) =>
+  `${n}${["th", "st", "nd", "rd"][n % 100 > 10 && n % 100 < 14 ? 0 : n % 10] ?? "th"}`;
+
+/** "Drafted 2021 · 1st round, 1st overall · Atlas", one line per time he was picked. */
+function Drafted({ p, season }: { p: PllPlayer; season?: PllSeason }) {
+  const picks = pllDraftOf(p.name, p.bio.college);
+  if (!picks.length) return null;
+  return (
+    <div className="-mt-4 mb-6 space-y-1 font-mono text-xs text-mute">
+      {picks.map((d) => (
+        <div
+          key={`${d.season}-${d.teamId}`}
+          className="flex flex-wrap items-center gap-x-2 gap-y-1"
+        >
+          <span className="label-mono">Drafted {d.season}</span>
+          <span>
+            {ordinal(Number(d.round))} round, {ordinal(Number(d.pick))} overall
+          </span>
+          <span>·</span>
+          <Link
+            to="/pll/teams/$teamId"
+            params={{ teamId: d.teamId }}
+            className="inline-flex items-center gap-1.5 hover:text-acc"
+          >
+            <PllLogo team={teamOf(season, d.teamId)} className="size-4" />
+            {d.team}
+          </Link>
+          {d.college && !p.bio.college ? (
+            <span className="text-faint">from {d.college}</span>
+          ) : null}
+        </div>
+      ))}
+    </div>
   );
 }
 
@@ -110,6 +146,7 @@ function PllPlayerPage() {
         }
       />
       <Bio p={p} />
+      <Drafted p={p} season={q.data} />
       {seasons.length > 1 ? (
         <div className="mb-4">
           <PllSeasonPicker season={season} onChange={setPicked} seasons={seasons} />

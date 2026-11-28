@@ -145,6 +145,47 @@ export const pllCoaches = (teamId: string, season: number): string[] =>
 export const pllDraft = (teamId: string, season: number): PllDraftPick[] =>
   extra.drafts?.[teamId]?.[String(season)] ?? [];
 
+export type PllDraftEntry = PllDraftPick & { season: number; teamId: string; team: string };
+
+const draftKey = (s: string) =>
+  s
+    .toLowerCase()
+    .normalize("NFD")
+    .replace(/[\u0300-\u036f]/g, "")
+    .replace(/\b(jr|sr|ii|iii|iv)\b/g, "")
+    .replace(/[^a-z]/g, "");
+const collegeKey = (s: string) =>
+  draftKey(s.replace(/\bSaint\b/gi, "St").replace(/\bUniversity\b|\bof\b/gi, ""));
+
+let draftIndex: Map<string, PllDraftEntry[]> | null = null;
+
+/**
+ * Where a player was drafted (season, club, round, pick), matched on name. A player picked twice (taken,
+ * went back to school, entered again) gets both. Two different players with one name are told apart by
+ * college; with no college to go on, a name that two colleges share shows nothing rather than a guess.
+ */
+export function pllDraftOf(name: string, college?: string | null): PllDraftEntry[] {
+  if (!draftIndex) {
+    draftIndex = new Map();
+    for (const [teamId, years] of Object.entries(extra.drafts ?? {}))
+      for (const [y, picks] of Object.entries(years))
+        for (const pk of picks) {
+          const k = draftKey(pk.player);
+          const e = { ...pk, season: Number(y), teamId, team: PLL_CLUB_SHORT[teamId] ?? teamId };
+          draftIndex.set(k, [...(draftIndex.get(k) ?? []), e]);
+        }
+  }
+  const all = (draftIndex.get(draftKey(name)) ?? []).sort((a, b) => a.season - b.season);
+  const colleges = new Set(all.map((e) => collegeKey(e.college)));
+  if (colleges.size <= 1) return all;
+  if (!college) return [];
+  const c = collegeKey(college);
+  return all.filter((e) => {
+    const k = collegeKey(e.college);
+    return k === c || k.includes(c) || c.includes(k);
+  });
+}
+
 /** Every championship game, newest first. */
 export const pllChampionships = (): PllChampionship[] =>
   [...(extra.champions ?? [])].sort((a, b) => b.season - a.season);
