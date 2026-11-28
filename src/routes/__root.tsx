@@ -68,6 +68,8 @@ const pllNav = [
   { to: "/pll/players", label: "Players" },
 ] as const;
 
+const nllNav = [{ to: "/nll", label: "Lines desk" }] as const;
+
 const wnbaNav = [
   { to: "/wnba", label: "Dashboard" },
   { to: "/wnba/teams", label: "Teams" },
@@ -111,6 +113,7 @@ const LEAGUE_DOT: Record<string, string> = {
   wcbb: "var(--acc-wcbb)",
   cbase: "var(--acc-cbase)",
   pll: "var(--acc-pll)",
+  nll: "var(--acc-nll)",
 };
 
 function Logo({ league }: { league: League }) {
@@ -227,6 +230,8 @@ function SiteHeader() {
                     ? cbaseNav
                     : league.id === "pll"
                       ? pllNav
+                      : league.id === "nll"
+                        ? nllNav
                       : nflNav;
   return (
     <header className="glass sticky top-0 z-40 rounded-none border-x-0 border-t-0">
@@ -249,6 +254,7 @@ function SiteHeader() {
                   "/wcbb",
                   "/cbase",
                   "/pll",
+                  "/nll",
                 ].includes(item.to),
               }}
               className="shrink-0 rounded-lg px-3 py-1.5 text-sm text-mute hover:text-ink"
@@ -278,7 +284,8 @@ function SiteFooter() {
         league.id === "wnba" ||
         league.id === "wcbb" ||
         league.id === "cbase" ||
-        league.id === "pll"
+        league.id === "pll" ||
+        league.id === "nll"
           ? ""
           : " and nflverse"}{" "}
         · for research, not betting advice ·{" "}

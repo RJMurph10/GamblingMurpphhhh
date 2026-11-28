@@ -36,6 +36,7 @@ import { Route as NhlModelRouteImport } from './routes/nhl.model'
 import { Route as NhlOddsExportRouteImport } from './routes/nhl.odds-export'
 import { Route as NhlPropHistoryRouteImport } from './routes/nhl.prop-history'
 import { Route as NhlPropsRouteImport } from './routes/nhl.props'
+import { Route as NllIndexRouteImport } from './routes/nll.index'
 import { Route as PlayersIndexRouteImport } from './routes/players.index'
 import { Route as PlayersPlayerIdRouteImport } from './routes/players.$playerId'
 import { Route as PllIndexRouteImport } from './routes/pll.index'
@@ -224,6 +225,11 @@ const NhlPropHistoryRoute = NhlPropHistoryRouteImport.update({
 const NhlPropsRoute = NhlPropsRouteImport.update({
   id: '/nhl/props',
   path: '/nhl/props',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const NllIndexRoute = NllIndexRouteImport.update({
+  id: '/nll/',
+  path: '/nll/',
   getParentRoute: () => rootRouteImport,
 } as any)
 const PlayersIndexRoute = PlayersIndexRouteImport.update({
@@ -530,6 +536,7 @@ export interface FileRoutesByFullPath {
   '/mlb/': typeof MlbIndexRoute
   '/nba/': typeof NbaIndexRoute
   '/nhl/': typeof NhlIndexRoute
+  '/nll/': typeof NllIndexRoute
   '/players/': typeof PlayersIndexRoute
   '/pll/': typeof PllIndexRoute
   '/teams/': typeof TeamsIndexRoute
@@ -613,6 +620,7 @@ export interface FileRoutesByTo {
   '/mlb': typeof MlbIndexRoute
   '/nba': typeof NbaIndexRoute
   '/nhl': typeof NhlIndexRoute
+  '/nll': typeof NllIndexRoute
   '/players': typeof PlayersIndexRoute
   '/pll': typeof PllIndexRoute
   '/teams': typeof TeamsIndexRoute
@@ -697,6 +705,7 @@ export interface FileRoutesById {
   '/mlb/': typeof MlbIndexRoute
   '/nba/': typeof NbaIndexRoute
   '/nhl/': typeof NhlIndexRoute
+  '/nll/': typeof NllIndexRoute
   '/players/': typeof PlayersIndexRoute
   '/pll/': typeof PllIndexRoute
   '/teams/': typeof TeamsIndexRoute
@@ -782,6 +791,7 @@ export interface FileRouteTypes {
     | '/mlb/'
     | '/nba/'
     | '/nhl/'
+    | '/nll/'
     | '/players/'
     | '/pll/'
     | '/teams/'
@@ -865,6 +875,7 @@ export interface FileRouteTypes {
     | '/mlb'
     | '/nba'
     | '/nhl'
+    | '/nll'
     | '/players'
     | '/pll'
     | '/teams'
@@ -948,6 +959,7 @@ export interface FileRouteTypes {
     | '/mlb/'
     | '/nba/'
     | '/nhl/'
+    | '/nll/'
     | '/players/'
     | '/pll/'
     | '/teams/'
@@ -1032,6 +1044,7 @@ export interface RootRouteChildren {
   MlbIndexRoute: typeof MlbIndexRoute
   NbaIndexRoute: typeof NbaIndexRoute
   NhlIndexRoute: typeof NhlIndexRoute
+  NllIndexRoute: typeof NllIndexRoute
   PlayersIndexRoute: typeof PlayersIndexRoute
   PllIndexRoute: typeof PllIndexRoute
   TeamsIndexRoute: typeof TeamsIndexRoute
@@ -1272,6 +1285,13 @@ declare module '@tanstack/react-router' {
       path: '/nhl/props'
       fullPath: '/nhl/props'
       preLoaderRoute: typeof NhlPropsRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/nll/': {
+      id: '/nll/'
+      path: '/nll'
+      fullPath: '/nll/'
+      preLoaderRoute: typeof NllIndexRouteImport
       parentRoute: typeof rootRouteImport
     }
     '/players/': {
@@ -1688,6 +1708,7 @@ const rootRouteChildren: RootRouteChildren = {
   MlbIndexRoute: MlbIndexRoute,
   NbaIndexRoute: NbaIndexRoute,
   NhlIndexRoute: NhlIndexRoute,
+  NllIndexRoute: NllIndexRoute,
   PlayersIndexRoute: PlayersIndexRoute,
   PllIndexRoute: PllIndexRoute,
   TeamsIndexRoute: TeamsIndexRoute,
