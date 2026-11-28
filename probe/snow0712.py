@@ -39,12 +39,17 @@ print("stadiums", len(groups), "games", sum(map(len, groups.values())), flush=Tr
 snow = []
 for i, (hid, lst) in enumerate(groups.items()):
     lat, lon, _ = STAD[hid]
-    q = (f"https://archive-api.open-meteo.com/v1/archive?latitude={lat}&longitude={lon}&start_date=2007-10-01"
-         f"&end_date=2012-12-31&hourly=temperature_2m,precipitation,rain,snowfall,wind_speed_10m,wind_gusts_10m"
-         f"&temperature_unit=fahrenheit&wind_speed_unit=mph&precipitation_unit=inch&timezone=GMT")
-    h = (get(q) or {}).get("hourly")
-    time.sleep(1.0)
-    if not h: print("no weather", hid, flush=True); continue
+    # one small request per season window (Oct 15 - Dec 15): light on Open-Meteo's rate limits
+    h = {"time": [], "snowfall": [], "wind_speed_10m": [], "wind_gusts_10m": [], "temperature_2m": []}
+    for season in sorted({g["season"] for g in lst}):
+        q = (f"https://archive-api.open-meteo.com/v1/archive?latitude={lat}&longitude={lon}&start_date={season}-10-14"
+             f"&end_date={season}-12-16&hourly=temperature_2m,snowfall,wind_speed_10m,wind_gusts_10m"
+             f"&temperature_unit=fahrenheit&wind_speed_unit=mph&precipitation_unit=inch&timezone=GMT")
+        part = (get(q, tries=8) or {}).get("hourly")
+        time.sleep(0.4)
+        if not part: print("no weather", hid, season, flush=True); continue
+        for k in h: h[k] += part[k]
+    if not h["time"]: continue
     at = {tt[:13]: k for k, tt in enumerate(h["time"])}
     for g in lst:
         i0 = at.get(g["t"].strftime("%Y-%m-%dT%H"))
@@ -68,10 +73,12 @@ def sbr(season):
         o = [num(v[9]), num(hh[9])]; c = [num(v[10]), num(hh[10])]
         tot = lambda p: max([x for x in p if x is not None], default=None)
         md = v[0].zfill(4); mo = int(md[:2])
-        out.append(dict(date=dt.date(season + (1 if mo < 7 else 0), mo, int(md[2:])), v=v[3], h=hh[3], vh=hh[2], open=tot(o), close=tot(c), vs=v[8], hs=hh[8]))
+        try: day = dt.date(season + (1 if mo < 7 else 0), mo, int(md[2:]))
+        except ValueError: continue
+        out.append(dict(date=day, v=v[3], h=hh[3], vh=hh[2], open=tot(o), close=tot(c), vs=v[8], hs=hh[8]))
     return out
 cache = {}
-for g in snow:
+for g in sorted(snow, key=lambda g: g["t"]):
     L = cache.setdefault(g["season"], sbr(g["season"]))
     local = (g["t"] - dt.timedelta(hours=5)).date()
     best, score = None, 0
