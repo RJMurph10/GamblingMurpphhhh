@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-28T03:40:00Z",
+  "updated": "2026-11-28T03:42:00Z",
   "games": {
     "laxapi-2026-07-31T23:00-redwoods-chaos": {
       "home": "California Redwoods",
@@ -4924,6 +4924,142 @@
       "notes": [
         "draftkings: DraftKings app screenshot shared on X (Hutton Jackson) noting DK joined Caesars in flipping to Archers -1.5; capture time unknown, likely near close"
       ]
+    },
+    "preview-401545147": {
+      "home": "Maryland Whipsnakes",
+      "away": "Carolina Chaos",
+      "commence": "2023-08-12T00:00:00Z",
+      "open": {
+        "spread": -1.5,
+        "total": null,
+        "mlHome": null,
+        "mlAway": null,
+        "books": 1,
+        "at": null
+      },
+      "latest": {
+        "spread": -1.5,
+        "total": null,
+        "mlHome": null,
+        "mlAway": null,
+        "books": 1,
+        "at": null
+      },
+      "books": {
+        "fanduel": {
+          "ml": null,
+          "spread": [
+            -1.5,
+            128,
+            -158
+          ],
+          "total": null,
+          "at": null
+        }
+      },
+      "source": "owner screenshot of PLL/FanDuel \"This Week's Slate\" graphic on X (2023 week 10); spread with prices only, no moneyline or total"
+    },
+    "preview-401545172": {
+      "home": "Utah Archers",
+      "away": "Chrome Lacrosse Club",
+      "commence": "2023-08-12T02:30:00Z",
+      "open": {
+        "spread": -2.5,
+        "total": null,
+        "mlHome": null,
+        "mlAway": null,
+        "books": 1,
+        "at": null
+      },
+      "latest": {
+        "spread": -2.5,
+        "total": null,
+        "mlHome": null,
+        "mlAway": null,
+        "books": 1,
+        "at": null
+      },
+      "books": {
+        "fanduel": {
+          "ml": null,
+          "spread": [
+            -2.5,
+            100,
+            -122
+          ],
+          "total": null,
+          "at": null
+        }
+      },
+      "source": "owner screenshot of PLL/FanDuel \"This Week's Slate\" graphic on X (2023 week 10); spread with prices only, no moneyline or total"
+    },
+    "preview-401545164": {
+      "home": "Philadelphia Waterdogs",
+      "away": "New York Atlas",
+      "commence": "2023-08-12T23:00:00Z",
+      "open": {
+        "spread": -1.5,
+        "total": null,
+        "mlHome": null,
+        "mlAway": null,
+        "books": 1,
+        "at": null
+      },
+      "latest": {
+        "spread": -1.5,
+        "total": null,
+        "mlHome": null,
+        "mlAway": null,
+        "books": 1,
+        "at": null
+      },
+      "books": {
+        "fanduel": {
+          "ml": null,
+          "spread": [
+            -1.5,
+            110,
+            -134
+          ],
+          "total": null,
+          "at": null
+        }
+      },
+      "source": "owner screenshot of PLL/FanDuel \"This Week's Slate\" graphic on X (2023 week 10); spread with prices only, no moneyline or total"
+    },
+    "preview-401545139": {
+      "home": "California Redwoods",
+      "away": "Boston Cannons",
+      "commence": "2023-08-13T01:30:00Z",
+      "open": {
+        "spread": 1.5,
+        "total": null,
+        "mlHome": null,
+        "mlAway": null,
+        "books": 1,
+        "at": null
+      },
+      "latest": {
+        "spread": 1.5,
+        "total": null,
+        "mlHome": null,
+        "mlAway": null,
+        "books": 1,
+        "at": null
+      },
+      "books": {
+        "fanduel": {
+          "ml": null,
+          "spread": [
+            1.5,
+            -102,
+            -120
+          ],
+          "total": null,
+          "at": null
+        }
+      },
+      "source": "owner screenshot of PLL/FanDuel \"This Week's Slate\" graphic on X (2023 week 10); spread with prices only, no moneyline or total"
     }
   }
 }
