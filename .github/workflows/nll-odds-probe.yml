@@ -1,29 +1,38 @@
 name: nll odds probe
 on: { push: { branches: [nll-odds-probe] } }
+permissions: { contents: write }
 jobs:
   p:
     runs-on: ubuntu-latest
     steps:
       - run: |
+          mkdir -p out && cd out
           python3 - <<'PY'
-          import json, urllib.request, urllib.error, time
-          from datetime import datetime, timedelta, timezone
-          UA={"User-Agent":"GamblingNFL/1.0","Accept":"application/json"}
-          S="https://site.api.espn.com/apis/site/v2/sports/basketball/mens-college-basketball"
-          def g(u):
-              t=time.time()
-              try:
-                  r=urllib.request.urlopen(urllib.request.Request(u,headers=UA),timeout=20); return r.status, json.loads(r.read()), round(time.time()-t,1)
-              except urllib.error.HTTPError as e: return e.code, None, round(time.time()-t,1)
-              except Exception as e: return str(e), None, round(time.time()-t,1)
-          now=datetime.now(timezone.utc)
-          for d in range(-1,8):
-              day=(now+timedelta(days=d)).strftime("%Y%m%d")
-              for lim in (1000,300):
-                  st,j,sec=g(f"{S}/scoreboard?dates={day}&groups=50&limit={lim}")
-                  ev=(j or {}).get("events",[])
-                  print("DAY",day,"limit",lim,"status",st,"secs",sec,"events",len(ev), "live",sum(e["status"]["type"]["state"]=="in" for e in ev),"sched",sum(e["status"]["type"]["state"]=="pre" for e in ev))
-          st,j,sec=g(f"{S}/groups"); print("GROUPS",st,sec, len(((j or {}).get("groups") or [{}])[0].get("children",[])) if j else None)
-          st,j,sec=g("https://raw.githubusercontent.com/RJMurph10/gamblingnfl/props-site/cbb/season-2026-27.json"); print("SEASON FILE old url",st,sec, (j or {}).get("updated"), len((j or {}).get("games",[])) if j else None)
-          st,j,sec=g("https://raw.githubusercontent.com/RJMurph10/GamblingMurpphhhh/props-site/cbb/season-2026-27.json"); print("SEASON FILE new url",st,sec, (j or {}).get("updated"))
+          import json, urllib.request
+          UA={"User-Agent":"Mozilla/5.0"}
+          d=json.loads(urllib.request.urlopen(urllib.request.Request("https://site.api.espn.com/apis/site/v2/sports/lacrosse/nll/teams",headers=UA)).read())
+          meta={}
+          for x in d["sports"][0]["leagues"][0]["teams"]:
+              t=x["team"]; meta[t["abbreviation"]]={"id":t["id"],"logos":[(l["rel"],l.get("lastUpdated"),l["href"]) for l in t.get("logos",[])]}
+              for i,l in enumerate(t.get("logos",[])):
+                  tag="-".join(r for r in l["rel"] if r not in ("full",))
+                  url=l["href"].replace("4096","500") if False else l["href"]
+                  try:
+                      data=urllib.request.urlopen(urllib.request.Request(l["href"],headers=UA),timeout=30).read()
+                      open(f"{t['abbreviation']}__{tag}.png","wb").write(data)
+                  except Exception as e: print("ERR",t["abbreviation"],tag,e)
+          json.dump(meta,open("meta.json","w"),indent=1)
+          for k,v in meta.items(): print(k, [(r[0][-1],r[1][:10] if r[1] else None) for r in v["logos"]])
           PY
+          pip install --quiet pillow
+          python3 - <<'PY'
+          from PIL import Image
+          import glob
+          for f in glob.glob("*.png"):
+              im=Image.open(f); im.thumbnail((256,256)); im.save(f)
+          PY
+          cd ..
+          git config user.name probe; git config user.email probe@users.noreply.github.com
+          git fetch -q origin props-site && git checkout -q -B props-site origin/props-site
+          rm -rf probes/nll-logos && mkdir -p probes/nll-logos && cp out/* probes/nll-logos/
+          git add probes/nll-logos && git commit -qm "probe: NLL logos" && git push -q origin props-site
