@@ -3,7 +3,14 @@
  * month (`dates=202612`) returns that month's games, so a season is eight monthly requests (Nov–Jun).
  */
 import { cached } from "@/lib/shared/espn-core.server";
-import { nllSeasonLabel, type NllGame, type NllSeason, type NllTeam } from "./nll";
+import {
+  nllSeasonLabel,
+  type NllGame,
+  type NllNews,
+  type NllSeason,
+  type NllTeam,
+  type NllVideo,
+} from "./nll";
 
 const BASE = "https://site.api.espn.com/apis/site/v2/sports/lacrosse/nll";
 
@@ -29,6 +36,7 @@ type EspnTeam = {
   abbreviation?: string;
   displayName?: string;
   shortDisplayName?: string;
+  location?: string;
   color?: string;
   logos?: { href?: string }[];
   logo?: string;
@@ -43,6 +51,7 @@ type EspnEvent = {
   };
   competitions?: {
     venue?: { fullName?: string; address?: { city?: string; state?: string } };
+    broadcasts?: { names?: string[] }[];
     competitors?: {
       homeAway?: string;
       score?: string;
@@ -58,6 +67,7 @@ const toTeam = (t: EspnTeam): NllTeam => ({
   abbr: t.abbreviation ?? "",
   name: t.displayName ?? t.id,
   short: t.shortDisplayName ?? t.displayName ?? t.id,
+  location: t.location,
   color: t.color ? `#${t.color}` : null,
   logo: t.logos?.[0]?.href ?? t.logo ?? null,
 });
@@ -88,6 +98,8 @@ export function mapNllEvent(e: EspnEvent): NllGame | null {
     away: side(away),
     ot: (e.status?.period ?? 4) > 4 || (home.linescores?.length ?? 0) > 4,
     venue: c0?.venue?.fullName,
+    broadcast:
+      [...new Set((c0?.broadcasts ?? []).flatMap((b) => b.names ?? []))].join(", ") || undefined,
     city:
       [c0?.venue?.address?.city, c0?.venue?.address?.state].filter(Boolean).join(", ") || undefined,
   };
@@ -116,8 +128,76 @@ export async function fetchNllSeason(season: number): Promise<NllSeason> {
           if (g) seen.set(g.id, g);
         }
       const games = [...seen.values()].sort((a, b) => a.date.localeCompare(b.date));
-      return { season, label: nllSeasonLabel(season), teams, games };
+      // ESPN's team list keeps clubs that no longer play (the Philadelphia Wings): only teams on this
+      // season's schedule count. Teams ESPN lists only inside games (none so far) are added from there.
+      const onSchedule = new Set(games.flatMap((g) => [g.home.teamId, g.away.teamId]));
+      const clubs = games.length ? teams.filter((t) => onSchedule.has(t.id)) : teams;
+      return { season, label: nllSeasonLabel(season), teams: clubs, games };
     },
     5 * 60_000,
+  );
+}
+
+type EspnArticle = {
+  headline?: string;
+  description?: string;
+  published?: string;
+  links?: { web?: { href?: string } };
+  images?: { url?: string }[];
+};
+type EspnVideo = {
+  headline?: string;
+  duration?: number;
+  thumbnail?: string;
+  links?: { web?: { href?: string }; source?: { href?: string } };
+};
+
+const toNews = (a: EspnArticle): NllNews => ({
+  headline: a.headline ?? "",
+  description: a.description ?? "",
+  published: a.published ?? "",
+  link: a.links?.web?.href ?? null,
+  image: a.images?.[0]?.url ?? null,
+});
+
+/** The latest NLL stories from ESPN. */
+export async function fetchNllNews(): Promise<NllNews[]> {
+  return cached(
+    "nll-news",
+    async () => {
+      const d = await get<{ articles?: EspnArticle[] }>(`${BASE}/news?limit=12`);
+      return (d?.articles ?? []).map(toNews).filter((a) => a.headline);
+    },
+    15 * 60_000,
+  );
+}
+
+/** One game's highlight videos and stories from ESPN's game summary. */
+export async function fetchNllGameMedia(
+  gameId: string,
+): Promise<{ videos: NllVideo[]; news: NllNews[] }> {
+  return cached(
+    `nll-media-${gameId}`,
+    async () => {
+      const d = await get<{ videos?: EspnVideo[]; news?: { articles?: EspnArticle[] } }>(
+        `${BASE}/summary?event=${encodeURIComponent(gameId)}`,
+      );
+      return {
+        videos: (d?.videos ?? [])
+          .map((v) => ({
+            headline: v.headline ?? "",
+            link: v.links?.web?.href ?? v.links?.source?.href ?? null,
+            thumbnail: v.thumbnail ?? null,
+            duration: v.duration ?? null,
+          }))
+          .filter((v) => v.headline)
+          .slice(0, 6),
+        news: (d?.news?.articles ?? [])
+          .map(toNews)
+          .filter((a) => a.headline)
+          .slice(0, 4),
+      };
+    },
+    10 * 60_000,
   );
 }

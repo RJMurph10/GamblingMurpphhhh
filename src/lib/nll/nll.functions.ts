@@ -1,7 +1,7 @@
 import { createServerFn } from "@tanstack/react-start";
 import { z } from "zod";
 import { cached } from "@/lib/shared/espn-core.server";
-import { fetchNllSeason } from "./nll.server";
+import { fetchNllGameMedia, fetchNllNews, fetchNllSeason } from "./nll.server";
 import { nllSeasonLabel, type NllLinesFile } from "./nll";
 
 /** An NLL season's games, scores and teams, from ESPN. */
@@ -29,3 +29,11 @@ export const getNllLines = createServerFn({ method: "GET" })
       5 * 60_000,
     ),
   );
+
+/** Latest NLL stories from ESPN. */
+export const getNllNews = createServerFn({ method: "GET" }).handler(async () => fetchNllNews());
+
+/** A game's highlight videos and stories from ESPN. */
+export const getNllGameMedia = createServerFn({ method: "GET" })
+  .inputValidator((data) => z.object({ gameId: z.string().regex(/^\d+$/) }).parse(data))
+  .handler(async ({ data }) => fetchNllGameMedia(data.gameId));
