@@ -7,13 +7,56 @@
 
 import type { Game } from "@/data/shared/games";
 import { gameScore } from "@/data/shared/games";
-import { isCollegeId, registerTeams, registeredCollegeTeams, teamByAbbr, teamById, type Team } from "@/data/shared/teams";
-import { projectPlayer, type ProjStat, type DefenseAllowed, type PlayerGameStats, type PlayerProjection } from "@/lib/cfb/cfb-projections";
-import { conferenceTeams, parseCalendar, parseConferences, type CfbConference, type CfbWeek } from "@/lib/cfb/cfb";
-import { CFB_SITE, FEEDS, type FeedLeague, SEASON, backfillHistoricalOdds, cached, collegeTeamRefs, eventLeague, fetchJson, mapEvent, prepareCollege, teamOf, weekScoreboardUrl } from "@/lib/shared/espn-core.server";
+import {
+  isCollegeId,
+  registerTeams,
+  registeredCollegeTeams,
+  teamByAbbr,
+  teamById,
+  type Team,
+} from "@/data/shared/teams";
+import {
+  projectPlayer,
+  type ProjStat,
+  type DefenseAllowed,
+  type PlayerGameStats,
+  type PlayerProjection,
+} from "@/lib/cfb/cfb-projections";
+import {
+  conferenceTeams,
+  parseCalendar,
+  parseConferences,
+  type CfbConference,
+  type CfbWeek,
+} from "@/lib/cfb/cfb";
+import {
+  conferenceOfNote,
+  titleRace,
+  type ConfGame,
+  type TitleConference,
+} from "@/lib/cfb/cfb-title-games";
+import {
+  CFB_SITE,
+  FEEDS,
+  type FeedLeague,
+  SEASON,
+  backfillHistoricalOdds,
+  cached,
+  collegeTeamRefs,
+  eventLeague,
+  fetchJson,
+  mapEvent,
+  prepareCollege,
+  teamOf,
+  weekScoreboardUrl,
+} from "@/lib/shared/espn-core.server";
 import { type PriorSeasonResult, fetchSchedule } from "@/lib/nfl/nfl-schedule.server";
 import { parsePair } from "@/lib/shared/espn-game-detail.server";
-import { type LeagueTeamOverviewRow, fetchTeamOverviewStats, numericStat } from "@/lib/shared/espn-teams-players.server";
+import {
+  type LeagueTeamOverviewRow,
+  fetchTeamOverviewStats,
+  numericStat,
+} from "@/lib/shared/espn-teams-players.server";
 
 /* ---------------- college football (FBS) ---------------- */
 
@@ -26,7 +69,12 @@ const SITES: Record<FeedLeague, string> = {
  * Where a team's ESPN pages live. Team keys from the browser are NFL abbreviations ("KC") or
  * college team ids ("cfb-194"; ESPN college pages use the number).
  */
-export function teamFeed(key: string): { league: FeedLeague; site: string; path: string; key: string } {
+export function teamFeed(key: string): {
+  league: FeedLeague;
+  site: string;
+  path: string;
+  key: string;
+} {
   if (isCollegeId(key)) {
     const id = key.slice(4);
     return { league: "cfb", site: SITES.cfb, path: id, key: `cfb-${id}` };
@@ -81,6 +129,95 @@ export async function fetchFbsConferences(): Promise<CfbConference[]> {
   return conferences;
 }
 
+/** Raw FBS standings (conference and division membership) for the title-game races. 10-minute cache. */
+function fetchFbsStandingsRaw(): Promise<any> {
+  return cached(
+    "cfb-standings-raw",
+    () =>
+      fetchJson(
+        `https://site.api.espn.com/apis/v2/sports/football/college-football/standings?group=${FBS_GROUP}&season=${SEASON}`,
+      ),
+    10 * MINUTE,
+  );
+}
+
+/** Conferences as title-game pools: a division sends its winner, a conference without divisions its top two. */
+function titleConferences(standings: any): TitleConference[] {
+  const ids = (node: any): string[] =>
+    (node?.standings?.entries ?? []).map((e: any) => String(e?.team?.id)).filter(Boolean);
+  return (standings?.children ?? []).map((c: any) => ({
+    name: String(c.name ?? ""),
+    pools: c.children?.length
+      ? c.children.map((d: any) => ({ teamIds: ids(d), spots: 1 }))
+      : [{ teamIds: ids(c), spots: 2 }],
+  }));
+}
+
+const isTbd = (teamId: string) => /^cfb--\d+$/.test(teamId);
+
+/**
+ * Fills conference title games ESPN still lists as TBD: once every conference game that decides the spots
+ * is final (and no tie needs the conference's own rules), the two teams go in; until then the game carries
+ * who has clinched and who's alive. ESPN's own listing takes over as soon as it names the teams.
+ */
+async function fillTitleGames(games: Game[]): Promise<Game[]> {
+  const tbd = games.filter((g) => g.note && (isTbd(g.awayTeamId) || isTbd(g.homeTeamId)));
+  if (!tbd.length) return games;
+  const confs = titleConferences(await fetchFbsStandingsRaw());
+  const names = confs.map((c) => c.name);
+  const stale = Date.now() - 36 * 60 * MINUTE;
+  const espnId = (teamId: string) => teamId.replace(/^cfb-/, "");
+  const confGames: ConfGame[] = games
+    .filter((g) => g.conferenceGame && !g.postseason && !/championship/i.test(g.note ?? ""))
+    // a game still "scheduled" a day and a half after kickoff was called off
+    .filter((g) => g.status === "final" || !g.kickoffIso || Date.parse(g.kickoffIso) > stale)
+    .map((g) => {
+      const s = gameScore(g);
+      return {
+        away: espnId(g.awayTeamId),
+        home: espnId(g.homeTeamId),
+        ...(g.status === "final" ? { awayScore: s.away, homeScore: s.home } : {}),
+      };
+    });
+  const abbr = (id: string) => teamById(`cfb-${id}`)?.abbr ?? id;
+  const filled = new Map<string, Game>();
+  for (const g of tbd) {
+    const conf = confs.find((c) => c.name === conferenceOfNote(g.note!, names));
+    if (!conf || !conf.pools.some((p) => p.teamIds.length)) continue;
+    const race = titleRace(conf, confGames);
+    const info = { clinched: race.clinched.map(abbr), alive: race.alive.map(abbr) };
+    const next: Game = { ...g, titleRace: { status: "open", ...info } };
+    if (race.set) {
+      const [top, other] = race.set;
+      const known = [g.awayTeamId, g.homeTeamId].filter((t) => !isTbd(t)).map(espnId);
+      const add = race.set.filter((t) => !known.includes(t));
+      // ESPN named a team that isn't one of ours: leave it to ESPN
+      if (known.every((k) => race.set!.includes(k)) && add.length) {
+        if (!known.length) {
+          // the higher seed hosts a campus-site game; at a neutral site the order doesn't matter
+          next.homeTeamId = `cfb-${top}`;
+          next.awayTeamId = `cfb-${other}`;
+        } else if (isTbd(g.awayTeamId)) next.awayTeamId = `cfb-${add[0]}`;
+        else next.homeTeamId = `cfb-${add[0]}`;
+        next.titleRace = {
+          status: "set",
+          ...info,
+          hostKnown: Boolean(g.neutralSite || race.seeded || known.length),
+        };
+        next.teamRefs = collegeTeamRefs(next);
+        const rank = (id: string) => {
+          const r = teamById(id)?.rank;
+          return r && r >= 1 && r <= 25 ? r : undefined;
+        };
+        next.awayRank = rank(next.awayTeamId);
+        next.homeRank = rank(next.homeTeamId);
+      }
+    }
+    filled.set(g.id, next);
+  }
+  return games.map((g) => filled.get(g.id) ?? g);
+}
+
 /** The FBS regular-season calendar (weeks with their dates). 6-hour cache. */
 export function fetchCfbCalendar(): Promise<CfbWeek[]> {
   return cached(
@@ -120,6 +257,7 @@ export function addCollegeDetails(game: Game, comp: any) {
   game.neutralSite = Boolean(comp?.neutralSite) || undefined;
   const note = comp?.notes?.[0]?.headline;
   if (note) game.note = String(note);
+  if (comp?.conferenceCompetition) game.conferenceGame = true;
   game.teamRefs = collegeTeamRefs(game);
 }
 
@@ -158,7 +296,9 @@ export async function fetchCfbSchedule(): Promise<Game[]> {
             // Weeks still being played get a minute-stamped URL so no cache in between (ESPN's or the
             // host's) can hand back a copy from before games finished.
             const url = weekScoreboardUrl("cfb", w.number);
-            const data = await fetchJson(done ? url : `${url}&_=${Math.floor(Date.now() / MINUTE)}`);
+            const data = await fetchJson(
+              done ? url : `${url}&_=${Math.floor(Date.now() / MINUTE)}`,
+            );
             const weekGames = (data?.events ?? [])
               .map((e: any) => mapCollegeEvent(e, w.number, fbsIds))
               .filter((g: Game | null): g is Game => g !== null);
@@ -193,7 +333,10 @@ export async function fetchCfbSchedule(): Promise<Game[]> {
     },
     MINUTE,
   );
-  const games = [...perWeek.flat(), ...bowls];
+  const games = await fillTitleGames([...perWeek.flat(), ...bowls]).catch(() => [
+    ...perWeek.flat(),
+    ...bowls,
+  ]);
   // Cached weeks still need their teams on a fresh server instance.
   for (const g of games) registerTeams(g.teamRefs);
   return games.sort(
@@ -313,7 +456,9 @@ export async function fetchCollegePlayerGameLog(
           };
         }),
       );
-      return rows.filter((r): r is NonNullable<typeof r> => r !== null).sort((a, b) => a.week - b.week);
+      return rows
+        .filter((r): r is NonNullable<typeof r> => r !== null)
+        .sort((a, b) => a.week - b.week);
     },
     10 * MINUTE,
   );
@@ -366,7 +511,17 @@ function collegeBoxLines(summary: any) {
         const entry = players.get(id) ?? {
           name: String(a.athlete.displayName ?? ""),
           position: String(a.athlete.position?.abbreviation ?? ""),
-          line: { passYds: 0, passTd: 0, cmp: 0, rushYds: 0, rushAtt: 0, rushTd: 0, recYds: 0, rec: 0, recTd: 0 },
+          line: {
+            passYds: 0,
+            passTd: 0,
+            cmp: 0,
+            rushYds: 0,
+            rushAtt: 0,
+            rushTd: 0,
+            recYds: 0,
+            rec: 0,
+            recTd: 0,
+          },
         };
         const v = (key: string) => {
           const i = keys.indexOf(key);
@@ -495,7 +650,12 @@ export async function fetchCfbGameProjections(gameId: string): Promise<CfbGamePr
         for (const g of prior[teamId]) {
           const opp = teamById(g.homeTeamId === teamId ? g.awayTeamId : g.homeTeamId)?.abbr ?? "";
           for (const [id, p] of boxes.get(g.id)?.get(teamId) ?? []) {
-            const entry = logs.get(id) ?? { name: p.name, position: p.position, games: [], meta: [] };
+            const entry = logs.get(id) ?? {
+              name: p.name,
+              position: p.position,
+              games: [],
+              meta: [],
+            };
             entry.games.push(p.line);
             entry.meta.push({ week: g.week, opponent: opp });
             logs.set(id, entry);

@@ -56,6 +56,7 @@ export function GameCard({ game }: { game: Game }) {
           {game.note}
         </div>
       ) : null}
+      {game.titleRace ? <TitleRaceLine race={game.titleRace} /> : null}
       <div className="mt-2 space-y-1">
         {[
           { team: away, pts: score.away, rank: game.awayRank },
@@ -88,5 +89,27 @@ export function GameCard({ game }: { game: Game }) {
         </div>
       )}
     </Link>
+  );
+}
+
+/**
+ * Under a conference title game ESPN hasn't filled in: "Matchup set from final standings" once the site has
+ * worked it out, else who has clinched (✓) and who's still alive.
+ */
+function TitleRaceLine({ race }: { race: NonNullable<Game["titleRace"]> }) {
+  if (race.status === "set")
+    return (
+      <div className="mt-0.5 font-mono text-[10px] text-mute">
+        Matchup set from final standings{race.hostKnown ? "" : " · host TBD"}
+      </div>
+    );
+  const rest = race.alive.filter((t) => !race.clinched.includes(t));
+  return (
+    <div className="mt-0.5 truncate font-mono text-[10px] text-mute">
+      {race.clinched.length ? (
+        <span className="text-win">{race.clinched.join(", ")} ✓ </span>
+      ) : null}
+      {rest.length ? `· alive: ${rest.join(", ")}` : null}
+    </div>
   );
 }
