@@ -29,5 +29,6 @@ jobs:
               m=collections.Counter(abs(h-a) for h,a,p,t in g)
               ot=sum(p>4 for h,a,p,t in g)
               tot=[h+a for h,a,p,t in g]
+              tc=collections.Counter(tot); print("TOTALS", s0.year, n, {k: round(tc[k]/n,3) for k in range(18,28)})
               print(f"{s0.year}-{s1.year%100}: {n} games | 1-goal {m[1]} ({m[1]/n:.1%}) | OT {ot} ({ot/n:.1%}) | home win {sum(h>a for h,a,p,t in g)/n:.1%} | avg total {sum(tot)/n:.1f} | margins {sorted(m.items())[:8]}")
           PY
