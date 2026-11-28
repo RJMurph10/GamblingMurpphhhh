@@ -8,14 +8,39 @@ jobs:
           python3 - <<'PY'
           import json, urllib.request
           UA={"User-Agent":"Mozilla/5.0"}
-          B="https://site.api.espn.com/apis/site/v2/sports/lacrosse/nll"
+          S="https://site.api.espn.com/apis/site/v2/sports/lacrosse/nll"
+          C="https://sports.core.api.espn.com/v2/sports/lacrosse/leagues/nll"
           def g(u):
               try: return json.loads(urllib.request.urlopen(urllib.request.Request(u,headers=UA),timeout=30).read())
               except Exception as e: return {"ERR":str(e)}
-          for q in ("/scoreboard","/scoreboard?dates=20261128-20261130","/scoreboard?dates=20261128-20261204","/scoreboard?dates=2027","/scoreboard?dates=202612","/scoreboard?limit=500&dates=20261101-20270630"):
-              d=g(B+q); print("Q",q,"ERR" in d and d["ERR"] or (len(d.get("events",[])), d.get("season"), [e["date"] for e in d.get("events",[])][:3], [e["date"] for e in d.get("events",[])][-2:]))
-          t=g(B+"/teams"); T=[x["team"] for x in t["sports"][0]["leagues"][0]["teams"]]
-          print("TEAMS",len(T),[(x["id"],x["abbreviation"],x["displayName"],x.get("color"),(x.get("logos") or [{}])[0].get("href")) for x in T])
-          s=g(B+f"/teams/{T[0]['id']}/schedule"); ev=s.get("events",[]); print("SCHED",T[0]["displayName"],len(ev), s.get("season"), json.dumps(ev[0])[:1500] if ev else s)
-          st=g("https://site.api.espn.com/apis/v2/sports/lacrosse/nll/standings"); print("STAND", json.dumps(st)[:800])
+          def show(lbl,d,n=1200): print("==",lbl, json.dumps(d)[:n])
+          sb=g(S+"/scoreboard?dates=202611")
+          fin=[e for e in sb.get("events",[]) if e["status"]["type"]["completed"]]
+          print("Nov finals", [(e["id"],e["name"]) for e in fin])
+          old=g(S+"/scoreboard?dates=202603"); ofin=[e for e in old.get("events",[]) if e["status"]["type"]["completed"]]
+          for e in (fin[:1]+ofin[:1]):
+              sm=g(S+f"/summary?event={e['id']}")
+              print("SUMMARY", e["name"], "keys", list(sm.keys()))
+              for k,v in sm.items():
+                  if k in ("header",): continue
+                  print("  -",k, type(v).__name__, (len(v) if hasattr(v,'__len__') else ''), json.dumps(v)[:500])
+              ev=e["competitions"][0]
+              print("  scoreboard comp keys", list(ev.keys()), "| competitor keys", list(ev["competitors"][0].keys()))
+              print("  competitor stats", json.dumps(ev["competitors"][0].get("statistics"))[:600], "| leaders", json.dumps(ev["competitors"][0].get("leaders"))[:600])
+              print("  broadcasts", json.dumps(ev.get("broadcasts"))[:300], "attendance", ev.get("attendance"), "notes", ev.get("notes"))
+              pbp=g(C+f"/events/{e['id']}/competitions/{e['id']}/plays?limit=5"); show("CORE PLAYS",pbp,800)
+              bs=g(C+f"/events/{e['id']}/competitions/{e['id']}/competitors/{ev['competitors'][0]['id']}/statistics"); show("CORE TEAM STATS",bs,1500)
+          t="125429"
+          show("ROSTER", g(S+f"/teams/{t}/roster"), 1500)
+          show("TEAM", g(S+f"/teams/{t}"), 1500)
+          show("TEAM STATS core", g(C+f"/seasons/2026/types/2/teams/{t}/statistics"), 1500)
+          show("NEWS", g(S+"/news"), 800)
+          st=g("https://site.api.espn.com/apis/v2/sports/lacrosse/nll/standings?season=2026")
+          ch=st.get("children") or [st]
+          for c in ch:
+              ent=(c.get("standings") or {}).get("entries",[])
+              print("STANDINGS group", c.get("name"), len(ent), [s.get("name") for s in (ent[0]["stats"] if ent else [])])
+          show("LEADERS core", g(C+"/seasons/2026/types/2/leaders"), 1500)
+          show("ATHLETES core", g(C+"/seasons/2026/athletes?limit=3"), 600)
+          show("INJURIES", g(S+"/injuries"), 400)
           PY
