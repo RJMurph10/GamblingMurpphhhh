@@ -4,15 +4,7 @@ jobs:
   p:
     runs-on: ubuntu-latest
     steps:
-      - run: |
-          python3 - <<'PY'
-          import json, urllib.request
-          S="https://site.api.espn.com/apis/site/v2/sports/basketball/mens-college-basketball"
-          def g(u):
-              r=urllib.request.urlopen(urllib.request.Request(u,headers={"User-Agent":"Mozilla/5.0"}),timeout=20); return json.loads(r.read())
-          for q in ("/groups","/groups?limit=100","/groups?groups=50","/groups?groups=50&limit=100"):
-              try:
-                  d=g(S+q); ch=d["groups"][0].get("children",[]); print("GROUPS",q,len(ch),[c.get("abbreviation") or c.get("shortName") for c in ch][-8:], sum(len(c.get("teams",[])) for c in ch))
-              except Exception as e: print("GROUPS",q,"ERR",e)
-          PY
-          curl -s -o /dev/null -D - -H "Origin: https://example.lovable.app" "https://site.api.espn.com/apis/site/v2/sports/basketball/mens-college-basketball/scoreboard?groups=50&limit=5" | grep -i "access-control\|HTTP/"
+      - uses: actions/checkout@v4
+      - uses: oven-sh/setup-bun@v2
+      - run: bun install
+      - run: bun probe/cbb.ts
