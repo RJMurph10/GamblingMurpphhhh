@@ -4,7 +4,7 @@ import { PageTitle, Panel, PanelHeader, StatCard } from "@/components/shared/boo
 import { PllLogo, PllSeasonPicker } from "@/components/pll/PllBits";
 import { collegeLogoFor } from "@/lib/pll/colleges";
 import { teamOf, type PllGame, type PllSeason } from "@/lib/pll/pll";
-import { pllDraftOf, posAbbr } from "@/lib/pll/players";
+import { pllDraftNote, pllDraftOf, posAbbr } from "@/lib/pll/players";
 import {
   playerKind,
   pllPlayer,
@@ -45,7 +45,8 @@ const ordinal = (n: number) =>
 /** "Drafted 2021 · 1st round, 1st overall · Atlas" (his latest pick if he was drafted twice). */
 function Drafted({ p, season }: { p: PllPlayer; season?: PllSeason }) {
   const picks = pllDraftOf(p.name);
-  if (!picks.length) return null;
+  const note = pllDraftNote(p.name);
+  if (!picks.length && !note) return null;
   return (
     <div className="-mt-4 mb-6 space-y-1 font-mono text-xs text-mute">
       {picks.map((d) => (
@@ -71,6 +72,7 @@ function Drafted({ p, season }: { p: PllPlayer; season?: PllSeason }) {
           ) : null}
         </div>
       ))}
+      {note ? <p className="max-w-2xl font-sans text-[12px] italic text-faint">{note}</p> : null}
     </div>
   );
 }

@@ -1,5 +1,5 @@
 import { describe, expect, it } from "vitest";
-import { pllDraftOf } from "@/lib/pll/players";
+import { pllDraftNote, pllDraftOf } from "@/lib/pll/players";
 
 describe("pllDraftOf", () => {
   it("finds a player's draft slot and club", () => {
@@ -14,5 +14,13 @@ describe("pllDraftOf", () => {
   });
   it("keeps the latest pick when the college is spelled two ways", () => {
     expect(pllDraftOf("Levi Anderson").map((d) => d.season)).toEqual([2024]);
+  });
+  it("carries hand-written context for a misleading draft slot", () => {
+    expect(pllDraftOf("Jared Bernhardt")[0]).toMatchObject({
+      season: 2021,
+      pick: "19",
+      team: "Chaos",
+    });
+    expect(pllDraftNote("Jared Bernhardt")).toMatch(/football/);
   });
 });
