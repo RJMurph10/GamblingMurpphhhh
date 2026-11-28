@@ -1,7 +1,39 @@
 {
  "day": "2026-11-28",
- "updated": "2026-11-27T22:59:26.610Z",
+ "updated": "2026-11-28T13:40:42.954Z",
  "picks": [
+  {
+   "id": "401920310-total",
+   "game": "ALCN @ GT",
+   "tip": "2026-11-28T18:00Z",
+   "market": "total",
+   "pick": "Under 162.5",
+   "line": 162.5,
+   "open": 162.5,
+   "model": 156.5,
+   "edge": 6,
+   "best": true,
+   "firstSeen": "2026-11-28T13:40:42.954Z",
+   "latest": 161.5,
+   "latestAt": "2026-11-28T13:40:42.954Z",
+   "alerted": false
+  },
+  {
+   "id": "401921245-total",
+   "game": "CCSU @ NAVY",
+   "tip": "2026-11-28T19:00Z",
+   "market": "total",
+   "pick": "Over 131.5",
+   "line": 131.5,
+   "open": 131.5,
+   "model": 137.5,
+   "edge": 6,
+   "best": true,
+   "firstSeen": "2026-11-28T13:40:42.954Z",
+   "latest": 127.5,
+   "latestAt": "2026-11-28T13:40:42.954Z",
+   "alerted": false
+  },
   {
    "id": "401924811-total",
    "game": "MRMK @ HOF",
@@ -14,8 +46,8 @@
    "edge": 7.8,
    "best": true,
    "firstSeen": "2026-11-27T22:59:26.610Z",
-   "latest": 125.5,
-   "latestAt": "2026-11-27T22:59:26.610Z",
+   "latest": 124.5,
+   "latestAt": "2026-11-28T13:40:42.954Z",
    "alerted": false
   }
  ]
