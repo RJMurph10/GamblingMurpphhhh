@@ -20,11 +20,14 @@ import {
   type CbbTeamRef,
 } from "./cbb";
 import { readFinal, writeFinal } from "../shared/final-cache.server";
+import { american, lineNum, num, parseEvent, parseOdds, teamRefFrom } from "./cbb-parse";
+export { oddsSwapped, parseEvent, parseOdds } from "./cbb-parse";
 import { possessionFromSummary } from "../shared/basketball-possession";
 import { buildBasketballProbabilities, type BasketballRules } from "../nba/nba-probabilities";
 
 const SITE = "https://site.api.espn.com/apis/site/v2/sports/basketball/mens-college-basketball";
-const CORE = "https://sports.core.api.espn.com/v2/sports/basketball/leagues/mens-college-basketball";
+const CORE =
+  "https://sports.core.api.espn.com/v2/sports/basketball/leagues/mens-college-basketball";
 const FILES = "https://raw.githubusercontent.com/RJMurph10/gamblingnfl/props-site/cbb";
 
 const MINUTE = 60_000;
@@ -61,102 +64,10 @@ async function fetchJson(url: string, timeoutMs = 15_000): Promise<any> {
 const pad = (n: number) => String(n).padStart(2, "0");
 const ymd = (d: Date) => `${d.getUTCFullYear()}${pad(d.getUTCMonth() + 1)}${pad(d.getUTCDate())}`;
 
-const num = (v: unknown): number | null => {
-  if (v === null || v === undefined || v === "") return null;
-  const n = Number(String(v).replace(/[,+]/g, ""));
-  return Number.isFinite(n) ? n : null;
-};
-const lineNum = (v: unknown): number | null => {
-  if (v === null || v === undefined || v === "") return null;
-  if (typeof v === "number") return Number.isFinite(v) ? v : null;
-  const m = /(-?\d+(?:\.\d+)?)/.exec(String(v).replace(/^\s*[ou]\s*/i, ""));
-  return m ? Number(m[1]) : null;
-};
-function american(v: unknown): number | null {
-  if (v === null || v === undefined || v === "") return null;
-  if (typeof v === "object") {
-    const o = v as Record<string, unknown>;
-    return american(o.american ?? o.alternateDisplayValue ?? o.value ?? o.odds);
-  }
-  if (typeof v === "string" && /^\s*even\s*$/i.test(v)) return 100;
-  const n = typeof v === "number" ? v : Number(String(v).trim().replace(/^\+/, ""));
-  return Number.isFinite(n) && Math.abs(n) >= 100 ? Math.round(n) : null;
-}
-
 /** The college basketball season shown: it starts in November, so until July it's last year's. */
 export function cbbSeasonLabel(now = new Date()): string {
   const y = now.getUTCMonth() + 1 <= 7 ? now.getUTCFullYear() - 1 : now.getUTCFullYear();
   return `${y}-${String(y + 1).slice(2)}`;
-}
-
-/* ---------- odds ---------- */
-
-const teamIdOf = (t: any): string | null => {
-  if (!t) return null;
-  if (t.id != null) return String(t.id);
-  const m = /\/teams\/(\d+)/.exec(String(t.$ref ?? ""));
-  return m ? m[1] : null;
-};
-
-/**
- * True when ESPN's odds list the game's away team as "home". It does this for some neutral-site
- * college games (about 3%), which would put the line on the wrong team (Florida A&M −28.5 against
- * Florida State). Checked by team id, else by the favorite named in "details".
- */
-export function oddsSwapped(o: any, home?: { id?: string; abbr?: string }): boolean {
-  if (!home?.id && !home?.abbr) return false;
-  const hid = teamIdOf(o?.homeTeamOdds?.team);
-  const aid = teamIdOf(o?.awayTeamOdds?.team);
-  if (home.id && hid) return hid !== String(home.id) && (!aid || aid === String(home.id));
-  const m = /^\s*([A-Za-z&.'-]+)\s+-\d/.exec(String(o?.details ?? ""));
-  if (m && home.abbr && o?.homeTeamOdds?.favorite != null) {
-    const favIsHome = m[1].toUpperCase() === String(home.abbr).toUpperCase();
-    return favIsHome !== Boolean(o.homeTeamOdds.favorite);
-  }
-  return false;
-}
-
-/** One ESPN odds object as the game's line; `home` turns around books that list the teams the other way. */
-export function parseOdds(o: any, home?: { id?: string; abbr?: string }): CbbOdds | undefined {
-  const odds = parseOddsAsListed(o);
-  if (!odds || !oddsSwapped(o, home)) return odds;
-  return {
-    ...odds,
-    spread: odds.spread === null ? null : odds.spread === 0 ? 0 : -odds.spread,
-    mlHome: odds.mlAway,
-    mlAway: odds.mlHome,
-    spreadOddsHome: odds.spreadOddsAway,
-    spreadOddsAway: odds.spreadOddsHome,
-  };
-}
-
-function parseOddsAsListed(o: any): CbbOdds | undefined {
-  if (!o || typeof o !== "object") return undefined;
-  const h = o.homeTeamOdds ?? {};
-  const a = o.awayTeamOdds ?? {};
-  const mlHome = american(h.moneyLine) ?? american(o.moneyline?.home?.close?.odds ?? o.moneyline?.home?.current?.odds);
-  const mlAway = american(a.moneyLine) ?? american(o.moneyline?.away?.close?.odds ?? o.moneyline?.away?.current?.odds);
-  let spread = lineNum(o.pointSpread?.home?.close?.line ?? o.pointSpread?.home?.current?.line ?? o.spread);
-  if (spread !== null && spread !== 0) {
-    // ESPN's spread is the home team's; check the sign against the favorite
-    if (mlHome !== null && mlAway !== null && mlHome !== mlAway) spread = mlHome < mlAway ? -Math.abs(spread) : Math.abs(spread);
-    else if (h.favorite === true) spread = -Math.abs(spread);
-    else if (a.favorite === true) spread = Math.abs(spread);
-  }
-  if (spread === null && /^(even|pk|pick)/i.test(String(o.details ?? ""))) spread = 0;
-  const total = lineNum(o.overUnder) ?? lineNum(o.total?.over?.close?.line ?? o.total?.over?.current?.line);
-  const out: CbbOdds = {
-    spread,
-    total: total !== null && total > 0 ? total : null,
-    mlHome,
-    mlAway,
-    spreadOddsHome: american(h.spreadOdds) ?? american(h.close?.spread) ?? american(o.pointSpread?.home?.close?.odds),
-    spreadOddsAway: american(a.spreadOdds) ?? american(a.close?.spread) ?? american(o.pointSpread?.away?.close?.odds),
-    overOdds: american(o.overOdds) ?? american(o.total?.over?.close?.odds),
-    underOdds: american(o.underOdds) ?? american(o.total?.under?.close?.odds),
-    ...(o.provider?.name ? { provider: String(o.provider.name) } : {}),
-  };
-  return out.spread === null && out.total === null && out.mlHome === null ? undefined : out;
 }
 
 /* ---------- teams and conferences (from the season file) ---------- */
@@ -167,14 +78,32 @@ interface SeasonFile {
   conferences?: Record<string, [string, string]>;
   teams?: Record<string, [string, string, string, string, string, string, string]>;
   /** …, line, note ("" when none), location ("City, ST"). */
-  games?: [string, string, string, number, string, number, number, number, number, (number | null)[] | null, string?, string?, (number | null)?, ((number | null)[] | null)?][];
+  games?: [
+    string,
+    string,
+    string,
+    number,
+    string,
+    number,
+    number,
+    number,
+    number,
+    (number | null)[] | null,
+    string?,
+    string?,
+    (number | null)?,
+    ((number | null)[] | null)?,
+  ][];
   /** Opening [homeSpread, total] of live and upcoming games. */
   opens?: Record<string, (number | null)[]>;
   /** Pregame lines of live and upcoming games, by game id (same layout as a game's line). */
   lines?: Record<string, (number | null)[]>;
 }
 
-function teamFromFile(id: string, t: SeasonFile["teams"] extends Record<string, infer V> | undefined ? V : never): CbbTeamRef {
+function teamFromFile(
+  id: string,
+  t: SeasonFile["teams"] extends Record<string, infer V> | undefined ? V : never,
+): CbbTeamRef {
   const color = String(t[4] ?? "").replace("#", "");
   return {
     id,
@@ -188,100 +117,18 @@ function teamFromFile(id: string, t: SeasonFile["teams"] extends Record<string, 
   };
 }
 
-function teamRefFrom(t: any, confId = ""): CbbTeamRef {
-  const id = String(t?.id ?? "");
-  const abbr = String(t?.abbreviation ?? "---");
-  const color = String(t?.color ?? "").replace("#", "");
-  return {
-    id,
-    abbr,
-    name: String(t?.displayName ?? t?.name ?? abbr),
-    short: String(t?.shortDisplayName ?? t?.location ?? abbr),
-    nickname: String(t?.name ?? ""),
-    color: /^[0-9a-f]{6}$/i.test(color) ? `#${color}` : "#8899aa",
-    logo: String(t?.logo ?? t?.logos?.[0]?.href ?? cbbLogoFor(id)),
-    confId: t?.conferenceId != null ? String(t.conferenceId) : confId,
-  };
-}
-
 function loadSeasonFile(label: string): Promise<SeasonFile | null> {
   return cached(`season-file-${label}`, 5 * MINUTE, async () => {
     try {
-      const res = await fetch(`${FILES}/season-${label}.json`, { signal: AbortSignal.timeout(20_000) });
+      const res = await fetch(`${FILES}/season-${label}.json`, {
+        signal: AbortSignal.timeout(20_000),
+      });
       if (!res.ok) return null;
       return (await res.json()) as SeasonFile;
     } catch {
       return null;
     }
   });
-}
-
-/* ---------- events from ESPN ---------- */
-
-function statusOf(type: any): CbbStatus {
-  const text = `${type?.name ?? ""} ${type?.detail ?? ""} ${type?.description ?? ""}`;
-  if (/POSTPONED|CANCELED|CANCELLED|SUSPENDED/i.test(text)) return "postponed";
-  if (type?.state === "in") return "live";
-  if (type?.state === "post" || type?.completed === true) return "final";
-  return "scheduled";
-}
-
-/** The team with the ball during a live game, when ESPN says (a competitor flag or the game situation). */
-function possession(comp: any, competitors: any[]): string | undefined {
-  const flagged = competitors.find((c) => c?.possession === true || c?.possession === "true");
-  const id = flagged?.team?.id ?? flagged?.id ?? comp?.situation?.possession;
-  return id ? String(id) : undefined;
-}
-
-export function parseEvent(e: any): CbbGame | null {
-  const comp = e?.competitions?.[0];
-  const competitors: any[] = comp?.competitors ?? [];
-  const home = competitors.find((c) => c?.homeAway === "home");
-  const away = competitors.find((c) => c?.homeAway === "away");
-  if (!comp || !home?.team || !away?.team || !e?.id) return null;
-  const type = comp.status?.type ?? e.status?.type ?? {};
-  const status = statusOf(type);
-  const started = status === "live" || status === "final";
-  const side = (c: any) => {
-    const rank = num(c?.curatedRank?.current);
-    return {
-      team: teamRefFrom(c.team),
-      score: started ? num(c?.score?.value ?? c?.score?.displayValue ?? c?.score) : null,
-      ...(rank && rank <= 25 ? { rank } : {}),
-      record:
-        (c?.records ?? []).find((r: any) => r?.type === "total" || r?.name === "overall")?.summary ??
-        c?.records?.[0]?.summary,
-      periods: started && Array.isArray(c?.linescores) ? c.linescores.map((l: any) => num(l?.value ?? l?.displayValue) ?? 0) : [],
-    };
-  };
-  const st = comp.status ?? e.status ?? {};
-  const broadcast = comp.broadcasts?.[0]?.names?.[0] ?? comp.geoBroadcasts?.[0]?.media?.shortName;
-  const note = comp.notes?.[0]?.headline ?? e.notes?.[0]?.headline;
-  const odds = parseOdds(Array.isArray(comp.odds) ? comp.odds[0] : undefined, {
-    id: String(home.team.id ?? ""),
-    abbr: String(home.team.abbreviation ?? ""),
-  });
-  const addr = comp.venue?.address;
-  const location = [addr?.city, addr?.state].filter(Boolean).join(", ");
-  return {
-    id: String(e.id),
-    date: String(e.date ?? comp.date ?? ""),
-    status,
-    statusDetail: String(type?.shortDetail ?? type?.detail ?? type?.description ?? ""),
-    period: Number(st.period ?? 0) || 0,
-    clock: String(st.displayClock ?? ""),
-    ...(status === "live" && possession(comp, competitors) ? { possessionTeamId: possession(comp, competitors) } : {}),
-    part: Number(e?.season?.type ?? comp?.type?.id) === 3 ? "post" : "reg",
-    neutral: Boolean(comp.neutralSite),
-    conference: Boolean(comp.conferenceCompetition),
-    ...(note ? { note: String(note) } : {}),
-    ...(comp.venue?.fullName ? { venue: String(comp.venue.fullName) } : {}),
-    ...(location ? { location } : {}),
-    ...(broadcast ? { broadcast: String(broadcast) } : {}),
-    away: side(away),
-    home: side(home),
-    ...(odds ? { odds } : {}),
-  };
 }
 
 function fetchDay(day: Date): Promise<CbbGame[]> {
@@ -302,7 +149,8 @@ function fetchDay(day: Date): Promise<CbbGame[]> {
       .map((g: CbbGame) => {
         // ESPN drops the line at tip-off: remember the last pregame line and keep showing it
         if (g.status === "scheduled" && g.odds) pregame.set(g.id, g.odds);
-        else if (!g.odds?.spread && pregame.has(g.id)) return { ...g, odds: mergeOdds(g.odds, pregame.get(g.id)) };
+        else if (!g.odds?.spread && pregame.has(g.id))
+          return { ...g, odds: mergeOdds(g.odds, pregame.get(g.id)) };
         return g;
       });
   });
@@ -313,9 +161,37 @@ const pregame = new Map<string, CbbOdds>();
 
 /* ---------- the schedule ---------- */
 
-function gameFromRow(row: NonNullable<SeasonFile["games"]>[number], teams: Map<string, CbbTeamRef>): CbbGame {
-  const [id, date, hId, hScore, aId, aScore, neutral, conf, type, line, note, location, possessions, open] = row;
-  const team = (tid: string) => teams.get(tid) ?? { id: tid, abbr: "---", name: "Unknown", short: "Unknown", nickname: "", color: "#8899aa", logo: cbbLogoFor(tid), confId: "" };
+function gameFromRow(
+  row: NonNullable<SeasonFile["games"]>[number],
+  teams: Map<string, CbbTeamRef>,
+): CbbGame {
+  const [
+    id,
+    date,
+    hId,
+    hScore,
+    aId,
+    aScore,
+    neutral,
+    conf,
+    type,
+    line,
+    note,
+    location,
+    possessions,
+    open,
+  ] = row;
+  const team = (tid: string) =>
+    teams.get(tid) ?? {
+      id: tid,
+      abbr: "---",
+      name: "Unknown",
+      short: "Unknown",
+      nickname: "",
+      color: "#8899aa",
+      logo: cbbLogoFor(tid),
+      confId: "",
+    };
   const odds: CbbOdds | undefined = line
     ? {
         spread: line[0] ?? null,
@@ -341,7 +217,9 @@ function gameFromRow(row: NonNullable<SeasonFile["games"]>[number], teams: Map<s
     ...(note ? { note } : {}),
     ...(location ? { location } : {}),
     ...(possessions ? { possessions } : {}),
-    ...(open && (open[0] != null || open[1] != null) ? { open: { spread: open[0] ?? null, total: open[1] ?? null } } : {}),
+    ...(open && (open[0] != null || open[1] != null)
+      ? { open: { spread: open[0] ?? null, total: open[1] ?? null } }
+      : {}),
     away: { team: team(aId), score: aScore, periods: [] },
     home: { team: team(hId), score: hScore, periods: [] },
     ...(odds ? { odds } : {}),
@@ -353,9 +231,25 @@ function mergeOdds(live: CbbOdds | undefined, stored: CbbOdds | undefined): CbbO
   if (!stored) return live;
   if (!live) return stored;
   const out: CbbOdds = { ...stored };
-  for (const [k, v] of Object.entries(live)) if (v != null) (out as unknown as Record<string, unknown>)[k] = v;
+  for (const [k, v] of Object.entries(live))
+    if (v != null) (out as unknown as Record<string, unknown>)[k] = v;
   return out;
 }
+
+/**
+ * Division I conferences ESPN's conference list leaves out: since November 2026 /groups stops after 25
+ * conferences (alphabetically at the SEC), so these seven are added by ESPN's numeric id, which is what the
+ * scoreboard tags their teams with. Without them their teams look like non-Division I schools.
+ */
+const MISSING_D1: CbbConference[] = [
+  { id: "24", name: "Southern Conference", short: "SoCon" },
+  { id: "25", name: "Southland Conference", short: "Southland" },
+  { id: "26", name: "Southwestern Athletic Conference", short: "SWAC" },
+  { id: "49", name: "Summit League", short: "Summit" },
+  { id: "27", name: "Sun Belt Conference", short: "Sun Belt" },
+  { id: "29", name: "West Coast Conference", short: "WCC" },
+  { id: "30", name: "Western Athletic Conference", short: "WAC" },
+];
 
 /** Division I conferences and their teams, straight from ESPN (cached for 12 hours). */
 function loadConferences(): Promise<{ conferences: CbbConference[]; teams: CbbTeamRef[] }> {
@@ -367,7 +261,11 @@ function loadConferences(): Promise<{ conferences: CbbConference[]; teams: CbbTe
       const id = String(conf?.id ?? conf?.uid?.split("~g:")[1] ?? conf?.abbreviation ?? "");
       if (!id) continue;
       const name = String(conf.name ?? "");
-      conferences.push({ id, name, short: String(conf.shortName ?? name.replace(/\s+Conference$/i, "")) });
+      conferences.push({
+        id,
+        name,
+        short: String(conf.shortName ?? name.replace(/\s+Conference$/i, "")),
+      });
       for (const t of conf.teams ?? []) teams.push(teamRefFrom(t, id));
     }
     return { conferences, teams };
@@ -381,7 +279,10 @@ async function loadSchedule(): Promise<CbbSchedule> {
   for (let d = -1; d <= 7; d++) days.push(new Date(now.getTime() + d * DAY));
   const [file, groups, ...live] = await Promise.all([
     loadSeasonFile(season),
-    loadConferences().catch(() => ({ conferences: [] as CbbConference[], teams: [] as CbbTeamRef[] })),
+    loadConferences().catch(() => ({
+      conferences: [] as CbbConference[],
+      teams: [] as CbbTeamRef[],
+    })),
     ...days.map((d) => fetchDay(d).catch(() => [] as CbbGame[])),
   ]);
   const teams = new Map<string, CbbTeamRef>();
@@ -390,11 +291,18 @@ async function loadSchedule(): Promise<CbbSchedule> {
   for (const [id, t] of Object.entries(file?.teams ?? {})) {
     const known = teams.get(id);
     const fromFile = teamFromFile(id, t);
-    teams.set(id, known ? { ...fromFile, ...known, confId: known.confId || fromFile.confId } : fromFile);
+    teams.set(
+      id,
+      known ? { ...fromFile, ...known, confId: known.confId || fromFile.confId } : fromFile,
+    );
   }
-  const conferences: CbbConference[] = groups.conferences.length
+  const listed: CbbConference[] = groups.conferences.length
     ? groups.conferences
     : Object.entries(file?.conferences ?? {}).map(([id, [name, short]]) => ({ id, name, short }));
+  const conferences: CbbConference[] = [
+    ...listed,
+    ...MISSING_D1.filter((c) => !listed.some((l) => l.id === c.id)),
+  ];
 
   const byId = new Map<string, CbbGame>();
   for (const row of file?.games ?? []) byId.set(row[0], gameFromRow(row, teams));
@@ -404,7 +312,13 @@ async function loadSchedule(): Promise<CbbSchedule> {
     // the season file's team details (conference, colors) win; ESPN's live data fills the rest
     for (const side of [g.home, g.away]) {
       const known = teams.get(side.team.id);
-      if (known) side.team = { ...side.team, confId: known.confId || side.team.confId, color: known.color, logo: known.logo || side.team.logo };
+      if (known)
+        side.team = {
+          ...side.team,
+          confId: known.confId || side.team.confId,
+          color: known.color,
+          logo: known.logo || side.team.logo,
+        };
       else teams.set(side.team.id, side.team);
     }
     const stored = byId.get(g.id);
@@ -447,7 +361,8 @@ async function loadSchedule(): Promise<CbbSchedule> {
       .map(async (g) => {
         try {
           const detail = await fetchCbbGameDetail(g.id);
-          if (detail.game.possessionTeamId) byId.set(g.id, { ...byId.get(g.id)!, possessionTeamId: detail.game.possessionTeamId });
+          if (detail.game.possessionTeamId)
+            byId.set(g.id, { ...byId.get(g.id)!, possessionTeamId: detail.game.possessionTeamId });
         } catch {
           // no ball icon for this game
         }
@@ -455,15 +370,22 @@ async function loadSchedule(): Promise<CbbSchedule> {
   );
   // Games against schools outside Division I (D-II, D-III, NAIA): kept and labeled, but the dashboard
   // leaves them out and the model gives them little weight. A team is D-I when it's in a D-I conference.
-  const d1 = new Set([...teams.values()].filter((t) => t.confId && conferences.some((c) => c.id === t.confId)).map((t) => t.id));
+  const d1 = new Set(
+    [...teams.values()]
+      .filter((t) => t.confId && conferences.some((c) => c.id === t.confId))
+      .map((t) => t.id),
+  );
   if (d1.size) {
     for (const [id, g] of byId) {
-      if (!d1.has(g.home.team.id) || !d1.has(g.away.team.id)) byId.set(id, { ...g, nonDivisionI: true });
+      if (!d1.has(g.home.team.id) || !d1.has(g.away.team.id))
+        byId.set(id, { ...g, nonDivisionI: true });
     }
   }
   return {
     season,
-    games: [...byId.values()].sort((a, b) => a.date.localeCompare(b.date) || a.id.localeCompare(b.id)),
+    games: [...byId.values()].sort(
+      (a, b) => a.date.localeCompare(b.date) || a.id.localeCompare(b.id),
+    ),
     teams: [...teams.values()],
     conferences,
     updated: file?.updated ?? null,
@@ -479,7 +401,10 @@ async function loadSchedule(): Promise<CbbSchedule> {
 const oddsLookups = new Map<string, { at: number; odds: CbbOdds | null }>();
 const LOOKUPS_PER_LOAD = 12;
 
-async function loadClosingOdds(id: string, home: { id: string; abbr: string }): Promise<CbbOdds | null> {
+async function loadClosingOdds(
+  id: string,
+  home: { id: string; abbr: string },
+): Promise<CbbOdds | null> {
   const list = await fetchJson(`${CORE}/events/${id}/competitions/${id}/odds?limit=50`);
   const items: any[] = await Promise.all(
     (Array.isArray(list?.items) ? list.items : []).map((it: any) =>
@@ -508,17 +433,30 @@ async function closingOdds(g: CbbGame): Promise<CbbOdds | null> {
   const hit = oddsLookups.get(g.id);
   const ttl = hit?.odds ? 12 * HOUR : g.status === "live" ? 2 * MINUTE : 10 * MINUTE;
   if (hit && Date.now() - hit.at < ttl) return hit.odds;
-  const odds = await loadClosingOdds(g.id, { id: g.home.team.id, abbr: g.home.team.abbr }).catch(() => null);
+  const odds = await loadClosingOdds(g.id, { id: g.home.team.id, abbr: g.home.team.abbr }).catch(
+    () => null,
+  );
   oddsLookups.set(g.id, { at: Date.now(), odds });
   return odds;
 }
 
 async function withClosingOdds(games: CbbGame[]): Promise<void> {
   const missing = games
-    .filter((g) => (g.status === "live" || g.status === "final") && (g.odds?.spread == null || g.odds?.total == null))
-    .sort((a, b) => (a.status === "live" ? 0 : 1) - (b.status === "live" ? 0 : 1) || b.date.localeCompare(a.date));
+    .filter(
+      (g) =>
+        (g.status === "live" || g.status === "final") &&
+        (g.odds?.spread == null || g.odds?.total == null),
+    )
+    .sort(
+      (a, b) =>
+        (a.status === "live" ? 0 : 1) - (b.status === "live" ? 0 : 1) ||
+        b.date.localeCompare(a.date),
+    );
   const known = missing.filter((g) => oddsLookups.has(g.id));
-  const todo = [...known, ...missing.filter((g) => !oddsLookups.has(g.id)).slice(0, LOOKUPS_PER_LOAD)];
+  const todo = [
+    ...known,
+    ...missing.filter((g) => !oddsLookups.has(g.id)).slice(0, LOOKUPS_PER_LOAD),
+  ];
   let next = 0;
   await Promise.all(
     Array.from({ length: 8 }, async () => {
@@ -539,7 +477,9 @@ export function fetchCbbSchedule(): Promise<CbbSchedule> {
 export function fetchCbbRankings(): Promise<Record<string, number>> {
   return cached("rankings", HOUR, async () => {
     const json = await fetchJson(`${SITE}/rankings`);
-    const ap = (json?.rankings ?? []).find((r: any) => /AP/i.test(String(r?.name ?? ""))) ?? json?.rankings?.[0];
+    const ap =
+      (json?.rankings ?? []).find((r: any) => /AP/i.test(String(r?.name ?? ""))) ??
+      json?.rankings?.[0];
     const out: Record<string, number> = {};
     for (const r of ap?.ranks ?? []) {
       const id = r?.team?.id;
@@ -570,10 +510,13 @@ async function loadGameDetail(gameId: string): Promise<CbbGameDetail> {
     date: comp?.date,
     status: comp?.status,
     season: header?.season,
-    competitions: [{ ...comp, notes: header?.gameNote ? [{ headline: header.gameNote }] : comp?.notes }],
+    competitions: [
+      { ...comp, notes: header?.gameNote ? [{ headline: header.gameNote }] : comp?.notes },
+    ],
   });
   if (!game) throw new Error("ESPN returned no game for this id");
-  if (!game.venue && json?.gameInfo?.venue?.fullName) game.venue = String(json.gameInfo.venue.fullName);
+  if (!game.venue && json?.gameInfo?.venue?.fullName)
+    game.venue = String(json.gameInfo.venue.fullName);
   for (const pick of Array.isArray(json?.pickcenter) ? json.pickcenter : []) {
     const o = parseOdds(pick, { id: game.home.team.id, abbr: game.home.team.abbr });
     if (o) {
@@ -594,7 +537,11 @@ async function loadGameDetail(gameId: string): Promise<CbbGameDetail> {
   const teamStats = (awayBox?.statistics ?? [])
     .map((s: any) => {
       const mate = (homeBox?.statistics ?? []).find((x: any) => x?.name === s?.name) ?? {};
-      return { label: String(s?.label ?? s?.name ?? ""), away: String(s?.displayValue ?? "—"), home: String(mate?.displayValue ?? "—") };
+      return {
+        label: String(s?.label ?? s?.name ?? ""),
+        away: String(s?.displayValue ?? "—"),
+        home: String(mate?.displayValue ?? "—"),
+      };
     })
     .filter((l: { label: string }) => l.label);
 
@@ -608,7 +555,9 @@ async function loadGameDetail(gameId: string): Promise<CbbGameDetail> {
         id: String(p?.athlete?.id ?? ""),
         name: String(p?.athlete?.displayName ?? p?.athlete?.shortName ?? "Unknown"),
         ...(p?.athlete?.jersey ? { jersey: String(p.athlete.jersey) } : {}),
-        ...(p?.athlete?.position?.abbreviation ? { position: String(p.athlete.position.abbreviation) } : {}),
+        ...(p?.athlete?.position?.abbreviation
+          ? { position: String(p.athlete.position.abbreviation) }
+          : {}),
         starter: Boolean(p?.starter),
         ...(p?.didNotPlay ? { dnp: String(p?.reason || "DNP") } : {}),
         stats: (p?.stats ?? []).map(String),
@@ -635,8 +584,14 @@ async function loadGameDetail(gameId: string): Promise<CbbGameDetail> {
     ...shotSpot(p),
   }));
   const samples = (json?.winprobability ?? [])
-    .map((w: any) => ({ homeWinPercentage: num(w?.homeWinPercentage), playId: w?.playId ? String(w.playId) : undefined }))
-    .filter((w: { homeWinPercentage: number | null }) => w.homeWinPercentage !== null) as { homeWinPercentage: number; playId?: string }[];
+    .map((w: any) => ({
+      homeWinPercentage: num(w?.homeWinPercentage),
+      playId: w?.playId ? String(w.playId) : undefined,
+    }))
+    .filter((w: { homeWinPercentage: number | null }) => w.homeWinPercentage !== null) as {
+    homeWinPercentage: number;
+    playId?: string;
+  }[];
   const winProb: number[] = samples.map((w) => w.homeWinPercentage);
   // the pregame line (the season file's, when ESPN's summary no longer has one) for the cover / total chart
   if (game.odds?.spread == null || game.odds?.total == null) {
@@ -706,7 +661,9 @@ export function fetchCbbRoster(teamId: string): Promise<CbbRosterPlayer[]> {
         ...(a.position?.abbreviation ? { position: String(a.position.abbreviation) } : {}),
         ...(a.displayHeight ? { height: String(a.displayHeight) } : {}),
         ...(a.experience?.displayValue ? { year: String(a.experience.displayValue) } : {}),
-        ...(a.birthPlace?.city ? { hometown: [a.birthPlace.city, a.birthPlace.state].filter(Boolean).join(", ") } : {}),
+        ...(a.birthPlace?.city
+          ? { hometown: [a.birthPlace.city, a.birthPlace.state].filter(Boolean).join(", ") }
+          : {}),
       }));
   });
 }
