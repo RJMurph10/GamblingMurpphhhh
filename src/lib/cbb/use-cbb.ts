@@ -4,6 +4,7 @@ import { useQuery } from "@tanstack/react-query";
 import { getCbbGameDetail, getCbbRankings, getCbbRoster, getCbbSchedule } from "./cbb.functions";
 import type { CbbConference, CbbGame, CbbSchedule, CbbTeamRef } from "./cbb";
 import { runCbbModel, type CbbModelRow } from "./cbb-model";
+import { parseEvent } from "./cbb-parse";
 
 const EMPTY: CbbSchedule = { season: "", games: [], teams: [], conferences: [], updated: null };
 
@@ -37,12 +38,23 @@ export function useCbbSchedule(refetchMs: number | false = 60_000) {
           },
     );
   }, [data.games, rankings.data]);
-  const teams = useMemo(() => new Map<string, CbbTeamRef>(data.teams.map((t) => [t.id, t])), [data.teams]);
+  const teams = useMemo(
+    () => new Map<string, CbbTeamRef>(data.teams.map((t) => [t.id, t])),
+    [data.teams],
+  );
   const conferences = useMemo(
     () => new Map<string, CbbConference>(data.conferences.map((c) => [c.id, c])),
     [data.conferences],
   );
-  return { ...query, season: data.season, games, teams, conferences, updated: data.updated, rankings: rankings.data ?? {} };
+  return {
+    ...query,
+    season: data.season,
+    games,
+    teams,
+    conferences,
+    updated: data.updated,
+    rankings: rankings.data ?? {},
+  };
 }
 
 export function useCbbRankings() {
@@ -75,5 +87,51 @@ export function useCbbRoster(teamId: string) {
     queryFn: () => getCbbRoster({ data: { teamId } }),
     staleTime: 60 * 60_000,
     retry: 1,
+  });
+}
+
+/**
+ * Live and upcoming games straight from ESPN in the browser (today through the next week). The dashboard
+ * uses this only when the site's server returns no live or upcoming games, so a server that can't reach
+ * ESPN's scoreboard doesn't leave the Live and Upcoming panels empty.
+ */
+export function useCbbBrowserGames(enabled: boolean) {
+  return useQuery({
+    queryKey: ["cbb-browser-games"],
+    enabled,
+    staleTime: 15_000,
+    refetchInterval: (q) =>
+      enabled
+        ? (q.state.data as CbbGame[] | undefined)?.some((g) => g.status === "live")
+          ? 15_000
+          : 60_000
+        : false,
+    retry: 1,
+    queryFn: async () => {
+      const pad = (n: number) => String(n).padStart(2, "0");
+      const days = Array.from({ length: 8 }, (_, i) => {
+        const d = new Date(Date.now() + (i - 1) * 86_400_000);
+        return `${d.getUTCFullYear()}${pad(d.getUTCMonth() + 1)}${pad(d.getUTCDate())}`;
+      });
+      const lists = await Promise.all(
+        days.map(async (day) => {
+          try {
+            const res = await fetch(
+              `https://site.api.espn.com/apis/site/v2/sports/basketball/mens-college-basketball/scoreboard?dates=${day}&groups=50&limit=1000`,
+            );
+            if (!res.ok) return [];
+            const json = await res.json();
+            return (Array.isArray(json?.events) ? json.events : [])
+              .map(parseEvent)
+              .filter(Boolean) as CbbGame[];
+          } catch {
+            return [];
+          }
+        }),
+      );
+      const byId = new Map<string, CbbGame>();
+      for (const g of lists.flat()) byId.set(g.id, g);
+      return [...byId.values()].sort((a, b) => a.date.localeCompare(b.date));
+    },
   });
 }

@@ -6,9 +6,16 @@ import { PageTitle, Panel, StatCard } from "@/components/shared/booth";
 import { CbbLogo } from "@/components/cbb/CbbBits";
 import { CbbLiveGames, CbbRecentGames, CbbUpcomingGames } from "@/components/cbb/CbbDashTables";
 import { buildCbbStandings, hasScore, recordText } from "@/lib/cbb/cbb";
-import { BEST_TOTAL_EDGE, SPREAD_PICK_MIN, gradeCbbSeason, unitsText, winPct, type CbbRecord } from "@/lib/cbb/cbb-model";
+import {
+  BEST_TOTAL_EDGE,
+  SPREAD_PICK_MIN,
+  gradeCbbSeason,
+  unitsText,
+  winPct,
+  type CbbRecord,
+} from "@/lib/cbb/cbb-model";
 import { changeTone, weekChangeText } from "@/lib/shared/season-pulse";
-import { useCbbModel, useCbbSchedule } from "@/lib/cbb/use-cbb";
+import { useCbbBrowserGames, useCbbModel, useCbbSchedule } from "@/lib/cbb/use-cbb";
 
 export const Route = createFileRoute("/cbb/")({
   head: () => ({
@@ -31,14 +38,49 @@ const pctChange = (now: number | null, before: number | null) =>
   now !== null && before !== null ? Math.round((now - before) * 10) / 10 : null;
 
 function CbbDashboard() {
-  const { games, teams, rankings, season, isLoading, isError } = useCbbSchedule(60_000);
+  const {
+    games: serverGames,
+    teams,
+    conferences,
+    rankings,
+    season,
+    isLoading,
+    isError,
+  } = useCbbSchedule(60_000);
+  // If the site's server came back with no live or upcoming games, read them from ESPN in the browser.
+  const serverHasCurrent = serverGames.some((g) => g.status === "live" || g.status === "scheduled");
+  const browser = useCbbBrowserGames(!isLoading && !serverHasCurrent);
+  const games = useMemo(() => {
+    if (serverHasCurrent || !browser.data?.length) return serverGames;
+    const known = new Set(serverGames.map((g) => g.id));
+    const confIds = new Set(conferences.keys());
+    const isD1 = (id: string, confId: string) => confIds.has(teams.get(id)?.confId || confId);
+    const extra = browser.data
+      .filter((g) => g.status !== "final" && !known.has(g.id))
+      .map((g) => {
+        const ranked = (side: typeof g.home) => ({
+          ...side,
+          rank: side.rank ?? rankings[side.team.id],
+        });
+        const out = { ...g, home: ranked(g.home), away: ranked(g.away) };
+        return isD1(g.home.team.id, g.home.team.confId) && isD1(g.away.team.id, g.away.team.confId)
+          ? out
+          : { ...out, nonDivisionI: true };
+      });
+    return [...serverGames, ...extra];
+  }, [serverGames, serverHasCurrent, browser.data, conferences, teams, rankings]);
   const rows = useCbbModel(games);
   const model = useMemo(() => new Map(rows.map((r) => [r.game.id, r])), [rows]);
   // upcoming and live ★ best bets, soonest first
   const bets = useMemo(
     () =>
       rows
-        .filter((r) => r.best && (r.game.status === "scheduled" || r.game.status === "live") && !r.game.nonDivisionI)
+        .filter(
+          (r) =>
+            r.best &&
+            (r.game.status === "scheduled" || r.game.status === "live") &&
+            !r.game.nonDivisionI,
+        )
         .sort((a, b) => a.game.date.localeCompare(b.game.date))
         .slice(0, 12),
     [rows],
@@ -71,7 +113,9 @@ function CbbDashboard() {
       Object.entries(rankings)
         .sort((a, b) => a[1] - b[1])
         .map(([id, rank]) => ({ rank, team: teams.get(id), row: standings.get(id) }))
-        .filter((x): x is { rank: number; team: NonNullable<typeof x.team>; row: typeof x.row } => Boolean(x.team)),
+        .filter((x): x is { rank: number; team: NonNullable<typeof x.team>; row: typeof x.row } =>
+          Boolean(x.team),
+        ),
     [rankings, teams, standings],
   );
 
@@ -91,15 +135,25 @@ function CbbDashboard() {
     <>
       <section className="mb-6">
         <PageTitle
-          eyebrow={games.length ? `Home dashboard · ${season || "2026-27"} live schedule` : "Home dashboard"}
+          eyebrow={
+            games.length
+              ? `Home dashboard · ${season || "2026-27"} live schedule`
+              : "Home dashboard"
+          }
           title="Season Pulse"
         />
-        <div className="grid grid-cols-2 gap-3 lg:grid-cols-5">
+        <div className="grid grid-cols-2 gap-3 lg:grid-cols-4">
           <StatCard
             label="Win rate · model"
             value={fmt(winPct(grade.moneyline))}
             unit={winPct(grade.moneyline) === null ? undefined : "%"}
-            note={loading ?? note(weekChangeText(winChange, " pts"), grade.games ? `${rec(grade.moneyline)} picking winners` : "No games graded yet")}
+            note={
+              loading ??
+              note(
+                weekChangeText(winChange, " pts"),
+                grade.games ? `${rec(grade.moneyline)} picking winners` : "No games graded yet",
+              )
+            }
             tone={changeTone(winChange)}
           />
           <StatCard
@@ -122,21 +176,18 @@ function CbbDashboard() {
             label="Cover % · model"
             value={fmt(winPct(grade.spread))}
             unit={winPct(grade.spread) === null ? undefined : "%"}
-            note={loading ?? note(weekChangeText(coverChange, " pts"), grade.games ? `${rec(grade.spread)} ATS at the opener · ${SPREAD_PICK_MIN}+ pts off, home-court games` : "No games graded yet")}
-            tone={changeTone(coverChange)}
-          />
-          <StatCard
-            label="Totals · line moved our way"
-            value={fmt(grade.clv.beat)}
-            unit={grade.clv.beat === null ? undefined : "%"}
             note={
               loading ??
-              (grade.clv.picks
-                ? `of ${grade.clv.picks} totals picks · avg ${grade.clv.avg! > 0 ? "+" : ""}${grade.clv.avg!.toFixed(1)} pts · against us ${grade.clv.lost!.toFixed(0)}%`
-                : "Needs games with an opening line")
+              note(
+                weekChangeText(coverChange, " pts"),
+                grade.games
+                  ? `${rec(grade.spread)} ATS at the opener · ${SPREAD_PICK_MIN}+ pts off, home-court games`
+                  : "No games graded yet",
+              )
             }
-            tone={grade.clv.beat === null ? "mute" : grade.clv.beat > (grade.clv.lost ?? 0) ? "win" : "loss"}
+            tone={changeTone(coverChange)}
           />
+          {/* "Totals · line moved our way" (grade.clv) is still computed and tracked, just not shown here. */}
           <StatCard
             label="Model edge · ★ best bets"
             value={unitsText(grade.best.units)}
@@ -156,7 +207,9 @@ function CbbDashboard() {
           />
         </div>
         <p className="mt-2 font-mono text-[10px] uppercase tracking-wider text-faint">
-          {grade.games} games graded{through ? ` through ${through}` : ""} · flat 1u per pick at -110, totals and ★ at the opening total · picks made before tip-off from earlier games only ·{" "}
+          {grade.games} games graded{through ? ` through ${through}` : ""} · flat 1u per pick at
+          -110, totals and ★ at the opening total · picks made before tip-off from earlier games
+          only ·{" "}
           {nonD1 ? (
             <>
               <Link to="/cbb/games" className="text-acc">
@@ -199,13 +252,13 @@ function CbbDashboard() {
               <span className="font-semibold text-foreground">
                 Totals where the model is {BEST_TOTAL_EDGE}+ points off the opening total.
               </span>{" "}
-              58.1%, 57.2% and 59.0% in the last three seasons (break-even 52.4%), once both teams have 3+ games.
-              Bet them early: at the closing total the same picks only hit about 50%.
+              58.1%, 57.2% and 59.0% in the last three seasons (break-even 52.4%), once both teams
+              have 3+ games. Bet them early: at the closing total the same picks only hit about 50%.
             </p>
             <p className="mt-2 text-sm text-mute">
-              <span className="font-semibold text-foreground">MAAC conference unders.</span> 56.0% at the closing
-              total over five seasons, each picked from earlier seasons only. Bet near tip-off. Conference play
-              starts in December.
+              <span className="font-semibold text-foreground">MAAC conference unders.</span> 56.0%
+              at the closing total over five seasons, each picked from earlier seasons only. Bet
+              near tip-off. Conference play starts in December.
             </p>
             <div className="mt-3 divide-y divide-line/5 rounded-lg border border-line/10">
               {bets.length ? (
@@ -221,26 +274,40 @@ function CbbDashboard() {
                       {r.game.away.team.abbr} @ {r.game.home.team.abbr} ·{" "}
                       {r.game.status === "live"
                         ? "live"
-                        : new Date(r.game.date).toLocaleString([], { weekday: "short", hour: "numeric", minute: "2-digit" })}
+                        : new Date(r.game.date).toLocaleString([], {
+                            weekday: "short",
+                            hour: "numeric",
+                            minute: "2-digit",
+                          })}
                     </span>
                     <span className="font-semibold text-foreground">
                       {r.best!.pick === "over" ? "Over" : "Under"} {r.best!.line}
                     </span>
-                    {r.best!.rule === "edge" && r.game.status === "scheduled" ? <BetTiming kind="now" /> : null}
-                    <span className="w-12 text-right text-mute">{r.best!.rule === "conf" ? "MAAC" : r.pred.total.toFixed(1)}</span>
+                    {r.best!.rule === "edge" && r.game.status === "scheduled" ? (
+                      <BetTiming kind="now" />
+                    ) : null}
+                    <span className="w-12 text-right text-mute">
+                      {r.best!.rule === "conf" ? "MAAC" : r.pred.total.toFixed(1)}
+                    </span>
                   </Link>
                 ))
               ) : (
                 <p className="px-3 py-3 font-mono text-[11px] text-mute">
-                  {isLoading ? "Loading…" : "No best bets on the board right now. They show up once a game's opening total is posted."}
+                  {isLoading
+                    ? "Loading…"
+                    : "No best bets on the board right now. They show up once a game's opening total is posted."}
                 </p>
               )}
             </div>
             <p className="mt-2 font-mono text-[10px] text-faint">
-              Model picks show the opening total and, on the right, the model's total: if the line has already moved
-              toward the model, most of the edge is gone. MAAC unders show the current total.
+              Model picks show the opening total and, on the right, the model's total: if the line
+              has already moved toward the model, most of the edge is gone. MAAC unders show the
+              current total.
             </p>
-            <Link to="/cbb/model" className="mt-3 block font-mono text-[10px] uppercase tracking-wider text-acc">
+            <Link
+              to="/cbb/model"
+              className="mt-3 block font-mono text-[10px] uppercase tracking-wider text-acc"
+            >
               Full research →
             </Link>
           </Panel>
@@ -258,15 +325,22 @@ function CbbDashboard() {
                     className="glass relative grid aspect-square place-items-center rounded-xl hover:glow"
                     style={{ boxShadow: `inset 0 0 0 1px ${team.color}44` }}
                   >
-                    <span className="absolute left-1 top-0.5 font-mono text-[9px] font-bold text-acc">{rank}</span>
+                    <span className="absolute left-1 top-0.5 font-mono text-[9px] font-bold text-acc">
+                      {rank}
+                    </span>
                     <CbbLogo team={team} className="size-8" />
                   </Link>
                 ))}
               </div>
             ) : (
-              <p className="py-6 text-center font-mono text-xs text-mute">{isLoading ? "Loading rankings…" : "Rankings unavailable."}</p>
+              <p className="py-6 text-center font-mono text-xs text-mute">
+                {isLoading ? "Loading rankings…" : "Rankings unavailable."}
+              </p>
             )}
-            <Link to="/cbb/teams" className="mt-3 block text-center font-mono text-[10px] uppercase tracking-wider text-acc">
+            <Link
+              to="/cbb/teams"
+              className="mt-3 block text-center font-mono text-[10px] uppercase tracking-wider text-acc"
+            >
               + all D-I teams
             </Link>
           </Panel>
