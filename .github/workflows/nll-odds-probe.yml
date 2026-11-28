@@ -4,32 +4,30 @@ jobs:
   p:
     runs-on: ubuntu-latest
     steps:
-      - name: ESPN NLL odds
+      - name: NLL margins 2024-25 and 2025-26
         run: |
           python3 - <<'PY'
-          import json, urllib.request
-          from datetime import datetime, timedelta, timezone
+          import json, urllib.request, collections
+          from datetime import date, timedelta
+          from concurrent.futures import ThreadPoolExecutor
           UA={"User-Agent":"Mozilla/5.0"}
-          g=lambda u: json.loads(urllib.request.urlopen(urllib.request.Request(u,headers=UA),timeout=30).read())
-          t=datetime.now(timezone.utc)
-          ev=[]
-          for i in range(-1,7):
-              day=(t+timedelta(days=i)).strftime('%Y%m%d')
-              try:
-                  ev+=g(f"https://site.api.espn.com/apis/site/v2/sports/lacrosse/nll/scoreboard?dates={day}").get("events",[])
-              except Exception as x: print("day",day,"err",x)
-          d={"events":ev}
-          ev=d.get("events",[]); print("events",len(ev))
-          for e in ev:
-              c=e["competitions"][0]
-              print(e["date"], e["name"], e["status"]["type"]["name"], "| scoreboard odds:", json.dumps(c.get("odds"))[:600])
-          for e in ev[:12]:
-              try:
-                  o=g(f"https://sports.core.api.espn.com/v2/sports/lacrosse/leagues/nll/events/{e['id']}/competitions/{e['id']}/odds")
-                  items=o.get("items",[])
-                  print("CORE", e["name"], "items", len(items))
-                  for it in items[:3]:
-                      if "$ref" in it: it=g(it["$ref"])
-                      print("   ", json.dumps({k:it.get(k) for k in ("provider","details","spread","overUnder","awayTeamOdds","homeTeamOdds","open","close")})[:1500])
-              except Exception as x: print("CORE err", e["name"], x)
+          def day(d):
+              u=f"https://site.api.espn.com/apis/site/v2/sports/lacrosse/nll/scoreboard?dates={d.strftime('%Y%m%d')}"
+              for _ in range(3):
+                  try: return json.loads(urllib.request.urlopen(urllib.request.Request(u,headers=UA),timeout=30).read()).get("events",[])
+                  except Exception: pass
+              return []
+          for s0,s1 in ((date(2024,11,25),date(2025,6,1)),(date(2025,11,25),date(2026,6,1))):
+              days=[s0+timedelta(i) for i in range((s1-s0).days)]
+              with ThreadPoolExecutor(8) as ex: evs=[e for r in ex.map(day,days) for e in r]
+              seen={}; 
+              for e in evs:
+                  if e["status"]["type"]["name"]!="STATUS_FINAL": continue
+                  c=e["competitions"][0]; sc={x["homeAway"]:int(x["score"]) for x in c["competitors"]}
+                  seen[e["id"]]=(sc["home"],sc["away"],e["status"].get("period",4),c.get("type",{}).get("abbreviation"))
+              g=list(seen.values()); n=len(g)
+              m=collections.Counter(abs(h-a) for h,a,p,t in g)
+              ot=sum(p>4 for h,a,p,t in g)
+              tot=[h+a for h,a,p,t in g]
+              print(f"{s0.year}-{s1.year%100}: {n} games | 1-goal {m[1]} ({m[1]/n:.1%}) | OT {ot} ({ot/n:.1%}) | home win {sum(h>a for h,a,p,t in g)/n:.1%} | avg total {sum(tot)/n:.1f} | margins {sorted(m.items())[:8]}")
           PY
