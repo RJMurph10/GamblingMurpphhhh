@@ -45,7 +45,7 @@ describe("PLL team stats (2026)", () => {
   });
 
   it.each([
-    [2025, ts2025, pbp2025, 20],
+    [2025, ts2025, pbp2025, 45],
     [2026, ts2026, pbp2026, 53],
   ])(
     "%i adds up: 1-point + 2 × 2-point goals = score, the play-by-play's final, the same file names",
