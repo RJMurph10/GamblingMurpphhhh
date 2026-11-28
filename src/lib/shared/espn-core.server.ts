@@ -18,14 +18,16 @@ export const CORE_ODDS = "https://sports.core.api.espn.com/v2/sports/football/le
 
 export type FeedLeague = "nfl" | "cfb";
 export const CFB_SITE = "https://site.api.espn.com/apis/site/v2/sports/football/college-football";
-export const FEEDS: Record<FeedLeague, { summary: string; scoreboard: string; coreOdds: string }> = {
-  nfl: { summary: SUMMARY, scoreboard: SCOREBOARD, coreOdds: CORE_ODDS },
-  cfb: {
-    summary: `${CFB_SITE}/summary`,
-    scoreboard: `${CFB_SITE}/scoreboard`,
-    coreOdds: "https://sports.core.api.espn.com/v2/sports/football/leagues/college-football/events",
-  },
-};
+export const FEEDS: Record<FeedLeague, { summary: string; scoreboard: string; coreOdds: string }> =
+  {
+    nfl: { summary: SUMMARY, scoreboard: SCOREBOARD, coreOdds: CORE_ODDS },
+    cfb: {
+      summary: `${CFB_SITE}/summary`,
+      scoreboard: `${CFB_SITE}/scoreboard`,
+      coreOdds:
+        "https://sports.core.api.espn.com/v2/sports/football/leagues/college-football/events",
+    },
+  };
 /** A week's scoreboard (college: FBS teams only, ESPN group 80). */
 export const weekScoreboardUrl = (league: FeedLeague, week: number, season = SEASON) =>
   league === "cfb"
@@ -312,7 +314,14 @@ async function loadHistoricalOdds(
     // fall through to the summary feed
   }
   // 2) Game summary "pickcenter" keeps the closing line (and prices) for finished games.
-  if (!result.spread || result.total === undefined || !hasMoneylines(result.prices)) {
+  // (also when the opening total is missing: the college ★ totals rule is graded at the opener, and
+  // the core feed doesn't carry it in the form we read)
+  if (
+    !result.spread ||
+    result.total === undefined ||
+    !hasMoneylines(result.prices) ||
+    (league === "cfb" && result.prices?.totalOpen === undefined)
+  ) {
     try {
       const summary = await fetchJson(`${SUMMARY}?event=${eventId}`);
       answered = true;
@@ -364,7 +373,14 @@ export async function savedNflClosingLines(): Promise<Record<string, HistoricalO
     const games: Record<string, HistoricalOdds> = {};
     for (const [id, r] of Object.entries(data?.games ?? {})) {
       const prices: NonNullable<Game["odds"]> = {};
-      for (const k of ["homeMoneyline", "awayMoneyline", "homeSpreadOdds", "awaySpreadOdds", "overOdds", "underOdds"] as const)
+      for (const k of [
+        "homeMoneyline",
+        "awayMoneyline",
+        "homeSpreadOdds",
+        "awaySpreadOdds",
+        "overOdds",
+        "underOdds",
+      ] as const)
         if (typeof r?.[k] === "number") prices[k] = r[k];
       games[id] = {
         ...(typeof r?.spread === "string" && r.spread ? { spread: r.spread } : {}),
@@ -384,6 +400,9 @@ const LOOKUPS_PER_LOAD = 48;
 
 /** Odds of finished games never change, so they're kept long-term (shared with every server instance). */
 const noLines = (o: HistoricalOdds) => !o?.spread && o?.total === undefined;
+/** College games looked up again for their opening total (once per server instance). */
+const reopened = new Set<string>();
+
 const finalOddsStores = {
   nfl: finalLinesStore<HistoricalOdds>("nfl-odds", noLines),
   cfb: finalLinesStore<HistoricalOdds>("cfb-odds", noLines),
@@ -426,8 +445,14 @@ export async function backfillHistoricalOdds(
     // Every NFL game has lines, so a stored "no lines" entry there is a failed lookup that got saved
     // (that's how finished games lost their spread and total): look it up again. College keeps its
     // stored "no lines" (FCS opponents ESPN never lists).
-    if (hit && !(league === "nfl" && noLines(hit))) apply(g, hit);
-    else toFetch.push(g);
+    if (hit && !(league === "nfl" && noLines(hit))) {
+      apply(g, hit);
+      // College lines saved before the opening total was kept: look the game up once more (per server)
+      if (league === "cfb" && needsOdds(g) && !reopened.has(g.id)) {
+        reopened.add(g.id);
+        toFetch.push(g);
+      }
+    } else toFetch.push(g);
   }
   // Newest first, and only so many per load: a fresh server reloading a whole season (hundreds of
   // FCS games ESPN never lists lines for) otherwise fires so many requests the schedule load fails,
@@ -450,7 +475,8 @@ export async function backfillHistoricalOdds(
           // Only a real answer from ESPN counts as "no lines", and never for the NFL.
           const trustedEmpty =
             old && league === "cfb" && !failedLookups.has(`${league}-${g.id.replace(prefix, "")}`);
-          if (g.status === "final" && (has || trustedEmpty)) found.push({ id: g.id, date: dateOf(g), odds });
+          if (g.status === "final" && (has || trustedEmpty))
+            found.push({ id: g.id, date: dateOf(g), odds });
         } catch {
           // leave the dash; it retries the next time the schedule reloads
         }
@@ -826,7 +852,9 @@ export function mapEvent(event: any, week: number): Game | null {
   if (!homeTeam || !awayTeam) return null;
 
   const line = (c: any) =>
-    (c?.linescores ?? []).map((ls: any) => Math.round(Number(ls?.value ?? ls?.displayValue ?? 0)) || 0);
+    (c?.linescores ?? []).map(
+      (ls: any) => Math.round(Number(ls?.value ?? ls?.displayValue ?? 0)) || 0,
+    );
   // ESPN's final score wins when its quarter-by-quarter lines are missing or don't add up to it
   // (otherwise a finished game reads 0-0): keep the score as one entry so the total is right.
   const checked = (c: any, q: number[]) => {
@@ -910,10 +938,9 @@ export function mapEvent(event: any, week: number): Game | null {
         playState = "score";
         const teamId = teamOfLastPlay();
         const yards = text.match(/\b(\d{1,2})\s*(?:-?\s*(?:yard|yd)s?)\b/i);
-        if (teamId) scoringAlert = { type: "FG", teamId, ...(yards ? { yards: Number(yards[1]) } : {}) };
-      } else if (
-        /extra point|two.?point|conversion|kickoff|kicks? \d+ yards? from/i.test(text)
-      ) {
+        if (teamId)
+          scoringAlert = { type: "FG", teamId, ...(yards ? { yards: Number(yards[1]) } : {}) };
+      } else if (/extra point|two.?point|conversion|kickoff|kicks? \d+ yards? from/i.test(text)) {
         playState = "kick";
         const teamId = teamOfLastPlay();
         if (teamId) kicking = { kind: "kickoff", teamId };
