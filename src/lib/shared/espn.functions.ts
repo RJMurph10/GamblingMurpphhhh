@@ -2,8 +2,20 @@ import { createServerFn } from "@tanstack/react-start";
 import { z } from "zod";
 import { fetchSchedule, fetchPriorSeasonResults } from "@/lib/nfl/nfl-schedule.server";
 import { fetchGameDetail } from "@/lib/shared/espn-game-detail.server";
-import { fetchTeamDepthChart, fetchTeamRosterForPage, fetchTeamSeasonStats, fetchTeamOverviewStats, fetchTeamSeasonAverages, fetchLeagueTeamOverviewStats, fetchPlayerProfile } from "@/lib/shared/espn-teams-players.server";
-import { fetchGameProps, fetchPropPeople, fetchPropAvailability } from "@/lib/shared/espn-props.server";
+import {
+  fetchTeamDepthChart,
+  fetchTeamRosterForPage,
+  fetchTeamSeasonStats,
+  fetchTeamOverviewStats,
+  fetchTeamSeasonAverages,
+  fetchLeagueTeamOverviewStats,
+  fetchPlayerProfile,
+} from "@/lib/shared/espn-teams-players.server";
+import {
+  fetchGameProps,
+  fetchPropPeople,
+  fetchPropAvailability,
+} from "@/lib/shared/espn-props.server";
 import {
   fetchGamePropAnalytics,
   fetchGamePropProjections,
@@ -30,7 +42,30 @@ export const getLiveGame = createServerFn({
       .parse(data),
   )
   .handler(async ({ data }) => {
-    return fetchGameDetail(data.eventId);
+    const game = await fetchGameDetail(data.eventId);
+    // A college title game ESPN still lists as TBD: take the teams, host and place the schedule filled in.
+    if (
+      game &&
+      /^cfb-/.test(game.id) &&
+      [game.awayTeamId, game.homeTeamId].some((t) => /^cfb--\d+$/.test(t))
+    ) {
+      const { fetchCfbSchedule } = await import("@/lib/cfb/cfb-espn.server");
+      const sched = (await fetchCfbSchedule().catch(() => [])).find((g) => g.id === game.id);
+      if (sched?.titleRace) {
+        return {
+          ...game,
+          awayTeamId: sched.awayTeamId,
+          homeTeamId: sched.homeTeamId,
+          teamRefs: sched.teamRefs,
+          awayRank: sched.awayRank,
+          homeRank: sched.homeRank,
+          titleRace: sched.titleRace,
+          venue: sched.venue && sched.venue !== "TBD" ? sched.venue : game.venue,
+          location: sched.location && sched.location !== "TBD" ? sched.location : game.location,
+        };
+      }
+    }
+    return game;
   });
 
 export const getTeamOverviewStats = createServerFn({

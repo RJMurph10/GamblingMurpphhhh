@@ -97,7 +97,7 @@ export function GameCard({ game }: { game: Game }) {
  * worked it out, else who has clinched (✓, already filled in) and who's still alive. "Host projected" when
  * home/away is the site's call (the clinched leader hosts); ESPN's listing replaces it once posted.
  */
-function TitleRaceLine({ race }: { race: NonNullable<Game["titleRace"]> }) {
+export function TitleRaceLine({ race }: { race: NonNullable<Game["titleRace"]> }) {
   if (race.status === "set")
     return (
       <div className="mt-0.5 font-mono text-[10px] text-mute">

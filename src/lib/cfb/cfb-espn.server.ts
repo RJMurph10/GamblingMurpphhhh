@@ -153,6 +153,28 @@ function titleConferences(standings: any): TitleConference[] {
   }));
 }
 
+/** A college team's home stadium and city from ESPN's core team record (1-day cache). */
+function homeVenueOf(espnTeamId: string): Promise<{ venue: string; location: string } | null> {
+  return cached(
+    `cfb-home-venue-${espnTeamId}`,
+    async () => {
+      try {
+        // the site API's team page has no venue; the core API's does
+        const data = await fetchJson(
+          `https://sports.core.api.espn.com/v2/sports/football/leagues/college-football/seasons/${SEASON}/teams/${espnTeamId}`,
+        );
+        const v = data?.venue;
+        if (!v?.fullName) return null;
+        const location = [v.address?.city, v.address?.state].filter(Boolean).join(", ");
+        return { venue: String(v.fullName), location };
+      } catch {
+        return null;
+      }
+    },
+    24 * 60 * MINUTE,
+  );
+}
+
 const isTbd = (teamId: string) => /^cfb--\d+$/.test(teamId);
 
 /**
@@ -217,18 +239,12 @@ async function fillTitleGames(games: Game[]): Promise<Game[]> {
       const tbdSides = (["away", "home"] as const).filter((side) =>
         isTbd(side === "away" ? g.awayTeamId : g.homeTeamId),
       );
-      const named = (id: string) => {
-        const t = teamById(`cfb-${id}`);
-        const full = `${t?.city ?? ""} ${t?.name ?? ""}`.trim().toLowerCase();
-        return (["away", "home"] as const).find((side) => {
-          const hint = g.tbdHint?.[side]?.toLowerCase();
-          return hint && (hint === full || hint === t?.city?.toLowerCase());
-        });
-      };
       let hostKnown = Boolean(g.neutralSite || known.length);
       for (const id of add) {
-        // ESPN's placeholder names the side; else the clinched leader is projected to host
-        const hinted = named(id);
+        // The clinched team with the best record hosts (the conferences' rule for campus sites): certain
+        // once nobody can catch it, projected until then. ESPN's placeholder names aren't used, since ESPN
+        // sends them on some calls and not others; its real listing replaces ours once posted.
+        const hinted = undefined as "away" | "home" | undefined;
         const lead = id === race.partial.teams[0] && race.partial.leads;
         const side =
           hinted && tbdSides.includes(hinted)
@@ -242,9 +258,18 @@ async function fillTitleGames(games: Game[]): Promise<Game[]> {
         if (side === "away") next.awayTeamId = `cfb-${id}`;
         else next.homeTeamId = `cfb-${id}`;
         tbdSides.splice(tbdSides.indexOf(side), 1);
-        if (hinted || race.partial.locked) hostKnown = true;
+        if (race.partial.locked) hostKnown = true;
       }
       if (add.length) finish("partial", hostKnown);
+    }
+    // a campus-site title game is at the host's stadium: fill the location once the host is in
+    const noPlace = !g.venue || g.venue === "TBD" || !g.location || g.location === "TBD";
+    if (noPlace && !g.neutralSite && next.titleRace?.status !== "open" && !isTbd(next.homeTeamId)) {
+      const home = await homeVenueOf(espnId(next.homeTeamId));
+      if (home) {
+        next.venue = home.venue;
+        if (home.location) next.location = home.location;
+      }
     }
     filled.set(g.id, next);
   }
