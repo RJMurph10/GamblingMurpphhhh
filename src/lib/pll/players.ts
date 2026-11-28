@@ -145,6 +145,37 @@ export const pllCoaches = (teamId: string, season: number): string[] =>
 export const pllDraft = (teamId: string, season: number): PllDraftPick[] =>
   extra.drafts?.[teamId]?.[String(season)] ?? [];
 
+export type PllDraftEntry = PllDraftPick & { season: number; teamId: string; team: string };
+
+const draftKey = (s: string) =>
+  s
+    .toLowerCase()
+    .normalize("NFD")
+    .replace(/[\u0300-\u036f]/g, "")
+    .replace(/\b(jr|sr|ii|iii|iv)\b/g, "")
+    .replace(/[^a-z]/g, "");
+
+let draftIndex: Map<string, PllDraftEntry[]> | null = null;
+
+/**
+ * Where a player was drafted (season, club, round, pick), matched on name. A player picked twice (taken,
+ * went back to school or transferred, entered again) gets only his latest pick.
+ */
+export function pllDraftOf(name: string): PllDraftEntry[] {
+  if (!draftIndex) {
+    draftIndex = new Map();
+    for (const [teamId, years] of Object.entries(extra.drafts ?? {}))
+      for (const [y, picks] of Object.entries(years))
+        for (const pk of picks) {
+          const k = draftKey(pk.player);
+          const e = { ...pk, season: Number(y), teamId, team: PLL_CLUB_SHORT[teamId] ?? teamId };
+          draftIndex.set(k, [...(draftIndex.get(k) ?? []), e]);
+        }
+  }
+  // picked more than once (went back to school or transferred, entered again): only the latest pick counts
+  return (draftIndex.get(draftKey(name)) ?? []).sort((x, y) => x.season - y.season).slice(-1);
+}
+
 /** Every championship game, newest first. */
 export const pllChampionships = (): PllChampionship[] =>
   [...(extra.champions ?? [])].sort((a, b) => b.season - a.season);
