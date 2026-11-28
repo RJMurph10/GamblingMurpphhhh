@@ -87,6 +87,7 @@
   --acc-wcbb: oklch(0.782 0.129 212);
   --acc-cbase: oklch(0.782 0.129 212);
   --acc-pll: oklch(0.782 0.129 212);
+  --acc-nll: oklch(0.782 0.129 212);
 
   --background: var(--bg);
   --foreground: var(--ink);
@@ -209,4 +210,8 @@
 
 [data-league="pll"] {
   --acc: var(--acc-pll);
+}
+
+[data-league="nll"] {
+  --acc: var(--acc-nll);
 }
