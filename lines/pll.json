@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-28T03:42:00Z",
+  "updated": "2026-11-28T03:50:00Z",
   "games": {
     "laxapi-2026-07-31T23:00-redwoods-chaos": {
       "home": "California Redwoods",
@@ -5060,6 +5060,1205 @@
         }
       },
       "source": "owner screenshot of PLL/FanDuel \"This Week's Slate\" graphic on X (2023 week 10); spread with prices only, no moneyline or total"
+    },
+    "preview-401545152": {
+      "home": "New York Atlas",
+      "away": "California Redwoods",
+      "commence": "2023-06-03T17:00:00Z",
+      "books": {
+        "fanduel": {
+          "ml": null,
+          "spread": [
+            -2.5,
+            110,
+            -140
+          ],
+          "total": null,
+          "at": null
+        },
+        "draftkings": {
+          "ml": [
+            -215,
+            175
+          ],
+          "spread": [
+            -2.5,
+            110,
+            -140
+          ],
+          "total": [
+            24.5,
+            -120,
+            -110
+          ],
+          "at": null
+        }
+      },
+      "source": "owner screenshots of PLL betting posts on X (2023)",
+      "notes": [
+        "FanDuel \"This Week's Slate\" graphic (PLL/FanDuel on X); spread with prices only",
+        "DraftKings app screenshots on X (Brian Andrews): open Atlas -1.5 -135, ML -205/+165; moved to -2.5 +110, ML -215/+175 before the game"
+      ],
+      "open": {
+        "spread": -1.5,
+        "total": 24.5,
+        "mlHome": -205,
+        "mlAway": 165,
+        "books": 2,
+        "at": null
+      },
+      "latest": {
+        "spread": -2.5,
+        "total": 24.5,
+        "mlHome": -215,
+        "mlAway": 175,
+        "books": 2,
+        "at": null
+      }
+    },
+    "preview-401545132": {
+      "home": "Utah Archers",
+      "away": "Boston Cannons",
+      "commence": "2023-06-03T19:30:00Z",
+      "books": {
+        "fanduel": {
+          "ml": null,
+          "spread": [
+            -2.5,
+            -120,
+            -110
+          ],
+          "total": null,
+          "at": null
+        }
+      },
+      "source": "owner screenshots of PLL betting posts on X (2023)",
+      "notes": [
+        "FanDuel \"This Week's Slate\" graphic (PLL/FanDuel on X); spread with prices only"
+      ],
+      "open": {
+        "spread": -2.5,
+        "total": null,
+        "mlHome": null,
+        "mlAway": null,
+        "books": 1,
+        "at": null
+      },
+      "latest": {
+        "spread": -2.5,
+        "total": null,
+        "mlHome": null,
+        "mlAway": null,
+        "books": 1,
+        "at": null
+      }
+    },
+    "preview-401545151": {
+      "home": "Philadelphia Waterdogs",
+      "away": "Carolina Chaos",
+      "commence": "2023-06-04T17:00:00Z",
+      "books": {
+        "fanduel": {
+          "ml": null,
+          "spread": [
+            -2.5,
+            -110,
+            -120
+          ],
+          "total": null,
+          "at": null
+        }
+      },
+      "source": "owner screenshots of PLL betting posts on X (2023)",
+      "notes": [
+        "FanDuel \"This Week's Slate\" graphic (PLL/FanDuel on X); spread with prices only"
+      ],
+      "open": {
+        "spread": -2.5,
+        "total": null,
+        "mlHome": null,
+        "mlAway": null,
+        "books": 1,
+        "at": null
+      },
+      "latest": {
+        "spread": -2.5,
+        "total": null,
+        "mlHome": null,
+        "mlAway": null,
+        "books": 1,
+        "at": null
+      }
+    },
+    "preview-401545153": {
+      "home": "Chrome",
+      "away": "Maryland Whipsnakes",
+      "commence": "2023-06-04T19:30:00Z",
+      "books": {
+        "fanduel": {
+          "ml": null,
+          "spread": [
+            -1.5,
+            -145,
+            115
+          ],
+          "total": null,
+          "at": null
+        }
+      },
+      "source": "owner screenshots of PLL betting posts on X (2023)",
+      "notes": [
+        "FanDuel \"This Week's Slate\" graphic (PLL/FanDuel on X); spread with prices only"
+      ],
+      "open": {
+        "spread": -1.5,
+        "total": null,
+        "mlHome": null,
+        "mlAway": null,
+        "books": 1,
+        "at": null
+      },
+      "latest": {
+        "spread": -1.5,
+        "total": null,
+        "mlHome": null,
+        "mlAway": null,
+        "books": 1,
+        "at": null
+      }
+    },
+    "preview-401545131": {
+      "home": "Utah Archers",
+      "away": "Chrome",
+      "commence": "2023-06-09T22:00:00Z",
+      "books": {
+        "fanduel": {
+          "ml": null,
+          "spread": [
+            1.5,
+            -142,
+            116
+          ],
+          "total": null,
+          "at": null
+        }
+      },
+      "source": "owner screenshots of PLL betting posts on X (2023)",
+      "notes": [
+        "FanDuel \"This Week's Slate\" graphic (PLL/FanDuel on X); spread with prices only"
+      ],
+      "open": {
+        "spread": 1.5,
+        "total": null,
+        "mlHome": null,
+        "mlAway": null,
+        "books": 1,
+        "at": null
+      },
+      "latest": {
+        "spread": 1.5,
+        "total": null,
+        "mlHome": null,
+        "mlAway": null,
+        "books": 1,
+        "at": null
+      }
+    },
+    "preview-401545154": {
+      "home": "California Redwoods",
+      "away": "Philadelphia Waterdogs",
+      "commence": "2023-06-10T00:30:00Z",
+      "books": {
+        "fanduel": {
+          "ml": null,
+          "spread": [
+            1.5,
+            -134,
+            110
+          ],
+          "total": null,
+          "at": null
+        }
+      },
+      "source": "owner screenshots of PLL betting posts on X (2023)",
+      "notes": [
+        "FanDuel \"This Week's Slate\" graphic (PLL/FanDuel on X); spread with prices only"
+      ],
+      "open": {
+        "spread": 1.5,
+        "total": null,
+        "mlHome": null,
+        "mlAway": null,
+        "books": 1,
+        "at": null
+      },
+      "latest": {
+        "spread": 1.5,
+        "total": null,
+        "mlHome": null,
+        "mlAway": null,
+        "books": 1,
+        "at": null
+      }
+    },
+    "preview-401545156": {
+      "home": "New York Atlas",
+      "away": "Maryland Whipsnakes",
+      "commence": "2023-06-10T19:00:00Z",
+      "books": {
+        "fanduel": {
+          "ml": null,
+          "spread": [
+            -1.5,
+            124,
+            -152
+          ],
+          "total": [
+            23.5,
+            null,
+            null
+          ],
+          "at": null
+        }
+      },
+      "source": "owner screenshots of PLL betting posts on X (2023)",
+      "notes": [
+        "FanDuel \"This Week's Slate\" graphic (PLL/FanDuel on X); spread with prices only",
+        "total from FanDuel \"Bad Beat of the Week\" graphic (Over 23.5 lost)"
+      ],
+      "open": {
+        "spread": -1.5,
+        "total": 23.5,
+        "mlHome": null,
+        "mlAway": null,
+        "books": 1,
+        "at": null
+      },
+      "latest": {
+        "spread": -1.5,
+        "total": 23.5,
+        "mlHome": null,
+        "mlAway": null,
+        "books": 1,
+        "at": null
+      }
+    },
+    "preview-401545133": {
+      "home": "Boston Cannons",
+      "away": "Carolina Chaos",
+      "commence": "2023-06-10T21:30:00Z",
+      "books": {
+        "fanduel": {
+          "ml": null,
+          "spread": [
+            -1.5,
+            -142,
+            116
+          ],
+          "total": null,
+          "at": null
+        }
+      },
+      "source": "owner screenshots of PLL betting posts on X (2023)",
+      "notes": [
+        "FanDuel \"This Week's Slate\" graphic (PLL/FanDuel on X); spread with prices only"
+      ],
+      "open": {
+        "spread": -1.5,
+        "total": null,
+        "mlHome": null,
+        "mlAway": null,
+        "books": 1,
+        "at": null
+      },
+      "latest": {
+        "spread": -1.5,
+        "total": null,
+        "mlHome": null,
+        "mlAway": null,
+        "books": 1,
+        "at": null
+      }
+    },
+    "preview-401545162": {
+      "home": "New York Atlas",
+      "away": "Philadelphia Waterdogs",
+      "commence": "2023-06-16T22:00:00Z",
+      "books": {
+        "app_x": {
+          "ml": [
+            -132,
+            108
+          ],
+          "spread": [
+            -1.5,
+            116,
+            -142
+          ],
+          "total": [
+            24.5,
+            -110,
+            -110
+          ],
+          "at": null
+        },
+        "pllbets_x": {
+          "ml": [
+            -140,
+            110
+          ],
+          "spread": null,
+          "total": [
+            24.5,
+            null,
+            null
+          ],
+          "at": null
+        }
+      },
+      "source": "owner screenshots of PLL betting posts on X (2023)",
+      "notes": [
+        "sportsbook app screenshots shared on X with a 4-leg parlay dated Jun 16 2023; book not shown (blue app, likely FanDuel); ML, spread and total with prices",
+        "\"PLL Bets\" weekly graphic on X; moneyline and total, book not named, total prices not shown"
+      ],
+      "open": {
+        "spread": -1.5,
+        "total": 24.5,
+        "mlHome": -132,
+        "mlAway": 108,
+        "books": 2,
+        "at": null
+      },
+      "latest": {
+        "spread": -1.5,
+        "total": 24.5,
+        "mlHome": -132,
+        "mlAway": 108,
+        "books": 2,
+        "at": null
+      }
+    },
+    "preview-401545155": {
+      "home": "Boston Cannons",
+      "away": "Chrome",
+      "commence": "2023-06-17T00:30:00Z",
+      "books": {
+        "app_x": {
+          "ml": [
+            144,
+            -178
+          ],
+          "spread": [
+            1.5,
+            -104,
+            -118
+          ],
+          "total": [
+            23.5,
+            -110,
+            -110
+          ],
+          "at": null
+        },
+        "pllbets_x": {
+          "ml": [
+            135,
+            -165
+          ],
+          "spread": null,
+          "total": [
+            23.5,
+            null,
+            null
+          ],
+          "at": null
+        }
+      },
+      "source": "owner screenshots of PLL betting posts on X (2023)",
+      "notes": [
+        "sportsbook app screenshots shared on X with a 4-leg parlay dated Jun 16 2023; book not shown (blue app, likely FanDuel); ML, spread and total with prices",
+        "\"PLL Bets\" weekly graphic on X; moneyline and total, book not named, total prices not shown"
+      ],
+      "open": {
+        "spread": 1.5,
+        "total": 23.5,
+        "mlHome": 144,
+        "mlAway": -178,
+        "books": 2,
+        "at": null
+      },
+      "latest": {
+        "spread": 1.5,
+        "total": 23.5,
+        "mlHome": 144,
+        "mlAway": -178,
+        "books": 2,
+        "at": null
+      }
+    },
+    "preview-401545134": {
+      "home": "Carolina Chaos",
+      "away": "Utah Archers",
+      "commence": "2023-06-17T16:00:00Z",
+      "books": {
+        "app_x": {
+          "ml": [
+            118,
+            -144
+          ],
+          "spread": [
+            1.5,
+            -128,
+            104
+          ],
+          "total": [
+            23.5,
+            -105,
+            -115
+          ],
+          "at": null
+        },
+        "pllbets_x": {
+          "ml": [
+            135,
+            -165
+          ],
+          "spread": null,
+          "total": [
+            23.5,
+            null,
+            null
+          ],
+          "at": null
+        }
+      },
+      "source": "owner screenshots of PLL betting posts on X (2023)",
+      "notes": [
+        "sportsbook app screenshots shared on X with a 4-leg parlay dated Jun 16 2023; book not shown (blue app, likely FanDuel); ML, spread and total with prices",
+        "\"PLL Bets\" weekly graphic on X; moneyline and total, book not named, total prices not shown"
+      ],
+      "open": {
+        "spread": 1.5,
+        "total": 23.5,
+        "mlHome": 118,
+        "mlAway": -144,
+        "books": 2,
+        "at": null
+      },
+      "latest": {
+        "spread": 1.5,
+        "total": 23.5,
+        "mlHome": 118,
+        "mlAway": -144,
+        "books": 2,
+        "at": null
+      }
+    },
+    "preview-401545158": {
+      "home": "Maryland Whipsnakes",
+      "away": "California Redwoods",
+      "commence": "2023-06-17T23:00:00Z",
+      "books": {
+        "app_x": {
+          "ml": [
+            -122,
+            100
+          ],
+          "spread": [
+            -1.5,
+            122,
+            -150
+          ],
+          "total": [
+            23.5,
+            -105,
+            -115
+          ],
+          "at": null
+        },
+        "pllbets_x": {
+          "ml": [
+            -130,
+            100
+          ],
+          "spread": null,
+          "total": [
+            23.5,
+            null,
+            null
+          ],
+          "at": null
+        }
+      },
+      "source": "owner screenshots of PLL betting posts on X (2023)",
+      "notes": [
+        "sportsbook app screenshots shared on X with a 4-leg parlay dated Jun 16 2023; book not shown (blue app, likely FanDuel); ML, spread and total with prices",
+        "\"PLL Bets\" weekly graphic on X; moneyline and total, book not named, total prices not shown"
+      ],
+      "open": {
+        "spread": -1.5,
+        "total": 23.5,
+        "mlHome": -122,
+        "mlAway": 100,
+        "books": 2,
+        "at": null
+      },
+      "latest": {
+        "spread": -1.5,
+        "total": 23.5,
+        "mlHome": -122,
+        "mlAway": 100,
+        "books": 2,
+        "at": null
+      }
+    },
+    "preview-401545135": {
+      "home": "Chrome",
+      "away": "Philadelphia Waterdogs",
+      "commence": "2023-07-08T22:00:00Z",
+      "books": {
+        "fanduel": {
+          "ml": null,
+          "spread": [
+            1.5,
+            -152,
+            124
+          ],
+          "total": null,
+          "at": null
+        }
+      },
+      "source": "owner screenshots of PLL betting posts on X (2023)",
+      "notes": [
+        "FanDuel \"This Week's Slate\" graphic (PLL/FanDuel on X); spread with prices only"
+      ],
+      "open": {
+        "spread": 1.5,
+        "total": null,
+        "mlHome": null,
+        "mlAway": null,
+        "books": 1,
+        "at": null
+      },
+      "latest": {
+        "spread": 1.5,
+        "total": null,
+        "mlHome": null,
+        "mlAway": null,
+        "books": 1,
+        "at": null
+      }
+    },
+    "preview-401545157": {
+      "home": "New York Atlas",
+      "away": "Boston Cannons",
+      "commence": "2023-07-09T00:30:00Z",
+      "books": {
+        "fanduel": {
+          "ml": null,
+          "spread": [
+            -1.5,
+            -122,
+            100
+          ],
+          "total": null,
+          "at": null
+        }
+      },
+      "source": "owner screenshots of PLL betting posts on X (2023)",
+      "notes": [
+        "FanDuel \"This Week's Slate\" graphic (PLL/FanDuel on X); spread with prices only"
+      ],
+      "open": {
+        "spread": -1.5,
+        "total": null,
+        "mlHome": null,
+        "mlAway": null,
+        "books": 1,
+        "at": null
+      },
+      "latest": {
+        "spread": -1.5,
+        "total": null,
+        "mlHome": null,
+        "mlAway": null,
+        "books": 1,
+        "at": null
+      }
+    },
+    "preview-401545142": {
+      "home": "Carolina Chaos",
+      "away": "California Redwoods",
+      "commence": "2023-07-09T18:00:00Z",
+      "books": {
+        "fanduel": {
+          "ml": null,
+          "spread": [
+            1.5,
+            -152,
+            124
+          ],
+          "total": null,
+          "at": null
+        }
+      },
+      "source": "owner screenshots of PLL betting posts on X (2023)",
+      "notes": [
+        "FanDuel \"This Week's Slate\" graphic (PLL/FanDuel on X); spread with prices only"
+      ],
+      "open": {
+        "spread": 1.5,
+        "total": null,
+        "mlHome": null,
+        "mlAway": null,
+        "books": 1,
+        "at": null
+      },
+      "latest": {
+        "spread": 1.5,
+        "total": null,
+        "mlHome": null,
+        "mlAway": null,
+        "books": 1,
+        "at": null
+      }
+    },
+    "preview-401545168": {
+      "home": "Utah Archers",
+      "away": "Maryland Whipsnakes",
+      "commence": "2023-07-09T20:30:00Z",
+      "books": {
+        "fanduel": {
+          "ml": null,
+          "spread": [
+            -1.5,
+            128,
+            -158
+          ],
+          "total": null,
+          "at": null
+        }
+      },
+      "source": "owner screenshots of PLL betting posts on X (2023)",
+      "notes": [
+        "FanDuel \"This Week's Slate\" graphic (PLL/FanDuel on X); spread with prices only"
+      ],
+      "open": {
+        "spread": -1.5,
+        "total": null,
+        "mlHome": null,
+        "mlAway": null,
+        "books": 1,
+        "at": null
+      },
+      "latest": {
+        "spread": -1.5,
+        "total": null,
+        "mlHome": null,
+        "mlAway": null,
+        "books": 1,
+        "at": null
+      }
+    },
+    "preview-401545136": {
+      "home": "Maryland Whipsnakes",
+      "away": "Philadelphia Waterdogs",
+      "commence": "2023-07-14T22:00:00Z",
+      "books": {
+        "fanduel": {
+          "ml": null,
+          "spread": [
+            1.5,
+            -152,
+            124
+          ],
+          "total": null,
+          "at": null
+        }
+      },
+      "source": "owner screenshots of PLL betting posts on X (2023)",
+      "notes": [
+        "FanDuel \"This Week's Slate\" graphic (PLL/FanDuel on X); spread with prices only"
+      ],
+      "open": {
+        "spread": 1.5,
+        "total": null,
+        "mlHome": null,
+        "mlAway": null,
+        "books": 1,
+        "at": null
+      },
+      "latest": {
+        "spread": 1.5,
+        "total": null,
+        "mlHome": null,
+        "mlAway": null,
+        "books": 1,
+        "at": null
+      }
+    },
+    "preview-401545143": {
+      "home": "California Redwoods",
+      "away": "Utah Archers",
+      "commence": "2023-07-15T00:30:00Z",
+      "books": {
+        "fanduel": {
+          "ml": null,
+          "spread": [
+            1.5,
+            -142,
+            116
+          ],
+          "total": null,
+          "at": null
+        }
+      },
+      "source": "owner screenshots of PLL betting posts on X (2023)",
+      "notes": [
+        "FanDuel \"This Week's Slate\" graphic (PLL/FanDuel on X); spread with prices only"
+      ],
+      "open": {
+        "spread": 1.5,
+        "total": null,
+        "mlHome": null,
+        "mlAway": null,
+        "books": 1,
+        "at": null
+      },
+      "latest": {
+        "spread": 1.5,
+        "total": null,
+        "mlHome": null,
+        "mlAway": null,
+        "books": 1,
+        "at": null
+      }
+    },
+    "preview-401545169": {
+      "home": "Boston Cannons",
+      "away": "Chrome",
+      "commence": "2023-07-15T22:00:00Z",
+      "books": {
+        "fanduel": {
+          "ml": null,
+          "spread": [
+            -1.5,
+            122,
+            -150
+          ],
+          "total": null,
+          "at": null
+        }
+      },
+      "source": "owner screenshots of PLL betting posts on X (2023)",
+      "notes": [
+        "FanDuel \"This Week's Slate\" graphic (PLL/FanDuel on X); spread with prices only"
+      ],
+      "open": {
+        "spread": -1.5,
+        "total": null,
+        "mlHome": null,
+        "mlAway": null,
+        "books": 1,
+        "at": null
+      },
+      "latest": {
+        "spread": -1.5,
+        "total": null,
+        "mlHome": null,
+        "mlAway": null,
+        "books": 1,
+        "at": null
+      }
+    },
+    "preview-401545144": {
+      "home": "Carolina Chaos",
+      "away": "New York Atlas",
+      "commence": "2023-07-16T00:30:00Z",
+      "books": {
+        "fanduel": {
+          "ml": null,
+          "spread": [
+            1.5,
+            -142,
+            115
+          ],
+          "total": null,
+          "at": null
+        }
+      },
+      "source": "owner screenshots of PLL betting posts on X (2023)",
+      "notes": [
+        "FanDuel \"This Week's Slate\" graphic (PLL/FanDuel on X); spread with prices only"
+      ],
+      "open": {
+        "spread": 1.5,
+        "total": null,
+        "mlHome": null,
+        "mlAway": null,
+        "books": 1,
+        "at": null
+      },
+      "latest": {
+        "spread": 1.5,
+        "total": null,
+        "mlHome": null,
+        "mlAway": null,
+        "books": 1,
+        "at": null
+      }
+    },
+    "preview-401545137": {
+      "home": "Chrome",
+      "away": "New York Atlas",
+      "commence": "2023-07-29T22:00:00Z",
+      "books": {
+        "fanduel": {
+          "ml": null,
+          "spread": [
+            1.5,
+            -152,
+            124
+          ],
+          "total": null,
+          "at": null
+        }
+      },
+      "source": "owner screenshots of PLL betting posts on X (2023)",
+      "notes": [
+        "FanDuel \"This Week's Slate\" graphic (PLL/FanDuel on X); spread with prices only"
+      ],
+      "open": {
+        "spread": 1.5,
+        "total": null,
+        "mlHome": null,
+        "mlAway": null,
+        "books": 1,
+        "at": null
+      },
+      "latest": {
+        "spread": 1.5,
+        "total": null,
+        "mlHome": null,
+        "mlAway": null,
+        "books": 1,
+        "at": null
+      }
+    },
+    "preview-401545160": {
+      "home": "California Redwoods",
+      "away": "Boston Cannons",
+      "commence": "2023-07-30T00:30:00Z",
+      "books": {
+        "fanduel": {
+          "ml": null,
+          "spread": [
+            1.5,
+            -158,
+            128
+          ],
+          "total": null,
+          "at": null
+        }
+      },
+      "source": "owner screenshots of PLL betting posts on X (2023)",
+      "notes": [
+        "FanDuel \"This Week's Slate\" graphic (PLL/FanDuel on X); spread with prices only"
+      ],
+      "open": {
+        "spread": 1.5,
+        "total": null,
+        "mlHome": null,
+        "mlAway": null,
+        "books": 1,
+        "at": null
+      },
+      "latest": {
+        "spread": 1.5,
+        "total": null,
+        "mlHome": null,
+        "mlAway": null,
+        "books": 1,
+        "at": null
+      }
+    },
+    "preview-401545159": {
+      "home": "Utah Archers",
+      "away": "Philadelphia Waterdogs",
+      "commence": "2023-07-30T19:00:00Z",
+      "books": {
+        "fanduel": {
+          "ml": null,
+          "spread": [
+            -1.5,
+            128,
+            -158
+          ],
+          "total": null,
+          "at": null
+        }
+      },
+      "source": "owner screenshots of PLL betting posts on X (2023)",
+      "notes": [
+        "FanDuel \"This Week's Slate\" graphic (PLL/FanDuel on X); spread with prices only"
+      ],
+      "open": {
+        "spread": -1.5,
+        "total": null,
+        "mlHome": null,
+        "mlAway": null,
+        "books": 1,
+        "at": null
+      },
+      "latest": {
+        "spread": -1.5,
+        "total": null,
+        "mlHome": null,
+        "mlAway": null,
+        "books": 1,
+        "at": null
+      }
+    },
+    "preview-401545170": {
+      "home": "Carolina Chaos",
+      "away": "Maryland Whipsnakes",
+      "commence": "2023-07-30T21:30:00Z",
+      "books": {
+        "fanduel": {
+          "ml": null,
+          "spread": [
+            1.5,
+            -152,
+            124
+          ],
+          "total": null,
+          "at": null
+        }
+      },
+      "source": "owner screenshots of PLL betting posts on X (2023)",
+      "notes": [
+        "FanDuel \"This Week's Slate\" graphic (PLL/FanDuel on X); spread with prices only"
+      ],
+      "open": {
+        "spread": 1.5,
+        "total": null,
+        "mlHome": null,
+        "mlAway": null,
+        "books": 1,
+        "at": null
+      },
+      "latest": {
+        "spread": 1.5,
+        "total": null,
+        "mlHome": null,
+        "mlAway": null,
+        "books": 1,
+        "at": null
+      }
+    },
+    "preview-401545171": {
+      "home": "New York Atlas",
+      "away": "Utah Archers",
+      "commence": "2023-08-05T19:00:00Z",
+      "books": {
+        "fanduel": {
+          "ml": null,
+          "spread": [
+            1.5,
+            -115,
+            -105
+          ],
+          "total": null,
+          "at": null
+        },
+        "pllbets_x": {
+          "ml": [
+            130,
+            -160
+          ],
+          "spread": null,
+          "total": [
+            25.5,
+            null,
+            null
+          ],
+          "at": null
+        }
+      },
+      "source": "owner screenshots of PLL betting posts on X (2023)",
+      "notes": [
+        "FanDuel \"This Week's Slate\" graphic (PLL/FanDuel on X); spread with prices only",
+        "\"PLL Bets\" weekly graphic on X; moneyline and total, book not named, total prices not shown"
+      ],
+      "open": {
+        "spread": 1.5,
+        "total": 25.5,
+        "mlHome": 130,
+        "mlAway": -160,
+        "books": 2,
+        "at": null
+      },
+      "latest": {
+        "spread": 1.5,
+        "total": 25.5,
+        "mlHome": 130,
+        "mlAway": -160,
+        "books": 2,
+        "at": null
+      }
+    },
+    "preview-401545138": {
+      "home": "Chrome",
+      "away": "Maryland Whipsnakes",
+      "commence": "2023-08-05T21:30:00Z",
+      "books": {
+        "fanduel": {
+          "ml": null,
+          "spread": [
+            1.5,
+            -110,
+            -110
+          ],
+          "total": null,
+          "at": null
+        },
+        "pllbets_x": {
+          "ml": [
+            128,
+            -158
+          ],
+          "spread": null,
+          "total": [
+            22.5,
+            null,
+            null
+          ],
+          "at": null
+        }
+      },
+      "source": "owner screenshots of PLL betting posts on X (2023)",
+      "notes": [
+        "FanDuel \"This Week's Slate\" graphic (PLL/FanDuel on X); spread with prices only",
+        "\"PLL Bets\" weekly graphic on X; moneyline and total, book not named, total prices not shown"
+      ],
+      "open": {
+        "spread": 1.5,
+        "total": 22.5,
+        "mlHome": 128,
+        "mlAway": -158,
+        "books": 2,
+        "at": null
+      },
+      "latest": {
+        "spread": 1.5,
+        "total": 22.5,
+        "mlHome": 128,
+        "mlAway": -158,
+        "books": 2,
+        "at": null
+      }
+    },
+    "preview-401545145": {
+      "home": "Carolina Chaos",
+      "away": "California Redwoods",
+      "commence": "2023-08-06T17:00:00Z",
+      "books": {
+        "fanduel": {
+          "ml": null,
+          "spread": [
+            -1.5,
+            122,
+            -150
+          ],
+          "total": null,
+          "at": null
+        },
+        "pllbets_x": {
+          "ml": [
+            -120,
+            100
+          ],
+          "spread": null,
+          "total": [
+            23.5,
+            null,
+            null
+          ],
+          "at": null
+        }
+      },
+      "source": "owner screenshots of PLL betting posts on X (2023)",
+      "notes": [
+        "FanDuel \"This Week's Slate\" graphic (PLL/FanDuel on X); spread with prices only",
+        "\"PLL Bets\" weekly graphic on X; moneyline and total, book not named, total prices not shown"
+      ],
+      "open": {
+        "spread": -1.5,
+        "total": 23.5,
+        "mlHome": -120,
+        "mlAway": 100,
+        "books": 2,
+        "at": null
+      },
+      "latest": {
+        "spread": -1.5,
+        "total": 23.5,
+        "mlHome": -120,
+        "mlAway": 100,
+        "books": 2,
+        "at": null
+      }
+    },
+    "preview-401545161": {
+      "home": "Boston Cannons",
+      "away": "Philadelphia Waterdogs",
+      "commence": "2023-08-06T19:30:00Z",
+      "books": {
+        "fanduel": {
+          "ml": null,
+          "spread": [
+            1.5,
+            -144,
+            118
+          ],
+          "total": null,
+          "at": null
+        },
+        "pllbets_x": {
+          "ml": [
+            -106,
+            -114
+          ],
+          "spread": null,
+          "total": [
+            25.5,
+            null,
+            null
+          ],
+          "at": null
+        }
+      },
+      "source": "owner screenshots of PLL betting posts on X (2023)",
+      "notes": [
+        "FanDuel \"This Week's Slate\" graphic (PLL/FanDuel on X); spread with prices only",
+        "\"PLL Bets\" weekly graphic on X; moneyline and total, book not named, total prices not shown"
+      ],
+      "open": {
+        "spread": 1.5,
+        "total": 25.5,
+        "mlHome": -106,
+        "mlAway": -114,
+        "books": 2,
+        "at": null
+      },
+      "latest": {
+        "spread": 1.5,
+        "total": 25.5,
+        "mlHome": -106,
+        "mlAway": -114,
+        "books": 2,
+        "at": null
+      }
     }
   }
 }
