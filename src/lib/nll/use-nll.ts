@@ -2,8 +2,8 @@ import { useQuery } from "@tanstack/react-query";
 import { getNllGameMedia, getNllLines, getNllNews, getNllSeason } from "./nll.functions";
 import { nllSeasonOf } from "./nll";
 
-/** Seasons offered in the pickers (start years): ESPN has full NLL seasons from 2023-24. */
-export const NLL_SEASONS = Array.from({ length: nllSeasonOf() - 2022 }, (_, i) => 2023 + i);
+/** Seasons offered in the pickers (start years): ESPN has NLL games from 2024-25 (none for 2023-24). */
+export const NLL_SEASONS = Array.from({ length: nllSeasonOf() - 2023 }, (_, i) => 2024 + i);
 
 export const useNllSeason = (season: number) =>
   useQuery({

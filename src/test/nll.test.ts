@@ -182,3 +182,39 @@ describe("NLL primary line (DraftKings)", () => {
     expect(primaryLine([fd, sc])!.source).toBe("median");
   });
 });
+
+describe("NLL team trends", () => {
+  it("scoring by quarter, game-state records and streak", async () => {
+    const { nllTeamTrends } = await import("./nll-fixture");
+    const g = (id: string, date: string, hq: number[], aq: number[]) => ({
+      id,
+      date,
+      status: "final" as const,
+      detail: "",
+      phase: "regular" as const,
+      ot: hq.length > 4,
+      home: { teamId: "H", score: hq.reduce((a, b) => a + b, 0), quarters: hq },
+      away: { teamId: "A", score: aq.reduce((a, b) => a + b, 0), quarters: aq },
+    });
+    const s = {
+      season: 2026,
+      label: "2026-27",
+      teams: [
+        { id: "H", abbr: "H", name: "Home", short: "Home", color: null, logo: null },
+        { id: "A", abbr: "A", name: "Away", short: "Away", color: null, logo: null },
+      ],
+      games: [
+        g("1", "2026-12-01T00:00Z", [3, 3, 3, 3], [2, 2, 2, 2]),
+        g("2", "2026-12-08T00:00Z", [1, 2, 3, 4], [4, 3, 2, 2]),
+      ],
+    };
+    const t = nllTeamTrends(s, "H");
+    expect(t.games).toBe(2);
+    expect(t.forByQ).toEqual([2, 2.5, 3, 3.5]);
+    expect(t.ledAfterQ1).toEqual({ w: 1, l: 0 });
+    expect(t.trailedAfterQ1).toEqual({ w: 0, l: 1 });
+    expect(t.oneGoal).toEqual({ w: 0, l: 1 });
+    expect(t.last5).toEqual(["L", "W"]);
+    expect(t.streak).toBe("L1");
+  });
+});
