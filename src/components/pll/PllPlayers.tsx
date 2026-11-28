@@ -18,6 +18,27 @@ import {
 
 const wiki = (page: string) => `https://en.wikipedia.org/wiki/${page}`;
 
+/** "Show all N" / "Show fewer" under a list that the dashboard cuts short. */
+export function ShowAll({
+  open,
+  total,
+  onToggle,
+}: {
+  open: boolean;
+  total: number;
+  onToggle: () => void;
+}) {
+  return (
+    <button
+      type="button"
+      onClick={onToggle}
+      className="block w-full border-t border-line/5 px-4 py-2 text-center font-mono text-[10px] uppercase tracking-wider text-acc hover:bg-line/5"
+    >
+      {open ? "Show fewer" : `Show all ${total}`}
+    </button>
+  );
+}
+
 function WikiCredit({ page, what, revid }: { page: string; what: string; revid?: number }) {
   const href = revid ? `https://en.wikipedia.org/w/index.php?oldid=${revid}` : wiki(page);
   return (
@@ -32,14 +53,26 @@ function WikiCredit({ page, what, revid }: { page: string; what: string; revid?:
 }
 
 /** A season's end-of-year awards: MVP, position awards, rookie, coach, championship game MVP. */
-export function PllAwards({ season, data }: { season: number; data?: PllSeason }) {
+export function PllAwards({
+  season,
+  data,
+  limit,
+}: {
+  season: number;
+  data?: PllSeason;
+  /** Show only this many awards until "Show all" is tapped (the dashboard). */
+  limit?: number;
+}) {
+  const [open, setOpen] = useState(false);
   const a = pllAwards(season);
   if (!a?.rows.length) return null;
+  const cut = limit !== undefined && a.rows.length > limit;
+  const rows = cut && !open ? a.rows.slice(0, limit) : a.rows;
   return (
     <Panel padded={false}>
       <PanelHeader title="Awards" aside={<span className="label-mono">{season}</span>} />
       <div className="divide-y divide-line/5">
-        {a.rows.map((r) => {
+        {rows.map((r) => {
           const t = r.team ? teamOf(data, r.team) : undefined;
           return (
             <div key={r.award} className="flex items-center gap-2 px-4 py-1.5 text-sm">
@@ -53,6 +86,7 @@ export function PllAwards({ season, data }: { season: number; data?: PllSeason }
           );
         })}
       </div>
+      {cut ? <ShowAll open={open} total={a.rows.length} onToggle={() => setOpen(!open)} /> : null}
       <WikiCredit page={a.page} what="Awards" />
     </Panel>
   );
@@ -63,14 +97,23 @@ export function PllLeaders({
   season,
   data,
   teamId,
+  limit,
+  perStat = 5,
 }: {
   season: number;
   data?: PllSeason;
   teamId?: string;
+  /** Show only this many stat categories until "Show all" is tapped (the dashboard). */
+  limit?: number;
+  /** Players listed per category. */
+  perStat?: number;
 }) {
+  const [open, setOpen] = useState(false);
   const groups = useMemo(() => pllLeaders(season, teamId), [season, teamId]);
   const page = pllLeadersPage(season);
   if (!groups.length || !page) return null;
+  const cut = limit !== undefined && groups.length > limit;
+  const shown = cut && !open ? groups.slice(0, limit) : groups;
   return (
     <Panel padded={false}>
       <PanelHeader
@@ -78,10 +121,10 @@ export function PllLeaders({
         aside={<span className="label-mono">regular season</span>}
       />
       <div className="divide-y divide-line/5">
-        {groups.map((g) => (
+        {shown.map((g) => (
           <div key={g.stat} className="px-4 py-2">
             <div className="label-mono mb-1">{g.stat}</div>
-            {g.rows.slice(0, 5).map((r) => {
+            {g.rows.slice(0, perStat).map((r) => {
               const t = r.team ? teamOf(data, r.team) : undefined;
               return (
                 <div
@@ -106,6 +149,7 @@ export function PllLeaders({
           </div>
         ))}
       </div>
+      {cut ? <ShowAll open={open} total={groups.length} onToggle={() => setOpen(!open)} /> : null}
       <WikiCredit page={page} what="Leaders" />
     </Panel>
   );
