@@ -134,3 +134,51 @@ describe("NLL lines desk", () => {
     expect([st[0].w, st[0].l, st[0].gf, st[0].ga]).toEqual([1, 0, 12, 11]);
   });
 });
+
+describe("NLL primary line (DraftKings)", () => {
+  it("uses DraftKings market by market and falls back to the other books' median", async () => {
+    const { primaryLine, latestByBook } = await import("./nll-fixture");
+    const base = {
+      captured: "2026-11-28T00:55:00Z",
+      game: "Georgia Swarm @ Buffalo Bandits",
+      start: "2026-11-29T00:00:00Z",
+      live: false,
+    };
+    const dk = {
+      ...base,
+      book: "draftkings",
+      spread: { away: [1.5, -166], home: [-1.5, 130] },
+      total: null,
+      moneyline: { away: -105, home: -125 },
+    } as const;
+    const fd = {
+      ...base,
+      book: "fanduel",
+      spread: { away: [1.5, -144], home: [-1.5, 118] },
+      total: { line: 21.5, over: -110, under: -110 },
+      moneyline: { away: -105, home: -115 },
+    } as const;
+    const sc = {
+      ...base,
+      book: "thescore",
+      spread: { away: [-1.5, 120], home: [1.5, -150] },
+      total: { line: 22.5, over: -120, under: -105 },
+      moneyline: { away: -120, home: -105 },
+    } as const;
+    // @ts-expect-error readonly tuples are fine here
+    const line = primaryLine([fd, sc, dk])!;
+    expect(line.source).toBe("draftkings");
+    expect(line.spread).toBe(-1.5);
+    expect(line.mlHome).toBe(-125);
+    expect(line.total).toBe(22); // no DK total: median of 21.5 and 22.5
+    expect(line.prices?.spreadHome).toBe(130);
+    // @ts-expect-error readonly tuples are fine here
+    expect(latestByBook([fd, sc, dk]).map((s) => s.book)).toEqual([
+      "draftkings",
+      "fanduel",
+      "thescore",
+    ]);
+    // @ts-expect-error readonly tuples are fine here
+    expect(primaryLine([fd, sc])!.source).toBe("median");
+  });
+});

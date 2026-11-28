@@ -73,7 +73,8 @@ export function NllSourceNote() {
   return (
     <p className="font-mono text-[10px] text-faint">
       Schedule and scores from ESPN. Lines are saved by hand from sportsbook screenshots (no odds
-      feed carries the NLL); the line shown is the median of each book&apos;s latest line.
+      feed carries the NLL); the line shown and graded is DraftKings&apos; latest, or the median of
+      the other books when there&apos;s no DraftKings line.
     </p>
   );
 }

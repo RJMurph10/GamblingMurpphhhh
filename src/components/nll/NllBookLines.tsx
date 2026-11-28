@@ -97,9 +97,14 @@ export function NllBookLines({
               {latest.map((s) => {
                 const g = final ? grade(s, game.home.score!, game.away.score!) : null;
                 return (
-                  <tr key={s.book}>
+                  <tr key={s.book} className={s.book === "draftkings" ? "bg-line/5" : undefined}>
                     <td className="px-4 py-1.5">
                       {bookName(s.book)}
+                      {s.book === "draftkings" ? (
+                        <span className="ml-1.5 rounded bg-acc/15 px-1 font-mono text-[9px] uppercase tracking-wider text-acc">
+                          primary
+                        </span>
+                      ) : null}
                       <span
                         className="block font-mono text-[10px] text-faint"
                         suppressHydrationWarning

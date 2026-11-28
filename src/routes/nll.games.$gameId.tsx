@@ -6,16 +6,18 @@ import { NllLogo, NllSourceNote } from "@/components/nll/NllBits";
 import { NllBookLines } from "@/components/nll/NllBookLines";
 import { getNllSeason } from "@/lib/nll/nll.functions";
 import {
-  consensus,
+  american,
   lineResult,
   nllSeasonLabel,
+  primaryLine,
   signed,
   snapshotsFor,
   teamOf,
   type NllGame,
   type NllSide,
 } from "@/lib/nll/nll";
-import { NLL_SEASONS, useNllLines } from "@/lib/nll/use-nll";
+import { NLL_SEASONS, useNllGameMedia, useNllLines } from "@/lib/nll/use-nll";
+import { NllHighlights, NllNewsPanel } from "@/components/nll/NllMedia";
 
 export const Route = createFileRoute("/nll/games/$gameId")({
   head: () => ({ meta: [{ title: "Game — GamblingNLL" }] }),
@@ -30,6 +32,9 @@ function useGame(id: string) {
       queryKey: ["nll-season", season],
       queryFn: () => getNllSeason({ data: { season } }),
       staleTime: 5 * 60_000,
+      // a live game refreshes every 15 s
+      refetchInterval: (q: { state: { data?: { games: NllGame[] } } }) =>
+        q.state.data?.games.some((g) => g.id === id && g.status === "live") ? 15_000 : false,
     })),
   });
   return useMemo(() => {
@@ -49,6 +54,7 @@ function NllGamePage() {
   const { gameId } = Route.useParams();
   const { game, season, loading } = useGame(gameId);
   const linesQ = useNllLines(season?.season ?? NLL_SEASONS[NLL_SEASONS.length - 1]);
+  const media = useNllGameMedia(gameId, Boolean(game));
   if (!game || !season)
     return (
       <Panel>
@@ -62,7 +68,7 @@ function NllGamePage() {
   const started = game.status !== "scheduled";
   const isFinal = game.status === "final";
   const snaps = snapshotsFor(game, season, linesQ.data);
-  const line = consensus(snaps);
+  const line = primaryLine(snaps);
   const res = line ? lineResult(game, line) : null;
   const fav = line?.spread == null ? undefined : line.spread <= 0 ? home : away;
   const club = (side: NllSide) => (
@@ -128,6 +134,9 @@ function NllGamePage() {
                 minute: "2-digit",
               })}
             </span>
+            {game.broadcast ? (
+              <span className="font-mono text-[10px] text-acc">📺 {game.broadcast}</span>
+            ) : null}
             {game.venue ? (
               <span
                 className="mt-0.5 max-w-[12rem] truncate font-mono text-[10px] text-faint"
@@ -230,6 +239,8 @@ function NllGamePage() {
       ) : null}
 
       <NllBookLines game={game} season={season} snaps={snaps} />
+      <NllHighlights videos={media.data?.videos ?? []} />
+      {media.data?.news.length ? <NllNewsPanel items={media.data.news} title="Stories" /> : null}
       <NllSourceNote />
     </div>
   );

@@ -3,8 +3,8 @@ import { Panel, PanelHeader } from "@/components/shared/booth";
 import { NllCaptureBadge, NllLogo } from "@/components/nll/NllBits";
 import {
   captureStatus,
-  consensus,
   lineResult,
+  primaryLine,
   signed,
   snapshotsFor,
   teamOf,
@@ -36,7 +36,7 @@ function Row({
   const started = game.status !== "scheduled";
   const d = new Date(game.date);
   const snaps = season ? snapshotsFor(game, season, lines) : [];
-  const line = consensus(snaps);
+  const line = primaryLine(snaps);
   const res = line ? lineResult(game, line) : null;
   const fav = line?.spread == null ? undefined : line.spread <= 0 ? home : away;
   const favPts = line?.spread == null ? null : signed(-Math.abs(line.spread));
@@ -72,6 +72,11 @@ function Row({
         ) : game.status === "scheduled" && d.getTime() - Date.now() < 10 * 86_400_000 ? (
           <span className="mt-0.5 block">
             <NllCaptureBadge status={captureStatus(game, snaps)} />
+          </span>
+        ) : null}
+        {game.status !== "final" && game.broadcast ? (
+          <span className="block truncate text-[10px] text-faint" title={game.broadcast}>
+            {game.broadcast}
           </span>
         ) : null}
       </td>
@@ -121,6 +126,14 @@ function Row({
         className={`whitespace-nowrap px-4 py-2.5 text-right font-mono tabular-nums ${totalClass}`}
       >
         {line?.total ?? "—"}
+        {line && line.source !== "draftkings" ? (
+          <span
+            className="block text-[9px] font-normal text-faint"
+            title="No DraftKings line saved: median of the other books"
+          >
+            no DK
+          </span>
+        ) : null}
       </td>
     </tr>
   );
