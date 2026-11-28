@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-27T20:19:15.164Z",
+ "updated": "2026-11-28T19:08:36.219Z",
  "note": "Kickoff wind (mph, Open-Meteo 10 m wind x 1.09) for finished outdoor NFL games nflverse left without weather; keyed by ESPN game id.",
  "factor": 1.09,
  "games": {
@@ -1823,21 +1823,21 @@
   },
   "401873067": {
    "game": "2026_11_ARI_KC",
-   "wind": 17,
-   "raw": 15.7,
-   "gust": 25.7,
+   "wind": 14,
+   "raw": 13.1,
+   "gust": 29.1,
    "precip": 0,
    "temp": 48,
-   "source": "forecast"
+   "source": "archive"
   },
   "401873068": {
    "game": "2026_11_BAL_CAR",
-   "wind": 9,
-   "raw": 8.3,
-   "gust": 14.5,
-   "precip": 0,
+   "wind": 10,
+   "raw": 9.4,
+   "gust": 21.5,
+   "precip": 0.02,
    "temp": 59,
-   "source": "forecast"
+   "source": "archive"
   },
   "401873069": {
    "game": "2026_11_JAX_NYG",
@@ -1850,21 +1850,21 @@
   },
   "401873070": {
    "game": "2026_11_MIA_BUF",
-   "wind": 12,
-   "raw": 10.8,
-   "gust": 19.9,
+   "wind": 9,
+   "raw": 8.2,
+   "gust": 18.3,
    "precip": 0,
-   "temp": 65,
-   "source": "forecast"
+   "temp": 64,
+   "source": "archive"
   },
   "401873071": {
    "game": "2026_11_NO_CHI",
-   "wind": 11,
-   "raw": 10.1,
-   "gust": 21.3,
-   "precip": 0.055,
+   "wind": 14,
+   "raw": 12.9,
+   "gust": 28,
+   "precip": 0.032,
    "temp": 55,
-   "source": "forecast"
+   "source": "archive"
   },
   "401873075": {
    "game": "2026_11_LV_DEN",
@@ -1877,12 +1877,12 @@
   },
   "401873076": {
    "game": "2026_11_PIT_PHI",
-   "wind": 9,
-   "raw": 8,
-   "gust": 16.3,
-   "precip": 0,
-   "temp": 63,
-   "source": "forecast"
+   "wind": 7,
+   "raw": 6.4,
+   "gust": 15.7,
+   "precip": 0.008,
+   "temp": 65,
+   "source": "archive"
   },
   "401873077": {
    "game": "2026_11_MIN_SF",
@@ -1909,6 +1909,15 @@
    "gust": 40.5,
    "precip": 0.997,
    "temp": 34,
+   "source": "forecast"
+  },
+  "401873083": {
+   "game": "2026_12_DEN_PIT",
+   "wind": 14,
+   "raw": 12.8,
+   "gust": 30.9,
+   "precip": 0.028,
+   "temp": 38,
    "source": "forecast"
   }
  }
